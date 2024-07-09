@@ -1,0 +1,1765 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Accessibility Metadata Best Practices Guide.docx</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.MsoNormalCxSpFirst, li.MsoNormalCxSpFirst, div.MsoNormalCxSpFirst
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.MsoNormalCxSpMiddle, li.MsoNormalCxSpMiddle, div.MsoNormalCxSpMiddle
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+p.MsoNormalCxSpLast, li.MsoNormalCxSpLast, div.MsoNormalCxSpLast
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h1
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;
+	font-weight:normal;}
+h1.CxSpFirst
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;
+	font-weight:normal;}
+h1.CxSpMiddle
+	{margin:0in;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;
+	font-weight:normal;}
+h1.CxSpLast
+	{margin:0in;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+h2.CxSpFirst
+	{margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+h2.CxSpMiddle
+	{margin:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+h2.CxSpLast
+	{margin:0in;
+	line-height:115%;
+	font-size:13.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{margin:0in;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{margin:0in;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{margin:0in;
+	line-height:115%;
+	font-size:21.0pt;
+	font-family:"Trebuchet MS",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body bgcolor=white lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle><a name=h.jzsq8yzdfor4></a>&nbsp;</p>
+
+<p class=MsoTitle><a name=h.uihnexs6uh37></a><b>Accessibility Metadata</b></p>
+
+<p class=MsoTitle><a name=h.g1hzjdncmoy3></a><b>Best Practices Guide</b></p>
+
+<p class=MsoNormal>Version 1.0.1, December 29, 2013</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%'>Table of
+Contents</span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.wi4vastert9q"><span
+style='color:#1155CC'>About this Guide</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.d1252bh4jx3y"><span
+style='color:#1155CC'>Introduction</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.c100nkr7a55p"><span
+style='color:#1155CC'>Overview</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.js1idep2j8gk"><span
+style='color:#1155CC'>Properties</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.vl4uu76qc80a"><span
+style='color:#1155CC'>Values</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.icor0fhw8z4j"><span
+style='color:#1155CC'>The accessibilityFeature property</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.yhy1mf9a9se"><span
+style='color:#1155CC'>alternativeText</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.tk3w6q244plb"><span
+style='color:#1155CC'>annotations</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.9gi30ia72ftj"><span
+style='color:#1155CC'>audioControl</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.tizhmdyn0ey4"><span
+style='color:#1155CC'>audioDescription</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.w5llovq3w8a"><span
+style='color:#1155CC'>bookmarks</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.mcr8xyfayv8b"><span
+style='color:#1155CC'>braille</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.3gx5auujlp28"><span
+style='color:#1155CC'>captions</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.m6e3x2uprwhh"><span
+style='color:#1155CC'>ChemML</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.mdfsuvv671vh"><span
+style='color:#1155CC'>displayTransformability</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.5aixzjry27yl"><span
+style='color:#1155CC'>highContrastAudio</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.6e6l5hltkdpk"><span
+style='color:#1155CC'>highContrastDisplay</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.z1khy5t2il6a"><span
+style='color:#1155CC'>index</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.bokqebud55sf"><span
+style='color:#1155CC'>largePrint</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.hk4lajj1a43"><span
+style='color:#1155CC'>latex</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.o8k2uxs39w2k"><span
+style='color:#1155CC'>longDescription</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.i0t4k2yd74ie"><span
+style='color:#1155CC'>MathML</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.s0jg36eezzdr"><span
+style='color:#1155CC'>printPageNumbers</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.5y82ac7evyir"><span
+style='color:#1155CC'>readingOrder</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.gefu8yv88kzj"><span
+style='color:#1155CC'>signLanguage</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.itx26hpjcifa"><span
+style='color:#1155CC'>structuralNavigation</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.nu7te3d2kby2"><span
+style='color:#1155CC'>tableOfContents</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.67jiq3mew9xq"><span
+style='color:#1155CC'>taggedPDF</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.su92p9iekxnl"><span
+style='color:#1155CC'>tactileGraphic</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.4h9ebe8fyclf"><span
+style='color:#1155CC'>tactileObject</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.1j6en18xsxcn"><span
+style='color:#1155CC'>timingControl</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.vx7u5xjce76v"><span
+style='color:#1155CC'>transcript</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.d950liykobwl"><span
+style='color:#1155CC'>unlocked</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.7vve7dxib8py"><span
+style='color:#1155CC'>videoControl</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.q08cms1v063h"><span
+style='color:#1155CC'>The accessibilityHazard property</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.8blmhw8fdm5x"><span
+style='color:#1155CC'>The accessibilityControl property</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.pvm07w21chdv"><span
+style='color:#1155CC'>The accessibilityAPI property</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.n2gfyqxfptgi"><span
+style='color:#1155CC'>Book Formats</span></a></p>
+
+<p class=MsoNormal style='margin-left:.25in'><a href="#h.45bvwjkgz9h1"><span
+style='color:#1155CC'>Appendix A — Quick-Start Templates</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.kesmt5x6g7zk"><span
+style='color:#1155CC'>Video</span></a></p>
+
+<p class=MsoNormal style='margin-left:.5in'><a href="#h.nufnxj2ldqpi"><span
+style='color:#1155CC'>Audio</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.wi4vastert9q></a><a name=id.576thgqdjfza></a>About this Guide</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Although no prior knowledge of <a href="http://schema.org/"><span
+style='color:#1155CC'>schema.org</span></a> or semantic tagging is necessary in
+order to read this guide, to get the most from it you should have a working
+knowledge of these technologies. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The main body of this guide walks through the accessibility
+metadata and assumes a general understanding of <a
+href="http://www.w3.org/TR/microdata/"><span style='color:#1155CC'>microdata</span></a>
+and schema.org. You can read through the body without any knowledge of the
+underlying technologies, but the language and examples may seem foreign.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For those completely new to these technologies, it is
+recommended that you start with the <a
+href="http://www.a11ymetadata.org/resources"><span style='color:#1155CC'>semantic
+markup primer</span></a>. The primer covers only as much of the technologies as
+you need to know, without bogging you down in technical details. Once you’re
+comfortable with the basic concepts, the tagging of the accessibility metadata
+will be much easier to understand.</p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormalCxSpLast>&nbsp;</p>
+
+<h1><a name=h.s3c5huaqe2ts></a>&nbsp;</h1>
+
+<h1><a name=h.d1252bh4jx3y></a><a name=id.7m93kl1u0533></a>Introduction</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Semantic data and semantic markup are two concepts that go
+hand-in-hand. Semantic data is the end goal of everyone who maintains content
+on the web—rich, meaningful data that can be processed by search engines and
+browsers—while semantic markup is the means by which this information is
+layered into HTML content. Both are at the heart of making digital content
+accessible, as it is only through meaningful structure that otherwise arbitrary
+strings of text begin to assume meaning.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The simplicity of markup that underlies the web makes it
+difficult for machines to extract meaning, however. Search engines are adept at
+matching the text string you enter against text strings found in web content,
+but they’re still a long way from inferring the meaning of those strings.
+Language is, put simply, complex.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The goal of semantically enriching content is to provide
+more nuanced information that can simplify processing and making connections.
+The RDFa and Microdata technologies allow content authors to clearly identify
+properties of the content that might otherwise be misinterpreted, or not stated
+at all. The machine still may not comprehend the text in the way a human does,
+but with these semantics the programmers behind those tools can extract and
+present the information in meaningful ways.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>And that’s where semantics and accessibility intersect in
+the realm of internet searching. The richer the data is, the better it can be
+presented to users with differing needs and preferences. No more having to
+access each resource in order to manually discover its nature.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Not surprisingly, then, the goal of the Accessibility
+Metadata Project is to improve the results that search engines can provide by
+defining semantic properties within schema.org, the new framework for
+expressing search semantics. The project does not attempt to address the
+underlying (in)accessibility of formats and protocols on the web; it only seeks
+to help users in the rapid discovery of resources that meet their needs.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>By identifying accessibility features (enhanced content to
+enable multiple modalities) and other key aspects of the content, search
+engines can accurately relay the nature of these resources on to users. The
+ambiguity of searching by keywords<span style='font-size:12.0pt;line-height:
+115%'>—</span>where the presence of search words on a page, regardless of
+context, determines relevance<span style='font-size:12.0pt;line-height:115%'>—</span>will
+finally be taken out of the equation.</p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormalCxSpLast>&nbsp;</p>
+
+<h1><a name=h.4uhgehroperr></a>&nbsp;</h1>
+
+<h1><a name=h.c100nkr7a55p></a><a name=id.t2yqc75qrahx></a>Overview</h1>
+
+<h2><a name=h.js1idep2j8gk></a><a name=id.ktn5f3jntiv0></a>Properties</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The Accessibility Metadata Project contributed a set of four
+properties to <a href="http://schema.org/CreativeWork"><span style='color:#1155CC'>the
+schema.org CreativeWork type</span></a>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>accessibilityFeature</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>accessibilityHazard</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>accessibilityControl</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>accessibilityAPI</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>By adding the properties to this super-type in the
+schema.org hierarchy, they are inherited by all the content specializations
+that are commonly sought out for compatibility, such as <a
+href="http://www.schema.org/Book"><span style='color:#1155CC'>Book</span></a>, <a
+href="http://www.schema.org/Article"><span style='color:#1155CC'>Article</span></a>,
+<a href="http://www.schema.org/Blog"><span style='color:#1155CC'>Blog</span></a>
+and <a href="http://www.schema.org/Movie"><span style='color:#1155CC'>Movie</span></a>.
+They will also be available in any future subtypes of CreativeWork.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>These properties provide a basis for augmenting web content
+with accessibility information. Their use is not limited only to what lives on
+the web; you can use them to describe any resource that is referenced from a
+web page, as well. For example, the metadata can be used to enhance an online
+library catalogue of available works, even though the works themselves may only
+be available physically.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This guide reviews each of these properties, providing
+guidance on how to use them to make accessibility statements about your
+content.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.vl4uu76qc80a></a>Values</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The property values listed in this guide are recommended for
+use at the time of writing, but are not intended to be read as a closed list;
+new values can be added at any time. To view the most up-to-date value list,
+please refer to the <a href="http://www.w3.org/wiki/WebSchemas/Accessibility"><span
+style='color:#1155CC'>W3C Web Schemas wiki</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you need to use a value that is not yet defined, there is
+no restriction against defining your own. You are encouraged, however, to bring
+missing values to the attention of the working group using the <a
+href="https://groups.google.com/forum/#!forum/a11y-metadata-project"><span
+style='color:#1155CC'>google groups mailing list</span></a> for consideration
+of inclusion in the formal set.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>You will also notice as you read through this guide that
+more than one property value may apply to the content you are describing. This
+is perfectly normal, as there is no limit to the number of values you can use.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>When including multiple media features, the one rule you
+must follow is to tag each separately. For example, a textbook that includes
+alt text and descriptions for images, transcripts for audio and video content,
+and MathML equations, might include all of the following accessibility
+features:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;div itemscope=”” itemtype=”</span><a
+href="http://schema.org/Book"><span style='font-size:9.0pt;line-height:115%;
+font-family:"Courier New";color:#1155CC'>http://schema.org/Book</span></a><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>”&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”alternativeText”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”longDescription”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”transcript”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”MathML”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;h1
+itemprop=”name”&gt;Introduction to Math&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       ...</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Another convention you will find in this guide is the
+subclassification of values using slashes ('x/y'). For example, the <span
+style='font-family:"Courier New"'>braille</span> value for <span
+style='font-family:"Courier New"'>accessibilityFeature</span> provides only a
+general indication that braille resources are available. To be more precise
+about whether the braille is contracted or uncontracted, you could append that
+detail to the value as <span style='font-family:"Courier New"'>braille/grade1</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This guide covers the most common values for extension, and
+provides guidelines on how to extend them, but you can extend any value. You
+should choose extensions over creating new top-level values whenever you need
+more precision than an existing value provides. But note that using extension
+values is not required, and unless the additional information is critical to
+discovery it is better to avoid them.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.icor0fhw8z4j></a><a name=id.6ypktaph14x5></a>The
+accessibilityFeature property</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The first property we'll look at is the most fundamental for
+expressing the accessible qualities of your content: <span style='font-family:
+"Courier New"'>accessibilityFeature</span>. This property describes the content
+features of the resource that make it accessible to a broader range of users.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Although the richer content being provided may seem obvious,
+it's not necessarily the case that a search engine will be able to understand
+or expose this information for users. For example, the HTML5 <span
+style='font-family:"Courier New"'>video</span> element allows you to attach
+caption tracks. In theory, a search engine could inspect the element and
+discover if such a track were present. The problem is that search engines don't
+perform these kinds of manual tests, and in many cases the presence of captions
+will not be apparent from the markup (e.g., in flash-based video).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Likewise, a web page may have MathML markup directly
+embedded in it, but to find the same in an ebook would require digging into the
+packaging. The very point of this accessibility metadata is to provide an
+easily identifiable set of information, so when you include any accessibility
+feature make sure to make note of it using this property.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>It is not a requirement that the accessibility feature be
+located on the same page as the resource, but users must have easy access to
+the feature in order for it to be listed. For example, you could provide a
+transcript for a speech separately from the page hosting the recording provided
+a link to the transcript is included.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The following subsections detail the predefined values for
+this property.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.yhy1mf9a9se></a>alternativeText</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>alternativeText</span>
+value indicates that alternative text is provided for images.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For HTML-based content, alternative text is provided in the <span
+style='font-family:"Courier New"'>img</span> element's <span style='font-family:
+"Courier New"'>alt</span> attribute. Other formats, like Microsoft Word, have
+similar proprietary mechanisms for annotating images with alternate text.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A judgement call may be necessary when setting this value if
+only some of the visual content includes alternative text. The schema.org
+metadata does not include completeness of coverage, so you will have to
+determine whether the lack of alternative text represents a significant barrier
+to comprehension. If it does, do not set the property. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.tk3w6q244plb></a>annotations</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>annotations</span>
+value indicates that the work is annotated. Annotations may be an intrinsic
+part of the work (i.e., included by the author, translator or similar) or could
+be included by an instructor to provide additional guidance or explanation.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This value can also be used to identify annotations for a
+work independent of the work (e.g., sold commercially).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.9gi30ia72ftj></a>audioControl</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>audioControl</span>
+value indicates that the user has full control over audio playback. When
+setting this value, the user must have control over play, pause, stop, resume,
+movement forward and backward through the timeline. Control of the volume,
+independent of the operating system, is also necessary.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Control is required for audio that plays in the foreground
+and the background. For background sounds (e.g., mood music), the ability to
+disable playback is the only necessary feature, but control of the volume is
+strongly suggested.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.tizhmdyn0ey4></a><br>
+audioDescription</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>audioDescription</span>
+value indicates that audio description tracks are available for video content.
+Audio descriptions are an additional track that provides context to the visual
+component of the content (e.g., explaining actions going on in a video between
+instances of dialogue).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>You can attach audio descriptions to HTML5 <span
+style='font-family:"Courier New"'>video</span> elements using the <span
+style='font-family:"Courier New"'>track</span> element. It is also possible to
+synchronize them with a video using <a
+href="http://www.w3.org/TR/2008/REC-SMIL3-20081201/"><span style='color:#1155CC'>SMIL</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For more information, please see <a
+href="http://www.w3.org/WAI/GL/WCAG20/WD-WCAG20-TECHS/G78.html"><span
+style='color:#1155CC'>WCAG Technique G78</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.w5llovq3w8a></a>bookmarks</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>bookmarks</span>
+value indicates that bookmarks to facilitate access to key locations in the
+work are included. Bookmarks are typically only found in electronic books and
+documents. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.mcr8xyfayv8b></a>braille</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>braille</span>
+value indicates that braille content or alternatives are available.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>You can extend this property to include more information
+about the precise nature of the braille provided. For example:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/grade1</span> (uncontracted braille)</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/grade2</span> (contracted braille)</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/ascii</span> (ASCII-encoded 6 dot
+braille)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The code to which the braille conforms can also be
+specified:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/BANA</span> (Braille Authority of
+North America)</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/SEB</span> (Standard English Braille)</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/UEB</span> (Unified English Braille)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>And it is also possible to indicate features of the braille
+content:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/nemeth</span> (Nemeth-encoded math)</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>braille/music</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>braille/chemistry</span> (Braille Code for
+Chemical Notation)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The Accessibility Metadata project working group has not
+attempted to enumerate all possible subclassifications, as these are better
+developed by braille authorities and producers.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.3gx5auujlp28></a>captions</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>captions</span>
+value indicates that captions are available for audio and video content.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This setting does not guarantee that captions will be
+viewable in all user agents, as support for closed captions using the <span
+style='font-family:"Courier New"'>track</span> element is not yet universal in
+HTML5-capable browsers.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.m6e3x2uprwhh></a>ChemML</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>ChemML</span>
+value indicates that the content includes chemical information encoded in the
+ChemML markup language.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.mdfsuvv671vh></a>displayTransformability</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>displayTransformability</span>
+value provides a general indication that aspects of the rendering can be
+modified by the user, whether by the application of custom style sheets or
+through controls in the application.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>You should set this property only when the ability to change
+the styles will have a meaningful impact on the overall accessibility of the
+content. For example, the ability to change fonts or the background and
+foreground colors is typically not helpful when the content is image-based.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If only certain properties are modifiable, or will
+meaningfully impact on the accessibility, it is possible to extend this value
+using specific CSS property names:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>displayTransformability/font-size</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>displayTransformability/background-color</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>(Note that the use of CSS property names is for
+standardization only; it is not necessary that CSS be the formatting technology
+used.) </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.5aixzjry27yl></a>highContrastAudio</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>highContrastAudio</span>
+value indicates that there is high contrast between background noise and
+foreground human speech in pre-recorded audio.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Additional refinements can be made to this property to
+qualify the level of background noise as follows:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>enhancedAudio/noBackground
+- indicate that there is no background noise that will interfere with the
+foreground speech</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>enhancedAudio/reducedBackground
+- indicates that there is at least 20db difference between the foreground
+speech and the background noise</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>enhancedAudio/switchableBackground
+- indicates that the background noise can be turned off</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For more information, please see <a
+href="http://www.w3.org/WAI/GL/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html"><span
+style='color:#1155CC'>WCAG Understanding SC 1.4.6</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.6e6l5hltkdpk></a>highContrastDisplay</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>highContrastDisplay</span>
+value indicates that the content meets minimum high-contrast display
+requirements defined in<a
+href="http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast"><span
+style='color:#1155CC'> WCAG SC 1.4.3</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If the content does not meet requirements for high contrast
+reading, but the format of the content allows the foreground and background
+colors to be modified (e.g., through CSS), or alternate high-contrast options
+are provided, set the <span style='font-family:"Courier New"'>displayTransformability</span>
+value instead.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.z1khy5t2il6a></a>index</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>index</span>
+value indicates that an index to the work is available.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you include more than one index, you can optionally
+identify the specific type(s) using the extension mechanism. For example, <span
+style='font-family:"Courier New"'>index/topical</span> is used to identify a
+topical index.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.bokqebud55sf></a>largePrint</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>largePrint</span>
+value indicates that the resource is formatted for large print reading.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This value must not be set when the font size can be
+increased either through zooming or CSS manipulation. It is used only to
+indicate that the resource was designed for large print reading.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.hk4lajj1a43></a>latex</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>latex</span>
+value indicates that math content is provided in LaTeX format.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.o8k2uxs39w2k></a>longDescription</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>longDescription</span>
+value indicates that descriptions are provided for image-based content and/or
+complex structures such as tables.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.i0t4k2yd74ie></a>MathML</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>MathML</span>
+value indicates that math content is provided in MathML format.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.s0jg36eezzdr></a>printPageNumbers</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>printPageNumbers</span>
+value is only applicable for electronic books with print equivalents. The value
+indicates that page markers are included in the work, allowing users to locate
+print page equivalent locations (e.g., for mixed print-digital environments
+such as classrooms or book clubs).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.5y82ac7evyir></a>readingOrder</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>readingOrder</span>
+value is primarily applicable to electronic books and indicates that the markup
+is structured to facilitate access to the logical reading order. Only set this
+value if sidebars, figures and other secondary material has been properly
+tagged using HTML5 elements that allow the content to be automatically skipped
+or manually escaped from.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.gefu8yv88kzj></a>signLanguage</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>signLanguage</span>
+value indicates that sign language translation is available for aural content.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.itx26hpjcifa></a>structuralNavigation</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>structuralNavigation</span>
+value indicates that the content is structured for easier navigation (e.g.,
+using headings), a table of contents is available or similar high-level
+document navigation is provided.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.nu7te3d2kby2></a>tableOfContents</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>tableOfContents</span>
+value indicates that a complete table of contents to the work is provided. Do
+not set this property if only a reduced table of contents is provided.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.67jiq3mew9xq></a>taggedPDF</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>taggedPDF</span>
+value indicates that a PDF is tagged so that structures such as headings, lists
+and tables can be identified.</p>
+
+<p class=MsoNormal> </p>
+
+<h2><a name=h.su92p9iekxnl></a>tactileGraphic</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>tactileGraphic</span>
+value indicates that tactile graphics are included. For example, as described
+in the <a href="http://www.brailleauthority.org/tg/index.html"><span
+style='color:#1155CC'>BANA Guidelines and Standards for Tactile Graphics</span></a>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.4h9ebe8fyclf></a>tactileObject</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>tactileObject</span>
+value indicates that tactile 3D objects are included, or instructions to build
+them are available.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.1j6en18xsxcn></a>timingControl</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>timingControl</span>
+value indicates that timed interfaces are controllable by the user. For
+example, users who require more time to complete a task are able to reset the
+timer or pause the countdown while seeking assistance.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.vx7u5xjce76v></a>transcript</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>transcript</span>
+value indicates that transcripts are provided for audio and video content.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.d950liykobwl></a>unlocked</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>unlocked</span>
+value indicates that no digital rights management or other content restriction
+protocols have been applied to content that would impede access.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.7vve7dxib8py></a>videoControl</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>videoControl</span>
+value indicates that the user has full control over video playback. When
+setting this value, the user must have control over play, pause, stop, resume,
+movement forward and backward through the timeline. Control of the volume,
+independent of the operating system, is also necessary.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.q08cms1v063h></a><a name=kix.iyq2n3ud52q1></a>The
+accessibilityHazard property</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Some digital media can be physically dangerous to those who
+access it. For example, rates of flashing faster than 3Hz (3 times per second)
+can cause seizures, as can loud repetitive sounds. Nausea is another hazard
+that can be brought on by motion simulation in visual resources, such as 3D
+gaming emulated on the HTML <span style='font-family:"Courier New"'>canvas</span>
+element.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>When a resource is known to contain such physiological
+hazards, the user needs to discover their presence before accessing the
+content. Although adding warnings to the page may seem sufficient, such
+warnings are easily missed by users and difficult to extract by search engines.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The <span style='font-family:"Courier New"'>accessibilityHazard</span>
+property allows these dangers to be identified so that a search engine can
+report the hazard before the user attempts to access the resource. It has three
+predefined values to account for the above-mentioned situations:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>flashing</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>motionSimulation</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:115%;font-family:"Courier New"'>sound</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>For example, a video could be identified as having a
+flashing hazard as follows:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;div itemtype=”</span><a
+href="http://schema.org/VideoObject"><span style='font-size:9.0pt;line-height:
+115%;font-family:"Courier New";color:#1155CC'>http://schema.org/VideoObject</span></a><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>”
+itemscope=””&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;p&gt;Warning: This video
+contains </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>   <span style='background:#FFF2CC'>&lt;span
+itemprop=”accessibilityHazard”&gt;flashing&lt;/span&gt;</span> that may </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>   cause seizures in some
+people.&lt;/p&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;video
+src=”rapidFire.webm”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Note that providing access to an alternative less hazardous
+adaptation does not change the need to indicate that the hazard exists.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Adding the hazards when they exist is useful, but there is
+also a question of how to know whether the hazards don't exist or whether the
+resource hasn't been checked. To indicate that the content has been checked and
+is safe, the opposite values are included:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>noFlashingHazard</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>noMotionSimulationHazard</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>noSoundHazard</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The previous example can now be fleshed out to indicate that
+while it has a flashing hazard, it does not have sound or motion simulation
+hazards:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;div itemtype=”</span><a
+href="http://schema.org/VideoObject"><span style='font-size:9.0pt;line-height:
+115%;font-family:"Courier New";color:#1155CC'>http://schema.org/VideoObject</span></a><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>”
+itemscope=””&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New";background:
+#FFF2CC'>&lt;meta property=&quot;accessibilityHazard&quot;
+content=&quot;noMotionSimulationHazard&quot;/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New";background:
+#FFF2CC'>&lt;meta property=&quot;accessibilityHazard&quot;
+content=&quot;noSoundHazard&quot;/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;p&gt;Warning: This video
+contains </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>   <span style='background:#FFF2CC'>&lt;span
+itemprop=”accessibilityHazard”&gt;flashing&lt;/span&gt;</span> that may </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>   cause seizures in some
+people.&lt;/p&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>&lt;video
+src=”rapidFire.webm”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.8blmhw8fdm5x></a><a name=kix.giiolefbbta8></a>The
+accessibilityControl property</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you take the time to ensure that your content can be
+accessed effectively by users with different preferred modalities, you should
+also indicate such compatibility in your metadata. The <span style='font-family:
+"Courier New"'>accessibilityControl</span> property enables the tagging of this
+information and has five predefined values:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>fullKeyboardControl</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>fullMouseControl</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>fullSwitchControl</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>fullTouchControl</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"Courier New"'>fullVoiceControl</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This property identifies which input methods allow access to
+all of the application functionality. Multiple methods can be specified, as
+appropriate.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A good measure for keyboard control is <a
+href="http://www.w3.org/TR/WCAG/#keyboard-operation"><span style='color:#1155CC'>WCAG
+2.0 Guideline 2.1</span></a>. If your content is compliant to this guideline,
+you can safely set this control flexibility in your metadata:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityControl” content=”fullKeyboardControl”/&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A similar guideline for other forms of accessibility does
+not exist, but the requirement is generally the same in terms of the user being
+able to effectively access and control your content by one of these methods
+alone:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityControl” content=”fullMouseControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityControl” content=”fullSwitchControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityControl” content=”fullTouchControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityControl” content=”fullVoiceControl”/&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If you are not certain if your content is accessible by an
+input method, do not assume it must be true because the content is accessible
+by another (e.g., mouse access does not translate into keyboard access). If
+your content has any scripted controls or dynamic features, you will need to
+test to ensure operability.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Note that the need to input text does not necessarily make
+content inaccessible by non-keyboard methods. Users may have an on-screen
+keyboard available, for example.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.pvm07w21chdv></a><a name=kix.wbqzvct74whs></a>The
+accessibilityAPI property</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>While you may have been led to believe so far that
+accessibility metadata applies only to media objects (books, video, etc.), it
+also applies to programs, whether mobile apps, flash content, Java applets or
+HTML pages. Noting whether this content is compatible with accessibility APIs
+is important because it allows users to determine whether they will be able to
+interact with it via the device they’re using:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;meta
+itemprop=”accessibilityAPI” content=”MSAA”/&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This property includes the following predefined API values:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>AndroidAccessibility</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>ARIA</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>ATK</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>AT-SPI</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>BlackberryAccessibility</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>iAccessible2</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>iOSAccessibility</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>JavaAccessibility</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>MacOSXAccessibility</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>MSAA</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>UIAutomation</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>To create a more complete picture, you can also pair this
+property with the <span style='font-family:"Courier New"'>operatingSystem </span>property
+from the <a href="http://schema.org/SoftwareApplication"><span
+style='color:#1155CC'>SoftwareApplication type</span></a>, especially if the
+content is known to only work on certain systems that support the accessibility
+API:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>     </span><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>&lt;span
+itemprop=”operatingSystem”</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>      itemtype=”</span><a
+href="http://schema.org/SoftwareApplication"><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New";color:#1155CC'>http://schema.org/SoftwareApplication</span></a><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>” </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>      itemscope=””&gt;Windows
+7&lt;/span&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In general, you should not need to set the OS-based APIs for
+HTML, but <span style='font-family:"Courier New"'>JavaAccessibility</span> and <span
+style='font-family:"Courier New"'>ARIA</span> should be set when appropriate.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This property is useful when you are describing a page that
+uses proprietary plugins, or when you are describing the accessibility of
+non-web formats, where such formats may only work on certain platforms.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.n2gfyqxfptgi></a><a name=id.7viaum5ec2yb></a>Book Formats</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The accessibility metadata proposal also defines the
+following extensions to the <a href="http://schema.org/BookFormatType"><span
+style='color:#1155CC'>BookFormatType</span></a> enumeration:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>EBook/DAISY202</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>EBook/DAISY3</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>EBook/EPUB2</span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;text-indent:-17.95pt'><span
+style='font-family:"Courier New"'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>EBook/EPUB3</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>These formats provide information that might otherwise not
+be easily obtainable. For example, EPUB files are not distinguishable from
+their file extensions, but require looking into the packaging to find out which
+version the file conforms to. Likewise, DAISY books often are zipped up for
+online distribution, again making it hard to determine their nature without
+loading them or looking into the content.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>An online library could, for example, indicate that a
+resource is a DAISY 2.02 book by setting this property as follows:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;line-height:115%;font-family:
+"Courier New"'>       &lt;link itemprop=”bookFormat” href=”</span><a
+href="http://schema.org/EBook"><span style='font-size:9.0pt;line-height:115%;
+font-family:"Courier New";color:#1155CC'>http://schema.org/EBook”DAISY202/</span></a><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormalCxSpMiddle>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name=h.45bvwjkgz9h1></a><a name=id.q5boqatbbzz8></a>Appendix A <span
+style='font-size:12.0pt;line-height:115%'>—</span> Quick-Start Templates</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The following basic templates can be used to quickly apply
+the accessibility metadata to some common creative works.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Note that the use of <span style='font-family:"Courier New"'>meta</span>
+tags is not required, but done for simplicity. If the accessible nature of the
+content can be exposed as text content, the meta tags should be reformulated to
+a more appropriate form.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.kesmt5x6g7zk></a>Video</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The only accessibility property that must be set for all
+videos is the <span style='font-family:"Courier New"'>visual</span> access
+mode. All other metadata is conditional.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;body itemscope=””
+itemtype=”http://schema.org/VideoObject”&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if captions have
+been provided: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”captions”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a transcript is
+available: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”transcript”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if an audio
+description for the soundtrack: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”audioDescription”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>              </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if sign language
+transcription provided: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”signLanguage”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a keyboard
+accessible player: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityControl” content=”fullKeyboardControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a mouse
+accessible player: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityControl” content=”fullMouseControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a flashing hazard
+in the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”flashing”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- or if no flashing
+hazard in the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noFlashingHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a motion hazard
+in the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”motionSimulation”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- or if no motion
+hazard in the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noMotionSimulationHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a sound hazard in
+the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”sound”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- or if no sound
+hazard in the video: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noSoundHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>&lt;video
+.../&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name=h.nufnxj2ldqpi></a>Audio</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The only accessibility property that must be set for all
+audio clips is the <span style='font-family:"Courier New"'>auditory</span>
+access mode. All other metadata is conditional.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;body itemscope=””
+itemtype=”http://schema.org/AudioObject”&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if captions have
+been provided: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”captions”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a transcript is
+available: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”transcript”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if an audio
+description for the soundtrack: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”audioDescription”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>              </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if sign language
+transcription provided: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityFeature” content=”signLanguage”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a keyboard
+accessible player: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityControl” content=”fullKeyboardControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a mouse
+accessible player: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityControl” content=”fullMouseControl”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- if a sound hazard:
+--&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”sound”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;!-- or if no sound
+hazard: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noSoundHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       </span></p>
+
+<p class=MsoNormal style='margin-left:1.0in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;!-- no other hazards: --&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noFlashingHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>       &lt;meta
+itemprop=”accessibilityHazard” content=”noMotionSimulationHazard”/&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:9.0pt;line-height:115%;font-family:"Courier New"'>&lt;audio
+.../&gt;</span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:9.0pt;
+line-height:115%;font-family:"Courier New"'>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

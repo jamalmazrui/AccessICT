@@ -1,0 +1,2563 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Demystifying Section 508 Final Version</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:19.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2F5496;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:19.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2F5496;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:5.8pt;
+	margin-left:1.85pt;
+	text-indent:-.5pt;
+	line-height:108%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#2F5496;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:#2F5496;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:33.5pt 35.35pt 39.75pt 33.2pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:34.5pt .8pt 7.55pt 35.0pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:.25in 33.95pt 21.1pt 17.0pt;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.75pt'><span style='font-size:48.0pt;line-height:107%;color:#44546A'>DEMYSTIFYING
+SECTION 508 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.65pt;
+margin-left:138.95pt;text-indent:-132.9pt;line-height:92%'><i><span
+style='font-size:28.0pt;line-height:92%;color:#4040AA'>An Industry Guide to</span></i><span
+style='font-size:28.0pt;line-height:92%;font-family:"Times New Roman",serif;
+color:#4040AA'> </span><i><span style='font-size:28.0pt;line-height:92%;
+color:#4040AA'>Understanding Section 508 of the Rehabilitation Act </span></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:9.7pt;
+margin-bottom:56.45pt;margin-left:0in;text-align:center'><i><sup><span
+style='font-size:27.5pt;line-height:107%'> </span></sup></i><span
+style='font-size:18.0pt;line-height:107%;color:#4040AA'>Version 1.0 - November
+2021</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>          <span style='font-size:
+18.0pt;line-height:107%;color:#4040AA'>Developed by NASA to Support
+Government-wide Industry Outreach </span><sup><span style='font-size:27.5pt;
+line-height:107%'>                                                                          </span></sup></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>                                                                                                              <span
+style='font-size:18.0pt;line-height:107%;color:#4040AA'>Efforts                                    </span><sup><span
+style='font-size:27.5pt;line-height:107%'> </span></sup></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:48.05pt;margin-left:1.45in;text-align:center'><span
+style='font-size:18.0pt;line-height:107%'>            </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:95.3pt;
+margin-left:8.85pt;text-indent:.35pt;line-height:99%'><span style='font-size:
+18.0pt;line-height:99%'>This guide serves to increase your awareness and</span><span
+style='font-size:18.0pt;line-height:99%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:18.0pt;line-height:99%'>demystify the process of creating an
+Accessibility Conformance Report (ACR) for your product, regardless of your
+experience level with Section 508</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.25pt;
+margin-bottom:17.85pt;margin-left:0in;text-align:center'><b><span
+style='font-size:20.0pt;line-height:107%;color:#305496'>Authors:</span></b><span
+style='font-size:20.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#305496'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.3pt;
+margin-bottom:0in;margin-left:.5pt;text-align:center;text-indent:-.5pt'><span
+style='font-size:18.0pt;line-height:107%'>Ellen Doll, NASA Intern</span><span
+style='font-size:18.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.25pt;
+margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+18.0pt;line-height:107%'>Aishwarya Krishnakumar, NASA Intern</span><span
+style='font-size:18.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.35pt;
+margin-bottom:0in;margin-left:.5pt;text-align:center;text-indent:-.5pt'><span
+style='font-size:18.0pt;line-height:107%'>Antonio Haileselassie, NASA IT
+Accessibility Specialist</span><span style='font-size:18.0pt;line-height:107%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:3.15pt'><span style='font-size:18.0pt;line-height:107%'>Betsy Sirk,
+NASA Program Manager/Government Industry Outreach Chair</span><span
+style='font-size:18.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:4.05pt;
+margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+36.0pt;line-height:107%;color:#1F3864'>Table of Contents </span></p>
+
+<p class=MsoToc1><a href="#_Toc23389"><span style='color:black;text-decoration:
+none'>QUICK NAVIGATION................................................................................................................................................ </span><span style='color:black;text-decoration:none'>1  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23390"><span style='color:black;text-decoration:
+none'>508 OVERVIEW....................................................................................................................................................... </span><span style='color:black;text-decoration:none'>2  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23391"><span style='color:black;text-decoration:
+none'>INFORMATION </span><span style='font-family:"Times New Roman",serif;
+color:black;text-decoration:none'> </span><span style='color:black;text-decoration:
+none'>AND COMMUNICATION </span><span style='font-family:"Times New Roman",serif;
+color:black;text-decoration:none'> </span><span style='color:black;text-decoration:
+none'>TECHNOLOGY DEFINED............................................................................... </span><span style='color:black;text-decoration:none'>3  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23392"><span style='color:black;text-decoration:
+none'>ACCESSIBILITY CONFORMANCE REPORTS................................................................................................................. </span><span style='color:black;text-decoration:none'>4  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23393"><span style='color:black;text-decoration:
+none'>HOW TO COMPLETE AN ACR................................................................................................................................... </span><span style='color:black;text-decoration:none'>6  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23394"><span style='color:black;text-decoration:
+none'>FREQUENTLY ASKED QUESTIONS........................................................................................................................... </span><span style='color:black;text-decoration:none'>10  </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc23395"><span style='color:black;text-decoration:
+none'>REFERENCES......................................................................................................................................................... </span><span style='color:black;text-decoration:none'>12  </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:8.45pt;
+margin-bottom:0in;margin-left:0in;text-align:center'>i<span style='font-family:
+"Times New Roman",serif'> </span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<h1 align=center style='margin-top:0in;margin-right:36.45pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:center;text-indent:0in'><a
+name="_Toc23389"><span style='font-size:33.0pt;line-height:107%;color:#44546A;
+font-weight:normal'>QUICK NAVIGATION</span></a><span style='font-size:33.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#44546A;font-weight:
+normal'> </span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.3in;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The following set of questions will allow you to find
+all the information you need and nothing you don’t. </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=138 style='width:103.5pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:65.0pt'>
+  <td width=138 style='width:103.5pt;border:solid #EB0000 1.0pt;padding:0in 4.8pt 0in 5.8pt;
+  height:65.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.7pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Jump to </span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:25.9pt;text-indent:-25.9pt'><b><span style='font-size:12.0pt;
+  line-height:107%'>'How to Complete an ACR'</span></b><span style='font-size:
+  12.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:45.4pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Are
+you familiar with Section 508? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:45.4pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>Yes</span></b><span style='font-family:
+"Arial",sans-serif'>, go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:45.4pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No</span></u></b><u><span
+style='font-family:"Arial",sans-serif'>, take me to the part about Section 508</span></u><span
+style='font-family:"Arial",sans-serif'>  </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=105 style='width:78.5pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:58.65pt'>
+  <td width=105 style='width:78.5pt;border:solid #EB0000 1.0pt;padding:0in 0in 0in 1.4pt;
+  height:58.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.5pt;
+  margin-bottom:2.8pt;margin-left:0in;text-align:center'><b><span
+  style='font-size:10.0pt;line-height:107%'>Jump to</span></b><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><b><span style='font-size:10.0pt;line-height:107%'>'Frequently
+  Asked </span></b></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:10.0pt;line-height:107%'>Questions'</span></b><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:34.35pt;
+margin-bottom:0in;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Do you
+want to know how  </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:34.35pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Section
+508 exceptions are granted? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:34.35pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>No, </span></b><span style='font-family:
+"Arial",sans-serif'>go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:34.35pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>Yes, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about Exceptions</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Are
+you familiar with the acronym ICT? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>Yes, </span></b><span style='font-family:
+"Arial",sans-serif'>go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about ICT</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:59.05pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Do you
+know what an ACR is? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>Yes, </span></b><span style='font-family:
+"Arial",sans-serif'>go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about ACRs</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.1pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Do you
+know what a VPAT® is? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>Yes, </span></b><span style='font-family:
+"Arial",sans-serif'>go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about the VPAT</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Are
+you familiar with the acronym WCAG? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:6.0pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-family:"Arial",sans-serif'>Yes, </span></b><span style='font-family:
+"Arial",sans-serif'>go to next question </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about the WCAG</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.85pt;
+margin-bottom:3.7pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif'>Do you
+want some tips on how to complete an ACR? </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:5.75pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>No, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>go to the FAQ</span></u><span
+style='font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:61.15pt;
+margin-bottom:28.25pt;margin-left:27.3pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><b><u><span style='font-family:"Arial",sans-serif'>Yes, </span></u></b><u><span
+style='font-family:"Arial",sans-serif'>take me to the part about Completing an
+ACR</span></u><span style='font-family:"Arial",sans-serif'> </span></p>
+
+<h1 align=center style='margin-top:0in;margin-right:44.55pt;margin-bottom:0in;
+margin-left:54.5pt;margin-bottom:.0001pt;text-align:center;text-indent:-54.5pt'><a
+name="_Toc23390"><span style='font-size:33.0pt;line-height:107%;color:#44546A;
+font-weight:normal'>508<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:33.0pt;line-height:107%;color:#44546A;font-weight:normal'>OVERVIEW</span></a><span
+style='font-size:33.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A;font-weight:normal'> </span></h1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=304 style='width:228.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.0pt'>
+  <td width=304 valign=top style='width:228.0pt;border:solid #EB0000 1.0pt;
+  padding:5.25pt 5.75pt 0in 5.75pt;height:21.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#44546A'>ClickHereToReturntoQuickNavigation</span><span
+  style='font-size:12.0pt;line-height:107%'>                                                      </span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What is Section 508? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.65pt;margin-bottom:
+6.45pt;margin-left:1.2pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The Rehabilitation Act of 1973 was
+amended by Congress in 1998 to “require Federal agencies to make their  electronic
+and information technology (EIT) accessible to people with disabilities.”<sup>1</sup>
+<sup> </sup>This amendment, known as Section 508, “applies to all Federal
+agencies when they develop, procure, maintain, or use electronic and
+information technology.”<sup>1</sup> <sup> </sup>Under this amendment, Federal
+agencies must make technology accessible to its employees and members of the
+public who have disabilities in a comparable manner to those without
+disabilities. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:10.7pt;margin-bottom:
+12.35pt;margin-left:1.2pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The original Section 508 Standards
+were issued in 2001. To keep up with the changing technology, the U.S. Access
+Board published the Revised Section 508 standards in 2017, which went into
+effect on January 18, 2018. These standards were updated to make the previous
+requirements more understandable while enhancing the accessibility to
+technology. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>Why is Section 508</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>Important? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:.75pt;text-indent:-.45pt;line-height:103%'><span style='position:
+relative;z-index:251658240'><span style='left:0px;position:absolute;left:638px;
+top:-25px;width:129px;height:159px'><img width=129 height=159
+src="Demystifying%20Section%20508_files/image001.gif"></span></span><span
+style='font-size:12.0pt;line-height:103%'>Imagine not being able to understand
+important information on a flyer, or not being able to        </span><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>15%</span></i></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#222A35'> </span><b><i><span style='font-size:12.0pt;line-height:103%'> </span></i></b><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>of</span></i></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#222A35'> </span><b><i><span style='font-size:12.0pt;line-height:103%'> </span></i></b><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>the </span></i></b><span
+style='font-size:12.0pt;line-height:103%'>access an entire portion of a website
+solely because of a disability you have. Approximately 61    </span><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>world’s </span></i></b><span
+style='font-size:12.0pt;line-height:103%'>million adults<sup>2 </sup> in the
+United States have some type of disability. This number is only increasing as              </span><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>population </span></i></b><span
+style='font-size:12.0pt;line-height:103%'>the population ages and develops
+disabilities. In addition to the aging population, disabilities can            </span><b><i><span
+style='font-size:12.0pt;line-height:103%;color:#222A35'>experience</span></i></b><b><i><span
+style='font-size:12.0pt;line-height:103%'> </span></i></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#222A35'> </span><b><i><span style='font-size:12.0pt;line-height:103%;
+color:#222A35'>some </span></i></b><span style='font-size:12.0pt;line-height:
+103%'>happen to anyone, at any time, and it is imperative that every person,
+non-disabled or disabled,      </span><b><i><span style='font-size:12.0pt;
+line-height:103%;color:#222A35'>form of </span></i></b><span style='font-size:
+12.0pt;line-height:103%'>can have equal access to technology to continue to
+perform their jobs and daily tasks.       </span><b><i><span style='font-size:
+12.0pt;line-height:103%;color:#222A35'>disability</span></i></b><b><i><sup><span
+style='font-size:18.5pt;line-height:103%;color:#222A35'>3</span></sup></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:97.5pt;margin-bottom:
+14.15pt;margin-left:.75pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>Creating accessible technology is not
+only a recommendation but a necessity. Our world is  moving towards full
+accessibility, and Section 508 helps achieve this for the U.S. Federal                                                             government.
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>Benefits of Section</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>508 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.5pt;
+margin-left:1.8pt;text-indent:-.5pt;line-height:102%'><b><span
+style='font-size:12.0pt;line-height:102%'>Who does</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> Section </span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>508</span></b><span style='font-size:
+12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> help? Everyone! </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.5pt;margin-bottom:
+5.3pt;margin-left:1.75pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>Accessible technology benefits
+everyone. Here are some examples of how you may have benefited from accessible
+technology features in the past without even noticing: </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:34.95pt;margin-bottom:
+.25pt;margin-left:36.25pt;text-indent:-.25in;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:101%'>Color</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'> Contrast</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:101%'> benefits not only those with
+low-vision or color deficiencies, but also elderly people and those in
+different lighting environments. For example, viewing an electronic article in
+the sunlight may cause a glare on your screen, making it difficult to read things
+with low color contrast.</span><span style='font-size:12.0pt;line-height:101%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:50.5pt;
+line-height:101%;font-family:"Arial",sans-serif;background:#EAF2FA'>._______I</span>good
+color contrast. <span style='font-size:50.5pt;line-height:101%;font-family:
+"Arial",sans-serif'> </span><span style='font-size:34.0pt;line-height:101%;
+font-family:"Arial",sans-serif;background:#FFD966'>..___I_______,</span><span
+style='color:#70AD47'>bad color contrast. </span><span style='font-size:34.0pt;
+line-height:101%;font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:28.6pt;line-height:108%'>                                                        This
+is an example of                 <span style='color:#70AD47'>This is an example
+of</span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:34.95pt;margin-bottom:
+.25pt;margin-left:36.25pt;text-indent:-.25in;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:101%'>Closed </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>Captioning (CC)</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:101%'> for videos helps people who are deaf
+or hard of hearing and others</span><span style='font-size:12.0pt;line-height:
+101%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:101%'>who  are viewing the video in a loud environment, for
+example.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:34.95pt;margin-bottom:
+1.4pt;margin-left:36.25pt;text-indent:-.25in;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:101%'>Keyboard-only navigation</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:101%'> does not only help people with motor
+impairments and those who use screen-readers. It also benefits users who may be
+injured or whose mouse/trackpad doesn’t work </span><span style='font-size:
+12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:101%'>on their laptop.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:34.95pt;margin-bottom:
+.25pt;margin-left:36.25pt;text-indent:-.25in;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:101%'>Large target </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>sizes</span></b><span
+style='font-size:12.0pt;line-height:101%'> </span><span style='font-size:12.0pt;
+line-height:101%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:101%'>not only help people with motor
+impairments but also makes it easier to click buttons for people who are using
+their mobile </span><span style='font-size:12.0pt;line-height:101%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+101%'>devices, </span><span style='font-size:12.0pt;line-height:101%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:101%'>for example.</span><span style='font-size:12.0pt;line-height:
+101%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:227.7pt;margin-bottom:
+0in;margin-left:105.7pt;text-indent:-14.35pt;line-height:110%'><span
+style='position:relative;z-index:-1895824384'><span style='left:0px;position:
+absolute;left:126px;top:-14px;width:153px;height:76px'><img width=153
+height=76 src="Demystifying%20Section%20508_files/image002.gif"></span></span><span
+style='position:relative;z-index:-1895823360'><span style='left:0px;position:
+absolute;left:334px;top:-15px;width:154px;height:76px'><img width=154
+height=76 src="Demystifying%20Section%20508_files/image003.gif"></span></span><span
+style='font-size:72.0pt;line-height:110%;font-family:"Arial",sans-serif'>I </span><span
+style='font-size:10.0pt;line-height:110%'>of having a large </span><span
+style='font-size:55.5pt;line-height:110%;font-family:"Arial",sans-serif'>®I </span><span
+style='font-size:10.0pt;line-height:110%'>of having a small This is an example      This
+is an example </span></p>
+
+<p class=MsoNormal style='margin-bottom:17.4pt;line-height:110%'>                                               <span
+style='font-size:10.0pt;line-height:110%'>target size.                                                  target
+size. </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:35.05pt;
+margin-bottom:3.75pt;margin-left:.5pt;text-align:center;text-indent:-.5pt'>2 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What’s</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>the difference between the</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>Americans with Disabilities Act (ADA)</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>and</span><span style='font-size:18.0pt;
+line-height:104%'> </span><span style='font-size:18.0pt;line-height:104%;
+color:#1F3864'>the Rehabilitation</span><span style='font-size:18.0pt;
+line-height:104%'> </span><span style='font-size:18.0pt;line-height:104%;
+color:#1F3864'>Act?</span><span style='font-size:18.0pt;line-height:104%'> </span><span
+style='font-size:18.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+25.3pt;margin-left:1.4pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The Americans with Disabilities Act
+(ADA) states that all areas of public life, including technology, and the  areas
+of private life which are open to the general public, must be accessible for
+people with disabilities. While both the ADA and the Rehabilitation Act were
+created to prohibit discrimination, the Rehabilitation Act applies only to
+Federal agencies and departments, while the ADA applies to local and state
+governments, nonprofits, and businesses.     </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>My company</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>currently</span><span style='font-size:18.0pt;
+line-height:104%'> </span><span style='font-size:18.0pt;line-height:104%;
+color:#1F3864'>does not sell products</span><span style='font-size:18.0pt;
+line-height:104%'> </span><span style='font-size:18.0pt;line-height:104%;
+color:#1F3864'>to the Federal government. Does Section 508 still apply to</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>the products</span><span style='font-size:18.0pt;
+line-height:104%'> </span><span style='font-size:18.0pt;line-height:104%;
+color:#1F3864'>I sell? </span><span style='font-size:18.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:30.6pt;margin-bottom:
+14.3pt;margin-left:1.45pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>If your company sells, or has plans
+to sell, to the Federal government, then Section 508 does apply. Making sure
+your product is accessible and usable to everyone will add value to your
+products and make them more marketable to a wider range of customers. </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:43.55pt;
+margin-bottom:21.3pt;margin-left:0in;text-align:right'><span style='font-size:
+12.0pt;line-height:107%;color:#1F3864;border:solid #EB0000 2.25pt;padding:0in'>Click
+Here To Return to Quick Navigation</span><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#1F3864;border:solid #EB0000 2.25pt;
+padding:0in'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>Are there waivers or
+exceptions that we can claim? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.85pt;margin-bottom:
+41.3pt;margin-left:2.3pt;line-height:normal'><b><span style='font-size:12.0pt'>There
+are no waivers to Section 508. There are, however, Exceptions provided within
+the law that  Federal agencies and departments may claim based on how the
+product will be used. </span></b><span style='font-size:12.0pt'>These </span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt'>exceptions cannot be claimed by Industry. </span></p>
+
+<h1 style='margin-left:17.45pt;text-indent:0in'><a name="_Toc23391"><span
+style='font-size:33.0pt;line-height:107%;color:#44546A;font-weight:normal'>INFORMATION
+AND COMMUNICATION TECHNOLOGY DEFINED</span></a><span style='font-size:33.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#44546A;font-weight:
+normal'> </span></h1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=304 style='width:228.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.0pt'>
+  <td width=304 valign=top style='width:228.0pt;border:solid #EB0000 1.0pt;
+  padding:6.1pt 5.75pt 0in 5.75pt;height:21.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:3.45pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Click</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>Here</span><span style='font-size:
+  12.0pt;line-height:107%'> </span><span style='font-size:12.0pt;line-height:
+  107%;color:#44546A'>To</span><span style='font-size:12.0pt;line-height:107%'>
+  </span><span style='font-size:12.0pt;line-height:107%;color:#44546A'>Return</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>to</span><span style='font-size:12.0pt;
+  line-height:107%'> </span><span style='font-size:12.0pt;line-height:107%;
+  color:#44546A'>Quick</span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Navigation</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+5.35pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What is ICT? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:15.05pt;margin-bottom:
+10.6pt;margin-left:1.8pt;text-indent:-.45pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>The </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>U.S. Access </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Board </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>defines Information and Communication
+Technology (ICT) as any “information technology and other equipment, systems,
+technologies, or processes, for which the principal function is the creation,
+manipulation,</span><span style='font-size:12.0pt;line-height:104%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+104%'> storage,</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> display,</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> receipt,</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> or transmission</span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> of</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> electronic </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>data </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>and </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>information, </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>as </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>well as </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>any associate</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> content.”<sup>4</sup>  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:15.05pt;margin-bottom:
+13.75pt;margin-left:1.8pt;text-indent:-.45pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>Section 508 </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>applies </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>to </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>anything </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>fitting the definition of ICT. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.1pt'><span style='font-size:18.0pt;line-height:107%;color:#1F3864'>Is
+there a difference between ICT and IT?</span><span style='font-size:18.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-left:2.55pt;text-indent:-.45pt;line-height:
+103%'><span style='font-size:12.0pt;line-height:103%'>ICT is the broader term
+that includes Information Technology (IT) and communications technology. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:18.25pt;margin-bottom:
+.8pt;margin-left:2.55pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The U.S. Code states that IT “with
+respect to an executive agency means any equipment or interconnected system or
+subsystem of equipment, used in the automatic acquisition, storage, analysis,
+evaluation, manipulation, management, movement, control, display, switching, interchange,
+transmission, or reception of data or information by the executive agency, if
+the equipment is used by the executive agency directly or is used by a
+contractor under a contract with the executive agency that requires the use—
+(i) of that equipment; or (ii) of that equipment to a significant extent in the
+performance of a service or the furnishing of a product;”<sup>5 </sup></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:31.2pt;margin-bottom:
+9.8pt;margin-left:1.45pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>This includes computers, ancillary
+equipment, peripheral equipment designed to be controlled by the central processing
+unit of a computer, software, firmware, and similar procedures, services, and
+related resources. This does not include any equipment acquired by a federal
+contractor incidental to a federal contract.<sup>5</sup>  <sup> </sup></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:34.65pt;margin-bottom:
+12.3pt;margin-left:1.45pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>Communication technologies such as
+e-mail, social media, and video calls are not considered IT. However, they do
+fall under ICT. The computer device itself would be considered IT until it
+starts incorporating communication methods. </span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>Section 508 applies to ICT, not just
+IT. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:13.0pt'><span style='font-size:16.0pt;line-height:107%;color:#1F3864'>EIT
+vs ICT? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.85pt;
+margin-left:13.5pt;text-indent:-.5pt;line-height:108%'>What used to be referred
+to as<span style='font-family:"Times New Roman",serif'> </span> Electronic and Information
+Technology (EIT) changed <span style='font-family:"Times New Roman",serif'> to </span>Information
+and </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.3pt;margin-bottom:17.25pt;
+margin-left:13.0pt'><span style='position:relative;z-index:-1895822336'><span
+style='left:0px;position:absolute;left:3px;top:-51px;width:767px;height:89px'><img
+width=767 height=89 src="Demystifying%20Section%20508_files/image004.gif"></span></span>Communication
+Technol          ogy (ICT) in the Revised Section 508         Standards to acknowledge
+advances in technology and inclusion of Section 255 of the Communications Act. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What are some less
+common examples of ICT? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:61.05pt;margin-bottom:
+43.45pt;margin-left:2.3pt;line-height:118%'><span style='font-size:12.0pt;
+line-height:118%'>Here are just a few</span><span style='font-size:12.0pt;
+line-height:118%;font-family:"Times New Roman",serif'> </span><sub><span
+style='font-size:18.5pt;line-height:118%'> </span></sub><span style='font-size:
+12.0pt;line-height:118%'>examples of products that you wouldn't think are</span><sub><span
+style='font-size:18.5pt;line-height:118%'> </span></sub><span style='font-size:
+12.0pt;line-height:118%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:118%'>considered ICT,</span><sub><span
+style='font-size:18.5pt;line-height:118%'> </span></sub><span style='font-size:
+12.0pt;line-height:118%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:118%'>but they actually are: Spectrometers,
+Oscilloscopes,               Peripherals,     </span><span style='font-size:
+12.0pt;line-height:118%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:118%'>Sensors,          Support
+documentation, Robotics, Lasers, Radar, Educational Software, e-Training
+Courses, Electronic microscopes, Software add-ins.</span><span
+style='font-size:12.0pt;line-height:118%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:118%'>If you're unsure whether your product
+is considered ICT, it probably is!</span><span style='font-size:12.0pt;
+line-height:118%;font-family:"Times New Roman",serif'> </span></p>
+
+<h1 style='margin-left:12.65pt;text-indent:0in'><a name="_Toc23392"><span
+style='font-size:33.0pt;line-height:107%;color:#44546A;font-weight:normal'>ACCESSIBILITY
+CONFORMANCE REPORTS</span></a><span style='font-size:33.0pt;line-height:107%;
+font-family:"Times New Roman",serif;color:#44546A;font-weight:normal'> </span></h1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=304 style='width:228.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.0pt'>
+  <td width=304 valign=top style='width:228.0pt;border:solid #EB0000 1.0pt;
+  padding:5.95pt 5.75pt 0in 5.75pt;height:21.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.4pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Click</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Here</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>To</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Return</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>to</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Quick</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Navigation</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+2.1pt;margin-left:4.8pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What is</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>an ACR? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.6pt;
+margin-left:3.65pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>An Accessibility Conformance Report (ACR) is a document
+that provides information regarding the level of accessibility of a product based
+on</span><span style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'>
+</span><span style='font-size:12.0pt;line-height:103%'> the Section 508
+Technical Standards. This report is developed by Industry. </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:3.2pt'><u><span style='font-size:12.0pt;line-height:107%'>Click
+here for a step-by-step tutorial </span></u><u><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif'> </span></u><u><span
+style='font-size:12.0pt;line-height:107%'>on how to complete an ACR.</span></u><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:4.6pt'><span style='font-size:18.0pt;line-height:107%;color:#1F3864'>Are
+there different methods for developing an ACR?</span><span style='font-size:
+18.0pt;line-height:107%;font-family:"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:28.15pt;margin-bottom:
+10.4pt;margin-left:4.6pt;line-height:104%'><span style='font-size:12.0pt;
+line-height:104%'>An ACR may </span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>be completed in various </span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>ways. These </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>include</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> using</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> the</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Voluntary</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Product</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Accessibility </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'>  </span><span
+style='font-size:12.0pt;line-height:104%'> Template</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>(VPAT) provided by                         </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>the</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Information Technology Industry            </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Council to </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>comple    te</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>your</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>own report,                </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>having</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>an independent vendor complete                         it,
+</span><span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>or</span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>using     </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>your</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>own te     mplate</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>or </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>checklist    . Any of these  methods          </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>may</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> be used to produce an ACR, as long
+as                      </span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>all the</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>applicable Section      508 Te chnical Sta ndards             have
+</span><span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>been</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>addressed. </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=304 style='width:228.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.0pt'>
+  <td width=304 valign=top style='width:228.0pt;border:solid #EB0000 1.0pt;
+  padding:5.3pt 5.75pt 0in 5.75pt;height:21.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.5pt;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>Click</span><span style='font-size:
+  12.0pt;line-height:107%'> </span><span style='font-size:12.0pt;line-height:
+  107%;color:#44546A'>Here</span><span style='font-size:12.0pt;line-height:
+  107%'> </span><span style='font-size:12.0pt;line-height:107%;color:#44546A'>To</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>Return</span><span style='font-size:
+  12.0pt;line-height:107%'> </span><span style='font-size:12.0pt;line-height:
+  107%;color:#44546A'>to</span><span style='font-size:12.0pt;line-height:107%'>
+  </span><span style='font-size:12.0pt;line-height:107%;color:#44546A'>Quick</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>Navigation</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+2.1pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What is</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>a VPAT? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:41.4pt;margin-bottom:
+.45pt;margin-left:2.05pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>A Voluntary Product Accessibility
+Template (VPAT) is a template </span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>created by the Information Technology </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:41.4pt;margin-bottom:
+18.9pt;margin-left:2.05pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>Industry </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>(ITI) Council </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>that is used to document a product's
+conformance with Section 508 Technical Standards. Using a VPAT, </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>pronounced &quot;vee-pat&quot;, is
+the most common method used by industry to develop an ACR. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>Is an</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>ACR voluntary? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.35pt;margin-bottom:
+26.6pt;margin-left:2.3pt;line-height:102%'><span style='font-size:12.0pt;
+line-height:102%'>No. This confusion likely comes from the word “Voluntary” in
+the VPAT acronym. While the use of the VPAT is voluntary to generate an ACR,
+the requirement for Federal</span><span style='font-size:12.0pt;line-height:
+102%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:102%'> agencies to obtain ACRs is not voluntary. </span><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:27.75pt;
+margin-bottom:3.75pt;margin-left:.5pt;text-align:center;text-indent:-.5pt'>4 </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=304 style='width:228.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.0pt'>
+  <td width=304 valign=top style='width:228.0pt;border:solid #EB0000 1.0pt;
+  padding:4.95pt 5.75pt 0in 5.75pt;height:21.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Click</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>Here</span><span style='font-size:
+  12.0pt;line-height:107%'> </span><span style='font-size:12.0pt;line-height:
+  107%;color:#44546A'>To</span><span style='font-size:12.0pt;line-height:107%'>
+  </span><span style='font-size:12.0pt;line-height:107%;color:#44546A'>Return</span><span
+  style='font-size:12.0pt;line-height:107%'> </span><span style='font-size:
+  12.0pt;line-height:107%;color:#44546A'>to</span><span style='font-size:12.0pt;
+  line-height:107%'> </span><span style='font-size:12.0pt;line-height:107%;
+  color:#44546A'>Quick</span><span style='font-size:12.0pt;line-height:107%'> </span><span
+  style='font-size:12.0pt;line-height:107%;color:#44546A'>Navigation</span><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#44546A'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.3pt;margin-bottom:
+.6pt;margin-left:.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:18.0pt;line-height:104%;color:#1F3864'>What</span><span
+style='font-size:18.0pt;line-height:104%'> </span><span style='font-size:18.0pt;
+line-height:104%;color:#1F3864'>is WCAG?</span><span style='font-size:18.0pt;
+line-height:104%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:29.15pt;margin-bottom:
+19.4pt;margin-left:2.0pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The Web Content Accessibility
+Guidelines (WCAG), pronounced “wuh-cag”, are international standards that
+require making digital content accessible to users regardless of disability
+status<sup>4</sup>. WCAG </span><span style='font-size:12.0pt;line-height:103%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:103%'>includes a set of testable success criteria that determine
+whether certain features of your product are accessible. WCAG are split </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>into three levels: Level A, </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>Level AA, and Level</span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'> AAA. Each level presents an
+increasingly higher level of accessibility. <b>Section 508 only requires WCAG
+2.0 Levels A and AA guidelines to be met.</b> </span><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.55pt'><span style='font-size:18.0pt;line-height:107%;color:#1F3864'>Does
+WCAG only apply to “web” content? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.25pt;margin-bottom:
+1.05pt;margin-left:2.05pt;text-indent:-.5pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%'>No. Although the 'W' in the acronym
+stands for ‘web’, the</span><span style='font-size:12.0pt;line-height:105%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:105%'> Revised Section 508 Standards include WCAG 2.0 and make it
+applicable to Software, Electronic Content, </span><span style='font-size:12.0pt;
+line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>as well as Web Content. In essence, </span><span
+style='font-size:12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>WCAG 2.0 is applicable to any content
+provided through a user interface. Although WCAG was written for </span><span
+style='font-size:12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>web content only, Section 508 applies
+WCAG to more than web content. For example, </span><span style='font-size:12.0pt;
+line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>Chapter 5 of the Revised Section 508
+Standards states that occurrences of the</span><span style='font-size:12.0pt;
+line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'> word “Web page” or “page” should be </span><span
+style='font-size:12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>replaced with the </span><span
+style='font-size:12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>word </span><span style='font-size:
+12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>“software”. If your product is
+software </span><span style='font-size:12.0pt;line-height:105%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+105%'>or non-web documentation, </span><span style='font-size:12.0pt;
+line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>all WCAG success criteria are
+required in your ACR, if applicable,    </span><span style='font-size:12.0pt;
+line-height:105%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:105%'>except the following four standards:</span><span
+style='font-size:12.0pt;line-height:105%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.25pt;margin-bottom:
+1.05pt;margin-left:26.8pt;text-indent:-16.0pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:105%'>2.4.1 Bypass Blocks (Level A)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.25pt;margin-bottom:
+1.05pt;margin-left:26.8pt;text-indent:-16.0pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:105%'>2.4.5 Multiple Ways (Level AA)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.25pt;margin-bottom:
+1.05pt;margin-left:26.8pt;text-indent:-16.0pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:105%'>3.2.3 Consistent Navigation (Level
+AA)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.25pt;margin-bottom:
+1.05pt;margin-left:26.8pt;text-indent:-16.0pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:105%'>3.2.4 Consistent Identification
+(Level AA)</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<h1 align=center style='margin-left:14.65pt;text-align:center;text-indent:0in'><a
+name="_Toc23393"><span style='font-size:33.0pt;line-height:107%;color:#1F3864;
+font-weight:normal'>HOW TO COMPLETE AN</span></a><span style='font-size:33.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#1F3864;font-weight:
+normal'> </span><span style='font-size:33.0pt;line-height:107%;color:black;
+font-weight:normal'> </span><span style='font-size:33.0pt;line-height:107%;
+color:#1F3864;font-weight:normal'>ACR</span><span style='font-size:33.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#1F3864;font-weight:
+normal'> </span></h1>
+
+<div style='border:solid #EB0000 1.0pt;padding:0in 0in 0in 0in;margin-left:
+0in;margin-right:9.7pt'>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:0in;
+margin-bottom:17.45pt;margin-left:.5pt;text-align:right;text-indent:-.5pt;
+line-height:110%;border:none;padding:0in'><span style='font-size:12.0pt;
+line-height:110%;color:#44546A'>Click</span><span style='font-size:12.0pt;
+line-height:110%'> </span><span style='font-size:12.0pt;line-height:110%;
+color:#44546A'>Here</span><span style='font-size:12.0pt;line-height:110%'> </span><span
+style='font-size:12.0pt;line-height:110%;color:#44546A'>To</span><span
+style='font-size:12.0pt;line-height:110%'> </span><span style='font-size:12.0pt;
+line-height:110%;color:#44546A'>Return</span><span style='font-size:12.0pt;
+line-height:110%'> </span><span style='font-size:12.0pt;line-height:110%;
+color:#44546A'>to</span><span style='font-size:12.0pt;line-height:110%'> </span><span
+style='font-size:12.0pt;line-height:110%;color:#44546A'>Quick</span><span
+style='font-size:12.0pt;line-height:110%'> </span><span style='font-size:12.0pt;
+line-height:110%;color:#44546A'>Navigation</span><span style='font-size:12.0pt;
+line-height:110%;font-family:"Times New Roman",serif;color:#44546A'> </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:26.35pt;line-height:101%'><span
+style='font-size:12.0pt;line-height:101%'>The ACR is a representation of how
+the product meets the applicable Section 508 Technical Standards. The product
+owner/developer must first test the product against those standards in order to
+complete an ACR. The most common way an ACR may be completed is by using the   template
+(VPAT) created by the IT Industry Council (ITI). Although there are other
+possible methods to complete an ACR (</span><u><span style='font-size:12.0pt;
+line-height:101%;color:blue'>click here to review the different methods of</span></u><span
+style='font-size:12.0pt;line-height:101%;color:blue'> <u>completing an ACR</u></span><span
+style='font-size:12.0pt;line-height:101%'>), this part of the guide will walk
+you through how to complete an ACR using the VPAT. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.4pt;
+margin-left:18.3pt'><img width=331 height=241
+src="Demystifying%20Section%20508_files/image005.gif" align=left hspace=12><a
+href="https://www.itic.org/policy/accessibility/vpat"><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864;text-decoration:none'>Step
+1: Download the </span></b></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>VPAT</span></b></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864;text-decoration:none'> </span></b></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.3pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The VPAT is a free template that may be downloaded by
+going to the </span><a href="https://www.itic.org/policy/accessibility/vpat"><span
+style='font-size:12.0pt;line-height:103%;color:blue'>ITI website</span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:103%;color:black;text-decoration:none'>.</span></a><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>On the bottom of this webpage, you will find </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>four editions of the VPAT 2.x Rev:
+EU, INT, 508, and WCAG. If you are selling to the U.S. Federal government, then
+you must use the Revised Section 508 Edition</span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>or the            INT International
+Edition (which includes all Revised Section 508 requirements and additional
+international requirements).</span><span style='font-size:12.0pt;line-height:
+103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:39.5pt;
+margin-left:91.2pt'><span style='font-size:12.0pt;line-height:107%'>  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.1pt'><b><span style='font-size:16.0pt;line-height:107%;
+color:#1F3864'>Step 2:</span></b><span style='font-size:16.0pt;line-height:
+107%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>Complete the</span></b><b><span
+style='font-size:16.0pt;line-height:107%'> </span></b><span style='font-size:
+16.0pt;line-height:107%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>Accessibility
+Conformance Report (ACR) title page</span></b><span style='font-size:16.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:19.25pt;margin-bottom:
+23.1pt;margin-left:18.15pt;line-height:101%'><span style='font-size:12.0pt;
+line-height:101%'>The VPAT begins with several pages of instructions. Please
+read all of the instructions carefully, and remove the instruction pages when
+you submit your final ACR.</span><span style='font-size:12.0pt;line-height:
+101%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-11.35pt;margin-bottom:
+0in;margin-left:16.35pt;text-indent:-.5pt;line-height:103%'><img width=362
+height=277 src="Demystifying%20Section%20508_files/image006.gif" align=left
+hspace=12><span style='font-size:12.0pt;line-height:103%'>Find the page with
+the heading, “[Company] </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-11.35pt;margin-bottom:
+7.95pt;margin-left:16.35pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>Accessibility Conformance Report
+Revised Section </span><a
+href="https://www.itic.org/policy/accessibility/vpat-training"><span
+style='font-size:12.0pt;line-height:103%;color:black;text-decoration:none'>508
+Edition”. As noted in the </span></a><a
+href="https://www.itic.org/policy/accessibility/vpat-training"><span
+style='font-size:12.0pt;line-height:103%;color:blue'>ITI VPAT training</span></a><span
+style='font-size:12.0pt;line-height:103%'> </span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif;color:blue'> </span><a
+href="https://www.itic.org/policy/accessibility/vpat-training"><span
+style='font-size:12.0pt;line-height:103%;color:blue'>videos linked below</span></a><a
+href="https://www.itic.org/policy/accessibility/vpat-training"><span
+style='font-size:12.0pt;line-height:103%;color:black;text-decoration:none'>,
+the following information</span></a><span style='font-size:12.0pt;line-height:
+103%'> must be provided: </span><span style='font-size:12.0pt;line-height:103%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Company name</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Name of your product (and version
+number, if applicable)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Report date (month and year)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Description of the product</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Contact information</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Additional notes (if any)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:37.45pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:103%'>Evaluation methods: Information about
+how </span><span style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>your product was tested (manual,
+automated, both),</span><span style='font-size:12.0pt;line-height:103%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>                 <span
+style='font-size:12.0pt;line-height:107%'>testing tools used, etc.</span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>                                                                     </span><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>Screenshot</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>of</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>page</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>10</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>of</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>the</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>VPAT</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span><i><span style='font-size:9.0pt;line-height:107%'> </span></i><i><span
+style='font-size:9.0pt;line-height:107%;color:#44546A'>2.4</span></i><span
+style='font-size:9.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:19.0pt'><b><span style='font-size:16.0pt;line-height:107%;
+color:#1F3864'>Step 3: Understand the three columns of the VPAT tables</span></b><b><span
+style='font-size:16.0pt;line-height:107%'> </span></b><span style='font-size:
+16.0pt;line-height:107%;font-family:"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.75pt;text-indent:-.5pt'><b><span style='font-size:14.0pt;
+line-height:107%;color:#2F5496'>First</span></b><span style='font-size:14.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#2F5496'> </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><b><span
+style='font-size:14.0pt;line-height:107%;color:#2F5496'>column: “Criteria”</span></b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#2F5496'> </span><b><span style='font-size:14.0pt;line-height:107%'>  </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The first column of the tables states the  criteria to
+be covered by that particular row.  </span></p>
+
+<h2 style='margin-left:18.75pt'>Second column: “Conformance Level”<span
+style='font-family:"Times New Roman",serif;font-weight:normal'> </span><span
+style='color:black'> </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The second column in the tables is labeled conformance
+level. We will cover the nuances between different tables below. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.85pt;
+margin-left:19.5pt;text-indent:-.5pt;line-height:108%'>For the category or
+categories which encompass the product, you must use one of four
+phrases—supports, partially supports, does not support, not applicable— to
+describe the level of conformance.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:55.0pt;text-indent:-.25in;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:103%'>Supports</span></b><span
+style='font-size:12.0pt;line-height:103%'>: The functionality of the product
+has at least one method that meets the criterion without known defects or meets
+with equivalent facilitation.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:55.0pt;text-indent:-.25in;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:103%'>Partially</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Supports</span></b><span
+style='font-size:12.0pt;line-height:103%'>: Some functionality of the product
+does not meet the criterion.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:55.0pt;text-indent:-.25in;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:103%'>Does </span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>Not </span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>Support</span></b><span
+style='font-size:12.0pt;line-height:103%'>: The majority of product
+functionality does not meet the criterion.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.25pt;
+margin-left:55.0pt;text-indent:-.25in;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:12.0pt;line-height:103%'>Not Applicable</span></b><span
+style='font-size:12.0pt;line-height:103%'>: The criterion is not relevant to
+the product.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.3pt;
+margin-left:19.0pt;line-height:101%'><b><span style='font-size:12.0pt;
+line-height:101%'>Note: </span></b><span style='font-size:12.0pt;line-height:
+101%;font-family:"Times New Roman",serif'> </span><b><span style='font-size:
+12.0pt;line-height:101%'>The “not </span></b><span style='font-size:12.0pt;
+line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>evaluated” </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>phrase may  only </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>be used  for </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>the Level </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>AAA </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>table since this </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>is </span></b><span style='font-size:
+12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>the only </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>success </span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>criteria</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'> table</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'> that is</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>no t required to</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>be  completed.</span></b><span
+style='font-size:12.0pt;line-height:101%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:101%'>  </span></b></p>
+
+<h2 style='margin-left:18.75pt'>Third column: “Remarks<span style='font-family:
+"Times New Roman",serif;font-weight:normal'> </span><span style='color:black'> </span>and
+Explanations” </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.8pt;margin-bottom:9.25pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The third column is reserved for remarks, which are
+required if the product either <b>partially </b></span><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>supports</span></b><span
+style='font-size:12.0pt;line-height:103%'> </span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>or <b>does not support</b></span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> </span></b><span style='font-size:
+12.0pt;line-height:103%'>the guideline. If the product <b>supports</b> a
+particular guideline, then no remarks are required </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>but are encouraged. </span></p>
+
+<h2 style='margin-left:19.0pt;text-indent:0in;line-height:95%'><span
+style='font-size:16.0pt;line-height:95%;color:#1F3864'>Step 4:</span><span
+style='font-size:16.0pt;line-height:95%;font-family:"Times New Roman",serif;
+color:#1F3864;font-weight:normal'> </span><span style='font-size:16.0pt;
+line-height:95%;color:black'> </span><span style='font-size:16.0pt;line-height:
+95%;color:#1F3864'>Complete</span><span style='font-size:16.0pt;line-height:
+95%;font-family:"Times New Roman",serif;color:#1F3864;font-weight:normal'> </span><span
+style='font-size:16.0pt;line-height:95%;color:black'> </span><span
+style='font-size:16.0pt;line-height:95%;color:#1F3864'>Table 1: Success
+Criteria Level A and Table 2: Success Criteria Level AA,</span><span
+style='font-size:16.0pt;line-height:95%;color:black'> </span><span
+style='font-size:16.0pt;line-height:95%;font-family:"Times New Roman",serif;
+color:#1F3864;font-weight:normal'> </span><span style='font-size:16.0pt;
+line-height:95%;color:#1F3864'>if</span><span style='font-size:16.0pt;
+line-height:95%;font-family:"Times New Roman",serif;color:#1F3864;font-weight:
+normal'> </span><span style='font-size:16.0pt;line-height:95%;color:black'> </span><span
+style='font-size:16.0pt;line-height:95%;color:#1F3864'>applicable </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.75pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>If your product fits one or more of the following
+categories, then the WCAG 2.0 Standards apply to your product. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:58.05pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:103%'>Web Content</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:58.05pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:103%'>Electronic
+Documents</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:58.05pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:103%'>Software</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.9pt;
+margin-left:58.05pt;text-indent:-.25in;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:103%'>Authoring Tool</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.55pt;
+margin-left:27.95pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>If your product does not fall under
+any of these four categories, you may write “Not Applicable” in the notes
+section for the Success Criteria tables.  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.35pt;
+margin-left:27.95pt;text-indent:-.45pt;line-height:103%'><span
+style='font-size:12.0pt;line-height:103%'>The Success Criteria tables—Level A,
+Level AA, and Level AAA—cover the WCAG success criteria. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.55pt;
+margin-left:27.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>Only Level A and AA are required in an ACR. However,
+if your product does satisfy some (or all) Level AAA success criteria
+guidelines, then it is beneficial to complete that table as well, </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>as it would provide additional
+motivation for Federal agencies to purchase your product and attract a wider
+range of potential customers. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.85pt;
+margin-left:27.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>Below is an example of what these three columns look
+like for the WCAG table:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:45.2pt'><img border=0 width=625 height=89
+src="Demystifying%20Section%20508_files/image007.gif"></p>
+
+<h2 style='margin-left:19.0pt;text-indent:0in;line-height:97%'><span
+style='font-size:16.0pt;line-height:97%;color:#1F3864'>Step 5: Determine the
+applicability of the</span><span style='font-size:16.0pt;line-height:97%;
+font-family:"Times New Roman",serif;color:#1F3864;font-weight:normal'> </span><span
+style='font-size:16.0pt;line-height:97%;color:black'> </span><span
+style='font-size:16.0pt;line-height:97%;color:#1F3864'>Revised</span><span
+style='font-size:16.0pt;line-height:97%;font-family:"Times New Roman",serif;
+color:#1F3864;font-weight:normal'> </span><span style='font-size:16.0pt;
+line-height:97%;color:black'> </span><span style='font-size:16.0pt;line-height:
+97%;color:#1F3864'>Section</span><span style='font-size:16.0pt;line-height:
+97%;font-family:"Times New Roman",serif;color:#1F3864;font-weight:normal'> </span><span
+style='font-size:16.0pt;line-height:97%;color:black'> </span><span
+style='font-size:16.0pt;line-height:97%;color:#1F3864'>508</span><span
+style='font-size:16.0pt;line-height:97%;font-family:"Times New Roman",serif;
+color:#1F3864;font-weight:normal'> </span><span style='font-size:16.0pt;
+line-height:97%;color:black'> </span><span style='font-size:16.0pt;line-height:
+97%;color:#1F3864'>Technical Standards to your product</span><span
+style='font-size:16.0pt;line-height:97%;font-family:"Times New Roman",serif;
+color:#1F3864;font-weight:normal'> </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.95pt;margin-bottom:8.05pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>There are four Revised Section 508 tables, labeled as
+Chapter 3  (Functional Performance Criteria), Chapter 4  (Hardware), Chapter 5  (Software),
+and Chapter 6  (Support Documentation and Services). Complete the applicable
+tables.</span><span style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.95pt;margin-bottom:9.35pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>If there are functions in your product not addressed
+by Chapters 4 or 5, then your product needs to conform to the criteria in
+Chapter 3: Functional Performance Criteria.</span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:303.6pt;margin-bottom:
+8.5pt;margin-left:18.75pt;text-indent:-.5pt;line-height:102%'><b><span
+style='font-size:12.0pt;line-height:102%'>Does</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> your</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> product contain hardware?</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:102%'> Complete Chapter 4: Hardware. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:260.85pt;margin-bottom:
+7.9pt;margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><b><span
+style='font-size:12.0pt;line-height:103%'>Does</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> your</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> product contain non-web software? </span></b><span
+style='font-size:12.0pt;line-height:103%'>Complete Chapter 5: Software. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:170.55pt;margin-bottom:
+7.7pt;margin-left:18.75pt;text-indent:-.5pt;line-height:102%'><b><span
+style='font-size:12.0pt;line-height:102%'>Does</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> your</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'> product contain support
+documentation and services? </span></b><span style='font-size:12.0pt;
+line-height:102%'>Complete Chapter 6: Support Documentation and Services. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:185.2pt;margin-bottom:
+8.0pt;margin-left:18.95pt;line-height:normal'><b><span style='font-size:12.0pt'>If
+your product cannot be evaluated using the current criteria, </span></b><span
+style='font-size:12.0pt'>Complete Chapter 3: Functional Performance Criteria. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.95pt;margin-bottom:9.35pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>For each table, there is a section for notes. Use this
+field to enter comments about overall applicability of the table to your
+product.</span><span style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.6pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>The first column  &quot;Criteria&quot; of the Revised
+Section 508 tables lists the Section 508 Technical Standards. By clicking on
+the links provided in this column, you may access more information about the
+standards on the U.S. Access Board website. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>Below is an example of what these three columns look
+like for the Revised Section 508 table. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:50.8pt'><img border=0 width=624 height=123
+src="Demystifying%20Section%20508_files/image008.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:19.0pt'><b><span style='font-size:16.0pt;line-height:107%;
+color:#1F3864'>Step 6:</span></b><span style='font-size:16.0pt;line-height:
+107%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>Final</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>checklist</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>to</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>make</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>sure</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>your</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>ACR</span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:16.0pt;line-height:107%'> </span></b><b><span
+style='font-size:16.0pt;line-height:107%;color:#1F3864'>is complete </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.35pt;
+margin-left:19.0pt;line-height:104%'><span style='font-size:12.0pt;line-height:
+104%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:104%'>Are you</span></b><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:104%'> using </span></b><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:104%'>the </span></b><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:104%'>correct version?</span></b><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:104%'> </span></b><span style='font-size:
+12.0pt;line-height:104%'>Make</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> sure </span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>you’re</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> using</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> a</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> current</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> version</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> of</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> the</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> VPAT to build your ACR! A current</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> version</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> addresses </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>the</span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Revised</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> Section</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> 508 </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Technical </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Standards (International </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Edition acceptable). The</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> current</span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> version of </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>the </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>VPAT </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>is </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>2.4.  Any </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>VPAT </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>2.x </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>is acceptable. </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>You </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>may </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>find </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>the </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>VPAT on the </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>ITI website at the following link:<b>
+            </b></span><a href="https://www.itic.org/policy/accessibility/vpat"><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black;text-decoration:none'> </span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:104%;color:blue'>https://www.itic.org/policy/accessibility/vpat</span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:104%;color:blue'>.</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>Did</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> you exclude</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> first</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> several</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> pages</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> of instructions?</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> </span></b><span style='font-size:
+12.0pt;line-height:103%'>Delete the instruction</span><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'> pages (up to the heading, “[Company]
+Accessibility Conformance Report Revised Section 508 Edition”) from your
+completed ACR.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>Did</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> you complete</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> information</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> fields</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> at</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> top of the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> ACR?</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'> Make sure you complete all seven
+fields (shown in Step 2), including the product information, contact
+information, and evaluation methods.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.15pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>If</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> applicable,</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> did</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> you complete</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Success Criteria, Level</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>  A</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>and</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Level</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> AA</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> tables?</span></b><span
+style='font-size:12.0pt;line-height:103%'> If your product contains web-based
+content, electronic documents, software, or authoring tools, make sure you
+complete the Level A                                                                     and
+Level AA tables. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.6pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>If applicable,</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> did you</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> complete</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> the</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Chapter</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> 3:</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Functional Performance</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> Criteria</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> table?</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'> </span></b><span style='font-size:
+12.0pt;line-height:103%'>If your product does not contain any applicable
+standards from the Level A and AA tables, then complete the Chapter 3:
+Functional Performance Criteria table.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.35pt;
+margin-left:19.0pt;line-height:122%'><span style='font-size:12.0pt;line-height:
+122%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:122%'>Did</span></b><span style='font-size:
+12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:122%'> you</span></b><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:122%'> skip</span></b><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:122%'> the</span></b><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:122%'> Level AAA tables?</span></b><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:122%'> Section 508 does not require that
+your product be tested against the Level AAA Technical Standards.  However, </span><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:122%'>Industry may provide </span><span
+style='font-size:12.0pt;line-height:122%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:122%'>this information to show a higher
+level of accessibility than required.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:130%'><span style='font-size:
+12.0pt;line-height:130%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:130%'>If applicable     , </span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'>did </span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'>you complete </span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'>the </span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'>tables under the Revised</span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'> Section</span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'> 508 Report section?</span></b><span
+style='font-size:12.0pt;line-height:130%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:130%'> </span></b><span style='font-size:
+12.0pt;line-height:130%'>If your product contains hardware, software, or
+support documentation and services, be sure to complete the            applicable
+Revised Section 508 table.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.75pt;
+margin-left:116.3pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:18.75pt;text-indent:-.5pt;line-height:102%'><span style='font-size:
+12.0pt;line-height:102%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:102%'>Are you</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>using</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>the</span></b><span style='font-size:
+12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>correct</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>phrases</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>to</span></b><span style='font-size:
+12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>describe</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>conformance</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:102%'>levels?</span></b><span
+style='font-size:12.0pt;line-height:102%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:102%'>Check to see if all phrases under </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;
+margin-left:19.45pt;text-indent:54.1pt;line-height:103%'><b><span
+style='font-size:12.0pt;line-height:103%'>                                                                                                 </span></b><span
+style='font-size:12.0pt;line-height:103%'>conformance level match one of the
+following: Supports, Partially Supports, Does Not Support, Not Applicable.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.65pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>Did</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>you complete</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>the</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>remarks</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>column?</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>If the conformance level is either
+“Partially Supports” or “Does Not Support,” then be sure that you explain
+further in the respective remarks column.</span><b><sup><span style='font-size:
+18.5pt;line-height:103%'>                                                      </span></sup></b><sup><span
+style='font-size:18.5pt;line-height:103%'>             </span></sup></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:19.9pt;text-indent:-.45pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%;font-family:"Segoe UI Symbol",sans-serif'>&#9744; </span><b><span
+style='font-size:12.0pt;line-height:103%'>Is</span></b><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>your</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>ACR document</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><b><span
+style='font-size:12.0pt;line-height:103%'>accessible?</span></b><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>Make sure to check your final ACR for
+accessibility and remediate as necessary!<b>                                </b>                         </span></p>
+
+<h1 align=center style='margin-left:20.45pt;text-align:center;text-indent:0in'><a
+name="_Toc23394"><span style='font-size:33.0pt;line-height:107%;color:#44546A;
+font-weight:normal'>FREQUENTLY ASKED QUESTIONS</span></a><span
+style='font-size:33.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#44546A;font-weight:normal'> </span></h1>
+
+<div style='border:solid #EB0000 1.0pt;padding:0in 0in 0in 0in;margin-left:
+0in;margin-right:2.7pt'>
+
+<p class=MsoNormal align=right style='margin-bottom:23.15pt;text-align:right;
+line-height:110%;border:none;padding:0in'><span style='font-size:12.0pt;
+line-height:110%;color:#44546A'>ClickHereToReturntoQuickNavigation</span><span
+style='font-size:12.0pt;line-height:110%'>                                                                                                                     </span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman",serif;
+color:#44546A'> </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.45pt;margin-bottom:
+.65pt;margin-left:18.9pt;text-indent:-.5pt;line-height:103%'><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>How</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>do</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>I</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>determine</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>if</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>my</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>product</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>is</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>compliant</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>with</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>Section</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>508?</span></b><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><span style='font-size:
+14.0pt;line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+11.05pt;margin-left:18.9pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>Industry is expected to test its
+products against the applicable Section 508 Technical Standards and then
+reports </span><span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>which standards the product supports,
+partially</span><span style='font-size:12.0pt;line-height:104%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+104%'> supports,</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'> or does not support</span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'> so that the U.S. Federal government
+may consider purchasing the product. This information is provided by Industry
+in an Accessibility Conformance Report (ACR). If the product supports all of
+the applicable Section 508 Technical Standards, the product is considered
+compliant with Section 508.</span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:1.7pt'>         <b><span
+style='font-size:14.0pt;line-height:107%;color:#1F3864'>How do I know which
+version of the VPAT to use? </span></b><b><span style='font-size:14.0pt;
+line-height:107%'>                                                                                                                                  </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+14.3pt;margin-left:18.9pt;text-indent:-.5pt;line-height:125%'><span
+style='font-size:12.0pt;line-height:125%'>The</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> Information</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> Technology</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> Industry</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> Council</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> developed</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> a</span><span style='font-size:12.0pt;
+line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> template</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> called</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> “VPAT”</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> which</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> includes</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> all</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> relevant Section 508 T  echnical </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>Standards      </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>required        </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>by </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>Revised            </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>Section      </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>508 </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>rule </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>(2017).       </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>ITI </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>has</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>several </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'>          </span><span
+style='font-size:12.0pt;line-height:125%'> templates       </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>that</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>apply</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> internat     ionally       . </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>Be</span><span style='font-size:12.0pt;
+line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> sure</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>to </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>use</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>VPAT </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>tha t includes</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>Revised Se                 ction </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>508</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'>        </span><span
+style='font-size:12.0pt;line-height:125%'> Standards</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>(Rev508</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>or Re        vIN T Version 2.x)        .</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>For</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>most             </span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>recent </span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>versi   on</span><span
+style='font-size:12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'> of</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>VPAT,</span><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>go</span><span style='font-size:12.0pt;
+line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>to</span><span style='font-size:12.0pt;
+line-height:125%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:125%'>the</span><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif;color:black;
+text-decoration:none'> </span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:125%;color:blue'>ITI</span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:125%;color:blue'> website</span></a><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:125%;font-family:"Times New Roman",serif;color:black;
+text-decoration:none'>.</span></a><span style='font-size:12.0pt;line-height:
+125%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.45pt;margin-bottom:
+.65pt;margin-left:18.9pt;text-indent:-.5pt;line-height:103%'><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>I have</span></b><span
+style='font-size:14.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>not completed a
+VPAT/ACR before. Why</span></b><b><span style='font-size:14.0pt;line-height:
+103%'> </span></b><span style='font-size:14.0pt;line-height:103%;font-family:
+"Times New Roman",serif;color:#1F3864'> </span><b><span style='font-size:14.0pt;
+line-height:103%;color:#1F3864'>am I being required to complete it now? Isn’t
+the VPAT voluntary? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+.5pt;margin-left:18.9pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>The U.S. Federal government must buy
+Information and Communication Technology (ICT) that is accessible </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+8.35pt;margin-left:18.9pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>per Section 508 of the Rehabilitation
+Act. The government asks Industry to submit an Accessibility Conformance Report
+so that the accessibility of a product may be evaluated. Without the ACR, the
+government may not proceed with the purchase unless there is a special use case
+exception that the government -- never Industry – may claim in which the ACR
+will not be required. You are being asked to complete the ACR so that your
+product may be considered for purchase. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:11.9pt;margin-bottom:
+12.55pt;margin-left:18.5pt;text-align:justify;text-justify:inter-ideograph;
+line-height:100%'><span style='font-size:12.0pt;line-height:100%'>There are
+several methods for completing an ACR. The VPAT, which is a template </span><span
+style='font-size:12.0pt;line-height:100%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:100%'>developed by the IT Industry Council
+(ITI), is the most common method for completing an ACR since it provides all
+the relevant Section 508 Technical Standards and instructions on how to
+complete a report in one tool. While the use of the VPAT itself is not
+required, it is not voluntary to complete an ACR if you wish the government to
+consider purchasing your product.</span><span style='font-size:12.0pt;
+line-height:100%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.45pt;margin-bottom:
+.65pt;margin-left:18.9pt;text-indent:-.5pt;line-height:103%'><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>My company created an
+ACR for a product years ago. May</span></b><span style='font-size:14.0pt;
+line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>I use that same ACR
+today? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.1pt;margin-bottom:16.75pt;
+margin-left:18.5pt;line-height:110%'><span style='font-size:12.0pt;line-height:
+110%'>Every time your product is changed or updated (e.g. version change, bug
+fix, etc.), an updated ACR </span><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:110%'>is required </span><span style='font-size:12.0pt;line-height:
+110%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:110%'>that addresses any changes in the product's accessibility. </span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:110%'>Also, if you created an ACR using the
+Original </span><span style='font-size:12.0pt;line-height:110%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+110%'>Section 508 Standards from 2001, you must update your report </span><span
+style='font-size:12.0pt;line-height:110%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:110%'>using the Revised Section 508
+Standards </span><span style='font-size:12.0pt;line-height:110%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+110%'>published in 2017</span><span style='font-size:12.0pt;line-height:110%;
+font-family:"Times New Roman",serif'>. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:18.5pt;line-height:103%'><b><span style='font-size:14.0pt;
+line-height:103%;color:#1F3864'>Should I</span></b><span style='font-size:14.0pt;
+line-height:103%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>complete</span></b><span
+style='font-size:14.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>an ACR if</span></b><span
+style='font-size:14.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>my product is not fully</span></b><span
+style='font-size:14.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:103%'> </span></b><b><span
+style='font-size:14.0pt;line-height:103%;color:#1F3864'>accessible? How can
+having a completed ACR for my product benefit my company?</span></b><span
+style='font-size:14.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+21.7pt;margin-left:18.9pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>Yes. Completing an ACR is a win-win
+situation for </span><span style='font-size:12.0pt;line-height:104%;font-family:
+"Times New Roman",serif'> </span><span style='font-size:12.0pt;line-height:
+104%'>Industry and the government. When Industry develops </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>an ACR, it opens the door for the
+Federal government to purchase your product. </span><span style='font-size:
+12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Your ACR shows customers that your
+company takes accessibility seriously. Even if the ACR shows that not all the
+applicable Section 508 Technical Standards have been met, it allows your
+product to be evaluated against comparable products for accessibility. If you
+have an ACR and a competitor’s product doesn’t, you will always be the most
+conformant with the Section 508 standards. </span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>Completing an ACR </span><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:104%'>raises your awareness of your
+product's accessibility and </span><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif'> </span><span style='font-size:12.0pt;
+line-height:104%'>allows you to take steps to make your product more accessible
+and reach a broader customer base.</span><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:31.45pt;text-align:center'> <span
+style='font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:.25pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>My product is not
+web-based. Do the WCAG 2.0 (Web Content Accessibility Guidelines) apply to my
+product?</span></b><span style='font-size:14.0pt;line-height:104%;font-family:
+"Times New Roman",serif;color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:11.15pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>In the Revised Section 508 Technical Standards,
+electronic content and software are required to conform to WCAG 2.0 Level A and
+Level AA Success Criteria and Conformance Requirements. While the WCAG </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>obviously apply to web products, they
+also </span><span style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>apply to <b>all </b>electronic
+content and software. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:.25pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>My product has support
+documentation, hardware, and a mobile application. Do I need to complete</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>three</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>separate</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>ACRs? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:9.4pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>No, you may complete one ACR</span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'> that addresses </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>all the relevant standards and
+criteria that match the functionality of your product. You may provide separate
+ACRs, if you desire. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:.25pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>My</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>product is an add-on
+for an existing product from a separate company. Am I responsible for</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>completing</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>the</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>ACR</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>for</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>my</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>product,</span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><span style='font-size:
+14.0pt;line-height:104%;font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>or</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>will the</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>other</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>company</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>create</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>the</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>ACR? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:11.15pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>You are responsible for completing an ACR for the
+product you developed. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:.25pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>My product does not
+conform to all the relevant Section 508 Technical Standards. Will this </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:227.2pt;margin-bottom:
+.25pt;margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>prevent   </span></b><b><span
+style='font-size:14.0pt;line-height:104%'> </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>the Federal government
+from purchasing my</span></b><span style='font-size:14.0pt;line-height:104%;
+font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>product?</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:1.9pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>No. Your product will be still be considered for
+purchase even if all of the Section 508 Technical Standards are not met. Your
+product will be compared to other comparable commercially available products. </span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'>  </span><span
+style='font-size:12.0pt;line-height:103%'>The product that is most accessible
+and meets customer requirements may be purchased.</span><span style='font-size:
+12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:.6pt;margin-left:60.6pt;text-align:center'><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.95pt'><b><span style='font-size:14.0pt;line-height:107%;
+color:#1F3864'>What do I enter under the columns “Conformance</span></b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:107%;
+color:#1F3864'>Level” and &quot;Remarks and Explanations&quot;? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.2pt;margin-bottom:12.8pt;
+margin-left:19.45pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.5pt;line-height:104%'><span style='font-size:12.0pt;line-height:104%'>In the
+Conformance Level column, you enter terms to describe to what extent your
+product meets a specific standard. Conformance Level terms are: Supports,
+Partially Supports, Does Not Support, or Not Applicable. If your product
+Partially Supports or Does Not Support the standard, you should provide a
+comment in the Remarks and Explanations column that indicates how the standard
+is not met/fully met.</span><span style='font-size:12.0pt;line-height:104%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:1.45pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>My product contains
+both software and support documentation. Which sections of the VPAT </span></b><b><span
+style='font-size:14.0pt;line-height:104%'>        </span></b><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>do I need</span></b><span
+style='font-size:14.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#1F3864'> </span><b><span style='font-size:14.0pt;line-height:104%;
+color:#1F3864'>to</span></b><span style='font-size:14.0pt;line-height:104%;
+font-family:"Times New Roman",serif;color:#1F3864'> </span><b><span
+style='font-size:14.0pt;line-height:104%;color:#1F3864'>complete? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:8.0pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>If your product contains software, there are two sets
+of Section 508 Technical Standards within the report that you must complete: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.2pt;margin-bottom:.4pt;
+margin-left:44.85pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.0pt;line-height:104%'><span style='font-size:12.0pt;line-height:104%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>WCAG 2.0, Table
+1: Success Criteria Level A </span><sub><span style='font-size:18.5pt;
+line-height:104%'> </span></sub><span style='font-size:12.0pt;line-height:104%'>and
+Table 2: Success Criteria Level AA.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.2pt;margin-bottom:.4pt;
+margin-left:44.85pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.0pt;line-height:104%'><span style='font-size:12.0pt;line-height:104%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>Revised </span><sub><span
+style='font-size:18.5pt;line-height:104%'> </span></sub><span style='font-size:
+12.0pt;line-height:104%'>Section 508, Chapter 5: Software.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:11.15pt;
+margin-left:18.7pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+12.0pt;line-height:103%'>For electronic support documentation, complete</span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>the Revised Section 508, Chapter 6:
+Support Documentation and Services</span><span style='font-size:12.0pt;
+line-height:103%;font-family:"Times New Roman",serif'> </span><span
+style='font-size:12.0pt;line-height:103%'>section.</span><span
+style='font-size:12.0pt;line-height:103%;font-family:"Times New Roman",serif'> </span></p>
+
+<h1 align=center style='margin-left:19.65pt;text-align:center;text-indent:0in'><a
+name="_Toc23395"><span style='font-size:33.0pt;line-height:107%;color:#44546A;
+font-weight:normal'>REFERENCES</span></a><span style='font-size:33.0pt;
+line-height:107%;font-family:"Times New Roman",serif;color:#44546A;font-weight:
+normal'> </span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>“IT Accessibility
+Laws and Policies.” IT Accessibility Laws and Policies | </span><a
+href="https://Section508.Gov/"><span style='font-size:12.0pt;line-height:104%;
+color:black;text-decoration:none'>Section508.Gov</span></a><span
+style='font-size:12.0pt;line-height:104%'>, July 2020, </span><a
+href="http://www.section508.gov/manage/laws-and-policies"><span
+style='font-size:12.0pt;line-height:104%;color:black;text-decoration:none'>www.section508.gov/manage/laws-and-policies</span></a><span
+style='font-size:12.0pt;line-height:104%'>.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>“Disability
+Impacts All of Us Infographic.” <i>Centers for Disease Control and Prevention</i>,
+Centers for Disease Control and Prevention, 16 Sept. 2020,</span><a
+href="http://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability"><span
+style='font-size:12.0pt;line-height:104%;color:black;text-decoration:none'>
+www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability</span></a><span
+style='font-size:12.0pt;line-height:104%'>impacts-all.html.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>“Disability and
+Health.” <i>World Health Organization</i>, World Health Organization, 1 Dec.
+2020, </span><a
+href="http://www.who.int/news-room/fact-sheets/detail/disability-and-health"><span
+style='font-size:12.0pt;line-height:104%;color:black;text-decoration:none'>www.who.int/news-room/fact-sheets/detail/disability-and-health.</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>“U.S. Access
+Board.” <i>Revised 508 Standards and 255 Guidelines</i>, </span><a
+href="http://www.access-board.gov/ict/#C103.4"><span style='font-size:12.0pt;
+line-height:104%;color:black;text-decoration:none'>www.access-board.gov/ict/#C103.4.</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>“40 U.S.C.
+11101(6).” </span><a
+href="https://Www.govinfo.gov/Content/Pkg/USCODE-2016-title40/Pdf/USCODE-2016"><span
+style='font-size:12.0pt;line-height:104%;color:black;text-decoration:none'>Https://Www.govinfo.gov/Content/Pkg/USCODE-2016-title40/Pdf/USCODE-2016</span></a><span
+style='font-size:12.0pt;line-height:104%'>title40-SubtitleIII-chap111-sec11101.Pdf.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%'>Web Content
+Accessibility Guidelines (WCAG) 2.0,</span><a href="http://www.w3.org/TR/WCAG20"><span
+style='font-size:12.0pt;line-height:104%;color:black;text-decoration:none'>
+www.w3.org/TR/WCAG20/</span></a><span style='font-size:12.0pt;line-height:104%'>.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:54.2pt;text-indent:-17.9pt;line-height:98%'><span style='font-size:
+12.0pt;line-height:98%'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:98%'>Information
+Technology Industry Council Training Videos, </span><a
+href="https://www.itic.org/policy/accessibility/vpat"><span style='font-size:
+12.0pt;line-height:98%;color:black;text-decoration:none'>https://www.itic.org/policy/accessibility/vpat</span></a><span
+style='font-size:12.0pt;line-height:98%'>training.</span></p>
+
+</div>
+
+</body>
+
+</html>
