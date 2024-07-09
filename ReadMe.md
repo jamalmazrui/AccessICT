@@ -2,7 +2,9 @@
 
 by Jamal Mazrui
 
-This is a curated collection of free documents that provide guidance on accessible information and communication technology (ICT) and related topics. Over 100 documents are included on the following topics:
+This is a curated collection of free documents that provide guidance on accessible information and communication technology (ICT) and related topics. The documents are in .docx, .epub, or .pdf format. For better accessibility, conversions to HTML are also included (files with the same name except for a .htm extension).
+
+Over 100 documents are included on the following topics:
 
 - Android apps
 - disability etiquette
@@ -27,4 +29,4 @@ This is a curated collection of free documents that provide guidance on accessib
 
 The whole collection may be downloaded in a zip archive from the following address:
 
-<http://GitHub.com/JamalMazrui/AccessICT/archive/AccessICT-main.zip>
+<http://GitHub.com/JamalMazrui/AccessICT/archive/master.zip>
