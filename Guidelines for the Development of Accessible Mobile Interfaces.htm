@@ -1,0 +1,832 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Guidelines for developing accessible mobile interfaces</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:54.7pt;
+	margin-bottom:11.5pt;
+	margin-left:18.5pt;
+	text-indent:-18.5pt;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:1.0pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	page-break-after:avoid;
+	font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:1.0pt;
+	margin-bottom:0in;
+	margin-left:1.25pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:1.2pt;
+	margin-bottom:0in;
+	margin-left:11.9pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:35.75pt 70.85pt 35.45pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:76.0pt 127.65pt 82.2pt 70.85pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:76.0pt 128.1pt 235.85pt 70.85pt;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:141.55pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:226.75pt;
+margin-left:-.3pt;text-indent:0in;line-height:107%'><img width=604 height=348
+src="Guidelines%20for%20the%20Development%20of%20Accessible%20Mobile%20Interfaces_files/image001.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:53.4pt;
+margin-left:265.1pt;text-indent:0in;line-height:107%'><img width=243 height=50
+id="Group 7806"
+src="Guidelines%20for%20the%20Development%20of%20Accessible%20Mobile%20Interfaces_files/image002.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:107%'><span style='font-size:
+10.0pt;line-height:107%'>| Funka Nu AB | Döbelnsgatan 21, SE-111 40 Stockholm |
++46-8-555 770 60 | info@funkanu.se | </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-size:10.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><b><span
+style='font-size:22.0pt;line-height:104%'>Contents </span></b></p>
+
+<p class=MsoToc1><a href="#_Toc9424"><span style='color:black;text-decoration:
+none'>Introduction................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9425"><span style='color:black;text-decoration:
+none'>About the guidelines................................................................................................................. </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc9426"><span style='color:black;text-decoration:
+none'>Guidelines for the development of accessible mobile interfaces....................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9427"><span style='color:black;text-decoration:
+none'>Choice of solution..................................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9428"><span style='color:black;text-decoration:
+none'>Design...................................................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9429"><span style='color:black;text-decoration:
+none'>Layout and design..................................................................................................................... </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9430"><span style='color:black;text-decoration:
+none'>Interaction................................................................................................................................ </span><span style='color:black;text-decoration:none'>8 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9431"><span style='color:black;text-decoration:
+none'>Content..................................................................................................................................... </span><span style='color:black;text-decoration:none'>9 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc9432"><span style='color:black;text-decoration:
+none'>User settings........................................................................................................................... </span><span style='color:black;text-decoration:none'>10 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc9433"><span style='color:black;text-decoration:
+none'>Funka Nu AB................................................................................................. </span><span style='color:black;text-decoration:none'>11 </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span></b><br
+clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc9424">Introduction </a></h1>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in'>Funka’s guidelines
+for the development of accessible mobile interfaces were financed by the
+Internet Fund .SE. Funka's methodology is developed in close collaboration with
+the disability movement and everything we recommend has been tested in real
+life. Funk’s work and services  are based on the international Web Content
+Accessibility Guidelines 2.0 (WCAG 2.0). Our long experience of accessibility
+work and usertesting with users with various needs and abilities, with and
+without assistive technology, show that WCAG 2.0 is not enough to provide
+accessibility. We have therefore developed our own test criteria that
+supplement the international regulations. Funka has made the authorised
+translation of WCAG 2.0 to Swedish. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:56.05pt;text-indent:-14.25pt;line-height:107%'><span
+style='line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><a
+href="http://www.w3.org/TR/WCAG20/"><span style='color:darkgreen'>Web Content
+Accessibility Guidelines 2.0 (WCAG 2.0)</span></a><a
+href="http://www.w3.org/TR/WCAG20/"><span style='color:black;text-decoration:
+none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:56.05pt;text-indent:-14.25pt;line-height:107%'><span
+style='line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><a
+href="http://www.funkanu.se/wcag"><span style='color:darkgreen'>The authorised
+Swedish translation of WCAG 2.0</span></a><a href="http://www.funkanu.se/wcag"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:56.05pt;text-indent:-14.25pt;line-height:107%'><span
+style='line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><a
+href="http://www.w3.org/"><span style='color:darkgreen'>World Wide Web
+Consortium (W3C)</span></a><a href="http://www.w3.org/"><span style='color:
+black;text-decoration:none'> </span></a> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.3pt;
+margin-left:56.05pt;text-indent:-14.25pt;line-height:107%'><span
+style='line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><a
+href="http://www.w3.org/WAI/"><span style='color:darkgreen'>Web Accessibility
+Initiative (WAI)</span></a><a href="http://www.w3.org/WAI/"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:60.45pt;margin-bottom:
+21.75pt;margin-left:0in;text-indent:0in'>Read more about Funka under the
+headline ”<u><span style='color:darkgreen'>Funka Nu AB</span></u>” at the end
+of this document. </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9425">About the guidelines </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.05pt;margin-bottom:
+9.8pt;margin-left:0in;text-indent:0in'>More and more people are using touch
+screens and traditional mobile devices. Most are designed to work well for
+users with disabilities, with or without the need for assistive technology.
+Consequently, it is increasingly necessary for those who develop apps and
+mobile interfaces to know more about accessibility and the different needs that
+users may have.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:39.2pt;margin-bottom:
+9.8pt;margin-left:0in;text-indent:0in'>The international accessibility
+guidelines, WCAG 2.0, lacks development principles for mobile interfaces.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:56.9pt;margin-bottom:
+9.8pt;margin-left:0in;text-indent:0in'>In the work on preparing the guidelines,
+we made an inventory of existing guidelines and studies on accessibility in
+mobile interfaces. We also conducted a survey of users of smartphones to find
+out what the problems were and what worked well. Most important, we interviewed
+and made user tests with users with various kinds of disabilities.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:29.25pt;margin-bottom:
+9.8pt;margin-left:0in;text-indent:0in'>These guidelines are open and free to be
+used by everyone. We would be grateful for feedback and proposals for further
+development, clarifications and amendments. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:114.1pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:-.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+10.0pt;line-height:107%'>| Funka Nu AB | Döbelnsgatan 21, SE-111 40 Stockholm |
++46-8-555 770 60 | info@funkanu.se |                </span><b><span
+style='color:#404040'>3 (</span></b><span style='color:#404040'>11)</span><span
+style='font-size:10.0pt;line-height:107%'> </span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:11.35pt;margin-left:
+-.25pt'><a name="_Toc9426">Guidelines for the development of accessible mobile
+interfaces </a></h1>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9427">Choice of solution </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.1pt;margin-bottom:
+11.5pt;margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:
+106%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Ensure that your basic website works on mobile devices </b>It
+does not need to work perfectly but it should be as simple as possible and it
+must be possible to manage all functionality via one mobile interface, as far
+as this is practically feasible. Examples of common problems here are menus
+that require the mouse pointer to rest over a menu option to open a submenu. A
+good strategy is 'mobile first', i.e. the design of the interface is based on
+the display on a mobile. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.1pt;margin-bottom:
+11.5pt;margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:
+106%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Do not force the user to use a mobile version, but do
+offer one if the pages on the basic website are large or the functions are
+complex </b>Many users prefer a mobile version of websites. This applies in
+particular if the website is extensive and contains many graphic objects. There
+may be reasons for offering a mobile version, but do not force the user to use
+the mobile version. Offer links between the different versions and remember the
+user's choice.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.1pt;margin-bottom:
+11.5pt;margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:
+106%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Any mobile version of the website must, where possible,
+give the user access to the same information and services as the standard
+website unless it is a clear mobile version of a specific limited
+service/function</b> If you offer a mobile version of the website, it must be
+possible to use it to do and read the same things as on the standard website
+but in a simpler format in which, for example, large quantities of information
+and choices are initially hidden instead of always being visible. An exception
+might be if it is a mobile version of a service/function, for example for
+booking a ticket with a travel company. In this case, the mobile version must
+be seen as a simpler alternative to this service/function.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.1pt;margin-bottom:
+21.75pt;margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:
+106%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Create applications for clearly defined functions to which
+a user may need frequent access </b>Applications (apps) primarily work well for
+clearly defined tasks, for example displaying current traffic
+information/problems. The application should primarily be created for
+well-defined tasks that a user may conceivably need to do/access frequently.  </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9428">Design </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b>Follow
+WCAG 2.0 except where these guidelines contradict WCAG 2.0 </b>WCAG 2.0 are
+applied primarily to web interfaces but several parts of the guidelines may
+also be applied to applications, for example success criteria that involve
+labelling non-text objects and success criteria relating to contrasts.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b>When
+creating applications for specific devices, any design and accessibility
+guidelines must be followed, provided they do not contradict these guidelines</b>
+If there are specific guidelines for the development of applications for the
+device/operating system chosen, they must be followed. For example, Apple's
+guidelines must be followed when developing apps for the iPhone.  </p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:106%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b>If
+you develop an application for a specific platform, this must support the
+characteristic properties of the platform </b>For example, it must be possible,
+where feasible, to zoom out/in by pinching the screen with two fingers or
+pulling two fingers apart. Many users are used to this method of interacting
+with touch screens and it is, therefore, important to offer this option, where
+practically feasible. However, remember it must also be possible to do this
+type of setting with one finger. Therefore, for the example involving pinching
+with two fingers, the interface should also offer an alternative for zooming,
+for example two buttons for zooming in and out. On Android phones, there are
+usually physical buttons that must work as the user is used to them working,
+while phones with iOS use software buttons at the bottom of the screen
+instead.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b>Label
+graphic elements, icons and buttons with their reason or function </b>On
+websites, significant images must have a text alternative. In the same way,
+images and buttons in applications must have a description. Exactly how this is
+done varies between the different operating systems.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b>Each
+form object must have either a caption or a description </b>Form objects, for
+example text fields, radio buttons and check boxes, must, where feasible, have
+a visible caption that is linked to the form field in a correct manner. On
+websites, this is done with the label element. If a caption cannot provide the
+full instructions, the form object's title text may be used to give the user
+information. However, the instructions must also always exist visually on the
+page as, without a screen reader, in most mobile devices the user cannot
+display a title text.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>10.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Do not
+use frames in web interfaces </b>Frames or inline frames (iframes) work poorly
+in many mobile devices and should, therefore, be avoided. If an iframe has to
+be used for a service, you should, where possible, also offer the user a link
+to display the function in a separate window without frames. For example, you
+might have a map integrated in an iframe on the standard website but also give
+the user a link to display the map in a separate window without frames.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Help the
+user input data by adapting the virtual keyboard to what needs to be entered </b>In
+web-based interfaces, this can be achieved by using html5 to label different
+types of input field, for example phone number, email or text.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Minimise
+the use of scripts on the client page </b>Mobile devices often have poorer
+performance than standard PCs and the use of many scripts may cause problems.
+Do not demand more of the device than is necessary.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>13.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Carry
+out practical tests on the solution </b>However well you follow the guidelines
+when developing a new application or a new web interface that is to work for
+mobile devices, there is a high level of complexity. This creates accessibility
+problems that may be difficult to anticipate. Therefore, the solution must
+always be tested in practice with persons who were not involved in the
+development. Test persons with disabilities must always be included in the user
+tests and accessibility experts must always be asked to interpret the results. 
+</p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9429">Layout and design </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>14.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Position
+important things higher up and less important things lower down in scrolling
+views </b>As the screens are often smaller on mobile devices, the most
+important information should be positioned high up to ensure that it is visible
+without the user needing to scroll. However, remember also that it is difficult
+to click objects at the very top of the screen. Therefore, important
+interaction should not be placed at the very top.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>15.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Group
+elements that belong together </b>This applies in general but is additionally
+important when developing with responsive design. On many websites, related
+links are located to the right, which often work when displayed on a big
+screen. If smaller screens make the right-hand column move down below the
+contents column, a lot of scrolling may then be needed to find related links
+for part of the content. In this case, the page should, where possible, be
+repositioned so that the related information is positioned directly after the
+area to which it is related instead of all related material being placed
+together at the bottom.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>16.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Strive
+to create a clean design and minimise the number of unnecessary objects </b>It
+is a big problem when sites contain many objects that the user does not
+perceive to be interesting/important when using the site. Websites that were
+designed for display on standard PCs with high-resolution screens naturally
+often have a design with many objects and areas. When such sites are displayed
+on a small screen, the user has big problems as the site takes a long time to
+load and requires a lot of scrolling. For example, if a site has a right-hand
+column with advertising, this should be repositioned on a small screen and
+placed at the end if it is not possible to remove it entirely.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>17.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Strive
+to make the side header small </b>On mobile devices, there is often a problem
+with a lot of scrolling. By minimising the side header, you can reduce the
+problem and menus and content can be made visible as soon as the site loads.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>18.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Create
+large clickable areas </b>As the devices' screen size, dpi and resolution vary,
+it is not possible to specify exact dimensions. There is also a difference
+between a website and an application, but strive for the clickable area to be
+at least the line height of the body text in one direction and the line height
+of the body text x 3 in the other direction. An icon in an app should be at
+least 9 millimetres wide and high.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>19.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Do not
+place frequently used buttons out at the right/left edge unless they take up at
+least one third of the width of the screen </b>Important buttons should
+primarily be placed centrally and relatively far down on the screen as it is
+difficult to press buttons out at the edge for users who only use one hand or
+have to balance their mobile on their knee to use it. For example, this concerns
+users with reduced motor skills who may find it hard to hold the phone.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>20.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Do not
+adjust buttons , functions or groups of buttons and functions to the right
+unless the group of buttons/functions extends over at least 75% of the screen
+in all positions </b>Users who cannot see the site use their index finger to
+scan the interface. The phone reads out what the user points to. This is done
+most naturally from the top left-hand corner down the page. Buttons that are
+far out to the right with nothing else on the same line are very difficult to
+detect.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>21.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Orient
+buttons and links in clear rows (horizontally and vertically) </b>This makes it
+easier for users who cannot see the interface to find them. If a user finds one
+button, it is easier to find the other buttons as well. This also creates a
+clearer visual overview for sighted users.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>22.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Captions
+for input fields must primarily be positioned above the field </b>Check boxes
+and radio buttons are exceptions. The text may be to the right of the
+button/box. Groups of radio buttons and check boxes must, however, have a
+heading to indicate the function of the group. This must be positioned above
+the group of radio buttons/check boxes.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>23.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Line
+lengths must be adapted to the screen width but never exceed 70 characters per
+row, including spaces </b>Where possible, it should not be necessary to scroll
+sideways to read a row of content. At the same time, the line length must not
+be so short that individual words must be divided over several lines unless
+there is a natural break. The objective should be line lengths of 55-60
+characters, including spaces, per line.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>24.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Limit
+the quantity of information and the number of objects displayed </b>To make
+things easier for users with small screens, it is a good idea to limit the
+quantity of objects and text displayed. This does not mean that you should
+remove parts but it can be easier for the user if you hide parts in, for
+example, accordion functions (you click on a heading to expand the underlying
+information). The user then has a quick overview and also easy access to all
+information and functionality. Another way of hiding objects is to place menus
+and link groups in fold-out menus. Remember that the functionality must be
+clear. It must be intuitive for the user to access hidden parts.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>25.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Use
+known icons </b>Do not invent your own versions of standard icons. Use the
+appearance that the user has a chance of recognising from previous use.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>26.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Design
+clickable objects so that they look clickable </b>Design links so that they
+look like links. Do not use colour alone to show that something is linked. One
+consequence of this is that the links then become difficult to see in direct
+sunlight. Make buttons three-dimensional and use known designs and locations of
+icons.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>27.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Use high
+contrasts </b>Many users state that it is difficult to see what is displayed on
+the screen when the mobile is used in direct sunlight. To facilitate use, it is
+important always to strive to have good contrasts. Body text and icon texts
+should, where possible, be presented as black text on white background or the
+reverse unless the text is large or zoomable. Text that is zoomable or is large
+to begin with should at least comply with WCAG 2.0's stricter item, 1.4.6.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>28.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>It must
+be possible to use the interface with both portrait and landscape display
+formats. </b> </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9430">Interaction </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>29.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Use
+simple navigation concepts </b>When a website is displayed on a standard
+screen, there is often enough space to let the navigation use up large areas.
+One example is megamenus that often display 2-3 levels in the menu structure
+simultaneously. This works poorly on mobile devices. Here the menus need to be
+designed so that they take up little space and have a visually clear layout.
+For a web service that is to function both on a PC and on a mobile device, it
+may be necessary in some cases to have the menu displayed in different ways, depending
+on the screen width.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>30.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>If you
+develop an application for an operating system or a mobile device that may have
+control buttons (for example arrow keys and an OK button), it must be possible
+to use these to navigate in the interface </b>This currently applies to
+Android, for example. The physical back button must always work.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>31.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>If you
+develop an interface that can be used by devices in which you can connect a
+keyboard, the interface must, where possible, be controllable with the
+keyboard. </b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>32.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Insert
+shortcuts to allow the user to jump between parts of the content on long pages </b>A
+shortcut should be hidden at first but appear when it comes into focus during
+keyboard navigation.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>33.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Minimise
+text input in the interface </b>Text input is both difficult and timeconsuming
+in mobile devices and should, therefore, be avoided if possible. One way of
+avoiding it is to offer lists with choices instead of requiring text input and
+providing an autocomplete function (the interface suggests phrases when the
+user starts to enter text).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>34.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>If the
+interface permits gesture control, this should be implemented </b>Gestures are
+a way of controlling a device by making different gestures on the screen with
+one or more fingers. For example, an iPad user can often scroll between
+different pages by dragging a finger across the screen. In many interfaces, it
+is also possible to zoom in or out by moving two fingers apart or towards each
+other. Gestures must be intuitive and consistent. Use the gestures the users
+are used to.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>35.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Do not
+insert functions that can only be managed via gestures. Always add a
+button/link </b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>36.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Make it
+possible to control the interface with just one finger </b>There may be
+situations in which it is not possible. However, where feasible, it must be
+possible to control all functionality with just one finger. It may be necessary
+for buttons to be hidden and to appear when you touch a certain area on the
+screen or press another button.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>37.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Be
+consistent </b>For example, place buttons with a specific functionality in the
+same place on the screen and design them consistently.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.7pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:104%'><b><span
+style='line-height:104%'>38.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></b><b>Use integrated objects as they are intended to be used and
+the user expects them to be used </b>For example, operating systems often
+contain integrated components/widgets that an application can use instead of
+the developers implementing their own components with equivalent functionality.
+In devices that have physical buttons, they must, where possible, be supported
+by the application.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>39.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Give
+feedback to the user </b>When the user makes an entry, this should be confirmed
+both with a sound and with a short vibration if the device supports this.
+However, it should also be possible to switch off the feedback. Please note
+that input need not necessarily be text via a keyboard. It may be a voice
+command, a photo that has been taken, a gesture or a movement with the mobile.
+Feedback should be given in most cases but there may be exceptions as too much
+feedback would be a nuisance (for example, an application that functions as a
+pedometer must not give feedback for every step registered).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>40.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Give the
+user clear status information </b>Many people use mobile devices in stressful
+situations. In such situations, it is important for the user to know what is
+happening all the time, in particular when the user is waiting for the
+application/website. If, for example, the application/website is loading data,
+it is good to display how the loading is progressing. Always provide clear
+status information. It is an advantage to offer both visual feedback and
+feedback with sound.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>41.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Give the
+user enough time and give warnings before time limits are reached </b>Many
+people use their mobile while travelling. Usage is often interrupted in such
+situations on account of external circumstances. This may, for example, be
+because the user is using the mobile while waiting for a bus. When the bus
+arrives, the user stops using the mobile when he or she boards the bus. During
+this time, the mobile is idle. It is important for the application/service to
+give the user enough time and to warn the user when the time is running out. If
+possible, there should also be a simple option for extending the time. The most
+common example of time limits is automatic logouts.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.75pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>42.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Help the
+user avoid errors and correct any errors </b>This is particularly important in
+mobile devices where it is easy to press the wrong button. Techniques for
+helping the user avoid making errors include autocomplete and search
+suggestions. If errors still arise, this must be clearly communicated to the user
+both at the top of the page and where the error occurred. Where possible, you
+should also provide suggestions for solutions.  </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9431">Content </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>43.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Use
+images only if it really helps the user </b>Images are good for communicating
+information but on mobile devices they often work less well. This is partly
+because they are small and partly because they take longer to load. Images
+should, therefore, only be used when they really help the user. Decoration
+images should be minimised and, where possible, be placed in the css code.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>44.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Use
+short, descriptive headings to structure the information </b>If it is possible
+to indicate what are the headings in the code, this must be done. For websites,
+this means the html elements H1-H6. Another basic rule is to keep headings </p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:106%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:.5in;text-indent:0in'>relatively short. However, they must not be
+so short that they do not make clear to the user what he or she can read about
+below the heading.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.75pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>45.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Avoid
+abbreviations </b>Although mobile devices with a small screen may tempt you to
+use abbreviations, this should be avoided. Abbreviations of organisation names
+and similar may be used if they are explained the first time they are used.  </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc9432">User settings </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>46.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Ensure
+that it is possible to zoom the interface </b>In an application, an enlargement
+function must be integrated, while a website must be zoomable in a manner that
+is natural for the web browser.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>47.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Consider
+providing a setting for inverting colours </b>If, for example, the application
+has dark text on a light background, the user should have the option of
+inverting this so that there is light text on a dark background and visa
+versa.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;
+margin-left:35.25pt;text-indent:-.25in'><b><span style='line-height:106%'>48.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b>Consider
+providing a setting for changing the font  </b><br clear=all style='page-break-before:
+always'>
+</p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc9433">Funka Nu AB </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Funka started as a project within the handicap
+movement. Today we hold pole position within the field of accessibility with
+over 80 percent of Sweden’s government authorities as customers. Since 2000 we
+are a privately owned company and our close relationship with the handicap
+movement guarantees a unique quality control. We have offices in Stockholm,
+Sweden and Oslo, Norway. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Funkas work sets standards for both
+development and analysis as well as issues demands for accessibility. We are
+part of most international work groups of importance and we regularly perform
+surveys on our own initiative. Because of that Funka actively promotes
+accessibility in Sweden, Norway and the EU. During 2012, Funka will meassure
+e-inclusion in all EU member states on behalf of the commission. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Within the EU Funkas experts can, among other
+committees, be found in the committee for mandate 376. That’s the committee
+that works to include compulsory rules as demands of accessibility in public
+purchases and within that work also come to terms with common rules of
+certification to ensure that accessible websites and accessibility experts live
+up to their requirements. We also work towards standardization and usability at
+a national- as well as at an international level. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Funka regularly performs larger surveys
+regarding accessibility, for esample an interview survey regarding young
+patient’s outlook on life. Assigned by European Patients Forum, a non-profit
+organization representing 150 million European patients, Funka has interviewed
+young people who have a regular and lifelong contact with the medical service. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:0in;text-indent:0in'>In Sweden Funkas consultants had a major role
+in developing </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Handikappombudsmannens guiding principles for
+an accessible administration of state as well as national guidelines for web
+accessibility. Funkas very own methodology regarding accessibility has been
+included on many levels. Funka are also responsible for recommendations
+regarding keyboard shortcuts and icons. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>For the WC3 Funka, among other assignments,
+made the authorised translation of WCAG 2.0 into Swedish and are active members
+of the WAI Age Task Force. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.8pt;
+margin-left:0in;text-indent:0in'>Funka are EPiServer Solution Partners,
+Microsoft Partners and Adobe Certified Training Providers.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:0in;text-indent:0in'>To learn more about Funka, please visit our
+website <a href="http://www.funkanu.com/"><span style='color:darkgreen'>www.funkanu.com</span></a><a
+href="http://www.funkanu.com/"><span style='color:black;text-decoration:none'>.</span></a>
+</p>
+
+</div>
+
+</body>
+
+</html>
