@@ -7,7 +7,6 @@ This is a curated collection of free documents that provide guidance on accessib
 
 Over 100 documents are included on the following topics:
 
-- Android and iOS apps
 - artificial intelligence and extended reality
 - cognitive, dexterity, hearing, and visual disabilities
 - design and development
@@ -16,6 +15,7 @@ Over 100 documents are included on the following topics:
 - Excel spreadsheets, PowerPoint slides, Word documents, and PDF files
 - government regulations and industry guidelines
 - libraries and museums
+- mobile and desktop apps
 - online learning and gaming
 - physical and virtual meetings
 - screen readers, switch controls, and voice dictation
