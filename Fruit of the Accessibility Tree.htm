@@ -1,0 +1,988 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>The Fruit of the Accessibility Tree</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.35pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:36.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:960.0pt 7.5in;
+	margin:54.7pt 67.55pt .25in 73.2pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:960.0pt 7.5in;
+	margin:49.15pt 70.55pt 17.9pt 72.3pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:960.0pt 7.5in;
+	margin:1.0in 73.25pt 1.0in 43.35pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 73.2pt;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:960.0pt 7.5in;
+	margin:27.45pt 26.9pt 17.9pt 20.65pt;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:960.0pt 7.5in;
+	margin:52.55pt 87.15pt 61.35pt 479.15pt;}
+div.WordSection7
+	{page:WordSection7;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:892.45pt;margin-bottom:
+0in;margin-left:-73.2pt'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image001.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:892.45pt;margin-bottom:
+0in;margin-left:-73.2pt'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image002.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:18.05pt;margin-left:
+-.25pt'>Why should we care about this junk</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.35pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:90%'><span style='font-size:
+28.0pt;line-height:90%'>“A firm grasp of the technology is paramount to making
+informed decisions about accessible design.”</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:8.9pt;
+margin-bottom:3.25pt;margin-left:15.0pt;text-align:right;text-indent:-15.0pt'><span
+style='font-size:28.0pt;line-height:107%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a
+href="https://www.smashingmagazine.com/2015/03/web-accessibility-with-accessibility-api/"><span
+style='font-size:28.0pt;line-height:107%;color:#0563C1'>Léonie Watson</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.35pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:90%'><span style='font-size:
+28.0pt;line-height:90%'>“As a web developer, learning the internals of browser
+operations helps you make better decisions and know the justifications behind
+development best practices.” </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:8.9pt;
+margin-bottom:0in;margin-left:15.0pt;text-align:right;text-indent:-15.0pt'><span
+style='font-size:28.0pt;line-height:107%'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a
+href="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/"><i><span
+style='font-size:28.0pt;line-height:107%;color:#0563C1'>Paul Irish, Chrome
+Developer Relations</span></i></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:892.45pt;margin-bottom:
+0in;margin-left:-73.2pt'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image003.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:23.55pt;margin-left:
+-.25pt'>When everything was text</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:177.2pt;margin-bottom:
+23.35pt;margin-left:.25in;text-indent:-.25in;line-height:147%'><span
+style='font-size:20.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img
+width=472 height=152
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image004.jpg" align=left
+hspace=12><span style='font-size:20.0pt;line-height:147%'>Personal computers
+originally relied on text based operating systems (e.g. DOS aka Disk Operating
+System).</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:177.2pt;margin-bottom:
+141.95pt;margin-left:.25in;text-indent:-.25in;line-height:147%'><span
+style='font-size:20.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:20.0pt;line-height:147%'>Assistive technology could access the
+text directly from the screen. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:.5pt;text-indent:-.5pt'><span style='font-size:18.0pt;line-height:
+107%'>Image by Mega super editorman / CC BY
+(https://creativecommons.org/licenses/by/4.0)</span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.1pt;margin-left:
+-.25pt'>Then came Graphic User Interfaces (GUI)</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:119.75pt;margin-bottom:
+4.55pt;margin-left:.25in;text-indent:-.25in'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=416 height=310
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image005.jpg" align=left
+hspace=12><span style='font-size:19.0pt;line-height:107%'>Graphical Interfaces
+for operating systems become popular (e.g. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-34.25pt;margin-bottom:
+15.8pt;margin-left:.25in'><span style='font-size:19.0pt;line-height:107%'>Windows,
+Apple Macintosh) “draw” information on the screen.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:119.75pt;margin-bottom:
+15.05pt;margin-left:.25in;text-indent:-.25in'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:19.0pt;line-height:107%'>Assistive
+technology had to rely on heuristics to understand what was being presented to
+users.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:119.75pt;margin-bottom:
+11.3pt;margin-left:.25in;text-indent:-.25in;line-height:127%'><span
+style='font-size:19.0pt;line-height:127%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:19.0pt;line-height:127%'>Accessibility <b>Application
+Programming Interfaces (APIs) </b>were introduced to operating systems to more
+reliably and accurately pass information to assistive technologies.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:119.75pt;margin-bottom:
+4.55pt;margin-left:.25in;text-indent:-.25in'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:19.0pt;line-height:107%'>As new browsers
+were introduced in the mid 2000’s they began integrating with the Accessibility
+APIs of different operating systems.</span></p>
+
+<h1 style='margin-left:-.25pt'>The Accessibility APIs</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:17.95pt;
+margin-left:40.1pt'><img border=0 width=960 height=184 id="Group 7521"
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image006.gif"></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=1086
+ style='width:814.4pt;border-collapse:collapse'>
+ <tr style='height:165.2pt'>
+  <td width=348 valign=top style='width:261.1pt;padding:0in 0in 0in 0in;
+  height:165.2pt'>
+  <p class=MsoNormal style='margin-bottom:23.5pt'><b><span style='font-size:
+  24.0pt;line-height:107%'>Windows:</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.7pt;
+  margin-left:.25in;text-indent:-.25in'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:20.0pt;line-height:107%'>Microsoft
+  Active </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:26.95pt;
+  margin-left:.25in'><span style='font-size:20.0pt;line-height:107%'>Accessibility
+  (MSAA)</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:-.25in'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:20.0pt;line-height:107%'>IAccessible2
+  (IA2)</span></p>
+  </td>
+  <td width=397 valign=top style='width:297.75pt;padding:0in 0in 0in 0in;
+  height:165.2pt'>
+  <p class=MsoNormal style='margin-bottom:23.5pt'><b><span style='font-size:
+  24.0pt;line-height:107%'>Apple:</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>• </span><span
+  style='font-size:20.0pt;line-height:107%'>NSAccessibility (AXAPI)</span></p>
+  </td>
+  <td width=341 valign=top style='width:255.55pt;padding:0in 0in 0in 0in;
+  height:165.2pt'>
+  <p class=MsoNormal style='margin-bottom:23.5pt'><b><span style='font-size:
+  24.0pt;line-height:107%'>Linux:</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.0pt;
+  margin-left:22.5pt;text-indent:-22.5pt'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:20.0pt;line-height:107%'>Accessibility
+  Toolkit (ATK)</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.7pt;
+  margin-left:22.5pt;text-indent:-22.5pt'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:20.0pt;line-height:107%'>Assistive
+  Technology Service </span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:3.65pt;text-align:center'><span
+  style='font-size:20.0pt;line-height:107%'>Provider Interface (ATK-SPI)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.95pt;
+margin-left:-.75pt'><span style='font-size:20.0pt;line-height:107%;font-family:
+"Arial",sans-serif'>• </span><span style='font-size:20.0pt;line-height:107%'>UI
+Automation (UIA)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:892.45pt;margin-bottom:
+0in;margin-left:-73.2pt'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image007.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:4.0pt;margin-bottom:0in;margin-left:
+-.25pt;margin-bottom:.0001pt;line-height:107%'><img border=0 width=75
+height=76 id="Group 6009"
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image008.gif"><span
+style='font-size:54.0pt;line-height:107%'> Browser breakdown</span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:35.2pt;
+margin-left:18.15pt;text-indent:-.25in'><span style='font-size:24.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:24.0pt;line-height:107%'>Browser requests
+HTML/CSS/JavaScript resources</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.4pt;
+margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img
+width=13 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image009.gif" align=left
+hspace=12><span style='font-size:24.0pt;line-height:147%'>Browser’s render
+engine parses the HTML/CSS/JavaScript and creates the Document Object Model
+(DOM) from the HTML and CSS Object Model (CSSOM) from the CSS.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.4pt;
+margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:147%'>Rendering Engine then creates a
+render tree based on the CSSOM and DOM which is the visual representation of
+the content.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.4pt;
+margin-left:18.15pt;text-indent:-.25in'><span style='font-size:24.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:24.0pt;line-height:107%'>The page goes
+through a </span><a href="https://youtu.be/ZTnIxIA5KGw"><span style='font-size:
+24.0pt;line-height:107%;color:#0563C1'>layout and painting process </span></a><span
+style='font-size:24.0pt;line-height:107%'>to place items on the screen.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.15pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:110%'><img width=1280
+height=514 src="Fruit%20of%20the%20Accessibility%20Tree_files/image010.jpg"><br
+clear=ALL>
+<span style='font-size:44.0pt;line-height:110%'>User interaction with
+mouse/keyboard/display</span></p>
+
+<p class=MsoNormal align=right style='margin-top:2.3pt;margin-right:2.0pt;
+margin-bottom:8.3pt;margin-left:.5pt;text-align:right;text-indent:-.5pt'><span
+style='font-size:12.0pt;line-height:107%;color:#898989'>2</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:19.95pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:110%'><img width=1280
+height=504 src="Fruit%20of%20the%20Accessibility%20Tree_files/image011.jpg"><br
+clear=ALL>
+<span style='font-size:44.0pt;line-height:110%'>User interaction with assistive
+technology</span></p>
+
+<p class=MsoNormal align=right style='margin-top:16.7pt;margin-right:2.0pt;
+margin-bottom:8.3pt;margin-left:.5pt;text-align:right;text-indent:-.5pt'><span
+style='font-size:12.0pt;line-height:107%;color:#898989'>1</span></p>
+
+<h1 style='margin-top:0in;margin-right:4.0pt;margin-bottom:14.35pt;margin-left:
+7.1pt;line-height:107%'><img border=0 width=63 height=71 id="Group 5955"
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image012.gif"><span
+style='font-size:54.0pt;line-height:107%'> A different path</span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+23.4pt;margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img
+width=13 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image009.gif" align=left
+hspace=12><span style='font-size:24.0pt;line-height:147%'>The browser uses the
+“accessibility tree” to communicate with the operating systems Accessibility
+API.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+23.4pt;margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:147%'>Assistive technology users interact
+with the browser through through the accessibility API.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+23.4pt;margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:147%'>Two different and parallel
+“information architectures” to build and design for (although not separately).</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image013.gif"><br clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<h2 style='margin-left:30.35pt'>The definitions</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:48.95pt;margin-bottom:
+9.7pt;margin-left:.15pt;text-indent:-.5pt;line-height:149%'><span
+style='font-size:16.0pt;line-height:149%'>Browsers […] create an accessibility
+tree based on the DOM tree, which is used by platform-specific Accessibility
+APIs to provide a representation that can be understood by assistive
+technologies, such as screen readers.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:66.3pt;
+margin-left:245.75pt'><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree"><span
+style='font-size:16.0pt;line-height:107%;color:black;text-decoration:none'>-</span></a><a
+href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree"><span
+style='font-size:16.0pt;line-height:107%;color:#0563C1'>MDN Web Docs</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:.15pt;text-indent:-.5pt;line-height:149%'><span style='font-size:
+16.0pt;line-height:149%'>The DOM tree is translated, in parallel, into the
+primary visual representation of the page and the accessibility tree, which is
+in turn accessed via one or more <i>platform-specific </i>accessibility </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.15pt;
+margin-left:.15pt;text-indent:-.5pt'><span style='font-size:16.0pt;line-height:
+107%'>APIs.</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.7pt;
+margin-bottom:52.25pt;margin-left:.5pt;text-align:right;text-indent:-.5pt;
+line-height:110%'><a
+href="https://github.com/WICG/aom/blob/gh-pages/explainer.md#background-assistive-technology-and-the-accessibility-tree"><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'>-</span></a><u><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'> </span></u><a
+href="https://github.com/WICG/aom/blob/gh-pages/explainer.md#background-assistive-technology-and-the-accessibility-tree"><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'>Accessibility Object
+Model Explainer</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.95pt;
+margin-left:.15pt;text-indent:-.5pt;line-height:149%'><span style='position:
+relative;z-index:-1895814144'><span style='left:0px;position:absolute;
+left:-17px;top:-25px;width:601px;height:351px'><img width=601 height=351
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image014.gif"></span></span><span
+style='font-size:16.0pt;line-height:149%'>The accessibility tree and the DOM
+tree are <i><span style='background:yellow'>parallel structures </span></i>[…]
+Accessible objects are created in the accessibility tree for every DOM element
+that should be exposed to an assistive technology, either because it may fire
+an accessibility event or because it has a property, relationship or feature
+which needs to be exposed. Generally if something can be trimmed out it will
+be, for reasons of performance and simplicity. </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.7pt;
+margin-bottom:52.25pt;margin-left:.5pt;text-align:right;text-indent:-.5pt;
+line-height:110%'><a href="https://www.w3.org/TR/core-aam-1.1/#intro_treetypes"><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'>–</span></a><u><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'> </span></u><a
+href="https://www.w3.org/TR/core-aam-1.1/#intro_treetypes"><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'>World Wide Web
+Consortium</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:38.5pt;text-indent:-.5pt;line-height:149%'><span style='font-size:
+16.0pt;line-height:149%'>The browser takes the DOM tree and modifies it into a
+form that is useful to assistive technology. We refer to this modified tree as
+the <i>Accessibility Tree</i>.</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.7pt;
+margin-bottom:52.25pt;margin-left:.5pt;text-align:right;text-indent:-.5pt;
+line-height:110%'><a
+href="https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree"><span
+style='font-size:16.0pt;line-height:110%;color:#0563C1'>-Google Web
+Fundamentals</span></a></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection5>
+
+<h1 style='margin-top:0in;margin-right:4.0pt;margin-bottom:12.6pt;margin-left:
+-.25pt;line-height:107%'><img width=339 height=339
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image015.jpg" align=left
+hspace=12><span style='font-size:54.0pt;line-height:107%'>Parallel structures</span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+11.6pt;margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:147%'>An accessibility tree represents the
+nodes in the DOM important to assistive technology.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+23.4pt;margin-left:18.15pt;text-indent:-.25in'><span style='font-size:24.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=13 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image009.gif" align=left
+hspace=12><span style='font-size:24.0pt;line-height:107%'>It is not a 1:1 copy.
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:88.3pt;margin-bottom:
+23.4pt;margin-left:18.15pt;text-indent:-.25in;line-height:147%'><span
+style='font-size:24.0pt;line-height:147%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:147%'>The accessibility tree provides a
+mechanism to communicate with a platform’s Accessibility API and augments the
+browsers default User Interface with assistive technology (e.g. screen reader)</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection6>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:24.05pt;margin-left:
+-.25pt'>Assistive Technology and the API</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:102.15pt;text-indent:-22.5pt;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=874 height=483
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image016.gif" align=left
+hspace=12><span style='font-size:18.0pt;line-height:150%'>Assistive technology
+sends request to Accessibility API.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:102.15pt;text-indent:-22.5pt;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:251673600;left:-77px;
+top:0px;width:1238px;height:21px'><img width=1238 height=21
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image017.gif"></span><br
+clear=ALL>
+<span style='font-size:18.0pt;line-height:150%'>Accessibility API communicates
+to browser and accessibility tree.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:102.15pt;text-indent:-22.5pt;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:150%'>Browser updates
+web content and accessibility tree.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:102.15pt;text-indent:-22.5pt;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:150%'>Accessibility API
+communicates to assistive technology.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://cdpn.io/derek_jackson/debug/PozeoNe"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>Simple Button demo on CodePen</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.45pt;
+margin-left:.5pt;text-indent:-.5pt'><img width=558 height=665
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image018.gif" align=left
+hspace=12><a href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:
+28.0pt;line-height:107%;color:#0563C1'>HTML Accessibility API Mapping</span></a><a
+href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>(W3C)</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+16.55pt;margin-left:39.85pt;text-indent:-.5pt'><b><u><span style='font-size:
+14.0pt;line-height:107%;font-family:Consolas;color:red'>&lt;h1&gt;</span></u></b><span
+style='font-size:14.0pt;line-height:107%;font-family:Consolas'>The Button and
+the Accessibility API</span><b><span style='font-size:14.0pt;line-height:107%;
+font-family:Consolas;color:red'>&lt;/h1&gt;</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>                  <b><u><sup><span
+style='font-size:21.5pt;line-height:107%;font-family:Consolas;color:red'>&lt;div&gt;</span></sup></u></b><b><sup><span
+style='font-size:21.5pt;line-height:107%;font-family:Consolas;color:red'>                         </span></sup></b><span
+style='font-size:49.0pt;line-height:107%'>DOM and the </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.15pt;
+margin-left:55.6pt'><b><u><span style='font-size:14.0pt;line-height:107%;
+font-family:Consolas;color:red'>&lt;p&gt;</span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>                         <span
+style='font-size:14.0pt;line-height:107%;font-family:Consolas'>Push the button
+to open the    </span><span style='font-size:49.0pt;line-height:107%'>accessibility
+Tree</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+2.35pt;margin-left:71.55pt;text-indent:-.5pt'><b><u><span style='font-size:
+14.0pt;line-height:107%;font-family:Consolas;color:red'>&lt;a </span></u></b><span
+style='font-size:14.0pt;line-height:107%;font-family:Consolas'>href=&quot;https://developer.mozilla.org/en-</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+13.0pt;margin-left:39.85pt;text-indent:-.5pt'><img width=148 height=148
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image019.gif" align=left
+hspace=12><span style='font-size:14.0pt;line-height:107%;font-family:Consolas'>US/docs/Web/API/Window/alert&quot;&gt;alert
+dialog</span><b><span style='font-size:14.0pt;line-height:107%;font-family:
+Consolas;color:red'>&lt;/a&gt;</span></b><span style='font-size:14.0pt;
+line-height:107%;font-family:Consolas'>. </span><b><span style='font-size:14.0pt;
+line-height:107%;font-family:Consolas;color:red'>&lt;/p&gt; &lt;/div&gt;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+2.35pt;margin-left:39.85pt;text-indent:-.5pt'><b><u><span style='font-size:
+14.0pt;line-height:107%;font-family:Consolas;color:red'>&lt;button </span></u></b><span
+style='font-size:14.0pt;line-height:107%;font-family:Consolas'>onclick=&quot;alert('Alerted’)”
+aria-label=“Alert </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+2.35pt;margin-left:39.85pt;text-indent:-.5pt'><span style='font-size:14.0pt;
+line-height:107%;font-family:Consolas'>Announcement”&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:199.55pt;margin-bottom:
+2.35pt;margin-left:112.6pt;text-indent:-.5pt'><span style='font-size:14.0pt;
+line-height:107%;font-family:Consolas'>Alert Announcement</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:165.25pt;margin-bottom:
+.2pt;margin-left:11.75pt;text-indent:28.35pt;line-height:140%'><b><span
+style='font-size:14.0pt;line-height:140%;font-family:Consolas;color:red'>&lt;/button&gt;
+</span></b><b><u><span style='font-size:16.0pt;line-height:140%;font-family:
+Consolas;color:red'>heading </span></u></b><span style='font-size:16.0pt;
+line-height:140%;font-family:Consolas'>name='The Button and the Accessibility
+API' role='heading' nameFrom=contents <b>staticText </b>name='The Button and
+the Accessibility API'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:279.1pt;margin-bottom:
+.2pt;margin-left:29.25pt;text-indent:-17.5pt;line-height:107%'><span
+style='position:relative;z-index:-1895806976'><span style='left:0px;position:
+absolute;left:3px;top:-64px;width:1195px;height:276px'><img width=1195
+height=276 src="Fruit%20of%20the%20Accessibility%20Tree_files/image020.gif"></span></span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:red'>genericContainer
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>ignored
+</span><b><u><span style='font-size:16.0pt;line-height:107%;font-family:Consolas;
+color:red'>paragraph </span></u></b><b><span style='font-size:16.0pt;
+line-height:107%;font-family:Consolas'>staticText </span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>name='Push the
+button to open the ' nameFrom=contents </span><b><u><span style='font-size:
+16.0pt;line-height:107%;font-family:Consolas;color:red'>link </span></u></b><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>focusable linked
+visited name='alert dialog' nameFrom=contents <b>staticText </b>linked visited
+name='alert dialog' nameFrom=contents</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:47.3pt;text-indent:-.5pt;line-height:107%'><b><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>staticText </span></b><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>name='.'
+nameFrom=contents</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:29.25pt;text-indent:-17.5pt;line-height:107%'><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:red'>button
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>name='Alert
+Announcement' role='button' nameFrom=attribute hasAriaAttribute=true <b>staticText
+</b>name='Alert Announcement' nameFrom=contents</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:46.4pt;
+margin-bottom:8.3pt;margin-left:.5pt;text-align:right;text-indent:-.5pt'><span
+style='font-size:12.0pt;line-height:107%;color:#898989'>18</span></p>
+
+<h3>Accessibility tree and the API: <span style='font-family:Consolas'>chrome://accessibility</span></h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:186.3pt;margin-bottom:
+.4pt;margin-left:116.3pt;text-indent:-13.7pt;line-height:105%'><b><u><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas;color:#548235'>heading
+</span></u></b><span style='font-size:12.0pt;line-height:105%;font-family:Consolas'>name='The
+Button and the Accessibility API' role='heading' nameFrom=contents </span><b><u><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas;color:#548235'>staticText
+</span></u></b><span style='font-size:12.0pt;line-height:105%;font-family:Consolas'>name='The
+Button and the Accessibility API'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:338.7pt;margin-bottom:
+.4pt;margin-left:116.3pt;text-indent:-13.7pt;line-height:105%'><span
+style='position:relative;z-index:-1895805952'><span style='left:0px;position:
+absolute;left:125px;top:-49px;width:952px;height:211px'><img width=952
+height=211 src="Fruit%20of%20the%20Accessibility%20Tree_files/image021.gif"></span></span><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas'>genericContainer
+ignored </span><b><u><span style='font-size:12.0pt;line-height:105%;font-family:
+Consolas;color:#548235'>paragraph staticText </span></u></b><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas'>name='Push the
+button to open the ' nameFrom=contents </span><b><u><span style='font-size:
+12.0pt;line-height:105%;font-family:Consolas;color:#548235'>link </span></u></b><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas'>focusable linked
+visited name='alert dialog' nameFrom=contents </span><b><u><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas;color:#548235'>staticText
+</span></u></b><span style='font-size:12.0pt;line-height:105%;font-family:Consolas'>linked
+visited name='alert dialog' nameFrom=contents</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:100.15pt;margin-bottom:
+.4pt;margin-left:129.8pt;line-height:105%'><b><u><span style='font-size:12.0pt;
+line-height:105%;font-family:Consolas;color:#548235'>staticText </span></u></b><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas'>name='.'
+nameFrom=contents</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:100.15pt;margin-bottom:
+60.4pt;margin-left:116.3pt;text-indent:-13.7pt;line-height:105%'><b><u><span
+style='font-size:12.0pt;line-height:105%;font-family:Consolas;color:#548235'>button
+</span></u></b><span style='font-size:12.0pt;line-height:105%;font-family:Consolas'>focusable
+name='Alert Announcement' role='button' nameFrom=attribute
+hasAriaAttribute=true staticText name='Alert Announcement' nameFrom=contents</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:11.45pt;
+margin-bottom:16.45pt;margin-left:0in;text-align:center'><span
+style='font-size:18.0pt;line-height:107%'>(NSAccessibility – AXAPI - MacOS)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXHeading
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='heading'
+AXTitle='The Button and the Accessibility API' AXRole: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>'AXStaticText',
+AXRoleDescription: 'text' AXValue: 'The Button and the Accessibility API'
+id='29'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXStaticText
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='text'
+AXValue='The Button and the Accessibility API' id='36'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXGroup
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='group',
+AXRole: 'AXStaticText', AXRoleDescription: 'text', id='38'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXStaticText
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='text'
+AXValue='Push the button to open the ', id='40'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='position:relative;z-index:-1895804928'><span style='left:0px;position:
+absolute;left:-24px;top:-229px;width:1242px;height:375px'><img width=1242
+height=375 src="Fruit%20of%20the%20Accessibility%20Tree_files/image022.gif"></span></span><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXLink
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXDescription='alert
+dialog' AXFocused=0 AXRoleDescription='link' AXHelp: '', id='41'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++++++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXStaticText
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='text'
+AXValue='alert dialog' id='43'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXStaticText
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXRoleDescription='text'
+id='42'</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.55pt;margin-bottom:
+.2pt;margin-left:1.1pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas'>++</span><b><u><span
+style='font-size:16.0pt;line-height:107%;font-family:Consolas;color:#548235'>AXButton
+</span></u></b><span style='font-size:16.0pt;line-height:107%;font-family:Consolas'>AXDescription='Alert
+Announcement' AXRoleDescription='button' id='33’</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:39.9pt;text-indent:-.5pt'><span style='font-size:49.0pt;line-height:
+107%'>The journey of a semantic element </span><img border=0 width=204
+height=95 id="Picture 592"
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image023.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:106.65pt;text-indent:-27.0pt'><span style='font-size:18.0pt;
+line-height:107%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:107%'>The HTML
+paragraph element enters the browser from the network as </span><b><span
+style='font-size:18.0pt;line-height:107%;color:#2F5597'>&lt;p&gt;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:106.65pt;text-indent:-27.0pt'><span style='font-size:18.0pt;
+line-height:107%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:107%'>The Browser
+parses the &lt;p&gt; to the DOM node as </span><b><span style='font-size:18.0pt;
+line-height:107%;color:#2F5597'>HTMLParagraphElement</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:106.65pt;text-indent:-27.0pt;line-height:150%'><span
+style='font-size:18.0pt;line-height:150%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:150%'>The </span><b><span
+style='font-size:18.0pt;line-height:150%;color:#2F5597'>HTMLParagraphElement </span></b><span
+style='font-size:18.0pt;line-height:150%'>becomes </span><b><span
+style='font-size:18.0pt;line-height:150%;color:#2F5597'>paragraph </span></b><span
+style='font-size:18.0pt;line-height:150%'>in the accessibility tree 4.  The
+Accessibility API (AXAPI – NSAccessibility) in translates this to </span><b><span
+style='font-size:18.0pt;line-height:150%;color:#2F5597'>AXGroup.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:.6pt'>                                    <span
+style='font-size:18.0pt;line-height:107%'>5.    Voice Over reads the AXGroup as
+text.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:45.05pt;
+margin-left:55.6pt'><img border=0 width=1062 height=202 id="Picture 594"
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image024.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:29.75pt'><a
+href="https://www.w3.org/TR/html-aam-1.0/#mapping-html-to-accessibility-apis"><span
+style='font-size:18.0pt;line-height:107%;color:#0563C1'>Mapping HTML to
+Accessibility APIs</span></a></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:46.4pt;
+margin-bottom:8.3pt;margin-left:.5pt;text-align:right;text-indent:-.5pt'><span
+style='font-size:12.0pt;line-height:107%;color:#898989'>1</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.45pt;
+margin-left:.5pt;text-indent:-.5pt;line-height:134%'><span style='font-size:
+24.0pt;line-height:134%;color:#44546A'>Tools in the browser to expose the
+accessibility tree:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.45pt;
+margin-left:.25in;text-indent:-.25in;line-height:134%'><span style='font-size:
+24.0pt;line-height:134%;font-family:"Arial",sans-serif;color:#44546A'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:24.0pt;line-height:134%;color:#44546A'>Use the <b>inspector
+tool </b>(available in Edge, Firefox, Safari, or Chrome)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:38.45pt;
+margin-left:.25in;text-indent:-.25in;line-height:134%'><span style='font-size:
+24.0pt;line-height:134%;font-family:"Arial",sans-serif;color:#44546A'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img
+width=558 height=665
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image025.gif" align=left
+hspace=12><span style='font-size:24.0pt;line-height:134%;color:#44546A'>Chrome
+also has: chrome://accessibility</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.3pt;
+margin-left:.5pt;text-indent:-.5pt;line-height:134%'><span style='font-size:
+24.0pt;line-height:134%;color:#44546A'>Tools to expose the operating systems
+accessibility API:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.7pt;
+margin-left:.25in;text-indent:-.25in'><span style='font-size:24.0pt;line-height:
+107%;font-family:"Arial",sans-serif;color:#44546A'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=75 height=158
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image026.gif" align=left
+hspace=12><span style='font-size:24.0pt;line-height:107%;color:#44546A'>Mac OS:
+Accessibility Inspector of </span><a
+href="https://apps.apple.com/us/app/xcode/id497799835?mt=12"><span
+style='font-size:24.0pt;line-height:107%;color:#0563C1'>Xcode</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;text-indent:-.25in'><span style='font-size:24.0pt;line-height:
+107%;font-family:"Arial",sans-serif;color:#44546A'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:24.0pt;line-height:107%;color:#44546A'>Windows:
+</span><a href="https://accessibilityinsights.io/docs/en/windows/overview/"><span
+style='font-size:24.0pt;line-height:107%;color:#0563C1'>Accessibility Insights</span></a></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://cdpn.io/derek_jackson/debug/PozeoNe"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>Simple Button demo on CodePen</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://cdpn.io/derek_jackson/debug/VwjxZOP"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>Button Patterns demo on CodePen</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.45pt;
+margin-left:.5pt;text-indent:-.5pt'><img width=558 height=665
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image027.gif" align=left
+hspace=12><a href="https://www.w3.org/TR/core-aam-1.1/#mapping"><span
+style='font-size:28.0pt;line-height:107%;color:#0563C1'>Core Accessibility API
+Mappings</span></a><a href="https://www.w3.org/TR/core-aam-1.1/#mapping"><span
+style='font-size:28.0pt;line-height:107%;color:#0563C1;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://www.w3.org/TR/core-aam-1.1/#mapping"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>(W3C)</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.45pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>HTML Accessibility API Mapping</span></a><a
+href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.35pt;
+margin-left:.5pt;text-indent:-.5pt'><a
+href="https://www.w3.org/TR/html-aam-1.0/"><span style='font-size:28.0pt;
+line-height:107%;color:#0563C1'>(W3C)</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+0in;margin-left:-479.15pt'><img width=1280 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image028.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+0in;margin-left:-479.15pt'><img width=1282 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image029.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+27.5pt;margin-left:-479.15pt'><img width=537 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image030.gif"><br clear=ALL>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-50.95pt;margin-bottom:
+0in;margin-left:-48.6pt'><img border=0 width=662 height=570
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image031.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+76.65pt;margin-left:-479.15pt'><img width=535 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image032.gif"><br clear=ALL>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-50.95pt;margin-bottom:
+0in;margin-left:-48.6pt'><img border=0 width=662 height=399
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image033.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+0in;margin-left:-479.15pt'><img width=1282 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image034.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+0in;margin-left:-479.15pt'><img width=1282 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image035.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+0in;margin-left:-479.15pt'><img width=1282 height=720
+src="Fruit%20of%20the%20Accessibility%20Tree_files/image036.gif"><br clear=ALL>
+</p>
+
+</div>
+
+</body>
+
+</html>
