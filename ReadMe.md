@@ -14,17 +14,16 @@ Over 100 documents are included on the following topics:
 - Excel spreadsheets, PowerPoint slides, Word documents, and PDF files
 - government regulations and industry guidelines
 - libraries and museums
-- maturity models
-- mobile and desktop apps
+- maturity models and management procedures
 - online learning and gaming
 - physical and virtual meetings
-- plain language and disability etiquette
+- plain language, social media, and and disability etiquette
 - screen readers, switch controls, and voice dictation
 - software and hardware testing
-- travel and tourism
+- transportation and travel
 - trending Problems and Solutions
 - videos, text captions, and audio descriptions
-- web pages and apps
+- web, mobile, and desktop apps
 
 The whole collection may be downloaded in a zip archive from the following address:
 
