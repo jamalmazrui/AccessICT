@@ -1,0 +1,969 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Creating Accessible Documents in MS Word</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Tw Cen MT";
+	panose-1:2 11 6 2 2 1 4 2 6 3;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:2.5pt;
+	margin-bottom:1.25pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Tw Cen MT",sans-serif;
+	color:#262626;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.4pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#345A8A;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.75pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#4F81BD;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#243F60;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:3.05pt;
+	margin-bottom:5.0pt;
+	margin-left:1.25pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:11.0pt;
+	font-family:"Tw Cen MT",sans-serif;
+	color:black;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:3.05pt;
+	margin-bottom:2.3pt;
+	margin-left:13.25pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	font-size:11.0pt;
+	font-family:"Tw Cen MT",sans-serif;
+	color:black;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:3.8pt;
+	margin-bottom:2.35pt;
+	margin-left:24.5pt;
+	text-align:right;
+	text-indent:-.5pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:#243F60;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:#345A8A;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:37.6pt 33.15pt 72.75pt 36.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-size:26.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:#17365D'>Creating Accessible Documents in Microsoft Word </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+margin-left:-1.5pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif;color:black'><img
+width=724 height=1 id="Group 7281"
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:25.45pt;
+margin-left:.5pt;line-height:110%'><span style='font-size:11.0pt;line-height:
+110%;color:black'>Adapted from </span><a href="http://www.webaim.org/"><span
+style='font-size:11.0pt;line-height:110%;color:blue'>Webaim.org</span></a><a
+href="http://www.webaim.org/"><span style='font-size:11.0pt;line-height:110%;
+color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.9pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+14.0pt;line-height:107%;color:#365F91'>Table of Contents </span></b></p>
+
+<p class=MsoToc1><a href="#_Toc8473"><span style='color:black;text-decoration:
+none'>INTRODUCTION.................................................................................................................................................... </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8474"><span style='color:black;text-decoration:
+none'>HEADINGS............................................................................................................................................................ </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8475"><span style='color:black;text-decoration:
+none'>S</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>TRUCTURE THROUGH HIERARCHY</span><span style='color:black;
+text-decoration:none'>........................................................................................................................................................................ </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8476"><span style='color:black;text-decoration:
+none'>N</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>AVIGATION THROUGH STRUCTURE</span><span style='color:
+black;text-decoration:none'>.................................................................................................................................................................... </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8477"><span style='color:black;text-decoration:
+none'>&quot;H</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>EADINGS</span><span style='color:black;text-decoration:
+none'>&quot;</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'> CREATED WITH FONT STYLES</span><span style='color:black;
+text-decoration:none'>........................................................................................................................................................... </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8478"><span style='color:black;text-decoration:
+none'>ALTERNATIVE TEXT FOR IMAGES.......................................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8479"><span style='color:black;text-decoration:
+none'>A</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>DDING ALTERNATIVE TEXT</span><span style='color:black;
+text-decoration:none'>.................................................................................................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc3><a href="#_Toc8480"><span style='color:black;text-decoration:
+none'>How to Insert Alt Text in MSWord:................................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8481"><span style='color:black;text-decoration:
+none'>B</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>EST PRACTICES FOR ALTERNATIVE TEXT</span><span
+style='color:black;text-decoration:none'>............................................................................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8482"><span style='color:black;text-decoration:
+none'>DATA TABLES....................................................................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8483"><span style='color:black;text-decoration:
+none'>A</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>DDING TABLE PROPERTIES</span><span style='color:black;
+text-decoration:none'>.................................................................................................................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8484"><span style='color:black;text-decoration:
+none'>LINKS.................................................................................................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8485"><span style='color:black;text-decoration:
+none'>C</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>REATING LINKS IN </span><span style='color:black;
+text-decoration:none'>W</span><span style='font-size:9.0pt;line-height:110%;
+color:black;text-decoration:none'>ORD</span><span style='color:black;
+text-decoration:none'>................................................................................................................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc3><a href="#_Toc8486"><span style='color:black;text-decoration:
+none'>How to Add Link Descriptions (MS Word):........................................................................................................ </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8487"><span style='color:black;text-decoration:
+none'>LISTS &amp; COLUMNS................................................................................................................................................. </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc8488"><span style='color:black;text-decoration:
+none'>L</span><span style='font-size:9.0pt;line-height:110%;color:black;
+text-decoration:none'>IST TYPES</span><span style='color:black;text-decoration:
+none'>................................................................................................................................................................................................................ </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8489"><span style='color:black;text-decoration:
+none'>COLOR CONTRAST............................................................................................................................................... </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8490"><span style='color:black;text-decoration:
+none'>ACCESSIBILITY CHECKER....................................................................................................................................... </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8491"><span style='color:black;text-decoration:
+none'>CONVERTING TO PDF........................................................................................................................................... </span><span style='color:black;text-decoration:none'>9 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8492"><span style='color:black;text-decoration:
+none'>OTHER PRINCIPLES................................................................................................................................................ </span><span style='color:black;text-decoration:none'>9 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc8493"><span style='color:black;text-decoration:
+none'>PRINCIPLES INTO PRACTICE................................................................................................................................ </span><span style='color:black;text-decoration:none'>10 </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:16.65pt;
+margin-left:-.25pt;line-height:103%'><span style='color:black'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.75pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+16.0pt;line-height:107%;color:#345A8A'> </span></b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='color:black'>            </span><b><span style='font-size:16.0pt;
+line-height:107%;color:#345A8A'> </span></b></p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8473">Introduction </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+18.45pt;margin-left:.5pt'>The following best practices are provided to help you
+maximize the accessibility of your Word documents. On this page you will find
+general principles for increasing accessibility in all versions of Word. When
+you are ready to put these recommendations into practice, select your version
+of Word from the links in the digital version on the last page of this
+document. </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8474">Headings </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.45pt;margin-left:.5pt'>A uniform heading structure is often the most
+important accessibility consideration in Word documents. When encountering a
+lengthy Word document, sighted users often scroll the page quickly and look for
+big, bold text (headings) to get an idea of its structure and content. Screen
+reader and other assistive technology users also have the ability to navigate
+Word documents by heading structure, assuming Word's <b><span style='color:
+#434343'>Heading</span></b> styles are used. </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8475">Structure through hierarchy </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.9pt;margin-left:.5pt'>Pages should be structured in a hierarchical manner: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.5pt;text-indent:-13.75pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>A <b><span style='color:#434343'>Title </span></b>is the top most
+heading and there is only one. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.5pt;text-indent:-13.75pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>A <b><span style='color:#434343'>Heading 1</span></b> is usually a page
+title or a main content heading.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.5pt;text-indent:-13.75pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>A <b><span style='color:#434343'>Heading 2</span></b> is usually a major
+section heading. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.5pt;text-indent:-13.75pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>A <b><span style='color:#434343'>Heading 3</span></b> is usually a
+sub-section of the Heading 2. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.7pt;margin-left:35.5pt;text-indent:-13.75pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>A <b><span style='color:#434343'>Heading 4</span></b> is usually a
+sub-section of the Heading 3, and so on, ending with <b><span style='color:
+#434343'>Heading 6</span></b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.4pt;margin-left:.5pt'>Technically, lower-degree headings should be contained
+within headings of the next highest degree. One should not skip heading levels,
+such as using a <b><span style='color:#434343'>Heading 4</span></b> directly
+below a <b><span style='color:#434343'>Heading 2</span></b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+17.55pt;margin-left:.5pt'>The following outline shows an example of hierarchy: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+2.55pt;margin-left:35.5pt;text-indent:-13.75pt;line-height:99%'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Heading 1 <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>Heading 2 <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Heading 2 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:108.05pt;text-indent:-.25in'><span style='font-family:Wingdings'>&#9642;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span>Heading 3 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+10.7pt;margin-left:108.05pt;text-indent:-.25in'><span style='font-family:Wingdings'>&#9642;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span>Heading 3 </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8476">Navigation through structure </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.95pt;margin-left:.5pt'>Word documents with a proper heading structure
+provide screen reader and other assistive technology users with the structure
+to navigate by: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Viewing a list of all of the headings on the page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Choosing top-level headings (Heading 1), next-level headings (Heading
+2), third-level headings (Heading 3), and so on. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+0in;margin-left:35.25pt;text-indent:-13.5pt;line-height:182%'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Reading or
+jumping by headings. </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:0in;margin-left:
+-.75pt;text-indent:22.5pt;line-height:182%'><a name="_Toc8477">&quot;Headings&quot;
+created with font styles </a></h2>
+
+<p class=MsoNormal style='margin-right:3.05pt'>Unfortunately, it is a common
+practice to create a &quot;heading&quot; by changing the text directly in a
+Word document. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.9pt;
+margin-left:-.75pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:99%'>A user will highlight the text and apply a different font
+type, a larger font size, bold formatting, etc. While these changes made with <b><span
+style='color:#434343'>Font</span></b> styling will provide <b><i>visual</i></b>
+structure for some of your users, the document structure needed for navigation
+by assistive technology users is missing. For this reason, use the <b><span
+style='color:#434343'>Heading</span></b> tool provided by Word. </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:0in;
+margin-bottom:7.25pt;margin-left:-.05pt;text-align:right;text-indent:0in;
+line-height:107%'><img width=720 height=120 id="Picture 567"
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image002.jpg"><span
+style='font-family:"Cambria",serif;color:black'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.65pt;
+margin-left:-.25pt;line-height:110%'><i><span style='font-size:9.0pt;
+line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 1: Microsoft
+Word 2016 for Mac Styles Ribbon location</span></i><i><span style='font-size:
+9.0pt;line-height:110%'> </span></i></p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8478">Alternative Text for Images </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.45pt;margin-left:.5pt'>Alternative text is needed in Word documents to
+provide a non-visual means of representing the CONTENT or FUNCTION of an image.
+There is more than one way to provide &quot;alt text,&quot; <b>but all images
+contained in a Word document must have it</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'><i>Image types in Word
+documents that can be given alternative text include:</i> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>pictures </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>illustrations
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>images of
+text </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>shapes </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>charts </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>SmartArt </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.7pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>embedded
+objects </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.7pt;margin-left:.5pt'>When alt text is added correctly to an image, screen
+reading software can &quot;read&quot; it in a Word, PDF or HTML file. </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8479">Adding alternative text </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.9pt;margin-left:.5pt'>There are multiple ways to provide alt text in Word
+documents: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Use the
+Description field in the Alt Text field (see steps below) OR </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.65pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Provide
+information about the content or function of the image in the surrounding text.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+14.45pt;margin-left:.5pt'>When the equivalent text cannot be provided
+succinctly in text near the image, you may link to another section of the
+document (e.g., an appendix) or to an accessible web page. </p>
+
+<h3 style='margin-left:-.25pt'><a name="_Toc8480">How to Insert Alt Text in
+MSWord: </a></h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:-.25pt;line-height:99%'><span style='font-size:11.0pt;line-height:
+99%;font-family:"Calibri",sans-serif;color:#243F60'>(Keep in mind your version
+of Word may be slightly different. Links to directions for various versions of
+Word are located on the last page of this document) </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Right click your image within the document and select Format Picture<i>.</i>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Within the Format Picture menu, select the option for Alt Text in the
+sidebar. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Describe the image in the Description field, not the Title field. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-4.0pt;margin-bottom:
+12.85pt;margin-left:1.6pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><img width=728 height=528
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.6pt;
+margin-left:-.25pt;line-height:110%'><i><span style='font-size:9.0pt;
+line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 2: Adding
+alt text to an image in Microsoft Word 2010 for Windows</span></i><i><span
+style='font-size:9.0pt;line-height:110%'> </span></i></p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8481">Best practices for alternative text </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.9pt;margin-left:.5pt'>Alternative text should be: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Accurate
+and equivalent—present the same content or function as the image. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+0in;margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span>Succinct—no more than a few words are necessary; rarely a short
+sentence or two may be appropriate. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>NOT be
+redundant—do not provide information that is in the surrounding text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+28.45pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>NOT use
+descriptive phrases—screen reading software identifies images, so do not use
+phrases such as &quot;image of...&quot; or &quot;graphic of...&quot;. </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8482">Data Tables </a></h1>
+
+<p class=MsoNormal style='margin-right:3.05pt'>The purpose of data tables is to
+present information in a grid, or matrix, and to have columns or rows that show
+the meaning of the information in the grid. Sighted users scan a table to make
+associations between data in the table and their appropriate row and/or column
+headers. Screen reader users make these same associations with tables in web
+pages and PDF files. Unfortunately Word documents do not support this
+functionality. You can, however, improve how table data is read by a screen
+reader by using clean, uniform tables: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Do not
+paste images of tables. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Do not
+merge cells. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Be sure
+the header cells are accurately explaining the data directly below (columns) or
+to the right (rows). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Do not
+use the table for notes or extra information that is not directly related to
+all data in the associated row or column. Notes may be provided above or below
+the table. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+14.65pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Make
+headers in table properties (below). </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8483">Adding table properties </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+28.45pt;margin-left:.5pt'>You can add properties to a table in a Word document.
+The first row in a table can be identified as a header row. This will provide a
+screen reader user with additional information when the document is exported to
+PDF. </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8484">Links </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.7pt;margin-left:.5pt'>Hyperlinks in Word documents allow users to visit web
+pages, navigate to Word <b><span style='color:#434343'>Headings</span></b> and <b><span
+style='color:#434343'>Bookmarks</span></b>, and open email links. </p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8485">Creating links in Word </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+14.45pt;margin-left:.5pt'>Hyperlinks are usually created in Word by pasting the
+complete URL of a web page into a document and hitting <b>Space</b>, <b>Enter</b>,
+or some other key. Word automatically creates a link, and uses the URL as the
+display text (e.g., http://www.brandeis.edu/learning/index.html). Because the
+URL text may not make sense to a user, we recommend editing Word's default link
+text. </p>
+
+<h3 style='margin-left:-.25pt'><a name="_Toc8486">How to Add Link Descriptions
+(MS Word): </a></h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:-.25pt;line-height:99%'><span style='font-size:11.0pt;line-height:
+99%;font-family:"Calibri",sans-serif;color:#243F60'>(Keep in mind your version
+of Word may be slightly different. Links to directions for various versions of
+Word are located on the last page of this document) </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Change the hyperlink text by selecting the link and right clicking on it
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Select Edit Hyperlink. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.65pt;margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Change the URL in the Text to display field to something more
+descriptive. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.9pt;margin-left:.5pt'>Follow these principles to create accessible links: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Use
+descriptive link text that does not rely on context from the surrounding text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Keep the
+amount of text in the link to a minimum. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.7pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Use
+underlined text with a color that stands out from the surrounding text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.45pt;margin-left:.5pt'><b><span style='color:black'>Important:</span></b><b><span
+style='font-family:"Cambria",serif;color:black'> </span></b>Screen reader users
+may skim a document by navigating from link to link. Avoid ambiguous link text
+that is difficult to understand out of context (e.g., &quot;click here&quot;). 
+</p>
+
+<p class=MsoNormal style='margin-right:3.05pt'><b>Note</b>: Describing links
+and avoiding use of explicit URLs is not always possible when following
+mandated document styling, e.g. in a printed bibliography. Authors must make
+the decision as to which is more important for the document, accessibility or
+mandated style. </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8487">Lists &amp; Columns </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+14.15pt;margin-left:.5pt'>Lists and columns add important hierarchical
+structure to a document. Sometimes users create &quot;lists&quot; and
+&quot;columns&quot; manually by hitting the <b>Tab</b> to indent content or by
+manually numbering. While this provides visual structure for sighted users, it
+does not provide the document structure needed for assistive technology users.
+Use the tools provided in Word for creating bullets and numbered lists (under
+Home tab) and columns (under Layout tab). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.25pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-family:
+"Cambria",serif;color:black'> </span><span style='font-size:11.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;color:black'><img width=240 height=58
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image004.gif"></span><span
+style='font-family:"Cambria",serif;color:black'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.6pt;
+margin-left:-.25pt;line-height:110%'><i><span style='font-size:9.0pt;
+line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 3: Microsoft
+Word 2016 for Mac -- bullets, lists, and column formatting buttons </span></i></p>
+
+<h2 style='margin-top:0in;margin-right:284.1pt;margin-bottom:10.75pt;
+margin-left:-.25pt'><a name="_Toc8488">List types </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+16.0pt;margin-left:.5pt'>There are two types of lists used in Word: ordered and
+unordered. Ordered (numbered) lists are used to present a group of items
+(words, phrases, sentences) that follow a sequence: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Preheat grill with &quot;high&quot; heat setting. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Cook hamburgers on &quot;medium&quot; heat setting. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Flip hamburgers when juices are visible on the top of the patty. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.25pt;margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Remove hamburgers when the inside temperature is 160<span
+style='font-family:"Cambria Math",serif'>&#8457;</span>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+16.0pt;margin-left:.5pt'>Unordered (bullet) lists are used for a group of items
+without a sequence: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Ketchup </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Mustard </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Pickles </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+17.7pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Onions </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8489">Color Contrast </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.7pt;margin-left:.5pt'>Individuals with low-vision or colorblindness can have
+trouble discerning text that is poorly contrasted with its background. You can
+alleviate this by using dark text and high-contrast color combinations in your
+graphics and by labeling things that are otherwise distinguished only by color
+on a page (think charts and graphs).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+28.45pt;margin-left:.5pt'>For more information on improving color contrast,
+visit the <a
+href="http://www.brandeis.edu/communications/digital/accessibility/best-practices/color.html"><span
+style='color:blue;text-decoration:none'>Best practices: Using color page</span></a><a
+href="http://www.brandeis.edu/communications/digital/accessibility/best-practices/color.html"><span
+style='color:#262626;text-decoration:none'> </span></a>of the <a
+href="http://www.brandeis.edu/communications/digital/accessibility/index.html"><span
+style='color:blue;text-decoration:none'>web </span></a><a
+href="http://www.brandeis.edu/communications/digital/accessibility/index.html"><span
+style='color:blue;text-decoration:none'>accessibility toolkit</span></a><a
+href="http://www.brandeis.edu/communications/digital/accessibility/index.html"><span
+style='color:#262626;text-decoration:none'>.</span></a> </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8490">Accessibility Checker </a></h1>
+
+<p class=MsoNormal style='margin-right:3.05pt'>Newer versions of Word (Mac 2016
+plus, Windows 2010 plus) provide an Accessibility Checker for identifying and
+repairing accessibility issues.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.85pt;
+margin-left:1.6pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif;color:black'><img
+border=0 width=456 height=93
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image005.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.6pt;
+margin-left:-.75pt;text-indent:0in;line-height:110%'><i><span style='font-size:
+9.0pt;line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 4:
+Accessibility checker button -- Word 2016 for Mac</span></i><i><span
+style='font-size:9.0pt;line-height:110%'>                                                                  </span></i><br
+clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.85pt;
+margin-left:1.6pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif;color:black'><img
+border=0 width=461 height=410
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image006.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.65pt;
+margin-left:-.25pt;line-height:110%'><i><span style='font-size:9.0pt;
+line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 5: Accessibility
+checker button on the Info tab of the File menu in Word 2013 for Windows</span></i><i><span
+style='font-size:9.0pt;line-height:110%'> </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+.25in;margin-left:.5pt'>The checker's <b><span style='color:#434343'>Inspection
+Results</span></b> (usually located on the right in a column next to your
+document) classifies accessibility issues into three categories: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+0in;margin-left:.5in;text-indent:-.25in;line-height:107%'><span
+style='font-family:"Arial",sans-serif;color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Errors</b>: content that makes a document very difficult or
+impossible for people with disabilities to access. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+3.75pt;margin-left:72.05pt;text-indent:-18.05pt'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Example: an
+image with no alt text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif;
+color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Warnings</b>: content that in most—but not all—cases makes the
+document difficult for people with disabilities to access. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+3.75pt;margin-left:72.05pt;text-indent:-18.05pt'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Example: a link
+with text that is not descriptive of its function. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif;
+color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Tips</b>: content that people with disabilities can access,
+but that might be better organized or presented. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Example: skipping from a
+first-level heading to a third-level heading. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.85pt;
+margin-left:1.6pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif;color:black'><img
+border=0 width=226 height=258
+src="Creating%20Accessible%20Documents%20in%20Microsoft%20Word_files/image007.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.65pt;
+margin-left:-.25pt;line-height:110%'><i><span style='font-size:9.0pt;
+line-height:110%;font-family:"Cambria",serif;color:#1F497D'>Figure 6: Sample
+results in accessibility checker in Word 2016 for MAC</span></i><i><span
+style='font-size:9.0pt;line-height:110%'> </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+16.25pt;margin-left:.5pt'>Clicking an item in the results locates and
+highlights the corresponding item in the document and displays the <b><span
+style='color:#434343'>Additional Information</span></b> section: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif;
+color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Why Fix: explains why the issue impacts accessibility. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+12.65pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif;
+color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ho<b>w to Fix:</b> suggestions for repairing the issue. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.4pt;margin-left:.5pt'>If you are unable to fix an error on your own, please
+reach out to the Web team at <span style='color:blue'>webaccessibility@brandeis.edu</span>.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.4pt;margin-bottom:29.05pt;
+margin-left:0in;text-indent:0in;line-height:98%'><b>The accessibility checker
+is located in the File menu under Info for most Windows versions of MSWord and
+in the Review menu on Word for Mac (2016 on). </b></p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8491">Converting to PDF </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.45pt;margin-left:.5pt'>Many Word documents end up as PDF files. It is a
+convenient way to preserve formatting and accessibility information, assuming
+the file is converted correctly. Read more on <a
+href="http://webaim.org/techniques/acrobat/converting#word"><span
+style='color:blue;text-decoration:none'>converting a Word document to
+accessible </span></a><a
+href="http://webaim.org/techniques/acrobat/converting#word"><span
+style='color:blue;text-decoration:none'>PDF</span></a><a
+href="http://webaim.org/techniques/acrobat/converting#word"><span
+style='color:#262626;text-decoration:none'> </span></a>in WebAim’s Acrobat/PDF
+article. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+13.4pt;margin-left:.5pt'>PDFs have additional accessibility needs. Consider
+increasing the accessibility of your PDF using <a
+href="http://webaim.org/techniques/acrobat/converting"><span style='color:blue;
+text-decoration:none'>Acrobat </span></a><a
+href="http://webaim.org/techniques/acrobat/converting"><span style='color:blue;
+text-decoration:none'>Professional</span></a><a
+href="http://webaim.org/techniques/acrobat/converting"><span style='color:#262626;
+text-decoration:none'>.</span></a> Make sure that you have the right <a
+href="https://helpx.adobe.com/acrobat/kb/compatible-web-browsers-pdfmaker-applications.html#main_PDFMaker_compatible_applications"><span
+style='color:blue;text-decoration:none'>version of Acrobat for your version of
+Word</span></a><a
+href="https://helpx.adobe.com/acrobat/kb/compatible-web-browsers-pdfmaker-applications.html#main_PDFMaker_compatible_applications"><span
+style='color:#262626;text-decoration:none'>.</span></a> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+28.35pt;margin-left:.5pt'><a
+href="http://www.brandeis.edu/communications/digital/accessibility/training.html"><span
+style='color:blue;text-decoration:none'>Training on PDF accessibility</span></a><a
+href="http://www.brandeis.edu/communications/digital/accessibility/training.html"><span
+style='color:#262626;text-decoration:none'> </span></a>is available through the
+Digital Communications site. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;margin-left:
+-.25pt'><a name="_Toc8492">Other Principles </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Use
+simple language. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Ensure
+that font size is sufficiently large—generally a minimum of 11 points. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Provide
+sufficient contrast between text colors and background colors. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Do not
+use color as the ONLY way to convey content. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Be
+careful with the use of watermarks. They can impact readability and create low
+contrast. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+1.25pt;margin-left:35.25pt;text-indent:-13.5pt'><span style='color:black'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span>Provide a
+table of contents for long documents (5 pages+). </p>
+
+<h1 style='margin-left:-.25pt'><a name="_Toc8493">Principles into Practice </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+15.85pt;margin-left:.5pt'>Ready to get started? Select your version of Word: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://webaim.org/techniques/word/word2010"><span
+style='color:blue'>Word 2010 (Windows)</span></a><a
+href="http://webaim.org/techniques/word/word2010"><span style='color:blue;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://webaim.org/techniques/word/word2011"><span
+style='color:blue'>Word 2011 (Mac)</span></a><a
+href="http://webaim.org/techniques/word/word2011"><span style='color:blue;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://webaim.org/techniques/word/word2013"><span
+style='color:blue'>Word 2013 (Windows)</span></a><a
+href="http://webaim.org/techniques/word/word2013"><span style='color:blue;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://webaim.org/techniques/word/word2016win"><span
+style='color:blue'>Word 2016 (Windows)</span></a><a
+href="http://webaim.org/techniques/word/word2016win"><span style='color:blue;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.85pt;
+margin-left:35.25pt;text-indent:-13.5pt;line-height:107%'><span
+style='color:black'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://webaim.org/techniques/word/word2016mac"><span
+style='color:blue'>Word 2016 (Mac)</span></a><a
+href="http://webaim.org/techniques/word/word2016mac"><span style='color:blue;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:95.3pt;text-indent:-45.3pt;line-height:99%'><b><span
+style='font-size:14.0pt;line-height:99%;color:black'>For more help or to report
+a broken link in this document, please contact the  Brandeis accessibility team
+(</span></b><span style='font-size:14.0pt;line-height:99%;color:blue'>webaccessibility@brandeis.edu</span><b><span
+style='font-size:14.0pt;line-height:99%;color:black'>). </span></b></p>
+
+</div>
+
+</body>
+
+</html>

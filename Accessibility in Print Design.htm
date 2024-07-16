@@ -1,0 +1,1794 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Accessibility basics for print</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:"Eras ITC";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:287.0pt;
+	margin-bottom:5.35pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#181717;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:19.3pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:36.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#181717;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:30.3pt;
+	margin-right:0in;
+	margin-bottom:3.05pt;
+	margin-left:1.9pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#181717;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:5.45pt;
+	line-height:107%;
+	page-break-after:avoid;
+	background:#E9F0CC;
+	border:none;
+	padding:0in;
+	font-size:13.5pt;
+	font-family:"Calibri",sans-serif;
+	color:#181717;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:#181717;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:#181717;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#181717;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:841.9pt 595.3pt;
+	margin:1.0in 1.0in 47.65pt 35.45pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:841.9pt 595.3pt;
+	margin:.5in 36.1pt 35.15pt 34.6pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:841.9pt 595.3pt;
+	margin:.5in 47.1pt 64.05pt 35.45pt;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:1.15pt'>Accessibility
+in print design </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-33.95pt;margin-bottom:
+29.45pt;margin-left:1.5pt;text-indent:0in;line-height:107%'><span
+style='color:black'><img width=1022 height=6 id="Group 12438"
+src="Accessibility%20in%20Print%20Design_files/image001.gif"></span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=422 style='width:4.4in;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:410.7pt'>
+  <td width=422 valign=top style='width:4.4in;border:solid #009ED5 2.25pt;
+  padding:13.45pt 5.75pt 0in 9.3pt;height:410.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.4pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><b>Things to consider
+  include: </b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.25pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Use a simple clear font. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Avoid handwriting and highly stylised fonts. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Light weight fonts with thin lines should not be used. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:103%'><span
+  style='font-size:12.0pt;line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Blocks of italic and underline are hard to read and should be
+  avoided. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.8pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:101%'><span
+  style='font-size:12.0pt;line-height:101%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>All capital letters in long lines of text are hard to read
+  because the individual characters are harder to recognise. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Use bold text sparingly for emphasis. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.25pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Align text left. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:103%'><span
+  style='font-size:12.0pt;line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Make sure contrast is strong between the text and the
+  background. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Avoid using text over images or patterned backgrounds </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:103%'><span
+  style='font-size:12.0pt;line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Make sure numbers are distinct. 3, 5 and 8 can be misread as 0
+  and 6 in some fonts. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Avoid the use of hyphens when possible. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:14.15pt;text-indent:-14.15pt;line-height:107%'><span
+  style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Tables have visible borders and their content is well spaced
+  within the cells. </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.65pt;
+margin-left:1.15pt'>Most people think of websites and digital platforms when
+they think of accessibility, but printed material should be accessible as well.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.65pt;
+margin-left:1.15pt'>Colour contrast is very important but it is only part of
+the equation. Accessible designs for print are created using colours, fonts,
+headings and layouts that make the product as clear and legible as possible.
+Designing with accessibility in mind from the start insures that a print
+product is ready for conversion to digital use and makes it more readable for a
+wider audience. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>This guide covers accessibility issues that are relevant
+when creating new text designs. It is also intended to be used with existing
+text designs that are to be re-purposed for a new edition, or as a style book
+for another text. </p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:#181717'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:17.8pt;margin-left:
+1.15pt'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=1 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=1027 height=4
+  src="Accessibility%20in%20Print%20Design_files/image002.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+Font style and family </h1>
+
+<h2 style='margin-left:1.15pt'>Text font type </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Fonts should be clear and easy to read. Avoid handwriting or
+fancy fonts. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Text should be left aligned or justified with hyphenation turned
+off. Avoid <span style='color:black'>        </span>ranged right text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid using text on top of images unless it is on a dark or light
+panel. The legibility of text is enhanced by a clean consistent background. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid graduated tints behind headings. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.5pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Italic for emphasis should be used sparingly. Underline should be
+avoided if possible as it reduces legibility. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;margin-left:
+1.15pt'>Text font size </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.05pt;
+margin-left:1.15pt'>As a general rule the minimum text font size is considered
+to be no smaller than 10pt. But not all fonts have letters that are the same
+size. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.9pt;
+margin-left:1.15pt;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%'>Sans Serif fonts </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Use Arial as the guide and check to see how it compares for
+size and clarity. Adjust the size accordingly: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.8pt;
+margin-left:15.6pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Arial",sans-serif'>This is 10/12pt Arial </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:245.05pt;margin-bottom:
+0in;margin-left:15.6pt;text-indent:0in;line-height:130%'>This is 10/12pt Open
+Sans This is 10/12pt Mundo Sans </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:22.8pt;
+margin-left:15.6pt;text-indent:0in;line-height:107%'>This is 10/12pt Frutiger
+LT </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.9pt;
+margin-left:1.15pt;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%'>Serif fonts </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.55pt;
+margin-left:1.15pt'>Use Times as the guide and check to see how it compares for
+size and clarity. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Adjust the size accordingly, </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=454
+ style='width:340.85pt;margin-left:.5pt;border-collapse:collapse'>
+ <tr style='height:159.4pt'>
+  <td width=236 style='width:177.05pt;border:solid #5ABCE2 2.25pt;border-right:
+  none;padding:0in 5.75pt 0in 0in;height:159.4pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.75pt;
+  margin-left:11.7pt;text-indent:0in;line-height:104%'><span style='font-size:
+  10.0pt;line-height:104%;font-family:"Arial",sans-serif'>Nate nam qui
+  berchillaut essimu sanda con comnis ari doluptaturi sam faccatio. Picidem
+  quasped essimodiam. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.2pt;
+  margin-left:9.4pt;text-indent:0in;line-height:107%'>10/12pt Arial </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:11.7pt;text-indent:0in;line-height:91%'>Nate nam qui berchillaut
+  essimu sanda con comnis ari doluptaturi sam faccatio. Picidem quasped
+  essimodiam. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:11.7pt;text-indent:0in;line-height:107%'>10.75/12pt Mundo sans </p>
+  </td>
+  <td width=218 style='width:163.8pt;border:solid #5ABCE2 2.25pt;border-left:
+  none;padding:0in 5.75pt 0in 0in;height:159.4pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.7pt;
+  margin-left:0in;text-indent:0in'><span style='font-size:9.5pt;line-height:
+  103%'>Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam
+  faccatio. Picidem quasped essimodiam. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.35pt;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'>9.5/12pt Open sans </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.1pt;
+  margin-left:3.75pt;text-indent:0in'><span style='font-size:9.5pt;line-height:
+  103%'>Nate nam qui berchillaut essimu usanda con comnis ari doluptaturi sam
+  faccatio. Picidem quasped essimodiam. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:2.85pt;text-indent:0in;line-height:107%'>9.5/12pt Frutiger LT </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.65pt;
+margin-left:0in;text-indent:0in'>Different San Serif fonts adjusted for size.<span
+style='color:black'>             </span><span style='font-family:"Times New Roman",serif'> </span></p>
+
+<div style='border:solid #60BDE3 2.25pt;padding:0in 0in 0in 0in;margin-left:
+8.3pt;margin-right:3.3pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.0pt;
+margin-left:0in;text-indent:0in;line-height:117%;border:none;padding:0in'><span
+style='font-size:10.0pt;line-height:117%;font-family:"Times New Roman",serif'>Nate
+nam qui berchillaut essimu   </span><span style='font-size:9.5pt;line-height:
+117%;font-family:"Times New Roman",serif'>Nate nam qui berchillaut essimu </span><span
+style='font-size:10.0pt;line-height:117%;font-family:"Times New Roman",serif'>sanda
+con comnis ari doluptaturi sam      </span><span style='font-size:9.5pt;
+line-height:117%;font-family:"Times New Roman",serif'>sanda con comnis ari
+doluptaturi sam </span><span style='font-size:10.0pt;line-height:117%;
+font-family:"Times New Roman",serif'>faccatio. Picidem quasped essimodiam. </span><span
+style='font-size:9.5pt;line-height:117%;font-family:"Times New Roman",serif'>faccatio.
+Picidem quasped essimodiam. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.0pt;
+margin-left:0in;text-indent:0in;line-height:110%;border:none;padding:0in'>10/12pt
+Times                                               9.5/12pt ITC Giovanni </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.75pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:120%;border:none;padding:0in'><span style='font-size:9.5pt;
+line-height:120%;font-family:"Times New Roman",serif'>Nate nam qui berchillaut
+essimu </span><span style='font-size:9.0pt;line-height:120%;font-family:"Garamond",serif'>Nate
+nam qui berchillaut essimu </span><span style='font-size:9.5pt;line-height:
+120%;font-family:"Times New Roman",serif'>sanda con comnis ari doluptaturi sam </span><span
+style='font-size:9.0pt;line-height:120%;font-family:"Garamond",serif'>usanda
+con comnis ari doluptaturi sam </span><span style='font-size:9.5pt;line-height:
+120%;font-family:"Times New Roman",serif'>faccatio. Picidem quasped essimodiam </span><span
+style='font-size:9.0pt;line-height:120%;font-family:"Garamond",serif'>faccatio.
+Picidem quasped essimodiam </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:28.15pt;
+margin-left:0in;text-indent:0in;line-height:110%;border:none;padding:0in'>9.25/12pt
+Palatino                                        9/12pt ITC Garamond </p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:0in;text-indent:0in'>Different Serif fonts adjusted for size.<span
+style='color:black'>           </span><span style='font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;
+margin-left:1.15pt;line-height:107%'><b><span style='font-size:12.0pt;
+line-height:107%'>Why Arial and Times? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.15pt;
+margin-left:1.15pt'>Commonly used fonts are often rated as the most readable.
+This doesn’t mean that they are the best designed or most legible typefaces.
+What it does mean though is that they are the fonts which we are most familiar
+with. Familiarity is one of the most important factors in the legibility of a
+font. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;margin-left:
+1.15pt'>Font weight and letter spacing </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.5pt;
+margin-left:1.15pt'>Light font weights can be hard to read as legibility
+requires good contrast so should be avoided. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.8pt;
+margin-left:15.6pt;text-indent:0in;line-height:107%'><span style='font-size:
+12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Helvetica Neu light is
+hard to read </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.55pt;
+margin-left:1.15pt'>Bold and condensed fonts can also be difficult to read due
+to the space closing <span style='color:black'>  </span>up between letters.
+However a small amount of extra letter spacing/tracking can improve the
+legibility. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=542
+ style='width:406.2pt;margin-left:1.9pt;border-collapse:collapse'>
+ <tr style='height:27.45pt'>
+  <td width=271 style='width:203.1pt;border:solid #181717 1.0pt;border-right:
+  solid #FFFEFD 1.0pt;background:#181717;padding:2.6pt 5.75pt 0in 5.65pt;
+  height:27.45pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='color:#FFFEFD'>Normal letter spacing </span></b></p>
+  </td>
+  <td width=271 style='width:203.1pt;border:solid #181717 1.0pt;border-left:
+  none;background:#181717;padding:2.6pt 5.75pt 0in 5.65pt;height:27.45pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='color:#FFFEFD'>Increased letter spacing +30 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:22.85pt'>
+  <td width=271 valign=top style='width:203.1pt;border:solid #181717 1.0pt;
+  border-top:none;padding:2.6pt 5.75pt 0in 5.65pt;height:22.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Helvetica
+  Neu condensed bold </span></b></p>
+  </td>
+  <td width=271 valign=top style='width:203.1pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:2.6pt 5.75pt 0in 5.65pt;height:22.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Helvetica
+  Neu condensed bold </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:23.05pt'>
+  <td width=271 valign=top style='width:203.1pt;border:solid #181717 1.0pt;
+  border-top:none;padding:2.6pt 5.75pt 0in 5.65pt;height:23.05pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Helvetica
+  Neu bold </span></b></p>
+  </td>
+  <td width=271 valign=top style='width:203.1pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:2.6pt 5.75pt 0in 5.65pt;height:23.05pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif'>Helvetica
+  Neu bold </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:19.55pt'>
+  <td width=271 valign=top style='width:203.1pt;border:solid #181717 1.0pt;
+  border-top:none;padding:2.6pt 5.75pt 0in 5.65pt;height:19.55pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>Times
+  bold </span></b></p>
+  </td>
+  <td width=271 valign=top style='width:203.1pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:2.6pt 5.75pt 0in 5.65pt;height:19.55pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Times New Roman",serif'>Times
+  bold </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.4pt;
+margin-left:1.15pt;line-height:107%'><b><span style='font-size:12.0pt;
+line-height:107%'>A few things to consider about Numbers. </span></b></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;margin-left:
+0in;text-indent:0in'><span style='font-size:16.0pt;line-height:107%;color:#185E9C'>0
+1 2 3 4 5 6 7 8 9 </span><span style='font-size:16.0pt;line-height:107%;
+color:black'>                    </span><span style='font-size:16.0pt;
+line-height:107%;color:#185E9C'>0 1 2 3 4 5 6 7 8 9</span><span
+style='font-size:16.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#185E9C;font-weight:normal'> </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.55pt;
+margin-left:1.15pt'>Both sets of numbers above are from the same typeface. The
+first are Lining <span style='color:black'> </span>figs the second are known as
+Old-style figs.<span style='color:black'>                       </span><span
+style='font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.6pt;
+margin-left:1.15pt'>Old-style numbers are designed to be included in a block of
+text. Lining numerals tend to break the flow of reading slightly. Lining
+figures work better <span style='color:black'>             </span>with lists
+because they sit right next to an upper-case letter. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>The lining figures match the height of the upper-case
+letters, adding a bit of <span style='color:black'> </span>visual pause, while
+the old-style numbers match the lower-case text, making it slightly easier on
+the eye. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=454 style='width:340.85pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:129.65pt'>
+  <td width=234 valign=top style='width:175.15pt;border:solid #5ABCE2 2.25pt;
+  border-right:none;padding:9.65pt 5.75pt 0in 0in;height:129.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+  margin-left:7.35pt;text-indent:0in'><span style='font-size:9.5pt;line-height:
+  103%'>Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam
+  faccatio. Picidem quasped essimodiam. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:7.35pt;text-indent:0in;line-height:107%'><i><span
+  style='font-size:9.5pt;line-height:107%'>Nate nam qui berchillaut essim sanda
+  con comnis ari doluptaturi sam fac catio. Picidem quasped essimodiam. </span></i></p>
+  </td>
+  <td width=221 style='width:165.75pt;border:solid #5ABCE2 2.25pt;border-left:
+  none;padding:9.65pt 5.75pt 0in 0in;height:129.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+  margin-left:0in;text-indent:0in'><b><span style='font-size:9.5pt;line-height:
+  103%'>Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam
+  faccatio. Picidem quasped essimodiam. </span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.35pt;text-indent:0in;line-height:107%'><u><span
+  style='font-size:9.5pt;line-height:107%'>Nate nam qui berchillaut essim sanda
+  con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.</span></u><span
+  style='font-size:9.5pt;line-height:107%'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=454 style='width:340.85pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:179.2pt'>
+  <td width=454 style='width:340.85pt;border:solid #5ABCE2 2.25pt;padding:0in 5.75pt 0in 15.95pt;
+  height:179.2pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.7pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><b>Lining numbers </b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.15pt;margin-bottom:
+  13.0pt;margin-left:29.6pt;text-indent:0in;line-height:98%'>The 25th European
+  Championship will take place in London. The tournament will involve 20 teams
+  and the opening games will be played at 8pm on the 17th June. </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.7pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><b>Non lining old style
+  numbers </b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.85pt;margin-bottom:
+  0in;margin-left:29.6pt;text-indent:0in;line-height:107%'>The 25th European
+  Championship will take place in London. The tournament will involve 20 teams
+  and the opening games will be played at 8pm on the 17th June. </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.8pt;
+margin-left:1.15pt'><img width=460 height=145
+src="Accessibility%20in%20Print%20Design_files/image003.gif"><br clear=ALL>
+Avoid blocks of bold, italic and underline </p>
+
+<p class=MsoNormal style='margin-top:7.3pt;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Some fonts e.g. Gill sans, have almost identical capital
+“I”, lower-case “l”, and numeral “1” characters. </p>
+
+<h1 style='margin-left:1.15pt'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=3 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=1023 height=6
+  src="Accessibility%20in%20Print%20Design_files/image004.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+When to use capitals </h1>
+
+<p class=MsoNormal style='margin-top:29.45pt;margin-right:0in;margin-bottom:
+12.65pt;margin-left:1.15pt'>It is generally agreed that capital letters should
+be used sparingly, but no-one seems to have the answer to ‘how much is too
+much?’ </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.65pt;
+margin-left:1.15pt'>In small font sizes all capital words are hard to read e.g.
+when used in running heads or in lines of text of more than 3 or 4 words (long
+text headings) and should be avoided. But they can work well when used
+sparingly, in short headings for impact or emphasis. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.65pt;
+margin-left:1.15pt'>There is some debate about the use of caps for large font
+sizes (24pt and above). These are normally seen in chapter and part titles. The
+words ‘Chapter’ and ‘Part’ can work well in caps, but long chapter titles are
+harder to read. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.95pt;
+margin-left:1.15pt'>Things to consider when using capitals: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>When all caps are used the words form a uniform rectangular
+shape, this makes it hard to identify individual letters and readability is
+reduced. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>People with dyslexia might have problems reading text in all
+caps. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If the page uses capital letters in a way that makes it hard for
+you to read, then change it to something you can read. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All caps can work well to add importance to short headings which
+convey actions. </p>
+
+<div style='border:solid #009ED5 2.25pt;padding:0in 0in 0in 0in;margin-left:
+7.45pt;margin-right:0in'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.9pt;
+margin-left:0in;text-indent:0in;line-height:107%;border:none;padding:0in'><span
+style='font-size:12.0pt;line-height:107%'>ALL CAPS IN LONG LINES MAKES TEXT
+HARDER TO READ </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.95pt;
+margin-left:0in;text-indent:0in;line-height:107%;border:none;padding:0in'><b><span
+style='font-size:7.5pt;line-height:107%;font-family:"Arial",sans-serif'>4.4 </span></b><span
+style='font-size:7.5pt;line-height:107%;color:black'> </span><span
+style='font-size:7.5pt;line-height:107%;font-family:"Arial",sans-serif'>SCRIP
+ISSUES, SHARE SPLITS, SCRIP DIVIDENDS AND SHAR</span><span style='font-size:
+7.0pt;line-height:107%;font-family:"Arial",sans-serif'>E REPURCHASES </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.05pt;
+margin-left:0in;text-indent:0in;line-height:107%;border:none;padding:0in'><b><span
+style='font-size:9.0pt;line-height:107%;font-family:"Arial",sans-serif'>4.4 </span></b><span
+style='font-size:9.0pt;line-height:107%;color:black'> </span><span
+style='font-size:9.0pt;line-height:107%;font-family:"Arial",sans-serif'>Scrip
+issues, share splits, scrip dividends and share repurchases </span></p>
+
+</div>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=456 style='width:341.85pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:37.9pt'>
+  <td width=47 valign=top style='width:35.3pt;border-top:solid #009ED5 2.25pt;
+  border-left:solid #009ED5 2.25pt;border-bottom:none;border-right:none;
+  padding:4.2pt 5.75pt 0in 0in;height:37.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:6.95pt;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:#4B4486'>4.4 </span></b></p>
+  </td>
+  <td width=409 valign=top style='width:306.55pt;border-top:solid #009ED5 2.25pt;
+  border-left:none;border-bottom:none;border-right:solid #009ED5 2.25pt;
+  padding:4.2pt 5.75pt 0in 0in;height:37.9pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:#4B4486'>SCRIP ISSUES, SHARE SPLITS SCRIP DIVIDENDS AND SHARE
+  REPURCHASES </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:47.95pt'>
+  <td width=47 valign=top style='width:35.3pt;border-top:none;border-left:solid #009ED5 2.25pt;
+  border-bottom:solid #009ED5 2.25pt;border-right:none;padding:4.2pt 5.75pt 0in 0in;
+  height:47.95pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:6.95pt;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:#4B4486'>4.4 </span></b></p>
+  </td>
+  <td width=409 valign=top style='width:306.55pt;border-top:none;border-left:
+  none;border-bottom:solid #009ED5 2.25pt;border-right:solid #009ED5 2.25pt;
+  padding:4.2pt 5.75pt 0in 0in;height:47.95pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:#4B4486'>Scrip issues, share splits scrip dividends and share
+  repurchases </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.85pt;
+margin-left:1.15pt'>Example of capitals used in running head. </p>
+
+<p class=MsoNormal style='margin-top:6.75pt;margin-right:0in;margin-bottom:
+24.1pt;margin-left:1.15pt'>Example of capitals used in H1 head. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.7pt;
+margin-left:11.5pt;text-indent:0in;line-height:107%'><b><span style='font-size:
+11.5pt;line-height:107%;font-family:"Arial",sans-serif;color:#FFFEFD'>STOP AND
+THINK </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:143.15pt;margin-bottom:
+20.15pt;margin-left:11.35pt;text-indent:0in;line-height:104%'><span
+style='position:relative;z-index:-1895822336'><span style='left:0px;position:
+absolute;left:-2px;top:-40px;width:291px;height:97px'><img width=291 height=97
+src="Accessibility%20in%20Print%20Design_files/image005.gif"></span></span><b><span
+style='font-size:9.0pt;line-height:104%;font-family:"Arial",sans-serif'>Why do
+we want psychological theories not only to descibe theories but to have a
+predictive quality too? </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Good use of capitals. </p>
+
+<h1 style='margin-left:1.15pt'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=3 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=1023 height=6
+  src="Accessibility%20in%20Print%20Design_files/image004.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+White space </h1>
+
+<p class=MsoNormal style='margin-top:29.45pt;margin-right:0in;margin-bottom:
+5.35pt;margin-left:1.15pt'>Effective use of white space can greatly improve
+legibility for people with vision impairments or low vision. Generous margins,
+open line spacing and text widths of less than 65 characters is one way to
+achieve this. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Margins - generous margins Improve page organization and
+increases comprehension. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Columns - for larger format books separate text into columns for
+ease of reading. For students with low vision using magnification, it is very helpful
+because it requires less eye movement. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Heading padding - add space above and below. The white space
+makes headings stand out and emphasizes the heading structure placing focus on
+the visual hierarchy. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ample white space cuts down clutter which increases readability
+for students with dyslexia. </p>
+
+<div style='border:solid #009ED5 2.25pt;padding:0in 0in 0in 0in;margin-left:
+17.9pt;margin-right:8.35pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+margin-left:.5pt;line-height:90%;border:none;padding:0in'><b><span
+style='font-size:18.0pt;line-height:90%'>Large margins and open spacing make
+text easier to read. </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:32.85pt;
+margin-left:.5pt;line-height:99%;border:none;padding:0in'><span
+style='font-size:9.5pt;line-height:99%'>Nate nam qui berchillaut essim sanda
+con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam Nate nam
+qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem
+quasped essimodiam Nate nam qui berchillaut essim sanda con comnis ari
+doluptaturi sam faccatio. Picidem quasped essimodiam </span></p>
+
+</div>
+
+<div style='border:solid #009ED5 2.25pt;padding:0in 0in 0in 0in;margin-left:
+-.75pt;margin-right:1.95pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+margin-left:.5pt;line-height:90%;border:none;padding:0in'><b><span
+style='font-size:18.0pt;line-height:90%'>Text is harder to read if placed close
+to the margins with little line spacing. </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:32.85pt;
+margin-left:.5pt;line-height:99%;border:none;padding:0in'><span
+style='font-size:9.5pt;line-height:99%'>Nate nam qui berchillaut essim sanda
+con comnis ari doluptaturisam facc ati o. Picidem quasped essimodiam Nate nam
+qui berchillaut essim sanda conc o mnis ari doluptaturi sam faccatio. Picidem
+quasped essimodiam Nate nam qui berchillaut essim sanda con comnis ari
+doluptaturi sam faccatio. Picidem quasped essimodiam </span></p>
+
+</div>
+
+<h1 style='margin-left:1.15pt'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=4 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=1023 height=6
+  src="Accessibility%20in%20Print%20Design_files/image004.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+Tables and text features </h1>
+
+<h2 style='margin-top:29.45pt;margin-right:0in;margin-bottom:3.05pt;margin-left:
+1.15pt'>Alignment </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Align text entries left. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Align non size related numeric data left (i.e.. date phone
+numbers). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Numeric data related to size should range right to help identify
+size. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.05pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Align numeric entries on decimal point. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;margin-left:
+1.15pt'>Row heights and Spacing </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.85pt;
+margin-left:1.15pt'>Choosing a more open row height will create more white
+space making tables easier to read. It is also important to allow enough
+spacing or padding in the table cells so the entries sit well within them. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:1.15pt'>Table layouts should be simple and spacious. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=553
+ style='width:414.45pt;margin-left:1.65pt;border-collapse:collapse'>
+ <tr style='height:36.65pt'>
+  <td width=88 valign=top style='width:65.8pt;border:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Buy class </span></b></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border:solid #181717 1.0pt;
+  border-left:none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Degree of familiarity with the
+  problem </span></b></p>
+  </td>
+  <td width=155 colspan=3 style='width:116.2pt;border:solid #181717 1.0pt;
+  border-left:none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Information requirements </span></b></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border:solid #181717 1.0pt;
+  border-left:none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Alternative solutions </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:48.65pt'>
+  <td width=88 valign=top style='width:65.8pt;border:solid #181717 1.0pt;
+  border-top:none;padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>New buy </span></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>The problem is fresh to the
+  decisionmakers. </span></p>
+  </td>
+  <td width=155 colspan=3 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>A great deal of information is
+  required. </span></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Alternative solutions are unknown,
+  all are considered new. </span></p>
+  </td>
+ </tr>
+ <tr style='height:60.65pt'>
+  <td width=88 valign=top style='width:65.8pt;border:solid #181717 1.0pt;
+  border-top:none;padding:8.5pt 5.75pt 0in 8.5pt;height:60.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Modified rebuy </span></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:60.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.85pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%'>The requirement is not new but is different from previous
+  situations. </span></p>
+  </td>
+  <td width=155 colspan=3 valign=top style='width:116.2pt;border-top:none;
+  border-left:none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:60.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:6.9pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%'>More information is required but past experience is
+  of use. </span></p>
+  </td>
+  <td width=155 colspan=2 valign=top style='width:116.2pt;border-top:none;
+  border-left:none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:60.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Buying decision needs new
+  solutions. </span></p>
+  </td>
+ </tr>
+ <tr style='height:48.65pt'>
+  <td width=88 valign=top style='width:65.8pt;border:solid #181717 1.0pt;
+  border-top:none;padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Rebuy </span></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>The problem is identical to
+  previous experiences. </span></p>
+  </td>
+  <td width=155 colspan=3 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Little or no information is
+  required. </span></p>
+  </td>
+  <td width=155 colspan=2 style='width:116.2pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:48.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Alternative solutions not sought or
+  required. </span></p>
+  </td>
+ </tr>
+ <tr style='height:36.65pt'>
+  <td width=123 colspan=2 valign=top style='width:91.9pt;border-top:none;
+  border-left:solid #181717 1.0pt;border-bottom:solid #FFFEFD 1.0pt;border-right:
+  solid #FFFEFD 1.0pt;background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;
+  height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Band </span></b></p>
+  </td>
+  <td width=140 colspan=2 valign=top style='width:104.9pt;border-top:none;
+  border-left:none;border-bottom:solid #181717 1.0pt;border-right:solid #FFFEFD 1.0pt;
+  background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Lead singer </span></b></p>
+  </td>
+  <td width=89 style='width:66.6pt;border:none;border-bottom:solid #181717 1.0pt;
+  background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Date formed </span></b></p>
+  </td>
+  <td width=104 colspan=2 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Recording label </span></b></p>
+  </td>
+  <td style='border:none;padding:0in 0in 0in 0in' width=98><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='height:36.65pt'>
+  <td width=123 colspan=2 valign=top style='width:91.9pt;border-top:none;
+  border-left:solid #181717 1.0pt;border-bottom:solid #FFFEFD 1.0pt;border-right:
+  solid #181717 1.0pt;background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;
+  height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Sparklehorse </span></b></p>
+  </td>
+  <td width=140 colspan=2 valign=top style='width:104.9pt;border-top:none;
+  border-left:none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Mark Linkous </span></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>1995. </span></p>
+  </td>
+  <td width=104 colspan=2 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>EMI (Capitol, Parlophone). </span></p>
+  </td>
+  <td style='border:none;padding:0in 0in 0in 0in' width=98><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='height:36.65pt'>
+  <td width=123 colspan=2 valign=top style='width:91.9pt;border-top:none;
+  border-left:solid #181717 1.0pt;border-bottom:solid #FFFEFD 1.0pt;border-right:
+  solid #181717 1.0pt;background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;
+  height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Patrick Watson </span></b></p>
+  </td>
+  <td width=140 colspan=2 valign=top style='width:104.9pt;border-top:none;
+  border-left:none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Patrick Watson </span></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>2003 </span></p>
+  </td>
+  <td width=104 colspan=2 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Secret City records. </span></p>
+  </td>
+  <td style='border:none;padding:0in 0in 0in 0in' width=98><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr style='height:24.65pt'>
+  <td width=123 colspan=2 style='width:91.9pt;border:solid #181717 1.0pt;
+  border-top:none;background:#181717;padding:8.5pt 5.75pt 0in 8.5pt;height:
+  24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;color:#FFFEFD'>Wilco </span></b></p>
+  </td>
+  <td width=140 colspan=2 style='width:104.9pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Jeff Tweedy</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span></p>
+  </td>
+  <td width=89 style='width:66.6pt;border-top:none;border-left:none;border-bottom:
+  solid #181717 1.0pt;border-right:solid #181717 1.0pt;padding:8.5pt 5.75pt 0in 8.5pt;
+  height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>1994 </span></p>
+  </td>
+  <td width=104 colspan=2 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Nonesuch </span></p>
+  </td>
+  <td style='border:none;padding:0in 0in 0in 0in' width=98><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+ <tr height=0>
+  <td width=88 style='border:none'></td>
+  <td width=35 style='border:none'></td>
+  <td width=120 style='border:none'></td>
+  <td width=20 style='border:none'></td>
+  <td width=89 style='border:none'></td>
+  <td width=46 style='border:none'></td>
+  <td width=57 style='border:none'></td>
+  <td width=98 style='border:none'></td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.55pt;
+margin-left:1.15pt'><b>Styling header cells: </b>Differentiate header text from
+column text by changing the weight and backgrounds </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=455
+ style='width:341.05pt;margin-left:1.5pt;border-collapse:collapse'>
+ <tr style='height:36.65pt'>
+  <td width=123 valign=top style='width:91.9pt;border:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Band </span></b></p>
+  </td>
+  <td width=140 valign=top style='width:104.9pt;border:solid #181717 1.0pt;
+  border-left:none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Lead singer </span></b></p>
+  </td>
+  <td width=89 style='width:66.6pt;border:solid #181717 1.0pt;border-left:none;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Date formed </span></b></p>
+  </td>
+  <td width=104 style='width:77.7pt;border:solid #181717 1.0pt;border-left:
+  none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%'>Recording label </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:37.5pt'>
+  <td width=123 valign=top style='width:91.9pt;border:solid #181717 1.0pt;
+  border-top:none;background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:
+  37.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Sparklehorse </span></p>
+  </td>
+  <td width=140 valign=top style='width:104.9pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:37.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Mark Linkous </span></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:37.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>1995. </span></p>
+  </td>
+  <td width=104 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:37.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>EMI (Capitol, Parlophone). </span></p>
+  </td>
+ </tr>
+ <tr style='height:36.65pt'>
+  <td width=123 valign=top style='width:91.9pt;border:solid #181717 1.0pt;
+  border-top:none;padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Patrick Watson </span></p>
+  </td>
+  <td width=140 valign=top style='width:104.9pt;border-top:none;border-left:
+  none;border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Patrick Watson </span></p>
+  </td>
+  <td width=89 valign=top style='width:66.6pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>2003 </span></p>
+  </td>
+  <td width=104 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:36.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Secret City records. </span></p>
+  </td>
+ </tr>
+ <tr style='height:24.65pt'>
+  <td width=123 style='width:91.9pt;border:solid #181717 1.0pt;border-top:none;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Wilco </span></p>
+  </td>
+  <td width=140 style='width:104.9pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Jeff Tweedy</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span></p>
+  </td>
+  <td width=89 style='width:66.6pt;border-top:none;border-left:none;border-bottom:
+  solid #181717 1.0pt;border-right:solid #181717 1.0pt;background:#DEDDDC;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>1994 </span></p>
+  </td>
+  <td width=104 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  background:#DEDDDC;padding:8.5pt 5.75pt 0in 8.5pt;height:24.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Nonesuch </span></p>
+  </td>
+ </tr>
+ <tr style='height:29.85pt'>
+  <td width=123 style='width:91.9pt;border:solid #181717 1.0pt;border-top:none;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:29.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Okkervil River </span></p>
+  </td>
+  <td width=140 style='width:104.9pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:29.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Will Sheff</span><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span></p>
+  </td>
+  <td width=89 style='width:66.6pt;border-top:none;border-left:none;border-bottom:
+  solid #181717 1.0pt;border-right:solid #181717 1.0pt;padding:8.5pt 5.75pt 0in 8.5pt;
+  height:29.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>1998 </span></p>
+  </td>
+  <td width=104 style='width:77.7pt;border-top:none;border-left:none;
+  border-bottom:solid #181717 1.0pt;border-right:solid #181717 1.0pt;
+  padding:8.5pt 5.75pt 0in 8.5pt;height:29.85pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%'>Jagjaguwar </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.4pt;margin-bottom:5.35pt;
+margin-left:1.15pt'><b>Zebra stripe tables: </b>Alternating different colour
+backgrounds for each row can be helpful to people who have reading difficulties.
+Check the contrast ratio between the text and the backgrounds. </p>
+
+<h2 style='margin-top:0in;margin-right:102.4pt;margin-bottom:3.65pt;margin-left:
+.3pt'><span style='font-size:18.0pt;line-height:107%'>Text features </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Text features such as type on pale coloured panels follow
+similar guidelines as those used for tables: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Align text entries left.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Pale colour backgrounds need a dark rule around them. This
+prevents the feature from being lost due to the colour contrast between the
+tint and paper.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Allow enough spacing or padding for the text within the panel or
+boxed item.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Turn hyphenation off.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.1pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tables are easier to read on white backgrounds within the tint
+panel.</p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;margin-left:
+1.15pt;text-indent:-.5pt;background:transparent;border:none'><span
+style='font-size:12.0pt;line-height:107%'>Icons </span></h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Can be distinctive. Even if the actual icon is not easily
+distinguishable to a reader with low vision, the colour and form can act as a
+location guide. Here are a few things to consider. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Not everyone interprets them in the same way.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Different cultures can have a different meanings for different
+icons.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Icons can leave the reader with an extra activity, trying to
+understanding what they mean.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.2pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>They are bad news for screen readers so don’t use them if the
+print project has a digital product associated with it.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>Icons can help readers navigate around a document and
+identify sections, points and headings. However they must be used carefully and
+only where they help people. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Make them simple and easily recognisable.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Be consistent in size and avoid making them to small.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Provide text labels or headings.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>With WCAG 2.1. success criterion 1.4.11, states that meaningful
+graphics like icons must have a 3:1 color ratio.</p>
+
+<div style='border:solid #4B8B36 1.0pt;padding:0in 0in 0in 0in;background:#E9F0CC;
+margin-left:4.7pt;margin-right:1.8pt'>
+
+<h3 style='margin-left:0in;background:#E9F0CC'>Activity 1 </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:0in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:108%;background:#E9F0CC;border:none;padding:0in'><span
+style='font-size:8.5pt;line-height:108%'>It is often said that people are every
+organisation’s most important asset. This is perfectly true but people are not
+like other assets. As well as being valuable in their own right – in terms of
+performance, skills and creativity – it is individual employees who bind every
+other aspect of working life together. </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:1.35pt;line-height:171%;
+background:#E9F0CC;border:none;padding:0in'><i><span style='font-size:8.0pt;
+line-height:171%;font-family:"Arial",sans-serif'>‘</span></i><span
+style='font-size:8.0pt;line-height:171%;font-family:"Arial",sans-serif'>The
+People Factor – engage your employees for business success’, ACAS, March 2014,
+p. 4 </span><b><span style='font-size:8.5pt;line-height:171%'>(a) </span></b><span
+style='font-size:8.5pt;line-height:171%'>What does this statement actually mean
+to you and fellow members of your group?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.95pt;
+margin-left:16.15pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.15pt;line-height:108%;background:#E9F0CC;border:none;padding:0in'><b><span
+style='font-size:8.5pt;line-height:108%'>(b)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:8.5pt;line-height:108%'>What exactly
+is meant by‘individual employees binding every other aspect of workng life
+together’?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.95pt;
+margin-left:16.15pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.15pt;line-height:108%;background:#E9F0CC;border:none;padding:0in'><b><span
+style='font-size:8.5pt;line-height:108%'>(c)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:8.5pt;line-height:108%'>To what extent
+do departmental members of sta‘ in your own university appear to be valued as
+an important asset?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.95pt;
+margin-left:16.15pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.15pt;line-height:108%;background:#E9F0CC;border:none;padding:0in'><b><span
+style='font-size:8.5pt;line-height:108%'>(d)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:8.5pt;line-height:108%'>Why is it that
+although the importance of people as the most important asset is often preached
+by organisations, this rarely seems to be the reality?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.3pt;
+margin-left:16.15pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-16.15pt;line-height:108%;background:#E9F0CC;border:none;padding:0in'><b><span
+style='font-size:8.5pt;line-height:108%'>(e)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:8.5pt;line-height:108%'>How does this
+activity relate to your study of organisational behaviour?</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.85pt;
+margin-left:1.15pt'>Simple text box feature with outer box rule for colour
+contrast. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=464
+ style='width:348.3pt;border-collapse:collapse'>
+ <tr style='height:86.95pt'>
+  <td width=218 valign=top style='width:163.65pt;border:solid #181717 1.0pt;
+  background:#FEE3BB;padding:0in 5.75pt 0in 7.9pt;height:86.95pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.35pt;margin-bottom:
+  0in;margin-left:1.2pt;text-indent:0in;line-height:107%'><img width=22
+  height=76 src="Accessibility%20in%20Print%20Design_files/image006.gif"
+  align=left hspace=12>Don't ignore an infected blister. Without treatment it
+  could lead to a skin or blood infection. </p>
+  </td>
+  <td width=28 valign=top style='width:21.0pt;border:none;border-right:solid #181717 1.0pt;
+  padding:0in 5.75pt 0in 7.9pt;height:86.95pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+  <td width=218 valign=top style='width:163.65pt;border:solid #181717 1.0pt;
+  border-left:none;background:#FEE3BB;padding:0in 5.75pt 0in 7.9pt;height:86.95pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:16.0pt;line-height:107%'>Important</span></b></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Don't
+  ignore an infected blister. Without treatment it could lead to a skin or
+  blood infection. </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+margin-left:1.15pt'>Words can be more effective than icons.<span
+style='font-family:"Times New Roman",serif'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=218
+ style='width:163.65pt;margin-left:1.9pt;border-collapse:collapse'>
+ <tr style='height:86.95pt'>
+  <td width=218 valign=top style='width:163.65pt;border:solid #181717 1.0pt;
+  background:#FEE3BB;padding:0in 2.2pt 0in 4.1pt;height:86.95pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><img
+  width=22 height=76
+  src="Accessibility%20in%20Print%20Design_files/image006.gif" align=left
+  hspace=12><b><span style='font-size:16.0pt;line-height:107%'>Important</span></b></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:98%'>Don't
+  ignore an infected blister. Without treatment </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:21.25pt;text-indent:0in;line-height:107%'>it could lead to a skin
+  or blood infection. </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>If they have to be used then text headings help to clarify
+the meaning of an icon. </p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:#181717'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<h2 style='margin-top:0in;margin-right:102.4pt;margin-bottom:3.65pt;margin-left:
+.3pt'><img width=322 height=105
+src="Accessibility%20in%20Print%20Design_files/image007.gif" align=left
+hspace=12><span style='font-size:18.0pt;line-height:107%'>Graduated tints </span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:102.4pt;margin-bottom:
+12.65pt;margin-left:1.15pt'>They should be used with caution, taking care that
+any type is within an area with sufficient colour contrast. This should be dark
+or light enough for the content to be read. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.65pt;
+margin-left:417.8pt'>Graduated tint backgrounds can get lost without a rule to
+define them. In this example it has been removed and replaced with a flat </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:168.65pt;
+margin-left:1.15pt'><img width=682 height=281
+src="Accessibility%20in%20Print%20Design_files/image008.gif" align=left
+hspace=12>Graduated tint background for table caption fails colour contrast
+test. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'><img width=683 height=240
+src="Accessibility%20in%20Print%20Design_files/image009.gif" align=left
+hspace=12>Pale tint background with a dark box rule, will pass colour contrast
+check. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+margin-left:1.15pt'><img width=618 height=53
+src="Accessibility%20in%20Print%20Design_files/image010.gif" align=left
+hspace=12>The examples on the right needed correcting for accessibility. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.65pt;margin-bottom:
+2.85pt;margin-left:14.8pt;text-indent:-14.15pt;line-height:127%'><span
+style='font-size:12.0pt;line-height:127%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The baselines of the page number and running head  Before. should
+align.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=615 style='width:461.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:27.8pt'>
+  <td width=615 style='width:461.0pt;border:solid #009ED5 2.25pt;border-bottom:
+  solid #8F324A 1.0pt;padding:0in 5.75pt 0in 41.65pt;height:27.8pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><i><span
+  style='font-size:7.5pt;line-height:107%;font-family:"Eras ITC",serif'>1</span></i></b><span
+  style='font-size:7.5pt;line-height:107%;font-family:"Times New Roman",serif'>
+  </span><b><i><span style='font-size:7.5pt;line-height:107%;font-family:"Eras ITC",serif'>4</span></i></b><sub><span
+  style='font-size:9.5pt;line-height:107%;font-family:"Times New Roman",serif'>
+         </span></sub><span style='color:black'><img width=3 height=20
+  id="Group 15411" src="Accessibility%20in%20Print%20Design_files/image011.gif"></span><span
+  style='font-size:9.5pt;line-height:107%;font-family:"Arial",sans-serif'> Chapter
+  2  Theoretical Perspectives </span></p>
+  </td>
+ </tr>
+ <tr style='height:10.0pt'>
+  <td width=615 valign=top style='width:461.0pt;border:solid #009ED5 2.25pt;
+  border-top:none;padding:0in 5.75pt 0in 41.65pt;height:10.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.65pt;margin-bottom:
+.55pt;margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The graduated tint behind the page number makes it difficult to
+read.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=452
+ style='width:338.85pt;margin-left:.55pt;border-collapse:collapse'>
+ <tr style='height:12.95pt'>
+  <td width=18 valign=top style='width:13.6pt;padding:0in 0in 0in 0in;
+  height:12.95pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:12.0pt;line-height:107%'>•</span></b></p>
+  </td>
+  <td width=392 valign=top style='width:294.25pt;padding:0in 0in 0in 0in;
+  height:12.95pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.55pt;text-indent:0in;line-height:107%'>The Use of capitals is
+  not recommended for legibility.</p>
+  </td>
+  <td width=41 valign=top style='width:31.0pt;padding:0in 0in 0in 0in;
+  height:12.95pt'>
+  <p class=MsoNormal style='margin:0in;text-align:justify;text-justify:inter-ideograph;
+  text-indent:0in;line-height:107%'>After. </p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=615 style='width:461.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:43.75pt'>
+  <td width=615 style='width:461.0pt;border:solid #009ED5 2.25pt;background:
+  #A42B25;padding:0in 5.75pt 0in 7.75pt;height:43.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:11.35pt;text-indent:0in;line-height:107%'><span style='font-size:
+  16.0pt;line-height:107%;font-family:"Times New Roman",serif;color:#FFFEFD'>Vignette
+  3.2</span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.65pt;margin-bottom:
+33.7pt;margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid the use of handwriting or decorative fonts.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.0pt;
+margin-left:308.9pt'>Before. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=1014 style='width:760.6pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:19.3pt'>
+  <td width=528 valign=top style='width:395.85pt;padding:0in 0in 0in 0in;
+  height:19.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.75pt;text-indent:0in;line-height:107%'>Before. </p>
+  </td>
+  <td width=486 valign=top style='width:364.75pt;padding:0in 0in 0in 0in;
+  height:19.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.1pt;text-indent:0in;line-height:107%'>After. </p>
+  </td>
+ </tr>
+ <tr style='height:48.5pt'>
+  <td width=528 valign=bottom style='width:395.85pt;padding:0in 0in 0in 0in;
+  height:48.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Ensure
+  that icons are clear and easily distinguishable. </p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Keep
+  them simple, avoid using graduated tints or drop shadows, the example on the
+  right is much clearer. </p>
+  </td>
+  <td width=486 valign=top style='width:364.75pt;padding:0in 0in 0in 0in;
+  height:48.5pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Even
+  though the background tint passed the colour contrast test it was made
+  lighter. This improves readability. </p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:solid #009ED5 2.25pt;padding:0in 0in 0in 0in;background:
+#A42B25;margin-left:18.15pt;margin-right:0in'>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:14.1pt;margin-left:0in;text-align:center;text-indent:0in;
+line-height:107%;background:#A42B25;border:none;padding:0in'><b><span
+style='font-size:15.5pt;line-height:107%;font-family:"Arial",sans-serif;
+color:#FFFEFD'>Vignette 3.2 </span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.7pt;
+margin-left:308.9pt'>After. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.55pt;margin-bottom:
+.05pt;margin-left:51.65pt;line-height:142%'><span style='position:relative;
+z-index:-1895813120'><span style='left:0px;position:absolute;left:543px;
+top:-15px;width:476px;height:203px'><img width=476 height=203
+src="Accessibility%20in%20Print%20Design_files/image012.gif"></span></span><b><span
+style='font-size:13.0pt;line-height:142%;color:#812523'>Progressing your  </span></b><span
+style='font-size:7.5pt;line-height:142%'>that your reflective diary or research
+notebookentries will enable you to meet fully the assessment               </span><b><span
+style='font-size:13.0pt;line-height:142%;color:#812523'>Progressing your      </span></b><span
+style='font-size:7.0pt;line-height:142%'>that your reflective diary or research
+notebookentries will enable you to meet fully the assessment </span><b><span
+style='font-size:13.0pt;line-height:142%;color:#812523'>research project      </span></b><span
+style='font-size:7.5pt;line-height:142%'>criteria. In particular be sure to
+ascertain whether                   </span><b><span style='font-size:13.0pt;
+line-height:142%;color:#812523'>research project       </span></b><span
+style='font-size:7.0pt;line-height:142%'>criteria. In particular be sure to
+ascertain whether </span><span style='font-size:7.5pt;line-height:142%'>you are
+expected to be reflective or reflexive. </span><span style='font-size:7.0pt;
+line-height:142%'>you are expected to be reflective or reflexive.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='color:black'>             </span><b><span
+style='font-size:9.5pt;line-height:107%;color:#812523'>Starting your reflective
+diary or                     </span></b><span style='font-size:7.5pt;
+line-height:107%;color:#812523'>• </span><span style='font-size:7.5pt;
+line-height:107%'>When doing this, amend the questions in Box 1.4                                    </span><b><span
+style='font-size:9.5pt;line-height:107%;color:#812523'>Starting your reflective
+diary or         </span></b><span style='font-size:7.0pt;line-height:107%;
+color:#812523'>•</span><span style='font-size:7.0pt;line-height:107%;
+font-family:"Times New Roman",serif;color:#812523'> </span><span
+style='font-size:7.0pt;line-height:107%'>When doing this, amend the questions
+in Box 1.4</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.3pt;
+margin-left:0in;text-indent:0in;line-height:110%'><span style='color:black'>          </span><b><span
+style='font-size:9.5pt;line-height:110%;color:#812523'>notebook                                                                  </span></b><span
+style='font-size:7.5pt;line-height:110%'>to guide your diary or notebook
+entries as                                                    </span><b><span
+style='font-size:9.5pt;line-height:110%;color:#812523'>notebook       </span></b><span
+style='font-size:7.0pt;line-height:110%'>to guide your diary or notebook
+entries as</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.65pt;margin-bottom:
+.05pt;margin-left:14.8pt;text-indent:-14.15pt;line-height:210%'><span
+style='font-size:12.0pt;line-height:210%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895812096'><span
+style='left:0px;position:absolute;left:16px;top:-97px;width:482px;height:205px'><img
+width=482 height=205
+src="Accessibility%20in%20Print%20Design_files/image013.gif"></span></span><span
+style='font-size:7.5pt;line-height:210%'>Find out if your university requires
+you to write a           necessary.   </span><span style='font-size:7.0pt;
+line-height:210%;color:#812523'>• </span><span style='font-size:7.0pt;
+line-height:210%'>Find out if your university requires you to write a                        </span><span
+style='font-size:7.0pt;line-height:210%;color:#812523'>•</span><span
+style='font-size:7.0pt;line-height:210%;font-family:"Times New Roman",serif;
+color:#812523'> </span><span style='font-size:7.0pt;line-height:210%'>necessary.If
+the answer is ‘no’, we still believe it will be </span><span style='font-size:
+7.5pt;line-height:210%'>refective practice statement, learning journal or </span><span
+style='font-size:7.5pt;line-height:210%;color:#812523'>• </span><span
+style='font-size:7.5pt;line-height:210%'>If the answer is ‘no’, we still
+believe it will be       </span><span style='font-size:7.0pt;line-height:210%'>refective
+practice statement, learning journal or              beneficial to your
+learning for your research </span><span style='font-size:7.5pt;line-height:
+210%'>keep a refective diary or research notebook as              beneficial to
+your learning for your research        </span><span style='font-size:7.0pt;
+line-height:210%'>keep a refective diary or research notebook as                project
+or research methods module if you keep a</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.3pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='color:black'>               </span><span
+style='font-size:7.5pt;line-height:107%'>part of your research project or
+research methods              project or research methods module if you keep a                     </span><span
+style='font-size:7.0pt;line-height:107%'>part of your research project or
+research methods                           refective diary or research notebook
+on a regular</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='color:black'>             </span><span
+style='font-size:7.5pt;line-height:107%'>module.                                                                                                        refective
+diary or research notebook on a regular                                            </span><span
+style='font-size:7.0pt;line-height:107%'>module.                 basis. Please
+use the questions in Box 1.4 to guide</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.65pt;margin-bottom:
+6.5pt;margin-left:14.8pt;text-indent:-14.15pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:7.5pt;line-height:107%'>If the answer is
+‘yes’, look carefully at precisely what     basis. Please use the questions in
+Box 1.4 to guide                   </span><span style='font-size:7.0pt;
+line-height:107%;color:#812523'>• </span><span style='font-size:7.0pt;
+line-height:107%'>If the answer is ‘yes’, look carefully at precisely what              your
+reflective entries at the end of each chapter.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.3pt;
+margin-left:0in;text-indent:0in;line-height:110%'><span style='color:black'>              </span><span
+style='font-size:7.5pt;line-height:110%'>is required by the assessment criteria
+and ensure                  your reflective entries at the end of each chapter.                        </span><span
+style='font-size:7.0pt;line-height:110%'>is required by the assessment criteria
+and ensure</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=642 style='width:481.25pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:61.7pt'>
+  <td width=148 style='width:111.05pt;background:#674F8E;padding:0in 5.75pt 0in 0in;
+  height:61.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:68.8pt;text-indent:0in;line-height:107%'><span style='font-size:
+  42.0pt;line-height:107%;font-family:"Arial",sans-serif;color:#FFFEFD'>2</span></p>
+  </td>
+  <td width=494 style='width:370.2pt;background:#674F8E;padding:0in 5.75pt 0in 0in;
+  height:61.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:73.9pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:16.5pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:#FFFEFD'>Capital Markets, Market E ciency and Ratio Analysis </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:12.65pt'>
+  <td width=148 valign=top style='width:111.05pt;background:#DBCEE3;padding:
+  0in 5.75pt 0in 0in;height:12.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+  <td width=494 valign=top style='width:370.2pt;background:#DBCEE3;padding:
+  0in 5.75pt 0in 0in;height:12.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'><img width=643 height=266
+src="Accessibility%20in%20Print%20Design_files/image014.gif" align=left
+hspace=12><img width=642 height=173
+src="Accessibility%20in%20Print%20Design_files/image015.gif" align=left
+hspace=12>If using graduated tint panels on images as a background for type
+ensure it is within an area with sufficient colour contrast. This should be dark
+or light enough for the content to be read. <br clear=all style='page-break-before:
+always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:1.15pt'>Type
+on images </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-10.55pt;margin-bottom:
+41.25pt;margin-left:0in;text-indent:0in;line-height:107%'><span
+style='color:black'><img width=1026 height=4 id="Group 12905"
+src="Accessibility%20in%20Print%20Design_files/image016.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:1.15pt'><img width=677 height=546
+src="Accessibility%20in%20Print%20Design_files/image017.gif" align=left
+hspace=12>Avoid text on an image, unless there is a high contrast between the
+background and text. Consider the following when text is overlayed on an image.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The clarity of the image</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.55pt;
+margin-left:14.8pt;text-indent:-14.15pt'><span style='font-size:12.0pt;
+line-height:103%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Readability of the text</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.35pt;
+margin-left:1.15pt'>A single colour, dark panel larger than the text should
+give enough contrast between the background and the lettering. Ensure that
+there is sufficient space between text and the panel <span style='color:black'>  </span>border
+so that they do not merge visually. </p>
+
+</div>
+
+</body>
+
+</html>
