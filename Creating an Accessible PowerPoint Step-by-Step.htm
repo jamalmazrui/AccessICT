@@ -1,0 +1,2999 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Creating an Accessible PowerPoint Step-by-Step</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15pt;
+	margin-left:127.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:123.0pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15pt;
+	margin-left:245.15pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:11.0in 8.5in;
+	margin:1.0in 81.5pt 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:11.0in 8.5in;
+	margin:1.0in 65.0pt 1.0in 40.0pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:11.0in 8.5in;
+	margin:91.7pt 58.25pt 1.0in 40.0pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:11.0in 8.5in;
+	margin:91.7pt 37.05pt 52.25pt 40.0pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:11.0in 8.5in;
+	margin:1.0in 1.0in 1.0in 40.0pt;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:11.0in 8.5in;
+	margin:1.0in 52.0pt 1.0in 40.0pt;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:11.0in 8.5in;
+	margin:92.4pt 42.8pt 1.0in 40.0pt;}
+div.WordSection7
+	{page:WordSection7;}
+@page WordSection8
+	{size:11.0in 8.5in;
+	margin:93.35pt 39.5pt .65in 40.0pt;}
+div.WordSection8
+	{page:WordSection8;}
+@page WordSection9
+	{size:11.0in 8.5in;
+	margin:1.0in 1.0in 1.0in 40.0pt;}
+div.WordSection9
+	{page:WordSection9;}
+@page WordSection10
+	{size:11.0in 8.5in;
+	margin:91.7pt 34.95pt 39.85pt 39.75pt;}
+div.WordSection10
+	{page:WordSection10;}
+@page WordSection11
+	{size:11.0in 8.5in;
+	margin:92.4pt 34.3pt 1.0in 40.0pt;}
+div.WordSection11
+	{page:WordSection11;}
+@page WordSection12
+	{size:11.0in 8.5in;
+	margin:1.0in 53.95pt 1.0in 58.0pt;}
+div.WordSection12
+	{page:WordSection12;}
+@page WordSection13
+	{size:11.0in 8.5in;
+	margin:1.0in 105.65pt 1.0in 40.0pt;}
+div.WordSection13
+	{page:WordSection13;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.75pt;
+margin-left:120.0pt;text-indent:0in;line-height:107%'><b><u><span
+style='font-size:30.0pt;line-height:107%'>Accessible PowerPoints Step-by-Step</span></u></b></p>
+
+<h1>What a PowerPoint is or isn’t</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+margin-left:122.5pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%'><img width=658 height=1 id="Group 27089"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin-bottom:95.7pt'><img width=376 height=380
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image002.gif"
+align=left hspace=12>PowerPoint presentations are one of the most common ways
+to share information. But they are also one of the most misused. When
+considering accessibility we have to be intentional about our decisions and
+understand how they impact the user experience. The Accessibility for
+PowerPoint checklist in this handout will give you some great things to think
+about as you develop your slide decks. So lets start by discussing the three
+typical barriers to presentations: Cognitive overload, ‘See and Say’
+Presentations, Interpreting complex information.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:217.45pt;text-indent:0in;line-height:107%'><b><span
+style='font-size:24.0pt;line-height:107%'>Dax Castro, ADS</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-189.2pt;margin-bottom:
+0in;margin-left:234.7pt;text-indent:-10.0pt;line-height:107%'><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><u><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>training@accessibilityUnraveled.com</span></u></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-189.2pt;margin-bottom:
+0in;margin-left:234.7pt;text-indent:-10.0pt;line-height:107%'><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><img width=108
+height=141
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image003.gif"
+align=left hspace=12><a href="https://www.linkedin.com/in/daxcastro/"><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>Linkedin.com/in/daxcastro</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-189.2pt;margin-bottom:
+0in;margin-left:234.7pt;text-indent:-10.0pt;line-height:107%'><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><u><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>PDF Accessibility
+Facebook Group</span></u></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-189.2pt;margin-bottom:
+0in;margin-left:234.7pt;text-indent:-10.0pt;line-height:107%'><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><a
+href="http://www.chaxchat.com/"><span style='font-size:14.0pt;line-height:107%;
+color:#396CB5'>www.accessibilityUnraveled.com</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-189.2pt;margin-bottom:
+19.35pt;margin-left:234.7pt;text-indent:-10.0pt;line-height:107%'><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><u><span
+style='font-size:14.0pt;line-height:107%;color:#396CB5'>Subscribe to our
+Youtube Channel</span></u></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-10.1pt;margin-bottom:
+0in;margin-left:221.7pt'><b><span style='color:#BA2322'>Check out more than 50
+hours of accessibility conversation on your favorite podcast streaming service.
+</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-10.1pt;margin-bottom:
+0in;margin-left:221.7pt'><b><span style='color:#BA2322'>Just search for Chax
+Chat.</span></b></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<h1 style='margin-left:.5pt'>Table of Contents</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.0pt;margin-bottom:
+11.65pt;margin-left:0in;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=432 height=1
+id="Group 29501"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image004.gif"></span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>What a
+PowerPoint is or isn’t .................................................. 1</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Cognitive
+Overload
+...............................................................................................3</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>‘See and
+Say’ Presentations
+................................................................................3</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Interpreting
+complex information
+..................................................................3</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>The 10
+Accessibility Features of PowerPoint ......................... 3 10 Tips for
+giving an accessible presentation ....................... 4 Where you start
+makes a difference ....................................... 5</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Starting at
+the Concept Stage 
+..........................................................................5</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Starting at
+the Draft Stage 
+................................................................................6</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Starting at
+the Final Stage 
+.................................................................................6</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>All About
+Animations .............................................................. 7</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Accessible
+Presentations Avoid Animations
+................................................7</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Avoid
+auto-play or animations with sound effects ...................................7</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Two Options
+when you must have animations ..........................................7</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt'><b>Step 1: Document Information
+............................................... 8</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Document
+Language 
+..........................................................................................9</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 2:
+Choosing or Creating a Template ............................. 10</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Unique
+Slide Titles
+..............................................................................................10</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>All other
+slides are
+H2........................................................................................11</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Every slide
+is a Sect/Story
+................................................................................11</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Consistent
+placement
+.......................................................................................12</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Anticipation
+and the Cognitive Barrier
+.......................................................12</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Leverage
+Slide Templates
+................................................................................13</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>The Master
+Slide
+..................................................................................................13</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Other
+Accessibility Considerations
+..............................................................14</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 3:
+Selecting Fonts and Sizes ......................................... 15</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Accessible
+fonts
+...................................................................................................15
+Dax’s Recommendations for font sizes:
+......................................................15</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 4:
+Picking your Color Pallette ....................................... 15</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Color
+Contrast
+......................................................................................................15</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Using color
+alone to distinguish elements
+................................................16</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 5:
+Adding Content Accessibly....................................... 17</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Controling
+Reading Order
+...............................................................................17</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Controlling
+content with the Reading Order Panel ................................17</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Controlling
+content with the Selection Pane ...........................................18</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 6:
+Alternate Descriptions for Images ........................... 19</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Example
+Line graph
+...........................................................................................19</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>What should
+I say?
+..............................................................................................19</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Describing
+an Image
+.........................................................................................20</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>What should
+I say?
+..............................................................................................20</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Where to
+add Alt-text
+........................................................................................21</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Well-written
+Alt-text 
+.........................................................................................21</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Don’t
+forget the Screen Tip
+.............................................................................22</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Click Here
+...............................................................................................................22</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 8: Use
+Accessible Colors in Graphics ............................ 23</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Low Vision
+Considerations
+..............................................................................23</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>WCAG
+Success Criteria 1.4.11 Non-text Contrast (Level AA) ...............23</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt'><b>Step 9: Create Accessible Tables
+........................................... 24</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.05pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Layout
+tables 
+.......................................................................................................24</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 10:
+Create Accessible Video in PowerPoint ................. 25</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>A note
+about Captions and Subtitles.
+.........................................................25</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Use Video
+Captions
+............................................................................................26</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Options for
+creating captions:
+.......................................................................26</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Video-only
+content with audio descriptions or a transcript ...............27</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:7.25pt'><span style='font-size:11.0pt;line-height:103%'>Do you have
+Audio-only content?
+................................................................27</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;margin-left:-.25pt;
+line-height:103%'><span style='font-size:12.0pt;line-height:103%'>Step 11: Run
+the Microsoft Accessibility Checker ............... 28</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:0in;text-indent:6.0pt;line-height:150%'><span style='font-size:
+11.0pt;line-height:150%'>Typical Accessibility Checker Warnings and Errors
+.................................28 </span><b>Accessibility Special
+Considerations .................................... 31</b></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  2.9pt 5.75pt 0in .1in;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:90%'><b><span
+  style='font-size:18.0pt;line-height:90%;color:white'>The 10 Accessibility
+  Features of PowerPoint</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=251 height=1 id="Group 27393"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image005.gif"></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>1.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Heading structure is linked to Template Styles (H1 and
+  H2)</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>2.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Reading Order: Set reading order via Selection Pane or
+  Read Order Pane</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>3.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Alternate Descriptions: The ability to describe
+  Image-based content</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>4.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Screen Tips: Descriptive text for Hyperlinks</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>5.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Automatic Subtitles: In English or live translation to
+  other languages </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:0in;line-height:107%'><span style='color:white'>(not
+  super accurate)</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>6.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Video Captions: Using STAMP Plugin for PowerPoint</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>7.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Export settings for accessibility tags and reflow</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:98%'><span style='color:white'>8.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='color:white'>Convert speakers notes: The ability to convert speakers
+  notes to comments on export to PDF 9. Export Bookmarks: Creates Bookmarks on
+  export based on Headings</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.5in;text-indent:-.25in;line-height:107%'><span style='color:
+  white'>Microsoft Accessibility Checker: Checks for a wide variety of
+  accessibility barriers. (This is a start but do not assume passing is the
+  same as an accessible document</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2>Cognitive Overload</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.0pt;
+margin-left:4.5pt'>Are you adding too much stuff? Crowding your slides with
+lots of text or pictures makes it hard for people to understand the main points
+when there’s too much going on. It’s better to keep things simple and clear by
+using short bullet points or helpful visuals. If you want to create a handout
+that has supporting info, do it. Just don’t cram it all into your live slide
+deck. Or, consider adding more slides. One of the benefits of digital content
+is that page count is really less important. How well you deliver your
+presentation clearly is paramount.</p>
+
+<h2>‘See and Say’ Presentations</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.0pt;
+margin-left:4.5pt'>This type of presentation is a bit tricky when it comes to
+accessibility. In fact, we DO want to read what is on the screen. However, that
+does not mean we just stare at our presentation and read all the text with no
+other context just because it needs to be accessible. This ties back to
+Cognitive Overload. Keep your bullets short and support them with spoken words.
+Another consideration here is people who lip read. Turning toward your slides
+all the time to read long paragraphs or bullets creates a challenge for people
+who rely on lip reading for comprehension. It’s important for you to balance
+what you’re saying with direct engage with the audience by speaking directly to
+them.</p>
+
+<h2>Interpreting complex information</h2>
+
+<p class=MsoNormal style='margin-left:4.5pt'>Some presenters use too many fancy
+fonts, animations, sounds, or transitions that don’t really add to the
+information. These things can be fun, but if they’re used too much, they can be
+distracting or annoying. Also, relying only on PowerPoint can limit creativity
+and flexibility in how information is shared. It’s good to try different ways
+like telling stories, doing demonstrations, or getting the audience involved.
+By using PowerPoint wisely and finding other ways to connect with the audience,
+presentations can be more interesting and effective. Just remember to include a
+Sign Language Interpreter, transcript or captions if you are delivering mostly
+spoken content.</p>
+
+<h1 style='margin-left:.5pt'>10 Tips for giving an accessible presentation</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=924 height=1 id="Group 27512"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image006.gif"></span></p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>When we say “accessible
+presentation” we are really talking about several consideration. They typically
+benefit people who are deaf, people who are blind, or people who are
+neurodiverse. Neurodiversity includes Autism, ADHD, Dyslexia, and other sensory
+processing difference. </p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.35pt;
+margin-left:5.0pt'><b>Here are 10 tips to help you deliver an accessible
+presentation:</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+style='font-size:11.0pt;line-height:103%'>Speak Clearly and Slowly:</span></b><span
+style='font-size:11.0pt;line-height:103%'> Enunciate your words clearly and
+avoid rushing through your presentation. This helps individuals with hearing
+impairments, non-native English speakers, and those who rely on lip reading.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Provide captioning: Include captions
+or subtitles for all spoken content in your presentation, making it accessible
+to deaf attendees. Use tools or services that generate accurate captions.
+Accruate captions are really important for a good user experience.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>When possible, utilize sign language
+interpretation: Arrange for a qualified sign language interpreter to be present
+during your presentation, enabling deaf attendees to understand the spoken
+content through sign language.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Use high contrast visuals: Ensure
+that your slides and visual materials have a high contrast between text and
+background, making them easier to read for individuals with visual impairments.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Provide alt text for images: Add
+alternative text (alt text) to describe images used in your presentation. This
+allows blind attendees to understand the visual content through screen readers.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Avoid complex visual effects:
+Minimize the use of animations, flashy transitions, or rapidly changing
+visuals, as they can be distracting or confusing for attendees with visual
+impairments.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Use accessible templates and features
+within PowerPoint: You can easy integration captions, alt text, and other
+accessibility elements in PowerPoint.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Offer handouts or accessible digital
+materials: Provide printed handouts or accessible digital copies of your
+presentation materials in advance, allowing attendees to follow along or review
+the content after the presentation.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Speak clearly and use descriptive
+language: Enunciate your words clearly, and use descriptive language to explain
+visuals or key points. This helps individuals who are blind or have hearing
+impairments to follow your presentation.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.0pt;
+margin-left:12.0pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:11.0pt;line-height:103%'>Allow for
+questions and clarifications: Encourage attendees to ask questions or seek
+clarifications throughout your presentation, ensuring that everyone has an
+opportunity to understand the content fully.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-2.75pt;margin-bottom:
+0in;margin-left:-11.5pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=305 height=286
+id="Group 27513"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image007.gif"></span></p>
+
+<h1 style='margin-left:.5pt'>Where you start makes a difference</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=271 height=1 id="Group 28620"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image008.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'>It is important to incorporate accessibility considerations
+at the earliest stage possible. The stage at which we consider accessibility
+directly impacts how long it will take to make the product accessible, what
+approach we use to do so, and ultimately how usable and informative the content
+is. If we start late, our goal of a single, equitable, accessible experience
+for everyone often fails because “there’s not enough time” or “this has already
+been approved and we can’t change it.” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.65pt;margin-bottom:
+.15pt;margin-left:4.5pt'>When teams start designing with accessibility in mind
+from the beginning, there are more options to present a single, meaningful user
+experience. Depending on what stage you begin incorporating accessibility, you
+can increase or limit your ability to employ accessible design by affecting
+your timeline or your attachment to current designs. </p>
+
+<h2>Starting at the Concept Stage </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.55pt;
+margin-left:4.5pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%'>When you want to make an accessible PowerPoint, it’s
+important to plan ahead and consider how users will interact with it. Start by
+asking yourself a crucial question: </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=302
+ style='width:226.65pt;border-collapse:collapse'>
+ <tr style='height:82.0pt'>
+  <td width=302 style='width:226.65pt;border:none;border-left:solid black 4.5pt;
+  background:#FFED00;padding:0in 5.75pt 0in 11.0pt;height:82.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:20.0pt;line-height:107%'>“What do I want the user experience
+  to be?</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:4.5pt'>This question affects everything
+from your PowerPoint template to the slides and overall design. If you don’t
+think about this early you might end up with accessibility problems that you
+didn’t realize were there. Also, keep in mind that listening to descriptions of
+images is an interactive experience. What we say about an image and how we say
+it adds to the overall presentation. By thinking about the user experience in
+advance, you can figure out how to present the information and give users ways
+to interact with it while understanding what’s important.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.4pt;
+margin-left:.5pt'>Other considerations should include the following: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.5pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Am I vocally or digitally providing
+text alternatives for images and infographics? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Do my theme colors meet minimum
+contrast requirements? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.85pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>For digital delivery of an actual PPT
+file, am I providing keyboard-based information the user can access that offers
+important information and context? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:40.25pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Am I using color alone as a way to
+understand content or interactions? (Item in Red are behind schedule.)</span></p>
+
+<div style='border:none;border-left:solid black 4.5pt;padding:0in 0in 0in 0in;
+background:#FFED00;margin-left:6.5pt;margin-right:8.2pt'>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:98%;
+background:#FFED00;border:none;padding:0in'><b><span style='font-size:20.0pt;
+line-height:98%'>Considering accessibility in the concept stage of creating a
+PowerPoint allows for the most freedom to change and has the least impact on
+schedule and development. </span></b></p>
+
+</div>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection5>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=621 style='width:466.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:64.4pt'>
+  <td width=621 style='width:466.0pt;border:none;border-left:solid black 4.5pt;
+  background:#C3D2E8;padding:0in 5.75pt 0in 12.0pt;height:64.4pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>In
+  my career, I have experienced overwhelmingly negative pushback when my
+  evaluations only surfaced accessibility failures without <u>also</u>
+  providing solutions. </b></p>
+  </td>
+ </tr>
+</table>
+
+<h2><img width=304 height=592
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image009.gif"
+align=left hspace=12>Starting at the Draft Stage </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'>If someone has already started designing your PowerPoint
+template or presentation all is not lost. You still have time to make
+accessible design and content choices. Color palettes can be reviewed. Text
+alternatives and presentation methods for things like tables and complex
+infographics can be evaluated for barriers and meaningful information. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.8pt;
+margin-left:4.5pt'>However, changes may be harder to implement at this stage.
+Those who approve the content may have already formed attachments to the draft
+colors and methods. The best way to shift sentiment at this stage is to provide
+solutions when encountering barriers. If the table is not accessible, create
+one and present the solution when discussing the challenge. </p>
+
+<h2 style='margin-top:22.15pt'>Starting at the Final Stage </h2>
+
+<p class=MsoNormal style='margin-left:4.5pt'>Even if you are starting at the
+end, there is still hope for creating an accessible presentation. With many
+visualizations, you can slightly darken colors to meet contrast thresholds and
+adjust alternate descriptions to be more meaningful. For a PDF delivery of your
+presentation you can modify accessibility  tags to present a better user
+experience for those using assistive technology. Taking these steps is not
+always easy. Starting accessible modifications after the project is fully
+developed can be like baking an apple spice cake for someone who doesn’t like
+apples and asking, “can’t you just take them out?”<span style='font-size:10.0pt;
+line-height:103%;color:#211E1F'> </span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6>
+
+<h1 style='margin-left:.5pt'>All About Animations</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=590 height=1 id="Group 27442"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image010.gif"></span></p>
+
+<h2>Accessible Presentations Avoid Animations</h2>
+
+<p class=MsoNormal style='margin-left:4.5pt'>Animations in PowerPoint
+presentations can present significant accessibility challenges for people using
+assistive technology. One key challenge is bridging the gap between the
+animation and the context of what is happening on screen. Animations that convey
+more than “appear” and “disappear” actions can make it difficult for screen
+reader users to understand what is happening on screen. This is because screen
+readers are software programs that read out the content on a screen, allowing
+visually impaired individuals to access digital content. When animations are
+used excessively or in a way that doesn’t follow accessibility guidelines,
+screen readers may struggle to interpret and describe the content accurately.
+For example, if text or important elements are hidden behind animated objects
+or appear only briefly, it can be nearly impossible for someone relying on a
+screen reader to understand the full context and meaning of the presentation.</p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:.9pt;margin-left:0in;
+text-indent:0in;line-height:90%'><span style='color:#FFED00'>Two Options when
+you must have animations</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.9pt;
+margin-left:4.25pt;line-height:98%'><span style='color:white'>If your
+presentation must have animations consider creating a separate accessible
+presentation that uses sequential slides rather than animated objects. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.9pt;
+margin-left:4.25pt;line-height:98%'><span style='position:relative;z-index:
+-1895822336'><span style='left:0px;position:absolute;left:-9px;top:-163px;
+width:301px;height:592px'><img width=301 height=592
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image011.gif"></span></span><span
+style='color:white'>Or consider a static slide with text on the slide that
+explained the meaninful context of the animation to the reader. Avoid putting
+this description in the speakers notes area as this area is hard for come AT
+users to access.</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection7>
+
+<h3>Avoid auto-play or animations with sound effects</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:244.35pt;margin-bottom:
+.15pt;margin-left:4.5pt'>Another challenge with animations in PowerPoint is the
+potential for sensory overload. Some animations, such as rapid transitions,
+flashing our sound effects with complex motion paths, can be visually
+distracting and overwhelming for individuals with cognitive or sensory
+disabilities. These animations may cause difficulties in maintaining focus,
+understanding the sequence of information, or even triggering physical
+discomfort for people with conditions like epilepsy. Sound effects can also
+mask the screen reader voice making it difficult to hear instruction from their
+accessibility tool. Animations can significantly impede the ability of
+individuals using assistive technology to comprehend and engage with the
+content of a PowerPoint presentation, ultimately excluding them from fully
+participating in the information-sharing process. To ensure inclusivity, it is
+essential to use animations sparingly and provide alternative ways to convey
+the same information in a more accessible manner.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:503.75pt;margin-bottom:
+0in;margin-left:-40.0pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=976
+ style='width:731.65pt;margin-left:-20.55pt;border-collapse:collapse'>
+ <tr style='height:444.0pt'>
+  <td width=311 valign=top style='width:233.2pt;padding:0in 0in 0in 0in;
+  height:444.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:.1in;margin-bottom:
+  0in;margin-left:-19.45pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+  <table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=301
+   style='width:226.0pt;border-collapse:collapse'>
+   <tr style='height:444.0pt'>
+    <td width=301 valign=top style='width:226.0pt;background:#396CB5;
+    padding:2.2pt 5.75pt 0in 4.35pt;height:444.0pt'>
+    <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:90%'><b><span
+    style='font-size:18.0pt;line-height:90%;color:white'>Step 1: Document
+    Information</span></b></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:0in;text-indent:0in;line-height:107%'><span
+    style='font-size:11.0pt;line-height:107%'><img border=0 width=249 height=1
+    id="Group 27288"
+    src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image012.gif"></span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:11.35pt;margin-bottom:
+    0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+    style='color:white'>When you fill out the file information like the title,
+    author, description, and keywords, it not only helps with search engine
+    optimization (SEO), but it also makes your PowerPoint more organized,
+    searchable, and accessible. These properties give important details about
+    the file without needing to open it. The title gives a quick summary of
+    what the file is about, and the author shows who made it. However, if
+    you’re posting the PowerPoint online, it’s a good idea to use your company
+    name as the author, so people can search for it easily. A well-written
+    description adds more information and helps users know if the file is
+    relevant to them. Keywords are like special words that make it easier for
+    people to find your file. By taking the time to fill out these file
+    properties, you make it simpler for others to find and understand your
+    PowerPoint, which helps with finding information quickly and keeping your
+    files organized.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'></p>
+  </td>
+  <td width=665 valign=top style='width:498.4pt;padding:0in 0in 0in 0in;
+  height:444.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.1in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=655 height=526 id="Group 27645"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image013.gif"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.2pt;margin-bottom:
+0in;margin-left:-40.0pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=954
+ style='width:715.55pt;margin-left:-20.55pt;border-collapse:collapse'>
+ <tr style='height:446.65pt'>
+  <td width=316 valign=top style='width:236.8pt;padding:0in 0in 0in 0in;
+  height:446.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:.15in;margin-bottom:
+  0in;margin-left:-19.45pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+  <table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=301
+   style='width:226.0pt;border-collapse:collapse'>
+   <tr style='height:444.0pt'>
+    <td width=301 valign=top style='width:226.0pt;background:#396CB5;
+    padding:4.3pt 5.75pt 0in 6.5pt;height:444.0pt'>
+    <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+    style='font-size:15.0pt;line-height:107%;color:#FFED00'>Document Language </span></b></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:5.8pt;margin-bottom:
+    0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+    style='color:white'>Powerpoint uses the default language of your install
+    for new templates. However, if you are creating PowerPoints in other
+    languages remember that you should set the language to the main natura
+    language of the document. Screen reader users who have French language
+    packs installled will be able to hear it in that language. However this
+    does not enable all users to listen in French. So if you are testing your
+    document and wonder why it sounds like “FrEnglish” it is likely that your
+    computer is not setup to vocalize French. When making a PDF of a PowerPoint
+    remember that there are special operations you will need to take to assign
+    language to specific parts of your document if it contains French and
+    English or a combination of languages.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'></p>
+  </td>
+  <td width=638 valign=top style='width:6.65in;padding:0in 0in 0in 0in;
+  height:446.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.15in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=624 height=409
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image014.gif"></span></p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  .05in 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:18.0pt;line-height:107%;color:white'>Step 2: Choosing or </span></b></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:18.0pt;line-height:107%;color:white'>Creating a Template</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=248 height=1 id="Group 27957"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image015.gif"></span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Unique Slide Titles</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.75pt;margin-bottom:
+  9.0pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+  style='color:white'>Having unique slide titles in your accessible PowerPoint
+  is important for a few reasons. First and foremost, unique slide titles
+  enhance the overall organization and structure of your presentation. Each
+  slide title acts as a roadmap, providing a concise preview of the content on
+  that particular slide. This enables individuals who are using screen readers
+  or assistive technology to navigate through the slides more efficiently. With
+  unique titles, users can quickly identify and jump to specific slides of interest,
+  saving time and enhancing their understanding of the presentation’s flow.
+  When you have more than one “Continued…” slides it can be helpful to label
+  them 1 of 3 to give additional information to the screen reader user.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:8.95pt;margin-bottom:
+  0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+  style='color:white'>Unique slide titles also contribute to the accessibility
+  and comprehension of your PowerPoint for a broader audience. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'><img width=635 height=474
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image016.gif"
+align=left hspace=12>For individuals with visual impairments, screen readers
+rely on slide titles to provide context and convey the main points or topics
+covered on each slide. By using descriptive and distinct titles, you help
+ensure that the content of your slides is accurately conveyed, allowing all
+attendees, including those with disabilities, to follow along and grasp the key
+messages being presented.</p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>The best way to check for unique
+titles is by using the Outline Mode. <br clear=all style='page-break-before:
+always'>
+</p>
+
+<h3 style='margin-top:0in;margin-right:12.35pt;margin-bottom:3.25pt;margin-left:
+5.0pt'>Title Slide holds your H1</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.35pt;margin-bottom:
+23.0pt;margin-left:4.5pt'>While we cannot directly control heading levels in
+our PowerPoints at a textbox level, the Title template slide is the only slide
+with a built in Heading Level 1 (H1). As I already noted, your heading
+structure is the roadmap of your document. All documents should start with an
+Heading Level 1.</p>
+
+<h3 style='margin-right:12.35pt'>All other slides are H2</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.35pt;margin-bottom:
+.15pt;margin-left:4.5pt'>If the Title slide is our H1 (Heading Level </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.35pt;margin-bottom:
+.15pt;margin-left:4.5pt'>1), our secondary slides are all Heading </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.35pt;margin-bottom:
+23.0pt;margin-left:4.5pt'>Level 2s. You cannot set beyond H2 in a PowerPoint
+currently. Indented Lists are not considered heading levels. Again, setting up
+and using a template maximizes accessibility of our presentation.</p>
+
+<h3 style='margin-right:12.35pt'>Every slide is a Sect/Story</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.35pt;margin-bottom:
+.15pt;margin-left:4.5pt'>If you have ever opened the accessibility tags in a
+PowerPoint you may have noticed all the &lt;Sect&gt; tags. These tags are the
+default for each slide. They are not read by assistive technology but can be
+helpful to keep your content organized in the tags tree. Some people prefer to
+remove them all with third-party tools like axesPDF or </p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>CommonLook but it is completely up
+to you. </p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection8>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.35pt;
+margin-left:240.15pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%'><img border=0 width=609 height=528
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image017.gif"></span></p>
+
+<h4 style='margin-left:0in;text-indent:0in'><span style='font-weight:normal'>                                                                                                                </span>Slide
+template dictates heading levels    Each Slide becomes a &lt;Sect&gt; in the
+PDF</h4>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:469.2pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  4.3pt 5.75pt 0in 6.5pt;height:469.2pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:white'>Consistent placement</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.7pt;margin-bottom:
+  9.0pt;margin-left:4.5pt;text-indent:-4.5pt;line-height:98%'><b><span
+  style='font-size:11.0pt;line-height:98%;color:#FFED00'>Anticipation and the
+  Cognitive Barrier </span></b><span style='color:white'>Using a consistent
+  layout for elements in your PowerPoint presentation can greatly reduce
+  cognitive barriers and readability. When elements such as headings, text, and
+  images are consistently placed on slides, it creates a sense of familiarity
+  and predictability for the audience. Familiar placement allows the audience
+  to focus more on the content itself rather than figuring out where to look
+  for information. For example, by placing headings consistently at the top or
+  on the left side of the slide, readers can anticipate where to find important
+  information related to that heading. This helps in quickly scanning the slide
+  and understanding the organization of the content, which improves
+  comprehension and overall cognitive processing.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.35pt;margin-bottom:
+  0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+  style='color:white'>When fonts, font sizes, and colors are used consistently
+  throughout the slides, it enhances visual harmony and reduces visual
+  distractions. Additionally, maintaining consistent alignment, spacing, and
+  positioning of elements like text and images creates a more visually </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;
+margin-left:4.5pt'><img width=665 height=459
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image018.gif"
+align=left hspace=12>pleasing and accessible presentation. By avoiding sudden
+changes in formatting or layout, you create a smoother reading experience for
+the audience, allowing them to focus on the message rather than being
+overwhelmed by inconsistent visual elements. It is all subliminal, but haven’t
+you ever left a presentation that you just found easy to understand but weren’t
+sure why? Often this is because the visual processing load was low and allowed
+you to be emersed in the content.</p>
+
+<p class=MsoNormal style='margin-left:.5pt;line-height:110%'><b><span
+style='font-size:11.0pt;line-height:110%'>(1) Title, (2) Content, (3) Image all
+have consistent placement and formatting</span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=621 style='width:466.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:78.8pt'>
+  <td width=621 style='width:466.0pt;border:none;border-left:solid black 4.5pt;
+  background:#C3D2E8;padding:0in .85pt 0in 12.0pt;height:78.8pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>Note:</b>
+  Once you have started laying out your slide deck, deselecting items from this
+  list will not remove footers from existing slides.  Use Insert &gt;
+  Header/Footer to remove them from a slide or the entire deck. </p>
+  </td>
+ </tr>
+</table>
+
+<h4 style='margin-left:.5pt'><img width=301 height=631
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image019.gif"
+align=left hspace=12>Leverage Slide Templates</h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;
+margin-left:4.5pt'>Now that you know why you should use Slide templates. Lets
+talk about what you put on them. Remember that you are striving for a
+consistent location and style of your intial content. </p>
+
+<h4 style='margin-left:.5pt'>The Master Slide</h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.5pt;
+margin-left:4.5pt'>This slide contains items that will appear on every slide.
+You can choose which elements you want for all slides by right clicking on the
+Master slide and choosing “Master Layout…” From here you can select from title,
+text, date, slide number and footer. Elements selected here will appear on
+every slide. However, you can add elements to your child slides to hide Master
+slide elements.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Slide
+Title: Your Title should be visually distinguishable from your body copy. My
+personal preference is that it should be 10 to 12pts larger than your body
+copy. If your body copy is 32pt your Heading should be 42 to 48pt. I know that
+sounds large but again, it will largely depend on your overall content.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Color:
+When choosing a color for your Title you will need to maintain a 3 to 1 color
+contrast. (see Color Contrast for more info)</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Logo
+Placement: Consider size and placement that does not distract or clutter the
+slide.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Master
+Footer: Your footer can contain the date, custom text and the page number. This
+can be set by right clicking on the Master slide and choosing Master Layout. If
+you have already created your slides and want to add the footer afterwards you
+can select Insert &gt; Header &amp; Footer. The dialog box that pops up will
+allow you to add elements to the current slide or all slides.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=655 style='width:491.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:122.0pt'>
+  <td width=655 style='width:491.2pt;border:none;border-left:solid black 4.5pt;
+  background:#C3D2E8;padding:0in 5.75pt 0in 12.0pt;height:122.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>Bug
+  Alert:</b> If you include the page number in your template and you add
+  content later it is possible that your content may not get tagged correctly
+  if you did not set your reading order. PowerPoint currently hides the item
+  directly above the page number in the Reading Order pane. Therefore you need
+  to make sure you adjust your reading order so that the page number is read
+  last. Or if you are using the Selection Pane to set your reading order, that
+  the page number is the top most item in the selection pane.</p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  4.3pt 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.8pt;
+  margin-left:0in;text-indent:0in;line-height:90%'><b><span style='font-size:
+  15.0pt;line-height:90%;color:white'>Other Accessibility Considerations</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:4.9pt;margin-bottom:
+  18.1pt;margin-left:24.0pt;text-indent:-12.0pt;line-height:98%'><span
+  style='font-size:11.0pt;line-height:98%;color:#FFED00'>1.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+  style='font-size:11.0pt;line-height:98%;color:#FFED00'>Accessibility
+  Consideration 1:</span></b><span style='font-size:11.0pt;line-height:98%;
+  color:#FFED00'> </span><span style='font-size:11.0pt;line-height:98%;
+  color:white'>Visual Page numbers are not required when your final output is a
+  PDF. Acrobat has their own page numbering system. However, if you choose to
+  add page numbers, make sure they match the PDF page numbers.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:4.9pt;margin-bottom:
+  0in;margin-left:24.0pt;text-indent:-12.0pt;line-height:107%'><span
+  style='font-size:11.0pt;line-height:107%;color:#FFED00'>2.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+  style='font-size:11.0pt;line-height:107%;color:#FFED00'>Accessibility
+  Consideration 2:</span></b><span style='font-size:11.0pt;line-height:107%;
+  color:white'> If the information in the footer contains vital information and
+  needs to be presented to the user you will need to copy the footer
+  information in text boxes or manually tag the content in the PDF. If you use
+  the default boxes in the template they will be ignored by screen reading
+  assistive technology. Typically you would only do this on your first or last
+  slide of the presentation.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:7.25pt'><img width=624 height=367
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image020.gif"
+align=left hspace=12><span style='font-size:11.0pt;line-height:103%'>PowerPoint
+will artifact any element directly above the page number placeholder</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection9>
+
+<h1 style='margin-left:.5pt'>Step 3:  Selecting Fonts and Sizes</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=271 height=1 id="Group 28143"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image008.gif"></span></p>
+
+<h2>Accessible fonts</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'>While most people agree that San Serif fonts are easier to
+read, there is no real definitive study to support the claim. What makes the
+most impact is spacing, line height and consistency.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:10.9pt;margin-bottom:
+22.95pt;margin-left:4.5pt'>Source Sans, Tahoma, Calibri, Helvetica, Arial,
+Verdana, and Times New Roman are all considered as accessible fonts. However be
+aware that letters like Capital I and lowercase l, or b and d can be confusing
+in many san-serif fonts. My goto is font is often Source Sans. Notice the tails
+on the lowercase letter l. <b>Illustrator:</b> Calibri Bold Illustrator: Source
+Sans Bold</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.7pt;margin-bottom:.15pt;
+margin-left:.5pt;line-height:110%'><b><span style='font-size:15.0pt;line-height:
+110%'>Dax’s Recommendations for  font sizes:</span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Headings:
+36 to 48 pt</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:107%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Body/Bullets minimum: 24 to 32pts</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Footnotes/References:
+18pt</p>
+
+<h1 style='margin-left:.5pt'>Step 4:  Picking your Color Pallette</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=271 height=1 id="Group 28144"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image008.gif"></span></p>
+
+<h2>Color Contrast</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.7pt;
+margin-left:4.5pt'>Color Contrast is the the difference in luminance or color
+between a graphic or text element and its neighbor or the background. It plays
+a crucial role in making content readable to all individuals, including those
+with low vision.While WCAG only requires a 3 to 1 Color Contrast I strive to
+meet 4.5 to 1 just to make sure that all my text can be read regardless of room
+lighting or method of presentation.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.75pt;
+margin-left:4.5pt'><b>Regular text:</b> Any text smaller than 18pt or 14pt
+bold. Regular text must have a 4.5 to 1 color contrast ratio to it’s
+background.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'><b>Large Text:</b> Any text that is 14pt bold or 18pt and
+larger. Large text requires a 3 to 1 color contrast because the text is larger
+and generally easier to see.</p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>While there are online tools that
+allow you to paste color values into them to figure out the color contrast, the
+easiest way to evaluate contrast is with a free tool called the Color Contrast
+Analyzer by TPGI. <a href="https://www.tpgi.com/color-contrast-checker"><span
+style='color:#0076A2'>https:// </span></a><a
+href="https://www.tpgi.com/color-contrast-checker"><span style='color:#0076A2'>www.tpgi.com/color-contrast-checker</span></a></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection10>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:494.1pt;text-indent:0in;line-height:107%'><img border=0 width=290
+height=486 id="Picture 1890"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image021.jpg"></p>
+
+<h3 style='margin-left:490.1pt'><span style='font-size:11.0pt;line-height:110%'>TPGI
+Color Contrast Checker Interface</span></h3>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  4.3pt 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.3pt;margin-bottom:
+  .9pt;margin-left:0in;text-indent:0in;line-height:90%'><b><span
+  style='font-size:15.0pt;line-height:90%;color:#FFED00'>Using color alone to
+  distinguish elements</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:9.35pt;margin-bottom:
+  8.95pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><b><span
+  style='color:white'>WCAG Success Criteria 1.4.1 Color Only </span></b><span
+  style='color:white'>(Level A). Color is not used as the only visual means of
+  conveying information, indicating an action, prompting a response, or
+  distinguishing a visual element. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:4.0pt;margin-bottom:
+  9.0pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+  style='color:white'>This accessibility guideline ensures that important
+  information or instructions are not conveyed only through color. Some people
+  may have difficulty seeing or interpreting colors, so it’s important to
+  provide alternative ways to understand the content.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:4.5pt;text-indent:0in;line-height:107%'><span style='color:white'>Imagine
+  you come across a website that uses only color to indicate whether a button
+  is selected or not. If you cannot see the colors properly, you may get
+  confused or miss important information. This success criterion ensures that
+  websites use other visual cues, like symbols or text, in addition to colors.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.8pt;
+margin-left:4.5pt'><img width=624 height=497
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image022.gif"
+align=left hspace=12>For example, if a slide contains different colored cells
+in a table that indicates project status, they should also have labels or
+symbols to indicate their values as well so people can understand them even if
+they can’t see the colors clearly.</p>
+
+<p class=MsoNormal style='margin-top:1.85pt;margin-right:0in;margin-bottom:
+.15pt;margin-left:.5pt;line-height:110%'><b><span style='font-size:11.0pt;
+line-height:110%'>Colorblind simulated view for someone with Deuteranopia (most
+common form of colorblindness)</span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  .05in 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:90%'><b><span
+  style='font-size:18.0pt;line-height:90%;color:white'>Step 5: Adding Content
+  Accessibly</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.65pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=248 height=1 id="Group 28985"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image015.gif"></span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Controling Reading
+  Order</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:7.25pt;margin-bottom:
+  0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+  style='color:white'>One of the most overlooked accessibility barriers is
+  checking and setting the Reading Order. It is not an issue when you stick to
+  the template and have simple Title and bullet content. But the moment you
+  start copying and pasting content from other sources or adding elements to
+  the slide you run the risk of mixing up the reading order of the elements on
+  the page. This is easily fixable but you have to know where to look. The
+  answer to “Okay, where do I look?” is “It depends.” If you are using a
+  current Windows version of Office 365 you can use the Read Order Panel. But,
+  if you are using a MAC or are using the Browser-based version of Office 365
+  you must use the Selection Pane.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><img width=643 height=326
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image023.gif"
+align=left hspace=12>Controlling content with the Reading Order Panel</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;
+margin-left:4.5pt'>This is a new option that has been recently added for most
+of the world running Windows desktop versions of Office 365. It is so much
+better than the Selection Pane method and really makes setting the Reading
+Order very easy. </p>
+
+<h3 style='margin-bottom:8.05pt'><span style='font-size:11.0pt;line-height:
+110%'>You can access the Reading Order Pane from the Review &gt; Accessibility
+&gt; Reading Order</span></h3>
+
+<p class=MsoNormal style='margin-top:30.15pt;margin-right:0in;margin-bottom:
+.15pt;margin-left:4.5pt'>From this panel you will be able to set the reading
+order in a natural top-down method. You will see all the elements are
+conveniently numbered. If you double click on any item you can directly access
+the image descriptions. If an element does not have an image description you
+will see a warning triangle next to the item. If you would like to omit
+(artifact) a decorative item like the numbered circles in the example you just
+simply uncheck the boxes. Unlike the Selection Pane, </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-12.45pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%'><img border=0 width=973 height=625
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image024.gif"></span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  4.85pt .15in 0in 13.0pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>What should I say?</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-.25in;line-height:107%'><span
+  style='color:white'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Set the Stage </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:0in;line-height:98%'><span style='color:white'>Annual
+  Sales for Headphones, earbuds and speakers…</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-.25in;line-height:98%'><span
+  style='color:white'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Describe the Axis/Legend sales in
+  millions of dollars by quarter…</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-.25in;line-height:98%'><span
+  style='color:white'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Relate quantity/trend showing a
+  significant drop in wireless ear buds hitting a $1.8M low. Wireless
+  headphones and bluetooth speakers showed a steady increases from the second
+  quarter to the end of the year…</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.8pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-.25in;line-height:98%'><span
+  style='color:white'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>If it has data/values your
+  description should have some too! </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:0in;line-height:107%'><span style='color:white'>&quot;...with
+  sales for ear buds at $4.5M and $5M for bluetooth speakers.&quot;</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.5pt'><img width=624 height=1
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image025.gif"
+align=left hspace=12><img width=584 height=346
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image026.jpg"
+align=left hspace=12>Step 6: Alternate Descriptions for Images</h1>
+
+<p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:23.0pt;
+margin-left:4.5pt'>All non-text content requires one of two things. Either you
+mark it as decorative or you provide a short but meaningful description. How do
+I know if I should mark something as decorative? Ask yourself: “If this item
+were not here would the reader lose any valuable information?”</p>
+
+<h2 style='margin-bottom:1.3pt'>Example Line graph</h2>
+
+<p class=MsoNormal style='margin-top:13.1pt;margin-right:0in;margin-bottom:
+.15pt;margin-left:.5pt;line-height:110%'><b><span style='font-size:11.0pt;
+line-height:110%'>Now put it all together:</span></b></p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>Annual Sales in millions of
+dollars for Headphones, earbuds and speakers by quarter showing a significant
+drop in wireless ear buds hitting a $1.8M low in the 3rd Quarter. Wireless
+headphones and bluetooth speakers showed a steady increases from the second
+quarter to the end of the year with sales for ear buds at $4.5M and $5M for
+bluetooth speakers.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  6.4pt 5.75pt 0in 10.0pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>What should I say?</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-17.0pt;line-height:98%'><span
+  style='color:white'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>What are the important features of
+  the setting, if any? </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:0in;line-height:98%'><span style='color:white'>A
+  canal with high vertical metal walls. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-17.0pt;line-height:98%'><span
+  style='color:white'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Are there actions or interactions?
+  fast moving water</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:
+  0in;margin-left:33.0pt;text-indent:-17.0pt;line-height:98%'><span
+  style='color:white'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Does describing the subjects add
+  value to the description? A ladder and saftey chain are shown </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.1pt;margin-bottom:
+  9.6pt;margin-left:33.0pt;text-indent:-17.0pt;line-height:98%'><span
+  style='color:white'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Avoid adding non-descriptive data
+  unless it would be obvious to the visual reader. as escape methods should
+  someone fall in.</span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:11.0pt;line-height:107%;color:white'>Now put it all
+  together:</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:0in;line-height:107%'><span style='color:white'>A
+  canal with high vertical metal walls and fast moving water. A ladder and
+  saftey chain are shown as escape methods should someone fall in.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><img width=616 height=494
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image027.gif"
+align=left hspace=12>Describing an Image<br clear=all style='page-break-before:
+always'>
+</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.05pt;margin-bottom:
+0in;margin-left:-39.75pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=949
+ style='width:711.5pt;margin-left:4.75pt;border-collapse:collapse'>
+ <tr style='height:444.0pt'>
+  <td width=625 valign=top style='width:468.7pt;padding:0in 0in 0in 0in;
+  height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:11.0pt;line-height:107%'><img border=0 width=603 height=536
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image028.gif"></span></p>
+  </td>
+  <td width=324 valign=top style='width:242.8pt;padding:0in 0in 0in 0in;
+  height:444.0pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.5in;margin-bottom:
+  0in;margin-left:-513.2pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+  <table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=301
+   style='width:226.0pt;margin-left:16.8pt;border-collapse:collapse'>
+   <tr style='height:444.0pt'>
+    <td width=301 valign=top style='width:226.0pt;background:#396CB5;
+    padding:9.15pt 5.75pt 0in 15.2pt;height:444.0pt'>
+    <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+    style='font-size:15.0pt;line-height:107%;color:#FFED00'>Where to add
+    Alt-text</span></b></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    9.6pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+    style='color:white'>Right click on any image and choose View Alt-text. Here
+    you can enter your description.</span></p>
+    <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+    style='font-size:11.0pt;line-height:107%;color:white'>Well-written Alt-text
+    </span></b></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:107%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>2-3 sentences </span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:98%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Describes the main point or
+    elements of an image</span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:107%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Starts with the most important info
+    </span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:98%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Includes quantitative data if it
+    exists in the image, chart or graph.</span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:98%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Avoid visual layout like extra hard
+    returns (not read by screen readers)</span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:107%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Avoids excessive use of symbols</span></p>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    0in;margin-left:19.0pt;text-indent:-13.0pt;line-height:107%'><span
+    style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span><span style='color:white'>Avoids hyperlinks since they are
+    not interactive in alt-text</span></p>
+    <table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=261
+     style='width:195.8pt;border-collapse:collapse'>
+     <tr style='height:93.2pt'>
+      <td width=261 style='width:195.8pt;border:none;border-left:solid black 4.5pt;
+      background:#FFED00;padding:0in 3.8pt 0in 12.0pt;height:93.2pt'>
+      <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>NOTE:</b>
+      Did you know someone using assistive technology cannot pause alt-text and
+      must start from the begining if something is missed.</p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+    8.0pt;margin-left:0in;text-indent:0in;line-height:107%'></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'></p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  5.55pt 16.15pt 0in 12.55pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Don’t forget the
+  Screen Tip</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:8.55pt;margin-bottom:
+  23.6pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+  style='color:white'>When seting a link in the content of your slide you
+  should always add a Screen Tip. This is the descriptive text the screen
+  reader user will hear when they encounter the link. “Apple Store link to Sim
+  Daltonism” is much more descriptive than “</span><a
+  href="https://apps.apple.com/us/app/sim-daltonism/id693112260?mt=12"><span
+  style='color:white;text-decoration:none'>https://apps. </span></a><a
+  href="https://apps.apple.com/us/app/sim-daltonism/id693112260?mt=12"><span
+  style='color:white;text-decoration:none'>apple.com/us/app/sim-daltonism/ </span></a><a
+  href="https://apps.apple.com/us/app/sim-daltonism/id693112260?mt=12"><span
+  style='color:white;text-decoration:none'>id693112260?mt=12”</span></a></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Click Here</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.5pt;margin-bottom:
+  0in;margin-left:4.5pt;text-align:justify;text-justify:inter-ideograph;
+  text-indent:0in;line-height:107%'><span style='color:white'>Avoid phrases
+  like “Click here,” “Watch,” or “Read More” without context. “Click here to
+  download the Accessibility Report,” “Watch the video on Vimeo” or “Read More
+  about alpaca” are much more informative links. </span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-left:.5pt'><img width=654 height=367
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image029.jpg"
+align=left hspace=12>Step 7: Create Accessible Links</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.8pt;
+margin-left:4.5pt'>Repeating Links in the footer of your slides should not be
+active. PowerPoint will hide them from the screen reader (artifact them) by
+default. However if you assign a url to them, you may get errors when running
+the PDF Accessibility Checker if you are creating a PDF from your PPT. </p>
+
+<p class=MsoNormal style='margin-top:17.0pt;margin-right:0in;margin-bottom:
+2.5pt;margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Highlight the text or select your
+image.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.6pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Right Click and choose <b>Insert
+Link.</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.7pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Enter the URL and then in the top
+right corner click the <b>Screen Tip</b> button and add a short description for
+the user to know where they are going if they click the link.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:18.75pt;text-indent:-12.0pt'><b><span style='font-size:11.0pt;
+line-height:103%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+style='font-size:11.0pt;line-height:103%'>Click <b>Ok</b>.</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  6.4pt 5.75pt 0in 7.0pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Low Vision
+  Considerations</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.5pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+  11.0pt;line-height:107%;color:white'>WCAG Success Criteria 1.4.11 Non-text </span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.9pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+  11.0pt;line-height:107%;color:white'>Contrast (Level AA)</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:15.65pt;margin-bottom:
+  9.0pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+  style='color:white'>The visual presentation of the parts of graphics required
+  to understand the content have a contrast ratio of at least 3:1 against
+  adjacent color(s). </span><a
+  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html"><span
+  style='color:white;text-decoration:none'>https://www.w3.org/WAI/WCAG21/ </span></a><a
+  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html"><span
+  style='color:white;text-decoration:none'>Understanding/non-text-contrast.html</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;
+  margin-left:4.5pt;text-indent:0in;line-height:98%'><span style='color:white'>Color
+  contrast is the determining factor for low vision. Ask yourself:</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.3pt;margin-bottom:
+  0in;margin-left:20.0pt;text-indent:-12.0pt;line-height:98%'><span
+  style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>“Can someone with low vision tell one
+  thing from another?” </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.3pt;margin-bottom:
+  0in;margin-left:20.0pt;text-indent:-12.0pt;line-height:98%'><span
+  style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>“Are text labels or data points dark
+  (or light) enough to be read against the page or background colors of charts,
+  graphs and infographics?”</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.3pt;margin-bottom:
+  0in;margin-left:20.0pt;text-indent:-12.0pt;line-height:107%'><span
+  style='color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>“Are the important elements in my map
+  or infographic dark enough to meet the 3 to 1 color contrast requirement?”</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.5pt'><img width=590 height=1
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image010.gif"
+align=left hspace=12><img width=614 height=384
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image030.gif"
+align=left hspace=12>Step 8: Use Accessible Colors in Graphics</h1>
+
+<p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:.15pt;
+margin-left:4.5pt'>As we have discussed before color plays an important role in
+the accessibility of graphics. The use of labels instead of legends also
+improves cognitive understanding. When we consider color there are two
+accessibility barriers we are trying to mitigate – Low vision and color
+blindness. We have already discussed color blind considerations and WCAG 1.4.1
+Use of Color. Let’s discuss the other potential barrier; low vision.<br
+clear=all style='page-break-before:always'>
+</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:470.65pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  2.6pt 5.75pt 0in 7.5pt;height:470.65pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:18.0pt;line-height:107%;color:white'>Step 9:  </span></b></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:18.0pt;line-height:107%;color:white'>Create Accessible
+  Tables</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=248 height=1 id="Group 32542"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image015.gif"></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;
+  margin-left:4.5pt;text-indent:0in;line-height:98%'><span style='color:white'>What
+  makes a table accessible? Here are my 10 basic accessible table qualifiers:</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:107%'><span
+  style='color:white'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It is not an image</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It has logical structure with the
+  same number of columns in every row.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:107%'><span
+  style='color:white'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It has no blank Column headers.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It avoids cramming unlike items
+  together for aesthetic reasons.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It doesn’t use blank columns to
+  visually style or separate data.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It does not use colored cells as the
+  only way to communicate information.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It does not use symbols alone to
+  communicate information</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>It avoids merged cells (when in PPT
+  format. PDF is okay but requires extra steps).</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>The title of the table is not
+  embedded in the first row.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.35pt;
+  margin-left:33.0pt;text-indent:-20.0pt;line-height:98%'><span
+  style='color:white'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span><span style='color:white'>Footnotes are not embedded in the
+  last row</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.9pt;margin-bottom:
+  0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><b><span
+  style='color:white'>BONUS:</span></b><span style='color:white'> The A1 cell
+  can be blank but you will need to modify it in your PDF and mark it as a TD.</span></p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=623 style='width:467.5pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:21.8pt'>
+  <td width=156 rowspan=2 style='width:116.9pt;border:solid white 1.0pt;
+  border-left:none;background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:
+  21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>The A1 Cell</span></b></p>
+  </td>
+  <td width=156 rowspan=2 style='width:116.9pt;border:solid white 1.0pt;
+  border-left:none;background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:
+  21.8pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:13.5pt;line-height:107%;color:white'>Column Header</span></b></p>
+  </td>
+  <td width=156 colspan=2 valign=top style='width:116.9pt;border:solid white 1.0pt;
+  border-left:none;background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:
+  21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Stacked</span></b></p>
+  </td>
+  <td width=156 colspan=2 valign=top style='width:116.9pt;border:solid white 1.0pt;
+  border-left:none;background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:
+  21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Stacked</span></b></p>
+  </td>
+  <td style='height:21.8pt;border:none' width=0 height=29></td>
+ </tr>
+ <tr style='height:21.8pt'>
+  <td width=78 valign=top style='width:58.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Split</span></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Cell</span></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Split</span></b></p>
+  </td>
+  <td width=78 valign=top style='width:58.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:black;padding:2.3pt 5.75pt 0in 11.8pt;height:21.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.0pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Cell</span></b></p>
+  </td>
+  <td style='height:21.8pt;border:none' width=0 height=29></td>
+ </tr>
+ <tr style='height:43.6pt'>
+  <td width=156 style='width:116.9pt;border:solid black 1.0pt;border-top:none;
+  background:#009EE3;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Row
+  Header</span></b></p>
+  </td>
+  <td width=156 style='width:116.9pt;border-top:none;border-left:none;
+  border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;background:
+  #E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border:none;border-bottom:solid white 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td style='height:43.6pt;border:none' width=0 height=58></td>
+ </tr>
+ <tr style='height:43.6pt'>
+  <td width=156 style='width:116.9pt;border:solid black 1.0pt;border-top:none;
+  background:#009EE3;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Row
+  Header</span></b></p>
+  </td>
+  <td width=156 rowspan=2 style='width:116.9pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:25.85pt;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 rowspan=2 style='width:116.9pt;border-top:none;
+  border-left:none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.05pt;
+  margin-bottom:25.85pt;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 rowspan=2 style='width:116.9pt;border:none;
+  border-bottom:solid white 1.0pt;background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;
+  height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:25.85pt;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td style='height:43.6pt;border:none' width=0 height=58></td>
+ </tr>
+ <tr style='height:43.6pt'>
+  <td width=156 rowspan=2 style='width:116.9pt;border:solid black 1.0pt;
+  border-top:none;background:#009EE3;padding:2.3pt 5.75pt 0in 11.8pt;
+  height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Merged
+  Cell</span></b></p>
+  </td>
+  <td style='height:43.6pt;border:none' width=0 height=58></td>
+ </tr>
+ <tr style='height:43.6pt'>
+  <td width=156 style='width:116.9pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid white 1.0pt;background:
+  #E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid white 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border:none;border-bottom:solid black 1.0pt;
+  background:#E5007D;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%;
+  color:white'>Table Data</span></b></p>
+  </td>
+  <td style='height:43.6pt;border:none' width=0 height=58></td>
+ </tr>
+ <tr style='height:43.6pt'>
+  <td width=156 style='width:116.9pt;border:solid black 1.0pt;border-top:none;
+  background:#FFED00;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Footer
+  Row</span></b></p>
+  </td>
+  <td width=156 style='width:116.9pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #FFED00;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Footer
+  Row</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#FFED00;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Footer
+  Row</span></b></p>
+  </td>
+  <td width=156 colspan=2 style='width:116.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#FFED00;padding:2.3pt 5.75pt 0in 11.8pt;height:43.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:6.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b><span style='font-size:13.5pt;line-height:107%'>Footer
+  Row</span></b></p>
+  </td>
+  <td style='height:43.6pt;border:none' width=0 height=58></td>
+ </tr>
+ <tr height=0>
+  <td width=156 style='border:none'></td>
+  <td width=156 style='border:none'></td>
+  <td width=78 style='border:none'></td>
+  <td width=78 style='border:none'></td>
+  <td width=78 style='border:none'></td>
+  <td width=78 style='border:none'></td>
+  <td style='border:none' width=0><p class='MsoNormal'>&nbsp;</td>
+ </tr>
+</table>
+
+<h2><img width=368 height=187
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image031.jpg"
+align=left hspace=12>Layout tables </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.1pt;margin-bottom:.15pt;
+margin-left:4.5pt'>While most accessibility professionals avoid tables that are
+used only for the purpose of spacing out or visually dividing graphics or
+paragraphs of text, it is not a barrier if the </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.1pt;margin-bottom:.15pt;
+margin-left:4.5pt'>presentation of the elements when read left-to-right,
+top-to-bottom make logical sense. However, be aware that you will not pass any
+accessibility checkers unless your table has column headers. So it is best to
+avoid them whenever possible.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:10.6pt'>
+  <td width=301 colspan=3 valign=top style='width:226.0pt;background:#396CB5;
+  padding:11.0pt .15pt 0in 4.5pt;height:10.6pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:78.8pt'>
+  <td width=7 rowspan=2 valign=top style='width:5.5pt;background:#396CB5;
+  padding:11.0pt .15pt 0in 4.5pt;height:78.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+  <td width=286 style='width:214.5pt;border:none;border-left:solid black 4.5pt;
+  background:#FFED00;padding:11.0pt .15pt 0in 4.5pt;height:78.8pt'>
+  <p class=MsoNormal align=right style='margin-top:0in;margin-right:5.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:right;text-indent:0in;
+  line-height:107%'><b>When live PPT files are shared ensure </b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:7.5pt;text-indent:0in;line-height:107%'><b>your video content is
+  not set to autoplay</b></p>
+  </td>
+  <td width=8 rowspan=2 valign=top style='width:6.0pt;background:#396CB5;
+  padding:11.0pt .15pt 0in 4.5pt;height:78.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:354.6pt'>
+  <td width=286 valign=top style='width:214.5pt;background:#396CB5;padding:
+  11.0pt .15pt 0in 4.5pt;height:354.6pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='color:white'>It is important that your video content is not set to
+  autoplay when delivering a live PPT source file to someone who may use a
+  screen reader. When the video plays it can be startling and if there is
+  speech or music it can overshadow the users screen reading assistive
+  technology. Always make sure your video content is set to play on click.
+  Another key accessibility function is not hiding the controls or moving them
+  off screen. A user should be able to easily control start, stop, pause,
+  volume or mute. </span></p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;margin-left:
+.5pt'><img width=590 height=1
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image010.gif"
+align=left hspace=12><img width=631 height=317
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image032.gif"
+align=left hspace=12>Step 10: Create Accessible Video in PowerPoint</h1>
+
+<p class=MsoNormal style='margin-top:15.65pt;margin-right:0in;margin-bottom:
+.15pt;margin-left:.5pt;line-height:110%'><b><span style='font-size:15.0pt;
+line-height:110%'>A note about Captions and Subtitles.</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'>Captions are text that in the same language as the live
+presenter or the video content. Subtitles are when the spoken word is
+translated to a different language. PowerPoint, however, does not diffentiate
+the two. To set live captions you go to the Slideshow tab (1) and then select
+“Always Use Subtitles (2). Then you can choose the base language or have them
+translated to a different language (3) . Live captioners are always a better
+choice than automation, but if you need to set them for your presentation the
+alternatives are there.</p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>You can adjust the position of the
+captions or subtitles (4) as well as which microphone to listen to. Remember to
+turn this off if you are in a Zoom meeting or other online meeting where their
+platform also provides captions. Otherwise you will get one on top of the
+other.<br clear=all style='page-break-before:always'>
+</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  4.3pt 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:15.0pt;line-height:107%;color:#FFED00'>Use Video Captions</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:8.7pt;margin-bottom:
+  9.0pt;margin-left:4.5pt;text-indent:0in;line-height:98%'><span
+  style='color:white'>Captions should always be available for your video
+  content. Captions come in two variations. Open Captions and Closed Captions.
+  Open Captions are burned into the video and are part of the actual video
+  file. Closed captions are produced via a separate file and can be available
+  in several language options for the user. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.75pt;margin-bottom:
+  0in;margin-left:4.5pt;text-indent:0in;line-height:107%'><span
+  style='color:white'>A great tool I always recommend is the free plugin STAMP
+  if you need to include video in your actual presentation rather than hopping
+  out to YouTube or Vimeo. STAMP has several ways to import captions or create
+  your own. The option for creating your own can be a bit clunky at first but
+  with some practice you can get the hang of it. However, if time is valuable,
+  creating Open Captions that are burned into the video really saves a ton of
+  time.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.5pt;line-height:110%'><img width=648
+height=390
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image033.gif"
+align=left hspace=12><b><span style='font-size:11.0pt;line-height:110%'>Options
+for creating captions:</span></b></p>
+
+<p class=MsoNormal style='margin-left:22.0pt;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Adobe
+Premiere has a new captioning feature that lets you produce open or closed
+captions. It also lets you produce a transcript as well.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:22.0pt;text-indent:-.25in;line-height:107%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>YouTube
+studio allows you to add captions manually as PowerPoint compatible VTT files.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:22.0pt;text-indent:-.25in;line-height:103%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>STAMP
+Subtitling Add-In for Microsoft PowerPoint <a
+href="https://blogs.microsoft.com/accessibility/subtitling-add-in-for-microsoft-powerpoint-stamp-now-supports-office-2013-and-later/"><b><span
+style='color:#0076A2'>https://blogs.microsoft.com/ </span></b></a><a
+href="https://blogs.microsoft.com/accessibility/subtitling-add-in-for-microsoft-powerpoint-stamp-now-supports-office-2013-and-later/"><b><span
+style='color:#0076A2'>accessibility/subtitling-add-in-for-microsoft-powerpoint-stamp-now-supports-office-</span></b></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:0in;text-indent:0in;line-height:103%'><a
+href="https://blogs.microsoft.com/accessibility/subtitling-add-in-for-microsoft-powerpoint-stamp-now-supports-office-2013-and-later/"><b><span
+style='color:#0076A2'>2013-and-later/</span></b></a></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection11>
+
+<p class=MsoNormal style='margin-left:.5pt;line-height:110%'><b><span
+style='font-size:15.0pt;line-height:110%'>Does your Video-only content have
+audio descriptions or a transcript?</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:4.5pt'>Much like audio-only content, video only content can be a
+signifcant barrier for people who are blind or low-vision. The best option is
+audio descriptions. To hear a great example of a video with audio descriptions
+visit this Vimeo video from the Blind Institute of Technology. <a
+href="https://vimeo.com/820638084/f9d28374f4"><span style='color:#0076A2'>https://vimeo.com/820638084/f9d28374f4</span></a>
+</p>
+
+<p class=MsoNormal style='margin-left:4.5pt'>A secondary alternative is a
+digital transcript in the form of an accessible PDF or Word document that a
+person could access using assistive technology. Giving this file out ahead of
+time is proper ettique to allow the audience time to review the content.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:4.5pt;text-indent:0in;line-height:107%'><img border=0 width=611
+height=354 id="Picture 3422"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image034.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:55.25pt;margin-bottom:
+.9pt;margin-left:0in;text-indent:0in;line-height:90%'><b><span
+style='font-size:15.0pt;line-height:90%;color:white'>Do you have  Audio-only
+content?</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.15pt;margin-bottom:
+3.05in;margin-left:4.25pt;line-height:98%'><span style='position:relative;
+z-index:-1895804928'><span style='left:0px;position:absolute;left:-12px;
+top:-59px;width:301px;height:592px'><img width=301 height=592
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image035.gif"></span></span><span
+style='color:white'>Are you playing a clip from a podcast or radio program? To
+consider those you are Deaf you will want to have captions on screen as well.
+Otherwise you can provide a transcript ahead of time as a less-inclusive but
+accessible option. Transcripts include things like speakers names, sounds, and
+can include time stamps if you feel the need to add them.</span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+style='font-size:11.0pt;line-height:107%;color:white'>Transcript sample from </span></b><a
+href="http://Otter.ai/"><b><span style='font-size:11.0pt;line-height:107%;
+color:white'>Otter.ai</span></b></a></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=301 style='width:226.0pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:444.0pt'>
+  <td width=301 valign=top style='width:226.0pt;background:#396CB5;padding:
+  .05in 5.75pt 0in 6.5pt;height:444.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:18.0pt;line-height:107%;color:white'>Step 11: Run the </span></b></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:90%'><b><span
+  style='font-size:18.0pt;line-height:90%;color:white'>Microsoft Accessibility
+  Checker</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.5pt;
+  margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  11.0pt;line-height:107%'><img border=0 width=248 height=1 id="Group 30515"
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image015.gif"></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:4.5pt;text-indent:0in;line-height:107%'><span style='color:white'>When
+  you are finished with your document and have incorporated all the steps above
+  you should have very little errors in your document. However, if you are
+  running the checker on a document you did not create you will need to
+  understand what the errors mean and how to fix them. The good thing is that
+  Microsoft does a pretty good job of walking you through it.</span></p>
+  <table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=279
+   style='width:209.2pt;border-collapse:collapse'>
+   <tr style='height:78.8pt'>
+    <td width=279 style='width:209.2pt;border:none;border-left:solid black 4.5pt;
+    background:#FFED00;padding:0in 5.75pt 0in 12.0pt;height:78.8pt'>
+    <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>NOTE:</b>
+    The current Microsoft Checker in PowerPoint does not check for minimum
+    color contrast.</p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'></p>
+  </td>
+ </tr>
+</table>
+
+<h2><img width=624 height=302
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image036.jpg"
+align=left hspace=12>Typical Accessibility Checker Warnings and Errors</h2>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Missing
+Slide Title: Make sure every slide has a title. Sometimes you might need to
+hide one behind an image if your entire slide is just an image.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Duplicate
+Slide Title: Use Continued (1) or Continued (2) but each slide title must be
+unique.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Missing
+Object Description: Right click on the image and add a short meaningful
+description</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Use
+of Merged or Split Cells: This only matters when you are delivering a live PPT
+file to someone who will need to use assistive technology to read it. If you
+are exporting to PDF you should ensure you table has proper Scope and Spans set
+for accessibility.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Check
+Reading Order: Use the Reading Order or Selection Pane to verify the order.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Mission
+Audio or Video Subtitles: Add them or provide accessible alternatives.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Review
+Auto-Generated Descriptions: Please don’t use these. Just don’t They are never
+good and no one likes “Possible image of sunglasses. Generated with medium
+confidence” as an image description for a chart or graph. (yes, this really is
+true example)</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection12>
+
+<p class=MsoNormal style='margin-left:.5pt'>The following table provided by
+Microsoft includes key best practices for creating PowerPoint presentations
+that are accessible to people with disabilities.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=947
+ style='width:710.2pt;margin-left:-13.0pt;border-collapse:collapse'>
+ <tr style='height:27.1pt'>
+  <td width=947 colspan=4 style='width:710.2pt;background:#396CB5;padding:2.5pt 4.75pt 0in 8.25pt;
+  height:27.1pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:white'>What to fix                                      How to find it                              Why
+  fix it                                                                        How
+  to fix it</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:36.8pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:36.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Include
+  alternative text with all visuals.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:36.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.6pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>To find missing alternative text, use the Accessibility
+  Checker.</span></p>
+  </td>
+  <td width=349 valign=top style='width:262.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:36.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Alternative
+  text helps people who can’t see the screen to understand what’s important in
+  images and other visuals.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:36.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Add
+  alt text to visuals</span></p>
+  </td>
+ </tr>
+ <tr style='height:83.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:83.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Make
+  sure slide contents can be read in the order that you intend.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:83.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.85pt;margin-bottom:
+  9.95pt;margin-left:3.75pt;text-indent:0in;line-height:90%'><span
+  style='font-size:10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Use the Accessibility Checker to find slides that have
+  possible problems with reading order.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Try
+  navigating your slides with a screen reader.</span></p>
+  </td>
+  <td width=349 style='width:262.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:83.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>A
+  screen reader reads the elements of a slide in the order they were added to
+  the slide, which might be very different from the order in which things
+  appear.</span></p>
+  </td>
+  <td width=167 valign=top style='width:125.2pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:83.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Set
+  the reading order of slide contents</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  built-in slide designs for inclusive </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>reading
+  order, colors, and more</span></p>
+  </td>
+ </tr>
+ <tr style='height:71.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:71.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Add
+  meaningful and accurate hyperlink text and ScreenTips.</span></p>
+  </td>
+  <td width=207 style='width:155.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:71.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:6.4pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>To determine whether hyperlink text makes sense as standalone
+  information, visually scan the slides in your presentation.</span></p>
+  </td>
+  <td width=349 valign=top style='width:262.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:71.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.75pt;margin-bottom:
+  9.95pt;margin-left:3.75pt;text-indent:0in;line-height:90%'><span
+  style='font-size:10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>People who use screen readers sometimes scan a list of links.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><b><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Tip: </span></b><span style='font-size:10.0pt;line-height:
+  107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>You can also add
+  ScreenTips that appear when your cursor hovers over text or images that
+  include a hyperlink.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:71.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Create
+  accessible hyperlink text and add </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>ScreenTips</span></p>
+  </td>
+ </tr>
+ <tr style='height:85.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:85.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Ensure
+  that color is not the only means of conveying information.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:85.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Select <b>Start </b>&gt; <b>Settings &gt; Accessibility &gt;
+  Color filters</b>.<b> </b>Turn on the <b>Color filter</b> switch, and then
+  select <b>Grayscale</b>. Visually scan each slide in your presentation for
+  instances of color-coding.</span></p>
+  </td>
+  <td width=349 style='width:262.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:85.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.25pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>People who are blind, have low vision, or are colorblind might
+  miss out on the meaning conveyed by particular colors.</span></p>
+  </td>
+  <td width=167 valign=top style='width:125.2pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:85.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  an accessible presentation template</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  built-in slide designs for inclusive </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>reading
+  order, colors, and more</span></p>
+  </td>
+ </tr>
+ <tr style='height:95.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:95.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  sufficient contrast for text and background colors.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:95.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>To
+  find insufficient color contrast, use the Accessibility Checker.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>You
+  can also look for text in your presentation that’s hard to read or to
+  distinguish from the background.</span></p>
+  </td>
+  <td width=349 style='width:262.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:95.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:4.05pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Strong contrast between text and background makes it easier
+  for people with low vision or colorblindness to see and use the content.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 4.75pt 0in 8.25pt;height:95.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  accessible font color</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  built-in slide designs for inclusive </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>reading
+  order, colors, and more</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:738.05pt;margin-bottom:
+0in;margin-left:-58.0pt;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=947
+ style='width:710.2pt;margin-left:-13.0pt;border-collapse:collapse'>
+ <tr style='height:27.1pt'>
+  <td width=947 colspan=4 style='width:710.2pt;background:#396CB5;padding:2.5pt 5.75pt 0in 8.25pt;
+  height:27.1pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:11.0pt;line-height:107%'> </span><b><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:white'>What
+  to fix                                      How to find it                              Why
+  fix it                                                                        How
+  to fix it</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:60.8pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:60.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Give
+  every slide a unique title.</span></p>
+  </td>
+  <td width=207 style='width:155.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:60.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>To
+  find slides that do not have titles, use the Accessibility Checker.</span></p>
+  </td>
+  <td width=349 valign=top style='width:262.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:60.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>People
+  who are blind, have low vision, or have a reading disability rely on slide
+  titles to navigate. For example, by skimming or using a screen reader, they
+  can quickly scan through a list of slide titles and go right to the slide
+  they want.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:60.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.55pt;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Give
+  every slide a title</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Hide
+  a slide title</span></p>
+  </td>
+ </tr>
+ <tr style='height:59.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>If
+  you must use tables, create a simple table structure for data only, and
+  specify column header information.</span></p>
+  </td>
+  <td width=207 style='width:155.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.65pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>To ensure that tables don’t contain split cells, merged cells,
+  or nested tables, use the Accessibility Checker.</span></p>
+  </td>
+  <td width=349 valign=top style='width:262.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.4pt;margin-bottom:
+  9.95pt;margin-left:3.75pt;text-indent:0in;line-height:90%'><span
+  style='font-size:10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Screen readers keep track of their location in a table by
+  counting table cells. </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Screen
+  readers also use header information to identify rows and columns.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.55pt;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Avoid
+  using tables</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  table headers</span></p>
+  </td>
+ </tr>
+ <tr style='height:59.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  a larger font size (18pt or larger), sans serif fonts, and sufficient white
+  space.</span></p>
+  </td>
+  <td width=207 style='width:155.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>To
+  find potential issues related to fonts or white space, review your slides for
+  areas that look crowded or illegible.</span></p>
+  </td>
+  <td width=349 style='width:262.0pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>People
+  who have dyslexia describe seeing text merge or distort.</span></p>
+  </td>
+  <td width=167 valign=top style='width:125.2pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:59.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  an accessible presentation template</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  accessible font format and color</span></p>
+  </td>
+ </tr>
+ <tr style='height:129.3pt'>
+  <td width=224 style='width:168.0pt;border:solid black 1.0pt;border-top:none;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:129.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Make
+  videos accessible to people who have a vision or hearing disability.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:129.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+  <td width=349 valign=top style='width:262.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:129.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><i><span
+  style='font-size:10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Subtitles</span></i><span style='font-size:10.0pt;line-height:
+  90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'> typically contain a
+  transcription (or translation) of the dialogue.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><i><span
+  style='font-size:10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Closed captions</span></i><span style='font-size:10.0pt;
+  line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'> typically
+  also describe audio cues such as music or sound effects that occur
+  off-screen.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.9pt;margin-bottom:
+  0in;margin-left:3.75pt;text-indent:0in;line-height:107%'><i><span
+  style='font-size:10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+  color:#1E1E1E'>Video description</span></i><span style='font-size:10.0pt;
+  line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'> means
+  audio-narrated descriptions of a video’s key visual elements. These
+  descriptions are inserted into natural pauses in the program’s dialogue.
+  Video description makes videos more accessible to people who are blind or
+  have low vision.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:129.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Use
+  captions, subtitles, and alternative audio tracks in videos</span></p>
+  </td>
+ </tr>
+ <tr style='height:99.9pt'>
+  <td width=224 style='width:168.0pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid #CCCCCC 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:99.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Create
+  accessible PDFs or other file formats of your presentation.</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid #CCCCCC 1.0pt;border-right:solid black 1.0pt;
+  background:#F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:99.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+  margin-left:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+  </td>
+  <td width=349 style='width:262.0pt;border-top:none;border-left:none;
+  border-bottom:solid #CCCCCC 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:99.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+  margin-left:3.75pt;text-indent:0in;line-height:90%'><span style='font-size:
+  10.0pt;line-height:90%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Include
+  accessibility tags to PDF files you create from your presentation. The tags
+  make it possible for screen readers and other assistive technologies to read
+  and navigate a document.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>You
+  can also save the presentation in a format that can be ported to a Braille
+  reader.</span></p>
+  </td>
+  <td width=167 style='width:125.2pt;border-top:none;border-left:none;
+  border-bottom:solid #CCCCCC 1.0pt;border-right:solid black 1.0pt;background:
+  #F4F4F4;padding:2.5pt 5.75pt 0in 8.25pt;height:99.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:3.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+  10.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;color:#1E1E1E'>Save
+  your presentation in a different format</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection13>
+
+<h1 style='margin-left:.5pt'>Accessibility Special Considerations</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.6pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:11.0pt;
+line-height:107%'><img border=0 width=325 height=1 id="Group 31201"
+src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image037.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.35pt;margin-bottom:
+.15pt;margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Avoid adding images or charts in the notes area. This area is difficult
+to access for those using assistive technology and non-text objects in this
+area can be very hard or impossible to read.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.35pt;margin-bottom:
+.15pt;margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Page numbers can be included in your slide decks. However, ensure your
+on-page numbers match the PDF document page number if you are generating a PDF
+of your slides.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.35pt;margin-bottom:
+.15pt;margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If you are trying to meet the Department of Health and Human Services
+standard for PowerPoint presentations you will need to include titles and
+subtitles for all objects in your selection pane. (See previous section:
+Ordering Objects)</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.35pt;margin-bottom:
+.15pt;margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Avoid forms or quizzes in your PowerPoint slides. These are not
+accessible and can provide a confusing user experience for people using
+assistive technology. If you must include these elements consider providing
+accessible alternative HTML or digital documents.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.35pt;margin-bottom:
+.15pt;margin-left:.5in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Turn off the Automatic Alt-text setting. You can find this under Review
+&gt; Check Accessibility &gt; Options: Accessibility.</p>
+
+<p class=MsoNormal style='margin-left:.5pt;line-height:110%'><b><span
+style='font-size:11.0pt;line-height:110%'>Turn off the Automatic Alt-text
+setting. </span></b></p>
+
+<p class=MsoNormal style='margin-left:.5pt;line-height:110%'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=10 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=565 height=405
+  src="Creating%20an%20Accessible%20PowerPoint%20Step-by-Step_files/image038.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<b><span style='font-size:11.0pt;line-height:110%'>You can find this under
+Review &gt; Check Accessibility &gt; Options: Accessibility.</span></b></p>
+
+</div>
+
+</body>
+
+</html>

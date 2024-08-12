@@ -3,7 +3,7 @@
 by Jamal Mazrui \
 Consultant, Access Success LLC
 
-This is a curated collection of free documents that provide guidance on accessible information and communication technologies (ICT) and related topics. The documents are in .docx, .epub, .xlsx, or .pdf format. Each file name is the same as the title of its content (or a close approximation to the title). For better accessibility, conversions to HTML format are also included (files with the same names except for a .htm extension).
+This is a curated collection of free documents that provide guidance on accessible information and communication technologies (ICT) and related topics. The documents are in .docx, .epub, .xlsx, or .pdf format. Each file name is the same as the title of its content (or a close approximation to the title). For better accessibility, conversions to HTML and plain text formats (.htm and .txt) are also included (files with the same names except for a .htm extension).
 
 Over 100 documents are included on the following topics:
 
