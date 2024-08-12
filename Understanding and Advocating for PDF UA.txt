@@ -1,0 +1,441 @@
+﻿Understanding and Advocating for PDF/UA
+
+
+[]
+Understanding and Advocating for PDF/UA
+
+[]
+
+Karen McCall, M.Ed.
+
+Karlen Communications
+
+Copyright 2016
+
+[] Resources
+
+•    PDF/UA in a Nutshell by Duff Johnson
+
+•    http://www.pdfa.org/2013/06/pdfua-in-a-nutshell/
+
+•    Structure Elements Best Practice Guide:
+
+•    http://www.pdfa.org/2015/12/announcing-the-structure-elements-best-practiceguide-0-1/
+
+•    Matterhorn Protocol
+
+•    http://www.pdfa.org/publication/the-matterhorn-protocol-1/
+
+•    PDF/UA Technical Implementation guide
+
+•    http://www.aiim.org/Research-and-
+
+Publications/Standards/Committees/PDFUA/Technical-Implementation-Guide
+
+•    PDF/UA Competence Centre
+
+•    http://www.pdfa.org/competence-centers/pdfua-competence-center/
+
+PDF/UA
+
+•    Combines the three components of accessing PDF documents into a technical specification:
+
+•    The PDF document itself MUST be accessible to PDF/UA.
+
+•    The viewer/reader MUST be able to use the accessibility features in the PDF document.
+
+•    The adaptive technology MUST be able to use the reader’s output.
+
+•    Unless a person using adaptive technology has a conforming reader and conforming adaptive technology, then they do not have equal access to a PDF/UA conforming document.
+
+•    Can have a document identifier stating that the document is PDF/UA compliant which might help in identifying where barriers are.
+
+•    Need the same identifiers for the reader/viewer and adaptive technology.
+
+What PDF/UA Means to Us
+
+•    A high-quality reading experience, equal to or exceeding that provided by any other format.
+
+•    There is a consistency of experience and expectation when a PDF/UA compliant  document is opened.
+
+•    Greater access to educational material, employment based material including employment forms, and any PDF document.
+
+•    PDF/UA conformance REQUIRES an identifier on the document stating the author’s claim that the document conforms to PDF/UA. As such, authors of documents claiming PDF/UA are fully and properly accountable.
+
+•    We need to understand the plain language results of the technical specifications and when asked “what do you mean by an accessible PDF” we must answer “PDF/UA compliance”.
+
+Authors and Publishers
+
+•    The document author or publisher determines the format of publication.
+
+•    It can be EPUB, HTML and/or PDF.
+
+•    While regular (re-flowable) EPUB can be accessible, fixed-layout EPUB is NOT accessible.
+
+•    No matter which format content is published in, it must be accessible to international and/or country specific legislation.
+
+•    One format isn’t better for those of us with disabilities than another.
+
+•    We have to stop the skirmishes over “what is best for them” and focus on ensuring any format of content is accessible to international standards.
+
+•    As people with disabilities we have the right to choose which format that is available to us we want to access/read.
+
+Choice!
+
+•    One of the premises of accessible document design and access to content is that “the end-user is able to choose how they view and interact with content.”
+
+•    This concept has been around since 2001 or earlier.
+
+•    Toward that goal, if someone accesses a PDF, ePub or HTML document, they should have the tools to convert that document to the format of their choice.
+
+•    Choice can be based on device, weather, built or open space environment, or the need to have content explained or presented in a different format to facilitate understanding.
+
+•    “Print” content now has choice: print, audiobook or e-text and Amazon has a link so you can start reading e-text and switch to an Audible book without losing your place (Whisper Read).
+
+•    There is no such thing as “this format is best for blind people.”
+
+•    Whatever format content is published in, MUST be accessible.
+
+Alternate Text Production Centres
+
+•    How much time would be saved if
+
+•    Students didn’t have to buy 2 copies of a text?
+
+•    Students could access digital text at the point of purchase?
+
+•    IF a student required alternate format, the PDF that arrived could easily be converted to the other format using File, Save As?
+
+•    Students could keep their digital books for reference and not have to return it at the end of a semester.
+
+•    We could empower students by giving them the tools to convert to a “preferred” format.
+
+•    We don’t have to create “differently accessible” content.
+
+•    If we do have to create “differently accessible” content, why create accessible content in the first place?
+
+Blended Model of Remediation
+
+•    Not all PDF documents “have to be accessible by midnight.”
+
+•    There are services that facilitate an on-demand compliant remediation of PDF documents.
+
+•    There are services that do high volume remediation of PDF to compliance.
+
+•    There are tools to “do it yourself.”
+
+•    Need to take a look at how many PDF “have” to be PDF/UA compliant, what are staffing and financial resources and how to meet goals and compliance.
+
+•    Use staff and outsourcing in combination.
+
+•    Perhaps “front facing” PDF are sent out while PDF with “short shelf life” are done in-house.
+
+•    For example, reports are outsourced while flyers and restaurant menus are done inhouse.
+
+Training
+
+•    PDF/UA ensures that everyone is on the same page.
+
+•    There is no guessing at what an accessible PDF document is or individual interpretation as to what Tags are to be used for what content.
+
+•    Those training remediation professionals and the remediation professionals themselves are all working from the same set of specifications and structure elements.
+
+•    Provide a consistent level of training and remediation based on ISO 14289 or PDF/UA..
+
++-----------------------------------+-----------------------------------+
+|                                   | []                                |
+|                                   |                                   |
+|   -------------------------       |                                   |
+|   PDF/UA Tagged Documents         |                                   |
+|   -------------------------       |                                   |
++-----------------------------------+-----------------------------------+
+
+[]
+How much of what we are doing now is part of PDF/UA?
+
+Elements of a PDF/UA Compliant Document
+
+•    For our purposes in advocacy:
+
+•    The document must have Tags.
+
+•    The Tags must be correct for the type of content.
+
+•    Tags must be in a logical reading order (which might not be the order in which content appears on the page, i.e., brochures).
+
+•    Headings as navigational structures must be sequential and you can’t skip a level.
+
+•    Alt Text for images and links.
+
+•    Decorative images are Artifacts.
+
+•    There is a core language for the document and Multilanguage documents have language attributes on Tags for the changes in language..
+
+•    While the presence of Bookmarks is a “should have”  in PDF/UA, when present, Bookmarks are to mirror headings.
+
+Quotes and BlockQuotes
+
+•    “Where quoted content exists inside a paragraph or other block-level structure element, the <Quote> tag is used. “
+
+•    “Where quoted content does not exist inside a paragraph or other block-level structure element, the <BlockQuote> Tag is used. Example: for longer portions of quoted content. “
+
+•    Structure Elements Best Practice Guide 0.1
+
+•    http://www.pdfa.org/2015/12/announcing-the-structure-elements-bestpractice-guide-0-1/
+
+Sidebar Content
+
+•    In Word, use Section Breaks and Column Breaks to provide a logical reading order, even for those accessing the Word document.
+
+•    You can switch to Draft view of the document to check the flow of content or logical reading order.
+
+•    This will convert nicely to the correct structure in a tagged PDF document.
+
+•    See the how to document on tables and columns on the Karlen Communications Microsoft Office for Windows 2016 page:
+
+•    http://www.karlencommunications.com/OfficeForWindowsAccessibility.html
+
+•    “Implementers should note that in PDF 2.0 the <Aside> and <Document> structure elements provide a solution to tagging sidebar content.”
+
+Parallel Columns - Sidebar
+
+[]
+
+Document Title and Heading Tags
+
+•    “A title is information representing the normal means of referring to the document. Titles can be present as both metadata entry and pagecontent.”
+
+•    “The metadata entry for a PDF document’s title is represented using XMP.”
+
+•    “A document’s title appearing as page content traditionally has often been tagged with <H1>.”
+
+•    “Since PDF/UA does not require any specific structure type for title content, it is permissible to tag such content with either <H1> or other tags
+
+(typically, <P> or tags mapped to <P>).”
+
+•    “Since headings commonly appear in Tables of Contents, and since document titles do not normally appear in Tables of Contents, it can be argued that it is preferred to use the <P> tag, and not the <H1> tag, for tagging title content.”
+
+Correct Tagging of Headings
+
+•    Do not separate a Heading into two parts, for example:
+
+<H2>This is a document <H2>about creating tagged PDF
+
+•    The correct tagging is:
+
+<H2>This is a document about creating tagged PDF
+
+•    This can be found in the Structure Elements Best Practice Guide 0.1
+
+•    A PDF/UA conforming document can have more than 1 Heading 1.
+
+•    This is different from the recommendation for HTML content.
+
+•    Web content is separate documents linked together with navigation links.
+
+•    PDF documents are single documents with a Table of Contents and/or Headings to navigate to specific topics.
+
+Show Document Title – Initial View
+
+[]
+
+Incheon Strategy
+
+•    Incheon Strategy to Make the Right Real which is the Asia and Pacific Region strategy to implement the Convention on the Rights of People with Disabilities.
+
+•    Goal 3: Enhance access to the physical environment, public transportation, knowledge, information and communication
+
+•    One of the “problems” with specifying a version of a standard is that by the time legislation is passed, a new version has been published.
+
+•    We are in the process of working on PDF/UA 2.
+
+•    I would also think that WCAG 3 is being worked on.
+
+•    34. “Proportion of accessible and usable public documents and websites that meet internationally recognized accessibility standards.”
+
+•    http://www.unescapsdd.org/publications/incheon-strategy
+
++-----------------------------------------------------+-----------------------------------+
+|                                                     | []                                |
+|                                                     |                                   |
+|   ------------------------------------------------- |                                   |
+|   PDF and the User Experience Survey Results 2015   |                                   |
+|   ------------------------------------------------- |                                   |
++-----------------------------------------------------+-----------------------------------+
+
+[]
+ISBN 978-0-9868085-7-9
+
+Original research, initial findings
+
+Survey Structure
+
+•    31 questions, some open ended to gather perceptions and experiences of those of us who use adaptive technology to access PDF documents.
+
+•    Total of 185 responses but 146 once incomplete surveys and false contact information were removed.
+
+•    People from all over the world, many from US and Canada.
+
+Country Representation
+
+[]
+
+Legislation for Accessible Documents
+
+60.7% of respondents stated that their country had legislation for accessible documents, 30.3% said they didn’t know and 9% said no.
+
+[]
+
+Described Computer Literacy Levels
+
+•    49% were aged 41-60 years old, 33% were aged 26-40 years.
+
+•    31% identified themselves as having 20-30 years experience in digital environments, 31% as having 11-20% years experience.
+
+•    Computer literacy: 69.7% identified as advanced29.6% as intermediate.
+
+•    Computer literacy when it comes to reading PDF documents: 53.1% identified as advanced and 40% as intermediate.
+
+PDF is NOT Portable!
+
+•    Interesting to find how many different types of tools are being used to reformat or convert PDF documents so that they are readable and portable.
+
+•    Tools such as ABBYY OCR tools, Balabalka, Victor reader Stream, Voice Dream Reader, Blio, Claro PDF, ezPDF, EdgeSharp PDF Reader, Gmail to view the PDF as HTML, I convert PDF documents to text, iAnnotate on iOS, iBooks, JavaScript PDF rendering in Firefox, JAWS OCR, Kindle eReader apps on Windows laptop, KNFB Reader, KOBO ap on phone, Nitro PDF, NOOK, Okular,  
+
+Ways of Accessing PDF Documents
+
+[]
+
+Consensus
+
+•    There were respondents who wanted EPUB and/or HTML as a “preferred” format.
+
+•    When a document is not tagged, it is horrible in terms of the reading experience and ability to access/find/read content.
+
+•    One respondent used the word “pleasurable” when describing their experiences with correctly tagged, well-structured PDF.
+
+•    There is confusion about PDF/UA: what it is, how it will benefit those of us with disabilities.
+
+•    PDF/UA is a good thing if it ensures a consistent experience.
+
+•    Some pessimism about the ability of the community to garner acceptance of PDF/UA.
+
+•    The survey will run again in November 2016.
+
++----------------------------------------------+-----------------------------------+
+|                                              | []                                |
+|                                              |                                   |
+|   ------------------------------------------ |                                   |
+|   Advocating for Global Adoption of PDF/UA   |                                   |
+|   ------------------------------------------ |                                   |
++----------------------------------------------+-----------------------------------+
+
+[]
+ISO 14289 is an international standard that defines what an accessible PDF document is no matter where, when or how you access it.
+
+[] It IS an International Standard
+
+•    ISO 14289 or PDF/UA (Universal Accessibility) has been an international standard for what an accessible PDF document is since 2012.
+
+•    Problem: those of us who created the standard aren’t speaking to those who will benefit from the standard.
+
+•    We need more outreach and communication so that those of us who use adaptive technology understand and can advocate for the adoption of PDF/UA.
+
+•    Most of us start with “PDF/UA is a technical standard…” which puts everyone to sleep.
+
+We need to Communicate the Benefits
+
+•    Yes, it is a technical standard, BUT, what does it do?
+
+•    How will it make accessing PDF documents better for me?
+
+•    We need to simply state: “If it is PDF, it MUST be PDF/UA compliant or conforming.”
+
+•    Developers of the adaptive technology, interactive viewers/readers and document authoring tools can get the technical stuff and build it into the applications seamlessly.
+
+•    We should just have to point organizations and legislators in the right direction…to ISO 14289!
+
++-----------------------------------+-----------------------------------+
+|                                   | []                                |
+|                                   |                                   |
+|   ------------------              |                                   |
+|   PDF/UA Resources                |                                   |
+|   ------------------              |                                   |
++-----------------------------------+-----------------------------------+
+
+[]
+Where can I find more information on how to ensure that my documents are PDF/UA compliant?
+
+Free Validation Tools!
+
+•    The Acrobat Accessibility Full Check is free and is in the Accessibility tools in the Tools Task Pane.
+
+•    The PAC or PDF Accessibility Checker from xyMedia is free.
+
+•    http://access-for-all.ch/en/pdf-lab/pdf-accessibility-checker-pac.html • CommonLook PDF Validator is free:
+
+•    http://commonlook.com/accessibility-software/commonlook-pdfvalidator/?mkt_tok=3RkMMJWWfF9wsRonv6%2FJZKXonjHpfsX56%2BQsW6a xlMI%2F0ER3fOvrPUfGjI4AScNiI%2BSLDwEYGJlv6SgFTrnGMaR42bgOXxc%3D
+
+PDF Remediation Tools
+
+•    CommonLook PDF Global Access:
+
+•    http://commonlook.com/accessibility-software/commonlook-pdf/
+
+•    Add-in for Adobe Acrobat.
+
+•    CommonLook Office Global Access:
+
+•    http://commonlook.com/accessibility-software/commonlook-office-globalaccess/
+
+•    Add-in for Microsoft Office.
+
+•    axesPDF:
+
+•    https://www.axes4.com/
+
+•    Manual is currently not available in English and I don’t know of anyone who does training.
+
+•    This tool is an add-in to Microsoft Word.
+
+PDF/UA Resource Documents
+
+•     PDF/UA Technical Implementation Guide (AIIM):
+
+•     http://www.aiim.org/Research-and-Publications/Standards/Committees/PDFUA/TechnicalImplementation-Guide
+
+•     The Matterhorn Protocol (PDF Association):
+
+•     http://www.pdfa.org/publication/the-matterhorn-protocol-1/ • PDF/UA Competence Centre (PDF Association):
+
+•     http://www.pdfa.org/competence-centers/pdfua-competence-center/
+
+•     PDF/UA in a Nutshell:
+
+•     http://www.pdfa.org/2013/06/pdfua-in-a-nutshell/
+
+•     The Structure Elements Best Practice Guide from PDF Association:
+
+•     http://www.pdfa.org/2015/12/announcing-the-structure-elements-best-practice-guide-0-1/
+
+•     Developers and software vendors will need to purchase the entire ISO standard to implement under the hood specifications.
+
+Johnathan Metz YouTube PDF/UA Videos!
+
+•     Accessiblemetz YouTube Channel:
+
+•     https://www.youtube.com/watch?v=BeFt-
+
+Qa3mjM&feature=youtu.be&list=PLmfVOnJxeSEXsEKv2i20nYMHYuFEcl4fO
+
+•     First video starts with a Word document and walks through making it accessible for conversion to PDF/UA conforming PDF.
+
+•     There are 4 videos in the series so far.
+
+•     Subscribe!
+
+[] Contact!
+
+[]Karen McCall, M.Ed. Karlen Communications info@karlencommunications.com http://www.karlencommunications.com
+
+@KarlenInfo

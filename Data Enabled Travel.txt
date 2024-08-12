@@ -1,0 +1,2294 @@
+﻿Data-Enabled Travel
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Data-Enabled Travel:
+
+How Geo-Data Can Support Inclusive Transportation, Tourism, and Navigation through Communities
+
+ 
+
+ 
+
+March 10, 2011
+
+By the GeoAccess Challenge Team
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+
+Table of Contents
+
+ 
+
+Executive Summary.............................................................................................. 1
+
+Market Context for this Challenge.......................................................................... 4
+
+User Needs.................................................................................................................................. 4
+
+Legal / Regulatory........................................................................................................................ 6
+
+Research...................................................................................................................................... 8
+
+Technology Advancements & Socio-Cultural Developments.................................................... 11
+
+Selected US Regional Efforts...................................................................................................... 15
+
+Social Media & Location-Based Information............................................................................. 19
+
+Data Requirements............................................................................................ 23
+
+Mainstream Public Transit......................................................................................................... 23
+
+Public Paratransit....................................................................................................................... 24
+
+Private Transportation............................................................................................................... 24
+
+Municipal Infrastructure & Points-of-Interest (POIs)................................................................ 25
+
+Application Areas............................................................................................... 26
+
+Multi-Modal Transportation Planning & Execution Apps.......................................................... 26
+
+Regional Point of Interest (POI) Information Foraging Apps..................................................... 26
+
+Apps that Promote Citizen-Science & Services Co-Design........................................................ 27
+
+Proof-of-Concept................................................................................................ 28
+
+Sample User Profiles/User Scenarios........................................................................................ 28
+
+Use Cases................................................................................................................................... 31
+
+Proof-of-Concept Development................................................................................................ 32
+
+Suggested Next Steps......................................................................................... 34
+
+User Needs Research................................................................................................................. 34
+
+Information Ecosystem & Business Models Research............................................................... 36
+
+Policy......................................................................................................................................... 36
+
+Standards................................................................................................................................... 37
+
+Data Environment Development............................................................................................... 38
+
+Technical & Applied Research................................................................................................... 39
+
+Technology Transfer & Implementation Support...................................................................... 40
+
+References........................................................................................................ 41
+
+Appendix A: List of Applications Identified or Reviewed......................................... 43
+
+Appendix B: List of Example Data......................................................................... 47
+
+Appendix C: Funding Policies for Data-Enabled Travel............................................ 60
+
+ 
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
+
+[]
+
+Executive Summary
+
+Initial Brainstorming Session
+
+In July 2010, some federal events commemorating the 20th anniversary of the Americans with Disabilities Act were based on recognition of the powerful role of technology in our lives.  
+
+ 
+
+In one such event – and in keeping with The Administration's Open Government Initiative – The
+
+White House partnered with the Federal Communications Commission and the Department of Commerce to facilitate a brainstorming session among approximately two dozen technologists and disability advocates, who discussed innovative uses of the Internet to increase accessibility in today's world. 
+
+ 
+
+For an official summary of this event, see the White House Blog post, ―The Power of
+
+Technology, The Power of Equality‖ by Kareem Dale and Scott Deutchman on July 20, 2010:  http://www.whitehouse.gov/blog/2010/07/20/power-technology-power-equality
+
+90-Day Challenge
+
+Among other things, that discussion led to the following challenge: how can transportation data and other geo-data be used to increase accessible travel by people with disabilities?  Participants were encouraged to collaborate over a three-month period and report back with ways of meeting this challenge of more accessible travel, transportation, and tourism by applying geo-data.  The collaboration has occurred via conference calls, email discussions, and web sites.  Some of the original participants could not continue due to schedule conflicts, while others were recruited to join the effort.  It has been a multi-pronged effort, reviewing the market context and existing research related to this area, analyzing geo-data requirements for improved accessibility, and developing a proof-of-concept that combines data from different sources.
+
+ 
+
+This report explains what we have learned about the potential of geo-data for accessible travel.  It also offers suggestions to interested stake holders about next steps toward the realization of this potential. 
+
+ 
+
+Although the White House, FCC, and Department of Commerce were originally involved in launching this challenge, it is important to note that the analysis and recommendations in this report have been developed independently by an informal team of challenge participants. This report has not been subject to review processes by the executive branch, has not received federal endorsement, and does not necessarily represent views of the United States Government.
+
+Suggested Next Steps
+
+A number of suggested next steps were developed by the Geo-Access Challenge Team. They are summarized below:
+
+•      User Needs Research – Produce an annotated bibliography from existing sources of user needs covering the full range of accessible public/private transportation and municipal points-of-interest, and pursue additional research studies where necessary.
+
+•      Information Ecosystem & Business Models Research – Pursue research studies on how accessible public/private transportation and municipal POI information is created, collected, aggregated, integrated and utilized by authorities and citizens/consumers. Also, leverage local public-private partnerships experienced in this are to research the various business models that enable cities and regions to offer location-based information and services.
+
+•      Policy – An institutional and policy assessment – including ramifications related to information security and privacy – should be conducted to include three kinds of data required to enable transformation: Transportation Data (including Accessibility), Municipal Infrastructure Data, and Point-of-Interest (POI) Data. The Geo-Access Challenge Team recommends the assessment be followed by a Federal Role paper that defines the rules of engagement between different agencies. Finally, open data guidance and an information security and privacy white paper to govern these initiatives will be required.
+
+•      Standards – Enhance existing standards or develop new ones to support structured data collection, aggregation, exchange and interoperability for accessible transportation, relevant municipal infrastructure and municipal points-of-interest (POIs), to support innovations in location-based information and services.
+
+•      Data Environment Development – The data environment to support structured data collection, aggregation, exchange and interoperability for accessible transportation, relevant municipal infrastructure and municipal points-of-interest (POIs) needs to be developed, tested, and refined. 
+
+•      Technical & Applied Research – Once policy, standards and data environment are developed, technical and applied research needs to be encouraged and supported, to enable development of innovative applications and solutions. A state of the practice and innovation scan should be undertaken, and technical demonstrations and near-term / longterm development of applications should be supported.  
+
+•      Technology Transfer & Implementation Support – Novel approaches for transferring the enhanced geo-data policies, standards, and data environments into wider usage in both public and private sector arenas should be supported. 
+
+ 
+
+Challenge Participants
+
+Below is a list of the organizations and individuals who contributed to this Geo-Access Challenge.  The list includes the Challenge leadership, report authors and contributors.
+
+Challenge Leader
+
+ Thomas Wlodkowski, Director of Accessibility, AOL Inc.
+
+Challenge Report Authors
+
+•      Bill Curtis-Davidson (Editor), Accessible Transportation Solution Leader, IBM Human Ability & Accessibility Center
+
+•      Jamal Mazrui, Deputy Director, Accessibility & Innovation Initiative, U.S. Federal Communications Commission
+
+•      Aaron Steinfeld, Ph.D., Systems Scientist, Carnegie Mellon University and Co-Director, RERC on Accessible Public Transportation
+
+•      Jim Tobias, Principal, Inclusive Technologies
+
+•      Mohammed Yousuf, Research Electronics Engineer, Federal Highway Administration (FHWA), U.S. Department of Transportation
+
+Proof-of-Concept Development
+
+•      David M. Clark (Independent), Lead Developer
+
+•      Chris Blouch (AOL) and Ted Drake (Yahoo!), Technical Assistance
+
+•      Eric Lipp & Laurel Van Horn (Open Doors Organization), Content
+
+•      Jamal Mazrui (FCC) & Mika Pyyhkala (Neighborhood Health Plan), User Testing
+
+Working Group Participants
+
+•      Accessible San Diego: Wes Johnson
+
+•      AOL, Inc.: Thomas Wlodkowski and Chris Blouch
+
+•      AT&T: Susan Mazrui
+
+•      Carnegie Mellon University / RERC on Accessible Public Transportation: Aaron Steinfeld
+
+•      Federal Highway Administration, U.S. Department of Transportation: Mohammed Yousuf
+
+•      IBM Human Ability & Accessibility Center: Bill Curtis-Davidson
+
+•      Inclusive Technologies: Jim Tobias
+
+•      Independent Developer: David M. Clark
+
+•      Keen Guides: Karen Borchert, Martin Franklin, and Catharine McNally
+
+•      Neighborhood Health Plan: Mika Pyyhkala
+
+•      Open Doors Organization: Eric Lipp and Laurel Van Horn
+
+•      Sendero Group, LLC: Mike May
+
+•      U.S. Federal Communications Commission: Jamal Mazrui 
+
+•      University of Illinois at Chicago: Yochai Eisenberg
+
+•      University of South Florida, Center for Urban Transportation Research: Ed Hillsman
+
+•      X Prize Foundation: Eileen Bartholomew
+
+•      Yahoo! Accessibility Lab: Ted Drake and Victor Tsaran
+
+ 
+
+[]
+
+Market Context for this Challenge
+
+User Needs
+
+User needs should form the basis of any initiative aimed at improving transportation information services for people with disabilities.  Although many suggestions for accessibility improvements come in the course of regulatory proceedings, others emanate directly from informal and formal input from users and advocacy organizations.  Still others arise from an envisioned application of an emerging technological capability – a new technology (such as consumer wireless devices) offers opportunities for universally designed or specialized services, and becomes the subject of a research and development effort.
+
+Documented User Needs from Studies or Resources
+
+Although the timeframe of this project did not make possible a complete search for all documented user needs, below are some of the sources that refer directly or indirectly to the needs of people with disabilities in acquiring and using information about their transportation options.
+
+•      Transportation needs of deaf people: A study of the problems that deaf people encounter with use of public transportation in the Washington, D.C., metropolitan area and New York City Subway: Recommendations for local & national solutions No. DOT0S-50110. Winakur 1977. o The problems experienced were mainly a result of difficulties in obtaining and using information about routes and fares and in communicating with the driver.
+
+o   Hearing-impaired subway users were unable to hear loudspeaker announcements about emergencies or route changes and delays.
+
+•      Accommodating deaf and hard-of-hearing persons on public transportation systems in Massachusetts: A study. Boston: Massachusetts Executive Office of Transportation and Construction. Bettger, Pearson. 1989. o Increase awareness of telecommunication devices for the deaf (TDD); use video monitors and electronic reader boards to convey information.
+
+•      The mass transit needs of a non-driving disabled population. California PATH Research Report No. UCB-ITS-PRR-96-9. University of California – Santa Barbara
+
+(http://www.path.berkeley.edu/path/publications/pdf/PRR/96/PRR-96-09.pdf)  o While 64 percent agreed that public transportation information was easy to obtain, the majority felt that it was not easy to use.
+
+o   Tactile or large-print information and schedules, in addition to access to human operators on phone hotlines
+
+o   Accessible maps, especially transfer points and cross streets o Announcements by drivers
+
+ The Need of Information in Public Transport: Elderly and Disabled People’s Pre-
+
+Journey Travel Information Requirements (Sweden) o The results indicate a greater need to plan the journey among some elderly and disabled people.  
+
+o Many of these users will, if given the opportunity, ask for information not commonly available publicly, such as how close a bus stop is to an accessible building entrance.
+
+•      2002 National Transportation Availability and Use Survey o Some participants do not leave their homes even when they have bus schedule information because buses don’t keep to their schedules.
+
+•      Project Action’s “Universal Design & Accessible Transit Systems: Facts to consider when updating or expanding your transit system”
+
+(http://www.easterseals.com/site/EcommerceDownload/Universal_Design_FactSheet-
+
+5821.pdf?dnl=90752-5821-761N6ivu74JPUrFe) o Install onboard annunciators and variable message signs to announce upcoming stops and to reduce the burden on transit drivers. o If installing automatic vehicle location equipment/software, also provide audible and visual real-time arrival time information to riders. Accessible web sites, mobile internet, and automated phone systems are good choices.
+
+o   Real-time information at transit stations in both audible and visual formats. 
+
+o   In-taxi audible information systems for riders who have difficulty hearing.
+
+•      The Transportation Needs of People with Developmental Disabilities (2007), Rania Wasfi, David M. Levinson. University of Minnesota – Center for Transportation Studies Report no. CTS 07-02
+
+(http://www.cts.umn.edu/Publications/ResearchReports/reportdetail.html?id=1102) o  ―Almost half had difficulty reading transit schedules and one-third had difficulty understanding announcements.‖
+
+•      “Accessing the Future: A Global Collaborative Exploration for Accessibility in the Next Decade”. This 2009 Conference co-organized by IEEE and IBM Human Ability &
+
+Accessibility Center was held at Northeastern University in Boston, MA on July 20-21, 2009. There were 150 participants including leaders from government, industry, consumer and advocacy organizations and academia. The focus of the conference was to identify key emerging technologies that would present barriers to people with disabilities and ask how to get ahead of the technology development so that they were accessible when available and not retrofit after introduction, as is mostly the case now. After a series of keynote and plenary presentations the attendees broke into four tracks: Standards and Universal Design, Patient-Centered Collaborative Care, Accessible Online Workplaces and Communities, and Transportation and Travel. An expert panel in each track led the discussion and the goal of each panel was to come up with ten key recommendations. The top ten recommendations for the Transportation and Travel Track are summarized below:
+
+o   Interoperability of information & physical systems o Support for accessible communication o Integrated funding for multimodal transportation and end user needs  o Utilization of economic drivers and alignment of accessibility with other transportation trends
+
+o   Technologies for emergency and rare scenarios o Technologies for spontaneous transportation o Public Transportation to facilitate employment o Accessible pedestrian signals and signs
+
+o   Dissemination of accessible transportation best practices
+
+o   Address the continuum of surface transportation
+
+Currently Undocumented User Needs
+
+In addition to the user needs found in previous studies, there are clearly others that respond to technological capabilities that only recently became available.  Elsewhere we recommend thorough investigation of the intersection of user needs with emerging technological capabilities. 
+
+Below is a list of such intersections that may deserve exploration.
+
+•      Planning. Whether for a one-time trip or for daily commuting, how can users plan their trips in detail, including methods for exploring and selecting options?
+
+•      Notification. How can users’ mobile devices best notify them of vehicle arrival, system updates, disruption, mid-trip changes, etc.?
+
+•      Service integration. Can transportation information systems be integrated with other information resources such as the location of accessible building entrances, availability of sign language interpreter services, etc.?
+
+•      Social networking. How can caregivers, educators, residence managers, employers, etc.
+
+be integrated into the user’s networked transportation status?
+
+Legal / Regulatory
+
+Note: this section is a brief, informal analysis performed by a non-attorney, and is not provided as legal or regulatory advice. There are 5 potential regulatory arenas that may cover travel/transportation geo-location services, described below.
+
+ADA Regulations on Public Transit
+
+The Access Board has established technical standards, enforced by the Department of Justice, for both vehicles (e.g., buses) and facilities (e.g., bus stops). The vehicle standard is being refreshed now; drafts began in 2007, with 3 rounds of comments.  The latest round closes Nov. 23, 2010.  The relatively low number of comments in the current round indicates that the final regulations will not differ much from the latest draft. One formal statement from ACB as part of the record on a DoT proceeding was reviewed.  Among the proposed new requirements are:
+
+•      Automated stop announcements – Upcoming stops must be announced inside the vehicle, and a visual indication provided. In most scenarios these require some form of automatic vehicle location (AVL), which transit agencies are already implementing for management purposes.  In addition to AVL there must be a way to make the announcements on board the bus
+
+•      Automated route stop announcements – When arriving at a bus stop that serves more
+
+than one line, the vehicle’s route must be announced externally for the benefit of passengers waiting at the stop.
+
+•      Accessible stop requests – Certain physical access requirements are imposed on the sensors, and there must be visual and auditory notification that the request was received.
+
+ 
+
+Technical solutions for all of these requirements, using wireless network services and consumer endpoint devices as investigated by this project, are feasible. 
+
+ADA Regulations on State and Local Government Entities (Title II) and Public Accommodations (Title III)
+
+Websites and similar information services are covered under current ADA regulations for state and local government entities.  For example, tax forms must be provided in accessible formats.  Most transit agencies would fit into this category; most advocacy efforts seem to have been aimed at making web-based schedule information accessible.  We are not aware of any advocacy aimed at the many emerging real-time transit information services offered either on the desktop or on mobile devices. 
+
+ 
+
+Websites and similar information services are not covered under current ADA regulations for public accommodations.  So, for example, although a brick-and-mortar store must accommodate its customers with disabilities in numerous ways, the same functional accessibility is not strictly required of that store’s website.  This issue has been the source of several lawsuits and other forceful advocacy, including structured negotiations resulting in agreements with several businesses.  However, the lack of specific regulations for website accessibility in public accommodations is generally agreed to have held back accessibility improvements.
+
+ 
+
+Department of Justice has issued a set of Advanced Notice of Proposed Rulemakings (ANPRMs) that appear to signal its intention to add regulations that apply directly and thoroughly to all such websites and analogous information services.  The course of this regulatory development is in its early stages and the outcome is not fixed.  In all likelihood, though, there will be an extension of ADA Title III regulations to such transportation-oriented information services as this project has addressed. These proceedings raise certain questions that relate to this project:
+
+•      Are public transit agencies required to provide accessibility-relevant information in the data streams they make available to the public (either directly or indirectly)?  For example, buses equipped with wheelchair lifts are required by the ADA; is the transit agency required to include information about the operational status of the lift on an arriving bus?
+
+•      Are third parties providing real-time transit information applications (desktop or mobile) required to make those applications accessible?  Are they required to include any accessibility-relevant information provided by the transit agency?
+
+Section 508
+
+Section 508 requires federal departments and agencies to purchase ICT that is accessible.  There is a current technical standard for Section 508, which is being refreshed, bringing the requirements more in line with the Web Accessibility Initiative’s (WAI) Web Content
+
+Accessibility Guidelines 2.0 (WCAG 2.0).  In addition to changes in the technical requirements, the refresh may add ICT purchased though federal grants and contracts to the list of covered items.  This would apply to all transportation information technology purchased with federal funds.
+
+State Laws & Regulations
+
+Many non-federal public sector entities such as states and universities have adopted some form of Section 508 for their own procurement and use of ICT.  It is unclear whether any state 508 requirements would apply to non-state transit agencies receiving some form of state support, or even whether a wholly state-operated transit agency would come under these regulations. In addition, some states have laws and regulations that go beyond the ADA.  California seems to be an example of a state with accessibility laws that are more comprehensive and demanding.  We did not attempt to analyze the legal implications of this project state by state.
+
+Air Carriers Access Act (ACAA)
+
+There are no information access regulations pertinent to this project.  Recent ACAA regulations add requirements for captioning of safety and service videos on board airplanes and in waiting areas, and for TTY access to phone-based information services.  
+
+Research 
+
+While time did not permit an exhaustive review of applicable research, the Geo-Access Challenge Team did review a number of different research studies.  A few that were reviewed are summarized below.
+
+Information Technology & Innovation Foundation (ITIF)
+
+The Geo-Access Challenge Team reviewed a recent report published by the Information
+
+Technology & Innovation Foundation (ITIF) called, Opportunities and Innovations in the Mobile Broadband Economy (September 14, 2010, Scott M. Andes and Daniel Castro). The report covered a number of different applicable areas such as: the innovation potential in location-based services, accessibility for persons with disabilities, and policy recommendations. 
+
+ 
+
+The report expresses how location-based services will provide an important source of innovation. Location data can be used to improve the quality of search, communication tools, social networking, games, applications and targeted advertising. As applications like Twitter integrate geo-location metadata with user-generated content, other users can use location-aware applications that allow them to find data submitted by others in a specific location. Augmented reality (AR) applications are supporting the presentation of location-based information onto realworld views such as that provided by a mobile phone video camera.
+
+ 
+
+The report also expresses how widespread digitization of information through mobile devices enables multiple modes of communication, which can help reduce barriers to communication for people with disabilities and provide new opportunities for social interaction. Many technologies offer high levels of flexibility and customization for users with different needs. Also, the widespread digitization of information has created a paradigm shift that benefits people with disabilities. Information is no longer constrained to a single medium. Instead, information technology has created a world where users can choose the form in which they want to consume information. In addition, digital technology is also empowering people with visual disabilities by providing them with much more information when they are outside their home: 
+
+ 
+
+A technology combining a global positioning system (GPS) with an accessible PDA, for example, enables users with visual disabilities to navigate and orient themselves, even in unfamiliar settings. With this technology, the PDA issues voice prompts, telling the person where he or she is and how to get to their destination (e.g., “turn right”). In addition, users of this technology can connect to databases containing information about points of interest, such as restaurants or transit stations, to find their way to previously unvisited locations. Some regions, including Fairfax County, Virginia, have even compiled databases of obstacles such telephone poles, fire hydrants, and sidewalk cracks to aide with mobility.^(^([1])) Although a GPS is certainly not intended to take the place of mobility training, it does serve as a helpful electronic guide and tool.
+
+ 
+
+The report offers a number of policy considerations aimed at helping mobile services thrive, encouraging technical solutions (including geo-location) and encouraging governments at all levels to be first adopters. The report also concludes that to ensure that mobile broadband reaches its full potential, nations must continue to support both the deployment of mobile broadband technologies and the proliferation of mobile computing devices through which to access the Internet; to remain vigilant to ensure the trust and security of mobile networks; to ensure that companies have incentives to invest in mobile technology; and to ensure that their citizenry becomes digitally literate so they can enjoy the benefits made possible by the mobile broadband economy.
+
+Carnegie Mellon University – RERC on Accessible Public Transportation
+
+Research on location-centric transit information at the RERC-APT (http://www.rercapt.org) has focused on two core themes, (a) real-time arrival and vehicle fullness information and (b) reporting of problems and positive experiences. While some transit agencies have automatic vehicle location systems, many agencies cannot provide real-time arrival information due to the expense of such systems. Real-time arrival information systems lead to higher perceptions of safety (Ferris et al., 2010) and reduce exposure to weather, especially in climates where extreme conditions can have an adverse affect on rider health. Wheelchair users also want to know if the bus is too full for them to board. Efforts by the RERC-APT towards this problem are described in the Applications Areas section.
+
+ 
+
+Riders with disabilities submit feedback reports to transit agencies at a higher rate than those without disabilities (Steinfeld et al., 2010), likely due to the significant impact of accessibility barriers. The advent of camera phones and the ability to record video now allows riders to document rich details in their reports. Research by the team on reporting modality shows that images are better than video or no rich media (Steinfeld et al., 2010). The findings suggest that text with photos should be supported, and that riders do not perceive the use of video as adding additional value in terms of communicating the problem they wish to document. Riders prefer pictures and also generate better quality data than found in other options.
+
+University of South Florida – Center for Urban Transportation Research
+
+The Center for Urban Transportation Research at University of South Florida completed an important study of how a travel assistance device (TAD) – a GPS-enabled mobile phone application – integrated with an Automatic Vehicle Location (AVL) system for transit vehicles can aid the use of transit by the cognitively disabled and other riders (Travel Assistance Device
+
+(TAD) to Help Transit Riders – Final Report, Philip L. Winters, Sean Barbeau, and Nevine Labib Georggi, February 2010). 
+
+ 
+
+Navigating the transit system can be a major obstacle for attracting new riders, especially for special needs populations and visitors. Approximately half of the general population surveyed in a 2004 study by the National Center for Transit Research cannot successfully plan an entire trip on the fixed-route transit system using printed information materials (Cain, 2004). For those with cognitive disabilities (approximately 14.2 million Americans, or 6.9% of the population), it is especially daunting to plan and execute a trip without any personal assistance from travel trainers provided by the transit agency or other group, especially on their first few trips.
+
+ 
+
+The TAD software prototype provides informational prompts to the rider in a ―just-in-time‖ method that triggers the phone to vibrate and deliver audio and visual messages when the rider should pull the stop cord and exit the bus. Automated alarms can be triggered and the travel trainer and/or parent/guardian (caregiver) remotely alerted if a rider deviates from their predetermined path.
+
+ 
+
+Potential benefits of the TAD include increased transit ridership, decreased costs to the transit agency by enabling riders to use fixed-route transit that would have otherwise used paratransit, increased independence for people with cognitive disabilities, improved quality of life for transit riders, and increased productivity of transit agencies’ travel trainers whose job is to provide oneon-one instruction for new riders or existing paratransit riders on how to use fixed-route transit. While riders with cognitive disabilities are the initial target market for this application, TAD could be used by any traveler.
+
+Sendero Group, LLC
+
+For the past seven years, the Sendero Group, LLC has been partnering with various universities and pursuing R&D in location-based services, resulting in a variety of commercially available products. 
+
+ 
+
+Some of Sendero Group’s projects include the NARIC-funded Accessible Location Information Delivered via GPS Cell Phone for People with Visual Impairments. This project develops an accessible GPS cell phone, which provides critical information about businesses, addresses, distances, and routes, thereby greatly augmenting the personal mobility of a traveler who is blind or visually impaired. Specific activities include integrating the existing accessible GPS innovations with ―smart‖ cell phone technology. Developing an interface to meet the needs of the nation’s blind and visually impaired travelers, i.e. translating the visual information into spoken text, is a central focus of this project. The end result of this project is to provide a commercially available talking GPS cell phone.  Their current activities are summarized on the Accessible Wayfinding website. 
+
+ 
+
+ 
+
+ 
+
+Technology Advancements & Socio-Cultural Developments
+
+Spatial Data Infrastructures & Open Data Projects
+
+The American Recovery and Reinvestment Act of 2009 included investments to revitalize the infrastructure of our nation, such as roads, bridges, and railways.  In the web 2.0 world of today, virtual infrastructure for commuting and travel adds synergetic value to the physical infrastructure.  Geo data and APIs enable citizens to get real time information about transportation options and directions.  
+
+ 
+
+The availability and application of such data can be particularly beneficial to accessible travel by people with disabilities if policy and technology are coordinated appropriately.  Mobile devices, combined with assistive technologies, can help to inform and empower citizens of all ages and abilities to accomplish safe and independent travel around our country.
+
+ 
+
+OMB Circular No. A-16 (Revised) describes the National Spatial Data Infrastructure (NSDI) as the technology, policies, standards, human resources, and related activities necessary to acquire, process, distribute, use, maintain, and preserve spatial data^(^([2])). The NSDI assures that spatial data from multiple sources (federal, state, local, and tribal governments, academia, and the private sector) are available and easily integrated to enhance the understanding of our physical and cultural world. 
+
+ 
+
+The components of the NSDI are data themes, metadata, the National Spatial Data Clearinghouse, standards, and partnerships.  There are likely some existing NSDI data themes (e.g. cultural resources, buildings and facilities, transportation) and associated metadata that are relevant to the opportunities we have explored in our Geo-Access Challenge. The National Spatial Data Clearinghouse (http://www.geodata.gov/) provides access to documented spatial data and metadata from distributed data sources (e.g. data producers, managers, and users), as collected by federal agencies and their agents. NSDI is made possible by the universal use of standards and protocols for data development, documentation, exchange, and geospatial services. NSDI is developed via a well-coordinated effort among federal, tribal, state, local government, and academic institutions, as well as a broad array of private sector geographic, statistical, demographic, and other business information providers and users. 
+
+ 
+
+In addition, many US municipalities are undertaking aggressive open data projects.  Some notable efforts include (but are not limited to):
+
+•      Chicago – The Windy City has been a leader in offering developer APIs and open data that have been used to help people create many useful transit-related apps. 
+
+•      New York City – By making much city government data available from its NYC Data Mine (http://NYC.gov/data), and through its NYC Big Apps competition, NYC is spurring much innovation in development of useful mobile applications.  
+
+•      Portland – The city of Portland helped set the standard for open transit data^(^([3])), resulting in the creation of a multitude of useful transit-related web and mobile applications including some useful to persons with disabilities. 
+
+•      San Francisco – The City by the Bay’s DataSF Project (http://www.datasf.org/) has helped spur innovation in apps development including some applications for accessibility such as an accessible parking finder app. 
+
+Mobile Phone Accessibility
+
+Right from the beginning, wireless mobile technologies found rapid acceptance among advanced users with disabilities.  For example, deaf users found it a better platform for text conversations (compared with wired TTYs, the previous sole conversational option) as soon as 2-way pagers were introduced; blind and low vision users and anyone else who had difficulty finding and using public phones were attracted to mobile for convenience and personal safety.  Over time, the percentage of users with disabilities who use mobile phones has grown roughly in parallel with non-disabled use, although always lagging behind somewhat for reasons that are not clear.  Certainly age, low income, and low educational attainment are correlated with low mobile usage in general, and those factors are overrepresented among people with disabilities.  But the lack of accessibility – and the lack of confidence about accessibility on the part of potential users – cannot be written off as irrelevant to lower adoption.
+
+ 
+
+The inclusion of accessibility features in mobile phones, especially for those who are blind or have low vision, has proceeded significantly in the last few years after a shaky start.  Some handsets provide text-to-speech for basic or core functions out of the box; additional text-tospeech software is available for most handset lines, operating systems, and carriers.  The same is true of screen magnification and other features intended for low vision users.  At this point most of the major mobile operating systems, iOS, Android, and Symbian, either build in key accessibility features or permit the installation of third-party solutions.  Handset manufacturers offer corresponding features on a few models that use proprietary operating systems.  However, efforts to disseminate this information out to users directly or through retail channels are still weak, and the business arrangements and prices for third-party solutions raise equality objections from consumer advocates.
+
+ 
+
+The bottom line is that, as elsewhere, advanced, information-seeking customers with disabilities have more and better options than ever before, covering almost all disabilities and potential wireless functions.  On the other hand, less well-informed consumers, many of whom are perhaps more technology averse due to negative experiences, either avoid wireless altogether, or use it only for simple, basic functions.
+
+Location-Based Application Areas
+
+The number of mobile smart phone applications offering location-based information and services is growing everyday.  The Geo-Access Challenge Team reviewed an extensive list of applications (see Appendix A – List of Applications Identified or Reviewed).  Also, a few examples of promising applications are described below:
+
+•      Next Vehicle Transportation Applications – A number of iOS applications, and mobile web pages, provide access to next vehicle information for public and private transportation systems.  Some of this information was previously unavailable to all users, or only available via visual only display screens which are not accessible to the blind. The use of this real time information allows users to better plan their transportation itinerary.  For example, a user arriving at a station and seeing that there are 10 minutes until the next vehicle arrives could stop for coffee knowing this information.  Similarly, a user could time their arrival at the station in inclement weather to minimize waiting time.  Finally these applications provide real time information in terms of delays that may be taking place with a transportation provider. These applications are increasingly being provided on college campuses, corporate campuses, and public transportation systems.  A large provider of such application is NextBus. Another example of an iOS application providing next train data in Boston is Catch The T iPhone app. This same developer also produces a similar Catch the Bus app.  These two iOS applications happen to be very accessible and usable, but this may be by chance as opposed to through a robust methodology that ensured non-visual access.  Thus, as the applications are updated, consumers do not have a way to ensure accessibility will continue. 
+
+•      Transit Navigation and Wayfinding – A number of applications, web sites, and other mechanisms exist to provide both transit directions, walking directions, and driving directions.  Some services aggregate these direction types such as AOL and Google. These walking and transit direction products and services are interesting, but they do not provide blind users with wayfinding information inside a station or upon exiting a station. There is no known mobile web site, or other application which provides this kind of information which is as or more important than standard direction type data.  At some point in the past, a book was published in Boston called MBTA Verbal Map.  However, the information is somewhat out of date, and there is not a mechanism to access this data from mobile platforms. A prototype of the kind of information that would be helpful can be set up within the foursquare platform. For example, we added a tip to the MBTA Coolidge Corner Station Foursquare Venue Page. The added tip informs a user when arriving at this above ground surface line stop which side of Beacon Street has even numbers vs. odd numbers. Another proof of concept is found here in a VIBUG Holiday Party Blog Post. The post contains information that is useful for any blind person arriving via red line in to the MBTA Harvard Square station. Think about it: without such data, how would a blind person know what the various exits and exit paths are when arriving in a station, without e.g., having to resort to trial and error or trying to follow other pedestrians or environmental clues. This is a critically important shortfall of information for blind pedestrians.  Similar information is provided to the public via wayfinding visual signs, or solely through visual orientation information that is apparent to a sighted person without modification to the environment. As of now, there is not a solid and robust way to store this kind of information, though it is readily possible to create an application that would render this type of wayfinding information to users. 
+
+•      Accessible Point-of-Interest (POI) Finder – The City of Nettuno worked with IBM Human Ability & Accessibility Center (Europe) to develop an interactive service providing real-time accessibility information via a smartphone application^(^([4])). Called "Accessibility City Tag" (ACT!), the service allows residents or visitors with disabilities to view accessibility information about Nettuno POIs, filtered by their particular disability type, on their smart phone. Users can make selections, find locations on a map, call or send a message to request further information, leave feedback or create a list of easily-retrieved bookmarks. The service locates the user via GPS capabilities in the user's handset and streams data via Wi-Fi or 3G networks. ACT! also includes a web-based data entry system to help government agencies and disability organizations manage the information. The IBM solution aims to help the City of Nettuno: (a) Link and integrate government and private data to provide a free service that benefits both the individual and the community; (b) Employ streaming, wireless, Wi-Fi and GPS technology to build a system tailored to individuals with special needs; and (c) Collect data on the level of accessibility of buildings in town and translates it into useful information to be streamed immediately to users
+
+Independent Living & Cultural Inclusion
+
+The independent living movement and successful legal and regulatory advocacy (e.g., the Individuals with Disabilities Education Act (IDEA), the Americans with Disabilities Act (ADA), the Rehabilitation Act, the Telecom Act, and most recently the 21st Century Communications and Video Accessibility Act) have revolutionized the status of people with disabilities.  Their inclusion into every sphere of life is now a widely-accepted social goal, with tangible social benefits.  
+
+ 
+
+Part of inclusion, especially regarding functions like education, work, civic engagement, and entertainment, depends upon access to transportation.  Laws and regulations are already on the books regarding the accessibility of the transportation infrastructure itself – buses, trains, planes, etc. are all subject to reasonable requirements, most of which are satisfactorily implemented. It is in the area of information about transportation that significant barriers still exist.  That is, the bus arriving at a stop may be equipped with a wheelchair lift, but is the lift in operating order?  Is the bus too crowded to allow for orderly usage of the lift?  Is the online bus schedule or any realtime information compatible with a screen reader?  Neither regulations nor adequate voluntary activities exist in this domain.
+
+ 
+
+At the same time, consumers with disabilities have come to expect information about accessibility to be available, and to be available in accessible formats.  In education, in the workplace, even in entertainment, the bar is being continually raised by both policy actions and technological developments to make more information accessible to more people in more ways. 
+
+At least leading consumers have generalized their expectations: ―I can read any newspaper I want online, and fill out my tax forms.  Why can’t I get the bus schedule or make a hotel reservation?‖
+
+ 
+
+Another trend militating in favor of consumer expectations about information inclusion is the ―normalization‖ of the wireless application arena.  That is, as long as wireless phone functionality was built on limited, proprietary software pre-loaded onto handsets, it seemed ―off by itself‖, disconnected from the larger and more open software application environment found on desktops.  But the modern app store approach, and more visible operating system choices available to consumers, makes the wireless world look like a reasonable replica of the desktop – there are word processors, email programs, Twitter, etc.  Why would consumers with disabilities not expect accessibility in wireless when they have come to expect and find it on the desktop? In short, the table is set for consumer-driven advances in accessible information services about transportation, including information about accessibility itself.
+
+Selected US Regional Efforts
+
+In recent years, many US state and local government authorities, often working in partnership with disability service organizations and local businesses, have undertaken or sponsored efforts to collect, provide and main accessibility information about their regions.  These efforts are often the result of years of hard work by local accessibility champions or catalysts, and are usually led by a locally-based non-profit organization/partnership that receives funding from a variety of sources (e.g. state and/or local government, private sector companies, individual donors, etc.).  Some description of selected US regional efforts is below.
+
+ 
+
+While these efforts collect similar kinds of accessibility information, and leaders of the efforts tend to informally coordinate with each other, there is currently no overarching framework being used to ensure the consistency of information from region to region, or to share the information widely on a nationwide basis.  The Geo-Access Challenge Team feels this is one area that should be given attention in coming years.
+
+Georgia As Georgia’s second largest industry, the tourism industry is a driving force in Georgia’s economy, employing more than 241,000 Georgians and creating a total economic impact of more than $34 billion.  The Georgia Department of Economic Development (GDEcD) Tourism Division works to promote Georgia as a premier travel and tourism destination through innovative domestic and international marketing initiatives. One key success factor in maintaining a premier travel and tourism status is making sure that Georgia physical destinations and their companion technologies are accessible to the broadest range of people, regardless of their age or ability. 
+
+ 
+
+In recent years, an emerging Georgia-based public-private partnership – the Georgia Alliance for Inclusive Technologies (GAIT) – has been working toward implementing an inclusive travel and tourism program statewide in Georgia.  GAIT is a public-private partnership involving numerous Georgia-based private sector companies, government agencies, universities, small businesses and individuals who are committed to the inclusive ICT research, design and development. GAIT was initiated in late 2008 by G3ict - The Global Initiative for Inclusive ICTs, a flagship advocacy initiative of the United Nations Global Alliance for ICT and Development, which is headquartered in Atlanta, Georgia, USA. 
+
+ 
+
+The GAIT Partnership is currently working to secure support for its planned inclusive travel and tourism program, described in the Winter 2010 issue of ―Making A Difference‖ Magazine, published by the Georgia Council on Developmental Disabilities. 
+
+Illinois
+
+Open Doors Organization (ODO), a 501(c)3 non-profit organization based in Chicago, was founded in 2000 for the purpose of creating a society in which persons with disabilities have the same consumer opportunities as non-disabled persons. ODO strives to teach businesses how to succeed in the disability market while at the same time empowering people with disabilities.
+
+ 
+
+For the past many years, ODO has been working with the State of Illinois Government and the City of Chicago and the City of Springfield local governments, to produce comprehensive accessibility guides that provide information for visitors and residents with a wide range of disabilities, as well as for older people. The guides – called Easy Access Chicago and Easy Access Springfield – are published online and in print versions, and contain valuable information such as: 
+
+•      Key intercity travel centers (airports, rail stations, bus stations)
+
+•      Local accessible public and private transportation
+
+•      Accessible hotels and restaurants (searchable by specific access features, location, price)
+
+•      Accessible tours of all types
+
+•      Access reports for attractions
+
+•      Sports and adapted recreation
+
+•      Insider tips, hassle-free travel tips, and tips/resources for families
+
+•      Disability-related services and resources
+
+ 
+
+The Easy Access Chicago and Easy Access Springfield guides are offered in conjunction with the state and local official visitor guides, and are integrated well into tourism and convention and visitors bureau programs. For example, the City of Chicago’s Official Tourism Site, Explore Chicago, has a prominent feature that features the Easy Access Chicago guide: http://www.explorechicago.org/city/en/travel_tools/accessible_chicago.html  
+
+New York City (NYC)
+
+For all of the attractions that make NYC wonderful, the city prides itself most on its diversity: more than 200 languages are spoken on its streets, and men and women from every world culture live side by side, contributing to the vibrant life of the city.  In addition, NYC welcomes almost 50 million visitors annually. It is especially important that NYC residents and visitors with disabilities have the opportunity to experience everything that NYC has to offer.  
+
+ 
+
+In order to reach that goal, NYCgo.com – the Official Guide to NYC – provides many resources related to NYC Accessibility: http://www.nycgo.com/accessibility. One such resource is the Official NYC Accessibility Guide which provides extensive information on accessible transportation and specific accessibility reviews for cultural institutions, theaters, nightlife and sports venues, tours, and more.  NYCgo.com is published by NYC & Company, the official marketing, tourism and partnership organization for NYC, dedicated to maximizing travel and tourism opportunities throughout the five boroughs, building economic prosperity and spreading the positive image of NYC worldwide.
+
+ 
+
+Another valuable guide, the Exercise Your Ability guidebook, is published by the NYC Sports Commission. This guide helps NYC residents and visitors discover how NYC makes sports and athletic activities available to everyone, from adaptive sports leagues and competitions to accessible recreational facilities. The guide also provides current information on world-famous – and accessible – sports venues and tips on how to purchase tickets for individuals with disabilities.
+
+ 
+
+Both of these guides, as well as other services for residents and visitors with disabilities are coordinated with the Mayor’s Office for People with Disabilities (MOPD, http://nyc.gov/mopd/). MOPD was established in 1973 and serves as a liaison between NYC government and disabled individuals, as well as organizations dedicated to improving the lives of New Yorkers with disabilities. MOPD provides policy recommendations to the mayor and works with NYC agencies and private individuals and organizations to improve the quality of life for people with disabilities.
+
+Northern California
+
+Access Northern California (ANC), founded in 1997 by Bonnie Lewkowicz, grew out of the difficulties and frustrations that she faced as a travel agent when she tried to plan accessible trips and outings for herself or her disabled friends. Ms. Lewkowicz realized that one of the biggest common barriers that prevented most people with disabilities from having successful, rewarding travel experiences was the severe lack of readily available and reliable access information. Even though The Information Age was well upon us, when it came to finding worthwhile access information, the internet proved to be an inadequate resource. Assuming the role of executive director, Ms. Lewkowicz led ANC to become one of the first organizations to address this digital divide by physically inspecting hotels, attractions, parks and trails and then sharing this information on a website dedicated to accessible tourism and recreation advocacy. In addition to the information barrier, the founder also noted a pervasive lack of awareness within the travel industry about the needs of travelers with disabilities and how best to serve them. Educating the industry also became an important mission of ANC.
+
+ 
+
+ANC is a 501(c)3 non-profit organization working to increase opportunities and improve access to travel and outdoor recreation for people with disabilities and seniors throughout Northern California. ANC envisions all people with disabilities having the freedom to participate in universally accessible travel and recreation.
+
+ 
+
+ANC authors a free accessible travel guide to San Francisco, Access San Francisco, available from the San Francisco Convention & Visitors Bureau.  The Access San Francisco guide contains transportation and city accessibility information valuable for people with physical disabilities and seniors such as: 
+
+•      Intercity travel information (e.g. airports)
+
+•      Tips on getting around (including maps and neighborhood information)  Public transportation
+
+•      List of disability services and organizations
+
+•      Accessibility information for attractions
+
+•      Accessibility information for museums and performing arts centers
+
+•      Accessible tours
+
+•      Accessible lodging, shopping and restaurants
+
+•      Accessible sports and recreation
+
+ 
+
+ANC has also created a descriptive guide on accessible trails, parks and sites in the San Francisco Bay Area titled Wheelchair Rider's Guide: San Francisco Bay and the Nearby Coast, available in online, PDF and print versions in partnership with the California Coastal Conservancy.
+
+San Diego
+
+Accessible San Diego (ASD) is the brainchild and life work of Wes Johnson and Mike Buse. They got together in 1989 and envisioned a city where visitors could "assume accessibility in advance." ASD began to have a greater influence when it began partnering with the Port of San Diego and the Convention and Visitors Bureau for funding and outreach to tourism industry leaders. ASD has published a PDF and print version of its guide, Accessible San Diego, now in its 14^(th) edition (as of 2010).  This guide contains valuable information on items such as:
+
+•      Intercity transportation (e.g. airports, bus, rail)
+
+•      Public transportation (e.g. MTS trolley and bus, regional rail)
+
+•      Shuttles, tours and travel services companies
+
+•      Restrooms
+
+•      Lodging
+
+•      Shopping & Dining
+
+•      Attractions
+
+•      Sports & Recreation
+
+•      Area services, agencies, medical & equipment providers
+
+Washington, DC
+
+Washington.org, the official tourism portal for Washington, DC, markets Washington DC’s accessibility on their site.  One key resources for Washington, DC, visitors and residents is the
+
+Washington, DC Access Guide (http://www.disabilityguide.org/), produced by
+
+DisabilityGuide.org.  There is information online and a print guide can be purchased as well.  The guide contains valuable information on items such as:
+
+•      Personal Assistants
+
+•      Wheelchair Rental
+
+•      Restaurants
+
+•      Hotels
+
+•      Accessible Transportation
+
+•      Tours
+
+•      Attractions
+
+•      Helpful links
+
+•      Parking
+
+Social Media & Location-Based Information
+
+In recent years, both mainstream and emerging social media have been increasing in use by persons with disabilities, including location-based information and services.  Andreas Kaplan and Michael Haenlein define social media as "a group of Internet-based applications that build on the ideological and technological foundations of Web 2.0, which allows the creation and exchange of user-generated content."^(^([5])) A common thread running through all definitions of social media is a blending of technology and social interaction for the co-creation of value.
+
+ 
+
+A recent article in Social Media Today^(^([6])) argues that location-based services are the hottest segment in social media. Some selected examples of social media discussed by the Geo-Access Challenge Team and relevant to location-based information are below.
+
+Mainstream Social Media
+
+Wikipedia provides an exhaustive list of social media examples in six categories: Communication, Collaboration/authority building, Multimedia, Reviews and opinions, Entertainment, and Brand monitoring. 
+
+ 
+
+Some of the mainstream social media that include location-based components and features include:
+
+•      Facebook Places – Allows Facebook users to share where they are, connect with friends nearby, and find local deals. 
+
+•      FourSquare – A mobile application that makes cities easier to use and more interesting to explore. It is a friend-finder, a social city guide and a game that challenges users to experience new things, and rewards them for doing so. Foursquare lets users "check in" to a place when they're there, tell friends where they are and track the history of where they've been and who they've been there with.
+
+•      Google Latitude – A location-aware mobile app developed by Google. Latitude allows a mobile phone user to allow certain people to track their location. Via their own Google Account, the user's cell phone location is mapped on Google Maps. The user can control the accuracy and details of what each of the other users can see — an exact location can be allowed, or it can be limited to identifying the city only. For privacy, it can also be turned off by the user, or a location can be manually entered. Users have to explicitly opt in to Latitude, and may only see the location of friends who have decided to share their location.
+
+•      Gowalla – Gowalla is an amazing new way to discover the world. It's easy to share your favorite places, photos and trips with friends.
+
+•      Twitter – Offers a social networking and micro blogging service, enabling its users to send and read other users' 140-character long messages called tweets. Tweets are displayed on the user's profile page (visible by default, but message delivery can also be restricted). Twitter is location-aware, meaning that latitude and longitude can be added to any tweet. Users can send and receive tweets via the Twitter website, compatible external applications (such as for smartphones), or by Short Message Service (SMS). Accessible Twitter is an alternative to the Twitter.com website. It is designed to be easier to use and is optimized for disabled users
+
+•      Yelp – A social networking, user review, and local search web site. Yelp has a free API that provides access to business listing details, reviews, photos, and ratings and can be used to add business information to a website, widget, or mobile application. The API has been used to integrate business reviews into existing Google Maps applications such as on Zillow.com and HotelMapSearch.com.
+
+IncluCity Online
+
+IncluCity is a newer social media site in Atlanta designed to empower people living with disabilities to get more out of life in public spaces and be a voice for change in their communities. IncluCity plans to accomplish this goal through user-driven reviews of restaurants and other public venues, specifically written by and for people living with disabilities. The reviews on IncluCity address the concerns of this population, rather than targeting temporarily able-bodied users by default (as most user-driven venue review websites do currently).  Reviews are based on criteria ignored in the market that are critical to this population including but, not limited to physical access and staff accommodations. Site users can easily post a review, based on specific criteria that, once answered, generate a rating for each venue. Users can also add their own comments about their overall experience at each venue. These two user-based elements – reviews and comments – serve to inform other users about what they can expect at the selected venue. Users can then provide a review of their own, serving to enrich the review database for other users to benefit from. 
+
+JJ’s List
+
+The mission of JJ’s List (http://www.jjslist.com/) is to build positive and productive interaction between businesses and people with disabilities. JJ Hanley founded JJ’s List as a commitment to help improve the long-term economic and social futures of people with all disabilities.  She was inspired to build the organization while making Refrigerator Mothers, an award-winning PBS documentary on autism, where she learned about the tremendous barriers to basic participation in the community encountered by people with disabilities after they finish high school. Barriers include challenges finding an appropriate place to live, accessing employment, getting around town and participating on the Internet.  Her experience as the parent of a teenager with autism spectrum disorder and learning disabilities gives her personal insight into the critical need to address these challenges.
+
+ 
+
+JJ’s List visitors review the disability awareness of businesses listed at www.jjslist.com. Businesses are evaluated as to whether they are welcoming, flexible and respectful of people with disabilities.  There are other consumer review, directory websites on the Internet. Two examples are Angie’s List (www.angieslist.com) and Yelp (www.yelp.com). But JJ’s List is the first and only network of its kind designed specifically for the underserved and growing population of people with disabilities, their families, friends and co-workers. JJ’s List visitors post their personal stories about their experiences shopping, dining, living, learning, working and having fun with businesses and services in their communities. Then they recommend – or not – a business as a Bridge Builder business, using a checklist of disability-aware characteristics, including:
+
+•      Physically accessible
+
+•      Talked to me person-to-person, and asked me if I needed or wanted help
+
+•      Gave me choices and/or extra time
+
+•      Respectful and helpful when I needed assistance or accommodation
+
+•      Has employees with disabilities
+
+•      Flexible service
+
+ 
+
+Their reviews are posted on the Directory page of the website, which is a searchable listing of businesses, organizations and services that have been reviewed for disability awareness and/or have committed to incorporating disability awareness into their day-to-day service.
+
+ 
+
+There is significant potential in data that is automatically gathered as a byproduct of other activities, with little intent or effort needed in the gathering. What if, for example, a blind person or wheelchair user had a background app running on a mobile phone that recorded routes taken in traveling the city? If that data were consensually uploaded to a cloud site, with appropriate privacy protections, it would provide crowd-sourcing information that could help other travelers know of accessible routes to take for particular destinations. Obviously, no single route taken means that it is advisable for others, but the more that others with similar characteristics choose a particular route, the more likely that it is one worth using if one does not have other information to recommend another choice.
+
+ 
+
+Similarly, what if there was a way that geo-data was recorded whenever a Braille menu was used by a customer? This could crowd source information about what restaurants in a metropolis are nonvisually accessible.
+
+ 
+
+Others can probably think of many more examples, e.g., for other forms of disability access. The idea is to create ways that data is recorded automatically, or with trivial effort, in the natural course of the activities of people or machines. The data is incidental to what is occurring otherwise, rather than the product of a directed effort to gather such data. 
+
+ 
+
+In the first example a mobile phone was used as a recording device, but there is no reason why, at some point, the data recording could not be done by a chip that a blind person agrees to embed in his or her cane or a mobility impaired person embeds in a wheelchair.  Therefore such IPenabled chips could be attached to instruments of daily living, programmed with rules about what to share with the cloud, and what to keep from it.
+
+Social Mapping & Trip Planning Applications
+
+In recent years, social mapping projects like OpenStreetMap (OSM)
+
+(http://www.openstreetmap.org/) have been emerging to fill in information gaps, and offer an open source alternative mainstream mapping platforms and technologies. OSM is a collaborative project to create a free editable map of the world. The maps are created using data from portable GPS devices, aerial photography, other free sources or simply from local knowledge. Both rendered images and the vector graphics are available for download under a Creative Commons Attribution-ShareAlike 2.0 license.^(^([7])) OSM was inspired by sites such as Wikipedia; the map display features a prominent 'Edit' tab and a full revision history is maintained. Registered users can upload GPS track logs and edit the vector data using the given editing tools.  OSM has a very active contributor base, and organized projects related to accessibility including OSM for the Blind, LoroDux, a Map for Wheelchair Drivers, and Rollstuhlfahrer-Routing, a German project for wheelchair routing.
+
+ 
+
+In addition, open source trip planners such as OpenTripPlanner
+
+(http://www.opentripplanner.org/) and GraphServer (http://graphserver.github.com/graphserver/) are utilize open source data and social maps to make available functionality such as 
+
+ 
+
+There are also a number of mainstream transit information systems, mostly designed to support vehicle arrival information and trip planning. These are generally not developed for people with disabilities, but a few stand out for features that have distinct value for people with disabilities. First, RouteShout (http://www.routeshout.com/) allows SMS based query-response for bus arrival times at specific stops. This is a valuable option for people who cannot afford a smartphone. Second, Google Transit (http://transit.google.com/) provides integration with StreetView and other information, allowing sighted users to virtually scout details about local infrastructure.
+
+[]
+
+Data Requirements
+
+After reviewing the market context for the Geo-Access Challenge the Challenge Team developed the following list of high-level data requirements (see Appendix B – List of Example Data for more details).  The data outlined align to the following four sources for information: 
+
+1.      Mainstream Public Transit
+
+2.      Public Paratransit
+
+3.      Private Transportation 
+
+4.      Points-of-Interest / Environmental Information
+
+ 
+
+In addition, high-level data requirements in each of these four areas are divided by the three primary types of data:
+
+1.      Authoritative static – Data provided by authorities (e.g. transit agencies, government, disability service organizations, etc.) that changes infrequently
+
+2.      Authoritative real-time – Data provided by authorities (e.g. transit agencies, government, disability service organizations, etc.) that changes frequently and is available in real-time
+
+3.      Crowd sourced data – Data provided by the ―crowd‖, or non-authorities, either in infrequent or frequent intervals.  Data can be provided through intentional acts of contribution from individuals or from their devices.
+
+Mainstream Public Transit
+
+Below are the types of data useful to support mainstream public transit usage by persons with disabilities. 
+
+Authoritative Static Public Transit Information
+
+•      General Transit Feed Specification (GTFS) Feed
+
+•      Accessible Stations/ Stops (including assistive listening systems and redundant visual/auditory service announcements)
+
+•      Accessible Vehicles (assistive listening systems and redundant visual/auditory service announcements)
+
+•      Contacts / help
+
+Authoritative Real-Time Public Transit Information
+
+•       Automatic Vehicle Location (AVL)
+
+•       Sensor or surveillance readings (vehicle fullness / artery congestion) and other automatically generated or captured data as a by-product of other activities  Predicted info (arrivals, traffic)
+
+Crowd-Sourced Public Transit Information
+
+•      Service ratings
+
+•      Rider reporting of vehicle fullness 
+
+•      Report issues (vehicle, station/stop, service)
+
+•      Reviews
+
+Public Paratransit
+
+Below are the types of data useful to support public paratransit usage by persons with disabilities. 
+
+Authoritative Static Paratransit Information
+
+•      Agency info
+
+•      Service areas 
+
+•      Routes/stop locations (if for fixed route components)
+
+•      Fares/reservations
+
+•      Contacts / help
+
+Authoritative Real-Time Paratransit Information
+
+•      Automatic Vehicle Location (AVL)
+
+•      Sensor or surveillance readings (vehicle fullness / artery congestion) and other automatically generated or captured data as a by-product of other activities
+
+•      Predicted info (arrivals, traffic)
+
+•      Alerts (service & facilities)
+
+Crowd-Sourced Paratransit Information
+
+•      Service ratings
+
+•      Rider reporting of vehicle fullness
+
+•      Report issues (vehicle, station/stop, service)
+
+•      Reviews
+
+Private Transportation
+
+Below is a list of data types that support use of private transportation options (e.g. community cars, rideshares/carpools, taxis, limos / luxury / black cars, private bus or rail, rental cars, etc.).
+
+Authoritative Static Private Transportation Information
+
+•      Community based transport
+
+•      Rideshares / carpools info (info)
+
+•      Accessible taxis (info)
+
+•      Accessible Stations/ Stops (including assistive listening systems and redundant visual/auditory service announcements)
+
+•      Accessible Vehicles (assistive listening systems and redundant visual/auditory service announcements)
+
+•      Wheelchair rentals 
+
+•      Accessibility information for private air, rail, bus or ferry services
+
+Authoritative Real-Time Private Transportation Information
+
+•      Sensor or surveillance readings (vehicle fullness / artery congestion) and other automatically generated or captured data as a by-product of other activities
+
+•      Rideshares and carpools (real-time)
+
+•      Accessible taxis (real-time)
+
+•      Accessible vehicles & wheelchairs (real-time)
+
+Crowd-Sourced Private Transportation Information
+
+•      Service ratings
+
+•      Report issues (vehicle, station/stop, service)
+
+•      Reviews
+
+Municipal Infrastructure & Points-of-Interest (POIs)
+
+In addition to public and private transportation options, research tells us that people also need indepth accessibility information about points of interest (POIs) and municipal infrastructure.
+
+Authoritative Static Municipal Infrastructure & POIs Information
+
+•      Attractions (Gardens, Zoos, Aquariums, Museums, Performing Arts Centers, Theatres, Sports Viewing)
+
+•      Disability Services Organizations or Centers
+
+•      Hotels & Lodgings
+
+•      Nightclubs
+
+•      Recreation
+
+•      Restaurants
+
+•      Shopping
+
+•      Tours
+
+•      Accessible Municipal infrastructure (e.g., tactile paving, tactile maps, pedestrian crossings with/without acoustic guidance, traffic signals with sound/vibration/floor vibration/arrows/minimaps, sloped curbs, pedestrian crossings with islands, wheelchair driver/pedestrian routes, accessible parking, parking lanes, bicycle lanes, and pedestrian lanes/walkways)
+
+Authoritative Real-Time Municipal Infrastructure & POIs Information
+
+•      Real-time info for Accessible Municipal infrastructure (e.g. construction / closings)
+
+Crowd-Sourced Municipal Infrastructure & POIs Information
+
+•      Suggest new / edited authoritative POI info
+
+•      Service ratings for POIs
+
+•      Reviews for POIs
+
+•      Tags for Accessible Municipal infrastructure 
+
+•      Service ratings for Accessible Municipal infrastructure
+
+•      Reviews for Accessible Municipal infrastructure
+
+ 
+
+[]
+
+Application Areas
+
+The market context and data requirements for this Geo-Access Challenge informed the Challenge Team’s assessment of the three main types of application areas that should be explored in near-term research and development: 1. Multi-Modal Transportation Planning & Execution
+
+2.  Regional Point of Interest (POI) Information Foraging
+
+3.  Citizen-Science & Co-Design Apps
+
+Multi-Modal Transportation Planning & Execution Apps
+
+People, regardless of their age or ability, need applications that support their planning and execution of transportation in local regions, utilizing the range of public and private transportation options that exist. Some features of such applications could include:
+
+•      Support for planning trips across both public transit and private transportation options, with filtering by disability type (e.g. mobility, vision, hearing impaired)
+
+•      Aggregation of both static and relevant real-time information (e.g. elevator status in public transit stations, vehicle fullness, etc.)
+
+•      Providing accessible municipal infrastructure information (e.g. accessible cross-walks, crossing signals, sidewalks, etc.)
+
+•      Providing authoritative and crowd sourced accessible routes for vision and mobility impaired persons
+
+•      Providing accessible parking information
+
+Regional Point of Interest (POI) Information Foraging Apps
+
+People – regardless of their age or ability – need to access both authoritative and crowd-sourced, static and real-time accessibility information about regional points-of-interest (POIs). This includes accessibility information on the following types of POIs: 
+
+•      Attractions (Gardens, Zoos, Aquariums, Museums, Performing Arts Centers, Theatres, Sports Viewing)
+
+•      Disability Services Organizations or Centers
+
+•      Hotels & Lodgings
+
+•      Nightclubs
+
+•      Recreation
+
+•      Restaurants
+
+•      Shopping
+
+•      Tours
+
+•      Accessible Municipal infrastructure – for example: Tactile paving, Tactile maps, Pedestrian crossings with/without acoustic guidance, Traffic signals with sound/vibration/floor vibration/arrows/minimaps, Sloped curbs, Pedestrian crossings with islands, Wheelchair driver/pedestrian routes, Accessible parking, Parking lanes, Bicycle lanes, Pedestrian lanes/walkways
+
+ 
+
+ 
+
+Apps that Promote Citizen-Science & Services Co-Design
+
+Applications that enable greater interaction and transparency with government authorities should be encouraged and developed to enable all persons – regardless of their age or ability – to participate more fully in society.  There are many examples of applications that ―crowd source‖ information from travelers/citizens, and they fall into two main complementary models:
+
+1.      Citizen Science – Rich media evidence collected by end users for civic advocacy (Paolos, Eric, Et. Al. 2008)^(^([8])). 
+
+2.      Co-Design – A dialog where users help design the services they use (Bradwell & Marr,
+
+2008; Yoo et al., 2010)^(^([9]))
+
+ 
+
+In the geo-data and location-based services arena, there are many applications for tools that can support the crowd sourcing of the following kinds of valuable information including (but not limited to):
+
+•      Regional POIs suggestions, service ratings and reviews
+
+•      Accessible transportation suggestions, service ratings, and reviews
+
+•      Accessible municipal infrastructure information, ratings and reviews
+
+•      Personal maps, routes and tours
+
+ 
+
+An examples of a transportation-oriented application is Tiramisu, an iPhone app developed by The RERC-APT. Tiramisu uses a crowdsource model to enable riders to report location and fullness of the vehicles they are on, thereby providing real-time information to their fellow riders (Steinfeld, et al., 2011). Tiramisu also allows riders to report problems and positive feedback directly from the phone, including pictures. Using a single application for transit information sharing streamlines the experience and supports pre-loading of important real-time details (e.g., current location, route, etc), thereby lowering data entry demands and the perceived cost of submitting a report (Yoo et al., 2010). A closed pilot test of the system demonstrated effective information sharing and a large-scale, public release is imminent.
+
+ 
+
+Mainstream civic engagement applications with a broader focus than public transit also exist.
+
+ParkScan allows residents to report problems and kudos to San Francisco Parks and the iBurgh (Pittsburgh) phone app directly links to the City of Pittsburgh’s 311 center. In both cases, users can file reports using text, GPS, and pictures. Personnel from the 311 office route each report to the appropriate department for handling. SeeClickFix is a similar system and offers tools for local government agencies. ParkScan has the added feature of supporting direct communication between users and maintenance staff, thereby providing visibility on problem resolution. 
+
+ 
+
+[]
+
+Proof-of-Concept
+
+In order to demonstrate an example application from one of the application areas described, the Geo-Access Challenge Team developed a proof-of-concept trip planner application. The goal of the proof-of-concept is to demonstrate an enhanced travel experience for people with disabilities by surfacing a wide range of transportation, mapping and venue-specific accessibility information in a single user interface.  The goal is to highlight the potential for mass market and targeted navigation applications,  if accessibility data and public transportation service data were available at scale and in a central repository or via widely accepted APIs to product developers. A description of the key activities the team undertook in creating this proof-of-concept is described below. 
+
+ 
+
+It is important to note that the core developer for this proof-of-concept was person with a disability, David M. Clark, a seasoned LAMP developer and creative problem solver who develops modern, standards compliant web applications to address functional needs in a cost efficient manner.
+
+Sample User Profiles/User Scenarios
+
+The Geo-Access Challenge Team began their ideation by creating a few user profiles and user scenarios – some examples are below.
+
+Sample User Profile – Visitor to Chicago
+
+ 
+
+Traveler Profile: Young, male, out-of-state visitor, non-ambulatory (paraplegic), uses manual chair, has limited budget
+
+ 
+
+Trip Purpose: Visit Chicago to see friends who live in Lakeview and do some sightseeing.
+
+ 
+
+Pre-Trip Planning:
+
+•      Step 1: Searches affordable flights into O'Hare using one of the wholesalers such as Expedia or Cheap Tickets. Books flight online and then calls the airline directly to request boarding assistance and stowage of wheelchair in cabin closet.
+
+•      Step 2: Using Easy Access Chicago's (EAC) searchable hotel database, looks for budget property with roll-in shower and complimentary breakfast in the Lincoln Park/Lakeview area. Finds Lincoln Park Day's Inn, checks availability online and calls to ensure that the accessible room with roll-in shower is available and will be blocked for him. He then books the room online and by paying in advance, gets a discount.
+
+•      Step 3: Researches transportation options beginning with EAC's Airport Transportation section. Possibilities are: Go Airport Express (shared shuttle), Paratransit (he is registered in home town but does not have enough time to get certified for Chicago), Taxi (accessible taxi not necessary since he can transfer and fold his chair), and RTA. RTA is lowest cost so he decides to investigate the public train and bus service further.
+
+•      Step 4: Follows link on EAC to RTA website and trip planner. Enters start and finish points and checks wheelchair accessibility option. The route requires 1 Blue Line train to Logan Square, which has elevators, and 1 bus (#76 Eastbound) which stops just across from the hotel and has frequent service. All Chicago buses are wheelchair accessible. Since he plans to use public transport throughout his visit, he also checks what multi-day passes are available and if he is eligible for any discount from RTA.
+
+•      Step 5: From the EAC website, Airport Information, he follows the link to the O'Hare website to look at a map of the airport and check where the train station is located.
+
+•      Step 6: Using EAC Access Information, he reads about accessibility of other attractions and uses links to check admission prices and get other information. He decides to visit Millennium Park and Art Institute of Chicago on his own and then see what other activities his friends have planned. From the Millennium Park site, he downloads an MP3 tour of the park and learns that he can pick up a tour map across the street at the Tourism Office in the Cultural Center. At the Art Institute site, he watches a video on the museum that includes access information and checks out their new Pathfinder tool that shows accessible routes between galleries. 
+
+ 
+
+Travel to Chicago/Hotel:
+
+•      Step 1. After arriving at O'Hare, he stops to check RTA website for any elevator alerts. There are no alerts for either O'Hare or Logan Square on the Blue Line.
+
+•      Step 2. Following signs to the CTA station, he buys a multi-day pass at an accessible kiosk and is escorted by a Customer Assistant to the elevator and onto the train. The agent calls ahead to his colleague at Logan Square to alert her that a passenger using a wheelchair will be arriving on the next train.
+
+•      Step 3. The Customer Assistant at Logan Square provides assistance in disembarking, escorts him to an elevator and directs him to the bus stop.
+
+•      Step 4. The bus is low floor with a ramp and the driver helps secure the wheelchair. The bus has a GPS system with stops announced both verbally and visually.
+
+•      Step 5. At Diversey and Clark where the hotel is located, all street corners have curb cuts so the route to the hotel from the bus stop is accessible.
+
+ 
+
+Travel in Chicago/Day 1
+
+•      Step 1. After checking in and resting, he uses the EAC restaurant database to find somewhere in Lincoln Park to eat lunch. Panera Bread, just across Clark on Diversey, is inexpensive and has a fully accessible restroom.
+
+•      Step 2. During lunch, he checks the RTA trip planner for public buses to Millennium Park and the Art Institute. There are several options but the #151 at Sheridan and Diversey seems most direct even if it is several blocks away. To check if there are any problems with sidewalks, he goes to the UIC database. No issues are reported for this location.
+
+•      Step 3. After boarding the #151, he gets off at Randolph and Michigan Ave. where he makes a stop to pick up the tour map at the Cultural Center. He then crosses the street to Millennium Park and begins his MP3 tour.
+
+•      Step 4. Using the new Nichols Bridgeway, he crosses Monroe St. and enters the Art Institute at the 3rd floor level of the new Modern Wing. An elevator takes him down to admissions on the ground floor.
+
+•      Step 5. After visiting the museum, he decides to check out the Loop area before consulting the RTA trip planner and taking a #36 bus to meet friends for dinner in Lakeview.
+
+Sample User Profile – Local Chicagoan
+
+ 
+
+Traveler Profile: Individual is a 51 year old Female who uses a power chair, she lives near Washington and Kedzie.
+
+ 
+
+Trip Purpose: She is planning a night out with some friends to go to an accessible bowling alley and for dinner. To do so, she needs to locate an accessible bowling alley, and then look up how to get to the bowling alley using the CTA. She will need to know about any sidewalk barriers are, so she can avoid certain streets to get to the bus or train.
+
+ 
+
+User Scenario:
+
+•      Finds Lucky Strike Lanes (322 E Illinois St / N. Park Drive, 312-245-8331, www.bowlluckystrike.com), a popular place to hang out with friends of all abilities, this bowling alley/lounge is fully accessible. It even has adaptive aids including a push rack and mechanical bumpers. Open Sun-Thurs, noon-1am, Fri-Sat, noon-2am.
+
+•      In the past, she used Google Transit with Chicago RTA data to find a public transit route option.  The suggested route tells her to: walk to the Green Line from her current location, take Green Line to State & Lake, take Bus #29 to Illinois & Columbus, then walk to the Lucky Strike Lanes bowling alley.  However, this route doesn’t take into account sidewalk barriers.
+
+•      In our new trip planner, this type of route / trip planner would leverage real-time information such as authoritative or crowd sourced information on sidewalk barriers to indicate there are sidewalk barriers on the selected route.  It would also offer her some alternative routes to consider.
+
+•      Also, because she will need to have dinner before bowling, she could use a ―Find an Accessible POI‖ function to locate a restaurant near her destination that is accessible to her as a power chair user.  She searches and finds the following restaurant, which is added to her route/trip plan: Brasserie Jo, 59 W. Hubbard St. (Cross Street: Clark St.) – (312) 595-0800 (www.brasseriejo.com), Cuisine: French, Price: Expensive: $25 and up. 
+
+There is a link to the access details for Brasserie Jo, sourced from Easy Access Chicago.
+
+•      After adding this restaurant to her route/trip plan, she is informed of sidewalk barriers in her route to Brasserie Jo.  So, she searches and finds an alternative restaurant option: Athena Greek Restaurant, 212 S. Halsted St. (Cross Street: Adams St.) – (312) 655-0000 (www.athenarestaurantchicago.com), Cuisine: Greek, Price: Moderate: $15 - $24. She views the access details for Athena Greek Restaurant, again provided by Easy Access Chicago. 
+
+•      After selecting this new restaurant option, she is satisfied with her route/trip plan as she sees no anticipated barriers in her transit plan to the restaurant and the bowling alley. She proceeds on her journey, and enjoys a wonderful night out in the West Loop!
+
+ 
+
+ 
+
+ 
+
+Use Cases
+
+Following development of the user profiles and user scenarios, the Geo-Access Challenge Team developed some use cases to outline key functional requirements (an example is below). There are of course ICT accessibility implications for each disability type (e.g. vision, hearing, mobility, cognitive), and different kinds of salient information and methods of presentation as well. However, these use cases were not broken out into use cases for the various disability types.
+
+ 
+
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Use case                                                                                           | Functionality requirements                                                                                                                                                      |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Commuter wants to plan typical daily trip to/from school or work.                                  | Enter and edit end points.                                                                                                                                                      |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Enter and edit timeframes.                                                                                                                                                      |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Receive resulting schedule information for all possible travel options in a format that fosters comparison and decision-making.                                                 |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make and register decision (primary and fall-backs)                                                                                                                             |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Enter and edit notification options for real-time information such as vehicle arrival, elevator outage.                                                                         |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Commuter prepares for daily trip.                                                                  | Receive subscribed notification information, with optional recommendations for changes based on this information (―Bus X is late; you may want to take bus Y instead.‖)         |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make one-time edits to end points or timeframes.                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Commuter is travelling.                                                                            | Receive updated relevant information with optional recommendations (transfers, etc.).                                                                                           |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make mid-trip edits to end points or timeframes.                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Occasional trip (e.g., shopping, doctor’s office)                                                  | Enter and edit end points.                                                                                                                                                      |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Enter and edit timeframes.                                                                                                                                                      |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Add/delete/edit destinations (e.g., new doctor) Multipoint trips.                                                                                                               |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Receive updated relevant information with optional recommendations (transfers, etc.).                                                                                           |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make mid-trip edits to end points or timeframes.                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| One-time trip in home location                                                                     | Enter end points and timeframes.                                                                                                                                                |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Multipoint trips.                                                                                                                                                               |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Receive updated relevant information with optional recommendations (transfers, etc.).                                                                                           |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make mid-trip edits to end points or timeframes.                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| One-time trip in non-home location (travel)                                                        | Integrate with long-haul (e.g., airlines).  Planning and operation, including accessibility-specific information like companion animals, wheelchair loading instructions, etc.  |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Enter end points and timeframes.                                                                                                                                                |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Receive updated relevant information with optional recommendations (transfers, etc.).                                                                                           |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Make mid-trip edits to end points or timeframes.                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Tourism                                                                                            | Points of interest, including accessibility-relevant items.                                                                                                                     |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Traveler wants to enter realtime information into the system                                       | Should be easy to do. [cite Steinfeld]                                                                                                                                          |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Should have connection to agencies that can fix the reported issue.                                                                                                             |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | [cite Steinfeld]                                                                                                                                                                |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Use case                                                                                           | Functionality requirements                                                                                                                                                      |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Traveler wants report on status of reported information (―What is happening with my complaint?‖)   | Provide all follow-up information; begin with a receipt notification.                                                                                                           |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Emergency                                                                                          | Should be coordinated with other emergency planning for people with disabilities.                                                                                               |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Receive updated relevant information with optional recommendations for alternate transportation methods.                                                                        |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Automatically part of notifications options: who gets told what via what medium under what conditions                                                                           |
+|                                                                                                    |                                                                                                                                                                                 |
+|                                                                                                    | Emergency operations: coordinate with evacuation, survivor location                                                                                                             |
++----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+The following cross-cutting issues apply to all use cases:  Accessibility of the applications.
+
+•      Coordination/aggregation.  If it’s at all possible, don’t make the user search separately for buses, subways, taxis, paratransit, points of interest, pedestrian wayfinding.
+
+•      Notification of others.  For some users, especially those with cognitive disabilities, travel status may have been arranged to be automatically provided to employers, educators, caregivers or others.  This raises privacy and consent issues.
+
+Proof-of-Concept Development
+
+The Geo-Data Team developed a proof-of-concept multi-modal trip planner to demonstrate a small subset of the functionality described above (available at: http://geoaccess.heroku.com/).  In this proof-of-concept, one can:
+
+•      Create a route by selecting from a list of begin and end points. These lists represent venues that have been reviewed by Easy Access Chicago. 
+
+•      Indicate a preferred mode of travel (walking or via public transportation)
+
+•      View a route generated by the trip planner, and view disability-specific information about their destination and bus and subway information if appropriate. 
+
+ 
+
+Due to the richness of available accessible transportation and city point-of-interest data, the GeoAccess Challenge Team chose to source data for this proof-of-concept from the City of Chicago, from three key sources:
+
+1.      Easy Access Chicago – Official accessibility guide of the City of Chicago, developed and maintained by Open Doors Organization.
+
+2.      Goroo.com – goroo® is a multi-modal trip planner for Chicago and its metropolitan region. It was developed by the Regional Transportation Authority (RTA) and utilizes the services of the Chicago Transit Authority (CTA), Metra, and Pace. Since we did not have the resources to implement the OpenTripPlanner (http://opentripplanner.org) server needed to generate plan from GTFS data, and Google does not provide public transit directions via an API, goroo® was thought to be most expedient. 
+
+3.      Google Maps – Google Maps is a web mapping service application and technology provided by Google, free (for non-commercial use), that powers many map-based services, including the Google Maps website, Google Ride Finder, Google Transit, and maps embedded on third-party websites via the Google Maps API.
+
+ 
+
+The following technologies were used to develop the proof-of-concept:
+
+1.      Ruby or Rails 3.0 (http://rubyonrails.org/) was the open source web application framework utilized to develop the web application proof-of-concept
+
+2.      github (http://github.com) is the web-based hosting service used for this project, that enables open development by anybody
+
+3.      Heroku (http://heroku.com/) is the online Ruby on Rails cloud PaaS (Platform as a Service) used to host the runtime client. 
+
+ 
+
+A production-ready multi-modal trip planner would leverage Smart Phone GPS capability to identify a user's current location and to surface information about points of interest encountered along a route. It would also allow entry of specific street addresses. The Geo-Access Challenge Team feels that this proof-of-concept could also serve as a foundation to spur further innovation via http://www.challenge.gov or some other avenue of exploration.
+
+ 
+
+[]
+
+Suggested Next Steps
+
+The next steps are built on a vision to create a technology and or a policy roadmap (based on real-time and archived data) that is geared towards empowering people with disability with their mobility needs, not only for today but for a foreseeable future. This may mandate certain actions by different agencies and stakeholders to undertake programs both near term and long term. 
+
+User Needs Research
+
+Key Recommendation:
+
+Produce an annotated bibliography from existing sources of user needs covering the full range of accessible public/private transportation and municipal points-of-interest, and pursue additional research studies where necessary.
+
+ 
+
+User needs should form the basis of any initiative aimed at improving transportation information services for people with disabilities.  Although many suggestions for accessibility improvements come in the course of regulatory proceedings, others emanate directly from informal and formal input from users and advocacy organizations.  Still others arise from an envisioned application of an emerging technological capability – a new technology (such as consumer wireless devices) offers opportunities for universally designed or specialized services, and becomes the subject of a research and development effort.
+
+ 
+
+One recommended next step is to produce an annotated bibliography of user needs from existing sources, and pursue additional research studies where necessary. As a starting point, an explicit accessibility element should be included in all public transportation data collection activities.  The Challenge team offers the following guidance for this activity:
+
+1.      Collect user needs for people with a full range of disabilities. People with different disabilities have different transportation needs; each "category" deserves full exploration. People with cognitive disabilities are often excluded from such studies. Screening for respondents should rely on functional rather than medical questions, and should avoid requiring "disability self-identification" if possible.
+
+2.      Collect user needs for all modalities: sidewalk, private vehicle, bus, light rail, airport/airplane, etc.
+
+3.      Collect user needs for all use cases: commuting to school and work, shopping, entertainment venues, religious organizations, etc.
+
+4.      Utilize city or regional disability services organizations whenever possible: There are some key disability services organizations in various US cities and regions that have much knowledge about user needs (e.g. Chicago, New York, Northern California, Portland, San Diego, Washington DC, etc.). We should leverage them. 
+
+5.      Use large-scale data collection methods whenever possible. The varieties of needs and experiences within the many disability communities can be best covered with hundreds or thousands of respondents. 
+
+6.      Recruit respondents for a representative sample. Although advocacy groups can be a valuable resource, their members are not typical; convenience samples may have similar limitations. Technological projects should recognize that people with disabilities have the full range of consumer behaviors regarding adoption of innovations.
+
+7.      Seek opportunities to piggy-back on large-scale efforts that are not disabilityoriented by influencing the survey instrument and/or arranging for follow-back surveys and interviews.
+
+8.      Use accessible methodologies (for paper, phone, and web-based surveys, focus groups, interviews, etc.) including attention to language level.
+
+9.      Balance the need to identify current, specific problems that need solutions with a more visionary, holistic view. For example, the 2002 BTS asked about current barriers to travel, but not about how the respondent would re-think the whole travel equation if a key barrier could be overcome, nor did it ask about the respondent's preferences for how the barrier should be overcome. 
+
+10.  Stay aware of the context of the issue. Transportation is not a goal in itself; it is instrumental. Even if a particular survey can't ask about distance learning and telework, the research should be aware of the implications of other options. Research shows that the presence of transportation barriers can suppress employment and social interaction^(^([10])).
+
+11.  Involve persons with disabilities in all R&D evaluations where possible.  It is imperative we include persons with disabilities in all R&D evaluations where possible, to help ensure we gain their perspective, validate design assumptions, etc.
+
+12.  Be aware of technological access. Many people with disabilities have an economic disadvantage and therefore many do not have access to mobile technology at this time.  It will be necessary to find ways of using existing, more available technologies to provide the same results and benefits.  Research should look at how can we accomplish the same goals for people who have simple cell phones?  Or no cell phones?  Can we develop applications, whereby someone can call in to an automated system to help them navigate, or report accessibility problems to load into the POI database?  Can a Center for Independent Living use these tools to teach people how to live more independently even without cell phones?
+
+ 
+
+In addition, the Challenge Team recommends that research studies be supplemented by crowdsourcing of user needs from:
+
+•      Local agency satisfaction surveys (they should be encouraged to ask about accessibility features & needs)
+
+•      Complaints to DOT, Access Board, and others, as well as the Letters of Finding and other outcomes of these complaints
+
+•      Comments on NPRMs etc. (some available for the Accessible Vehicle regulations changes proceeding)
+
+•      Advocacy organizations websites, conference presentations, and other communication channels
+
+Information Ecosystem & Business Models Research
+
+Key Recommendation:
+
+Pursue research studies on how accessible public/private transportation and municipal POI information is created, collected, aggregated, integrated and utilized by authorities and citizens/consumers. Also, leverage local public-private partnerships experienced in this are to research the various business models that enable cities and regions to offer location-based information and services.
+
+ 
+
+Even with recent developments in accessible various research, development and accessible city efforts, there is not a good understanding of how accessible transportation and accessible POI information is created, collected, aggregated, integrated and utilized by authorities and citizens/consumers. Also, an understanding of the business models being employed by regional disability services organizations is lacking.  The Geo-Access Challenge Team is therefore recommending that research studies be pursued in this area. Like with the User Research, it will be imperative to utilize city or regional disability services organizations whenever possible (e.g. Chicago, New York, Northern California, Portland, San Diego, Washington DC, etc.), as well as leaders in university research (e.g. Carnegie Mellon University, USF, etc.)
+
+Policy
+
+Key Recommendation:
+
+An institutional and policy assessment – including ramifications related to information security and privacy – should be conducted to include three kinds of data required to enable transformation: Transportation Data (including Accessibility), Municipal Infrastructure Data, and Point-of-Interest (POI) Data. The Geo-Access Challenge Team recommends the assessment be followed by a Federal Role paper that defines the rules of engagement between different agencies. Finally, open data guidance and an information security and privacy white paper to govern these initiatives will be required.
+
+ 
+
+The technological advancement and the use of data provide a number of new possibilities to people with disabilities for accessible transportation choices. Some people with disability may depend on functional assistance which might only be provided with more personal data, there is an expectation that some privacy must be sacrificed to achieve certain goals. At the same time, the availability of this data is necessary to providing such services, i.e. paratransit curb-to-curb service. 
+
+ 
+
+Similarly what is considered to be ―relevant‖ information for others may in fact be ―required‖ information for people with disabilities i.e. whether front entry of a restaurant is accessible or not.
+
+Thus the policy discussions here could then be broadly divided into four concern areas:
+
+1.      Transportation Data (including Accessibility): A major factor for enabling people of varying ages and abilities to effectively use public and private transportation systems is having information. Riders need to know if elevators are broken, buses are too full for a wheelchair, and a whole collection of other small yet important details. Having clear policies that require entities and agencies to make a variety of static and real-time public and private transportation data widely available – in addition to any routing engines, APIs
+
+and other functionality to enable usage of the data – will be important to allow and encourage development of applications.
+
+2.      Municipal Infrastructure Data: Riders also need information about a variety of information about various municipal infrastructure elements (e.g. sidewalks, pedestrian crossing signals, ramps, etc.) in order to effectively navigate municipalities and complete their transit journeys.  Having clear policies that require entities and agencies to make a variety of static and real-time municipal infrastructure data widely available  – in addition to any routing engines, APIs and other functionality to enable usage of the data – will be important to allow and encourage development of applications.
+
+3.      Point-of-Interest (POI) Data: As municipalities continue creating, collecting, aggregating and providing POI accessibility data, entities and agencies need to make the data available to developers – in addition to any routing engines, APIs and other functionality to enable usage of the data – to allow and encourage development of applications. This will not only help riders find POIs that offer accessible services, but will also help grow economic development and improve livability. 
+
+4.      Security & Privacy of Data: While making transportation, municipal infrastructure and POI data available is important, it is equally important to maintain information security and privacy.  While the mainstream concerns about ethics and policy become the same concerns for people with disabilities needing accessible solutions, a broad data governance policy that safeguards the identity of the users and information is required. To not only protect this segment of the society which is dependent on the system and the services being provided, yet at the same time provide protection to those that are vulnerable and weak from becoming easy targets.
+
+ 
+
+The success of any initiative will depend on the institutional and policy issues that affect technical approaches and solutions for implementation of a successful program. An initial institutional and policy assessment should be conducted followed by a Federal Role paper that defines the rules of engagement between different agencies. Creation of open data guidance and privacy white paper to govern these initiatives will be needed.
+
+ 
+
+In addition, the current legal requirements for accessible transit information are unclear, and may be under revision as part of the Department of Justice’s rulemaking on the ADA.  It is possible that federally funded R&D may come under new regulations, or that any federal money spent on implementing transit information systems must comply with relevant accessibility standards.  An effort should be made to clarify the situation.  If there are any new regulatory requirements, an effort should be made to provide technical assistance to both public transit agencies and industry vendors.
+
+ 
+
+Standards
+
+Key Recommendation:
+
+Enhance existing standards or develop new ones to support structured data collection, aggregation, exchange and interoperability for accessible transportation, relevant municipal infrastructure and municipal points-of-interest (POIs), to support innovations in location-based information and services.
+
+ 
+
+While standards exist for sharing transit data such as GTFS, and between vehicles and the roadside devices for Intelligent Transportation Systems (ITS) such as J2735 or IEEE P1609.1, IEEE P1609.2 and IEEE P1609.2 and others, there are no such standards for reporting accessibility data at the levels described in Appendix B in some standard format.  Integrating data from multiple sources, especially in real-time or past-time, requires the need for detailed standards and guidelines. 
+
+•      An overall standards coordination activity needs to be undertaken to indentify gaps and possibilities for integrating accessibility data described in Appendix B into current standard(s) such as GTFS.  If such standards are not able to accommodate such level of detail, then new standard(s) may need to be developed. 
+
+•      The commonly used standard(s) for transportation data (e.g. GTFS) need to be evaluated to determine if accessibility data can be integrated.  If so, the government should encourage development of the standard(s) to accommodate accessibility data (this includes both public transit and the full range of private transportation options).  However, if they cannot, then alternative standard(s) might need to be developed. The availability of such standard(s) will be critical to providing the same level of service and support to people with disabilities as others, especially with developments in ITS.
+
+•      Any standard(s) used for municipal infrastructure data – both authoritative and crowd sourced such as OpenStreetMap – need to be evaluated to determine if accessibility data can be integrated.  If so, the government should encourage development of the standard(s) to accommodate the data. However, if they cannot, then alternative standard(s) might need to be developed. 
+
+•      Other standards for municipal points-of-interest (POI) data (e.g. lodging, restaurants, attractions, parks, etc.) need to be developed.  There are global efforts underway for this (e.g. W3C Points of Interest Working Group).  Also, the efforts of the various accessible city efforts described in this report should inform this activity. 
+
+ 
+
+Data Environment Development
+
+Key Recommendation:
+
+The data environment to support structured data collection, aggregation, exchange and interoperability for accessible transportation, relevant municipal infrastructure and municipal points-of-interest (POIs) needs to be developed, tested, and refined. 
+
+ 
+
+Several new and emerging technology trends have the potential to reshape accessible transportation applications and methods. Access to data from the ITS infrastructure, wireless devices and crowd sourcing, makes it even more powerful and likely that these innovations will make a difference in the lives of people with disabilities. The data captured from diverse sources needs to be integrated, shared, and leveraged by a broad range of researchers, private sector partners, and system operators into an environment that is consistent, reliable and open to everyone. 
+
+ 
+
+However, the development of data environments are not likely or possible until the new needs of the end users and the applications associated with them are understood and imagined. A proposed data environment can encourage the development of new and potentially transformative applications.  In turn, data needs associated with new applications can motivate the enhancement of existing data environments, or the creation of new data environments.  Actual users with disabilities should be involved in such enhancements and designs to understand and meet their needs. Many of these initiatives will require systematic collection and distribution of data over time to realize these objectives. Key government geo-data repositories such as GeoData.gov (http://www.geodata.gov/), the Geospatial One-Stop that serves as a public gateway for improving access to geospatial information and data (sponsored by the Federal Office of Management and Budget, should be considered for this activity. 
+
+Technical & Applied Research
+
+Key Recommendation:
+
+Once policy, standards and data environment are developed, technical and applied research needs to be encouraged and supported, to enable development of innovative applications and solutions. A state of the practice and innovation scan should be undertaken, and technical demonstrations and near-term / long-term development of applications should be supported.  
+
+ 
+
+In the past, initiatives undertaken by different groups have led to the creation of some amazing accessible applications in different cities. These applications, although useful, utilize a variety of technology platforms and data infrastructures. Hence the user interface and experience for persons with disabilities differs from one application to other.  For example, there is a Chicago trip planner that includes accessibility considerations, an application called CitiRoller that helps wheelchair users find accessible transit, and an application called Sendero LookAround which provides accessible GPS for the blind. All of these and many other applications are based on different underlying technologies and uses different data types. 
+
+ 
+
+Similarly, while the state of repair of streets or curbs are known to the authorities, yet the state of repair is unknown to the users since it is not reported to a common database. The accessibility details of streets with accessible pedestrian signals (APS) or tactile guides for cane users, etc should be reported in format that is agreed to a standard.
+
+ 
+
+A state of the practice and innovation scan should be undertaken to conduct a scan of current practices in data and technologies in accessible transportation and other related fields and explore emerging technologies and innovative methods in real-time data collection and distribution. Findings from the scan should be used to create a statement of work for a prototype data environment development that encompasses the data needs of varying users. A concept of operations should be developed to give the users the same human machine interface (HMI) experience with applications across different parts of the USA.
+
+ 
+
+Alignment with already funded projects such as the NARIC Location-Based Information Effort and its predecessor effort should be carefully considered.
+
+ 
+
+Technological advancements could help to empower people with disabilities with their mobility needs.  However, the benefits of such advancement have not reached this segment of the traveling public. The suite of new technologies such as wireless, dedicated short range communication (DSRC), global positioning systems (GPS), mobile computing etc. could be packaged together to come up with innovative ways to help people with disabilities become more mobile and independent.
+
+ 
+
+Depending on the user needs, data environments and underlying technologies, the technical demonstrations and development of applications should be divided in two phases namely nearterm and long-term.  
+
+Technology Transfer & Implementation Support
+
+Key Recommendation:
+
+Novel approaches for transferring the enhanced geo-data policies, standards, and data environments into wider usage in both public and private sector arenas should be supported.  
+
+ 
+
+A technology transfer program for such an initiative will be most successful with support from both public and private sector stakeholders who can work to implement new technologies on multiple platforms and understands the needs of people with disabilities and accessible transportation. The stakeholders should also be able to works across organizational boundaries and interests. In addition, a strong, on-going technology transfer program needs to be in place to support training, implementation and to track performance metrics. 
+
+ 
+
+It is also important to work with various regional programs (e.g. Chicago, San Diego, Northern California, DC, New York, Georgia, etc.) to provide research, coordination and staffing. Such programs could provide an important resource for technology development and transfer if they could be supported and sustained.
+
+ 
+
+Some key guidance from the Geo-Access Challenge includes:
+
+•      Providing an established accessibility governance process to help ensure that products that utilize geo-data are designed with accessibility in mind.
+
+•      Developing and implementing concrete guidance to help product and solution developers build applications that are in line with the new policies, and which utilize the new standards and data environment.
+
+•      Providing funding to and levying requirements on government-funded entities to widely implement applications that support the new policies, and which leverage the new standards and data environment.
+
+ 
+
+As The Administration continues to invest in the building blocks of American innovation, the set of technologies and services described in this report holds much promise.  Other efforts such as the FCC's Accessibility and Innovation Initiative, the movement toward cloud computing, and various open government resources (e.g., GeoData.gov, Data.gov, Challenge.gov, Apps.gov) may provide an optimal platform for engaging the necessary stakeholders and transferring as much as possible into commercial availability, adoption and use.
+
+ 
+
+ 
+
+ 
+
+[]
+
+References
+
+•      American Council of the Blind, Comments submitted to the Office of the Secretary, U.S. Department of Transportation, in response to the Notice of Public Meeting and Extension of Comment Period, DOT Docket ID Number OST-2006-23985, published in the Federal
+
+Register (August 9, 2010) 75 FR 47753 (http://www.acb.org/washington/ACBComments-on-DOT-OST-2006-23985.html) 
+
+•      Barbeau, S., Georggi, N., & Winters, P. (2010). Integration of GPS-Enabled mobile phones and AVL: Personalized real-time transit navigation information on your phone.
+
+Proceedings from Transportation Research Board 2010 Annual Meeting.
+
+(http://www.locationaware.usf.edu/wp-content/uploads/2010/04/TRB2010-Paper.pdf) 
+
+•      Bradwell, P. and Marr, S. Making the Most of Collaboration an International Survey of Public Service Co-Design, DEMOS Report 23. (2008), DEMOS, in association with PriceWaterhouseCoopers (PWC) Public Sector Research Centre, London.
+
+(http://www.demos.co.uk/files/CollabWeb.pdf) 
+
+•      Easter Seals Project ACTION! Universal Design & Accessible Transit Systems: Facts to Consider When Updating or Expanding Your Transit System [PDF]: https://secure2.convio.net/es/site/Ecommerce/639344244?VIEW_PRODUCT=true&prod uct_id=5821&store_id=9663  
+
+•      Ferris, B., Watkins, K., & Borning, A. (2010). OneBusAway: results from providing realtime arrival information for public transit. Proceedings from 28th International Conference on Human Factors in Computing Systems (CHI), Atlanta, Georgia, USA
+
+New York, NY, USA. (http://wiki.onebusaway.org/bin/download/Main/Research/chi2010-onebusaway-paper.pdf) 
+
+•      Golledge, Reginald G., C. Michael Costanzo, James R. Marston (1996). The Mass Transit Needs of a Non-Driving Disabled Population. California PATH Research Report UCB-ITS-PRR-96-9 (http://www.path.berkeley.edu/path/publications/pdf/PRR/96/PRR96-09.pdf)
+
+•      Google, Inc., Accessible Android Blog: http://accessibleandroid.blogspot.com/
+
+•      IBM Human Ability and Accessibility Center, ―IBM mobile web application helps City of Nettuno, Italy become smarter: Visitors and residents with disabilities can navigate historic city more easily‖ (2010, Accessed November 11, 2010) (http://www03.ibm.com/able/news/nettuno.html)
+
+•      IEEE, ―Accessing the Future: A Global Collaborative Exploration for Accessibility in the
+
+Next Decade‖, (2009) Conference in collaboration with IBM Human Ability &
+
+Accessibility Center (http://ewh.ieee.org/conf/accessingthefuture/) 
+
+•      Levinson, David M., Rania Wasfi. The Transportation Needs of People with
+
+Developmental Disabilities (2007). University of Minnesota – Center for Transportation Studies Report no. CTS 07-02
+
+(http://www.cts.umn.edu/Publications/ResearchReports/reportdetail.html?id=1102)
+
+Maccessibility.net, List of Voice-Over Compatible iPhone Apps: http://maccessibility.net/iphone/apps/  
+
+•      National Federation of the Blind, ―GPS Technology for the Blind: A Product
+
+Evaluation,‖ Braille Monitor, February 2006
+
+(http://nfb.org/legacy/bm/bm06/bm0602/bm060206.htm) 
+
+•      Open Street Map (OSM) Accessibility: http://wiki.openstreetmap.org/wiki/Accessibility
+
+•      Open Street Map (OSM) for the Blind: http://wiki.openstreetmap.org/wiki/OSM_for_the_blind  
+
+•      Paulos, Eric, Et. Al. (2008). Citizen science: Enabling participatory urbanism, in Urban informatics: Community integration and implementation, information science reference,
+
+M. Foth, Ed. IGI Global (http://www.urban-atmospheres.net/CitizenScience/) 
+
+•      Roth, Matthew. ―How Google and Portland’s TriMet Set the Standard for Open Transit Data‖ (2010). LA.StreetsBlog.com, accessed November 11, 2010.
+
+(http://la.streetsblog.org/2010/01/08/how-google-and-portland%E2%80%99s-trimet-setthe-standard-for-open-transit-data/) 
+
+•      State of the [Open Street] Map US 2010 Conference: http://wiki.openstreetmap.org/wiki/State_Of_The_Map_U.S._2010
+
+•      Steinfeld, A., Aziz, R., Von Dehsen, L., Park, S. Y., Maisel, J., & Steinfeld, E. (2010). The value and acceptance of citizen science to promote transit accessibility. Journal of Technology and Disability, 22(1-2), 73-81.
+
+(http://www.ri.cmu.edu/publication_view.html?pub_id=6398) 
+
+•      Steinfeld, A., Zimmerman, J., Tomasic, A., Yoo, D., & Aziz, R. (2011). Mobile transit rider information via universal design and crowdsourcing. Proceedings from Transportation Research Board 2011 Annual Meeting.
+
+•      Wheelmap.org - Using OSM for a social cause, by tagging wheelchair-accessible POIs, by Raul Krauthausen & Holger Dieterich, State of the Map 2010; Girona,Spain, July 9th-
+
+11th, 2010. Vimeo Link: http://vimeo.com/13388003  
+
+•      Wheelmap.org (English): http://en.wheelmap.org/
+
+•      Winters, Philip L., Sean Barbeau, and Nevine Labib Georggi. Travel Assistance Device (TAD) to Help Transit Riders: Final Report for Transit IDEA Project 52 (2010). Center for Urban Transportation Research, University of South Florida, Tampa, Florida (http://www.locationaware.usf.edu/wp-content/uploads/2010/05/Transit-IDEA-Project-
+
+52-Travel-Assistance-Device-_TAD_-to-Help-Transit-Riders-Final-Report.pdf) 
+
+•      Yoo, D., Zimmerman, J., Steinfeld, A., & Tomasic, A. (2010). Understanding the space for co-design in riders' interactions with a transit service. Proceedings from 28th International Conference on Human Factors in Computing Systems (CHI).
+
+(http://www.design.cmu.edu/files/yoo_understandingspacecodesignriders.pdf)   
+
+ 
+
+[]
+
+Appendix A: List of Applications Identified or Reviewed
+
+Below is a list of applications that the Geo-Access Challenge Team reviewed during the Challenge.
+
+ 
+
+Applications Supporting Accessible Transportation or POIs
+
+•      CitiRoller by Papa Products in Partnership with Christopher & Dana Reeve Foundation (http://www.citiroller.com). Provides information on accessible public transportation, and points of interest data (accessible restrooms, accessible restaurants, accessible cafés, and wheelchair supply & repair shops) in Boston, New York City, Chicago, San Francisco and Washington, D.C. Registered users can add, rate and comment on new locations in any of our categories. 
+
+•      Project: Possibility - HandiMapplet Project
+
+(http://www.projectpossibility.org/viewProject.php?id=15). Overview: Our innovation seeks to provide an essential service by creating a free, open source solution that can be intuitively accessed by all. Based off of the Google Mapplet, the user will be able to effortlessly search destinations by either address or zip code, and locate the services dedicated for them in the nearby area, namely wheelchair ramps and parking spots. And being open source means anyone can add to the database and expand it to create an up-todate map made by and for the people. Features: Users are able to search for handicapped accessible facilities by typing in an address or zip code and/or a category for the search. Then the database is called to search for the applicable data to display onto the map. At the same time, users can enter information by clicking on the map and entering the info the corresponding fields. Then the data is stored in the database for future use.
+
+•      Sendero GPS LookAround by Sendero Group, LLC
+
+(http://senderogroup.com/products/shopiphone.htm). Announces current street, city, cross street, heading and nearby POIs.
+
+ 
+
+Chicago-Specific iPhone Applications
+
+•      Buster: The Chicago Bus Tracker (http://itunes.apple.com/app/buster-the-chicago-bustracker/id312109511?mt=8) 
+
+•      Chicago "At a Glance" City Guide
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=318698973&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago (http://itunes.apple.com/app/chicago-street-map/id317720014?mt=8) 
+
+•      Chicago (Travelto) (http://www.appolicious.com/tech/apps/53535-chicago-traveltomolinker-inc) 
+
+•      Chicago 2Go
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=344197927&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Guide
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=382223396&mt =8\&ign-mpt=uo%3D6) 
+
+Chicago L Rapid Transit
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=309394759&mt
+
+=8\&ign-mpt=uo%3D6)  Chicago Manual
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=377136141&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Map and Walking Tours
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=350108392&mt =8\&ign-mpt=uo%3D6)  
+
+•      Chicago Map Offline
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=306218218&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Nearest Transit (http://itunes.apple.com/app/chicago-nearesttransit/id331014312?mt=8) 
+
+•      Chicago Northwest
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=363163375&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Parking
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=359070436&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Sights
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=346659869&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Street Map
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=317720014&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Travel Guide – mTrip (http://ax.itunes.apple.com/app/id377136209?mt=8) 
+
+•      Chicago travel guide
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302067567&mt =8\&ign-mpt=uo%3D6) 
+
+•      Chicago Travel Guide Offline
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=388484433&mt =8\&ign-mpt=uo%3D6)   
+
+•      Chicago Way
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=359043352&mt =8\&ign-mpt=uo%3D6) 
+
+•      City Spin – Chicago (http://www.apple.com/webapps/travel/cityspinchicago.html) 
+
+•      CTA Bus Tracker Widget
+
+(http://www.apple.com/downloads/dashboard/transportation/ctabustrackerwidget.html) 
+
+•      EveryBlock
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=313240506&mt =8\&ign-mpt=uo%3D6)   
+
+•      Front Desk Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=375187090&mt =8\&ign-mpt=uo%3D6) 
+
+Guide Map Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=310075984&mt
+
+=8\&ign-mpt=uo%3D6) 
+
+iTrans Chicago CTA (http://itunes.apple.com/app/itrans-chicago-cta/id291510844?mt=8) 
+
+•      iTrans Chicago Metra
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=287015545&mt =8\&ign-mpt=uo%3D6) 
+
+•      Lonely Planet Chicago City Guide
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=324655587&mt =8\&ign-mpt=uo%3D6) 
+
+•      Metro Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=333500801&mt =8\&ign-mpt=uo%3D6) 
+
+•      MultiCam Chicago (http://www.appolicious.com/tech/apps/60674-multicam-chicagostanton-software) 
+
+•      O'Hare Airport Stats – Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=348280503&mt =8\&ign-mpt=uo%3D6) 
+
+•      Smart Maps – Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=330613466&mt =8\&ign-mpt=uo%3D6) 
+
+•      TourSpot Premium Chicago Walking Tour Guide
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=311515933&mt =8\&ign-mpt=uo%3D6) 
+
+•      TransitGenie Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=358001094&mt =8\&ign-mpt=uo%3D6) 
+
+•      TransitGuru Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=375886357&mt =8\&ign-mpt=uo%3D6) 
+
+•      Transitly (http://www.apple.com/webapps/travel/transitly.html) 
+
+•      Travel Chicago
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=350036906&mt =8\&ign-mpt=uo%3D6)
+
+•      Travel to Chicago (http://www.appolicious.com/tech/apps/161845-travel-to-chicagozoltan-krasznai) 
+
+•      Wright Around Chicago 2010
+
+(http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=331836028&mt
+
+=8\&ign-mpt=uo%3D6) 
+
+ 
+
+Chicago-Specific Desktop Applications
+
+•      DIY Bus Tracker Display (http://www.transitchicago.com/developers/diydisplay.aspx) 
+
+•      Bus Tracker Widget for Mac (http://widget.chicagobus.org/) 
+
+Chicago Transit Authority (CTA) Real Time Bus Arrival Gadget
+
+(http://blog.sohigian.com/2010/02/08/chicago-transit-authority-cta-real-time-bus-arrivalgadget/)  
+
+Transitly (http://www.transitly.com/index.jsp?city=Chicago) 
+
+ 
+
+Chicago-Specific Android Applications
+
+•      TreKing (Chicago) (http://www.androidapps.com/tech/apps/311922-treking-chicago-rezmobile) 
+
+•      Chicago Transit Tracker Pro (http://www.androidapps.com/tech/apps/296074-chicagotransit-tracker-pro-jsdf-llc\) 
+
+•      Chicago Transit Tracker Lite (http://www.androidapps.com/tech/apps/296071-chicagotransit-tracker-lite-jsdf-llc\) 
+
+•      TreKing (Chicago) 4 Free (http://www.androidapps.com/tech/apps/311923-trekingchicago-4-free-rez-mobile) 
+
+•      AnyStop: Chicago CTA (http://www.androidapps.com/tech/apps/287632-anystopchicago-cta-bus-brothers) 
+
+•      Chicago Manual (http://www.androidapps.com/tech/apps/314919-chicago-manualmacrender) 
+
+•      CityGuide-Chicago (http://www.androidapps.com/tech/apps/316574-cityguide-chicagofeelsocial) 
+
+•      Find Parking - Compare Rates (http://www.androidapps.com/tech/apps/314381-findparking-compare-rates-bestparking-com) 
+
+•      Transitly (http://www.androidapps.com/tech/apps/311497-transitly-liquid-mongoose) 
+
+•      iTransitBuddy METRA Lite (http://www.androidapps.com/tech/apps/314613itransitbuddy-metra-lite-blue-technology-solutions-llc) 
+
+•      iTransitBuddy Lite (http://www.androidapps.com/tech/apps/314609-itransitbuddy-liteblue-technology-solutions-llc)
+
+•      TransiCast (http://www.androidapps.com/tech/apps/311486-transicast-joa)
+
+•      Lonely Planet Chicago Compass (http://www.androidapps.com/tech/apps/319943-lonelyplanet-chicago-compass-lonely-planet-inc) 
+
+•      US Mobile Guide (http://www.androidapps.com/tech/apps/304780-us-mobile-guideaseanmobile-singapore) 
+
+•      TransitGuru Metra (http://www.androidapps.com/tech/apps/311491-transitguru-metratoccata-technologies-inc) 
+
+ 
+
+Chicago-Specific Blackberry Applications
+
+•      Busberry (http://www.4oh6.com/busberry) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[]
+
+Appendix B: List of Example Data
+
+Below is a list of example data identified by the Geo-Access Challenge Team which is useful in location-based information services and applications.
+
+Mainstream Public Transit
+
+Authoritative Static Public Transit Information
+
+•      GTFS: Agency Information (agency.txt): agency_id, agency_name, agency_url, agency_timezone, agency_lang, agency_phone
+
+•      GTFS: Stops Information (stops.txt): stop_id, stop_code, stop_name, stop_desc, stop_lat, stop_lon, zone_id (for fares), stop_url, location_type (0=stop, 1=station), parent_station
+
+•      GTFS: Routes Information (routes.txt): route_id, agency_id, route_short_name, route_long_name, route_desc, route_type (0 - Tram, Streetcar, Light rail; 1 - Subway, Metro; 2 – Rail; 3 – Bus; 4 – Ferry; 5 - Cable car; 6 - Gondola, Suspended cable car; 7 – Funicular, route_url, route_color, route_text_color
+
+•      GTFS: Trips Information (trips.txt): route_id, service_id, trip_id, trip_headsign, trip_short_name, direction_id (0 - travel in one direction; 1 - travel in the opposite direction), block_id, shape_id
+
+•      GTFS: Stop Times (stop_times.txt): trip_id, arrival_time, departure_time, stop_id, stop_sequence, stop_headsign, pickup_type (0 - Regularly scheduled pickup; 1 - No pickup available; 2 - Must phone agency to arrange pickup; 3 - Must coordinate with driver to arrange pickup), drop_off_type (0 - Regularly scheduled drop off; 1 - No drop off available; 2 - Must phone agency to arrange drop off; 3 - Must coordinate with driver to arrange drop off), shape_dist_traveled
+
+•      GTFS: Calendar (calendar.txt): service_id, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, start_date, end_date            
+
+•      GTFS: Calendar Dates (calendar_dates.txt): service_id, date, exception_type
+
+•      GTFS: Fare Attributes (fare_attributes.txt): fare_id, price, currency_type, payment_method, transfers, transfer_duration
+
+•      GTFS: Fare Rules (fare_rules.txt): fare_id, route_id, origin_id, destination_id, contains_id
+
+•      GTFS: Shapes (shapes.txt): shape_id, shape_pt_lat, shape_pt_lon, shape_pt_sequence, shape_dist_traveled
+
+•      GTFS: Frequencies (frequencies.txt): trip_id, start_time, end_time, headway_secs            
+
+•      GTFS: Transfers (transfers.txt): from_stop_id, to_stop_id, transfer_type, min_transfer_time
+
+•      Stations/ Stops: Stop/Station General Info: Location_type (0=stop, 1=station), ADA accessible (1-yes, 0-no), Description
+
+•      Stations/ Stops: Stops Accessibility (location_type=0): extreme climate protection features (1-yes, 0-no); extreme climate protection type (1-cold, 2-wind, 3-heat); internal clearances for mobility aid users with clear sight lines for approaching vehicles (1-yes, 0no); paratransit designated frequent stop (1-yes, 0-no)
+
+Stations/ Stops: Stations Accessibility (location_type =1): number of accessible wider clearance turnstiles, contactless fare-payment methods (1-yes, 0-no), regional universal fare cards (1-yes, 0-no), time between fare payment and opening/closing of turnstile, realtime information in audible & visual formats (1-yes, 0-no), Number of elevators, Location of elevators, Number of escalators, Location of escalators, Handrails on ramps and stairs, Large-print and tactile-Braille signs, Accessible station booth windows, Accessible ITM/Vending/Fare Card Machines, Platform-edge warning strips, Platform gap modifications or bridge plates to reduce or eliminate the gap between trains and platforms, Telephones at an accessible height with volume control, Text telephones (TTYs), Accessible restrooms at commuter rail stations with restrooms (not all station buildings have restrooms)
+
+•      Vehicles: Vehicle General Info: vehicle_ID, vehicle_Number, vehicle_Type (1-large bus, 2-small bus, 3-light rail, 4-transit rail, 5-intercity rail, 6-ferry, etc.)
+
+•      Vehicles: Lifts/Ramps: lift present (1-yes, 0-no), ramp present (1-yes, 0-no), ramp slope
+
+(1:8, 1:9, 1:10, 1:11, 1:12, etc.), automated bridge / gap plates (1-yes, 0-no)
+
+•      Vehicles: Route ID/Stop Announcements^(^([11])): onboard enunciators (1-automated, 2driver announced, 0-no), variable message signs (1-automated, 2-driver announced, 0-no), route identification (1-automated, 2-driver announced, 0-no)
+
+•      Vehicles: Capacity: Total capacity, Number of on-board wheelchair/accessible seating 
+
+•      Vehicles: Automatic Vehicle Location (AVL) Equipment: AVL present (1-yes, 0-no); If AVL present, vehicle offers audio and visual means of presenting real-time info (1-yes, 0-no)
+
+•      General Contact & Support: Contact phone numbers, contact email addresses, help content
+
+Authoritative Real-Time Public Transit Information
+
+•      Stations/ Stops: stop in service (1-yes, 0-no), stop elevators in service (1-yes, 0-no), stop escalators in service (1-yes, 0-no)
+
+•      Vehicles: vehicle in service (1-yes, 0-no), Lift Operational (1-yes, 0-no), Ramp Operational (1-yes, 0-no), AVL operational (1-yes, 0-no), Vehicle congestion (e.g.
+
+overall fullness of vehicle, number of available wheelchair accessible seating out of total)
+
+•      Routes: route in service (1-yes, 0-no), vehicles on route (vehicle_ID), vehicle real-time location, vehicle real-time ETA, etc.  
+
+Crowd-Sourced Public Transit Information
+
+•      Ratings & Reviews: Stations/Stops Ratings, Stations/Stops Reviews, Vehicle Ratings, Vehicle Reviews, Route Ratings, Route Reviews, Customer Service Ratings, Customer Service Reviews
+
+•      Vehicles: Rider reporting of vehicle fullness, Reporting of vehicle real-time location (to complement AVL technologies)
+
+•      Requests or Inquiries:  Stations/Stops Requests/Inquiries, Vehicle Requests/Inquiries, Route Requests/Inquiries, Customer Service Requests/Inquiries
+
+•      Issue or Problem Reporting:  Stations/Stops Issue/Problem Reporting, Vehicle
+
+Issue/Problem Reporting, Route Issue/Problem Reporting, Customer Service Issue/Problem Reporting Public Paratransit
+
+Authoritative Static Paratransit Information
+
+•      Paratransit Agency Information: ID, Name, Address, Time Zone, Language(s), Phone, TTY, Fax, Email, URL, Overview Description
+
+•      Paratransit Service Areas
+
+•      Paratransit Eligibility / Enrollment: Permanent, temporary, etc.
+
+•      Paratransit Fixed Routes (optional): ID, route short name, route long name, route description, route type, route URL, route color, route text color.
+
+•      Paratransit Fixed Stops (optional): Long/Lat, Address, Description, Location Type (0=stop, 1=station). If location is ―stop‖, then include: extreme climate protection features (1-yes, 0-no); extreme climate protection type (1-cold, 2-wind, 3-heat); internal clearances for mobility aid users with clear sight lines for approaching vehicles (1-yes, 0no). If location is  – or if ―station‖, then include: number of accessible wider clearance turnstiles, contactless fare-payment methods (1-yes, 0-no), regional universal fare cards (1-yes, 0-no), time between fare payment and opening/closing of turnstile, real-time information in audible & visual formats (1-yes, 0-no), Number of elevators, Location of elevators, Number of escalators, Location of escalators
+
+•      Paratransit Fixed Route Stop Times (optional): ID, arrival time, departure time, stop sequence, frequencies, etc.
+
+•      Paratransit Fares: Fare ID, price, currency type, payment method, transfers, transfer duration (and maybe other fare rules)
+
+•      Paratransit Reservations: Manage existing, create new, view, modify, cancel
+
+•      Paratransit Vehicles - General Info: ID, number, type, lift present (1-yes, 0-no), ramp present (1-yes, 0-no), ramp slope (1:8, 1:9, 1:10, 1:11, 1:12, etc.), automated bridge / gap plates (1-yes, 0-no), onboard enunciators (1-automated, 2-driver announced, 0-no), variable message signs (1-automated, 2-driver announced, 0-no), route identification (1automated, 2-driver announced, 0-no), total capacity, Number of on-board
+
+wheelchair/accessible seating, AVL present (1-yes, 0-no); If AVL present, vehicle offers audio and visual means of presenting real-time info (1-yes, 0-no)
+
+•      Paratransit Calendar: ID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, exception dates, exception types, etc.
+
+•      Paratransit General Contact & Support: Contact phone numbers, contact email addresses, help content
+
+Authoritative Real-Time Paratransit Information
+
+•      Vehicles: vehicle in service (1-yes, 0-no), Lift Operational (1-yes, 0-no), Ramp Operational (1-yes, 0-no), AVL operational (1-yes, 0-no), Vehicle congestion (e.g. overall fullness of vehicle, number of available wheelchair accessible seating out of total)
+
+•      Routes: paratransit fixed route in service (1-yes, 0-no), vehicles on route (vehicle_ID), vehicle real-time location (fixed and non-fixed), vehicle real-time ETA, etc.  
+
+•      Fixed Stops (Optional): stop in service (1-yes, 0-no), stop elevators in service (1-yes, 0no), stop escalators in service (1-yes, 0-no)
+
+Crowd-Sourced Paratransit Information
+
+•      Paratransit Ratings & Reviews: Paratransit Fixed Stops Ratings, Paratransit Fixed Stops Reviews, Paratransit Vehicle Ratings, Paratransit Vehicle Reviews, Paratransit
+
+Fixed Route Ratings, Paratransit Fixed Route Reviews, Paratransit Customer Service Ratings, Paratransit Customer Service Reviews
+
+•      Paratransit Vehicles: Rider reporting of paratransit vehicle fullness, reporting of paratransit vehicle real-time location (to complement AVL technologies)
+
+•      Paratransit Requests or Inquiries:  Paratransit Fixed Stop Requests/Inquiries, Paratransit Vehicle Requests/Inquiries, Paratransit Fixed Route Requests/Inquiries, Paratransit Customer Service Requests/Inquiries
+
+•      Paratransit Issues or Problem Reporting:  Paratransit Fixed Stops Issue/Problem Reporting, Paratransit Vehicle Issue/Problem Reporting, Paratransit Fixed Route
+
+Issue/Problem Reporting, Paratransit Customer Service Issue/Problem Reporting
+
+Private Transportation
+
+The following types of data are useful to provide in addition to public transportation, to enable persons with disabilities to take advantage of as many private transportation options as possible.
+
+Authoritative Static Private Transportation Information
+
+•      Community based transport: Provider Information, Service Areas, Eligibility / Enrollment, Routes/Stops, Fares, Reservations, Vehicles - General Info,
+
+Schedule/Calendar/Stop Times, General Contact & Support
+
+•      Rideshares / carpools info: Provider Information, Service Areas, Eligibility / Enrollment, General Contact & Support
+
+•      Accessible taxis/for each company: ID, Name, Address, Language(s), Phone, TTY, Fax, Email, URL, Overview Description
+
+•      Accessible vehicle rentals: Provider Information, Service Areas, Reservations, General Contact & Support
+
+•      Wheelchairs rentals: Provider Information, Service Areas, Reservations, General Contact & Support
+
+•      Airports, Ferry, Helicopter, Rail & Bus: Terminal accessibility, kiosk accessibility, etc.
+
+ 
+
+Authoritative Real-Time Private Transportation Information
+
+•      Sensor or surveillance readings (vehicle / artery congestion)
+
+•      Rideshares and carpools (real-time)
+
+•      Accessible taxis (real-time)
+
+•      Accessible vehicles & wheelchairs (real-time)
+
+Crowd-Sourced Private Transportation Information
+
+•      Service ratings
+
+•      Report issues (vehicle, station/stop, service)
+
+•      Reviews
+
+ 
+
+Municipal Infrastructure & POIs Information
+
+Authoritative Static Municipal Infrastructure & POIs Information
+
+Attractions
+
+These fields are derived from Open Doors Organization’s input… applicable to multiple types of attractions such as gardens, zoos, aquariums, museums, sports viewing centers, theatres and performing arts venues.
+
+•      General Info: Property Name, Description
+
+•      Location: Longitude/Latitude, Address Line 1, Address Line 2, City, State, Zip Code
+
+•      Contact Info: Phone, TTY, Fax, URL, Email, Main Accessibility Contact Name/Title
+
+•      Admission Info: Hours, Admission Fee
+
+•      Parking/Loading Zone: Accessible loading zone (1-yes, 0-no), Valet parking(1-yes,
+
+0-no), Street parking (1-yes, 0-no), Private parking lot/designated accessible spaces
+
+(1-yes, 0-no), Nearest offsite public parking lot/garage (Name, Address, Phone)
+
+•      Shuttle/On-Site: Shuttle provided (1-yes, 0-no), Type/Use, Wheelchair access (1-yes,
+
+0-no), Advance notice required (1-yes, 0-no), Number of securements, Notes
+
+•      Nearest Grassy/Service Animal Relief Area: Type (Onsite, Offsite), If Offsite Provide Location (street address, how far from property in # of blocks)
+
+•      Features for People with Hearing Loss: Assistive listening system available (1-yes, 0-no), Assistive listening devices available from, Sign language interpretation available (1-yes, 0-no, on request, regular schedule), Captioning of
+
+videos/films/performances (1-yes, 0-no, what), Script/text available (1-yes, 0-no, what/where), Portable pager/captioner (1-yes, 0-no, what/where), Strobe alarms in public areas (1-yes, 0-no), Strobe alarms in public areas and restrooms (1-yes, 0-no), Elevator has visual indicators (1-yes, 0-no), Public phone with volume control (1-yes,
+
+0-no), TTY public phones (1-yes, 0-no, locations), Other, Notes
+
+•      Features for People with Vision Loss: Information in alternate formats (1-yes, 0-no), Alternative Format Types (Braille, large print, cassette tape, diskette), Recorded audio tour (1-yes, 0-no), Audio tour languages, Audio description of performances/films (1-yes, 0-no, on request, regular schedule),  Touch exhibits/tours (1-yes, 0-no), Guided tour/orientation (1-yes, 0-no, on request, groups only), Exhibit labels (large print/high contrast/non-glossy labels for exhibits),  Interior signage (large print/high contrast/non-glare), Large print/Braille menu (1-yes, 0-no), Server will
+
+read menu on request (1-yes, 0-no), Height clearance at least 80" (1-yes, 0-no), Undetectable protruding objects in path of travel (1-yes, 0-no),  Braille/tactile signage
+
+(1-yes, 0-no, restroom, elevator controls, hoistways), Elevator has audible indicators (1-yes, 0-no), Notes
+
+•      Features for People with Mobility Impairments: Entry/Secondary entrance is wheelchair accessible (not a service entrance) (1-yes, 0-no), Entry/Location, Level entry (1-yes, 0-no), Ramped entry (1-yes, 0-no), Platform lift (1-yes, 0-no, selfoperated or bell for assistance), Door has at least 32‖ clearance (1-yes, 0-no), Threshold less than 1/2‖ beveled (1-yes, 0-no), 2 doors in series – adequate space between (1-yes, 0-no), 2 doors in series – limited space between (1-yes, 0-no), Automatic or push button door (1-yes, 0-no), Easy grasp/lever handle or none (1-yes,
+
+0-no), Assistive Equipment for Guests with Physical Disabilities (1-yes, 0-no),
+
+Assistive Equipment Type (Wheelchair, Scooter, Available from),
+
+Interior/Corridor/path of travel at least 36‖ wide (1-yes, 0-no), Interior/Ramps provide access to one or more areas (1-yes, 0-no, what/where),  Interior/Platform lift provides access to one or more areas (1-yes, 0-no, what/where), Interior/Push-button doors (1-yes, 0-no), Interior/Inaccessible areas (description, include features such as heavy doors), Interior/Notes; Exterior/Corridor/path of travel at least 36" wide (1-yes, 0-no), Exterior/Stable/non-slip surface (1-yes, 0-no), Exterior/Surface material (paved, brick, pavers, gravel, hard-packed earth, grass), Exterior/Steep slopes in some areas (1-yes, 0-no), Restaurant or Café/Name, Restaurant or Café/Accessible restroom in or near the restaurant (1-yes, 0-no),  Restaurant or Café/Accessible tables/buffet 36" high or less (1-yes, 0-no), Restaurant or Café/Type (lunch room, food court, bar/lounge), Restaurant or Café/bar/lounge (Accessible tables or coffee type tables, Restaurant or Café/Table service available – 1-yes, 0-no for each), Visitor Center/Information Counter—36" max. (1-yes, 0-no), Visitor Center/Ticketing—36" max. counter/section (1-yes, 0-no), Visitor Center/Brochure rack (1-yes, 0-no), Visitor Center/Gift shop (1-yes, 0-no), Visitor Center/Sales counters 36" max. counter or section (1-yes, 0-no), Visitor Center/Space to turn and maneuver (1-yes, 0-no), Visitor Center/Seating (chairs/benches, chairs/benches with arms), Visitor
+
+Center/Public Phone—54" max. to top control for side approach (1-yes, 0-no), Visitor
+
+Center/Drinking Fountain (1-yes, 0-no), Visitor Center/ATM (1-yes, 0-no), Visitor Center/Other, Visitor Center/Notes
+
+•      Performance Space(s) / Repeat for Each Space: Name/Location, Fixed seating (1yes, 0-no), Moveable seating (1-yes, 0-no), Wheelchair seating (1-yes, 0-no, Number,
+
+Locations), Companion seating (1-yes, 0-no, Fixed-alongside, Moveable-alongside), Aisle seats with moveable/swing arms (1-yes, 0-no), Wheelchair access to stage/playing area (1-yes, 0-no), Wheelchair access to backstage (1-yes, 0-no), Wheelchair access to luxury boxes (1-yes, 0-no)
+
+•      Exhibits / Repeat for Each Space: On accessible route (1-yes, 0-no), Space to approach/view/maneuver (1-yes, 0-no), Freestanding cases 36"-39" max. (1-yes, 0no), Wall hung cases 36-39" max. bottom level (1-yes, 0-no), Wall hung displays 54" to center line (1-yes, 0-no), Items viewed from above, 36" to top of item/case (1-yes, 0-no), Interactive displays are wheelchair accessible (1-yes, 0-no), Interactive displays have easy to use controls (1-yes, 0-no),  Labels are viewable from seated position (1-yes, 0-no)
+
+•      Elevators: Present (1-yes, 0-no), Facilities on one level only (1-yes, 0-no), Door clearance at least 36‖ (1-yes, 0-no), Car size at least 54‖ x 80‖ (1-yes, 0-no), Door type (centered, 54‖ x 68‖ with side door), Elevator controls 54‖ or less (1-yes, 0-no), Notes (include list of levels not accessible by elevator)
+
+•      Café/Restaurant / Repeat for Each: Present (1-yes, 0-no), Menu on sign/wall only
+
+(1-yes, 0-no), Counter service only (1-yes, 0-no), Staff will assist/carry food to table (1-yes, 0-no), Cafeteria/buffet line on accessible path of travel (1-yes, 0-no), Counter/buffet 36‖ high or less (1-yes, 0-no), Tray slides 34‖ high or less (1-yes, 0no), Self-serve machines in reach—48‖ or less from floor (1-yes, 0-no), Pay at table or cashier counter 36‖ high or less (1-yes, 0-no), Wheelchair accessible tables/knee clearance at least 27‖ high by 30‖ wide (1-yes, 0-no), Wheelchair accessible tables/surface no more than 34‖ high (1-yes, 0-no), Wheelchair accessible
+
+tables/pedestal does not block toe clearance (1-yes, 0-no), 36‖ path to/between tables (1-yes, 0-no), Chairs with arms (1-yes, 0-no)
+
+•      Bar/Lounge / Repeat for Each: Present (1-yes, 0-no), Accessible entry (1-yes, 0-no),
+
+36‖ path of travel to/between tables/stools (1-yes, 0-no), Wheelchair accessible tables available (1-yes, 0-no), Coffee tables available (1-yes, 0-no), High bar/stools only (1yes, 0-no), Table service available (1-yes, 0-no), Chairs with arms (1-yes, 0-no)
+
+•      Restrooms: Men’s and Women’s (1-yes, 0-no),  Unisex/Single Use (1-yes, 0-no), Location, Access symbol identifies facility (1-yes, 0-no), Entry door at least 32‖ clearance (1-yes, 0-no), Threshold less than 1/2" beveled (1-yes, 0-no), Space in restroom to maneuver  (1-yes, 0-no, 5’ by 5’ or T-shaped space to turn), Stall door at least 32‖ clearance (1-yes, 0-no),  Stall door swings out or has clearance beyond door swing (1-yes, 0-no), Grab bar behind and alongside toilet (1-yes, 0-no), Lateral transfer space at least 30‖ wide (1-yes, 0-no), Toilet height 17‖ to 19‖ (1-yes, 0-no), Ambulatory stall—grab bars on both sides of raised toilet (1-yes, 0-no), Roll under sink with knee clearance at least 27‖ high and 30‖ wide (1-yes, 0-no), Insulated sink pipes (1-yes, 0-no), Mirror 40‖ or less from floor or tilted (1-yes, 0-no), Towels/soap/vending within reach—48‖ or less from floor (1-yes, 0-no), Faucet controls automatic or lever type (1-yes, 0-no), Latch operable with closed fist (1-yes, 0-no), Easy grasp/lever handle or none (1-yes, 0-no), Notes
+
+Hotels & Lodgings
+
+•      General Info: Property Name, Description, Price Category, Smoke-Free Property
+
+•      Location: Longitude/Latitude, Address Line 1, Address Line 2, City, State, Zip Code
+
+•      Contact Info: Phone, TTY, Toll-Free, Fax, URL, Email, Main Accessibility Contact Name/Title
+
+•      Wheelchair-Adapted Room Types: Standard, Suite, Smoking, Non-Smoking, Ground Floor, Connecting, 1 bed (size), 2 beds (size), 1 bed + sofa bed, 2 beds + sofa bed
+
+•      Reservations/Customer Service: Block accessible rooms when reserved, Reserve adaptive equipment in advance, Provide ongoing staff sensitivity training, Room service available, Laundry service available
+
+•      Shuttle: No shuttle provided, Property has wheelchair accessible shuttle, Property will arrange wheelchair accessible transport with advance notice (free or same price as standard shuttle)
+
+•      Parking/Loading Zone: Accessible loading zone (1-yes, 0-no), Valet parking(1-yes,
+
+0-no), Street parking (1-yes, 0-no), Private parking lot/designated accessible spaces
+
+(1-yes, 0-no), Nearest offsite public parking lot/garage (Name, Address, Phone), Notes
+
+•      Safety: Written evacuation procedure for guest with disabilities, Staff trained on how to evacuate guests with disabilities, Guests with disabilities are flagged in computer,
+
+Printout/list of guests with disabilities is created each day/shift, Area of safe rescue (emergency evacuation area), Notes
+
+•      Features for People with Service Animals: Nearest grassy/dog relief area, Location
+
+•      Features for People with Hearing Loss: Strobe fire alarms in public areas/hallways, Strobe fire alarms in restrooms, Strobe fire alarms in accessible guest rooms, TTY for guest room, TTY for staff, Visual alert for door, Visual alert for phone, Strobe smoke detector, Vibrating alarm clock, Volume control on guest room phones, Volume control public phone, TTY public phone, Visual indicators in elevator, Other Notes
+
+•      Features for People with Vision Loss: Braille/Tactile Signage on elevator controls, Braille/Tactile Signage on hoistways, Braille/Tactile Signage on restrooms,
+
+Braille/Tactile Signage on guestrooms, Braille/Tactile Signage on emergency exits, Hotel information in alternate format Braille, Hotel information in alternate format large print, Hotel information in alternate format cassette, Hotel information in alternate format phone recording, Room service menu in Braille/large print, Restaurant menu in Braille/large print, Orientation to public areas/guestroom, Elevator has audible indicators, Height clearance at least 80‖, No undetectable protruding objects in path of travel, Higher watt bulbs on request, Nearest grassy/dog relief area, Other Notes
+
+•      Features for People with Mobility Impairments: Accessible Entrance/Secondary entrance is wheelchair accessible (not a service entrance), Accessible Entrance/     Location, Accessible Entrance/Level entry, Accessible Entrance/Ramped entry, Accessible Entrance/Platform lift—self-operated or bell for assistance, Accessible
+
+Entrance/Door has at least 32‖ clearance, Accessible Entrance/Threshold less than 1/2‖ beveled, Accessible Entrance/2 doors in series—adequate space between, Accessible Entrance/2 doors in series—limited space between, Accessible Entrance/Automatic or push button door, Accessible Entrance/Easy grasp/lever handle or none, Notes
+
+•      Lobby/Reception: Lowered counter/section, Secondary desk or clip board for checkin, Lowered concierge desk, Chair with arms, Brochures in reach—54" max. for side approach, Notes
+
+•      Assistive Equipment for Guests with Physical Disabilities: Wheelchair, Shower bench, Shower chair (with back), Shower stool, Toilet riser, Commode, Step Stool, Kit for Persons of Short Stature, Mini-refrigerator all rooms or on request, Other notes
+
+•      Accessible Restaurants and Bars: Restaurant or Breakfast Room—Name, Accessible restroom in or near the restaurant, Accessible tables, buffet 36" high or less, Bar—Name,  Accessible tables or coffee type tables, Table service available
+
+•      Accessible Facilities: Fitness Room Available, Fitness Room/Hand weights available, Pool Available, Pool/lift, Pool/steps and rails, Pool/ladder only, Pool/Spa or
+
+Hydraulic table, Pool/steam room, Pool/sauna, Pool/shower, Pool/toilet, Pool/Jacuzzi,
+
+Locker Room or Changing Facilities Available, Locker Room or Changing
+
+Facilities/Accessible lockers, Locker Room or Changing Facilities/changing bench,
+
+Locker Room or Changing Facilities/shower, Locker Room or Changing
+
+Facilities/toilet, Locker Room or Changing Facilities/sink, Ice Machine Available,
+
+Laundry Room Available, Laundry Room/Some machines not accessible, Laundry
+
+Room/Assistance available, Business center available, Business Center/Accessible,
+
+Internet Available, Internet/Lobby or Public Areas, Internet/In-Room Wired or WiFi,
+
+Meeting rooms, Public Phone: 54" max. to top control for side approach, Drinking Fountain
+
+•      Accessible Public Restroom: Men’s and Women’s, Single Use—Men's and
+
+Women's, Location, Entry door at least 32‖ clearance, Threshold less than 1/2" beveled, Space in restroom to maneuver—5’ by 5’ or T-shaped space to turn,  Stall door at least 32‖ clearance, Stall door swings out or has clearance beyond door swing, Grab bar behind and alongside toilet, Lateral transfer space at least 30‖ wide, Toilet height 17‖ to 19‖,  Ambulatory stall—grab bars on both sides of toilet, Roll under sink with knee clearance at least 27‖ high and 30‖ wide, Insulated sink pipes, Mirror 40‖ or less from floor or tilted, Towels/soap/vending within reach—48‖ or less from floor, Faucet controls automatic or lever type, Latch operable with closed fist,  Easy grasp/lever handle or none, Notes
+
+•      Elevator: Elevator available, Elevator not accessible—Accessible guestrooms on ground floor, Door clearance at least 36‖, Car size at least 54‖ x 80‖ with centered door or 54‖ x 68‖ with side door, Elevator controls 54‖ or less
+
+•      Guestrooms: Room Number, Location (Near elevator/lobby), Room Type (Standard, Suite, Connecting room, Balcony (accessible/not accessible), Bed Type/Features (1 king bed, 1 queen bed, 1 full bed, 2 full beds, Bed height, Open frame bed, Platformtype bed, 36" space on at least one side of bed), Sofa bed available, Entry (Door has at least 32‖ clearance, Threshold less than 1/2‖ beveled, Lever handles, Door weight 5 lb. max, Maneuvering clearance inside door 18" min., Lowered peephole), Maneuverability (Space to maneuver/turn, 36" path to all elements, 36" path to all elements except), Phone/light in reach of bed, Lowered controls/amenities (door locks, thermostat, electric sockets, light switches, drapery pulls, room safe, closet rod, iron/board), Desk/table has 27" knee clearance, No tight grasping/twisting (door locks, light switches, drawer pulls), Window opens, Notes
+
+•      Guest Bathrooms: Door has at least 32‖ clearance, Door swings out/slides or has clearance beyond door swing, Lever/easy grasp door handles, Threshold less than 1/2‖ beveled, Space to maneuver—5’ by 5’ or T-shaped space to turn, Roll under sink with knee clearance at least 27‖ high and 30‖ wide, Insulated sink pipes, Faucet controls automatic or lever type, Mirror 40‖ or less from floor or tilted, Lowered amenities (hair dryer, robe hook, towels), Grab bar behind and alongside toilet, Lateral transfer space at least 30‖ wide, Toilet height 17‖ to 19‖, Roll-in shower (Level entry, Fold down bench in reach of controls, Fold down bench—not in reach of controls), Tub-shower combination, Transfer shower (36" x 36") with bench, Hand held shower head, Tub or shower controls are lever/easy grasp, Grab bars in tub or shower—on ? walls, Notes
+
+Restaurants 
+
+•      General Info: ID, Name, Description, Type, Hours, Food Specialities/Cuisine
+
+•      Accessibility Inspection Info: Inspector Name, Date, Notes
+
+•      Location: Area/Neighborhood, Longitude/Latitude, Address Line 1, Address Line 2, City, State, Zip Code
+
+•      Contact Info: Phone, TTY, Fax, URL, Email, Main Accessibility Contact Name/Title 
+
+•      Parking/Loading Zone: Accessible loading zone (1-yes, 0-no), Valet parking(1-yes,
+
+0-no), Street parking (1-yes, 0-no), Street Parking/Designated Space Nearby (1-yes, 0-no), Street parking/notes, Private parking lot or garage (1-yes, 0-no), Private parking lot or garage/near accessible entrance (1-yes, 0-no), Private parking lot or garage/98‖ min clearance (1-yes, 0-no), Private parking lot or garage/accessible car spaces (number, 96‖ + 60‖/Other size, No Aisle, Sign with access symbol/just painted in space), Private parking lot or garage/accessible van spaces (number, 96‖ + 96‖/Other size, No aisle/give size, Sign with access symbol/VanSign/just painted in space), Nearest offsite public parking lot/garage (Name, Longitude/Latitude, Address, Phone)
+
+•      Approach Routes, Walks and Curbs: Stable, firm, slip resistant surface (1-yes, 0no), Approach routes have level access/curb cuts (1-yes, 0-no), Min. 36" wide (1-yes, 0-no, if no give width), Sidewalk slope max 1:20 (1-yes, 0-no), Ramp/curb cut max 1:12 (1-yes, 0-no), Access route from parking, Access route public sidewalk, Access route loading zone, Notes
+
+•      Reservations/Customer Service: Opening Hours, Days Closed, Advance
+
+Reservations (1-yes, 0-no), By Phone (1-yes, 0-no), By Fax (1-yes, 0-no), By E-mail
+
+(1-yes, 0-no), By TTY (1-yes, 0-no), Wheelchair Available (1-yes, 0-no), Other
+
+Assistive Devices (List) (1-yes, 0-no), Vibrating Pagers Alert Table is Ready (1-yes,
+
+0-no), Ongoing Staff Sensitivity Training (1-yes, 0-no), Staff Will Guide Blind Guests On Request (1-yes, 0-no), Guide Dogs/ Service Animals Welcome (1-yes, 0no), Brighter Table/Section Lighting On Request (1-yes, 0-no), Quieter Table/ Section On Request (1-yes, 0-no), Strobe Alarms Dining/Bar Area (1-yes, 0-no),
+
+Strobe Alarms Restroom (1-yes, 0-no), Public Phone/In Reach Range (1-yes, 0-no), Public phone/volume control (1-yes, 0-no), Notes
+
+•      Menu/Food Service: Menu Online (1-yes, 0-no), Menu in Phone Book (1-yes, 0-no), Braille Menu (1-yes, 0-no), Large Print Menu (1-yes, 0-no), Menu Posted On
+
+Wall/Sign Only (1-yes, 0-no), Handwritten Board Only (1-yes, 0-no), Specials Verbal
+
+Only (1-yes, 0-no), Staff Will Read Menu On Request (1-yes, 0-no), Counter Service
+
+Only (1-yes, 0-no), Cafeteria Line (1-yes, 0-no), Buffet Table/Salad Bar (1-yes, 0-no),
+
+Staff Will Assist/ Carry Tray to Table (1-yes, 0-no), Food Items Labeled/large print
+
+(1-yes, 0-no), Special Diets (List), Delivery Service Available  (1-yes, 0-no), Notes
+
+•      Entrance: Main Accessible (1-yes, 0-no), Secondary Accessible (1-yes, 0-no), Location, Redirect signage/if main inaccessible (1-yes, 0-no), Not Service entrance,
+
+Level Entry (1-yes, 0-no), Steps in addition to accessible route/handrails (1-yes, 0-no), Steps in addition to accessible route/edge contrast (1-yes, 0-no), Ramp/width OK (1yes, 0-no), Ramp/landings OK (1-yes, 0-no), Ramp/handrails  (1-yes, 0-no), Ramp/edge guard (1-yes, 0-no), Ramp/height and length and slope, Platform lift/selfoperated (1-yes, 0-no), Platform lift/bell or phone for assistance (1-yes, 0-no), Notes
+
+•      Entry Door: 32‖ min. (1-yes, 0-no), Threshold OK/1/2‖ max. beveled (1-yes, 0-no), 2 doors in series/clearance between OK (1-yes, 0-no), Double doors/32‖ min. each panel (1-yes, 0-no), Manual/weight OK (1-yes, 0-no), Manual/Easy grasp lever or handle (1-yes, 0-no), Maneuvering Clearance OK (18" pull, 12" push), Fully
+
+Automatic (1-yes, 0-no), PushButton/PowerAssist (1-yes, 0-no), Revolving
+
+Door/button to slow (1-yes, 0-no), Revolving door/manual alongside (1-yes, 0-no), Doorman (1-yes, 0-no), Notes 
+
+•      Interior Access: WC Access Route to all Facilities/Areas (1-yes, 0-no), List Facilities Not on WC Access Route, Width 36‖ Min. (1-yes, 0-no), Firm/Nonslip
+
+Surface (1-yes, 0-no), Height clearance 80" (1-yes, 0-no), No >4" Protruding Objects
+
+27-80"  (1-yes, 0-no, Ramp/width OK (1-yes, 0-no), Ramp/landings OK (1-yes, 0-no), Ramp/handrails  (1-yes, 0-no), Ramp/edge guard (1-yes, 0-no), Ramp/height and length and slope, Platform lift/self-operated (1-yes, 0-no), Platform lift/bell or phone for assistance (1-yes, 0-no), Elevator/Door 36‖ min (1-yes, 0-no), Elevator/car size OK (1-yes, 0-no), Elevator/low controls 48‖max (1-yes, 0-no), Elevator/Braille and tactile signage (1-yes, 0-no), Elevator/visual indicators (1-yes, 0-no), Elevator/audible indicators (1-yes, 0-no), Elevator/special type (List), Notes
+
+•      Dining Area: Accessible Entry (1-yes, 0-no), 36" Path Between Tables (1-yes, 0-no), Access to Min. 5% of Tables/Seating (1-yes, 0-no), Chairs with Arms (1-yes, 0-no), WC Accessible Tables 28-34‖ knee/toe clear (1-yes, 0-no), Booth Seating Only (1yes, 0-no), Interior Steps/all Amenities on Accessible Level (1-yes, 0-no), Cafeteria/Buffet Line on accessible route (1-yes, 0-no), Counter/Buffet 36" max (1yes, 0-no), Self-Serve Machines In Reach (1-yes, 0-no), Tray Slides 34" max (1-yes,
+
+0-no), Pay At Table (1-yes, 0-no), Cashier counter 36‖ max. (1-yes, 0-no), Notes
+
+•      Bar Area: Bar Area (1-yes, 0-no), Accessible Entry (1-yes, 0-no), 36" Path Between Tables (1-yes, 0-no), Access to Min. 5% of Tables/Seating (1-yes, 0-no), High
+
+Bar/Stools Only (1-yes, 0-no), Coffee Tables 15‖minAFF (1-yes, 0-no), WC Accessible Tables 28-34‖, knee/toe clear (1-yes, 0-no), Chairs With Arms (1-yes, 0no), Table Service Available (1-yes, 0-no), Bar Menu Available (1-yes, 0-no), Notes
+
+•      Public Restrooms I: WC Unisex/Single Use (1-yes, 0-no), WC Stall in
+
+Men's/Women's (1-yes, 0-no), Access Symbol (1-yes, 0-no), Braille/Tactile Signage
+
+(1-yes, 0-no), Entry Door Accessible (1-yes, 0-no), Easy Grasp/Lever Door Hardware
+
+(1-yes, 0-no), Threshold OK (1-yes, 0-no), Door Weight 5 lb. Max (1-yes, 0-no),
+
+Maneuver Clearance, Space in Room To Maneuver/Turn (1-yes, 0-no),
+
+Towels/Soap/Vending Within Reach (1-yes, 0-no), Lever/Automatic Sink Controls
+
+(1-yes, 0-no), Sink Knee Clearance 27" AFF min (1-yes, 0-no), Insulated Sink Pipes
+
+(1-yes, 0-no), Mirror 40" AFF (1-yes, 0-no), Notes
+
+•      Public Restrooms II: WC Stall Door Or Unisex Door Swings Out (1-yes, 0-no), Swings In But Clearance OK (1-yes, 0-no), Stall door 32" Min (1-yes, 0-no, if no list clearance width), Diagonal to Toilet (1-yes, 0-no), Door Pulls--Both sides (1-yes, 0no), Easy Grasp Latch (1-yes, 0-no), WC Stall 60" x 58/60" (1-yes, 0-no, if no list size), Raised toilet 17-19" (1-yes, 0-no), Lateral Transfer 30‖ x 48‖ (1-yes, 0-no), Auto Flush/Open Side (1-yes, 0-no), Paper in Reach (1-yes, 0-no), Grab Bar Rear
+
+Wall 33-36" AFF 36" long (1-yes, 0-no), Grab Bar Side 33-36‖ 42" min long (1-yes, 0-no), Ambulatory Stall/2 Side Grab Bars/60" x 35-37" Min (1-yes, 0-no), Lowered urinal 17" rim (1-yes, 0-no), Notes
+
+Shopping
+
+•      Name
+
+•      Description of Offering
+
+•      Contact Info: Address, Longitude/Latitude, Phone, TTY, Fax, URL
+
+Tours
+
+•      Name
+
+•      Description of Offering
+
+•      Contact Info: Address, Longitude/Latitude, Phone, TTY, Fax, URL
+
+Disability Services Organizations or Centers
+
+•      Name
+
+•      Description of Offering
+
+•      Contact Info: Address, Longitude/Latitude, Phone, TTY, Fax, URL
+
+Nightclubs
+
+Same as restaurants…
+
+Recreation
+
+•      Name
+
+•      Description of Offering
+
+•      Contact Info: Address, Longitude/Latitude, Phone, TTY, Fax, URL
+
+Accessible Municipal infrastructure
+
+•      Tactile paving tags
+
+•      Tactile maps tags
+
+•      Pedestrian crossings with/without acoustic guidance
+
+•      Traffic signals with sound/vibration/floor vibration/arrows/minimaps
+
+•      Sloped curbs
+
+•      Pedestrian crossings with islands
+
+•      Wheelchair driver/pedestrian routes
+
+•      Accessible parking
+
+•      Parking lanes
+
+•      Bicycle lanes
+
+•      Pedestrian lanes/walkways
+
+Authoritative Real-Time Municipal Infrastructure & POIs Information
+
+•      Real-time info for Accessible Municipal infrastructure (e.g. construction / closings)
+
+Crowd-Sourced Municipal Infrastructure & POIs Information
+
+•      Suggest new / edited authoritative POI info
+
+•      Service ratings for POIs
+
+•      Reviews for POIs
+
+•      Tags for Accessible Municipal infrastructure 
+
+•      Tactile paving tags
+
+•      Tactile maps tags
+
+•      Pedestrian crossings with/without acoustic guidance
+
+•      Traffic signals with sound/vibration/floor vibration/arrows/minimaps
+
+•      Sloped curbs
+
+•      Pedestrian crossings with islands
+
+•      Wheelchair driver/pedestrian routes
+
+•      Accessible parking
+
+•      Parking lanes
+
+•      Bicycle lanes
+
+•      Pedestrian lanes/walkways
+
+•      Service ratings for Accessible Municipal infrastructure
+
+•      Reviews for Accessible Municipal infrastructure
+
+[]
+
+Appendix C: Funding Policies for Data-Enabled Travel
+
+ 
+
+When governments fund transportation-related agencies or projects, recipients should be obligated to produce (1) open, inclusive data and (2) Section 508-compliant technologies.  
+
+ 
+
+Open, Inclusive Data
+
+ 
+
+Data should be available in standard formats.  It should be free to obtain and use by any developer.  It should include (1) static and real time transit data (e.g., bus routes and current locations), (2) municipal infrastructure data (e.g., recreational parks and shopping malls), and (3) data about accessibility points of interest (POIs, explained subsequently).  
+
+ 
+
+In evaluating "open data" policies and practices, factors should include the existence of developer-oriented support pages on a transit authority's web site, the use of data formats such as the General Transit Feed Specification (GTFS), and the availability of real-time data APIs as web services.  The following web site is a source of information about such considerations:
+
+http://OpenTransitData.org
+
+ 
+
+Also of value is "inclusive data," which integrates POIs that support accessible travel by people with disabilities. Such data might provide, for example, locations of audible pedestrian signals, subway stations with working elevators, or facilities with emergency strobe lights.  If a project includes crowd-sourced-data, then that data should be inclusive as well.
+
+ 
+
+Section 508-Compliant Technologies
+
+ 
+
+Web, desktop, mobile, and kiosk apps built for the public, as well as hardware installed or distributed for use by the public should incorporate user interfaces that comply with the accessibility standards of Section 508 of the Rehabilitation Act.  These federal standards are described at the following web site: http://access-board.gov/508.htm
+
+ 
+
+Such technologies should support user benefits from accessible POIs as well as other data.
+
+ 
+
+------------------------------------------------------------------------
+
+[1] National Federation of the Blind, ―GPS Technology for the Blind: A Product Evaluation,‖ Braille Monitor,
+
+February 2006 (http://nfb.org/legacy/bm/bm06/bm0602/bm060206.htm) (accessed November 8, 2010)
+
+ 
+
+[2] The White House - Office of Management and Budget Circular No. A-16 Revised:
+
+http://www.whitehouse.gov/omb/circulars_a016_rev  
+
+ 
+
+[3] Roth, Matthew. ―How Google and Portland’s TriMet Set the Standard for Open Transit Data‖ (2010). LA.StreetsBlog.com, accessed November 11, 2010. (http://la.streetsblog.org/2010/01/08/how-google-andportland%E2%80%99s-trimet-set-the-standard-for-open-transit-data/) 
+
+ 
+
+[4] IBM Human Ability and Accessibility Center, ―IBM mobile web application helps City of Nettuno, Italy become smarter: Visitors and residents with disabilities can navigate historic city more easily‖ (2010, Accessed November 11, 2010) (http://www-03.ibm.com/able/news/nettuno.html) 
+
+ 
+
+[5] Kaplan, Andreas M.; Michael Haenlein (2010). "Users of the world, unite! The challenges and opportunities of Social Media". Business Horizons 53 (1): 59–68. doi:10.1016/j.bushor.2009.09.003. ISSN 0007-6813.
+
+http://www.sciencedirect.com/science/article/B6W45-4XFF2S0-1/2/600db1bd6e0c9903c744aaf34b0b12e1. Retrieved 2010-11-08.
+
+ 
+
+[6] Social Media Today, Location-based Services: The Hottest Segment in Social Media, October 7, 2010 by Eric
+
+Miltsch: http://socialmediatoday.com/ericmiltsch/198296/location-based-services-hottest-segment-social-media  
+
+[7] Richard Fairhurst (2008-01-07). "The license: where we are, where we’re going". OpenGeoData. (http://www.opengeodata.org/?p=262). Retrieved 2008-07-24.
+
+ 
+
+[8] Paulos, Eric, Et. Al. (2008). ―Citizen science: Enabling participatory urbanism‖, in Urban informatics: Community integration and implementation, information science reference, M. Foth, Ed. IGI Global (http://www.urbanatmospheres.net/CitizenScience/) 
+
+ 
+
+[9] Bradwell, P. and Marr, S. ―Making the Most of Collaboration an International Survey of Public Service Co-
+
+Design,‖ DEMOS Report 23 (2008). DEMOS, in association with PriceWaterhouseCoopers (PWC) Public Sector Research Centre, London. (http://www.demos.co.uk/files/CollabWeb.pdf)
+
+ 
+
+[10] Steinfeld, A., Aziz, R., Von Dehsen, L., Park, S. Y., Maisel, J., & Steinfeld, E. (2010). Modality preference for rider reports on transit accessibility problems. Transportation Research Board 2010 Annual Meeting. Washington, DC: Transportation Research Board (http://www.cs.cmu.edu/~astein/pub/Steinfeld_TRB09_final_lowres.pdf) 
+
+ 
+
+[11] See: http://www.dredf.org/ADAtg/stop.shtml. Route ID/stop announcements must be made at: (1) Transfer points with other fixed routes; (2) Other major intersections and destination points; (3) Intervals along a route sufficient to permit individuals who are blind or have vision impairments or other disabilities to be oriented to their location; and (4) Any requested stop). 
+
+ 

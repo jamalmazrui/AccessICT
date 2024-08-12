@@ -1,0 +1,658 @@
+﻿Guide to Designing Accessible Websites
+
+
+[]
+
+ 
+
+ 
+
+Mada and Webaim Guide to Web Accessibility
+
+[][] 
+
+Mada Assistive Technology Center
+
+Tel: 00 974 44594050
+
+Fax: 00 974 44594051
+
+Email: info@mada.org.qa
+
+ 
+
+ 
+
+ 
+
+           
+
++-----------------------------------------------------------------------+
+| MADA                                                                  |
+|                                                                       |
+| CENTER                                                                |
+|                                                                       |
+| AND                                                                   |
+|                                                                       |
+| WEBAIM                                                                |
++-----------------------------------------------------------------------+
+
+GUIDE TO DESIGNING ACCESSIBLE WEBSITES
+
+[] 
+
+[]
+
+ 
+
+ 
+
+Contents
+
+Introduction......................................................................................................................... 3
+
+The Guide to Web Accessibility....................................................................................... 3
+
+Web Accessibility Principles Motivations to Create Accessible Web Content.......... 6
+
+Understanding the User's Perspective and Needs................................................... 8
+
+Moving Beyond Technical Accessibility....................................................................... 9
+
+Focusing on the Principles of Accessibility.............................................................. 11
+
+Principles of Accessibility............................................................................................ 11
+
+Provide appropriate alternative text...................................................................... 11
+
+Content is well structured and clearly written...................................................... 12
+
+Help users navigate to relevant content............................................................... 12
+
+Provide headers for data tables............................................................................ 12
+
+Do not rely on color alone to convey meaning.................................................... 12
+
+Ensure users can complete and submit all forms............................................... 12
+
+Ensure links make sense out of context.............................................................. 13
+
+Caption and/or provide transcripts for media...................................................... 13
+
+Ensure accessibility of non-HTML content.......................................................... 13
+
+Miscellaneous........................................................................................................... 13
+
+Mada Web Accessibility Services in Qatar.................................................................. 14
+
+Website Accessibility Certification in Qatar................................................................. 16
+
+WebAim - Further Information and resources............................................................. 19
+
+Popular Resources.................................................................................................. 19
+
+Quick Reference...................................................................................................... 19
+
+Tools........................................................................................................................... 19
+
+Keyboard Shortcuts................................................................................................. 20
+
+Simulations............................................................................................................... 20
+
+ 
+
+ 
+
+           
+
+Introduction
+
+The Guide to Web Accessibility
+
+This guide to produced by Mada, the Qatar Assistive Technology and accessibility center based in Doha, Qatar. It is based upon the resources and information produced by WebAim (Web Accessibility in Mind) and their permission and support to produce  this guide to gratefully acknowledged
+
+The fact that two organizations from very different parts of the world can share this identical message is further proof of the universality of the web. People across the world regardless of language and culture are using the web to enrich their daily lives and as an essential tool to support learning and working.
+
+For disabled people, there remains a risk that a technology that should be the great enabler, facilitating access to employment and education, becomes yet another barrier to full inclusion. Mada and WebAim believe that this guide is an important step in helping ensure that web developers and website owners become part of the solution, and not the problem.
+
+The guide is only the first step in moving forwards with an inclusive website, for Qatar we have included details of how Mada can provide services to help you, we have also included a list of other resources that are of value. We would of course recommend www.webaim.org  as a great starting point for accessibility advice.
+
+           
+
+The Business case for website accessibility in Qatar
+
+Qatar has signed and ratified the United Nations; “Convention on the Rights of Persons with Disabilities” which states that electronic information including websites must be accessible to people with disabilities. This means that people with disabilities in Qatar must have equal rights to information. 
+
+It is estimated that there are over 10,000 people with a disability in Qatar and the number is growing every year. In addition as Qatar welcomes the world to events, conferences and exhibitions we can anticipate that a significant number of those visiting will have some form of disability.
+
+To support this convention, ICT Qatar; Supreme Council of Information, Communication and Technology has created an e-Accessibility Policy for Qatar, which states that public websites must be accessible and comply to WCAG 2.0 guidelines, and encourages a similar approach across all websites in Qatar.
+
+An accessible website has benefits for all who use it. An accessible website is flexible to meet different user needs, preferences, and situations, which benefits all users and which helps to deliver web content across different platforms such as computers, kiosks, mobile phones to tablet computers. Accessibility benefits not only individuals, but also companies or organizations, and the general community. For instance:-
+
+An individual might emphasize the benefits as being related to:-
+
+•      Flexibility of use across different devices
+
+•      Easy to read and navigate
+
+•      Simple layout, easy to find information you need
+
+•      Speed of loading
+
+•      Less Frustration caused by pop up windows or confusing graphics and sounds. 
+
+A government ministry or agency might emphasize: 
+
+•       laws and policies that require public services are available to all, such as anti-discrimination legislation or information and communications technology (ICT) policy
+
+•       demonstration of social responsibility and provision of information and services that are accessible to all citizens
+
+•       savings from improved server performance and decreased site maintenance
+
+•       benefits from enabling people with disabilities and older users to interact with them online instead of more costly ways
+
+A corporation might emphasize:  
+
+•       financial gains and cost savings from increased web use due to increased potential market share, search engine optimization (SEO), and increased usability
+
+•       reducing risk of legal action, high legal expenses, and negative image
+
+•       public relations benefits of demonstrating corporate social responsibility (CSR)
+
+•       benefits of an inclusive workplace that supports employees with disabilities
+
+•       increased productivity from supporting and retaining older employees and their experience
+
+or a web design business might emphasize: 
+
+•       competitive advantage and financial benefits of being able to meet increasing requests for accessible web design and development
+
+•       technical benefits and long term financial benefits to clients of providing sites according to web standards
+
+•       public relations benefits of being able to support clients' interests in demonstrating social responsibility
+
+Finally a small to medium-sized enterprise (SME) relying on e-Commerce might emphasize: 
+
+•       positive impact on search engine optimization (SEO) from accessibility improvements
+
+•       importance of an increasing market among people with disabilities and older people who may significantly benefit from accessible online shopping
+
+•       increased general usability and trustworthiness of online shopping interfaces from improved accessibility
+
+•       reduced risk of legal action and negative publicity from not complying with anti-discrimination legislation
+
+ 
+
+           
+
+How do disabled people use the Web ?
+
+Disabled people access websites using a very wide range of technologies, text to speech, keyboard only, touch screens and voice recognition are all technologies that are very widely used by disabled people. It is interesting to note that many of these technologies are now moving into the mainstream of technology as all users demand a more intuitive and flexible means of accessing information and communication.
+
+ 
+
+Using a screen reader
+
+Ahmed has little or no vision and uses a screen reader to access the web. A screen reader reads out all of the text on the screen in English or Arabic for a blind person to listen to. A well designed page allows all of the information that he needs to be clearly communicated to Ahmed   
+
+ 
+
+Using a Braille display 
+
+Noor uses a Braille display. Like Ahmed she has little or no sight but prefers to have information translated into Braille for her which is then available on an electronic Braille display. Braille is Noors preferred way of reading text and so she prefers to have webpages presented in this way. Just like Ahmed, she relies upon the design of a webpage to ensure that all of the information can be translated into Braille for her. 
+
+ 
+
+Keyboard only
+
+Abdullah has serious tremor and pain in his hands that make using a mouse very difficult, he navigates the web using only his keyboard and keyboard shortcuts. Having clear accesskeys on a webpage makes his browsing faster and less frustrating both at work and at home
+
+ 
+
+Using a switch 
+
+Fatma browses the web using an onscreen keyboard and a simple switch which selects keys from her keyboard. She is often frustrated by pop up windows that take the focus of her keyboard away from the main page she is addressing, this is especially frustrating when she is completing a form. 
+
+ 
+
+ 
+
+Mobile Access for people with a disability
+
+ 
+
+Many disabled people are now accessing web materials via a mobile phone or tablet computer. These highly portable solutions help disabled people to have access to information and communication anytime, anywhere. Mina is using a tablet computer with applications for all of his favourite social networks as well as his bank and telephone company. As he has a physical disability the touch screen and on screen keyboard are perfect for him to use with minimal movement with his right hand and fingers. 
+
+ 
+
+As developers and website owners you don’t have to design for each of these technologies separately, instead you simply need to design to widely adopted standards to ensure that all of your website visitors can access your content.  
+
+           
+
+Web Accessibility Principles Motivations to Create Accessible Web Content 
+
+There are at least three main kinds of reasons that might motivate people to create accessible web content:
+
+1.    To improve the lives of people with disabilities (human-centered motivations)
+
+2.    To capitalize on the a wider audience or consumer base (marketing or economic-centered motivations)
+
+3.    To avoid lawsuits and/or bad press (public relations and punishmentcentered motivations)
+
+All of these can be good reasons. Accessible web sites will accomplish all of these goals. The motivations are listed in order of most altruistic to least altruistic, but as long as the web site is accessible in the end, perhaps it does not matter what the developers' motivations were to begin with.
+
+No matter which motivation works for a particular developer, one principle will always hold true: web accessibility is most easily achieved when people are at the center of the process. Even those who are simply trying to avoid lawsuits will sooner or later realize that the needs of the target audience—people with disabilities—must be carefully considered and addressed.
+
+•       Understanding the user's perspective and needs
+
+•       Moving beyond technical accessibility
+
+•       Focusing on the principles of accessibility
+
+Understanding the User's Perspective and Needs 
+
+The techniques and guidelines of web accessibility were not invented to make life hard for web developers. They were invented to make life easier for people with disabilities. Like everyone else, people with disabilities want and need to access the kinds of resources offered on the web. Many services and goods once available only by visiting brick-and-mortar offices and shops are now available online, from the comfort of one's home. Nothing could be more perfect in terms of making the world more accessible to people with disabilities.
+
+The Web is not a barrier to people with disabilities, it is the solution. The web has the potential to revolutionize the day-to-day lives of millions of people with disabilities by increasing their ability to independently access information, communication, entertainment, commerce, and other aspects of life that most people take for granted. However, for the Web to reach its full potential for people with disabilities, web developers must commit to always designing with accessibility in mind. Failure to do so risks turning a revolutionary solution into yet another barrier in the lives of people with disabilities.
+
+This is why Web accessibility was invented. This is the perspective to keep in mind when developing web sites. After all, people with disabilities are people. They just want to make the most of life. An accessible Internet is not a magic bullet or panacea to every obstacle faced by people with disabilities, but it is at least a step in the right direction.
+
+Moving Beyond Technical Accessibility 
+
+Techniques and guidelines are important because they represent an attempt to define and standardize what Web accessibility means. They represent a consensus, or at least a majority opinion, about the best practices and methods for achieving web accessibility. The Web Content Accessibility Guidelines (WCAG) are the most widely-accepted set of recommendations, and were developed over several years of collaborative involvement by a panel of experts and interested individuals. The rigorous process is purposefully slow and methodical, in an attempt to consider a wide variety of viewpoints and issues. Still, none of the participants in this process would ever claim that the guidelines are the last word on accessibility, or that conformance to the guidelines will guarantee web content accessibility. The guidelines are an excellent foundation upon which to build accessible Web content, but unless the developers understand the reasons behind the guidelines, they might apply the guidelines incorrectly or ineffectively.
+
+For example, one of the best-known guidelines is to provide alternative text for images in the alt attribute of the <img> tag. If web developers learn only the guideline, but not the reason for the guideline, they may provide alternative text that is not helpful to users who need it. They may even create rather than solve accessibility barriers.
+
+When developers focus on technical specifications, they may achieve technical accessibility, but they may not achieve usable accessibility. To make a comparison, a large office building may be technically accessible to a person who is blind—meaning that this person may be able to walk through all the hallways, use the elevators, open the doors, etc.—but without an explanation (or perhaps a tactile map) of how the building is arranged, where the elevators and doors are, and which offices are on which floors, the building will be quite difficult to navigate, especially at first. The person may try to find locations through a process of trial and error, but this is a very slow and cumbersome process. The building is accessible, but not very usable.
+
+In a similar way, web developers can create web sites that are possible for people with disabilities to access, but only with great difficulty. The technical standards are important, but they may be insufficient on their own. Developers need to learn when and how to go beyond the technical standards when necessary.
+
+           
+
+Focusing on the Principles of Accessibility 
+
+Version 1.0 of the Web Content Accessibility Guidelines focused heavily on the techniques for accomplishing accessibility, especially as related to HTML.
+
+Version 2.0 (not yet an official recommendation of the W3C at the time of this writing) takes a different approach: it focuses more heavily on the principles of accessibility, and presents some techniques in separate documents. By focusing more on principles rather than techniques, version 2.0 of the guidelines is more flexible, and encourages developers to think through the process conceptually. The four main guiding principles of accessibility in WCAG 2.0 are:
+
+•       Perceivable - Available through sight, hearing, or touch.
+
+•       Operable - Compatible with keyboard or mouse.
+
+•       Understandable - User-friendly, easy to comprehend.
+
+•       Robust - Works across browsers, assistive technologies, mobile devices, old devices/browsers, etc. Follows standards.
+
+Conveniently, these principles spell out an acronym that is relatively easy to remember: POUR. The idea is to create a POUR web site, so to speak. The pun may be a bad one, but if it helps developers memorize the principles, then it has served its purpose. Each of these principles is discussed more in depth in the sections that follow. For now it is sufficient to say that putting the POUR principles helps put people at the center of the process, which, in the end, is the whole reason for even discussing the issues.
+
+Principles of Accessibility  
+
+ 
+
+Provide appropriate alternative text 
+
+•       Every non-text element needs a text alternative (alt text) that provides an equivalent to the image content.
+
+•       Alt text should present the content and function, not necessarily a description, of an image.
+
+•       If an image has no relevant content or function, is decorative, or the alternative text is provided in nearby text, then the image should have an empty alternative text value (alt="").
+
+•       If an image is a link (or hotspot), the alt text must describe the link’s function.
+
+•       Avoid words like "picture of," "image of," or "link to." • Use the fewest number of words necessary.
+
+•       WebAIM: webaim.org/techniques/alttext/
+
+ 
+
+Content is well structured and clearly written
+
+•       Use the simplest language appropriate for your content.
+
+•       Organize your content using true headings (e.g., <h1>) and lists.
+
+•       Use empty (white) space to improve readability.
+
+•       Use illustrations, icons, etc. to supplement text.
+
+•       Check spelling, grammar, and readability.
+
+ 
+
+Help users navigate to relevant content
+
+•       Provide a link that allows the user to skip over navigation to the main content in the page.
+
+•       Use true headings to organize content.
+
+ 
+
+Provide headers for data tables 
+
+•       Identify all data table headers using the <th> element.
+
+•       Provide an appropriate scope attribute: <th scope="col"> for column headers or <th scope="row"> for row headers.
+
+•       If appropriate, add a table <caption> for the data table.
+
+•       WebAIM: webaim.org/techniques/tables/
+
+Do not rely on color alone to convey meaning
+
+•       The use of color can enhance comprehension, but do not use color alone to convey information. Be especially cautious of red/green color combinations. 
+
+•       Make sure that color contrast is strong, especially between text and background. 
+
+•       WebAIM: www.webaim.org/articles/visual/colorblind/
+
+ 
+
+Ensure users can complete and submit all forms 
+
+•       Put form labels adjacent to or near their controls, so the labels are associated visually.
+
+•       Use the <label> element to associate labels and controls.
+
+•       Group similar elements (such as checkboxes or radio buttons) together using <fieldset>.
+
+•       Clearly identify required form elements. Don't make a field required if it is not necessary. Ensure all directions and cues are readily accessible.
+
+•       If there are errors in a form that has been submitted, alert the user in an accessible way (especially to a screen reader user) and make it easy to fix the incorrect information and resubmit the form.
+
+•       WebAIM: webaim.org/techniques/forms/
+
+ 
+
+Ensure links make sense out of context 
+
+•       Avoid phrases like "Click here", "Here", "More", "More information", "Read more", and "Continue."
+
+•       URL's as link text should usually be avoided, unless the URL is relevant content.
+
+ 
+
+Caption and/or provide transcripts for media 
+
+•       Videos and live audio must have captions and a transcript. A transcript is sufficient for archived audio. 
+
+•       Captions should be synchronized, equivalent, and accessible.
+
+•       WebAIM: webaim.org/techniques/captions/
+
+ 
+
+Ensure accessibility of non-HTML content 
+
+•       HTML content will almost always be more accessible than content in any other format.
+
+•       PDF, Microsoft Word and PowerPoint files, OpenOffice.org, and Adobe Flash provide basic accessibility features.
+
+•       Provide accessible alternatives when non-HTML content cannot be made fully accessible.
+
+•       Test the accessibility of non-HTML content in assistive technologies.
+
+ 
+
+Miscellaneous 
+
+•       Ensure that the page is readable and usable when fonts are enlarged 200300%.
+
+•       Provide a descriptive page <title>.
+
+•       When using scripting, ensure events are available with both mouse and keyboard. Make all scripted content and page updates/changes available to screen readers.
+
+•       Limit pop-up windows and notify users when pop-ups are used.
+
+•       Provide a descriptive title for all frames (e.g., <frame title="navigation">).
+
+•       Follow HTML and CSS coding standards.
+
+Mada Web Accessibility Services in Qatar
+
+How can Mada help ?
+
+As part of a commitment towards building an inclusive digital society in Qatar, the Mada e-Accessibility team offers professional website audit review services. Organizations that are committed to providing accessible web platforms are able to receive expert consultancy on how to achieve this. In addition to detailed audits and reviews, Mada offers training to web developers and content producers on how to achieve universal design and digital inclusion. Mada also assists organizations with creating e-Accessibility Policy and Procedures for Websites and Online Documents.
+
+ 
+
+Mada Services for accessible content  1. Mada Accessibility and Usability Audit and Action Plan
+
+Mada eAccessibility Services would provide detailed reviews of selected web pages using international accessibility guidelines. • Audit Report is based on Accessibility Guidelines;  W3C WAI WCAG, A, AA and AAA compliancy
+
+•       The guidelines are also used for electronic document and application accessibility compliancy
+
+This can be enhanced with a Usability Assessment Report where people with a disability will investigate your site and report back on the barriers they find. This may include the use of a range of Assistive Technologies (AT) such as 
+
+•       Screen Readers, Screen Magnifiers, Refreshable Braille Displays,
+
+Switches and interfaces, Screen and Tool Enhancements, Voice
+
+Recognition Software, Keyboard, Virtual Keyboard 
+
+Cross disabilities usability assessments are included in the report where applicable
+
+At the end of the audit review, the organization will receive a comprehensive, report of the issues to address and training to follow for managers and/or developers.
+
+This service is provided on the agreement that organizations commit to addressing the issues identified through an agreed action plan. (See Mada accreditation for further details)
+
+ 
+
+2.  Support and Training:
+
+Mada is here to help you deliver the action plan that is agreed. Mada can offer: •     Consulting and support implementation of the recommendations in the report
+
+•       Meetings are organized to provide support and answer questions about the accessibility audit report for all Web Staff
+
+•       Training in Website and Document accessibility is provided to the web team and anyone who produces electronic documents.
+
+•       Mada Workshops; 
+
+1) Accessible Website Design and Usability (2 Days) 2) Document Accessibility; Word, PDF and Forms (2 Days)
+
+ 
+
+3.  Organizational Accessibility Checklist, Policy and Procedures:
+
+Mada would assist the organization with creating Checklists, Policy and Procedures to ensure that future web and documents produced are fully accessible. These can be fully integrated into existing development, review and evaluation workflows of your organization.
+
+           
+
+Website Accessibility Certification in Qatar
+
+Mada’s Website Certification Program is a unique and valued way to demonstrate your organization’s forward-thinking approach to barrier-free web design and your commitment to putting people first. 
+
+After undergoing Mada website accessibility audit review, staff training and satisfactory compliance to recommendations. Organizations will receive Mada’s Website Accessibility Certification Badge to place on their website.
+
+As a result of Mada services and in recognition of accessible websites in Qatar, Mada would create a list of linkable websites reviewed and awarded the certification. Mada would also organize a joint press release for organizations that qualify for Website Accessibility Certification.
+
+ 
+
+1.  Planning for Accessibility
+
+Organization agrees to implement an action plan to increase accessibility of website based on audit reviews, staff training and invitation to events.
+
+ 
+
+2.  Silver - Making Access Real
+
+Awarded to websites that achieve WCAG 2.0 priority level A and AA across 95% of website Renewed annually following review and validation Badge for website, promotion by Mada.
+
+ 
+
+3.  Gold - Best Practice Award
+
+This level is awarded to sites that achieve level 2 and in addition demonstrate ongoing efforts to go beyond the minimum AA requirements or adding additional access functionality to the website. The award also recognizes innovative solutions to making access a reality for all people in Qatar. 
+
+Upon application and submission, Mada will certify the web pages included in the review. The web pages originally audited will be reviewed annually and depending on the size of the website, Mada would randomly select other web pages for review. 
+
+ 
+
+Web page selection criteria may include the following;
+
+ 
+
+1.          Top Web Pages: The client will submit most frequently visited pages based on website analytics.
+
+ 
+
+2.          Selected Web Pages: The client and Mada would choose unique pages with layout, content or functionality.
+
+ 
+
+3.          Level 1 Web Pages: Main pages will be selected for review from the website navigation menu.
+
+ 
+
+Upon submission Mada will conduct an overview review of the website to identify the general level of current accessibility. This review will be used to construct an agreed set of actions which may include more in depth auditing by Mada.
+
+ 
+
+The Audit Report is manually assessed by the consultant, which includes assistive technology usability assessments and AA compliancy of WCAG 2.0 guidelines. The audit is a detailed comprehensive list of accessibility issues with recommendations which organizations must remediate in order to qualify for certification. 
+
+ 
+
+The audit report is presented in a user friendly format with the intention of advocating and educating the web developer about accessibility issues identified in the website. Mada would be included in the process of accessibility retrofit or website redesign with the organization until the recommendations in the report have been fully achieved.
+
+ 
+
+Qualifying for “Making Access Real” status and beyond
+
+ 
+
+Upon completion of accessibility audit or review for renewal, the results of the accessibility report determines the eligibility for certification;
+
+ 
+
+“Approved” Status – All major accessibility issues have been remediated or no issues were identified or outstanding as a result of re-review. The client is granted unconditional use of Mada’s Website Certification. It is approved for certification at level 2 or 3
+
+ 
+
+“Actions Required” Status – Non-critical Accessibility issues are present that requires attention. An actions list is issued; the client is granted conditional use of Mada’s Website Certification with the promise to remediate outstanding accessibility issues in a timely manner.
+
+ 
+
+“Fail” Status – Critical Accessibility barriers are detected in the website that prevents assistive technology users from accessing important information or functions in the website. Mada’s Website Certification is a not granted until the listed critical accessibility barriers have been resolved to the agreed standard. However with an agreed Action Plan the website owner is granted use of the
+
+“Committed to Accessibility” for a predetermined period whilst actions are taken. 
+
+ 
+
+ 
+
+Mada’s Annual Website Certification Renewal 
+
+ 
+
+•      To re-certify; previously audited web pages along with additional randomly selected pages would be reviewed before the renewal date 
+
+•      Renewal notice, 3 months in advance before the expiry date
+
+•      The accessibility review would be conducted before the Website Certification expiry date
+
+•      After the review, Mada would either issue a “Approved”, “Actions Required” or “Fail” Website Certification status
+
+•      As a result of the review, Mada would provide a list of compliance requirements that the organization must remediate before Website Certification is renewed.
+
+           
+
+WebAim - Further Information and resources
+
+Popular Resources 
+
+Captioning Resource List  
+
+Introduction to Web Accessibility
+
+Video: Keeping Web Accessibility in Mind
+
+Video: Experiences of Students with Disabilities
+
+Section 508 Checklist
+
+WCAG 2.0 Checklist
+
+Web Accessibility Email Forum
+
+Screen Reader Simulation
+
+WAVE Web Accessibility Evaluation Tool
+
+ 
+
+Quick Reference 
+
+Infographic: Web Accessibility for Designers
+
+Web Accessibility Principles
+
+Testing for Web Accessibility
+
+ 
+
+Tools
+
+Accessibility Evaluation Tools - An Overview
+
+Acrobat Reader 7
+
+AIS Accessibility Toolbar
+
+Using the AIS Web Accessibility Toolbar
+
+Captioning Software
+
+Captioning with MAGpie 1
+
+Captioning with MAGpie 2  
+
+Captioning with HiCaption
+
+Color Contrast Checker
+
+CommonLook Section 508 Plug-In for Adobe Acrobat
+
+Cynthia Says
+
+Deque Ramp Ascend
+
+Hermish
+
+Markup and Robustness Evaluation Tools
+
+Opera
+
+Vischeck
+
+WAVE
+
+Web Developer Extension for Mozilla-based Browsers
+
+Evaluating Web Sites for Accessibility with the Firefox Web Developer Toolbar
+
+ 
+
+Keyboard Shortcuts 
+
+JAWS Keyboard Shortcuts
+
+NVDA Keyboard Shortcuts
+
+Firefox Keyboard Shortcuts
+
+Internet Explorer Keyboard Shortcuts  
+
+Opera Keyboard Shortcuts
+
+ 
+
+Simulations 
+
+Screen Reader Simulation
+
+Low Vision Simulation  
+
+Dyslexia Simulation
+
+Distractability Simulation
+
+ 

@@ -1,0 +1,173 @@
+﻿Microsoft Word - Dragon for EXCEL.doc
+
+
+USING DRAGON WITH MICROSOFT EXCEL –COMMAND CHEAT SHEET
+
+Dragon provides a number of natural language commands to use with Microsoft Excel. Using these commands, you can avoid the multiple menu-selection and mouse-movement steps associated with the traditional Microsoft Windows interface. There are two modes for using voice commands in Microsoft Excel:
+
+•       Quick Edit Mode: Allows you to enter new content into a cell, overwrite the current contents of a cell, or format the entire contents of a cell. When you select a cell and begin dictating, a yellow background appears to indicate that the dictated text will be inserted into the cell. If the cell currently contains text, the new dictated text will overwrite the existing text. If you want to format the contents of a cell, select the cell, or select a portion of the cell’s contents, and say a formatting command, such as "Set Font Arial 10 Points Bold."
+
++------------------------------------+-------------------------------------------------------------------------------------------+
+| TO                                 | SAY                                                                                       |
++------------------------------------+-------------------------------------------------------------------------------------------+
+| Save a spreadsheet as a.XLS file   | 1.    "save file"                                                                         |
+|                                    |                                                                                           |
+|                                    | 2.    dictate a file name (only needed if this is the first time the file has been saved) |
+|                                    |                                                                                           |
+|                                    | 3.    "click save"                                                                        |
++------------------------------------+-------------------------------------------------------------------------------------------+
+| Save a spreadsheet in HTML format  | 1.    "save file as webpage"                                                              |
+|                                    |                                                                                           |
+|                                    | 2.    "click save"                                                                        |
+|                                    |                                                                                           |
+|                                    | 3.    (if a dialog box appears warning of a format loss) "click continue"                 |
++------------------------------------+-------------------------------------------------------------------------------------------+
+| Rename a spreadsheet               | "rename the worksheet"                                                                    |
++------------------------------------+-------------------------------------------------------------------------------------------+
+| Moving to another open spreadsheet | "go to next/previous worksheet"                                                           |
++------------------------------------+-------------------------------------------------------------------------------------------+
+
+•       Full Edit Mode: Allows you to edit the existing contents of a cell. If you want to add to or edit the current contents of a cell, select the cell and say "Edit Cell" or "Press F2" to open the cell for editing. When you enter Full Edition Mode, the background color changes to blue. Entering Full Edit Mode is analogous to double-clicking a cell. Line and Paragraph commands, such as "New Line" operate within the selected cell in Full Edit mode. Saying “apply” completes entry into a cell, and leaves the focus on that cell (exiting Quick Edit mode).
+
+Creating, Opening, and Closing a Spreadsheet
+
+  ------------------------------ ---------------------------------- ----------------------------------------------
+  TO                                                                SAY
+  Create a new spreadsheet       1.                                 "start Microsoft Excel"
+                                 2.                                 "create new file" or "create new workbook"
+  Open an existing spreadsheet   1.                                 "start Microsoft Excel"
+                                 2.                                 "open file" or "open document"
+                                 3.                                 "<file name>," for example, "my spreadsheet"
+                                 4.                                 "click open"
+  Close a spreadsheet            "close file" or "close document"   
+  ------------------------------ ---------------------------------- ----------------------------------------------
+
+Saving, Renaming, and Moving to Another Spreadsheet
+
+Setting up a spreadsheet
+
+  ---------------------- --- -------------------------------------------------------------------------------------------
+  TO                         SAY
+  Setting page margins      "set top and bottom margins to <number>,” for example, "set top and bottom margins to 10"
+                            "set right margin to <number>,” for example, "set right margin to 20"
+  Set printing area         "fit to <number> pages wide"
+                            "fit to <number> pages tall"
+  ---------------------- --- -------------------------------------------------------------------------------------------
+
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| TO                                           | SAY                                                                                                                                                               |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Move to new location                         | •       "next/previous row/column"                                                                                                                                |
+|                                              |                                                                                                                                                                   |
+|                                              | •       "start of this/next/previous row/column"                                                                                                                  |
+|                                              |                                                                                                                                                                   |
+|                                              | •       "row/column <number/letter>," for example, "row five" or "column A." If the column includes two or more                                                   |
+|                                              |                                                                                                                                                                   |
+|                                              | letters, say the alpha-bravo form of the letter, for                                                                                                              |
+|                                              |                                                                                                                                                                   |
+|                                              | example to go to column AB, say "column Alpha                                                                                                                     |
+|                                              |                                                                                                                                                                   |
+|                                              | Bravo."                                                                                                                                                           |
+|                                              |                                                                                                                                                                   |
+|                                              | * You can also navigate between cells using absolute commands such as “move to cell A1” or relative movement commands such as “move up one, move right two,” etc. |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Create a new line within a cell              | "new line"                                                                                                                                                        |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Complete a cell entry and move down one cell | "press enter"                                                                                                                                                     |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cancel a cell entry and remain in the cell   | "press escape" or "cancel"                                                                                                                                        |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Complete a cell entry and                    | "apply"                                                                                                                                                           |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Viewing the spreadsheet
+
++----------------------------------------+--------------------------------------------------------+
+| TO                                     | SAY                                                    |
++----------------------------------------+--------------------------------------------------------+
+| Enlarge or reduce the spreadsheet view | "zoom to <number> percent," for example, "zoom to 50%" |
++----------------------------------------+--------------------------------------------------------+
+| Change the display                     | •       "hide/unhide this row/column"                  |
+|                                        |                                                        |
+|                                        | •       "hide/show the drawing toolbar"                |
+|                                        |                                                        |
+|                                        | •       "hide/unhide the formulas in this column/row"  |
++----------------------------------------+--------------------------------------------------------+
+
+Printing
+
++-----------------------------------+---------------------------------------------------------------------------+
+| TO                                | SAY                                                                       |
++-----------------------------------+---------------------------------------------------------------------------+
+| Print a range of pages            | •       "print workbook"                                                  |
+|                                   |                                                                           |
+|                                   | •       "print this selection"                                            |
+|                                   |                                                                           |
+|                                   | •       "print column <number> to column <number>"                        |
+|                                   |                                                                           |
+|                                   | •       "print next <number> rows"                                        |
++-----------------------------------+---------------------------------------------------------------------------+
+| Preview or print out              | "go to print break preview"                                               |
++-----------------------------------+---------------------------------------------------------------------------+
+| Print part of a page              | •       "set print area to selection"                                     |
+|                                   |                                                                           |
+|                                   | •       "set print area to the first/next/previous <number> rows/columns" |
+|                                   |                                                                           |
+|                                   | •       "print this selection"                                            |
++-----------------------------------+---------------------------------------------------------------------------+
+
+Moving Around a Spreadsheet
+
+  ------------------ ---
+  stay in the cell    
+  ------------------ ---
+
+Formatting a Microsoft Excel Spreadsheet
+
++----------------------------------+-----------------------+----------------------------------------------------+
+| TO                               |                       | SAY                                                |
++----------------------------------+-----------------------+----------------------------------------------------+
+| Change column width              |                      | "set column width to <number>"                     |
++----------------------------------+-----------------------+----------------------------------------------------+
+|                                  |                      | “set width to <number> in column <number>"         |
++----------------------------------+-----------------------+----------------------------------------------------+
+| Change row height                |                      | "set row height to <number> in this row"           |
++----------------------------------+-----------------------+----------------------------------------------------+
+|                                  |                      | "set height to <number> in the first/next/previous |
+|                                  |                       |                                                    |
+|                                  |                       | <number> rows”                                     |
++----------------------------------+-----------------------+----------------------------------------------------+
+| Change row and column appearance |                      | "shade this row/column”                            |
+|                                  |                       |                                                    |
+|                                  |                      | "apply pattern to current/this row/column"         |
++----------------------------------+-----------------------+----------------------------------------------------+
+|                                  |                      | "center the next/previous <number> rows/columns>   |
++----------------------------------+-----------------------+----------------------------------------------------+
+|                                  |                      | "indent the next/previous <number> rows/columns    |
+|                                  |                       |                                                    |
+|                                  |                       | <number>"                                          |
++----------------------------------+-----------------------+----------------------------------------------------+
+|                                  |                      | "bold/italicize this row/column/cell"              |
++----------------------------------+-----------------------+----------------------------------------------------+
+
+Working with Content in Microsoft Excel
+
+  ----------------------------------------------- ---- --------------------------------------------------------------------------------------------------------------
+  TO                                                   SAY
+  Sum or average a column or row of numbers       1.   move the insertion point to the cell where you want the sum to appear
+                                                  2.   "sum/average the values on the right/on the left/above/below"
+  Sort a column or row of numbers                 1.   select the row, column, or range of cells you want to sort
+                                                  2.   "sort the selection"
+  Change contents from decimals to fractions      1.   move the insertion point to the row, column, or cell you want to change
+                                                  2.   "set this row/column/cell to fractions in <number>," for example, "set this cell to fractions in eighths"
+  Lock or unlock contents                         1.   move the insertion point to the row, column, or cell you want to lock or unlock
+                                                  2.   "lock/unlock this row/column/cell"
+  Fill a cell, row, or column                     1.   move the insertion point to the row, column, or cell you want to fill
+                                                  2.   "fill this cell up/down/right/left <number> cells/rows/columns," for example, "fill this cell down two rows"
+  Delete the contents of a cell, row, or column   1.   move the insertion point to the row, column, or cell you want to clear
+                                                  2.   "clear all from this row/column/cell"
+  Hide the contents of a cell, row, or column     1.   move the insertion point to the row, column, or cell you want to hide
+                                                  2.   "hide this row/column/cell"
+  ----------------------------------------------- ---- --------------------------------------------------------------------------------------------------------------
+
+ 

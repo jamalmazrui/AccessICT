@@ -1,0 +1,352 @@
+﻿Accessible Document Practices in Microsoft Word
+
+
+[] 
+
+Accessible Document Practices in Microsoft Word
+
+Todd M. Weissenberger, University of Iowa
+
+Microsoft Word is one of the most popular applications in the world, widely used to create worksheets, articles, syllabi, and other documents.
+
+Here are a few tips and tricks to help you provide more accessible Microsoft Word documents for your students and others.
+
+Microsoft Word Accessibility Checker .......................................................................................................... 3
+
+Use Headings to Create Outline and Structure ............................................................................................. 5
+
+Create a Table of Contents ........................................................................................................................... 6
+
+Provide ALT Text for Images ......................................................................................................................... 7
+
+Create Column Sections for Layout .............................................................................................................. 7 Provide Header Cells for Data Tables............................................................................................................ 9
+
+Use Sufficient Color Contrast ........................................................................................................................ 9
+
+Provide Meaningful Link Text ..................................................................................................................... 10
+
+Set the Human Language ............................................................................................................................ 12
+
+Export to PDF .............................................................................................................................................. 13
+
+About this coursework: ............................................................................................................................... 14
+
+ 
+
+ 
+
+Microsoft Word Accessibility To-Do List
+
+[]
+
+Microsoft Office Accessibility Checker
+
+•       Use the Accessibility Checker to review accessibility issues in Word
+
+•       Accessibility Checker covers only a fraction of potential accessibility issues
+
+Content Reading Order
+
+•       Use Headings to create outline and structure
+
+•       Provide a Table of Contents for longer documents
+
+•       Use Word Layout features—not tabs or line spaces—to provide columns, sections, and breaks
+
+Alternative Text for Images, Graphs, and other Non-text Content
+
+•       Apply contextual alternate text to all images that provide content or functionality
+
+•       For complex images such as charts or graphs, provide a link or reference to a longer description or alternate presentation (e.g., a data table in addition to a chart; a sequence in addition to a visual process)
+
+•       For images that do not provide content or functionality, select “Mark as Decorative” (This feature is not available in all versions of Microsoft Office)
+
+•       Provide appropriate captions or transcripts for media such as linked or embedded audio or video
+
+Data Tables
+
+•       Identify a header row and column as appropriate for each data table
+
+•       Avoid merging or splitting cells
+
+•       Include borders to clearly separate individual cells
+
+Links
+
+•       Use descriptive text, not URLs, for links
+
+•       Ensure that links point to accessible resources, documents, and websites
+
+Color Contrast and Use
+
+•       Ensure that all foreground/background color combinations meet or exceed guidelines for color contrast
+
+•       Do not use color as the sole means of identifying an object in your presentation
+
+Microsoft Word Accessibility Checker
+
+Microsoft Word offers an Accessibility Checker feature that can help you to manage your accessibility tasks in Word. The accessibility checker doesn't provide a comprehensive assessment of a document's accessibility, but it can help you to find opportunities to add important accessibility features to your Word document. This tool is also available in Microsoft PowerPoint and Microsoft Excel.
+
+Run the Microsoft Office Accessibility Checker
+
+•       Select File→Info
+
+•       Select Check for Issues→Check Accessibility 
+
+•       Errors, Warnings, and Tips appear in the Accessibility Checker pane
+
+[]
+
+When you select one of the Inspection Results, Accessibility Checker will open a panel with Additional Information that describes the accessibiilty problem and offers suggestions on how to fix the issue.
+
+In Office 2016 for Windows, you can also activate the Check Accessibility Tool from the Review ribbon.
+
+[] 
+
+Note
+
+Not all accessibility issues are of equal concern. Focus on structural and content issues like headings, tables, and ALT text. Be aware that images that are not inline will not be read by some screen readers.
+
+                 
+
+Use Headings to Create Outline and Structure
+
+For documents with multiple topics or sections, headings are a simple way to simplify navigation.  Screen reader users are able to efficiently traverse a file using headings; others can use the Navigation pane or Outline view.  Word headings will also export to PDF and HTML, ensuring a higher level of accessibility in those formats as well.
+
+Document creators can also leverage headings and other style elements for consistent formatting and simplified maintenance.
+
+[]Organize your document with Word headings
+
+1.       Open your Word document for editing
+
+2.       Click or key your cursor into the text you want to present as a heading
+
+3.       In the Formatting toolbar (Home tab) click the Heading 1 button, OR use key combo ALT+O, S to open the style pane and key to the Heading 1 style option
+
+4.       Continue through the document, applying appropriately nested headings for each topic heading.
+
+5.       Review the document outline in Navigation View                Figure 1: Styles Pane, opened
+
+                (View→Navigation Pane)                                                                                                       with ALT+O, S
+
+[] 
+
+Figure 2: Heading buttons in the Styles ribbon
+
+[]
+
+                 
+
+Create a Table of Contents
+
+Once you have applied a robust outline structure to your Word document, you can add another layer of accessibility by generating a Table of Contents (ToC). A ToC lists the contents of your document by topic heading, and allows users to hyperlink directly from an entry in the ToC to the corresponding content in the document.
+
+The Table of Contents uses heading levels and other styles as entries, so the ToC will reflect the true structure of the document. Note that ToC levels become Bookmarks when your document is exported to PDF. 
+
+Create a Table of Contents
+
+1.       In the References tab, select Table of Contents
+
+2.       Select one of the Built-InToC options, or create a custom Table of Contents
+
+3.       Select levels and other preferences
+
+4.       The ToC appears at the point of insertion
+
+[] 
+
+Create Column Sections for Layout
+
+Objects that are “wrapped” are not accessible to assistive technologies, because their content does not appear in the content flow. Using columns for layout helps to ensure that your document content will follow a logical order and flow in a linear sequence when accessed by users of assistive technology. This is especially important when your images contain information, but you want them to “float” next to text content in your document.
+
+For layout purposes, always use columns instead of multiple tabs or tables.
+
+•       Place the cursor at the beginning of the section where you want to apply two or more columns
+
+•       From the Layout tab, select Breaks, and then Continuous 
+
+•       Place the cursor at the end of the section where you want to apply the columns
+
+•       From the Layout tab, select Breaks, and then Continuous 
+
+•       Place the cursor at the point where you want your columns to break
+
+•       From the Layout tab, select Breaks, and then Column
+
+•       You can also adjust the width of your columns to suit the needs of your document layout.
+
+ 
+
+[]Once you have created your columns, you no longer need any Wrap Text settings other than “In Line With Text”. After you have applied this setting ,your content will flow naturally, and your image’s ALT text will be available for screen readers and other assistive technologies.
+
+ 
+
+[]
+
+                 
+
+Provide ALT Text for Images
+
+Images, charts, and other graphical elements are not read by screen readers, and present an accessibility barrier to users of those technologies.  Good ALT text lets users know the meaning and purpose of a graphical element when they can't view the image on the screen.
+
+In Word, ALT text is exposed to screen readers when an image is positioned inline with text; images that use wrapping are excluded from the document flow and unavailable to screen readers. To ensure that your ALT text is exposed to assistive technology, position your images inline. If the appearance of an image wrap is essential consider creating a section with multiple columns for layout. 
+
+Add ALT text to an image in Word
+
+1.       In the Insert tab, click Picture, OR use key combo (ALT+N, P) to insert an image into your Word document
+
+2.       Right click on the image, OR use key combo SHIFT+F10 to open the context menu
+
+3.       Select Format Picture from the context menu
+
+4.       In the Format Picture menu, select ALT text
+
+5.       In the ALT text view, enter your ALT text in the DESCRIPTION field 6. Close the Format Picture dialog box
+
+ 
+
+[] 
+
+Figure 3: ALT Text dialog
+
+Provide Header Cells for Data Tables
+
+Compared to other file formats, Word offers little in the way of accessibility for data tables.  Still, there are a couple of steps you can take to ensure that your data table is as accessible as Word will allow.  Your best bet is to keep your table as simple as possible; straightforward, grid-shaped  tables with a single row of header cells  will yield the most accessible results.
+
+[]Create Your Table
+
+1.       In the Insert tab, select Table (ALT+N, T) to open the Table grid
+
+2.       Drag or arrow through the grid to select the dimensions of your table
+
+3.       Enter your data into your table
+
+4.       Edit the caption if necessary
+
+Designate Header Row
+
+1.       Place the cursor in a header cell in the top row 
+
+2.       Select the “Design” tab in the “Table Tools” section
+
+3.       Make sure that “Header Row” is checked
+
+   
+
+[] 
+
+Provide Meaningful Link Text
+
+If you use links in your Word documents, be sure the text of the link clearly indicates where the link goes.  Avoid generic link text such as "More" or "Click Here", in favor of descriptive text such as "Read a biography of Carver at Wikipedia" or "View a PDF map of the Canary Islands"
+
+Bad:                                                                       Click here
+
+Slightly better, but still not great:               Click here to learn more
+
+Good:                                                                    Learn more about the Canary Islands
+
+Still better:                                                           Our World: The Canary Islands (Tagged PDF, 1.2 MB)
+
+Consider all of the information contained in the last hyperlink example above—document title, document format, file size—each element conveys information to the user about the upcoming experience, and helps the user to make an informed choice about how to approach the material.
+
+Ensure that links are understandable out of context
+
+If you include links in a body of text, make sure that the link text contains all of the information a user needs to understand the purpose and target of the link. Do not use link text that consists only of the URL; if you want to provide the URL, place it AFTER the link text, and not in the link itself.
+
+Example: 
+
+View the International Space Station Overview (https://www.nasa.gov/mission_pages/station)
+
+Enter or edit link text in your document
+
+To create or edit link text, you can use the Insert Hyperlink command (Control+K), or select Hyperlink from the Insert tab.  This opens the Insert Hyperlink dialog box, where you can add both your text and your link's URL.
+
+1.       []Place the cursor where you want to add a hyperlink
+
+2.       Open the Insert Hyperlink dialog
+
+(Control+K)
+
+3.       In the "Text to display" field, enter the text of your link
+
+4.       In the "Address" field, enter the
+
+URL of your link 
+
+ 
+
+                 
+
+Use Sufficient Color Contrast
+
+Providing sufficient contrast between background and foreground colors is not specifically a Microsoft Word accessibility technique; all documents need a level of contrast that makes them readable by lowvision or color-blind users. In general, light text should go on a dark background, and dark text on a light background.  
+
+In digital documents, colors are constructed using a Red, Green Blue (RGB) color model.  In Microsoft Word, authors typically select colors from a palette associated with the current document.  If you are uncertain which colors your document contains, you can evaluate them for sufficient contrast.
+
+[]Determine a font color in your Word document 1. Place the cursor in a line of text 
+
+2.       Open the Format Font dialog (ALT+O, F)
+
+3.       Open the Font Color picker and select More Colors (ALT+C, M)
+
+4.       The color picker dialog will contain the RGB value of the selected text
+
+ 
+
+Use the Colour Contrast Analyser                                                                               
+
+1.       []Download the CCA at http:/www.paciellogroup.com/resources/ contrastanalyser/
+
+2.       Select your foreground and background colors from the CCA color picker, or use the eyedropper to select colors from an existing document, or enter color values into the foreground and background color fields
+
+•     To change between HEX and RGB color values, select Options→Displayed Color
+
+Value (Control+E for HEX; Control+R for
+
+RGB)
+
+3.       Make necessary adjustments to corresponding colors in your Microsoft Word document
+
+                 
+
+Set the Human Language
+
+Setting the human language of content enables assistive technology to accurately and properly convey the inflection and pronunciation of text, providing a more accurate experience for the user.
+
+To set the human language of a word or phrase:
+
+•       Select the content
+
+•       From the Review tab, select the Language tool
+
+[]
+
+Export to PDF
+
+For whatever reason, you may want to distribute a document at some point. If you have created your Word document with accessibility in mind, most or all of the accessibility features should transfer to the PDF version of your document.
+
+Note: you must have the Acrobat toolbar to perform the following task. 
+
+To export your Word document to PDF
+
+•       Create your Word document, applying any appropriate accessibility features
+
+•       In the Acrobat toolbar, set any preferences such as Heading conversion, Advanced tagging, etc.
+
+•       Select the “Create PDF” tool from the toolbar
+
+[]
+
+                 
+
+About this coursework:
+
+The educational information in this coursework is provided under the Creative Commons AttributionShareAlike license.
+
+Content in the exercise files and screenshots regarding the Canary Islands is adapted with significant truncation from https://en.wikipedia.org/wiki/Canary_Islands, and is provided under the Creative Commons Attribution-ShareAlike license. 
+
+Content in the exercise files and screenshots regarding Mount Everest is adapted with significant truncation from https://en.wikipedia.org/wiki/Mount_Everest, and is provided under the Creative Commons Attribution-ShareAlike license. 
+
+ 
+
+ 

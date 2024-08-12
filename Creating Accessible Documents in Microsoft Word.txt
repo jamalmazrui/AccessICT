@@ -1,0 +1,330 @@
+﻿Creating Accessible Documents in MS Word
+
+
+Creating Accessible Documents in Microsoft Word
+
+[]
+
+Adapted from Webaim.org
+
+Table of Contents
+
+INTRODUCTION.................................................................................................................................................... 2
+
+HEADINGS............................................................................................................................................................ 2
+
+STRUCTURE THROUGH HIERARCHY........................................................................................................................................................................ 2
+
+NAVIGATION THROUGH STRUCTURE.................................................................................................................................................................... 2
+
+"HEADINGS" CREATED WITH FONT STYLES........................................................................................................................................................... 2
+
+ALTERNATIVE TEXT FOR IMAGES.......................................................................................................................... 3
+
+ADDING ALTERNATIVE TEXT.................................................................................................................................................................................... 3
+
+How to Insert Alt Text in MSWord:................................................................................................................... 3
+
+BEST PRACTICES FOR ALTERNATIVE TEXT............................................................................................................................................................... 4
+
+DATA TABLES....................................................................................................................................................... 4
+
+ADDING TABLE PROPERTIES.................................................................................................................................................................................... 5
+
+LINKS.................................................................................................................................................................... 5
+
+CREATING LINKS IN WORD................................................................................................................................................................................... 5
+
+How to Add Link Descriptions (MS Word):........................................................................................................ 5
+
+LISTS & COLUMNS................................................................................................................................................. 6
+
+LIST TYPES................................................................................................................................................................................................................ 6
+
+COLOR CONTRAST............................................................................................................................................... 6
+
+ACCESSIBILITY CHECKER....................................................................................................................................... 6
+
+CONVERTING TO PDF........................................................................................................................................... 9
+
+OTHER PRINCIPLES................................................................................................................................................ 9
+
+PRINCIPLES INTO PRACTICE................................................................................................................................ 10
+
+ 
+
+ 
+
+ 
+
+             
+
+Introduction
+
+The following best practices are provided to help you maximize the accessibility of your Word documents. On this page you will find general principles for increasing accessibility in all versions of Word. When you are ready to put these recommendations into practice, select your version of Word from the links in the digital version on the last page of this document.
+
+Headings
+
+A uniform heading structure is often the most important accessibility consideration in Word documents. When encountering a lengthy Word document, sighted users often scroll the page quickly and look for big, bold text (headings) to get an idea of its structure and content. Screen reader and other assistive technology users also have the ability to navigate Word documents by heading structure, assuming Word's Heading styles are used.
+
+Structure through hierarchy
+
+Pages should be structured in a hierarchical manner:
+
+•    A Title is the top most heading and there is only one.
+
+•    A Heading 1 is usually a page title or a main content heading. 
+
+•    A Heading 2 is usually a major section heading.
+
+•    A Heading 3 is usually a sub-section of the Heading 2.
+
+•    A Heading 4 is usually a sub-section of the Heading 3, and so on, ending with Heading 6.
+
+Technically, lower-degree headings should be contained within headings of the next highest degree. One should not skip heading levels, such as using a Heading 4 directly below a Heading 2.
+
+The following outline shows an example of hierarchy:
+
+•    Heading 1 o Heading 2 o Heading 2
+
+▪  Heading 3
+
+▪  Heading 3
+
+Navigation through structure
+
+Word documents with a proper heading structure provide screen reader and other assistive technology users with the structure to navigate by:
+
+•    Viewing a list of all of the headings on the page.
+
+•    Choosing top-level headings (Heading 1), next-level headings (Heading 2), third-level headings (Heading 3), and so on.
+
+•    Reading or jumping by headings.
+
+"Headings" created with font styles
+
+Unfortunately, it is a common practice to create a "heading" by changing the text directly in a Word document.
+
+A user will highlight the text and apply a different font type, a larger font size, bold formatting, etc. While these changes made with Font styling will provide visual structure for some of your users, the document structure needed for navigation by assistive technology users is missing. For this reason, use the Heading tool provided by Word.
+
+[] 
+
+Figure 1: Microsoft Word 2016 for Mac Styles Ribbon location
+
+Alternative Text for Images
+
+Alternative text is needed in Word documents to provide a non-visual means of representing the CONTENT or FUNCTION of an image. There is more than one way to provide "alt text," but all images contained in a Word document must have it.
+
+Image types in Word documents that can be given alternative text include:
+
+•    pictures
+
+•    illustrations
+
+•    images of text
+
+•    shapes
+
+•    charts
+
+•    SmartArt
+
+•    embedded objects
+
+When alt text is added correctly to an image, screen reading software can "read" it in a Word, PDF or HTML file.
+
+Adding alternative text
+
+There are multiple ways to provide alt text in Word documents:
+
+•    Use the Description field in the Alt Text field (see steps below) OR
+
+•    Provide information about the content or function of the image in the surrounding text.
+
+When the equivalent text cannot be provided succinctly in text near the image, you may link to another section of the document (e.g., an appendix) or to an accessible web page.
+
+How to Insert Alt Text in MSWord:
+
+(Keep in mind your version of Word may be slightly different. Links to directions for various versions of Word are located on the last page of this document)
+
+1.    Right click your image within the document and select Format Picture.
+
+2.    Within the Format Picture menu, select the option for Alt Text in the sidebar.
+
+3.    Describe the image in the Description field, not the Title field.
+
+[]
+
+Figure 2: Adding alt text to an image in Microsoft Word 2010 for Windows
+
+Best practices for alternative text
+
+Alternative text should be:
+
+•    Accurate and equivalent—present the same content or function as the image.
+
+•    Succinct—no more than a few words are necessary; rarely a short sentence or two may be appropriate.
+
+•    NOT be redundant—do not provide information that is in the surrounding text.
+
+•    NOT use descriptive phrases—screen reading software identifies images, so do not use phrases such as "image of..." or "graphic of...".
+
+Data Tables
+
+The purpose of data tables is to present information in a grid, or matrix, and to have columns or rows that show the meaning of the information in the grid. Sighted users scan a table to make associations between data in the table and their appropriate row and/or column headers. Screen reader users make these same associations with tables in web pages and PDF files. Unfortunately Word documents do not support this functionality. You can, however, improve how table data is read by a screen reader by using clean, uniform tables:
+
+•    Do not paste images of tables.
+
+•    Do not merge cells.
+
+•    Be sure the header cells are accurately explaining the data directly below (columns) or to the right (rows).
+
+•    Do not use the table for notes or extra information that is not directly related to all data in the associated row or column. Notes may be provided above or below the table.
+
+•    Make headers in table properties (below).
+
+Adding table properties
+
+You can add properties to a table in a Word document. The first row in a table can be identified as a header row. This will provide a screen reader user with additional information when the document is exported to PDF.
+
+Links
+
+Hyperlinks in Word documents allow users to visit web pages, navigate to Word Headings and Bookmarks, and open email links.
+
+Creating links in Word
+
+Hyperlinks are usually created in Word by pasting the complete URL of a web page into a document and hitting Space, Enter, or some other key. Word automatically creates a link, and uses the URL as the display text (e.g., http://www.brandeis.edu/learning/index.html). Because the URL text may not make sense to a user, we recommend editing Word's default link text.
+
+How to Add Link Descriptions (MS Word):
+
+(Keep in mind your version of Word may be slightly different. Links to directions for various versions of Word are located on the last page of this document)
+
+1.    Change the hyperlink text by selecting the link and right clicking on it
+
+2.    Select Edit Hyperlink.
+
+3.    Change the URL in the Text to display field to something more descriptive.
+
+Follow these principles to create accessible links:
+
+•    Use descriptive link text that does not rely on context from the surrounding text.
+
+•    Keep the amount of text in the link to a minimum.
+
+•    Use underlined text with a color that stands out from the surrounding text.
+
+Important: Screen reader users may skim a document by navigating from link to link. Avoid ambiguous link text that is difficult to understand out of context (e.g., "click here"). 
+
+Note: Describing links and avoiding use of explicit URLs is not always possible when following mandated document styling, e.g. in a printed bibliography. Authors must make the decision as to which is more important for the document, accessibility or mandated style.
+
+Lists & Columns
+
+Lists and columns add important hierarchical structure to a document. Sometimes users create "lists" and "columns" manually by hitting the Tab to indent content or by manually numbering. While this provides visual structure for sighted users, it does not provide the document structure needed for assistive technology users. Use the tools provided in Word for creating bullets and numbered lists (under Home tab) and columns (under Layout tab).
+
+ [] 
+
+Figure 3: Microsoft Word 2016 for Mac -- bullets, lists, and column formatting buttons
+
+List types
+
+There are two types of lists used in Word: ordered and unordered. Ordered (numbered) lists are used to present a group of items (words, phrases, sentences) that follow a sequence:
+
+1.    Preheat grill with "high" heat setting.
+
+2.    Cook hamburgers on "medium" heat setting.
+
+3.    Flip hamburgers when juices are visible on the top of the patty.
+
+4.    Remove hamburgers when the inside temperature is 160℉.
+
+Unordered (bullet) lists are used for a group of items without a sequence:
+
+•    Ketchup
+
+•    Mustard
+
+•    Pickles
+
+•    Onions
+
+Color Contrast
+
+Individuals with low-vision or colorblindness can have trouble discerning text that is poorly contrasted with its background. You can alleviate this by using dark text and high-contrast color combinations in your graphics and by labeling things that are otherwise distinguished only by color on a page (think charts and graphs). 
+
+For more information on improving color contrast, visit the Best practices: Using color page of the web accessibility toolkit.
+
+Accessibility Checker
+
+Newer versions of Word (Mac 2016 plus, Windows 2010 plus) provide an Accessibility Checker for identifying and repairing accessibility issues. 
+
+[]
+
+Figure 4: Accessibility checker button -- Word 2016 for Mac                                                                  
+
+[]
+
+Figure 5: Accessibility checker button on the Info tab of the File menu in Word 2013 for Windows
+
+The checker's Inspection Results (usually located on the right in a column next to your document) classifies accessibility issues into three categories:
+
+•      Errors: content that makes a document very difficult or impossible for people with disabilities to access.
+
+o   Example: an image with no alt text.
+
+•      Warnings: content that in most—but not all—cases makes the document difficult for people with disabilities to access.
+
+o   Example: a link with text that is not descriptive of its function.
+
+•      Tips: content that people with disabilities can access, but that might be better organized or presented. o Example: skipping from a first-level heading to a third-level heading.
+
+[]
+
+Figure 6: Sample results in accessibility checker in Word 2016 for MAC
+
+Clicking an item in the results locates and highlights the corresponding item in the document and displays the Additional Information section:
+
+•      Why Fix: explains why the issue impacts accessibility.
+
+•      How to Fix: suggestions for repairing the issue.
+
+If you are unable to fix an error on your own, please reach out to the Web team at webaccessibility@brandeis.edu.
+
+The accessibility checker is located in the File menu under Info for most Windows versions of MSWord and in the Review menu on Word for Mac (2016 on).
+
+Converting to PDF
+
+Many Word documents end up as PDF files. It is a convenient way to preserve formatting and accessibility information, assuming the file is converted correctly. Read more on converting a Word document to accessible PDF in WebAim’s Acrobat/PDF article.
+
+PDFs have additional accessibility needs. Consider increasing the accessibility of your PDF using Acrobat Professional. Make sure that you have the right version of Acrobat for your version of Word.
+
+Training on PDF accessibility is available through the Digital Communications site.
+
+Other Principles
+
+•    Use simple language.
+
+•    Ensure that font size is sufficiently large—generally a minimum of 11 points.
+
+•    Provide sufficient contrast between text colors and background colors.
+
+•    Do not use color as the ONLY way to convey content.
+
+•    Be careful with the use of watermarks. They can impact readability and create low contrast.
+
+•    Provide a table of contents for long documents (5 pages+).
+
+Principles into Practice
+
+Ready to get started? Select your version of Word:
+
+•    Word 2010 (Windows)
+
+•    Word 2011 (Mac)
+
+•    Word 2013 (Windows)
+
+•    Word 2016 (Windows)
+
+•    Word 2016 (Mac)
+
+For more help or to report a broken link in this document, please contact the  Brandeis accessibility team (webaccessibility@brandeis.edu).

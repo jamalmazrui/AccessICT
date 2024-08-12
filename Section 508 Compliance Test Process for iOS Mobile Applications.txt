@@ -1,0 +1,5068 @@
+﻿DHS Section 508 Compliance Test Process for iOS Mobile Applications
+
+
+Table of Contents
+
+Structure Bookmarks
+
+DHS Section 508 Compliance Test Process for iOS Mobile Applications
+
+CONTENTS
+
+ABOUT THIS DOCUMENT
+
+DHS TEST PROCESS FOR IOS MOBILE APPLICATIONS
+
+HOW THIS DOCUMENT IS STRUCTURED
+
+SECTION 1: INTRODUCTION AND RATIONALE FOR TESTS
+
+APPLYING THE SECTION 508 STANDARDS TO THE IOS MOBILE APPLICATIONS TEST PROCESS
+
+THE RATIONALE FOR EACH TEST
+
+SECTION 2: TEST ENVIRONMENT
+
+DEVICES:
+
+ADDITIONAL EQUIPMENT:
+
+TEST TOOLS:
+
+SELECT THE CORRECT TEST PROCESS FOR TESTING
+
+SECTION 3: DHS SECTION 508 COMPLIANCE TESTS FOR IOS MOBILE APPLICATIONS
+
+STRUCTURE OF THIS SECTION
+
+1. KEYBOARD AND FOCUS
+
+2. SCREEN READER TEST
+
+3. VIDEO, AUDIO, AND MULTIMEDIA
+
+4. COLOR AND CONTRAST
+
+5. FLASHING
+
+6. TIMEOUTS
+
+7. BUILT-IN ACCESSIBILITY FEATURES
+
+8. ACCESSIBLE ALTERNATIVE
+
+ELEMENTS TABLE
+
+IOS GESTURES AND KEYSTROKES
+
+HOW TO TAKE A SCREENSHOT ON IOS
+
+VOICEOVER KEYSTROKES
+
+VOICEOVER TEXT FIELD COMMANDS
+
+VOICEOVER GESTURES
+
+ZOOM GESTURES
+
+DOCUMENT CONTENT CHANGE LOG
+
+VERSION 1.0, APRIL 2017
+
+[index-1_1.jpg]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DHS Section 508 Compliance Test Process for iOS
+
+Mobile Applications
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+September 15, 2017
+
+ 
+
+ 
+
+ 
+
+ 
+
+v.1
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+
+ 
+
+CONTENTS
+
+ Contents ........................................................................................................................................... 2
+
+ About this document ......................................................................................................................... 4
+
+DHS Test Process for iOS Mobile Applications ..............................................................................................4
+
+How this document is structured.................................................................................................................4
+
+ Section 1: Introduction and Rationale for Tests ................................................................................. 5
+
+Applying the Section 508 Standards to the IOS Mobile Applications Test Process .........................................5
+
+The Rationale for each test .........................................................................................................................5
+
+ Section 2: Test Environment ............................................................................................................ 10
+
+Devices: .................................................................................................................................................... 10
+
+Additional Equipment: .............................................................................................................................. 10
+
+Test Tools: ................................................................................................................................................ 10
+
+Select the correct test process for testing .................................................................................................. 14
+
+ Section 3: DHS Section 508 Compliance Tests for iOS Mobile Applications ....................................... 15
+
+Structure of this section ............................................................................................................................ 15
+
+1. Keyboard and Focus .............................................................................................................................. 16
+
+2. Screen Reader Test ............................................................................................................................... 21
+
+3.  Video, Audio, and Multimedia ............................................................................................................ 28
+
+4. Color and contrast ................................................................................................................................ 34
+
+5.  Flashing ............................................................................................................................................. 36
+
+6.  TimeOuts ........................................................................................................................................... 37
+
+7.  Built-in Accessibility Features ............................................................................................................. 39
+
+8.  Accessible Alternative ........................................................................................................................ 43
+
+ Elements Table................................................................................................................................ 45
+
+ iOS Gestures and Keystrokes ........................................................................................................... 52
+
+How to take a Screenshot on iOS............................................................................................................... 52
+
+VoiceOver Keystrokes ............................................................................................................................... 52
+
+VoiceOver Text Field Commands ............................................................................................................... 53
+
+VoiceOver Gestures .................................................................................................................................. 54
+
+Zoom Gestures ......................................................................................................................................... 55
+
+ Document Content Change Log ....................................................................................................... 57
+
+ 
+
+ 
+
+2
+
+Version 1.0, April 2017 .............................................................................................................................. 57
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3
+
+ABOUT THIS DOCUMENT
+
+DHS TEST PROCESS FOR IOS MOBILE APPLICATIONS
+
+The Department of Homeland Security (DHS) Office of Accessible Systems and Technology (OAST) has a mission to provide strategic direction, technical support, and training to ensure agency employees and customers with disabilities have equal access to information and data.
+
+Section 508 of the Rehabilitation Act of 1973, as amended (29 U.S.C. 794d), requires all federal departments and agencies to ensure that their electronic and information technology (EIT) is accessible to people with disabilities. This DHS Section 508 Compliance Test Process for iOS Mobile Applications has been produced in support of this mission.
+
+HOW THIS DOCUMENT IS STRUCTURED
+
+Section 1 describes the rationale for testing mobile software apps (including those with embedded web views) using the process defined in this document. The rationale behind each individual test in this document is also provided.
+
+Section 2 provides details of the test environment for this process (device, additional equipment, test tools), including device recommendations, installation and settings guidance.
+
+Section 3 is the iOS test process. Each test includes step-by-step instructions on how and what to test, as well as instructions on which standards to mark as compliant or not compliant. Please be sure you are following the test process for the correct App Operating System (OS).
+
+ 
+
+ 
+
+ 
+
+ 
+
+4  
+
+SECTION 1:
+
+INTRODUCTION AND RATIONALE FOR TESTS
+
+APPLYING THE SECTION 508 STANDARDS TO THE IOS MOBILE APPLICATIONS TEST PROCESS
+
+The Section 508 technical standards include one section aimed at browser-based information (Web), and another section aimed at native applications and operating systems (Software). The standards do not specifically call out mobile apps or mobile web content. DHS has determined that mobile applications require a testing process distinct from the
+
+desktop/laptop application test process due in part to the lack of tools to evaluate accessibility on mobile platforms. Mobile platforms also have greater limitations on accessibility applications programming interfaces (APIs) and assistive technologies that are available for a given platform.
+
+The Section 508 Standards also contain a section on Functional Performance Criteria (FPC). The FPC require that "at least one mode of operation and information retrieval that does not require user [vision, hearing, speech or fine motor skills]
+
+shall be provided, or support for assistive technology used" by people who are blind, low vision, deaf, hard of hearing, speech disabled, or have limited physical capabilities.
+
+There are two broad categories of mobile content: native mobile apps that are designed to run on a mobile device and mobile web content that is designed to be viewed in a mobile browser. For testing purposes, mobile apps including those with embedded web views – sometimes referred to as “hybrid” apps – should use this mobile testing process. Hybrid apps are covered under this test process primarily because it may not be possible to gain access to the web content in these web views via methods used for testing non-mobile web and software content.
+
+Web content designed for mobile consumption should continue to use the Software and Web application test process used for desktop/laptop content, with a modified viewport size.
+
+The DHS mobile testing process begins with evaluating elements that are most commonly found in mobile applications and therefore most likely to have applicable accessibility requirements. There are 8 main steps in the test process.
+
+THE RATIONALE FOR EACH TEST
+
+Each step of the test process includes only the information that will need to be referenced frequently, namely the directions on how to test, and how to interpret the test results. To simplify the organization of this document, the rationale for each individual test has been separated out, and is presented below.
+
+1. KEYBOARD AND FOCUS TEST
+
+KEYBOARD
+
+Interactive elements of interfaces include any elements that a user is expected to use, modify, or edit. Examples include navigation controls (links, buttons etc.), and editable content (selectable text, data input etc.).
+
+It must also be possible for users to determine what the interactive elements are, and how to use them. This requires that the visual label / instructions are programmatically associated with controls; otherwise non-visual users will not be able to tell which label relates to which control / form-element.
+
+The keyboard-only test determines whether it is possible to control the interface without the visual and/or physical capabilities necessary to use touch gestures without assistive technology or a pointing device.
+
+Wherever users are expected to interact with components, it must be possible for users to access those components or perform those functions using only the keyboard because (i) using a pointing device or touch gestures without assistive technology is not possible when the user has no sight, and (ii) using a pointing device or touch gesture is not possible when 5  
+
+the user does not have the physical capability / dexterity to effectively control a pointing device or use touch gestures without assistive technology.
+
+Keyboard access is defined as use with a physical keyboard that is attached to the mobile device, either separately through a protocol such as Bluetooth, or integrated. On iOS, keyboard access must be tested with the use of VoiceOver as keyboard access to all interactive content is not available otherwise. iOS provides a number of alternative input methods including accessible touch gesture access through built-in assistive technology such as VoiceOver and AssistiveTouch.
+
+FOCUS
+
+Ideally, interfaces use standard keyboard commands (TAB, Space Bar, Enter, Escape, etc.), making their use easy and intuitive. On occasion, an interface may be designed to expand on the basic set of standard keyboard commands, and/or remap standard keys. In both of these cases, users must learn the non-standard keys. In order to be aware of non-standard key commands, users must be notified of their existence and correct use through the interface, application help, and/or documentation.
+
+When controlling the interface with the keyboard only, if there is no visual differentiation between the current focused item and the rest of the interface / content, then it is not possible to tell where in the interface you are. Therefore, a visual indication of focus is necessary.
+
+A logical order and groupings of interface components is normally a given in the design of software applications and embedded web content. Groupings and order are usually visually apparent. Logical arrangements are used to aid visual appeal and improve usability. However, when the focus/TAB order does not follow the logical order, users can become confused, make errors, and may not understand the contextual meaning of components. This is especially true for people who have no vision, or who have low vision, and are relying on AT.
+
+Some components in embedded web content and software screens are intentionally hidden to reduce visual clutter. Other components only appear as part of a procedure such as an error notification. Content with such interface components may be revealed in an inaccessible manner by requiring user vision and/or requiring the use of a mouse. Keyboard and touch screen users need to be able to access the information and controls that are revealed, and users without vision, or with low vision, need to know that new content has appeared.
+
+2. SCREEN READER TEST
+
+Assistive technology utilizes accessibility properties of elements and provides them to users through various modes to provide access to the application. Accessibility properties are provided through the accessibility APIs available in mobile operating systems, HTML code, and ARIA properties or other protocols. Without these labels and accessibility properties, the assistive technology may not provide correct information to the user.
+
+In order to correctly and accurately complete a form, it is necessary to follow instructions, directions and cues, as well as enter information in the correct places. A given form component may be the subject of instructions that are not positioned next to the component (e.g., at the top of a form, the instruction is "If you are the home owner, complete parts a, b, and f"). In such cases, form designers will use visual layout and flow to direct the user. However, users without vision, or with low vision, may not have access to the visual cues, and hence will be unable to easily find the related instructions for the current form component. For this reason, it is necessary to programmatically associate all relevant instructions, directions and cues with their respective components/controls.
+
+All interface elements including images, charts, and tables that provide meaningful information must be conveyed correctly to assistive technology through their accessibility properties (name, role, state, and value) in a consistent manner for users without vision or with low vision. For the purpose of testing, the name, role, and state expected outcomes are listed in the Elements Table. The tester is testing to see if sufficient characteristics of all elements are announced.
+
+ 
+
+ 
+
+6  
+
+To aid navigation with screen reading AT software, users can bring up a list of navigation controls on their screens. Users can read through content and decide which of the links in the content they wish to follow (i.e., they do not have to navigate back to the link itself).
+
+Links must have a unique and descriptive name. Say each item for sale has a 'click here' link next to it, and the user calls up the list of controls. The list will have multiple 'click here' links that are not distinguishable. Another common problem occurs when the links only contain URLs, and the purpose of each link may not be apparent. It is therefore required to use meaningful and unique names for links and user controls, to aid navigation using assistive technology for users without vision or with low vision.
+
+For screen reader users, screen orientation is important in order to ensure proper gestures are used. Some apps will allow rotation as the device moves; others are static. Orientation must be announced by the mobile screen reader if the app supports device rotation.
+
+3. VIDEO, AUDIO, AND MULTIMEDIA
+
+This section addresses audio files, animations, video files, and multimedia. Screen reader software cannot interpret images, animation, video, or multimedia. Screen readers will, however, read text that has been associated with interface elements.
+
+The interpretation (meaning) of an interface element must therefore be conveyed textually in the interface programming for assistive technology for users without vision or with low vision.
+
+Animation includes sequences of overlaid images, dynamic changes of state such as a moving speed dial, a chart illustrating dynamic flow changes from one state to another, etc. Video-only files include animations, screen, video captures etc. The visual information provided through animation and video-only must be provided through alternative means for assistive technology for users without vision or with low vision.
+
+Audio-only files include speeches, sound-bites, ambient (background) sounds, etc. Equivalent text descriptions must be provided for users with no hearing or who are hard of hearing.
+
+Synchronized media is a presentation consisting of time-synchronized video and audio. Synchronized media includes public information films, Webcasts, press conferences, and online training presentations.
+
+Some users will not be able to hear the content. Therefore there needs to be another mode to provide the audio
+
+information, such as captions (text showing what is being said, and other relevant sounds). Captions need to be available, but do not necessarily need to be turned on by default. For example, users who need captions can switch them on with a control (usually a 'CC' button for Closed Captions). If there is no means of switching modes, then the default mode must be accessible (i.e., Open Captions).
+
+Because captions must be time-synchronized, separate transcripts will not meet this requirement on their own.
+
+Some users will not be able to see the content. Therefore there needs to be another mode to provide descriptions of the visual information. In synchronized media, this usually means additional narration inserted during breaks in the dialog, describing visual events and cues.
+
+Audio descriptions need to be available, but are not required to be turned on by default. For example, users who need descriptions can switch them on with a control. If there is no means of switching modes, then the audio descriptions must be enabled by default.
+
+The alternative presentation of information must allow understanding of the relevant information. For example,
+
+descriptions might include the looks on people's faces, people handing items to each other, or who has entered the room.
+
+4. COLOR AND CONTRAST
+
+ 
+
+ 
+
+7  
+
+The use of color to convey meaningful information must be provided through alternative means for users who cannot distinguish colors. Insufficient contrast may make it difficult for some users to see and use the content.
+
+Color dependence is using color as the sole method to convey information. For example, a single unlabeled indicator that is green for 'on', orange for 'standby', and red for 'off' is color dependent.
+
+When color is the only means to convey information, people who are color blind, and people who cannot see, do not have access to the same information that others have. The status or function that is being conveyed by color also needs to be available in a textual format that can be viewed by all, and can be read by screen reader software.
+
+This requirement does not mean that color cannot be used; it means that color cannot be the only means of conveying the information.
+
+The visual difference between the background behind text, and the text itself, may be perceivable by a given designer.
+
+However, beyond color choice which is under control of the designer, many factors beyond the designer's control affect peoples' ability to discern between colors/shades, including age (contrast sensitivity reduces with age), screen brightness, ambient light, color blindness and some types of low vision. The use of color/shade choices that do not contrast well with each other may be deliberate (i.e., artistic preference), or may be the result of programmatic features (e.g., a button's text is black on white, but the text turns yellow in a certain mode, and the background remains white).
+
+In general, the higher the level of contrast used, the more people will be able to see and use the content.
+
+If the color contrast cannot be tested, this will be noted as a failure.
+
+5. FLASHING
+
+The term 'flashing' encompasses interface elements that blink, flicker repetitively, or elements that scroll (e.g., marquee text).
+
+An element that flickers or blinks in the visual field can cause adverse reactions/seizures in people who have photosensitive epilepsy. Section 508 does not permit flashing in the frequency range between 2Hz to 55Hz (from twice per second to 55
+
+times per second). This frequency has been updated in WCAG 2.0, which is followed by DHS, to not permit flickering above 3 hertz (flickering above 55hz is not visually apparent).
+
+Scrolling ('marquee') text should be avoided where possible, because the scrolling effect causes a form of flickering that can be in the prohibited frequency range. Even though this may be imperceptible for many viewers, it can have the same flickering effect for some. Scrolling text should also be tested for Screen reader access.
+
+Due to the current lack of source code and testing tool limitations, all flashing will fail.
+
+6. TIMEOUTS
+
+Messages and/or instructions to the user requesting their response within a given time are typically associated with sites that require a secure login. This includes both server time outs and client side security time outs.
+
+People who use AT such as screen reader software or voice input software may require more time than other users to assimilate the information and execute the controls on a Web page or software application. Because AT users may need more time, applications that have a time out must provide (a) prior notification/warning that a time out is about to occur, and (b) a means for the user to request more time.
+
+7. BUILT-IN ACCESSIBILITY FEATURES
+
+It is possible to write software that controls various aspects of the OS. This may inadvertently cause an OS accessibility feature to deactivate. For example, VoiceOver is a screen reader built in to iOS to allow those who are blind or low vision to 8  
+
+access the operating system and applications through the use of speech output and braille. VoiceOver contains its own set of gestures that are used to interact with elements on the screen. Developers should ensure that they do not disable or override the gestures that are used by VoiceOver users, as this will impact their ability to interact with the mobile application.
+
+Similarly, applications must allow assistive technology to be run concurrently with the app. For example, if a low vision user enables the iOS zoom assistive technology feature to get a closer look at a control within an app, the app should not terminate when zoom is activated.
+
+The accessibility features of iOS (the platform for which the tests are written) contain the following user-configurable accessibility features that should not be disabled or disrupted by the software application:
+
+ iOS: VoiceOver, Zoom, Assistive Touch, Invert Colors, Speak Screen, Closed Captioning, Larger Text, microphone text input
+
+8. ACCESSIBLE ALTERNATIVE
+
+An 'Alternate’ is an accessible version containing the same information as the primary application. Alternates will usually contain text in place of the inaccessible content from the primary application. For example, a complex organizational chart may be written in prose. The text must be equivalent, and it must be kept up-to-date.
+
+An 'Alternate' should only be provided for accessibility when the primary application cannot be made accessible. The accessible version must contain the same information as the primary application.
+
+The information should be 'equivalent', but by definition this is not going to be 'exactly the same'. The main points, themes, concepts etc. that the authors are trying to get across in the primary content should also come across in the alternate. For example, if a complex chart on the primary page shows a year with a small increases in earnings in Q2 and a large decrease in Q2, and the text discusses why these trends seem to be occurring, the Alternate should convey the trends, and the high and low data points of interest. An Alternate that just provides all the data points in linear form, with no highlighting of the trends under consideration, would not be considered equivalent.
+
+Alternative versions for accessibility are only permitted when the primary application cannot be made compliant. Common examples where alternative versions are usually permitted include maps and directions, and very complex diagrams and charts.
+
+ 
+
+ 
+
+ 
+
+ 
+
+9  
+
+SECTION 2:
+
+TEST ENVIRONMENT
+
+DEVICES:
+
+Mobile application testing must be performed on mobile devices such as phones or tablets. The DHS Mobile iOS Test Process's test environment typically utilizes the current Apple Operating System, which as of writing this is iOS 10. Note:
+
+When new OS updates are released, there could be bugs that impact AT use; an older OS may be recommended for testing purposes until an update fixing AT issues is released.
+
+The latest versions of this platform may not be available for all iOS devices. On iOS, the assistive technology is updated with the platform.
+
+A general note on mobile web browsers: The Safari based web view is used for embedded web views on iOS.
+
+ADDITIONAL EQUIPMENT:
+
+ Desktop/laptop to record the test results and for use with the Colour Contrast Analyzer
+
+ A Bluetooth keyboard
+
+o Note: the keyboard commands listed in this document for iOS testing are for Apple keyboards. Testing
+
+with a non-Apple keyboard might result in use of different keyboard commands. The tester will need to
+
+be familiar with proper keyboard commands for their equipment prior to testing.
+
+ Sound, Wi-Fi, and Bluetooth capabilities must be available on the mobile device
+
+ Mobile device must have the OS version listed above in “Devices” and tools described in the following section installed
+
+TEST TOOLS:
+
+The tools used in the DHS Mobile iOS Test Process have been chosen based on the availability of accessibility inspection tools on mobile platforms. This test process uses platform specific assistive technology to inspect accessibility properties in an evidenced based manner. Use of these tools does not require the tester to view source code or have knowledge of programming languages.
+
+ 
+
+ 
+
+ 
+
+ 
+
+10  
+
+[index-11_1.png]
+
+[index-11_2.jpg]
+
+VOICEOVER
+
+Official Name
+
+VoiceOver
+
+Also Known As
+
+n/a
+
+URL of Product
+
+http://www.apple.com/accessibility/ios/voiceover/
+
+Purpose for Section 508
+
+Reveal the label, value, traits, frame, and hint of a user interface control.
+
+Testing
+
+Developed By
+
+Apple
+
+Current Version
+
+iOS 10-Version tied to OS
+
+Installation Advice
+
+VoiceOver is pre-installed on all devices that support iOS 7+.
+
+Settings
+
+ 
+
+To enable VoiceOver, choose Settings > General > Accessibility > VoiceOver: On
+
+From the same screen:
+
+ Speaking Rate: set to a comfortable setting
+
+ Verbosity > Speak Hints: On
+
+ Navigate Images: Always
+
+ Note: if using a non-Apple keyboard, you may also select Modifier Key and
+
+change the keys that must be pressed on a keyboard to activate the VoiceOver
+
+key
+
+ 
+
+ 
+
+11  
+
+ 
+
+On Rotor screen select the following:
+
+ Items for use with the rotor: Characters, Words, Lines, Punctuation, Hints,
+
+Containers, Headings, Links, Form Controls, Tables, Lists, Visited Links, Non-
+
+Visited Links, Buttons, Text Fields, Search Fields, Images, Static Text, In-Page
+
+Links
+
+ 
+
+On the Settings > General > Accessibility screen
+
+ Speech > Speak Screen: On, then turn Highlight Content On.
+
+o Under that, select Words and Sentences
+
+o Sentence Highlight Style: select Underline
+
+ Larger Text: drag the slider to the far right to the largest “A”
+
+ Subtitles and Captioning > Closed Captions + SDH: On
+
+o Change your Style to something you will easily recognize during testing
+
+ Audio Descriptions > Prefer Audio Descriptions: On
+
+ Accessibility Shortcut - Enabling this setting to " VoiceOver" allows you to turn
+
+VoiceOver on and off by pressing the home button three times quickly
+
+ 
+
+On the Settings > General > Keyboard
+
+ Enable Dictation: On
+
+On the Settings > Bluetooth
+
+ Configure an external Bluetooth keyboard to be used with VoiceOver for testing
+
+VoiceOver is a screen reader. While this tool is assistive technology used by people who are blind or visually impaired for access, it can also provide a consistent method of identifying programmatic accessibility information and can be a very useful tool. In order to provide access to touchscreen devices, mobile screen readers provide an alternative set of gestures.
+
+For example, touching an item no longer activates the item when the screen reader is running. Instead it focuses the item under the finger and announces it to the user. The user must double tap to activate the item – thus, a double tap sends a normal single tap gesture. There are a number of gestures that you will need to learn to use the assistive technology. These gestures and keystrokes for using the screen reader with an external keyboard are provided at the end of this document; please review these commands and become familiar with how VoiceOver works before performing testing.
+
+ 
+
+ 
+
+12  
+
+[index-13_1.png]
+
+COLOR CONTRAST ANALYSER
+
+Official name
+
+Colour Contrast Analyzer
+
+Also Known As
+
+Contrast Analyzer
+
+URL / product
+
+http://www.paciellogroup.com/resources/contrastAnalyser; http://www.wat-c.org (Included with page.
+
+the Web Accessibility Toolbar (WAT))
+
+Purpose for 508
+
+Allows the user to use an eye dropper to check the contrast of background and foreground text of an
+
+testing
+
+image taken from a mobile device. This application runs on the Windows platform.
+
+Developed by /
+
+The Paciello Group, WAT-C.org
+
+Owned by
+
+Current version
+
+2.4, English
+
+at the time of
+
+writing
+
+ 
+
+ 
+
+Installation
+
+Download application. Run executable from PC. From the Web Accessibility Toolbar (WAT) choose
+
+advice
+
+Colour > Colour Contrast Analyser.
+
+If using the standalone version (not within WAT), Admin rights are not required to execute this tool of
+
+version 2.2 (version 2.4 may require admin rights).
+
+Enabling the
+
+Run the executable. From the main screen’s Algorithm group, select the Luminosity radio button.
+
+Colour Contrast
+
+Use the eye dropper tool for the foreground to obtain the foreground color and then eye dropper
+
+Analyzer
+
+tool from the background to obtain the background color. Verify the results in the Result –
+
+Luminosity section.
+
+ 
+
+Screenshot of
+
+the Accessibility
+
+Inspector
+
+ 
+
+ 
+
+ 
+
+13  
+
+[index-14_1.png]
+
+[index-14_2.png]
+
+[index-14_3.png]
+
+[index-14_4.png]
+
+[index-14_5.png]
+
+[index-14_6.png]
+
+SELECT THE CORRECT TEST PROCESS FOR TESTING
+
+It is important to identify whether the application you are testing is software or Web so that you know which test process to use and what test outcomes are expected.
+
+ Mobile software apps are those delivered to the user via native operating system-based processes (e.g. the app is accessed by downloading through an App Store) – this includes web content embedded in a native app. These
+
+apps should be tested with the Mobile Test process.
+
+ Mobile web interface apps are delivered to the user via the mobile Web browser. If the app opens in a web
+
+browser then use the non-mobile DHS Section 508 Compliance Test Process for Applications.
+
+Note: If an application has an Android OS version and iOS version of the app, the app must be tested on both platforms.
+
+Please use the Android Mobile Application test process for all Android apps.
+
+Through the testing process,  a test result can change from Compliant to Not Compliant, but do not change a result from
+
+Not Compliant to Compliant or your results will become inaccurate.
+
+ 
+
+Open App
+
+Did the app
+
+YES
+
+NO
+
+open in a
+
+browser?
+
+Use the DHS
+
+Use this test
+
+Section 508
+
+process for native
+
+Compliance Test
+
+mobile apps
+
+Process for
+
+ 
+
+Applications
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+14  
+
+SECTION 3:
+
+DHS SECTION 508 COMPLIANCE TESTS FOR IOS MOBILE APPLICATIONS
+
+STRUCTURE OF THIS SECTION
+
+Each step of the iOS test process includes only the information that will need to be referenced frequently, namely:
+
+ the directions on how to test, and
+
+ how to interpret the test results, and
+
+ the applicable standard(s) and the related technical 508 standards  
+
+To simplify the organization of this document:
+
+ the rationale for each individual test has been separated out (see page 5).
+
+ 
+
+ 
+
+ 
+
+ 
+
+15  
+
+1. KEYBOARD AND FOCUS
+
+1.1 KEYBOARD ACCESS
+
+Keyboard access must be available for all interactive interface components (links, buttons, etc.), editable content (text input fields, select options, etc.), and panes that can be accessed or controlled with touch gestures. Where non-standard keyboard commands are employed, users must be notified of alternate keyboard commands through the interface,
+
+application help, and/or documentation.
+
+For a user to know where the keyboard focus is on the screen there must be a visible indication of the currently focused component. If hidden content is revealed on the screen, the keyboard focus must move to the new content. When the sequence of interface components has meaning or requires an order of operation, the focus/TAB order must logically flow with the application/content.
+
+Keyboard access is defined as use with a physical keyboard that is attached to the mobile device, either separately (wireless keyboard) or integrated (built-in keyboard). On-screen keyboards cannot be used for this test. For the purposes of iOS
+
+testing keyboard tests must be performed with VoiceOver running to achieve true keyboard access. With VoiceOver on, users can access all interactive controls; without VoiceOver, users can only access text input fields.
+
+1: KEYBOARD TASKS- HOW TO TEST
+
+1. Find all visible and hidden interactive interface components that are accessible by touch.
+
+Interactive elements may be distinguished from non-interactive elements by using the app without a screen reader and touching each interface control to determine its level of interactivity. Only elements that can be accessed or controlled with a mouse or touch gesture must be keyboard accessible (this also includes any actions that are triggers by a single finger Tap and Hold gesture). Hidden and disabled form fields do not require keyboard access. Control options
+
+triggered by physical manipulation of the device (such as a shake, tilt, or swipe to show menu) must also be keyboard accessible.  
+
+2. Enable VoiceOver.
+
+Enable via Triple Click home button (if shortcut is enabled) or Settings > General > Accessibility > Voiceover: On Visual indication of focus is limited to input fields unless VoiceOver is running.
+
+3. Enable Bluetooth keyboard.
+
+4. Using only the Bluetooth keyboard, navigate through the entire screen to each interactive interface component, reveal hidden content, and activate all interactive components.
+
+For a list of keyboard shortcuts for the iOS platform, refer to VoiceOver Gestures and Keystrokes.  
+
+Use VO+Right arrow to cycle through all interactive controls and VO+Left Arrow to cycle backward through all
+
+interactive elements. Use VO+Spacebar to activate a control or to interact with text in an editable text field. Use the Tab key to move between all input fields.
+
+5. Note if the keyboard gets “trapped”, appears to loop or becomes stuck within an area of the application as a failure. Use touch gestures only in this situation to bypass the trap and continue testing.
+
+6. Investigate any instances where the standard platform keyboard methods do not provide access to interactive elements.
+
+ 
+
+ 
+
+16  
+
+Check if alternative keyboard access instructions are provided (in the application’s Help section or on the page).
+
+Instructions may include extending standard keyboard command operations (e.g., getting out of a keyboard “trap”), and/or alternate keys. Verify that the alternative keyboard commands work.
+
+Some applications may offer multiple ways to activate a function. Only one method of keyboard access is required.
+
+Special access keys (such as Alt+O or Command+P) and redundant menu options are not required for compliance if
+
+platform shortcuts work.
+
+7. Complete form fields.
+
+Enter text, select text in input fields, select (arrow and tab) different options from drop down lists, select and unselect checkboxes and radio buttons. Try to select the second or third option from a drop down list by keyboard only. Where multiple selections in a drop down list are possible, select multiple combinations. Where single finger Tap and Hold gestures provide interactive element access, ensure keyboard access is also available (to include standard copy/paste and cut in form fields).
+
+To select text, you must first turn off quick navigation mode by pressing VO+Spacebar on the editable text field or press the left and right arrow keys simultaneously.
+
+8. If a single finger Tap and Hold gesture reveals interactive content (such as copy/paste), ensure access is also provided through keyboard access.  
+
+An example of the single finger Tap and Hold gesture is a copy/cut/paste/select all. This will be applicable for most text input fields, but could also be used to perform actions such as a save or bookmark, for example.
+
+2: KEYBOARD FOCUS TASKS- HOW TO TEST
+
+1. Using the keyboard, put focus at the top of the screen and Tab through each screen, following the application’s visual focus (typically a dotted rectangle, highlight, or a vertical bar in a text field).
+
+For a list of keyboard shortcuts for the iOS platform, refer to VoiceOver Gestures and Keystrokes.  
+
+It is not a requirement that only interactive elements receive focus. For example, form instructions in text may receive focus by design. This is not a failure.
+
+In forms,  the focus may automatically shift to the next form field once valid text is entered (e.g. after three numbers are entered for an area code, the focus immediately shifts to the field for the next three numbers of a phone number.) The focus must be visible after shifting. The user must also be able to return to the prior field to check their entry.
+
+Navigate to a screen, then place focus at the top of the screen.
+
+Press Alt+Control+Right arrow to navigate via the focus order. Use Alt+Control+Left arrow to move backwards through the focus order.
+
+2. Note any instances where the focus order is illogical.
+
+Review the entire screen starting from the top of the screen by navigating through all of the elements using the keyboard to determine whether the order in which the different elements receive focus makes sense. If the focus order can cause confusion or errors for a user it may be necessary to consult with the application developer to confirm whether this focus order is intentional.
+
+3. Note any instances of a loss of visual focus while Tabbing through the page or if the visual focus appears on the wrong element as a failure.
+
+ 
+
+ 
+
+17  
+
+Loss of focus should not occur while manually shifting focus through the page (using the TAB or arrow keys). The focus must be visible when it is placed on a pane, such as a scrolling license agreement that must be scrolled to review.
+
+When a function that moves the focus is executed (such as from the skip link itself, or when hidden content is
+
+revealed), it may be necessary to press Alt+Control+Right Arrow so focus becomes visible again. This is not considered a failure.
+
+4. When hidden content is revealed, check that the visual focus was moved to the new content.  
+
+Move the focus to the control that reveals hidden content, activate the control with the keyboard, and determine whether focus is on the revealed content.
+
+If a modal dialog box (requires user interaction to return to the application) is revealed, the visual focus must remain within the modal dialog box until the box is closed. If a dialog box behaves like a modal dialog box, test it as a modal dialog box.
+
+If focus does not move to the revealed content, an accurate description of the content change must be provided. This description may be revealed in many ways, such as on screen text, tooltips, or a description on the element that reveals the hidden content. It may be necessary to advance the focus once to find the focus.
+
+Use VO+Right arrow.
+
+1.1 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. An interactive element or function Test ID always applies.
+
+[NC] if an interactive
+
+[C] if all interactive
+
+cannot be accessed or activated
+
+[DNA] is not an
+
+element cannot be
+
+elements can be
+
+by keyboard.
+
+acceptable result.
+
+accessed by keyboard.
+
+accessed by keyboard.
+
+[31(a), 31(f)]
+
+B. A keyboard “trap” is found.
+
+Test ID always applies.
+
+[NC] if a keyboard “trap” [C] if a keyboard “trap”
+
+[DNA] is not an
+
+is found.
+
+is not found.
+
+[31(a), 31(f)]
+
+acceptable result.
+
+C. Non-standard or alternative
+
+[DNA] if all interactive
+
+[NC] if non-standard
+
+[C] if non-standard
+
+keyboard commands are required elements can be
+
+keyboard commands are keyboard commands are
+
+for access but are not
+
+accessed with the
+
+needed to access an
+
+needed and they are
+
+documented.
+
+standard keyboard
+
+interactive element and documented.
+
+commands. (E.g. tab,
+
+the commands are not
+
+[31(a), 31(f)]
+
+arrow keys, enter,
+
+documented.
+
+space, etc.)
+
+ 
+
+ 
+
+18  
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+D. Information/interactive elements [DNA] if no elements
+
+[NC] if
+
+[C] if
+
+revealed by single finger Tap and
+
+are revealed by a single information/interactive information/interactive
+
+Hold gesture are not available to
+
+finger Tap and Hold
+
+elements revealed by
+
+elements revealed by
+
+keyboard-only users.
+
+gesture. Note: This will single finger Tap and
+
+single finger Tap and
+
+apply to most text input Hold gesture are not
+
+Hold gesture are
+
+[31(a), 31(f)]
+
+fields.
+
+available to keyboard-
+
+available to keyboard-
+
+only users
+
+only users
+
+E. At any time, there is no visual
+
+Test ID always applies.
+
+[NC] if a loss of visual
+
+[C] if the visual focus can
+
+indication of the current focus
+
+[DNA] is not an
+
+focus occurs.
+
+be determined at all
+
+(loss of focus).
+
+acceptable result.
+
+times.
+
+[31(a), 31(f)]
+
+F. The visual focus appears on the
+
+Test ID always applies.
+
+[NC] if focus appears on [C] if focus always
+
+wrong element.
+
+[DNA] is not an
+
+a different element than appears on the element
+
+acceptable result.
+
+the one that has
+
+it is programmatically
+
+[31(a), 31(f)]
+
+programmatic focus.
+
+on.
+
+G. The visual focus does not remain
+
+[DNA] if there are no
+
+[NC] if focus leaves the
+
+[C] if focus remains in
+
+within a modal dialog box until
+
+modal dialog boxes.  
+
+modal dialog box while
+
+the modal dialog box
+
+closed.
+
+the box is open.  
+
+until the box is closed.  
+
+[31(a), 31(f)]
+
+H. The visual focus does not move to [DNA] if there is no
+
+[NC] if the focus does
+
+[C] if focus moves to
+
+revealed content and no
+
+revealed content.
+
+not move to the
+
+revealed content OR a
+
+description of the content change
+
+revealed content AND a description of the
+
+is provided.
+
+description of the
+
+content change is
+
+content change is not
+
+provided.
+
+[31(a), 31(f)]
+
+provided.
+
+I.
+
+The keyboard reading order is not Test ID always applies.
+
+[NC] if the focus order is [C] if the focus order is
+
+logical.
+
+[DNA] is not an
+
+not logical.
+
+logical.
+
+acceptable result.
+
+[31(a), 31(f)]
+
+Enter the test results into the DHS reporting tool.
+
+ 
+
+ 
+
+ 
+
+19  
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(f) Use with physical limitations
+
+At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach.
+
+ 
+
+ 
+
+ 
+
+ 
+
+20  
+
+2. SCREEN READER TEST
+
+Descriptive information must be provided for all elements to enable assistive technologies to pass useful information on to its user. The descriptive label must include identification, status and purpose of the element.
+
+All elements must have useful and complete descriptions.
+
+2.1 ELEMENTS TEST
+
+HOW TO TEST
+
+1. Enable VoiceOver.
+
+Enable via Triple Click home button (if shortcut is enabled) or Settings > General > Accessibility > Voiceover: On 2. Using gestures only, navigate (from top to bottom, left to right) each screen and find all elements.
+
+Interact with each element to include filling out forms, selecting buttons, reading text, etc. For form fields, also find all associated instructions and cues. In addition, locate all non-text interface elements include images, text rendered as an image, tables, graphs, charts, audio files, animations and video files.
+
+For a list of gestures for the iOS platform, refer to VoiceOver Gestures and Keystrokes.  
+
+3. Determine if sufficient speech output is provided for every element on each screen by listening to screen reader output and comparing it to “What To List For” outcomes in the Elements table.  
+
+ 
+
+i. Non-interactive Images
+
+1. If it is a decorative image, nothing should be announced.
+
+2. Repeat images must have consistent meaning.
+
+3. Images that contain meaningful text should have that same text read aloud.
+
+4.  Interactive image elements should be tested under User Controls, Links and Interactive
+
+Elements (iv).
+
+ii. Decorative Non-interactive Elements
+
+1. These could be symbols (such as a separator line), images, or other decorative elements
+
+that developers have added to the app.
+
+2.  If the element is interactive AND meaningful, it should be tested under User Controls,
+
+Links and Interactive Elements (iv.)
+
+iii. Form fields and Hints
+
+1. Complete form fields. If a single finger Tap and Hold gesture opens menu items such as
+
+“copy”, “paste”, and “cut” (as found in most text input fields), make sure all menu items
+
+can also be activated by gesture.
+
+2. Hidden form fields should not be announced.
+
+3. Disabled form fields are not required to be announced, but if they are, must note they
+
+are disabled.
+
+4. Read-only form fields must have sufficient element data read aloud.
+
+5. Form fields must have a programmatic label.
+
+a. Placeholder text for form field identification does not meet conformance.
+
+Because users can enable/disable the hint property, the hint property does not
+
+meet conformance for required control labels or status. (A hint can be
+
+identified as it will be read after a short pause in VoiceOver’s speech output.)
+
+b. Be sure to test items like “search” fields with and without text in the input field
+
+to ensure the label is not just placeholder text.
+
+iv. User Controls (Menus, Buttons, Toolbars, etc.), Links, and other Interactive Elements
+
+1. Activate controls, other Interactive Elements and links. Verify they function properly
+
+using gestures.
+
+ 
+
+ 
+
+21  
+
+2. Each control and other Interactive Element must reflect its name and function, to
+
+include alerting screen reader users of its name and that it is interactive (this could be
+
+achieved in a number of ways, to include programmatically setting it as a “button”, or
+
+adding label text to alert the user of the interactive control).
+
+a. If a control announces its type twice (such as “Start button button”), this would
+
+be considered a failure. This may indicate from a coding perspective, that the
+
+control type has been included in the accessible name; however, control types
+
+are handled via a different trait and to avoid redundancy, do not need to be
+
+included in the accessible name.
+
+3. If there are multiple User Controls or other Interactive Elements with the same visual
+
+label, and context is necessary to understand purpose, the speech output must include
+
+unique identifiers that describe each control’s purpose.
+
+a. In instances where context is necessary to understand the purpose of a user
+
+control other interactive element (such as multiple “Submit” buttons meaning
+
+specific submissions based on location), these should be included in the name
+
+of the element (and read aloud by the screen reader).
+
+4. All links should have a name that matches the onscreen text and alerts the user to the
+
+functionality of a “link”.
+
+a. In instances where context is necessary to understand the purpose of a link,
+
+context should be included in the name of the link (and read aloud by the
+
+screen reader).
+
+v. Text
+
+1. Ensure all text can be accessed while using a screen reader and is correctly read aloud.
+
+Note any instances of garbled or indiscernible text as a failure.
+
+vi. Revealed content
+
+1. Ensure all revealed content provides sufficient user information for interaction.
+
+vii. Lists
+
+1. Ensure the list is read aloud to include list structure and status indication (if applicable).
+
+viii. Headings
+
+1. Visual headings should also be programmatically labeled.
+
+2. If there are at least 2 visual headings on the page, check that the programmatic heading
+
+level structure is correct.
+
+ix. Tables
+
+1. Table headings should be announced.
+
+ 
+
+In iOS, there is a rotor feature that can be used to quickly find programmatically set features such as headings, links, text and images. Elements that can be found using the rotor are noted in the Elements table in the column “iOS Rotor Shortcut.”
+
+ 
+
+4. Note any elements with multiple statuses which provides meaningful information for user interaction.
+
+If a menu opens/closes and a user MUST have the status announced in order to understand how to interact with the screen, that menu should provide its status.
+
+ 
+
+For items that can change status, but do not provide meaningful information via status, it is not necessary for them to announce current status (this would be for items such as a menu that is opened/closed).
+
+5. Investigate any instances where elements cannot be accessed or cannot be accessed by standard platform
+
+gesture methods.
+
+This can include a gesture ‘trap’ or use of non-standard or alternative gesture commands that are required for access but are not documented. Note if the tester gets “trapped”, appears to loop, or becomes stuck within an area of the application as a failure. Use touch gestures in this situation to bypass the trap and continue testing.
+
+If a single finger Tap and Hold gesture opens menu items such as “copy”, “paste”, and “cut”, make sure all menu items are also able to be activated by gesture. Control options triggered by physical manipulation of the device (such as a shake, tilt, or swipe to show menu) must also be accessible when the screen reader is enabled.
+
+ 
+
+ 
+
+22  
+
+To select text: Set the rotor to Edit, swipe up or down to choose Select or Select All, then double-tap. To cut, copy, or paste: set the rotor to Edit, select the text, swipe up or down to choose Cut, Copy, or Paste, then double-tap.
+
+6. Note if the gesturing gets “trapped”, appears to loop or becomes stuck within an area of the application as a failure. Bypass the trap and continue testing.
+
+2.1 RESULTS
+
+ 
+
+Failure condition
+
+Does Not
+
+Not Compliant [NC]
+
+Compliant [C]
+
+Apply? [DNA]
+
+Images
+
+A. A meaningful image
+
+[DNA] if there
+
+[NC] if a meaningful
+
+[C] if all meaningful images
+
+does not have an
+
+are no
+
+image does not have an
+
+have an equivalent
+
+equivalent description meaningful
+
+equivalent description.
+
+description.  
+
+(purpose and function). images.  
+
+[31(a)]
+
+Images
+
+B. A decorative element is [DNA] if there
+
+[NC] if a decorative image [C] if all decorative images
+
+announced by the
+
+are no
+
+is announced by the
+
+are not announced by the
+
+screen reader.
+
+decorative
+
+screen reader.  
+
+screen reader.  
+
+images.  
+
+[31(a)]
+
+Images
+
+C. An image has
+
+[DNA] if there
+
+[NC] if an image has
+
+[C] if all images have
+
+inconsistent meaning.
+
+are no images.  
+
+inconsistent meaning
+
+consistent meaning
+
+throughout the
+
+throughout the application.  
+
+[31(a), 31(b)]
+
+application.  
+
+Images
+
+D. An image that contains [DNA] if there
+
+[NC] if an image that
+
+[C] if all images that contain
+
+text does not have the are no images
+
+contains text does not
+
+text have all the text
+
+same text announced
+
+with text.  
+
+have the same text
+
+announced by the screen
+
+by the screen reader.
+
+announced by the screen reader.  
+
+reader.  
+
+[31(a)]
+
+Images
+
+E. Any element that has
+
+[DNA] if no
+
+[NC] if an element with
+
+[C] if all elements with
+
+multiple statuses that
+
+elements have
+
+multiple statuses does
+
+multiple statuses indicate
+
+is meaningful for
+
+multiple
+
+not indicate its current
+
+their current status.  
+
+interaction does not
+
+statuses.  
+
+status.  
+
+indicate its current
+
+status.
+
+[31(a), 31(b)]
+
+ 
+
+ 
+
+23  
+
+ 
+
+Failure condition
+
+Does Not
+
+Not Compliant [NC]
+
+Compliant [C]
+
+Apply? [DNA]
+
+Form Fields
+
+F. The screen reader
+
+[DNA] if there
+
+[NC] if the screen reader
+
+[C] if the screen reader
+
+output for form fields
+
+are no form
+
+output does not match
+
+output matches all the form
+
+(text field, checkbox,
+
+fields.  
+
+the form field’s visual
+
+field’s visual label or
+
+radio button, etc.) does
+
+label or does not include
+
+includes complete
+
+not match its visual
+
+complete instructions and instructions and cues.  
+
+label or does not
+
+cues.
+
+include complete
+
+instructions and cues.
+
+[31(a)]
+
+User
+
+G. A user control, link, or
+
+[DNA] if there
+
+[NC] if a user control, link, [C] if all user controls, links,
+
+Controls,
+
+other interactive
+
+are no user
+
+and/or other interactive
+
+and/or other interactive
+
+Links and
+
+element does not have controls, links,
+
+element does not have a element have a descriptive
+
+Other
+
+a descriptive and
+
+and/or other
+
+descriptive and unique
+
+and unique name and
+
+Interactive
+
+unique name and does interactive
+
+name and does not
+
+identifies their purpose.  
+
+Elements
+
+not identify purpose
+
+elements.
+
+identify its purpose.  
+
+(to include alerting the
+
+user of the interactive
+
+function of the
+
+control).
+
+[31(a)]
+
+Headings
+
+H. Visually apparent
+
+[DNA] if there
+
+[NC] if a visually apparent [C]  if all visually apparent
+
+headings are not
+
+are no visually
+
+heading is not
+
+headings are
+
+programmatically
+
+apparent
+
+programmatically
+
+programmatically identified.  
+
+identified.
+
+headings on the identified.  
+
+page.
+
+[31(a)]
+
+Headings
+
+I.
+
+Programmatically
+
+[DNA] if there
+
+[NC] if programmatic
+
+[C] if programmatic levels
+
+identified heading
+
+are no visually
+
+levels for visually
+
+on all visually apparent
+
+levels do not match the apparent
+
+apparent headings do not headings match the visual
+
+visual outline.
+
+headings on the match the visual
+
+structure.  
+
+page.  [DNA] if
+
+structure.  
+
+[31(a)]
+
+there is only 1
+
+visually
+
+apparent
+
+heading on the
+
+page.
+
+ 
+
+ 
+
+24  
+
+ 
+
+Failure condition
+
+Does Not
+
+Not Compliant [NC]
+
+Compliant [C]
+
+Apply? [DNA]
+
+Catch All
+
+J. Every element does
+
+[DNA] if all
+
+[NC] if all elements do not [C] if all elements provide
+
+not provide sufficient
+
+failures were
+
+provide sufficient
+
+sufficient information for
+
+information for user
+
+captured under information for use
+
+user operation.
+
+operation (otherwise
+
+Failure
+
+operation.
+
+not listed).
+
+Conditions A-I.
+
+[31(a)]
+
+Gestures
+
+K. An element or function Test ID always
+
+[NC] if an interactive
+
+[C] if all interactive
+
+cannot be accessed or applies. [DNA] is element cannot be
+
+elements can be accessed
+
+activated by gesture.
+
+not an
+
+accessed by gesture.
+
+by gesture.
+
+acceptable
+
+[31(a)]
+
+result.
+
+Gestures
+
+L. A gesture “trap” is
+
+Test ID always
+
+[NC] if a gesture “trap” is [C] if a gesture “trap” is not
+
+found.
+
+applies. [DNA] is found.  
+
+found.  
+
+not an
+
+[31(a)]
+
+acceptable
+
+result.  
+
+Gestures
+
+M. Non-standard or
+
+[DNA] if all
+
+[NC] if non-standard
+
+[C] if non-standard gesture
+
+alternative gestur e
+
+interactive
+
+gesture commands are
+
+commands are needed and
+
+commands are
+
+elements can be needed to access an
+
+they are documented.
+
+required for access but accessed with
+
+interactive element and
+
+are not documented.
+
+the standard
+
+the commands are not
+
+gesture
+
+documented.
+
+[31(a)]
+
+commands.
+
+Gestures
+
+N. Information/interactive [DNA] if no
+
+[NC] if
+
+[C] if
+
+elements revealed by
+
+elements are
+
+information/interactive
+
+information/interactive
+
+single finger Tap and
+
+revealed by a
+
+elements revealed by
+
+elements revealed by single
+
+Hold gesture are not
+
+single finger Tap single finger Tap and Hold finger Tap and Hold gesture
+
+available to screen
+
+and Hold
+
+gesture are not available are available to screen
+
+reader users.
+
+gesture.
+
+to screen reader users.  
+
+reader users.  
+
+[31(a)]
+
+Enter the test results into the DHS reporting tool.
+
+ 
+
+ 
+
+ 
+
+25  
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(b) Use with Low Vision
+
+At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall be provided.
+
+ 
+
+ 
+
+ 
+
+26  
+
+2.2 LAYOUT TEST
+
+HOW TO TEST
+
+1. With device Screen Reader enabled, change the screen from portrait to landscape by rotating the device.
+
+Continue rotating the device 90 degrees to portrait then landscape, back to the initial screen position. Verify the screen reader announced the proper orientation of the screen.
+
+Layout changes such as changes from landscape to portrait must be announced if they occur. If the app supports this layout change, the screen reader should announce this change.
+
+This requirement is NOT that the app must support orientation change.
+
+2.2 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. Layout changes such as changes
+
+[DNA] if app does not
+
+[NC] if there is not
+
+[C] If there is sufficient
+
+from portrait to landscape or a
+
+allow layout changes.
+
+sufficient indication of
+
+indication of layout
+
+forced application direction are
+
+layout change such as a change such as a change
+
+not indicated or announced by
+
+change from landscape
+
+from landscape to
+
+screen reader with sufficient
+
+to portrait.
+
+portrait.
+
+information for user to orient
+
+device.
+
+[31(a)]
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+ 
+
+ 
+
+ 
+
+ 
+
+27  
+
+3. VIDEO, AUDIO, AND MULTIMEDIA
+
+This section addresses audio, video, animation and multimedia.
+
+3.1 VIDEO-ONLY AND ANIMATION
+
+Videos (without audio) and animation includes sequences of overlaid images, dynamic changes of state such as a moving speed dial, a chart illustrating dynamic flow changes from one state to another, etc. This requirement applies to visual/video information that is not accompanied by meaningful sounds.
+
+Note: This test is different from the test for Multimedia (combined audio AND video). Files that have both video and meaningful audio are tested in Test Process 3.3 Multimedia. Do not test Multimedia here.
+
+HOW TO TEST
+
+1. Find interface components that play video-only or animated content.
+
+2. Check that video-only content that starts automatically has a playback control (pause/stop).
+
+Note: the control button(s) must also be tested under the Keyboard and Focus and Screen Reader tests.
+
+3. Check that any animation that (1) starts automatically (2) lasts more than 5 seconds and (3) is presented in parallel with other content has a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.  
+
+An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.
+
+4. Check that the information conveyed through animation or video is also available in accessible screen text or audio.
+
+Animation or video must not be the only way to convey information.  
+
+5. The alternative equivalent description must be an accurate and complete representation of the video/animated content.  
+
+All relevant visual information must be included (e.g.: driver hands license to officer). Equivalent (unsynchronized) audio descriptions for video files are acceptable but not required.
+
+3.1 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. Video-only content that starts
+
+[DNA] if there are no
+
+[NC] if video-only
+
+[C] if all video-only that
+
+automatically does not have a
+
+video files.  [DNA] if
+
+content that starts
+
+starts automatically has
+
+playback control.
+
+there are no videos that automatically does not
+
+a playback control.  
+
+start automatically.  
+
+have a playback control.  
+
+[31(a)]
+
+ 
+
+ 
+
+28  
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+B. Animation that starts
+
+[DNA] if there is no
+
+[NC] if animation that
+
+[C] if all animation that
+
+automatically, lasts more than 5
+
+animation.  [DNA] if
+
+starts automatically,
+
+starts automatically,
+
+seconds and is presented in
+
+there is no animation
+
+lasts more than 5
+
+lasts at least 5 seconds
+
+parallel with other content does
+
+that starts
+
+seconds and is
+
+and is presented in
+
+not have a playback control or
+
+automatically, lasts
+
+presented in parallel
+
+parallel with other
+
+allow control of frequency for
+
+more than 5 seconds, or with other content does content has a playback
+
+update.
+
+is presented in parallel
+
+not have a playback
+
+control or allows control
+
+with other content.  
+
+control or allow control of update frequency.  
+
+[31(a)]
+
+of frequency for update.  
+
+C. Video-only or animated content
+
+[DNA] if there are no
+
+[NC] if video-only or
+
+[C] if all video-only and
+
+does not have an equivalent text
+
+videos or animations.
+
+animated content does animated content has
+
+or audio description.
+
+not have an equivalent
+
+an equivalent text or
+
+text or audio
+
+audio description.
+
+[31(a)]
+
+description.
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+ 
+
+ 
+
+29  
+
+3.2   AUDIO-ONLY
+
+Audio-only files include speeches, soundbites, ambient (background) sounds, etc.
+
+Note: This test is different from the test for Multimedia (combined audio AND video).Files that have both video and meaningful audio are tested in Test Process 3.3 Multimedia. Do not test Multimedia here.
+
+HOW TO TEST
+
+1. Find all interface components that play audio-only content.
+
+Short sounds such as confirmation beeps and error notifications are not included in this requirement.  
+
+2. If the audio starts automatically and lasts for more than 3 seconds, check that the audio-only content has a playback control (pause/stop) or a mechanism to control audio volume independently from the overall system
+
+volume level.
+
+Note: the control button(s) must also be tested under the Keyboard and Focus and Screen Reader tests.
+
+3. Find the associated transcript or description.
+
+4. Play audio and check that the information conveyed through audio is also available in accessible screen text/transcript.  
+
+Audio must not be the only way to convey information.
+
+The alternative equivalent description/transcript must be an accurate and complete representation of the audio-only content. All speech and relevant audio cues must be included (e.g.: doorbell rings, car honks, etc.)
+
+3.2 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. Audio content that plays
+
+[DNA] if there are no
+
+[NC] if audio content
+
+[C] if all audio content
+
+automatically and lasts for more
+
+audio only files.  [DNA] if that plays automatically that plays automatically
+
+than 3 seconds does not have a
+
+there are no audio only
+
+and lasts for more than 3 and lasts for more than 3
+
+playback control or a mechanism to files that start
+
+seconds does not have a seconds has a playback
+
+independently control audio
+
+automatically and last
+
+playback control nor a
+
+control or a mechanism
+
+volume.
+
+for more than 3 seconds. mechanism to
+
+to independently control
+
+independently control
+
+audio volume.  
+
+[31(c)]
+
+audio volume.  
+
+B. An audio file does not have an
+
+[DNA] if there are no
+
+[NC] if an audio-only file [C] if all audio-only files
+
+equivalent text
+
+audio only files.
+
+does not have an
+
+have an equivalent text
+
+description/transcript.
+
+equivalent text
+
+description/transcript.
+
+description/transcript.
+
+[31(c)]
+
+Enter the test results into the DHS reporting tool.
+
+ 
+
+ 
+
+ 
+
+30  
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(c) Use without Hearing
+
+At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided.
+
+ 
+
+ 
+
+31  
+
+3.3 MULTIMEDIA
+
+Multimedia is a presentation consisting of time-synchronized media (primarily video and audio).
+
+HOW TO TEST
+
+1. Turn Captions on through the OS Accessibility properties.
+
+Settings > General > Accessibility> Subtitles and Captioning- Enable Closed Captioning + SDH
+
+Set your caption options to something unique like yellow on blue text, so it is obvious that the caption options are adopted when testing.
+
+2. Find interface components that play synchronized media.
+
+This includes streaming media and streaming live events. Include only files that have meaningful visual information that is synchronized with meaningful audio information. Examples include webcasts, press conferences, instructional
+
+videos, and online training presentations.
+
+3. If the multimedia starts automatically, check that the multimedia content has a playback control (pause/stop).
+
+Note: the control button(s) must also be tested under the Keyboard and Focus and Screen Reader tests.
+
+4. Enable captions in the multimedia player. Play the multimedia.
+
+Check captions: All relevant audible information (dialog and sounds) from the multimedia should be complete,
+
+accurately displayed and synchronized with the multimedia audio.
+
+5. Check that the application adopted the OS Accessibility Caption settings, that the application did not crash, and that all functionality is still available.
+
+6. Enable the audio description feature in the multimedia player. Play the multimedia.
+
+Check audio descriptions: All relevant visual information from the multimedia should be complete, verbally described accurately and synchronized with the multimedia video.
+
+7. Synchronized alternatives are required. Transcripts and separate lists of visual events do not meet this requirement.
+
+3.3. RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. Multimedia content that starts
+
+[DNA] if there are no
+
+[NC] if multimedia
+
+[C] if all multimedia
+
+automatically does not have a
+
+multimedia files. [DNA]
+
+content that starts
+
+content that starts
+
+playback control.
+
+if there are no
+
+automatically does not
+
+automatically has a
+
+multimedia files that
+
+have a playback control.  playback control.  
+
+[31(a), 31(c)]
+
+start automatically.  
+
+ 
+
+ 
+
+32  
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+B. Synchronized captions are not
+
+[DNA] if there are no
+
+[NC] if a multimedia file [C] if all multimedia files
+
+provided for multimedia.
+
+multimedia files.
+
+does not provide
+
+provide synchronized
+
+synchronized captions.
+
+captions.
+
+[31(c)]
+
+C. The provided captions for
+
+[DNA] if there are no
+
+[NC] if the provided
+
+[C] if the provided
+
+multimedia are not equivalent.
+
+multimedia files. [DNA]
+
+captions for a
+
+captions for all
+
+if captions are not
+
+multimedia file are not
+
+multimedia files are
+
+[31(c)]
+
+provided.
+
+equivalent.
+
+equivalent.
+
+D. Synchronized audio descriptions
+
+[DNA] if there are no
+
+[NC] if a multimedia file [C] if all multimedia files
+
+are not provided for multimedia.
+
+multimedia files.
+
+does not provide
+
+provide synchronized
+
+synchronized audio
+
+audio descriptions
+
+[31(a)]
+
+descriptions.
+
+E. The provided audio descriptions
+
+[DNA] if there are no
+
+[NC] if the provided
+
+[C] if the provided audio
+
+are not equivalent.
+
+multimedia files.  [DNA]
+
+audio descriptions for a
+
+descriptions for all
+
+if audio descriptions are multimedia file are not
+
+multimedia files are
+
+[31(a)]
+
+not provided.
+
+equivalent.
+
+equivalent.
+
+F. The application did not adopt all of [DNA] if there are no
+
+[NC] if the application
+
+[C] if iOS Caption
+
+the iOS Caption settings.
+
+multimedia files.  [DNA]
+
+disrupts accessibility
+
+settings are not
+
+if there are no captions. settings. Note: This will
+
+disrupted by the
+
+[31(c)]
+
+also fail 7.H.
+
+application.
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(c) Use without Hearing
+
+At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided.
+
+ 
+
+ 
+
+ 
+
+ 
+
+33  
+
+4. COLOR AND CONTRAST
+
+4.1 COLOR DEPENDENCE
+
+Color dependence is using color as the sole means to convey information. For example, a single icon that is green for ‘on’, orange for ‘standby’, and red for ‘off’ is color dependent.
+
+Color must not be the only means of conveying information, indicating an action, prompting a response, or indicating status. Information conveyed through color must also be provided in text on the screen.
+
+HOW TO TEST
+
+1. If there is information that is being provided by color, check to see if the same information is represented textually on the screen or through other visual (non-color) differentiation (shape, position, size).
+
+4.1 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. Information is provided only by
+
+[DNA] if color is not
+
+[NC] if color is the only
+
+[C] if color is used but is
+
+color.
+
+used to provide
+
+method used to provide not the only method to
+
+information.
+
+information.
+
+provide information.
+
+[31(a)]
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+ 
+
+ 
+
+34  
+
+4.2 CONTRAST
+
+There must be contrasting colors/shades at a ratio of at least 4.5:1 for discerning between background and foreground content.
+
+HOW TO TEST
+
+1. Visually examine the content displayed on the page for areas that may have low background to foreground
+
+contrast. Include meaningful screen text and images of meaningful text.
+
+Text contained in logos is exempt from this requirement.
+
+2. Take a screenshot and transfer it to a PC.
+
+3. Use the Colour Contrast Analyser picker tool to select foreground and background colors from the screen.
+
+The contrast ratio must be at least 4.5:1.
+
+4.2 RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. The contrast ratio is less than 4.5:1 [DNA] if there is no
+
+[NC] if the contrast ratio [C] if the contrast ratio
+
+for content background and
+
+text.  
+
+is less than 4.5:1 when
+
+is 4.5:1 or greater when
+
+foreground colors.
+
+comparing the
+
+comparing all
+
+background and
+
+background and
+
+[31(b)]
+
+foreground colors. (If
+
+foreground colors.
+
+NC, always document
+
+the contrast ratio.)
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(b) Use with Low Vision
+
+At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall be provided.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+35  
+
+5. FLASHING
+
+The term ‘flickering’ encompasses interface elements that flash, blink, flicker repetitively, or elements that scroll (e.g., marquee text).
+
+Current Section 508 requirements do not permit elements to flash or flicker at frequencies between 2Hz and 55Hz. To incorporate the expected update to this requirement, this flashing test adopts the WCAG 2.0 frequency restriction to below 3Hz.
+
+HOW TO TEST
+
+1. Visually check for any flashing or blinking interface elements or scrolling text.
+
+Currently there is no way to accurately test the rate of flashing or flickering on mobile devices and thus use of flashing or flickering elements will be found not compliant.
+
+Scrolling text should also be tested under Test 2.1: Screen Reader test.
+
+5. RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. If the page contains flashing, flickering, [DNA] if there are no
+
+[NC] if flashing,
+
+[C] Does not apply.
+
+or scrolling.
+
+elements that are
+
+flickering, or scrolling
+
+flashing, flickering,
+
+occurs.
+
+[21(k)]
+
+scrolling, etc.
+
+Enter the test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+21(k) Blinking Objects
+
+Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2
+
+Hz and lower than 55 Hz.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+36  
+
+6. TIMEOUTS
+
+Messages and/or instructions to the user requesting their response within a given time are typically associated with apps that require a secure login. This includes both server time-outs and client side security time-outs.
+
+Note: The accessibility of the alert/pop up and option to request more time is tested in the Keyboard and Screen Reader tests (Tests 1 and 2) and should not be tested here.  
+
+HOW TO TEST
+
+1. Inspect the app to determine if there is a timeout function from the application’s documentation, or by leaving the session inactive for a period of time.  
+
+2. If a timeout is about to occur, an alert must be posted for at least 20 seconds and the user must have the option to request more time.
+
+6. RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. The application timed out without
+
+[DNA] if application
+
+[NC] if application times [C] if application
+
+notification.
+
+does not time out.
+
+out without notification. provides notification
+
+before timing out.
+
+[31(a), 31(b), 31(c), 31 (d), 31(f)]
+
+B. The application’s time out notification [DNA] if application
+
+[NC] if application’s time [C] if application’s time
+
+is displayed for less than 20 seconds. does not time out.
+
+out notification is
+
+out notification is
+
+[DNA] if no time out
+
+displayed for less than
+
+displayed for at least 20
+
+[31(f)]
+
+notification is provided. 20 seconds before
+
+seconds before timing
+
+timing out.
+
+out.
+
+C. The application timed out without an
+
+[DNA] if application
+
+[NC] if application timed [C] if application
+
+option to request more time.
+
+does not time out.
+
+out without providing
+
+provides user an option
+
+user an option to
+
+to request more time
+
+[31(a), 31(b), 31(c), 31 (d), 31(f)]
+
+request more time.
+
+before timing out.
+
+Enter test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(b) Use with Low Vision
+
+ 
+
+ 
+
+37  
+
+At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall be provided.
+
+31(c) Use without Hearing
+
+At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided.
+
+31(d) Use with Hard of Hearing
+
+Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided.  
+
+31(f) Use with physical limitations
+
+At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach.
+
+ 
+
+ 
+
+ 
+
+ 
+
+38  
+
+7. BUILT-IN ACCESSIBILITY FEATURES
+
+Operating System (OS) accessibility features are applications that are separate from the software being tested. The features are usually found and activated in the accessibility section of the Settings menu on the device.
+
+OS user-configurable accessibility appearance settings, functions, and assistive technologies must not be disrupted or disabled by the software application.
+
+Note: The navigation instructions to access these features may differ depending on OS versions.
+
+HOW TO TEST
+
+1. Enable accessibility settings.
+
+Settings > General > Accessibility (Note: AssistiveTouch and Zoom should be operated separately from each other).
+
+
+
+Larger Text
+
+
+
+Display Accommodations > Invert Colors
+
+
+
+Zoom
+
+
+
+AssistiveTouch
+
+
+
+Speech > Speak Screen
+
+
+
+Voice Input (not part of Accessibility Menu, but part of onscreen keyboard)
+
+2. Enable Larger Text.
+
+Drag the slider to the far right (largest text size possible).
+
+Restart the app. Test to see if the app adopted large text wherever text is present within the app.
+
+Close the app. Disable Larger Text.
+
+Settings > General > Accessibility> Larger Text: Off
+
+3. Enable Invert Colors.
+
+Settings > General > Accessibility > Display Accommodations >Invert Colors: On
+
+4. Enable Zoom feature.
+
+Settings > General > Accessibility > Zoom: On
+
+
+
+If Zoom appears on but the screen does not magnify, tap three fingers two times.
+
+
+
+To adjust the zoom level, tap three fingers two times and then on the third time hold down on the touch
+
+screen. Move three fingers up to increase the magnification or down to decrease the magnification.
+
+
+
+Try to make the zoom level approximately 200% of the normal size. That means the normal screen would
+
+take up approximately 4 magnified screens.
+
+
+
+To move around the screen, drag three fingers around the screen.  
+
+5. Restart the application.
+
+ 
+
+ 
+
+39  
+
+6. Check that the application adopted the invert colors appearance and the application did not crash and that all functionality is still available.  
+
+If inverse colors are not adopted, check if the application offers at least 4 of its own color options.
+
+7. Check that the application adopted the zoom/magnification appearance and the application did not crash and all functionality is still available.
+
+8. Close application. Disable Zoom and Invert Colors.
+
+Settings > General > Accessibility > Zoom: Off  
+
+Settings > General > Accessibility > Display Accommodations > Invert Colors: Off
+
+9. Enable AssistiveTouch.
+
+Settings > General > Accessibility > AssistiveTouch: On
+
+ AssistiveTouch allows you to control apps using one touch point such as a finger or a stylus that supports
+
+capacitance-based screens.
+
+ To perform a gesture such as a pinch zoom, touch the AssistiveTouch menu icon, then choose favorite, then
+
+choose the pinch gesture icon.
+
+ Next, drag the pinch placeholders to the desired location and then touch and drag the endpoints to the
+
+desired locations – this will trigger the pinch gesture.
+
+10. Enable Speak Screen and Highlight Content.
+
+Settings > General > Accessibility > Speech >Speak Screen: On
+
+Highlight Content: On
+
+Select Words and Sentences
+
+Sentence Highlighting Style: Underline
+
+11. Restart the application.
+
+12. Check that the application allows the AssistiveTouch icon to appear and the application did not crash and all functionality is still available.
+
+13. Using two fingers, swipe from the top of the screen down in one gesture.  Check that all items on the page are read aloud and highlighted in sync with the speech output. Note any instances where items are not read or not read in sync as a failure.
+
+14. Close the application and disable AssistiveTouch and Speak Screen.
+
+Settings > General > Accessibility > AssistiveTouch: Off
+
+Settings > General > Accessibility > Speech > Speak Screen: Off
+
+15. Ensure Enable Dictation is On. Find all non-character disappearing text input fields (such as
+
+text fields, subject/body of an email, etc.).  
+
+Settings > General > Keyboard > Enable Dictation: On
+
+Note: Do not include text input fields here that do not display the characters, such as password
+
+fields. These are excluded from this test.
+
+ 
+
+ 
+
+40  
+
+Put focus in the non-character disappearing text input field, then select the “microphone” input on your onscreen keyboard and dictate into the text field. Verify that the application allows you
+
+to utilize the microphone for text input.
+
+7. RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. The app did not completely adopt [DNA] if the app has no [NC] if all text is not
+
+[C] if all text is enlarged
+
+larger text.
+
+text.  
+
+enlarged to setting
+
+to setting specifications.  
+
+specifications.  
+
+[31(b)]
+
+B. The application did not adopt the [DNA] is not an
+
+[NC] if the application
+
+[C] if application adopts
+
+inverse color settings.
+
+acceptable result.
+
+does not adopt the
+
+the inverse colors.
+
+inverse colors.
+
+[31(b)]
+
+C. The application did not adopt the [DNA] is not an
+
+[NC] if the application
+
+[C] if application adopts
+
+OS invert colors, or the application acceptable result.
+
+does not adopt the OS
+
+OS invert colors options
+
+does not offer at least 4 color
+
+invert colors or does not OR offers at least 4 color
+
+options.
+
+offer at least 4 color
+
+options.
+
+options.
+
+[31(b)]
+
+D. Text of application did not enlarge  [DNA] is not an
+
+[NC] if text of the
+
+[C] if all text of the
+
+or became illegible when enlarged acceptable result.
+
+application did not
+
+application enlarged
+
+with zoom.
+
+enlarge or became
+
+and remains legible
+
+illegible when enlarged. when enlarged.
+
+[31(b)]
+
+E. AssistiveTouch functionality was
+
+[DNA] is not an
+
+[NC] if AssistiveTouch
+
+[C] if AssistiveTouch
+
+disrupted in the application
+
+acceptable result.
+
+does not work in the
+
+functionality works in
+
+application.
+
+the application.
+
+[31(f)]
+
+F. Speak Screen did not read the
+
+[DNA] is not an
+
+[NC] if Speak Screen did [C] if Speak Screen read
+
+entire screen or highlighting was
+
+acceptable result.
+
+not read the entire
+
+the entire screen and
+
+not in sync with the audio.
+
+screen or highlighting
+
+highlighting was in sync
+
+was not in sync with the with the speech output.  
+
+[31(b)]
+
+speech output.  
+
+ 
+
+ 
+
+41  
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+G. The application did not allow user [DNA] if the app has no [NC] if the application
+
+[C] if the application
+
+to utilize the microphone for text
+
+text input fields. [DNA] did not allow user to
+
+allows user to utilize the
+
+input.
+
+if the app only has
+
+utilize the microphone
+
+microphone for text
+
+character-disappearing
+
+for text input.
+
+input.  
+
+[31(f)]
+
+form fields.
+
+H. The application disrupted any of
+
+[DNA] is not an
+
+[NC] if the application
+
+[C] if all OS Accessibility
+
+the OS Accessibility options
+
+acceptable result.
+
+disrupts any of the OS
+
+options are not
+
+(VoiceOver, Zoom, Larger Text,
+
+Accessibility options.  
+
+disrupted by the
+
+Invert Color, AssistiveTouch, Speak
+
+application.  
+
+Screen, Caption settings).
+
+[31(a), 31(b), 31(c ), 31(d), 31(f)]
+
+Enter test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(b) Use with Low Vision
+
+At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall be provided.
+
+31(c) Use without Hearing
+
+At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided.
+
+31(d) Use with Hard of Hearing
+
+Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided.  
+
+31(f) Use with physical limitations
+
+At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach.
+
+ 
+
+ 
+
+ 
+
+ 
+
+42  
+
+8. ACCESSIBLE ALTERNATIVE
+
+ 
+
+Alternative versions for accessibility are permitted only when the primary application cannot be made compliant due to technology limitations and business requirements. The alternative version must provide the same information as the primary page.
+
+HOW TO TEST
+
+1. Determine if any alternative versions of the mobile app are provided.
+
+2. Check that the alternative contains equivalent information as the mobile app.
+
+Compare the content of the mobile app and the alternative, noting any information differences. Ensure that
+
+dynamic content are also dynamically updated on the accessible version.  
+
+3. Perform all applicable tests for the accessible version and mark the appropriate test results.
+
+8. RESULTS
+
+Failure condition
+
+Does Not Apply? [DNA] Not Compliant [NC]
+
+Compliant [C]
+
+A. An alternative does not contain
+
+[DNA] if there is only
+
+[NC] if an alternative
+
+[C] if all alternatives
+
+equivalent information as the
+
+one version of the
+
+does not contain
+
+contain equivalent
+
+primary application.
+
+application.
+
+equivalent information
+
+information as the
+
+as the primary.
+
+primary.
+
+[31(a), 31(b), 31(c), 31(d), 31(e), 31(f)]
+
+B. The primary application can be
+
+[DNA] if there is only
+
+[NC] if the primary can
+
+[C] if the primary cannot
+
+made compliant.
+
+one version of the
+
+be made compliant.
+
+be made compliant.
+
+application.
+
+[31(a), 31(b), 31(c), 31(d), 31(e), 31(f)]
+
+Enter test results into the DHS reporting tool.
+
+APPLICABLE 508 STANDARDS 1194.XX
+
+31(a) Use without Vision
+
+At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.
+
+31(b) Use with Low Vision
+
+At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall be provided.
+
+31(c) Use without Hearing
+
+ 
+
+ 
+
+43  
+
+At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided.
+
+31(d) Use with Hard of Hearing
+
+Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided.  
+
+31(e) Use without Speech
+
+At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for assistive technology used by people with disabilities shall be provided.  
+
+31(f) Use with Physical Limitations
+
+At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach.
+
+ 
+
+ 
+
+ 
+
+ 
+
+44  
+
+ 
+
+ELEMENTS TABLE
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive label to
+
+Activity
+
+label to match visual
+
+match visual information
+
+Indicator/Progress
+
+information
+
+ Current progress value
+
+Bar
+
+ Note of whether or not
+
+announced (or will say “in
+
+activity is occurring
+
+progress”/”halted”)
+
+ 
+
+ Unique and descriptive
+
+ “Alert”
+
+Alert/Popup
+
+speech output to match
+
+ Unique and descriptive speech
+
+visual information
+
+output to match visual
+
+ Includes the word “alert” or
+
+information
+
+“popup”
+
+ If a time out: an alert must be
+
+ If a time out: an alert must
+
+posted for at least 20 seconds
+
+be posted for at least 20
+
+and the user must have the
+
+seconds and the user must
+
+option to request more time
+
+have the option to request
+
+more time read aloud
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive speech
+
+Animation
+
+speech output to match
+
+output to match visual
+
+visual information to
+
+information
+
+include note that it is a
+
+ To include the note that it is an
+
+graphic or animation
+
+image
+
+ 
+
+ Unique and descriptive title
+
+ Unique and descriptive title to
+
+App Name
+
+to match visual information
+
+match visual information (to
+
+(associated with
+
+(to describe app)
+
+describe app)
+
+App icon)
+
+ Unique and descriptive
+
+ “Selected” if selected
+
+Button (to include
+
+label that matches text
+
+ Unique and descriptive label that “Buttons”,
+
+play/pause/stop,
+
+(supplemental information
+
+matches text or image
+
+“Static Text”
+
+stepper, sort)
+
+might also be read to
+
+description
+
+describe the button)
+
+ Supplemental information might
+
+ Note that is it a “button”
+
+also be read to describe the
+
+ Its value/state (to include
+
+button such as name of row if in
+
+sufficient information for
+
+a table
+
+buttons that change from
+
+ “Button” “popup” or “button
+
+play to pause)
+
+image”
+
+ If the element has a
+
+ “Dimmed” if button is
+
+variable status, the current
+
+unavailable
+
+status must be announced
+
+ Hint will be read if available
+
+ 
+
+ 
+
+ 
+
+45  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Container
+
+name that matches visual
+
+that matches visual information
+
+“Containers”
+
+information within
+
+within container should be read,
+
+container should be read
+
+not container itself
+
+ Unique and descriptive
+
+ Unique and descriptive title to
+
+Custom Interface
+
+name that matches visual
+
+match visual information
+
+“Form
+
+Control (e.g.
+
+information to include
+
+Controls”,
+
+Calendar, clock)
+
+value/state
+
+“Static Text”
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Drawer/Slide Out
+
+name that matches visual
+
+that matches visual information.
+
+“Buttons”
+
+Menu (e.g.
+
+information
+
+ Note: user will most likely see a
+
+Navigation)
+
+slide menu in iOS for this.
+
+ 
+
+ Unique and descriptive
+
+ Descriptive label and will note
+
+Folder
+
+name that matches visual
+
+“folder” and how many items are
+
+information
+
+contained within folder
+
+ Unique and descriptive
+
+ Unique and descriptive label that
+
+Form Field: Check
+
+label that matches visual
+
+matches visual information and
+
+“Form
+
+box
+
+information and
+
+instructions
+
+Controls”
+
+instructions
+
+ “Checkbox”
+
+ “Checkbox” should be
+
+ Will always say “Checked” or
+
+announced
+
+“Not Checked” to indicate state
+
+ State should be indicated
+
+ “Selected” will be announced
+
+ Hidden form fields should
+
+first
+
+not be announced
+
+ “Dimmed” will be announced if
+
+ Disabled form fields do not
+
+not enabled
+
+require a form name to be
+
+announced
+
+ Read-only form fields
+
+cannot be edited by the
+
+user, but sufficient element
+
+data must be read aloud
+
+ 
+
+ 
+
+ 
+
+46  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ Unique and descriptive
+
+ Unique and descriptive label to
+
+Form Field: Radio
+
+label that matches visual
+
+match visual information (can
+
+“Form
+
+button
+
+information and
+
+include widget, etc. to provide
+
+Controls”
+
+instructions (“Radio button”
+
+supplemental information)
+
+should be announced)
+
+ Will always say “Radio Button”
+
+ State should be indicated
+
+ Will always say “Checked” or
+
+ Hidden form fields should
+
+“Not Checked” to indicate state
+
+not be announced
+
+ “Selected” will be announced
+
+ Disabled form fields do not
+
+first
+
+require a form name to be
+
+ “Dimmed” will be announced if
+
+announced
+
+not enabled
+
+ Read-only form fields
+
+cannot be edited by the
+
+user, but sufficient element
+
+data must be read aloud
+
+ Unique and descriptive
+
+ Unique and descriptive label that
+
+Form Field: Text
+
+label that matches visual
+
+matches visual information and
+
+“Form
+
+Field (blank, with
+
+information and
+
+instructions
+
+Controls”
+
+placeholder or
+
+instructions
+
+ “Text Field”
+
+inserted text)
+
+ State should be indicated
+
+ For editing, will announce “is
+
+ If the element has a
+
+editing”, and any placeholder
+
+variable status, the current
+
+text or text that user has typed in
+
+status must be announced
+
+ “Selected” will be announced
+
+ Hidden form fields should
+
+first
+
+not be announced
+
+ “Dimmed” will be announced if
+
+ Disabled form fields do not
+
+not enabled
+
+require a form name to be
+
+ Character limit must be
+
+announced
+
+announced if available
+
+ Read-only form fields
+
+cannot be edited by the
+
+user, but sufficient element
+
+data must be read aloud
+
+ 
+
+ N/A
+
+ iOS should have a table layout in
+
+Grid Layout/View
+
+lieu of grid view. Please see the
+
+Table row
+
+ 
+
+ 
+
+ 
+
+47  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ Unique and descriptive
+
+ Unique and descriptive label that
+
+Heading (text)-if a
+
+label that matches visual
+
+matches visual information
+
+“Headings”,
+
+heading is noted
+
+information
+
+ “Heading level X”
+
+“Landmarks”
+
+visually, must be
+
+ “Heading” should be read
+
+ Supplemental information such
+
+noted
+
+ Supplemental information
+
+as ARIA Landmarks might be read
+
+programmatically
+
+such as Heading Level
+
+aloud such as “main” and
+
+number should be set if
+
+“landmark”
+
+there are several heading
+
+levels
+
+ Headers should be used
+
+logically (not skipping from
+
+Heading 3 to Heading 1 to
+
+Heading 5 if visual structure
+
+does not support that
+
+order)
+
+ Supplemental information
+
+read aloud will not inhibit
+
+compliance unless it is
+
+confusing for the user
+
+ If a hint exists, ensure that
+
+ Hints are programmatically
+
+Hints
+
+sufficient and supplemental
+
+available in iOS to provide
+
+“Hints”
+
+information (only) is
+
+supplemental information on
+
+provided
+
+interacting with controls
+
+ The hint should not contain
+
+ These are optional; necessary
+
+necessary information for
+
+information for user interaction
+
+user interaction
+
+should not be contained in these
+
+ A hint is announced after a 2
+
+second pause after reading
+
+name/value/trait
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Image
+
+name that matches visual
+
+that matches visual information
+
+“Text field
+
+information
+
+ “Image”
+
+images”
+
+ “Image”
+
+ If it is a decorative image
+
+that has no meaning,
+
+nothing should be
+
+announced; images must
+
+have consistent meaning
+
+ 
+
+ 
+
+ 
+
+48  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ Unique and descriptive title
+
+ Unique and descriptive name
+
+Link
+
+to match visual information,
+
+that matches visual information
+
+“Links”, “In-
+
+“link”
+
+ “Link”
+
+page links”,
+
+ iOS will announce if the link
+
+ iOS will announce “visited”,
+
+“Visited links”,
+
+has been visited or not
+
+“link” if the link has already been
+
+“Non-visited
+
+ Supplemental information
+
+visited
+
+links”
+
+read aloud will not inhibit
+
+compliance unless it is
+
+confusing for the user
+
+ Unique and descriptive title
+
+ Unique and descriptive title to
+
+List
+
+to match visual information
+
+match visual information
+
+“Lists”,
+
+ Will note number of items
+
+ Will note number of items in list
+
+“Characters,
+
+in list
+
+ Could include “Showing rows X of words, lines”
+
+ If the element has a
+
+X” but typically will not note
+
+variable status, the current
+
+something like “dropdown”
+
+status must be announced
+
+ “List start” and “list end” will be
+
+announced
+
+ “Selected” will be read first if
+
+item selected
+
+ 
+
+ Current page number out of
+
+ Current page number out of total
+
+Page Control
+
+total number available will
+
+number available will be
+
+be announced or equivalent
+
+announced or equivalent
+
+accessible and unique name
+
+accessible and unique name to
+
+to identify page
+
+identify page
+
+ 
+
+ We currently do not test for
+
+ N/A
+
+Page Titles
+
+page titles
+
+ 
+
+ 
+
+ Unique and descriptive
+
+ “Picker Item Adjustable”
+
+Picker Item
+
+name that matches visual
+
+ The option that is currently
+
+information
+
+selected on screen should be
+
+announced, followed by the
+
+order of the selected item in the
+
+provided set of options (e.g. “2 of
+
+6”) if they exist
+
+ “Dimmed” if disabled
+
+ Unique and descriptive
+
+ “Search Field”
+
+Search Bar/Field
+
+name that matches visual
+
+ Placeholder text or text entered
+
+“Search
+
+information
+
+into the field
+
+Fields”, “Form
+
+ “Is editing” if editing
+
+Controls”
+
+ 
+
+ 
+
+ 
+
+49  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive title to
+
+Seek Bar/Control
+
+name that matches visual
+
+match visual information to
+
+information
+
+include progress/value
+
+ Descriptive name to signify
+
+ “Skip to [main/page] content”
+
+Skip Link
+
+skip link navigation after
+
+ “In page link”
+
+“In-page links”
+
+Navigation
+
+landing on screen
+
+ This should read similar to a
+
+link
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Slider (e.g.
+
+name that matches visual
+
+that matches visual information
+
+volume, video
+
+information
+
+ May say “up” if noting video
+
+track position)
+
+progress
+
+ ”Adjustable”, current state of the
+
+slider
+
+ “Dimmed” if disabled
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Static Text
+
+name that matches visual
+
+that matches visual information
+
+information
+
+ Static text will ONLY announce
+
+the words and will not announce
+
+any function
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive title to
+
+Status Bar Item
+
+name that matches visual
+
+match visual information
+
+information
+
+ “Status bar item”
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Switch/Toggle
+
+name that matches visual
+
+that matches visual information
+
+“Buttons”
+
+information
+
+ “Switch button”
+
+ “On” or “off”
+
+ “Dimmed” if unavailable
+
+ 
+
+ Unique and descriptive
+
+ Unique and descriptive name
+
+Tab
+
+name that matches visual
+
+that matches visual information
+
+information
+
+ “Tab”
+
+ “Tab”
+
+ 
+
+ 
+
+ 
+
+50  
+
+ 
+
+ 
+
+What to Listen For
+
+Element Type
+
+iOS Specific Output
+
+iOS Rotor
+
+ 
+
+Shortcut
+
+ Unique and descriptive
+
+ “Selected” will be announced if
+
+Table
+
+name that matches visual
+
+selected
+
+“Tables”
+
+information (to include
+
+ Unique and descriptive name
+
+“table”, “header” for
+
+that matches visual information
+
+header column/row)
+
+ If cell has an interaction “button”
+
+ Read order must be correct
+
+will be announced
+
+and cell association must be
+
+ Value will be announced
+
+clear
+
+ Currently a row header will not
+
+announce “header” but will
+
+announce row number
+
+ For column header: unique and
+
+descriptive name that matches
+
+visual information, “header” will
+
+be announced (if top left cell
+
+blank, headers might be read
+
+incorrectly and will fail)
+
+ Unique and descriptive
+
+ Unique and descriptive output
+
+Text
+
+output that matches visual
+
+that matches visual information
+
+“Characters”,
+
+information
+
+“Words”,
+
+ Supplemental information
+
+“Lines”,
+
+read aloud will not inhibit
+
+“Landmarks”
+
+compliance unless it is
+
+confusing for the user
+
+ 
+
+ Unique descriptive name
+
+ Unique descriptive name for
+
+Toolbar
+
+for toolbar
+
+toolbar itself may be announced
+
+ “Toolbar”
+
+first
+
+ “Dimmed/disabled” if
+
+ “Toolbar”
+
+disabled
+
+ “Dimmed” if disabled
+
+ 
+
+ Unique and descriptive
+
+ “Video”
+
+Video/Video View
+
+name that matches visual
+
+information
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+51  
+
+ 
+
+ 
+
+IOS GESTURES AND KEYSTROKES
+
+HOW TO TAKE A SCREENSHOT ON IOS
+
+Press the Home + Power button
+
+VOICEOVER KEYSTROKES
+
+Keys
+
+Action
+
+Control+Option (Alt)
+
+VoiceOver Key (VO)
+
+VO + Left or Right, Left Select previous or next item
+
+or Right arrow
+
+VO + Up or Down, Up, Perform or move to the selected rotor option
+
+or Down
+
+VO + Space
+
+Activate the selected item. (open app, press button)
+
+VO + H
+
+Go to home screen
+
+Escape
+
+Go back, cancel, close pop-up
+
+VO + H 2 times
+
+Open/close multitask pane
+
+Cmd + Tab
+
+Switch to next app or include Shift for previous
+
+Control
+
+Pause/resume speech
+
+VO + A
+
+Read all from first object in selected area
+
+VO + B
+
+Read all from selected item
+
+VO + M
+
+Move to status bar
+
+VO + K
+
+Start VoiceOver training, Escape to exit
+
+VO + F
+
+Search and go to match with Enter
+
+VO + G
+
+Next search match, hold Shift for previous
+
+Left Arrow + Right
+
+Enable or disable quick navigation
+
+Arrow
+
+Shift + Up/Down Arrow Select options from a picker
+
+ 
+
+ 
+
+ 
+
+52  
+
+ 
+
+ 
+
+Keys
+
+Action
+
+CTRL+ Up/Down Arrow Moves focus to first (up arrow) or last (down arrow) element on the screen
+
+Left + Right Arrow
+
+Turn Quick Nav “On”
+
+Quick Nav On then Alt + Move to next or previous horizontal screen/page
+
+Left/Right Arrow
+
+Quick Nav On then Alt + Move/scroll up or down the screen/page
+
+Up/Down Arrow
+
+Quick Nav On then
+
+Control + Left/Right
+
+Go to next or previous container/area
+
+Arrow
+
+VOICEOVER TEXT FIELD COMMANDS
+
+Quick Nav must be OFF to use these commands
+
+Keys
+
+Action
+
+Left or Right Arrows
+
+Move cursor by character
+
+Up or Down Arrows
+
+Move cursor by line
+
+Option + Left and Right Move cursor by word
+
+Arrow
+
+Control or Command + Move cursor by line
+
+Left or Right
+
+Shift+ Arrow keys
+
+Select text
+
+Cmd + A
+
+Select all
+
+Cmd + C
+
+Copy selection
+
+Cmd + X
+
+Cut selection
+
+Cmd + V
+
+Paste
+
+Cmd + Z
+
+Undo
+
+Eject
+
+Show/Hide screen keyboard
+
+ 
+
+ 
+
+ 
+
+53  
+
+ 
+
+ 
+
+VOICEOVER GESTURES
+
+Gesture
+
+Action
+
+Three-finger triple
+
+tap—If zoom is
+
+enabled, this becomes a Toggle Screen Curtain (will turn the visual display off)
+
+three-finger quadruple
+
+tap.
+
+Touch or move around Speak and select the control under your finger
+
+the screen
+
+Tap 2 times fast
+
+Activate the selected item. (open app, press button)
+
+Tap 2 times and hold
+
+Activate “drag-mode” (move icons, swipe-delete)
+
+Tap 3 times fast
+
+Double press control
+
+Swipe Left or Right
+
+Select the previous or next control
+
+Perform or move to the selected rotor option, in character mode the allows you to go
+
+Swipe Up or Down
+
+letter by letter
+
+Hold 1 finger & tap with Select when dragging, activate with tap (aka split-tap)
+
+another
+
+Tap once with two
+
+Pause/resume speech
+
+fingers
+
+Tap 2 times fast with
+
+Perform special action
+
+two fingers
+
+Tap 2 times and hold
+
+Add label to selected item
+
+with two fingers
+
+Tap 3 times with two
+
+Open Item Chooser for current area
+
+fingers
+
+Swipe up with two
+
+Read all from first object in selected area
+
+fingers
+
+Swipe down with two Read all from selected item
+
+fingers
+
+Scrub back and forth
+
+Go back, cancel, close pop-up
+
+with two fingers
+
+ 
+
+ 
+
+ 
+
+54  
+
+ 
+
+ 
+
+Gesture
+
+Action
+
+Pinch out/in with two Select/deselect
+
+fingers
+
+Hold and twist left or
+
+Select the next or previous rotor item
+
+right with two fingers
+
+Tap once with three
+
+Speaks the current page number and position
+
+fingers
+
+Swipe Left or Right with Move to previous or next horizontal screen/page
+
+3 fingers
+
+Set the rotor to Edit,
+
+swipe Up or Down to
+
+To select text
+
+choose Select or Select
+
+All, then double-tap
+
+Set the rotor to Edit,
+
+select the text, swipe
+
+Up or Down to choose To cut, copy, or paste
+
+Cut, Copy, or Paste,
+
+then double-tap.
+
+ZOOM GESTURES
+
+Gesture
+
+Action
+
+Tap 2 times fast with
+
+Toggle Zoom (when Zoom is on); else Toggle speech on/off (good for braille use)
+
+three fingers
+
+Tap 3 times fast with
+
+Toggle speech on/off (good for braille use) (when Zoom is on)
+
+three fingers
+
+Swipe Left or Right with Move to previous or next horizontal screen/page
+
+three fingers
+
+Swipe Up or Down with Move/scroll down or up (like moving a paper)
+
+three fingers
+
+Tap the upper half with Select the first item in the area (may be affect by multitasking gestures be on – iPad only) 4 fingers
+
+Tap the lower half with Select the last item in the area (may be affect by multitasking gestures be on – iPad only) 4 fingers
+
+ 
+
+ 
+
+ 
+
+55  
+
+ 
+
+ 
+
+ADDITIONAL GESTURE AND KEYBOARD COMMAND RESOURCES FOR IOS:
+
+http://www.voiceover-easy.net/References/GestureList.aspx  
+
+http://audiblesight.com/voiceover-gesture-keyboard-commands/  
+
+http://axslab.com/articles/ios-voiceover-gestures-and-keyboard-commands.php  
+
+ http://support.sas.com/misc/accessibility/education/ios/quickref.html  
+
+Beginner gestures video: https://www.youtube.com/watch?v=WKzdHH_kNcw  
+
+Advanced gestures video: https://www.youtube.com/watch?v=FP_NVUaKx9s  
+
+DEVELOPER RESOURCES:
+
+https://developer.apple.com/accessibility/ios/  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+56  
+
+ 
+
+ 
+
+DOCUMENT CONTENT CHANGE LOG
+
+VERSION 1.0, APRIL 2017
+
+Initial version.
+
+ 
+
+ 
+
+ 
+
+57  
+
+ 
+
+ 
+
+Document Outline
+
+·         Structure Bookmarks
+
+o   DHS Section 508 Compliance Test Process for iOS Mobile Applications
+
+o   CONTENTS
+
+o   ABOUT THIS DOCUMENT
+
+o   DHS TEST PROCESS FOR IOS MOBILE APPLICATIONS
+
+o   HOW THIS DOCUMENT IS STRUCTURED
+
+o   SECTION 1: INTRODUCTION AND RATIONALE FOR TESTS
+
+o   APPLYING THE SECTION 508 STANDARDS TO THE IOS MOBILE APPLICATIONS TEST PROCESS
+
+o   THE RATIONALE FOR EACH TEST
+
+o   SECTION 2: TEST ENVIRONMENT
+
+o   DEVICES:
+
+o   ADDITIONAL EQUIPMENT:
+
+o   TEST TOOLS:
+
+o   SELECT THE CORRECT TEST PROCESS FOR TESTING
+
+o   SECTION 3: DHS SECTION 508 COMPLIANCE TESTS FOR IOS MOBILE APPLICATIONS
+
+o   STRUCTURE OF THIS SECTION
+
+o   1. KEYBOARD AND FOCUS
+
+o   2. SCREEN READER TEST
+
+o   3. VIDEO, AUDIO, AND MULTIMEDIA
+
+o   4. COLOR AND CONTRAST
+
+o   5. FLASHING
+
+o   6. TIMEOUTS
+
+o   7. BUILT-IN ACCESSIBILITY FEATURES
+
+o   8. ACCESSIBLE ALTERNATIVE
+
+o   ELEMENTS TABLE
+
+o   IOS GESTURES AND KEYSTROKES
+
+o   HOW TO TAKE A SCREENSHOT ON IOS
+
+o   VOICEOVER KEYSTROKES
+
+o   VOICEOVER TEXT FIELD COMMANDS
+
+o   VOICEOVER GESTURES
+
+o   ZOOM GESTURES
+
+o   DOCUMENT CONTENT CHANGE LOG
+
+o   VERSION 1.0, APRIL 2017

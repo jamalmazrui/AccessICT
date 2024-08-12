@@ -1,0 +1,88 @@
+﻿WCAG 2.0 Pre-Verification Checklist
+
+
+Syracuse University | Technology Accessibility
+
+             
+
+WCAG 2.0 PRE-VERIFICATION CHECKLIST
+
+ 
+
+This checklist has been adapted from WebAIM’s WCAG 2.0 Checklist for HTML Documents and is intended only as a preliminary step in the compliance verification process. Please be sure that you have addressed these common accessibility issues prior to submitting your site for review. 
+
+GENERAL
+
+ The web page has a descriptive title.
+
+ A visible ‘Skip to Content’ or ‘Skip Navigation’ link is present.
+
+ Multiple ways are available to find other web pages on the site - at least two of the following: a list of related pages, table of contents, site map, site search.
+
+ Page is usable when text size is increased to 200%. Horizontal scrolling is enabled when magnified.
+
+ Headings are used and nested appropriately
+
+KEYBOARD NAVIGATION
+
+ Keyboard focus is clearly visible.
+
+ The keyboard navigation order of links, form elements, etc. is logical and intuitive.
+
+ All page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard (e.g., free hand drawing).  Keyboard focus is never locked or trapped at one particular page element.
+
+LINKS
+
+ The purpose of each link can be determined from the link text alone.
+
+ There are no links (or form image buttons) with the same text that go to different locations.
+
+ Color alone is not used to distinguish links from surrounding text unless the luminance contrast between the link and the surrounding text is at least 3:1 and an additional differentiation (e.g., it becomes underlined) is provided when the link is hovered over or receives focus.
+
+IMAGES
+
+ All images, form image buttons, and image map hot spots have appropriate, equivalent alternative text.
+
+                                                                                                                         itsaccessibility.syr.edu
+
+Syracuse University | Technology Accessibility
+
+             
+
+  Images that do not convey content, are decorative, or contain content that is already conveyed in text are given null alt text (alt="") or implemented as CSS backgrounds  Equivalent alternatives to complex images are provided in context or on a separate (linked and/or referenced via longdesc) page.
+
+FORMS
+
+ Sufficient labels, cues, and instructions for required interactive elements are provided via instructions, examples, properly positioned form labels, and/or fieldsets/legends.
+
+  If an input error is detected, provide suggestions for fixing the input in a timely and accessible manner.
+
+ Form inputs have associated text labels.
+
+ Form buttons have a descriptive value.
+
+ If the user can submit information, the submission is reversible, verified, or confirmed.
+
+TABLES
+
+ Tables are not used for layout.
+
+ Data tables do not have irregular structure (merged row or column cells)  Data tables have properly assigned row/column headers. 
+
+AUDIOVISUAL CONTENT
+
+ Synchronized captions are provided for all video
+
+ Video controls can be operated with keyboard only
+
+ Automatically updating content (news ticker, carousel, notification alert, etc.) can be paused, stopped, or hidden by the user or the user can manually control the timing of the updates.
+
+LINKED DOCUMENTS (WORD, PDF, PPT, ETC.)
+
+ All linked documents (Word, PDF, PowerPoint, Excel, etc.) are accessible.
+
+ The correct file type has been added to the link text, such as [Word] or [PDF].
+
+ 
+
+                                                                                                                         itsaccessibility.syr.edu

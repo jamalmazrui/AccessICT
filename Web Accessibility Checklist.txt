@@ -1,0 +1,588 @@
+﻿Web Accessibility Checklist
+
+
+ 
+
+Web Accessibility Checklist
+
+ 
+
+ATTENTION
+
+ 
+
+This is NOT a complete list of Web Content Accessibility Guidelines (WCAG), it is a collection of items that commonly apply to web accessiblity. For a complete list visit the WCAG 2.1 webpage.
+
+ 
+
+Table of Contents                     
+
+Website Accessibility Checklist: Success Criteria and Basis. 3
+
+1.        Text Alternatives are provided for any non-text content 3
+
+2.        Alternatives are provided for time-based media. 4
+
+3.        Content is appropriately and logically marked up 1. 4
+
+4.        Appropriate use of color and visual images. 5
+
+5.        All website functionality is available from a keyboard. 8
+
+6.        Provides users enough time to read and use content 8
+
+7.        No inappropriate flashing content or seizures and physical reactions. 9
+
+8.        Skip Navigation link or Appropriate Heading Structure is present 9
+
+9.        Web pages have appropriate titles. 10
+
+10.         Navigation order is logical 10
+
+11.         Web pages have meaningful hyperlinks. 10
+
+12.         Keyboard focus is visible. 11
+
+13.         Input Modalities. 11
+
+14.         Language is identified. 12
+
+15.         Web pages appear and operate in predictable ways. 12
+
+16.         Input Assistance: Help users avoid and correct mistakes. 13
+
+17.         Maximized for compatibility with current and future user agents, including Assistive Technology (AT) 13
+
+References. 14
+
+Document Revision History. 15
+
+ 
+
+ 
+
+          Website Accessibility Checklist: Success Criteria and Basis
+
+ 
+
+1.   Text Alternatives are provided for any non-text content 
+
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                            | Yes (Pass)  | No (Fail)   | N/A         |
++=============+========================================================================================================================================================================================+=============+=============+=============+
+| 1.1.1       | All images, form image buttons, and image map hot spots have appropriate, equivalent alternative text.                                                                                 | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (a)         | In For non-text content that is a control or accepts user input in the understanding successes criteria                                                                                |             |             |             |
+|             |                                                                                                                                                                                        |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html                                                                                                                       |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.1.1       | Sensory, If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (b)         | http://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html                                                                                                                       |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.1.1       | Form buttons have a descriptive value.  http://www.w3.org/WAI/WCAG21/Techniques/flash/FLASH27                                                                                          | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (c)         |                                                                                                                                                                                        |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.1.1       | Form inputs have associated text labels. text alternative                                                                                                                              | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (d)         | http://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html                                                                                                                       |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.1.1       | Time-Based Media , If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content                                 | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (e)         |                                                                                                                                                                                        |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.1.1       | Frames are appropriately titled.                                                                                                                                                       | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                        |             |             |             |
+| (f)         | http://www.w3.org/WAI/WCAG21/Techniques/html/H65                                                                                                                                       |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+         
+
+BASIS:
+
+WCAG 2.1 Guideline 1.1.1; GC Section 7405, Section 508, 36 CFR 1194.22(a)                                                                                                                   Back to TOC
+
+ 
+
+2.   Alternatives are provided for time-based media
+
+  ID       Description                                                                                                                 Yes (Pass)   No (Fail)   N/A
+  -------- --------------------------------------------------------------------------------------------------------------------------- ------------ ----------- -----
+  1.2.1    A descriptive text transcript is provided for non-live, web-based audio.                                                    ☐            ☐           ☐
+  1.2.2    A text or audio description is provided for non-live, web-based video-only.                                                 ☐            ☐           ☐
+  1.2.3    Synchronized captions are provided for non-live, web-based video.                                                           ☐            ☐           ☐
+  1.25     A descriptive text transcript OR audio description audio track is provided for non-live, web-based video                    ☐            ☐           ☐
+  1.2.7    Synchronized captions are provided for all live multimedia that contains audio.                                             ☐            ☐           ☐
+  1.2.9    Audio descriptions are provided for videos that convey content visually that is not available in the default audio track.   ☐            ☐           ☐
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 1.2.1, 1.2.2, 1.2.3,, 1.2.5 , 1.2.7 , 1.2.9; GC Section 7405, Section 508, 36 CFR 1194.22(b)                                                             Back to TOC
+
+ 
+
+3.   Content is appropriately and logically marked up 1.
+
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                          | Yes (Pass)  | No (Fail)   | N/A         |
++=============+======================================================================================================================================================================+=============+=============+=============+
+| 1.3.1       | Semantic markup is used to designate headings, lists, emphasized or special text.                                                                                    | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+| (a)         | https://webaim.org/techniques/semanticstructure/                                                                                                                     |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.1       | Tables are used for tabular data. Where necessary, data cells are associated with their headers. Data table captions and summaries are used where appropriate.       | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+| (b)         | http://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html                                                                                               |             |             |             |
+|             |                                                                                                                                                                      |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Techniques/html/H51                                                                                                                     |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.1       | Text labels are associated with form input elements.                                                                                                                 | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+| (c)         | http://www.w3.org/WAI/WCAG21/Techniques/html/H44                                                                                                                     |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.2       | The reading and navigation order is logical and intuitive.                                                                                                           | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html                                                                                                  |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.3       | Instructions do not rely upon shape, size, or visual location.                                                                                                       | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+| (a)         |                                                                                                                                                                      |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.3       | Instructions do not rely upon sound.                                                                                                                                 | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                      |             |             |             |
+| (b)         | http://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html                                                                                              |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.5       | Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential. | ☐           | ☐           | ☐           |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.3.6       | In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.                      | ☐           | ☐           | ☐           |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 1.3.1, 1.3.2, 1.3.3, 1.3.4, 1.3.5; GC Section 7405, Section 508, 36 CFR 1194.22(d)                                                                                   Back to TOC
+
+ 
+
+4.   Appropriate use of color and visual images
+
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                                                                                                             | Yes (Pass)  | No (Fail)   | N/A         |
++=============+=========================================================================================================================================================================================================================================================================================+=============+=============+=============+
+| 1.4.1       | Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.                                                                                                                                    | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+| (a)         |                                                                                                                                                                                                                                                                                         |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.1       | Color alone is not used to distinguish links from surrounding text unless the luminance contrast between the link and the surrounding text is at least 3:1 and an additional differentiation (e.g., it becomes underlined) is provided when the link is hovered over or receives focus. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+| (b)         | http://www.w3.org/WAI/WCAG21/Techniques/general/G183                                                                                                                                                                                                                                    |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.2       | A mechanism is provided to stop, pause, mute, or adjust volume for audio that automatically plays on a page for more than 3 seconds.                                                                                                                                                    | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.3       | Text and images of text have a contrast ratio of at least 4.5:1. Images that are purely decorative (no purpose) do not have to meet this contrast ratio.                                                                                                                                | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.4       |  except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.                                                                                                                                   | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.6       | The page is readable and functional when the text size is doubled.                                                                                                                                                                                                                      | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html                                                                                                                                                                                                                       |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.5       | If the same visual presentation can be made using text alone, an image is not used to present that text.                                                                                                                                                                                | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.10      | Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions                                                                                                                                                                | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.11      | The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s)                                                                                                                                                                                | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | User Interface Components                                                                                                                                                                                                                                                               |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;                                                                   |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Graphical Objects                                                                                                                                                                                                                                                                       |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.                                                                                                                                 |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.12      | In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property: •Line height (line spacing) to at least 1.5 times the font size;    | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | •Spacing following paragraphs to at least 2 times the font size;                                                                                                                                                                                                                        |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | •Letter spacing (tracking) to at least 0.12 times the font size;                                                                                                                                                                                                                        |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | •Word spacing to at least 0.16 times the font size.                                                                                                                                                                                                                                     |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 1.4.13      | Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:                                                                                                                                | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Dismissible                                                                                                                                                                                                                                                                             |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;                                                                      |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Hoverable                                                                                                                                                                                                                                                                               |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;                                                                                                                             |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | Persistent                                                                                                                                                                                                                                                                              |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             | The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.                                                                                                                                       |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                                                                                                                                                         |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 1.4.1, 1.4.2, 1.4.3, 1.4.4, 1.4.5,1.4.10,1.4.11,1.4.12,1.4.13; GC Section 7405, Section 508, 36 CFR 1194.22(c)                                     Back to TOC
+
+                                                                                                  
+
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                    | Yes (Pass)  | No (Fail)   | N/A         |
++=============+================================================================================================================================================================+=============+=============+=============+
+| 2.1.1       | All page functionality is available using the keyboard.                                                                                                        | ☐           | ☐           | ☐           |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.1.2       | Page-specified shortcut keys and access keys (access key should typically be avoided) do not conflict with existing browser and screen reader shortcuts.       | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                |             |             |             |
+| (a)         | http://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html                                                                                        |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.1.2       | Keyboard focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable page elements using only a keyboard. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                |             |             |             |
+| (b)         |                                                                                                                                                                |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.1.4       | A keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters.          | ☐           | ☐           | ☐           |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+5.    All website functionality is available from a keyboard
+
+BASIS:
+
+WCAG 2.1 Guideline 2.1.1, 2.1.2, 2.1.4 GC Section 7405, Section 508, 36 CFR 1194.22(l)                                                                                                  Back to TOC
+
+ 
+
+6.   Provides users enough time to read and use content
+
++-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                                                                                        | Yes (Pass)  | No (Fail)   | N/A         |
++=============+====================================================================================================================================================================================================================================================================+=============+=============+=============+
+| 2.2.1       | If a page or application has a time limit, the user is given options to turn off, adjust, or extend that time limit. This is not a requirement for real-time events where the time limit is required, or if the time limit is longer than 20 hours.                | ☐           | ☐           | ☐           |
++-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+|             | Automatically moving, blinking, or scrolling content that lasts longer than 5 seconds can be paused, stopped, or hidden by the user. Moving, blinking, or scrolling can be used to draw attention to or highlight content as long as it lasts less than 5 seconds. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                    |             |             |             |
+| 2.2.2       |                                                                                                                                                                                                                                                                    |             |             |             |
+|             |                                                                                                                                                                                                                                                                    |             |             |             |
+| (a)         |                                                                                                                                                                                                                                                                    |             |             |             |
++-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.2.2       | Automatically updating content can be paused, stopped, or hidden by the user or the user can manually control the timing of the updates.                                                                                                                           | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                                    |             |             |             |
+| (b)         |                                                                                                                                                                                                                                                                    |             |             |             |
++-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.2.1, 2.2.2; GC Section 7405, Section 508, 36 CFR 1194.22(p)                                                                                                                   Back to TOC
+
+ 
+
+7.   No inappropriate flashing content or seizures and physical reactions
+
++-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                  | Yes (Pass)  | No (Fail)   | N/A         |
++=============+==============================================================================================================================================================================+=============+=============+=============+
+|             | No page content flashes more than 3 times per second unless that flashing content is sufficiently small and the flashes are of low contrast and do not contain too much red. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                              |             |             |             |
+| 2.3.1       |                                                                                                                                                                              |             |             |             |
+|             |                                                                                                                                                                              |             |             |             |
+| &           |                                                                                                                                                                              |             |             |             |
+|             |                                                                                                                                                                              |             |             |             |
+| 2.3.2       |                                                                                                                                                                              |             |             |             |
+|             |                                                                                                                                                                              |             |             |             |
+|             |                                                                                                                                                                              |             |             |             |
++-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.3.1 , 2.3.2; GC Section 7405, Section 508, 36 CFR 1194.22(j)                                                                                                                   Back to TOC
+
+ 
+
+ 
+
+8.   Skip Navigation link or Appropriate Heading Structure is present
+
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                              | Yes (Pass)  | No (Fail)   | N/A         |
++=============+==========================================================================================================================================================================================================+=============+=============+=============+
+| 2.4.1       | A link is provided to skip navigation and other page elements that are repeated across web pages.                                                                                                        | ☐           | ☐           | ☐           |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.4.2       | If a page has a proper heading structure, this may be considered a sufficient technique instead of a "Skip to main content" link. Note that navigating by headings is not yet supported in all browsers. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                          |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html                                                                                                                                            |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.4.3       | If a page uses frames and the frames are appropriately titled, this is a sufficient technique for bypassing individual frames.                                                                           | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                          |             |             |             |
+|             | http://www.w3.org/WAI/WCAG21/Techniques/html/H70                                                                                                                                                         |             |             |             |
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.4.1, 2.4.2 , 2.4.3; GC Section 7405, Section 508, 36 CFR 1194.22(o)                                                                                                 Back to TOC
+
+9.   Web pages have appropriate titles
+
++-------------+------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                | Yes (Pass)  | No (Fail)   | N/A         |
++=============+============================================================+=============+=============+=============+
+|             | The web page has a descriptive and informative page title. | ☐           | ☐           | ☐           |
+|             |                                                            |             |             |             |
+| 2.4.2       |                                                            |             |             |             |
++-------------+------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.4.2                                                                       Back to TOC
+
+ 
+
+10.        Navigation order is logical
+
++-------------+------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                  | Yes (Pass)  | No (Fail)   | N/A         |
++=============+==============================================================================+=============+=============+=============+
+| 2.4.3       | The navigation order of links, form elements, etc. is logical and intuitive. | ☐           | ☐           | ☐           |
+|             |                                                                              |             |             |             |
+|             |                                                                              |             |             |             |
++-------------+------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.4.3                                                                       Back to TOC
+
+ 
+
+11.        Web pages have meaningful hyperlinks
+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                             | Yes (Pass)  | No (Fail)   | N/A         |
++=============+=========================================================================================================================================================+=============+=============+=============+
+|             | The purpose of each link (or form image button or image map hotspot) can be determined from the link text alone, or from the link text and its context. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                         |             |             |             |
+| 2.4.4       |                                                                                                                                                         |             |             |             |
+|             |                                                                                                                                                         |             |             |             |
+| (a)         |                                                                                                                                                         |             |             |             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.4.4       | Links (or form image buttons) with the same text that go to different locations are readily distinguishable.                                            | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                         |             |             |             |
+| (b)         | http://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html                                                                                 |             |             |             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.4.4; GC Section 7405, Section 508, 36 CFR 1194.31(a.2.b)                                                                                                                   Back to TOC
+
+ 
+
+ 
+
+12.        Keyboard focus is visible
+
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                               | Yes (Pass)  | No (Fail)   | N/A         |
++=============+===========================================================================================================================================+=============+=============+=============+
+|             | It is visually apparent which page element has the current keyboard focus (i.e., as you tab through the page, you can see where you are). | ☐           | ☐           | ☐           |
+|             |                                                                                                                                           |             |             |             |
+| 2.4.7       |                                                                                                                                           |             |             |             |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.4.7; GC Section 7405, Section 508, 36 CFR 1194.21(c)                                                                                                                   Back to TOC
+
+ 
+
+13.        Input Modalities
+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                             | Yes (Pass)  | No (Fail)   | N/A         |
++=============+=========================================================================================================================================================================================================+=============+=============+=============+
+| 2.5.1       | All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential. | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.5.2       | Functionality that can be operated using a single pointer                                                                                                                                               | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 2.5.3       | For user interface components with labels that include text or images of text, the name contains the text that is presented visually.                                                                   | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+|             | Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation.      | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                         |             |             |             |
+| 2.5.4       |                                                                                                                                                                                                         |             |             |             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 2.5.1, 2.5.2, 2.5.3, 2.5.4; GC Section 7405, Section 508, 36 CFR 1194.21(c)                                                                                        Back to TOC
+
+14.        Language is identified
+
+  ID      Description                                                                    Yes (Pass)   No (Fail)   N/A
+  ------- ------------------------------------------------------------------------------ ------------ ----------- -----
+  3.1.1   The language of the page is identified using the HTML language attribute.      ☐            ☐           ☐
+  3.1.2   The language of page content that is in a different language is identified.    ☐            ☐           ☐
+
+ BASIS:
+
+WCAG 2.1 Guideline 3.1.1, 3.1.2                                                            Back to TOC
+
+ 
+
+15.        Web pages appear and operate in predictable ways
+
+  ID      Description                                                                                                                                                                                                                                                                                                          Yes (Pass)   No (Fail)   N/A
+  ------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------ ----------- -----
+  3.2.1   When a page element receives focus, it does not result in a substantial change to the page, the spawning of a pop-up window, an additional change of keyboard focus, or any other change that could confuse or disorient the user.                                                                                   ☐            ☐           ☐
+  3.2.2   When a user inputs information or interacts with a control, it does not result in a substantial change to the page, the spawning of a pop-up window, an additional change of keyboard focus, or any other change that could confuse or disorient the user unless the user is informed of the change ahead of time.   ☐            ☐           ☐
+  3.2.3   Navigation links that are repeated on web pages do not change order when navigating through the site.                                                                                                                                                                                                                ☐            ☐           ☐
+  3.2.4   Elements that have the same functionality across multiple web pages are consistently identified. For example, a search box at the top of the site should always be labeled the same way.                                                                                                                             ☐            ☐           ☐
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 3.2.1, 3.2.2, 3.2.3, 3.2.4                                        Back to TOC
+
+ 
+
+16.        Input Assistance: Help users avoid and correct mistakes
+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                                                                                   | Yes (Pass)  | No (Fail)   | N/A         |
++=============+===============================================================================================================================================================================================================================================================+=============+=============+=============+
+| 3.3.2       | If a form element is required or requires a specific format, value, or length, provide the information within the element's label. http://www.w3.org/TR/WCAG20-TECHS/H44.html                                                                                 | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                               |             |             |             |
+| (a)         |                                                                                                                                                                                                                                                               |             |             |             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 3.3.1       | If utilized, form validation errors are presented in an efficient, intuitive, and accessible manner. The error is clearly identified, quick access to the problematic element is provided, and user is allowed to easily fix the error and resubmit the form. | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 3.3.2       | Sufficient labels, cues, and instructions for required interactive elements are provided via instructions, examples, properly positioned form labels, and/or fieldsets/legends.                                                                               | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                                                               |             |             |             |
+| (b)         |                                                                                                                                                                                                                                                               |             |             |             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 3.3.3       | If an input error is detected (via client-side or server-side validation), provide suggestions for fixing the input in a timely and accessible manner.                                                                                                        | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 3.3.4       | If the user can change or delete legal, financial, or test data, the changes/deletions can be reversed, verified, or confirmed.                                                                                                                               | ☐           | ☐           | ☐           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 3.3.1, 3.3.2, 3.3.3, 3.3.4; GC Section 7405, Section 508, 36 CFR 1194.22(n)                                                                                        Back to TOC
+
+ 
+
+17.        Maximized for compatibility with current and future user agents, including Assistive Technology (AT)
+
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| ID          | Description                                                                                                                                                                                                                 | Yes (Pass)  | No (Fail)   | N/A         |
++=============+=============================================================================================================================================================================================================================+=============+=============+=============+
+| 4.1.1       | Preform HTML/XHTML validation so that parsing errors are avoided.                                                                                                                                                           | ☐           | ☐           | ☐           |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 4.1.2       | Markup is used in a way that facilitates accessibility. This includes following the HTML/XHTML specifications and using forms, form labels, frame titles, etc. appropriately.                                               | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                             |             |             |             |
+|             |                                                                                                                                                                                                                             |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+| 4.1.3       | In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus. | ☐           | ☐           | ☐           |
+|             |                                                                                                                                                                                                                             |             |             |             |
+|             |                                                                                                                                                                                                                             |             |             |             |
++-------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+-------------+-------------+
+
+ 
+
+BASIS:
+
+WCAG 2.1 Guideline 4.1.1, 4.1.2, 4.1.3 GC Section 7405, Section 508, 36 CFR 1194.22(l)                                                                                                  Back to TOC
+
+ 
+
+Note
+
+ 
+
+Letters are used to differentiate between items that reference the same WCAG number. This check list is not a complete reference to all WCAG numbers, only select guidelines that have been identified as often used. Some information provided in this guide is taken from the understanding section of WCAG, a link is provided for those excerpts for easier reference. Remember all WCAG standards still apply, please visit the current list of guidelines to view them all.
+
+ 
+
+References
+
+ 
+
+WebAIM's WCAG 2.0 Checklist http://webaim.org/standards/wcag/checklist
+
+ 
+
+World Wide Web Consortium http://www.w3.org/
+
+ 
+
+Jim Thatcher.com http://jimthatcher.com/sidebyside.htm
+
+ 
+
+Section 508 Standards Guidelines http://www.section508.gov/section-508-standards-guide#Application
+
+ 
+
+WCAG 2.1 http://www.w3.org/TR/WCAG21/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Document Revision History
+
+This table shows the revision history for this document.
+
+  Date        Version   Changes
+  ----------- --------- ---------------------------------------
+  3/3/2017    .01       Initial draft.
+  5/15/2017   1.0       Initial release.
+  7/19/2018   2.0       Re-released with WCAG 2.1 updates
+  2/5/2019    2.1       Updated IDs and added links and notes
+  7/3/2019    2.11      Update to WCAG Language
+  8/9/2019    2.12      Updates to the document’s formatting
+
+ 

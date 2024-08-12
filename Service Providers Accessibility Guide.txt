@@ -1,0 +1,1439 @@
+﻿Service Providers Accessibility Guide
+
+  -- ------------------------------------------------------------------------------------------------ -------------------------- --
+                                                                                                                                 
+     [Service Providers Accessibility Guide A quick reference guide for accessible communications ]                              
+                                                                                                                                 
+                                                                                                      [Media Access Australia]   
+  -- ------------------------------------------------------------------------------------------------ -------------------------- --
+
+[Media Access Australia]
+
+Contents
+
+About Media Access Australia. 5
+
+About the funding of this Guide. 5
+
+Support from service providers. 5
+
+About the Author 5
+
+1.0 Introduction. 7
+
+1.1 Purpose of this Guide. 7
+
+1.2 Target Audience. 7
+
+1.3 How to use this Guide. 9
+
+2.0 How people with disabilities access online information. 9
+
+2.1 Diversity of web users: benefits, barriers and legal requirements. 9
+
+2.2 The use of assistive technology. 12
+
+2.3 Practical exercise: using a screen reader 12
+
+3.0 Producing and distributing your messages to people with disabilities. 14
+
+3.1 Accessibility and organisational roles. 14
+
+3.2 Government policies and legislative requirements. 14
+
+3.3 Building an accessible website. 15
+
+3.4 Publishing content online. 17
+
+3.4.1 Selecting a document format 17
+
+3.4.2 HTML web documents. 18
+
+3.4.3 Microsoft Word documents. 18
+
+3.4.4 PDF documents. 19
+
+3.5 Preparing accessible emails. 19
+
+3.6 Engaging with accessible social media. 20
+
+3.6.1 Social media accessibility overview.. 20
+
+3.6.2 Facebook. 20
+
+3.6.3 YouTube. 21
+
+3.6.4 Twitter 22
+
+3.6.5 Blogging. 22
+
+4.0 Helping people with disabilities receive your messages. 25
+
+4.1 Planning your approach. 25
+
+4.2 Accessibility features in popular computer operating systems and mobile devices. 27
+
+4.2.1 Accessibility features overview.. 27
+
+4.2.2 Microsoft Windows. 27
+
+4.2.3 Apple Mac OS X.. 29
+
+4.2.4 iOS devices including the Apple iPhone and the iPad. 29
+
+4.2.5 Google Android. 29
+
+4.3 Social media accessibility. 31
+
+4.3.1 Benefits and barriers of social media. 31
+
+4.3.2 Facebook. 31
+
+4.3.3 YouTube. 33
+
+4.3.4 Twitter 34
+
+4.3.5 Skype. 35
+
+4.3.6 LinkedIn. 37
+
+5.0 Checklist 38
+
+User Experience. 38
+
+Government policy. 38
+
+Website accessibility. 38
+
+Document accessibility. 38
+
+HTML Web pages. 38
+
+Word documents. 39
+
+PDF files. 39
+
+Social media. 39
+
+Facebook. 39
+
+YouTube. 39
+
+Twitter 39
+
+Blogging. 39
+
+Setting up computer and mobile devices. 40
+
+Setting up social media tools. 40
+
+6.0 Resources used in this Guide. 41
+
+Appendix A: Web Content Accessibility Guidelines 2.0 compliance levels. 43
+
+Level A compliance. 43
+
+Level AA compliance. 46
+
+Level AAA compliance. 47
+
+Appendix B: YouTube Captioning step-by-step guide. 50
+
+Adding and editing auto-captions to videos. 50
+
+Creating and editing auto-captions. 50
+
+Creating caption files. 50
+
+Creating caption files using Amara. 50
+
+Uploading a caption file or transcript to videos. 51
+
+ 
+
+About Media Access Australia
+
+‘We believe that all Australians have the right to access all forms of media and information, through technology, so they can participate fully in society.’
+
+Media Access Australia (MAA) is Australia’s only independent not-for-profit organisation devoted to increasing access to media for people with disabilities.
+
+At the core of our work is the understanding that exclusion from mainstream media has profound effects on educational outcomes, workforce participation and social inclusion.
+
+Access to media through technology empowers people to be independent, gain knowledge, make their own choices, and be active members of our society.
+
+About the funding of this Guide
+
+This guide was funded by the Australian Government Department of Families, Housing, Community Services and Indigenous Affairs.
+
+The opinions, comments and/or analysis expressed in this document are those of the author or authors and do not necessarily represent the views of the Minister for Disability Reform and cannot be taken in any way as expressions of government policy.
+
+Support from service providers
+
+The structure and topics discussed in this guide are based in part on consultancy with several service providers to ensure its quality, effectiveness and relevance. Media Access Australia thanks those organisations for their contribution and support.
+
+About the Author
+
+Dr Scott Hollier is a Project Manager and the Western Australia Manager for Media Access Australia. Scott's work focuses on making computers and internet related technologies accessible to people with disabilities. Scott also represents MAA on the Advisory Committee of the World Wide Web Consortium (W3C), the organisation primarily responsible for developing web standards that ensure the long-term growth of the web.
+
+Scott has completed a PhD entitled ‘The Disability Divide: an examination into the needs of computing and internet-related technologies on people who are blind or vision impaired', and has a background in Computer Science and a wealth of experience in both the information technology and not-for-profit sectors. Scott is legally blind and as such understands the importance of access at a personal level.
+
+1.0 Introduction 
+
+1.1 Purpose of this Guide 
+
+The Service Providers Accessibility Guide is designed to provide you with a practical, hands-on, step-by-step way to effectively prepare and deliver content to people with disabilities via computing and electronic devices.
+
+In order to meet the key National Disability Insurance Scheme (NDIS) requirement of providing accessible communication channels between service providers and people with disabilities, there are two key issues that are addressed in this Guide:
+
+·         How your organisation can effectively prepare its information to maximise the accessibility of your content for people with disabilities.
+
+·         Ensuring that people with disabilities within your organisational support structure have the necessary accessibility features and assistive technologies to receive the information.
+
+Examples of where this Guide may provide useful information include:
+
+·         A carer setting up a new computer for a person with a disability.
+
+·         Internal documents being formatted in an accessible way to help employees with a disability.
+
+·         Creating an accessible website.
+
+·         Ensuring that people with disabilities can overcome accessibility barriers to read important social media messages from a service provider.
+
+The Guide supports these scenarios and many others by taking a holistic approach and assisting agencies and service providers to adapt their office and communications systems to meet the needs of people with disabilities, and provides information on how disability service providers can engage directly with clients to set up their equipment effectively to access such information.
+
+1.2 Target Audience
+
+This Guide is primarily for organisations and individuals that will need to provide accessible information to people with disabilities as part of the NDIS through a variety of computer and internet-enabled mediums. A familiarity with basic computing concepts such as how to navigate around an internet-enabled computer or mobile devices such as smartphones and tablets is recommended.
+
+There are also some sections which have been optimised for people in particular organisational roles. Section 3.3 Building an Accessible Website will require an Information and Communications Technology (ICT) professional to incorporate the necessary accessible programming techniques into an organisation’s website. Sections 3.4 and 3.5, which discuss content creation and social media, would best benefit people who work in document production and communications roles.
+
+People with disabilities or people who interact directly with people with disabilities such as key organisational staff members, carers or family members can also benefit from this guide. Chapters 2 and 4 in particular provide an introduction to how people with disabilities access information online, and highlight the accessibility features that are available for popular computer operating systems. Overcoming social media barriers can provide general benefits to the online independence of people with disabilities beyond the NDIS-specific requirements.
+
+ 
+
+1.3 How to use this Guide
+
+This Guide is structured in accordance with the requests and research associated with a number of organisations that are providing services related to the NDIS implementation. As a result, the guide has been structured to follow common organisational work processes and roles of staff in the creation of information, distribution of information and the provision of specific guidance directly to people with disabilities so that they can effectively receive accessible communication.
+
+Chapter 2, How people with disabilities access online information, is designed to provide an overview of how people with disabilities will interact with your online information and services. This includes the diversity of people with disabilities online, the types of assistive technologies are likely to be used in accessing your NDIS-related information and services. There is also an opportunity to experience first-hand how these technologies work.
+
+Chapters 3, Producing and distributing your messages to people with disabilities, is designed to step you through all the organisational requirements to ensure that information being created and distributed by your organisation is created in an accessible way. This includes Web-based content, document creation, email distribution and social media preparation.
+
+Chapter 4, Helping people with disabilities receive your messages, returns to the user requirements perspective by providing practical advice to people with disabilities, carers and associated on how a computer or mobile device can be set up with the necessary accessibility features or assistive technologies. It includes explanations of the main accessibility features in popular operating systems and guidance on how their accessibility can be maximised.
+
+The remaining chapters include a checklist of important points to consider when providing support to people with disabilities through the NDIS. A list of resources used to create this guide is also included to help you quickly locate any additional information you may need. You are also welcome to contact MAA directly should you have any additional questions.
+
+2.0 How people with disabilities access online information 
+
+2.1 Diversity of web users: benefits, barriers and legal requirements
+
+In order to understand how to prepare the online resources of your organisation to support people with disabilities, it is first necessary to explain – and to some degree experience – how people with disabilities will interact with NDIS-related information.
+
+The Australian Bureau of Statistics indicates that there are approximately 4 million Australians, or 18.5% of the population, who have some form of permanent disability. As Australia continues to move towards high online participation rates due to increased mobile broadband use and the rollout of the National Broadband Network (NBN), the online community is becoming increasingly reflective of the diversity in our own community.
+
+The reason why accessing information online is so important to people with disabilities is due to the potential for independent access to information. For example, someone with a vision impairment who wanted to seek NDIS information from a print-only resource would need assistance to obtain the resource and convert it into an accessible format such as large print or braille, involving several people in a relatively time-consuming process.
+
+Accessing and receiving the resource via online means, however, significantly reduces the time and effort required by both the individual and the supporting staff. With the right accessibility features enabled or assistive technology installed on a computer or mobile device, information communicated between NDIS service providers, employees with a disability, family members, carers and people with disabilities themselves can be effectively received and used. With the rapid improvements in mobile accessibility and the use of social media, people with disabilities also have a greater variety of choice in which device they use to access content, providing even greater independence.
+
+However, simply converting printed material into online content is not enough to ensure that your messages are received or that the benefits discussed can be enjoyed by people with disabilities. In order for information to be available, it must first be made accessible.
+
+The World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI) provides information on How People With Disabilities Use The Web and some of the challenges they may face. They:
+
+·         may not be able to see, hear, move, or may not be able to process some types of information easily or at all
+
+·         may have difficulty reading or comprehending text
+
+·         may not have or be able to use a keyboard or mouse
+
+·         may have a text-only screen, a small screen, or a slow internet connection
+
+·         may not speak or understand fluently the language in which the document is written
+
+·         may be in a situation where their eyes, ears or hands are busy or interfered with (e.g., driving to work, working in a loud environment, etc.)
+
+·         may have an early version of a browser, a different browser entirely, a voice browser, or a different operating system
+
+While it may seem initially daunting to consider the needs of all these groups when creating and communicating NDIS-related information, there are many practical techniques that can ensure that the information produced is done so in an accessible way, and effectively conveyed to people with disabilities. Guidance will also be provided on how you or your organisation can work effectively to ensure that the required accessibility tools are enabled.
+
+The diversity of Australian web users with disabilities and their significance is also recognised by the Australian Human Rights Commission (AHRC) in its accessible web design and development resources. The AHRC reinforces the importance of providing equal access to the web as both an essential service and human right. It also provides a reminder that failure to cater for the diverse needs of people with disabilities online can be interpreted as a breach of Section 24 of the Disability Discrimination Act 1992 as was the case in the Bruce Lindsay Maguire v Sydney Organising Committee for the Olympic Games (SOCOG) case. Information relating to specific techniques required to meet government requirements are discussed in Chapter 3.
+
+ 
+
+2.2 The use of assistive technology 
+
+The flexibility of the internet means that people with disabilities can use a variety of accessibility tools, often called Assistive Technology (AT), which include both software and hardware. Until recently, AT software was only sold by specialist providers and generally retailed for thousands of dollars. In recent years, however, there has been a growing trend in building accessibility features directly into the operating systems of computers and mobile devices. There are also free and open source alternatives available, such as the NVDA screen reader.
+
+There are many accessibility features found in popular operating systems such as Microsoft Windows, Apple Mac OS X, Google Android and Apple iOS.
+
+Some examples include:
+
+·         Screen reader: A text-to-speech application that reads out computer and internet-related information to assist people who are blind or vision impaired.
+
+·         Screen magnifier: A magnification tool for enlarging sections of screen content.
+
+·         Themes: High contrast themes allow people with a vision impairment to change the colours to a more comfortable setting such as white-on-black, and increase the size of mouse pointers and text.
+
+·         On-screen keyboard: Enables people with a mobility impairment to 'type' by using a pointing device to select letters and words on the screen.
+
+·         On-screen alerts: Visual messages can appear in place of audible sounds to help people who are Deaf or hearing impaired.
+
+Further information on these tools, including their functions, limitations and basic operation, is located in Chapter 4.
+
+2.3 Practical exercise: using a screen reader 
+
+While reading about how people with disabilities use a computer helps in understanding its importance in relation to the NDIS, experiencing it is another thing entirely. In this practical exercise, you can briefly experience how a person who is blind or vision impaired would navigate web pages using a screen reader. The tool works by using a text-to-speech process which reads out information using a synthesised voice. As a person who is blind or vision impaired is unable to clearly see the screen, the tool is designed so that the screen is not required, nor is the use of a mouse as a blind person would not be able to see the mouse arrow. Keyboard commands are the most common way to interact with a screen reader, although touch-screen devices also use touch gestures to input commands.
+
+The example provided here is a basic screen reader called WebAnywhere. While it is not considered to be as effective as the products discussed in Chapter 4, it will provide you with a basic overview of how a screen reader works. To use WebAnywhere you will need a computer or device that has Adobe Flash installed. If you are unsure your device has Flash, or have difficulties using WebAnywhere, there other screen reader options discussed after the WebAnywhere example.
+
+To use WebAnywhere:
+
+1.     To start, go to WebAnywhere
+
+2.     Once the page has loaded, it should start reading out its home page. If this does not start automatically, you may need to select the ‘start WebAnywhere’ link at the top of the page
+
+3.     Try using the search box at the top of the page to go to different sites. To read out the web pages, use the following keyboard commands:
+
+Table 1 Keyboard commands for using WebAnywhere screen reader
+
+  Key          Function
+  ------------ ------------------------------------------------------------------------
+  CTRL+L       Silence WebAnywhere and pause the system.
+  CTRL+H       Move the cursor to the location box where you can type a URL to visit.
+  Arrow Down   Read the next element on the page.
+  Arrow Up     Read the previous element on the page.
+  TAB          Skip to the next link or form control.
+  CTRL+H       Skip to the next heading.
+  CTRL+I       Skip to the next input element.
+  CTRL+R       Skip to the next row by cell when in a table.
+  CTRL+D       Skip to the next column by cell when in a table.
+  Page down    Read continuously from the current position.
+  Home         Read continuously over starting from the beginning of the page.
+
+4.     Once you are comfortable using the keyboard commands, try turning your monitor off or hide the display and continue browsing the websites.
+
+If you were unable to use WebAnywhere on your computer, you can try others. For example:
+
+·         iPad, iPhone and Mac computers have the VoiceOver screen reader built-in.
+
+·         Android smartphones and tablets have a free app available called TalkBack which is pre-installed on some devices.
+
+·         Windows computers have a built-in screen reader called Narrator.
+
+Try enabling the screen reader available on your device and try the experience of navigating around your device without looking at the screen.
+
+Many people who are blind or vision impaired become very proficient at using more powerful screen readers. They can increase the reading speed to the point where it becomes difficult to comprehend for the untrained ear. Gaining a personal insight into how people with disabilities access the web can be helpful in the creation and distribution of NDIS-related information and may be a good way for others in your organisation to gain additional knowledge of how people with disabilities are likely to interact with your information.
+
+ 
+
+3.0 Producing and distributing your messages to people with disabilities 
+
+3.1 Accessibility and organisational roles 
+
+The previous chapter provided a good insight as to how people with disabilities are likely to access your content. While different people will have different requirements for incorporating accessibility in their work practices, it is vital that accessibility is approached as an organisation-wide initiative and ongoing support is provided in an effective team environment.
+
+To achieve this, the information provided in this chapter is designed to help you make sure that your web presence, documents, emails and social media distribution usage can be created and distributed in ways that best support people with disabilities and their support networks.
+
+The chapter sections have been divided according to recommendations from service providers to make it easier to divide the responsibilities based on the roles of staff and their responsibilities:
+
+·         Government policy and legislative requirements provides a more specific overview of the Federal government’s expectations of accessibility required for online content and the standards on which they are based. This is particularly relevant to policy officers and can help incorporate accessibility information into an organisational Disability Access and Inclusion Plan (DAIP).
+
+·         Building an accessible website provides programming and design techniques that ICT professionals such as web designers and developers can implement to ensure your web presence is compatible with screen readers and other assistive technologies.
+
+·         Publishing content online provides content authors with guidance on how to make selections regarding which document format to use, and then specific guidance on content creation in HTML, Microsoft Word and PDF formats.
+
+·         Preparing accessible emails and engaging with accessible social media presence provide support to staff in marketing-related roles so they can effectively ensure that their email and social media communications are distributed in an accessible manner.
+
+3.2 Government policies and legislative requirements 
+
+In November 2009, the Online and Communications Council (OCC) endorsed a mandatory requirement that all Australian Federal, state and territory government websites conform to the World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0. Furthermore, as highlighted in Chapter 2, the Disability Discrimination Act 1992 requires agencies to ensure that people with disabilities have the same fundamental rights to access information and services as others in the community. The implementation of this requirement by government agencies is known as the National Transition Strategy (NTS).
+
+The UN Convention on the Rights of Persons with Disabilities (UNCRPD) also specifically recognises (under Articles 9 and 21) that access to information, communications and services, including the internet, is a human right. As an NDIS service provider, it is imperative that all web content complies with the WCAG 2.0 standard.
+
+WCAG 2.0 is recognised as the world standard for creating accessible websites and has wide international adoption. It is classified as the ISO/IEC 40500 standard and contains three implementation levels, ‘A’, ‘AA’ and ‘AAA’. The NTS has committed to implementing Level ‘AA’ by the end of 2014, and as such it is recommended that NDIS service providers also strive to meet WCAG 2.0 Level ‘AA’ compliance for their web presence and other content-related requirements where applicable.
+
+In relation to document accessibility, the Australian government conducted a study into the Accessibility of the Portable Document Format for people with a disability. This found that while PDF accessibility is improving, like most tools, it cannot compensate for poor design. Content authors need to design accessibility into their documents from the outset.
+
+The Federal government also highlighted the importance of social media accessibility as part of the Government 2.0 Taskforce in 2010. The ‘sociABILITY’ report published in 2012 by Media Access Australia identified that while social media offered significant potential to people with disabilities in gaining access to information, the most popular social media tools were not compliant with the WCAG 2.0 standard. As a result, additional support was required in the preparation of social media messages as discussed below, and people with disabilities required assistance to implement workarounds and alternative portals to effectively use social media tools as discussed in Chapter 4.
+
+3.3 Building an accessible website 
+
+To ensure that people with disabilities can access your website, ICT professionals involved in its development and maintenance should be familiar with the Web Content Accessibility Guidelines (WCAG) 2.0 published by the W3C. WCAG 2.0 is based on four design principles containing 12 guidelines which are summarised in the ‘WCAG 2.0 at a glance’ document provided by the W3C:
+
+Perceivable:
+
+1.1 Provide text alternatives for non-text content.
+
+1.2 Provide captions and other alternatives for multimedia.
+
+1.3 Create content that can be presented in different ways, including by assistive technologies, without losing meaning.
+
+1.4 Make it easier for users to see and hear content.
+
+Operable:
+
+2.1 Make all functionality available from a keyboard.
+
+2.2 Give users enough time to read and use content.
+
+2.3 Do not use content that causes seizures.
+
+2.4 Help users navigate and find content.
+
+Understandable:
+
+3.1 Make text readable and understandable.
+
+3.2 Make content appear and operate in predictable ways.
+
+3.3 Help users avoid and correct mistakes.
+
+ 
+
+Robust:
+
+4.1 Maximise compatibility with current and future user tools.
+
+The 12 guidelines contain Success Criteria (SC) that outline how ICT professionals such as web developers and designers can implement the guidelines to one of three levels: the minimal Level ‘A’ standard, Level ‘AA’ or Level ‘AAA’. As discussed in the government policy section 3.2 above, it is recommended that organisations strive to achieve a Level ‘AA’ standard.
+
+For specific information relating to the success criteria required to achieve Level ‘A’ and ‘AA’ compliance levels, please refer to Appendix A at the back of this guide. The full WCAG 2.0 standard can be found at the W3C website. An additional resource providing comprehensive practical guidance on implementation techniques can be found on Access iQ.
+
+3.4 Publishing content online
+
+3.4.1 Selecting a document format
+
+There are several common document formats published on the Web, but in most cases there are three options to choose from:
+
+1.    Webpages in HTML, generally considered the most accessible
+
+2.    Microsoft Word document
+
+3.    Portable Document Format (PDF) file
+
+Content authors generally publish content directly on a webpage in HTML if:
+
+·         The layout and style is relatively simple
+
+·         The information is clear and concise
+
+·         Keywords are considered important
+
+·         The document is short or contains multiple short sections that can be spread over multiple web pages
+
+·         The document is non-linear
+
+·         The document requires editing and updating
+
+·         The document needs to link to additional online information resources
+
+·         A social media component is required
+
+Web content is generally considered the most accessible of the three formats with significant accessibility guidance from the WCAG 2.0 standard and associated techniques.
+
+Microsoft Word documents are also popular and commonly published online if:
+
+·         The document needs to be edited
+
+·         It is lengthy, such as a report
+
+·         It needs to be self-contained
+
+·         It is linear
+
+·         It provides an accessible alternative to a PDF
+
+In recent versions of Microsoft Office such as Office 2010 and Office 2013, significant improvements have made it easier to incorporate a number of accessibility features, including an accessibility checker, into this format.
+
+PDF documents are also common on the web and are generally used if:
+
+1.    The document no longer requires editing
+
+2.    It is lengthy, such as a report
+
+3.    Layout and style needs to be perfectly replicated when a hard copy is printed
+
+4.    It needs to be self-contained
+
+5.    An equivalent Word document is too large to be emailed and the smaller file size is required
+
+6.    It is linear
+
+While PDF files are popular and are beneficial in particular circumstances, it is important to note that while there are techniques available to assist in their accessibility, the documents are inherently inaccessible. One of the key recommendations from the Australian government report on PDF accessibility is that if a PDF file is to be published on a website, an alternative such as an accessible Word document must be published alongside it.
+
+Accessibility techniques for other document formats such as Excel, PowerPoint and other popular formats can be found at the Accessible Digital Office Document (ADOD) Project.
+
+3.4.2 HTML web documents
+
+When creating and publishing HTML web content, it is important to ensure that all content is in compliance with the WCAG 2.0 standard. While not all elements of the standard will apply to content authors, the guidelines can provide you with links to specific techniques to assist in structuring and formatting your content.
+
+Parts of the guidelines that are of particular benefit to content authors including:
+
+·         Provide alternative text for all images
+
+·         Ensure that headings are used correctly and nested appropriately
+
+·         Use descriptive labels for links and avoid terms such as ‘click here’ or ‘read more’
+
+·         Make sure that sequences and relationships between content parts are clearly represented. Examples include clear structure and labelling for a list of numbered instructions, an Australian map divided into states and territories or a sports medal tally.
+
+·         Use descriptive page titles
+
+·         Use simple language by avoiding unusual words and acronyms
+
+·         Ensure that all content has good colour contrast
+
+·         Label table headings
+
+3.4.3 Microsoft Word documents
+
+Microsoft has published a guide to creating accessible Word documents. To ensure that a Word document is as accessible as possible, create your document using the latest version of Microsoft Office and include the following techniques in your document authoring:
+
+1.    Add alternative text to images and objects
+
+2.    Specify column header rows in tables
+
+3.    Use styles such as headers in long documents
+
+4.    Use short titles in headings
+
+5.    Ensure all heading styles are in the correct order
+
+6.    Use hyperlink text that is meaningful
+
+7.    Use simple table structure
+
+8.    Avoid using blank cells for formatting
+
+9.    Structure layout tables for easy navigation
+
+10.  Avoid using repeated blank characters
+
+11.  Avoid using floating objects
+
+12.  Avoid image watermarks
+
+13.  Include closed captions for any audio
+
+Once you have completed the document, check that it’s accessible using the built-in Microsoft Office Accessibility Checker. This can be found in Office 2010 or later. The tool will verify the accessibility of your document and provide additional information about making it more accessible if required. Additional detailed information regarding accessible Word documents can be found on Access iQ.
+
+3.4.4 PDF documents 
+
+In relation to PDF accessibility, the Australian government has stated: “PDF does not yet have approved Sufficient Techniques to claim WCAG 2.0 conformance, so it cannot be ‘relied upon’ in the provision of government information. At least one other format must be provided with all PDF documents.”
+
+Recommendations by the Federal government include:
+
+1.    Always tag PDF files
+
+2.    Work with properly structured source files
+
+3.    Avoid scanned PDFs, or at least optimise them for accessibility (e.g. using Optical Character Recognition)
+
+In addition, the following recommendations are made:
+
+1.    When creating a PDF document from a Word document, follow the above techniques to make the Word document accessible. This will significantly enhance the accessibility of the PDF if it is created from a Word document created with accessibility in mind.
+
+2.    Follow the recommendations provided in the Accessibility section of the Adobe website.
+
+3.5 Preparing accessible emails 
+
+Emails provide an effective way to advertise your services to people with disabilities, including special offers and promotions. The techniques for preparing an email for accessibility depend largely on whether the email is being sent in plain text, rich text or HTML. If an email is being sent in plain text or rich text, it is generally accessible to assistive technologies such as screen readers.
+
+However, most communication messages sent out by organisations are sent in HTML so that styles, formatting and structure can be used to enhance the presentation of the information. As HTML-based emails are essentially a web page that is being distributed, the same rules apply as those discussed for web documents. Please refer to Section 3.4.2 and follow the same techniques to maximise any HTML-based email communication.
+
+3.6 Engaging with accessible social media 
+
+3.6.1 Social media accessibility overview
+
+Social media allows anyone with an internet connection to publish their own content and connect with others. Through it, people and organisations receive a wealth of information and interaction.
+
+While social media is an effective way to distribute information and get your target audience to participate in conversation, social media websites and applications can present some barriers for people with a disability. To minimise the impact of these barriers, you may have to adjust your organisation's process for publishing content on social media by adding some details to your content.
+
+To ensure that NDIS-related social media messages reach people with disabilities, it is necessary to:
+
+·         Ensure that the person with a disability and their support network have a computer and/or mobile device that is set up with the most appropriate accessibility features.
+
+·         Provide assistance to navigate around the accessibility barriers present in popular social media tools.
+
+Detailed information on the user experience and how individuals can navigate around social media accessibility barriers is provided in Chapter 4. This section provides you with support for the most common issues people with disabilities and their support networks raise with service providers and how information can be effectively prepared to minimise accessibility issues.
+
+3.6.2 Facebook 
+
+Prior to 2008, the Facebook website was generally considered inaccessible. However, through 2008 and 2009, Facebook worked in conjunction with the American Foundation for the Blind to improve the accessibility of Facebook. While significant improvements were made, and continue to be made, to the interface, there are still a number of accessibility issues with the primary Facebook website.
+
+Research published in the Media Access Australia ‘Sociability’ report indicated that these accessibility issues are most likely to affect people who have a vision or mobility impairment and include difficulties with keyboard navigation and missing text alternatives. For Deaf and hearing impaired users, videos uploaded to Facebook directly do not support closed captions.
+
+To help address these issues, consider the following tips when maintaining your organisation’s Facebook presence:
+
+Adding a caption to Facebook photos 
+
+For people who are blind or vision impaired, adding a caption to a photo will enable screen readers to read out information about the photo. A good caption for screen reader users is one that describes the meaning conveyed in the image. For example 'Tony Smith' is not as meaningful as 'Tony Smith, Marketing Director of Five Incorporated'. By including this information, you provide context and screen reader users don't miss out on information that could be important to the message.
+
+To add a caption:
+
+1.    Go to your Home page.
+
+2.    Select the ‘Photo’ option on the left-hand side of the screen.
+
+3.    If the photo you want to caption has already been uploaded to your Facebook page, select the appropriate album and the photo you would like to caption.
+
+4.    While viewing the photo you want to caption, select 'Add description' on the right-hand side of the photo.
+
+5.    In the text field, type in the caption.
+
+6.    Once you have finished writing a caption, select 'Done editing' under the text field to save the caption.
+
+Caption support for Facebook video 
+
+Unfortunately there is no simple mechanism for captioning videos that are uploaded to Facebook. As an alternative, you can provide a close captioned version of the video on YouTube and post a link to this version in the 'Add description' area.
+
+It is important to indicate that you are posting a link here so that a screen reader user can expect to be taken to a page once the link has been activated. For example: 'Link to close captioned video: http://www.youtube.com/watch?v=VSvhcODef0g'. By indicating that the link leads to a video, you give the screen reader user an opportunity to assess whether they would like to be taken to another page or to remain on the same page as the one that is currently open.
+
+3.6.3 YouTube
+
+Since YouTube was launched in 2005, the website has been criticised for its lack of accessibility. In particular, the criticism was focused on its challenging interface for keyboard users and its lack of captioned content.
+
+YouTube has responded to the criticism in recent years by supporting captions and introducing various accessibility features including automatic captions, the ability to edit automatic captions, the ability to change the colour and font of the caption text and the ability to translate captions into other languages.
+
+The automatic captions tool uses voice recognition software. As such, the captions produced by this feature are often inaccurate. Using automatic captions is a great starting point, however it is important to use the editing feature to correct the often inaccurate captions on your YouTube videos.
+
+The ability to adjust the colour of text used for captions is also useful for people who have a vision impairment such as colour blindness. The ability to adjust the font used for captions is also beneficial for people with vision impairment as it allows them to choose a font that suits them.
+
+Information regarding the step-by-step process of adding, editing and saving captions can be found in Appendix B. Additional information regarding YouTube captioning techniques and ways to improve caption quality can be found on Access iQ.
+
+3.6.4 Twitter
+
+The text-based nature of Twitter should provide for an accessible interface, yet the Twitter website has been widely criticised for its inaccessible interface. In research by Denis Boudreau published on AccessibiliteWeb, Twitter was rated as the worst website among the popular social media tools when assessed against the Web Content Accessibility Guidelines 2.0. Issues include inconsistent layout, lack of keyboard navigation options and font size issues. As a result, an alternative Web portal to Twitter was created independently to address the issues, called Easy Chirp.
+
+Twitter hashtags 
+
+Hashtags or ‘#’ on Twitter provide a way for people to discover your content. Hashtags enable people with disabilities and other service providers to specifically identify your tweets as being related to a particular area of interest.
+
+Popular accessibility-related discussions use the #a11y and #axs hashtags, while broader discussions generally use the #disability hashtag. Additional NDIS-related hashtags may also be helpful.
+
+Information about ways people with disabilities can navigate around the accessibility features of Twitter can be found in Chapter 4.
+
+3.6.5 Blogging
+
+The blogging platform Blogger has undergone several revisions in recent years with its accessibility steadily improving. This was in part due to an opportunity in 2009 to formally raise accessibility issues with Google, which bought the service in 2003. Some of the accessibility issues raised included unlabelled Flash content, the use of CAPTCHA present during sign up (widely seen as inaccessible) and lack of alternative text for images.
+
+While the access situation has broadly improved since then, many accessibility issues remain. According to its own forums, Wordpress.com, another blogging tool, is often viewed as being more accessible for people who are blind or vision impaired.
+
+If you are using blogs to update people with disabilities regarding NDIS-related information, use the following suggestions to maximise the accessibility of your messages.
+
+Provide a link to videos rather than embedding them 
+
+It is often difficult to embed a video in your blog and maintain the accessibility features of the video, such as captions. Embedded videos can also provide challenges to screen reader users who try to play videos using inaccessible controls. By providing a link to the video rather than embedding it, users can go directly to a website that contains a potentially accessible version of it. Examples are discussed in Chapter 4.
+
+Describe your images using alternative text
+
+In order to make sure that your images are accessible, add some alternative text to them. In many tools the user is prompted to enter some text about an image when it is added, but people using Blogger will need to follow some additional instructions.
+
+Label links 
+
+When sharing a website link in your blog, make sure that the link is labelled with a description. Text such as ‘click here’ can make it difficult for people using screen readers to understand the nature of the link. An accessible link label should give screen reader users an idea of where the link will take them once it has been activated.
+
+For example, if you want to link to contact information on a company blog, an accessible link would be "Find out how to contact us on the About page", where 'how to contact us' is the link. This link text describes the nature of the webpage the person is about to activate.
+
+Using accessible link text might require you to think more carefully about the way you structure your sentences for NDIS-related information, and there are many techniques you can use to ensure your links are accessible. Detailed information about how to make your links accessible can be found on Access iQ.
+
+Choose a simple blog template
+
+Most blogging tools provide a number of different templates to make your blog look unique. Consider using a template that only has one column with a simple layout. This will be helpful for people using assistive technologies to access your blog.
+
+Choose your font carefully 
+
+There are often many different fonts to choose from. Consider using a sans-serif font like Arial and make it a standard size. If you have the ability to choose how the font is represented in HTML code, select a font size that is variable like ‘em’ rather than a fixed font size like points or pixels.
+
+Open links in the same window
+
+A common accessibility issue faced by bloggers is making a link that opens in a new window. Bloggers often prefer this option as it opens a new website while still keeping the blog on the screen. However, for people using assistive technologies a new window opening can make it very confusing. Allow users to go to your link without opening a new window as the user can always return to your blog using the ‘back’ button in their web browser.
+
+4.0 Helping people with disabilities receive your messages 
+
+4.1 Planning your approach 
+
+In Chapter 1, the diversity of people with disabilities online was highlighted and an opportunity was provided to use an assistive technology tool such as a screen reader. As discussed, in order for people with disabilities to access NDIS information, it is first necessary to ensure that the individual has access to effective assistive technologies that can provide assistance.
+
+This chapter provides a basic user-centred support mechanism in which you or staff in your organisation can work directly with people with disabilities and their personal support networks to help them set up a computer or mobile device with the necessary accessibility features, and overcome the challenges faced in obtaining or receiving information.
+
+This information is also applicable to service providers employing people with disabilities who wish to set up an accessible working environment. The benefit of using the tools built into popular computing operating systems is that there is no additional cost. Should additional specialist products be required, information can be found on Media Access Australia.
+
+These sections outline the key accessibility features of computing operating systems such as Microsoft Windows and Mac OS X, and popular mobile operating systems including iOS, which runs on devices such as the iPod and iPad, and Google Android-based phones and tablets.
+
+To maximise the opportunities for people with disabilities to gain access to NDIS information and resources, keep the following questions in mind when assessing specific individual needs:
+
+·         Should the computer or mobile device’s operating system be upgraded to maximise the quality and availability of accessibility features?
+
+·         Will the individual with a disability require multiple input methods if the computer or mobile device supports it? For example, should a keyboard be plugged into an iPad or a Windows computer be supplied with a touch screen?
+
+·         Is one platform better than another for a specific individual’s needs?
+
+·         Are there free or low-cost apps available that can improve accessibility?
+
+·         If additional support is required, are there specialist products that can help?
+
+In relation to social media accessibility, key questions to consider include:
+
+·         Is this social media tool the most appropriate for the individual to gain the necessary information?
+
+·         Does the current device provide effective support to access social media?
+
+·         Are there accessible apps available for a particular device that can assist in getting access to social media?
+
+Additional information, including step-by-step instructions on how to enable and use accessibility features and social media accessibility, can be found in the ‘Digital technology’ and ‘Online media’ sections on Media Access Australia.
+
+4.2 Accessibility features in popular computer operating systems and mobile devices
+
+4.2.1 Accessibility features overview
+
+Most popular computers and mobile devices come with accessibility features built-in, or enable free accessibility tools to be downloaded and installed on the device. This section summarises the accessibility features freely available on popular computer operating systems, on mobile devices, or for download from the relevant online app store. The operating systems featured here include the most common Microsoft Windows operating systems currently in use, Mac OS X, iOS used on the iPhone and iPad, and Google Android available on most non-Apple mobile devices. Other freely available assistive technology products and apps are also discussed.
+
+4.2.2 Microsoft Windows 
+
+Microsoft Accessibility highlights a variety of accessibility features that can be found in Microsoft products. Current versions of Windows such as Windows XP, Windows Vista, Windows 7 and Windows 8 contain many accessibility features which can make computers easier and more comfortable to use.
+
+All four versions of Windows include tools that can assist people with vision impairment, such as the ability to adjust the desktop font, icon size and screen resolution, and to change the colour theme, the Magnifier screen enlargement application and the Narrator screen reader program. For people who are hearing impaired there are accessibility features such as ShowSounds and SoundSentry, which present a visual equivalent of audio alerts and captioned video playback, and for people with a mobility impairment there are features such as ToggleKeys, which allows someone to press one key at a time instead of having to hold multiple keys to issue a command, and an on-screen keyboard.
+
+Although all current versions of Windows have these accessibility features, only Windows 7 and Windows 8 provide a full-screen zoom feature in the Magnifier application, and predictive text in the on-screen keyboard, to assist people with a mobility impairment to type faster. Furthermore, Windows 8 provides significant additional improvements by incorporating touchscreen support to Magnifier and the Narrator screen reader. This means that these accessibility features can be used via a traditional keyboard and mouse interface or by touching the screen on a touch-enabled device. The new accessibility features are contained in all consumer editions of Windows that run the new interface, including Windows 8 Home, Pro and Windows RT.
+
+One significant limitation to the Microsoft Windows platform is its built-in Narrator screen reader. While Narrator has been significantly improved in Windows 8, its limited functionality has been widely criticised as being ineffective for the needs of people who are blind or vision impaired. Alternative screen readers are generally installed in Windows to compensate. One viable free alternative to Narrator is the NVDA screen reader, which provides significantly improved access to all currently supported versions of Windows. Commercial screen readers are also available.
+
+ 
+
+4.2.3 Apple Mac OS X
+
+Apple accessibility has highlighted a variety of accessibility features that can be found in Apple products. The Mac OS X accessibility feature set has remained largely unchanged since the release of version 10.4 Tiger, with minor improvements up to the current version, 10.8 Mountain Lion.
+
+The Tools in Mountain Lion are similar to those found in Windows. Tools that can assist people with vision impairment include the ability to adjust the desktop font, icon size and screen resolution, and change the colour theme, the Zoom screen enlargement application, support for Braille displays and the VoiceOver screen reader program. For people who are hearing impaired there are accessibility features such as a visual equivalent of audio alerts and captioned video playback, and for people with a mobility impairment there is an on-screen keyboard feature.
+
+4.2.4 iOS devices including the Apple iPhone and the iPad 
+
+As highlighted on the Apple accessibility website, recent versions of iOS found on the iPhone 3GS, 4, 4S and 5, along with all iPad models, contain a number of accessibility features. These features include a simplified version of the VoiceOver screen reader, a zoom function, reversible colour scheme and captioned video playback. The iPhone 4S also features Siri, a voice-activated assistive tool which people with a mobility or vision impairment have reported as beneficial. Other applications provide a wealth of additional accessibility features designed to support a range of disabilities related to vision, hearing, mobility and learning.
+
+One of the main complaints about devices running older versions of iOS is that VoiceOver and zoom cannot be used at the same time which can make it difficult for low vision users. Upgrading to the latest version of iOS will resolve this problem in most cases. Users have also recommended enabling the quick launch accessibility feature that allows any accessibility function to be launched by pressing the home key three times.
+
+One of the benefits of using an iOS device for receiving NDIS information is that most of the popular social media tools have their own app, and the apps are often compatible with the accessibility features of the device.
+
+4.2.5 Google Android
+
+The Google Android operating system runs on most non-Apple smartphones and tablets such as those from LG, HTC and Samsung. While accessibility features are available for Google Android, most models do not come with accessibility features out-of-the-box, and significant time and effort is required to set up the device. Google provides a number of free vision-related accessibility tools that can be added to a device such as the TalkBack screen reader. Devices running versions 4.0 (Ice Cream Sandwich) or later (Jelly Bean) provide an ‘Explore by Touch’ accessibility feature when TalkBack is installed that allows TalkBack to read out more features by moving a finger around the screen.
+
+Additional popular apps used by people who are blind or vision impaired include Eyes-free Shell and Talking Dialler, both free from the Google Play store. Many other apps are available for different disability groups.
+
+ 
+
+4.3 Social media accessibility 
+
+4.3.1 Benefits and barriers of social media 
+
+In addition to ensuring that people with disabilities have their computers and mobile devices optimised for accessibility, it is also important to ensure that NDIS-related social media content can be accessed. For the general public, social media can be a highly beneficial and effective communication tool due to its ability for creating, modifying, sharing and discussing things online.
+
+Yet for people with disabilities the benefits have the potential to be even more profound. Research published in the ‘Sociability’ report by Media Access Australia discusses how social media not only provides an avenue for participation for people with disabilities, but can often become an even more important means of communication due to some of the challenging social situations they can face. These include a vision impaired person using Twitter to communicate with friends instead of crowded social situations where eye contact is difficult, or a person using Facebook and blogging tools to keep people informed of a condition. Social media can also be used as a non-threatening way for people with a mental health issue to engage with others.
+
+The common element between all of these scenarios is participation. In the context of the NDIS, social media provides great opportunities for service providers, carers, families and individuals to work collaboratively in addressing the specific needs of a person with disability.
+
+Yet despite the benefits, popular social media tools remain largely inaccessible due to non-compliance with the WCAG 2.0 standard discussed in Chapter 3. As a result, service providers that intend to provide information to people with disabilities via social media need to ensure that the individual is able to overcome those barriers. The following information provides a number of accessibility tips and tricks that people with disabilities can use to either overcome or work around accessibility issues to ensure that NDIS-related information can be received from service providers. Further analysis and step-by-step guides on using popular social media tools can be found in the 'sociABILITY' report published on Media Access Australia.
+
+4.3.2 Facebook
+
+Social interaction on Facebook can be especially beneficial for people who have a vision or mobility impairment. In the context of the NDIS, Facebook can be especially useful in providing a quick and easy way to communicate and share information without the need for travel. For people who are hearing impaired, Facebook can be an effective communication platform as most of its key features do not have an audio component.
+
+Additionally, Facebook can provide great community support for people with disabilities through the Facebook community groups. It may be beneficial for your organisation to join or follow these groups in order to become familiar with the barriers that people with a disability may face when using the social network. Understanding these barriers will better equip you with ensuring the NDIS-related content you post on your organisation's Facebook page is accessible to people with a disability.
+
+Mobile Facebook website
+
+Many blind or vision impaired users have found the standard Facebook website challenging and have recommended using the mobile Facebook website as an alternative. The mobile website version of Facebook provides basic functions through an HTML-only interface. It is important to note though that while the mobile website is generally considered more accessible, it only provides basic profile editing, messaging, Wall posts and friend searching options.
+
+Apps for iOS (iPhone and iPad) 
+
+Media Access Australia has tested a number of Facebook apps and, based on this and user feedback, recent updates to the default Facebook app have significantly improved its accessibility. However, some minor issues remain.
+
+The free Voicebook VO and the low-cost Facely HD apps provide more accessible options for people using the VoiceOver screen reader on an iPhone, iPad or iPod Touch. While both apps have some minor quirks, they perform much better than the website in Safari or the standard Facebook website, and do a good job in reading out and navigating around the essential Facebook features. Both apps can be downloaded from the iTunes Store, and Facely HD can be purchased for $0.99. In-depth user reviews of the Facebook, Voicebook VO and Facely HD apps are available on the AppleVis website.
+
+Additional keyboard shortcuts
+
+The Facebook website has a number of additional keyboard shortcuts that lets users quickly navigate between the Help, Home, Profile, Friends, Inbox, Notifications, Account Settings, Privacy and About sections. The keyboard shortcuts work through the use of a browser-specific keyboard shortcut in conjunction with the number in the table below.
+
+The keyboard shortcuts for the browsers are as follows:
+
+·         Internet Explorer: ‘Alt’ + number
+
+·         Firefox in Windows: ‘Alt’ + ‘Shift’ + number
+
+·         Safari or Firefox in Mac OS: ‘Ctrl’ + number
+
+Table 2 Number shortcuts for navigating Facebook.
+
+  Number    Section
+  --------- -------------------
+  0         Help
+  1         Home
+  2         Profile
+  3         Friends
+  4         Inbox
+  5         Notifications
+  6         Account Settings
+  7         Privacy
+  8         About
+  9         Terms
+
+Navigation landmarks
+
+While many accessibility issues are present on the Facebook website, there is some navigation help available if the user is using a recent version of a screen reader and web browser. WAI-ARIA landmarks provide additional accessibility information, and the Facebook website has some WAI-ARIA landmarks set up. This means that a screen reader is likely to read out more information and provide additional help in navigating between the Facebook functions. Further information on WAI-ARIA and the screen readers that support it can be found on Media Access Australia.
+
+Facebook resources 
+
+Facebook has created an Accessibility team to provide support to assistive technology users including JAWS and ZoomText and can be contacted through the Facebook Accessibility and Assistive technology feedback page. Facebook also has some online accessibility resources on their Accessibility help page.
+
+4.3.3 YouTube
+
+The popularity of YouTube and its clips has made the website a useful entertainment portal, available on a variety of different computer platforms and mobile devices. For people with disabilities, YouTube also provides an opportunity to watch videos on how disability-specific issues have been addressed, and can provide an opportunity to share similar ideas with others. Many YouTube videos also feature captions, providing accessibility to the content for people who are Deaf or hearing impaired. The captions can also be instantly translated to a number of other languages. While keyboard issues remain an issue, closed caption playback is supported.
+
+Accessible YouTube video portals
+
+People with a vision or mobility impairment who rely on a keyboard are likely to find the standard YouTube website challenging. Fortunately there are a number of other YouTube portals that have been created that allow users to access the videos using keyboard shortcuts. YouTube alternative viewing portals include:
+
+·         Accessible YouTube
+
+·         Easy YouTube
+
+·         Accessible Interface to YouTube
+
+Note that while all three YouTube players are accessible by keyboard, only Accessible YouTube provides support for closed caption playback.
+
+Apps for iOS (iPhone and iPad) 
+
+Due to the lack of Flash support on its devices such as the iPhone, iPad and iPod Touch, playback of YouTube clips on these devices is mostly limited to the built-in YouTube app or the mobile YouTube website. User feedback has indicated that the YouTube apps in Apple and Android devices are far more accessible than the YouTube mobile website, and aside from some occasional quirks with comments, the YouTube app is an effective option.
+
+Turning on closed captions 
+
+If captions are available, they can be toggled on or off by selecting the ‘CC’ button. The button is located just under the bottom-right area of the video.
+
+4.3.4 Twitter
+
+Twitter can be a great way to seek disability-specific information on how to overcome potential issues or to provide support through shared experience. Twitter can also be used to unite with others in the form of a protest or as a mechanism to receive quick answers to particular issues. Given its relative anonymity, many people with disabilities feel comfortable asking questions through the medium knowing that the user can control how much of their identity is revealed to others. Research conducted by Media Access Australia and feedback from Twitter users have provided a number of accessibility tips to help you get your Twitter account up and running.
+
+Easy Chirp accessible Twitter portal 
+
+People unable to use the main Twitter website due to its many accessibility issues may want to try using Easy Chirp. This website operates in a similar way to the main Twitter website but provides a more consistent layout, good keyboard navigation and better support for assistive technologies such as screen readers.
+
+Mobile Twitter website 
+
+In addition to Easy Chirp, many blind and vision impaired Twitter users have recommended using the mobile Twitter website. This allows you to perform a limited number of Twitter-related tasks through a simplified interface.
+
+Apps for iOS (iPhone and iPad)
+
+Media Access Australia has tested a number of Twitter apps and, based on our testing, user feedback and reviews from Apple app reviews website AppleVis, there are many Twitter apps available for iOS-based devices. The most popular accessible Twitter apps include the free YoruFukurou, which has many features, and the default Twitter app.
+
+Accessibility hash tags 
+
+Popular accessibility discussions can be identified by the #a11y and #axs hashtags. Broader disability discussions can be identified with the #disability. In any NDIS or disability related communications, using these hashtags will make it discoverable by the community.
+
+Twitter support and contacting Twitter directly 
+
+Additional support can be found at the Twitter Help Center, which contains a large amount of tutorials and information on how to make the most of Twitter. It is also possible to contact Twitter directly.
+
+4.3.5 Skype
+
+While Skype is not always classified as a social media tool, it contains many social media elements relating to communication and online chat. Skype provides some significant benefits such as the ability for users of sign language, such as people who are Deaf, to make sign-based video calls for free. People who are Deaf or hearing impaired but do not use sign language often use the instant messaging feature. Research conducted by Media Access Australia and feedback from Skype users have provided a number of accessibility tips to help make Skype audio and video calls and send instant messages.
+
+Skype for Windows (Desktop) Screen Reader Mode 
+
+Skype for Windows contains a feature to assist screen reader users. This feature, discussed in the Skype Help pages, is called ‘screen reader mode’ and can be turned on using the following instructions:
+
+·         Select the ‘Tools’ pull-down menu
+
+·         Go to ‘Accessibility’ and select ‘Screen Reader Mode’
+
+This should greatly improve the compatibility of the user's screen reader with Skype.
+
+Skype for Windows (Desktop) keyboard navigation
+
+Skype for Windows contains a feature to assist people who rely on the keyboard for navigation. This feature, discussed in the Skype Help pages, is called ‘keyboard navigation’ and can be turned on using the following instructions:
+
+·         Select the ‘Tools’ pull-down menu
+
+·         Go to ‘Accessibility’ and select ‘Keyboard Navigation’
+
+This allows for the ‘Alt’ key plus a letter to view a particular menu item. Keyboard shortcuts are useful for blind or vision impaired users as it provides access to features that may be difficult to get to by a screen reader or through mouse navigation.
+
+The keyboard shortcuts that can be enabled in Skype for Windows are as follows:
+
+Table 3 Keyboard shortcuts for using Skype.
+
+  Command   Menu
+  --------- --------------
+  Alt + S   Skype
+  Alt + C   Contacts
+  Alt + O   Conversation
+  Alt + A   Call
+  Alt + V   View
+  Alt + T   Tools
+  Alt + H   Help
+
+Skype app for Windows 8 and Windows RT
+
+Windows 8 and Windows RT users can also download a new app version of Skype from the Windows Store. User feedback from people who are blind or vision impaired have reported that the app is largely accessible but has some quirks depending on which screen reader is used with it. If Windows 8 users have difficulties using this version of Skype, they can still download and install the version of Skype discussed above for older versions of Windows.
+
+Skype for Mac
+
+User feedback has indicated that Skype on the Mac works well with the built-in accessibility tools found in Mac OS such as the VoiceOver screen reader.
+
+Skype for iOS (iPhone and iPad) 
+
+User feedback has indicated that the latest version of Skype for iOS-based devices such as the iPhone, iPad and iPod Touch is compatible with the built-in accessibility tools such as the VoiceOver screen reader.
+
+Contacting Skype for help 
+
+While the accessibility of Skype has been generally good on popular operating systems and devices, this is often not the case on other devices, especially customised devices that run a non-standard version of Skype or a customised Linux operating system that does not contain the necessary accessibility features. For specific information on the accessibility of Skype on your platform, refer to the Skype support website, support.skype.com, or contact Skype directly.
+
+ 
+
+4.3.6 LinkedIn
+
+LinkedIn is primarily used to share professional information with others online and to keep in touch with professional contacts. LinkedIn can be highly beneficial when looking for a job and may be used as a companion tool with employment-related NDIS services.
+
+One of the greatest benefits of LinkedIn for people with disabilities is that it provides an easy way to promote an individual’s skills online and direct employers to a résumé. In addition to keeping in touch with current and previous workplace contacts, it can also provide access to disability-related discussion groups. Research conducted by Media Access Australia and feedback from LinkedIn users have provided a number of accessibility tips to help users set up their LinkedIn accounts.
+
+Searching for connections made easier with Google search
+
+Searching for people to connect with on the LinkedIn website can be cumbersome if there are several people with the same name. This becomes less of an issue as more contacts are added, as LinkedIn can start to predict which contacts users are seeking based on location and work. An easier way initially may be to search for the person’s LinkedIn profile using Google. By searching in Google, additional keywords can be used to narrow down the correct person and then go straight to their LinkedIn profile. To do this, users can:
+
+1.    Go to the Google website.
+
+2.    Search for the name of the person and the word LinkedIn with spaces between each word, e.g. ‘Joe Smith LinkedIn’. They can also add additional keywords such as the person’s occupation or location to narrow the search.
+
+3.    Go to the search result of the person.
+
+4.    On their LinkedIn page, select ‘Add to your network’.
+
+Apps for iOS (iPhone and iPad) 
+
+Media Access Australia and users from AppleVis suggest that the LinkedIn app appears to work effectively with the VoiceOver screen reader and other built-in accessibility tools.
+
+Contacting LinkedIn Support
+
+LinkedIn provides a number of online support resources to help new users and contact information via help.linked.com. LinkedIn is also active on Twitter and can be contacted by sending tweets to @LinkedIn.
+
+5.0 Checklist
+
+This checklist is designed to provide a simply way to confirm that the key accessibility requirements have been addressed.
+
+User Experience 
+
+·         Completed the example of using a screen reader? ☐Yes ☐No ☐N/A
+
+Government policy 
+
+·         Familiar with government strategic and legislative frameworks relating to accessible online content? ☐Yes ☐No ☐N/A
+
+Website accessibility
+
+·         Text alternatives for non-text content? ☐Yes ☐No ☐N/A
+
+·         Captions and other alternatives for multimedia? ☐Yes ☐No ☐N/A
+
+·         Content can be presented in different ways, including by assistive technologies, without losing meaning? ☐Yes ☐No ☐N/A
+
+·         Easy for users to see and hear content? ☐Yes ☐No ☐N/A
+
+·         All functionality available from a keyboard? ☐Yes ☐No ☐N/A
+
+·         Users have enough time to read and use content? ☐Yes ☐No ☐N/A
+
+·         Ensured that content that causes seizures? ☐Yes ☐No ☐N/A
+
+·         Helped users navigate and find content? ☐Yes ☐No ☐N/A
+
+·         Made text readable and understandable? ☐Yes ☐No ☐N/A
+
+·         Made content appear and operate in predictable ways? ☐Yes ☐No ☐N/A
+
+·         Helped users avoid and correct mistakes? ☐Yes ☐No ☐N/A
+
+·         Maximized compatibility with current and future user tools? ☐Yes ☐No ☐N/A
+
+Document accessibility 
+
+HTML Web pages
+
+·         Provided alternative text for all images? ☐Yes ☐No ☐N/A
+
+·         Ensured that headings are used correctly and nested appropriately? ☐Yes ☐No ☐N/A
+
+·         Used descriptive labels for links and avoid terms such as ‘click here’ or ‘read more’? ☐Yes ☐No ☐N/A
+
+·         Made sure that sequences and relationships between content parts are clearly represented? ☐Yes ☐No ☐N/A
+
+·         Used descriptive page titles? ☐Yes ☐No ☐N/A
+
+·         Used simple language by avoiding unusual words and acronyms? ☐Yes ☐No ☐N/A
+
+·         Ensured that all content has good colour contrast? ☐Yes ☐No ☐N/A
+
+·         Labelled table headings? ☐Yes ☐No ☐N/A
+
+Word documents
+
+·         Added alternative text to images and objects? ☐Yes ☐No ☐N/A
+
+·         Specified column header rows in tables? ☐Yes ☐No ☐N/A
+
+·         Used styles in long documents? ☐Yes ☐No ☐N/A
+
+·         Used short titles in headings? ☐Yes ☐No ☐N/A
+
+·         Ensured all heading styles are in the correct order? ☐Yes ☐No ☐N/A
+
+·         Used hyperlink text that is meaningful? ☐Yes ☐No ☐N/A
+
+·         Used simple table structure? ☐Yes ☐No ☐N/A
+
+·         Avoided using blank cells for formatting? ☐Yes ☐No ☐N/A
+
+·         Structured layout tables for easy navigation? ☐Yes ☐No ☐N/A
+
+·         Avoided using repeated blank characters? ☐Yes ☐No ☐N/A
+
+·         Avoided using floating objects? ☐Yes ☐No ☐N/A
+
+·         Avoided image watermarks? ☐Yes ☐No ☐N/A
+
+·         Included closed captions for any audio? ☐Yes ☐No ☐N/A
+
+PDF files
+
+·         Files tagged? ☐Yes ☐No ☐N/A
+
+·         Source files properly structured? ☐Yes ☐No ☐N/A
+
+·         Avoided scanned PDFs, or at least optimise them for accessibility? ☐Yes ☐No ☐N/A
+
+·         Created from an accessible Word document? ☐Yes ☐No ☐N/A
+
+·         Incorporated additional accessibility guidance from Adobe? ☐Yes ☐No ☐N/A
+
+Social media
+
+Facebook
+
+·         Added captions to photos? ☐Yes ☐No ☐N/A
+
+·         Linked videos from YouTube to preserve captions? ☐Yes ☐No ☐N/A
+
+YouTube 
+
+·         Added captions to videos? ☐Yes ☐No ☐N/A
+
+·         Checked caption quality and accuracy? ☐Yes ☐No ☐N/A
+
+Twitter
+
+·         Used accessibility hashtags? ☐Yes ☐No ☐N/A
+
+Blogging
+
+·         Provided a link to videos rather than embedding them? ☐Yes ☐No ☐N/A
+
+·         Described your images using alternative text? ☐Yes ☐No ☐N/A
+
+·         Labelled links? ☐Yes ☐No ☐N/A
+
+·         Chose a simple blog template? ☐Yes ☐No ☐N/A
+
+·         Chose a sans-serif, relative sized font? ☐Yes ☐No ☐N/A
+
+·         Links open in the same window? ☐Yes ☐No ☐N/A
+
+Setting up computer and mobile devices
+
+·         Should the computer or mobile device’s operating system be upgraded to maximise the quality and availability of accessibility features? ☐Yes ☐No ☐N/A
+
+·         Will the individual with a disability require multiple input methods if the computer or mobile device supports it? ☐Yes ☐No ☐N/A
+
+·         Is one platform better than another for a specific individual’s needs? ☐Yes ☐No ☐N/A
+
+·         Are there free or low-cost apps available that can improve the accessibility? ☐Yes ☐No ☐N/A
+
+·         If additional support is required, are there specialist products that can help? ☐Yes ☐No ☐N/A
+
+Setting up social media tools
+
+·         Is this social media tool the most appropriate for the individual to gain the necessary information? ☐Yes ☐No ☐N/A
+
+·         Does the current device provide effective support to access social media? ☐Yes ☐No ☐N/A
+
+·         Are there accessible apps available for a particular device that can assist in getting access to social media? ☐Yes ☐No ☐N/A
+
+ 
+
+6.0 Resources used in this Guide
+
+The resources below have been used in the creation of this guide and are provided in an alphabetical quick reference list for your convenience.
+
+Access iQ
+
+AccessibiliteWeb Social Media rankings
+
+Accessible YouTube
+
+Accessible Interface to YouTube
+
+Accessible Digital Office Document (ADOD) Project
+
+Amara Universal Subtitles
+
+Apple accessibility
+
+AppleVis
+
+Australian Bureau of Statistics – Disability
+
+Australian Bureau of Statistics – Internet usage
+
+Australian Government Department of Finance – PDF Accessibility
+
+Australian Human Rights Commission – Maguire v SOCOG
+
+Australian Human Rights Commission (AHRC) – Web accessibility
+
+BlogSpot
+
+Blogging help (AFB)
+
+CaptionTube
+
+Disability Discrimination Act of 1992
+
+Easy Chirp
+
+Easy YouTube
+
+Facebook
+
+Facebook mobile
+
+Facebook accessibility
+
+Google accessibility
+
+Media Access Australia
+
+Microsoft accessibility
+
+Media Access Australia – ‘sociABILITY’ report
+
+National Disability Insurance Scheme (NDIS)
+
+NDIS Practical Design FundNVDA screen reader
+
+Skype
+
+Skype accessibility for Windows
+
+Twitter
+
+YouTube
+
+WebAnywhere
+
+Web Content Accessibility Guidelines (WCAG) 2.0
+
+Wordpress.com
+
+World Wide Web Consortium (W3C)
+
+W3C How People Use the Web
+
+W3C WCAG 2.0 At A Glance
+
+ 
+
+Appendix A: Web Content Accessibility Guidelines 2.0 compliance levels 
+
+This appendix contains the Web Content Accessibility Guidelines 2.0 Selection Criteria, separated into its respective ‘A’ and ‘AA’ implementation levels. Additional information can be found in the full WCAG 2.0 standard and the ‘How to Meet WCAG 2.0: Programmer’s Reference Guide’.
+
+Level A compliance 
+
+Compliance with Level ‘A’ requires the implementation of the following success criteria:
+
+1.1.1 Non-text Content: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.
+
+·         Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose.
+
+·         Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content.
+
+·         Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content.
+
+·         Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content.
+
+·         CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.
+
+·         Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.
+
+1.2.1 Audio-only and Video-only (Prerecorded): For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:
+
+·         Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.
+
+·         Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.
+
+1.2.2 Captions (Prerecorded): Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.
+
+1.2.3 Audio Description or Media Alternative (Prerecorded): An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media except when the media is a media alternative for text and is clearly labeled as such.
+
+1.3.1 Info and Relationships: Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+1.3.2 Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+1.3.3 Sensory Characteristics: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.
+
+1.4.1 Use of Color: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+
+1.4.2 Audio Control: If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
+
+2.1.1 Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
+
+2.1.2 No Keyboard Trap: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
+
+2.2.1 Timing Adjustable: For each time limit that is set by the content, at least one of the following is true:
+
+·         Turn off: The user is allowed to turn off the time limit before encountering it; or
+
+·         Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or
+
+·         Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or
+
+·         Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or
+
+·         Essential Exception: The time limit is essential and extending it would invalidate the activity; or
+
+·         20 Hour Exception: The time limit is longer than 20 hours.
+
+2.2.2 Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, all of the following are true:
+
+·         Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and
+
+·         Auto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.
+
+2.3.1 Three Flashes or Below Threshold: Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.
+
+2.4.1 Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.
+
+2.4.2 Page Titled: Web pages have titles that describe topic or purpose.
+
+2.4.3 Focus Order: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
+
+2.4.4 Link Purpose (In Context): The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+
+3.1.1 Language of Page: The default human language of each Web page can be programmatically determined.
+
+3.2.1 On Focus: When any component receives focus, it does not initiate a change of context.
+
+3.2.2 On Input: Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.
+
+3.3.1 Error Identification: If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.
+
+3.3.2 Labels or Instructions: Labels or instructions are provided when content requires user input.
+
+4.1.1 Parsing: In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
+
+4.1.2 Name, Role, Value: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+
+Level AA compliance
+
+Compliance with Level ‘AA’ requires the implementation of Level ‘A’ plus the following success criterion:
+
+1.2.4 Captions (Live): Captions are provided for all live audio content in synchronized media.
+
+1.2.5 Audio Description (Prerecorded): Audio description is provided for all prerecorded video content in synchronized media.
+
+1.4.3 Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+·         Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+
+·         Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+
+·         Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
+
+1.4.4 Resize text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.
+
+1.4.5 Images of Text: If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
+
+·         Customizable: The image of text can be visually customized to the user's requirements;
+
+·         Essential: A particular presentation of text is essential to the information being conveyed.
+
+2.4.5 Multiple Ways: More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+
+2.4.6 Headings and Labels: Headings and labels describe topic or purpose.
+
+2.4.7 Focus Visible: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
+
+3.1.2 Language of Parts: The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+
+3.2.3 Consistent Navigation: Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+
+3.2.4 Consistent Identification: Components that have the same functionality within a set of Web pages are identified consistently.
+
+3.3.3 Error Suggestion: If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+
+3.3.4 Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+
+·         Reversible: Submissions are reversible.
+
+·         Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+
+·         Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+
+Level AAA compliance 
+
+Compliance with Level ‘AAA’ requires the implementation of Levels ‘A’ and ‘AA’ plus the following success criterion:
+
+1.2.6 Sign Language (Prerecorded): Sign language interpretation is provided for all prerecorded audio content in synchronized media.
+
+1.2.7 Extended Audio Description (Prerecorded): Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.
+
+1.2.8 Media Alternative (Prerecorded): An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.
+
+1.2.9 Audio-only (Live): An alternative for time-based media that presents equivalent information for live audio-only content is provided.
+
+1.4.6 Contrast (Enhanced): The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:
+
+·         Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;
+
+·         Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+
+·         Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.
+
+1.4.7 Low or No Background Audio: For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:
+
+·         No Background: The audio does not contain background sounds.
+
+·         Turn Off: The background sounds can be turned off.
+
+·         20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.
+
+1.4.8 Visual Presentation: For the visual presentation of blocks of text, a mechanism is available to achieve the following:
+
+·         Foreground and background colors can be selected by the user.
+
+·         Width is no more than 80 characters or glyphs (40 if CJK).
+
+·         Text is not justified (aligned to both the left and the right margins).
+
+·         Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
+
+·         Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.
+
+1.4.9 Images of Text (No Exception): Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.
+
+2.1.3 Keyboard (No Exception): All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.
+
+2.2.3 No Timing: Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.
+
+2.2.4 Interruptions: Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.
+
+2.2.5 Re-authenticating: When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.
+
+2.3.2 Three Flashes: Web pages do not contain anything that flashes more than three times in any one second period.
+
+2.4.8 Location: Information about the user's location within a set of Web pages is available.
+
+2.4.9 Link Purpose (Link Only): A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.
+
+2.4.10 Section Headings: Section headings are used to organize the content.
+
+3.1.3 Unusual Words: A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.
+
+3.1.4 Abbreviations: A mechanism for identifying the expanded form or meaning of abbreviations is available.
+
+3.1.5 Reading Level: When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.
+
+3.1.6 Pronunciation: A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.
+
+3.2.5 Change on Request: Changes of context are initiated only by user request or a mechanism is available to turn off such changes.
+
+3.3.5 Help: Context-sensitive help is available.
+
+3.3.6 Error Prevention (All): For Web pages that require the user to submit information, at least one of the following is true:
+
+·         Reversible: Submissions are reversible.
+
+·         Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+
+·         Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+
+ 
+
+Appendix B: YouTube Captioning step-by-step guide 
+
+This appendix contains detailed step-by-step information on how to add, edit and save captions in YouTube.
+
+Adding and editing auto-captions to videos
+
+The easiest way to caption a video that you have uploaded on YouTube is to use the auto-captions feature. This uses speech recognition software to generate captions from the videos you upload in over 12 different languages. Due to the feature’s inaccuracy, however, you will need to edit the captions after they have been created.
+
+Creating and editing auto-captions
+
+1.    Once you have created an account, signed in and uploaded a video to YouTube, click on the down arrow next to the 'Upload' button at the top of the screen and select 'Video Manager'.
+
+2.    In Video Manager, select the down arrow next to the 'Edit' button of the video you would like to caption.
+
+3.    Select 'Captions' from this down arrow menu.
+
+4.    On the right-hand side of your YouTube video, select the button under 'Active tracks'. This will be defaulted to 'English', but once you select this button, you can change the language under 'Language'.
+
+5.    To the right of the video under 'Caption text', the auto-generated captions should be listed with their corresponding time codes. Each line under 'Caption text' can be edited once a line is selected.
+
+6.    Select the line you wish to edit and adjust the captions to correct it.
+
+7.    When you have finished editing the captions, select 'Done' on the bottom right corner to save the new version of the captions.
+
+Creating caption files
+
+There are a number of tools which allow you to create captions from scratch which can then be added to YouTube videos. YouTube’s own DIY captioning tool, CaptionTube, has certain shortcomings, so we recommend using Amara because it is a free tool, relatively easy to use and supports YouTube, HTML5, Vimeo and other players. If you own the YouTube video, you can upload a caption file created on Amara to YouTube. If you don’t own the video, you can still use Amara to caption it, and when it’s completed anyone can watch the video with your captions on the Amara website.
+
+Creating caption files using Amara
+
+1.    Paste the URL of the YouTube video you want to caption in the field provided then select 'Subtitle'.
+
+2.    Under the video you want to caption, select 'Subtitle me'.
+
+3.    In the pop-up screen, select the down arrow and then the language you wish to use for captions (subtitles).
+
+4.    Select 'Continue'. You will be given the option to view an instructional video about captioning with Amara. If you would like to skip this video, click the checkbox next to 'Skip' and then click 'Continue'.
+
+5.    You will be taken to a page that is divided in two columns. On the left column, you can add captions as the video is played. On the right column, you are provided with options to play and pause the video as you caption it. Amara has defaulted to play videos in intervals of four seconds. There are also another two options, ‘magical autopause’ and ‘no automatic pausing’, which we would advise you to experiment with so you can see which one is best for you.
+
+6.    To caption the video, you can either select the 'Play next 4 seconds' button found on the right hand column or press the Tab key on your keyboard. Once you select this button or press the Tab key, the video will play for 4 seconds before it stops to allow you to type captions.
+
+7.    Type your captions in the text field provided under the video. Once you are happy with your captions, press 'Enter' to continue on a new line. Repeat this until the whole video is captioned.
+
+8.    Once you have typed all the captions, select 'Done' on the right side of the screen.
+
+9.    The next step allows you to synch your captions to the video. To synch your captions to the video, press the down arrow key on the keyboard or select 'Tap when next subtitle should appear' (on the right hand column) whenever the next caption should appear.
+
+10.  When you're finished synching your captions select 'Done'.
+
+11.  You will now be asked to check your work. You can play the video with the captions running, and make changes to the caption text if necessary.
+
+12.  At the stage, you can also complete the synchronisation process. In step 9, you only created points where the captions should appear, but not where they should come off the screen. In other words, captions will run continuously unless you create gaps between them. Underneath the screen you will see your captions represented as a series of grey boxes. Using your cursor, change the timing of your captions by moving the sides of these boxes to left or right.
+
+13.  Once you are happy with your captions, select 'Done? Submit work', and anyone will be able to watch the video with your captions on Amara. If you own the video, you can save the captions as .SUB or .SRT files, which are compatible with YouTube.
+
+Uploading a caption file or transcript to videos
+
+If you have a caption file ready, you can upload it to your YouTube video through Video Manager. YouTube supports the SubViewer (.SUB) and SubRip (.SRT) caption file formats. You can also upload a transcript which will be automatically converted to a caption file, and timed using speech recognition software. The transcript needs to be accurate, and in text file format.
+
+1.    In Video Manager, select the down arrow next to the video you want to caption. Click 'Captions'.
+
+2.    On the right hand side, select 'Upload caption file or transcript'. This will activate a pop-up screen.
+
+3.    In the pop up screen, select the folder/s where the caption file or transcript is saved. Select the file.
+
+4.    Select 'Open'.
+
+5.    Select 'transcript' or 'caption file'.
+
+6.    Select the appropriate language and enter a track name.
+
+7.    Select 'Upload'.

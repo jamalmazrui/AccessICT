@@ -1,0 +1,2710 @@
+﻿Word Accessibility Playbook
+
+
+[Pearson Logo]
+
+ 
+
+Pearson Word Accessibility Playbook
+
+ 
+
+ 
+
+ 
+
+Version Updates
+
+v2 (August 2022)         Added STEM section
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Contents
+
+Pearson Word Accessibility Playbook  1
+
+Contents. 2
+
+INTRODUCTION TO ACCESSIBILITY. 4
+
+Intended Audience. 4
+
+What is Accessibility?. 4
+
+Need for Accessibility. 5
+
+How people with disabilities use Word?. 5
+
+Accessibility Guidelines. 7
+
+WCAG 2.1. 7
+
+IMAGES. 9
+
+Decorative Images. 10
+
+Informative Images. 12
+
+Complex Images. 16
+
+COLOR. 19
+
+Use Color wisely. 21
+
+Color Contrast for Text. 24
+
+Color Contrast for Non-Text Content. 27
+
+HEADINGS. 31
+
+Default Heading Styles. 32
+
+Custom Heading Styles. 34
+
+Descriptive Heading Text. 37
+
+LISTS. 40
+
+Default List Styles. 40
+
+Custom List Styles. 43
+
+TABLES. 49
+
+Simple Data Tables. 50
+
+LINKS. 56
+
+Descriptive Link Text. 56
+
+Bookmark Links. 60
+
+STEM... 64
+
+MathType. 64
+
+TITLE, LANGUAGE AND CONTENT. 67
+
+Descriptive file title. 67
+
+Primary Language. 69
+
+Secondary Language. 72
+
+Abbreviations and Acronyms. 75
+
+FORMATTING TEXT. 78
+
+Line and Paragraph Spacing. 78
+
+Page Layout. 80
+
+Header and Footer. 81
+
+Section and Page Breaks. 88
+
+Text Styling. 94
+
+WORD ACCESSIBILITY CHECKER. 100
+
+Accessibility Checker. 100
+
+Errors and Warnings. 101
+
+EXPORT TO PDF. 105
+
+Save as PDF. 105
+
+Export to PDF. 107
+
+APPENDIX. 109
+
+ 
+
+ 
+
+INTRODUCTION TO ACCESSIBILITY
+
+Pearson is committed to accessibility and is taking all possible measures to make the online learning experience accessible for all learners. The Word Accessibility Playbook was put together to provide content producers with the guidance required for creating accessible Word documents and offer buyers courses that not only have web content that is accessible but also accessible documents available in Word format.
+
+The playbook includes techniques for implementing accessibility across different elements, such as headings, lists, images, tables etc. It identifies both techniques that must be adopted, and techniques that should be avoided, from an accessibility perspective. Along with the techniques, the playbook lists tips, and tricks for enhancing accessibility of Word documents.
+
+The playbook comprises of examples of different Pearson Word documents and lists possible solutions to help the team implement accessibility. Not only will the playbook serve as a valuable reference, but it can also equip the team to implement accessibility while designing and authoring all future Pearson Word documents.
+
+Intended Audience 
+
+The Word Accessibility Playbook is intended for the entire technical team that works to author, as well as maintain, Pearson’s Word documents. Team members include:
+
+·         UI designers
+
+·         UX professionals
+
+·         Content Digitizers
+
+·         Content writers
+
+·         Courseware Quality Assurance (QA) teams
+
+What is Accessibility?
+
+Accessibility refers to making a product or service usable for as many people as possible. In the digital space, accessibility ensures that websites, applications, documents, online learning solutions etc. are usable for all users including those with disabilities. Often accessibility is viewed at something that is meant for people with disabilities. However, accessibility benefits each one of us in different situations.
+
+Today digital accessibility has been adopted in most countries across the globe. To make accessibility happen, there are standards, guidelines and specifications that outline ways to make it a reality. Technologies include support for developing accessible solutions and the demand for accessible products is increasing by the day.
+
+In simple terms, accessibility is ensuring that everyone can use a product or service irrespective of their abilities or situation of use. In physical space, we may refer to accessibility as providing ramps to allow people on a wheelchair to come in easily similarly in the case of digital accessibility it refers to making the online solutions available for all users including those using assistive technologies.
+
+ 
+
+Need for Accessibility
+
+Word documents are available widely on different online portal and this is no different when it comes to online learning.  Most of our daily digital activities from learning, employment, healthcare, and government procedures involve access to Word documents. Access to Word content is therefore essential for all users including for those with disabilities.
+
+Some of the key benefits of digital accessibility that also apply to Word documents include:
+
+·         Ensures access to essential online activities for all users.
+
+·         Increase in customer base.
+
+·         Helps to conform with accessibility standards and guidelines.
+
+·         Builds brand loyalty.
+
+·         Drives innovation by making solutions that are accessible for wide range of users.
+
+·         Adhere to legal requirements.
+
+·         Contribute towards building an inclusive society.
+
+ 
+
+How people with disabilities use Word?
+
+Ever thought how someone who cannot see will access diagrams explaining functions of different body parts? Or how someone who cannot listen will access a recorded video lecture explaining the solar system embedded in a Word document? How someone with upper limb difficulties will complete their interactive assignments?  Technology acts as an enabler for people with disabilities and they can read textbooks, submit their assignments, fill up their tax applications, read their utility bills and many more day-to-day activities available online in Word format.
+
+Digital evolution has made life very easy for all of us and more so for people with disabilities as they can accomplish their tasks independently. People with disabilities use different assistive technologies to access the Word documents either using a computer, tablet, or mobile device.
+
+Let us learn about few of the assistive technologies used by people with disabilities to access Word documents:
+
+Visual Disabilities
+
+·         Screen readers: reads out the information displayed in a WORD document for their users. Users can access the information by listening to the screen reader and using a keyboard to input the data or give commands. Screen readers also provide their users with option to access different Word elements using different keystrokes.
+
+·         Screen magnifiers: enlarges the information displayed in a Word document for their users. Users can access the information by either using a mouse or a keyboard. Since users access the information in an enlarged form, not all the information is visible on the screen. This requires users to scroll a lot to access the information. 
+
+·         Refreshable Braille Displayers: is a piece of hardware which can be attached to a computer, tablet, or mobile phone. It works in combination with a screen reader. The information read out by a screen reader is refreshed on the braille displayer and users can touch the braille pins and read the information. Users can read the information using the braille displayer whereas they can input the data using a keyboard. Refreshable braille displayers are used by blind and deaf-blind users.
+
+Hearing Disabilities:
+
+·         Synchronized captions help people with hearing disabilities access videos and text transcripts help them to access audio-only content with ease. They do not require any assistive technology as such to access the Word content.
+
+Learning Disabilities:
+
+·         Text to speech synthesizers (TTS): reads out the text displayed on the screen as well as highlights the text. This helps users in understanding the information when it is read out to them. TTS software also provide users with options to view the information using different contrast themes.
+
+·         Word prediction tools: predicts words while users are typing data. These tools are found very helpful by users with learning disabilities especially while filling up forms as they do not have to memorize spellings.
+
+Mobility Disabilities:
+
+·         Adaptive keyboards: come in different shapes and sizes to meet user’s needs. Split keyboards (where the standard keyboard is split in two parts), one handed keyboard (which are adapted for users who do not have one hand), keyboards used in the bank that have multiple keys with combination of the digit 0 etc. are some of the examples of adaptive keyboards. These keyboards are used by people with mobility disabilities to meet their needs.
+
+·         Sip-n-puff devices: are used by people with severe mobility disabilities, such as those who have issues with upper and lower limbs. With sip-n-puff devices, people can use their breath to click on a button or a link. While typing, people using sip-n-puff devices use the onscreen keyboards (readily available in different operating systems) with their device to fill up the details.
+
+·         Onscreen keyboards: are virtual keyboards that are used by people who find it difficult to press the keys on a hardware keyboard. Onscreen keyboards are often used in combination with other hardware devices, such as eye tracking tools, head mouse etc.
+
+·         Voice recognition systems: is a software using which people can control their computer by giving voice commands. Users can click on links or buttons, dictate their details while filling up forms etc. Adding descriptive label for links and buttons allow users to give accurate voice commands while accessing information of a Word document.
+
+ 
+
+Some of the assistive technologies are today available with different operating systems, such as Windows, Mac OS, iOS, Android, Linux, Chrome OS etc. All in all, people with disabilities have many choices when it comes to assistive technologies and access their digital documents. 
+
+Microsoft Word offers a range of accessibility features for the benefit of assistive technology users. From compatibility with different Windows in-built as well as third party screen readers to keyboard shortcuts users have lots of  customization options to choose from. Word also includes a Read Out Loud feature that helps people with learning impairments listen to the content of the Word document along with onscreen highlight to follow the speech output. Word is also compatible with Windows in-built and leading screen magnifiers as well as speech recognition systems.
+
+ 
+
+Accessibility techniques outlined by WCAG 2.1 can be applied for authoring accessible Microsoft Word documents and we will be referring to different success criteria’s that are applicable to Word documents in this playbook. Pearson has their own accessibility standpoint when it comes to accessibility guidelines and standards for different technologies so let us discuss that now.
+
+ 
+
+Accessibility Guidelines
+
+Accessibility guidelines are available for different technologies, such as web, software, PDF, Videos etc. When it comes to web content the universal guidelines all countries and companies follow is the Web Content Accessibility Guidelines (WCAG). This is true to Pearson as well. Pearson Accessibility Guidelines are aligned with the latest version of WCAG, i.e., WCAG 2.1 at Level AA.
+
+ 
+
+WCAG 2.1
+
+WCAG 2.1 was published on 5^(th) June 2018.  Web Content Accessibility Guidelines (WCAG) 2.1 are developed by the World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI) group to help individuals, companies, and governments across the globe to implement accessibility in their web content.
+
+The Web Content Accessibility Guidelines provide directions for making the web content more accessible for users with different types of disabilities.
+
+WCAG 2.1 comprises of 13 guidelines that are organized under 4 principles:
+
+1.      Perceivable - Information and user interface components must be presentable to users in ways they can perceive.
+
+1.1.  Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language.
+
+1.2.  Time-based Media: Provide alternatives for time-based media.
+
+1.3.  Adaptable: Create content that can be presented in different ways (For example, simpler layout) without losing information or structure.
+
+1.4.  Distinguishable: Make it easier for users to see and hear content including separating foreground from background. 
+
+2.      Operable - User interface components and navigation must be operable.
+
+2.1.  Keyboard Accessible: Make all functionality available from a keyboard.
+
+2.2.  Enough Time: Provide users enough time to read and use content. 
+
+2.3.  Seizures: Do not design content in a way that is known to cause seizures.
+
+2.4.  Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+2.5.  Input Modalities
+
+3.      Understandable - Information and the operation of user interface must be understandable.
+
+3.1.  Readable: Make text content readable and understandable.
+
+3.2.  Predictable: Make Web pages appear and operate in predictable ways.
+
+3.3.  Input Assistance: Help users avoid and correct mistakes.
+
+4.      Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+4.1. Compatible: Maximize compatibility with current and future user agents, including assistive technologies.
+
+Each guideline has testable success criteria for conformance at Level A, Level AA or Level AAA. In all, there are 78 success criteria that are grouped under the above-mentioned 13 guidelines. Often the questions that come up include: Do we have to comply with all the 78 success criteria for Word documents as well? What is acceptable? How much is enough?
+
+Below is a brief explanation of WCAG conformance levels:
+
+·         Level A - Must be done.
+
+·         Level AA - Should be done.
+
+·         Level AAA - Can be done.
+
+Across the world, Level AA conformance is what companies, organizations and governments aim to achieve. WCAG 2.0 is approved as an ISO standard: ISO/IEC 40500:2012. WCAG 2.1 is an extension of WCAG 2.0 and it includes all the success criteria’s that were part of WCAG 2.0.
+
+All Pearson Word documents should aim to satisfy WCAG 2.1 Level A and Level AA success criteria. Some of the WCAG 2.1 success criteria that are not applicable for Word documents include:
+
+·         Level A: 2.1.4, 2.4.1, 2.5.1, 2.5.2, 2.5.4 and 4.1.1.
+
+·         Level AA: 1.3.5, 1.4.12, 1.4.13, 2.4.5, 2.4.7, 3.2.3, 3.2.4 and 4.1.3.
+
+ 
+
+ 
+
+ IMAGES
+
+Images are used in a Word document to convey information as well as enhance the visual presentation of the document. Descriptions need to be provided for images to make the information available for all users, including users with vision disabilities, users with learning disabilities etc. Alternate text must be specified for each informative image in a Word document whereas decorative images must be marked as decorative to convey to screen reader users that they are non-informative.
+
+A screen reader reads out the alternate text specified for the image and skips pass the decorative images. In a Word document, there are mainly three types of images:
+
+·         Informative images: used to display logos, pictures, illustrations etc.
+
+·         Complex images: used to display graphs, diagrams, screenshots etc.
+
+·         Decorative images: used to display separator lines, background images, watermarks etc.
+
+Few tips for writing alt:
+
+·         Ensure that if an image contains text and the similar information is not conveyed in surrounding text description is provided.
+
+·         Ensure that if an image contains text that is only use for visual effects empty alt attribute is provided.
+
+·         Ensure if an image contains meaningful information however the similar information is conveyed in surrounding text description is not required.
+
+·         Ensure that a simple graphic or photograph contributing meaning is present text description is provided.
+
+·         Ensure that the information conveyed in complex images are provided elsewhere in the page itself.
+
+·         Avoids using words like image, photo, etc. in the alt text.
+
+·         Ensure to provide brief and concise alt text.
+
+·         Priorities the information in alt text, provide most important part first.
+
+·         Avoid using running text together in the alt text.
+
+·         Ensure to use punctuation at regular interval in the alt text.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.1.1 Non-text Content                                                                                              Level A
+
+All non-text content that is presented to the user has a text alternative that serves the equivalent purpose.
+
+ 
+
+Decorative Images
+
+Decorative images are used to enhance the presentation of a Word document. Since these images do not convey any information, a descriptive alternate text is not required to be specified. Decorative images when marked as such will convey to screen readers that they can skip these images.
+
+@Tip:
+
+JAWS identifies decorative images as “Graphic Decorative”.
+
+ 
+
+@Tip:
+
+Images marked as decorative in an accessible Word document are converted to artifacts when exported to PDF.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------- ------------------------
+  WCAG Success Criteria     WCAG Conformance Level
+  1.1.1 Non-text Content    A
+  ------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the steps that need to be followed in order to mark decorative images in a Word document:
+
+1.      Open the Word document that includes decorative images.
+
+2.      Right-click on the decorative image.
+
+3.      Click on Edit Alt Text. The Alt Text pane will appear.
+
+4.      Select the “Mark as decorative” checkbox. This will gray out the text edit field.  
+
+[“Mark as decorative” checkbox selected in the Alt Text pane.]
+
+Practices to Apply & Avoid
+
+ü  Ensure to mark all decorative images as decorative.
+
+ 
+
+For example, in the 2019-ar Word document, a decorative image is accurately marked as decorative.
+
+ 
+
+[Decorative Image accurately marked as decorative.]
+
+ 
+
+û Avoid specifying alt for decorative images.
+
+ 
+
+For example, in the 2019-ar Word document, alt text is inaccurately specified for the decorative image.
+
+[Alt text specified inaccurately for a decorative image.]
+
+ 
+
+How to test for Accessibility?
+
+To test if decorative images have been implemented correctly, perform the following steps:
+
+1.      Open the Word document that includes decorative images.
+
+2.      Right-click on the decorative image and click on Edit Alt Text.
+
+3.      Check if “Mark as decorative” checkbox is selected in the Alt Text pane.
+
+4.      If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+ 
+
+Informative Images
+
+Informative images are used for conveying information, typically pictures, photos and illustrations. They need to have a text alternative that should be a short description conveying the essential information presented by the image. The description should accurately convey the information displayed in the image.
+
+Alternate text for the image must not include its visual presentation but must describe the information. Avoid using words like “photo”, “image”, “graphic” etc. Screen readers inform their users that it is an image and thus including this information again in the alternate text will add up to the listening for users.
+
+If an informative image includes text over it, then the alternate text must accurately convey the textual information for the benefit of screen reader users. Information conveyed through the image if available in the surrounding text does not need to be repeated in the form of alternate text.
+
+ 
+
+@Tip:
+
+·         Read alternate text for images using JAWS by pressing the Up or Down Arrow keys. Alternatively, turn on Quick Keys by pressing “Insert +Z” and then press “G” to navigate to the next image and “Shift + G” to navigate to the previous image.
+
+·         Read alternate text for images using NVDA by pressing the Up or Down Arrow keys. Alternatively, turn on Quick Keys by pressing “Insert +Space” and then press “G” to navigate to the next image and “Shift + G” to navigate to the previous image.
+
+·         Press “VO+ Command+ G” to navigate to the next graphic and “VO+ Command+ Shift+ G” to navigate to the previous graphic using VoiceOver.
+
+ 
+
+How to implement?
+
+This section lists the steps for adding alternate text for informative images in a Word document:
+
+1.      Open the Word document that includes informative images.
+
+2.      Select the informative image and click on Alt Text button in the Format ribbon tab.
+
+3.      Alternatively, right-click on the image and select Edit Alt Text.
+
+4.      Add the alternate text in the text field in the Alt Text pane.
+
+Note: Alternate text for shapes and SmartArt that convey important information can also be added by following the above steps.
+
+@Tip:
+
+Right-click inside the entire frame that surrounds the shape or SmartArt and not on their parts.
+
+Practices to Apply & Avoid
+
+û Avoid marking informative images as decorative.
+
+ 
+
+For example, in the A11y Guidelines Content & Digital Producers Word document, the comic strip is marked as a decorative image.
+
+ 
+
+[Informative image marked as decorative. ]
+
+ 
+
+ü  Specify accurate and descriptive alt text for informative images.
+
+ 
+
+For example, in the A11y Guidelines Content & Digital Producers Word document, accurate alternate text "Pearson Logo" is specified for an informative image.
+
+ 
+
+[Informative image with accurate alternate text.]
+
+ü  Ensure the informative image is always inline with the text.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the image is inline with the text.
+
+ 
+
+[Informative image in line with text. ]
+
+û Avoid leaving the alt text empty for informative images.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, alt text is missing for the informative image.
+
+[Missing alt text for informative image.]
+
+ 
+
+How to test for Accessibility?
+
+To test if alternate text is specified for informative images, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Right-click on the informative image and select Edit Alternate Text.
+
+3.      Check if textual description is specified in the text field of the Alt Text pane.
+
+4.      Check if the alternate text sufficiently describes the information conveyed by the image.
+
+5.      If the conditions in step 3 and 4 fail than it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+ 
+
+Complex Images
+
+Complex images, such as graphs, diagrams, and charts, require detail description of the data or information provided in the image as the text alternative, to enable users with vision disabilities to interpret the information. Similarly, users with learning disabilities may find the complex charts, diagrams, graphs difficult to understand. Textual description in the surrounding text or a tabular representation of the graph or chart makes it easier for them to access the information.
+
+So, in the case of complex images, it is recommended to add a brief description of the image via the Alt Text pane and include equivalent information in the surrounding text in the form of either a data table or running text.
+
+ 
+
+How to implement?
+
+This section lists the steps for adding alternate text for complex images in a Word document:
+
+1.      Open the Word document that includes complex images.
+
+2.      Right-click inside the frame that covers the entire complex image and select Edit Alt Text.
+
+3.      Add a brief alternate text in the text field in the Alt Text pane.
+
+4.      Include detailed description for the complex image in the surrounding content. Alternatively, include detailed description via the Alt Text pane.
+
+ 
+
+@Tip:
+
+Right-click inside the entire frame that surrounds the chart, graph or diagram and not on their parts.
+
+Practices to Apply & Avoid
+
+û Avoid using complex images such as charts and diagrams that lack textual descriptions.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the following Sun burst chart does not have an alternate text.
+
+[Sunburst chart with missing alternate text. ]
+
+ü  Ensure all graphs and diagrams have detailed description specified via either the Alt Text pane or in the surrounding text.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the Funnel chart has an accurate Alt Text description as “Application Review Funnel Chart showing the Total Applicants, Meets Minimum Qualifications, 2nd screening, Round 1 interview, Round 2 Interview, Final Interview and Hired.” specified.
+
+[Funnel chart with accurate an Alt text description. ]
+
+User Groups Affected
+
+·         Blind Users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test if alternate text is specified for complex images, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Right-click on the complex image and select Edit Alternate Text.
+
+3.      Check if textual description is specified in the text field of the Alt Text pane.
+
+4.      Check if detailed description is included via the Alt Text pane or in the surrounding text.
+
+5.      If the conditions in step 3 and 4 fail than it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+ 
+
+COLOR
+
+Color is a key component of any document. Color should be used wisely to ensure that all users including those with color blindness, low vision and blind users can access the information. While using color, three important aspects should be taken into consideration: 
+
+·         Color should not be used as the sole means to convey important information. 
+
+·         Sufficient contrast should be present between foreground text and its background. 
+
+·         Sufficient contrast should be present for key graphical objects with the adjacent content.
+
+ 
+
+Color when used as the sole means to convey important information makes it difficult for users with visual impairments, such as color blindness, low vision, blind and deaf-blind users who find it difficult to understand the information. For example, key values of a table are indicated with change in color or items of a graph are distinguished using color. In such situations it becomes difficult for users with visual impairments to interpret and access the information.  
+
+Color contrast between foreground text and its background should be sufficient to ensure that users with different types of colorblindness can access the information. Users with colorblindness, such as Protanopia, Tritanopia, Deuteranopia and monochromacy find it difficult to distinguish between certain color combinations. Thus, it is essential that sufficient contrast is present between foreground text and its background. Color contrast should be sufficient for all the important elements of a Word document, such as text, headings, form controls, tables, informative images etc. If the color contrast is not sufficient, the information will not be legible for low vision users and colorblind users.  
+
+ 
+
+Color blindness is the inability to perceive differences between some colors. Users who are color blind have difficulty in differentiating color or between red and green, or blue and yellow.
+Ensuring a Word document follows the WCAG guidelines for color contrast ratio, color should not affect a person’s ability to perceive important content.
+
+Types of color blindness:
+
+o   Tritanopia: makes it hard to tell the difference between blue and green, and between yellow and red.
+
+o   Protanopia: makes red look greener and less bright.
+
+o   Deuteranopia: most common type of red-green color blindness. It makes green look more red.
+
+o   Monochromacy: cannot see color at all (gray scale).
+
+[Screenshot of Color contrast analyser (CCA) with contrast ratio of 7.8:1 for Normal vision, 7.5:1 for Protanopia, 8.4:1 for Deuteranopia, 7.8:1 for Tritanopia]
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.4.1 Use of Color                                                                                                       Level A
+
+Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+
+ 
+
+1.4.3 Contrast (Minimum)                                                                                         Level AA
+
+The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+Large Text: Large scale text and images of large-scale text has a contrast ratio of at least 3:1.
+
+ 
+
+Incidental: Text or images of text that are a part of inactive user interface component, that are pure decoration, that are not visible to anyone, or that are a part of a picture that contains significant other visual content, have no contrast requirement;
+
+ 
+
+Logotypes: Text that is a part of a logo or brand name has no contrast requirement.
+
+ 
+
+ 
+
+1.4.11 Non-text Contrast                                                                                           Level AA
+
+The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+
+ 
+
+User Interface Components
+
+Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
+
+ 
+
+Graphical Objects
+
+Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
+
+ 
+
+ 
+
+Use Color wisely
+
+Colors should be used wisely in documents, as information conveyed with color alone might not be available for people with visual disabilities. Color is a key component of any document and this is true for digital documents as well. However, information when conveyed using color alone can make it difficult for people with visual disabilities to access it. For example, in a line graph is used to display the marks obtained by students in different exams conducted during an academic year. Red color is used to indicate dip in the marks obtained, green color to indicate increase in the marks and blue color is used to indicate marks obtained by students consistently. Ever thought how would a blind person perceive such information conveyed only with color? How would students or parents with colorblindness perceive the information?
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  1.4.1 Use of color      A
+  ----------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure that information conveyed using color is available for all users:
+
+·         Supplement color with visual clues.
+
+·         Add text clues along with color to convey important information.
+
+·         Add patterns, symbols, shapes etc. along with color to convey important information.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using color alone to indicate information.
+
+ 
+
+For example, in the cbcc9-guided-reading-ch16 word document, color alone is used to indicate information such as classification of protist, where “yellow” indicates “eukaryote supergroups”, “purple” indicates “protist clades” and “pink” indicates “nonprotist clades”. 
+
+ 
+
+[Color alone "Yellow", "Purple" and "Pink" is used to indicate information.] 
+
+ 
+
+ü  Provide textual clues along with color.
+
+ 
+
+For example, in the 2019-ar Word Document, data for Contribution in 2019 is indicated by color as well as through supporting text.
+
+[Contribution in 2019 is indicated by both color and text.]
+
+ 
+
+ü  Ensure to supplement color with other visual elements such as patterns, varying line styles or symbols to indicate data in graphs and charts.  
+
+ 
+
+û Do not use color alone to indicate data in graphs. 
+
+For example, in the 2019-ar Word document, color alone “blue” and “green” is used to indicate digital penetration and decline in print revenue percentage over the years in a line graph.
+
+ 
+
+[Color alone "blue" and "green" is used to indicate digital penetration and decline in print percentage over the years in a line graph. ]
+
+ 
+
+ 
+
+User Groups Affected
+
+ 
+
+When color alone is used to convey important information, the user group that gets largely affected is users with visual disabilities such as:
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.)
+
+·         Low-vision users
+
+·         Blind users
+
+ 
+
+How to test for Accessibility?
+
+To test a Word document for use of color alone to convey important information, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Check on different pages if color is used to convey important information.
+
+3.      Check if color is supplemented with text or other visual clues to convey the information.
+
+4.      If the condition in step 2 is true and step 3 is false, then it is an accessibility violation as per WCAG 2.1 success criteria 1.4.1 at Level A.
+
+ 
+
+Color Contrast for Text
+
+Colors used for displaying text and images of text (text created as an image) should have sufficient contrast with their background to make the information legible for users.
+
+ 
+
+WCAG has provided following guidance to ensure that color contrast for text is sufficient:
+
+·         For text:
+For standard text (font lesser than 14pt) to be readable, it is mandatory for it to have a color contrast of 4.5:1 with its background.
+
+o   For large text (14pt bold or 18pt) to be readable, it is mandatory for it to have a color contrast of 3:1 with its background.
+
+There are exceptions. Incidental texts which are not required to meet the contrast requirements are: an inactive user interface element, logos, text for pure decoration, text with is not visible to anyone.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  -------------------------- ------------------------
+  WCAG Success Criteria      WCAG Conformance Level
+  1.4.3 Contrast (Minimum)   AA
+  -------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure that contrast between the foreground text is sufficient with its background in different scenarios.
+
+·         Two colors are considered to have good visibility if the contrast ratio between the foreground text and background is sufficient. Darken either the foreground or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1.  
+
+·         Check the contrast ratio between foreground text colors with the background using color contrast testing tools before using them in a Word file. The minimum contrast requirements outlined by WCAG 2.1 are: 
+
+  ----------------------------------------------- -----------------
+  Text Size                                       Contrast Ratio 
+  Standard size text (anything less than 14pt)    4.5:1 
+  Large-size text (14pt bold or 18pt)             3:1 
+  ----------------------------------------------- -----------------
+
+Authors should check for color contrast before authoring Word documents to ensure that sufficient color contrast is present for textual content including images of text. Once the document is authored, it becomes difficult to retrofit it for color contrast later.
+
+Practices to Apply & Avoid
+
+ü  Ensure color contrast for foreground text is sufficient with its background.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, color contrast on the text “1.1.1 Copy macros between workbooks” is 7.4:1.
+
+[Sufficient colour contrast for text "1.1.1 Copy macros between workbooks".]
+
+[Color contrast analyser (CCA) showing contrast ratio of 7.4:1 for the text “1.1.1 Copy macros between workbooks”.]
+
+ 
+
+û Avoid using insufficient color contrast for displaying textual information.
+
+ 
+
+For example, in the Aula1e_Practice_01_script Word document, color contrast on the text “[aula_aberta_sam_ch01_act6_01.mp3]” is 3.7:1.
+
+[Insufficient color contrast is used for the text “[aula_aberta_sam_ch01_act6_01.mp3]” .]
+
+[Color contrast analyser (CCA) showing contrast ratio of 3.7:1 for the text “[aula_aberta_sam_ch01_act6_01.mp3]”.]
+
+ 
+
+User Groups Affected  
+
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+
+·         Low-vision users 
+
+ 
+
+How to test for Accessibility?
+
+To check the color contrast for text, perform the following steps:  
+
+1.       Open Color Contrast Analyser (CCA).  
+
+2.       Open the Word document and navigate to the page for which color contrast of text needs to be checked.  
+
+3.      Using the eye dropper tool, pick the hex code of the text’s foreground color as well as the hex code of the background color.  
+
+4.      Add the foreground text and background color hex codes in the respective text fields available in CCA.  
+
+5.      Color contrast ratio along with its conformance result will be displayed. Conformance will be displayed for:  
+
+a.       Standard text size and large text size  
+
+b.       Results are displayed for Level AA as well as Level AAA.  
+
+6.       Text or images of text that are part of an inactive user interface component, that are pure decoration, that is not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.  
+
+7.       Text that is part of a logo or brand name has no contrast requirement. 
+
+8.       If the color contrast ratio is less than 4.5:1 for standard text or less than 3:1 for large text, then it is an accessibility violation of WCAG 2.1 success criteria 1.4.3 at Level AA. 
+
+ 
+
+ 
+
+ 
+
+Color Contrast for Non-Text Content
+
+Color contrast needs to be enough not only for textual content available in Word documents but also for all the important non-textual content. The contrast between non-textual content with the adjacent color needs to be 3:1.  
+
+ 
+
+Non-text contrast requirements were introduced in WCAG 2.1 and is applicable to: 
+
+·         User interface controls in different states, such as focus, active, hover, etc. This applies to different user interface components, such as links, form controls, buttons, etc. For example, if the background color of a link changes on focus then the contrast between the link's background color with the text font as well as the page's background color should be at least 3:1. Non-text contrast requirements are not applicable if the user interfaces components in an inactive state. Similarly, non-text contrast requirements do not apply to visual borders that are added by the user agent when a link or any other interactive element receives focus. In the case of Word documents, states of user interface components are not necessarily present, but components might be displayed using different background colors for easy identification by users. In such scenarios, it is required to ensure that contrast is sufficient.  
+
+·         Graphical objects that convey important information, such as graphs, diagrams, key icons, etc.  Non-text contrast requirements are applicable to images that convey important information and different components need to have minimum contrast of 3:1, such as lines of a line graph, labels of a bar graph, key icons, numerical and textual data of complex diagrams, etc. However, if changing the contrast will result in an incorrect interpretation of information, i.e., changes the meaning of the subject then those graphics do not need to adhere to the above-mentioned contrast requirements. For example, in the case of science experiments, if by changing the contrast will result in changing the meaning of the topic being explained, then such graphics do not need to adhere to the above-mentioned contrast requirements.  
+
+The above requirements were introduced to ensure that low vision users can access all the important information conveyed using non-text content. 
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  -------------------------- ------------------------
+  WCAG Success Criteria      WCAG Conformance Level
+  1.4.11 Non-text Contrast   AA
+  -------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure sufficient contrast for non-text content in different scenarios.
+
+·         Check the contrast ratio of the graphical object and its surrounding using color contrast testing tools before using them in a Word document.
+
+·         Two colors are considered to have good visibility if the contrast ratio between the graphical object and its surrounding is enough. Darken either the graphical object or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1. 
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using color contrast for non-text content of less than 3:1.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, a segment of the sunburst chart has an insufficient color contrast of 2.5:1.
+
+ 
+
+[Insufficient color contrast for the sunburst chart.]
+
+[Color contrast analyser (CCA) showing contrast ratio of 2.5:1 for the non-text content.]
+
+ü  Ensure color contrast of at least 3:1 is present for all non-text content.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, a chart of Application Review Process with sufficient color contrast of 4.7:1 is found.  
+
+[Sufficient color contrast for the funnel chart.]
+
+[Color contrast analyser (CCA) showing contrast ratio of 4.7:1 for the non-text content.]
+
+User Groups Affected  
+
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+
+·         Low-vision users 
+
+ 
+
+How to test for Accessibility?
+
+To check the color contrast for non-text content, perform the following steps:  
+
+1.      Open Color Contrast Analyser (CCA).  
+
+2.      Open the Word document and navigate to the page for which the color contrast of non-text content needs to be checked.
+
+3.      Use the picker to select the color of the graphical object and its surrounding.  
+
+4.      Color contrast ratio along with its conformance result will be displayed. 
+
+5.      If the color contrast ratio is less than 3.0:1 then it is an accessibility violation of WCAG 2.1 success criteria 1.4.11 at Level AA.
+
+HEADINGS
+
+Headings act as a title for key sections of a Word document. Headings are defined for the main section as well as sub-sections of the document. Headings form an outline that identifies key sections of a document. They depict the hierarchy of a document’s content structure.
+
+Headings allow screen reader users to skim through the content of the document and access the required content quickly. Headings can also be used while defining bookmarks and help users quickly jump to the required section. Descriptive heading text help users to understand what content will be available in each section of the document.
+
+Headings are used to define the content structure of a document. Sections and sub-sections of a document are defined using heading level styles.
+
+Screen readers can identify the headings based on the styles and provide users with an option to understand the content structure as well as navigate quickly to different parts of a document.
+
+Heading levels should be defined in a manner that they depict the content hierarchy of the document. Heading levels should not be skipped, i.e., <H5> should not be used directly to mark the main topic or section as the first heading in the document. If the Word document is a book, the name/title of the book should be marked using heading 1 style. All the chapter titles should be marked using heading 2 style and sub-topics within the chapter should be marked using heading 3, 4 and so on depending on the content of the book.
+
+Headings should be used in a sequence and must not be skipped but at the same time they should be marked consistently. So, if in a document the sub-topics of the chapter go up to heading 4 and then the next chapter starts , it is acceptable in such a scenario to break the sequence and mark the chapter title using heading 2  style.
+
+ 
+
+@Tip:
+
+Headings are available as bookmarks when accessible Word document is exported to PDF document.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+2.4.6 Headings and Labels                                                                                           Level AA
+
+ Headings and labels describe topic or purpose.
+
+ 
+
+Default Heading Styles
+
+Word comes with default heading styles for authors to choose from while authoring content. By default, there are 7 heading styles, heading 1 to heading 7. These default heading styles are well supported by all the leading screen readers. Additionally, these headings are preserved when an accessible Word document is exported to PDF.
+
+@Tip:
+
+·         In JAWS, press “Insert +Z” to turn on Quick Keys and then press “H” or “Shift + H” to jump to the next and previous heading, respectively.
+
+·         In NVDA, press “Insert +Space” to turn on Quick Keys and then press “H” or “Shift + H” to jump to the next and previous heading, respectively.
+
+·         In VoiceOver, press “VO +Command +H” to find next list and “VO +Command +Shift +H” for previous list.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the steps that need to be followed in order to define headings in a Word document:
+
+1.      Open the Word document.
+
+2.      Select the text that needs to be defined as a heading.
+
+3.      On the Home tab, in the “Styles” group select the heading style that needs to be applied.
+
+ 
+
+[Default "Heading 1" selected from the list of styles. ]
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure to select the appropriate heading style for headings.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, an appropriate heading style of “H1” is used for the main heading “MOS Online Appendix for Exploring Excel Comprehensive 2019.”
+
+ 
+
+[Appropriate heading style of H1 used for heading. ]
+
+û Avoid using inappropriate heading styles.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, an inappropriate heading style of “H1” is used for the level 2 heading of “1.1.1 Copy macros between workbooks”.
+
+[Inappropriate heading style used for heading.]
+
+ 
+
+Custom Heading Styles
+
+Microsoft Word also allows authors to define custom headings in a document. Custom heading styles allow authors to modify the presentation of different headings as per the requirement. Custom heading styles enable authors to style the headings as per brand colors, font style and size, etc. However, custom headings are not rendered by leading Windows based screen readers (JAWS & NVDA) with their default reading settings.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the steps for defining custom heading styles in a Word document:
+
+1.      Open the Word document.
+
+2.      Select the heading text that needs to be defined using custom styles.
+
+3.      On the Home tab in the Styles group, select “Create a Style”.
+
+ 
+
+[Style Section highlighted in the Home tab.]
+
+4.      The “Create New Style from Formatting” dialog will appear.
+
+5.      In the Name input field, assign a name for the new style and hit OK.
+
+[“Create New Style from Formatting” dialog box.]
+
+6.      On the Home tab in the Styles group, click on the “Styles Option icon”.
+
+7.      Select the heading style on which the custom style needs to be based on from the Styles Based on drop-down.
+
+8.      Select the formatting options as per the requirement.
+
+ 
+
+@Tip:
+
+A custom heading if based on any of the default heading styles makes it available in the Navigation pane.
+
+ 
+
+@Tip:
+
+To modify the appearance of existing heading style, select the style and click on Modify option to adjust the presentation.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure to apply the appropriate custom heading style.
+
+ 
+
+For example, in Additional Career Resources Word document, an appropriate custom heading level 2 has been selected for the Heading level 2 of “Creating Resumes, Cover Letters, and Electronic Resumes”.
+
+ 
+
+[Appropriate custom heading style of H2 used for heading level 2.]
+
+û Avoid applying incorrect custom heading styles.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, an inappropriate custom heading level 4 has been selected for the Heading level 3 of “Box & Whisker Chart”.
+
+[Appropriate custom heading style of H4 used for heading level 3.]
+
+How to test for Accessibility?
+
+To test default and custom headings in a Word document, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      On the View Tab in the Show group select the “Navigation pane” checkbox.
+
+3.      All the headings in the document will be displayed.
+
+4.      Check if headings are defined for each section and sub-section.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+@Tip:
+
+·         In JAWS, press “Insert + F6” to pull the Heading List dialog box.
+
+·         In NVDA, press “Insert + F7” to pull the Heading List dialog box.
+
+ 
+
+Descriptive Heading Text
+
+Heading text should be unique, clear, descriptive, and consistent across pages of a document. This helps users in understanding what content will be available below the given heading, and users can easily find the information they are looking for.
+
+@Tip:
+
+Descriptive heading text helps screen reader users to skim through the document and quickly access the required content.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ---------------------------- ------------------------
+  WCAG Success Criteria        WCAG Conformance Level
+  2.4.6 Headings and Labels    AA
+  ---------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure heading text of a document is descriptive.
+
+·         Use heading text that is descriptive of the section’s content.
+
+·         Use unique heading text for each section and sub-section of a document.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure descriptive heading text is used for each section and sub-section of a document.
+
+ 
+
+For example, in Mindset_Instructor_Guide_MyFoundationsLab Word document, the heading text “Brief Background on Mindset theory” is descriptive about the section’s content.
+
+[Descriptive heading text defined for a section.]
+
+û  Avoid using non descriptive heading text for each section and sub-section of a document.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, the heading text “Create” is non descriptive about the section’s content.
+
+[Non-descriptive heading text defined for a section.]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision Users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test for a document’s heading text, perform the following steps:
+
+1.      Open the Word document whose heading text needs to be tested.
+
+2.      Turn on JAWS/ NVDA/ VoiceOver.
+
+3.      Press “Insert + Z” in JAWS and “Insert +Space” in NVDA to turn on Quick keys.
+
+4.      Then press “H” to jump to the next heading and “Shift + H” to jump back to the previous heading in JAWS and NVDA; In VoiceOver use “VO + Command +H” to go to the next list in and “VO + Command +Shift +H” to go to the previous list.
+
+5.      Press “Insert + F6” in JAWS and “Insert +F7” in NVDA to access the list of headings.
+
+6.      Check if heading text sufficiently describes the content of each section.
+
+7.      If the condition in step 5 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.6 at Level AA.
+
+ 
+
+ 
+
+LISTS
+
+In a Word document, there are three main types of lists: ordered list, unordered list and nested list. An ordered list is used to group sequential items, an unordered list to group related but non-sequential items whereas a nested list is a list within a list. A nested list can be used for both ordered and unordered lists.
+
+Screen readers do not identify type of a list for their users. Users can identify type of list based on the list item prefix, such as “1, 2, 3 … “ and “bullet character, hyphens, asterisk character … “ etc.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+ 
+
+Default List Styles
+
+Word comes with default list styles for authors to choose from while authoring content. By default, there are different list styles for bulleted and numbered list. These default list styles are well supported by all the leading screen readers. Additionally, these lists are preserved when an accessible Word document is exported to PDF.
+
+ 
+
+@Tip:
+
+·         In JAWS, press “Insert +Z” to turn on Quick Keys and then press “L” or “Shift + L” to jump to the next and previous list, respectively.
+
+·         In NVDA, press “Insert +Space” to turn on Quick Keys and then press “L” or “Shift + L” to jump to the next and previous list, respectively.
+
+·         In VoiceOver, press “VO +Command +X” to find next list and “VO +Command +Shift +X” for previous list.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------- ------------------------
+  WCAG Success Criteria           WCAG Conformance Level
+  1.3.1 Info and Relationships    A
+  ------------------------------- ------------------------
+
+How to implement?
+
+To apply default list styles in a Word document, perform the following styles:
+
+1.      Open the Word document.
+
+2.      Select the content for which list styles need to be applied.
+
+3.      On the Home tab in the Paragraph group either select Bullets or Numbering for defining unordered and ordered list styles.  
+
+[Numbering library. ]
+
+[Bullet library]
+
+ 
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that sequential content is defined using numbered list style.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the default numbering list style is used.  
+
+[Default numbering list style used in the file. ]
+
+ü  Ensure that related content is defined using bulleted list style.
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, the default bulleted list style is used. 
+
+[Default bullet list style used in the file. ]
+
+û Avoid manually adding numbers to present content in a numbered list.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, a paragraph style has been used to present the content in a numbered list format.
+
+ 
+
+[Paragraph style used incorrectly to present a numbered list. ]
+
+û Avoid manually adding symbols to present content in a bulleted list.
+
+ 
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, a paragraph style has been used to present the content in a bulleted list format.
+
+ 
+
+[Paragraph style used incorrectly to present a bulleted list. ]
+
+ 
+
+ 
+
+Custom List Styles
+
+Microsoft Word also allows authors to define custom list styles in a document. Custom list styles allow authors to modify the presentation of different lists as per the requirement. Custom list styles enable authors to style the list item prefix by using fancy icons, appealing images, stylized fonts etc. Custom list styles are rendered by the leading Windows based screen readers in their default reading settings.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------- ------------------------
+  WCAG Success Criteria           WCAG Conformance Level
+  1.3.1 Info and Relationships    A
+  ------------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the steps for defining custom list styles in a Word document:
+
+1.      Open the Word document.
+
+2.      Select the content that needs to be defined using custom list styles.
+
+3.      On the Home tab in the Styles group, select “New Style”.
+
+["New Style" button highlighted in the styles panel.]
+
+4.      The “Create New Style from Formatting” dialog will appear.
+
+5.      In the Name input field, assign a name for the new style and hit OK.
+
+["Create New Style from Formatting" dialog box. ]
+
+6.      On the Home tab in the Styles group, click on the Styles Option icon.
+
+7.      Select the default list style on which the custom style needs to be based on from the Styles Based on drop-down and select “Modify”.
+
+8.      This will open the “Modify Style” dialog.
+
+9.      Click on “Format” and then select “Numbering” option from the drop down to open the “Numbering and Bullets” dialog box.
+
+10.  Alternatively, click on “Define new Bullet Format.”
+
+ 
+
+["Define New Bullet" option highlighted in the "Numbering and Bullets" dialog box. ]
+
+11.  Select the custom bullet character and click on “OK”.
+
+["Define New Bullet" dialog box.]
+
+ 
+
+@Tip:
+
+To modify the appearance of existing list style, select the style and click on Modify option to adjust the presentation.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that custom numbering list style is defined correctly to present sequential content.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, a custom numbering list style is used. 
+
+[Custom Numbering list style used in the file. ]
+
+ 
+
+ü  Ensure that custom bulleted list is defined correctly present up related content.
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, a custom bulleted list style is used. 
+
+[Custom Bullet list style used in the file. ]
+
+û Avoid manually adding custom font numbers to present content in a numbered list.
+
+ 
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, paragraph style with formatted text is used to present the numbered list content.
+
+ 
+
+[Paragraph style used incorrectly to present a custom numbered list. ]
+
+ 
+
+û Avoid manually adding custom image bulleted list to present content in a list format.
+
+ 
+
+ For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, paragraph style with Pearson logo used as bullets is used to present the list content.
+
+ 
+
+[Paragraph style used incorrectly to present a custom bulleted list. ]
+
+ 
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To check if lists are defined in a Word document, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Select the ordered, unordered or unordered lists present in the document.
+
+3.      On the Home tab in the Paragraph group, check the type of list style applied.
+
+4.      Check if the list style is applied correctly for the content in question.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+TABLES
+
+Tables are used in a Word document to present relational data. Word tables allows data like text, images, links, other tables, etc. to be arranged into rows and columns of cells.
+
+In Word, tables can be used to present relational data as well as to position content. There are two types of tables in Word, data tables and layout tables. In case of data tables, headers need to be defined and in the case of layout table reading sequence needs to be logical in order to make them accessible.
+
+Information in a table is read out for screen reader users from left-to-right and top-to-bottom order. A screen reader reads information of one cell at any given time, as users navigate from one cell to another information available in the next cell is then read out. Even though visually the information might make perfect sense when looked at it, it might not be meaningful for screen reader users.
+
+For example, a table is used to display details of students as stated below:
+
+·         Names of students are presented as column headers.
+
+·         Age, gender, address and marks obtained in subsequent rows.
+
+Screen reader users will first listen to all the student’s names, followed by their age, gender, address and lastly marks obtained by each of them. Visually all this information makes perfect sense but for screen reader users they will listen to John’s age followed by Michael’s age and so on.
+
+  ---------------- ---------------- --------------- ---------------- -------------- ---------------
+  Name             John             Michael         Sarah            Elizabeth      Austin
+  Age              12               13              13               12             12
+  Gender           Male             Male            Female           Female         Male
+  Address          19^(th) Avenue   Fulton Street   Lombard Street   Grant Avenue   Fulton Street
+  Marks Obtained   81/100           59/100          90/100           75/100         95/100
+  ---------------- ---------------- --------------- ---------------- -------------- ---------------
+
+ 
+
+In the above example, it would be perfect if all the information about a student is presented in a single cell on row 2 which will make the reading sequence/order logical for screen reader users. Alternatively, Name, Age, Gender, Address, and Marks Obtained can be provided as column headers which will provide information about a student in a single row, one after the other. This will make the information meaningful for screen reader users.
+
+  ----------- ----- -------- ---------------- ----------------
+  Name        Age   Gender   Address          Marks Obtained
+  John        12    Male     19^(th) Avenue   81/100
+  Michael     13    Male     Fulton Street    59/100
+  Sarah       13    Female   Lombard Street   90/100
+  Elizabeth   12    Female   Grant Avenue     75/100
+  Austin      12    Male     Fulton Street    95/100
+  ----------- ----- -------- ---------------- ----------------
+
+ 
+
+ 
+
+@Tip:
+
+Column headers are supported as far as Accessibility is concerned and complex data tables cannot be made accessible in Word documents.
+
+ 
+
+Note: Pearson recommends avoiding the use of layout tables because they may cause accessibility barriers.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ] 
+
+ 
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+ 
+
+1.3.2 Meaningful Sequence                                                                                      Level A
+
+When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+ 
+
+Simple Data Tables
+
+Data tables are used to present related data. A data table consists of data cells and header cells. Table headers are added to provide context for users and if this contextual relationship is not exposed programmatically, it will pose accessibility barriers for people with visual disabilities.
+
+A simple data table comprises of either single set of column headers or row headers or both column and row headers. A simple data table does not generally include merged cells but at times might include blank cells. Screen readers identify the table headers and announce them for users as they navigate through the data.
+
+@Tip:
+
+·         In JAWS, press “Insert +Z” to turn on Quick Keys and then press “T” or “Shift + T” to jump to the next and previous heading, respectively.
+
+·         In NVDA, press “Insert +Space” to turn on Quick Keys and then press “T” or “Shift + T” to jump to the next and previous heading, respectively.
+
+·         In VoiceOver, press “VO +Command +T” to find next list and “VO +Command +Shift +T” for previous list.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  WCAG Success Criteria        WCAG Conformance level
+  ---------------------------- ------------------------
+  1.3.1 Info & Relationships   A
+  1.3.2 Meaningful Sequence    A
+
+ 
+
+How to implement?
+
+To make data tables accessible in a Word document, the following things need to be kept in mind:
+
+·         Ensure “Header Row” option is selected.
+
+·         Ensure “Repeat as Header Row at the top of each page” option is selected.
+
+·         Add brief “Title” and “Description” for the table to make it easier for users with visual impairments to perceive the tabular information.
+
+To define table headers in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Navigate to the data table for which table headers need to be defined.
+
+3.      Place the cursor on the header row and right-click to select Table Properties…
+
+4.      In the Row tab, select the “Repeat as header row at the top of each page” checkbox.
+
+[Repeat as header row at the top of each page selected in the "Table Properties" dialog box.]
+
+5.      Add a brief Title and Description about the table in the Alt Text tab.
+
+[Title and Description section highlighted in the "Alt Text" tab.]
+
+6.      Click OK to apply the changes.
+
+7.      In the Table Tools Design Tab, select Header Row checkbox in the Table Style Options group.
+
+ 
+
+[Header Row checkbox highlighted in the Table Style Options. ]
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure table headers are repeated when a table breaks over multiple pages.
+
+ 
+
+For example, in the A11y guidance Content & Digital Content Word document, the table showing the “Organizational level” and “Number of Members” is split into two pages and has a table heading displayed on both pages.
+
+[Header row repeated for data table on both the pages.]
+
+û Avoid not repeating table headers when a table breaks over multiple pages.
+
+For example, in the A11y guidance Content & Digital Content Word document, the table showing the “Organizational level”, “Assuming Span of 4, Number of members at each level” and “Assuming Span of 8, Number of members at each level” is split into two pages but table headers are not displayed on both the pages.
+
+ 
+
+[Table headers not repeated on both the pages.]
+
+User Groups Affected 
+
+·         Blind users
+
+·         Low vision users
+
+·         Deaf-blind users
+
+ 
+
+How to test for Accessibility?
+
+To test tables for accessibility, perform the following steps:
+
+1.      Open the Word document.
+
+2.      On the Review tab, in the Accessibility group click on Check Accessibility button.
+
+3.      Check if errors related to table headers, merge cells as well as reading order warnings associated to tables are displayed.
+
+4.      If any errors related to tables are displayed, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+5.      If the warning related to reading order is true, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+
+ 
+
+LINKS
+
+Links are used in a Word document to help users navigate from one document section to another, and even to external websites. Screen readers identify a link based on the link’s text. Keyboard-only users can navigate from one link to another by pressing the “Tab” key, and they can activate a link by pressing the “Enter” key. Screen reader users can also navigate and activate links just like keyboard-only users. A screen reader also provides an option to access all the document’s links in the form of a list.
+
+Link text needs to be descriptive about the link’s purpose. Screen reader users with the option to access list of links in a Word document can only read the link’s text and they cannot see the surrounding text at that time. So, links when accessed out of context are not descriptive then it becomes very difficult for screen reader users to understand their purpose.
+
+Bookmark links when added in a Word document help keyboard-only users and screen reader users to navigate to different sections of the document quickly. Bookmark links should not only be present but also should be linked to an accurate destination.
+
+@Tip:
+
+·         In JAWS press “Insert +Z” to turn on Quick Keys, press Insert + F7 to access the Links List dialog box.
+
+·         In NVDA press “Insert +Space” to turn on Quick Keys, press Insert + F7 to access the Links List dialog box.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+2.4.4 Link Purpose (In Context)                                                                                 Level A
+
+The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+
+2.1.1 Keyboard                                                                                                           Level A
+
+All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user’s movement and not just the endpoints.
+
+ 
+
+Descriptive Link Text
+
+Links in a Word document are often site URLs that fail to clearly describe their destination target for screen reader users. Screen reader users access links often in the form of a list where only the text of the link is available and not the surrounding text. This is referred to as “links out of context”. Thus, it is very important to specify descriptive text for each link in a Word document.
+
+Microsoft Word provides authors with an option to add descriptive link text via the Text to Display field of the Insert Hyperlink dialog box. This will result in descriptive text being read out to screen reader users whereas the URL will be added in the link’s address.  Alternatively, authors can add URL in brackets besides the link in a Word document for users who cannot activate the link directly from the document itself. Moreover, Word also provides authors with an option to include additional information about the link via the Screen Tip option available in the Insert Hyperlink dialog box.
+
+@Tip:
+
+Define the link using the text that acts as a title of a web page or file’s title that the link points to.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  --------------------------------- ------------------------
+  WCAG Success Criteria             WCAG Conformance Level
+  2.4.4 Link Purpose (In context)   A
+  --------------------------------- ------------------------
+
+How to implement?
+
+To define descriptive link text in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Select the text that needs to be defined as a link and press Control + K to activate the “Insert Hyperlink” dialog box.
+
+3.      Add the destination URL in the Address field.
+
+4.      Add meaningful text that is indicative of the link’s purpose in the Text to Display field.
+
+[Text to display and Address field highlighted in the Edit Hyperlink dialog box]
+
+5.      Include additional description about the link by clicking on the Screen Tip button. This information will be visible when users hover over the link with a mouse.
+
+[Set Hyperlink ScreenTip box highlighted]
+
+6.      Click on OK to save the changes.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that link text is descriptive.
+ 
+
+For example, in the A11y guidance Content & Digital Content Word document, an accurate and descriptive link text of “PDF Accessibility Checker” is used to display the link.
+
+[Accurate and descriptive link text of "PDF Accessibility Checker" used.]
+
+û Avoid using non-descriptive link text.
+
+For example, in the A11y guidance Content & Digital Content Word document, an inaccurate and non-descriptive link text of “Read more” is used to display the JIRA Workflow link.
+
+[Inaccurate and non descriptive link text of "Read more" used.]
+
+ 
+
+û Avoid linking hyperlinks incorrectly.
+
+ 
+
+For example, in the A11y guidance Content & Digital Content Word document, the hyperlink address is incorrect.
+
+[Inaccurately linked hyperlink.]
+
+How to test for Accessibility?
+
+To test a Word document for descriptive link text, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Navigate to different links and check if they are descriptive.
+
+3.      Alternatively, press Insert +F7 with JAWS running to access the list of links.
+
+4.      Check if the text of links is meaningful about the link’s destination.
+
+5.      If the conditions in steps 2 and 4 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.4 at Level A.
+
+Bookmark Links
+
+Bookmark links are added in a Word document to help users quickly jump to the linked sections. They are found very useful by people with mobility impairments who rely on a keyboard in a lengthy Word document. Bookmark links should be descriptive as well as linked to accurate destination. There are two parts in creating bookmark links in a Word document, create a bookmark or heading at the destination and link it with a hyperlink. Headings are created as destination by default and in the case of text or other elements bookmark needs to be define.
+
+@Tip:
+
+A bookmark name can include letters or numbers but cannot include blank spaces. If two words need to be separated, use “_”.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  2.1.1 Keyboard          A
+  ----------------------- ------------------------
+
+How to implement?
+
+To add bookmark link in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Apply default heading style by following the steps mentioned in Headings section above. Alternatively, add a bookmark at the destination by:
+
+a.      Select the text or an item where bookmark needs to be added. Alternatively, click on the location where the bookmark needs to be added.
+
+b.      On the Insert tab in the Links group, click on Bookmarks… button.
+
+c.       Specify a meaningful name for the bookmark and click Add.
+
+3.      Once the destination is marked, select the text or object that needs to be defined as hyperlink.
+
+4.      Press Control + K to activate the Insert Hyperlink dialog box.
+
+5.      Select Word from the Link to group.
+
+6.      Click on Bookmarks… button.
+
+7.      Select the destination from the list.
+
+8.      Click on OK to add the link.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure the bookmark is link correctly.
+
+ 
+
+For example, in the A11y guidance Content & Digital Content Word document, the bookmark link is accurate and is linked appropriately with the text “Instructions for Alt Text Review during Content QA”.
+
+ 
+
+[Accurately linked Bookmark. ]
+
+û Avoid linking the bookmark incorrectly.
+
+ 
+
+For example, in the A11y guidance Content & Digital Content Word document, the bookmark link “Back to Contents” is inaccurately linked.
+
+[Inaccurately linked bookmark. ]
+
+ 
+
+How to test for Accessibility?
+
+To test if bookmark links are defined correctly, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Click on the bookmark links and check if they are linked to the correct destination.
+
+3.      If the condition in step 2 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.1.1 at Level A.
+
+ 
+
+STEM
+
+Science Technology Engineering Mathematics (STEM) content is one of the most challenging types of content as far as accessibility is concerned. At the same time, it is crucial to make it accessible to ensure learners with different types of disabilities can access the content using their Assistive Technology.
+
+STEM education is important as it teaches logic and critical thinking. STEM education is also important as it is required in different job profiles on offer in the market. However, learners with disabilities are often at a disadvantage since STEM content is not created keeping accessibility in mind. STEM content consists of equations, subscripts, and superscripts as well as mathematic formulas to a large extent. It also includes simulations, experiments, diagrams, and highly interactive content.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1]
+
+4.1.2 Name, Role, Value                                                                                            Level A
+
+For all user interface components (including but not limited to: form elements, links and components generated by script), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+
+MathType
+
+MathType is an interactive equation editor for creating mathematical expressions. MathType is an add-in feature that can be utilized in Microsoft Word, Excel, and PowerPoint. While MS Word provides some math creation tools built in, these tools are not accessible. MathType is required to make STEM content and other special symbols accessible.
+
+How to implement?
+
+1.  Download MathType from the Wiris store. A 30-day trial version is available.
+2.  Ensure the MathType tab is added to the Word ribbon.
+3.  To type a math equation within text, click on “Inline” in the MathType tab in the Insert Equations group. You should click on “Display” to insert Math in its own line (block math).
+4.  MathType window will open displaying an edit area to type the math.
+5.  Tyype the mathematical expression using numbers from your keyboard and symbols from the MathType window. You can also choose to insert any of the equations that are already on the MathType toolbar. You can speed up the typing and formatting of equations using MathType keyboard shortcuts.
+6.  To insert the newly typed math expression into Word just close the MathType window and when prompted to save changes, choose “Yes”.
+7.  You can edit an equation inserted in Word by double clicking it. The equation will open in MathType window where you will be able to make the desired changes.
+8.  Download MathPlayer from Wiris. This allows you to immediately hear how a math expression will be read without having to use a screen reader. Also, MathPlayer is needed when using NVDA.
+    Note: MathPlayer runs in either the 64-bit or 32-bit Windows Operating System, it does not support the 64-bit version of Word.
+
+ 
+
+ 
+
+@ Tip:
+
+Wiris video tutorials for using MathType with Word: Part 1, Part 2, Part 3, and Part 4.
+
+ 
+
+MathType Tips & Tricks by Wiris.
+
+ 
+
+ 
+
+Practices to Apply & Avoid
+
+ü Ensure you use MathType to insert all STEM equations and symbols.
+
+[MathType editor displaying a complex equation.]
+
+ü Choose a font that is easy to read such as Arial, Calibri, and Verdana.
+
+ü Make sure your equation font matches your document font
+
+ü Add alternative text to all MathType objects.
+
+ 
+
+û Avoid using built-in Microsoft Word tools when creating STEM content. Tools under Insert > Equations and Symbols are not accessible.
+
+[Ribbon screen shot highlighting the insert tab and symbols section.]
+
+û When using MathType, do not place spaces within the equation.  MathType takes care of the spacing automatically. To help with this, the space bar is disabled most of the time in MathType.
+
+How to test for Accessibility?
+
+To test MathType objects in a Word document, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Using a screen reader (JAWS, NVDA or VoiceOver) listen to the document making sure all MathType objects are announce correctly.
+Note: MathPlayer is needed when using NVDA.  MathPlayer runs in either the 64-bit or 32-bit Windows Operating System, it does not support the 64-bit version of Word.
+
+3.      Ensure all MathType objects contain alternative text in the Alt Text box, and it accurately describes the MathType object.
+
+4.      Visually inspect that the MathType font is consistent with the document font.
+
+5.      If any of the above conditions fails, then it is an accessibility violation as per WCAG 4.1.2 success criteria 2.1.1 at Level A.
+
+ 
+
+ 
+
+ü  
+
+TITLE, LANGUAGE AND CONTENT
+
+Title of a Word document helps users especially screen reader users understand what information will be available in the document. Often authors set the file name as its title which fails to describe the file’s contents to users. Organizations have file naming conventions that authors are required to follow and by specifying descriptive file title they can adhere to the naming conventions and at the same help users understand the file’s contents easily.
+
+Language of the Word file’s content must be defined programmatically to ensure that user agents can render the information accurately. User agents, such as assistive technologies (screen readers and braille displayers) rely on properties to identify the language of a document.
+
+Content is king and it is equally important to make it accessible to ensure that people with disabilities can access the content. Different factors play a crucial role when it comes to making content accessible. One of such factors is expansion for abbreviations and acronyms that need to be presented correctly so all users can interpret the information.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+2.4.2 Page Titled                                                                                                        Level A
+
+Web pages have titles that describe topic or purpose.
+
+3.1.1 Language of Page                                                                                              Level A
+
+The default human language of each Web page can be programmatically determined.
+
+3.1.2 Language of Parts                                                                                             Level AA
+
+The human language of each passage or phrase in the content can be programmatically determined except for proper names, words of indeterminate language, and words or phrases that have become a part of the vernacular of the immediately surrounding text.
+
+3.1.4 Abbreviations                                                                                                   Level AAA
+
+A mechanism for identifying the expanded form or meaning of abbreviations is available.
+
+ 
+
+Descriptive file title
+
+Document title is the first piece of information that a screen reader reads when a Word file is opened. Based on the title, users can understand the file’s content, as well as the file’s purpose. An appropriate document title is found very helpful by users with visual impairments who use a screen reader or screen magnifier, as it helps them understand the file’s contents. If a Word file lacks a title or includes filename as its title, it becomes difficult for screen reader users to interpret the file’s contents.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  2.4.2 Page Titled       A
+  ----------------------- ------------------------
+
+How to implement?
+
+To add title for Word document, perform the following steps:
+
+9.      Open the Word document for which title needs to be specified.
+
+10.  Select “Info” from the File tab.
+
+11.  In the Title field below the Properties group, specify unique and descriptive document title.
+
+ 
+
+@Tip:
+
+Press Insert + T to listen to the file title using JAWS and NVDA.
+
+ 
+
+@Tip:
+
+If the file title is left empty, file name will be announced for screen reader users.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using an empty or inaccurate file title.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, the file title is empty.
+
+[Word document with an empty file title.]
+
+ü  Ensure that the file title appropriately describes the file’s contents.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the file has an accurate title “MOS Online Appendix for Exploring Excel Comprehensive 2019”.
+
+[Word document with accurate file title “MOS Online Appendix for Exploring Excel Comprehensive 2019”.]
+
+How to test for Accessibility?
+
+To check if descriptive title is provided for a Word document, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Click on File>Info and check if descriptive title is specified below the Properties group in the Title field.
+
+3.      If the condition in step 2 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.2 at Level A.
+
+ 
+
+Primary Language
+
+The document’s language must be set programmatically to ensure that assistive technologies, such as screen readers and Braille displays, can render the information in the language intended by the author. Screen readers include support for different languages and provide an option to either change the language manually or configure it to switch automatically.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------ ------------------------
+  WCAG Success Criteria    WCAG Conformance Level
+  3.1.1 Language of Page   A
+  ------------------------ ------------------------
+
+ 
+
+How to implement?
+
+To define the primary language of a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      In the File tab, click on Options > Language.
+
+3.      Document authoring language can be set to match the operating system language or chosen from the list of languages available. Additionally, more languages can be added by clicking on Add a Language… button available in the Office authoring languages and proofing group.
+
+["Language" option selected in the Word Options Dialog box. ]
+
+Practices to Apply & Avoid
+
+ü  Define the primary language of the document.
+
+ 
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab word document, the file has an appropriate primary language “English (United States)” defined.
+
+[Primary language English specified correctly.]
+
+û Ensure that incorrect primary language is not defined for the file.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, the file has an incorrect primary language of “French” defined.
+
+[Primary language French specified incorrectly. ]
+
+How to test for Accessibility?
+
+To check a Word document’s language, perform the following steps:
+
+1.      Open the Word document.
+
+2.      In the File tab, click on Options > Language.
+
+3.      Check if the primary language is specified correctly in the Editing language.
+
+4.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.1.1 at Level A.
+
+ 
+
+Secondary Language
+
+If the Word document’s primary language is English and there is a paragraph in Spanish on a page, both the primary and secondary language need to be defined. If a language change is not defined, a screen reader might continue to read the Spanish paragraph in English. This will result in misinterpretation of information, so it is essential to define the document’s primary and secondary languages (if any) to ensure that content is rendered accurately.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------- ------------------------
+  WCAG Success Criteria     WCAG Conformance Level
+  3.1.2 Language of Parts   AA
+  ------------------------- ------------------------
+
+ 
+
+How to implement?
+
+Microsoft Word supports many languages and generally authors can edit in different language without much effort.
+
+To define secondary language in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      In the File tab, click on Options > Language.
+
+3.      Select an authoring language from the Editing Language list box.
+
+["Language" option selected in the Word Options Dialog box. ]
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid specifying secondary language incorrectly for parts of the content.
+
+ 
+
+For example, in the Chez Nous_5e_IPA3_CHs5-7_SE_FINAL Word Document, an incorrect secondary language “French” is defined for the content- “Indicate whether each statement is true or false, based on the audio. 
+
+ 
+
+ 
+
+[Secondary language French specified incorrectly.]
+
+ 
+
+ü  Ensure that secondary language is specified accurately.
+
+ 
+
+For example, in the Chez Nous_5e_IPA3_CHs5-7_SE_FINAL Word Document, the correct secondary language “French” is defined for the content- “Le mot asana fait référence au rhythme respiratoire.
+
+[Secondary language French specified correctly.]
+
+How to test for Accessibility?
+
+To check if secondary language for parts of content is specified correctly in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Select the content in secondary language.
+
+3.      Click on File > Options > Language.
+
+4.      Check if the language is defined correctly in the “Editing Language” list box.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.1.2 at Level AA.
+
+ 
+
+Abbreviations and Acronyms
+
+Abbreviations are shortened form of words, name, or phrase, such as W3C, WCAG etc. Acronyms on the other hand are abbreviated forms made from initial letters or other parts of a word, name or phrase which may be pronounced as a word, such as WHO, USA etc.
+
+Expanded form of abbreviations and acronyms need to be provided to ensure their meaning is clear for all users correctly. Assistive technologies such as screen readers support reading of abbreviations and acronyms if they are tagged correctly. However, by default screen readers are not configured to read expansion of abbreviated words but provide users with options to do so through screen reader settings.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  3.1.4 Abbreviations     AAA
+  ----------------------- ------------------------
+
+ 
+
+How to implement?
+
+In Word document, there are no special features available for presenting abbreviations and acronyms. The best option for presenting abbreviations and acronyms  is to add their full forms at the first occurrence of use. This will help users in interpreting the information easily throughout the document.
+
+Practices to Apply & Avoid
+
+ü  Ensure the full form of an abbreviation is specified in the first occurrence of use in the document.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 word document, the expansion for the term “VBA” is specified as “Visual Basic for Application” in the “Mark Entry Index” text box at the first occurrence.
+
+[Expansion text for the term "VBA" specified as "Visual Basic for Application".]
+
+ 
+
+û Avoid using abbreviations without specifying their expansion in a document.
+
+For example, in the A11y Guidelines Content & Digital Producers Word document, the expansion for the term “TTS” is not specified in the “Mark Entry Index” text box at the first occurrence.
+
+[Expansion text for the term "TTS" not specified.]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+·         Learning impairment
+
+ 
+
+How to test for Accessibility?
+
+To test abbreviations in a Word document, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Check if there is any abbreviated text.
+
+3.      Check if full form for abbreviations is specified at the first occurrence of its use in the document.
+
+4.      If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.1.4 at Level AAA.
+
+ 
+
+FORMATTING TEXT
+
+Microsoft Word is a rich text editor and offers loads of options for formatting text. From list of predefined styles, to font type, size, style, color to text spacing, applying borders and shading etc. authors can choose from the exhaustive set of options to present the information.
+
+Formatting text has a significant impact on accessibility as well. For example, smaller size text is difficult to read, underlining non-link text can make users with learning impairments believe that it is a link and highlighting important text gives an indication that users must read it while going through the document.
+
+Authors must keep the following points in mind while creating accessible Word documents:
+
+·         Ensure that font size is not less than 11 pt. Small size text is difficult to read by students with visual impairments.
+
+·         Avoid using italic font style for displaying textual information. Italic text is found difficult to read by those with visual and learning impairments.
+
+·         Avoid justified text as it is found difficult to perceive by students with learning impairments.
+
+·         Avoid underlining non-link text as it might make students with visual and learning impairments believe that it is a link.
+
+·         Avoid displaying text over cluttered background. Students with learning and visual impairments will find it difficult to read text displayed over cluttered background.
+
+·         Use columns for displaying columnar information and avoid using tabs for creating columns.
+
+·         Use line and Paragraph spacing options to insert blank space and blank lines and avoid adding blank lines by pressing Enter key.
+
+·         Ensure that page and section breaks are used for inserting page and section breaks and not added by pressing Enter key multiple times.
+
+ 
+
+Line and Paragraph Spacing
+
+To define line and paragraph spacing in a Word document, perform the following steps:
+
+1.      Open the word file.
+
+2.      In the paragraph section of the Home tab, select paragraph settings.
+
+3.      Within the “Paragraph” dialog box, in the “Indents and Spacing” tab, set the desired alignment, Indentation or Spacing and then click on “OK”.
+
+["Indents and Spacing" tab in the "Paragraph" dialog box. ]
+
+ü  Ensure appropriate spacing is used to separate paragraphs and that there are no additional empty paragraph marks in the document.
+
+ 
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, appropriate spacing has been used to separate paragraphs.
+
+ 
+
+[Appropriate line spacing used between paragraphs.]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Page Layout
+
+To set Page Layout for a Word document, perform the following steps:
+
+1.      Open the word file.
+
+2.      Check "Ruler" checkbox of the View tab.
+
+3.      Double click on the rulers in the document to open the “Page Setup” dialog box.
+
+4.      Within the “Page setup” box, click on the “Layout” tab to access the header and footer section to make edits in the header and footer section.
+
+["Page Setup" box with the "Headers and Footers" section. ]
+
+5.      To make changes to the margins, click on the “Margins” tab and enter custom values to set up the- left, right, top, bottom and Gutter, gutter position.
+
+ 
+
+["Page Setup" box with the "Headers and Footers" section. ]
+
+6.      Click on “OK” to save these changes.
+
+7.      In addition, in order to make changes to the indent, margins, orientation, column, size or spacing of the document, click on the “Layout” tab.
+
+[Layout tab in Microsoft Word.]
+
+ 
+
+ 
+
+Header and Footer
+
+In order to insert a header in a Word document, perform the following steps:
+
+1.      Open the Word file.
+
+2.      On the “Insert” tab click on “Header” option.
+
+[Replace “Insert section” with “Word document".]
+
+3.      From the list of headers, select the appropriate style to insert in the document.
+
+4.      To add headers on alternate pages,
+
+a.      Activate the header section by double clicking in the header section of the page.
+
+b.      Insert the appropriate header and click on the “Different Odd & Even Pages” option in the “Options” section of the “Header & Footer” tool bar.
+
+c.       This will enable the header to reflect on alternate pages.
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, the header “1 Understanding and Implementing Mindset” is reflected only on the odd Page Headers.
+
+[Different Odd and Even Page header.]
+
+5.      To add headers to different sections of the document,
+
+a.      Keeping the cursor at the end of a section, from the “Section Breaks” menu, select the “Next Page” option.
+
+["Section Breaks" box with "Next Page" option.]
+
+b.      This command will insert a section in the document.
+
+c.       Activate the header by double clicking in the header section of the page.
+
+d.      Click on “Different First Page” option in the “Options” section of the “Header & Footer” tool bar and edit the header.
+
+["Different First Page" option selected.]
+
+e.      This will enable a new header to start from after the section break.
+
+ 
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, the header “1 Understanding and Implementing Mindset” is reflected only till page 4 (till the section break). Page 5 starts with a new header “Section 2: Power of Yet”.
+
+[Different headers after section break. ]
+
+ 
+
+To insert a Footer in a Word document, perform the following steps:
+
+1.      Open the Word file.
+
+2.      On the Insert tab, click on “Footer” option.
+
+["Footer" section dropdown in the "Insert" tab. ]
+
+3.      From the list of footers, select the appropriate style to insert in the document.
+
+4.      To add footers on alternate pages,
+
+a.      Activate the footer by double clicking in the footer section of the page.
+
+b.      Insert the appropriate footer and click on the “Different Odd & Even Pages” option in the “Options” section of the “Header & Footer” tool bar.
+
+c.       This will enable the footer to reflect on alternate pages.
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, the footer “1 Footer” is reflected only in the odd Page footer section.
+
+[Different Even and Odd Page footers.]
+
+5.      To add footers to different sections of the document,
+
+a.      Keeping the cursor at the end of a section, from the “Section Breaks” menu, select the “Next Page” option.
+
+["Section Breaks" box with "Next Page" option selected.]
+
+b.      This command will insert a section in the document.
+
+c.       Activate the footer section by double clicking in the footer section of the page.
+
+d.      Insert the appropriate footer and click on the “Different First Page” option in the “Options” section of the “Header & Footer” tool bar and edit the footer.
+
+ 
+
+[Different First Page in footer option]
+
+e.      This will enable a new footer to start from after the section break.
+
+ 
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, the “Footer” is reflected only till page 2 (till the section break). Page 5 starts with a “New Footer”.
+
+[Different Footers after Section break]
+
+Section and Page Breaks
+
+To add a Section Break, perform the following steps.
+
+1.      Open the Word File.
+
+2.      Keeping the cursor at the end of a paragraph, click on the “Breaks” option in the “layout” tab.
+
+ 
+
+["Breaks" option in the Layout Tab. ]
+
+a.      Click on “Next Page” to break the section and start the next paragraph from the next page.
+
+["Next Page" option in the Section Break menu.]
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, a section break is inserted. This started the paragraph on the next page.
+
+[Section Break (Next Page) inserted in the word document. ]
+
+b.      Click on “Continuous” to break the section and start the next section on the same page.
+
+["Continuous" option in the Section Break menu.]
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, a section break is inserted. This started the new section on the same page.
+
+[Section Break (Continuous) inserted in the word document. ]
+
+c.       Click on “Even Page” to break the section and start the next section from next even numbered page.
+
+["Even Page" option in the Section Break menu highlighted.]
+
+ 
+
+For example, in the Mindset_Instructor_Guide_MyFoundationsLab Word document, a section break is inserted. This started the new section from the next even numbered page the same page.
+
+ 
+
+[Section Break (Even Page) inserted in the word document. ]
+
+d.      Click on “Odd Page” to break the section and start the next section from next odd numbered page.
+
+["Odd Page" option in the Section Break menu.]
+
+For example, in the in Mindset_Instructor_Guide_MyFoundationsLab Word document, a section break is inserted. This started the new section from next odd numbered page.
+
+[Section Break (Odd Page) inserted in the word document. ]
+
+ 
+
+To add a Page Break in a Word document, perform the following steps:
+
+1.      Open the Word File.
+
+2.      Keeping the cursor at the end of a paragraph, click on the “Breaks” option in the “layout” tab.
+
+ 
+
+["Breaks" option in the "Layout" Tab. ]
+
+a.      Click on “Next Page” to break the section and to break the paragraph and start the new paragraph from the next page.
+
+["Page" option in the Page Breaks menu.]
+
+ 
+
+ 
+
+ 
+
+Text Styling 
+
+To define text styling, perform the following steps:
+
+1.      Open the Word document.
+
+2.      On the “Home” tab, click on styles to open the “Styles” Pane. Or press Alt+Shift+Control+S.
+
+["Styles" pane in Microsoft Word.]
+
+3.      Authors can choose from the list of predefined styles or add a new style.
+
+a.      Click on the “New Style” button at the bottom of the box to reveal the “Create New Style from Formatting” box.
+
+b.      Set the Properties such as- Names, Style type, Style based on etc. and the desired Formatting settings in the “Formatting” section and Click on “OK”.
+
+["Create New style from Formatting" box.]
+
+c.       To Format the style further, click on the “Format” button drop down to format various options such as-
+
+o   Font
+
+o   Paragraph
+
+o   Tabs, Border
+
+o   Language
+
+o   Frame
+
+o   Numbering
+
+o   Shortcut key
+
+o   Text Effects
+
+["Format" button with multiple formatting options.]
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, A new Text style of “H3” is added.
+
+[New text style added in the word document. ]
+
+4.      Update -a style:
+
+a.      Select the text style which needs to be updated.
+
+b.      Edit the style by making changes to the Font, color, size etc.
+
+c.       In the “Styles” pane, click on the dropdown next to the respective text style and click on “Update Heading to Match Selection” option.
+
+["Update Heading 1 to Match Selection" option. ]
+
+d.      All text with the same style will now be updated.
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, all heading text with “Heading 1” text style is updated to match the new heading style.
+
+[Updated "Heading 1" style.]
+
+5.      Modify a style:
+
+a.      To modify a style, click on the drop down next to the style and click on “Modify”.
+
+ 
+
+["Modify" option highlighted in the Styles dropdown. ]
+
+b.      Modify the formatting styles and then click on “OK”.
+
+["Modify" Style box with the formatting section.]
+
+c.       The Style will now be modified and all text with the same will get updated.
+
+ 
+
+For example, in the exp2019_MOS_Online_Appendix_Excel_Comprehensive_P18 Word document, all text with the “Normal” style is updated to match the modified style.
+
+ 
+
+["Normal" text style modified. ]
+
+ 
+
+ 
+
+WORD ACCESSIBILITY CHECKER
+
+We have thus far learnt different techniques for styling page elements for making Word documents accessible. Once the document is made accessible, it needs to be evaluated for accessibility. A Word document can be evaluated for accessibility with manual and automated testing. To evaluate accessibility of a Word document using an automated tool, there is an in-built Accessibility Checker in Microsoft Word.
+
+ 
+
+Accessibility Checker 
+
+To check a word document for accessibility, perform the following steps:
+
+1.      Open the Word document that needs to be tested.
+
+2.      Click on the File tab. [File tab in Microsoft Word.]
+
+ 
+
+3.      Click on the Info option from the list.
+
+[Info option selected in the File tab.]
+
+4.      Click on Check for Issues > Check Accessibility.
+
+[Check Accessibility option selected. ]
+
+ 
+
+Alternatively,
+
+1.  Open the document that needs to be checked for accessibility.
+2.  Click on the “Review” tab.
+3.  Click on the “Check Accessibility” button in the Accessibility group.
+
+[Check Accessibility Option in the Review tab. ]
+
+ 
+
+ 
+
+Errors and Warnings
+
+1.      Once the checker finishes the inspection, results are displayed in the task pane on the right side of the document.
+
+The Checker’s Inspection Results contains accessibility issues which can be classified into three categories:
+
+-   Errors: These need to be fixed for sure to make sure that the document is accessible for users with disabilities.
+-   Warnings: These needs manual verification in order to understand if they constitute as a potential error or is something that can be left in the document based on the manual verification results.
+-   Tips: These are included to provide pointers for authors and thereby help them in creating accessible Word documents as well as enhance the user experience for people with disabilities.
+
+For example, in the A11y Guidelines Content & Digital Producers Word document, there are multiple accessibility errors and warnings such as:
+
+a.      Errors
+
+·         Missing Alternative text (75)
+
+·         No header row (18)
+
+·         Image or object not inline (3)
+
+b.      Warnings
+
+·         Merged or split cells in table (4)
+
+·         Hard-to-read text contrast (10)
+
+[Accessibility Checker Inspection Results with multiple errors and warnings. ]
+
+2.      Along with the Inspection Results, Additional Information is also displayed. After clicking on any or the errors or warnings, the following information is displayed.
+
+It includes information about:
+
+·         Why Fix: It explains why it is an accessibility issue.
+
+·         How to Fix: It includes information on how to fix the identified issue.
+
+For example, in the A11y Guidelines Content & Digital Producers Word document, once the errors are rectified a message saying “No accessibility issues found. People with disabilities should not have difficulty reading this document” is displayed.
+
+ 
+
+[Accessibility Checker Inspection Results with no accessibility issues. ]
+
+Here is the list of errors and warnings one may come across while testing a word document using accessibility checker.
+
+ 
+
+  ------------ ------------------------------------------------- -------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------- ---------------
+               Elements                                          Rule                                                                             What does the Checker verify?                                                                                                                   Error/Warning
+               Image, Shape, Picture, Chart, Smart Art Graphic   All non-text content has alternative text (alt text).                            Alternate text is specified for all objects used in the document. It also looks if the alternate text includes file extensions or word image.   Error
+  Tables                                                         Tables specify column header information.                                        Headers are defined for tables. Basically, it looks for if header row is defined.                                                               Error
+  Headings                                                       Documents use heading styles                                                     Headings and sub-headings are used to organize the content of a document.                                                                       Error
+  Links                                                          Hyperlink text is meaningful.                                                    Descriptive text is used for displaying hyperlinks. It also verifies if the link text accurately describes the destination it points to.        Warning
+  Tables                                                         Table has a simple structure.                                                    Tables do not include split cells, merge cells or nested tables. Basically, it verifies that the table structure is simple.                     Warning
+  Tables                                                         Tables do not use blank cells for formatting.                                    Tables do not include a blank cell that is used solely for formatting purpose. It verifies if any table comprises of blank rows or columns.     Warning
+  Characters                                                     Avoid the use of repeated blank characters.                                      Document does not include blank spaces, tabs, or carriage returns used for formatting purpose.                                                  Warning
+  Color                                                          Avoid the use of text color that does not stand out from the background color.   Sufficient contrast exists between foreground text and its background.                                                                          Warning
+                                                                                                                                                                                                                                                                                                  
+  ------------ ------------------------------------------------- -------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------- ---------------
+
+ 
+
+ 
+
+EXPORT TO PDF
+
+To convert an accessible Word document to PDF, either export it to PDF or save it as PDF.  While choosing any of the options to convert a Word document to PDF, make sure accessibility is not compromised. Ensure all the techniques discussed in this document are implemented to create an accessible Word document before converting it to PDF.
+
+ 
+
+Save as PDF
+
+To Save a Word document to a PDF format, perform the following steps:
+
+1.      Open the Accessible Word document.
+
+2.      Click on File tab.
+
+["File" option in the word file.]
+
+3.      Click on “Save a Copy” option.
+
+[Save a Copy in file tab]
+
+4.      Select the PDF option from the Save As Type drop down.
+
+[.pdf format selected from a list of Save As Type]
+
+5.      Click on the “More Options” link.
+
+["More Options" link.]
+
+6.      Click on the “Options…” button and select the following:
+
+a.      Create bookmarks using checkbox.
+
+b.      Select Headings radio button.
+
+c.       Document properties checkbox
+
+d.      Document structure tags for accessibility
+
+["Options" dialog box.]
+
+7.      Click on “OK” to apply the changes.
+
+8.      Click on the “Save” button to convert the Word file to a PDF.
+
+Export to PDF
+
+To convert an accessible Word document to PDF, perform the following steps:
+
+1.      Open the Word document.
+
+2.      Click on the File tab.
+
+3.      Click on the “Export” option from the list.
+
+4.      Click on “Create Adobe PDF”.
+
+5.      Alternatively, from the Acrobat tab, click on “Create PDF”.
+
+["Create PDF" option in the Acrobat tab.]
+
+6.      Click on “Options” button in the Save Adobe PDF File dialog box.
+
+[Options button in the Save Adobe PDF File.]
+
+7.      Ensure to make sure the Options “Convert document information”, “Enable Accessibility and Reflow with tagged Adobe PDF”, “Create Bookmarks”, “Convert Word Headings to Bookmarks” and “Convert Comments” are selected in the Acrobat PDFMaker dialog box.
+
+[Acrobat PDFMaker with PDF options selected.]
+
+8.      Click on OK button to apply the changes.
+
+9.      Click on “Save” to convert the Word file to a pdf document.
+
+ 
+
+APPENDIX
+
+This section lists down links to different resources that offer useful guidance for authoring accessible Microsoft Word documents:
+
+ 
+
+  ------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------
+  Accessibility Resource                     Where it can be found?
+  Web Content Accessibility Guidelines 2.1   https://www.w3.org/TR/WCAG21/
+  Pearson Accessibility Guidelines           https://www.pearson.com/accessibility-guidelines.html
+  Color Contrast Analyser                    http://www.paciellogroup.com/resources/contrast-analyser.html
+  Making Word documents accessible           https://support.microsoft.com/en-us/office/make-your-word-documents-accessible-to-people-with-disabilities-d9bf3683-87ac-47ea-b91a-78dcacb3c66d
+  Accessibility Checker                      https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f
+  Accessibility Checker Rules                https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1
+  ------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+ 
+
+ 

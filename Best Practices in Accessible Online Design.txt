@@ -1,0 +1,1681 @@
+﻿Best Practices in Accessible Online Design
+Heather Caprette
+
+
+Best Practices in Accessible Online Design
+
+Heather Caprette
+
+[]
+
+[Best Practices in Accessible Online Design]
+
+Best Practices in Accessible Online Design
+
+Heather Caprette
+
+[Icon for the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]
+
+Best Practices in Accessible Online Design by Heather Caprette, MFA is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, except where otherwise noted.
+
+Contents
+
+-   Introduction Heather Caprette
+-   Part I. Understanding Accessibility
+-    1. Understanding Accessibility Heather Caprette
+-    2. What is Disability Heather Caprette
+-    3. Person First Language
+-    4. Why Should We Design for Accessibility
+-    5. The Laws Supporting Accessibility Heather Caprette
+-    6. A Shift Toward Broader Standards and Functionality Supporting Accessible Online Content Heather Caprette
+-    7. The Previous (year 2000) Section 508 Standards Heather Caprette
+-    8. Web Content Accessibility Guidelines (WCAG 2.0) Heather Caprette
+-    9. Screen Reader Software for Accessing Online Content Heather Caprette
+-    10. Voice Recognition Software for Accessing Online Content Heather Caprette
+-    11. Screen Magnification Software for Accessing Online Content Heather Caprette and Jeff Dell
+-    12. Hardware and Hardware-Software Assistive Devices Heather Caprette
+-   Part II. Creating Accessible Word Documents
+-    13. Creating Accessible Word Documents - Setting Language and Title Heather Caprette
+-    14. Creating Accessible Word Documents - Color Contrast for Accessibility Heather Caprette
+-    15. Avoiding the Use of Color Alone to Convey Meaning and Algorithms That Help Heather Caprette
+-    16. Formatting Font for Readability Heather Caprette
+-    17. Using Word Styles Heather Caprette
+-    18. Styles for Strong and Emphasis - Avoid "B" and "I" buttons in Word Heather Caprette
+-    19. Alternative Text for Images - Descriptions in Word Heather Caprette
+-    20. Descriptive Links and Tool Tips in Word Heather Caprette
+-    21. Designating a header row in Word Heather Caprette
+-    22. Avoid Combining Tables and Merging Cells Heather Caprette
+-    23. Avoid Floating Objects on the Drawing Layer Heather Caprette
+-    24. An Alternative Custom Callout Style to Avoid Using Floating Text Boxes Heather Caprette
+-    25. Word's Built-in Accessibility Checker Heather Caprette
+-    26. Possible Assignment to Test Formatting a Word Document for Accessibility
+-   Part III. Blackboard Learn Accessibility
+-    27. Blackboard's Content Editor Heather Caprette
+-    28. Formatting Font for Readability and Accessibility in Blackboard Learn Heather Caprette
+-    29. Alternative Text for Images Heather Caprette
+-    30. Creating Alt Text for Informational Images Heather Caprette
+-    31. Creating Alt Text and a Long Description for Complex Informational Graphics Heather Caprette
+-    32. Creating an Empty or Null Alt Attribute for Decorative Images Heather Caprette
+-    33. Creating Alt Text for Functional Images Heather Caprette
+-    34. Setting up Descriptive Links and the Title Attribute in Blackboard Learn Heather Caprette
+-    35. How to Setup a Simple Accessible Table in Blackboard Learn Heather Caprette
+-    36. Building a Fluid Container for Content in Blackboard
+-    37. Creating a Fluid Textwrap Around an Image Heather Caprette
+-    38. Tutorials on assignment and assessment settings for accommodation in Blackboard
+-   Part IV. Checking PDF Accessibility - Scanned Content and Publisher PDFs
+-    39. Download the Free Adobe Reader Application Heather Caprette
+-    40. The Difference Between an Accessible PDF and a Scanned Image of Text Heather Caprette
+-    41. The BookEye Scanner in Electronic Course Reserves at CSU Heather Caprette
+-    42. Free OCR When You Can't Afford Other Software or Hardware
+-   Part V. Checking Websites for Accessibility
+-    43. WAVE Web Accessibility Evaluation Tool Heather Caprette
+-    44. aXe Accessibility Audit Tool Heather Caprette
+-    45. Other Techniques for Checking Accessibility Heather Caprette
+-   Part VI. Captioning and Transcribing Audio/Video
+-    46. How to Take Advantage of Youtube's Auto-generated Captions
+-   Creating Accessible PowerPoint Presentations
+
+1
+
+Introduction
+
+Heather Caprette
+
+Accessibility is frequently the last thing course and website developers want to think about when creating an online content. There is extra time involved up front, but it can help prevent problems down the line. I think most of us in higher education care about all students and want to help them to our best ability. There are also laws protecting the rights of individuals with disabilities to have access to programs and services that institutions of higher education offer. Section 504 of The Rehabilitation Act of 1973 says that public institutions receiving federal funds, this includes student financial aid, need to ensure that people with disabilities can participate in programs & activities and have the same benefits that people without disabilities have. It requires academic adjustments and accommodation to ensure full participation. Section 508 is an amendment that requires electronic information and technology, such as websites and online courses be accessible. The American with Disabilities Act of 1990 expands the Rehabilitation Act of 1973 to private as well as public institutions of higher education. The newest is The 21st Century Communications and Video Accessibility Act of 2010. It requires modern communications to be accessible to people with disabilities. This includes VOIP services, electronic messaging, video conferencing, video communications and mobile browsers.
+
+One only needs to search Google to find names of institutions of higher education that have been sued for not having accessible online content and services. When we design accessibly from the start, we can attract a wider audience to our product or service, and protect our institutions from losing time and money in a future lawsuit.
+
+I’m writing this book to help faculty and online site developers learn about best practices for designing and developing online content. Some of the instructions for document accessibility are based off of Office 2016, rather than Office 365 in browser apps. The menus should be similar.
+This book is currently under development. So, please check regularly to see updates.
+
+Thank you for your interest in making your content accessible and for caring about others!
+
+I
+
+Understanding Accessibility
+
+This section of the book will explain what accessibility and universal design are. It will give reasons why accessibility is important, and the laws and standards supporting accessibility. It will give a definition of disability and explain the ways in which people with different abilities navigate an online environment, and the barriers they encounter.
+
+Learning Objectives
+
+By the end of this module, you will be able to:
+
+1.  recognize what accessibility is
+2.  explain why it is important
+3.  recognize the laws and standards supporting accessibility
+4.  identify ways in which people with different abilities navigate an online environment and the barriers they encounter
+5.  recognize guidelines and standards for designing accessibly
+
+ 
+
+1
+
+Understanding Accessibility
+
+Heather Caprette
+
+Accessibility is the degree to which a product, service or environment is available to all users, including those with disabilities or special needs. It’s about our ability to participate in and belong to the world around us. The Office of Civil Rights, in a resolution agreement with South Carolina Technical College, said, “Accessible means a person with a disability is afforded the opportunity to acquire the same information, engage in the same interactions, and enjoy the same services as a person without a disability in an equally effective and equally integrated manner, with substantially equivalent ease of use.”
+
+A similar concept is Universal Design. Universal Design is the proactive design of products and environments to be usable by all people, to the greatest extent, without the need for adaptation or specialized design. A curb cut is an example of something that is universally designed. It helps people in wheel chairs and using walkers navigate their environment, but it also benefits people pushing strollers and carts, pulling luggage, people on bicycles, and people on roller skates.
+
+[woman pulling luggage on wheels up a curb cut]
+
+Curb cuts are an example of universal design. They benefit everyone, not just people who use wheelchairs.
+
+While it may not be possible to make everything accessible to all people due to variation in user needs and abilities, we can follow standards to make our online content accessible to the broadest range of people. These standards are referred to as the Web Content Accessibility Guidelines.
+
+2
+
+What is Disability
+
+Heather Caprette
+
+According to U.S. Code Title 42, Chapter  126, § 12102, a disability is a physical or mental impairment that substantially limits one or more major life activities of an individual. Major life activities include, but are not limited to, caring for oneself, performing manual tasks, seeing, hearing, eating, sleeping, walking, standing, lifting, bending, speaking, breathing, learning, reading, concentrating, thinking, communicating, and working.
+
+A major life activity also includes the operation of a major bodily function, including but not limited to, functions of the immune system, normal cell growth, digestive, bowel, bladder, neurological, brain, respiratory, circulatory, endocrine, and reproductive functions.
+
+In reality, we are all aging into disability.
+
+Visual disabilities include blindness, low vision, tunnel vision, and central field loss in which there is loss of vision in the central portion of the eye. Auditory disabilities include deafness, hearing impairment and speech disabilities. Diseases such as Parkinson’s and arthritis can affect mobility, use of hands, eyes, coordination and fine motor control. Cognitive disabilities are highly variable and can include learning disability, dyslexia, and conditions that affect memory and attention.
+
+Sometimes when people think of a person with a disability, they think of a condition that has existed since birth. Not all disabilities are present at birth and not all are permanent. A person may lose the use of his or her dominant arm or hand for a few months due to a fractured or broken bone, for example. A disability can happen to anyone of us and anytime.
+
+Online we will be concerned with the accessibility of our documents, such as Word, PDF and Power Point files, the code behind what we present, the websites we ask our users to interact with, and the activities we ask them to perform.
+
+3
+
+Person First Language
+
+When I was in Physical Therapy school at OSU, I had an instructor tell us that we have to be careful not to refer to the patient by their condition. That is, you wouldn’t want to say, “I have my hip replacement coming at 1 o’clock.” Instead you might tell your supervisor or fellow physical therapist, “I have Mrs. M coming at 1 o’clock for her hip replacement therapy.” Likewise, when we have a student with a disability, such as blindness, we would refer to him or her as a person who is blind. For example, if I were to approach our Office of Disability Services, I would say, “I need help with making accommodations for a student in my course who is blind,” instead of “I need help with making accommodations for a blind student in my course.”
+
+The Center for Disease Control has a helpful chart of people first language and language to avoid. They’ve put this language in a poster called Communicating With and About People With Disabilities (visit: https://www.cdc.gov/ncbddd/disabilityandhealth/pdf/disabilityposter_photos.pdf)
+
+An interactive or media element has been excluded from this version of the text. You can view it online here:
+https://pressbooks.ulib.csuohio.edu/accessibility/?p=635
+
+4
+
+Why Should We Design for Accessibility
+
+Please view the video titled “Keeping Web Accessibility In Mind”
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=390
+
+Transcript for Keeping Web Accessibility In Mind.
+
+As teachers and members of an academic institution, don’t we want everyone to have the opportunity to learn, share, be creative and succeed in life? Aren’t we here to enrich people’s lives and provide information to everyone? Imagine if we can open doors to information, not shut them to a certain segment of the population. We want to enable independence for people with disabilities.
+
+To quote David Berman, a web accessibility expert, “what if we had denied an education to these people?”
+
+[Ron Mace]
+Ron Mace is known as the father of universal design. He became an architect and worked on the first U.S. building codes to incorporate principles of accessible design, in North Carolina in 1973. In college, he was carried into buildings that had no wheelchair ramps.
+
+[Physicist Stephen Hawking floating in zero gravity, supported by three NASA astronauts]Stephen Hawking is a famous mathematician and physicist, teaching at Cambridge University. He wrote “A Short History of the Universe” and served as the prestigious Lucasian Professor of Mathematics at Cambridge.
+
+[Helen Keller reading a book and smelling roses]
+Helen Keller was the first blind and deaf person to receive a Bachelor of Arts degree. She became a lecturer, writer, and political activist.
+
+If you’ve ever experienced being excluded from an activity you wanted to participate in, you’ll understand, that designing inclusive experiences is the right thing to do.
+
+It’s smart for business, helping users find our information and broadening our customer base.
+
+Moreover, it’s the law.
+
+For another perspective on designing for accessibility, view David Berman’s video titled “Why Should We Care.”
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=390
+
+5
+
+The Laws Supporting Accessibility
+
+Heather Caprette
+
+There are four existing laws you should be aware of when designing online content at an institution of higher education.
+
+1.  Section 504 of the Rehabilitation Act of 1973, says that colleges or universities that receive federal funds need to ensure that people with disabilities can participate in programs & activities and have the same benefits that people without disabilities have. Subpart E requires an institution to be prepared to make reasonable academic adjustments and accommodations to allow students with disabilities full participation in the same programs and activities available to students without disabilities.
+2.  Section 508 of the Rehabilitation Act of 1973 is an amendment that deals with electronic information and technology. If you are a state that receives federal funds under the Technology Related Assistance for Individuals with Disabilities Act of 1988, you need to ensure that people with disabilities have access to and can use information and services available to non-disabled members of the public. This includes information stored on web sites and in online courses. Ohio receives funds from the Technology Related Assistance for Individuals with Disabilities Act of 1988. With a recent rewriting of Section 508, on January 18, 2017, the rule now refers to Electronic and Information Technology (EIT) as Information and Communication Technology (ICT).
+3.  The American with Disabilities Act of 1990 expands the reach of the Rehabilitation Act of 1973 to private as well as public institutions of higher education. It requires schools to provide access to the same programs that non-disabled people participate in, in an integrated setting where possible. It requires auxiliary aids and services when necessary to ensure effective communication.
+4.  The 21st Century Communications and Video Accessibility Act of 2010 requires modern communications to be accessible to people with disabilities. This means VOIP services, electronic messaging, video conferencing, video communications & mobile browsers.
+
+For those who are curious, the following sites have lists of higher education accessibility lawsuits, complaints and settlements:
+
+1.  University of Minnesota Duluth’s list of lawsuits
+2.  University of Washington’s page  of resolution agreements and lawsuits
+
+6
+
+A Shift Toward Broader Standards and Functionality Supporting Accessible Online Content
+
+Heather Caprette
+
+Legislation regarding accessibility at higher educational institutions recently changed. In the United States, we follow Section 508 guidelines for designing websites and online content. The U.S. Access Board writes Section 508 rules for organizations receiving federal funds to follow, as part of the 1998 Amendment to the Rehabilitation Act. They are enforced by the Dept. of Education’s Office of Civil Rights and the Department of Justice.
+
+Section 508 rules were previously published on December 21, 2000, and implemented in the summer of 2001. However, Section 508 recently underwent a refresh, and the new standards were written into the Federal Registrar on January 18, 2017. The new standards align with the Web Content Accessibility Guidelines 2.0 (WCAG 2.0) Level AA. At the time of writing, WCAG went through an update to version 2.1 on June 5th, 2018. We’ll have to keep checking to see when Section 508 points to the newer standards. The Web Content Accessibility Guidelines are written by the Web Accessibility Initiative (WAI) at the World Wide Web Consortium. This is an international group and these are international standards that have been adopted by designers in other countries, such as in Europe and Canada, already. There are three levels to each WCAG 2.0 guideline – Level A is what you must do, level AA is what you should do, and level AAA produces the best accessibility for the most people. The WCAG 2.0 guidelines are broader in scope than the previous Section 508 standards. The new focus will be on functionality rather than device or technology specific standards. Technology has changed a great deal since Section 508 standards were last written in 2000. People are no longer relying on desktops primarily to access information. They are using smart phones and other mobile devices with voice text and video communications. By harmonizing U.S. standards with what other countries are following, we will create a larger market for our information and communication technology. Along with the Section 508 rules rewrite, section 255 of the Communications Act of 1934 is also being updated. Section 255 applies to the manufacturers and authors of our communication and information technology devices and software. The information and communication technology the new standards refer to are: VOIP products, computers, software, office machines, information kiosks, transaction machines, websites, and electronic documents.
+
+The image below shows the degree of accessibility each level of WCAG 2.0 covers compared to the previous Section 508 standards, which most closely resembles WCAG 2.0 Level A.
+
+[Three rectangles superimposed over one another. The smallest has "A - Most closely resembles Section 508," the second largest has "AA," and the largest rectangle has "AAA."]
+
+Another change to Section 508 is delineation of covered “content.” All public facing content as well as eight categories of non-public facing content will have to be accessible.
+
+7
+
+The Previous (year 2000) Section 508 Standards
+
+Heather Caprette
+
+Why look at the older, previous set of standards? Some businesses or vendors may not have paid for an updated Voluntary Product Accessibility Template yet. So, you may see some reference to the older standards until they have the accessibility of the product evaluated again. It’s also interesting to see similarities between the old Section 508 EIT standards and the WCAG 2.0 Level AA standards.
+
+A complete list of Section 508 standards for Electronic and Information Technology can be found on the United States Access Board website. Information about accessibility features of the technology we use at Cleveland State University for our online courses can be found within our course template under the Syllabus & Course Information folder, within a subfolder called Accessibility Resources.
+
+Below is a list of the previous 2000 Section 508 standards pertaining to web-based intranet and internet information and applications.
+
+1.  (a) A text equivalent for every non-text element shall be provided (e.g., via “alt”, “longdesc”, or in element content).
+2.  (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.
+3.  (c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup.
+4.  (d) Documents shall be organized so they are readable without requiring an associated style sheet.
+5.  (e) Redundant text links shall be provided for each active region of a server-side image map.
+6.  (f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available geometric shape.
+7.  (g) Row and column headers shall be identified for data tables.
+8.  (h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers.
+9.  (i) Frames shall be titled with text that facilitates frame identification and navigation.
+10. (j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+11. (k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes.
+12. (l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by assistive technology.
+13. (m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with §1194.21(a) through (l).
+14. (n) When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+15. (o) A method shall be provided that permits users to skip repetitive navigation links.
+16. (p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+8
+
+Web Content Accessibility Guidelines (WCAG 2.0)
+
+Heather Caprette
+
+The Web Content Accessibility Guidelines 2.0 are published on the World Wide Web consortium’s website. There are four principles to the guidelines. You can use the acronym POUR to remember it.
+
+Perceivable: The first is that the content must be Perceivable to the end user. It can’t be invisible to all of their senses.
+
+Operable: The second is that the user interface and navigation must be Operable. The interface can’t require interaction that a user can’t perform.
+
+Understandable: The third is that the interface and information must be Understandable.
+
+Robust: The fourth is that the content must be Robust in that it can be interpreted by assistive technology existing today as well as that coming in the future.
+
+WCAG 2.0 includes three levels of conformance represented by “A,” “AA,” and “AAA” with “AAA” being the best accessibility. It’s made up of 12 guidelines. Each guideline has checkpoints you can use to evaluate the accessibility of your online content.
+
+The WCAG 2.0 Guidelines are listed below with links to their details.
+
+-    1 Perceivable
+    -   1.1 Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+    -   1.2 Provide alternatives for time-based media.
+    -   1.3 Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+    -   1.4 Make it easier for users to see and hear content including separating foreground from background.
+-    2 Operable
+    -   2.1 Make all functionality available from a keyboard.
+    -   2.2 Provide users enough time to read and use content.
+    -   2.3 Do not design content in a way that is known to cause seizures.
+    -   2.4 Provide ways to help users navigate, find content, and determine where they are.
+-    3 Understandable
+    -   3.1 Make text content readable and understandable.
+    -   3.2 Make Web pages appear and operate in predictable ways.
+    -   3.3 Help users avoid and correct mistakes.
+-    4 Robust
+    -   4.1 Maximize compatibility with current and future user agents, including assistive technologies.
+
+You’ll notice similarities between the WCAG 2.0 guidelines and the 2000 Section 508 standards. Guideline 1.1 says, “Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language” is similar to the previous Section 508 standard (a) A text equivalent for every non-text element shall be provided (e.g., via “alt”, “longdesc”, or in element content).
+
+9
+
+Screen Reader Software for Accessing Online Content
+
+Heather Caprette
+
+Screen reader software reads online content to the end user. The primary users are people who are blind and those with low vision. It’s also used by people with other disabilities and multiple disabilities to a lesser extent. Some users have reading difficulties which may be due to being a non-native speaker, or dyslexia, for example. There are also used by people who are deaf and blind to convert text into Braille characters on refreshable Braille devices. The photograph below shows a refreshable Braille device being used.
+
+[Hands on a refreshable braille display in front of a standard keyboard.]
+
+Refreshable Braille device being used. Photo from Flickr by Visualpun.ch.
+
+There are a number of freely available screen readers, such as Voiceover built into Mac operating systems, Window-Eyes built into Windows OS, NVDA for Windows, and a 40 minute, limited version of JAWS. JAWS has been around a long time and is still predominantly used today, but is quickly being displaced by ZoomText, Window-Eyes and NVDA (See the WebAIM survey on screen reader usage). Designers and developers use screen readers as a readily accessible way to test their content, though the best tests are with people who rely on this technology on a regular basis. You can download JAWS for Windows at http://www.freedomscientific.com/downloads/jaws.  NVDA doesn’t have a 40 minute time limit per use, which is fantastic!  You can download NVDA at http://www.nvaccess.org/download/.
+
+People use screen reader software to read content in PDFs, Word files, email applications, and web pages, for example. Screen readers not only read the text on the page, they announce important elements to the user to describe what is on the page, such as the number of headings on the page, number of links, and number of form fields. A screen reader user can have the software say everything from the top left of the page, or they can use keyboard navigation to jump to certain elements. They can use the tab key to move between links and form fields on a page, and use the up and down arrow keys to move between lines of text or to the next item. There are also custom keys to jump to specific types of content the user is interested in. In JAWS, the “H” key will move between headings. The “F” key will move from form to form. “T” will move to the next table, “B” to the next button. There are also keyboard combinations that can help bring up lists of important elements on a web page, in order to help users navigate faster. In JAWS, pressing the Insert key followed by F6 will bring up a list of headings on the page with heading level, Insert + F7 will bring up a list of links on a page, Insert + F9 will bring up a list of form elements.
+
+Screen reader users can run into barriers when content isn’t marked up properly. This markup tells the user what an object on the screen is and what it does. A big one is missing alternative text. Alt text is used to convey the purpose or information contained in or by an image. If an image is used as a link or a button, alt text will tell a blind person where the link will lead to, or in the case of a button, what will happen if it is activated. When headings are coded as headings on a web page, or styled as headings in Word, these provide landmarks to help a screen reader user navigate to what they would like to hear faster.
+
+10
+
+Voice Recognition Software for Accessing Online Content
+
+Heather Caprette
+
+Voice recognition software is used primarily for hands-free operation of a computer by people with mobility impairments. It’s used for dictation to write text in place of typing. It’s also used for commanding the computer to perform tasks that would be done with a mouse or keyboard. These tasks include opening and closing applications, switching from one application to another, using the menus and options available within an application, clicking on buttons, links and other interactive elements on a web page, drag and drop, as well as other tasks. Dragon Naturally Speaking is the most popular voice recognition software, but there are others. Windows operating system has a built in tool called Speech Recognition. Mac OS X has its Enhanced Dictation tool and iOS devices have Siri.
+
+Command mode works on the premise of see it and say it. A voice recognition user gives commands to their computer based on what they see on the screen. Later, we’ll talk about alternative text that can be placed on images or buttons. Alternative text is typically used by screen readers to help  people who are blind know what information is being conveyed by an image, but it’s also used by people using voice recognition software. Alternative text or “alt text” that is placed on a button, for example, should match text that is on a button, so that the command the user will give will match.
+
+Dragon Naturally Speaking has features that will help with command and control when elements on a web page aren’t coded as links or buttons, or elements don’t have the proper alternative text attribute set on them. One is the “mouse grid” tool which provides a series of numbered grids on the page that progressively shrink and re-center themselves over the previously spoken number’s area. Another is telling the mouse to move up, down, left and right. There’s a demonstration of mouse grid and voice commands to move the mouse at https://www.youtube.com/watch?v=iOSObinq7a4.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=428
+
+In the previous example, we saw how painfully slow it can be for voice recognition software users to navigate an improperly coded website. The technology, though, can allow for greater efficiency in navigating when alt text is set, for example. Compare by watching the next movie on following links in web pages with Dragon.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=428
+
+Today, Nuance, the maker of Dragon Naturally Speaking refers to their software packages by other names. These include Dragon Professional Individual, Dragon Anywhere, Dragon Legal Individual, and Dragon Law Enforcement to name a few.
+
+11
+
+Screen Magnification Software for Accessing Online Content
+
+Heather Caprette and Jeff Dell
+
+People with low vision include those with part of their field of view blocked, or blurred. Glaucoma causes tunnel vision, reducing the field of view around the outer edges. Macular degeneration causes blockage of vision in the central part of the eye. Cataracts will cause blurred vision. People with low vision frequently use magnification programs to view the computer screen. Operating systems have built-in magnifiers and there are third party ones that are more feature rich. Screen magnifiers built into operating systems are Windows Magnifier on the Windows platform and Zoom on MacOS and iOS.  More feature rich magnification programs are ZoomText and MAGic. Screen magnifiers typically provide features like variable magnification, color contrast adjustment, text to speech, and tools for helping with cursor tracking and focus.
+
+Some users will magnify what they see in a browser by pressing the CTRL key followed by the + key on their keyboard. They zoom back out by pressing CTRL – . Users can also increase the font size within their browser settings to be greater than the default 16 pixels.
+
+Seeing a small portion of the screen at once can cause problems with orientation and navigation. Split screen modes are possible in which one side presents the enlarged version of the content and the other side presents the non-magnified view of the page, but this uses up screen real estate. Other screen magnifiers will use a picture in picture mode. This presents as an enlarged outlined area over the top of the page wherever the mouse is pointing on the page. It’s best to avoid using multi-column layouts in order to help users with low vision view your content.
+
+Views Using Screen Magnifiers
+
+Using MAGic at 2 Times Magnification:
+
+[MAGic enlarging a Word document at 2 times magnification]
+
+Using MAGic at 5 Times Magnification with Inverted Contrast:
+
+[MAGic enlarging the screen 5 times and displaying white text against a black background.]
+
+Using MAGic at 8 Times Magnification:
+
+[MAGic displaying the upper right corner of Word at 8 times magnification.]
+
+Difficulties with using Screen Magnifiers
+
+When a student uses a screen magnifier they might have trouble with scanning the screen to find specific content they are looking for. This might make performing certain tasks take more time than they would for other students. If images that the student is viewing were produced with a low resolution (usually below 300dpi), the greater the magnification the more difficult it will be to read the content in the image. If color is used for conveying information, an inverted contrast or color filtering might make it impossible to identify the color that the student needs to see. Students using this technology commonly have difficulties perceiving color as well.
+
+Font Style, Color, and Size Adjustment
+
+Unfiltered:
+
+[An unfiltered display of a web page with a screen magnifier. It shows gray color to the background of the web page.]
+
+Image of High Contrast White:
+
+[A screen magnifier showing a browser page in high contrast white. All of the background colors of the site are white. Only text and images appear to have color.]
+
+Image of a Color Tinted Screen:
+
+[A web page displaying with an intense cyan color to its background. Images appear to be in their original colors, but the text links appear shifted to a brighter and darker blue.]
+
+Image of Negative Contrast:
+
+[A web page displaying with a black background instead of white. Text links are a dark blue or visited links are dark purple, which are difficult for someone with normal color vision to see against the black background.]
+
+Difficulties with Font and Color Adjustment
+
+Using images of text instead of text will make it so that the person cannot adjust the preferences they need to be able to see the content. This happens commonly when people use PDF documents without proper accessibility elements, images of foreign language or images of mathematical text. People can have difficulty making these adjustments if documents were prepared with spacing instead of using proper table structure or multi-column layout in Word. People also have difficulty making adjustments with a screen magnification program when text with fixed positions on the page are used, such as when text is put in text boxes with fixed sizes to create a callout. When enlarged, the text can overlap or be displayed in an order that no longer makes sense. If color is used as the only method for providing information, when the color is changed it might nullify the message.
+
+Printed Content
+
+Students with low vision will also sometimes print online documents to make adjustments like those seen in the images above. Students who do this typically are looking to make the text larger, or make the colors less busy, so that they can print an easier to read document. Students with low vision also use handheld magnifiers or electronic magnifiers which can apply tinting or invert the colors of the printed document. If the student is not able to customize the printed document, it may make the document harder or even impossible to read with the magnifier. Elements that make this harder to accomplish are text embedded into images, customizing colors inside of individual PowerPoint slides instead of within a PowerPoint theme slide, and using floating textboxes in Word.
+
+ 
+
+12
+
+Hardware and Hardware-Software Assistive Devices
+
+Heather Caprette
+
+Hardware assistive devices include specialized keyboards and mice, as well as mouth sticks, head wands, button switches and sip and puff switches for those who cannot use their hands to operate a computer. They are numerous and have evolved over time. Most of them are used by people with mobility impairments. You can see a list of them on WebAIM’s Assistive Technologies page.
+
+People who are deaf-blind may use a screen reader in conjunction with a refreshable braille display.
+
+[A refreshable Braille terminal device placed in front of a laptop, with a person's hand resting on the Braille.]
+
+Refreshable Braille device at https://commons.wikimedia.org/wiki/File:Plage-braille.jpg Photo by Sebastien Delorme, 17 November, 2008. CC-BY-SA
+
+Assistive devices have enabled people with mobility impairments to not only use a computer and access information on it, but to create websites, videos, and documents for others, provide independence and a path to employment.
+
+Hardware assistive devices primarily emulate keyboard and mouse input. However, there are switch devices in place today that work with Switch Control in iOS 7 and higher, that allow users to operate Apple mobile devices, such as an iPad. Watch the video below that shows how a boy with cerebral palsy uses a switch and an iPad in switch mode and point mode to navigate the web, interact with applications, focus the camera. Switch mode is used when there are recognizable buttons. But, he engages Point Mode, often, when there aren’t recognizable buttons or it allows him to navigate faster. Below is an example of a non-captioned Youtube video captioned with an Amara.org account. It contains both a “CC” icon to show closed captioning, as well as a page icon to display an interactive transcript. Check out the interactive transcript, which highlights lines of text as they are spoken by the narrators. You’ll learn more about Amara in the module on transcribing and adding closed captions to your multimedia files. The video, called Intersection: A Dream Come True can also be accessed by the URL: http://amara.org/en/videos/PllkG3AiQDvq/url/2315386/
+
+Intersection: A Dream Come True – Version with Closed Captioning
+
+II
+
+Creating Accessible Word Documents
+
+Word documents are frequently uploaded to online courses as syllabi, course schedules, assignment instructions, bibliographies and other handouts.  In this module, you’ll learn about ways of formatting your Microsoft Word files that will enhance accessibility.
+
+Learning Objectives
+
+By the end of this chapter, you should be able to:
+
+1.  set the document language
+2.  designate headings and emphasized text with Word styles
+3.  create descriptive hyperlink text
+4.  create alt descriptions for non-text elements, such as images
+5.  create a header row on any table and add table descriptions if needed
+6.  choose a font that shows well on screen and is a good size
+7.  create contrast between the foreground text and background color of the page that meets WCAG 2.0 Level AA standards
+8.  avoid the use of color alone to convey meaning
+9.  avoid blank spaces for formatting
+10. avoid floating objects, such as textboxes, and/or make them accessible if you do use them
+11. create a custom callout style to replace a floating textbox
+
+ 
+
+13
+
+Creating Accessible Word Documents - Setting Language and Title
+
+Heather Caprette
+
+Setting Document Language/s
+
+It’s important to indicate the language or languages within your document for a screen reader to read it properly. During setup of Microsoft Office, you likely specified your default language as English. If you would need to change the default document language or add additional languages, within a multi-language document, you can do this under the File menu.
+
+1.  1.  Click the File menu.
+    2.  Select Options from the list on the left navigation. It’s at the bottom of this list within Word 2016.
+    3.  In the Word Options dialogue box that pops up, select Language from the navigation list on the left.
+    4.  From the drop down menu below your Editing Languages box, where it says, “Add additional editing languages,” click on the drop down arrow to expand the menu and select English (United States) or another language.
+        [Screen capture of Word Language Options]
+    5.  Then, click the Add button the the right of the drop down menu. If you need to add more languages, select them from the box also, and click on the Add button.
+    6.  Click OK at the bottom of the dialogue when you are finished.
+
+ 
+
+Checking with a Screen Reader
+
+The default settings in JAWS 17 automatically detects when the language changes within a Word document and will start reading in the new language. NVDA will do this when its voice synthesizer is set to its default eSpeak NG. To make sure NVDA’s synthesizer is set to eSpeak NG, find the NVDA icon in the system tray (Windows). It looks like an N with a curved ascending arm as seen below.
+
+[NVDA icon showing in Windows System Tray]
+
+1.  Right click on the NVDA icon
+2.  Select Preferences to expand its preferences menu
+3.  Within the preferences menu, select Synthesizer
+4.  Select the first option for synthesizer to set it to eSpeak NG. The Microsoft Speech API version 5 sounds more pleasant, but won’t automatically switch the languages its reading when the language changes.
+
+I’ll attach a multi-language Word document below in case you would like to practice with it.
+
+multi-language_document.docx
+
+Setting Language on Small Amounts of Text in Multi-Language Document
+
+If you find that a screen reader automatically switches to a foreign language when it should not have, or if you have small amounts of text that are a different language from the main language of the document, you can set the language on this text specifically by:
+
+1.  select the line of text that it isn’t reading properly, or the word/s that are in a different language
+2.  click the Review tab,
+3.  click on Language in the ribbon at the top
+4.  Select “Set Proofing Language.”
+5.  From the Language dialogue box the opens up, you’ll see the incorrect language highlighted. Scroll to find the language you want, such as Chinese (PRC), select it and click OK at the bottom. The screen reader should now read back the line in that language. This case really did happen with the practice syllabus you’ll work on for your assignment in this chapter. For some reason, when JAWS and NVDA reached the line starting with “Prerequisites,” it started reading in German. That could throw your audience off track!
+
+Below is a captioned movie tutorial on how to set a section of text to another language in Word 2016:
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=29
+
+Setting a Word Document Title
+
+Setting a Word document title can be useful if the document will be converted to HTML and viewed by a screen reader user in a browser. In the .htm (HTML) format, the title will show within the title element, located between the opening and closing head element. The structure would look like <HEAD><TITLE>Your unique title here</TITLE></HEAD> with some other elements listed between the head elements also. A title set in Word will go with a Word document converted to PDF also. You can set a title on a Word document by:
+
+1.  With the document open, click on the File menu
+2.  Select Info if it is not selected
+3.  Under the Properties column on the right, find Title and click the Add a Title text to the right of it
+4.  Type a unique, concise title that explains what the document is about
+5.  Save the document
+
+Create a Unique Concise File Name
+
+Both in Word and Acrobat, a screen reader reads the file name first of the document that is open. Because of this, it’s a good idea to make your file name a unique, concise description of what the file is about also. It’s okay if it matches your title or heading level 1.
+
+ 
+
+14
+
+Creating Accessible Word Documents - Color Contrast for Accessibility
+
+Heather Caprette
+
+Contrast is the difference in luminosity or tonal values between the foreground and background. In other words, the difference between the value of the foreground color, which is usually your font color, and the background color of the screen, Contrast is a property that helps us see and distinguish figure from ground.
+
+Key Takeaway
+
+WCAG 2.0 guidelines require a contrast ratio of 4.5:1 between the foreground color (text color) and background color to meet level AA, for standard font size, e.g. 12 pt font. Large print sizes, or large scale text can have a contrast ratio of 3:1. A large print size is considered 14 pt (approximately 18.66 px) bold, or 18 pt (24 px) or larger non-bold text. The contrast ratio requirements are the same for WCAG 2.1 for level AA. WCAG 2.1 has an additional standard (1.4.11) for user interface components and graphical objects that requires a contrast ratio of 3:1 against adjacent colors to pass level AA.
+
+There are lots of color contrast analysers available within various programs and as free downloads on the web. A stand alone application that will tell you whether your foreground and background color choices have enough contrast to meet WCAG 2.0 level AA or level AAA standards is called Colour Contrast Analyser. It is a free download from The Paciello Group’s website. This is a nifty tool and I recommend downloading and installing it! It contains an eye dropper for sampling colors on your computer screen, much like that of Adobe Photoshop’s color picker. You can keep the application on your desktop or set a short cut for it within your Start menu in Windows to have easy access to launching it. Colour Contrast Analyser will tell you the contrast ratio of your selected foreground and background colors, let you know if it passes WCAG 2.0 level AA and level AAA, and toggles into a mode that lets you see how people with different color blindnesses see your text against background. If your color choices don’t pass, there are sliders to adjust the red, green, and blue values to change the color to something that will pass, and suggested variations on the color. The hexidecimal color codes from the passing colors can be copied and used in Word or Blackboard Learn’s content editor. Hexidecimal code is typically how colors are designated in HTML. Hexidecimal code for color takes the format of an octothorpe (pound symbol) followed by six letters or numbers, two characters for red, two for green and two for blue. Hexidecimal code for white is #ffffff, and for black is #000000.
+
+The older, Classic version of Colour Contrast Analyser (2.5.x) also has a built in screen, web page, and file viewer that will allow you to see what the colors look like as a whole for people with various types of color blindness. This later simulation is available in the Windows version only. These simulated web pages for protanopia, deuteranopia and tritanopia can be saved as jpg (jpeg) files if you need to reference them later or share them with other designers and decision makers.
+
+Colour Contrast Analyser Video Introduction – This was recorded with the slightly older version 2.5, which I prefer on Windows 7.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=64
+
+Colour Contrast Analyser Video Overview – This is the newer version CCAe v 1.1.1 built on Electron framework for Windows 10
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=64
+
+Colour Contrast Analyser Video Overview with interactive quiz questions.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here:
+https://pressbooks.ulib.csuohio.edu/accessibility/?p=64
+
+ 
+
+Colour Contrast Analyser
+
+Download the free Colour Contrast Analyser (CCAe v. 1.1.x) application from The Paciello Group’s site (visit: https://developer.paciellogroup.com/resources/contrastanalyser/)
+
+For the Colour Contrast Analyser – older version 2.5 for Windows on GitHub (visit: https://github.com/ThePacielloGroup/CCA-Win/releases)
+
+Word has a built in accessibility checker that will sometimes catch contrast issues and sometimes not. The use of the Colour Contrast Analyser application can help you check, when you may have doubt about your choices.
+
+Other tools for checking to see if you have adequate color contrast are WebAIM’s contrast checker page, and JuicyStudio Luminosity Colour Contrast Ratio Analyser. Both of these require you to know the hexidecimal color values, before arriving at the page. There is no eye dropper tool to sample the colors from a page open on your screen. You enter the known color values into their form and submit it to get results on pass or fail for WCAG 2.0 Level AA or AAA. WebAIM directs designers to install Colorzilla add-on for Firefox, or extension for Chrome, to figure out hexidecimal values of colors on a web page. Another free online color picker that will allow you to get hexidecimal color code, RGB and HSL values is located at http://htmlcolorcodes.com. WAVE  will also analyze contrast ratios for all page elements at once. You simply enter the URL into their form to analyze a web page.
+
+The Color Contrast Analyser developed by the North Carolina State University Office of Information Technology is available as a Chrome extension through Chrome Web Store. It will show contrast edges as a black and white screen. It’s a different way of looking at things. If you don’t see enough delineation between text, foreground symbols and their background, then you’ll need to increase the color contrast ratio. The example below shows the visual results of their processor. It is a form in which the required field labels are entered as red text. The red text shows as areas of less delineation.
+
+[North Carolina's Color Contrast Analyser Results showing problem areas with sketchy white outlines of text against dark grey background.]
+
+15
+
+Avoiding the Use of Color Alone to Convey Meaning and Algorithms That Help
+
+Heather Caprette
+
+You should avoid the use of color alone to convey meaning in order to help user’s with colorblindness. Color blindness comes in various states. Protanopia results from insensitivity to red light, which causes confusion in discerning greens, reds or yellows. Deuteranopia results from insensitivity to green light, which causes confusion in discerning green, red and yellows. It is the most common form of color-blindness, often referred to as red-green colorblindness. Tritanopia results from an insensitivity to blue light, which causes confusion in discerning greens and blues. Achromatopsia or Monochromacy is rare, but results in a person not being able to see color at all, only black, white and shades of gray. Wordwide, approximately 8% of men and 0.5% of women have a color deficiency. There are a greater number of white (Caucasian) people with color blindness, such as in Scandanavia where 10-11% of men have color blindness.
+
+Avoid Color Coding Text, Only, To Indicate Importance:
+
+Below is an example of what you should not do. You would not want to state in your course schedule that the dates listed in red are quiz dates, and then only color code the text to represent those days.
+
+  Week   Date           Topic
+  ------ -------------- --------------------------------------------------------------
+   1      January 17     Orientation to Blackboard Learn
+          January 19     APA Style Manual
+   2      January 24     Exploring CSU Library Resources Online, Literature Services
+          January 26     Refreshing Writing Skills
+   3      January 31     Using Images and Media
+          February 2     Presenting a Professional Image
+   4      February 7     Public Appearances
+          February 9     Communication in the Health Care Setting
+   5      February 14    Resolving Conflicts
+
+  :  
+
+You could fix this problem by saying the dates listed in red with the asterisk beside them are days you will have a quiz over the previous topics. The asterisk has come to be known as a designator of required fields on internet forms, for screen reader users. Thus, it could be used here to designate important dates in a schedule.
+
+  ------ --------------- --------------------------------------------------------------
+   Week       Date                                   Topic
+     1      January 17                   Orientation to Blackboard Learn
+            January 19                          APA Style Manual
+     2     January 24 *    Exploring CSU Library Resources Online, Literature Services
+            January 26                      Refreshing Writing Skills
+     3     January 31 *                      Using Images and Media
+            February 2                   Presenting a Professional Image
+     4      February 7                         Public Appearances
+           February 9 *             Communication in the Health Care Setting
+     5     February 14                         Resolving Conflicts
+  ------ --------------- --------------------------------------------------------------
+
+  :  
+
+Inherent Color Conveying Meaning, What Do You Do?
+
+Sometimes you need to present information that inherently has color coding that represents meaning. The following example is from Vischeck’s website. On the left, the photomicrograph shows how fluorescent staining of a cell renders a blue, green and red image where the colors represent different structures within a cell. The image to the right of it, shows how someone with red/green color blindness (deuteranopia) would see the colors. The greens and reds show as yellows and the boundary between them is lost. 
+
+[A cell stained with flourescent dyes, producing green and red areas. On the right is a simulation of the same cell seen by someone with red-green color blindness. The green are red areas appear yellow in the simulation.]
+
+Vischeck’s website used to have a way to upload an image like this to run through their Daltonizing algorithm. The algorithm increases contrast between the green and red areas, and shifts the hue of the red toward a blue or grayish color. This helps differentiate the structures of the cell. There is an example of the same image of the cell run through their Daltonizing algorithm on the right, below. Unfortunately, no one can load an image to be run through the Daltonizing algorithm at this time. There are other resources you can recommend to colorblind students that may help them see difference between colors.
+[On left is image of daltonized fourescent stained cell showing highlighting of red areas. On the right is a simulation of the same daltonized cell for someone with red/green color blindness. The green areas are yellowish in the cell on the right.]
+
+Resources to Help Daltonize Images for Colorblind Audience:
+
+Google Chrome browser has an extension which will simulate what an image or page looks like to a person with various types of colorblindness and has a Daltonization algorithm to convert a page or image for people with colorblindness to see differences between colors. Daltonize.org has information about Chrome Daltonize! extension. Within Chrome, add the extension from this link to Chrome Daltonize!
+
+Below is a captioned movie tutorial overview of using Chrome Daltonize! extension. Unfortunately, it doesn’t seem to work on pages that are behind password protection.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=74
+
+Designers who use Photoshop CC 2017 also have access to colorblind simulation for protanopia and deuteranopia. You can access these tools by:
+
+1.  Clicking on the View menu
+2.  Selecting Proof Setup
+3.  Then, select Color Blindness – Protonopia-Type or Color Blindness – Deuteranopia Type
+
+[Screen capture of Photoshop's Proof Setup color blindness simulator menu structure, as explained in the text.]
+
+The following movie demonstrates the use of Photoshop’s colorblind simulators when looking at a form. The form, unfortunately, was designed so that the color red alone indicated required fields! See what someone with protanopia or deuteranopia would see when viewing this form. They are left guessing which fields are required. Best practice would be to place an asterisk before each required form field label and let the user know that the asterisk designates a required field.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=74
+
+16
+
+Formatting Font for Readability
+
+Heather Caprette
+
+Your choice of font family, style, weight, size, color, and line-height can all affect its legibility and readability on screen. Legibility is the ability of someone to discern what is written. Capta text is often barely legible, as an example. Avoid the use of Script text, for legibility reasons. Readability is how easy or difficult it is to read the content. Readability is affected by not only your style of writing, but your choice of and formatting of text on the page. In Word, we’ll be formatting text with Word Styles primarily. But, we’ll talk about font properties that will help your readers, both with and without documented disabilities.
+
+When selecting a font family for screen viewed text, you’ll want to select families and weights that have a substantial stroke thickness and medium sized x-heights. The x-height is the height of the lower case letter x within the font family. All the lower case letters within the font typically have the same height as the x height.
+
+[Illustration of the different terms used to describe a font face. Of note is the x-height which is the height of the lowercase x of the font face.]
+
+Sans-serif fonts, such as Arial, Verdana, Helvetica, Tahoma, Trebuchet MS, or Myriad Web Pro are good choices for body text. Though you want to pick fonts with substantial stroke thickness, it may be a good idea to avoid the use of a font that is designed primarily as bold, such as Arial Rounded MT Bold, because you are left with few options for formatting for importance. If you apply a Strong Style (bolding), to an already bold font, it makes the font so thick, it becomes difficult to read on screen.
+
+If you are using a serif font family, Times New Roman, and Georgia are good selections. In general, serif font families work well for body type that is printed, and sans-serif families work well as body type presented on screen. When it comes to styling text, it’s a good idea to minimally use Italics (the emphasis style) because slanting the letters can effect their readability. Bolding (the strong style), also, should be used sparingly and be reserved for text you want to strongly emphasize. Selecting 12 point text or higher will help readers with vision difficulties. When a browser’s default font size is set to 16 px, 12 pt is approximately equal to that height. Line-height can make large blocks of body text or long lists easier to read. These paragraphs, on this page, have a line-height of 170% set within the HTML. In Word, you can select a multiple from the paragraph formatting options, such as 1.5, that will be one and a half the the line height of your font. Keep your Word documents in Word format, rather than converting them to PDFs with security restrictions, to help users who may need to download and manipulate font sizes and colors to help them perceive and understand the information presented. From the previous section, we saw how assistive technology applications like MAGic can manipulate a document to make it more accessible to those with low vision.
+
+There are other properties of a document’s formatting that effect readability. It helps to group related content together by using headings above associated paragraphs. There should be separation of groups of related content by white space. Adding white space around images can help also. Line lengths should be reasonable. The avoidance of unnecessary distracting moving graphics or blinking images is important for those with cognitive difficulties related to focus, and for individuals with photosensitive epilepsy who may go into seizure because of a blinking object set at a frequency of 5 to 30 Hertz (flashes per second).
+
+17
+
+Using Word Styles
+
+Heather Caprette
+
+Everyone loves style! Industrial designers use it to attract people to their products. Graphic designers use it to organize information on a page and designate changes in topic. We’ll create organization of our content, add meaning, and make it easier to navigate by adding Word Styles. Word Styles are used to format headings, emphasized and strongly emphasized text, links, paragraphs, and lists for example. When text is formatted with Styles in Word, it creates a navigational structure that screen reader users can use to quickly get to the information they want.
+
+Screen reader users use shortcut combinations of keys, for example, to bring up a list of headings that can help them navigate to where they want to go in the document faster. In JAWS, pressing the Insert key followed by F6 will bring up a list of headings. The numbers behind the names of the headings, such as 1, 2, and 3 designate heading level. It is good practice to create one heading level 1 at the top of the page that describes what the page is about, followed by subheading levels 2 through 6. In JAWS, pressing of the H key will help a screen reader user jump from heading to heading on a page. See a screen shot of what JAWS’ Heading List floating window looks like on top of a Word syllabus with headings levels 1 and 2. Within this document, you can see that the heading level 1 is the title of the document, “Syllabus for NUR 440.” The syllabus is then broken up into sections, which are second level headings.
+
+[JAWS pop-up window showing a list of headings in a Word syllabus]
+
+Once you add headings with Word Styles, you can see them in Word’s NavigationPane to the left of the document. If you don’t see the navigation pane, you can bring it up by going under the View menu in Word and checking the box next to Navigation Pane. It shows you the structure of your page and can help people without disabilities also. See the screen shot of the Navigation Pane and the box to enable this outlined in red with a red arrow pointing to it (for accessibility reason).
+
+[Word's Navigation pane showing headings within the document.]
+
+How to Apply a Word Heading Style
+
+In html, there are 6 heading levels represented by H1 through H6. H1 is typically your largest and/or most important heading of a document. H2 headings would be subheadings of the H1 heading. H3 headings would be subheadings of H2, H4 headings would be subheadings of H3, and so forth, creating a visual and semantic hierarchy. The following graphic is a way to visualize the hierarchy.
+
+ 
+
+[Visual display of heading levels 1 through 6 showing indented visual heirarchy]
+
+The heading level 1 at the top of this page will be the name of the syllabus for a class, such as “Syllabus for Nursing 440.” It sums up what the page is about. Once you type this in, highlight the text and click the Heading 1 style in Word’s Styles bar at the top. You can expand the styles into a pane that floats to the right, by pressing the tiny button,  with the diagonal arrow that points toward the lower right, at the bottom right of the styles menu. In the graphic below, the red arrow points to the button to open the Styles pane.
+
+[screen capture of Word's button to open the Styles pane. It's located at the lower right side of the Styles area of the Home tab.]
+
+The Styles pane is bordered by the red box in the image below, pointed to by a large red arrow.
+
+[Screen shot of Word's Styles pane open on right side of Word window.]
+
+A Note about the Title and Subtitle Styles:
+
+If you use the Title or Subtitle style to designate Title text within a Word document, this will not show up in a list of headings, within a screen reader. It will also not convert to a <title> element if the document is saved as a Web Page Filtered. Title and Subtitle text gets converted to an ordinary paragraph element in HTML. If you use a Heading level 1 to style your title or main subject, this will show up in a list of headings to help the user navigate the page.
+
+A note about Heading levels above 6:
+
+Headings 1 through 6 should convert to their corresponding HTML heading element (<h1>, <h2>, <h3>, <h4>, <h5>, and <h6>), but heading levels greater than this, such as Heading 7 through Heading 9, will convert to paragraphs with custom classes to affect their visual appearance, when a Word document is saved as a Web Page Filtered. This isn’t semantically correct.
+
+A note about text formatted as lists in Word:
+
+I’m seeing each list item convert to a paragraph element in HTML instead of their semantically correct <li> (list item).
+
+How to Modify a Heading Style
+
+A movie tutorial on how to modify a Heading 1 Style in Word exists at http://flash.ulib.csuohio.edu/elearning/caprette/accessDemos/modifying_h1_in_Word.html, or you can view the written instructions below.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=102
+
+If you don’t like a style, you can change it by right clicking on the name of the style in the Styles pane, and selecting “Modify.” In the image below, the text that has the heading level 1 applied to it is selected at the top of the screen. It is, “Syllabus for Nursing 440: Primary Preventive Strategies for Communities,” outlined in a red box, pointed out by a large red arrow. The Modify option is outlined in a thick red box also, pointed out by a large red arrow.
+
+[Screen capture of the pop up menu with the Modify option in Word.]
+
+Within the Modify Style dialogue box, you’ll see options to change the font, font size, font color, font weight, emphasis, bolding, underlining, line spacing, space before and after a line of text, indentation and alignment at the top. There are more options available, like setting the language, by clicking the Format button in the lower left of the Modify Style window. These options are outlined in thick red boxes in the image below, and pointed to by the large red arrows.
+
+[Screen capture of Word's Modify Style pop-up window with the Formatting fields outlined in red.]
+
+Control of the space between lines and before and after styled text, without hitting the Return or Enter key, is important. If you format with extra line returns or by hitting the space key multiple times, this adds extra hidden characters to your layout. If a Word document is later converted to a PDF, these extra returns create extra meaningless tags that have to be deleted from a tagged PDF. You can see extra returns and spaces within documents by clicking on the icon that looks like a paragraph symbol under the Home ribbon. It looks like a backwards P and is the Show/Hide button for showing paragraph returns, spaces, tabs and other hidden characters.
+
+You can add space above and below your selected text equally by using the fourth and fifth buttons on the second row of the formatting area in the Modify Style dialogue box. The button that increases spacing between a heading and the surrounding content has two blue arrows, pointing away from one another. The button that decreases space between a heading and surrounding content has two blue arrows pointing at one another. You can also adjust the spacing before and after the style of text by clicking on the Format button at the bottom left of the Modify Style dialogue and selecting Paragraph.
+
+[Screen capture of Word's Modify Style pop-up window, with the Format button active and secondary menu popping up.]
+
+Once in the Paragraph style dialogue menu, you can see separate text boxes to enter the space before and space after. These are outlined by the red box in the image below. A big red arrow points to this box. You also see the ability to indent, align, and adjust line spacing.
+
+[Word's Paragraph formatting window with the Spacing options for Before and After, as well as line spacing outlined in red.]
+
+18
+
+Styles for Strong and Emphasis - Avoid "B" and "I" buttons in Word
+
+Heather Caprette
+
+Avoid the Use of the B or I Buttons under Word’s Home tab
+
+You’ll want to avoid the use of the B (bold) or I (Italic) buttons and use the Strong or Emphasis styles found in the Styles pane respectively.
+
+[Arrows pointing to Word's B and I buttons on the Home tab. Don't use B or I.]
+
+If you would like your text bolded, use the Strong style in Word’s Style pane. If you want to create italicized text, use the Emphasis style in Word’s Style pane. These will create the correct semantic structure for this type of text. Some screen readers will change their tone of voice when reading to reflect Emphasis (the style that looks like italic) and more Strongly emphasized text (the style that looks like bold text). If the document is converted to HTML, Strong and Emphasis will add the correct HTML tags around those words.
+
+19
+
+Alternative Text for Images - Descriptions in Word
+
+Heather Caprette
+
+The addition of alternative text for images will help a blind user know what is the content or function of an image. You’ll want to keep your alt descriptions succinct, and equivalent to what the image is conveying. If you have a chart or a graph, it’s best to describe what is being represented in the chart or graph within the body of the document, rather than in alt text. Or, if you can convey the information in the chart or graph by way of a simple data table, this would also make the content accessible. If you have an image that is a link, your alt text can be the name of the page that the link leads to.
+
+In HTML, we can add a null alt attribute to a decorative image that doesn’t convey meaning, such as a flourish. This will tell the screen reader to skip over it and not announce it at all. In more recent versions of Word, unfortunately, there’s no way to do this. JAWS may be set to announce images, even if they don’t contain Description text. If you leave the Description field blank for a decorative image, this leaves the screen reader user wondering if the image contains meaning or not, when it is announced. One way to get around this is, would be to put a decorative image or flourish in the header or footer of a document. Or, you could leave the image out. But, in Word, if you find that you don’t want to leave the decorative image out, you should write very brief Description text about what it is.
+
+You can add alternative text by right mouse clicking on an image, and choosing “Format Picture.” In the Format Picture pane that opens to the right of the document, click on the cross shape icon for “Layout & Properties” of the image. Click the arrow to the left of Alt text and type a Description for the image. Why is there both a Title and Description field under the Layout and Properties’ Alt Text options, and which serves as the alt text? The Description text serves as the alternative text and should always be filled in! Some screen readers will read the Title text before the Description, such as JAWS 15 and newer, but some older screen readers, such as NVDA 2014.2 and Window-Eyes 8.4 don’t. You can leave the Title text out. If you include it, make it short and screen reader users can decide if they want to hear the Description. But, also try to keep your Description text short and succint (200 characters or less). It’s important that you write a Description that conveys the images meaning, purpose, or where it leads to. Don’t just describe what is in the image or write “image of.”
+
+If you have an artistic image that conveys sensory information, such as a painting or photograph, it is okay to describe what is in the image, such as “photo of,” or “painting of.”
+
+The choice of alt text depends on the context of the image. You don’t want to be redundant and repeat text that is surrounding or adjacent to the image.
+
+How to add an image to Word and add Alt Text to it
+
+To insert an image in Word, go under the Insert tab and select Pictures from the ribbon. Browse to your image, select it and click Insert. With the image selected, right click on the image and select Format Picture from the context menu that pops-up. From the Format Picture pane options, select the icon that looks like four arrows forming a white cross on a blue background. It is the Layout & Properties button. Expand the Alt Text option by clicking on it. This brings up the Description field into which you should type your alternative text. The image below shows the Layout & Properties button outlined in red and the Description field where you would enter your alternative text.
+
+[Screen capture of Word's Format Picture window with option for entering alternative text in the Description field. Don't enter it within the Title field.]
+
+20
+
+Descriptive Links and Tool Tips in Word
+
+Heather Caprette
+
+At some point in a document or course creation, you’ll want to provide links to other websites or pages. Screen reader users can bring up a list of links on a page, much like they bring up lists of all the headings on a page, or landmarks. In JAWS, a screen reader user does this by pressing the Insert key followed by F7.  It’s important to use descriptive text for your links that convey where the link is going to or it’s purpose, so that the links in this list make sense to a user taken out of context.  You don’t want to use “click here” or “read more.” If there are more than one of these “click here” or “read more” links on a page, a screen reader user may not remember, provided she or he read the page, which “read more” went with which topic. It’s best to write the sentence in such a way to provide link text that will describe the purpose of the link and where it will lead to. The link text should be meaningful and unique from the other link text on the page.
+
+In the following example I’ll show you what you should avoid and then how to rewrite and relink it for descriptive link text.
+
+Avoid this type of writing and linking:
+
+“For more information about Fair Use of copyrighted materials, click here. For information about a Fair Use Evaluator that can help you decide if your specific use of copyrighted material favors Fair User or not, click here. For a chart that shows a list of conditions that favor or oppose Fair Use, click here.
+
+or
+
+“More information about Fair Use of copyrighted materials can be found at http://librarycopyright.net/. If you would like to take a Fair Use Evaluator to determine if your use of copyrighted materials falls under Fair Use please visit http://librarycopyright.net/resources/fairuse/. There is a checklist of Fair Use chart at https://library.wheaton.edu/copyright/8 to see uses that favor Fair Use vs. oppose Fair Use.
+
+How you could reword the text to provide descriptive, accessible text links:
+
+“More information about Fair Use of copyrighted materials can be found on the Copyright Advisory Network’s website. If you have a question about whether a use falls under Fair Use or not, you can take the Fair Use Evaluator on the their site. There is also Fair Use chart  at Wheaton’s Buswell Library, that you can use as a quick guide to see if your use of copyrighted materials is favoring or opposed to Fair Use.”
+
+Key Takeaway
+
+If you know that the Word file will be printed, you can include the URL for the link in parenthesis next to the descriptive link, so that sighted users can enter it into a browser if needed. So, our first sentence above would look like:
+
+“More information about Fair Use of copyrighted materials can be found on the Copyright Advisory Network’s website ( http://librarycopyright.net/).”
+
+The following is a screen capture of JAWS links list showing the links on this page. You can see the three vague “click here” links followed by the three descriptive text links. The later three are best practice.
+
+[JAWS Links List Popup Window]
+
+Word often makes text that starts with http:// into a link automatically. You can change the link text that is displayed by highlighting the text and going under the Insert menu and selecting Links to bring up the Insert Hyperlink window. Below is an image of the URL http://librarycopyright.net/ highlighted (selected by dragging over it), the Insert tab options displayed, and Hyperlink options expanded.
+
+[Screen capture of inserting a hyperlink in Word, under the Insert menu, with the link text highlighted.]
+
+After you select Hyperlink, in the window that pops-up, at the top where it says Text to display, describe where the link takes the user, or the function of it, e.g. “the Copyright Advisory Network’s website.”
+
+[Screen capture of Word's Edit Hyperlink menu, showing the Text to Display field where you can write a descriptive link.]
+
+In Word, the ScreenTip option is similar to adding a Title attribute to a link in html, or with the Blackboard’s content editor. The Title attribute or ScreenTip will show on screen to sighted users when the link is moused over or tabbed to, that is, when the link has focus. The text for the ScreenTip or Title attribute should be different from the link text. It is advisory in nature, so in this case, we can write at ScreenTip that says, “This link will take you to the Copyright Advisory Network’s website.” We’ll do this by clicking on the ScreenTip button to the right of the text entry box for Text to display. The image below shows the Set Hyperlink ScreenTip window with the ScreenTip text written in it. Be sure to click OK to close both Hyperlink editing pop-up windows to save your changes.
+
+[]
+
+ 
+
+21
+
+Designating a header row in Word
+
+Heather Caprette
+
+Tables can be used to layout information that has a two way relationship, or tabular data. Information that has a two-way relationship is found in grading rubrics, evaluation information and course schedules.
+
+In HTML, header table cells are read by a screen reader before a corresponding data cell to tell the user what the data is and give it meaning. In HTML, a screen reader will read both column headers and row headers. The column headers are in the rows above the data columns. A row header would be found in a column on the far left typically. In a rubric table layout, a column header cell might read as “exemplary performance” and the data cell under it would read, “makes an original post and replies to at least two classmates in the discussion.” The row header for this may read as “participation.” An example of this is below.
+
+  Criteria        Exemplary Performance                                                                                                                                                    Satisfactory Performance                                                                                                                                                                         Needs Improvement
+  --------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Participation   Makes an original post and replies to at least two other classmates in the discussion.                                                                                   Makes an original post and replies to one other classmate in the discussion.                                                                                                                     Makes an original post but doesn’t reply to others within the discussion.
+  Relevance       The posting directly addresses key issues, questions, or problems related to the text and the discussion activity. The posing applies course concepts well.              The posting addresses key issues, questions, or problems related to the text and the discussion activity, but in some cases, only indirectly. It does not always apply course concepts fully.    The posting does not directly address the question or problem posed by the discussion activity.
+  Insight         The posting offers original or thoughtful insight, analysis, or observation that demonstrates a strong grasp of concepts and ideas pertaining to the discussion topic.   The posting does offer some insight, analysis, or observation to the topic but may not demonstrate a full understanding or knowledge of concepts and ideas pertaining to the discussion topic.   The posting does not offer any significant insight, analysis, or observation related to the topic. No knowledge or understanding is demonstrated regarding concepts and ideas pertaining to the discussion topic.
+  Support         The posting supports all claims and opinions with either rational argument or evidence.                                                                                  The posting generally supports claims and opinions with evidence or argument, but may leave some gaps where unsupported opinions still appear.                                                   The posting does not support its claims with either evidence or argument. The posting contains largely unsupported opinion.
+
+  : Discussion Rubric
+
+Word has limited ability to designate table header cells, and unfortunately, JAWS doesn’t read the header cell text before each associated data cell text in a Word document, to establish the relationship. However, we should designate a header row in Word tables, in case they are later turned into accessible PDF files, or web pages. Tables with header rows that repeat upon page breaks also help sighted users. We can designate column headers by selecting the top row of a Word table, but we can’t create row headers out of a far left column, for example. It’s best to setup simple tables with one header row across the top. In the case of a table used to layout evaluation methods and their associated points, we’ll designate the top row as a header by selecting all cells in the first row, right clicking and selecting Table Properties. See the screen shot of the menu with Table Properties (outlined in a thick red box) that appears after you right click on the highlighted contents of the top row:
+
+[Highlight top row in Word table, right click and select Table Properties from the popup context menu.]
+
+In the Row tab, check the box next to “Repeat as a header row across the top of each page.” See a screen shot of this option outlined in a thick red box below.
+
+[Select Row tab in the Table Properties menu, check off the box next to Repeat as header row at the top of each page, in Word.]
+
+With table setup, it’s best to keep tables simple. Avoid blank cells if possible and merged cells. Screen readers read linearly, from left to right and top to bottom, row by row. It helps to keep this in mind when setting up a Word table.
+
+Listen to the movie tutorial on how to format a simple table, with closed captioning (opens in new tab)
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=171
+
+Also, avoid combining information that should be spread across more than one table. If you merge and/or color cells to create a visual separation from different content, JAWS may not read the information in an order that makes sense to a screen reader user. The following example is from a real table setup I’ve seen in a course. It’s one table that combines what should have been an “Evaluation Methods” table and a separate “Grading Scale” table.
+
+Listen to JAWS reading tables which never should have been merged.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=171
+
+22
+
+Avoid Combining Tables and Merging Cells
+
+Heather Caprette
+
+In Word and HTML, you want to avoid combining tables, and cells if possible. In this example, you’ll see how JAWS screen reader reads these combined tables in a confusing and incomprehensible manner. The tables lack header rows. The two visual headings that exist, “Assignment” and “Maximum Grade” are formatted with the Bold button on the Word ribbon instead of making them into a Table Header Row through Table Properties.
+
+This is a recreation of a real example I spotted in a course! Remember to avoid blank table cells also.
+
+JAWS Reading Combined Tables
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=180
+
+23
+
+Avoid Floating Objects on the Drawing Layer
+
+Heather Caprette
+
+In Word, there is a Document Layer and a Drawing Layer to a document. Objects such as Text Boxes, Shapes, Smart Art, Charts, Word Art, and Miscellaneous inserted Objects float in the Drawing Layer. These floating objects may not be detected and read in the correct order when a screen reader reads the text on the document. Though, modern versions of Word, JAWS and NVDA are getting better. Both JAWS 17 and NVDA will announce that there are embedded objects on a Word document. Word 16 has a way to add alternative text to these objects, which is explained below. JAWS will bring up a list of floating objects when the user presses Control + Shift + O on her keyboard, but these objects may not make sense when taken out of the flow of the document. NVDA doesn’t read objects in the drawing layer.
+
+If you set the objects to be In Line with Text, this can often move them from the Drawing Layer to the Document Layer and make them accessible. This can be done by selecting the object by clicking on it. Click on the Layout Options icon to the top right of the selection. It has horizontal lines and an arch, and select In Line with Text.
+
+[Example of floating object in Word created by inserting Smart Art]
+
+Diagrams and illustrations created with Shapes and Smart Art can be copied to the clip board and then reinserted as one image within the document. You can save a copy of the document with the separate Smart Art and Shapes in case you would need to go back and edit. In another copy of the document, you would delete all the separate shapes that make up your diagram, and insert the single image you’ve snipped. You can then add alternative text in the Image Description field for this one image, to make it accessible. In Windows, you can copy the image to the clipboard with the Snipping Tool. To bring up the Snipping Tool, enter “Snipping Tool” in Windows Search box. The Search box which contains the default text, “Search for programs and files,” is found by clicking Window’s Start icon in the lower left of the screen. The Snipping Tool program will appear at the top of the search results. Click it to open it. The background will white out somewhat, and the Snipping Tool will be a floating window. Under the New menu, select Rectangular Snip, and then drag a rectangle around the area of the screen you want to capture as one image.
+
+[Windows' Snipping Tool New menu activated with Rectangular Snip option]
+
+Once the image has been copied, you can go under the File menu and select Save As to save it as a .gif, .jpg, .png, or .mht. If the image contains large areas of solid colors, GIF is a good format to choose. If the image is a photograph or has subtle gradients, choose either JPG or PNG. MHT is a proprietary Windows format which I can’t recommend. Sometimes, learning management or content management servers don’t contain the MIME types to display the format.
+
+[Windows' Snipping Tool with the File menu expanded. Select Save As to save the snip.]
+
+After saving out your Word file as another document, go under the Insert tab and select Pictures from the ribbon. Browse to your newly created image, select it and click Insert. With the image selected, right click on the image and select Format Picture from the context menu that pops-up. From the Format Picture pane options, select the icon that looks like four arrows forming a white cross on a blue background. It is the Layout & Properties button. Expand the Alt Text option by clicking on it. This brings up the Description field into which you should type your alternative text. The image below shows the Layout & Properties button outlined in a thick red box and the Description field where you would enter your alternative text.
+
+[Word's Format Picture Layout and Properties Icon selected. Arrow pointing to Description field to write alternative text.]
+
+On a Mac laptop or desktop, you can use press Command-Shift-4 on the keyboard to bring up a tool similar to the Windows Snipping Tool that will let you take a screen shot of a window on your desktop. There’s an explanation of how to take screen shots on your mac at http://www.macworld.com/article/2987618/os-x/how-to-take-screenshots-on-your-mac.html.
+
+If you have an object that represents data, for example a bar chart, you can explain the equivalent of the information presented within the body of the document, or create a simple accessible data table, such as in the example below. NVDA will read the table column headers before each data cell. JAWS 17, in default settings read the column header row once and then simply read the following rows linearly.
+
+[Word bar chart with table below it representing the same data.]
+
+In Word 2016, there is the ability to add alternative text that describes the data within the chart. JAWS 17 will recognize this alternative text and read it. You can add alternative text to a chart by selecting the whole thing (an outline will appear around the outer perimeter), right click and select Format Chart Area. When the Format Chart Area pane opens on the right side of the screen, click on the Layout & Properties icon (crossed white arrows on blue background), and type the equivalent of the information the chart presents within the Description text entry box. You can add a title that represents what the chart is about.
+
+[Word's Format Chart Area pane with the layout and properties icon activated. Enter a description of the data in the Description field for alternative text.]
+
+24
+
+An Alternative Custom Callout Style to Avoid Using Floating Text Boxes
+
+Heather Caprette
+
+Text Boxes are frequently used in Word to draw attention to important information. They float above the Document Layer and reside in the Drawing Layer. Therefore, you’ll want to avoid the use of Text Boxes and instead use and modify the Intense Quote style to make text stand out if it is important, or create a custom style for this. The following movie tutorial will show you how to create a custom style for callout text.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=204
+
+How to Create a Custom Call Out Style in Word (captioned)
+
+Remember that screen readers will not present visual information, such as bolding, borders, background colors and highlighting. Sometimes, screen readers can be set to describe visual information, but it is not typically done. The information can be overwhelmnig and irrelevant to screen reader users. To designate important information, you can start the sentence with “Attention,” or “Note.” “Warning,” and “Important” are also usable choices to draw the attention of a screen reader user, as well as sighted users.
+
+25
+
+Word's Built-in Accessibility Checker
+
+Heather Caprette
+
+Word has an accessibility checker that can be run on an open document by going under the File menu, and clicking on the Check for Issues drop down menu next to Inspect Document. Select Check Accessibility, the middle option. This option is outlined in the image below.
+
+[Word's accessibility checker is under the File menu, select Info, and then select Check for Issues. From the drop down menu, Check Accessibility is selected.]
+
+The Accessibility Checker is a good place to start when creating an accessible document out of an existing Word document, or to check how accessible a document is that you are currently working on. The Accessibility Checker pane will open on the right side and you will see Errors, Warnings and Tips. I’ve heard some trainers say that Errors are the things you must fix, Warnings are the things that should be fixed and Tips aren’t as critical but should still be looked at. My advice is to look at it all carefully, and use what you’ve learned in this module to repair what you think are issues. Word provides information about each issue when you select it in the Accessibility Checker pane, at the bottom. It explains why you should fix it and gives an explanation of how.
+
+[Word's Accessibility Checker pane showing errors that need corrected, such as missing alt text, unclear hyperlink text, and objects that aren't inline with text.]
+
+26
+
+Possible Assignment to Test Formatting a Word Document for Accessibility
+
+You can have participants/students work on formatting a Word syllabus that has lots of accessibility issues. The table below is a rubric you might use to guide them and to evaluate performance.
+
+Rubric for Word Accessibility Formatting Assignment
+
+Use these criteria as a guide to completing the assignment in which you format an existing syllabus for accessibility.
+
+  Criteria                                                                                                                                                                                                                                                                                                                                                                                                 Competency Level
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Replaces text formatted with Word's Bold button and converts it to a Word Heading Style or the Strong Style, as appropriate to its context. Follow the correct heading heirarchy, with one H1 at the top of the document.                                                                                                                                                                                0 to 10 points - Finds all instances and corrects them.
+  Uses the Paciello Groups Colour Contrast Analyser to check the contrast between the font color and background color. Adjusts colors to meet WCAG 2.0 AA standards.                                                                                                                                                                                                                                       0 to 10 points -Finds all colors that don't meet WCAG 2.0 color contrast ratio standards and changes the color to one that will meet WCAG 2.0 standards.
+  Reformat text that has blank spaces or extra paragraph returns, by modifying the space before and after the paragraph property of the style, to eliminate these extra characters. You can turn on the Show Paragraph Marks button to see these extra characters. This is located under your Home tab, within the paragraph section.                                                                      0 to 10 points - Doesn't leave any paragraph return marks within the document.
+  Simplifies tables that have merged or split cells, so that there can be one header row designated at the top of the table.                                                                                                                                                                                                                                                                               0 to 10 points - Finds tables that need to be simplified for accessibility and changes cell structure in order to make the table more accessible.
+  Puts information into tables that has a two-way relationship and can linearize well when a screen reader reads from top to bottom. Such information may have been laid out with tabs to create columns that may not read in a logical order. Organize this data into a table so that it will be read in a logical, progressive order when the table is read linearly, row by row, from top to bottom.    0 to 10 points
+  Applies a table header row to the simplified tables.                                                                                                                                                                                                                                                                                                                                                     0 to 10 points -Header row is present to designate column headers.
+  Turns URL links into descriptive text links that make sense when read out of context.                                                                                                                                                                                                                                                                                                                    0 to 10 points - Finds all URL links and converts them to descriptive text that makes sense to a screen reader user when taken out of context.
+  Specifies language for sections of text that are in a language other than English using the Word tool for this.                                                                                                                                                                                                                                                                                          0 to 10 points - Uses the correct menu feature in Word to set the text that is in French to French and therefore have a French accent when read back by a screen reader.
+  Add alternative text (image descriptions) to all images in the document.                                                                                                                                                                                                                                                                                                                                 0 to 10 points - Finds all images that need alt text and adds image descriptions for these.
+  Reformats any text boxes or other floating objects to be accessible. Tip: you can find floating text boxes by inserting your cursor into the text within the box you suspect, and seeing if you get the Format tab at the top of Word. The Format menu/ribbon is used for objects on the Drawing layer of the document, and is an indicator that you are in a floating text box.                         0 to 10 points - Uses Word tools to make any floating objects or text boxes accessible.
+
+III
+
+Blackboard Learn Accessibility
+
+This section will cover accessibility features you can add within Blackboard Learn Original Experience.
+
+27
+
+Blackboard's Content Editor
+
+Heather Caprette
+
+Blackboard will allow you to create a page using its WYSIWIG (What you see is what you get) editing buttons within its content editor, or switch to HTML Code View to add accessibility elements and attributes. Blackboard’s content editor shows up within many of its tools, such as discussion forum posting, assignment submissions, or creation of Items or Blank Pages. The content editor has three rows of buttons. If you don’t see three rows, you can click the upper right most icon of the two downward pointing chevrons to expand its view.
+
+[Blackboard's Content Editor. The last button in the top row expands the bottom two rows. In the third row is the HTML editor button, second from the last button.]
+
+Much of the content in this course was created with Blackboard’s Blank Page tool. The buttons in this content editor allow you to enter into pop-up windows that enable addition of images, media files, tables, hypertext links, and math equations, to name several content types. It also contains an HTML Code View button that will allow you to manipulate the code that generates the content the user will see. Sometimes, with Blackboard’s content editor, it is necessary to enter into HTML Code View to add accessibility features. It’s not hard and I’ll guide you in what should be done.
+
+* TIP: Turn off the Content Editor’s Spell Checker Feature
+
+You’ll want to turn off the Spell Checker within the practice course you’ve been given for assignments to produce clean HTML that you can work with. Your practice course will show up in your Blackboard course list with a name that looks like Online_Accessibility_Practice_Course_YourFirstInitialAndLastName. You’re enrolled as an instructor within your practice course and have full privileges. Unfortunately there is a bug in the current version of Blackboard that causes multiple, useless <span> elements to be placed around fragments of words, URLs, and anything the spell checker thinks is misspelled. Since you will be editing code in HTML Code View, it will help if you turn off the Spell Checker within your course. To do this, click on Control Panel at the bottom of your course menu, in the left navigation. This expands options available for course management. Click on Customization to expand its options. At the bottom of the Customization options, click on Tool Availability. On the Tool Availability screen, scroll down until you see Spell Check under the Tool column. Uncheck the box beside it that controls its Availability. Then scroll to the top of the page, or bottom, and click the Submit button. This will make the Spell Checker icon disappear from Blackboard’s Content Editor. When it is available it appears as a button with ABC over a check mark. If the tool is available and on, this button will be a darker shade of gray from surrounding buttons, as seen at the end of the second row in the image above.
+
+Alternately, if you don’t want to turn off Spell Check completely for your course, you can remember to turn it off within the instance of the Content Editor, by clicking on the Spell Check button, every time you go to edit content within your Blackboard course. This is hard to remember to do, and inevitably results in a time or two when you’ve forgotten and submitted, and then found the multiple, useless <span> elements breaking up your code when you go back to edit.
+
+28
+
+Formatting Font for Readability and Accessibility in Blackboard Learn
+
+Heather Caprette
+
+In the module on Word, we learned that font family, font size, line height, and the contrast of the font against its background all effect the accessibility and readability for the sighted, as well as those with vision difficulties. It’s best to pick font families with a good mid-weight stroke thickness, good space between letters, and medium sized x-heights. An x-height is the height of the lower case letter x within the font family. Avoid the use of fancy fonts, scripts and those with thin strokes. Sans-serif fonts work better for body text on screen, rather than fonts with serifs. Examples of good sans-serif fonts to use are Arial, Verdana, Tahoma, Myriad Web Pro, Trebuchet, or Roboto. Serif font families with good stroke weight and spacing for online display are Georgia, Times New Roman, and Times. The image below shows a comparison between font families. The upper four fonts, Amienne, Blackadder ITC, Bradley Hand ITC, and Burnstown Dam, have thinness to their strokes, or jagged appearance to the serifs which makes them hard to read on screen. The bottom two fonts, Arial and Georgia, have more evenness to the width of their strokes, and the strokes are straighter, making them easier to read on screen.
+
+[The same passage from a song represented in the following font families: Amienne Regular, Blackadder ITC, Bradley Hand ITC, Burnstown Dam, Arial and Georgia. The four families have poor on screen legibility and readability. Arial and Georgia display well on screen.]
+
+If you write text from scratch, with no copying and pasting from Word, into Blackboard’s content editor’s WYSIWYG mode, you’ll see options to set the text type to Paragraph, Heading, Subheading 1, and Subheading 2. These are OK, but you may not like the size of the text they produce.  You’ll also see options to set the font family and its size.  The sizes listed, such as Arial Size 3 (12pt), are a bit misleading because the HTML generated behind the WYSIWYG interface sets font sizes in the descriptive keyword units xx-small, x-small, small, medium, large, x-large, and xx-large, not point (pt). These units are OK because, if an end user sets her/his browser’s default font size to a larger setting, these will scale up, which will help people with low vision.
+
+All font sizes should be specified in relative units that will scale up or down when a user changes her default font size in her browser. Other relative font size units include em, and percent (represented as %). The typical default browser font size is 16 pixels (px), but people with low vision will increase this default font size to help them read. One em is the height of the font you are using, usually thought of as the height of the upper case M within that font. So, if a user doesn’t change the default font size and the font size isn’t set in the code of an html document or a CSS file,  1em would be equal to 16 px. The percent (%) unit scales relative to the font size of a parent HTML element, or the default font size set in the browser. So, if a parent HTML element contains a font size of 16 px (pixels), font set to 125% would be 20 px heigh. Please view the following movie demonstration that shows how fonts set in em, rem and percent (%) scale with a change of the default browser font size, while fonts specified in pixels (px) and points (pt) don’t.
+
+*IMPORTANT:  Demonstration of how relative units of measurement for font size scale with user’s choice of font size in browser
+
+When you copy content from other sources, such as Word or from a website, you copy over styling code with it that may not help people with vision difficulties who choose to increase their default font size in their browser. Font sizes for content copied from Word usually end up as points (pt), and font sizes from content copied from websites can end up being in pixels (px). This can be seen after you copy the content into Blackboard’s content editor, by toggling into the HTML Code View. The font sizes in points and pixels should be converted to em or percent (%). The following chart, taken and modified from Reed Design, will show you equivalent em and percent (%) units for point (pt) and pixel (px) units that get copied into Blackboard from other sources, like Word documents. You can use this chart to convert your font sizes in Blackboard’s HTML Code View.  If for example, you had a heading that was 18 pt, copied from Word, you would want to change it to 1.5 em. A 16 pt subheading, copied from Word, should be changed to 1.4 em. I’ve also added in where the fonts specified with descriptive keywords would fall. Please view the following movie tutorial demonstrating how to format text copied from Word into Blackboard Learn’s content editor for accessibility. This demonstration will also show you how to increase line-height between list items in HTML Code View, using inline styling. This increase of space between lines will help with readability also.
+
+* IMPORTANT:  Demonstration of how to format text copied from Word into Blackboard’s Content Editor for Accessibility
+
+  Points   Pixels   Ems       Percent   Descriptive Keyword
+  -------- -------- --------- --------- ---------------------
+  6pt      8px      0.5em     50%       
+  7pt      9px      0.55em    55%       XX-Small
+  7.5pt    10px     0.625em   62.5%     X-Small
+  8pt      11px     0.7em     70%       
+  9pt      12px     0.75em    75%       
+  10pt     13px     0.8em     80%       Small
+  10.5pt   14px     0.875em   87.5%     
+  11pt     15px     0.95em    95%       
+  12pt     16px     1em       100%      Medium
+  13pt     17px     1.05em    105%      
+  13.5pt   18px     1.125em   112.5%    Large
+  14pt     19px     1.2em     120%      Larger
+  14.5pt   20px     1.25em    125%      
+  15pt     21px     1.3em     130%      
+  16pt     22px     1.4em     140%      
+  17pt     23px     1.45em    145%      
+  18pt     24px     1.5em     150%      X-Large
+  20pt     26px     1.6em     160%      
+  22pt     29px     1.8em     180%      
+  24pt     32px     2em       200%      XX-Large
+  26pt     35px     2.2em     220%      
+  27pt     36px     2.25em    225%      
+  28pt     37px     2.3em     230%      
+  29pt     38px     2.35em    235%      
+  30pt     40px     2.45em    245%      
+  32pt     42px     2.55em    255%      
+  34pt     45px     2.75em    275%      
+  36pt     48px     3em       300%      
+
+  : Font Size Conversion Chart
+
+Remember to Check Your Color Contrast
+
+Color contrast for a normal body type that is 12 pt, or 16px, against its background would be 4.5:1. This will pass WCAG 2.0 level AA standard. If you really want to pass the AAA level, the best, you would want a contrast of 7:1 between the font color and its background. Use the free Colour Contrast Analyser from the Paciello Group’s website, that you learned about within the Word module, to help you determine if your color choices meet WCAG 2.0 Level AA. If you have a larger font, which would be 14 pt bold (19 px, or 1.2 em) or 18 pt (24 px or 1.5 em), the contrast ratio can be lower. In this case, it should be 3:1 or greater to meet level AA of WCAG 2.0 standards for contrast. If you would like to review the movie demonstration of Colour Contrast Analyser, you can replay it below.
+
+Colour Contrast Analyser Video Introduction
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=228
+
+Remember Not to Use Color Alone to Convey Meaning
+
+Colour Contrast Analyser will also help you see your design as someone with one of the color blindnesses, as we learned in the module on Word accessibility. Often, we format important text with color alone, such as red, but this text doesn’t appear red to someone with protonopia or deuteranopia. When designating something as important, use an asterisk (*) or write the word “IMPORTANT” before the content that you want special emphasis put on. You can also enclose the text with the <strong> element to make it appear bold and give a strong semantic emphasis to it. The <em> element will give emphasis to text by making it appear italicized. Fortunately, Blackboard’s content editor will add a <strong> tag around words that you select and format with the editor’s “bold” button. It is the first button in the first row, with a bold capital letter T. Blackboard’s content editor also adds an <em> tag around words that you select and format with its “italic” button. This is the second button in the first row, with an italic letter T.
+
+Another best practice is to make sure your links are underlined and use the underlining only on links. Blue, underlined text has been used as a default style for links from the early stages of the web. It’s best not to remove the underlines, even if you choose a different color for your linked text. This could cause a user to miss important content, and in a teaching and learning setting, could lower a student’s grade. I know first hand, because I was in a course that changed its link styling from underlined to non-underlined between modules and pages. Consistency in design is important for usability and accessibility!
+
+Avoid Busy Background Images Behind Text
+
+Placing text directly over a background image can hurt readability also, especially an image with great detail, many tonalities, and semi-transparent font. You can solve the problem by placing the text within a solid color box whose background contrasts sufficiently with the font color. This would be best. But, some designers have been able to blur background images that are photographs with enough contrast with the font, and put a drop shadow behind the font, or outline it in black to improve readability in this situation.
+
+Below is an example of a sign that is difficult to read for people with good vision. The photograph’s been taken from approximately the position that a passenger riding in a car on the street in front of the sign would have. The designer has made a white CSU seal semi-transparent against a red background, and superimposed solid white text on top of the semi-transparent white seal. Though the very large “Fire Lane” is readable due to its size, the fine print about having your car cited, booted, and towed if you dare park there, isn’t readable. The white text message about the fire lane competes with the “Cleveland State University 1964” text of the seal for our attention.
+
+[CSU Fire lane sign with water mark of white seal against a red background, somewhat transparent white seal. Small white text printed over the faded seal isn't readable from passenger side of car in lane.]
+
+Here is another example of text over an image, that helps solve the readability problem. The photograph is blurred and the dark grays provide contrast with the white “AACSB Accreditation matters” text, which has a drop shadow around it. The designer has also placed the AACSB International Challenge text message over a solid blue background and put the “Challenge” in all caps. The contrast ratio between the white font and the medium blue background is 4.7:1, which passes WCAG 2.0 color contrast level AA for regular text, and level AAA for large text. When the image is filtered for the various color blindnesses and cataracts, we see that the small “INTERNATIONAL” is the hardest text to read.
+
+[Image of white text over blurred photographic background done successfully. White text has a dark outlining drop shadow.]
+
+29
+
+Alternative Text for Images
+
+Heather Caprette
+
+One of the Web Content Accessibility Guidelines is to provide equivalent alternatives to auditory and visual content. We’ll talk about adding alt text for images here. Though, the same principles apply to audio-visual media, applets, or non-text objects and embeds.
+
+The addition of alternative text for images will help someone who is blind or has vision difficulties know what is the content, purpose or function of an image. It can also help sighted users with mobility impairments, who are using dictation software to navigate, when an image is also a link. Alt text helps sighted users who may be using a browser with images turned off, perhaps to load pages faster, save on bandwidth or data usage when roaming. Alt text will also help search engines index your images.
+
+Alt text (short for alternative text) is a complex topic to discuss. You’ll get different ideas about what alt text should be, depending on what reference you read, or who you talk to. All images presented in an HTML document should have what is referred to as an alt attribute. The alt attribute will either contain text that conveys the meaning or function of the image, or it will be left empty or null. Images generally fall within three types: functional, informative and decorative. Decorative images always use a null (or empty) alt attribute and the functional and informative images sometimes use a null alt attribute or they require text that conveys the meaning or function of the image. Whether or not an image requires alternative text within the alt attribute, or if it is left empty (null) depends on its context within the page. The Web Accessibility Initiative has a good tutorial on alternative text and a decision tree for helping you decide how to write the alt attribute. WebAIM’s article on alt text is helpful also, but some of their scenarios don’t have an objective right or wrong way.
+
+We’ll look at examples of the different types of images and discuss how to write the HTML code for accessibility. Alternative text as well as a title (screen tip) can be created with the non-code, WYSIWYG part of Blackboard’s content editor, when inserting an image. Within Blackboard’s content editor, an empty alt attribute can be added by simply putting your cursor within the Image Description field and pressing your spacebar once to create one empty space. You can then toggle over into the HTML Code View and delete this space to make the alt attribute null.
+
+The following are general guidelines for alternative text:
+
+-   The text alternative should be equivalent to the meaning, purpose or function of the image
+-   Keep it short. Usually a few words will do, but sometimes a sentence or two may be needed. Images requiring a longer description can use a longdesc attribute that links to another page with a more comprehensive description, or the information can be written within the body of the document that contains the image.
+-   Use a null or empty alt text attribute if the same information is presented in the text adjacent to the image, or if the image is purely decorative. The former is to reduce redundancy when the information is read to the end user.
+-   Don’t start the alt text with “image of” or “graphic of.” A screen reader announces when it encounters an image. You may explain that the image is an illustration, painting or photograph when it conveys content, such as in an Art History course that displays many examples of paintings showing different styles or subject matter.
+-   For functional images, don’t start the alt text with “link to.” A screen reader announces that it is a link.
+
+30
+
+Creating Alt Text for Informational Images
+
+Heather Caprette
+
+The example below gives information about flooding in an emergency preparedness course. Would you consider the photograph below the text to be informative or decorative? Does it convey important supplemental information that the surrounding text doesn’t?
+
+Flooding:
+
+The National Weather Service (NWS) issues flood advisories. A flash flood occurs within 6 hours of excessive rainfall and poses a threat to life and/or property. The following are advisories the NWS issues.
+
+1.  Flash Flood Watch: A flash flood watch typically occurs 6 to 24 hours in advance of expected flooding.
+2.  Flash Flood Warning: A flash flood warning is issued when flooding is occurring or imminent.
+3.  Flood Warning: A flood warning is declared when general flooding is occurring, imminent, or likely.
+
+[flooded river flowing over the top of a bridge and the banks near houses. Distressed onlookers standing at edge of water.]
+
+Let’s say that I determine that the photograph does show important information I would like to get across to the audience. It shows an important impact of a flash flood. Here’s how I could go about adding the alternative text in Blackboard’s content editor.
+
+1.  With your cursor insertion at the point where you want to insert the image, click the Insert/Edit Image icon in the text editor. It is the second icon from the left in the third row, with a picture of a mountain. It’s outlined with a red box below.[The insert/edit image button highlighted in Blackboard Learn's content editor. Third row down, second button from left.]
+2.  Browse to the location on your computer or in the course, by clicking on the Browse My Computer button or Browse Course button.
+3.  Select it by clicking on the name of the image file, and click Open.The Image URL will appear. Blackboard gives an image a unique URL once it has been uploaded to a course.
+4.  Next, in the text entry box for Image Description, type the alternative text you have in mind for this image. Try to keep it short and succinct. If it goes over two sentences, you’ll need a long description instead. For this image, I chose to write, “A flooded river crests over the top of a bridge, extending onto the banks and roadway of a nearby community, where onlookers stand in frustration.” I chose to leave the title text box empty since I don’t have advisory information that I want to show as a screen tip for this image. The point to take away is that the Image Description serves as the alt text.[Blackboard Learn's Insert/edit image window with Browse My Computer highlighted. This is how you select the image on your hard drive. The Image Description field is highlighted. This is where you add the alt text.]
+5.  The Appearance tab has some other options for styling the image that you might like to set before clicking the Insert button at the bottom of the Insert/Edit Image dialogue box. It has some older options for creating white space around an image so that it doesn’t butt up against surrounding content. These are called Vertical Space and Horizontal Space. I’ll set 5 for five pixels of white space both vertically, above and below the image, and horizontally, to the sides of the image. I’ll also set a 1 pixel wide border around it to help separate it from the background. As I set these styles, the HTML code is written in the Style text entry box. You can add styling here, or in the HTML Code View.[Blackboard Learn's insert/edit image Appearance tab, with the tab highlighted.]
+
+The code that Blackboard adds for the image looks like the following:
+
+<img src=”https://bb–csuohio.blackboard.com/courses/1/Inclusive_Online_Design_1/content/_2019925_1/embedded/flooded_bridge_pg22.jpg” alt=”A flooded river crests over the top of a bridge, extending onto the banks and roadway of a nearby community, where onlookers stand in frustration.” style=”margin: 5px; border: 1px solid black;” height=”445″ width=”642″ />
+
+Blackboard’s content editor uses the dimensions of the image to set the height and width in pixels. You can delete the height value (height=”445″) and change the width value (width=”642″) to a percentage. You would choose a percentage that you want the width of the image to take up within its containing element, which is the central white background content area in Blackboard. For the flooding image, I chose 40%. Percent is a relative unit that will allow the image to scale up and down with a resize of the browser window. This minimizes scrolling horizontally, which helps with accessibility and usability. So, in HTML Code View, the final code for the image would look like:
+
+<img src=”https://bb-csuohio.blackboard.com/courses/1/Best_Practices_Accessible_Online_Design_Accessibility_Committee/content/_2171113_1/embedded/flooded_bridge_pg22.jpg” alt=”A flooded river crests over the top of a bridge, extending onto the banks and roadway of a nearby community, where onlookers stand in frustration.” style=”margin: 5px; border: 1px solid black;” width=”40%” />
+
+Banner Example
+
+In the case of a logo or banner for a department, you can simply use the text within the image, or the department or school name that it represents as the alternative text. For the School of Nursing banner, the alt text would be “School of Nursing.” The code would look like the following:
+
+<img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171113-dt-content-rid-11788111_1/xid-11788111_1″ alt=”School of Nursing” width=”90%” />
+
+[School of Nursing banner]
+
+31
+
+Creating Alt Text and a Long Description for Complex Informational Graphics
+
+Heather Caprette
+
+Images of charts, graphs and diagrams convey more information than can be conveyed with a short alt text attribute. In this case, we need to find a way to present a longer description of the data contained in the chart, graph or diagram. One way to do this would be to summarize the information within the body of the page. Another way is to represent the same data that is graphically displayed in a chart, within an accessible table, with headers and a summary. You’ll learn about how to add table headers, captions and summaries later in this module. However, I’ll show you a method of adding a complex image and its alternative text, including a long description, with the add Image feature in Blackboard Learn.
+
+To add an image of a bar chart with an alternative text and a long description:
+
+1.  With Edit mode set to On, there is an Actions Bar at the top center of the content region which will allow you to add content. Click on the Build Content option.
+2.  Within the Build Content menu of this Actions Bar, select to add an Image. This menu option is shown in the image below.
+    [Blackboard's Build Content menu expanded with Image and Build Content highlighted.]
+3.  In the Create Image dialogue box that pops up, give your data image a Name or title in the text entry box next to Name. This should express what the data or information is about. In the final display, it will show above the image of the chart, graph or diagram.
+4.  Next, you can locate the image file by browsing your computer, the course files (provided you’ve already uploaded the file to the course), or select a Flickr Photo from the Mashups feature. Select one of the Browse buttons below the Color of the Name box (defaults to black).
+    [Blackboard's Create Image window with the Name field and File File buttons highlighted.]
+5.  Enter a short, concise alternative description of the data represented by the chart, graph or diagram in the text entry box next to Alt Text. The Alt Text will not be seen by sighted users viewing the image on the page, but will be read by screen readers.
+6.  Next, in an accurate way, describe all of the information conveyed by the chart, graph or diagram. This will be written in the Long Description text entry box. In the final display, the Long Description will show beneath the image of your chart, graph or diagram. Write the long description as if you are conveying the information to someone on the other end of a phone call.
+    [Blackboard's Create Image window with the Alt Text and Long Description fields highlighted.]
+
+The final chart shows with its name above it and its description below, as represented in the image below.
+
+[Display of a bar chart image with the long description below it.]
+
+ 
+
+32
+
+Creating an Empty or Null Alt Attribute for Decorative Images
+
+Heather Caprette
+
+A decorative image is one that doesn’t convey meaning nor add information to the page. Examples of decorative images include:
+
+1.  Images that serve as borders, spacers, corners, flourishes
+2.  Images adjacent to text that convey the same meaning or information as the text, e.g. an image of Abraham Lincoln next to the text link “Abraham Lincoln.” You want to avoid redundancy when a screen reader reads what is there.
+3.  Images adjacent to text that serve as “eye-candy,” or “ambience,” and don’t add information.
+4.  Images used next to link text simply to improve its appearance or increase its clickable area
+
+Decorative images require the addition of an empty or null alt attribute in the HTML Code View that will tell the screen reader to skip over the image. An empty alt attribute is written as alt=” ” with a space between the double quotes. A null alt text is written as alt=”” with no space between the set of quotes. Without a null or empty alt attribute, the screen reader will announce that there is an image, and possibly give its dimensions, but leave the audience wondering what the image is and if it is important.
+
+You can produce an empty alt attribute (alt=” “) by typing one space with your spacebar within the Image Description field when inserting an image with Blackboard’s content editor. This is the easy route. When the content is read back with JAWS 17 in Firefox, it will skip over the images without announcing them at all. NVDA will announce “graphic” but give no dimensions or other information. If you use a null alt attribute on an image, NVDA will skip over it without announcing it. JAWS 17 will also skip over an image without announcing it when there is a null alt attribute set. Therefore, it’s best practice to create a null alt attribute on a decorative image or one that doesn’t convey information that is not on the page.
+
+Below is an example of a decorative image of a flourish that might be used at the top of a page or a separator for sections of a document. It would require the null alt attribute on the image element in HTML. The HTML code for this image would look like the following:
+
+<img src=”flourish.jpg alt=””>
+
+[decorative flourish]
+
+***IMPORTANT: Blackboard’s content editor, won’t create null alt text attributes on an image if you simply leave the Image Description blank when inserting an image. That is, if you leave the Image Description field blank and then click on the HTML Code View button after you have inserted the image, you won’t see <img alt=””> anywhere.
+
+To setup an image with null alt text, insert the image with the Insert/Edit Image icon as you would normally, but leave the Image Description field empty, as seen in the image below. Don’t worry about this right now.
+
+[Blackboard's Insert/Edit Image window with the Browse My Computer button highlighted.]
+
+When you get a pop-up dialogue window warning you that you need to include an image description to make the image accessible, click OK. When that dialogue disappears, click Insert to finish inserting your image.
+
+[Blackboard's Insert/Edit Image window with the OK button highlighted, when it asks if you are sure you want to leave the Description field empty. Click OK.]
+
+Next, you’ll need to toggle into HTML Code View using the HTML icon which is second from the right in the third row, to edit the code.
+
+[Blackboard's Content Editor with the HTML button highlighted and the flourish decorative image displaying.]
+
+You’ll see the code that Blackboard’s content editor created for the image. It will look like the following:
+
+<img src=”https–csuohio.blackboard.com/sessions/3/4/2/0/8/8/4/7/session/ff9f70436e4a4ab9a27a283871716715/flourish%281%29.gif” height=”105″ width=”659″ />.
+
+You can see the really long location and name change that Blackboard created for the image, ending in the file format, which is gif. You’ll also see height and width attributes. You can add a null alt attribute any where after img plus a space. We’ll add it just after the source (src) pathway to the gif. Place your cursor just before the h in height and type alt=””, and then a space. The code will now look like:
+
+<img src=”https://bb–csuohio.blackboard.com/sessions/3/4/2/0/8/8/4/7/session/ff9f70436e4a4ab9a27a283871716715/flourish%281%29.gif” alt=”” height=”105″ width=”659″ />
+
+Creating a Fluid Image Size
+
+We’ll make the image respond to changes in the browser window size, by changing its width to a percent value. Setting its width to a percentage of the container it is in, will allow it to scale proportionately downward with a decrease in window size. This technique can also avoid the need for horizontal scrolling if the window gets smaller than the width of the picture. We’ll delete height=”105″ and width=”659″ from the code above, so that it looks like the following:
+
+<img src=”https://bb.blackboard.com/sessions/3/4/2/0/8/8/4/7/session/ff9f70436e4a4ab9a27a283871716715/flourish%281%29.gif” alt=””  />
+
+We’ll now create a width that uses percent as a value. I’ll use 90%. I like to make the image slightly less than 100% of its container, to create some white space on the left and right of the image. To enter the width=”90%”, I leave a space after alt=”” and type the new property. The final code will look like:
+
+<img src=”https://bb–csuohio.blackboard.com/sessions/3/4/2/0/8/8/4/7/session/ff9f70436e4a4ab9a27a283871716715/flourish%281%29.gif” alt=”” width=”90%” />
+
+A note about image sizing: If your image dimension in pixels is a smaller percentage of the parent container than the percent that you write, there will be some scaling up, which could lead to a less detailed display of the image. Blackboard’s content area scales down to a minimum width of 1150 pixels before it stops responding to a decrease in the width of the browser’s display.
+
+Below is a comparison chart you can use to determine the percentage that an image of a certain numbers of pixels will take up when Blackboard’s content area is scaled down to its minimum width. If the browser window is scaled up, the image will still occupy the percentage of space that you designate, but pixels will not be added to your image to maintain image quality.
+
+  -------------------------- ---------------------------
+   Width of image in pixels   Width of image in percent
+             1150                       100%
+            1092.5                       95%
+             1035                        90%
+            977.5                        85%
+             920                         80%
+            862.5                        75%
+             805                         70%
+            747.5                        65%
+             690                         60%
+            632.5                        55%
+             575                         50%
+            517.5                        45%
+             460                         40%
+            402.5                        35%
+             345                         30%
+            287.5                        25%
+             230                         20%
+            172.5                        15%
+             115                         10%
+             57.5                        5%
+  -------------------------- ---------------------------
+
+  :  
+
+There is another method to make the image respond to a decreased screen size and eliminate the need for horizontal scrolling, but the execution isn’t perfect within Blackboard. Blackboard clips a small portion of the image on the right side. This method uses the max-width property for sizing the image. With the HTML Code View, you set the max-width of the image to be 100% of the containing parent element, and set the height to auto. In this case, the image will scale down to fit a window smaller than its original width in pixels (down to the minimum width of 1150 pixels in Blackboard), but it won’t scale up if the window size is larger than its width in pixels. The code would look like the following:
+
+<img alt=”” src=”https://bb–csuohio.blackboard.com/bbcswebdav/pid-2020261-dt-content-rid-11186514_1/xid-11186514_1″ style=”max-width: 100%; height: auto;” />
+
+Decorative Image Example #2:
+
+The following example shows the use of an image (the Start button) beside text to draw the user’s eye to important information. This helps sighted users and can help people with low vision or cognitive impairments orient. The image of a round button that says “Start” repeats the same information or has the same meaning as the text heading “Start Here” which is located above it. So, it won’t add meaning for someone listening to a screen reader. Therefore, we’ll but a null alt attribute on this image so that a screen reader skips over it.
+
+[Link to content folder in Blackboard called "Start Here" with a "Start" icon below it and text that says, "This folder contains instructions and a general overview of the course."]
+
+The yellow folder icon indicates that the author added a folder of content to her Blackboard course. To create the folder called “Start Here!” you can add a Content Folder from the Build Content menu on Blackboard’s Action Bar, with Edit mode On.
+
+[Blackboard's Build Content menu expanded with Content Folder highlighted.]
+
+Type the name of your Content Folder, such as Start Here! in the Name text entry box.
+
+[Blackboard's Create Content Folder window with an area for a Name and Text description]
+
+To create the Start button image to the left of the text description of the folder, you can copy and paste the following code within HTML Code View for the Text description box:
+
+<div style=”color: #000; padding: 1.5em; font-size: 1 em; font-weight: bold; font-family: Arial, Helvetica, sans-serif;”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171115-dt-content-rid-11267299_1/xid-11267299_1″ style=”margin: 0px 10px;” height=”50″ width=”50″ alt=”” /> This folder contains instructions and a general overview of the course.</div>
+
+The image below shows the code pasted into the HTML Code View dialogue window, superimposed over the WYSIWYG editor. Note that the spell checker button, outlined in red, is turned off. It is the ABC icon with the check mark. This is to avoid the unnecessary insertion of <span> elements in your code, due to a bug in the current version of Blackboard Learn. The HTML button clicked to enter into HTML Code View is also outlined in red.
+
+[Blackboard's HTML Code Editor window showing code for the inserted image.]
+
+*** Note: This code will work for centering the alignment vertically for one small image and one short line of text beside it. If you have a larger image and want to wrap a paragraph of text to the right of it within Blackboard Learn’s content editor, please see the section on Creating a Fluid Wrap of Text Around an Image.
+
+33
+
+Creating Alt Text for Functional Images
+
+Heather Caprette
+
+Functional images are images that are linked or initiate an action, such as submission of a form or a search query. If the image isn’t beside text that conveys the same function, then it will need alt text.
+
+Below are some examples of functional image situations.
+
+A Logo and Seal Image
+
+[Cleveland State University's logotype with seal.]
+
+In general, it’s best not to use text inside images for buttons, or links. If you can create these buttons or links with HTML and CSS, they should be created this way. Logos are exceptions. In the case of a logo, the alt text should convey what the image conveys. For example, if it is Cleveland State University’s logo or seal, you can simply use alt=”Cleveland State University” rather than describing it. You wouldn’t want to write alt=”Cleveland State University logo and seal“. The code for the image above is:
+
+<img src=”https://bb–csuohio.blackboard.com/courses/1/Inclusive_Online_Design_1/content/_2033036_1/embedded/CSU-Logo-NoTag-Split-2015.png” alt=”Cleveland State University” style=”margin: 5px; border: 1px solid black;” width=”260″ height=”54″ />
+
+Logo Image that Links to a Home Page
+
+If the Cleveland State University logo is linked and leads to the CSU home page, you can use the destination of the action the image performs, alt=”Cleveland State University Home Page”.
+
+[Cleveland State University's logotype with seal.]
+
+The code for this situation would look like the following:
+
+<a href=”http://www.csuohio.edu” title=”This link takes you to Cleveland State University’s Home Page” target=”_blank”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171116-dt-content-rid-11787785_1/xid-11787785_1″ alt=”Cleveland State University Home Page” title=”This link takes you to CSU’s home page” style=”margin: 5px; border: 1px solid black;” height=”54″ width=”260″ /></a>
+
+If a College or School logo is used with the CSU seal, as in the following example, you can use the destination of the action the image performs, alt=”Cleveland State University School of Nursing Home Page”.
+
+[School of Nursing with CSU seal to left of text.]
+
+The code for the example above looks like the following:
+
+<a href=”http://www.csuohio.edu/nursing/home” target=”_blank”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171116-dt-content-rid-11787936_1/xid-11787936_1″ alt=”Cleveland State University School of Nursing Home Page” style=”margin: 5px; border: 1px solid black;” height=”84″ width=”240″ /></a>
+
+Icons to Inform File Type
+
+Sometimes, you’ll use icons to represent what a linked file type for download is. These icons may be for Word, PowerPoint or PDF formats, for example. The example below represents this.
+
+Nursing Graduate Student Handbook [PDF]
+
+The code for this example looks like the following:
+
+<a href=”http://www.csuohio.edu/nursing/sites/csuohio.edu.nursing/files/media/graduate_programs/documents/GNR%20Student%20Handbook.pdf” target=”_blank”>Nursing Graduate Student Handbook <img src=”https://bb–csuohio.blackboard.com/bbcswebdav/pid-2033036-dt-content-rid-11256471_1/xid-11256471_1″ alt=”PDF” style=”margin: 1px;” width=”50″ height=”50″ /></a>
+
+Notice that the alt text, “PDF” doesn’t repeat text that is used for the link, which is good practice.
+
+Icons that Represent an Action
+
+Icons that represent an action could be a magnifying glass to submit a search, a printer icon to print a page, a phone icon to call a phone number, a twitter icon to send a tweet, a submit image to submit a form. In these cases, for alt text, we would not describe what the icon looks like, but what it will do. Therefor, we would not write alt=”magnifying glass” for the magnifying glass icon that submits a search term, but we would write alt=”search”.
+
+In the example below, the phone icon launches a phone application to call someone, the email icon launches an email application to email someone, and the twitter icon opens twitter to send a tweet to someone. In each case, the icon is linked but the text beside is not. If the text beside it were descriptive links, we could use alt=”” for the images if they were included inside the html link. To give them the same alt attribute as the descriptive link, would be redundant.
+
+Contact Information:
+
+[phone elearning] 1 (216) 687-3960
+
+[email elearning]elearning@csuohio.edu
+
+[Send tweet to @eLearningCSU]@eLearningCSU
+
+The code for these looks like the following:
+
+<p>Contact Information:</p>
+
+<p><a href=”tel:+12166873960″ title=”This link telephones 12166873960″><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171116-dt-content-rid-11788045_1/xid-11788045_1″ alt=”Phone elearning” style=”margin: 2px 5px;” width=”40″ height=”40″ /></a>1 (216) 687-3960</p>
+
+<p><a href=”mailto:elearning@csuohio.edu” title=”This link opens an email to the CSU Center for eLearning” target=”_blank”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171116-dt-content-rid-11787791_1/xid-11787791_1″ alt=”email elearning” style=”margin: 2px 5px;” width=”40″ height=”40″ /></a>elearning@csuohio.edu</p>
+
+<p><a href=”https://twitter.com/intent/tweet?screen_name=eLearningCSU” data-show-count=”false”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171116-dt-content-rid-11788137_1/xid-11788137_1″ alt=”Send Tweet to @eLearningCSU” title=”This link opens a tweet in twitter” style=”margin: 2px 5px;” height=”32″ width=”40″ /></a> @eLearningCSU</p>
+
+<script async=”” src=”//platform.twitter.com/widgets.js” charset=”utf-8″ type=”text/javascript”>/*<![CDATA[*/
+/*]]>*/</script>
+
+The code inside the <script> element is a JavaScript widget to open Twitter.
+
+ 
+
+34
+
+Setting up Descriptive Links and the Title Attribute in Blackboard Learn
+
+Heather Caprette
+
+At some point in document or course creation, you’ll want to provide links to other websites or pages. Screen reader users can bring up a list of links on a page, much like they bring up lists of all the headings on a page, or landmarks. In JAWS, a screen reader user does this by pressing the Insert key followed by F7. It’s important to use descriptive text for your links that convey where the link is going to, so that the links in this list make sense to a user taken out of context. You don’t want to use “click here” or “read more.” If there are more than one of these “click here” or “read more” links on a page, a screen reader user may not remember, provided she or he read the page, which “read more” went with which topic. It’s best to write the sentence in such a way to provide link text that will describe the purpose of the link and where it will lead to. The link text should be meaningful and unique from the other link text on the page.
+
+In the following example I’ll show you what you should avoid and then how to rewrite and relink it for descriptive link text.
+
+Avoid this type of writing and linking:
+
+“For more information about Fair Use of copyrighted materials, click here. For information about a Fair Use Evaluator that can help you decide if your specific use of copyrighted material favors Fair User or not, click here. For a chart that shows a list of conditions that favor or oppose Fair Use, click here.
+
+How you could reword the text to provide descriptive text links:
+
+“More information about Fair Use of copyrighted materials can be found on the Copyright Advisory Network’s website. If you have a question about whether a use falls under Fair Use or not, you can take the Fair Use Evaluator on their site. There is also Fair Use chart at Wheaton’s Buswell Library, that you can use as a quick guide to see if your use of copyrighted materials is favoring or opposed to Fair Use.”
+
+The following is a screen capture of JAWS links list showing the links on this page. You can see the three vague “click here” links followed by the three descriptive text links. The later three are best practice.
+
+[JAWS Links List Popup Window]
+
+It is best practice to also avoid linking URL text. It would be better to write out where the link is taking the person. Imagine hearing the following two links read out within a list of links by a screen reader: http://www.pcmag.com/article2/0,2817,2370354,00.asp, or http://mashable.com/2010/10/13/bit-ly-qr-codes/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Mashable+%28Mashable%29#33L46KnrOkqk. The first link doesn’t give a clue to what the article is about, and the second link is insanely long.
+
+Blackboard’s content editor Insert/Edit Link button will give you a screen in which you can add a Title attribute to your link. Title attributes are additional advisory information about where a link leads to or its purpose. It shouldn’t duplicate the descriptive text link. Screen readers may or may not be set to read the Title text. But, if you don’t want it to show as missing on a web accessibility check, you can write Title text either in the WYSIWYG view of  Blackboard’s content editor or within the HTML Code View. For sighted users, when they mouse over the link, the Title text shows as a tool tip.
+
+Remember, the text you select to make a descriptive link is more important that adding titles to links, for screen reader users.
+
+We’ll take a look at how to add a link within Blackboard’s content editor. Select the descriptive text you would like to turn into a link by clicking and dragging over it. Click on the Insert/Edit Link button in the second row of the content editor. It is the eighth button from the left and has a chain link on it.
+
+[Blackboard Learn's content editor with the Insert/edit link button outlined, and the descriptive text highlighted in the text entry box.]
+
+In the next screen that pops-up, you would enter the URL of the web page you would like to link to. You can also link to a file that is already loaded in your course or upload a new file. For the Target, you can choose to open it in the same window or in a new browser tab. If you will be opening your links within new browser tabs, you can make a note of this in your course information folder under the Accessibility Resources section. The Title attribute below gives advisory information (a tool tip) that the link will take the user to the Copyright Advisory Network’s website.
+
+[Blackboard's Insert/edit link dialogue box, giving the option to enter the URL path, a Target window, and an advisory Title.]
+
+Don’t bother setting the Class style. When you are done, click on the Update button at the bottom.
+
+35
+
+How to Setup a Simple Accessible Table in Blackboard Learn
+
+Heather Caprette
+
+See the movie tutorial on how to setup a simple accessible table in Blackboard Learn’s Original Experience.
+
+See an example of NVDA reading a simple Blackboard table with column and row headers.
+
+36
+
+Building a Fluid Container for Content in Blackboard
+
+Earlier we talked about using relative units such as em and % for font size and image width to create content that scales when a user changes her font size in her browser, or content that reflows when the user changes the browser window size. This same principle applies to HTML containers. In HTML, there is a generic type of container element, called a Div, that we can use to surround our content. It has an opening <div> tag before the content, and a closing </div> tag at the end of the content. When we specify a width in percent (%) for a container, its content will reflow as a browser window is scaled down. In the past, people used tables to layout just about everything on a web page. While this works for sighted users, it causes problems for people using screen readers. Using tables for layout should be reserved for tabular data or information that has a two-way relationship, such as found in rubrics or course schedules. Sometimes, tables can be used for layout if the content within is read in a logical order. A screen reader reads linearly, from top to bottom, line by line, in the order that content appears in the HTML. This holds true for both the content in the HTML code and content within a table. If the default language is read from left to right, the screen reader also reads from left to right, line by line, from top to bottom.
+
+Below I’ll give you some code to create fluid content containers. Their basic structure can be re-used and you can put your choice of text, images or media within.
+
+Single container with rounded corners
+
+Here’s a single container with rounded corners in which you can write whatever you would like. This box will respond to your screen size so that the text reflows and remains visible without scrolling, until Blackboard’s content area hits its minimum width of 1150 pixels. It doesn’t use an image in its background, so it is light weight in terms of downloading content. Its only limitation is set within Blackboard Learn’s minimum width size for the parent element (the content area).
+
+The code that you would enter into the HTML Code View is:
+
+<div style=”border-radius: 25 px; background-color: #006a4d; color: # fff; padding: 1.5em; margin:1.5em; font-size: 1 em; font-weight: bold; font-family: Arial, Helvetica, sans-serif;”><p>Here’s a single container with rounded corners in which you can write whatever you would like.  This box will respond to your screen size so that the text reflows and remains visible without scrolling, until Blackboard’s content area hits its minimum width of 1150 pixels. It doesn’t use an image in its background, so it is light weight in terms of downloading content. Its only limitation is set within Blackboard Learn’s minimum width size for the parent element (the content area).</p></div>
+
+Note the words contained within the <div> element that display in white letters. You can simply select this text, delete it or type over it, and enter whatever message you would like to appear here. The essentials to keep are: <div style=”border-radius: 25px; background-color: #006a4d; color: #fff; padding: 1.5em; margin:1.5em;  font-size: 1 em; font-weight: bold; font-family: Arial, Helvetica, sans-serif;”><p></p> </div> . Write whatever you would like in between the paragraph (<p>) tags.
+
+The style=”border-radius: 25px; background-color: #006a4d; color: #fff; padding: 1.5em; margin:1.5em; font-size: 1 em; font-weight: bold; font-family: Arial, Helvetica, sans-serif;” is not HTML, but “inline” CSS. CSS is another web language, that styles the content laid out by HTML. CSS stands for Cascading Style Sheet. Most web designers use separate (external) style sheets of CSS and link to them within their web page. We have to use what is called “inline” CSS within a content management system in order to impose the styling that we want and override the basic styling set within the learning management system’s CSS files.
+
+Below, you can see a video of the contents within the container reflowing as I scale the viewport size down.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=350
+
+37
+
+Creating a Fluid Textwrap Around an Image
+
+Heather Caprette
+
+If you would like to avoid the use of tables for layout, and save them for tabular data that has a two-way relationship, then the following code will help you create a fluid textwrap around an image. It uses a <div> element, which a generic container for content in HTML. You would click on the HTML Code View icon in Blackboard’s Content Editor and paste the following into the HTML Code View dialogue box.
+
+<div style=”clear: both; width: 90%; float: left; display: block; color: #000; padding: 2em; font-size: 1 em; font-weight: bold; font-family: Arial, Helvetica, sans-serif;”><img src=”https://bb-csuohio.blackboard.com/bbcswebdav/pid-2171074-dt-content-rid-7398148_1/xid-7398148_1″ style=”float: left; margin: 0 1.5em; border: 1px solid black;” width=”50%” height=”auto” alt=”” />This bar chart shows the distribution of preferred learning styles of fifty-eight first and final year nursing students in a study done by Flemming et al. The preferred learning style of first and final year nursing students was Reflector. The highest bar shows thirty three out of fifty-eight first year students preferred Reflector learning style. Forty out of fifty-eight final year students preferred Reflector learning style. Seven first year students and eleven final year students preferred Activist learning style. Eight first year students and five final year students preferred Theorist learning style. Ten first year students and two final year students preferred Pragmatist learning style.</div>
+
+This code for wrapping text around a larger image will look like the following when displayed within Blackboard Learn:
+
+[text wrapping or positioned to the right of an image of a bar chart.]
+
+You can go back into the WYSIWYG editor, select the bar chart image, and then click on the Insert/Edit Image icon. You can then browse your computer or course to find an image of your choosing. Likewise, you can highlight the text and write over it by typing in your own text. The code above provides an alternate way to layout your text and images than using a table.
+
+38
+
+Tutorials on assignment and assessment settings for accommodation in Blackboard
+
+Setting Adaptive Release Options on a Blackboard Assignment for Accommodation 
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=742
+
+Blackboard Test Exceptions for Accommodation
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=742
+
+ 
+
+IV
+
+Checking PDF Accessibility - Scanned Content and Publisher PDFs
+
+In this section, we’ll explore ways you can check to see if a PDF obtained from a publisher is accessible and to what degree it is accessible. I’ll also explain why you wouldn’t want to scan an article or learning materials on a copy machine. For faculty at Cleveland State University, I’ll explain where you can take hard copies of learning materials to be scanned.
+
+39
+
+Download the Free Adobe Reader Application
+
+Heather Caprette
+
+Adobe Reader is a free application for reading PDF documents. Please download it from:https://get.adobe.com/reader/.
+
+40
+
+The Difference Between an Accessible PDF and a Scanned Image of Text
+
+Heather Caprette
+
+Adobe Reader is a free program for viewing documents that end with .pdf. Adobe Reader does not have the full functionality of Acrobat Professional, which is used to create accessible PDFs.
+
+If you have a PDF you would like to use online, you can open it with Adobe Reader to check for some accessibility features. If a PDF is accessible, it will have tags and searchable text. Tags are the structural elements, similar to HTML elements, that provide semantic meaning to the content on the page. There are tags for headings, paragraphs, images, lists, tables, and table headers for example. It is these tags, much like Word Styles and properly marked up HTML, that help people using assistive technology and devices navigate the page and understand what content is.
+
+You can check to see if the PDF has been tagged by opening the document in Adobe Reader and going under the File menu, selecting Properties. In the Document Properties pop-up window, look for the word “Yes” next to Tagged PDF at the bottom of the screen. Please be aware, that even though a document may have tags, they may not be semantically correct. Problems arise with automatic tagging that produce the wrong tags, or wrong parenting order and break the meaning that is conveyed visually. A common problem with automatic tagging is the breaking up of one list into multiple lists. Another is the addition of empty tags produced by spaces created by using the return key multiple times within a Word document, before it was converted to PDF.
+
+To see if a document has searchable text, you can also check it within Adobe Reader by pressing your CTRL key plus “F.” Then in the “Find” search box that pops up, type a word that you see in the PDF and click the “Next” button. If the word becomes highlighted on the page, then it has searchable text as opposed to being a scanned image of text.
+
+You can check for correct read order within an accessible, tagged PDF or one that has had optical character recognition done on it by going under the “View” menu and checking off “Read Mode.” You then go under the “View” menu, select “Read Out Loud,” and “Activate Read Out Loud.” Go back under the “View” menu and select “Read Out Loud,” and either “Read This Page Only,” or “Read To End Of Document.”  Listen to see if the order of presentation makes sense for meaning. Pay attention to areas where diagrams with text have been inserted into pages. The text within these gets converted to searchable text that can be read, but often they get read in the middle of something else, breaking logical read order.
+
+Often, you will find “full text PDF” versions of publisher’s articles on library databases. These articles have had optical character recognition run on them, and have searchable text, but don’t necessarily have correct read order, especially when figures or tables are inserted within the body of the text, or there are multi-column layouts. These are partially accessible, but better than a scanned image of an article.
+
+41
+
+The BookEye Scanner in Electronic Course Reserves at CSU
+
+Heather Caprette
+
+Often, you’ll find passages from books or articles in a journal that you would like to make available to your students. Provided the usage falls under Fair Use guidelines, these hard copies of the content can be scanned on the 8^(th) floor of the Michael Schwartz Library in Electronic Course Reserves. Though, an office copy machine may scan to PDF and do optical character recognition, these machines can’t do the quality of scanning that the BookEye scanner can do in the Michael Schwartz Library. Optical Character Recognition or OCR is the process of recognizing images of letters in a document and converting them to editable and searchable text. The BookEye scanner, with 600 dpi optical resolution, produces a high quality scan that is optimized for the optical character recognition process. It adjusts the baselines of the text on the page to make sure they are straight and running at a 90 degree angle to the top of the page. It also prevents shadows from page curvature at the seams. ECR has the ability to create accessible, tagged PDFs, which can be used in your course.
+
+More information about Fair Use of copyrighted materials can be found on the Copyright Advisory Network’s website. If you have a question about whether a use falls under Fair Use, you can take the Fair Use Evaluator on their site. There is also a Fair Use chart  at Wheaton’s Buswell Library, that you can use as a quick guide to see if your use of copyrighted materials is favoring or opposed to Fair Use.
+
+Note: If you have a student who needs an entire textbook scanned for accomodation due to disability, and they have purchased a copy of the text, the Office of Disability Services can do this scanning.
+
+[The Bookeye 4 scanner with a book on its platform.]
+
+42
+
+Free OCR When You Can't Afford Other Software or Hardware
+
+Some would agree, the best things in life are free, like kittens, or software that will do optical character recognition.
+
+Most people have access to Microsoft Word. The most recent version, in Office 365, will import a PDF and convert it to native Word format for editing. You simply open the PDF in Word. There are some issues that you may need to fix and PDF forms do not convert well. For more information, see the tutorial on How to Convert & Edit PDF Documents in Microsoft Word on envatotuts+ site.
+
+If you don’t have Word and are still looking for a free way to perform optical character recognition on a PDF document, you can also try the OCR feature in Google Drive. It will convert files that are 2MB or under and in PDF, JPG, GIF, or PNG formats. Anyone can get access to a Google Drive by creating a Gmail account. After uploading the PDF to Google Drive, you right click on it and select to Open with Google Docs. The OCR process will take place. You’ll need to format the text in Google Docs after that point. For more information about this, see the tutorial on How to OCR Documents for Free in Google Drive on envatotuts+ site.
+
+There is also a Free Online OCR site that will allow you to upload a PDF and select Word (doc), Rich Text Format (rtf), or a Text Document (txt) as the output.
+
+V
+
+Checking Websites for Accessibility
+
+Often, faculty will require students to read content on websites as a learning activity. Sometimes these pages contain forms that students interact with, such as registering with a professional organization. When you find web pages or sites, you can check their accessibility to get an idea of the problems that someone with a disability might encounter. We’ll look at a way of doing this in this section. Please don’t be afraid or turned off by the display of the code, if you’re not familiar with it. The tools will explain what is wrong and the severity level.
+
+43
+
+WAVE Web Accessibility Evaluation Tool
+
+Heather Caprette
+
+There are a variety of free web accessibility checkers available on the web. They can give you an idea of how accessible a webpage is, if you are requiring students or users to go there. I’ll provide a list of free resources at the end of this lesson. We’ll focus on WAVE web accessibility evaluation tool here.
+
+WAVE, hosted by webaim.org, is available as a website and as an extension for Chrome browser. The WAVE web accessibility evaluation tool website is located at http://wave.webaim.org. Once on this page, you can enter the url of a web page to check its accessibility. The same tool exists in a form that will check the accessibility of password protected or internal pages, as well as public web pages. For this, install the WAVE extension for Chrome. The WAVE Chrome extension will also allow you to evaluate pages that use JavaScript. JavaScript is stripped out of the page when displayed on the WAVE website evaluator. There is more information about WAVE Chrome Extension at http://wave.webaim.org/extension/.  Webaim has a help page that explains how to use WAVE at http://wave.webaim.org/help.
+
+WAVE checks for compliance with many WCAG 2.0 guidelines, but no automated tool can check for all issues with the guidelines.
+
+Once the analysis is run, WAVE presents a report on the top left side of the screen as well as embeds icons and indicators within the web page. You don’t need extensive knowledge about web accessibility to benefit from the results. The RED icons indicate accessibility errors. If you get red icons, it is likely that someone with a disability will have difficulty accessing the content.
+
+Below is a screen shot of a WAVE report for the internal landing page for a personal account within our library’s system. This is a very clean page with few errors and warnings. You can see the “W” icon within a circle at the top left of the browser window. After I logged into my account at our library, I clicked on the Wave “W” icon at the top to run the web accessibility report. I’ve added red arrows to point out embedded icons which WAVE added to the page. Red icons indicate problem areas. Yellow icons indicate warnings. Green icons indicate accessibility features (green icons) that may or may not be helpful to someone using a screen reader.  The blue icons indicate structural elements that have been included that can potentially help people using a screen reader or other assistive technology, navigate your page more efficiently.
+
+[WAVE active on a web page, showing alert icons]
+
+I’ll include a view of what the page looks like without the WAVE embedded icons below:
+
+[Web page before WAVE applied to it.]
+
+When you click on the icons embedded in the web page, you get more information about what each means. The top red icon with the white bubble, for example, says that the language for the page isn’t specified. Setting the language is important for screen readers to read in the correct language. I’ve personally heard JAWS switch from reading in English to reading in French once it ran into the word “prerequisites” in a syllabus. The author never intended for this to happen. If you are authoring an HTML page, you can set a language attribute on the HTML tag at the top of the document. The code would look like this for United States English:
+<html lang=”en-us”>.
+
+[A popup window for WAVE's red chat bubble icon. It says, "Document language missing. The language of the document is not identified."] [The popup window for WAVE's yellow h1 icon. It says, "Missing first level heading. A page does not have a first level heading."]
+
+The yellow “h1” warning icon to the right of the red icon states that there is no heading level 1 for this page. It’s best to put a heading level 1 at the top of a web page to tell what the main topic of the page is. The visual headings on the page should be represented in the heading tag structure on the page, in the correct hierarchical order. There should be one h1 at the top of the page followed by heading level 2. Any subheadings would be represented by h3 through h6.
+
+Form Labels As An Example of An Important Accessibility Guideline
+
+Forms are vital to business and education. It’s impossible to get through college without having to fill out forms online. Even within courses students are asked to register with professional organizations, or register online with services that check for plagiarism, such as Turn-it-in.  If you are directing your students or users to fill out a form, it’s important that each input item in the form be coded with an “id” attribute that directly corresponds with a “for” attribute of a form <label> element. WCAG 2.0 techniques for Using label elements to associate text labels with forms also tests for visibility of the label for conformance. With explicit labeling, this code looks like the following for a text entry box asking for a first name:
+
+<label for=”firstname”>First Name:</label>
+
+<input id=”firstname”  name=”firstName” type=”text”>
+
+On the web page this displays like the image below.
+
+[Visual display of a properly coded form text entry box with an explicit label "First Name" to the left of the box.]
+
+With explicit labeling, the user can click on the text “First Name” and the cursor will insert into the text entry box to the right of it, which helps people with mobility impairments who may have trouble clicking in small areas.  Not only do these labels increase the area for a person with a mobility impairment to click on, in order to fill an input element such as a text entry box, they also help screen reader users know what they are supposed to be entering in a form input, such as their first name or last name.  Fieldsets and legends are elements that should be used on pages with multiple forms to help the person filling out the forms distinguish between them. Fieldset tags group related form items and legends provide a title or short description of what the grouped form items are for, e.g. a home address. A good use of this would be when there is a set of inputs for a mailing address and another set of form inputs for a billing address.
+
+Simply putting the text “First Name:” next to the text entry box is not a reliable form of labeling. The same is true for forms that save space by placing the label inside the form input, such as shown below. Screen readers may read these, but there’s no explicit connection between the labels and their inputs. Also, putting a form label inside of a text entry box, is not good for users with cognitive issues that include short term memory or attention. The label often disappears as soon as the user clicks within the box. If the person forgets what was needed for the input, she or he will have to back track out of the form input to discover what it is. I know it is hard to imagine, for some of us, what this is like. Keep in mind that we have a legal obligation to make our programs accessible to them. Nielsen Norman Group has an article about the harmful impacts of placeholders in form fields for usability, accessibility and conversion. Below is a screen shot of WAVE flagging form fields with labels inside the text entry boxes.
+
+[WAVE showing Missing Form Label icons for text entry boxes with internally written labels that disappear when you start typing in them.]
+
+Leaving form labels as visible within the code is important for passing accessibility checks.  In the WAVE analysis of the Scholar search form above, WAVE and other accessibility auditing applications yield an error for the form labels for the central search inputs. In a couple cases, this is not due to form labels not being present in the code, but because they aren’t visible. Their display is set to “none.” Some screen readers will ignore content with styling that sets the visibility to “hidden,” or the display to “none.”
+
+Listen to the following demonstration of NVDA reading the central form fields on the CSU MyAccount page. Listen with your eyes closed and imagine never having seen the page, as I tab through the form elements in order.
+
+Movie demonstration of NVDA reading non-displayed form labels and one check box with a missing label
+
+The image below shows the red and white warning tags next to the form inputs that need visible form labels.
+
+[Popup in WAVE showing missing form label for a label whose display style is set to none.]
+
+The code for the inputs above looks like the following:
+<label for="searcharg" style="display:none;">Search Type</label>
+<input id=“searcharg“ name=”searcharg” size=”30″ onchange=”return searchtoolSubmitAction()” maxlength=”75″ value=”” type=”text”>
+
+A way to get around the issue of hiding a label visually, but making it available for screen reader users, is to use WAI ARIA. WAI ARIA is an extension of HTML. An aria-label attribute can be added to an input element to give it a label that is detected by assistive technology. Important to note here, is that there is no added benefit for people with mobility impairments, such as mouse users with tremors or spastic hand movements, needing a larger clickable area. The code for an aria-label would look like the following:
+
+<input type=”text” name=”search” aria-label=”Search”>
+<button type=”submit”> Search</button>
+
+In another instance of a label error, the code lacks a form label. This is for the check box input next to the text, “Limit to items which are not checked out.” In this case, there is no label element above the input element. The code looks like the following:
+
+<div>
+<input name=”availlim” value=”1″ type=”checkbox”></input>
+Limit to items which are not checked out
+<br/><br/>
+</div>
+
+The following example shows problems with a form to join the American Nursing Association, an organization Nursing students are asked to join. The form lacks properly coded labels to associate form fields with their text descriptions. The labels are present, but the form inputs don’t have corresponding id attributes to associate them with their labels. The yellow tag warning icons are next to the labels that have no corresponding input, and the red tag error icons are next to the form fields that aren’t marked up to associate them with their labels. The ANA has a paper form that is meant to be printed and mailed in. It is an untagged PDF, with no form elements, and therefore not accessible to the blind and visually impaired. It’s best to look for sites that have contact phone numbers with people that can help register a user who can’t use their site. Alternatively, someone at CSU would need to help a blind or visually impaired person complete a form.
+
+[WAVE showing warnings for a missing form label and an orphaned form label on the American Nursing Association's site.]
+
+WAVE extension for Chrome also has a tab at the upper left side to turn off presentation Styles to see the structure of the page. This button is called No Styles. When you click it, you’ll see navigation as lists, hopefully headings to provide structure, as well as paragraphs of text. This structure is similar to what a screen reader sees and reads out. If the structure lacks lists for navigation, headings, or fieldsets with legends for multiple forms, this can be a warning sign that the page will be have to be read through from beginning to end by someone using a screen reader, and will be more time consuming to navigate. Below is a screen shot of what the form page above looks like with styles turned off.
+
+[The display of a web page with WAVE's "No Styles" tool activated. This shows the simple structure of the page that the screen reader will read off.]
+
+WAVE also has a tab for checking color contrast, called Contrast, at the upper left. When you click on this, you’ll get warning icons for areas where the text doesn’t have a high enough contrast ratio with its background to pass WCAG 2.0 standards. The icons in red below, that have an ABC on them are areas with color contrast problems. There’s no eye dropper tool to sample colors, so the Paciello groups Colour Contrast Analyser would be a much stronger tool to use to find color and contrast issues, and find color combinations that will pass WCAG 2.0 level AA.
+
+[WAVE's Contrast tool showing areas where there is low contrast in the color of the gray text against grayish backgrounds.]
+
+ 
+
+44
+
+aXe Accessibility Audit Tool
+
+Heather Caprette
+
+Deque Labs developed an accessibility engine called aXe accessibility tools to test accessibility of web pages. Axe exists as an extension for Chrome and Firefox. I’ll focus on instructions for adding it to Firefox, since WAVE only installs in Chrome browser.  You can install aXe Developer Tools to add an Accessibility Audit tool to Mozilla Firefox’s Web Developer Tools. When this tool is active, it will allow you to analyze a web page and see the accessibility issues in a panel below the web page. When you are on a page you would like to check the accessibility of, you can activate aXe’s Accessibility Audit. This is a great tool if you not only want to identify the problem areas, but also inspect the code of the page. If you prefer not to look at the code, you are still made aware of the issues that will arise for people with disabilities landing on the page you’ve chosen to share.
+
+Below is a video overview of aXe Accessibility Audit tool, used with its Highlight and Inspect features.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=549
+
+The aXe add-on for Firefox recently upgraded to version 3. It looks like it will add to CSU’s mandated Firefox version 48, but there’s a notice that it shouldn’t be used with an outdated version of Firefox.  If you want to keep using Firefox browser and have a version of it that will work with aXe Developer Tools, you can install Firefox Developer Edition.  The colors in the interface are different, but you can search for the site you want much in the same way as with the standard Firefox.
+
+To search for aXe in Firefox, click the menu icon with the three horizontal bars in the upper right corner. This type of icon is typically referred to as a “hamburger” because it resembles a sandwich. The arrow in the image below points to the menu icon.
+
+[The hamburger icon in Firefox, or main menu, is located in the upper right corner and has three horizontal lines.]
+
+Once open, click on Add-ons.
+
+[The Add Ons menu option in Firefox]
+
+In the next screen, click on Extensions and type “aXe” in the Search box at the upper right.
+
+[Firefox's Extensions screen with aXe typed in the Search input field.]
+
+When aXe comes up at the top of the search results, click on it. On the page with the details about aXe, click the Add to Firefox button.
+
+[aXe Extension details page with the Add to Firefox button]
+
+Once aXe is added to Firefox, you can access it under the web developer tools. These tools are opened by clicking the wrench icon at the top right of the browser, or going to the hamburger menu and selecting Web Developer and then Toggle Tools. See the method for accessing the web developer tools under the wrench icon below.
+
+ 
+
+[With the wrench icon selected, which accesses Firefox's Web Developer Tools, select Toggle Tools option.]
+
+Enter the URL for the page you would like to analyze for accessibility. I’ll go to the updated version of the American Nursing Association’s membership form. The Developer Tools will likely open at the bottom of the browser window or on the right side. Below is an image of the tools open at the bottom of the screen. You will also need to navigate to the aXe tab or view of the developer tools. Once there, click the Analyze button.
+
+[aXe open at bottom of Firefox, and Analyze button visible and clickable.]
+
+The analysis results will come up at the bottom of the window. On the left are a list of problem items on the page. In the middle are details about the issue, such as a problem with text being too light against the background color and not creating enough contrast to meet the WCAG 2.0 AA standard. When the Highlight button is clicked on, the item will have an outline around it, which helps people with sight recognize what it is on the page. This will help non-coders to see what the problem is, along with the written description of the problem. The end user can arrow through all of the items on the page with the same issue, e.g. not enough color contrast between text and background, using the arrows at the far right of the aXe screen. To look at different issues, click the next item down in the list on the left, e.g. documents must have a title.
+
+[aXe analysis results showing a list of problem items on the left, and details about the currently selected problem in the middle.]
+
+On the right, you’ll see information about how to fix the problem and how critical the impact is. With the color contrast problem below, we see that its impact is serious. We’re told that the light gray text has a contrast of 2.32 to 1 against the background color. We’re told that we need to raise the contrast to a ratio of 4.5:1.
+
+[aXe explanation of how to fix a problem with color contrast, showing that its impact is serious.]
+
+ 
+
+45
+
+Other Techniques for Checking Accessibility
+
+Heather Caprette
+
+Use a Web Developer Extension in Firefox to Disable all CSS Styles and Turn Off all Images
+
+Web Developer add-on for Firefox by Chris Pederick is also a good extension that will allow you to turn off all CSS styles and see the structure of the page. This structure is what a screen reader will detect and read back. This extension for Firefox will also allow you to turn off all images, to check for alternative text which the screen reader will read back. WebAIM’s page on how you can use the Disable feature of the Web Developer extension to check for accessibility is at http://webaim.org/resources/webdev/.
+
+HTML Based Text Enlargement and Reflow
+
+Because people with low vision will increase their default browser font size, text should be formatted with relative font size units such as em, or %. Content should also respond to a reduced window size and the user’s set font-size by reflowing in a logical order, and not clipping content. You can check this by entering Responsive Design Mode with Mozilla Firefox’s Web Developer tool under the Tools menu and then dragging the lower right corner of the browser window to the left and upward. The page content, including the text shouldn’t just scale down or shrink to fill the reduced viewport window. Text size should remain readable, which typically involves the text becoming slightly larger, but it could possibly stay the same size.
+
+It’s also possible to check page response to a reduced window size in Chrome browser. You do this by first clicking on the middle “Restore Down” icon at the top right of the screen that looks like a window frame over the top of another window frame. Then, hover your mouse over the lower right corner of the browser window until it becomes a diagonal arrow. Click and drag the lower right corner up and to the left. The text should reflow and possibly change font size. If the developer used CSS media queries to layout the page, the font size may increase when the window approaches the size of a phone or small tablet. This would be an example of a best practice.
+
+Look at the Page Info
+
+A user can look at a web page’s info within Mozilla Firefox browser by right clicking on a web page and selecting View Page Info. This is a quick way to see what information is coded into the meta elements within the head of a web page. These meta tags give information about the page that help screen reader users know what it is about when they find the page within Google results or on Social Media. A properly marked up page will have a unique title at the top of the General tab.  A meta “description” is particularly helpful and shows highlighted in blue in the image below. The image below is a screen capture of the page information for The Ohio State University’s home page. It has a unique title at the top that says, “The Ohio State University.” The “og” tags provide information to FaceBook users when the page is shared on Facebook.  The “twitter” tags provide a title, description, and an image for a Twitter Card when the page is shared on Twitter.
+
+[The Page Info for www.osu.edu.]
+
+ 
+
+VI
+
+Captioning and Transcribing Audio/Video
+
+This chapter will contain a video tutorial on captioning a video that you’ve uploaded to Youtube.com.  If a video doesn’t belong to you, there is a way to caption someone else’s Youtube video in Amara.org. These are both free methods and you may be able to take advantage of Youtube’s auto generated captioning to give you a head start.  You can also look at a Youtube video that talks about Best Free Way to Automatically Transcribe Video (Audio to Text).
+
+The Value of Captioning and Transcribing
+
+A recent survey based study by the Oregon State University Ecampus across 15 institutions, and 2,124 students found that captions and transcripts benefited not only students who were deaf or hard of hearing, but other subgroups of students as well. The study is called, “Student Uses and Perceptions of Closed Captions & Transcripts.”  A summary of findings are listed below:
+
+1.  98.6% of students find captions helpful
+2.  71% of students without hearing difficulties use captions at least some of the time
+3.  66% of ESL students find captions “very” or “extremely” helpful
+4.  52% of students use captions as a learning aid to improve comprehension
+5.  15% of students didn’t know how to tell if a video had captions
+6.  The most common reason students use captions is to help them focus
+7.  The most common reason students use transcripts is as study guides
+
+46
+
+How to Take Advantage of Youtube's Auto-generated Captions
+
+Youtube will generate captions automatically for many videos. There are some exceptions. They have more information about what could cause captions to not auto-generate on their support site (See: https://support.google.com/youtube/answer/6373554?hl=en).  Below is a captioned tutorial on How to Correct Youtube’s Auto-Generated Captions. Sometimes, it will take a day or two for automatic captions to become available on a video once you upload it. But, once there, you can select them and edit them.
+
+An interactive or media element has been excluded from this version of the text. You can view it online here: https://pressbooks.ulib.csuohio.edu/accessibility/?p=600
+
+Once you’ve corrected the auto-generated captions in Youtube, you can download a .vtt, .srt, or .sbv caption file from the Actions menu under Subtitles/CC in Creator Studio classic view. The .srt or .sbv file can be uploaded to Tegrity recordings to add captioning to them.
+
+[Actions menu under Subtitles/CC of Youtube's Creator Studio classic]
+
+Creating Accessible PowerPoint Presentations
+
+Learning Objectives
+
+By the end of this module, you will be able to:
+
+1.  find accessible PowerPoint templates to start with and create your own accessible presentations
+2.  create contrast between the foreground text and background colors that pass WCAG 2.0 Level AA
+3.  avoid the use of color alone to convey meaning
+4.  format for readability – choose fonts, font-sizes and colors that show well on screen
+5.  create new slides with unique titles
+6.  arrange content on slides for logical reading order by a screen reader and check with the Outline panel
+7.  add alternative text descriptions for non-text elements, such as pictures, shapes, icons, 3D Models, SmartArt, and Charts
+8.  create simple table structures with column and row headers and descriptions if needed
+9.  create descriptive hyperlink text
+10. create simple accessible slide transitions, or leave them out if not needed
+11. create captions for embedded video
+12. create transcripts for embedded audio
+13. use PowerPoint’s built in Accessibility Checker to check your document for things that may be inaccessible
+
+ 

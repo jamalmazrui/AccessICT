@@ -1,0 +1,2175 @@
+﻿
+
+The Web Accessibility Guide
+
+“Promoting Web for All”
+
+Published by
+
+National Federation of the Disabled – Nepal
+
+In partnership with CBM 
+
+ 
+
+This book has been published with the support of CBM and contents are prepared by NFDN.
+
+ 
+
+Author: Aayush Shrestha Advisory Team: 
+
+From NFDN: Shudarson Subedi, Manish Prasain, Sagar Prasai, Bimal Paudel
+
+From CBM: Benjamin DARD, Krishna Gahatraj, Pragya Lamsal
+
+ 
+
+ 
+
+ 
+
+Publisher:
+
+National Federation of Disabled – Nepal
+
+Bhrikutimandap, Kathmandu Nepal
+
+P.O. Box No.: 9188
+
+Phone Number: +977-1-4231159
+
+Fax: +977-1-4229522
+
+Email: info@nfdn.org.np
+
+ 
+
+ 
+
+ 
+
+Layout: Elsa Thapa
+
+Printers: Bhojpur Siddhakali Printers, 9851098800
+
+ISBM: 978-9937-0-2497-7
+
+First Edition: April, 2017
+
+©All rights reserved
+
+ 
+
+ 
+
+Disclaimer: The contents of this guidebook are based on the WCAG technical documents developed by Accessibility Guidelines Working Group (AGWG), which is a part of the World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI).
+
+         
+
+Message from Department of Information Technology:
+
+ 
+
+Web has becomes the most significant communication tool in this digital era. Most of the information are circulated via web these days. Government of Nepal has been also promoting the digital governance through its various endeavors. It is essential that all circulated information must be useful and accessible to all citizens regardless of their age, sex, physical and mental condition. 
+
+ 
+
+However, it is bitter reality that official websites of government have not been totally developed considering the requirements of diverse user’s groups including persons living with all forms of disability. The constitution of Nepal, 2072 (2015) along with other national and international documents have clearly directed to government to develop or improvise websites and any other platforms to share or transfer the information and other materials in accessible formats to all citizens including persons with disability. 
+
+ 
+
+This is with my immense pleasure that NFDN took initiation of developing a web accessibility guide targeting to website developers, content writers and website managers. It is not only useful guideline for the web developers or programmers but also a good reference to enrich The Government Websites Design/Development and Management guidelines adopted by Government of Nepal in 2068 (2012). 
+
+ 
+
+My department is also committed to promote the prepared web accessibility guide in our various web-based activities in days to come so that persons with all forms of disability can also access to all shared information and other materials on an equal basis with others. Circulating this message to various governmental agencies, we will officially also encourage to those authorities to use this technical guide in their own endeavors as well. 
+
+ 
+
+At last, I am again thankful to the NFDN team whose tireless efforts made successful to bring this guideline into the present form. 
+
+ 
+
+ 
+
+Birendra Kumar Misra
+
+The Director General
+
+Government of Nepal,
+
+Ministry of Science, Technology and Environment (MOSTE) Department of Information technology (DOIT) Anamnagar, Kathmandu- Nepal.
+
+Website: www.doit.gov.np
+
+ 
+
+         
+
+Message from CBM 
+
+ 
+
+Accessibility is a prerequisite for people living with different types of disabilities towards increasing their reach to any sorts of facilities and services and to enhance their participation in society. Therefore, ensuring accessibility is an integral part of development initiatives that we undertake. It is a human rights of every individual to be able to participate in the family and in community on an equal basis with others irrespective of their physical and mental conditions. However, most often, persons with disabilities are forgotten, left behind and discriminated based on their disability. Consequently, they have been marginalized and living their lives under extreme poverty. CBM perceives Disability Inclusive Development as a fundamental human rights principle. Therefore, it always endeavours to ensure and promote accessible environment for all in its entire development interventions as stated in article 9 of the Convention on the Rights of Persons with Disabilities, 2006. 
+
+ 
+
+Accessibility is mostly understood as a minor component of fixing ramps and elevators especially for those with mobility impairments. But, it is beyond that and has a broader scope. People with different types of impairments have their own specific accessibility requirements. For instances, physical accessibility might belong more to those with mobility impairments whereas the accessibility in information and communication technology might belong with other sensory impairments. The current advancement in information technology has been helpful to make lives of people much easier and people with disabilities can also be benefited with this.
+
+Therefore, access to information and communication has been very important an integral part of life of every individual including person with disability.
+
+ 
+
+Aiming to promote accessibility in information, NFDN, as part of ‘Accessibility for Inclusion’ project getting implemented in partnership with CBM, has developed a web accessibility guidelines to assist web developers and its designers to develop websites that are accessible to persons who face visual and audible barriers. Therefore, I fully believe that this joint endeavour of NFDN and CBM will contribute to enhance inclusion by increasing access to information. I’d like to thank especially NFDN who made possible to publish such an important document. And, nonetheless, my thanks goes to the CBM team as well for their efforts to make it more resourceful from broader perspectives and request all to join hands together to create fully inclusive society.
+
+ 
+
+ 
+
+ 
+
+ 
+
+…………………………..
+
+ 
+
+Prakash Raj Wagle
+
+Country Coordinator Country Coordination Office in Nepal CBM International 
+
+ 
+
+         
+
+Message from NFDN 
+
+ 
+
+Information is the power which strengthens people to get access to various opportunities of life, services, facilities, knowledge, education and so on.  The Universal Declaration of Human Rights has recognized the "Rights to Information" as one of the basic human rights of each individual. It ensures that everyone has rights to receive and impart information and ideas through any media and regardless of frontiers. 
+
+ 
+
+The modern information technology has helped people to get a very easy and quick access to any required qualitative and quantitative information of world in a cost effective way. Moreover, it has brought the world community very closer to each other. Use of electronic media and internet for information, education, learning, experience sharing and official work is very common and essential for todays and the information technology has become a life style of everyone.
+
+ 
+
+However, a huge number of persons with disabilities, particularly the persons with visual impairment, learning disability and intellectual disabilities are still out of the access of such opportunity due to inaccessible design of website. For example, most of the websites including the official websites of government agencies are very good to look at for those who can see with their eyes and search information but at the same time they are very inaccessible for those who are visually impaired and use screen reading software in their computer or gadgets to navigate through the website. 
+
+ 
+
+The article 21 of the Convention on the Rights of Persons with Disabilities has directed to the state party to ensure the access of persons with disabilities to the all forms of information disseminated for public to make them able to receive and impart information and ideas on an equal basis with other and through all forms of media or communications of their choice. In the current world, making accessible website is not the matter of cost rather it is simply an idea and creativity which is needed for programmers, content creators and website manager. There are few technical ideas and factors to be taken into account for each of them which help them not to only make the websites accessible for persons with different types of disability but also to make it easy, simple, comfortable and eye-friendly for all users. 
+
+ 
+
+Based on its own experience, first time in Nepal, NFDN has been able to develop this simple but comprehensive technical guide basically focusing to the programmers, content creators and website managers to help them for developing and managing an accessible website for all including persons with disability. I would like to extend my hearty thanks to all the team members of our organization and consultants who are engaged in this wonderful endeavor. NFDN is very pleased to handover this beautiful but useful gift to the relevant stakeholders, organizations, individuals and request all to use this guide as much as possible in their website development, designing and management process to make it accessible for all including persons with disabilities and contribute to the disability rights promotion. 
+
+ 
+
+Thank you 
+
+ 
+
+Shudarson Subedi
+
+The National President 
+
+National Federation of the Disabled Nepal. 
+
+ 
+
+ 
+
+ 
+
+Table of Contents
+
+INTRODUCTION                                                                                                                                                                   8
+
+Equal Opportunities to Persons with Disabilities                                                                                                              8
+
+Web Accessibility Handbook                                                                                                                                                  8
+
+WHAT IS WEB ACCESSIBILITY?                                                                                                                                     9
+
+WHY WEBSITES NEED TO BE ACCESSIBLE?                                                                                                         10
+
+Social Responsibility                                                                                                                                                              10
+
+Legal Responsibilities                                                                                                                                                            10
+
+Access to Hidden Markets                                                                                                                                                    11
+
+Good for Search Engine Optimization                                                                                                                               11
+
+Lower Costs and Increased Usability                                                                                                                                 11
+
+MYTHS ABOUT WEB ACCESSIBILITY                                                                                                                       12
+
+Persons with Disabilities Do Not Use Websites                                                                                                               12
+
+Accessible Websites Are Boring                                                                                                                                          12
+
+Web Accessibility is Expensive                                                                                                                                            12
+
+HOW PERSONS WITH DISABILITIES USE WEBSITES                                                                                        13
+
+Visual Impairment                                                                                                                                                                 13
+
+Physical Impairment                                                                                                                                                              13
+
+Hearing Impairment                                                                                                                                                              13
+
+Cognitive and Learning Impairment                                                                                                                                  14
+
+COMMON BARRIERS IN A WEBSITE                                                                                                                       15
+
+No Descriptions for Non Text Information                                                                                                                        15
+
+Insufficient Font Sizes or Color Contrast                                                                                                                           15
+
+Complicated and Inconsistent Website and Navigation Structure                                                                              17
+
+Ambiguous Links                                                                                                                                                                    17
+
+Short Time Allowed for Time Limited Functions                                                                                                             18
+
+Difficult Controls                                                                                                                                                                    18
+
+Difficulties Accessing Documents (PDFs)                                                                                                                          18
+
+ACCESSIBILITY GUIDELINES                                                                                                                                         20
+
+World Wide Web Consortium (W3C) and Web Content Accessibility Guidelines (WCAG)                                    20
+
+WCAG 2.0 Principles                                                                                                                                                              20
+
+WCAG 2.0 Guidelines                                                                                                                                                            21
+
+Guideline 1.1: Text Alternatives                                                                                                                                           21
+
+Guideline 1.2 Time-based Media                                                                                                                                         22
+
+Guideline 1.3 Adaptable                                                                                                                                                        22
+
+Guideline 1.4 Distinguishable                                                                                                                                               22
+
+Guideline 2.1 Keyboard Accessible                                                                                                                                      23
+
+Guideline 2.2 Enough Time                                                                                                                                                   24
+
+Guideline 2.3 Seizures                                                                                                                                                            24
+
+Guideline 2.4 Navigable                                                                                                                                                         24
+
+Guideline 3.1 Readable                                                                                                                                                          25
+
+Guideline 3.2 Predictable                                                                                                                                                      25
+
+Guideline 3.3 Input Assistance                                                                                                                                             26
+
+Guideline 4.1 Compatible                                                                                                                                                      26
+
+WCAG 2.0 Success Criteria                                                                                                                                                   27
+
+Success Criterion 1.1.1 – Non Text Content                                                                                                                       28
+
+Success Criterion 1.2.1 – Audio-only and Video-only (Prerecorded)                                                                             29
+
+Success Criterion 1.2.2 – Captions (Prerecorded)                                                                                                             31
+
+Success Criterion 1.2.3 – Audio Description or Media Alternative (Prerecorded)                                                      32
+
+Success Criterion 1.3.1 – Info and Relationships                                                                                                               33
+
+Success Criterion 1.3.2 – Meaningful Sequence                                                                                                               35
+
+Success Criterion 1.3.3 – Sensory Characteristics                                                                                                             37
+
+Success Criterion 1.4.1 – Use of color                                                                                                                                 39
+
+Success Criterion 1.4.2 – Audio Control                                                                                                                              41
+
+Success Criterion 2.1.1 – Keyboard                                                                                                                                     43
+
+Success Criterion 2.1.2 – No Keyboard Trap                                                                                                                      44
+
+Success Criterion 2.2.1 – Timing Adjustable                                                                                                                      46
+
+Success Criterion 2.2.2 – Pause, Stop, Hide                                                                                                                       47
+
+Success Criterion 2.3.1 – Three Flashes or Below Threshold                                                                                          48
+
+Success Criterion 2.4.1 – Bypass Blocks                                                                                                                              49
+
+Success Criterion 2.4.2 – Page Titled                                                                                                                                   50
+
+Success Criterion 2.4.3 – Focus Order                                                                                                                                 51
+
+Success Criterion 2.4.4 – Link Purpose (In Context)                                                                                                         53
+
+Success Criterion 3.1.1 – Language of Page                                                                                                                       54
+
+Success Criterion 3.2.1 – On Focus                                                                                                                                      55
+
+Success Criterion 3.2.2 – On Input                                                                                                                                       56
+
+Success Criterion 3.3.1 – Error Identification                                                                                                                    58
+
+Success Criterion 3.3.2 – Labels or Instructions                                                                                                                59
+
+Success Criterion 4.1.1 – Parsing                                                                                                                                         61
+
+Success Criterion 4.1.2 – Name, Role Value                                                                                                                       63
+
+TESTING TECHNIQUES FOR WEB ACCESSIBILITY                                                                                              65
+
+Code Scanning                                                                                                                                                                        65
+
+Visual Review                                                                                                                                                                          65
+
+Manual Testing with Screen Readers                                                                                                                                 65
+
+Other Tools                                                                                                                                                                              66
+
+Human Testing                                                                                                                                                                        66
+
+ACCESSIBILITY WORKSHOP OUTLINES                                                                                                                  67
+
+Overview                                                                                                                                                                                  67
+
+Target Audience                                                                                                                                                                      67
+
+Objectives of the workshop                                                                                                                                                 67
+
+A One-Day Accessibility Workshop For Managers, Decision Makers and Web Content Creators                        67
+
+Schedule                                                                                                                                                                                   67
+
+Session Descriptions                                                                                                                                                               68
+
+A One-Day Accessibility Workshop For Web Developers and programmers                                                            69
+
+Schedule                                                                                                                                                                                   69
+
+Session Descriptions                                                                                                                                                               70
+
+ 
+
+ 
+
+         
+
+Introduction 
+
+[]
+
+We should take every opportunity that we can to make information available and accessible to all people, including those with disabilities, to enable them to live independently and equally participate in all aspects of life and profession. Especially in the information age, where internet and the world wide web has opened doors to access of information and knowledge to everyone around the world, it becomes extremely important that the content creators and the developers of websites make sure that their websites are accessible to everyone.
+
+ 
+
+Equal Opportunities to Persons with Disabilities 
+
+[]
+
+The web is an essential communication tool. With the rapid growth of the Internet, all kinds of information are shared and transported on the web. That is why, it has now become essential to ensure that websites are accessible to persons with disabilities to enable their full integration to the society. People with disabilities should have an equal and barrier-free access to information.
+
+This is also in line with the spirit of the United Nations’ Convention on the Rights of Persons with Disabilities, which came into force for Nepal on  May 7, 2008.
+
+ 
+
+Web Accessibility Handbook 
+
+[]
+
+This Handbook is designed for senior executives, managers, content creators and website developers to better understand the importance of web accessibility and show how it can be successfully implemented.
+
+This Handbook also mentions how workshops can be organized to better educate other people about the importance and the techniques involved in making websites accessible to people with disabilities.
+
+         
+
+ 
+
+What is Web Accessibility? 
+
+[]
+
+Web Accessibility means that people with disabilities can use the web. More specifically, Web Accessibility means that people with disabilities can perceive, understand, navigate and interact with the web, and that they can contribute to the web. Some organizations mistake “accessibility” to be about whether or not people “can find you”, however accessibility is not about being easily found on search engines and social media. It is about designing sites and contents for everyone, no matter who they are or how they access and perceive the internet and the world. It specifically addresses the needs of persons with disabilities, and ensures acceptable ease of use and consumption of information for all levels of ability.
+
+Web Accessibility, in its basics, is making sure that websites, products and services are available and usable to all users regardless of
+
+●     Physical ability
+
+●     Speed of internet
+
+●     Type of device
+
+ 
+
+Hence, ensuring Web Accessibility starts with asking the question “Can ALL people, including persons with disabilities, access the information that your website provides?”. 
+
+By adopting relevant guidelines when designing websites and contents of websites to cater for the needs of persons with disabilities, you are making your website more user-friendly, maximizing your customer base and showing that you are an organization that cares.
+
+ 
+
+         
+
+ 
+
+Why Websites Need to be Accessible? 
+
+[]
+
+There are many reasons why website creators, organization managers, content creators and designers need to make sure that their websites are accessible.
+
+ 
+
+Social Responsibility 
+
+[]
+
+Everyone has a responsibility to treat persons with disabilities the same as we treat those without disabilities. This is especially important for websites. The web is an increasingly important resource for knowledge and information on many aspects of life including education, employment, government, commerce, health care and many more. Accessible websites enable persons with disabilities and various levels of abilities to live a more independent life and maximize their potential in a knowledge society. In some cases, information put in a website is the only way for persons with disabilities to access up-to-date information. So, ensuring accessibility in websites becomes essential for persons with disabilities for their Right to Information and their full integration and inclusion in the society.
+
+ 
+
+Legal Responsibilities 
+
+[]
+
+The Government of Nepal recognizes the need to make physical as well as communication infrastructures accessible to persons with disabilities in order to help them live an independent and capable life. The Constitution of Nepal recognizes the Right to Information as one of the fundamental rights of every citizen. The parliament passed the Right to Information Act in 2007 that ensures every person’s right to access and regulate information. There are currently various legal mandates enforced by the Government of Nepal that ensures accessibility in various aspects of daily life for persons with disabilities.
+
+The Convention on the Rights of Persons with Disabilities (CRPD) is an international disability treaty formulated by United Nations meant to protect a range of rights for people with disabilities. The CRPD provides a vital framework for creating legislation and policies around the world that embrace the rights and dignity of all people with disabilities. Nepal signed the CRPD on January 3, 2008.
+
+The CRPD contains various directives to ensure accessibility in Information and communication infrastructures and mediums. 
+
+For example, Article 9 -1 (b) directs government bodies to take measures to ensure accessibility in “...information, communications and other services including electronic services and emergency services.”
+
+Similarly, Article 21 (b) requires states parties to ensure persons with disabilities their right to freedom of expression and opinion by “Providing information intended for the general public to persons with disabilities in accessible formats and technologies appropriate to different kinds of disabilities … without additional costs”
+
+Our country Nepal is also one of the participants of the Incheon Strategy, which is an international effort to build on the UNCRPD and localize it in the case of Asia Pacific countries. The Incheon Strategy provides a set of goals, targets and models to achieve accessibility in various aspects of the society. Ensuring accessibility in technology overlaps with one of the goals of the Incheon Strategy which states “Goal 3 : Enhance access to … knowledge, information and communication” and provides specific targets and indicators to be achieved.
+
+On the local level, the Council of Ministers approved a set of directives and guidelines on accessibility called “Accessible Physical Structure and Communications Service Directive for People with Disabilities, 2069 BS”. The directive builds on the CRPD and provides arrangements regarding making information and communications accessible.
+
+Access to Hidden Markets 
+
+[]
+
+Effective web accessibility allows 
+
+●     Government websites reach more citizens.
+
+●     Corporate websites reach and retain more online customers.
+
+Almost 2% of Nepal’s population are disabled. Among which 94,000 are visually impaired and around 79,000 have auditory disabilities. Besides people with disabilities, there are countless number of people, old aged and otherwise, with various degrees of visual and auditory disabilities. When websites are not fully accessible, we are neglecting a huge chunk of users and customers. In case of government websites, not ensuring accessibility declines the right to information and government services for a big demographic of population.
+
+ 
+
+Good for Search Engine Optimization 
+
+[]
+
+Adopting web accessibility design is, in effect, making websites more accessible not only to persons with disabilities, but also to search engines. Practices to make websites more accessible overlap in a prominent amount with best coding practices for websites. There is a lot of similarity between how a person with disability accesses web contents to how a search engine accesses them. Maintaining proper coding for website development, presenting contents in a clear and structured manner, etc are practices that make websites more accessible, as well as inherent characteristics of a search engine friendly website. Therefore, the more accessible your website is, the more effective your search engine performance is, and the more potential customers you can reach.
+
+ 
+
+Lower Costs and Increased Usability 
+
+[]
+
+Attention to web accessibility guidelines and practices on all website projects saves time and money in the long term.
+
+Building accessible websites requires developers to follow good coding practices and habits, that in turn leads to websites that are easier to maintain and adapt to change. Accessible websites are optimized for usability and good user experiences. Also, websites designed with accessibility in mind are made compatible with the majority of different web browsers and devices such as smart phones, feature phones, tablets, etc. Therefore, an accessible website will have relatively less room for enhancements, improvement and frequent updates, hence saving on costs in the long run.
+
+         
+
+ 
+
+Myths about Web Accessibility 
+
+[]
+
+When it comes to web accessibility, due to lack of awareness and education, there are many myths and misconceptions prevalent among developers, content creators and website owners and managers in general. Some of them are listed and outlined below. A good understanding about them will help you introduce and drive accessibility in your organization and websites.
+
+ 
+
+Persons with Disabilities Do Not Use Websites 
+
+[]
+
+Many people, including website owners, developers and content creators assume that persons with disabilities do not use websites or access web services. Where, in fact, the opposite is the case. Persons with disabilities often use websites, and in some cases more than persons without disabilities. The web has become a great enabler for these people to live a more independent life. Persons with disabilities use the internet and websites to shop online, socialize with people and access information regarding education, employment and government.
+
+Thus, it seems to be necessary to sensitize more and more people about digital accessibility and break the myth about persons with disabilities not using websites.
+
+ 
+
+Accessible Websites Are Boring 
+
+[]
+
+Designers and developers fear that building an accessible website would mean that their websites will look and feel boring, and they will not be able to properly utilize many of the modern and rich features of the web. That is not necessarily the case. 
+
+Web Accessibility relies upon good coding techniques with simple and useful design. Simple and useful design not necessarily mean a boring design. It is perfectly possible to create a simple and sophisticated design that fully stays in line with digital accessibility if coded properly. Also, ensuring digital accessibility will only enhance the experience of the features in the website, and not limit it.
+
+ 
+
+Web Accessibility is Expensive 
+
+[]
+
+There is also a widespread belief that building an accessible website will take more time and is more expensive.
+
+In fact, building an accessible website in general can save you time and money in the long term through better programming discipline, good coding techniques, more extended coverage and failure proof design. Accessible websites are created in such a manner that it’s easier to maintain and adapt to change. Accessible websites are optimized for usability and good user experience.
+
+Websites designed with accessibility in mind are made compatible with the majority of different web browsers and devices making them failure proof and future proof.
+
+         
+
+ 
+
+How Persons with Disabilities Use Websites 
+
+[]
+
+Most people think about visually impaired people when it comes to accessibility. However there are many different types of disabilities and they all need to be considered while taking decisions regarding websites and digital accessibility. There are different techniques that persons with disabilities can use to access websites and information on them.
+
+Disabilities fall into four major categories
+
+● Visual Impairment 
+
+People who are completely or partially blind, have poor eyesight, or suffer from colorblindness.
+
+● Physical Impairment 
+
+People who are missing limbs, have reduced control of their limbs, or suffer from dexterity problems or epilepsy.
+
+● Hearing Impairment
+
+People who are completely or partially deaf.
+
+● Cognitive Impairment 
+
+People who have difficulties in learning.
+
+Besides these, there are many others who have temporary disabilities, for example, a wounded arm. Such injuries can make accessing websites just as difficult as it is for permanent disabilities.
+
+Listed below are some of the examples and the ways to overcome constraints for persons with disabilities.
+
+ 
+
+Visual Impairment 
+
+[]
+
+People with visual impairment either cannot see at all or have difficulty in seeing a computer or mobile device screen.
+
+It is extremely important that websites are designed to work well with screen readers and screen magnifiers, which is how people with visual impairment access and interact with websites and other digital contents. It is also important that colors are chosen in a way that people with color blindness can properly perceive the information on the websites. Proper contrast in colors should also be managed for people with partial visual impairment.
+
+ 
+
+Physical Impairment 
+
+[]
+
+People with physical impairment generally do not have the ability to access the website with a keyboard or a mouse in a normal way. This kind of impairment may vary from someone who has dexterity problems and can not properly use a mouse or a keyboard, to someone who is not able to use them at all because of missing limbs. Flashing images could induce reactions to people with epilepsy.
+
+These people rely on a good design where buttons and links are made large enough for easy clicking, and where important links are not placed too close together to prevent mistakes. Additionally, they also rely on the websites compatibility with assistive technologies such as voice control software, which allows users to use a computer or a website using voice commands.
+
+ 
+
+Hearing Impairment 
+
+[]
+
+People with hearing impairment have full or partial auditory disabilities. Lack of accessibility initiatives in websites and digital contents deny these people from videos, and audio contents on the web. It is important to consider alternative ways to access information that is conveyed in an audio or a video form.
+
+Doing this can be as simple as providing text transcripts to these contents or using subtitles on the videos. Text transcripts are useful for people with  hearing impairment as well.
+
+ 
+
+Cognitive and Learning Impairment 
+
+[]
+
+Cognitive impairment generally refers to people with specific learning difficulties or mental illness. These people face difficulty in performing mental tasks compared to the average person.
+
+Although no special tools are needed, these people might find it more difficult to interpret the content in the website than others. Content creators should keep this in mind while developing contents for websites.
+
+         
+
+ 
+
+Common Barriers in a Website 
+
+[]
+
+Some of the most common barriers and issues regarding accessibility on websites are listed below.
+
+ 
+
+No Descriptions for Non Text Information 
+
+[]
+
+Proper alternatives like Alt Text and Descriptions should always be provided for non-text information on a website like images and videos. Lack of these alternatives affect people with visual disabilities and prevent them from properly accessing the information.
+
+Images should contain descriptive text alternatives that effectively describes the image shown. Video content should include text transcripts about the content and the type of video.
+
+ 
+
+[] 
+
+ 
+
+If you have a photo in your website, you should include alt text to describe the photo to a visually impaired person.
+
+Screen Reader tools, which is used by people with visual disabilities to use websites, read the text alternatives of the image and read it aloud to them. In this way, visually impaired people know what the image contains and what it is about.
+
+While giving text alternatives, you have to make sure that they are meaningful and suitably descriptive.
+
+ 
+
+Insufficient Font Sizes or Color Contrast 
+
+[]
+
+Persons with partial visual disabilities and those with learning and cognitive disabilities face difficult time properly perceiving text information provided on a website with too small font size. Websites should be designed with larger font sizes that are easier to read. 
+
+ 
+
+[] 
+
+ 
+
+It is a good practice to provide functions within a website that allows a user to enlarge the font size of the website to their liking.
+
+ 
+
+[] 
+
+ 
+
+Also, proper care should be given to ensure that the texts are readable by using proper contrast between background and text color. Color contrast should be kept in mind while designing the whole website in general to make sure that people with various kinds of color blindness can properly view, differentiate and understand the components and information in the website.
+
+[] 
+
+ 
+
+ 
+
+Complicated and Inconsistent Website and Navigation Structure 
+
+[]
+
+Complicated and inconsistent website structures are difficult to use and understand not only for people with disabilities, but also for people without disabilities. The proper ordering of elements and content areas in a website plays a vital role in making the website look and feel good, and also increase the overall usability of the website for all users. As an added benefit, using a proper and consistent structure and layout for a website makes it much easier for people with disabilities, especially visually impaired people, to navigate and access information more easily and effectively using keyboard.
+
+ 
+
+Complicated navigation schemes and complex navigation elements on a website oppose a big hindrance in accessibility. It is very important to either stick to simpler navigation schemes that is easily understandable by any user or to take extra measures to make sure that these navigation elements are compatible with assistive tools. We see a lot of websites that have “cool” and “flashy” navigation elements like hover menus that look good, but usually aren’t keyboard friendly. For a visually impaired person, who uses websites primarily through a keyboard, these elements are completely useless and inaccessible.
+
+ 
+
+Ambiguous Links 
+
+[]
+
+Many websites use links such as “More Information” and “Learn More” at various places. These links will make sense to sighted users as they can see where these links are placed and connect it to its context. But for people using screen readers, the multiple instances of these links with the same text can be confusing and harder for them to retain the context of these links.
+
+This can be avoided by using descriptive link text instead of ambiguous text like “More Information”.
+
+[] 
+
+ 
+
+Short Time Allowed for Time Limited Functions 
+
+[]
+
+Time critical functions, if any, on a website should have adequate time to interact for all kinds of users, including users with full or partial visual disabilities, people with cognitive disabilities and people using the website with assistive technologies.
+
+Alternatively, mechanisms to extend the time limit in the middle of the process can be introduced as a part of the interface.
+
+Difficult Controls 
+
+[]
+
+Many websites these days consists of rich web elements like video players, audio players, slide shows, etc. These rich elements consist of control elements that help navigate and access these rich content and media. Many of the times, these control elements are not built with accessibility in mind. 
+
+As an example, volume bars in audio and video players should be designed large so that interaction with these items using a mouse is easier for people with partial visual disabilities and other mental disabilities.
+
+These elements should be made keyboard compatible so that they can be navigated and accessed using a keyboard. Additionally, keyboard shortcuts should be provided to control these rich contents and elements.
+
+For example, a good approach to adopt for volume control is to implement volume increase/decrease buttons that can be clicked instead of a slider that has to be dragged. This also makes it easier to assign keyboard shortcuts to each button
+
+ 
+
+Difficulties Accessing Documents (PDFs) 
+
+[]
+
+A lot of content on the web are shared using Portable Document Format (PDF). PDF documents should exclusively be used in situations when you have a piece of content that you would like people to download and read offline. PDF documents can be helpful for people with disabilities because they can download and read the content of these documents using the assistive technologies built into PDF reading software like Adobe Acrobat Reader. Also, PDF documents are also helpful for people in places where internet connection is not consistently available all the time.
+
+While providing and sharing PDF document, we have to ensure that these documents are compatible with assistive technologies, such as screen readers. PDF documents should always be produced from a text-based source document so that it is readable by a computer, screen readers and Braille devices used by people with visual impairments. Image based documents, such as TIF, JPG, PNG files that are produced by scanning a document, should be converted into text-based documents using Optical Character Reader (OCR) software, or by manual transcription, before producing the PDF document.
+
+The easiest way to test if a PDF document is accessible is by selecting a portion of the text in the PDF reading software. If text can be selected, then the PDF document is produced with proper text rather than images.
+
+PDF documents also need to be properly structured and tagged so that PDF reading software are able to provide contextual and structural information about the document and the part of content being read to the user. 
+
+Furthermore, any content that is meant to be read online should be given in proper standard HTML web pages rather than PDF documents. PDF documents should be used when you wish the users to download the content and read it offline.
+
+[] 
+
+ 
+
+         
+
+ 
+
+Accessibility Guidelines 
+
+[]
+
+World Wide Web Consortium (W3C) and Web Content Accessibility Guidelines (WCAG) 
+
+[]
+
+The World Wide Web Consortium (W3C) is an international community that develops open standards and guidelines to ensure the long-term growth of the web.
+
+One of the core principles of W3C is to ensure the Web for all. Out of the need to support the creation of websites that work for persons with disabilities, W3C put together the Web Accessibility Initiative (WAI).
+
+The Web Accessibility Initiative (WAI) is an initiative led by W3C to bring together people from the web industries, disability organizations, government bodies, policy makers, research labs, etc., from around the world to develop guidelines and resources to help make the web accessible to persons with disabilities. 
+
+The Web Accessibility Initiative (WAI) works in five levels
+
+●     Ensuring that web technologies support accessibility
+
+●     Developing guidelines for accessibility
+
+●     Improving tools to evaluate and repair accessibility
+
+●     Developing tools for education and outreach
+
+●     Coordinating with research and development
+
+ 
+
+As part of the third level of work of WAI, W3C has created and published a set of guidelines for ensuring accessibility in web technologies. These guidelines are named the Web Content Accessibility Guidelines (WCAG). 
+
+ 
+
+Reference Link: https://www.w3.org/WAI/intro/wcag.php  
+
+ 
+
+These guidelines explain how to make web content more accessible to persons with disabilities and the current version is known as the WCAG 2.0 which was published in December of 2008.
+
+At first, the guidelines can appear pretty complex. However, the guidelines and all its components are logical and with some effort, anybody can understand and learn how to use and comply with these guidelines.
+
+The WCAG 2.0 consists of four layers of guidance that describe the overall principles, general guidelines, testable success criteria and proper techniques to achieving accessibility. These 4 layers are:
+
+●     Principles: The top level of guidance that describes the overall principles that provide the foundation for Web Accessibility: Perceivable, Operable, Understandable and Robust.
+
+●     Guidelines: Under the principles, there are, in total, 12 guidelines that describe the goals that the developers and content creators should work on to achieve Web Accessibility.
+
+●     Success Criteria: For each guideline, testable success criteria are defined that can be used to test the level of accessibility. There are 3 levels of success criteria defined, Level A for Basic, Level AA for Recommended and Level AAA for Ideal.
+
+●     Sufficient and Advisory Techniques: For the guidelines and success criteria, WCAG also defines various techniques to better achieve and comply with them while developing content and technologies for the web.
+
+ 
+
+ 
+
+WCAG 2.0 Principles 
+
+[]
+
+There are 4 basic principles defined by WCAG 2.0 to Web Accessibility. These principles provide the foundation to achieving accessibility in web technologies. The guidelines and success criteria of WCAG 2.0 are all categorized under one of these 4 principles:
+
+●     Perceivable: 
+
+Information and user interface components must be presentable to users in ways they can perceive. 
+
+i.e. Users must be able to perceive the information being presented in the form of the
+
+senses that they possess.
+
+●     Operable:
+
+User interface components and navigation must be operable.
+
+i.e. Users must be able to operate the interface and should not consist of interaction that a user can not perform.
+
+●     Understandable:
+
+Information and the operation of user interface must be understandable.
+
+i.e. User must be able to understand the content and the interface and should not go beyond any user’s understandings.
+
+●     Robust:
+
+Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+i.e. Users must be able to access the content with any technology as they advance.
+
+ 
+
+If any of these is not true, persons with disabilities will not be able to use the website.
+
+ 
+
+WCAG 2.0 Guidelines 
+
+[]
+
+There are 12 guidelines defined by WCAG 2.0 that a developer or a content creator of the web should comply to, in order to make their websites accessible to persons with disabilities. The guidelines are categorized under the four principles mentioned above.
+
+ 
+
+Principle 1:  Perceivable - Information and user interface components must be presentable to users in ways they can perceive.
+
+Guideline 1.1: Text Alternatives
+
+[]
+
+PROVIDE TEXT ALTERNATIVES FOR ANY NON-TEXT CONTENT SO THAT IT CAN BE CHANGED INTO OTHER FORMS PEOPLE NEED,
+
+SUCH AS LARGE PRINT, BRAILLE, SPEECH, SYMBOLS OR SIMPLER LANGUAGE.
+
+ 
+
+All non-text contents presented in a website like images, time-based media like audio/video, etc.
+
+should be provided with a text alternative that serves an equivalent purpose. This includes providing alt text for images and descriptive texts for other media.
+
+For control elements and user input elements, proper name should be given to each element that descriptively provides information about the purpose of the element.
+
+Time-based media like audio and video should have text alternatives that provides descriptive identification of the content.
+
+If the non-text content is used for pure decoration and does not provide any sort of useful information about the content, then they should be presented in such a way that assistive technologies like screen readers can ignore them.
+
+ 
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html  
+
+ 
+
+Guideline 1.2 Time-based Media
+
+[]
+
+PROVIDE ALTERNATIVES FOR TIME-BASED MEDIA.
+
+ 
+
+Pre-recorded audio-only or video-only content should be accompanied with proper alternatives that persons with disabilities can use to gather equivalent information.
+
+For example, a pre-recorded audio-only or video-only content should be accompanied by a timebased caption or text transcript of the contents of the audio.
+
+On a more advanced level, sign language interpretation of audio/video can be provided alongside the content.
+
+ 
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html  
+
+ 
+
+Guideline 1.3 Adaptable
+
+[]
+
+CREATE CONTENT THAT CAN BE PRESENTED IN DIFFERENT WAYS (FOR EXAMPLE SIMPLER LAYOUT) WITHOUT LOSING INFORMATION OR STRUCTURE.
+
+ 
+
+Contents in website should be presented in ways other than those that rely the user’s senses. Most importantly, they should be presented in a way that can be programmatically determined without losing information or structure when a program reads it.
+
+While building websites and web technologies, the information presented, the structure of the website and the relationship that is conveyed through presentation must also be determinable programmatically, or should be available on text.
+
+That is to say, proper standard should be followed in coding practices that help assistive technologies like screen readers convey the information, the structure of the information and the website, and the relationship between elements and information to persons with disabilities.
+
+When the sequence in which content is presented affects its meaning, a correct reading sequence that can be programmatically determined should be implemented. This involves placing HTML sections in correct reading order while coding, managing focus order, etc.
+
+Also, any information or instructions provided for understanding and operating content should not rely solely on sensory characteristics of components such as their shape, size, visual location, orientation or sound.
+
+ 
+
+ 
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structureseparation.html  
+
+ 
+
+Guideline 1.4 Distinguishable
+
+[]
+
+MAKE IT EASIER FOR USERS TO SEE AND HEAR CONTENT INCLUDING SEPARATING FOREGROUND FROM BACKGROUND.
+
+ 
+
+There should be no or minimum interference between the users and the information. That is to say that the content on websites should be presentation in such a way that users with disabilities can distinguish the content from the background.
+
+ 
+
+This involves choosing the right contrast and font size to present information on the website, so that persons with partial visual impairments and other cognitive impairments can easily identify information in the website. The visual presentation of text and images of text should have a contrast ratio of at least 4.5:1. Large blocks of texts and images of large texts can have a contrast ratio of at least 3:1. There is no contrast ratio minimum defined for texts or images of texts that are for pure decoration and/or does not provide any real information to the user.
+
+ 
+
+Similarly, information and instruction provided should not solely rely on the use of color. For example, in many cases, the use of color indicates an action, state, prompting a response or distinguish visual components. This works well for people who can see, but for people with full or partial visual disabilities, and for people suffering from color blindness, these will prove useless. So, in addition to using colors to indicate different information and state, proper measures should be taken to make them distinguishable programmatically.
+
+ 
+
+Selecting proper font size is important in order to ensure that all people, even those with partial visual impairments can read the text information provided with ease. Finding the right font size is always difficult, so as an added feature, we can provide mechanisms to increase the content font size to up to 200 percent without loss of content or functionality.
+
+ 
+
+We should always use proper text instead of images of text to present information. If images of text has to be included, we should make sure that the text alternative is available and/or the images can be visually customized to the user’s requirements to make them more readable.
+
+ 
+
+Background audio on a website should be avoided as much as possible, as the background audio can interfere with assistive technologies like screen readers that play back the content of the screen to persons with disabilities using them. If a web page plays an audio automatically for more than 3 seconds, either a mechanism should be available to pause or stop the audio, or a mechanism should be available to control audio volume that is independent from the overall system volume level.
+
+ 
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html
+
+ 
+
+ 
+
+Principle 2: Operable - User interface components and navigation must be operable.
+
+Guideline 2.1 Keyboard Accessible
+
+[]
+
+MAKE ALL FUNCTIONALITY AVAILABLE FROM A KEYBOARD.
+
+ 
+
+All the functionalities of the contents in a website must be operable through a keyboard interface that is not dependent on timing of the keystrokes. Persons with disabilities traverse through the contents of the website using assistive technologies like screen readers with a keyboard. That is why, it is necessary to make the whole website and the contents inside navigable and readable from a keyboard interface. And the navigation and traversal should not depend on the timing of the keystrokes, as specific timing restrictions could be missed by persons with disabilities turning the website unusable to them.
+
+ 
+
+Keyboard Traps are one common faults that many websites have. Keyboard traps occur when the focus of the keyboard can be moved to a component, but cannot be moved out of it. For example, if there is a text input component, and the input element can be focused in through keyboard, then the focus must be able to move out of it using only keyboard as well. When a component can be focused in using a keyboard but cannot be focused out, the keyboard focus will get trapped inside that element and the website will remain unusable to persons with disabilities using assistive technology to access the website after this point. It is easy to create keyboard traps in a website when the developer of the website is not factoring in the usage of website with keyboard interface by persons with disabilities during the process of website development.
+
+ 
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html
+
+ 
+
+ 
+
+Guideline 2.2 Enough Time
+
+[]
+
+PROVIDE USERS ENOUGH TIME TO READ AND USE CONTENT.
+
+ 
+
+Users should be given enough time to use the functionalities of the website and properly read the content in it. Timing should not be an essential part of the event or the activity presented by the content. If there needs to be any time limit on the content presented, there must also be mechanism to turn off, extend or adjust the timing, so that persons with disabilities can use them to properly read and access the content.
+
+ 
+
+If there are moving, blinking or scrolling elements presented in parallel to the content on the website that starts automatically and lasts more than 5 seconds, mechanisms that allow the user to stop, pause, or hide them should be provided.
+
+ 
+
+Similarly, for auto-updating components in a website, mechanisms that allow the user to stop, pause, hide, or change the frequency of the update should be provided.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html
+
+ 
+
+ 
+
+Guideline 2.3 Seizures
+
+[]
+
+DO NOT DESIGN CONTENT IN A WAY THAT IS KNOWN TO CAUSE SEIZURES.
+
+ 
+
+Elements that flashes more than three times in a second are known to cause seizures in certain people with diseases or disabilities. Any element that crosses the three flashes threshold should be removed from the website. 
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure.html
+
+ 
+
+Guideline 2.4 Navigable
+
+[]
+
+PROVIDE WAYS TO HELP USERS NAVIGATE, FIND CONTENT, AND DETERMINE WHERE THEY ARE.
+
+ 
+
+A website should have mechanisms to bypass blocks of repeating content over the pages of a website to the main content. Every web pages in a website have blocks of contents that are repeated on every page. Blocks of contents like the header, brand logos, navigation menu, etc. repeat in all pages. Persons with disabilities accessing the website through keyboard have to go through these repeating blocks every time to get to the main content of the page which is both time consuming and tedious. A link that says “Skip to Content” that will bypass these repeating blocks and take the user straight to the main content of the page can be extremely helpful for people with disabilities and save their time.
+
+Also, it is necessary to properly maintain titles of pages in a website and various sections within a webpage to make sure that users, including persons with disabilities, can always figure out where they are in the website and what is the context of the content they’re currently reading. Failing to provide proper context to the content might result in ambiguous and unusable information. To ensure this, web pages should have proper title that describes the location and purpose of the page. Within the page, proper title should be written for the different sections that describes the location, purpose and the context of the section.
+
+A website should be navigable using a keyboard. To ensure this, the focus order should be properly maintained in such a manner that every useful component is navigated in an order that does not affect the meaning and operability of the information presented. In addition, whenever an interface component is in focus, it should be made visible using proper indicators.
+
+Another major step in making users able to determine what they’re viewing and what it’s purpose is to make the links in websites more descriptive. In other words, the purpose of links should be made clear either by the link text itself or through programmatically determinable link names.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigationmechanisms.html
+
+ 
+
+Principle 3: Understandable - Information and the operation of user interface must be understandable.
+
+Guideline 3.1 Readable
+
+[]
+
+MAKE TEXT CONTENT READABLE AND UNDERSTANDABLE.
+
+ 
+
+The contents on a website should be made readable and understandable to all users including persons with disabilities. This involves taking proper care of language used and properly explaining words that might need explaining.
+
+To start with, the human language used in the page should be made programmatically identifiable. Assistive technologies can use the language information to provide better experience to users using them. If multiple blocks of contents within a website use different languages, so should be defined in each block in such a way that it can be programmatically determined.
+
+Mechanisms to identifying, describing and explaining unusual words, abbreviations, idioms and jargons can bel placed to make the content more understandable.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html
+
+Guideline 3.2 Predictable
+
+[]
+
+MAKE WEB PAGES APPEAR AND OPERATE IN PREDICTABLE WAYS.
+
+ 
+
+Web pages should always appear and operate in predictable ways, so that any behavior does not mislead or confuse the users. There should be consistence in the presentation, behavior and identification.
+
+Navigation within a website should remain consistent through the pages. They should remain in the same relative order each time they are repeated, unless the change is initiated by the user. The change in consistence of navigational structure for the sake of decoration within different pages of a website will confuse users traversing the site through keyboard and assistive technologies. This will hinder their access to information presented in the website.
+
+Also, similar components within a website should be used to mean and operate similar functions or present similar information. In other words, components that perform similar operations should be identified similarly, in text, presentation and programmatically.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html
+
+Guideline 3.3 Input Assistance
+
+[]
+
+HELP USERS AVOID AND CORRECT MISTAKES.
+
+ 
+
+A website should help their users avoid mistakes in operation and input, and also help them correct the mistakes. Especially, in web forms and input components, error identification and handling mechanisms should be properly implemented in order to prevent users from incorrectly entering information and provide measures to correct them.
+
+To start with, proper labels and instructions should be provided for input controls and elements that describe the nature and purpose of each component. This may include information like the type of input that the component accepts, the purpose of the component, etc.
+
+If the error in input data is automatically detected, the item that has the error should be properly identified using visual and text indicators, and the error should be properly described to the user in text. Additionally, if the correction to the error is also known, it should be suggested properly, unless it goes against the purpose of the content.
+
+For all web content that requires user to submit information, it should be at least one of the following:
+
+-       Reversible
+
+-       Checked for input errors and provide opportunity to correct them
+
+-       Provided mechanism for reviewing, confirming, and correcting the information before submissions
+
+Another method of assisting users is to provide context-sensitive help materials in the website that effectively describes the functionalities in the website.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html
+
+ 
+
+Principle 4: Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+Guideline 4.1 Compatible
+
+[]
+
+Maximize compatibility with current and future user agents, including assistive technologies.
+
+ 
+
+Making web content compatible includes practicing good coding habits and making codes as correct and foolproof as possible. 
+
+For contents implemented using markup languages like HTML, it should be made sure that - Elements have complete start and end tags.
+
+-       Elements are nested according to their specifications.
+
+-       Elements are used according to their semantic meanings.
+
+-       Elements do not contain duplicate attributes.
+
+-       IDs of elements are unique throughout a page.
+
+In addition to this, user interface components, wherever applicable, should be properly labelled using the name role and value attributes. These attributes are read by assistive technologies and provide contextual information like the state, properties and values of the component to the reader.
+
+Following these guidelines will make the website compatible to a wide range of devices, user agents and assistive technologies.
+
+         
+
+WCAG 2.0 Success Criteria 
+
+[]
+
+Relating to each of the guidelines mentioned above, WCAG 2.0 provides testable criteria for success that can be used to test the accessibility level of websites. These success criteria are further categorized into 3 levels of conformance:
+
+-       Level A - lowest
+
+-       Level AA - medium
+
+-       Level AAA – highest
+
+For the scope of this guide book, we will be looking into the success criteria in Level A. As you will notice below, the success criterion are identified by a series of 3 numbers (eg. 1.2.3). The first number denotes the Principle that the criterion belongs to, the second number denotes the specific guideline and the third number is the ordering of the criterion itself. So, the criterion 1.1.1 would denote the first criteria in the first guideline of the first principle, and so on.
+
+Let’s look at the Level A Success Criteria defined in WCAG 2.0 in more depth.
+
+         
+
+ 
+
+Success Criterion 1.1.1 – Non Text Content
+
+[]
+
+All content on a website must be able to represented in text so that it can be read by screen readers. For example, images must have a text description.
+
+This does not need to be done CAPTCHA or for images that are for pure decoration and do not convey any kind of information to the user.
+
+[] 
+
+ 
+
+Screen readers are unable to say anything meaningful about these images without proper text descriptions.
+
+[] 
+
+After rectification, screen readers will use the text description provided to tell users using screen readers what the image contains. This provides valuable context and information to visually impaired people who were not able to get any information out of it before.
+
+For all images and non-text content, proper text description should be provided that will provide descriptive information about the non-text content.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html
+
+         
+
+Success Criterion 1.2.1    Audio-only and Video-only (Prerecorded)
+
+[]
+
+Make prerecorded audio or video only content accessible by providing alternatives that present essentially the same information to people who cannot access the original content. For example, visually impaired persons cannot access video content and therefore need an alternative way to access the information in the video.
+
+[] 
+
+ 
+
+The video shown above is not of much use to visually impaired users.
+
+[] 
+
+Here, a link to download the text transcript of the video is provided which will provide the descriptive information about the content in the video in text format, which persons with visual disability can listen to using screen readers.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-onlyalt.html
+
+ 
+
+         
+
+Success Criterion 1.2.2    Captions (Prerecorded)
+
+Audio tracks should be provided with timed text captions so that the information is also accessible to persons with hearing impairments. Captions should not only present the content of conversations but also important cues and surrounding noise descriptions that might be important to the meaning of the content presented.
+
+[] 
+
+ 
+
+Audio content without captions are useless to persons with hearing disabilities.
+
+[] 
+
+ 
+
+Text captions, as shown in the example, should be provided so that a person with hearing disability can still access the equivalent content through text.
+
+Reference Link : http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html
+
+ 
+
+         
+
+ 
+
+Success Criterion 1.2.3 – Audio Description or Media Alternative (Prerecorded)
+
+[]
+
+When a video with audio is presented in a website, a visually impaired person will be able to hear the audio but will not be able to see the pictures on the screen. As a result, they will only have access to partial information. In these cases, websites should either provide additional audio that explains what is happening in the picture, or provide a text transcript that explains both the audio and what is taking place in the picture.
+
+Such videos only provide partial information to visually impaired persons. So, any information that is visually conveyed is inaccessible to them.
+
+A simple solution is to provide a text version of the information in the video that descriptively explains what is taking place in the video as well as the audio conversation and any other important audio cues.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audiodesc.html
+
+         
+
+Success Criterion 1.3.1    Info and Relationships
+
+Users who are not disabled can view the layout of a webpage and quickly determine its structure and hierarchy. Persons with visual impairments cannot see this layout. Website developers, while creating websites, need to use proper markups to build the structural layout of the website. Proper markup will illustrate the structure of the website to screen readers so that persons with disabilities using assistive technologies can figure out the structure and semantic value of the different elements within a website. Proper headings should be given to blocks of contents and links should be categorized into different groups so that screen readers are able to determine the relationship between them.
+
+ 
+
+[] 
+
+ 
+
+In this example, the different blocks of contents do not have proper headings. Even though people who can see can figure out what the different blocks of content might be, visually impaired persons will not be able to make that distinction.
+
+[] 
+
+By adding headings and structure to the webpage, persons with visual impairments will now be able to determine the distinction between the blocks of contents from the heading text. 
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structureseparation-programmatic.html
+
+         
+
+Success Criterion 1.3.2    Meaningful Sequence
+
+If the content presented in the website need to be read in a certain order to make proper sense, it should be ensured that the web page is written or coded in a way that this order is maintained while traversing through a keyboard. Failing to do so will leave the content in the website unusable and chaotic.
+
+[] 
+
+In this example, the web page is built in such a way that screen readers will read the two headings first and then the content. This is counter intuitive and affects the meaning of the content in an adverse way.
+
+[] 
+
+Properly coded HTML pages will ensure the correct reading order of the sections of content while using a keyboard. In this case, screen readers will read the heading and content of the first section and then the next section.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structureseparation-sequence.html
+
+         
+
+Success Criterion 1.3.3    Sensory Characteristics
+
+Developers and designers of websites should not solely rely on sound, shape, size or visual location to provide specific information and instruction for understanding content. For example, if instruction says “To submit, click the button to the right”, a visually impaired person will not be able to determine exactly where the button is.
+
+ 
+
+[] 
+
+ 
+
+In this example, only people that can see will be able to identify the purpose of the arrow button. This is not at all clear to visually impaired persons.
+
+ 
+
+[] 
+
+The correct way to do this is to properly label the button that describes its purpose. In addition, clear instructions can be placed to tell people how to use the interface components as shown above.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structureseparation-understanding.html
+
+         
+
+Success Criterion 1.4.1    Use of color
+
+Do not solely rely on colors to convey information. It is impossible to be sure that everybody perceives colors the same way and what seems obvious to one person may be missed by another. People with full or partial visual impairments, and people with color blindness might be missing out on important information because website developers chose to convey an information solely relying on the color which these people cannot properly perceive.
+
+[] 
+
+ 
+
+Here, the three lines are of different colors, however, a color blind or visually impaired person may not be able to make out the difference.
+
+ 
+
+[] 
+
+By making the items have different shapes to denote difference, someone who cannot perceive color can differentiate between the different items and properly perceive the information provided.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrastwithout-color.html
+
+         
+
+Success Criterion 1.4.2    Audio Control
+
+Audio that plays automatically on a web page is very distracting to persons with disabilities using screen readers and interferes with their access to information. We have to ensure that there is no background audio unless the user specifically selects to play the background audio, or it should be ensured that the background audio can be easily turned off by the user.
+
+[] 
+
+Many of the websites today contain auto playing videos. Without any mechanism to stop or mute the audio, it will interfere the access to information on the website for persons with disabilities using screen readers. Ideally, the video should only play when the user initiates it. If that is not possible, links and keyboard shortcuts to stop or mute the audio should be added.
+
+[] 
+
+Here, we have included a link to turn off the audio at the beginning of the page, so the users can turn off the web page if they choose to.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-disaudio.html
+
+         
+
+Success Criterion 2.1.1    Keyboard
+
+We have to ensure that all content and function of a website can be accessed and operable via a keyboard interface. For example, ensure that all content and functionalities are accessible through the TAB key or the ENTER key according to general standards.
+
+[] 
+
+ 
+
+In the web form above, people relying on keyboard to access the website might not be able to navigate to the help function provided. This is a common sort of mistake seen in many websites.
+
+HTML CODE of Inaccessible link:
+
+<img src=”help.png” alt=”Help” onclick=”openHelp();” />
+
+ 
+
+This occurs when developers fail to properly add keyboard support to these elements.
+
+ 
+
+HTML CODE of accessible link:
+
+<img src=”help.png” alt=”Help” onclick=”openHelp();” tabindex=”0” />
+
+ 
+
+Using the tabindex attribute will make the help icon navigable by tab key on the keyboard and will make it accessible to persons with disabilities.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operationkeyboard-operable.html
+
+         
+
+Success Criterion 2.1.2 – No Keyboard Trap
+
+[]
+
+Keyboard Traps are one common faults that many websites have. Keyboard traps occur when the focus of the keyboard can be moved to a component, but cannot be moved out of it. For example, If there is a text input component, and the input element can be focused in through keyboard, then the focus must be able to move out of it using only keyboard as well. Keyboard traps are usually seen in dialog boxes and popups too. We have to ensure that keyboard can be used to control or dismiss dialog boxes, popups or other windows.
+
+ 
+
+[] 
+
+Websites often have popup windows, for help content and other types of contents as shown here. A mouse user might be able to get out of this window by clicking on the background. But a keyboard user might become trapped in the popup without an easy way to return to the main content.
+
+ 
+
+[] 
+
+By adding a Close button in the popup, keyboard users can now move out of this state using the Tab key to move to the close button and pressing Enter.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operationtrapping.html
+
+         
+
+ 
+
+Success Criterion 2.2.1 – Timing Adjustable
+
+[]
+
+There must not be any time limit on a website to consume the content, unless the purpose of the content demands it. Ideally, no time limit should be imposed. If there are time limits, we have to ensure that persons with disabilities can either adjust or stop the time limit so that they can have enough time to complete their task or consume the content properly.
+
+[] 
+
+This examples warns the user that the time is about to expire but does not allow users to adjust or stop the time limit. Persons with disabilities might not be able to finish the task in time.
+
+[] 
+
+A better approach is to allow the person to extend the time limit or stop the time limit altogether.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-requiredbehaviors.html
+
+         
+
+Success Criterion 2.2.2    Pause, Stop, Hide
+
+For content that moves automatically for more than five seconds or updates the content automatically, there needs to be a way to stop the movement and stop the component from updating, blinking and/or scrolling.
+
+[] 
+
+ 
+
+In the example above, the webpage is designed to update automatically as content changes, which can be very frustrating for people using screen readers.
+
+[] 
+
+ 
+
+By providing functionalities to turn off the auto update, the webpage is much easier for persons with disabilities to use.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html
+
+         
+
+Success Criterion 2.3.1 – Three Flashes or Below Threshold
+
+[]
+
+Ensure that all flashing items are dimmed and cover only a small area of the screen. The flash rate should not exceed the rate of three times per second. Flashing images that are above this threshold are known to cause seizures and other problems for people who suffer from epilepsy.
+
+It is far better to replace flashing images with static text content that describes the purpose.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-notviolate.html
+
+         
+
+Success Criterion 2.4.1    Bypass Blocks
+
+Ensure that users have the ability to skip past repetitive blocks of contents like navigation, header, etc. Adding a link at the start of the document that goes directly to the main content bypassing repetitive blocks of content can make the website much more usable to all people including persons with disabilities.
+
+Such web pages are difficult to use for people using screen readers. They will need to read through all the header elements, navigation menu, etc every time they are on a page in the website. This takes many keystrokes and is tedious.
+
+[] 
+
+ 
+
+A simple link at the top of the page that will take the focus directly to the main content section will save a lot of time and keystrokes to users using screen readers by bypassing the repeating blocks.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanismsskip.html
+
+         
+
+Success Criterion 2.4.2 – Page Titled
+
+[]
+
+Give webpages a title that accurately describes what the content in this particular page is about. This will help persons with disabilities differentiate between the various webpages in their browser.
+
+[] 
+
+ 
+
+This web page contains the title “Home”, which is inaccurate and confusing. The title does not properly describe the content in the page.
+
+[] 
+
+ 
+
+A proper title such as this will accurately describe the contents and help persons using screen readers properly identify and differentiate between different pages.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanismstitle.html
+
+         
+
+Success Criterion 2.4.3    Focus Order
+
+When writing the HTML code for a web page, make sure the content is coded in a logical order. It will then be communicated in a logical manner when read by screen readers. This is particularly important for web forms.
+
+[] 
+
+ 
+
+Here, the form has been coded in a way that the focus order goes from First Name, to Address, to Phone, to Submit, and so on as shown in the figure. This type of focus order will be very unusable and meaningless to people using keyboards to access the website.
+
+[] 
+
+ 
+
+With proper coding, the focus order can be placed in a much more logical and meaningful manner.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanismsfocus-order.html
+
+         
+
+Success Criterion 2.4.4    Link Purpose (In Context)
+
+Write descriptive link text to ensure the purpose of each link is understood by the text alone, or by the link text and the context.
+
+Here, the link “read More” is ambiguous and does not really convey much meaning.
+
+[] 
+
+ 
+
+Link labels should be more descriptive and self explanatory, or it should have an alternative text that describes the purpose of each link programmatically as shown above.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanismsrefs.html
+
+         
+
+Success Criterion 3.1.1    Language of Page
+
+Ensure the primary language of a web page is defined within the HTML code that can be identified programmatically by a screen reader or any assistive technology. The correct speaking language will be loaded by screen readers to read the words in the web page correctly by identifying the language of the page defined. 
+
+[] 
+
+ 
+
+Here, the page has content in Nepali language. When using screen readers, it is important for the tool to know the language of the webpage so that correct measures can be taken by the program.
+
+HTML Code that does not define page language:
+
+ <html xmlns=”http://www.w3.org/1999/xhtml” > </html> 
+
+ 
+
+HTML Code that defines page language:
+
+<html xmlns=”http://www.w3.org/1999/xhtml” lang=”ne” xml:lang=”ne”> </html>
+
+ 
+
+We can specify the language of the content in the web page by specifying the language in the HTML code as shown above.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html
+
+         
+
+Success Criterion 3.2.1    On Focus
+
+When an item on a web page receives focus, by click of a mouse or by using Tab key in the keyboard, ensure that it does not change the context. For example, by displaying a dialog box when a person uses tab key to enter an input field.
+
+[] 
+
+ 
+
+In this example, a field received focus, and a help dialog box describing the field and providing options opens up. As a keyboard user tabs through the web page, the dialog box opens, moving the keyboard focus away from the input element and to the dialog box. This is extremely unusable to keyboard users.
+
+[] 
+
+ 
+
+Instead, the webpage can allow the user to activate “Help” for the input elements at their choice rather than making it automatic. Here, the help button can be traversed via Tab key and can be activated by pressing Enter.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behaviorreceive-focus.html
+
+         
+
+Success Criterion 3.2.2    On Input
+
+Changing and inputting a data in an input element should not cause a change of context such as opening a popup window or refreshing content. In addition, users should not be taken away from a webpage when changing some input without warning.
+
+[] 
+
+ 
+
+It is common to see drop down menus on web pages that, when changed, cause the form to be automatically submitted and change other things in the webpage. This can make the website very difficult to user for persons with disabilities.
+
+[] 
+
+ 
+
+The better way is to not make the form submit automatically but give the users the choice to decide when to submit.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behaviorunpredictable-change.html
+
+         
+
+ 
+
+Success Criterion 3.3.1 – Error Identification
+
+[]
+
+If a user makes a mistake, use text to show the user where and what mistake was made, and how they can fix it.
+
+[] 
+
+ 
+
+In the example above, an error has been identified but the error message is generic and provides no information on what the error is and how to fix it.
+
+[] 
+
+ 
+
+This can be made better by specifying the nature of error and the ways to fix it in the error message.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-erroridentified.html
+
+Success Criterion 3.3.2 – Labels or Instructions
+
+[]
+
+To help persons with disabilities avoid making mistakes, we should provide simple instructions and cues for entering information into the form elements. This can be achieved by properly using labels, descriptive instructions and examples. In input elements, placeholder text can be used to provide proper information about the nature of data that the element expects.
+
+[] 
+
+ 
+
+In the above form, there is no information on what format should be used to enter the phone number in the input element.
+
+[] 
+
+By adding proper descriptive instructions as placeholders in the element, a visually impaired person can submit the form much more easily and efficiently.
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html
+
+         
+
+Success Criterion 4.1.1 – Parsing
+
+[]
+
+Ensure that the web pages are written and coded correctly following proper HTML standards and adopting good coding habits. For example, make sure that all HTML elements have complete start and end tags. Make sure elements are nested according to their specifications. Make sure that the elements do not contain duplicate attributes. And that no two or more elements share the same ID. Screen readers rely on good practices of HTML coding to read the contents correctly from a web page.
+
+[] 
+
+[] 
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html
+
+         
+
+Success Criterion 4.1.2 – Name, Role Value
+
+[]
+
+Ensure that all elements on a webpage have proper “name”, “value” and “role” attributes assigned to them. These attributes are part of the general standard of coding HTML. Not only is this a good practice and is going to make your web site and content more search engine friendly, practicing this standard is also going to help screen readers and other assistive technologies to properly identify and describe the various contents and elements of the website to persons with disabilities. If this is not done correctly, screen readers will read the wrong role for an element.
+
+Many websites use images for creating attractive buttons and add an “onclick” event to make it behave as a button.
+
+ 
+
+HTML code for inaccessible interactive controls:
+
+<img src=”btn-image.png” onclick=”submitForm()”>
+
+<span class=”button” onclick=”submitForm()”> SUBMIT </span>
+
+<div class=”button” onclick=”submitForm()”> SUBMIT </div>
+
+ 
+
+ 
+
+With this code snippet, the screen readers will identify it only as an image and not a button.
+
+ 
+
+HTML code for accessible interactive controls:
+
+<input type=”button” name=”submit_button” value=”submit” onclick=”submitForm()” />
+
+<button type=”button” name=”submit_button” value=”submit” onclick=”submitForm()”>SUBMIT</button>
+
+ 
+
+With proper HTML coding, the role is defined as a button and it is defined as a button type. In addition, a unique name has been given to the element. In this way, the screen readers will be able to convey the right information to users that the element is, in fact, a button not only an image. This will help users to know that they have to activate the button action.
+
+ 
+
+Reference Link: http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html
+
+         
+
+ 
+
+         
+
+Testing Techniques for Web Accessibility 
+
+[]
+
+Testing the web site is a key activity to ensure Web Accessibility for All. Testing allows us to find and understand issues existing in our website to be rectified while developing websites. There are various techniques to testing accessibility in websites. Some of them are listed below:
+
+Code Scanning 
+
+[]
+
+There are many tools available on the internet that can help us by automatically detecting accessibility issues. These tools can be used to test the accessibility status of our web pages during the development stage and when performing web accessibility audit for websites.
+
+These tools are valuable in identifying and rectifying preliminary web accessibility issues during the development stage. After completing code scanning and making sure that there are no detectable issues, we should carry out other forms of more detailed and manual testing methods as well.
+
+Some of the more popular testing tools available in the internet are:
+
+-       AChecker
+
+-       WAVE
+
+-       Total Validator
+
+Visual Review 
+
+[]
+
+Many issues and rectifiable measures can be figured out about the state of accessibility in a website just by visual browsing with the following questions in mind:
+
+-       Can the content be easily read?
+
+-       Can the forms for collecting input be used effectively?
+
+Paying particular attention to visual components that might not work well can help us find these issues. For example, we should be asking questions like:
+
+-       Is the font size too small?
+
+-       Do the colors of the background and the text possess proper contrast?
+
+The following steps can be taken while doing visual review of websites:
+
+a.       Turn off CSS (Cascading Style Sheets) in the website. This will give you an overview of how screen readers will interpret your website. See if the content has a logical flow and structure even without any styling.
+
+b.       Try using the built in browser text enlargement functions. Make sure that they work.
+
+c.       Try navigating through the website using only the keyboard. Make sure all links and functions accessible.
+
+Example Tools:
+
+-       Color Contrast Analyzer
+
+-       Developer Console on Chrome and Firefox
+
+ 
+
+ 
+
+Manual Testing with Screen Readers 
+
+[]
+
+The best way to make sure that your website is properly usable with screen readers, is to try and use it yourself. Try to navigate the website using screen readers using only the keyboard and simply turn off the monitor and attempt to use the website.
+
+-       Navigate around the website and determine how much information can be accessed with screen readers.
+
+-       Make sure there isn’t any information that can not be reached this way.
+
+-       Try reading headings, navigations, images, and also test more complex features like forms, inputs and tables.
+
+Example Tools:
+
+-       JAWS
+
+-       NVDA
+
+-       VoiceOver
+
+-       Windows Light
+
+ 
+
+Other Tools 
+
+[]
+
+Other than screen readers, persons with disabilities might also use a variety of other tools to interact with website. 
+
+For example:
+
+-       Screen Magnification Tools – commonly used by people with partial visual impairments to zoom into particular sections for being able to read the content better.
+
+-       Voice Control Tools – Persons with motor disabilities use voice command tools as the means to interact with websites as they cannot properly use a mouse or a keyboard. These people navigate using voice commands like “next link” and “go”.
+
+Testing with these assistive technologies also gives you in-depth knowledge about accessibility issues present in your website.
+
+Example Tools:
+
+-       ZoomText Magnifier
+
+-       Dragon Naturally Speaking
+
+ 
+
+ 
+
+Human Testing 
+
+[]
+
+The most thorough approach to ensure accessibility in websites is to ask persons with various disabilities to test your website and give feedback on what needs to be taken care of what needs to be better. Persons with disabilities can provide meaningful insights on the way they use and interact with websites and can help you uncover subtler issues. 
+
+Obviously, this technique is time consuming and requires a lot of resources. This method can be done after going through the above mentioned methods to make sure that nothing was ignored in the process.
+
+Various Disability organizations might be able to help you make this test by bringing in human testers for your website.
+
+         
+
+Accessibility Workshop Outlines 
+
+[]
+
+This part of the Web Accessibility Guide provides an overview and an outline for conducting a simple one-day workshops on web accessibility, that can be used as a basis for developing customized training workshops for specific audience needs and goals with limited resources and using the contents described above in this guide. The chapter touches on the different topics and resources that organizations and individuals can use as building blocks to develop presentations and activity materials for a simple one-day workshop for various audience group.
+
+ 
+
+Overview 
+
+[]
+
+We are going to plan and implement a one-day workshop on web accessibility in order to inform participants about web accessibility and to teach developers and content creators how to implement web accessibility and meet accessibility requirements defined by WCAG.
+
+Target Audience 
+
+[]
+
+We are going to discuss two different models for a day long web accessibility workshop designed for different target audience groups.
+
+-       Model 1 : For managers, decision makers and web content authors.
+
+-       Model 2: For Website developers and application programmers.
+
+Besides the intended audience, we can include staff from public relations, marketing, communications, human resources, procurement, legal and policy advisors, staff representatives, and other people involved in various parts of an organization to the conversation.
+
+Objectives of the workshop 
+
+[]
+
+The objective of the training workshops is to make sure that the audience is aware about the importance of web accessibility, understand the basic problems that persons with disabilities face while accessing websites and take proper measures to rectify them.
+
+After completing the workshop, managers and decision makers should be able to:
+
+-       Explain the importance of web accessibility for people with disabilities.
+
+-       List and identify common barriers experienced by people with disabilities.
+
+-       Justify business cases that calls for an organization’s web accessibility efforts.
+
+Similarly, content authors and designers should be able to:
+
+-       Explain the roles of WAI guidelines and its components in achieving accessible web.
+
+-       Apply basic principles of accessibility while preparing content for the web.
+
+-       Perform a preliminary level checks of web contents and web sites for accessibility.
+
+Finally, a web developer should be able to:
+
+-       Utilize WCAG 2.0 and its supporting documents to implement accessibility in websites.
+
+-       Evaluate websites for conformance with WCAG 2.0 and communicate the results.
+
+-       Implement techniques defined by WCAG 2.0 to develop accessible layouts, forms and other web contents.
+
+ 
+
+A One-Day Accessibility Workshop For Managers, Decision Makers and Web Content Creators 
+
+[]
+
+Schedule
+
+[]
+
+  --------------- -----------------------------------------------
+  Time            Session
+  10:00 – 11:00   Session 1 – Introduction to Web Accessibility
+  11:00 – 11:30   Break
+  11:30 – 12:00   Session 2 – Components of Web Accessibility
+  12:00 – 13:00   Session 3 – Working with WCAG 2.0
+  13:00 – 14:00   Lunch
+  14:00 – 15:30   Session 4 – Accessible Content Authoring
+  15:30 – 16:00   Break
+  16:00 – 17:00   Session 5 – Accessible images and multimedia
+  --------------- -----------------------------------------------
+
+ 
+
+Session Descriptions
+
+[]
+
+ 
+
+Session 1 – Introduction to Web Accessibility
+
+[]
+
+Objectives
+
+-       Explain what is web accessibility and why it is important.
+
+-       List the common barriers experienced by persons with disabilities while using websites.
+
+-       Describe benefits of making websites accessible.
+
+Session Outline
+
+-       Introduction and overview of web accessibility. (See Chapter 2)
+
+-       How people with disabilities use website. Can be shown using a video of people with disabilities using website or by having a disabled person show a demo.
+
+-       Explain the myths about web accessibility. (See Chapter 4)
+
+-       Information about relevant policies and legislations applicable. (See Chapter 3 – Legal Responsibilities)
+
+-       Benefits of making websites accessible. (See Chapter 3 – Access to Hidden Markets, Good for Search Engine Optimization)
+
+-       Explain how making websites accessible makes experience better for other users too. (See Chapter 3 – Low Cost and Increased Usability)
+
+ 
+
+Session 2 – Components of Web Accessibility
+
+[]
+
+Objectives
+
+-       Introduction to WAI guidelines as the international standard for making Web accessible.
+
+-       Explain role of W3C and WAI Guidelines in providing technical standard for achieving accessibility.
+
+-       Describe basic principles of WCAG 2.0, its principles and guidelines. Outline
+
+-       Introduction to W3C and WAI. (See Chapter 7)
+
+-       Introduction to WCAG 2.0 and its various components. (See Chapter 7)
+
+-       Describe the four basic principles of WCAG 2.0. (See Chapter 7 –WCAG 2.0 Principles)
+
+-       Describe the 12 guidelines of WCAG 2.0. (See Chapter 7 – WCAG 2.0 Guidelines)
+
+ 
+
+Session 3 – Working with WCAG 2.0
+
+[]
+
+Objectives
+
+-       Explain the concepts of WCAG 2.0 and list its supporting documents.
+
+-       Use WCAG 2.0 to support practical implementation and testing.
+
+Outline
+
+-       Introduction to WCAG 2.0 levels of conformance. (See Chapter 7)
+
+-       Introduction to success criteria of WCAG 2.0. (See Chapter 7 – WCAG 2.0 Success Criteria)
+
+-       Demonstrate “How to meet the success criteria of WCAG 2.0” by going over at least 5 or more Level A Success Criteria. (See Chapter 7 – WCAG 2.0 Success Criteria)
+
+ 
+
+ 
+
+Session 4 – Accessible Content Authoring
+
+[]
+
+Objectives
+
+-       Describe accessibility requirements relevant to content authors like text, colors, etc.
+
+-       Display how to author accessible content.
+
+Outline
+
+-       Making web content readable and understandable.  o Success Criterion3.1.5 – Reading Level
+
+-       Describing important and basic accessibility features o Success Criterion2.4.4 – Link Purpose (In Context) o Success Criterion2.4.6 – Headings and Labels o Success Criterion1.3.1 – Info and Relationships
+
+-       Use of color and contrast o Success Criterion1.4.1 – Use of color o Success Criterion1.4.3 – Contrast
+
+-       Additional Requirements o Success Criterion3.1.4 – Abbreviations
+
+o Success Criterion3.1.3 – Unusual Words
+
+ 
+
+Session 5 – Accessible Images and Multimedia
+
+[]
+
+Objectives
+
+-       Know the accessibility requirements for images.
+
+-       Know the accessibility requirements for multimedia content.
+
+-       Implement appropriate techniques to achieve accessibility in images and multimedia.
+
+Outline
+
+-       Introduction to different types of images and contexts that require accessibility consideration o Success Criterion1.1.1 – Non-Text Content
+
+-       Introduction to accessibility issue of images of text o Success Criterion1.4.8 – Images of Text
+
+-       Introduction to accessibility for synchronized or time-based media o Guideline 1.2 – Time based media o Success Criterion1.2.2 – Captions o Success Criterion1.2.3 – Audio descriptions
+
+ 
+
+A One-Day Accessibility Workshop For Web Developers and programmers 
+
+[]
+
+Schedule
+
+[]
+
+  --------------- ------------------------------------------------------
+  Time            Session
+  10:00 – 11:00   Session 1 – Introduction to Web Accessibility
+  11:00 – 11:30   Break
+  11:30 – 12:00   Session 2 – Components of Web Accessibility
+  12:00 – 13:00   Session 3 – Working with WCAG 2.0
+  13:00 – 14:00   Lunch
+  14:00 – 15:30   Session 4 – Accessible page structure and navigation
+  15:30 – 16:00   Break
+  16:00 – 17:00   Session 5 – Accessible images and form elements
+  --------------- ------------------------------------------------------
+
+ 
+
+Session Descriptions
+
+[]
+
+ 
+
+Session 1 – Introduction to Web Accessibility
+
+[]
+
+Objectives
+
+-       Explain what is web accessibility and why it is important.
+
+-       List the common barriers experienced by persons with disabilities while using websites.
+
+-       Describe benefits of making websites accessible.
+
+Session Outline
+
+-       Introduction and overview of web accessibility. (See Chapter 2)
+
+-       How people with disabilities use website. Can be shown using a video of people with disabilities using website or by having a disabled person show a demo.
+
+-       Explain the myths about web accessibility. (See Chapter 4)
+
+-       Information about relevant policies and legislations applicable. (See Chapter 3 – Legal Responsibilities)
+
+-       Benefits of making websites accessible. (See Chapter 3 – Access to Hidden Markets, Good for Search Engine Optimization)
+
+-       Explain how making websites accessible makes experience better for other users too. (See Chapter 3 – Low Cost and Increased Usability)
+
+ 
+
+Session 2 – Components of Web Accessibility
+
+[]
+
+Objectives
+
+-       Introduction to WAI guidelines as the international standard for making Web accessible.
+
+-       Explain role of W3C and WAI Guidelines in providing technical standard for achieving accessibility.
+
+-       Describe basic principles of WCAG 2.0, its principles and guidelines. Outline
+
+-       Introduction to W3C and WAI. (See Chapter 7)
+
+-       Introduction to WCAG 2.0 and its various components. (See Chapter 7)
+
+-       Describe the four basic principles of WCAG 2.0. (See Chapter 7 –WCAG 2.0 Principles)
+
+-       Describe the 12 guidelines of WCAG 2.0. (See Chapter 7 – WCAG 2.0 Guidelines)
+
+ 
+
+Session 3 – Working with WCAG 2.0
+
+[]
+
+Objectives
+
+-       Explain the concepts of WCAG 2.0 and list its supporting documents.
+
+-       Use WCAG 2.0 to support practical implementation and testing.
+
+Outline
+
+-       Introduction to WCAG 2.0 levels of conformance. (See Chapter 7)
+
+-       Introduction to success criteria of WCAG 2.0. (See Chapter 7 – WCAG 2.0 Success Criteria)
+
+-       Demonstrate “How to meet the success criteria of WCAG 2.0” by going over at least 5 or more Level A Success Criteria. (See Chapter 7 – WCAG 2.0 Success Criteria)
+
+ 
+
+ 
+
+Session 4 – Accessible Page Structure and navigation
+
+[]
+
+Objectives
+
+-       Know the necessity of structural relationships for understanding web pages.
+
+-       Know the requirements for accessible website navigation.
+
+-       Implement and test semantic structure and links to aid understanding and navigation of web pages.
+
+-       Implement and test accessible navigation elements.
+
+Outline
+
+-       Introduction to the importance of page information and structure  o Guideline 1.3 - Adaptable
+
+o      Success Criterion 1.3.1 – Info and Relationships
+
+-       Use of headings and correct heading levels o Guideline 2.4 – Navigable
+
+-       Page navigation techniques like ‘Skip to content’ o Guideline 2.4 – Navigable
+
+o      Success Criterion 2.4.1 – Bypass Blocks
+
+-       Importance of ensuring sequential navigation order that maintains a meaningful sequence o Guideline 1.3 – Adaptable 
+
+o      Success Criterion 1.3.2 Meaningful Sequence
+
+-       Introduction to proper website navigation with different ways like providing multiple ways to locate a web page, maintaining consistent navigation, ensuring clear purpose of link.
+
+o      Guideline 2.4 – Navigable o Guideline 3.2 – Predictable
+
+o      Success Criterion 2.4.4 – Link Purpose (In Context) o Success Criterion 2.4.2 – Page Titled
+
+ 
+
+Session 5 – Accessible Images and form elements
+
+[]
+
+Objectives
+
+-       Know the accessibility requirements for images.
+
+-       Know the accessibility requirements for forms and form elements.
+
+-       Implement appropriate techniques to achieve accessibility in images and forms.
+
+Outline
+
+-       Introduction to different types of images and contexts that require accessibility consideration o Success Criterion1.1.1 – Non-Text Content
+
+-       Introduction to accessibility issue of images of text o Success Criterion1.4.8 – Images of Text
+
+-       Introduction to information and relationship requirements for web forms o Guideline 3.3 – Input Assistance
+
+-       Accessible for features like labels, instructions, keyboard compatibility.
+
+o Success Criterion 1.3.1 – Info and Relationship o Success Criterion 3.3.1 – Error Identification o Success Criterion 3.3.2 – Labels and Instructions
+
+ 

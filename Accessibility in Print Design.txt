@@ -1,0 +1,417 @@
+﻿Accessibility basics for print
+
+
+Accessibility in print design
+
+[]
+
++------------------------------------------------------------------------------------------------------------------------------+
+| Things to consider include:                                                                                                  |
+|                                                                                                                              |
+| •      Use a simple clear font.                                                                                              |
+|                                                                                                                              |
+| •      Avoid handwriting and highly stylised fonts.                                                                          |
+|                                                                                                                              |
+| •      Light weight fonts with thin lines should not be used.                                                                |
+|                                                                                                                              |
+| •      Blocks of italic and underline are hard to read and should be avoided.                                                |
+|                                                                                                                              |
+| •      All capital letters in long lines of text are hard to read because the individual characters are harder to recognise. |
+|                                                                                                                              |
+| •      Use bold text sparingly for emphasis.                                                                                 |
+|                                                                                                                              |
+| •      Align text left.                                                                                                      |
+|                                                                                                                              |
+| •      Make sure contrast is strong between the text and the background.                                                     |
+|                                                                                                                              |
+| •      Avoid using text over images or patterned backgrounds                                                                 |
+|                                                                                                                              |
+| •      Make sure numbers are distinct. 3, 5 and 8 can be misread as 0 and 6 in some fonts.                                   |
+|                                                                                                                              |
+| •      Avoid the use of hyphens when possible.                                                                               |
+|                                                                                                                              |
+| •      Tables have visible borders and their content is well spaced within the cells.                                        |
++------------------------------------------------------------------------------------------------------------------------------+
+
+Most people think of websites and digital platforms when they think of accessibility, but printed material should be accessible as well.
+
+Colour contrast is very important but it is only part of the equation. Accessible designs for print are created using colours, fonts, headings and layouts that make the product as clear and legible as possible. Designing with accessibility in mind from the start insures that a print product is ready for conversion to digital use and makes it more readable for a wider audience.
+
+This guide covers accessibility issues that are relevant when creating new text designs. It is also intended to be used with existing text designs that are to be re-purposed for a new edition, or as a style book for another text.
+
+  -- ----
+     
+     []
+  -- ----
+
+Font style and family
+
+Text font type
+
+•      Fonts should be clear and easy to read. Avoid handwriting or fancy fonts.
+
+•      Text should be left aligned or justified with hyphenation turned off. Avoid         ranged right text.
+
+•      Avoid using text on top of images unless it is on a dark or light panel. The legibility of text is enhanced by a clean consistent background.
+
+•      Avoid graduated tints behind headings.
+
+•      Italic for emphasis should be used sparingly. Underline should be avoided if possible as it reduces legibility.
+
+Text font size
+
+As a general rule the minimum text font size is considered to be no smaller than 10pt. But not all fonts have letters that are the same size.
+
+Sans Serif fonts
+
+Use Arial as the guide and check to see how it compares for size and clarity. Adjust the size accordingly:
+
+This is 10/12pt Arial
+
+This is 10/12pt Open Sans This is 10/12pt Mundo Sans
+
+This is 10/12pt Frutiger LT
+
+Serif fonts
+
+Use Times as the guide and check to see how it compares for size and clarity.
+
+Adjust the size accordingly,
+
++-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.  | Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.   |
+|                                                                                                             |                                                                                                              |
+| 10/12pt Arial                                                                                               | 9.5/12pt Open sans                                                                                           |
+|                                                                                                             |                                                                                                              |
+| Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.  | Nate nam qui berchillaut essimu usanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.  |
+|                                                                                                             |                                                                                                              |
+| 10.75/12pt Mundo sans                                                                                       | 9.5/12pt Frutiger LT                                                                                         |
++-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+
+Different San Serif fonts adjusted for size.              
+
+Nate nam qui berchillaut essimu   Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam      sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam. faccatio. Picidem quasped essimodiam.
+
+10/12pt Times                                               9.5/12pt ITC Giovanni
+
+Nate nam qui berchillaut essimu Nate nam qui berchillaut essimu sanda con comnis ari doluptaturi sam usanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam faccatio. Picidem quasped essimodiam
+
+9.25/12pt Palatino                                        9/12pt ITC Garamond
+
+Different Serif fonts adjusted for size.            
+
+Why Arial and Times?
+
+Commonly used fonts are often rated as the most readable. This doesn’t mean that they are the best designed or most legible typefaces. What it does mean though is that they are the fonts which we are most familiar with. Familiarity is one of the most important factors in the legibility of a font.
+
+Font weight and letter spacing
+
+Light font weights can be hard to read as legibility requires good contrast so should be avoided.
+
+Helvetica Neu light is hard to read
+
+Bold and condensed fonts can also be difficult to read due to the space closing   up between letters. However a small amount of extra letter spacing/tracking can improve the legibility.
+
+  ------------------------------- -------------------------------
+  Normal letter spacing           Increased letter spacing +30
+  Helvetica Neu condensed bold    Helvetica Neu condensed bold
+  Helvetica Neu bold              Helvetica Neu bold
+  Times bold                      Times bold
+  ------------------------------- -------------------------------
+
+A few things to consider about Numbers.
+
+0 1 2 3 4 5 6 7 8 9                     0 1 2 3 4 5 6 7 8 9 
+
+Both sets of numbers above are from the same typeface. The first are Lining  figs the second are known as Old-style figs.                        
+
+Old-style numbers are designed to be included in a block of text. Lining numerals tend to break the flow of reading slightly. Lining figures work better              with lists because they sit right next to an upper-case letter.
+
+The lining figures match the height of the upper-case letters, adding a bit of  visual pause, while the old-style numbers match the lower-case text, making it slightly easier on the eye.
+
++-------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.   | Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.  |
+|                                                                                                             |                                                                                                            |
+| Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam fac catio. Picidem quasped essimodiam.  | Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam.  |
++-------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Lining numbers                                                                                                                                               |
+|                                                                                                                                                              |
+| The 25th European Championship will take place in London. The tournament will involve 20 teams and the opening games will be played at 8pm on the 17th June. |
+|                                                                                                                                                              |
+| Non lining old style numbers                                                                                                                                 |
+|                                                                                                                                                              |
+| The 25th European Championship will take place in London. The tournament will involve 20 teams and the opening games will be played at 8pm on the 17th June. |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[]
+Avoid blocks of bold, italic and underline
+
+Some fonts e.g. Gill sans, have almost identical capital “I”, lower-case “l”, and numeral “1” characters.
+
+  -- ----
+     
+     []
+  -- ----
+
+When to use capitals
+
+It is generally agreed that capital letters should be used sparingly, but no-one seems to have the answer to ‘how much is too much?’
+
+In small font sizes all capital words are hard to read e.g. when used in running heads or in lines of text of more than 3 or 4 words (long text headings) and should be avoided. But they can work well when used sparingly, in short headings for impact or emphasis.
+
+There is some debate about the use of caps for large font sizes (24pt and above). These are normally seen in chapter and part titles. The words ‘Chapter’ and ‘Part’ can work well in caps, but long chapter titles are harder to read.
+
+Things to consider when using capitals:
+
+•      When all caps are used the words form a uniform rectangular shape, this makes it hard to identify individual letters and readability is reduced.
+
+•      People with dyslexia might have problems reading text in all caps.
+
+•      If the page uses capital letters in a way that makes it hard for you to read, then change it to something you can read.
+
+•      All caps can work well to add importance to short headings which convey actions.
+
+ALL CAPS IN LONG LINES MAKES TEXT HARDER TO READ
+
+4.4  SCRIP ISSUES, SHARE SPLITS, SCRIP DIVIDENDS AND SHARE REPURCHASES
+
+4.4  Scrip issues, share splits, scrip dividends and share repurchases
+
+  ------ -------------------------------------------------------------------
+  4.4    SCRIP ISSUES, SHARE SPLITS SCRIP DIVIDENDS AND SHARE REPURCHASES
+  4.4    Scrip issues, share splits scrip dividends and share repurchases
+  ------ -------------------------------------------------------------------
+
+Example of capitals used in running head.
+
+Example of capitals used in H1 head.
+
+STOP AND THINK
+
+[]Why do we want psychological theories not only to descibe theories but to have a predictive quality too?
+
+Good use of capitals.
+
+  -- ----
+     
+     []
+  -- ----
+
+White space
+
+Effective use of white space can greatly improve legibility for people with vision impairments or low vision. Generous margins, open line spacing and text widths of less than 65 characters is one way to achieve this.
+
+•      Margins - generous margins Improve page organization and increases comprehension.
+
+•      Columns - for larger format books separate text into columns for ease of reading. For students with low vision using magnification, it is very helpful because it requires less eye movement.
+
+•      Heading padding - add space above and below. The white space makes headings stand out and emphasizes the heading structure placing focus on the visual hierarchy.
+
+•      Ample white space cuts down clutter which increases readability for students with dyslexia.
+
+Large margins and open spacing make text easier to read.
+
+Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam
+
+Text is harder to read if placed close to the margins with little line spacing.
+
+Nate nam qui berchillaut essim sanda con comnis ari doluptaturisam facc ati o. Picidem quasped essimodiam Nate nam qui berchillaut essim sanda conc o mnis ari doluptaturi sam faccatio. Picidem quasped essimodiam Nate nam qui berchillaut essim sanda con comnis ari doluptaturi sam faccatio. Picidem quasped essimodiam
+
+  -- ----
+     
+     []
+  -- ----
+
+Tables and text features
+
+Alignment
+
+•      Align text entries left.
+
+•      Align non size related numeric data left (i.e.. date phone numbers).
+
+•      Numeric data related to size should range right to help identify size.
+
+•      Align numeric entries on decimal point.
+
+Row heights and Spacing
+
+Choosing a more open row height will create more white space making tables easier to read. It is also important to allow enough spacing or padding in the table cells so the entries sit well within them.
+
+Table layouts should be simple and spacious.
+
+  ----------------- ------------------------------------------------------------------------ ----------------- -------------------------------------------------------------- -------------- ----------------------------- ------------------------------------------------------------- ---
+  Buy class         Degree of familiarity with the problem                                                     Information requirements                                                                                    Alternative solutions                                         
+  New buy           The problem is fresh to the decisionmakers.                                                A great deal of information is required.                                                                    Alternative solutions are unknown, all are considered new.    
+  Modified rebuy    The requirement is not new but is different from previous situations.                      More information is required but past experience is of use.                                                 Buying decision needs new solutions.                          
+  Rebuy             The problem is identical to previous experiences.                                          Little or no information is required.                                                                       Alternative solutions not sought or required.                 
+  Band                                                                                       Lead singer                                                                      Date formed    Recording label                                                                              
+  Sparklehorse                                                                               Mark Linkous                                                                     1995.          EMI (Capitol, Parlophone).                                                                   
+  Patrick Watson                                                                             Patrick Watson                                                                   2003           Secret City records.                                                                         
+  Wilco                                                                                      Jeff Tweedy                                                                      1994           Nonesuch                                                                                     
+                                                                                                                                                                                                                                                                                         
+  ----------------- ------------------------------------------------------------------------ ----------------- -------------------------------------------------------------- -------------- ----------------------------- ------------------------------------------------------------- ---
+
+Styling header cells: Differentiate header text from column text by changing the weight and backgrounds
+
+  ----------------- ----------------- -------------- -----------------------------
+  Band              Lead singer       Date formed    Recording label
+  Sparklehorse      Mark Linkous      1995.          EMI (Capitol, Parlophone).
+  Patrick Watson    Patrick Watson    2003           Secret City records.
+  Wilco             Jeff Tweedy       1994           Nonesuch
+  Okkervil River    Will Sheff        1998           Jagjaguwar
+  ----------------- ----------------- -------------- -----------------------------
+
+Zebra stripe tables: Alternating different colour backgrounds for each row can be helpful to people who have reading difficulties. Check the contrast ratio between the text and the backgrounds.
+
+Text features 
+
+Text features such as type on pale coloured panels follow similar guidelines as those used for tables:
+
+•      Align text entries left.
+
+•      Pale colour backgrounds need a dark rule around them. This prevents the feature from being lost due to the colour contrast between the tint and paper.
+
+•      Allow enough spacing or padding for the text within the panel or boxed item.
+
+•      Turn hyphenation off.
+
+•      Tables are easier to read on white backgrounds within the tint panel.
+
+Icons 
+
+Can be distinctive. Even if the actual icon is not easily distinguishable to a reader with low vision, the colour and form can act as a location guide. Here are a few things to consider.
+
+•      Not everyone interprets them in the same way.
+
+•      Different cultures can have a different meanings for different icons.
+
+•      Icons can leave the reader with an extra activity, trying to understanding what they mean.
+
+•      They are bad news for screen readers so don’t use them if the print project has a digital product associated with it.
+
+Icons can help readers navigate around a document and identify sections, points and headings. However they must be used carefully and only where they help people.
+
+•      Make them simple and easily recognisable.
+
+•      Be consistent in size and avoid making them to small.
+
+•      Provide text labels or headings.
+
+•      With WCAG 2.1. success criterion 1.4.11, states that meaningful graphics like icons must have a 3:1 color ratio.
+
+Activity 1
+
+It is often said that people are every organisation’s most important asset. This is perfectly true but people are not like other assets. As well as being valuable in their own right – in terms of performance, skills and creativity – it is individual employees who bind every other aspect of working life together.
+
+‘The People Factor – engage your employees for business success’, ACAS, March 2014, p. 4 (a) What does this statement actually mean to you and fellow members of your group?
+
+(b)     What exactly is meant by‘individual employees binding every other aspect of workng life together’?
+
+(c)     To what extent do departmental members of sta‘ in your own university appear to be valued as an important asset?
+
+(d)     Why is it that although the importance of people as the most important asset is often preached by organisations, this rarely seems to be the reality?
+
+(e)     How does this activity relate to your study of organisational behaviour?
+
+Simple text box feature with outer box rule for colour contrast.
+
++---------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------+
+| []Don't ignore an infected blister. Without treatment it could lead to a skin or blood infection. |                       | Important                                                                                       |
+|                                                                                                   |                       |                                                                                                 |
+|                                                                                                   |                       | Don't ignore an infected blister. Without treatment it could lead to a skin or blood infection. |
++---------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------+
+
+Words can be more effective than icons.
+
++-----------------------------------------------------------------------+
+| []Important                                                           |
+|                                                                       |
+| Don't ignore an infected blister. Without treatment                   |
+|                                                                       |
+| it could lead to a skin or blood infection.                           |
++-----------------------------------------------------------------------+
+
+If they have to be used then text headings help to clarify the meaning of an icon.
+
+[]Graduated tints 
+
+They should be used with caution, taking care that any type is within an area with sufficient colour contrast. This should be dark or light enough for the content to be read.
+
+Graduated tint backgrounds can get lost without a rule to define them. In this example it has been removed and replaced with a flat
+
+[]Graduated tint background for table caption fails colour contrast test.
+
+[]Pale tint background with a dark box rule, will pass colour contrast check.
+
+[]The examples on the right needed correcting for accessibility.
+
+•      The baselines of the page number and running head  Before. should align.
+
+  ----------------------------------------------------
+  1 4        [] Chapter 2  Theoretical Perspectives
+   
+  ----------------------------------------------------
+
+•      The graduated tint behind the page number makes it difficult to read.
+
+  --- -------------------------------------------------------- --------
+  •   The Use of capitals is not recommended for legibility.   After.
+  --- -------------------------------------------------------- --------
+
+  --------------
+  Vignette 3.2
+  --------------
+
+•      Avoid the use of handwriting or decorative fonts.
+
+Before.
+
++----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| Before.                                                                                                  | After.                                                                                                          |
++----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| Ensure that icons are clear and easily distinguishable.                                                  | Even though the background tint passed the colour contrast test it was made lighter. This improves readability. |
+|                                                                                                          |                                                                                                                 |
+| Keep them simple, avoid using graduated tints or drop shadows, the example on the right is much clearer. |                                                                                                                 |
++----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+
+Vignette 3.2
+
+After.
+
+[]Progressing your that your reflective diary or research notebookentries will enable you to meet fully the assessment               Progressing your      that your reflective diary or research notebookentries will enable you to meet fully the assessment research project      criteria. In particular be sure to ascertain whether                   research project       criteria. In particular be sure to ascertain whether you are expected to be reflective or reflexive. you are expected to be reflective or reflexive.
+
+             Starting your reflective diary or                     • When doing this, amend the questions in Box 1.4                                    Starting your reflective diary or         • When doing this, amend the questions in Box 1.4
+
+          notebook                                                                  to guide your diary or notebook entries as                                                    notebook       to guide your diary or notebook entries as
+
+•      []Find out if your university requires you to write a           necessary.   • Find out if your university requires you to write a                        • necessary.If the answer is ‘no’, we still believe it will be refective practice statement, learning journal or • If the answer is ‘no’, we still believe it will be       refective practice statement, learning journal or              beneficial to your learning for your research keep a refective diary or research notebook as              beneficial to your learning for your research        keep a refective diary or research notebook as                project or research methods module if you keep a
+
+               part of your research project or research methods              project or research methods module if you keep a                     part of your research project or research methods                           refective diary or research notebook on a regular
+
+             module.                                                                                                        refective diary or research notebook on a regular                                            module.                 basis. Please use the questions in Box 1.4 to guide
+
+•      If the answer is ‘yes’, look carefully at precisely what     basis. Please use the questions in Box 1.4 to guide                   • If the answer is ‘yes’, look carefully at precisely what              your reflective entries at the end of each chapter.
+
+              is required by the assessment criteria and ensure                  your reflective entries at the end of each chapter.                        is required by the assessment criteria and ensure
+
+  --- ------------------------------------------------------
+  2   Capital Markets, Market E ciency and Ratio Analysis
+       
+  --- ------------------------------------------------------
+
+[][]If using graduated tint panels on images as a background for type ensure it is within an area with sufficient colour contrast. This should be dark or light enough for the content to be read.
+
+Type on images
+
+[]
+
+[]Avoid text on an image, unless there is a high contrast between the background and text. Consider the following when text is overlayed on an image.
+
+•      The clarity of the image
+
+•      Readability of the text
+
+A single colour, dark panel larger than the text should give enough contrast between the background and the lettering. Ensure that there is sufficient space between text and the panel   border so that they do not merge visually.

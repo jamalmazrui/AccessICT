@@ -1,0 +1,538 @@
+﻿Quick Guide: PAC - PDF Accessibility Checker
+
+
+Quick Guide
+
+PAC: PDF Accessibility
+
+Checker
+
+  -- ----
+     
+     []
+  -- ----
+
+Version 1.2
+
+[]
+
+[]
+
+PAC is a free tool to review of the accessibility of PDF documents and Forms. It serves as a tool for experts and testers.
+
+Internet:  www.access-for-all.ch
+
+Author: Roberto Bianchetti, xyMedia GmbH
+
+3nd Edition of 20. April 2011 Internet:  www.xymedia.ch
+
+Translation:
+
+Quick Guide: René Jaun, “Access for all”
+
+PAC (Draft): Adam Spencer, accessibil-IT
+
+[]
+
+Copyright © 2011 xyMedia. All rights reserved.
+
+No part of this work may in any possible way (print, photo copy, micro film or other techniques) and without the author's written permission be reproduced or by means of electronic systems be processed, copied or distributed.
+
+This documentation has been created and verified with great care. Nevertheless, possible errors can't be out ruled completely. The publisher, the editor and the authors can neither take any legal responsibility nor any liability for incorrect information and its consequences.
+
+For the content and presentation of links to third-party websites mentioned within this documentation, responsibility belongs with the corresponding providers. The publisher, the editor as well as the authors do not have any influencial power over them.
+
+All software names mentioned in this book are registered trademarks or should be treated as such.
+
+1 Overview “PAC – PDF Accessibility Checker”
+
+1  Overview “PAC – PDF Accessibility Checker”
+
+Congratulations on using “PAC: PDF Accessibility Checker”. You have chosen an evaluation tool which will support you when creating high quality accessible PDF documents and PDF forms and which will make your work much easier.
+
+1.1  Tagged PDF documents
+
+Tags are the foundation of accessible PDF documents. They deliver the structural information, which enables assistive technology, such as screen readers, to
+
+•          Properly recognise different text elements, such as headings, lists, graphics and tables.
+
+•          Read the document following the correct reading order.
+
+Many authoring systems are capable of producing tagged PDF documents. Unfortunately, however, the quality of those automatically generated tagged documents is often insufficient, which makes additional visual as well as technical checks inevitable. 1.2  Checking PDF-Accessibility using PAC
+
+[]
+
+The most important features of “PDF Accessibility Checker” are:
+
+1          The BUTTON: START TESTING runs the most important accessibility
+
+1 Overview “PAC – PDF Accessibility Checker”
+
+checks on the PDF document:
+
+See Chapter 3: ”Accessibility Checks (Page 8)”for a detailed explanation.
+
+2          The BUTTON: PREVIEW displays the document the way a blind person would read it:
+
+See Chapter 4: ”Preview as the blind would read (Page 13)” for a detailed explanation.
+
+3          The BUTTON: REPORT creates a test report:
+
+See Chapter 5: ”Report (Page 16)”for details.
+
+2  Installation instructions
+
+2.1  System requirements
+
+The following system requirements have to be met:
+
+•          Windows XP, Vista, Windows 7
+
+•          Adobe® Reader Version 8 or later
+
+•          Mozilla Firefox 3 or later, Interner Explorer 6 or later or Google Chrome
+
+•          Microsoft .NET Framework 2.0 SP2 or later
+
+2.2  Installation
+
+You do not need to have administrative privileges to install this software.
+
+Just extract the contents of "PAC_EN.zip" in a folder of your choice. Then, Double-clicking “PAC.exe” will start the “PAC: PDF Accessibility Checker” application.
+
+[]
+
+2.3  Uninstallation
+
+To uninstall "PDF Accessibility Checker", simply delete the application executable.
+
+2.4  Further settings
+
+2.4.1  Microsoft Internet Explorer
+
+In order to fully use PAC with Internet Explorer, you have to associate PDF files with either “Adobe Reader” or “Acrobat Professional” in windows.
+
+2.4.1.1 Associating in Windows XP
+
+  -- ----
+     
+     []
+  -- ----
+
+Step 1: Go to CONTROL PANEL > FOLDER OPTIONS
+
+[]
+
+Step 2: In the WINDOW: FOLDER OPTIONS, select the PAGE: FILE TYPES.
+
+Step 3: The BUTTON: CHANGE… will allow you to associate the corresponding application to the file.
+
+[]
+
+2.4.1.2 Associating in Windows Vista
+
+Step1: Go to CONTROL PANEL > DEFAULT PROGRAMS.
+
+[]
+
+Step2: Select MAKE A FILE TYPE ALWAYS OPEN IN A SPECIFIC PROGRAM
+
+[]
+
+Step3: The BUTTON: CHANGE PROGRAM… will allow you to associate the corresponding application with the file.
+
+[]
+
+2.4.2  Mozilla Firefox
+
+For Mozilla Firefox, additional settings have to be configured. Under TOOLS > SETTINGS and by selecting the PROGRAMS TAB, configure the browser according to the figure below:
+
+[]
+
+2.4.3  Adobe Reader
+
+Use the menu bar and go to EDIT > PREFERENCES > GENERAL... and select the CATEGORY: INTERNET. Then, configure the program according to the figure below.
+
+[]
+
+3  Accessibility Checks
+
+3.1  Check 1: Document is marked as tagged
+
+This check evaluates if the document is marked as containing tags.
+
+This is necessary because some viewers and screen readers don't recognise tags within a PDF document unless it specifically contains this flag.
+
+  ------------------ --------------------------
+  WCAG 2.0           Principle 1: Perceivable
+  ISO 32000-1:2008   Table 321, Key 'Marked'
+  ------------------ --------------------------
+
+3.2  Check 2: Document Title available
+
+This check evaluates if a title has been set for the PDF document.
+
+  ------------------ ---------------------------------
+  WCAG 2.0           Principle 1: Perceivable
+  ISO 32000-1:2008   Table 22, Bit-Position 5 und 10
+  ------------------ ---------------------------------
+
+A title helps the user to gain better orientation.
+
++-----------------------------------+--------------------------------------+
+| WCAG 2.0                          | Principle 2: Operable                |
+|                                   |                                      |
+|                                   | Guideline 2.4: Navigable             |
+|                                   |                                      |
+|                                   | Success Criterion 2.4.2: Page Titled |
++-----------------------------------+--------------------------------------+
+| ISO 32000-1:2008                  | Table 317, Key 'Title'               |
++-----------------------------------+--------------------------------------+
+
+3.3  Check 3: Document Language defined
+
+This check evaluates if a language has been assigned to the PDF document.
+
+This is necessary for screen readers to use the correct pronunciation when reading the PDF document.
+
++-----------------------------------+-------------------------------------------+
+| WCAG 2.0                          | Principle 3: Understandable               |
+|                                   |                                           |
+|                                   | Guideline 3.1: Readable                   |
+|                                   |                                           |
+|                                   | Success Criterion 3.1.1: Language of Page |
++-----------------------------------+-------------------------------------------+
+| ISO 32000-1:2008                  | Table 28, Key 'Lang'                      |
++-----------------------------------+-------------------------------------------+
+
+3.4  Check 4: Accessible Security Settings
+
+This check evaluates if the security settings of the PDF document allow assistive technology to access the tag structure.
+
+If the security settings of a PDF document are too restrictive, assistive technology can't access the document anymore and thus are useless.
+
+3.5  Check 5: Tab follows Tag-Structure
+
+This check evaluates if all pages of the PDF document are configured so that when using the Tab key, the performed jumps follow the tag structure.
+
+This ensures that the user, when sequentially navigating through the document using the Tab key, will get the information consistently in the same order as they're defined in the document structure.
+
++-----------------------------------+--------------------------------------+
+| WCAG 2.0                          | Principle 2: Operable                |
+|                                   |                                      |
+|                                   | Guideline 2.4: Navigable             |
+|                                   |                                      |
+|                                   | Success Criterion 2.4.3: Focus Order |
++-----------------------------------+--------------------------------------+
+| ISO 32000-1:2008                  | Table 30, Key 'Tabs'                 |
++-----------------------------------+--------------------------------------+
+
+3.6  Check 6: Consistent Heading Structure
+
+This check evaluates the structure of the document. The following three cases will produce a warning:
+
+•          if the document has no assigned headings
+
+•          if the structure of the document does not begin with heading level 1
+
+•          if heading levels are skipped over in the document structure
+
+A consistent structure helps the user to navigate through the document more specifically. Also, an inconsistent structure may confuse assistive technology, presenting an illogical hierarchy of headings to the user.
+
++-----------------------------------+-----------------------------------+
+| WCAG 2.0                          | Principle 4: Robust               |
+|                                   |                                   |
+|                                   | Guideline 4.1: Compatible         |
++-----------------------------------+-----------------------------------+
+| ISO 32000-1:2008                  | Table 335, Key 'H1-H6'            |
++-----------------------------------+-----------------------------------+
+
+3.7  Check 7: Bookmarks available
+
+This check evaluates if the document contains bookmarks.
+
+Bookmarks provide the user with an easier way to navigate the document.
+
++-----------------------------------+-----------------------------------+
+| WCAG 2.0                          | Principle 2: Operable             |
+|                                   |                                   |
+|                                   | Guideline 2.4: Navigable          |
++-----------------------------------+-----------------------------------+
+| ISO 32000-1:2008                  | Table 28, Key 'Outlines'          |
++-----------------------------------+-----------------------------------+
+
+3.8  Check 8: Accessible Font Encodings
+
+This check evaluates if all font characters within tagged text blocks can be converted into distinct Unicode characters.
+
+In PDF documents, fonts can use a variety of encodings. As for assistive technologies, the used fonts are of no relevance, they are not familiar with the various encodings. Therefore, Adobe Reader / Adobe Acrobat converts all font characters into the Unicode system before passing them to the assistive technology. If a translation table is missing for a certain font, non-interpretable characters are passed to the assistive technology.
+
+  ------------------ -----------------------------------------------------------
+  WCAG 2.0           Principle 1: Perceivable
+  ISO 32000-1:2008   Section 9.10.2: Mapping Character Codes to Unicode Values
+  ------------------ -----------------------------------------------------------
+
+3.9  Check 9: Content completely tagged
+
+This check evaluates if all contents of the PDF document are tagged. Contents which specifically have been set as background (and thus won't be interpreted or read by a screen reader) are also accepted as tagged content.
+
+Not tagged content are not or wrongly interpreted by assistive technologies. Therefore, all content has to be tagged.
+
+  ------------------ --------------------------
+  WCAG 2.0           Principle 1: Perceivable
+  ISO 32000-1:2008   Section 14.8: Tagged PDF
+  ------------------ --------------------------
+
+3.10  Check 10: Logical Reading Order
+
+This check evaluates the logic of the PDF document's reading order and warns when possible errors are detected. Not every warning, however, necessarily means that there's really an error.
+
+The logical reading order defines the sequence in which the content of the document is passed to the assistive technologies. If set incorrectly, a screen reader will read the text in the wrong order.
+
++-----------------------------------+----------------------------------------------+
+| WCAG 2.0                          | Principle 1: Perceivable                     |
+|                                   |                                              |
+|                                   | Guideline 1.3: Adaptable                     |
+|                                   |                                              |
+|                                   | Success Criterion 1.3.2: Meaningful Sequence |
++-----------------------------------+----------------------------------------------+
+| ISO 32000-1:2008                  | Section 14.7: Logical Structure              |
++-----------------------------------+----------------------------------------------+
+
+3.11  Check 11: Alternative Text available
+
+This check evaluates if all tagged non-text elements contain an alternative text.
+
+In order for non-text contents, such as graphics, to be perceived by the blind, an alternative text containing an appropriate description has to be made available.
+
++-----------------------------------+-------------------------------------------+
+| WCAG 2.0                          | Principle 1: Perceivable                  |
+|                                   |                                           |
+|                                   | Guideline 1.1: Text Alternatives          |
+|                                   |                                           |
+|                                   | Success Criterion 1.1.1: Non-text Content |
++-----------------------------------+-------------------------------------------+
+| ISO 32000-1:2008                  | Section 14.9.3: Alternate Descriptions    |
++-----------------------------------+-------------------------------------------+
+
+3.12  Check 12: Correct Syntax Tags / Rolls
+
+This check evaluates if all tags and rolls within the PDF document correspond to the ISO standard and if they have been used correctly.
+
+Assistive technologies follow the defined ISO standards. The tag structure, therefore, can only be interpreted correctly if those standards are being followed.
+
++-----------------------------------+------------------------------------------+
+| WCAG 2.0                          | Principle 4: Robust                      |
+|                                   |                                          |
+|                                   | Guideline 4.1: Compatible                |
+|                                   |                                          |
+|                                   | Success Criterion 4.1.1: Parsing         |
++-----------------------------------+------------------------------------------+
+| ISO 32000-1:2008                  | Section 14.8.4: Standard Structure Types |
++-----------------------------------+------------------------------------------+
+
+3.13  Check 13: Sufficient contrast for Text
+
+This check evaluates if the visual presentation of tagged text has a sufficient contrast ratio according to the WCAG 2.0 standard.
+
+Due to the high complexity of colour value calculations transparency, shadings, patterns and soft masks are currently excluded from this check. Only the ICC profile sRGB is completely supported. For all other ICC profiles, the alternative colour space is used.
+
+Principle 1: Perceivable
+
+[]                                                           WCAG 2.0                              Guideline 1.4: Distinguishable
+
+Success Criterion 1.4.3: Contrast (Minimum)
+
+3.14  Check 14: Spaces existent
+
+This check evaluates if the visual spaces in a PDF document are also contained within the content and the tag tree.
+
+Some PDF Generators think it not necessary to include invisible spaces to be passed into the PDF document. For assistive technologies, however, those spaces are inevitable.
+
+[]
+
+4  Preview as the blind would read
+
+This view
+
+•          Shows how a screen reader interprets the document and in which order the text would be read.
+
+•         
+
+  -- ----
+     
+     []
+  -- ----
+
+Is useful for Service providers and customers to visually evaluate how the content, the tags and the reading order of the accessible PDFs have been established.
+
+4.1  Displaying without tags
+
+This view shows the document's tagged text elements and in which order the screen reader will present it to blind readers.
+
+4.2  Displaying with tags
+
+If you activate the CHECKBOX: SHOW SEMANTICS, the corresponding icons are shown alongside the tagged text elements.
+
+[]
+
+4.3  Displaying without tags with PDF Document
+
+If you activate the link SHOW PDF, the corresponding PDF Document will appear on the right.
+
+[]
+
+5 Report
+
+5  Report
+
+In the PAC Test Report, every checkpoint, along with its status and corresponding detailed messages, is being displayed. The included links make it possible to easily navigate within the test report. Clicking the linked error messages will open the tested document in your web browser where the most probable location of the error is shown.
+
+[]
+
+Note:  The settings have to be configured according to the instructions given in Chapter 2.4: ”Further settings Page 4)”.
+
+[]
+
+6  Icons for Standard PDF tags
+
+6.1  Grouping Elements
+
+                                                          Icon              Standard PDF tags                           Description
+
+  ------------------------------ ------------------------
+  []              <Document>     Document
+  []             <Part>          Part
+  []             <Art>           Article
+  []             <Sect>          Section
+  []             <Div>           Division
+  []              <BlockQuote>   Block Quote
+  []              <Caption>      Caption
+  []             <TOC>           Table of Contents
+  []             <TOCI>          Table of Contents Item
+  ------------------------------ ------------------------
+
+                                                           []        <Index>                                               Index
+
+[]
+
+6.2  Block-Level Structure Elements
+
+6.2.1  Paragraphlike Elements
+
+  -- ----
+     
+     []
+  -- ----
+
+                                                          Icon              Standard PDF tags                           Description
+
+  ------ ------------------- ---------------
+  []     <H>                 Heading
+  []     <H1>                Heading 1
+  []     <H2>                Heading 2
+  []     <H3>                Heading 3
+  []     <H4>                Heading 4
+  []     <H5>                Heading 5
+  []     <H6>                Heading 6
+  []     <P>                 Paragraph
+  Icon   Standard PDF tags   Description
+  []     <L>                 List
+  []     <LI>                List Item
+  []     <Lbl>               Label Element
+  ------ ------------------- ---------------
+
+6.2.2  List Elements
+
+                                                           []        <LBody>                                              List Body
+
+6.2.3  Table Elements
+
+  -- ----
+     
+     []
+  -- ----
+
+                                                          Icon              Standard PDF tags                           Description
+
+  ------------------------- --------------
+  []              <Table>   Table
+  []             <TR>       Table Row
+  []             <TH>       Table Header
+  []             <TD>       Table Data
+  []              <THead>   Table Head
+  []             <TBody>    Table Body
+  ------------------------- --------------
+
+[]
+
+6.3  Inline-Level Structure Elements
+
+                                                          Icon              Standard PDF tags                           Description
+
+  ----------------------------- --------------------
+  []             <Span>         Span
+  []             <Quote>        Quote
+  []             <Note>         Note
+  []              <Reference>   Reference
+  []              <BibEntry>    Bibliography Entry
+  []             <Code>         Code
+  []             <Link>         Link
+  []             <Ruby>         Ruby
+  ----------------------------- --------------------
+
+6.3.1  Ruby Elements
+
+                                                          Icon              Standard PDF tags                           Description
+
+  --------------------- ----------------------
+  []             <rt>   Ruby annotation text
+  []            <rp>    Ruby punctuation
+  --------------------- ----------------------
+
+[]
+
+6.3.2  Warichu Elements
+
+[]
+
+6.4  Illustration Elements
+
+                                                          Icon              Standard PDF tags                           Description
+
+  ------ ------------------- -------------
+  []     <Figure>            Figure
+  []     <Formula>           Formula
+  []     <Form>              Form
+  Icon   Standard PDF tags   Description
+  ------ ------------------- -------------
+
+6.5  Unknown  Tag
+
+[]
+
+7 Support and Feedback
+
+7  Support and Feedback
+
+Support and further information can be found at: www.access-for-all.ch
+
+Please send your bug reports as well as suggestions for improvements directly to:  pac@access-for-all.ch
+
+8 Donation
+
+8  Donation
+
+If you like PAC and if you find it useful, we'd appreciate your consideration to donate any amount of your choice. This will support its continuing development and improvement.
+
+Postal Account: 85-710652-0
+
+IBAN: CH96 0900 0000 8571 0652 0
+
+“Access for all” Foundation
+
+Seefeldstrasse 65
+
+CH-8008 Zürich
+
+Switzerland

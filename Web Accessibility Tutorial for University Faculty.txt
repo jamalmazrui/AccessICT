@@ -1,0 +1,1009 @@
+﻿Web Accessibility: A Tutorial for University Faculty
+
+
+Communications of the Association for Information Systems
+
+[]
+
+    Volume 22                                                                                                                              Article 8
+
+[]
+
+1-2008
+
+Web Accessibility: A Tutorial for University Faculty
+
+David A. Bradbard
+
+Winthrop University
+
+Cara Peters
+
+Winthrop University
+
+Follow this and additional works at: https://aisel.aisnet.org/cais
+
+[]
+
+Recommended Citation
+
+Bradbard, David A. and Peters, Cara (2008) "Web Accessibility: A Tutorial for University Faculty," Communications of the Association for Information Systems: Vol. 22 , Article 8.
+
+DOI: 10.17705/1CAIS.02208
+
+Available at: https://aisel.aisnet.org/cais/vol22/iss1/8
+
+This material is brought to you by the AIS Journals at AIS Electronic Library (AISeL). It has been accepted for inclusion in Communications of the Association for Information Systems by an authorized administrator of AIS Electronic Library (AISeL). For more information, please contact elibrary@aisnet.org.
+
+[]
+
+ 
+
+WEB ACCESSIBILITY: A TUTORIAL FOR UNIVERSITY FACULTY
+
+I.  INTRODUCTION
+
+Few people have heard of the term “Web accessibility.” University faculty are no exception.  To date much of the Web is designed with visual aesthetics, rather than equal access, as the primary goal.  Web accessibility is the practice of making Web sites accessible to people who require more than just traditional Web browsers to access the Internet.  For example, a visually impaired student may use a screen reader to translate text and graphics on the computer screen to an audio format so he/she hears the Web site content via a speech synthesizer.  In an instructional setting an accessible Web site is designed to accommodate a wide set of ways all students can access a Web site’s content.  
+
+ 
+
+[]In postsecondary education, the Web has become a significant part of student experiences both in and out of the classroom [Clarke III et al. 2001].  The Web provides faculty with a wide variety of opportunities to support both faceto-face instruction as well as distance learning (e.g., [Benbunan-Fich et al. 2001; Eastman and Swift 2001]).  Students are expected to use the Web to access course materials and conduct research as well as to register for courses, check semester grades, and pay tuition.  For example, a survey conducted by Lincoln [2001] found that more than 81 percent of university marketing educators reported creating and maintaining individual faculty Web sites.  As part of their courses, students are often asked to access individual faculty Web sites to download the course syllabus, PowerPoint slides, and assignments [Clarke III et al. 2001; McBane 1997].  In addition, Lincoln [2001] found that the amount of material being placed on individual faculty Web sites has increased significantly over time.
+
+ 
+
+Lincoln [2001] also examined the obstacles faculty face in incorporating technology into the instructional environment.  He found that, in general, faculty members are concerned about their ability to stay abreast of technological advances and related activities.  More specifically, faculty express a lack of free time and institutional support necessary when dealing with new technology.  As will be explained in Section II, universities as a whole are having difficulty keeping up with necessary Web accessibility efforts.  Most likely individual faculty members are also behind the curve with respect to designing accessible Web sites.   
+
+ 
+
+However, accommodating students with disabilities, including Web accessibility efforts, is legally mandated for postsecondary institutions and de facto by individual faculty members.  In other words, Web accessibility law (e.g., Section 508 explained in Section II) mandates that any federally funded institution must have an accessible Web site.  Federally funded institutions include universities.   Arguably, Section 508 could be interpreted as applying to individual faculty members who are a significant part of such universities.  Thus, individual faculty members could be held liable (or responsible) for complying with the legal mandates of Web accessibility law for the Web sites they create and use for instructional purposes.
+
+ 
+
+As explained in Section II, many laws exist, such as the Americans with Disabilities Act (ADA), that require federally funded institutions to provide accommodations, and thus equal access, for students with disabilities. The requirements are placed on both public and private colleges and universities.  Because of the substantial number of individual faculty Web sites, an increasing population of disabled postsecondary students, and several existing legal mandates requiring Universities to accommodate disabled students, faculty need to understand the importance of Web accessibility. The objectives of this tutorial are:  
+
+ 
+
+1.     to introduce faculty members to Web accessibility issues;
+
+2.     to  present the standards related to Web accessibility; and  
+
+3.     to present the authoring/evaluation tools available for designing accessible Web sites. 
+
+ 
+
+We meet the first objective by presenting a review of the literature in Section II that includes discussions of the magnitude of the problem, empirical studies, and the legal mandates surrounding Web accessibility. 
+
+II.  LITERATURE REVIEW
+
+The Magnitude of the Problem
+
+Approximately 35 million Americans and 750 million people in the world suffer from physical, cognitive, or sensory disabilities [Lazzaro 2001].  Data from the U. S. Census Bureau [2005] indicate approximately 40 million Americans
+
+ 
+
+have at least one form of disability.  More recent estimates from the Institute of Medicine put the American disability population as high as 50 million, and this number is expected to double by 2030 [Zwillich 2007]. 
+
+ 
+
+Wellner [2000] estimated of the total number of disabled Americans, approximately 40 percent use computers and access the Internet.  Arguably, only a portion of disabled people attend postsecondary institutions, but we believe these students are more likely to use computers and access the Internet when compared to the larger disabled population.     
+
+Size of the Postsecondary Disabled Population
+
+Students with disabilities are the most likely group to be affected by Web accessibility barriers.  The most recent estimates for the size of this population are from data collected by the U. S. Department of Education’s National Center for Education Statistics (NCES).  NCES collected data in 2003-2004 as part of the National Postsecondary Student Aid Study.  Table 1 represents data taken from this study.  
+
+ 
+
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+| Table 1.  Disabled Student Enrollment in Postsecondary Institutions in the United States |               |                 |              |              |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+|                                                                                          | Undergraduate |                 | Graduate     |              |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+|                                                                                          | All Students  | Disabled        | All Students | Disabled     |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+| Population             Size                                                              | 19,054,000    | 2,156,000 (11%) | 2,826,000    | 189,000 (7%) |
+|                                                                                          |               |                 |              |              |
+| (Percent disabled)                                                                       |               |                 |              |              |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+| Percent Male/Female                                                                      | 42/58         | 42/58           | 42/58        | 38/62        |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+| Percent 30 or older                                                                      | 26            | 39              | 49           | 58           |
++------------------------------------------------------------------------------------------+---------------+-----------------+--------------+--------------+
+
+Source: http://nces.ed.gov/programs/digest/d06/tables/dt06_215.asp
+
+Disabled students represent approximately 11 and 7 percent of the total undergraduate and graduate student populations, respectively.   The ratio of males to females in the disabled population is similar to that of the nondisabled population; however both the undergraduate and graduate disabled populations have more students that are 30 years or older.  It should be noted that the percentage of disabled students attending postsecondary institutions increased over time.  For example, the “1999-2000 National Postsecondary Student Aid Study” sponsored by the U. S. Department of Education, National Center for Education Statistics, reported 9 percent of undergraduate and 6 percent of graduate students disabled.   The 1995-96 statistics reported that 5 percent of undergraduate and 3 percent of graduate students were disabled.  
+
+ 
+
+[]The Center for Disease Control (CDC) identifies four types of disabilities (visual, auditory, cognitive, and motor) that are especially relevant to Web accessibility.  Visual disabilities include blindness, color blindness, and low vision (i.e., peripheral constriction or retinal detachment).  The latter two make it harder for students to read the information on certain Web sites since dark backgrounds, unusual or small fonts, and unclear images pose problems for people with these two visual disabilities.  Students with audio disabilities such as deafness or a hearing impairment are impacted when Web sites use audio files or low quality recordings.  Students with cognitive impairments (also called learning disabilities) include autism, ADHD, and dyslexia as exemplars.  Those with cognitive impairments can have difficulty reading text or lack the full ability to identify links within a Web site.  Motor impairments include people with cerebral palsy, multiple sclerosis, muscular dystrophy, rheumatoid arthritis, carpal tunnel, broken bones, or other conditions that cause tremors or loss of fine muscle control.  Students with a motor disability often have difficulty using their hands to navigate Web sites.  They may also have age-related diseases that will cause disabilities.
+
+ 
+
+Disabled students can use a variety of assistive technologies to access the Web.  Representative examples of assistive technologies for each of the four types of disabilities are presented in Table 2.
+
+Empirical Literature on Web Accessible Sites for Consumers
+
+The issue at the heart of Web accessibility is that many Web sites are not designed with equal access in mind.  In other words, lack of Web accessibility is more a result of faulty design rather than inadequate technologies.  Carter and Markel [2001] estimate that one percent of Web developers take accessibility into account when designing Web pages.  When Web sites are designed without concern for users with disabilities, barriers often exist that inhibit access to the content of the site.  Common accessibility barriers include: images without alternative text; misleading use of structural elements on a Web page; uncaptioned audio or undescribed video; tables that are difficult to decipher when linearized; and sites with poor color contrast [Carter and  Markel 2001].  Similarly, McCormick [2006b] argues poorly written code underlying the Web design; poor navigational design; missing headings or titles; and alternative text for images are the most common accessibility errors.  
+
+ 
+
+ 
+
+[] 
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table 2.  Examples of Assistive Technologies for Various Types of Disabilities¹                                                                                                                                                                                                                                                                                     |                                                                                                                                                            |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Visual Disability                                                                                                                                                                                                                                                                                                                                                   | Auditory Disability                                                                                                                                        | Cognitive Disability                                                                                                                                                                                                                                                | Motor Disability                                                                                                                                                                                                                              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Screen magnifiers enlarge a portion of the screen as the user moves about the screen.  For straight text, users can magnify on screen by zooming                                                                                                                                                                                                                    | Telecommunications                                                                                                                                         | Reading tools and learning disabilities programs include software and hardware designed to make textbased materials more accessible for people who have difficulty with reading. Options can include scanning, reformatting, navigating, or speaking text out loud. | Alternate pointing devices enable users with limited or no arm and hand movement to control mouse movements.  Examples include foot operated mice, sip-and-puff systems, trackballs, head-mounted pointing devices, and eyetracking systems.  |
+|                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                            |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                     | Device for the Deaf [TDD) provides means to communicate over phone lines using text terminals.                                                             |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Screen             reader software          present graphics and text as speech                                                                                                                                                                                                                                                                                     | Closed captioning provides text translation of spoken material on video media (e.g., distance learning or video conference).                               | Screen             reader software used for visual disabilities         is             also effective for people with dyslexia.                                                                                                                                     | On-screen keyboards provide the key functions of physical keyboard and are typically used with alternate pointing devices.                                                                                                                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Speech recognition systems allow people to make inputs with their voice rather than by mouse or keyboard.                                                                                                                                                                                                                                                           | ShowSounds is a standard that provides visual translation of sound information. It is available in Windows XP and Vista. In Vista it is called “Captions.” | Speech recognition software can be used by people who find creating written language difficult.                                                                                                                                                                     | Predictive dictionaries speed typing by predicting words as the user types them and offer words for the user to choose among.                                                                                                                 |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Speech synthesizers allow users to hear the information they put into the computer                                                                                                                                                                                                                                                                                  | Light signaler alerts the user when the computer is emitting sounds such as indicating a new email message.                                                | Software like spell and grammar checkers, writing organizers, time management, and prompters are useful for processing impairments.                                                                                                                                 | Speech recognition enables users to control user interface or enter text via speech                                                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Refreshable Braille displays provide tactile output of information on the computer screen. Lines from the screen are sent to a device where small rounded plastic or metal pins are raised to form Braille characters. The user reads the Braille letters with his or her fingers, and then, after a line is read, can refresh the display to read the next line.   |                                                                                                                                                            | Office technology such as email, automatic reminders, and timers can be used for people with memory related impairments.                                                                                                                                            | Keyboard enhancements enable single finger operation of multiple key combos, delay onset of key repeat, bouncekey delays, or onset of inadvertent key presses (users with tremors).                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+~~                                                   ~~  
+
+1
+
+ This material was adapted from the following Web sites:
+
+http://www.birf.info/home/library/assistive/ast-assisttech.html, http://www.microsoft.com/enable/guides/vision.aspx  http://www.microsoft.com/enable/guides/dexterity.aspx http://www.microsoft.com/enable/at/types.aspx  http://developer.gnome.org/projects/gap/at-types.html   
+
+ 
+
+ 
+
++------------------------------------------------------------------------------------------------------------+-----------------+-----------------+-----------------+
+| Braille embossers transfer computer generated text into                                                    |                 |                 |                 |
+|                                                                                                            |                 |                 |                 |
+| embossed Braille output  using a special printer.                                                          |                 |                 |                 |
++------------------------------------------------------------------------------------------------------------+-----------------+-----------------+-----------------+
+| Talking word processors use speech synthesizers to provide auditory feedback of what is typed.             |                 |                 |                 |
++------------------------------------------------------------------------------------------------------------+-----------------+-----------------+-----------------+
+| Large-print word processors allow users to view everything in large text without added screen enlargement. |                 |                 |                 |
++------------------------------------------------------------------------------------------------------------+-----------------+-----------------+-----------------+
+
+ 
+
+[]Miller [2006] gives a specific example related to screen reader software interaction with Web page graphics.  “In order to identify these elements to a screen reader, your site must provide ALT text, language that is associated with non-text elements that provides contextual meaning in cases in which users cannot see the graphic” [p. 21-22].  Because screen readers only read text and cannot interpret graphic images, the code underlying the Web design should be written with titles, headings, and text captions that are appropriate for each graphic.  Goldie [2006] argues that pop-ups without warning and insufficient color contrast are other examples of Web accessibility barriers for users with vision impairments.  Similarly, graphics are problematic for deaf users who want to access the Web.   Fajardo et al. [2006] found that when they substituted textual links for graphics, both deaf and hearing enabled consumers were better and faster at retrieving information from a Web site.  Furthermore, both deaf and hearing enabled consumers reported less confusion while trying to retrieve the information via textual links as opposed to graphics. The authors explain this result is due to the fact that graphical information is difficult for hearing impaired users because they organize and retrieve knowledge about graphical information in long-term memory differently than the hearing enabled.        
+
+ 
+
+Many academic articles address the more technical, computer science issues on Web accessibility.  For example, The Association for Computing Machinery (ACM) sponsors a special interest group named SIGAccess that has sponsored nine conferences concerning the application of computing technology to solve disability issues.  ACM also publishes the ACM Transactions on Computer-Human Interaction (TOCHI).  Volume 14 issue three published in September 2007 is a special issue devoted to computers and accessibility.  Additionally, several general reference books are available for Web designers [Clark 2002; Paciello 2000; Thatcher et al. 2003; Thatcher et al. 2006], as well as books written to address specific design principles and code for Web accessibility [Budd et al. 2007; Duckett 2005; Kurniawan and  Zaphiris 2006].  Only a limited number of studies examine Web sites for barriers to accessibility.  Most of these studies show no matter the domain, many Web sites are not designed for accessibility.  
+
+ 
+
+For example, Loiacono [2004a] conducted a study examining the accessibility of the home pages of 96 nonprofit organizations.  More than 87 percent of the home pages examined had severe barriers.  Romano [2002-2003] evaluated the accessibility of the home pages of the top 250 Fortune 500 companies in 2002.  He found severe accessibility barriers in 75 percent of these organizations.  Two years later, Loiacono [2004b] evaluated the home pages of Fortune 100 companies.  Her results show a large improvement, compared to Romano, in that only 20 percent of the sites exhibited severe barriers.  However, despite the improvement in the level of severe barriers among corporate home pages, most of the Web sites examined by Loiacono [2004b] still contained moderate to low level barriers.  Typical low-lever barriers were (1) failure to include alternate tags for images, (2) failure to use relative sizing and positioning, and (3) failure to assure that the functionality of the page is independent of a particular input device.  In fact, only 6 percent of the sites she examined had zero accessibility errors.       
+
+ 
+
+Hackett et al. [2005] examined Web site accessibility and its interaction with Web site complexity over time.  These authors compared a random sample of general Web sites with a convenience sample of U. S. government Web sites over a five year period (1997-2002).  By law, U. S. government Web sites are required to provide access to electronic and information technology to people with disabilities (referred to as Section 508).  Their results indicate that both general and U. S. government Web sites became increasingly complex over time.  In other words, both the general Web sites and the U. S. government sites offered increasingly rich content and graphics over time.  However, where the two samples differ is with respect to accessibility.  The general Web sites became more inaccessible as they increased in complexity; whereas the U. S. government Web sites remained relatively accessible even though they became more complex.  Hackett et al.’s [2005] study is important because their findings prove that making a Web site more accessible does not mean the site is less rich from a communication standpoint.  Furthermore, their study shows when an organization improves accessibility, it does not limit the ability to design a communication-rich Web site.           
+
+ 
+
+[]In addition to the academic articles, practitioners write about Web accessibility.  Guillot [2006] argues the disabled “are increasingly relying on the Internet for everyday actions and purchases” (p. 44).  Companies such as Bell Atlantic that redesigned their Web sites to be more accessible noted the positive feedback they received from their disabled customers [Vaas 2000].  On the downside, however, many practitioners are also writing how their specific industries lack accessible Web sites.  McCormick [2006a] found no clothing retailer with an accessible Web site, which is problematic given that clothing is one of the top selling products on the Web.  The problem is not unique to the United States.  For example, in Britain most hotels lack accessible Web sites [Williams and Rattray 2005] and only one of the top five grocery stores has an accessible Web site [Freedman 2007b].  
+
+ 
+
+This literature review is especially poignant because previous research shows the buyer behavior of disabled consumers is contingent upon the individual’s perception of whether the shopping environment seems enabling or disabling.  After making such a judgment, the consumer formulates a response based on perceived access or barriers that exist in the shopping context [Kaufman-Scarborough and Baker 2005].  Thus, the lack of accessibility on many Web sites, combined with the fact disabled consumers may react negatively in response to perceived access barriers, should shed light on the assertions of practitioners who argue the disabled are loyal consumers [Vass 2000] who prefer to purchase from more accessible Web sites [Freedman 2007a]. 
+
+Empirical Literature on Accessibility for Postsecondary Web Sites
+
+Although studies on the accessibility of postsecondary Web sites are limited, the research to date suggests many universities, like businesses, lack accessible Web sites.  Two studies have examined the Web sites of colleges and universities outside of the United States (where laws with respect to Web accessibility are often stricter; see the Disability Discrimination Act of 1995 discussed by Hackett et al. 2005].  In Britain, an examination of 100 university Web sites found 33 percent failed to meet the most basic of accessibility guidelines [Anonymous 2003].  A study of 350 Web sites from Canadian postsecondary institutions conducted in 2002 found only 19.9 percent were free of severe accessibility errors [Zaparyniuk and Montgomerie 2005].    
+
+ 
+
+Rowland and Smith [1999] present one of the few studies that analyzed a random sample of the home pages of 400 postsecondary institutions within the United States.  They found only 22 percent of these sites were free from accessibility errors.  Hackett and Parmento [2005] examined a convenience sample of higher education Web sites over a five-year period (1997-2002).  They found the Web sites of postsecondary institutions have become increasingly complex and inaccessible over time.  
+
+ 
+
+Other published studies to date focus on a specific domain.  Schmetzke [1999] examined University home pages and the first layer of library pages of the 13 four-year institutions within the University of Wisconsin state system.  He found 31 percent of the pages did not have severe accessibility barriers.  Lilly and Van Fleet [2000] found more than half of the library home pages of Yahoo’s “America’s 100 Most Wired Colleges” did not provide equal access for disabled students.  Schmetzke [2001b] examined the top 24 U. S. News and World Report ranked schools of library and information science.  He analyzed both the university’s library home page and the home page of the school of library and information science.  Four of the library Web sites were free from accessibility errors while only one of the schools of library and information science sites was error free.  
+
+ 
+
+Flowers, Bray, and Algozzine [1999] examined the homepages of 89 special education programs throughout the United States.  Twenty four (27 percent) of the sites had no accessibility barriers.  Another study analyzed the University home pages of 392 AACSB-Accredited Universities.  Approximately 32 percent (125) of these Web sites were free from severe accessibility errors [Gutierrez and Long 2001-2002].
+
+ 
+
+  Schmetzke [2001a] studied the accessibility of two sets of distance-education Web sites.   The study looked at home pages and pages directly linked to the home page.  The first set used 219 Web sites of postsecondary distance education Web sites, and the second set used 12 major national organizations concerned with distance learning.  In the first, set 15 percent of the homepages were free of accessibility errors. Of the 3,360 pages linked to the homepages, only 23 percent were free of accessibility errors.   In the second set, one of the 12 home pages was free of accessibility errors and only 18 percent of the linked pages were free of accessible errors.  
+
+ 
+
+Spindler [2002] studied the entry page of the main library Web site of 188 US universities with student enrollments between 5,000 and 10,000.  Some form of accessibility barrier appeared on 74 percent of the Web sites.  The most prevalent problem was the failure to provide alternate text for images.
+
+ 
+
+ 
+
+Like Hackett et al. [2005], Hackett and Parmanto [2005] examined Web site accessibility and its interaction with Web site complexity over time (1997-2002).  They used a convenience sample of 45 members of the American Association of Universities (AAU) and found “a concurrent increase in accessibility barriers that coincides with an increase in complexity” [p. 290].  Since most of the members of the AAU receive funding from federal agencies, these institutions are in violation of Section 508.  Hackett and Parmanto [2005] attribute the increase in accessibility barriers to a lack of awareness of the Web accessibility issue.   
+
+ 
+
+Finally, at the University of Texas, students were trained to evaluate Web site accessibility and then evaluated the accessibility of 99 instructional Web sites [Lewis et al. 2007].  Only Web sites from departments that previously showed interest in accessibility were used in the study.  Results indicated only 12 of the 99 sites met Section 508 accessibility guidelines.  
+
+[] 
+
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| Table 3.   Summary of the Empirical Literature on Accessibility For Postsecondary Web sites |                                                                                                               |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| Article                                                                                     | Sample                                                                                                        | Sample Size     | Accessibility Results                                                                                                       |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Anonymous 2003]                                                                            | Home pages of British                                                                                         | 100             | 33%      failed    to         meet     basic             accessibility requirements                                         |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+|                                                                                             | Universities                                                                                                  |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Zaparyniuk        and                                                                      | Home         pages          of                                                                                | 350             | 80% had some severe accessibility barriers                                                                                  |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| Montgomerie 2005]                                                                           | Canadian postsecondary                                                                                        |                 |                                                                                                                             |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+|                                                                                             | institutions                                                                                                  |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Rowland           and                                                                      | Home    pages    of     US                                                                                    | 400             | 78% had some accessibility barriers                                                                                         |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| Smith 1999]                                                                                 | postsecondary institutions                                                                                    |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Hackett             and                                                                    | Home page and onelevel down of members of the AAU                                                             | 45              | Pages at these institutions became progressively inaccessible as the pages increased in complexity                          |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| Parmanto 2005]                                                                              |                                                                                                               |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Schmetzke 1999]                                                                            | University home pages and first layer of library pages for the University of Wisconsin state system           | 13              | 69% had severe accessibility barriers                                                                                       |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Lilly and Van Fleet                                                                        | Most wired U.S. colleges according to Yahoo                                                                   | 100             | 60% had severe accessibility barriers                                                                                       |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| 2000]                                                                                       |                                                                                                               |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Schmetzke 2000b]                                                                           | Home pages of top ranked universities in library and information science                                      | 24              | 83% of main library sites had accessibility errors; 96% of library and information science sites had accessibility barriers |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Flowers      et      al.                                                                   | Home pages of special education programs at                                                                   | 89              | 73% had accessibility barriers                                                                                              |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| 1999]                                                                                       | US universities                                                                                               |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Guiterrez           and                                                                    | Home pages of AACSB-                                                                                          | 392             | 68% had some form of accessibility barriers                                                                                 |
+|                                                                                             |                                                                                                               |                 |                                                                                                                             |
+| Long 2001-2002]                                                                             | accredited universities                                                                                       |                 |                                                                                                                             |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Schmetzke 2001a]                                                                           | Home pages and pages linked to homepages of postsecondary distance education Web sites                        | 219             | 85% of the home pages had accessibility barriers and 77% of the pages linked to the home pages had accessibility barriers   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Schmetzke 2001a]                                                                           | Home pages and pages directly linked to home pages of national organizations concerned with distance learning | 12              | 92% of the home pages had accessibility barriers and 82% of the pages linked to the home pages had accessibility barriers   |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Spindler 2002]                                                                             | Home pages of US universities with enrollments between 5,000 and 10,000                                       | 188             | 74% of the home pages had some form of accessibility barrier                                                                |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+| [Lewis et al. 2007]                                                                         | Instructional Web sites of departments.                                                                       | 99              | 88%      of         the        instructional      Web             sites     had accessibility barriers                      |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+As a whole, these studies suggest university homepages are not particularly accessible.  We speculate that individual faculty Web pages are in a similar (or even worse) situation.  This situation is particularly problematic when considering the legal ramifications of such activities, as discussed below. Table 3 contains a summary of the empirical studies on Web accessibility for postsecondary Web sites.  With respect to the 11 samples involving Web sites of U.S. postsecondary institutions, 60 to 90 percent of the sites sampled had some form of accessibility barriers.
+
+ 
+
+However, one must be cautious in interpreting this data.  First, there is no common definition regarding the severity of the accessibility barriers among the studies.  Second, seven of the 11 samples are from 1999-2000.  Since the Web changes so rapidly, these studies are relatively old by Web standards.  Third, none of the studies are explicitly related to Web sites of individual faculty.   
+
+Legal Mandates With Respect to Web Accessibility
+
+The Americans with Disabilities Act (ADA), passed in 1990, directs organizations that are public entities to make reasonable accommodations for those with disabilities.  More specifically, Title II (Section 202) of the ADA requires universities make their facilities, programs, services, and activities accessible to the disabled.  The ADA interprets information technology and related communication as part of the aids and services that must be reasonably accommodated for the needs of disabled students.  However, because the ADA preceded the Web, the law does not specifically address the design of electronic documents as in the case of Web accessibility.  
+
+ 
+
+Since an increasing number of people view the Internet as a public space and part of the programs, services, and activities of universities, many believe the ADA applies to the Web [Johnson et al. 2003].  Businesses are certainly grappling with this issue as a number of lawsuits were filed about the Web accessibility of corporate sites.  For example, the National Federation of the Blind sued America Online, charging the organization violated the ADA because its software did not accommodate screen readers [Carter and Markel 2001].  The suit was dropped when AOL agreed to make its software accessible.  In 2003, the New York state attorney filed suit under the ADA against Priceline.com and Ramada.com, charging that their Web sites were not accessible and deprived the visually impaired access.  The two companies settled out of court in 2004 [Miller 2006].  
+
+ 
+
+In early 2006, the National Federation of the Blind sued Target because its Web site contained barriers for the blind (e.g., screen readers did not detect visual information and check out was impossible without using a mouse) and filed suit accordingly.  According to Meyers [2006]), . . . the suit argues that Target is violating the California Disabled Persons Act, which guarantees full and equal access for people with disabilities to all public spaces.  It also argues that Target is violating the California Unruh Civil Rights Act, because blind patrons have been denied full and equal access to Target.com and have been provided services inferior to non-disabled patrons.
+
+ 
+
+Target tried to get the suit dismissed by arguing that accessibility only applies to physical access and does not apply to a firm’s Web site.  However, in September 2006, a Federal District Court judge ruled a retailer can be sued if their Web site is inaccessible to blind customers [Bangeman 2006].  The most recent development in this case occurred in October of 2007 when the case was certified “as a national class action under the ADA” [Anderson 2007].
+
+ 
+
+This case is significant because it is another instance where courts have ruled that the ADA applies to a firm’s Web site.  In addition, since Target’s Web site is powered by Amazon.com’s technology, some of the accessibility barriers may be related to this technology (e.g., one-click checkout).  If this is the case, then other retailers that use Amazon.com’s technology may be vulnerable to lawsuits like Target.  
+
+ 
+
+[]Although we did not find a suit brought against a particular university for a lack of Web accessibility, in 1996 the Department of Justice issued an opinion statement (letter number 204) that directs state and local governments to make all their communications, including those that are electronic (i.e., Internet- or Web-based), accessible to the disabled [Loiacono 2004a; Schmetzke 2001b].  Thus, it appears the Department of Justice interprets the ADA as applying at the university level.  The U. S. Department of Education also issued statements requiring statewide compliance in California with the ADA to make Web communications accessible at the collegiate level [Schmetzke 2001a].  Schmetzke [2001a] argues only a handful of universities in the United States have Web accessibility policies, and Rowland [2000] argues most are not effective. 
+
+ 
+
+With the exception of the wider interpretation of the ADA presented earlier, the U. S. government legislatively addressed Web accessibility only with respect to federally funded programs and services.  Section 508 of the Rehabilitation Act Amendments of 1998 requires all electronic information technology purchased by the federal government be usable by all disabled people.  The legislation requires any institution that receives federal funding to design and enact guidelines and policies for improving the accessibility of the use of information technology among the disabled [Loiacono 2004a; Schmetzke 2001b].  The legal mandates of Section 508 are based on a subset of the Web Accessibility Guidelines designed by the World Wide Web Consortium, as discussed in Section III.
+
+ 
+
+III.  DESIGNING ACCESSIBILE WEB SITES TO SUPPORT INSTRUCTION
+
+The studies in Section II indicate no matter the domain, many Web sites are not designed with accessibility in mind.  Several researchers assert improving Web accessibility requires raising awareness and knowledge regarding the design of Web accessible sites for instruction [Coombs 2002; Lewis et al. 2007; Rowland 2000; and Schmetzke 2001b].  The purpose of this section is to address this issue.  The content of this section is structured as follows: (1) standards related to accessibility; (2) tools for building accessible Web sites; and (3) accessibility features of Web browsers. 
+
+Standards Related to Designing Accessible Web Sites 
+
+The World Wide Web Consortium (W3C; www.w3.org) is an international consortium where member organizations, a full-time staff, and the public work together to develop standards for the Web.  The W3C is the premiere organization for setting standards for Web site specifications, guidelines, software, and tools [Hackett et al. 2005].  W3C created a group called the Web Accessibility Initiative (WAI) that created the Web Content Accessibility Guidelines (WCAG 1.0).  These guidelines will soon be replaced by WCAG 2.0.  The latest working draft of WCAG 2.0 is from May 2007.  Since current authoring and evaluation tools are still geared to WCAG 1.0, the authors will describe both WCAG 1.0 and WCAG 2.0.  Describing both versions permits comparisons between the two versions.  In addition to the WCAG guidelines, an independent group called the Web Standards Project (WaSP) publishes a set of guidelines that are also important for designing accessible Web sites. These guidelines are also presented.
+
+Web Content Accessibility Guidelines 1.0
+
+[] WCAG 1.0 contains 14 guidelines for designing and evaluating an accessible Web site (Table 4).  Each guideline is accompanied by a set of checkpoints that operationally define the guideline from a Web designer’s perspective.  The checkpoints (67 in total) are also assigned priority levels from one to three.²  Priority-one-level checkpoints must be satisfied or one or more disability groups will not be able to access information at the Web site.  For example, a text equivalent should be provided for every non-text element (e.g., images, tables, or symbols) used in the Web site.  Priority two level checkpoints must be satisfied or one or more disability groups will find it difficult to access information at this Web site.  For example, the colors used in the foreground and background should contrast sufficiently so that a person with color deficits can read screen images.  Priority three must be satisfied or one or more disability groups will find it somewhat difficult to access information at this Web site.  For example, the primary language of any document on the site should be identified (e.g., HTML or XHTML). 
+
+ 
+
+In addition to the priority levels, three levels of conformance inform Web site visitors about the accessibility of a site: Conformance Level                        Priority  Checkpoints satisfied                                                        for all 14 guidelines
+
+                           AAA                                           1, 2, 3
+
+           AA                                                  1, 2
+
+           A                                                     1
+
+The legal mandates of Section 508 of the Rehabilitation Act are based on a subset of the WCAG guidelines (see http://www.section508.gov for more information on Section 508 and its requirements).  Recall that these guidelines apply to all Web sites related to federally funded programs and services as well as Web sites providing state and local services.  Table 5 presents a summary of the Section 508 Web Accessibility Guidelines.  Even the full set of WCAG 1.0 guidelines are not an all inclusive solution since they are designed based on typical scenarios for the disabled [Hackett et al. 2005].  Thus, Web sites designed with Web accessibility as a goal must still be tested using multiple accessibility tools available in the marketplace. 
+
+ 
+
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------------+
+| Table 4.  Guidelines, Number of Checkpoints, and Sample Checkpoints for the Web Content |                                                                 |                        |                                                                                                   |
+|                                                                                         |                                                                 |                        |                                                                                                   |
+| Accessibility Guidelines 1.0³                                                           |                                                                 |                        |                                                                                                   |
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------------+
+| #                                                                                       | Guideline                                                       | Number of  Checkpoints | Sample Checkpoint with Priority Level                                                             |
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------------+
+| 1                                                                                       | Provide equivalent alternatives to auditory and visual content. | 5                      | Provide redundant text links for each active region of a server-side image map. (1)               |
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------------+
+| 2                                                                                       | Ensure that text and graphics are understandable when           | 2                      | Ensure that all information conveyed with color is also available without color, for example from |
++-----------------------------------------------------------------------------------------+-----------------------------------------------------------------+------------------------+---------------------------------------------------------------------------------------------------+
+
+~~                                                   ~~  
+
+²  The priority levels for each checkpoint are shown in parentheses in Table 4.
+
+³  Material in this table was adapted from http://www.w3.org/TR/WAI-WEBCONTENT.
+
+[]
+ 
+
+  ---- -------------------------------------------------------------------- ---- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       viewed without color.                                                     context or markup. (1)
+  3    Use markup and style sheets and do so properly.                      7    Use relative rather than absolute units in markup language attribute values and style sheet property values. (2)
+  4    Clarify natural language usage                                       3    Specify the expansion of each abbreviation or acronym in a document where it first occurs. (3)
+  5    Create tables that transform gracefully                              6    Do not use tables for layout unless the table makes sense when linearized.  Otherwise, if the table does not make sense, provide an alternative equivalent (which may be a linearized version. (2)
+  6    Ensure that pages featuring new technologies transform gracefully.   5    Ensure that pages are usable when scripts, applets, or other programmatic objects are turned off or not supported.  If this in not possible, provide equivalent information on an alternate accessible page. (1)
+  7    Ensure user control of timesensitive content changes.                5    Until user agents provide the ability to stop the refresh, do not create periodically auto-refreshing pages (2)
+  8    Ensure direct accessibility of embedded user interfaces.             1    Make programmatic elements such as scripts and applets directly accessible or compatible with assistive technologies (priority 1 if functionality is important and not presented elsewhere, otherwise priority (2).
+  9    Design for             deviceindependence.                           5    Provide client-side image maps instead of serverside image maps except where the regions cannot be defined with an available geometric shape. (1)
+  10   Use interim solutions.                                               5    Until user agents handle empty controls correctly, include default, place holding characters in edit boxes and text areas. (3)
+  11   Use W3C technologies and guidelines.                                 4    If, after best efforts, you cannot create an accessible page, provide a link to an alternative page that uses W3C technologies, is accessible, has equivalent information (or functionality), and is updated as often as the inaccessible (original) page. (1)
+  12   Provide context and orientation information.                         4    Describe the purpose of frames and how frames relate to each other if it is not obvious by frame titles alone. (2)
+  13   Provide             clear             navigation mechanisms.         10   Provide information about the general layout of a site (e.g., a site map or table of contents. (2)
+  14   Ensure that documents are clear and simple.                          3    Use the clearest and simplest language appropriate for a site’s content (1)
+  ---- -------------------------------------------------------------------- ---- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+  ----------------------------------------------------------------------------------
+  Table 5.  A listing of the Section 508 guidelines^(^([1]))  
+  1.  Provide alternative text for all images
+  2.  Provide alternative text for all image map hot-spots (AREAs).
+  3.  Explicitly associate form controls and their labels with the LABEL element. 
+  4.  Give each frame a title.
+  5.  Provide alternative text for each APPLET.
+  6.  Provide alternative text for all image-type buttons in forms.
+  7.  Include default, place-holding characters in edit boxes and text areas.
+  8.  Identify the language of the text.
+  ----------------------------------------------------------------------------------
+
+ 
+
+ 
+
+Web Content Accessibility Guidelines 2.0
+
+[]The Web Accessibility Initiative (WAI) group is now working on version two of the Web Content Accessibility Guidelines (WCAG 2.0).  The working draft discussed here is up to date as of May 2007.  The version two guidelines are based on four principles related to Web content.  For anyone to access Web content, the content must be perceivable, operable, understandable, and robust.  Under each guideline, success criteria are listed in a testable format.  Specifically, the success criteria are stated in a form so that each criterion can be tested by a computer program or a human tester.  The success criteria are similar to the checkpoints found in WCAG 1.0 (Table 4).   The four principles and 12 guidelines are shown in Table 6. 
+
+ 
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 5                                                                                                                                                            |                                                                                                                                                                               |
+|                                                                                                                                                              |                                                                                                                                                                               |
+| Table 6.  WCAG 2.0 Principles and Guidelines                                                                                                                 |                                                                                                                                                                               |
+|                                                                                                                                                              |                                                                                                                                                                               |
+|                                                                                                                                                              |                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principle 1:  Perceivable – Information and user interface components must be perceivable by users.                                                          |                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 1.1                                                                                                                                           | Provide text alternatives for any non-text content so that it can be changed into other forms people need such as large print, Braille, speech, symbols, or simpler language. |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 1.2                                                                                                                                           | Provide synchronized alternatives for multimedia.                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 1.3                                                                                                                                           | Create content that can be presented in different ways (for example spoken aloud, simpler layout, etc.) without losing information or structure.                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 1.4                                                                                                                                           | Make it easier for people with disabilities to see and hear content.                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principle 2:  Operable – User interface components must be operable by users.                                                                                |                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 2.1                                                                                                                                           | Make all functionality available from a keyboard.                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 2.2                                                                                                                                           | Provide users with disabilities enough time to read and use content.                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 2.3                                                                                                                                           | Do not create content that is known to cause seizures.                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 2.4                                                                                                                                           | Provide ways to help users with disabilities navigate, find content and determine where they are.                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principle 3:  Understandable – Information and operation of user interface must be understandable by users.                                                  |                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 3.1                                                                                                                                           | Make text content readable and understandable by users.                                                                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 3.2                                                                                                                                           | Make Web pages appear and operate in predictable ways.                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 3.3                                                                                                                                           | Help users avoid and correct mistakes.                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principle 4:  Robust – Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. |                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Guideline 4.1                                                                                                                                           | Maximize compatibility with current and future user agents, including assistive technologies.                                                                                 |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+3.1.1 Language of Page: The default human language of each Web page within the content can be programmatically determined.(Level A)
+
+3.1.2 Language of Parts:  The human language of each passage or phrase in the content can be programmatically determined. (Level AA)
+
+3.1.3 Unusual Words:  A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. (Level AA)
+
+3.1.4 Abbreviations:  A mechanism for finding the expanded form or meaning of abbreviations is available. (Level AA)
+
+3.1.5 Reading Level:  When text requires reading ability more advanced than the lower secondary education level, supplemental content or an alternate version is available that does not require reading ability more advanced than the lower secondary education level. (Level AAA)
+
+3.1.6 Pronunciation:  A mechanism is available for identifying specific pronunciation of words where meaning is ambiguous without knowing the pronunciation. (Level AAA)
+
+             
+
+Figure 1.  Success Criteria for Guideline 3.1⁶
+
+~~                                                   ~~  
+
+⁵ Adapted from http://www.w3.org/TR/WCAG20.
+
+ 
+
+For each guideline, there are testable success criteria. Across all the guidelines, there are 56 testable success criteria. To illustrate, the success criteria for guideline 3.1 are listed in Figure 1.  In addition, WCAG 2.0 contains specific instructions on how to meet the individual success criteria (these are not shown).   Each success criterion has been assigned one of three levels of conformance: A, AA, and AAA.
+
+ 
+
+There are nine requirements that must be satisfied for conformance to WCAG 2.0.  These requirements and a brief explanation are displayed in Table 7.
+
+ 
+
+Comparing WCAG 1.0 with WCAG 2.0
+
+A quick comparison between the two versions is shown below:
+
+ 
+
+                                                                         WCAG 1.0                                                           WCAG 2
+
+                                                                                 ---                                                                4 Principles
+
+                                                                      14 Guidelines                                                      12 Guidelines
+
+                                                                    67 Checkpoints                                                56 Success Criteria
+
+                                                    3 Priority Levels per Checkpoint                            3 Levels per Success Criterion
+
+                                                           3 Levels of Conformance                               9 Requirements for Conformance
+
+ 
+
+A detailed comparison between the two versions is available at http://www.w3.org/TR/2006/WD-WCAG2020060427/appendixD.html.
+
+ 
+
+In WCAG 2.0, the WCAG group is trying to separate general principles from technique.  The philosophy behind WCAG 2.0 is:
+
+[] 
+
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 7                                                        |                                                                                                                                                                                                                                                                              |
+|                                                          |                                                                                                                                                                                                                                                                              |
+| Table 7.  The Nine Conformance Requirements for WCAG 2.0 |                                                                                                                                                                                                                                                                              |
+|                                                          |                                                                                                                                                                                                                                                                              |
+|                                                          |                                                                                                                                                                                                                                                                              |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Conformance Requirement                                  | Explanation                                                                                                                                                                                                                                                                  |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1.  Level A conformance                                  | All Level A success criteria are satisfied or requirement 4 is satisfied.                                                                                                                                                                                                    |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2.  Level AA conformance                                 | All Level A and Level AA success criteria are satisfied or requirement 4 is satisfied.                                                                                                                                                                                       |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 3. Level AAA conformance                                 | All Level A, Level AA, and Level AAA success criteria are satisfied or requirement 4 is satisfied.                                                                                                                                                                           |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 4. Alternate versions                                    | If a Web page does not meet all of the success criteria in any level, then there is a procedure to obtain an alternate version that does meet all of the success criteria for the specified level of conformance.                                                            |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 5. AccessibilitySupported technologies only              | Only documented accessibility-supported Web technologies are employed to meet success criteria. Any information or functionality implemented in technologies that are not accessibility supported must also be available via technologies that are accessibility supported.  |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 6. Non-Interference                                      | Technologies that do not support accessibility  can be used, as long as all the information is also available using technologies that are accessibility supported and as long as the non-accessibility-supported material does not interfere.                                |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 7. Full pages                                            | Conformance is for full Web page(s) only, and cannot be achieved if part of a Web page is excluded.                                                                                                                                                                          |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 8. Supplemental information                              | If supplemental information is available for information on a page, the supplemental material is considered as part of page.  In other words, the page and the supplement are considered as a single Web page and requirement 7 would apply.                                 |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 9. Complete processes                                    | If a Web page that is part of a process does not conform, then no conformance claim can be made for any Web pages in that process.                                                                                                                                           |
++----------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+~~                                                                                                                                                                                          ~~  
+
+6
+
+ Adapted from http://www.w3.org/TR/WCAG20.
+
+⁷ Adapted from http://www.w3.org/TR/WCAG20.
+
+ 
+
+Content must be made available to users in a format that they can perceive with at least one of their senses (i.e., sight, hearing, touch). It must be presented in a way that they can interact with or operate it with either standard or adaptive devices. It must be presented in a way that the user can understand or comprehend. Finally, content must be presented using technologies and interfaces that are robust enough to allow for disability access, whether natively or in alternative technologies and interfaces. Together these principles address all areas of accessibility, at least in broad conceptual strokes (http://www.webaim.org/standards/wai/wcag2.php).
+
+ 
+
+Instead of embedding technique statements in the guidelines as was done in WCAG 1.0, WCAG 2.0 has put technology specific techniques in separate documents.  For example, there are specific documents that explain how to use such things as HTML, CSS, or scripting to ensure conformance with WCAG 2.0 (for HTML http://www.w3.org/TR/2005/WD-WCAG20-HTML-TECHS-20051123/). 
+
+ 
+
+A second major change is all of the success criteria in WCAG 2.0 are verifiable either by a computer or by human testing (http://www.webaim.org/standards/wai/wcag2.php).    Another criticism of WCAG 1.0 was checkpoints could not be verified without ambiguity.  With respect to human testing, the idea is each criterion can be tested by several trained human testers and conformance can be verified by a sufficiently high inter-rater reliability (e.g., 80 percent or better).
+
+ 
+
+The third major change is that WCAG 2.0 abandoned the priority scheme from WCAG 1.0.  The priority scheme in WCAG 1.0 gave the impression that some guidelines were not as important as others.  However, the importance of the guidelines was highly dependent on the nature of the disability.  For example, some priority 3 items were more important for some disabilities than certain priority 1 items (http://www.webaim.org/standards/wai/wcag2.php). 
+
+ 
+
+[]Have the changes in WCAG 2.0 improved WCAG 1.0?  According to Moss [2006], the new guidelines are still flawed in several important ways.  First, a major criticism of WCAG 1.0 was the guidelines were very technology specific and became outdated soon after their release.  In WCAG 2.0, the success criteria attempt to be technology-neutral, but in so doing the guidelines have become too vague to be useful. Second, WCAG 1.0 was very wordy, difficult to use, and filled with jargon, but WCAG 2.0 has not yet remedied these issues.  Third, some important checkpoints from WCAG 1.0 are not in WCAG 2.0.  As an example checkpoint 14.1 (Table 4), which says the clearest and simplest language appropriate for a site’s content should be used has no direct counterpart in WCAG 2.0.  Insufficient attention to this checkpoint creates a potential obstacle for people with cognitive disabilities, although success criterion 3.1.5 may partially address this issue (Figure 1).
+
+ 
+
+The notion of testability in WCAG 2.0 is also an issue of contention.  Sampson-Wild [2007] argues there are reasonable success criteria that have been left out or watered down in WCAG 2.0 because they are difficult to test.  In particular, checkpoint 14.1 (mentioned above) was in an earlier version of WCAG 2.0, but was removed because it was too difficult to define testability for this item.  She also states some success criteria are not easily testable.  Specifically, success criterion 1.1.1 requires a text alternative for all images that conveys equivalent information.  Sampson-Wild [2007] points out “equivalent information” is vague and not easily tested.  
+
+Web Standards  
+
+Although W3C has been a leader in establishing standards for the Web, uniform support from browser manufacturers has not always been consistent, particularly prior to 2000.  In 1998, an organization, independent of W3C, called the Web Standards Project (WaSP) was formed to promote core Web standardization that would be supported by all browser manufacturers [WaSP 1998].  By 2000, most browsers supported the WaSP standards.  However, many designers/developers still use outdated methods.  The current goal of WaSP is to educate designers/developers of Web sites on using standard compliant methods [WaSP 2006].
+
+ 
+
+The basic Web standards (hereafter referred to as Web Standards) proposed by WaSP include the following open source technologies for developing Web Sites [WaSP 2006]: ‘
+
+ 
+
+1.     HTML 4.01 or compatible XHTML 1.0 as the markup language
+
+2.     CSS level 1 and CSS level 2 for visual design 
+
+3.     ECMAScript (the standard version of JavaScript) for dynamic page features
+
+ 
+
+Regarding the markup language, the relationship between HTML (hypertext markup language) and XHTML (extensible hypertext markup language) is important to understand.  Markup languages are all based on a metalanguage (a language for creating other languages) called SGML (standard generalized markup language).  One language created by SGML is XML (extensible markup language) which is a simplified meta-language based on SGML.  XML was used to create XHTML (i.e., XHTML is an application of XML).  In the construction of XHTML, the tags and attributes from HTML were used to create XHTML and the rules for usage of the tags and attributes were provided by XML.  When using XHTML, you are actually writing XML but using the familiar tags and attributes of HTML [Shannon, 2007]. 
+
+ 
+
+Whether to use HTML or XHTML is a subject of some debate.  Hammond [2007] states that HTML 4.01 is more future compatible than XHTML.  W3C has not changed HTML 4.01 for several years and has encouraged people to migrate to XHTML.  Anderson (2007) says that W3C is being forced to confront improved versions of HTML due to the work of WHATWG (Web Hypertext Application Technology Working Group).  This group was formed in 2002 by a group of individuals who were disappointed about W3C’s lack of concern with HTML and disregard for Web authors.  HTML 5.0 is new version of both HTML 4.01 and XHTML 1.0 and is the primary outcome of WHATWG. (http://wiki.whatwg.org/wiki/FAQ). 
+
+ 
+
+Anderson [2006] argues that W3C approval of HTML 5.0 is moot since the most interesting things happening on the Web happen outside of HTML.  Software such as Flash from Adobe, and AJAX (asynchronous JavaScript and XML) are more significant than versions of HTML.  For example, AJAX is a cross-platform development technique that can create more responsive Web applications because the entire Web application does not have to be reloaded each time the user requests a change (http://en.wikipedia.org/wiki/Ajax_(programming)).
+
+ 
+
+Cascading style sheets (CSS) are external files that enable Web designers to describe the layout of a page written in HTML or XHTML independently of the content.  Because the content and layout are separate, different style sheets enable the content to be presented in multiple ways.  W3C has developed two CSS specifications, CSS1 and CSS2, where the latter is the more recent specification. 
+
+ 
+
+[]Because external CSS separate content from style, a number of advantages result.  For example, CSS enable Web authors to maintain the same look across multiple pages by linking all of the pages to the same CSS.  Second, since the CSS files are external to the content pages, making changes in the CSS file changes the look on all pages linked to the CSS file (i.e., maintenance efforts are reduced).  Third, since there is less code in the content pages, search engines search the pages faster and reach content quicker resulting in higher indices for the pages.  Fourth, CSS eliminate the need to design special versions of pages for low-bandwidth devices, printers, or cell-phones (adapted from [Spencer 2006] and [Tuknov 2006]). 
+
+ 
+
+With respect to accessibility, CSS provide significant aid for designing accessible Web sites.  For example, when a Web site is designed with CSS, users can select their own fonts and colors to view the site.  In addition, CSS supports aural style sheets that enable both authors and users to specify parameters (e.g., volume, background sounds) for controlling the effects of synthesized speech.  Finally, when alternate content is required, CSS provide more control than HTML alone (adapted from http://www.w3.org/TR/CSS-access.html).  These features are particularly helpful for users with limited vision, color blindness, or limited hearing.
+
+ 
+
+The main obstacle with respect to using CSS has been lack of consistent support from available Web browsers.  For example, Internet Explorer is not entirely consistent with CSS, but Microsoft made improvements to Internet Explorer 7 so it is more consistent than Internet Explorer 6 [Mielke and Massey 2006].  By using the standard version of JavaScript (ECMAScript) Web designers are assured all browsers can interpret the dynamic effects of the script.  For example, if the designer uses VBScript, only selected versions of Internet Explorer will be able to experience the dynamic effects of the script [Mueller 2003].
+
+Tools for Building Accessible Web Sites
+
+Two types of tools are presented:  authoring and evaluation tools.  Authoring tools include software and services Web site developers use to produce accessible Web content.  Evaluation tools automate as much as possible the process of evaluating whether a Web site conforms to accessibility guidelines.
+
+Authoring Tools
+
+                     The      WAI      group      published      Authoring      Tool      Accessibility      Guidelines      (ATAG)      Version                 1.0
+
+(http://www.w3.org/TR/ATAG10/) providing checkpoints and conformance levels for software vendors producing this type of tool.  ATAG 1.0 was approved in 2000 and is compatible with WCAG 1.0.  ATAG 2.0
+
+(http://www.w3.org/TR/ATAG20/) is under development and will be compatible with WCAG 2.0.  
+
+ 
+
+Examples of authoring tools include products for generating HTML or XML code (e.g., FrontPage, Expression Web, or DreamWeaver), applications for saving content to a Web format (e.g., Microsoft Office), video production tools for producing multimedia (e.g., Adobe products such as Flash or Adobe Photoshop), or courseware tools (e.g., Blackboard or WebCT). Each of these will be discussed below.  (Other authoring tools can be found at http://www.w3.org/WAI/AU/2002/tools.)   
+
+ 
+
+FrontPage is one of the more popular authoring tools because of its ease of use, low cost, and integration with MS Office applications, but FrontPage does not automatically produce HTML code that is compliant with accessibility guidelines.  However, several Web sites exist that explain how to generate accessible Web content using FrontPage (Table 5).  
+
+ 
+
+Expression Web from Microsoft is a new product designed to compete with Dreamweaver from Adobe.  Early reviews indicate Expression Web is far more compliant with current Web standards than FrontPage [O’Reilly, 2007]. 
+
+However, Web designers still need to do additional work to generate standard compliant code (http:/www.webaim.org/techniques/msew for details.)   Dreamweaver has a history of producing both HTML and XHTML code that is compliant with Web standards and support for CSS (Table 8).  In addition, both Dreamweaver and Expression Web have built in evaluation tools that check for compliance with Section 508 and WCAG.  Despite these built-in features, most experts recommend additional testing with other evaluation tools (e.g., W3C site). 
+
+ 
+
+Faculty who post files created by Microsoft Office applications (e.g., PowerPoint, Word, or Excel) or multimedia content from Adobe products on their course Web sites can improve the accessibility of these files by visiting the Web sites described in Table 8.  These Web sites provide techniques, tutorials, and downloads on how to improve the accessibility of these files.
+
+ 
+
+[]Many faculty use courseware tools such as Blackboard or WebCT to act as instructional aids on the Web, rather than construct their own Web site.  Since Blackboard and WebCT merged in 2006, WebCT is being phased out and Blackboard is now the dominant courseware product in the market place.  With respect to accessibility, Blackboard seems to address most of the Section 508 guidelines (Table 8).   Blackboard claims to be compliant with WCAG 1.0 at the AA level.  However, one review [Mohammed, 2006] of Blackboard confirmed compliance with Section 508 guidelines but made no mention of WCAG.  Additional resources for designing accessible Web pages can be found at http://www.makoa.org/web-design.htm.    
+
+Evaluation Tools 
+
+Evaluation tools serve dual purposes. 
+
+ 
+
+1.             Some tools automatically evaluate whether the Web site is in conformance with accessibility guidelines and in some instances make the necessary changes.  For example, some tools will automatically check that audio components of a Web site are tagged appropriately so the hearing impaired will see captions on the screen in lieu of audio. 
+
+ 
+
+2.             Some accessibility guidelines must be manually checked, and some tools will identify these types of checks.  For example, issues such as quality, ease of use, and look and feel that require human judgment must be checked manually.  Tools exist that do both in the sense that the tool automates changes necessary for conformance with accessibility guidelines and informs designers where manual checks are required.
+
+ 
+
+Five features particularly important for comparing tools are:  
+
+ 
+
+1)    accessibility guidelines 
+
+2)    nature of the assistance 
+
+3)    page scope 
+
+4)    repair options 
+
+5)    format scope  
+
+ 
+
+Accessibility guidelines.  Which guidelines are supported is of primary importance (e.g., WCAG 1.0 or Section 508).  Tools provide assistance in a variety of ways.  Some tools provide reports indicating conformance or nonconformance to specific guidelines, while others provide step-by-step instructions (similar to a Microsoft Wizard) to guide the developer through a check point.  
+
+ 
+
+Nature of assistance.  The tool inserts symbols in a page’s code to inform the developer of accessibility problems.  Some tools modify the appearance of the Web page or identify design issues.  
+
+ 
+
+Page scope.  Some tools support checking on single pages while others can check on groups of pages or full Web sites.  
+
+ 
+
+Repair options.  Tools can change the code of the page, add captions to audio or video content, or convert various file types (e.g., PDF, Word, Excel, or PowerPoint) into accessible HTML code.  
+
+ 
+
+Format type.  Tools also vary in the number of formats that can be checked for accessibility.  For example, some tools check HTML, CSS, compatibility with Synchronized Multimedia Integration Language (SMIL), different browsers (Mozilla/Firefox, Safari, or Opera), work with integrated design environments (IDE), and work with runtime applications such as Javascript.
+
+ 
+
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table 8.  Web Sites for Vendors and Products Containing Information for Improving Accessibility |                       |                                                                                                                                                                                                                                         |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Product                                                                                         | Vendor                | URL                                                                                                                                                                                                                                     |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Blackboard                                                                                      | Blackboard            | http://grok.lsu.edu/Article.aspx?articleId=367                                                                                                                                                                                          |
+|                                                                                                 |                       |                                                                                                                                                                                                                                         |
+| Learning                                                                                        |                       | http://www.blackboard.com/company/accessimplement.htm   http://www.edutools.info/compare.jsp?pj=4&i=556)                                                                                                                                |
+|                                                                                                 |                       |                                                                                                                                                                                                                                         |
+| Systems                                                                                         |                       |                                                                                                                                                                                                                                         |
+|                                                                                                 |                       |                                                                                                                                                                                                                                         |
+| (Release 7)                                                                                     |                       |                                                                                                                                                                                                                                         |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Dreamweaver                                                                                     | Adobe                 | http://www.adobe.com/accessibility/products/dreamweaver/overview.html  http://www.webaim.org/techniques/dreamweaver/  http://www.webstandards.org/action/dwtf/mxassessed                                                                |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Excel                                                                                           | Microsoft             | http://office.microsoft.com/en-us/excel/HP051984341033.aspx  http://www.okdhs.org/library/webmgmt/procguide/docs/bpexcel.htm                                                                                                            |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| FrontPage                                                                                       | Microsoft             | http://wwww.webaim.org/techniques/frontpage                                                                                                                                                                                             |
+|                                                                                                 |                       |                                                                                                                                                                                                                                         |
+|                                                                                                 |                       | http://microsoftfrontpage.com/content/articles/accessibility.htm                                                                                                                                                                        |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Internet Explorer                                                                               | Microsoft             | http://www.microsoft.com/enable/products/ie6/default.aspx http://www.microsoft.com/enable/training/ie7/defaulty.aspx                                                                                                                    |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Mozilla                                                                                         | Firefox               | http://www.mozilla.org/access/features,   http://firefox.cita.uiuc.edu/ http://kb.mozillazine.org/Accessibility_features_of_Firefox                                                                                                     |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Office                                                                                          | Microsoft             | http://www.accessiblewizards.uiuc.edu /                                                                                                                                                                                                 |
+|                                                                                                 |                       |                                                                                                                                                                                                                                         |
+|                                                                                                 |                       | http://msdn2.microsoft.com/en-us/library/bb404170.aspx                                                                                                                                                                                  |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PowerPoint                                                                                      | Microsoft             | http://www.cew.wisc.edu/accessibility/tutorials/pptpublish.htm  http://www.cew.wisc.edu/accessibility/tutorials/pptscratch.htm  http://www.webaim.org/techniques/powerpoint/convert.php  http://cita.rehab.uiuc.edu/software/office/    |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Word                                                                                            | Microsoft             | http://www.aptitudemedia.com/resources/access/documents/word.htm http://www.cew.wisc.edu/accessibility/tutorials/MSWordFeatures.htm                                                                                                     |
++-------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+                     The    WAI    group    provides    guidelines    for    selecting    tools    and    a    brief    evaluation    of    115                tools
+
+(http://www.w3.org/WAI/ER/tools/complete) where 31 are commercial, and the remaining 84 are free or open source software.  WebAIM provides a review of five free online accessibility tools
+
+(http://www.webaim.org/articles/freetools/compare.php).  For purposes of illustration, we discuss three of the 115 tools.  
+
+ 
+
+[]Web XM. Some products, like WebXM, are comprehensive.  WebXM is a product that audits accessibility, quality, privacy, and security across an entire organization’s Web site.  The accessibility component scans a Web site for over 170 accessibility checks including compliance with WCAG 1.0 and Section 508.  Bobby.  Bobby was first introduced in 1996 as a free product, and went commercial in 2001.  This widely used tool also checks compliance with WCAG 1.0 and Section 508.  Their Web site http://webexact.watchfire.com provides a free online service that uses Bobby to check Web pages for accessibility.  
+
+ 
+
+Accessibility Color.  Other tools are specific, such as Accessibility Color Wheel. This tool is an open source product that checks color combinations to determine contrast brightness.  The tool ensures that a Web site is accessible for people with visual problems such as color blindness. 
+
+ 
+
+Web tools are extremely useful in the evaluation of Web site accessibility, but the tools, by themselves, cannot determine if a Web site is accessible.  One reason is the tools are not infallible since they sometimes produce false or misleading results.  Second, some aspects of accessibility require human judgment^(^([2])). 
+
+Accessibility Features of Web Browsers
+
+Faculty who teach students with disabilities should inform these students that Internet browsers enable various settings to be changed to increase accessibility. Typical adjustments include changing text size, colors, or fonts; formatting Web pages using custom style sheets; and controlling the playing of animations, videos, or pictures.  For example, Microsoft provides online tutorials for Internet Explorer 6 and 7 (Table 8).   Accessibility features in Firefox can be found in the Mozilla entry in Table 8.   In June of 2007, Apple released a version of their Safari browser which also comes in a Windows version.^(^([3]))   
+
+IV.  CONCLUSION
+
+In the current environment, faculty who want to design Web accessible sites for instructional purposes are in a favorable position compared to the 2000 time frame.  Specifically, browser manufacturers adopted Web standards, several respected authoring tools are available, and a variety of evaluation tools exist.  Some of the authoring tools (e.g., Expression Web and Dreamweaver) contain built-in evaluation tools that can check for conformance for either WCAG 1.0 or Section 508.  Beyond taking the moral high ground, faculty who play the role of Web master for their instructional sites gain several advantages from adopting Web accessible design standards.  For example, maintenance is easier; multiple versions of Web sites are reduced; management of design and content is easier (e.g., use of CSS); and devices other than desktops and laptops can access the Web site [Web Standards Users Group, 2004].
+
+ 
+
+[]By adhering to the Web Standards (described in Section III) in designing accessible Web sites, Web authors benefit from several byproducts of this effort.  First, designing for accessibility is a special instance of universal design.  “Universal design is an approach to the design of all products and environments to be as usable as possible by as many people as possible regardless of age, ability, or situation” [http://www.udeducation.org/learn/aboutud.asp#1].  As the definition implies, universal design is concerned with usability issues.  For example, Schneiderman [2000] states that designing for universal usability with respect to information and communications services involves three challenges.  These challenges include support for (1) a wide variety of hardware, software, and network access; (2) diverse user populations that differ on such dimensions as age, disabilities, disabling conditions, and literacy; and (3) gaps in the knowledge of users.   By designing a Web site for accessibility, one implicitly incorporates principles for universal design and usability.  
+
+ 
+
+Second, adherence to Web Standards is a prerequisite for participating in the Semantic Web.  Most data on the Web are hidden in HTML files.  In this form, the data are available to humans but not for machines.  The Semantic Web is designed “to express information in a precise, machine readable form, ready for software agents to process, share, and reuse it, as well as to understand what the terms describing the data mean“ [Devedzic 2004].  Since the Semantic Web is based on XML, adherence to current Web Standards will facilitate participation in the future development of the Semantic Web.  Devedzic [2004] provides several examples of how to use the Semantic Web for educational purposes. Third, as mentioned in Section III in regard to the usage of CSS, adherence to Web Standards results in search engines generating higher indices for the Web site.
+
+ 
+
+Although most faculty are likely supportive of Web accessibility, they are either unaware or unable to make the time commitments to design their own instructional sites with Web accessibility as a major design goal [Lincoln, 2001].  This conclusion is evident from the review of literature where several groups within academe that should be aware of accessibility issues maintained Web sites with low levels of accessibility (Table 3).  
+
+ 
+
+ Since Web pages at postsecondary institutions are developed by individual faculty as well as departments, colleges, and universities, accessibility of Web pages may be best achieved by adopting a broadly worded university-wide policy [Johnson et al. 2003].  Important components in such a policy must answer the following questions [adapted from WebAIM, 2004]:
+
+ 
+
+1.     Who is responsible for creating accessible Web content?
+
+2.     How do the responsible individuals receive training and technical support?
+
+3.     What is the accessible standard and how does one tell when content meets the standard?
+
+4.     How soon does existing content need to be converted to meet accessibility standards?
+
+5.     Who verifies that the content passes the minimum standard?
+
+6.     How and by whom will the accessibility standards be enforced?
+
+7.     What consequences will befall those who violate the standard?
+
+ 
+
+WebAim [2004] claims most universities do not have policies in place to deal effectively with these questions.  As the review of literature indicates, most experts believe that Web pages used for instructional purposes are subject to federal accessibility standards.  This includes Web pages developed by individual faculty members.  Experts also maintain “academic freedom” will not be a defensible justification for an inaccessible Web site.  For example, a faculty member might argue that he/she has no more of an obligation to design a Web site for accessibility than to use a particular teaching strategy.  The counter argument would be that if the Web site is available to all students, then there must be an accommodation for disabled students who cannot access the Web site content so that the university is in compliance with the ADA (http://www.washington.edu/accessit/webpslegal.html).  Typically, an accommodation would be made through the university’s facilities for students with disabilities.  
+
+ 
+
+Even with the adoption of effective policies, redesigning large numbers of legacy Web sites so that they are in conformance with accessibility standards is a labor and/or capital intensive task.   A potential solution may be for some universities to provide a Web content management system that enables faculty to develop Web sites (with little or no assistance) that conform to the University’s policy regarding Web site accessibility. 
+
+ 
+
+The most compelling reason for developing and implementing a university wide Web accessibility policy may be the cost of not doing so.  Recall that in the private sector, AOL, Target, Priceline and Ramada were sued because their Web sites were not accessible to the visually impaired (Section II).  AOL and Target were sued by the National Federation of the Blind.  Priceline and Ramada were sued by the State of New York.  Most likely these organizations were sued because they did little to nothing to improve the accessibility of their sites.  The legal defense of “due diligence” suggests that if an organization makes a reasonable effort to improve the accessibility of its Web site, then it lessens the liability.  The interpretation of “reasonable effort” is debatable; however, failure to make any accommodation constitutes negligence (http://www.afb.org/Section.asp?SectionID=3&TopicID=135& DocumentID=298).  As noted earlier, it may be only a matter of time before a similar suit is filed against a postsecondary institution, especially if colleges and universities do nothing to improve the accessibility of their Web sites.  And most universities can ill afford the negative consequences of such a suit.
+
+ 
+
+[]Increasing demands are placed on today’s faculty with respect to technology, research, teaching, and service activities.  It is unlikely that individual faculty members have the time or ability to improve the design of their individual Web sites to reflect greater accessibility.  In fact, Lincoln’s [2001] study found faculty members are concerned about their ability to stay abreast of technological advances and have limited free time and institutional support when dealing with new technology.  Furthermore, universities as a whole are having difficulty keeping up with necessary Web accessibility efforts. Therefore, creating a university-wide Web accessibility policy seems to be only a starting point and one that may open Pandora’s Box.  Such a policy raises the question of the locus of responsibility for accessibility.  Is it the responsibility of the individual faculty member, his/her Department, the office responsible for maintaining the Web applications of the University, higher administration, or even the Office for Students with Disabilities, that should be creating the policy, training individual faculty members, and providing appropriate support?  Clearly, this issue merits further research.  
+
+REFERENCES
+
+Editor’s Note: The following reference list contains hyperlinks to World Wide Web pages. Readers who have the ability to access the Web directly from their word processor or are reading the paper on the Web, can gain direct access to these linked references. Readers are warned, however, that: 
+
+1)    These links existed as of the date of publication but are not guaranteed to be working thereafter.
+
+2)    The contents of Web pages may change over time. Where version information is provided in the References, different versions may not contain the information or the conclusions referenced.
+
+3)    The author(s) of the Web pages, not AIS, is (are) responsible for the accuracy of their content.
+
+4)    The author(s) of this article, not AIS, is (are) responsible for the accuracy of the URL and version information.
+
+ 
+
+Anderson, N. (2007).  “Lawsuit over Web Site Accessibility for the Blind Becomes Class Action,” http://arstechnica.com/news.ars/post/20071003-lawsuit-over-website-accessibility-for-the-blind-becomesclass-action.html (current 10/23/2007).
+
+Anderson, T. (2006).  “Reinventing HTML: It May Be Too Late,” http://www.itwriting.com/blog/?p=31 (current 10/22/2007). 
+
+Anonymous. (2003). “University Sites Barely Reach Basic Levels of Accessibility,” New Media Age, June 12, 15.  
+
+Bangeman. (2006).  “Judge: ADA Lawsuit Against Target Can Proceed,” http://arstechnica.com/news.ars/post/20060910-7705.html (current 10/23/2007).
+
+Benbunan-Fich, R., H. R. Lozada, S. Pirog, R. Priluc, and J. Wisenblit. (2001). “Integrating Information Technology into the Marketing Curriculum: A Pragmatic Paradigm,” Journal of Marketing Education 23 (1), 5-15.
+
+ 
+
+Budd, A., A. Clarke, I. Lloyd, C. Adams, R. Weychert, E. Marcotte, D. Rubin, J. Croft, M. Boulton, S. Collison, and D. Featherstone. (2007). Web Standards Creativity: Innovations in Web Design with XHTML, CSS, and DOM Scripting, New York: Springer-Verlag.
+
+Carter, J. and M. Markel. (2001). “Web Accessibility for People with Disabilities: An Introduction for Web Developers,” IEEE Transactions on Professional Communication 44 (4), 225-233.
+
+Clark, J. (2002). Building Accessible Websites, New York: New Riders Press. 
+
+Clarke III, I., T. B. Flaghtery, and S. Mottner. (2001). “Student Perceptions of Educational Technology Tools,” Journal of Marketing Education 23 (3), 169-177.
+
+Coombs, N. (2002). “Electronic Ramp to Success: Designing Campus Web Pages for Users with Disabilities,” EDUCAUSE Quarterly, 25(2), 45-51,   http://connect.educause.edu/library/abstract/
+
+ElectronicRampto Succ/39758 (current 8/29/2007).
+
+Crichton, P.  (2007).  “Safari. . . So Goody?” http://www.bbc.co.uk/blogs/ access20/2007/06/safari_so_goody_1.shtml (current 9/5/2007).
+
+Devedzic, V. (2004). “Education and the Semantic Web,” International Journal of Artificial Intelligence in Education 14, 39-65.
+
+Duckett, J. (2005). Accessible XHTML and CSS Web Sites Problem Design Solution, Indianapolis, IN: Wiley Publishing.
+
+Eastman, J. K. and C. O. Swift. (2001). “New Horizons in Distance Education: The Online Learner-Centered Marketing Class,” Journal of Marketing Education 23 (1), 25-34.
+
+[]Fajardo, I., J.Canas, L. Salmeron, and J. Abascal. (2006). “Improving Deaf Users’ Accessibility in Hypertext Information Retrieval: Are Graphical Interfaces Useful for Them?” Behaviour & Information Technology 25 (6), 455-467.
+
+Flowers, C. P., M. Bray, and  R. F. Algozzine. (1999).  “Accessibility of Special Education Program Home Pages,”  Journal of Special Education Technology 14(2), 21-26.
+
+Freedman, C. (2007a). "Disabled People Favor Accessible Sites,” AbilityNet State of the eNation Reports, http://www.abilitynet.org.uk/enation9 (current 5/24/2007).
+
+Freedman, C. (2007b). “Leading Supermarkets Failing to Address Online Shopping Needs of Disabled Customers,” AbilityNet State of the eNation Reports, http://www.abilitynet.org.uk/enation4 (current 5/24/2007).
+
+Goldie, L. (2006). “Online Retailers Fail to Take Web Accessibility Seriously Enough,” New Media Age, October 1213.
+
+Guillot, C. (2006). “Reaching the Under-Served Customer,” Stores Magazine 88 (11), 44-45.
+
+Guitierrez, C. F. and N. M. Long. (2001-2002). “Web Site Accessibility of AACSB-Accredited Universities: Meeting the Requirements of the Law(s),” Journal of Educational Technology Systems 30 (1), 69-84.
+
+Hackett, S., B. Parmanto, and X. Zeng. (2005). “A Retrospective Look at Website Accessibility Over Time,” Behaviour and Information Technology 24 (6), 407-417.
+
+Hackett, S. and B. Parmanto. (2005). “A Longitudinal Evaluation of Accessibility: Higher Education Web Sites,” Internet Research 15(3), 281-294.
+
+Hammond, D. (2007). “Beware of XHTML,” http://www.webdevout.net/articles/beware-of-xhtml (current 10/22/2007).
+
+Johnson, K. L., S. E. Brown, D. Amtmann, and T. Thompson. (2003). “Web Accessibility in Post-Secondary Education: Legal and Policy Considerations,” Information Technology and Disabilities 9(2), http://www.rit.edu/~easi/itd/itdv09n2/johnson.htm  (current August 20, 2007).
+
+Kaufman-Scarborough, C. and S. Baker. (2005). “Do People with Disabilities Believe the ADA Has Served Their Consumer Interests?” The Journal of Consumer Affairs 39 (1), 1-26.
+
+Kurniawan, S. and P. Zaphiris. (2006). Advances in Universal Web Design and Evaluation: Research, Trends and Opportunities, Hershey, PA: Idea Group Publishing.
+
+Lazzaro, J. (2001). Adaptive Technologies for Learning and Work Environments, Alpharetta, GA: American Library Association.
+
+ 
+
+Lewis, K., D. Yoder, E. Riley, Y. So, and S. Yusufali. (2007). “Accessibility of Instructional Web Sites in Higher Education,” EDUCAUSE Quarterly 30(3), http://connect.educause.edu/library/abstract/
+
+AccessibilityofInstr/44834 (current 8/29/2007). 
+
+Lilly, E. B. and C. Van Fleet. (2000). “Wired But Not Connected: Accessibility of Academic Library Home Pages,” The Reference Librarian 32 (67/68), 5-28.  
+
+Lincoln, D. J. (2001). “Marketing Educator Internet Adoption in 1998 versus 2000: Significant Progress and Remaining Obstacles,” Journal of Marketing Education 23 (2), 105-116.
+
+Loiacono, E.  (2004a). “Charity Begins at the Home Page: Providing Access to the Web for People with Disabilities,” Communications of the Association for Information Systems 13, 471-485. 
+
+Loiacono, E. (2004b). “Cyberaccess: Web Accessibility and Corporate America,” Communications of the ACM 47 (12), 83-87.
+
+McBane, D. A. (1997). “Marketing Departments on the World Wide Web: State of the Art and Recommendations,” Journal of Marketing Education 19 (1), 14-25.
+
+McCormick, A. (2006a). “Clothes E-tailers Fail on Accessibility,” New Media Age, December 7, 1.
+
+McCormick, A. (2006b). “FTSE 100 Company Sites Fail to Meet Basic Accessibility Levels,” New Media Age, May 4, 15.
+
+[]Meyers, M. (2006, February 10). “Blind Patrons Sue Target for Site Inaccessibility,” CNET News, http://news.com.com/Blind+patrons+sue+Target+for+site+inaccessibility/2100-1030_3-6038123.html (current January 11, 2007).
+
+Mielke, M. and D. Massey. (2006). “Cascading Style Sheet Compatibility In Internet Explorer 7,” Microsoft Corporation, http://msdn2.microsoft.com/en-us/library/Bb250496.aspx (current 8/20/2007).
+
+Miller, R. (2006). “Web Content Takes the ACCESS RAMP,” EContent 29 (1), 20-24.
+
+Mohammed, A.  (2006).  “A Review of the Blackboard Learning System (Release 7),” WCET EDU Tools, http://www.edutools.info/compare.jsp?pj=4&i=556 (current, 9/5/2007).
+
+Moss, T. (2006). “The New W3C Accessibility Guidelines Evaluated,” http://www.webcredible.co.uk/user-friendlyresources/web-accessibility/wcag-guidelines-20.shtml (current 11/1/2007)
+
+Mueller, J. P. (2003). Accessibility for Everybody:  Understanding the Section 508 Accessibility Requirements, New York: Apress.
+
+O’Reilly, D.  (2007).  “Microsoft Expression Web,” PCWorld, http://www.pcworld.com/article/id,129475/article.html (current 8/15/2007).
+
+Paciello, M. (2000). Web Accessibility for People with Disabilities, Lawrence, KS: CMP Books.
+
+Romano, N. (2002-2003). “Customer Relationship Management for the Web-Access Challenged: Inaccessibility of Fortune 250 Business Web Sites,” International Journal of Electronic Commerce 7 (2), 81-117.
+
+Rowland, C. and T. Smith. (1999). “Web Site Accessibility: The Power of Independence,” (Summer Edition), 1-2.  Outreach Division, Center for Persons with Disabilities: Utah State University.
+
+Rowland, C.  (2000).  “Accessibility of the Internet in Postsecondary Education: Meeting the Challenge,” http://www.webaim.org/articles/meetchallenge (current August 8/29/2007). 
+
+Sampson-Wild, G. (2007). “Testability Costs Too Much,” http://www.alistapart.com/articles/testability (current 11/7/2007)
+
+Schmetzke, A. (1999). “Web Page Accessibility on University of Wisconsin Campuses: A Comparative Study,” http://library.uwsp.edu/aschmetz/Accessible/UW-Campuses/contents.htm (current August 30, 2007).
+
+Schmetzke, A. (2001a). “Online Distance Education – ‘Anytime, Anywhere’ But Not for Everyone,” Information Technology and Disabilities 7(2), http://www.rit.edu/~easi/itd/itdv07n2/axel.htm (August 30, 2007).
+
+Schmetzke, A. (2001b). “Web Accessibility at University Libraries and Library Schools,” Library Hi Tech 19 (1), 3549. 
+
+Shannon, R. (2007). “XHTML Explained,” http://www.yourhtmlsource.com/accessbility/xhtmlexplined.html (current 8/15/2007).
+
+Shneiderman, B. (2000). “Universal Usability,” Communications of the ACM 43(5), 85-91.
+
+ 
+
+Spencer, S. (2006). “Taking Full Advantage of CSS,” http://www.netconcepts.com/taking-full-advantage-of-css/ (current 10/23/2007).
+
+Spindler, T. (2002). “The Accessibility of Web Pages for Mid-Sized College and University Libraries,” Reference & User Services Quarterly 42(2), 149-154.
+
+Thatcher, J., M. Burks, C. Heilmann, S. Henry, A. Kirkpatrick, P. Lauke, B. Lawson, B. Regan, R. Rutter, M. Urban, and C. Waddell. (2006). Web Accessibility: Web Standards and Regulatory Compliance, New York: SpringerVerlag.
+
+Thatcher, J., C. Waddell, S. Henry, S. Swierenga, M. Urban, M. Burks, M., and P. Bohmon. (2003). Constructing Accessible Web Sites, New York: Apress. 
+
+Tuknov, M. (2006).  “Taking Full Advantage of CSSS,” Search Engine Journal,  http://www.searchenginejournal.com/benefits-of-css-in-search-engine-optimization/4149/ (current 10/23/2007).
+
+U. S. Census Bureau. (2005). “Interim Projections: Rankings of States by Projected Percent of Populations Age 65 or Older,” http://www.census.gov/population/projections/PressTab3.xls (current September 4, 2006).
+
+Vaas, L. (2000). “Web Blind Spots,” PC Week 17 (15), 63-66.
+
+WaSP. (1998). “WaSP Baseline Standards Proposal,”   http://archive.webstandards.org/about/history (current 8/16/2007).
+
+WaSP. (2006). “History of the Web Standards Project,” http://www.webstandards.org/mission.html (current 8/16/2007).
+
+WebAim. (2004). “University Web Accessibility Policies: A Bridge Not Quite Far Enough,” http://www.webaim.org/articles/policies/policies_pilot/ (current 8/29/2007).
+
+Web Standards Users Group. (2004). “Why Adopt W3C Web Standards?” http://webstandards.psu.edu/articles/whyWebStandards (current 8/15/2007).
+
+Wellner, A. (2000). “The Internet’s Next Niche,” American Demographics 22 (9), 18-19.
+
+Williams, R. and R. Rattray. (2005). “UK Hotel Web Page Accessibility for Disabled and Challenged Users,” Tourism and Hospitality Research 5 (3), 255-267.
+
+Zaparyniuk, N. and C. Montgomerie. (2005). “The Status of Web Accessibility of Canadian Universities and Colleges: A Charter of Rights and Freedoms Issues,” International Journal of E-Learning 4 (2), 253-268.
+
+Zwillich, T. (2007). “U. S. Not Ready for Rise in Disabled,” http://www.webmd.com/news/20070424/us-not-ready-forrise-in-disabled (current 5/10/2007).  
+
+LIST OF ABBREVIATIONS
+
+ADA                  Americans with Disabilities Act
+
+AJAX                Asynchronous JavaScript and XML
+
+ATAG                Authoring Tool Accessibility Guidelines
+
+CSS                  Cascading Style Sheets
+
+W3C                  World Wide Web Consortium
+
+WaSP                Web Standards Project
+
+WAI                  Web Accessibility Initiative
+
+WCAG              Web Content Accessibility Guidelines
+
+WebAIM            Web Accessibility in Mind
+
+WHATWG          Web Hypertext Application Technology Working Group
+
+ABOUT THE AUTHORS
+
+[]David A. Bradbard is a professor of Management Information Systems in the College of Business Administration at Winthrop University.  He teaches courses in Management Information Systems and Application Software in the undergraduate and graduate programs. Before joining Winthrop University, he taught at Auburn University for 10 years. His research interests include database management systems, microcomputer applications, and business uses of the Internet. Dr. Bradbard has published more than 50 papers that have appeared in scholarly journals or conference proceedings. 
+
+ 
+
+Cara Peters is an assistant professor of Marketing in the College of Business Administration at Winthrop University.  She teaches Principles of Marketing, Advertising, E-commerce, Marketing Management, and Market Research at both the graduate and undergraduate levels.  Dr. Peters has published in numerous conference proceedings and
+
+[]
+
+[]
+
+------------------------------------------------------------------------
+
+[1] Table 5 was adapted from Loiacono [2004b], http://www.w3c.org , and http://www.section508.gov.   Words in all capital letters indicate HTML tags.
+
+[2] Material in this section was adapted from http://www.w3.org/WAI/eval/selectingtools.html  .
+
+[3] One early review of the Windows version Safari was not favorable with respect to accessibility [Crichton 2007]. 
+
+ 

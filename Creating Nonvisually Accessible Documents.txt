@@ -1,0 +1,391 @@
+﻿
+
+Creating Nonvisually Accessible Documents
+
+ 
+
+Produced by the National Federation of the Blind Jernigan Institute
+
+Access Technology Team,
+
+200 East Wells Street
+
+at Jernigan Place
+
+Baltimore, Maryland 21230
+
+Phone: 410-659-9314
+
+Website: www.nfb.org
+
+Email: access@nfb.org
+
+Created July 2014
+
+ 
+
+Introduction
+
+Requests for an accessible document typically raise quite a few questions. This resource aims to answer those questions and to provide practical information on how to make HTML, PDF, Word, Excel, and PowerPoint documents more accessible to blind users.
+
+The Accessibility FAQ section provides some general background on the importance of creating accessible documents. The General Considerations portion of this resource guide will cover the major tools that are used to create accessible documents and some guidelines for using them effectively. The Specific Technologies section will discuss many of the common problems, and provide some tips and tricks for remediating these. 
+
+All sources used will be cited in the Resources section of the document and can be reviewed for further information. This guide is only an overview of the low hanging fruit of accessibility concerns. However, taking the steps outlined here will cover many of the concerns faced by blind and low vision users when viewing your documents. For more information on making products and services accessible to the blind, we invite you to contact the Access Technology Team at the National Federation of the Blind, whose contact information will also be in the Resources section of this document.
+
+Accessibility FAQ (Frequently Asked Questions)
+
+How hard is it to make documents accessible? How long will it take? Is it expensive?
+
+We’ve grouped these three questions because they come down to one simple question: Is creating accessible documents going to require extraordinary effort? This will depend on context. If you have a simple project, or if you are just starting a project and can plan it with accessibility in mind, it will not take much, if any, additional effort to add the features required to make it accessible. If your project is complex, and already completed without considering accessibility, then making it accessible will likely involve spending some time (and sometimes money) on remediation.  Even with these complex projects, remediating to add accessibility and ensuring that new features are implemented accessibly will add value to your project far beyond the benefit of ensuring that blind users and others with disabilities are able to use it, as detailed below.
+
+Will it make my project visually unappealing?
+
+No. If a document is created accessibly, it can be styled very effectively without affecting the underlying information.  Many of the tools that allow for the creation of accessible documents can make the process of visually styling a document easier. For instance, when creating a data table in Word, a user can much more easily differentiate the header in a table from rows of data if they have invoked the option to specify it as a header row, which also assists screen access users in reviewing the information within the table.
+
+Will my project be less functional if it is created to be accessible?
+
+No. On the contrary, many of the tools used to make documents accessible will also make them more useful. For example, Word can automatically generate a table of contents from headings placed in the text. 
+
+Is it really worth the effort?
+
+Consider the following:
+
+·         Accessible documents are useful to more than just blind users. Most of the features added to increase accessibility also make projects easier to use for a wide variety of people.
+
+o   Keyboard users
+
+o   Those with small screen devices
+
+o   Dictation software users
+
+o   People using automated tools to gather information on documents, webpages, and other media.
+
+·         Some accessibility features can make a project easier to migrate to other platforms or formats.
+
+·         Accessibility is required by law
+
+·         It simplifies and improves interactions with blind customers, employees and employers. 
+
+General Considerations
+
+The “Understanding WCAG 2.0” webpage, provided by the W3C (World Wide Web Consortium), explains that for a webpage to be accessible, it must meet four criteria. It needs to be:
+
+1.       Perceivable - Information and user interface components must be presentable to users in ways they can perceive.
+
+o    This means that users must be able to perceive the information being presented (it can't be invisible to all of their senses)
+
+2.       Operable - User interface components and navigation must be operable.
+
+o    This means that users must be able to operate the interface (the interface cannot require interaction that a user cannot perform)
+
+3.       Understandable - Information and the operation of user interface must be understandable.
+
+o    This means that users must be able to understand the information as well as the operation of the user interface (the content or operation cannot be beyond their understanding)
+
+4.       Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+o    This means that users must be able to access the content as technologies advance (as technologies and user agents evolve, the content should remain accessible)
+
+(“Understanding WCAG 2.0”, W3C)
+
+ 
+
+It is important to note that although the WCAG guidelines are specifically focused on web-based technology, these four principles can be used to guide the creation of any type of document or media in order to ensure that it is available and usable to the largest possible audience. The techniques used to make a document accessible will be similar in all of the document types we will discuss below.
+
+Headings
+
+Headings are one of the most powerful and simplest tools in a document creator’s arsenal.  Headings are used to provide structure in a document. They are visually distinct from body text, but are also semantically unique, so that blind users utilizing screen access information can jump between them in order to move to the appropriate section of a document just as quickly and easily as a sighted user can skim through it. Headings can be created in Word, PDF and HTML and make it easier for all users to find relevant content in a long or complex document.
+
+·         Any given document should contain only one heading level 1.
+
+o   The heading level 1 is the main idea of your document, or the main content of your webpage.
+
+o   Other heading levels can be used as much as makes sense.
+
+·         Headings should be hierarchical, for instance a heading level 1 should always come before a heading level 2, and level 2 before level 3.
+
+o   If headings are laid out hierarchically they can be used to create a table of contents or outline for the document you are presenting.
+
+·          Headings should be relatively short, because short headings are easier to navigate with screen access software, and keep documents looking and feeling less cluttered for other readers.
+
+·         There are six levels of headings in PDF documents and on the internet. In Word, up to nine heading levels are available, but in order to ease transitioning between document formats, it is beneficial to limit the number of heading levels used to six.
+
+Structure
+
+Other strategies can also be used to give a document structure including:
+
+·         Ordered (or numbered) and unordered (bulleted lists)
+
+·         Proper tables with a brief summary and row and column headers.
+
+·         Ensuring that columns, text boxes, asides, and other content are created using a method that allows for proper reading order of the document to be maintained when it is read with a screen access package.  
+
+Alternative Text/Text Descriptions of Non-Text Content
+
+Providing alternative text for items that are not represented as text on screen is an important and simple way to make your document accessible. Meaningful text descriptions of visual content make it possible for someone unable to see the graphics to understand the message you are trying to convey. Word, Excel, PowerPoint, PDF, and web technologies all provide methods for adding alternative text to images, charts, graphs, and other non-textual content. The benefits of this technique go far beyond the benefit to blind users alone.  For instance, for any content that will end up on the web, well labeled graphics, graphical links, and other non-text objects may make it possible for visitors to utilize your website without downloading large graphics, saving them bandwidth and time. Mobile web users as well as those in rural locations will thank you for this provision.  Moreover, meaningful graphic text in web content will improve search engine optimization, because Google can’t read pictures, but it can read your well-thought-out text descriptions.
+
+In order to use text descriptions effectively there are several things you may want to keep in mind.
+
+·         Text descriptions of images need to convey the same information as the images themselves, in the minimum number of words needed to make the meaning clear. If an image has a text description for all users to view, (such as explanatory text under a chart), it is not necessary to repeat that information in the description of the image, but it is important to provide additional description for relevant information in the image that does not have a text equivalent.
+
+·         Not all images should be described. Images used for purely decorative purposes, such as decorative flourishes between links on a webpage, should be suppressed as they will add nothing to the content being discussed, and will make it messier and less pleasant to review for screen access users.
+
+·         If an image contains a picture of text that is supposed to be read and used by the reader, that text needs to be conveyed in the image description. For example, a graphical link which reads “products” also needs to read as “products” in its alt text.
+
+·         It is inadvisable to use phrases like such as “image of,” or “graphic of” in the description of a graphic. This information is redundant as screen access packages will usually alert blind users that the item being read is an image; users who have disabled image viewing on a page will be able to tell where that image should be when browsing the page; and search engines will not benefit from the information.
+
+Accessible Table Creation
+
+Tables are critical for conveying certain types of information. They make it much easier to make sense of data, and to draw conclusions from large amounts of information. They are used in every technology discussed in this document.
+
+Therefore, it is critical to ensure that tables are produced in such a way that they can be read and manipulated with screen access software.  The following tips should help to guide you in building tables that everyone can use.
+
+·         Avoid creating pseudo tables, which are only visually presented as tables, and not semantically created as tables in the software package you are using. For instance, some people will use tab stops to create “tables” in Word, but these cannot be understood as tables by screen access users as they are really just text so far as the software is concerned. These pseudo tables are also far less flexible for designers, and more difficult to update and change than if the creator of the document used a real table.
+
+·          Use as much structural markup as is available in your chosen design tool.
+
+o   In HTML or PDF, a creator can specify header rows and columns as well as a brief summary of the purpose of any given table.  These elements all should be used to assist users reading the table. 
+
+o   In Word, on the other hand, row headers are not available, but column headers should be used, as well as a brief textual description of the purpose of a table to clarify its purpose.
+
+·         It’s important to avoid having empty header cells. Since header cells provide context for users, of screen access software, empty cells will create confusion when reviewing a data table.
+
+·         Layout tables, tables intended to create a visual appearance, and not to provide information in a tabular form, are especially difficult to make useful to all users. They make it harder to resize information, can confuse reading order for screen access users, and can make it much harder for mobile device users to find information on a page or document that will make sense. Avoid them wherever possible.
+
+·         Tables with merged cells and other complex layouts are more likely to confuse users, both sighted and blind. Even if a cell contains “duplicate” information it is easier to read if the table is laid out as a proper grid. 
+
+Meaningful Link Text
+
+It is important to remember to create links that make sense to screen access users. Many screen access products allow users to pull up a list of links in a document or webpage, and sometimes users will tab through the links on a page in order to get a feel for the page, or to look for specific types of content. In order to allow users to quickly find the information they are seeking when using these skimming tools, there are several best practices that can and should be employed when creating links. Once again, like most other topics in this article, creating meaningful link text will also assist other users of your site who may be merely skimming for information. 
+
+·         Avoid ambiguous link text, like “click here”, “go,” or “here”. Creating links with meaningful text will require a little extra thought on wording when writing content, but will make for clearer content for all users. It also makes creation of multi-format documents easier, because link text is largely a web technology that may not appear in a PDF or Word document of the same content (though it certainly could if the creator so chose).
+
+·         Avoid duplicate link text. If there are several “go” links on a webpage, a user skimming the content, (blind or sighted) will have to stop and review context to make sense of where they are going. 
+
+·         Use consistent, commonly used link text for common purposes whenever possible. For instance, most web pages offer a link to “Contact Us” or “Contact” which leads to a contact page. Many screen access users will be able to jump directly to links that begin with a particular letter, and when looking for contact information will try the “C” key in order to find this information quickly.  Similarly, when creating a web page it is important to use the same link titles to reach the same destinations no matter what page a user is on (unless this would break a path or a process). For instance, all pages on a shopping site may want to have links to the “Shopping Cart”, product categories, and “Sales”.
+
+·         Keep link text short and to the point. Giving too much information in a link makes it more difficult to read, and makes it less clear.
+
+·         Avoid using the words “link to” when creating link text. Screen access packages already announce links, and this will help to avoid redundancy. “Link Contact Us” is more pleasant to hear (or read) than “Link Link to Contact Us”.
+
+·         Do not create empty links. Links should always contain text, or graphics, (with appropriate alt text) or they will be confusing to keyboard and screen access users.
+
+Forms, Buttons, Checkboxes, and Other Interactive Controls
+
+When creating interactive elements, it is necessary to have labels which ensure that blind users are able to determine what these elements are, what they do, and how to interact with them. Adding labels to form elements and ensuring that they are properly associated will also assist in cataloging web resources. Some of these controls are rare in documents, but will be especially useful in specialized contexts like PDF forms or HTML files.
+
+·         Checkboxes, radio buttons, and other question/answer type interactive elements should be associated with a question, and the boxes/buttons themselves need to be explicitly associated with the answer they represent, otherwise screen access users may find that they are unable to identify the question being asked, or what answer is associated with the control. When moving through a form, it is difficult to determine whether to answer “yes” or “no” without the question.
+
+·         Combo boxes, edit fields and text boxes need to be labeled as well, and not merely have the text label next to them visually on screen. Unless a label is associated explicitly with the box, a user cannot tell what they should place in the box.  The text labels that sit next to (or above, or below) these boxes visually will not be reliable markers as they are not always in the same place in relation to these boxes, and therefore could confuse users who are relying on the information they provide.
+
+·         It is important wherever possible to include the same text on buttons as in button descriptions.  For example, some buttons may visually be styled with the word “Go” and may have an alternative text label of “submit”.  If a blind user is working with a sighted user on the same document or webpage, if a low vision user is using a combination of vision and non-visual techniques, or if a user utilizing dictation and spoken navigation attempt to find or activate this button, the fact that its label and visual contents do not match will be confusing and may cause difficulty in navigating the page.
+
+·         Buttons and image-based links should contain meaningful text equivalents. For example, if a button is labeled as “Go” visually, it should contain the word “Go” in its description, but it also needs to tell a user where it is going.  This is especially important if there are multiple buttons or links that contain the same text.  For example, “Go to the project page” and “Go to my account”(alternatively “Account: Go” or “Project: Go”) are going to be far more meaningful to blind users than encountering multiple “Go” buttons without any further context.
+
+Design Considerations
+
+Document accessibility involves a number of different factors. Choices made to improve the visual appearance of a project may hinder or enhance readability for all users. Furthermore, access to documents encompasses word choice and sentence structure. Finally, it comes down to checking your work to ensure that the document you have created is meeting the needs it was created to fulfill. The below guidelines are a sample of the types of things that should be considered when creating a document, that were not covered in other sections of this article.
+
+·         The appropriate use of whitespace will make your project easier to understand and clearer for all users.  Blind users will not notice this so much, but elderly, low vision, and users with cognitive or motor control issues will benefit greatly from a document that is neither overly busy nor overly sparse.  All users will find such a document or site easier to navigate and more pleasant to use. When considering whitespace issues, be sure to consider the fonts you are using and ensure that they are easily read, and not too thin to provide good contrast.
+
+·         Similarly, make sure that your document offers strong contrast to aid users with low vision, or those using small screen devices.
+
+·         Check that your document can easily scale in size as this will make it easier to view for many users.
+
+·         When writing content, avoid writing poor link text like “click here” in order to increase the readability of your document for all users.
+
+Finally, and most importantly, when creating documents and websites, particularly of a complex nature, it is critical to work with blind users, or other users with disabilities to ensure that the document has been created accessibly.  User testing is the only sure way to verify that your message is able to actually reach its intended audience.  
+
+Specific Technologies
+
+Each of these technologies has a unique purpose and they are most powerful when they are used to fulfill that specific purpose. They also tend to be most accessible when filling the roles for which they were designed. For instance, although it is possible to create a fillable form in either PDF or Word, neither of these packages are ideally suited to the task, and a creator may find it much harder to create accessible forms in these formats than if they had simply chosen to use HTML. Therefore, when deciding what format a project should be available in, it is important to consider the purpose of the project and how it will be used.
+
+Once the decision on the project purpose is made, making each format accessible with the tools provided will enhance the quality and usability of each project for all of its users. To this end, this section briefly describes each technology, its strengths, weaknesses and the most common accessibility barriers encountered by blind users in each format along with some simple fixes and best practices for each. 
+
+HTML Documents
+
+The web is made up of a number of technologies, and is used for a myriad of purposes. The heart of the web, even today, is HTML.  HTML creates structure for webpages, and contains mechanisms for resolving the majority of problems encountered by blind users.  While routinely used on the web, HTML is also used to create off-line, stand-alone documents with the same look and feel as websites.
+
+·         Unlabeled elements: Whether it’s a button, a graphic, a link, or an edit box, unlabeled elements continue to be one of the greatest barriers to web access for blind users. If an element cannot be identified, it cannot be used. The good news is that this problem, in all its myriad forms, is easy to remedy. Every web element offers a meaningful way to label it. Graphics offer alt tags, edit boxes and buttons have labels, and links contain the option for link text.  As previously mentioned, using these tools improves a web experience for all users, and the hardest part of adding these labels is simply finding the elements on your page that might need them.
+
+·         Lack of headings and other proper page structure: There is little more frustrating than coming across a webpage and hearing that it has 153 links, and no headings. Headings, lists, tables and other structural elements give all users useful information about where to quickly find information on a web page. Visually these elements make information distinct, and structurally, they make it possible for blind users to quickly move through the page, and skim for information exactly like sighted users viewing the pages.  Using style elements for their intended purpose will allow you to create beautiful and usable websites that are easier to navigate for the user, and easy to update for the creator.
+
+·         Poorly planned tables:   Data tables without column and row headers, and some form of caption or other summary are very confusing for blind users, and slow them down greatly when they are attempting to read a web page. Therefore, it is important to mark column and row headers and provide a summary for tables when creating them. In the same way, layout tables that break the reading order of a web page, or confuse the way that the page is conveyed non-visually will make it much less pleasant to browse a given site. For this reason, it is best practice to use another tool, (such as CSS) to create the same effect as the layout table is intended to convey.  As mentioned earlier, this will make the page easier to change for future creators.    
+
+·         Embedded Flash content: Adobe Flash has been a very popular tool in the past for creating interactive content in HTML files, and can be made accessible, but the majority of Flash content has not been built with accessibility in mind. Much of the Flash content on the web was written in such a way that it requires the use of a mouse to control, or it will trap the user’s keyboard, so they cannot exit the applet and review the rest of the page. It may also contain sound and other features that would mask a user’s access technology.   However, at this point, accessibility is only one of a number of reasons to avoid creating Flash content. It is not supported on the majority of mobile devices, and has been implicated in a number of fairly high priority security vulnerabilities.  For this reason, Flash use should be carefully considered, and if it is chosen as the right technology, it is highly recommended that designers visit Adobe’s and other resources for making Flash content accessible.
+
+Word
+
+Word is a powerful word processor and is used in businesses all around the world for creating well formatted documents. It is also one of the most powerful tools available for creating accessible documents. Due to its flexibility and its fairly robust accessibility features, it is the most versatile platform on the market for creating documents that are accessible and easily converted to other formats. Word documents can easily be used to create other forms of accessible content, including Braille, EPUB and PDF. In order to make the most out of this platform, and to make accessible documents in Word, it is helpful to remember a few simple instructions.
+
+·         Use headings: Many Word users will create “fake” headings by writing a line of text, and then styling it with a different font, color, and size of text. This creates “headings” that can be used by sighted users, but not those who are blind.  If instead, these users select a proper heading from the “Styles” section of the home ribbon, and modify that style as needed, they will be working with a much more powerful and accessible tool. As we have discussed throughout this document, the use of actual headings to structure documents makes them far more flexible, and makes them much easier to read for blind users.  The benefits of using the heading styles go far beyond this benefit however. Headings can also be used to create a table of contents for your document, and can allow for quick formatting because the document designer can simply change the look of each heading style and have it automatically applied to each of the headings of that level in the document, thus making formatting simpler and more uniform.
+
+·         Create tables using Word’s table creation tool:  Like with headings, many users creating tables have used a workaround instead of the tool provided by Word.  Instead of using the Table option in the “Insert” ribbon, they create a visual table using tab-stops.  These methods produce a less flexible document which is also less accessible to blind users.  By using the table creation tool, document creators will find it much easier to build tables that are easier to edit, and easier to style. Moreover, by ticking the Header rows checkbox in table design, they provide blind users with information on which rows act as headers in the table.
+
+·         Don’t use tables for layout: The flipside of using tables to organize data is that tables should not be used to create a visual appearance in a document.   When this happens, a blind user will find that the document does not flow as well, and is harder to read.  Layout tables may also break the reading order of the document and cause it to cease to make sense.
+
+·         Tag images with text descriptions:   Just like on the web, blind users regularly find themselves needing to gather information from a picture or a graph in a Word document. Without well-thought-out image tags, they will not have any way to know what the image is conveying, and will be at a loss when trying to work with your document.
+
+Excel
+
+Excel and its myriad tables can seem overwhelming when one is attempting to create accessible documents, but with some planning, Excel workbooks can be made quite accessible to blind users.
+
+·         Unlabeled charts and other graphics are a problem regularly encountered by blind users of Excel, and, like in Word, these charts and graphics can receive appropriate label text to improve them.
+
+·         Unique sheet names will increase the usability of different workbooks, because users can easily move between sheets and know what they are getting.
+
+·         Avoid blank cells used for formatting purposes, as these can be disorienting for some users.
+
+·         Add column headers using the same method discussed in the Word section of this document.
+
+o   In addition to using the column headers option in table creation, the users of JAWS, and certain other access technologies can utilize row and column headers that have been named as such in the document. Information on how to name these cells is available in the JAWS Help topics, in the software’s installed documentation. If you wish to learn how this can be accomplished and do not have access to JAWS, please contact the access technology team for further information.
+
+PowerPoint
+
+Having access to PowerPoint slide decks can be very useful for blind users when listening to your presentation, or afterwards, just as they are for other users. Many of the accessibility concerns encountered with PowerPoint are, like most others in this document, quite simple to fix, and only require a bit of forethought.
+
+·         Proper reading order is important to understanding the contents of a slide. Luckily, it is fairly easy to ensure that the correct reading order is maintained. If the creator uses one of the default slide layouts provided by PowerPoint, the reading order should be preserved when they are adding content.
+
+·         Ensure that your slide labels are unique so that users can figure out where in the presentation they are, and that they do not miss information.
+
+·         Embedded audio and video content: Controls for embedded content are unreliable, so a better solution is to package any audio and video content with the PowerPoint file but not embed it directly.  This will allow the user to view the content with their media player of choice.
+
+·         When video is included, ensure that a transcript is available to assist deaf-blind users. It will also be of use in creating captions for deaf participants, and adult language learners. Furthermore, for videos containing action or foreign language subtitles, it is important to have the video described for blind users. 
+
+·         Ensure that images have been labeled, so that they are meaningful to blind users.
+
+PDF
+
+PDF (Portable Document Format) was built originally to create documents that could be transferred anywhere and continue to look the same, regardless of the device they are being viewed on, and what fonts and other visual elements may be available on the device. For most end users, they are a read-only format, as the applications available for editing them are quite expensive, and can be quite difficult to use. These facts are both the greatest strengths and weaknesses of the format. PDFs were not originally created to be reflowable, or easy to change so as to make them easier to read for low vision users or users of small mobile devices, and although this has been changed in recent versions of the document type, most are still not easily used in these circumstances. They are easy to make, but difficult to change, so it can be tricky to remediate them.  All in all, this makes them a difficult document type to recommend when others are more flexible.  That being said, sometimes, PDF is considered to be the best tool for the job, precisely because of the reasons mentioned above, and there are several things that designers can do to ensure that their PDFs can be read by all users.
+
+·         Ensure that your PDF is not merely an image of text.  Some applications will create PDFs by printing a picture of the original content. Furthermore, many PDFs, particularly of older print material, were created by scanning the original document, and binding these images into a single file.  If you scan a document, ensure that you have also run it through optical character recognition software, and if you are creating a PDF from another source, ensure that it is actually encoding the text of your document in the PDF, and not just pictures of it. When creating a PDF from a Word document for example, save the document as a PDF, do not print to PDF.
+
+·         Tag your PDFs. When a PDF is created in some programs, or without the accessibility checkbox checked in Word, the text will be made available, but screen access users will have no structure in their document. It would read as one large wall of text, without headings, lists, and proper table markup, which is virtually unusable.  Tags can only be manipulated in programs like Adobe Acrobat, but the majority of tagging can be carried over from Word documents and some other sources saved as PDFs.
+
+o   Ensure that the reading order in your PDF is logical. Because PDFs were built to be visually complex documents that will not change, many PDFs can be difficult to read with screen access software.  Unless proper reading order is established in the PDF’s tag structure, a user might find that two visually separate columns are reading jumbled together, or that the section they were reading is cut off mid-section by a text box.
+
+o   Tag graphics. Like all other document types discussed in this article, PDF offers a way to tag images, and it should be utilized to ensure that blind users can make full use of your document.
+
+o   Tags can and should be used to add headers to table structure as well as basic document structure.
+
+·         PDF Forms:  Fillable PDFs can be made accessible, but the amount of effort is not trivial. Consider creating forms in web format for the easiest implementation of accessibility. If a fillable PDF is required, consult Adobe’s resources on creating accessible PDFs for further information.
+
+Braille
+
+Braille is the tactile code used by blind people to read and write. Braille documents today are created most often via use of transcription software and well-formatted source documents. Many blind people will use notetakers and electronic Braille displays to view files and other resources such as webpages tactilely.  This provides the blind user with the ability to review text in detail, and read far more carefully than they are able to using audio solutions alone. 
+
+One of the best known and most widely used Braille translation packages in the United States, (and possibly the world) is the Duxbury Braille Translator. It is a Braille translation and formatting package that can be used to turn print documents into Braille documents.  If a file is marked up properly, it will translate more easily, and require less work from a Braille transcriptionist (a person who manually corrects and creates Braille documents for embossing onto paper or digital distribution),
+
+Creating Braille files is beyond the scope of this document; however, there are a number of steps you can take in order to prepare a file for Brailling.  Most of these steps will be quite familiar to you after reviewing other sections of this article. 
+
+·         When possible, start your Braille document from Microsoft Word.  Other formats are supported, but Word offers the cleanest and most robust platform for creating multi-format documents.
+
+·         Use styles.  As you have seen throughout this document, the use of styles, like headings, and lists, creates documents that are more easily organized and manipulated. Styles are especially important when bringing a document into another format, such as Braille, because if they are not used, much of the document’s formatting will be lost, and will need to be re-created.
+
+·         Avoid Word Art as it is actually a picture of text, and will not translate for your users.
+
+·         Remember to appropriately tag images in the document, and consider carefully the need for the image in the first place.  Braille documents, particularly those read on electronic Braille displays are sometimes ill-suited to providing pictorial information, and special care must be taken to ensure that any meaning conveyed visually is also conveyed textually. 
+
+·         Simplify any tables in your document, as Braille does take more space than print on a page, so less room is available for fitting text into tabular form. Due to this limitation, creators of Braille documents which include tables will highly benefit from working with an experienced transcriptionist. 
+
+If you are working with Duxbury yourself, or with a transcriber who is using Duxbury, the “Word: Top Ten Guidelines” document linked in the resources will be of especial benefit to you. 
+
+Resources
+
+National Federation of the Blind
+
+The National Federation of the Blind is the largest organization of blind and low-vision people in the United States. Founded in 1940, the Federation has grown to over fifty-thousand members. The organization consists of affiliates and local chapters in every state, the District of Columbia, and Puerto Rico. 
+
+The National Federation of the Blind knows that blindness is not the characteristic that defines blind people or our future. Every day we raise the expectations of blind people, because low expectations create obstacles between blind people and our dreams. Blind people can live the life they want; blindness is not what holds us back. 
+
+To this end, the Access Technology Team at the Jernigan institute works with blind people, leaders in education and business, and other interested members of the public to increase awareness of accessibility and the tools available to blind users for accessing information.  We work in all levels of this process, from educating blind individuals, educators and employers about the most accessible and usable tools for their needs, to guiding creators of technology who are working to make their products accessible, to assisting in creating and endorsing standards and best practices in the creation of accessible and usable technology for all users. Therefore, we welcome any opportunity to work with you and your organization in ensuring that your documents and websites are accessible to everyone. Please contact us if you have any questions or concerns.
+
+National Federation of the Blind Homepage: http://www.nfb.org/
+
+Access Technology Team
+
+200 E. Wells at Jernigan Place
+
+Baltimore, MD 21230
+
+Email: access@nfb.org
+
+Phone: 410 659 9314 ext. 5
+
+Website: https://nfb.org/technology-center
+
+Access Technology Resource List: https://nfb.org/technology-resource-list
+
+W3C
+
+The W3C (World Wide Web Consortium) is the creator of guidelines for the internet and the technologies that are used to create it. The following documents explain these guidelines for web accessibility, and provide further information on the work being done to ensure that the web is accessible to all.
+
+·         WCAG Overview: http://www.w3.org/WAI/intro/wcag.php
+
+·         Understanding WCAG 2.0: http://www.w3.org/TR/UNDERSTANDING-WCAG20/
+
+·         WAI Accessibility Tutorials: http://www.w3.org/WAI/tutorials/
+
+·         PDF Techniques for WCAG 2.0: http://www.w3.org/TR/WCAG20-TECHS/pdf.html
+
+WebAIM
+
+WebAIM (Web Accessibility in Mind) offers a number of articles and other services that provide further information on the topics outlined in this document, as well as many others.
+
+·         WebAIM: http://webaim.org/
+
+·         Alternative Text: http://webaim.org/techniques/alttext/
+
+·         Semantic Structure: http://webaim.org/techniques/semanticstructure/
+
+·         Layout Tables: http://webaim.org/techniques/tables/
+
+·         Data Tables: http://webaim.org/techniques/tables/data
+
+·         PDF: http://webaim.org/techniques/acrobat/
+
+·         Flash: http://webaim.org/techniques/flash/
+
+Adobe
+
+Adobe provides a number of guides on how to use their products to create accessible documents. 
+
+·         Adobe Accessibility: http://www.adobe.com/accessibility.html
+
+·         Flash Accessibility: http://www.adobe.com/accessibility/products/flash.html
+
+·         Acrobat Accessibility: http://www.adobe.com/accessibility/products/acrobat.html
+
+·         InDesign Accessibility: http://www.adobe.com/accessibility/products/indesign.html
+
+·         Training Resources (for Creating Accessible PDFs in Acrobat): http://www.adobe.com/accessibility/products/acrobat/training.html
+
+Microsoft
+
+Microsoft provides a number of tutorials, guides and other resources concerning the accessibility of their products, best practices in creating accessible documents using their products, and information on using their products with access technology. Below you will find a number of resources from their collection which should be of particular interest. 
+
+·         Microsoft Accessibility:  http://www.microsoft.com/enable/
+
+·         Creating Accessible Word Documents: http://office.microsoft.com/en-us/word-help/creating-accessible-word-documents-HA101999993.aspx?redir=0
+
+·         Creating Accessible Excel Workbooks: http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-files-HA102013545.aspx
+
+·         Creating Accessible PowerPoint Presentations: http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx
+
+·         Office 365: https://support.office.com/en-us/article/Accessibility-in-Office-365-aca7accf-58a0-4467-be5c-24a7e7933a9d
+
+·         Office 2013: http://www.microsoft.com/enable/products/office2013/default.aspx
+
+Duxbury Systems
+
+Duxbury Systems is the maker of the Duxbury Braille Translator which can be used to create Braille files from several other file formats. 
+
+·         Duxbury Systems Homepage: http://www.duxburysystems.com/
+
+·         Word: Top Ten Guidelines (from the online Duxbury documentation): http://www.duxburysystems.com/documentation/dbt11.2/working_with_word/Word_Top_10_guidelines.htm
+
+ 
+
+ 
+
+ 

@@ -1,0 +1,460 @@
+﻿Demystifying Section 508 Final Version
+
+
+DEMYSTIFYING SECTION 508
+
+An Industry Guide to Understanding Section 508 of the Rehabilitation Act
+
+ Version 1.0 - November 2021
+
+          Developed by NASA to Support Government-wide Industry Outreach                                                                           
+
+                                                                                                              Efforts                                   
+
+            
+
+This guide serves to increase your awareness and demystify the process of creating an Accessibility Conformance Report (ACR) for your product, regardless of your experience level with Section 508
+
+Authors:
+
+Ellen Doll, NASA Intern
+
+Aishwarya Krishnakumar, NASA Intern
+
+Antonio Haileselassie, NASA IT Accessibility Specialist
+
+Betsy Sirk, NASA Program Manager/Government Industry Outreach Chair
+
+Table of Contents
+
+QUICK NAVIGATION................................................................................................................................................ 1 
+
+508 OVERVIEW....................................................................................................................................................... 2 
+
+INFORMATION  AND COMMUNICATION  TECHNOLOGY DEFINED............................................................................... 3 
+
+ACCESSIBILITY CONFORMANCE REPORTS................................................................................................................. 4 
+
+HOW TO COMPLETE AN ACR................................................................................................................................... 6 
+
+FREQUENTLY ASKED QUESTIONS........................................................................................................................... 10 
+
+REFERENCES......................................................................................................................................................... 12 
+
+ 
+
+i
+
+QUICK NAVIGATION 
+
+The following set of questions will allow you to find all the information you need and nothing you don’t.
+
++-----------------------------------------------------------------------+
+| Jump to                                                               |
+|                                                                       |
+| 'How to Complete an ACR'                                              |
++-----------------------------------------------------------------------+
+
+Are you familiar with Section 508?
+
+Yes, go to next question
+
+No, take me to the part about Section 508 
+
++-----------------------------------------------------------------------+
+| Jump to                                                               |
+|                                                                       |
+| 'Frequently Asked                                                     |
+|                                                                       |
+| Questions'                                                            |
++-----------------------------------------------------------------------+
+
+Do you want to know how  
+
+Section 508 exceptions are granted?
+
+No, go to next question
+
+Yes, take me to the part about Exceptions
+
+Are you familiar with the acronym ICT?
+
+Yes, go to next question
+
+No, take me to the part about ICT
+
+Do you know what an ACR is?
+
+Yes, go to next question
+
+No, take me to the part about ACRs
+
+Do you know what a VPAT® is?
+
+Yes, go to next question
+
+No, take me to the part about the VPAT
+
+Are you familiar with the acronym WCAG?
+
+Yes, go to next question
+
+No, take me to the part about the WCAG
+
+Do you want some tips on how to complete an ACR?
+
+No, go to the FAQ
+
+Yes, take me to the part about Completing an ACR
+
+508   OVERVIEW 
+
+  -------------------------------------------------------------------------------------------
+  ClickHereToReturntoQuickNavigation                                                       
+  -------------------------------------------------------------------------------------------
+
+What is Section 508?
+
+The Rehabilitation Act of 1973 was amended by Congress in 1998 to “require Federal agencies to make their  electronic and information technology (EIT) accessible to people with disabilities.”¹  This amendment, known as Section 508, “applies to all Federal agencies when they develop, procure, maintain, or use electronic and information technology.”¹  Under this amendment, Federal agencies must make technology accessible to its employees and members of the public who have disabilities in a comparable manner to those without disabilities.
+
+The original Section 508 Standards were issued in 2001. To keep up with the changing technology, the U.S. Access Board published the Revised Section 508 standards in 2017, which went into effect on January 18, 2018. These standards were updated to make the previous requirements more understandable while enhancing the accessibility to technology.
+
+Why is Section 508 Important?
+
+[]Imagine not being able to understand important information on a flyer, or not being able to        15%  of  the access an entire portion of a website solely because of a disability you have. Approximately 61    world’s million adults²  in the United States have some type of disability. This number is only increasing as              population the population ages and develops disabilities. In addition to the aging population, disabilities can            experience  some happen to anyone, at any time, and it is imperative that every person, non-disabled or disabled,      form of can have equal access to technology to continue to perform their jobs and daily tasks.       disability³
+
+Creating accessible technology is not only a recommendation but a necessity. Our world is  moving towards full accessibility, and Section 508 helps achieve this for the U.S. Federal                                                             government.
+
+Benefits of Section 508
+
+Who does  Section  508  help? Everyone!
+
+Accessible technology benefits everyone. Here are some examples of how you may have benefited from accessible technology features in the past without even noticing:  
+
+•      Color  Contrast  benefits not only those with low-vision or color deficiencies, but also elderly people and those in different lighting environments. For example, viewing an electronic article in the sunlight may cause a glare on your screen, making it difficult to read things with low color contrast. ._______Igood color contrast.  ..___I_______,bad color contrast.  
+
+                                                        This is an example of                 This is an example of
+
+•      Closed  Captioning (CC)  for videos helps people who are deaf or hard of hearing and others who  are viewing the video in a loud environment, for example.
+
+•      Keyboard-only navigation  does not only help people with motor impairments and those who use screen-readers. It also benefits users who may be injured or whose mouse/trackpad doesn’t work  on their laptop.
+
+•      Large target  sizes  not only help people with motor impairments but also makes it easier to click buttons for people who are using their mobile  devices,  for example.
+
+[][]I of having a large ®I of having a small This is an example      This is an example
+
+                                               target size.                                                  target size.
+
+2
+
+What’s the difference between the Americans with Disabilities Act (ADA) and the Rehabilitation Act?  
+
+The Americans with Disabilities Act (ADA) states that all areas of public life, including technology, and the  areas of private life which are open to the general public, must be accessible for people with disabilities. While both the ADA and the Rehabilitation Act were created to prohibit discrimination, the Rehabilitation Act applies only to Federal agencies and departments, while the ADA applies to local and state governments, nonprofits, and businesses.     
+
+My company currently does not sell products to the Federal government. Does Section 508 still apply to the products I sell?  
+
+If your company sells, or has plans to sell, to the Federal government, then Section 508 does apply. Making sure your product is accessible and usable to everyone will add value to your products and make them more marketable to a wider range of customers.
+
+Click Here To Return to Quick Navigation
+
+Are there waivers or exceptions that we can claim?
+
+There are no waivers to Section 508. There are, however, Exceptions provided within the law that  Federal agencies and departments may claim based on how the product will be used. These  exceptions cannot be claimed by Industry.
+
+INFORMATION AND COMMUNICATION TECHNOLOGY DEFINED 
+
+  -------------------------------------------
+  Click Here To Return to Quick Navigation
+  -------------------------------------------
+
+What is ICT?
+
+The  U.S. Access  Board  defines Information and Communication Technology (ICT) as any “information technology and other equipment, systems, technologies, or processes, for which the principal function is the creation, manipulation,  storage,  display,  receipt,  or transmission  of  electronic  data  and  information,  as  well as  any associate  content.”⁴ 
+
+Section 508  applies  to  anything  fitting the definition of ICT.
+
+Is there a difference between ICT and IT?
+
+ICT is the broader term that includes Information Technology (IT) and communications technology.
+
+The U.S. Code states that IT “with respect to an executive agency means any equipment or interconnected system or subsystem of equipment, used in the automatic acquisition, storage, analysis, evaluation, manipulation, management, movement, control, display, switching, interchange, transmission, or reception of data or information by the executive agency, if the equipment is used by the executive agency directly or is used by a contractor under a contract with the executive agency that requires the use— (i) of that equipment; or (ii) of that equipment to a significant extent in the performance of a service or the furnishing of a product;”⁵
+
+This includes computers, ancillary equipment, peripheral equipment designed to be controlled by the central processing unit of a computer, software, firmware, and similar procedures, services, and related resources. This does not include any equipment acquired by a federal contractor incidental to a federal contract.⁵   
+
+Communication technologies such as e-mail, social media, and video calls are not considered IT. However, they do fall under ICT. The computer device itself would be considered IT until it starts incorporating communication methods.  Section 508 applies to ICT, not just IT.
+
+EIT vs ICT?
+
+What used to be referred to as  Electronic and Information Technology (EIT) changed  to Information and
+
+[]Communication Technol          ogy (ICT) in the Revised Section 508         Standards to acknowledge advances in technology and inclusion of Section 255 of the Communications Act.
+
+What are some less common examples of ICT?
+
+Here are just a few  examples of products that you wouldn't think are  considered ICT,  but they actually are: Spectrometers, Oscilloscopes,               Peripherals,      Sensors,          Support documentation, Robotics, Lasers, Radar, Educational Software, e-Training Courses, Electronic microscopes, Software add-ins. If you're unsure whether your product is considered ICT, it probably is!
+
+ACCESSIBILITY CONFORMANCE REPORTS 
+
+  -------------------------------------------------
+  Click  Here  To  Return  to  Quick  Navigation
+  -------------------------------------------------
+
+What is an ACR?
+
+An Accessibility Conformance Report (ACR) is a document that provides information regarding the level of accessibility of a product based on  the Section 508 Technical Standards. This report is developed by Industry.  
+
+Click here for a step-by-step tutorial  on how to complete an ACR.
+
+Are there different methods for developing an ACR?
+
+An ACR may  be completed in various  ways. These  include  using  the  Voluntary  Product  Accessibility    Template (VPAT) provided by                          the Information Technology Industry              Council to  comple    te your own report,                 having an independent vendor complete                         it,  or using      your own te     mplate or  checklist    . Any of these  methods           may  be used to produce an ACR, as long as                       all the applicable Section      508 Te chnical Sta ndards             have  been addressed.
+
+  -------------------------------------------
+  Click Here To Return to Quick Navigation
+  -------------------------------------------
+
+What is a VPAT?
+
+A Voluntary Product Accessibility Template (VPAT) is a template  created by the Information Technology
+
+Industry  (ITI) Council  that is used to document a product's conformance with Section 508 Technical Standards. Using a VPAT,  pronounced "vee-pat", is the most common method used by industry to develop an ACR.
+
+Is an ACR voluntary?
+
+No. This confusion likely comes from the word “Voluntary” in the VPAT acronym. While the use of the VPAT is voluntary to generate an ACR, the requirement for Federal  agencies to obtain ACRs is not voluntary.  
+
+4
+
+  -------------------------------------------
+  Click Here To Return to Quick Navigation
+  -------------------------------------------
+
+What is WCAG?
+
+The Web Content Accessibility Guidelines (WCAG), pronounced “wuh-cag”, are international standards that require making digital content accessible to users regardless of disability status⁴. WCAG  includes a set of testable success criteria that determine whether certain features of your product are accessible. WCAG are split  into three levels: Level A,  Level AA, and Level  AAA. Each level presents an increasingly higher level of accessibility. Section 508 only requires WCAG 2.0 Levels A and AA guidelines to be met.  
+
+Does WCAG only apply to “web” content?
+
+No. Although the 'W' in the acronym stands for ‘web’, the  Revised Section 508 Standards include WCAG 2.0 and make it applicable to Software, Electronic Content,  as well as Web Content. In essence,  WCAG 2.0 is applicable to any content provided through a user interface. Although WCAG was written for  web content only, Section 508 applies WCAG to more than web content. For example,  Chapter 5 of the Revised Section 508 Standards states that occurrences of the  word “Web page” or “page” should be  replaced with the  word  “software”. If your product is software  or non-web documentation,  all WCAG success criteria are required in your ACR, if applicable,     except the following four standards:
+
+•      2.4.1 Bypass Blocks (Level A)
+
+•      2.4.5 Multiple Ways (Level AA)
+
+•      3.2.3 Consistent Navigation (Level AA)
+
+•      3.2.4 Consistent Identification (Level AA)
+
+HOW TO COMPLETE AN  ACR 
+
+Click Here To Return to Quick Navigation
+
+The ACR is a representation of how the product meets the applicable Section 508 Technical Standards. The product owner/developer must first test the product against those standards in order to complete an ACR. The most common way an ACR may be completed is by using the   template (VPAT) created by the IT Industry Council (ITI). Although there are other possible methods to complete an ACR (click here to review the different methods of completing an ACR), this part of the guide will walk you through how to complete an ACR using the VPAT.
+
+[]Step 1: Download the VPAT
+
+The VPAT is a free template that may be downloaded by going to the ITI website.
+
+On the bottom of this webpage, you will find  four editions of the VPAT 2.x Rev: EU, INT, 508, and WCAG. If you are selling to the U.S. Federal government, then you must use the Revised Section 508 Edition or the            INT International Edition (which includes all Revised Section 508 requirements and additional international requirements).
+
+ 
+
+Step 2:  Complete the  Accessibility Conformance Report (ACR) title page
+
+The VPAT begins with several pages of instructions. Please read all of the instructions carefully, and remove the instruction pages when you submit your final ACR.
+
+[]Find the page with the heading, “[Company]
+
+Accessibility Conformance Report Revised Section 508 Edition”. As noted in the ITI VPAT training  videos linked below, the following information must be provided:  
+
+•      Company name
+
+•      Name of your product (and version number, if applicable)
+
+•      Report date (month and year)
+
+•      Description of the product
+
+•      Contact information
+
+•      Additional notes (if any)
+
+•      Evaluation methods: Information about how  your product was tested (manual, automated, both),
+
+                 testing tools used, etc.                                                                     Screenshot  of  page  10  of  the  VPAT  2.4
+
+Step 3: Understand the three columns of the VPAT tables  
+
+First  column: “Criteria”   
+
+The first column of the tables states the  criteria to be covered by that particular row.  
+
+Second column: “Conformance Level”  
+
+The second column in the tables is labeled conformance level. We will cover the nuances between different tables below.
+
+For the category or categories which encompass the product, you must use one of four phrases—supports, partially supports, does not support, not applicable— to describe the level of conformance. 
+
+•      Supports: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
+
+•      Partially  Supports: Some functionality of the product does not meet the criterion.
+
+•      Does  Not  Support: The majority of product functionality does not meet the criterion.
+
+•      Not Applicable: The criterion is not relevant to the product.
+
+Note:  The “not  evaluated”  phrase may  only  be used  for  the Level  AAA  table since this  is  the only  success  criteria  table  that is no t required to be  completed.   
+
+Third column: “Remarks  and Explanations”
+
+The third column is reserved for remarks, which are required if the product either partially  supports  or does not support  the guideline. If the product supports a particular guideline, then no remarks are required  but are encouraged.
+
+Step 4:  Complete  Table 1: Success Criteria Level A and Table 2: Success Criteria Level AA,  if  applicable 
+
+If your product fits one or more of the following categories, then the WCAG 2.0 Standards apply to your product.
+
+1.      Web Content
+
+2.      Electronic Documents
+
+3.      Software
+
+4.      Authoring Tool
+
+If your product does not fall under any of these four categories, you may write “Not Applicable” in the notes section for the Success Criteria tables. 
+
+The Success Criteria tables—Level A, Level AA, and Level AAA—cover the WCAG success criteria.
+
+Only Level A and AA are required in an ACR. However, if your product does satisfy some (or all) Level AAA success criteria guidelines, then it is beneficial to complete that table as well,  as it would provide additional motivation for Federal agencies to purchase your product and attract a wider range of potential customers.
+
+Below is an example of what these three columns look like for the WCAG table:
+
+[]
+
+Step 5: Determine the applicability of the  Revised  Section  508  Technical Standards to your product 
+
+There are four Revised Section 508 tables, labeled as Chapter 3  (Functional Performance Criteria), Chapter 4  (Hardware), Chapter 5  (Software), and Chapter 6  (Support Documentation and Services). Complete the applicable tables.
+
+If there are functions in your product not addressed by Chapters 4 or 5, then your product needs to conform to the criteria in Chapter 3: Functional Performance Criteria.
+
+Does  your  product contain hardware?  Complete Chapter 4: Hardware.
+
+Does  your  product contain non-web software? Complete Chapter 5: Software.
+
+Does  your  product contain support documentation and services? Complete Chapter 6: Support Documentation and Services.
+
+If your product cannot be evaluated using the current criteria, Complete Chapter 3: Functional Performance Criteria.
+
+For each table, there is a section for notes. Use this field to enter comments about overall applicability of the table to your product.
+
+The first column  "Criteria" of the Revised Section 508 tables lists the Section 508 Technical Standards. By clicking on the links provided in this column, you may access more information about the standards on the U.S. Access Board website.
+
+Below is an example of what these three columns look like for the Revised Section 508 table.
+
+[]
+
+Step 6:  Final  checklist  to  make  sure  your  ACR  is complete
+
+☐ Are you  using  the  correct version?  Make  sure  you’re  using  a  current  version  of  the  VPAT to build your ACR! A current  version  addresses  the  Revised  Section  508  Technical  Standards (International  Edition acceptable). The  current  version of  the  VPAT  is  2.4.  Any  VPAT  2.x  is acceptable.  You  may  find  the  VPAT on the  ITI website at the following link:              https://www.itic.org/policy/accessibility/vpat.
+
+☐ Did  you exclude  the  first  several  pages  of instructions?  Delete the instruction  pages (up to the heading, “[Company] Accessibility Conformance Report Revised Section 508 Edition”) from your completed ACR.
+
+☐ Did  you complete  the  information  fields  at  the  top of the  ACR?  Make sure you complete all seven fields (shown in Step 2), including the product information, contact information, and evaluation methods.
+
+☐ If  applicable,  did  you complete  the  Success Criteria, Level   A and  Level  AA  tables? If your product contains web-based content, electronic documents, software, or authoring tools, make sure you complete the Level A                                                                     and Level AA tables.
+
+☐ If applicable,  did you  complete  the  Chapter  3:  Functional Performance  Criteria  table?  If your product does not contain any applicable standards from the Level A and AA tables, then complete the Chapter 3: Functional Performance Criteria table.
+
+☐ Did  you  skip  the  Level AAA tables?  Section 508 does not require that your product be tested against the Level AAA Technical Standards.  However,  Industry may provide  this information to show a higher level of accessibility than required.
+
+☐ If applicable     ,  did  you complete  the  tables under the Revised  Section  508 Report section?  If your product contains hardware, software, or support documentation and services, be sure to complete the            applicable Revised Section 508 table.
+
+ 
+
+☐ Are you using the correct phrases to describe conformance levels? Check to see if all phrases under
+
+                                                                                                 conformance level match one of the following: Supports, Partially Supports, Does Not Support, Not Applicable.
+
+☐ Did you complete the remarks column? If the conformance level is either “Partially Supports” or “Does Not Support,” then be sure that you explain further in the respective remarks column.                                                                   
+
+☐ Is your ACR document accessible? Make sure to check your final ACR for accessibility and remediate as necessary!                                                         
+
+FREQUENTLY ASKED QUESTIONS 
+
+ClickHereToReturntoQuickNavigation                                                                                                                      
+
+How  do  I  determine  if  my  product  is  compliant  with  Section  508?  
+
+Industry is expected to test its products against the applicable Section 508 Technical Standards and then reports  which standards the product supports, partially  supports,  or does not support  so that the U.S. Federal government may consider purchasing the product. This information is provided by Industry in an Accessibility Conformance Report (ACR). If the product supports all of the applicable Section 508 Technical Standards, the product is considered compliant with Section 508.
+
+         How do I know which version of the VPAT to use?                                                                                                                                   
+
+The  Information  Technology  Industry  Council  developed  a  template  called  the  “VPAT”  which  includes  all  the  relevant Section 508 T echnical  Standards       required         by  the Revised             Section       508  rule  (2017).        ITI  has several            templates        that apply  internat     ionally       .  Be  sure to  use the VPAT  tha t includes the Revised Se                 ction  508         Standards (Rev508 or Re        vIN T Version 2.x)        . For the  most              recent  versi  on  of the VPAT, go to the ITI website.
+
+I have  not completed a VPAT/ACR before. Why  am I being required to complete it now? Isn’t the VPAT voluntary?
+
+The U.S. Federal government must buy Information and Communication Technology (ICT) that is accessible
+
+per Section 508 of the Rehabilitation Act. The government asks Industry to submit an Accessibility Conformance Report so that the accessibility of a product may be evaluated. Without the ACR, the government may not proceed with the purchase unless there is a special use case exception that the government -- never Industry – may claim in which the ACR will not be required. You are being asked to complete the ACR so that your product may be considered for purchase.
+
+There are several methods for completing an ACR. The VPAT, which is a template  developed by the IT Industry Council (ITI), is the most common method for completing an ACR since it provides all the relevant Section 508 Technical Standards and instructions on how to complete a report in one tool. While the use of the VPAT itself is not required, it is not voluntary to complete an ACR if you wish the government to consider purchasing your product.
+
+My company created an ACR for a product years ago. May  I use that same ACR today?
+
+Every time your product is changed or updated (e.g. version change, bug fix, etc.), an updated ACR  is required  that addresses any changes in the product's accessibility.  Also, if you created an ACR using the Original  Section 508 Standards from 2001, you must update your report  using the Revised Section 508 Standards  published in 2017.
+
+Should I  complete  an ACR if  my product is not fully  accessible? How can having a completed ACR for my product benefit my company?
+
+Yes. Completing an ACR is a win-win situation for  Industry and the government. When Industry develops  an ACR, it opens the door for the Federal government to purchase your product.  Your ACR shows customers that your company takes accessibility seriously. Even if the ACR shows that not all the applicable Section 508 Technical Standards have been met, it allows your product to be evaluated against comparable products for accessibility. If you have an ACR and a competitor’s product doesn’t, you will always be the most conformant with the Section 508 standards.  Completing an ACR  raises your awareness of your product's accessibility and  allows you to take steps to make your product more accessible and reach a broader customer base.
+
+  
+
+My product is not web-based. Do the WCAG 2.0 (Web Content Accessibility Guidelines) apply to my product?
+
+In the Revised Section 508 Technical Standards, electronic content and software are required to conform to WCAG 2.0 Level A and Level AA Success Criteria and Conformance Requirements. While the WCAG  obviously apply to web products, they also  apply to all electronic content and software.
+
+My product has support documentation, hardware, and a mobile application. Do I need to complete  three  separate  ACRs?
+
+No, you may complete one ACR  that addresses  all the relevant standards and criteria that match the functionality of your product. You may provide separate ACRs, if you desire.
+
+My  product is an add-on for an existing product from a separate company. Am I responsible for  completing  the  ACR  for  my  product,  or  will the  other  company  create  the  ACR?
+
+You are responsible for completing an ACR for the product you developed.
+
+My product does not conform to all the relevant Section 508 Technical Standards. Will this
+
+prevent    the Federal government from purchasing my product?
+
+No. Your product will be still be considered for purchase even if all of the Section 508 Technical Standards are not met. Your product will be compared to other comparable commercially available products.   The product that is most accessible and meets customer requirements may be purchased.
+
+ 
+
+What do I enter under the columns “Conformance Level” and "Remarks and Explanations"?
+
+In the Conformance Level column, you enter terms to describe to what extent your product meets a specific standard. Conformance Level terms are: Supports, Partially Supports, Does Not Support, or Not Applicable. If your product Partially Supports or Does Not Support the standard, you should provide a comment in the Remarks and Explanations column that indicates how the standard is not met/fully met.
+
+My product contains both software and support documentation. Which sections of the VPAT         do I need to complete?
+
+If your product contains software, there are two sets of Section 508 Technical Standards within the report that you must complete:
+
+•      WCAG 2.0, Table 1: Success Criteria Level A  and Table 2: Success Criteria Level AA.
+
+•      Revised  Section 508, Chapter 5: Software.
+
+For electronic support documentation, complete the Revised Section 508, Chapter 6: Support Documentation and Services section.
+
+REFERENCES 
+
+1.      “IT Accessibility Laws and Policies.” IT Accessibility Laws and Policies | Section508.Gov, July 2020, www.section508.gov/manage/laws-and-policies.
+
+2.      “Disability Impacts All of Us Infographic.” Centers for Disease Control and Prevention, Centers for Disease Control and Prevention, 16 Sept. 2020, www.cdc.gov/ncbddd/disabilityandhealth/infographic-disabilityimpacts-all.html.
+
+3.      “Disability and Health.” World Health Organization, World Health Organization, 1 Dec. 2020, www.who.int/news-room/fact-sheets/detail/disability-and-health.
+
+4.      “U.S. Access Board.” Revised 508 Standards and 255 Guidelines, www.access-board.gov/ict/#C103.4.
+
+5.      “40 U.S.C. 11101(6).” Https://Www.govinfo.gov/Content/Pkg/USCODE-2016-title40/Pdf/USCODE-2016title40-SubtitleIII-chap111-sec11101.Pdf.
+
+6.      Web Content Accessibility Guidelines (WCAG) 2.0, www.w3.org/TR/WCAG20/.
+
+7.      Information Technology Industry Council Training Videos, https://www.itic.org/policy/accessibility/vpattraining.

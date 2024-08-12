@@ -1,0 +1,1875 @@
+﻿Making PDF documents accessible with Adobe Acrobat Pro
+
+
+[]
+
+Making PDF documents accessible  with Adobe Acrobat Pro
+
+  ----------- ---------- --------- -----------------------------------------------------
+  Date        Version    Author    Status / comments
+  31/01/11    1.0        Atalan    Document available on www.accede.info/en/manuals/.
+  ----------- ---------- --------- -----------------------------------------------------
+
+In partnership with:
+
+Air Liquide – AREVA – BNP Paribas – Capgemini – LVMH – SNCF – Société Générale – SPIE – Thales
+
+With the cooperation of:
+
+Association des Paralysés de France (APF) – Association Valentin Haüy (AVH) – Coopérative AccessibilitéWeb (Québec) – Institut Nazareth et Louis Braille (Québec) – ParisTech – Télécom ParisTech
+
+Acknowledgements 
+
+We would like to thank the following nine AcceDe partners for their commitment and confidence in us. 
+
+[]
+
+[]
+
+[]
+
+For the purpose of this project, these companies got their communication agencies and teams to work on tagging a sample of 28 published documents. This work, carried out by each partner company on its own PDF documents, was essential to ensure that this guide covers all the tagging needs of published documents, and to validate the clarity and educational quality of the manuals. 
+
+Atalan also wishes to thank the following organizations which contributed their organizational support and for their actions in increasing awareness of the AcceDe manuals and encouraging their circulation: Association des Paralysés de France (APF), Association Valentin Haüy (AVH), Coopérative AccessibilitéWeb (Québec), Institut Nazareth et Louis Braille (Québec), ParisTech et Télécom ParisTech.
+
+Special thanks to Edwin Tudsbery who translated this guide.
+
+Finally, Atalan would like to thank the members of the proofreading committee for their helpful and judicious feedback: Greg Pisocky and Matt May (Adobe), Sophie Schuermans (AnySurfer) and Christophe Strobbe (Katholieke Universiteit Leuven).
+
+Sébastien Delorme 
+
+Sylvie Goldfain 
+
+Atalan - AcceDe
+
+Contents
+
+1    - Introduction ...................................................................................................................................... 5
+
+1.1    Background and objectives ............................................................................................................ 5
+
+1.2    Who should read this guide? ......................................................................................................... 6
+
+1.3    Required skills for learning how to tag ........................................................................................... 6
+
+1.4    How should you use this guide and the accompanying exercise book ......................................... 6
+
+1.4.1    Introductory note: Adobe Acrobat Pro is required ................................................................... 6
+
+1.4.2    Organization of this guide and overview of the related exercise book .................................... 7
+
+1.4.3    Other associated documents .................................................................................................. 7
+
+1.5    Use licence .................................................................................................................................... 7
+
+1.6    Contact ........................................................................................................................................... 8
+
+1.7    Credits ............................................................................................................................................ 8
+
+2    - Introduction to tagging .................................................................................................................... 9
+
+2.1    What is tagging? ............................................................................................................................ 9
+
+2.2    Main accessibility problems of a non-tagged document ................................................................ 9
+
+3    - Getting to know Adobe Acrobat Pro ............................................................................................ 12
+
+3.1    Content, Order and Tags navigation panels ................................................................................ 12
+
+3.2    Document pane ............................................................................................................................ 13
+
+3.3    TouchUp Reading Order dialog box ............................................................................................ 14
+
+3.4    Content reflow .............................................................................................................................. 15
+
+4    - Getting started with tagging ......................................................................................................... 16
+
+4.1    Checking for the presence of tags in the document .................................................................... 16
+
+4.2    Tagging techniques...................................................................................................................... 16
+
+4.2.1    Tagging a document manually with Adobe Acrobat Pro ....................................................... 16
+
+4.2.2    Editing existing tags .............................................................................................................. 16
+
+4.2.3    Tagging a document automatically with Acrobat Pro ............................................................ 17
+
+4.3    Proposed method: manual tagging .............................................................................................. 19
+
+5    - Adding the title, document language, and tags root .................................................................. 20
+
+5.1    Adding a document title ............................................................................................................... 20
+
+5.2    Adding the main document language .......................................................................................... 22
+
+5.3    Creating the tags root .................................................................................................................. 23
+
+6    - Manually tagging a page of the document .................................................................................. 24
+
+6.1    Important: Save your changes frequently! ................................................................................... 24
+
+6.2    Editing the tags ............................................................................................................................ 24
+
+6.2.1    Creating an empty tag ........................................................................................................... 24 6.2.2 Associating content with the tag (3 possible methods) ......................................................... 26 6.2.3 Finding tagged content .......................................................................................................... 34
+
+6.2.4 Changing the tag type ........................................................................................................... 36 6.2.5 Moving a tag .......................................................................................................................... 39
+
+6.2.6 Moving tagged content .......................................................................................................... 40 6.2.7 Providing alternate text ......................................................................................................... 40
+
+6.2.8 Specifying a change of language .......................................................................................... 42 6.2.9 Deleting a tag ........................................................................................................................ 42
+
+6.2.10 Marking content as an artifact (2 possible methods) .......................................................... 43
+
+6.3    Screen actions: tagging the cover page of the exercise book ..................................................... 45
+
+7    - Defining the reading order ............................................................................................................ 46
+
+7.1    Why you should not use the Order panel .................................................................................... 46
+
+7.2    Defining the reading order from the Tags panel .......................................................................... 47
+
+7.2.1    Analysing the content and defining the reading order ........................................................... 47 7.2.2 Arranging the tags in a logical reading order ........................................................................ 47
+
+7.2.3 Regrouping tags under “parts” .............................................................................................. 48
+
+  ---------------------------------------- ---------------------------------------------------------- ---------------
+  AcceDe project – www.accede.info/en/     Making PDF documents accessible  with Adobe Acrobat Pro    Page 3
+                                                                                                       
+  Directed by Atalan – accede@atalan.fr                                                               January 2011
+  ---------------------------------------- ---------------------------------------------------------- ---------------
+
+ 
+
+8    - Identifying the tag type for each content item ............................................................................ 50
+
+8.1    Introduction .................................................................................................................................. 50
+
+8.2    Document title .............................................................................................................................. 50
+
+8.3    Section headings ......................................................................................................................... 50
+
+8.4    Paragraphs .................................................................................................................................. 52
+
+8.5    Images and captions .................................................................................................................... 52
+
+8.6    Lists and list items ........................................................................................................................ 55
+
+8.7    Contents ....................................................................................................................................... 56
+
+8.8    Tables .......................................................................................................................................... 57
+
+8.8.1    Tagging rows, cells and headers .......................................................................................... 57
+
+8.8.2    Link the headers with their corresponding cells (2 possible methods) ................................. 60
+
+8.9    Quotes and block quotes ............................................................................................................. 66
+
+8.10  Links ........................................................................................................................................... 67
+
+8.11  Spans ......................................................................................................................................... 68
+
+8.12  Footnotes ................................................................................................................................... 69
+
+8.13  Document, parts, divisions, articles and sections ...................................................................... 70
+
+8.14  Other tags (references, formulas, bibliography entries…) ......................................................... 71
+
+9    - Checking the content reflow ......................................................................................................... 72
+
+9.1    Content tab overview ................................................................................................................... 72
+
+9.1.1    Highlight the content ............................................................................................................. 72
+
+9.1.2    Content tab overview ............................................................................................................ 72
+
+9.2    Placing items which do not convey information in artifacts ......................................................... 73
+
+9.3    Content reflow .............................................................................................................................. 75
+
+9.3.1    Checking the reflow order of a page with the Order navigation panel .................................. 75
+
+9.3.2    Improving the reflow of a page with the Content navigation panel ....................................... 76
+
+9.4    Using the content panel to resolve visual overlay problems ....................................................... 78
+
+10  - Completing the document ........................................................................................................... 80
+
+10.1  Generating bookmarks (if required) ........................................................................................... 80
+
+10.2  Indicating the link tab order ........................................................................................................ 82
+
+10.3  Marking the document as tagged .............................................................................................. 82
+
+10.4  Providing an explicit title to the file (best practice) ..................................................................... 84
+
+10.5  Defining the initial view of the document (best practice) ........................................................... 84
+
+11  - Checking the accessibility .......................................................................................................... 85
+
+11.1  Using the Acrobat accessibility check........................................................................................ 85
+
+11.1.1 Overview of the accessibility full check ............................................................................... 85
+
+11.1.2 Examples of error messages .............................................................................................. 87
+
+11.2  Exporting the PDF in text format ................................................................................................ 88 11.3 Jaws / NVDA .............................................................................................................................. 89
+
+11.4 PDF-Accessibility-Checker (PAC) ............................................................................................. 90
+
+12  - Appendix ....................................................................................................................................... 91
+
+12.1  Specific cases ............................................................................................................................ 91
+
+12.1.1 Lines that straddle two pages ............................................................................................. 91
+
+12.1.2 Text with shadow effects ..................................................................................................... 92
+
+12.1.3 Other specific cases ............................................................................................................ 92
+
+12.2  Security parameters ................................................................................................................... 92
+
+12.3  Role maps .................................................................................................................................. 93
+
+12.4  Character recognition in scanned documents ........................................................................... 94
+
+12.5  List of frequently used tags ........................................................................................................ 95
+
+ 
+
+  ---------------------------------------- ---------------------------------------------------------- ---------------
+  AcceDe project – www.accede.info/en/     Making PDF documents accessible  with Adobe Acrobat Pro    Page 4
+                                                                                                       
+  Directed by Atalan – accede@atalan.fr                                                               January 2011
+  ---------------------------------------- ---------------------------------------------------------- ---------------
+
+ 
+
+1 - Introduction
+
+1.1 Background and objectives
+
+By default PDF documents are not accessible to certain users with disabilities. Among the users affected, there are, for example:
+
+-       Blind users: 
+
+Blind people use their computers with screen readers. These devices use software which either read the information displayed on the screen (with a voice synthesizer) or convert it to Braille (with a Braille terminal). With this type of software, it is difficult to understand the contents of a PDF file if it is not structured with tags. The reading order is not always logical, the information contained in images is not read, and the absence of a title structure makes navigating such a document long and complicated.
+
+-       Partially sighted users: 
+
+Customizing the display of a PDF document in Adobe Reader often poses difficulties. Changing the text or background colour in order to improve readability does not always work. For example, some background colours cannot be modified. 
+
+-       Users with a motor disability:
+
+The rigid linear navigation imposed on those who read PDF documents exclusively with the aid of a keyboard makes it difficult to navigate in the document. For example, the tab order of links or form fields is not always logical.
+
+The solution for making PDF documents accessible is to structure them with the appropriate tags. Currently, this solution is rarely implemented, specifically for the following reasons:
+
+-       The concept of a structured or tagged document is not widely known by those who produce PDF files. 
+
+-       There is no good quality documentation for learning how to tag documents.  
+
+In France, as part of their policy for people with disabilities, more and more large companies want the PDF documents they publish to be accessible. For this reason nine French companies came together to form the AcceDe project to increase the accessibility of PDF documents. 
+
+One of the objectives of AcceDe¹ was to create educational guides and manuals for those who want to make their PDF documents accessible. 
+
+The aim of this guide, “Making PDF documents accessible with Adobe Acrobat Pro”, is to provide all the practical information you need to learn how to tag a PDF document². Currently, tagging requires the use of Adobe Acrobat Pro. This guide also provides the necessary information to check the tagging of a PDF document.
+
+~~                                                   ~~  
+
+¹  The three objectives of the AcceDe project are to:
+
+1.     Create, and freely distribute, guides and manuals for those who wish to make their PDF documents accessible.
+
+2.     Increase awareness about PDF document accessibility and the growing interest of companies in this area among communication professionals.
+
+3.     Offer an initial directory of communication professionals who are committed to and capable of producing tagged PDFs from the documents they create.
+
+²  Forms are not explained in this first version of the guide.
+
+1.2 Who should read this guide?
+
+This guide is aimed at:
+
+-       all those who want to learn how to tag PDF documents,
+
+-       project managers who want to integrate tagging when creating their PDF documents^(^([1])).
+
+1.3 Required skills for learning how to tag
+
+Tagging does not require any technical skills (knowledge of computer languages, DTP software, etc.), nor an in-depth knowledge of Adobe Acrobat Pro (all the functionalities used for tagging are presented and described in this document). 
+
+Tagging does however require a great deal of rigour and logic. 
+
+While knowing the basics of HTML may speed up the tagging learning process, it is by no means indispensible. 
+
+In the framework of the AcceDe project, for example, we have trained people with the following profiles to tag PDF documents:
+
+-       lay-out artists / graphic designers / DTP operators,
+
+-       HTML developers and webmasters,
+
+-       marketing assistants,
+
+-       project managers,
+
+-       editors and documentation managers,
+
+-       managers of graphic design departments,
+
+1.4 How should you use this guide and the accompanying exercise book
+
+1.4.1 Introductory note: Adobe Acrobat Pro is required
+
+All the tagging procedures described in this document require the use of Adobe Acrobat (Pro or Pro Extended^(^([2])) version). To use this software you need to acquire the corresponding license. 
+
+For the descriptions of procedures, examples and screenshots, this guide is based on Adobe Acrobat 9 Pro (version 9.3.0).
+
+  ----
+  F1
+  ----
+
+It is also possible to use the older versions 7 and 8 of Adobe Acrobat or the new Adobe Acrobat X. Certain functionalities may, however, have different names or be presented differently. In this case, it is a good idea to use the online help supplied with the software for any difficulties (press  in Acrobat).
+
+1.4.2 Organization of this guide and overview of the related exercise book
+
+Learning how to tag demands practice. This guide is illustrated with examples from a PDF document entitled “Exercise book”.Both a tagged and an untagged version of this exercice book are available, so that users of this manual can carry out the tagging procedures explained therein in Adobe Acrobat Pro. The two versions of this document are:
+
+-       Untagged exercise book: untagged-exercise-book.pdf
+
+-       Tagged exercise book: tagged-exercise-book.pdf
+
+These two exercise books are available on www.accede.info/en/manuals/. 
+
+This guide includes two types of content:
+
+1.     theoretical information, 
+
+2.     procedures for the user to perform on the untagged exercise book.
+
+Screen actions:
+
+All the procedures presented in this guide for the user to follow are displayed in a greyed inset entitled “Screen actions”.
+
+1.4.3 Other associated documents
+
+This guide is part of a set of two documents:
+
+-       Making PDF files accessible: Guidelines for the DTP creation phase  
+
+(available on www.accede.info/en/manuals/)
+
+-       Making PDF documents accessible with Adobe Acrobat Pro  (this document)
+
+1.5 Use licence
+
+This document is subject to the terms of the Creative Commons BY-NC-SA license.
+
+You are free to:
+
+-       Copy, distribute, display, and perform the work
+
+-       Make derivative works
+
+Under the following conditions:
+
+-       Mention of the authorship if the document is modified:
+
+On the cover of the document you must include the Atalan and AcceDe logos and references, indicate that the document has been modified, and add a link to the original work at www.accede.info/en/manuals/.
+
+You must specify the reuse of the document by sending an email to accede@atalan.fr including the link to download the modified document. 
+
+You must not in any circumstances cite the name of the original author in a way that suggests that he or she endorses you or supports your use of the work. 
+
+You must not in any circumstances cite the name of the partner companies (Air Liquide, AREVA, BNP Paribas, Capgemini, LVMH, SNCF, Société Générale, SPIE et Thales), or the organizations which have supported this initiative (Association des Paralysés de France (APF), Association Valentin Haüy (AVH), Coopérative AccessibilitéWeb, Institut Nazareth et Louis Braille, ParisTech, Télécom ParisTech).
+
+-       No commercial use: you may not use this work for commercial purposes. 
+
+-       Share alike: if you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one. 
+
+The Atalan and AcceDe logos and trademarks are registered and are the exclusive property of Atalan.
+
+1.6 Contact
+
+For any comment about this document, please contact Atalan, the coordinator of the AcceDe project, at the following email address: accede@atalan.fr.
+
+You can also find more information about the AcceDe project manuals at www.accede.info/en/manuals/. 
+
+1.7 Credits
+
+The icons used in this document for important notes and tips were designed by www.icojoy.com and can be used free of charge.
+
+2 - Introduction to tagging 
+
+2.1 What is tagging?
+
+Users with disabilities experience many problems with a PDF document, especially users of screen readers or partially sighted people. Many of these problems can be fixed by a technique which is called tagging (adding labels that are not visible to the readers of a document but which are used by suitable reading tools such as screen readers). 
+
+Tagging involves adding semantic information called a tag to each content item of a document in order to specify its characteristics. So there are specific tags for defining, for example, titles, subtitles, paragraphs, annotations, and lists. It is also possible to tag images to add alternate text, to tag tables containing data in order to specify the row and column headings, etc. 
+
+When the content of a document is identified with the help of tags, screen readers can convey the characteristics of the elements to users. It is possible, for example, for users of this software to navigate from title to title so that they can quickly access the content they require, or to navigate within a table containing data.
+
+2.2 Main accessibility problems of a non-tagged document
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Main accessibility problems  of a non-tagged PDF                                                                                                                                                             | Solutions to resolve problem                                                                                                                                                                                                               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Absence of document title                                                                                                                                                                                    | Define the title in the document properties                                                                                                                                                                                                |
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                            |
+| The title of a document enables users to identify the document, which is especially useful, for example, when several documents are open.                                                                    |                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                            |
+| The title is the first information read by screen readers when opening the document.                                                                                                                         |                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Absence of language indication in the document                                                                                                                                                               | Define the main language in the document properties                                                                                                                                                                                        |
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                            |
+| The language is an important factor. It enables the voice synthesizer in screen readers to pronounce words with the correct accent.                                                                          |                                                                                                                                                                                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Absence of content structure                                                                                                                                                                                 | Semantic tagging                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                            |
+| Titles and, more generally, the structure of a document are normally identified visually on the page (position on the page, size, text colour…), but this information cannot be conveyed by screen readers.  | Tagging makes it possible for screen readers to identify paragraphs, titles, hyperlinks, lists, and tables.                                                                                                                                |
+|                                                                                                                                                                                                              |                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                              | Blind and partially sighted users can then discover the characteristics and structure of texts which are read, and use this information to navigate from item to item and get an overall view and a better understanding of the document.  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Main accessibility problems  of a non-tagged PDF                                                                                                                                                                                                                                                                     | Solutions to resolve problem                                                                                                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Incorrect reading order                                                                                                                                                                                                                                                                                              | Correct the reading order                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| The reading order of different content items in a document is sometimes incorrect when the document is read with a screen reader.                                                                                                                                                                                    | By rearranging the reading order you can choose the sequence tagged elements are read by screen reader software.                                                                                         |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| By default, screen reader software usually reads information from left to right and from top to bottom of the page. According to the documents and the page layout adopted (columns, insets, footnotes…), the visual order of different content items in a document does not always correspond to the reading order. |                                                                                                                                                                                                          |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Missing a navigation summary                                                                                                                                                                                                                                                                                         | Addition of bookmarks                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| By default, it is difficult to navigate in a PDF file apart from scrolling from page to page.                                                                                                                                                                                                                        | A clickable summary of the document can be created and displayed beside the pages. It means you can go directly to the main sections of the document using links known as bookmarks                      |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| With screen reader software, it is not possible to directly go to a precise spot on the page without having listened to all the preceding content.                                                                                                                                                                   | Adding internal links                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                      | Links and cross-references can be directly added to page content so that users can navigate more easily between sections.                                                                                |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                      | These two solutions mean that people with motricity disabilities can navigate more easily in a PDF document solely by using the keyboard.                                                                |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Missing alternate text for graphical elements                                                                                                                                                                                                                                                                        | Tagging of graphical elements                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| Graphical items such as images, pie charts, or illustrations cannot be interpreted by screen readers.                                                                                                                                                                                                                | Tagging makes it possible to associate alternate text with images. In this way you can communicate all the information conveyed in the images.                                                           |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                      | The reading order of complex images such as line charts can also be defined.                                                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Missing structure in tables                                                                                                                                                                                                                                                                                          | Tagging of tables                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                          |
+| The relationships between the elements of a table, the column headings, the cells, the scope of the headings are not defined and users of screen readers cannot take advantage of their screen reader’s ability to navigate the table according to these relationships.                                              | Tagging makes it possible to identify the heading cells of a table and link them with the corresponding table cells containing data. This enables users of screen readers to navigate within the table.  |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Main accessibility problems  of a non-tagged PDF                                                                                                                                                                                                | Solutions to resolve problem                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Poor content reflow                                                                                                                                                                                                                             | Define the reflow order and identify the artefacts                                                                                                                |
+|                                                                                                                                                                                                                                                 |                                                                                                                                                                   |
+| Reflow is an integrated functionality in Adobe Reader, which changes the display of the document to lines displayed in a single column. This feature optimizes both text magnification on the screen and changes to text and background colour. | The reflow order makes it possible to define the order of text is displayed when it is reflowed.                                                                  |
+|                                                                                                                                                                                                                                                 |                                                                                                                                                                   |
+| When a document is not tagged, various items may no longer be readable, and there is a risk that decorative items are displayed in the middle of text following reflow.                                                                         | Decorative content can be defined as artefacts, in which case it is not displayed when you reflow the text and screen readers can safely ignore these artefacts.  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+3 - Getting to know Adobe Acrobat Pro 
+
+3.1 Content, Order and Tags navigation panels
+
+You can display the navigation panels in Acrobat Pro by selecting the required option in the menu View > Navigation Panels.
+
+The three navigation panels used for tagging are:
+
+-       []Content – change the visual order objects are superimposed in reflow view
+
+-       []Order – indicates the order in which content is shown in reflow view
+
+-       []Tags – view and edit the tags that are present in the document
+
+We will mainly work with the Content and Tags navigation panels. In this manual we do not recommend using the Order panel. 
+
+[] 
+
+Figure 1: open the Content, Order and Tags navigation panels by selecting the corresponding option in the menu.
+
+These three navigation panels show information in a tree structure. 
+
+Note: 
+
+To make it easier to use Acrobat Pro, you can dock the navigation panels in the navigation pane on the left. 
+
+To do this for each of the three aforementioned navigation panels, display the panel by clicking View > Navigation panels, and then select the required one.
+
+  ------
+  Alt
+  ------
+
+  ---
+  N
+  ---
+
+[]Then drag the tab of the displayed panel to the navigation pane to the left of the screen. See figure 2 or use the menu View > Navigation Panels > Dock All Panels (+ V , , K ).
+
+The button which corresponds to this panel is then displayed in the toolbar, so you can access it more quickly. 
+
+[] 
+
+Figure 2: Drag a navigation panel to the toolbar on the left by selecting the tab.
+
+It is also possible to use keyboard shortcuts to open the navigation panels. 
+
+  -----
+  Alt
+  -----
+
+  --- --- --- ---------------------------------------------------------------- ---
+  N   ,   G    for the “Tags” navigation panel (replace the last letter with   O
+  --- --- --- ---------------------------------------------------------------- ---
+
+[]For example, use  + V ,  for 
+
+  ---
+  N
+  ---
+
+“Order” and  pour “Content”).
+
+3.2 Document pane
+
+As its name suggests, the document pane is the area where the document is displayed. It is, for example, possible to select text in this pane in order to tag it, or to highlight an object that was previously tagged in order to visualize it.
+
+[] 
+
+Figure 3: The Tags navigation panel is shown on the left; on the right you can see the document pane of the file “tagged-exercises-book.pdf”.
+
+3.3 TouchUp Reading Order dialog box
+
+Not to be confused with the “[] Order” navigation panel, this dialog box makes it possible to assign tags to content and to tag figures and tables containing data.  
+
+To display this dialog box, open the Advanced menu, and then select Accessibility  > TouchUp Reading order.
+
+[] 
+
+Figure 4: TouchUp Reading Order dialog box
+
+Notes:
+
+-       Unlike the navigation panels, it is not possible to dock this dialog box in the navigation pane on the left of the screen. 
+
+-       You can, however, access this dialog box by clicking on a button in the Advanced Editing toolbar.
+
+To display this toolbar, click View > Toolbars > Advanced Editing.
+
+[] 
+
+Figure 5: TouchUp Reading Order button in the “Advanced Editing” toolbar. 
+
+You can drag this toolbar to the top of the screen in order to dock it in the main toolbar or use
+
+  ---
+  D
+  ---
+
+  ------- --- ----- ---- ------
+  Ctrl    +   F8    or   Alt
+  ------- --- ----- ---- ------
+
+[]View > Toolbars > Dock Toolbars (+ V , T , ).
+
+3.4 Content reflow
+
+Reflow is a temporary view that shows the content of a PDF document in a single column taking up the entire width of the document pane. In this view, you can magnify text size and it will wrap to the next line as it gets larger remaining in the document pane, so you do not need to use the horizontal scroll bar to read it. It also improves readability on mobile devices. 
+
+When this view is selected in a non-tagged document, Adobe Reader or Adobe Acrobat temporarily tags the document. However, the Acrobat user guides recommend that you tag the document yourself in order to optimize the reflow.^(^([3]))
+
+[]
+
+Figure 6: on the left is page 8 of the exercise book in the standard view. In the middle, a non-tagged version of page 8 of the exercise book is shown in reflow view. Note that the chart is no longer in the correct position, and the page layout is preserved so if you magnify the text size the document will
+
+overflow the screen. On the right a tagged version of page 8 of the exercise book is shown in reflow
+
+view. Note that only the data in the chart is shown, and the information is displayed in a logical order. 
+
+4 - Getting started with tagging
+
+4.1 Checking for the presence of tags in the document
+
+Some PDF documents already have tags that were generated when the PDF file was created from the original document. According to whether there are tags or not, the procedure for tagging using Adobe Acrobat Pro may be different.
+
+To check for the presence of tags in a PDF, open the Tags navigation panel. If there are tags, the tree structure of the tags can be seen in the navigation panel. If there are no tags, the message “No Tags available” is displayed.
+
+[] 
+
+Figure 7: the “Tags” panel displays the tree      Figure 8: the “Tags” panel indicates that no tag structure of tags in the document.     is available. 
+
+4.2 Tagging techniques
+
+4.2.1 Tagging a document manually with Adobe Acrobat Pro
+
+You can tag an untagged document entirely using Adobe Acrobat Pro.
+
+This is the method taught in this guide and the two accompanying exercise books. It is important to understand and master tagging before editing the tags in documents that are already tagged. 
+
+4.2.2 Editing existing tags
+
+[] It is always advisable to consider accessibility requirements from the beginning, when you create the original source document (for example, in Microsoft Word or Open Office^(^([4]))). Tags can then be generated automatically when exporting the document to PDF format. 
+
+If you do this, you will often need to make some limited changes in Acrobat Pro, but you will reduce the total time needed to tag the document.  
+
+Nevertheless, for learning purposes, we recommend that you tag the first accessible PDFs you create entirely from scratch. When you have successfully learned how to tag an untagged document, you can easily edit a document that already has tags. 
+
+Note:
+
+When you create a PDF from some authoring tools, the generated tags have the name of styles used in the original document rather than standard tag names. This is notably the case with Adobe InDesign. For more information, refer to the appendix “12.3 Role map” (page 93).
+
+4.2.3 Tagging a document automatically with Acrobat Pro
+
+Acrobat Pro has a functionality for automatically tagging an untagged PDF document. You can run this tool by selecting the option Advanced > Accessibility > Add tags to document.
+
+With this functionality, Acrobat Pro automatically inserts tags into the document, and generates a report (called a Recognition Report) including a confidence rating of the generated tags and the tasks you must perform manually (like, for example, adding alternative text to images). 
+
+Note:
+
+You can also use this to overwrite existing tags, by unchecking the option Document is Tagged PDF from the properties dialog (see section “10.3 Marking the document as tagged” on page 82).
+
+[] 
+
+Figure 9: the Add tags to document functionality  and the recognition report generated by Acrobat Pro.
+
+Tests show that tagging created in this way is usually of a very poor quality, and subsequently requires a great deal of manual fixes. Moreover, in some documents there are display problems, when background and foreground elements are inverted. These must be identified and corrected manually. 
+
+For these reasons, we recommend that you do not use this functionality but do one of the following:
+
+1.    either modify the tags generated when exporting the document to PDF format (see section “4.2.2 Editing existing tags” on page 16);
+
+2.    or tag the document entirely manually (see section “4.2.1 Tagging a document manually with Acrobat Pro” on page 16).
+
+However, in some cases automatic tagging in Adobe Acrobat may be useful with simple documents, composed mainly of text and images that cannot be made accessible in the authoring software. With experience of tagging PDF documents, you can rapidly assess the quality of the generated tagging (the confidence rating detailed in the Acrobat report also gives an idea of the quality of the automatic tagging). 
+
+Note:
+
+When a user of a screen reader opens an untagged PDF in Adobe Reader, the document is automatically tagged. The user is then asked to choose a reading mode, with, for example, a reading order from top to bottom and left to right, or an order determined by Adobe Reader. The automatic tagging system used by Adobe Reader when it detects the presence of a screen reader is the same as that of Adobe Acrobat, with the same limitations we have just mentioned. 
+
+4.3 Proposed method: manual tagging 
+
+This manual describes a step-by-step method for tagging documents.
+
+To begin with, we will work on an untagged document, untagged-exercise-book.pdf. We will consider the properties that need to be defined for the document as a whole. Then, page by page, we will tag the content and define the reading order. When all the pages are tagged, we will test the content reflow (used to optimize text magnification on the screen or to improve readability on mobile telephones). We will finish by carrying out several tasks to finalize the document.
+
+The last section of this manual describes some techniques used for checking the quality of the tags created in the PDF document.
+
+[]
+
+ 
+
+Figure 10: Proposed tagging method 
+
+5 - Adding the title, document language, and tags root
+
+5.1 Adding a document title
+
+A meaningful title must be given to the document. This title must be representative of the content of the PDF file. It is usually the same as the title which appears on the cover of the document.  To add a title, open the File menu, and then select Properties to open the Document Properties dialog box. Then, on the Description tab, enter the required value in the Title field (you can also open
+
+  ------ ---- --- ------------- ----- ---- ---
+  Ctrl    +   D    on a PC or   Cmd    +   D
+  ------ ---- --- ------------- ----- ---- ---
+
+this dialog box by using the keyboard shortcut  on a Mac
+
+[]
+
+Then, on the Initial View tab, change the value in the Show drop-down list from File Name to Document title. This modification means that the title rather than the file name is displayed in the title bar when consulting the document (in Adobe Reader for example). 
+
+ 
+
+[]
+
+[] 
+
+Figure 11: The document title is shown in the title bar. 
+
+For users of screen readers, this is the first information that is read when opening the document. It is also the first information displayed in search engines results, and in computer navigation windows.
+
+5.2 Adding the main document language 
+
+Indicate the main document language in the document properties. By providing this information, voice synthesisers in screen readers are able to correctly pronounce the document content. 
+
+Remaining in the Document Properties dialog box (File > Properties via the menu bar), select the Advanced tag, and then select the language in the Language drop-down list near the bottom of the dialog box. 
+
+[]
+
+Note:
+
+If the document to be tagged is written in several languages, it is then possible to indicate the language for each page or each content block (see section “6.2.8 Specifying a change of language” on page 42). For our purposes, in the Document Properties indicate the same language as that used for the document title.
+
+5.3 Creating the tags root
+
+For a non-tagged document, you need to create a tags root before you can begin tagging. The tags you create are attached to this root. 
+
+To do this, open the options drop-down list (represented by the  [] icon in the []Tags navigation panel, and select Create tags root. (see screen action (1/2). 
+
+The text “No tags available” is then replaced by “Tags”. This is the tags root in the Tags navigation panel (see screen action 2/2).
+
+[]
+
+6 - Manually tagging a page of the document 
+
+6.1 Important: Save your changes frequently!
+
+[] Some simple functionalities that are standard in authoring tools do not exist in Adobe Acrobat Pro 9 (and prior versions). For example, there is no history palette which enables you to undo or redo actions in the navigation panels. 
+
+So, to make sure you do not lose your work, you are advised to regularly save the document (for example, each time you finish tagging a page and defining its reading order), and to make new versions of the document for each major change (each time you save the document, save it with a new name, such as tags-exercise-book-3.pdf).
+
+6.2 Editing the tags
+
+In this section we look at the standard actions which you can carry out on all tags. We will perform these actions on the cover page of the file untagged-exercise-book.pdf. 
+
+Each tag and its characteristics are then presented in section “8 - Identifying the tag type for each content item” (page 50).
+
+6.2.1 Creating an empty tag
+
+To create an empty tag, open the [] Tags navigation panel.
+
+1.    In the Tags navigation panel options [], select New Tag. (You can also display the options by right-clicking the tags root).
+
+[]
+
+2.    A dialog box is displayed for choosing the type of tag. You can choose the required tag type either by selecting it from the drop-down list or by typing it (make sure you respect the case).
+
+You can also give a name to the tag. The tag title makes it easier to identify the tag in the tags tree in the navigation panel. This information is not conveyed by screen readers when the document is consulted but is solely used as a label for the tag. 
+
+The list of tag types and their specific uses are presented in section “8 - Identifying the tag type for each content item” (page 50).
+
+[]
+
+3.    Finally, click OK to confirm. The tag is then created and added to the tag tree.
+
+[]
+
+Note:
+
+When you select a tag in the tag tree, a tag created by the above method will always be added to the tree just after the selected tag. If no tag is selected, the new tag will be added to the end of the tag tree.
+
+6.2.2 Associating content with the tag (3 possible methods)
+
+To be useful, each tag must incorporate some content, or other tags which contain content. There are three methods for associating content with a tag:
+
+-       Method n°1: insert content in an existing tag
+
+-       Method n°2: create a tag and insert content in a single procedure (in the Tags navigation panel) -        Method n°3: insert content from the TouchUp Reading Order dialog box
+
+Note:
+
+We recommend using the first two tagging methods because they make it easier to control where the tags are created in the tag tree. 
+
+6.2.2.1 Method n°1: insert content in an existing tag
+
+To add content in an existing tag:
+
+1. In the Tags navigation panel, select the tag in the tag tree.
+
+[]
+
+[]
+
+3.    Then in the Tags navigation panel, right-click the previously selected tag and select Create Tag from Selection.
+
+[]
+
+Note:
+
+In this instance, the term “Create” is somewhat inaccurate as the tag has already been created. This command really means “Fill the tag with the selection” or “Associate the tag with the selection”.
+
+4.    The content of the selection is then associated with the tag. 
+
+[] 
+
+Figure 12 : In the tag tree, the <P> tag now contains “Exercise book for tagging a PDF document” (symbolised by a cardboard box icon).
+
+With this method, you can first create the list of required tags, and then associate them with content afterwards.
+
+[] Tip:
+
+You can select a graphic using the TouchUp Object (Tool Tools > Advanced Editing > TouchUp Object via the menu bar).
+
+6.2.2.2 Method n°2: create a tag and insert content in a single procedure (in the Tags navigation panel)
+
+You can also create tags and associate text with them in a single procedure. To do this, you first need to select the tags root. Secondly, select the text to be tagged in the document pane. Then, from the options, select Create Tag from Selection.
+
+[]
+
+[]
+
+You can select a graphic using the TouchUp Object (Tool Tools > Advanced Editing > TouchUp Object via the menu bar).
+
+6.2.2.3 Method n°3: insert content from the TouchUp Reading Order dialog box
+
+To tag content with this method, open the TouchUp Reading Order dialog box.^(^([5])). The cursor then changes from an arrow to crosshairs. 
+
+In the document pane, use the cursor to select the zone by holding down the left mouse button and drawing a box that surrounds the desired zone to tag and in the TouchUp Reading Order dialog box select the appropriate tag (or right-click on the selected area).
+
+Notes:
+
+-       The TouchUp Reading Order dialog box only offers a limited choice of tags from all the available tag types.
+
+-       When a tag is created by this method on a tagged document, it is added to the tag tree, but is sometimes difficult to find because it is not inserted into the selected spot in the tag tree.
+
+[]
+
+When the TouchUp Reading Order dialog box is open, you can also tag content by right-clicking content you have selected in the document pane. A context menu proposes several Tag as… options. You can create the same tags as listed in the TouchUp Reading Order dialog box.  
+
+[] 
+
+Figure 13: From the context menu you can select content in the document pane and then, for example, Tag as text. In this case, the selected content will be tagged in a paragraph. When the
+
+[]context menu is open, you can use a keyboard shortcut for each proposed action. Press the X key to tag as text (because the x character is underlined).
+
+[] Important note:
+
+Using this method with graphic items, or with text displayed on top of an image, or with a background colour may lead to problems in the way the different elements overlay each other visually on the page. Sometimes, tagged text is inversed with the background image and can no longer be read. To correct these problems, refer to appendix « 9.4 Using the content panel to resolve visual overlay problems » on page 78.
+
+6.2.3 Finding tagged content
+
+When a document has a great deal of tags, it is sometimes difficult to find which content belongs to which tag and vice versa. Two features can help to find tags or tagged content.
+
+6.2.3.1 Finding tagged content from the tag tree (highlight the content)
+
+From the tag tree in the Tags navigation panel, select the Highlight Content option. When you select a tag in the navigation panel, the corresponding content is shown surrounded with a blue frame in the document pane. 
+
+Note:
+
+This option is automatically disabled when you close Acrobat. You are advised to systematically activate this option each time you open or re-open a document.
+
+[] 
+
+Figure 14: Highlight Content option in the Tags navigation panel options
+
+[] 
+
+Figure 15: with the Highlight Content option selected, when you select a tag in the tag tree, a blue frame indicates the corresponding content in the document pane.
+
+6.2.3.2 Finding tagged content from the document pane
+
+Alternatively, it is possible to find the tag which corresponds to specific content in the document pane. To do this, highlight the required text with the cursor. Then, in the Tags navigation panel options, select Find tag from selection. The tag which corresponds to the selection is then opened and highlighted. 
+
+[] 
+
+Figure 16: Find tag from selection option to highlight  the tag corresponding to a selection in the navigation panel.
+
+6.2.4 Changing the tag type
+
+If you need to correct an error or edit a PDF which is already tagged, you may often need to change the tag type (for example, change a Paragraph tag to a Heading tag). To do this, select the required tag, and then in the Tags navigation panel, select Properties.
+
+To change the tag type in the Properties dialog box, select the Tag tab, and then select the required type in the Type drop-down list. 
+
+[]
+
+[]
+
+  ----
+  F2
+  ----
+
+It is also possible to change the tag type directly in the tag tree in the Tags navigation panel by replacing the abbreviated name of the tag with the abbreviated name of the new tag. To do this, select the tag you want to edit, then click the tag again (or press  on the keyboard), and type the new name.
+
+[]
+
+There is no warning when you mistype an entry using this method. Make sure you use this shortcut carefully. Any tag which is wrongly spelt will be considered as a simple paragraph. If you write <T1> instead of <H1> for example, the text will not be considered as a heading. The abbreviated name is also case sensitive, so you should write <H1> rather than <h1>.
+
+6.2.5 Moving a tag
+
+You can move tags in the tag tree in the Tags navigation panel. To move a tag (the item between < and >) in the tag tree, drag it with the mouse. To place a tag exactly where you want it is quite tricky but you can use the visual indicators to drop the tag in the precise position required.
+
+[]
+
+When tagging a document, you will need to move many tags, usually to sort them according to the reading order you want to give to screen readers. 
+
+ 
+
+ 
+
+ 
+
+6.2.6 Moving tagged content 
+
+You can also move the content of a tag to another tag. To do this, drag the content (symbolized by a
+
+[]
+
+6.2.7 Providing alternate text
+
+It is possible to provide alternate text to all the tags created in the document^(^([6])). The alternate text is the text read by the screen reader instead of the text actually contained in the tag.
+
+To provide an alternate text, fill in the Alternate text field in the Tag tab of the TouchUp Properties dialog box (right-click on the tag, and then select Properties). 
+
+[]
+
+It is essential to provide alternate text to all the images (<Figure> tags) which convey information in the document.
+
+[] Tips:
+
+-       It is a good idea to end the alternate text with a strong punctuation mark (full stop, colon…) so that voice synthesisers pause for short time and therefore help comprehension.
+
+-       Alternate text is not limited to a specific number of characters.
+
+-       Alternate text can also be given to a tag containing text. This makes it possible to re-write content which cannot be correctly read by a screen reader, such as a title which straddles two pages (see
+
+“12.1.1 Lines that straddle two pages” on page 91) or text which cannot be understood independently of its position or its colour on the page (such as the number “4” referring to a page number which could have as alternate text “page 4”).
+
+6.2.8 Specifying a change of language
+
+In the TouchUp Properties dialog box for a tag, it is possible to indicate the language of the content of a tag if this is different from the main document language (if an image or text, for example, is in French in an English document). 
+
+[] 
+
+Figure 17: Language property in the TouchUp Properties dialog box.
+
+6.2.9 Deleting a tag
+
+  -------- ------------------------ -----------
+  Delete    key on Windows or the   Backspace
+  -------- ------------------------ -----------
+
+To delete a tag in the tag tree, you need to select it and then select Delete Tag in the Tags navigation panel (you can also use the  key on a Mac.
+
+When a tag is deleted the content remains visible on the page, but is no longer associated with a tag and therefore is not read by screen readers. 
+
+During the final stage of the automatic full accessibility check on the document (section “11.1 Using the Acrobat accessibility check”, a non-tagged content will be considered as potentially having been forgotten. To explicitly indicate that a content must not be read by screen readers, you need to transform it into an artifact (see the following section).
+
+[] Important note: 
+
+When you delete a tag in the tag tree, it is not possible to undo the action: you need to recreate the tag and associate content with it again. In general, in the Order and Tags navigation panels, Adobe Acrobat does not manage the history of past actions allowing you to undo the previous action. 
+
+6.2.10 Marking content as an artifact (2 possible methods)
+
+A content labelled as an artifact is an item which is not to be read by screen readers. Two methods let you identify content as an artifact.
+
+-       Method n°1: using the TouchUp Reading Order dialog box ;
+
+-       Method n°2: using the Tags navigation panel for content which is already tagged.
+
+6.2.10.1 Method n°1: using the TouchUp Reading Order dialog box
+
+Open the TouchUp Reading Order dialog box, and then select in the document pane the items you want to label as artifact. Select Background in the TouchUp Reading Order dialog box (or right-click the selection and select Tag as background. 
+
+[]
+
+Note:
+
+Content placed in artifacts is not shown in the tag tree.
+
+ 
+
+[] Tip:
+
+With this first method, it is possible to create in a single procedure all the artifacts on a page. To do
+
+  ------- --------------------------------------------------------------------------- ------
+  Shift   -click the required items one by one. To remove items from the selection,   Ctrl
+  ------- --------------------------------------------------------------------------- ------
+
+this, -click the items. 
+
+6.2.10.2 Method n°2: using the Tags navigation panel for content which is already tagged
+
+It is also possible to tag as artifact all content which has already been tagged. This is often required for documents which have been automatically tagged and then require manual editing.
+
+To do this, right-click the content to label as an artifact in the tag tree, and then select Change Tag to Artifact….Alternatively, you can select the content to tag as an artifact and then select this option in the Tags navigation panel options 
+
+Note:
+
+To change a tag to artifact, you need to select the content of a tag and not the tag itself. 
+
+[] 
+
+Figure 18: in this screenshot, the text “Exercises for tagging PDF documents…” is converted to an artifact by selecting the content in the tag tree.
+
+6.3 Screen actions: tagging the cover page of the exercise book
+
+To put into practice the different procedures explained above, you can now proceed with tagging the cover page. 
+
+When you have finished, you should have the following tags:
+
+-       A <Figure> tag with alternate text for the AcceDe logo;
+
+-       A Heading tag <H> for the text “Exercise book for tagging a PDF document”;
+
+-       A Paragraph tag <P> for the text “Exercises for tagging PDF documents. To be used with the AcceDe manuals”;
+
+-       A Paragraph tag <P> for the text “Project coordinated by Atalan”;
+
+-       A Paragraph tag <P> for the text “In partnership with…”;
+
+-       A Paragraph tag <P> for the text “With the cooperation of…”;
+
+-       “AcceDe Project” in the page footer is to be marked as an artifact.
+
+You can check the tagging created in this way by comparing it with the tagged-exercise-book.pdf. 
+
+7 - Defining the reading order 
+
+When you have tagged the page content, it is important, before going on to the next page, to check and correct, if necessary, the reading order followed by screen readers. 
+
+7.1 Why you should not use the Order panel
+
+The Order navigation panel in Acrobat Pro is designed for checking and correcting the reading order of tagged content on a page. However, in Acrobat Pro 9 (and previous versions), this tool is very difficult to use as it manages both the reading order of content and the order objects visually overlay each other on the page. 
+
+The main disadvantages of this double functionality are the following:
+
+-       When you change the reading order of content from the Order panel, the tags in the Tags panel are automatically moved. It sometimes happens that they are inadvertently moved inside other tags, when you don’t want to move them there.
+
+-       When you change the reading order from the Order panel, the order objects are overlaid on the page is also changed. Sometimes when you edit content in the Order panel, an object which should be in front of another ends up behind it, and therefore adversely affects the layout. You then need to manually correct it. 
+
+-       [] The numbering used on the Order navigation panel does not correspond to the reading order but to the order the different content layers on the page overlay each other. So, when you want to check the reading order of content by a screen reader, the displayed numbering may be inaccurate. 
+
+-       The content blocks you need to sort may incorporate several tags. It is therefore sometimes impossible in this panel to manage the reading order of two tags which are next to each other. 
+
+[] 
+
+Figure 19: When the Order panel is displayed, numbers identify the order different content is visually superimposed on the page. In this example, it is not possible to manage the reading order of the three paragraphs at the bottom of the page because they belong to a single block (block 2).  
+
+[] As a result of the difficulties associated with the Order panel, we do not recommend you use it to define the reading order of content. 
+
+In this section we follow a method based on solely on the Tags panel. 
+
+7.2 Defining the reading order from the Tags panel
+
+7.2.1 Analysing the content and defining the reading order
+
+Before you define the reading order, you need to analyse the different content and define the logical reading order. For example:
+
+-       A heading, even if it is placed in the middle or at the bottom of the page, must be read before the content associated with it. 
+
+-       In a long quote, even if the name of the speaker appears afterwards in the text, it is preferable to read it first so that users of screen readers know who is talking. 
+
+-       In a page with an inset, it is better that it is not read between two paragraphs of the same subject. The inset can be read at the start or the end of the page, so that the reading of the main content of the page is not interrupted. 
+
+-       etc.
+
+When you have finished this analysis, change the reading order of content if required.
+
+7.2.2 Arranging the tags in a logical reading order
+
+The reading order of a page by a screen reader corresponds to the sequence in which the tags are ordered in the tag tree. 
+
+To change the reading order of items on a page, you just need to move the tags in the tag tree on the Tags navigation panel. Tags are read from top to bottom in the tags tree.
+
+[]
+
+Since tags are added one after the other when you create them, you are advised to create the tags in the order you want the content to be. This will minimize the amount of manual re-arranging you need to do afterwards. 
+
+7.2.3 Regrouping tags under “parts”
+
+When all the tags on a page of a document are created and assigned to content, we recommend that you place them in a single tag which encloses all of them (while preserving the order). To do this, you can use the <Part> tag.
+
+A part may contain the tags of one or more pages. We recommend that you define the parts according to the main divisions of the document. These tags will then be used to automatically generate a contents summary of the PDF (see section “10.1 Generating bookmarks (if ” on page 80).
+
+[]
+
+Note: 
+
+When the content of a document requires it, you can insert several parts nested within the same part. This makes it possible to produce a detailed summary of the document and easily generate the document bookmarks (“10.1 Generating bookmarks (if required)” on page 80).
+
+See the tagging exercise book to see a preview of the final tag tree with the different parts.
+
+When you have defined the reading order of a page, you can start tagging the following page, and continue in this way, until you reach the end of the document. 
+
+In the next section, we look at the different types of tags which can be used on each page. 
+
+8 - Identifying the tag type for each content item
+
+8.1 Introduction
+
+In this section we look at all the different types of tags which you can use in a document.
+
+Note:
+
+This document does not consider PDF forms. We will consider the specific nature of PDF forms in a subsequent update.
+
+Before beginning to tag a page, you need to be aware of the different tag types that exist, analyse the content which is appropriate for each tag type, and then, for each item of content, assign the tag which describes it best. When you have done this analysis for each content item on the page, you just need to go through the steps to associate the tag with each content item.
+
+8.2 Document title
+
+Properties of the document heading tag:
+
++-----------------------------------+-----------------------------------+
+| Type:                             | Heading                           |
++-----------------------------------+-----------------------------------+
+| Tag name:                         | <H>                               |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+The Heading tag is used for the document title. Normally, this is the title shown on the cover, or first page, of the document.
+
+This tag must only be used once in a PDF document.
+
++---------------------------------------------------------------------------------+
+| Screen actions:                                                                 |
+|                                                                                 |
+|   ------------------                                                            |
+|   tagged-exercise-                                                              |
+|   ------------------                                                            |
+|                                                                                 |
+| A title is shown on the cover page (page 1), of the exercise book for tagging ( |
+|                                                                                 |
+|   ----------                                                                    |
+|   book.pdf                                                                      |
+|   ----------                                                                    |
+|                                                                                 |
+| )                                                                               |
++---------------------------------------------------------------------------------+
+
+8.3 Section headings
+
+Properties of the section heading tags:
+
++-----------------------------------+------------------------------------+
+| Types:                            | Heading Level 1 to Heading Level 6 |
++-----------------------------------+------------------------------------+
+| Tag names:                        | <H1> ^(to) <H6>                    |
+|                                   |                                    |
+| Tag icon:                         | []                                 |
++-----------------------------------+------------------------------------+
+
+The section headings make it possible to define the hierarchy of headings and sub-headings in the document.
+
+The first headings must be level 1 headings (<H1>), the child headings underneath them (<H2>), and so on, up to a maximum of level 6 (<H6>), if necessary.
+
+[]
+
+Note:
+
+You can also tag an image as a heading. To do this, tag the image with a <Figure> tag with the appropriate alternate text for the image. The <Figure> tag is then inserted as a child of the heading tag.
+
+8.4 Paragraphs
+
++-----------------------+-----------------------+-----------------------+
+| Type:                 |                       | Paragraph             |
++-----------------------+-----------------------+-----------------------+
+| Tag name:             |                       | <P>                   |
+|                       |                       |                       |
+| Tag icon:             |                       | []                    |
++-----------------------+-----------------------+-----------------------+
+
+All standard text that is not a heading and that cannot be tagged with other tags is identified as a paragraph.
+
+The majority of text in a document is tagged with this element. Introductory paragraphs, abstracts, or text that is highlighted graphically (except quotations) do not have specific tags, and must be tagged as paragraphs. 
+
+8.5 Images and captions
+
++-----------------------+-----------------------+-----------------------+
+| Type:                 |                       | Figure                |
++-----------------------+-----------------------+-----------------------+
+| Tag name:             |                       | <Figure>              |
+|                       |                       |                       |
+| Tag icon:             |                       | []                    |
++-----------------------+-----------------------+-----------------------+
+
+The Figure tag is used to identify images which convey information.
+
+[] Important note:
+
+Only images which require alternate text need tagging. All images which are purely decorative should be defined as artifacts. 
+
++-----------------------------------+-----------------------------------+
+| Type:                             | Caption                           |
++-----------------------------------+-----------------------------------+
+| Tag name:                         | <Caption>                         |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+[] Tip:
+
+You can tag an image and the corresponding caption in a single procedure—from the TouchUp Reading Order dialog box. To do so, you need to select the image and the caption in the document pane, and then click Figure/Caption in the TouchUp Reading Order dialog box.
+
+[]
+
+[]
+
+When a Figure tag contains a text-type content item (such as a caption), this is not replaced by the alternate text of the image (this is the only tag which operates in this way). So, screen readers will read the alternate text of the image and then the caption. 
+
+8.6 Lists and list items
+
++-----------------------+-----------------------+-----------------------+
+| Tag types:            |                       | List, List item       |
++-----------------------+-----------------------+-----------------------+
+| Tag names:            |                       | <L>, <LI>             |
+|                       |                       |                       |
+| Tag icons:            |                       | []                    |
++-----------------------+-----------------------+-----------------------+
+
+List tags are nested, with each list item contained in a separate <LI> tag. The <LI> tags of a single list are then regrouped as children of a <L> tag. 
+
+You can choose not to include the bullet point of a list in the tag. by placing it in an artifact. However, when the list is a numbered list, it is essential that the number be present in the <LI> tags.
+
+[]
+
+Note: The tags List item body (<LBody>) and Label (<Lbl>), are also sometimes present, for example, in
+
+PDF documents exported from Word. With these tags you can specify the label and article body (for example, the bullet and the text, or the identifier and the text). If they are present, they can be kept, but there is no point in adding them manually. 
+
+[]
+
+Figure 20: when data in a chart is displayed as text that can be selected, the chart data can be structured in one or several lists. This is the case with the pie chart on page 5 of the tagging exercise book.
+
+[] Important note:
+
+In order to improve the readability of documents on mobile devices or to magnify the text of a PDF document, Adobe Reader includes the “Reflow” functionality which presents the document in a single column taking up the entire width of the screen.
+
+For items such as visually complex graphics with a non-linear display, reflow may be unsatisfactory. You need to check the reflow of the tagged document (see “9 - Checking the content reflow” on page 72).
+
+8.7 Contents
+
++-----------------------------------+-----------------------------------+
+| Tag types:                        | Table of Contents,                |
+|                                   |                                   |
+|                                   | Table of Contents Item            |
++-----------------------------------+-----------------------------------+
+| Tag names:                        | <TOC>, <TOCI>                     |
+|                                   |                                   |
+| Tag icons:                        | []                                |
++-----------------------------------+-----------------------------------+
+
+The Table of Contents tags have a similar structure to lists and are created in the same way.
+
+These tags are used for the contents of the document. 
+
+[]
+
+8.8 Tables
+
+Introduction:
+
+A table is made up of rows containing data cells or header cells. The concept of a column does not exist in tagging: a column is made up of cells located in the same vertical position in the different table rows.
+
+8.8.1 Tagging rows, cells and headers
+
++-----------------------------------+--------------------------------------------------------------+
+| Tag types:                        |             Table,                                           |
+|                                   |                                                              |
+|                                   |       Table Row,    Table Header Cell,       Table Data Cell |
+|                                   |                                                              |
+|                                   |                                                              |
+|                                   |                                                              |
+|                                   |                                                              |
++-----------------------------------+--------------------------------------------------------------+
+| Tag names:                        | <Table>, <TR>, <TH>, <TD>                                    |
++-----------------------------------+--------------------------------------------------------------+
+| Tag icons:                        | []                                                           |
++-----------------------------------+--------------------------------------------------------------+
+
+When a data table is designed using the table creation functionalities in the authoring software, you can tag it very quickly⁹. You just need to open the TouchUp Reading Order dialog box, select the complete table in the document pane and then click on Table.
+
+The complete structure of the table is then created in the Tags navigation panel. Each cell is contained in a <TD> (Table Data) tag or <TH> (Table Header) tag. The cells are contained in rows in 10 <TR> (Table Row) tags, which are themselves children of a <Table> tag. 
+
+The more the table resembles a “standard” table, the more effective this method of tagging will be. If this method does not work (the <TR> and <TD> tags are not created), it is then necessary to tag the table cell by cell by creating the tags one by one and by associating the required content with each one.
+
+[]
+
+~~                                                   ~~  
+
+⁹   It is very important to respect a certain number of rules when creating a document in the authoring software, so that it is subsequently easier to make the PDF document accessible. You will find more information in the document “Making PDF documents accessible: guidelines for the DTP creation phase” available at www.accede.info/en/manuals.  
+
+¹⁰  Acrobat systematically creates tables in a <Sect> tag which can be deleted; as it is of no value to users of screen readers.
+
+[]
+
+At this stage (or when you modify an automatically tagged PDF), three different problems can arise that can be resolved as follows:
+
+-       It is possible that certain headers are not correctly identified and are tagged as simple data cells. If this is the case, rename the <TD> cells as <TH> cells (or vice versa if the cells are mistakenly identified as headers).
+
+-       Occasionally, some data may not be enclosed in the table tag. If this is the case, add the data to existing cells or in new cells by using the methods shown in the section “6.2.2 Associating content with the tag (3 possible methods)” on page 26.
+
+-       Finally, you may find that some cells are not correctly tagged, with several different cells sometimes regrouped in a single <TD> or <TH> tag. If this happens, delete the corresponding tags
+
+and re-create them. Then insert each content in the required tag by using the methods explained in the section “6.2.2 Associating content with the tag (3 possible methods)” on page 26.
+
+[] Tip:
+
+It is sometimes a good idea to select just the most regular part of a table and then manually add the tags for the irregular rows or columns that are excluded from this selection.
+
+Note: The <TH> tag is the only tag to which you cannot add alternate text because it will not be read by screen readers. If you wish, for example, to provide an alternate text “Other documents” to the “Others” header in the table, you need to nest a tag (for example a <P> tag) as a child of the <TH> tag, that contains the “Others” text. You can then enter the alternate text in the <P> tag. 
+
+8.8.2 Link the headers with their corresponding cells (2 possible methods)
+
+The next job is to link each header to the cells which are associated with it. To do this, first open the Table Editor from the TouchUp Reading Order dialog box. 
+
+[]
+
+[]
+
+Note: It is possible to display the type of cells (<TD> or <TH>) directly in the red grid displayed by the Table Editor. To do this, open the Table Editor Options (accessed by right-clicking on the red grid), and then select the option Show cell type (TH or TD).
+
+[] 
+
+Figure 21: display the cell types in the Table Editor
+
+8.8.2.1 Method n°1 for “basic” data tables (row and column data)
+
+A data table is “basic” when it has only column headers or row headers. Each table header covers the complete length of one or more rows or the complete length of one or more columns. 
+
+With the Table Editor activated, open the Table Cell Properties dialog box, by right-clicking on the red grid. 
+
+In this dialog box you can define the scope of basic table headers. Headers which are linked to cells in the same line are row headers; headers which are linked to cells in the same column are column headers. 
+
+[]
+
+[]
+
+8.8.2.2 Method n°2 for “complex” data tables (cells linked to their header by an ID)
+
+For “complex” data tables, that are tables with headers that apply only partially to a row or column, you need to use this second method. 
+
+In the Table Editor, open the Table Cell Properties dialog box, by right-clicking on the red grid. 
+
+Rather than defining the scope of each header, you need to give it an ID. Each ID must be unique, begin with a letter, and consist of a character string without spaces and accented characters. 
+
+For each cell to be linked to the header, you then need to assign it to the ID or IDs of the corresponding headers.
+
+[]
+
+[]
+
+When screen readers read a cell, they announce the corresponding headers in the opposite order to that displayed in the Associated Header Cell IDs list. So, for example to read “Lyon, average, July
+
+2007” for the cell “24.1°”, you need to enter the associated header IDs in the order july2007, average07 and lyon.
+
+8.9 Quotes and block quotes
+
++-----------------------------------+-----------------------------------+
+| Tag types:                        | Quote, Block Quote                |
++-----------------------------------+-----------------------------------+
+| Tag names:                        | <Quote>, <BlockQuote>             |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+The Quote tag is used for inline quotes (within a paragraph, for example), the Block Quote tag is used for block quotes that are displayed on their own. 
+
+[]
+
+8.10 Links
+
++-----------------------------------+-----------------------------------+
+| Tag type:                         | Link                              |
++-----------------------------------+-----------------------------------+
+| Tag name:                         | <Link>                            |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+The Link tag is used to enclose clickable content (hyperlinks) present in the PDF document. The <Link> tag must enclose precisely the content which is clickable. A link tag may be included in a paragraph or be an item in a list, for example.
+
+[]
+
+8.11 Spans
+
++-----------------------------------+-----------------------------------+
+| Tag type:                         | Span                              |
++-----------------------------------+-----------------------------------+
+| Tag name:                         | <Span>                            |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+This tag does not identify the type of content associated with it. It can be used for a word or group of words without the user of a screen reader being aware of its presence. The span may be used in these specific cases to indicate, for example, a change of language of a word ^(^([7])) or an expression within a paragraph.
+
+The span can also be used to attribute alternate text to a word or group of words which are not already structured with a tag. 
+
+[]
+
+Note:
+
+Be careful not to confuse the Span tag with the row and column spans for use with tables. 
+
+8.12 Footnotes
+
++-----------------------------------+-----------------------------------+
+| Tag type:                         | Note                              |
++-----------------------------------+-----------------------------------+
+| Tag name:                         | <Note>                            |
+|                                   |                                   |
+| Tag icon:                         | []                                |
++-----------------------------------+-----------------------------------+
+
+[]
+
+Note:
+
+It is important that the footnotes are read as soon as possible after the footnote callout, without, nonetheless, interrupting the flow of information. For example, when there is a footnote callout within a paragraph, have the paragraph read until the end, and then read the footnote afterwards by placing the corresponding tag just after it. 
+
+8.13 Document, parts, divisions, articles and sections
+
+  ------------ --- -----------------------------------------------------
+  Tag types:       Document^(,)Part^(,)Division^(,)Article^(,)Section
+  Tag names:       <Document>, <Part>, <Div>, <Art>, <Sect>
+  Tag icons:       [] 
+  ------------ --- -----------------------------------------------------
+
+These tags are container elements which make it possible to group together a set of tags. They can be used to organize the tag tree structure. Screen reader software does not take these tags into account.
+
+[] 
+
+Figure 22: for the tagging exercise book, (tagged-exercise-book.pdf) parts and sections are used to organize the tags by section and by page (when a section contains more than one page). 
+
+8.14 Other tags (references, formulas, bibliography entries…)
+
+In addition to the tags previously discussed, Acrobat recognizes a number of additional tags as Standard PDF Tags^(^([8])) including, for example:
+
+-       Reference (<Reference>) for references to text located in the same document but on another page. This tag may sometimes be useful for catch lines or lead-ins on a magazine cover page which send the reader to articles inside the magazine.
+
+-       Formula (<Formula>) for mathematical formulas.
+
+-       Bibliography entry (<BibEntry>) for details on where cited information can be found…
+
+In the great majority of cases, however, the tags presented elsewhere in the guide are enough for tagging a PDF document.
+
+9 - Checking the content reflow
+
+9.1 Content tab overview
+
+9.1.1 Highlight the content
+
+You can highlight content, as with the Tags navigation panel. To do so, open the Content panel options and then select the option Highlight content. With this option selected, when you select an item in the content tree structure, the corresponding content is shown in the document pane with a blue border.  
+
+9.1.2 Content tab overview
+
+The Content tab lists all the elements on each page of the document, whether they are tagged or not. Content items are categorized in two different ways in the tree structure:
+
+1.     The content is enclosed in one or several containers having the same names as the corresponding tag names. The containers are symbolized by a pictogram of a cardboard box [].
+
+[] 
+
+Figure 23: tagged content is shown in containers with the same name as the corresponding tag. For example, content placed in artifacts are in <Artifact> containers.
+
+Note: 
+
+For each tag created and associated with a content item in the Tags navigation panel, a corresponding container is created in the Content navigation panel. When you subsequently delete or edit tags, it may happen that the content items are nested in several containers. This has no impact on the accessibility of the document.
+
+2.     Content items are directly placed at the root of the content tree structure. These are items that have not been tagged.
+
+[] 
+
+Figure 24: A “Path” type content (vector item) is not in a container. This is the decorative arrow on the cover. As this item has not been tagged, it will not be conveyed to the user of a screen reader.
+
+In this navigation panel, three types of content can be identified:
+
+1.     Text content [] 
+
+2.     Image content [] (photographs or other images included in the PDF)
+
+3.     Vector content [] (content created in a DTP program or imported vector content). Usually, a vector item is composed of several path type content items.
+
+9.2 Placing items which do not convey information in artifacts
+
+Reminder:
+
+A content item placed in an artifact is content that will not be read by screen readers. You can directly define content items as artifacts during the tagging process (see “6.2.10 Marking content as an artifact (2 possible methods)” on page 43).
+
+However, if you have not already done this, you need to place all remaining content in artifacts (content that is not tagged and not already in artifacts).
+
+To define content as an artifact from the Content navigation panel, select the content, and then in the options [] (or by right-clicking on the selected content in the Content navigation panel), select Create Artifact.
+
+[]
+
+Figure 25: When the option “Create an artifact” is selected, a dialog box is displayed in order to choose the type of artifact and the anchor position. At the current time, we have not established the purpose of these options which are not documented. We therefore recommend that you leave the default options.
+
+Note:
+
+  ------ ------------------------ -----
+  Ctrl    + click the items (or   Cmd
+  ------ ------------------------ -----
+
+You can select multiple content items and define them as artifacts in a single procedure. To do this,  click on a Mac), and then open the Options [] menu (or right-click on
+
+one of the selected content items).
+
+9.3 Content reflow
+
+Reminder:
+
+The reflow functionality is described in the section “3.4 Content reflow” on page 15. 
+
+[] Important note:
+
+We strongly advise you not to tag a document in Adobe Acrobat in reflow display mode. Sometimes the cover gets blocked in reflow mode even when a standard zoom level is applied. Moreover, the reflow can only be carried out when the document is marked as tagged (see “10.3 Marking the document as tagged” on page 82). For as long as the tagging is not finished, we therefore recommend that you use the Order navigation panel to check the theoretical reflow order (see following section).
+
+In addition, the functions you can carry out on the Order, Tags, and Content navigation panels are blocked by Acrobat when this display mode is activated.
+
+9.3.1 Checking the reflow order of a page with the Order navigation panel 
+
+It is possible to use the Order navigation panel to check (but not correct) the order content items overlay each other on the page, and also the reflow order. 
+
+[]
+
+9.3.2 Improving the reflow of a page with the Content navigation panel
+
+[*] Reminder: Bearing in mind the difficulties associated with using the Order navigation panel, we strongly advise you not to use it for changing the order of content reflow. 
+
+To edit the order of content in reflow mode, we will therefore use the Content navigation panel. To change the order, just move the containers and artifacts in the content tree structure. When you reflow the document, the containers will be displayed in the same order as that in the tree structure, and the artifacts will not be displayed. 
+
+[]
+
+[]
+
+[] 
+
+Figure 26: on page 8 of the tagging exercise book, the reflow order for the bar chart must be considerably reworked so that each value pair (year and value) is displayed one after the other. On the chart the title will be displayed in position 3, then the first value pair (n°4 and n°5), and then the second (n°6 and n°7), and so on. 
+
+[*] Important note:
+
+Reflow only takes into account the tagging and defined order when the document is saved as a “Tagged document”. We advise you to carry out this task when the tagging has been completed in its entirety. See section “10.3 Marking the document as tagged” on page 82 for more information.
+
+[] Tip:
+
+The reflow order of content also corresponds to the order in which copied text is pasted by a user.
+
+9.4 Using the content panel to resolve visual overlay problems
+
+The Content navigation panel described above also allows you to resolve the problems of visual overlay which may occur after tagging content with the TouchUp Reading Order dialog box. 
+
+For example, when you move an item up in the content tree structure, this is placed in the background in the document pane. It is therefore possible that by moving items to change the reflow order, you are also changing the order objects overlay each other on the page. 
+
+[]
+
+ 
+
+ 
+
+[] Tip:
+
+To correct the problems of object overlay in the Content navigation panel more easily, we recommend that you move the largest possible number of decorative content items (artifacts) to the beginning of the tree structure, because decorative items are mainly used for the background on pages. On the other hand, tagged content should be positioned at the end of the tree structure. 
+
+When you have several artifacts on a page, be careful when you move them up the tree structure. It is important that they appear in the same order amongst themselves, so that you avoid objects overlaying each other incorrectly. 
+
+10 - Completing the document
+
+10.1 Generating bookmarks (if required)
+
+When you have tagged and checked the reading order of all the pages, you can then proceed to create bookmarks for the document. This procedure takes little time.
+
+Bookmarks are a set of links which are displayed when consulting the PDF file (in Adobe Reader, for example) and which enable the user to navigate within the document.
+
+Bookmarks are very important for long documents, with several pages or more. They are not necessary for short documents of one or two pages, such as leaflets. 
+
+[] 
+
+Figure 27: view of bookmark links in Adobe Reader.
+
+Bookmarks can be generated directly from the authoring software (InDesign, Xpress or an office suite) from the paragraph styles, for example. It is also possible to create them automatically in Acrobat Pro from the Bookmarks [] navigation panel. 
+
+To generate the bookmarks, open the Bookmarks navigation panel, and select New bookmarks from structure. The list of tags used in the document is displayed. You can create the bookmarks from the tags. For example, you could create the bookmarks from the tags <H1> through to <H6> or the <Part> tags. The bookmark names are retrieved from the title of the tags. If there is no tag title, the tag content is used 
+
+ 
+
+ 
+
+[]
+
+Note:
+
+  -----
+  Cmd
+  -----
+
+  ------
+  Ctrl
+  ------
+
+[][]After creating the bookmarks you can move, edit, or delete each generated bookmark in the bookmark tree structure. It is also possible to add a bookmark manually by using the New Bookmark option in the navigation panel options (or by using the keyboard shortcut  + B on a Windows PC or  + B on a Mac.
+
+10.2 Indicating the link tab order
+
+When a PDF document has hypertext links or form fields, you need to define the order in which the user tabs through links on a page^(^([9])). To define the tabbing order, open the Pages [] navigation panel. This panel displays miniatures or thumbnails of the pages in the document. Select all the miniatures in the navigation panel, and then open the Properties dialog box (right-click on one of the vignettes).
+
+In the Page Properties dialog box, select Use Document Structure on the Tab order tab. The tabbing order for links and form fields will then be the same as the specified reading order for voice or Braille.
+
+[]
+
+10.3 Marking the document as tagged
+
+When you have finished tagging the document, you need to indicate that the document is tagged by selecting the option Document is tagged PDF in the Tags navigation panel options.
+
+[] Important note:
+
+You need to perform this task in order to activate the reflow option.
+
+[]
+
+Figure 28: in the Document Properties, it is then indicated Tagged PDF: Yes. 
+
+10.4 Providing an explicit title to the file (best practice)
+
+It is important to save the PDF with a short file name which is sufficiently intelligible. It will be clearer for users to find the content of the file if it has the file name tags-exercise-book rather than  tg-ex-bk-v3.bk. 
+
+10.5 Defining the initial view of the document (best practice)
+
+Finally, we advise you to define the initial view of the document before it is published. In the Document Properties (File > Properties), select the Initial View tab, and then in the Magnification drop-down list, select an appropriate zoom level (Fit Page for example). When the user subsequently opens the document, the whole page will be displayed on the screen.
+
+[] 
+
+Figure 29: magnification options for the initial view of the document
+
+ 
+
+11 - Checking the accessibility
+
+11.1 Using the Acrobat accessibility check
+
+11.1.1 Overview of the accessibility full check
+
+Adobe Acrobat Pro includes an accessibility check, which is found in the menu Advanced > Accessibility > Full Check^(^([10])).
+
+[] 
+
+Figure 30: dialog box for carrying out a full check on the accessibility of the document.
+
+When you run the full accessibility check, a detailed report is generated which describes the problems encountered and the suggested methods for resolving them. 
+
+It is possible to run the full check on the entire document or on a limited page span (for example you could check the accessibility on a page by page basis after you have finished tagging a page).
+
+Adobe Acrobat Pro 9 includes four checking options:
+
+1.     Adobe PDF
+
+2.     Section 508 Web-based intranet and internet information and applications 
+
+3.     W3C® Web Content Accessibility Guidelines 1.0
+
+4.     W3C® Web Content Accessibility Guidelines 2.0 (Working Draft 27 April 2006)^(^([11]))
+
+We recommend using the first option (Adobe PDF) as it is the one which offers the most help for correcting errors found during the check.
+
+It is possible to choose the tests to carry out from the seven selected tests:
+
+1.     Alternative descriptions are provided;
+
+2.     Text language is specified;
+
+3.     Reliable character encoding is provided;
+
+4.     All content is contained in the document structure;
+
+5.     All form fields have descriptions;
+
+6.     Tab order is consistent with the structure order;
+
+7.     List and table structure is correct.
+
+We advise you to leave all seven tests selected. 
+
+When you run the full check, a report is created that indicates any errors encountered in the document.
+
+[] 
+
+Figure 31: the checker specifies that no problems were found in the document.
+
+[] Important note:
+
+The accessibility checker runs through a set of automated tests. The absence of errors does not mean that the document is perfectly accessible. The tool cannot check, for example, that content marked as artifacts is strictly decorative, that alternative text is intelligible or accurate, or that the correct tags are used for each content item.
+
+11.1.2 Examples of error messages
+
+11.1.2.1 Example 1: “Elements not contained in structure tree” error
+
+When the accessibility report indicates that one or more elements are not contained in the structure tree, the link Inaccessible page content is shown so you can highlight the corresponding content. 
+
+Each content element indicated by this error is neither tagged, nor in an artifact. So, to correct the problem, you need to insert the content in a tag if the content conveys information, or place it in an artifact if it does not (see section “6.2.10 Marking content as an artifact (2 possible methods)” on page 43).
+
+[] 
+
+Figure 32: the “Contents” element is inaccessible as it has not been tagged or placed in an artifact. To resolve the problem, you need to tag the text as it conveys information.
+
+11.1.2.2 Example 2: “Missing Unicode encodings”
+
+The full accessibility check may sometimes indicate the error “Missing Unicode encodings”. Unicode is a standard which makes it possible for text characters to be interpreted whatever the operating system or software used. 
+
+During the reading of a PDF file with a screen reader or export in text format, Adobe Reader (or Acrobat) automatically converts the typefaces used in the file to Unicode text. Some typefaces do not permit this conversion and become incomprehensible. 
+
+For example, if you copy-paste some text indicated by the error “Missing Unicode encodings” into Notepad, this will be displayed as a string of characters such as “??????” or “□□□□□”. 
+
+In this case, the only solution to resolve the problem with Acrobat Pro is to add the alternate text to the text elements which have this problem. 
+
+A better solution, however, is to replace the typeface in the source document in order to resolve the problem in the generated PDF. It is a good idea to choose an Open Type typeface. Further details on this recommendation are described in the AcceDe manual “Making PDF files accessible: Guidelines for the DTP creation phase” (available on www.accede.info/en/manuals/).
+
+11.2 Exporting the PDF in text format
+
+You can export a PDF document to an accessible text format to check your work.
+
+To export the text, select File > Export > Text > Text (Accessible).
+
+The text file makes it possible to check:
+
+-       the order in which information is read by screen readers;
+
+-       the alternate text for each image;
+
+-       that text segments are not missing because they were mistakenly placed in artifacts;
+
+-       and that the character encoding is reliable and correctly displayed.
+
+[]
+
+[]
+
+Note: You can also export a PDF file to the “Accessible text” format by using the save function (File > Save
+
+  ------ ---- -------
+  Ctrl    +   SHIFT
+  ------ ---- -------
+
+  ----- ---- -------
+  Cmd    +   SHIFT
+  ----- ---- -------
+
+[][]as) or  + S on a Windows PC or  + S on a Mac. You then need to select
+
+Text(Accessible)(*.txt) in the Save as type drop-down list.
+
+11.3 Jaws / NVDA
+
+It is advisable to check the behaviour of each PDF file with a screen reader such as Jaws^(^([12])) or NVDA^(^([13])).
+
+Jaws is the only reader that is able to change from one language to another within a PDF document. It is also the most effective screen reader for reading data tables. 
+
+Until the version 2010.2, NVDA was not able to read tables of data with the automatic identification of column and row headers, but this functionality is marked as a future goal on their roadmap. Apart from this drawback, NVDA, which is free, is a useful test tool. 
+
+Adobe offers a guide in English describing the methods for navigating in a PDF file with a screen reader: Accessing PDF Documents with Assistive Technology: A Screen Reader User’s Guide (PDF, 368kb).
+
+11.4 PDF-Accessibility-Checker (PAC)
+
+To test the accessibility of your PDF documents, we recommend the software PDF-AccessibilityChecker (PAC) ^(^([14])). This free software is available from Access For All (Switzerland) and provides an error report for PDF documents.
+
+[] 
+
+Figure 33: PDF-Accessibility-Checker checks, for example, that the language and title of the document have been entered, that the document is marked as tagged, and that the tags have been corrected used.
+
+Note: This tool indicates certain errors which are not described in this manual. For example, PDF-
+
+Accessibility-Checker reports an error if the <Document> tag (which is the parent tag of all the tags in the document) is missing (see section “8.13 Document, parts, divisions, articles and sections” on page 70). However, a number of tests have shown that this tag is not indispensable and is not used by screen readers. So, you do not need to add it, even though its omission is indicated as an error by PDF-Accessibility-Checker. 
+
+12 - Appendix
+
+12.1 Specific cases
+
+12.1.1 Lines that straddle two pages
+
+When a text segment straddles two pages, it cannot be correctly read by screen readers (which read information page by page). 
+
+In this case, you need to tag just one part of the text (for example, the text displayed on the first page) and then enter the complete text segment as alternate text. The second element displayed on the following page is integrated in an artifact so that it is not read. 
+
+[]
+
+12.1.2 Text with shadow effects
+
+Some authors create shadow text by overlaying different layers of text. Shadow text created in this way may be read twice with each text string in a different tag. You need to place the shadow part of the text in an artifact (as long as it has not been vectorised in the authoring software).
+
+Screen actions:
+
+An example of shadow text is shown on page 8 of the exercise book (tagged-exercise-book.pdf).
+
+12.1.3 Other specific cases
+
+This section will be expanded over time to include specific difficulties which are encountered when tagging documents. 
+
+12.2 Security parameters
+
+If you want to protect the PDF document by restricting printing or modification of the document, click File > Properties, and then select the Security tab. Select Password Security as the Security
+
+Method. In the Password Security – Settings dialog box, make sure you select the option Enable text access for screen reader devices for the visually impaired. If you don’t, the document cannot be read by screen readers even if it is tagged. 
+
+[] 
+
+Figure 34: select the option Enable text access for screen reader devices for the visually impaired in the Password Security – Settings dialog box.
+
+12.3 Role maps
+
+Role mapping is a functionality that is mainly used with authoring software tools (such as Microsoft Word or Adobe InDesign for example). 
+
+When PDF documents are generated from these tools, it is possible that the tags have names which do not conform to the Standard PDF tag names used by Adobe Acrobat, with, for example, <Heading_1> instead of <H1> or <Paragraph> instead of <P>. 
+
+These tools usually generate the tag names from the names of paragraph styles used in the source document. Role mapping makes it possible to indicate, for example, that the <Heading_1> tags correspond to the <H1> tags.
+
+You can view the list of role map items by selecting Edit Role Map in the Tags navigation panel options. 
+
+You can then create new role map items or modify existing ones.
+
+[]
+
+[]
+
+12.4 Character recognition in scanned documents
+
+Adobe Acrobat includes a character recognition tool, which is especially useful for scanned documents that you subsequently want to tag. This functionality is found in Document > OCR Text Recognition > Recognize Text Using OCR (optical character recognition). 
+
+12.5 List of frequently used tags
+
+  ------------------------------------- --------------- -----------
+  Tag type                              Tag name        Tag icon
+  Heading                               <H>             [] 
+  Heading Level 1  to Heading Level 6   <H1> à <H6>     [] 
+  Paragraph                             <P>             [] 
+  Figure                                <Figure>        [] 
+  Caption                               <Caption>       [] 
+  List                                  <L>             [] 
+  List Item                             <LI>            [] 
+  Table of Contents                     <TOC>           [] 
+  Table of Contents Item                <TOCI>          [] 
+  Table                                 <Table>         [] 
+  Table Row                             <TR>            [] 
+  Table Header Cell                     <TH>            [] 
+  Table Data Cell                       <TD>            [] 
+  Link                                  <Link>          [] 
+  Note                                  <Note>          [] 
+  Reference                             <Reference>     [] 
+  Citation                              <Cite>          [] 
+  Block Quote                           <BlockQuote>    [] 
+  Document                              <Document>      [] 
+  Part                                  <Part>          [] 
+  Division                              <Div>           [] 
+  Article                               <Art>           [] 
+  Section                               <Sect>          [] 
+  Span                                  <Span>          [] 
+  ------------------------------------- --------------- -----------
+
+ 
+
+------------------------------------------------------------------------
+
+[1] By following this guide you can communicate to a third party the level of tagging you require and the procedures that need to be followed. In addition section “11 - Checking the accessibility” (page 86) enables project managers to carry out quality checks so that they can assess the quality of tagging carried out by a third party.
+
+[2] You cannot manually tag a PDF document with the Standard version of Adobe Acrobat.
+
+[3] “Acrobat temporarily tags an untagged document before reflowing it. As an author, you can optimize your PDFs for reflow by tagging them yourself. Tagging ensures that text blocks reflow and that content follows the appropriate sequences, so readers can follow a story that spans different pages and columns without other stories interrupting the flow.” Source “Reflow a PDF”, Adobe (http://help.adobe.com/en_US/Acrobat/9.0/Standard/WS58a04a822e3e50102bd615109794195ff-7d19.w.html).
+
+[4] The AcceDe web site offers resources for adding accessibility to documents created in authoring tools such as Microsoft Word, Open Office or Adobe InDesign: www.accede.info/en/ressources/.
+
+[5] Reminder: this dialog box is described in section 3.3 TouchUp Reading Order” on page 14.
+
+[6] The tags for the table heading cells <TH> are the only tags which must not have alternate text because they are not read by screen readers. See the note of the section « 8.8.1 Tagging rows, cells and headers ».
+
+[7] See section “6.2.8 Specifying a change of language” to indicate the language for a tag.
+
+[8] The majority of these tags are not currently recognised by screen readers and are interpreted as simple text. The documentation on the available tags in Acrobat 9 can be accessed on line at 
+
+http://help.adobe.com/en_US/Acrobat/9.0/Professional/WS58a04a822e3e50102bd615109794195ff-7cd8.w.html 
+
+[9] Some users do not use the mouse to navigate in the document. They navigate in the document by going from link to link or form field to form field by using the TAB key on a physical or virtual keyboard.
+
+[10] There is also a Quick Check tool, which we do not recommend as it only states whether the document has serious accessibility problems or not.
+
+[11] The WCAG 2.0 are the current accessibility standards for Web content. Nonetheless, the April 2006 version is an old draft version, different from the current applicable version, which dates from 11 December 2008.
+
+[12] Jaws (“Job Access with Speech”) is a proprietary product and charges a fee. It is the most widely used screen reader. Source Screen Reader User Survey Results, WebAim, October 2009 (http://www.webaim.org/projects/screenreadersurvey2/)
+
+[13] NVDA is an open-source screen reader, and is free. It is available for download from www.nvda-project.org
+
+[14] Download PDF-Accessibility-Checker, Access For All 
+
+(http://www.access-for-all.ch/en/pdf-werkstatt/pac-pdf-accessibility-checker.html)

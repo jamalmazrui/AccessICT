@@ -1,0 +1,347 @@
+﻿
+
+[] 
+
+Accessible Presentations in Microsoft PowerPoint
+
+Todd M. Weissenberger, University of Iowa
+
+Microsoft PowerPoint is one of the most popular presentation tools in use today. PowerPoint lets you create engaging presentations and interactive materials for print, digital sharing, and in-person presentation.
+
+Here are a few tips and tricks to help you provide Microsoft PowerPoint presentations that are usable and accessible to any audience.
+
+Accessible Presentations in Microsoft PowerPoint................................................................................ 1
+
+PowerPoint Accessibility To-Do List.................................................................................................. 2
+
+Microsoft PowerPoint Accessibility Checker..................................................................................... 3
+
+PowerPoint Slide Layout, Placeholders, and Slide Masters................................................................. 5
+
+Customize Slides in Slide Master View.............................................................................................. 7
+
+Content Reading Order................................................................................................................... 8
+
+Use Sufficient Color Contrast........................................................................................................... 9
+
+Provide Meaningful Link Text......................................................................................................... 11
+
+Provide Row and/or Column Headers for Data Tables..................................................................... 12
+
+Provide ALT Text for Images........................................................................................................... 13
+
+ 
+
+ 
+
+ 
+
+                 
+
+ 
+
+PowerPoint Accessibility To-Do List
+
+[]
+
+Microsoft Office Accessibility Checker
+
+•       Use the Accessibility Checker to review accessibility issues in PowerPoint
+
+•       Accessibility Checker covers only a fraction of potential accessibility issues
+
+Slides, Layouts, Placeholders
+
+•       Use slide layouts and placeholders contained in PowerPoint
+
+•       Base custom slide layouts on existing slide layouts and placeholders
+
+•       Modify and add slide layouts in the Slide Master view
+
+•       For each slide, provide a meaningful TITLE at least, along with any other appropriate content
+
+Content Reading Order
+
+•       Ensure that the page title is read first
+
+•       Use the Selection Pane to ensure that your content is presented in the intended reading order
+
+•       Review Slide Masters as necessary to change the order of placeholders
+
+Alternative Text for Images, Graphs, and other Non-text Content
+
+•       Apply contextual alternate text to all images that provide content or functionality
+
+•       For complex images such as charts or graphs, provide a link or reference to a longer description or alternate presentation (e.g., a data table in addition to a chart; a sequence in addition to a visual process)
+
+•       For images that do not provide content or functionality, select “Mark as Decorative” (This feature is not available in all versions of Microsoft Office)
+
+•       Provide appropriate captions or transcripts for media such as linked or embedded audio or video
+
+Color Contrast and Use
+
+•       Ensure that all foreground/background color combinations meet or exceed guidelines for color contrast
+
+•       Do not use color as the sole means of identifying an object in your presentation
+
+Data Tables
+
+•       Identify a header row and column as appropriate for each data table
+
+•       Avoid merging or splitting cells
+
+•       Include borders to clearly separate individual cells
+
+Links
+
+•       Use descriptive text, not URLs, for links
+
+•       Ensure that links point to accessible resources, documents, and websites
+
+Accessible Presentations in Microsoft PowerPoint                                                                                                                                       2
+
+ 
+
+Microsoft PowerPoint Accessibility Checker
+
+[]
+
+Microsoft PowerPoint offers an Accessibility Checker feature that can help you to manage your accessibility tasks. The accessibility checker doesn't provide a comprehensive assessment of a document's accessibility, but it can help you to find opportunities to add important accessibility features to your PowerPoint presentation. This tool is also available in Microsoft Word and Microsoft Excel. 
+
+Run the Microsoft Office Accessibility Checker
+
+•       Select File→Info
+
+•       Select Check for Issues→Check Accessibility 
+
+•       Errors, Warnings, and Tips appear in the Accessibility Checker pane
+
+[] 
+
+When you select one of the Inspection Results, Accessibility Checker will open a panel with Additional Information that describes the accessibiilty problem and offers suggestions on how to fix the issue.
+
+Note
+
+Not all accessibility issues are of equal concern. Focus on structural and content issues like slide titles, content reading order, ALT text, and table structure.
+
+ 
+
+PowerPoint Slide Layout, Placeholders, and Slide Masters
+
+[]
+
+At the center of every presentation is the slide. PowerPoint slides are available in a variety of layouts, and each layout is defined by placeholders, which hold specific kinds of content. Each group of slides is styled with colors, fonts, positioning, placeholders, and other elements to create an overall design scheme, or theme.
+
+View default layouts
+
+On the Home ribbon, locate the Slides section. Select the LAYOUT button to view the layouts that are available by default in the current theme: 
+
+[]
+
+Understanding how slide placeholders and layouts fit together can help you to produce presentations that are robust, easy to update and maintain, and accessible to users of assistive technologies.
+
+                 
+
+Placeholders
+
+Placeholders are fillable regions that you populate with the content of your presentation. By default, most PowerPoint slides come equipped with a “TITLE” placeholder, and one or more placeholders for various types of content. The way these placeholders are configured defines the slide’s “layout”. A PowerPoint theme, or “design” contains a variety of pre-defined layouts that you can use to create individual slides in your presentation.
+
+The correct use of “TITLE” placeholders is a key factor in the accessibility of your PowerPoint presentation. The “TITLE” placeholder announces the title of the slide to a screen reader, typically along with the slide number (e.g., “Slide 3”); this information helps users to remain oriented within your presentation and to understand the intended purpose of individual slides. The “TITLE” placeholder should always contain meaningful content, and should be the first content element a user encounters in any slide. 
+
+Placeholders also define the reading order for objects on a slide. All slide content should be contained in placeholders, and placeholders should be organized to reflect the order in which they are to be read. Presenters can re-order placeholders when making slides, but the order of placeholders in the slide master will serve as a default. See Content Reading Order later in this document.
+
+[]
+
+                 
+
+Customize Slides in Slide Master View
+
+The Slide Master reflects most or all of the formatting choices for a design theme. You can customize colors, fonts, positioning, graphics, background objects and other items for recurring use throughout your presentation.
+
+Customize a Slide Master
+
+•       []From the View ribbon, select Slide Master
+
+•       In the Slide Sorter view, select the layout you want to modify
+
+•       Add or modify fonts, images, background shapes, positioning, placeholders, and other style and content features.
+
+•       []Slides created from customized  slide masters will take on the stylistic and semantic properties of the updated masters.
+
+ 
+
+Add a Custom Layout with Placeholder
+
+To add custom content or content outside an existing placeholder, create a custom slide master with placeholders in the appropriate places. To ensure presentation accessibility, DO NOT use the Text Box feature, or insert images outside of PowerPoint placeholders.
+
+•       Open Slide Master view
+
+•       Select a slide layout you want to modify or customize, or create a new slide
+
+•       Add and arrange placeholders, background shapes, and other components as desired
+
+•       View the modified Slide Master in Normal view
+
+                 
+
+Content Reading Order
+
+[]
+
+For slides that describe a sequence or process, it’s important to ensure that the items on the slide reflect the sequence you want to present. Even when items appear visually to be in order, they may be presented out of their logical order for users of assistive technology.
+
+You can use the Selection Pane to reorder items in your PowerPoint slide. The selection pane reflects the presentation order of slide elements in a stack, proceeding from the bottom to the top. 
+
+To Reorder Objects on a Slide
+
+•       Display the slide in PowerPoint
+
+•       In the “Home” ribbon, select the “Arrange” button and then select “Selection Pane”
+
+•       In the Selection Pane use the arrows (or Drang and Drop) to position the elements in the order you want them read, bottom to top.
+
+[]
+
+Use Sufficient Color Contrast
+
+Providing sufficient contrast between background and foreground colors is not specifically a Microsoft PowerPoint accessibility technique; all documents need a level of contrast that makes them readable by low-vision or color-blind users. In general, light text should go on a dark background, and dark text on a light background.  
+
+In digital documents, colors are constructed using a Red, Green Blue (RGB) color model. In Microsoft PowerPoint, authors typically select colors from a palette associated with the current document.  If you are uncertain which colors your document contains, you can evaluate them for sufficient contrast.
+
+Determine a font color in your Word document 1. Place the cursor in a line of text
+
+2.       Open the Format Font dialog (ALT+O, F)
+
+3.       Open the Font Color picker and select More Colors (ALT+C, M)
+
+4.       The color picker dialog will contain the RGB value of the selected text
+
+[] 
+
+[] 
+
+ 
+
+Use the Colour Contrast Analyser
+
+1.       Download the CCA at http:/www.paciellogroup.com/resources/contrastanalyser/
+
+2.       Select your foreground and background colors from the CCA color picker, or use the eyedropper to select colors from an existing document, or enter color values into the foreground and background color fields
+
+•     To change between HEX and RGB color values, select Options→Displayed Color Value (Control+E for HEX; Control+R for RGB)
+
+3.       Make necessary adjustments to corresponding colors in your Microsoft PowerPoint presentation
+
+[]
+
+The Use of Color to Convey Information
+
+Color should not be the only visual means of conveying information or otherwise communicating with the user of your presentation. Where color is used to distinguish or identify content, provide a secondary method, such as a text label, to convey information visually.
+
+ 
+
+                 
+
+Provide Meaningful Link Text
+
+If you use links in your PowerPoint presentations, be sure the text of the link clearly indicates where the link goes.  Avoid generic link text such as "More" or "Click Here", in favor of descriptive text such as "Read a biography of Carver at Wikipedia" or "View a PDF map of the Canary Islands"
+
+Bad:                                                                       Click here
+
+Slightly better, but still not great:               Click here to learn more
+
+Good:                                                                    Learn more about the Canary Islands
+
+Still better:                                                           Our World: The Canary Islands (Tagged PDF, 1.2 MB)
+
+Consider all of the information contained in the last hyperlink example above—document title, document format, file size—each element conveys information to the user about the upcoming experience, and helps the user to make an informed choice about how to approach the material.
+
+Ensure that links are understandable out of context
+
+If you include links in a body of text, make sure that the link text contains all of the information a user needs to understand the purpose and target of the link. Do not use link text that consists only of the URL. If you want to provide the URL, as in the case of a presentation intended for printing, place it AFTER the link text, and not in the link itself.
+
+Example: 
+
+International Space Station Overview (https://www.nasa.gov/mission_pages/station)
+
+Enter or edit link text in your document
+
+To create or edit link text, you can use the Insert Hyperlink command (Control+K), or select Hyperlink from the Insert tab.  This opens the Insert Hyperlink dialog box, where you can add both your text and your link's URL.
+
+1.       []Highlight the text you want to use as a hyperlink 
+
+2.       Open the Insert Hyperlink dialog (Control+K)
+
+3.       In the "Text to display" field, confirm or edit the text of your link
+
+4.       In the "Address" field, enter the
+
+URL of your link 
+
+                 
+
+Provide Row and/or Column Headers for Data Tables
+
+[]
+
+Compared to other file formats, PowerPoint offers little in the way of accessibility for data tables. Keeping your table as simple as possible; straightforward, grid-shaped tables with a single row of header cells will yield the most accessible results.
+
+Header rows provide a degree of accessibility by making it possible for user to differentiate visually between table headers and data cells. Identify Header Rows and/or Column for your data table
+
+[]Create Your Table
+
+1.       In the Content placeholder, select the Insert Table button
+
+2.       Enter data into your table
+
+3.       Edit the caption if necessary
+
+ 
+
+[]Designate Header Row/First Column
+
+1.       Click inside the table
+
+2.       Place the cursor in a header cell in the top row 
+
+3.       Select the “Design” tab in the
+
+“Table Tools” section
+
+4.       Select a Table Style
+
+5.       Make sure that “Header Row” is checked
+
+ 
+
+ 
+
+ 
+
+                 
+
+Provide ALT Text for Images
+
+Images, charts, and other graphical elements are not read by screen readers, and present an accessibility barrier to users of those technologies. Good ALT text lets users know the meaning and purpose of a graphical element when they can't view the image on the screen.
+
+In PowerPoint, ALT text is exposed to screen readers when an image is positioned in a placeholder or inserted directly onto a slide. As with other slide elements, ALT text will be read by assistive technology according to the reading order in the Selection Pane.
+
+Add ALT text to an image in PowerPoint
+
+1.       Insert an image into an appropriate placeholder in your PowerPoint slide
+
+2.       Highlight the image to reveal its “Format” ribbon
+
+3.       Select the ALT text button
+
+4.       Enter your ALT text in the ALT TEXT pane
+
+5.       If the image is purely decorative, select the “Mark as Decorative” checkbox
+
+[] 
+
+Figure 1: Image with ALT Text Pane
+
+Note: Images inserted outside a placeholder will always generate a warning in the Accessibility Checker.
+
+ 

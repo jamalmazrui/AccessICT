@@ -1,0 +1,516 @@
+﻿
+
+[]
+
+[]
+iOS 13 & iPadOS 13 Accessibility
+
+Switch Control - The Missing User Guide
+
+Table of Contents
+
+New Switch Control Features In iOS 13 and iPadOS 13 ..........................................................................................2
+
+Switch Interface Options ...............................................................................................................................................2
+
+Configuring Switch Control - Auto Configuration ....................................................................................................3
+
+Configuring Switch Control - Single Switch Auto Scanning ..................................................................................3 - 6
+
+Configuring Switch Control - Single Switch Step Scanning..................................................................................6 - 9
+
+Configuring Switch Control - Dual Switch Step Scanning ....................................................................................9 - 12 Switch Control App Developer Resources .................................................................................................................12
+
+New Switch Control Features In iOS 13 and iPadOS 13
+
+IPADOS AND IOS
+
+New this year is iPadOS 13. Previously iOS was the operating system for iPhone, iPad, and iPod touch devices. Now, iOS 13 is the operating system for all iPhone and iPod touch devices.  iPadOS 13 is the operating system  for all iPad devices. Accessibility settings in both iPadOS 13 and iOS 13 are almost identical. 
+
+ACCESSIBILITY SETTINGS
+
+Accessibility settings in iOS 13 and iPadOS 13 have moved.  To access accessibility settings go to Settings App > Accessibility (previously it was Settings App > General > Accessibility)
+
+HEAD TRACKING
+
+Now within Switch Control, there is an option for head tracking. This feature is ONLY available if you have the new iPad Pros or newer iPhone with FaceID. Head tracking uses the front facing FaceID camera to track movements of your head. Facial gestures like a smile or sticking out your tongue then mimick a switch click.
+
+Switch Interface Options
+
+ABLENET BLUE2 BLUETOOTH SWITCH
+
+The Blue2 Bluetooth switch provides one or two switch inputs when used with Switch Control. Users can activate the orange and white switch tops, or they can plug in two external switches for activation. More information available at www.ablenetinc.com
+
+ABLENET HOOK+ IOS SWITCH INTERFACE
+
+[]Hook+ is an Apple MFi approved switch interface that provides a reliable wired connection to the iPad, iPhone, or iPod touch via the Lightning connector. Connect one to four wired switches to Hook+ for use with Switch Control. More information available at www.ablenetinc.com
+
+Configuring Switch Control - Auto Configuration (Hook+)
+
+If you are using the AbleNet Hook+ Switch Interface, you can use Apple’s auto switch configuration feature. The auto switch configuration will automatically configure each switch connected to Hook+ and the scanning style based on the number of switches available.
+
+1.       Go to Settings App > Accessibility > Switch Control
+
+2.       Turn Switch Control on (Note:  The scanning cursor may begin to move on the screen, this is OK if it does.)
+
+3.       Plug one to four switches into Hook+
+
+4.       Plug the Lightning Connector of Hook+ into the Lightning Jack on the device and wait approximately
+
+10-seconds
+
+i.         If a switch is connected to Switch Jack 1
+
+ii.        The device will automatically be configured for use with one switch and automatic scanning iii. The Scanning Style is automatically set to Auto Scanning
+
+iv.      The switch plugged into Switch Jack 1 will be named Select and assigned the function of Select
+
+Item
+
+v.        The scanning cursor will begin to move across the screen
+
+a.       If switches are connected to Switch Jacks 1 and 2
+
+i.                     The device will automatically be configured for use with two switches and step scanning ii. The Scanning Style is automatically set to Manual Scanning
+
+iii. The switch plugged into Switch Jack 1 will be named Select and assigned the function of Select
+
+Item iv. The switch plugged into Switch Jack 2 will be named Next and assigned the function of Move To
+
+Next Item
+
+b.       If switches are connected to Switch Jacks 1, 2, and 3 or 1,2, 3, and 4
+
+i.                     The device will automatically be configured for use with two switches and step scanning ii. The Scanning Style is automatically set to Manual Scanning
+
+iii. The switch plugged into Switch Jack 1 will be named Select and assigned the function of Select
+
+Item iv. The switch plugged into Switch Jack 2 will be named Next and assigned the function of Move To
+
+Next Item
+
+v. The switches plugged into Switch Jacks 3 and 4 will not be configured and will have to be manually configured by going to Settings App > Accessibility > Switch Control > Switches > Add New Switch
+
+5.       Hook+ is now ready to use with Switch Control
+
+Once the auto switch configuration is complete, you are able to go back and change the functions auto assigned to each switch or the scanning style. To change a function assigned to a switch, go to Settings App > Accessibility > Switch Control > Switches and then select the switch you would like to change. To change the scanning style, go to Settings App > Accessibility > Switch Control > Scanning Style.
+
+Configuring Switch Control - Single Switch Auto Scanning
+
+The following procedure will help you configure your device to use Switch Control for single switch auto scanning. The scan on the screen will automatically move at a predetermined interval (scan rate or auto scanning time) and the user will activate one switch to select items. You can use the AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface with these steps.
+
+STEP 1:  SET UP YOUR ACCESSIBILITY SHORTCUT
+
+The Accessibility Shortcut gives you the ability to easily turn Switch Control on or off by triple clicking the home or power button on your device.
+
+1.       Go to Settings App > Accessibility > Accessibility Shortcut
+
+2.       Select Switch Control
+
+STEP 2:  CONNECT YOUR SWITCH
+
+Connect your AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface and one wired switch to your device. For connection instructions please consult your quick start guide that is included with the product or visit www.ablenetinc.com to download the latest quick start guide.
+
+STEP 3:  CONFIGURE YOUR SWITCH
+
+Once your switch is connected to your device, you will need to configure it with Switch Control.
+
+1.       Go to Settings App > Accessibility > Switch Control > Switches
+
+2.       Select Add New Switch
+
+3.       Select External
+
+4.       Activate your switch
+
+a. You may see the message “Switch Conflict - The switch you activated is already being used. Please choose another switch.” If you see this message and are using Blue2, activate the Mode button on Blue2 and try using Mode 2 or 3. If you see this message and are using the Hook+, try using Switch Jack 3 or 4. If you are still having issues, go to Settings App > Accessibility > Switch Control > Switches and delete  the already configured switches.
+
+5.       You will be asked to name your switch. We recommend you name your switch in a way that it makes it easy to identify at a later time (e.g. B2 Mode 1 White Top, Hook S1, etc). Once you have named, select Save.
+
+6.       Choose Select Item
+
+7.       Your switch is now configured. If you want, you can add a second action to this switch by selecting Long Press. If you add a Long Press action, the user will hold activate the switch for a predetermined amount of seconds to access the second action.
+
+STEP 4:  CONFIGURE SWITCH CONTROL SETTINGS
+
+Within Switch Control, there are a variety of settings that will help you customize the user experience.
+
+1.       Go to Settings App > Accessibility > Switch Control
+
+2.       Scanning Style:  Select Auto Scanning
+
+3.       Timing > Auto Scanning Time:  This is how fast the scan will move on the screen of the device. Set the number of seconds appropriate for the user.
+
+The following Switch Control settings are optional for single switch auto scanning, but can be used to further refine the user experience with Switch Control.
+
+RECIPES
+
+A recipe is a recorded gesture or series of gestures (e.g. a macro) that can be repeatedly activated from a switch. The user can start a recipe from the black pop-up menu that appears when scanning or a recipe can be manually started from this settings menu. Recipes are great for repetitive tasks like turning the page in an ebook or a control for a game. A recipe can be set to automatically turn off after a predetermined amount of time or turn off when a second switch is activated.
+
+PAUSE ON FIRST ITEM 
+
+When Pause on First Item is turned on, the scan will pause on the first item for the number of seconds you specify. This pause takes place when the scan first begins, and again after an item has been selected and the scan starts over. This gives the user a chance to quickly look at the screen to determine where the next item they want to select is before the scan starts.
+
+LOOPS 
+
+When Auto Scanning is on, the scan will go through all of the items on the screen and start over. The number of loops is how many times the scan will go through all of the items and start over. After the number of loops has been completed, the scan will stop. Activating the switch will start the scan again.
+
+LONG PRESS
+
+If you added a second Long Press action to your switch,  this is how you set the number of seconds a switch must be activated to trigger the Long Press action. There is also a setting to pause scanning when a long press is activated.
+
+TAP BEHAVIOR
+
+Tap Behavior determines what happens when the user selects an item when scanning.
+
+› Default:  When a user selects an item while scanning a black pop-up menu will appear. Within this popup menu, the user will be presented with choices on how they can interact with the item they have selected.
+
+› Always Tap:  When a  user selects an item while scanning, the tap function will always be used. The user will scan to the end of their screen to bring up the black pop-up menu.
+
+SCAN SAME KEY AFTER TAP
+
+When scanning and typing, this setting enables the user to scan and select the same letter again.
+
+EXTENDED PREDICTIONS
+
+This setting provides the user with a larger list of predictive text.
+
+HOLD DURATION
+
+When Hold Duration is turned on, you can specify the number of seconds a switch must be held down before it is recognized. Turning Hold Duration on can help users with spasticity from accidentally activating the switch at the wrong time during a scan. This setting can also help users who hold down a switch for a long time from activating multiple choices in a row. It should be noted that the Hold Duration time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+IGNORE REPEAT
+
+When Ignore Repeat is turned on, you can specify the number of seconds that a switch can be repeatedly activated before it makes a second selection. Turning Ignore Repeat on can help users with spasticity from accidentally activating the switch multiple times during a scan. It should be noted that the Ignore Repeat time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+POINT SCANNING > GLIDING CURSOR
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. There are three different selection modes available to the user. Single allows the user to make one vertical and one horizontal selection. Refined allows the user to make a vertical and horizontal selection and then make a second selection to further refine where they want to select. Precise is the same as refined, but the second selection is at a slower speed.
+
+POINT SCANNING > GLIDING CURSOR > GLIDING CURSOR SPEED
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. The Gliding Cursor Speed is how fast this scan will move across the screen. The higher the number, the faster the scan will move across the screen.
+
+SOUND EFFECTS
+
+If Sound Effects is turned on, as the scan moves between items on the screen a clicking sound will be activated. This can be helpful for users who need auditory cues.
+
+SPEECH 
+
+If Speech is turned on, when the scan highlights an item it will read back what that item is to the user. This can be helpful for users who need auditory cues or are visually impaired. It should be noted that some items may not be readable.
+
+MENU ITEMS
+
+You can restrict what items show up in the black pop-up menu while scanning.
+
+GROUP ITEMS
+
+To help users scan quicker group items is turned on by default. When Group Items are on, the scan will put items on the screen into groups. The user will then be able to move from group to group, select a group, and then select an item within that group. This is similar to traditional row/column scanning that is used in other programs. When group items is turned off, the scan will scan every item on the screen individually.
+
+LARGE CURSOR
+
+Turning Large Cursor on will increase the size of the border that the scan uses. This makes it more obvious and easier to follow the scan across the screen.
+
+CURSOR COLOR
+
+You can change the color of the scan border to make it more visible on the screen as it moves.
+
+SAVED GESTURES
+
+You can create and save custom gestures like a swipe across the screen and access them from the black pop-up menu during the scan.
+
+STEP 5:  TURN SWITCH CONTROL ON
+
+1.       Triple click your home or power button to activate your Accessibility Shortcut OR
+
+2.       Go to Settings App > Accessibility > Switch Control and turn Switch Control on
+
+Configuring Switch Control - Single Switch Step Scanning
+
+The following procedure will help you configure your device to use Switch Control for single switch step scanning. One switch will be used to move the scan on the screen of the device and selections will be made automatically after a predetermined amount of seconds has passed. You can use the AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface with these steps.
+
+STEP 1:  SET UP YOUR ACCESSIBILITY SHORTCUT
+
+The Accessibility Shortcut gives you the ability to easily turn Switch Control on or off by triple clicking the home or power button on your device.
+
+1.       Go to Settings App > Accessibility > Accessibility Shortcut
+
+2.       Select Switch Control
+
+STEP 2:  CONNECT YOUR SWITCH
+
+Connect your AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface and one wired switch to your device. For connection instructions please consult your quick start guide that is included with the product or visit www.ablenetinc.com to download the latest quick start guide.
+
+STEP 3:  CONFIGURE YOUR SWITCH
+
+Once your switch is connected to your device, you will need to configure it with Switch Control.
+
+1.       Go to Settings App > Accessibility > Switch Control > Switches
+
+2.       Select Add New Switch
+
+3.       Select External
+
+4.       Activate your switch
+
+a. You may see the message “Switch Conflict - The switch you activated is already being used. Please choose another switch.” If you see this message and are using Blue2, activate the Mode button on Blue2 and try using Mode 2 or 3. If you see this message and are using the Hook+, try using Switch Jack 3 or 4. If you are still having issues, go to Settings App > Accessibility > Switch Control > Switches and delete  the already configured switches.
+
+5.       You will be asked to name your switch. We recommend you name your switch in a way that it makes it easy to identify at a later time (e.g. B2 Mode 1 White Top, Hook S1, etc). Once you have named, select Save.
+
+6.       Select Move to Next Item
+
+7.       Your switch is now configured. If you want, you can add a second action to this switch by selecting Long Press. If you add a Long Press action, the user will activate the switch for a predetermined amount of seconds to access the second action.
+
+STEP 4:  CONFIGURE SWITCH CONTROL SETTINGS
+
+Within Switch Control, there are a variety of settings that will help you customize the user experience.
+
+1.       Go to Settings App > Accessibility > Switch Control
+
+2.       Scanning Style:  Select Single Switch Step Scanning
+
+3.       Dwell Time:  This is how long the user will have to wait for the item to automatically be selected on the screen of the device. Set the number of seconds appropriate for the user.
+
+The following Switch Control settings are optional for single switch step scanning, but can be used to further refine the user experience with Switch Control.
+
+RECIPES
+
+A recipe is a recorded gesture or series of gestures (e.g. a macro) that can be repeatedly activated from a switch. The user can start a recipe from the black pop-up menu that appears when scanning or a recipe can be manually started from this settings menu. Recipes are great for repetitive tasks like turning the page in an ebook or a control for a game. A recipe can be set to automatically turn off after a predetermined amount of time or turn off when a second switch is activated.
+
+DWELL TIME
+
+This is how long the user will have to wait before the scan is automatically selected.
+
+AUTO HIDE 
+
+If the user does not activate their switch within a predetermined number of seconds, the scanning cursor will disappear from the screen. To bring back the scanning cursor, the user activates their switch.
+
+MOVE REPEAT
+
+When Move Repeat is on, you can specify the amount of time the Move To Next Item switch can be held down before it moves to the next item.  This can be useful for users who hold the switch down for a long time. LONG PRESS 
+
+If you added a second Long Press action to your switch,  this is how you set the number of seconds a switch must be activated to trigger the Long Press action. There is also a setting to pause scanning when a long press is activated.
+
+TAP BEHAVIOR
+
+Tap Behavior determines what happens when the user selects an item when scanning.
+
+› Default:  When a user selects an item while scanning a black pop-up menu will appear. Within this pop-up menu the user will be presented with choices on how they can interact with the item they have selected.
+
+› Always Tap:  When a  user selects an item while scanning, the tap function will always be used. The user will scan to the end of their screen to bring up the black pop-up menu.
+
+SCAN SAME KEY AFTER TAP
+
+When scanning and typing, this setting enables the user to scan and select the same letter again.
+
+EXTENDED PREDICTIONS
+
+This setting provides the user with a larger list of predictive text.
+
+HOLD DURATION
+
+When Hold Duration is turned on, you can specify the number of seconds a switch must be held down before it is recognized. Turning Hold Duration on can help users with spasticity from accidentally activating the switch at the wrong time during a scan. This setting can also help users who hold down a switch for a long time from activating multiple choices in a row. It should be noted that the Hold Duration time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+IGNORE REPEAT
+
+When Ignore Repeat is turned on, you can specify the number of seconds that a switch can be repeatedly activated before it makes a second selection. Turning Ignore Repeat on can help users with spasticity from accidentally activating the switch multiple times during a scan. It should be noted that the Ignore Repeat time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+POINT SCANNING > GLIDING CURSOR
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. There are three different selection modes available to the user. Single allows the user to make one vertical and one horizontal selection. Refined allows the user to make a vertical and horizontal selection and then make a second selection to further refine where they want to select. Precise is the same as refined, but the second selection is at a slower speed.
+
+POINT SCANNING > GLIDING CURSOR > GLIDING CURSOR SPEED
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. The Gliding Cursor Speed is how fast this scan will move across the screen. The higher the number, the faster the scan will move across the screen.
+
+SOUND EFFECTS
+
+If Sound Effects is turned on, as the scan moves between items on the screen a clicking sound will be activated. This can be helpful for users who need auditory cues.
+
+SPEECH 
+
+If Speech is turned on, when the scan highlights an item it will read back what that item is to the user. This can be helpful for users who need auditory cues or are visually impaired. It should be noted that some items may not be readable.
+
+MENU ITEMS
+
+You can restrict what items show up in the black pop-up menu while scanning.
+
+GROUP ITEMS
+
+To help users scan quicker group items is turned on by default. When Group Items are on, the scan will put items on the screen into groups. The user will then be able to move from group to group, select a group, and then select an item within that group. This is similar to traditional row/column scanning that is used in other programs. When group items is turned off, the scan will scan every item on the screen individually.
+
+LARGE CURSOR
+
+Turning Large Cursor on will increase the size of the border that the scan uses. This makes it more obvious and easier to follow the scan across the screen.
+
+CURSOR COLOR
+
+You can change the color of the scan border to make it more visible on the screen as it moves.
+
+SAVED GESTURES
+
+You can create and save custom gestures like a swipe across the screen and access them from the black pop-up menu during the scan.
+
+STEP 5:  TURN SWITCH CONTROL ON
+
+1.       Triple click your home or power bautton to activate your Accessibility Shortcut OR
+
+2.       Go to Settings App > Accessibility > Switch Control and turn Switch Control on
+
+Configuring Switch Control - Two Switch Step Scanning
+
+The following procedure will help you configure your device to use Switch Control for two switch step scanning. One switch will be used to move the scan on the screen of the device and the second switch will be used to make selections. You can use the AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface with these steps.
+
+STEP 1:  SET UP YOUR ACCESSIBILITY SHORTCUT
+
+The Accessibility Shortcut gives you the ability to easily turn Switch Control on or off by triple clicking the home or power button on your device.
+
+1.       Go to Settings App > General > Accessibility > Accessibility Shortcut
+
+2.       Select Switch Control
+
+STEP 2:  CONNECT YOUR SWITCH
+
+Connect your AbleNet Blue2 Bluetooth Switch or Hook+ iOS Switch Interface and two wired switches to your device. For connection instructions please consult your quick start guide that is included with the product or visit www.ablenetinc.com to download the latest quick start guide.
+
+STEP 3:  CONFIGURE YOUR SWITCHES
+
+Once your switch is connected to your device, you will need to configure it with Switch Control.
+
+1.       Go to Settings App > Accessibility > Switch Control > Switches
+
+2.       Select Add New Switch
+
+3.       Select External
+
+4.       Activate your switch
+
+a. You may see the message “Switch Conflict - The switch you activated is already being used. Please choose another switch.” If you see this message and are using Blue2, activate the Mode button on Blue2 and try using Mode 2 or 3. If you see this message and are using the Hook+, try using Switch Jack 3 or 4. If you are still having issues, go to Settings App > Accessibility > Switch Control > Switches and delete  the already configured switches.
+
+5.       You will be asked to name your switch. We recommend you name your switch in a way that it makes it easy to identify at a later time (e.g. B2 Mode 1 White Top, Hook S1, etc). Once you have named, select Save.
+
+6.       Select Move to Next Item
+
+7.       If you want, you can add a second action to a switch by selecting Long Press. If you add a Long Press action, the user will activate the switch for a predetermined amount of seconds to access the second action.
+
+8.       Repeat steps 1 to 5
+
+9.       Choose Select Item
+
+10.    (Optional) Add Long Press action 11. Your switches are now configured.
+
+ 
+
+STEP 4:  CONFIGURE SWITCH CONTROL SETTINGS
+
+Within Switch Control, there are a variety of settings that will help you customize the user experience.
+
+1.       Go to Settings App > Accessibility > Switch Control
+
+2.       Scanning Style:  Select Manual Scanning
+
+The following Switch Control settings are optional for single switch step scanning, but can be used to further refine the user experience with Switch Control.
+
+RECIPES
+
+A recipe is a recorded gesture or series of gestures (e.g. a macro) that can be repeatedly activated from a switch. The user can start a recipe from the black pop-up menu that appears when scanning or a recipe can be manually started from this settings menu. Recipes are great for repetitive tasks like turning the page in an ebook or a control for a game. A recipe can be set to automatically turn off after a predetermined amount of time or turn off when a second switch is activated.
+
+AUTO HIDE 
+
+If the user does not activate their switch within a predetermined number of seconds, the scanning cursor will disappear from the screen. To bring back the scanning cursor, the user activates their switch.
+
+MOVE REPEAT
+
+When Move Repeat is on, you can specify the amount of time the Move To Next Item switch can be held down before it moves to the next item.  This can be useful for users who hold the switch down for a long time. LONG PRESS 
+
+If you added a second Long Press action to your switch,  this is how you set the number of seconds a switch must be activated to trigger the Long Press action. There is also a setting to pause scanning when a long press is activated. TAP BEHAVIOR
+
+Tap Behavior determines what happens when the user selects an item when scanning.
+
+› Default:  When a user selects an item while scanning a black pop-up menu will appear. Within this pop-up menu the user will be presented with choices on how they can interact with the item they have selected.
+
+›      Auto Tap:  When a user selects an item while scanning, the tap function will be used. To bring up the black pop-up menu, the user will need to activate their switch two times within a specified amount of time.
+
+› Always Tap:  When a  user selects an item while scanning, the tap function will always be used. The user will scan to the end of their screen to bring up the black pop-up menu.
+
+SCAN SAME KEY AFTER TAP
+
+When scanning and typing, this setting enables the user to scan and select the same letter again.
+
+EXTENDED PREDICTIONS
+
+This setting provides the user with a larger list of predictive text.
+
+HOLD DURATION
+
+When Hold Duration is turned on, you can specify the number of seconds a switch must be held down before it is recognized. Turning Hold Duration on can help users with spasticity from accidentally activating the switch at the wrong time during a scan. This setting can also help users who hold down a switch for a long time from activating multiple choices in a row. It should be noted that the Hold Duration time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+IGNORE REPEAT
+
+When Ignore Repeat is turned on, you can specify the number of seconds that a switch can be repeatedly activated before it makes a second selection. Turning Ignore Repeat on can help users with spasticity from accidentally activating the switch multiple times during a scan. It should be noted that the Ignore Repeat time must be less than the Auto Tap setting so that a double click of the switch is recognized.
+
+POINT SCANNING > GLIDING CURSOR
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. There are three different selection modes available to the user. Single allows the user to make one vertical and one horizontal selection. Refined allows the user to make a vertical and horizontal selection and then make a second selection to further refine where they want to select. Precise is the same as refined, but the second selection is at a slower speed.
+
+POINT SCANNING > GLIDING CURSOR > GLIDING CURSOR SPEED
+
+At certain times when using Switch Control, it may not recognize any hotspots on the screen and begin a Point Mode scan. A Point Mode scan brings up a moving cursor on the screen. The cursor first moves left to right, then moves top to bottom. During a Point Mode scan, the user is able to choose a specific location on the screen. The Gliding Cursor Speed is how fast this scan will move across the screen. The higher the number, the faster the scan will move across the screen.
+
+SOUND EFFECTS
+
+If Sound Effects is turned on, as the scan moves between items on the screen a clicking sound will be activated. This can be helpful for users who need auditory cues.
+
+SPEECH 
+
+If Speech is turned on, when the scan highlights an item it will read back what that item is to the user. This can be helpful for users who need auditory cues or are visually impaired. It should be noted that some items may not be readable.
+
+MENU ITEMS
+
+You can restrict what items show up in the black pop-up menu while scanning.
+
+GROUP ITEMS
+
+To help users scan quicker group items is turned on by default. When Group Items are on, the scan will put items on the screen into groups. The user will then be able to move from group to group, select a group, and then select an item within that group. This is similar to traditional row/column scanning that is used in other programs. When group items is turned off, the scan will scan every item on the screen individually.
+
+LARGE CURSOR
+
+Turning Large Cursor on will increase the size of the border that the scan uses. This makes it more obvious and easier to follow the scan across the screen.
+
+CURSOR COLOR
+
+You can change the color of the scan border to make it more visible on the screen as it moves.
+
+SAVED GESTURES
+
+You can create and save custom gestures like a swipe across the screen and access them from the black pop-up menu during the scan.
+
+STEP 5:  TURN SWITCH CONTROL ON
+
+1.       Triple click your Home or power button to activate your Accessibility Shortcut OR
+
+2.       Go to Settings App > Accessibility > Switch Control and turn Switch Control on
+
+Switch Control App Developer Resources
+
+Apple has an existing accessibility protocol available for developers to integrate into their app. When you use the existing accessibility protocol in your app, you make your app compatible with many of the existing accessibility features available in iOS 10 to individuals with disabilities. To get started, we recommend you refer to these developer resources:
+
+›                         Apple iOS 13 Developer Library – Reference documentation on the UIAccessibility protocol
+
+›                  WWDC 2017 Session 215 Video - What’s New in Accessibility
+
+›                   WWDC 2017 Session 217 Video - Media and Gaming Accessibility
+
+›                   WWDC 2016 Session 202 Video – What’s New in Accessibility
+
+›                    WWDC 2016 Session 407 Video – Auditing Your Apps for Accessibility
+
+›                           WWDC 2016 Session 104 Video – Disability and Innovation:  The Universal Benefits of Accessible Design
+
+›                 WWDC 2016 Session 801 Video – Inclusive App Design
+
+›                WWDC 2015 Session 201 Video – iOS Accessibility
+
+›                 WWDC 2014 Session 210 Video – Accessibility on iOS
+
+Apple, iPad, iPhone, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. Updated September 9, 2019 7:11 PM

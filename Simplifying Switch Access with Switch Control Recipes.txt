@@ -1,0 +1,269 @@
+﻿
+
+[]
+
+Simplifying Switch Access with Switch Control Recipes
+
+[]
+
+Apple, iPad, iPhone, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.
+
+Updated February 11, 2019 11:02 AM
+
+Table of Contents
+
+Introduction ...........................................................................................................................2
+
+What You Need .......................................................................................................................2
+
+Getting Started .......................................................................................................................3-5
+
+Turn Pages On An eBook .........................................................................................................6-8
+
+Control Music .........................................................................................................................8-11
+
+Cause and Effect with Garage Band ..........................................................................................12-15
+
+Introduction
+
+With Switch Control for iOS 10 you can do almost anything with a switch. With this power comes some complexity for the user. The Recipes feature found within Switch Control for iOS 10 can greatly simplify switch use on the iPad, iPhone, or iPad touch. To help introduce you to Recipes and simplified switch access for the user, we’ve put together a few tutorials.
+
+What You Need
+
+[]For all Switch Control Recipe tutorials you will need the following:
+
+•         An iPad, iPhone, or iPod touch with iOS 10
+
+•         A switch interface for your iOS device
+
+-          Hook+ iOS Switch Interface:  Hook+ is an Apple MFi approved switch interface that provides a reliable wired connection to the iPad, iPhone, or iPod touch via the Lightning connector. Connect one to four wired switches to Hook+ for use with Switch Control. More information at https://www.ablenetinc.com/hook-switch-interface
+
+-          Blue2 Bluetooth Switch:   The Blue2 Bluetooth switch provides single or dual switch access when used with Switch Control. Users can activate the orange and white switch tops, or they can plug in two external switches for activation. More information at More information at https://www.ablenetinc.com/blue2-bluetooth-switch
+
+Getting Started
+
+Before you can begin any of the Switch Control Recipe tutorials, you need to make sure that your switch interface is connected to your iOS device and two switches are configured.
+
+SET UP HOOK+ iOS SWITCH INTERFACE
+
+1.       Plug switches into Switch Jack 1 and Switch Jack 2 on Hook+
+
+2.       On the iOS device go to Settings App > General > Accessibility > Switch Control
+
+3.       Turn Switch Control On
+
+4.       Plug Hook+ into the Lightning Connector on your iOS device. Two switches will automatically configure.
+
+5.       You are now ready to proceed with the Switch Control Recipe tutorials
+
+[]
+
+SET UP BLUE2 BLUETOOTH SWITCH
+
+1.       On the iOS device go to Settings App > Bluetooth
+
+2.       Turn Bluetooth on the iOS device On if it is not already On
+
+3.       Turn the Blue2 Bluetooth Switch on. Blue2 will appear under the list of Devices.
+
+4.       Select Blue2 to pair with your iOS device.
+
+5.       Once paired, Blue2 will show under My Devices as Connected
+
+[]
+
+6.       On the iOS device go to Settings App > General > Accessibility > Switch Control and select Switches
+
+7.       Select Add New Switch...
+
+8.       Select External
+
+9.       Press the White switch top on Blue2
+
+10.    Name the switch White
+
+11.    Select Move To Next Item
+
+12.    Select Add New Switch... again
+
+13.    Select External
+
+14.    Press the Orange switch top on Blue2
+
+15.    Name the switch Orange
+
+16.    Select Select Item
+
+17.    You now have two switches configured.
+
+18.    You are now ready to proceed with the Switch Control Recipe tutorials
+
+[]
+
+For additional details on using the Hook+ iOS Switch Interface or Blue2 Bluetooth Switch with iOS Switch Control, download iOS Accessibility - Switch Control - The Missing User Guide at https://www.ablenetinc.com/ resources/?ddownload=5689.
+
+Tutorial 1:  Turn Pages In An eBook
+
+In this tutorial you will create a Switch Control Recipe that enables the user to turn pages in an eBook forward and backwards with two switches. Before starting, make sure you have completed setting up your Hook+ iOS Switch Interface with two switches or your Blue2 Bluetooth Switch.
+
+1.       On the iOS device go to Settings App > General > Accessibility > Switch Control
+
+2.       Turn Switch Control Off. If Switch Control is On, the Recipe will not work correctly.
+
+3.       Select Recipes
+
+4.       Under Recipes select Turn Pages
+
+5.       You will notice that both of your switches were automatically assigned to Right to Left Swipe and Left to Right Swipe 6. Make sure Timeout is turned Off
+
+[]
+
+7.       At the top of the screen select Recipes to go back to the main Recipes menu
+
+8.       Select Launch Recipe
+
+9.       Select Turn Pages
+
+[]
+
+10.    At the top of the screen select Recipes to go back to the main Recipes menu
+
+11.    At the top of the screen select Switch Control to go back to the man Switch Control menu
+
+12.    Turn Switch Control On
+
+13.    When Switch Control turns On, you will see a message appear in the middle of your device screen that says Your switches are configured to use the “Turn Pages” recipe.
+
+[]
+
+14.    On the iOS device, open the iBooks App
+
+15.    Select a book the user would like to read
+
+16.    When the user activates the Orange Switch on Blue2 (or if using  Hook+, Switch 2 / Next) the page will turn forward. When the user activates the White Switch on Blue2 (or if using  Hook+, Switch 1 / Select) the page will turn backwards.
+
+17.    Once finished with the eBook, you can turn the Recipe Off, by going to Settings App > General > Accessibility > Switch Control and turning Switch Control Off. You must ALSO go to Recipes > Launch Recipe and change this back to None.
+
+Tutorial 2:  Control Music
+
+In this tutorial you will learn how to create a custom Switch Control Recipe that can be used to control music. We will be using a paper marker on the iOS device screen to mark where the Skip Track Forward button is located and you will need a small piece of a Post-It-Note to do this. Before starting, make sure you have completed setting up your Hook+ iOS Switch Interface with two switches or your Blue2 Bluetooth Switch.
+
+1.       Orient the device in the direction the user will be using it. This is important because we will be marking a specific location on the screen of the device for the Switch Control Recipe.
+
+2.       On the iOS device open the Music App
+
+3.       Select a song so that the music player controls appear on the screen
+
+4.       Using a small piece of the Post-It-Note, mark on the screen where the Skip Track Forward button is located. If you wanted to use the Play/Pause or Skp Track Backwards buttons, you could mark those instead.
+
+[]
+
+5.       Exit out of the Music App. Make sure you leave your Post-It-Note marker on the screen of your iOS device.
+
+6.       On the iOS device go to Settings App > General > Accessibility > Switch Control
+
+7.       Turn Switch Control Off. If Switch Control is On, the Recipe will not work correctly.
+
+8.       Select Recipes
+
+9.       Under Recipes select Create New Recipe...
+
+10.    Name your recipe Skip Track Forward (if using Blue2, you will need to activate the keyboard button on the side of Blue2 to get the on-screen keyboard to appear)
+
+11.    Select Assign a Switch
+
+12.    If using Blue2, choose White (or if using  Hook+, choose Next)
+
+13.    Select Custom Gesture
+
+14.    You will be brought to a screen with instructions. Tap on your Post-It-Note marker and then select Save in the upper right corner of the screen.
+
+[]
+
+15.    You will now see under Switches that White (or if using Hook+, Next) has been assigned Custom Gesture 16. Make sure Timeout is turned Off
+
+[]
+
+17.    At the top of the screen select Recipes to go back to the main Recipes menu
+
+18.    Select Launch Recipe
+
+[]
+
+20.    At the top of the screen select Recipes to go back to the main Recipes menu
+
+21.    At the top of the screen select Switch Control to go back to the man Switch Control menu 22. Turn Switch Control On
+
+23.    When Switch Control turns On, you will see a message appear in the middle of your device screen that says Your switches are configured to use the “Skip Track Forward” recipe.
+
+[]
+
+24.    On the iOS device, open the Music App. Make sure the iOS device is in the same orientation as it was when you placed your Post-It-Note marker on the screen.
+
+25.    Select a song to bring up the music player controls. Make sure the music is playing before giving the iOS device to the user. They will only be able to change the song playing.
+
+26.    When the user activates the White switch top on Blue2 (or if using Hook+, Switch 2 / Next) and the song will skip to the next song
+
+27.    Once finished with the Music App, you can turn the Recipe Off, by going to Settings App > General > Accessibility > Switch Control and turning Switch Control Off. You must ALSO go to Recipes > Launch Recipe and change this back to None.
+
+Tutorial 3:  Cause and Effect with Garage Band
+
+In this tutorial you will learn how to create a Switch Control Recipe for a simple cause and effect activity using Garage Band. We will be using a paper markers on the iOS device screen to mark where the drums are located and you will need small pieces of a Post-It-Note to do this. Before starting, make sure you have completed setting up your Hook+ iOS Switch Interface with two switches or your Blue2 Bluetooth Switch.
+
+1.       Orient the device in the direction the user will be using it. This is important because we will be marking a specific location on the screen of the device for the Switch Control Recipe.
+
+2.       On the iOS device open the Garage Band App
+
+3.       Under Tracks select Drums
+
+[]
+
+4.       Once you select the Drums you will be presented with a full drum set. Place small pieces of the Post-It-Note on three different drums (you can select less or more than three drums to mark).
+
+[]
+
+5.       Exit out of the Garage Band App. Make sure you leave your Post-It-Note marker on the screen of your iOS device.
+
+6.       On the iOS device go to Settings App > General > Accessibility > Switch Control
+
+7.       Turn Switch Control Off. If Switch Control is On, the Recipe will not work correctly.
+
+8.       Select Recipes
+
+9.       Under Recipes select Create New Recipe...
+
+10.    Name your recipe Drum Solo (if using Blue2, you will need to activate the keyboard button on the side of Blue2 to get the on-screen keyboard to appear)
+
+11.    Select Assign a Switch
+
+12.    If using Blue2, choose White (or if using  Hook+, choose Next)
+
+13.    Select Custom Gesture
+
+14.    You will be brought to a screen with instructions. Quickly tap all of your Post-It-Note markers multiple times and then select Save in the upper right corner of the screen. Tapping your Post-It-Not markers needs to be done quickly because when the user activates their switch it will play your drums back in the same sequence they were recorded in.
+
+15.    You will now see under Switches that White (or if using Hook+, Next) has been assigned Custom Gesture 16. Make sure Timeout is turned Off
+
+[]
+
+17.    At the top of the screen select Recipes to go back to the main Recipes menu
+
+18.    Select Launch Recipe
+
+[]
+
+20.    At the top of the screen select Recipes to go back to the main Recipes menu
+
+21.    At the top of the screen select Switch Control to go back to the man Switch Control menu 22. Turn Switch Control On
+
+23.    When Switch Control turns On, you will see a message appear in the middle of your device screen that says Your switches are configured to use the “Drum Solo” recipe.
+
+[]
+
+24.    On the iOS device, open the Garage Band App. Make sure the iOS device is in the same orientation as it was when you placed your Post-It-Note marker on the screen.
+
+25.    Select the drums.
+
+26.    When the user activates the White switch top on Blue2 (or if using Hook+, Switch 2 / Next) the drum solo will play
+
+27.    Once finished with the Garage Band App, you can turn the Recipe Off, by going to Settings App > General > Accessibility > Switch Control and turning Switch Control Off. You must ALSO go to Recipes > Launch Recipe and change this back to None.

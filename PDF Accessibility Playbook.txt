@@ -1,0 +1,4152 @@
+﻿
+
+[Pearson Logo]
+
+ 
+
+Pearson PDF Accessibility Playbook
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Contents
+
+Pearson PDF Accessibility Playbook  1
+
+Contents. 2
+
+INTRODUCTION.. 5
+
+Intended Audience. 5
+
+INTRODUCTION TO ACCESSIBILITY. 5
+
+What is PDF Accessibility?. 6
+
+Need for Accessibility. 6
+
+How people with disabilities use PDF documents?. 6
+
+Pearson Accessibility Guidelines. 9
+
+WCAG 2.1. 9
+
+IMAGES. 12
+
+Types of Images. 12
+
+Alternate text for Images. 13
+
+Informative Images. 13
+
+Decorative Images. 17
+
+Graphs, Charts and Diagrams. 19
+
+Layered Images. 21
+
+Images of text. 24
+
+COLOR. 26
+
+Use Color wisely. 27
+
+Color Contrast. 29
+
+Contrast for Text Content. 31
+
+Contrast for Non-Text Content. 34
+
+HEADINGS. 38
+
+Heading Structure. 38
+
+Heading Text. 42
+
+LISTS. 45
+
+Ordered Lists. 45
+
+Unordered Lists. 47
+
+Nested Lists. 50
+
+TABLES. 53
+
+Layout Tables. 53
+
+Simple data Tables. 55
+
+Complex data Tables. 58
+
+TITLE, LANGUAGE AND CONTENT. 64
+
+Descriptive file title. 64
+
+Primary Language. 66
+
+Secondary Language. 69
+
+Abbreviations and Acronyms. 73
+
+STEM EQUATIONS. 76
+
+Alternate text for formula tags. 76
+
+READING AND TAGGING ORDER. 79
+
+Tag order. 79
+
+Content Order. 82
+
+LINKS. 85
+
+OBJR. 86
+
+Descriptive Link Text. 90
+
+TOC Links. 91
+
+FOOTNOTES AND ENDNOTES. 95
+
+Reference Tag. 95
+
+Note Tag. 98
+
+BOOKMARKS. 101
+
+Define bookmarks based on headings. 101
+
+FORMS. 104
+
+Form field properties. 109
+
+Form Labels. 114
+
+Grouping form fields. 117
+
+Form Validation. 119
+
+Tabbing order. 122
+
+SCANNED DOCUMENTS. 126
+
+TEST FOR ACCESSIBILITY. 131
+
+Adobe Accessibility Checker. 131
+
+PAC3 Accessibility Checker. 135
+
+APPENDIX. 143
+
+ 
+
+ 
+
+INTRODUCTION 
+
+Pearson is committed to accessibility and is taking all possible measures to make the online learning experience accessible for all learners. The PDF Accessibility Playbook was put together to provide content producers with the guidance required for creating accessible PDF documents and offer buyers courses that not only have web content that is accessible but also accessible PDF documents.
+
+The playbook includes techniques for implementing accessibility across different PDF elements, such as headings, lists, images, tables, forms, etc. It identifies both techniques that must be adopted, and techniques that should be avoided, from an accessibility perspective. Along with the techniques, the playbook lists tips, and tricks for enhancing accessibility.
+
+The playbook comprises of examples of different Pearson PDF documents and lists possible solutions to help the team implement accessibility. Not only will the playbook serve as a valuable reference, it can also equip the team to implement accessibility while designing and authoring all future Pearson PDF documents.
+
+Intended Audience 
+
+The PDF Accessibility Playbook is intended for the entire technical team that works to author, as well as maintain, Pearson’s PDF documents. Team members include:
+
+·         UI designers
+
+·         UX professionals
+
+·         Content Digitizer
+
+·         Content writers
+
+·         Courseware Quality Assurance (QA) teams
+
+INTRODUCTION TO ACCESSIBILITY
+
+Accessibility refers to making a product or service usable for as many people as possible. In the digital space, accessibility ensures that websites, applications, documents, online learning solutions etc. are usable for all users including those with disabilities. Often accessibility is viewed at something that is meant for people with disabilities. However, accessibility benefits each one of us in different situations.
+
+Today digital accessibility has been adopted in most countries across the globe. To make accessibility happen, there are standards, guidelines and specifications that outline ways to make it a reality. Technologies include support for developing accessible solutions and the demand for accessible products is increasing by the day.
+
+In simple terms, accessibility is ensuring that everyone can use a product or service irrespective of their abilities or situation of use. In physical space, we may refer to accessibility as providing ramps to allow people on a wheelchair to come in easily similarly in the case of digital accessibility it refers to making the online solutions available for all users including those using assistive technologies.
+
+What is PDF Accessibility? 
+
+PDF accessibility is a practice where documents and forms are designed, authored, and maintained in a manner that people with disabilities can use them with accessibility features turned on as well as with assistive technologies. PDF accessibility makes it possible for people with disabilities to access the content, interact with the functionality, understand the content, and use the content with their assistive technology.
+
+Accessible PDF documents ensure that learners with mobility disabilities can fill out PDF forms without having to go through the hassle of waiting in long queues for submitting their assignments. Accessible PDF documents makes it possible for learners with hearing disabilities to listen to recorded lectures by following synchronized captions. Similarly, learners with visual impairments can perceive complex images by reading the alternate descriptions with their assistive technologies and those with learning disabilities can access the content with assistive technologies such as Text to Speech reading tools.
+
+ 
+
+Need for Accessibility
+
+PDF documents are present online on almost every portal and this is no different when it comes to online learning.  Most of our daily digital activities from learning, banking, employment, healthcare, and government procedures involve access to PDF documents. Access to PDF content is therefore essential for all users including for those with disabilities.
+
+Some of the key benefits of digital accessibility that is applicable for PDF documents as well include:
+
+·         Ensures access to essential online activities for all users
+
+·         Increase in customer base
+
+·         Helps to conform with accessibility standards and guidelines.
+
+·         Builds brand loyalty
+
+·         Drives innovation by making solutions that are accessible for wide range of users
+
+·         Adhere to legal requirements
+
+·         Contribute towards building an inclusive society.
+
+ 
+
+How people with disabilities use PDF documents?
+
+Ever thought how someone who cannot see will access diagrams explaining functions of different body parts? Or how someone who cannot listen will access a recorded video lecture explaining the solar system embedded in a PDF document? How someone with upper limb difficulties will complete their interactive assignments?  Technology acts as an enabler for people with disabilities and they can read text books, submit their assignments, fill up their tax applications, read their utility bills and many more day to day activities available in PDF format.
+
+Digital evolution has made life very easy for all of us and more so for people with disabilities as they can accomplish their tasks independently. People with disabilities use different assistive technologies to access the PDF documents either using a computer, tablet, or mobile device.
+
+Let us learn about few of the assistive technologies used by people with disabilities to access PDF documents:
+
+Visual Disabilities
+
+·         Screen readers: reads out the information displayed in a PDF document for their users. Users can access the information by listening to the screen reader and using a keyboard to input the data or give commands. Screen readers rely on PDF tags to identify the information for their users. Screen readers also provide their users with option to access different PDF elements using different keystrokes.
+
+·         Screen magnifiers: enlarges the information displayed in a PDF document for their users. Users can access the information by either using a mouse or a keyboard. Since users access the information in an enlarged form, not all the information is visible on the screen. This requires users to scroll a lot to access the information. 
+
+·         Refreshable Braille Displayers: is a piece of hardware which can be attached to a computer, tablet, or mobile phone. It works in combination with a screen reader. The information read out by a screen reader is refreshed on the braille displayer and users can touch the braille pins and read the information. Users can read the information using the braille displayer whereas they can input the data using a keyboard. Refreshable braille displayers are used by blind and deaf-blind users.
+
+Hearing Disabilities:
+
+·         Synchronized captions help people with hearing disabilities access videos and text transcripts help them to access audio-only content with ease. They do not require any assistive technology as such to access the PDF content.
+
+Learning Disabilities:
+
+·         Text to speech synthesizers (TTS): reads out the text displayed on the screen as well as highlights the text. This helps users in understanding the information when it is read out to them. TTS software also provide users with options to view the information using different contrast themes.
+
+·         Word prediction tools: predicts words while users are typing data. These tools are found very helpful by users with learning disabilities especially while filling up forms as they do not have to memorize spellings.
+
+Mobility Disabilities:
+
+·         Adaptive keyboards: come in different shapes and sizes to meet user’s needs. Split keyboards (where the standard keyboard is split in two parts), one handed keyboard (which are adapted for users who do not have one hand), keyboards used in the bank that have multiple keys with combination of the digit 0 etc. are some of the examples of adaptive keyboards. These keyboards are used by people with mobility disabilities to meet their needs.
+
+·         Sip-n-puff devices: are used by people with severe mobility disabilities, such as those who have issues with upper and lower limbs. With sip-n-puff devices, people can use their breath to click on a button or a link. While typing, people using sip-n-puff devices use the onscreen keyboards (readily available in different operating systems) with their device to fill up the details.
+
+·         Onscreen keyboards: are virtual keyboards that are used by people who find it difficult to press the keys on a hardware keyboard. Onscreen keyboards are often used in combination with other hardware devices, such as eye tracking tools, head mouse etc.
+
+·         Voice recognition systems: is a software using which people can control their computer by giving voice commands. Users can click on links or buttons, dictate their details while filling up forms etc. Adding descriptive label for links and buttons allow users to give accurate voice commands while accessing information of a PDF document.
+
+ 
+
+Some of the assistive technologies are today available with different operating systems, such as Windows, Mac OS, iOS, Android, Linux, Chrome OS etc. All in all, people with disabilities have many choices when it comes to assistive technologies and access their digital documents. 
+
+Acrobat Reader is the most widely used PDF reader available for different operating systems. Acrobat Reader provides a range of accessibility features for the benefit of users with disabilities. Acrobat Reader not only includes a range of accessibility features, but also follows user’s system settings and is compatible with third party assistive technologies, such as screen readers and screen magnifiers.
+
+Acrobat Reader includes a range of accessibility features for users with different types of disabilities. These features can mainly be accessed via the “Accessibility” and “Reading” options available in the Preferences (Edit>Preferences) dialog. For the benefit of mobility impaired users, it provides a list of keyboard shortcuts that help users carry out different tasks. Additionally, auto-complete option allows users to fill up forms with fewer keystrokes. It provides multimedia accessibility features, such as ability to turn on subtitles, captions, and audio description, when available.
+
+Acrobat Reader provides options to adjust the contrast themes, text-to-speech (Read Out Loud), replace document colors, etc. to help users with learning impairments access the documents with ease. The Zoom and Reflow options help users with low vision access the document content easily. It is compatible with leading screen readers (both free as well as commercial), thereby allowing users with visual impairments to access the document content.
+
+[Screenshot of Preferences dialog with accessibility options highlighted.]
+
+ 
+
+Across the globe there are several accessibility standards and guidelines that have been laid out for making PDF documents accessible. However, accessibility standards and guidelines that are widely used for making accessible PDF documents include Web Content Accessibility Guidelines (WCAG) 2.1 and PDF Universal Accessibility (PDF/UA) standards. WCAG 2.1 offers several techniques for making PDF documents accessible and we will be referring to different success criteria’s that are applicable to PDF documents in this playbook. Pearson has their own accessibility standpoint when it comes to accessibility guidelines and standards for different technologies so let us discuss that now.
+
+ 
+
+Pearson Accessibility Guidelines
+
+Accessibility guidelines are available for different technologies, such as web, software, PDF, Videos etc. When it comes to web content the universal guidelines all countries and companies follow is the Web Content Accessibility Guidelines (WCAG). This is true to Pearson as well. Pearson Accessibility Guidelines are aligned with the latest version of WCAG, i.e. WCAG 2.1 at Level AA.
+
+ 
+
+WCAG 2.1
+
+WCAG 2.1 was published on 5^(th) June 2018.  Web Content Accessibility Guidelines (WCAG) 2.1 are developed by the World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI) group to help individuals, companies, and governments across the globe to implement accessibility in their web content.
+
+The Web Content Accessibility Guidelines provide directions for making the web content more accessible for users with different types of disabilities.
+
+WCAG 2.1 comprises of 13 guidelines that are organized under 4 principles:
+
+1.      Perceivable - Information and user interface components must be presentable to users in ways they can perceive.
+
+1.1.  Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language.
+
+1.2.  Time-based Media: Provide alternatives for time-based media.
+
+1.3.  Adaptable: Create content that can be presented in different ways (For example, simpler layout) without losing information or structure.
+
+1.4.  Distinguishable: Make it easier for users to see and hear content including separating foreground from background. 
+
+2.      Operable - User interface components and navigation must be operable.
+
+2.1.  Keyboard Accessible: Make all functionality available from a keyboard.
+
+2.2.  Enough Time: Provide users enough time to read and use content. 
+
+2.3.  Seizures: Do not design content in a way that is known to cause seizures.
+
+2.4.  Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+2.5.  Input Modalities
+
+3.      Understandable - Information and the operation of user interface must be understandable.
+
+3.1.  Readable: Make text content readable and understandable.
+
+3.2.  Predictable: Make Web pages appear and operate in predictable ways.
+
+3.3.  Input Assistance: Help users avoid and correct mistakes.
+
+4.      Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+4.1. Compatible: Maximize compatibility with current and future user agents, including assistive technologies.
+
+Each guideline has testable success criteria for conformance at Level A, Level AA or Level AAA. In all, there are 78 success criteria that are grouped under the above-mentioned 13 guidelines. Often the questions that come up include: Do we have to comply with all the 78 success criteria for PDF accessibility as well? What is acceptable? How much is enough?
+
+Below is a brief explanation of WCAG conformance levels:
+
+·         Level A - Must be done
+
+·         Level AA - Should be done
+
+·         Level AAA - Can be done
+
+Across the world, Level AA conformance is what organizations and governments aim to achieve. WCAG 2.0 is approved as an ISO standard: ISO/IEC 40500:2012. WCAG 2.1 is an extension of WCAG 2.0 and it includes all the success criteria’s that were part of WCAG 2.0.
+
+All Pearson PDF documents must satisfy WCAG 2.1 Level A and Level AA success criteria. Some of the WCAG 2.1 success criteria that are not applicable for PDF documents include:
+
+·         2.1.4, 2.5.1, 2.5.2, 2.5.4 at Level A and
+
+·         1.3.5, 1.4.12, 1.4.13, 2.4.5, 2.4.7, 4.1.3 at Level AA.
+
+ 
+
+ 
+
+IMAGES
+
+Images are used in a PDF document to convey information as well as enhance the visual presentation of the document. Descriptions need to be provided for images to make the information available for all users, including users with vision disabilities, users with learning disabilities etc. Alternate text must be specified for each informative image in a PDF document whereas decorative images must be tagged as artifacts.
+
+A screen reader reads out the alternate text specified for the image and skips pass the decorative images. In a PDF document, there are mainly two types of images:
+
+·         Informative images: used to display logos, graphs, diagrams etc.
+
+·         Decorative images: used to display separator lines, background images etc.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+ 1.1.1 Non-text Content                                                                                             Level A
+
+All non-text content that is presented to the user has a text alternative that serves the equivalent purpose.
+
+ 
+
+1.4.5 Images of Text                                                                                                   Level AA
+
+If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:
+
+Customizable: The image of text can be visually customized to the user's requirements.
+
+Essential: A particular presentation of text is essential to the information being conveyed.
+
+ 
+
+ 
+
+Types of Images
+
+Images are classified depending on the function they serve and the information they contain. These images must have text alternatives that describe the information or function represented by them.   
+
+The types of images are:
+
+1.       Informative Images
+
+2.       Decorative Images
+
+3.       Complex Images
+
+4.       Layered Images
+
+5.       Images of text
+
+Alternate text for Images
+
+Images are not accessible by users of screen readers and hence it is important to describe the images to them. All images which visually represent some information, typically pictures, photos and illustrations are informative images. These images need to have a text alternative that should be a short description conveying the essential information presented by the image. 
+
+ 
+
+Informative Images
+
+Informative images are those images that visually represent some information, typically pictures, photos and illustrations. They need to have a text alternative that should be a short description conveying the essential information presented by the image.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ][AS1] ­
+
+  ------------------------- ------------------------
+  WCAG Success Criteria     WCAG Conformance Level
+  1.1.1 Non-text Content    A
+  ------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to make images accessible in a PDF document.
+
+·         Add alternate text that describes the information conveyed by the image.
+
+·         Include the alt-text for informative images via “alternate text” field of the <Figure> tag.
+
+·         Edit the alternate text if it fails to sufficiently describe the purpose of the image.  
+
+·         Add unique, concise, and accurate alternate text for informative images.
+
+·         Include information that describes the purpose of the image and do not describe the visual presentation of the image.
+
+Practices to Apply & Avoid
+
+û Avoid tagging informative images as artifacts.
+
+ 
+
+For example, in the 2019-ar.pdf, empty alt attribute was provided for the Business Fights poverty logo. As a result, screen reader users will skip the image, and the purpose of the image will not be clear for screen reader users.
+
+ 
+
+[Informative image inaccurately marked as artifact.]
+
+ 
+
+ 
+
+ 
+
+ü  Specify accurate text alternatives describing the purpose of informative images.
+
+For example, in the 2020-Roles-and-Responsibilites-of-the-chair.pdf, accurate alternate text “Pearson Logo" is specified for an informative image.
+
+ 
+
+[Informative image with accurate alternate text.]
+
+ 
+
+û Avoid specifying inaccurate and incomplete alternative text for images.
+
+For example, in the 2019-ar.pdf, inaccurate and incomplete alternate text “The best employers for diversity" is provided for an informative image.
+
+ 
+
+[Image with inaccurate and incomplete alternative text.]
+
+ü  Add descriptive alternate text for informative images.
+
+For example, in the 2019-ar.pdf, accurate and descriptive alternate text “Forbes 2020- The best Employers for Diversity" is provided for an informative image.
+
+[Image with accurate and descriptive alternative text.]
+
+û Avoid specifying identical alternate text for multiple images.
+
+For example, in the 20200512_VigeoEiris_SPO_Pearson_Update.pdf, non-descriptive and identical alternate text “Icon" has been specified for multiple images.
+
+[Alternative text "Icon" specified for image]
+
+ 
+
+[Alternative text "Icon" specified for image]
+
+ 
+
+Decorative Images
+
+Decorative images are used to enhance the presentation of a PDF document. Since these images do not convey any information, a descriptive alternate text is not required to be specified.
+
+ 
+
+How to implement?
+
+This section lists the techniques for implementing decorative images in a PDF document.
+
+·         Tag decorative images as an artifact.
+
+·         Tag informative images as an artifact if the information is available in the surrounding text.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure decorative images are tagged using artifact tag.
+
+ 
+
+For example, in the 2019-ar.pdf, the following decorative image is accurately tagged as an artifact.
+
+[Decorative image accurately tagged as an artifact.]
+
+ü  Ensure decorative images are tagged as artifacts
+
+For example, in the 2019-ar.pdf, the decorative image is tagged as an artifact.
+
+ 
+
+[Decorative image tagged as an artifact. ]
+
+û Avoid specifying alternate text for decorative images.
+
+For example, in the 2019.ar.pdf, alternate text " Young female with headphones on studying with an iPad" is specified for a decorative image.
+
+ 
+
+[Decorative image with alternate text specified]
+
+ 
+
+ 
+
+Graphs, Charts and Diagrams
+
+Complex images, such as graphs, diagrams, and charts, require detail description of the data or information provided in the image as the text alternative, to enable users with vision disabilities to interpret the information. Similarly, users with learning disabilities may find the complex charts, diagrams, graphs difficult to understand. Textual description in the surrounding text or a tabular representation of the graph or chart makes it easier for them to access the information.
+
+ 
+
+How to implement?
+
+This section lists the techniques that are required for making complex images, charts, and diagrams accessible.
+
+·         Add a detailed description for charts, graphs, and diagrams via the alternate text.
+
+·         Add a brief alternate text for the charts, graphs and diagrams via the alternate text and include detailed description in the surrounding text:
+
+o   Include a data table that describes the information conveyed using charts and graphs.
+
+o   Include detailed description for diagrams in the form of running text besides the image.
+
+Practices to Apply & Avoid
+
+û Avoid using complex images such as charts and diagrams that lack textual descriptions.
+
+For example, in the 2019-ar.pdf file, the following graph showing the “Adjusted earnings per share” does not have an alternate text.
+
+[Graph with missing alternate text. ]
+
+ü  Ensure all graphs and diagrams have detailed description specified via the alternate text.
+
+ 
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf file, diagram of the urinary tract has an alternative text labeled “Anatomical structure of the urinary tract”.
+
+[Diagram with an appropriate alternate text.]
+
+ 
+
+Layered Images
+
+Layered images are often used in PDF documents to form a big picture. The picture comprises of multiple layers of images which are identified as separate images by assistive technologies. Even though visually these layered images form a single image they are not rendered as a single image by assistive technologies.
+
+Screen reader users often find it difficult to interpret the information conveyed using layered images as the information is broken into pieces. These layered images should be identified as a single image for screen reader users as well. This can be achieved by grouping this layered image and specifying accurate textual information to make it easier for users to comprehend the purpose of the image.
+
+How to implement?
+
+This section lists the techniques for tagging layered images to make them accessible for screen reader users.
+
+·         Group the layered images as a single image in the original source file.
+
+·         Tag the layered images as a single image and specify descriptive alternate text for it.
+
+·         Tag the decorative layers as artifact.
+
+Practices to Apply & Avoid
+
+û Do not leave empty alternate text option for Layered images.
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, alternate text for the following image is missing.
+
+[Layered image with missing alternate text.]
+
+ü  Ensure to group all the layers of the image together.
+
+ 
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, different layers of the following image are grouped.
+
+ 
+
+[Layers of an image group together.]
+
+û Ensure that the document does not have layered images which are not grouped.
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, the layers of the following image are not grouped.
+
+ 
+
+[Layers of the image are not grouped.]
+
+ 
+
+User Groups Affected
+
+·         Blind Users
+
+·         Low-vision users
+
+ 
+
+How to test for Accessibility?
+
+To test images in a PDF document for accessibility, perform the following steps:
+
+1.      Open the document that needs to be tested in Acrobat Professional.
+
+2.      Check if alternate text specified for informative images is descriptive. This can be checked by:
+
+a.      Right clicking the figure tag in the Tags Panel and reviewing the alternate text field.
+
+b.      Navigate to each informative image in the document with screen reader running. Listen if the alternate text sufficiently describes the image’s purpose.
+
+3.      Check if all decorative images are tagged as artifacts.
+
+4.      Check if detailed descriptions are specified for complex images.
+
+5.      Check if layered images in the document are grouped.
+
+6.      If any of the conditions mentioned in step 2 to step 5 fails than it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+Images of text
+
+Text is created as an image to enhance the visual appearance of a page. Text, when created as an image, becomes pixelated when zoomed in. This makes it difficult for low-vision users and elderly users to read the text.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  1.4.5 Images of Text    AA
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for implement images of text in an accessible PDF document.
+
+·         Use plain text to present information rather than images of text.
+
+·         Use font formatting and color to enhance the visual appearance and achieve the desired presentation.
+
+Practices to Apply & Avoid
+
+ü  Include information using plain text instead of image of text.
+
+For example, in the 2019-ar.pdf, plain text is used instead of an image.
+
+[Plain text used to convey information.]
+
+û Avoid using images of text to display important information.
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, image of text is used for displaying "reporting template".
+
+ 
+
+[Text created as an image.]
+
+User Groups Affected
+
+·         Blind Users
+
+·         Low-vision users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test a document for images of text, perform the following steps:
+
+1.      Open the PDF file in Adobe Acrobat DC.
+
+2.      Open the tags section.
+
+3.      Using the selection tool, select the content.
+
+4.      Find this content in the tag panel using “Find from selection” option.
+
+5.      Check if the text provided over an image is implemented as plain text and not an image.
+
+6.      If the conditions in step 5 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.4.5 at Level AA. 
+
+ 
+
+ 
+
+COLOR
+
+Color is a key component of any document. Color should be used wisely to ensure that all users including those with color blindness, low vision and blind users can access the information. While using color, three important aspects should be taken into consideration: 
+
+·         Color should not be used as the sole means to convey important information 
+
+·         Sufficient contrast should be present between foreground text and its background. 
+
+·         Sufficient contrast should be present for key graphical objects with the adjacent content
+
+ 
+
+Color when used as the sole means to convey important information makes it difficult for users with visual impairments, such as color blindness, low vision, blind and deaf-blind users who find it difficult to understand the information. For example, key values of a table are indicated with change in color or items of a graph are distinguished using color. In such situations it becomes difficult for users with visual impairments to interpret and access the information.  
+
+Color contrast between foreground text and its background should be sufficient to ensure that users with different types of colorblindness can access the information. Users with colorblindness, such as Protanopia, Tritanopia, Deuteranopia and monochromacy find it difficult to distinguish between certain color combinations. Thus, it is essential that sufficient contrast is present between foreground text and its background. Color contrast should be sufficient for all the important elements of a PDF document, such as text, headings, form controls, tables, informative images etc. If the color contrast is not sufficient, the information will not be legible for low vision users and colorblind users.  
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.4.1 Use of Color                                                                                                       Level A
+
+Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+
+ 
+
+1.4.3 Contrast (Minimum)                                                                                         Level AA
+
+The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+Large Text: Large scale text and images of large-scale text has a contrast ratio of at least 3:1.
+
+Incidental: Text or images of text that are a part of inactive user interface component, that are pure decoration, that are not visible to anyone, or that are a part of a picture that contains significant other visual content, have no contrast requirement;
+
+Logotypes: Text that is a part of a logo or brand name has no contrast requirement.
+
+ 
+
+1.4.11 Non-text Contrast                                                                                             Level AA
+
+The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+
+User Interface Components
+Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
+
+Graphical Objects
+Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
+
+ 
+
+Use Color wisely
+
+Colors should be used wisely in documents, as information conveyed with color alone might not be available for people with visual disabilities. Color is a key component of any document and this is true for digital documents as well. However, information when conveyed using color alone can make it difficult for people with visual disabilities to access it. For example, in a sales graph red color lines are used to indicate dip in sales whereas green color lines are used to indicate increase in company’s sales. Ever thought how would a blind person perceive such information conveyed only with color?
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  1.4.1 Use of color      A
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure that information conveyed using color is available for all users:
+
+·         Supplement color with visual clues.
+
+·         Add text clues along with color to convey important information.
+
+·         Add patterns, symbols etc. along with color to convey important information.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using color alone to indicate information.
+
+For example, in the cbcc9-guided-reading-ch16.pdf, color alone is used to indicate information such as classification of protist, where “yellow” indicates “eukaryote supergroups”, “purple” indicates “protist clades” and “pink” indicates “nonprotist clades”.
+
+[Color alone "Yellow", "Purple" and "Pink" are used to indicate information.]
+
+ 
+
+ü  Provide textual clues along with color.
+
+For example, in the 2019-ar.pdf, data for Contribution in 2019 is indicated by color as well as through supporting text.
+
+[Contribution in 2019 is indicated by both color and text.]
+
+ 
+
+û Do not use color alone to indicate data in graphs. 
+
+For example, in the 2019-ar.pdf, color alone “blue” and “green” is used to indicate digital penetration and decline in print revenue percentage over the years in a line graph.
+
+ 
+
+[Color alone “blue” and “green” is used to indicate digital penetration and decline in print revenue percentage over the years in a line graph.]
+
+ü  Ensure to supplement color with other visual elements such as patterns, varying line styles or symbols to indicate data in graphs and charts.  
+
+ 
+
+User Groups Affected
+
+When color alone is used to convey important information, the user group that gets largely affected is users with visual disabilities such as:
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.)
+
+·         Low-vision users
+
+·         Blind users
+
+How to test for Accessibility?
+
+To test a PDF document for use of color alone to convey important information, perform the following steps:
+
+1.      Open the PDF document that needs to be tested.
+
+2.      Check on different pages if color is used to convey important information.
+
+3.      Check if color is supplemented with text or other visual clues to convey the information.
+
+4.      If the condition in step 2 is true and step 3 is false, then it is an accessibility violation as per WCAG 2.1 success criteria 4.1.1 at Level A.
+
+ 
+
+Color Contrast
+
+Colors used for displaying text and images of text (text created as an image) should have sufficient contrast with their background to make the information legible for users. 
+
+·         Color blindness is the inability to perceive differences between some colors. Users who are color blind have difficulty in differentiating color or between red and green, or blue and yellow.
+Ensuring a PDF document follows the WCAG guidelines for color contrast ratio, color should not affect a person’s ability to perceive important content.
+
+Types of color blindness:
+
+o   Tritanopia: makes it hard to tell the difference between blue and green, and between yellow and red.
+
+o   Protanopia: makes red look greener and less bright.
+
+o   Deuteranopia: most common type of red-green color blindness. It makes green look more red.
+
+o   Monochromacy: cannot see color at all (gray scale).
+
+ 
+
+[Screenshot of Color contrast analyser (CCA) with contrast ratio of 7.8:1 for Normal vision, 7.5:1 for Protanopia, 8.4:1 for Deuteranopia, 7.8:1 for Tritanopia]
+
+How to implement?
+
+This section lists the techniques to ensure that color contrast used in a PDF document is sufficient.
+
+·         For text:
+For standard text (font lesser than 14pt) to be readable, it is mandatory for it to have a color contrast of 4.5:1 with its background.
+
+o   For large text (14pt bold or 18pt) to be readable, it is mandatory for it to have a color contrast of 3:1 with its background.
+
+o   There are exceptions. Incidental texts which are not required to meet the contrast requirements are: an inactive user interface element, logo, text for pure decoration, text with is not visible to anyone.
+
+·         Non-Text:
+For non-text elements such as user interface components and graphical objects, it is mandatory for the contrast ratio to be above 3:1 with its adjacent color.
+
+o   User interface components are the controls for different functions. These controls in their different states such as active, hover etc. should have a contrast ratio higher than 3:1 with their background. Non-text contrast requirements are not applicable if the user interface components are in an inactive state. They are also not applicable to visual borders that are added by the user agent when a link or any other interactive element receives focus. 
+
+o   Graphical objects are those elements that convey important information, such as graphs, diagrams, key icons etc.  Non-text contrast requirements are applicable to images that convey important information and different components of the graphical object need to have minimum contrast of 3:1. Elements can be excluded from the non-text contrast requirements if changing the contrast will result in incorrect interpretation of information.
+
+o   Colors used for displaying text and images of text (text created as an image) should have sufficient contrast with their background to make the information legible for users.
+
+Contrast for Text Content
+
+Colors used for displaying text and images of text (text created as an image) should have sufficient contrast with their background to make the information legible for users.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  -------------------------- ------------------------
+  WCAG Success Criteria      WCAG Conformance Level
+  1.4.3 Contrast (Minimum)   AA
+  -------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure that contrast between the foreground text is sufficient with its background in different scenarios.
+
+·         Two colors are considered to have good visibility if the contrast ratio between the foreground text and background is sufficient. Darken either the foreground or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1.  
+
+·         Check the contrast ratio between foreground text colors with the background using color contrast testing tools before using them in a PDF file. The minimum contrast requirements outlined by WCAG 2.1 are: 
+
+  ----------------------------------------------- -----------------
+  Text Size                                       Contrast Ratio 
+  Standard size text (anything less than 14pt)    4.5:1 
+  Large-size text (14pt bold or 18pt)             3:1 
+  ----------------------------------------------- -----------------
+
+Authors should check for color contrast before authoring PDF documents to ensure that sufficient color contrast is present for textual content including images of text. Once the document is authored, it becomes difficult to retrofit it for color contrast at a later date.
+
+To adjust color contrast for text using Acrobat Professional, one has to use an older version of Acrobat Professional to achieve it. Moreover, only text colors can be adjusted and not for images, so it is very crucial to check for color contrast during authoring PDF documents.
+
+ 
+
+Adjusting color contrast through Acrobat Professional!
+
+Following steps should be performed to adjust color contrast for text using Acrobat Professional:
+
+1.      Open the pdf file using Adobe Acrobat 8 Professional.
+
+2.      Select the edit tool from the properties bar.
+
+3.      Select the “Touch Up Text Tool”.
+
+4.      Select the text whose color needs to be changed and right click to click on properties
+
+5.      In touch up properties, within the text tab, click on “fill” and select an appropriate color. 
+
+6.      Clicking on close will apply the changes and the color will be adjusted.
+
+ 
+
+[TouchUp Properties tool to change the text color with "Fill" option within text tab highlighted.]
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use colors that provide sufficient contrast between the foreground text and background.
+
+For example, in the 2020-Chief-Executives-strategic-overview.pdf, sufficient color ­contrast is used for displaying the texts "Legacy". The color contrast ratio "10.3:1" is used for displaying the text.
+
+[Sufficient color contrast for the text "Legacy".]
+
+[Color contrast analyser (CCA) showing contrast ratio of 10.3:1 for the text "Legacy"]
+
+û Color contrast between the foreground and background of less than 4.5:1 should not be used for displaying standard size text.
+
+For example, in the 20200512_VigeoEiris_SPO_Pearson_Update.pdf, color contrast for the text "Advanced" is 1.4:1.  
+
+[Insufficient color contrast is used for the text "Advance".]
+
+ 
+
+[Color contrast analyser (CCA) showing contrast ratio of 1.4:1 for the text "Advance"]
+
+ 
+
+User Groups Affected
+
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.)
+
+·         Low-vision users
+
+ 
+
+How to test for Accessibility?
+
+To check the color contrast for text, perform the following steps:  
+
+1.       Open Color Contrast Analyser (CCA).  
+
+2.       Open the page for which color contrast of text needs to be checked.  
+
+3.      Using the eye dropper tool, pick the hex code of the text’s foreground color as well as the hex code of the background color.  
+
+4.      Add the foreground text and background color hex codes in the respective text fields available in CCA.  
+
+5.      Color contrast ratio along with its conformance result will be displayed. Conformance will be displayed for:  
+
+a.       Standard text size and large text size  
+
+b.       Results are displayed for Level AA as well as Level AAA.  
+
+6.       Text or images of text that are part of an inactive user interface component, that are pure decoration, that is not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.  
+
+7.       Text that is part of a logo or brand name has no contrast requirement. 
+
+8.       If the color contrast ratio is less than 4.5:1 for standard text or less than 3:1 for large text, then it is an accessibility violation of WCAG 2.1 success criteria 1.4.3 at Level AA. 
+
+ 
+
+Contrast for Non-Text Content 
+
+Color contrast needs to be enough not only for textual content available in PDF documents but also for all the important non-textual content. The contrast between non-textual content with the adjacent color needs to be 3:1.  
+
+ 
+
+Non-text contrast requirements were introduced in WCAG 2.1 and is applicable to: 
+
+·         User interface controls in different states, such as focus, active, hover, etc. This applies to different user interface components, such as links, form controls, buttons, etc. For example, if the background color of a link changes on focus then the contrast between the link's background color with the text font as well as the page's background color should be at least 3:1. Non-text contrast requirements are not applicable if the user interfaces components in an inactive state. Similarly, non-text contrast requirements do not apply to visual borders that are added by the user agent when a link or any other interactive element receives focus. 
+
+·         Graphical objects that convey important information, such as graphs, diagrams, key icons, etc.  Non-text contrast requirements are applicable to images that convey important information and different components need to have minimum contrast of 3:1, such as lines of a line graph, labels of a bar graph, key icons, numerical and textual data of complex diagrams, etc. However, if changing the contrast will result in an incorrect interpretation of information, i.e. changes the meaning of the subject then those graphics do not need to adhere to the above-mentioned contrast requirements. For example, in the case of science experiments, if by changing the contrast will result in changing the meaning of the topic being explained, then such graphics do not need to adhere to the above-mentioned contrast requirements.  
+
+The above requirements were introduced to ensure that low vision users can access all the important information conveyed using non-text content. 
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  -------------------------- ------------------------
+  WCAG Success Criteria      WCAG Conformance Level
+  1.4.11 Non-text Contrast   AA
+  -------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure sufficient contrast for non-text content in different scenarios.
+
+·         Check the contrast ratio of the graphical object and its surrounding using color contrast testing tools before using them in a PDF file.
+
+·         Two colors are considered to have good visibility if the contrast ratio between the graphical object and its surrounding is enough. Darken either the graphical object or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1. 
+
+Practices to Apply & Avoid
+
+û Color contrast for non-text content should not be less than 3:1.
+
+For example, in the 2020-Chief-Executives-strategic-overview.pdf, color contrast fails for the progress bar and is 1.3:1.  
+
+ 
+
+[Insufficient color contrast for the progress bar.]
+
+[Color contrast analyser (CCA) showing contrast ratio of 1.3:1 for the non-text element.]
+
+ü  Ensure color contrast is above 3:1 for all non-text elements.
+
+ 
+
+For example, in the 2019-ar.pdf, a graph indicating revenue and underlying revenue in 2019 with sufficient color contrast for North American Courseware of 13.3:1 and International of 7.0:1 is found.  
+
+[Graph indicating revenue and underlying revenue in 2019 with sufficient color contrast for North American Courseware of 13.3:1 and International of 7.0:1.]
+
+ 
+
+ 
+
+User Groups Affected  
+
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+
+·         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+
+·         Low-vision users 
+
+­
+
+How to test for Accessibility?
+
+To check the color contrast for non-text content, perform the following steps:  
+
+1.      Open Color Contrast Analyser (CCA).  
+
+2.      Open the page for which the color contrast of non-text content needs to be checked.
+
+3.      Use the picker to select the color of the graphical object and its surrounding.  
+
+4.      Color contrast ratio along with its conformance result will be displayed. 
+
+5.      If the color contrast ratio is less than 3.0:1 then it is an accessibility violation of WCAG 2.1 success criteria 1.4.11 at Level AA. 
+
+ 
+
+HEADINGS
+
+Headings act as a title for key sections of a PDF document. Headings are defined for the main section as well as sub-sections of the document. Headings form an outline that identifies key sections of a document. They depict the hierarchy of a document’s content structure.
+
+Headings allow screen reader users to skim through the content of the document and access the required content quickly. Headings also act as a base for defining document bookmarks. Descriptive heading text help users to understand what content will be available in each section of the document.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text
+
+2.4.1 Bypass Blocks                                                                                                    Level A
+
+A mechanism is available to bypass blocks of content that are repeated on multiple webpages.
+
+2.4.6 Headings and Labels                                                                                           Level AA
+
+A Headings and labels describe topic or purpose.
+
+ 
+
+Heading Structure
+
+Headings are used to define the content structure of a document. Sections and sub-sections of a document are tagged using heading level tags. Like HTML, there are six heading levels Heading Level 1 - Heading Level 6 in a PDF document.
+
+Assistive technologies can identify the headings based on the tags and provide users with an option to understand the content structure as well as navigate quickly to different parts of a document.
+
+Heading levels should be defined in a manner that they depict the content hierarchy of the document. Heading levels should not be skipped, i.e. <H5> should not be used directly to tag the main topic or section as the first heading in the document. If the PDF document is a book, the name/title of the book should be tagged as <H1>. All the chapter titles should be tagged as <H2> and sub-topics within the chapter should be tagged as <H3>, <H4>, <H5> and <H6> depending on the content of the book.
+
+Headings should be used in a sequence and must not be skipped but at the same time they should be tagged consistently. So if in a document the sub-topics of the chapter go up to <H4> and then the next chapter starts , it is acceptable in such a scenario to break the sequence and tag the chapter title using <H2>.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  2.4.1 Bypass Blocks            A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure visual headings are tagged as Headings.
+
+·         Avoid the use of only formatting styles such as font size, underline, bold etc. to present headings.
+
+·         Use PDF heading tags to define the document structure.
+
+·         Use headings in the correct sequence:
+
+§  <H1> should be followed by <H2>
+
+§  <H2> should be followed by <H3> and so on
+
+·         It is a best practice to have only one <H1> for a document that is indicative of the core content of the PDF file. However, if <H1> is used to tag main title of each section within a document then it is an acceptable as long as it has been followed consistently!
+
+Note: Remove all empty heading tags from the document, as it gives a false impression to screen reader users that some information is not being read out for them.
+
+·         Define the outline of the content by providing short headings to group related content.
+
+ 
+
+@Tip:
+Images, such as logos can be tagged as H1 of a PDF documents that do not have any textual heading.   
+
+Practices to Apply & Avoid
+
+ü  Heading should only be defined for the text that constitutes as a heading for a section or subsection on a page.
+
+ 
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the heading “Allocation reporting” is appropriately defined as <H3>.
+
+[Heading appropriately marked with the <H3> tag.]
+
+û Avoid tagging content that does not constitute as a heading using heading tags.
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the date of the document “18 September 2020” content is incorrectly defined as <H1>.
+
+[Content incorrectly marked using the <H1> tag.]
+
+ 
+
+ü  Use heading tags such as <H1>-<H6> to define headings in a document.
+
+ 
+
+û Avoid skipping heading levels.
+
+For example, in the 2020RemunerationPolicy.pdf, the heading text such as “Aligned to longer-term strategy” is defined as heading level 3 (<H3>) instead of heading level 2 (<H2>) in the main content area.
+
+ 
+
+[Heading level 2 inaccurately tagged using the <H3> tag. ]
+
+û Avoid using only visual formatting to define headings in a document.
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the text “Long-Term Incentive Plan (LTIP)" visually appears as a heading but is not tagged using heading tag. Instead, visual formatting alone is used to present it as a heading
+
+[Heading presented using visual formatting alone.]
+
+û Avoid using multiple <H1> headings in a document.
+
+For example, in the FINAL-RNS-200918_Results_of_General_Meeting.pdf, there are multiple <H1> heading tags.
+
+ 
+
+[Use of multiple <H1> tags in a document. ]
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To test for document’s headings, perform the following steps:
+
+1.      Open the document that needs to be reviewed for heading structure using Acrobat Professional.
+
+2.      Select the headings and check the heading tag assigned to it by opening the Tags panel.
+
+3.      If the heading tag does not match with the content hierarchy of the document, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.10 at Level AAA.
+
+4.      If the heading is not tagged using appropriate heading tag, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+@Tip:
+
+Check heading structure of a document with screen reader running to get quick and reliable results.
+
+ 
+
+ 
+
+Heading Text
+
+Heading text should be unique, clear, descriptive, and consistent across pages of a document. This helps users in understanding what content will be available below the given heading, and users can easily find the information they are looking for.
+
+@Tip:
+Descriptive heading text helps screen reader users to skim through the document and quickly access the required content.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ---------------------------- ------------------------
+  WCAG Success Criteria        WCAG Conformance Level
+  2.4.6 Headings and Labels    AA
+  ---------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to ensure heading text of a document is descriptive.
+
+·         Use heading text that is descriptive of the section’s content.
+
+·         Use unique heading text for each section and sub-section of a document.
+
+·         Use a single heading tag to present heading text split across multiple lines. If there are two tags present in the Content Panel of the document, then move the text inside a single tag and delete the other tag from the Contents Panel.
+
+ 
+
+@Tip:
+
+Include the heading text within Actual text of the respective heading tag if the heading text is split visually but does not have multiple tags in the Contents Panel.
+
+ 
+
+Practices to Apply & Avoid  
+
+ü  Ensure descriptive heading text is used for each section and sub-section of a document.
+
+ 
+
+For example, in Pearson-Social-Bond-Brochure_Accessible.pdf, the heading text “2020 Sustainability Plan” is descriptive about the section’s content.
+
+ 
+
+[Descriptive heading text for a section.]
+
+ 
+
+û Avoid splitting heading text into multiple heading tags.
+
+For example, in the Pearson-Social-Bond-Brochure_Accessible.pdf, the heading “Pearson’s Responsible Business Leadership Council (RBLC)” is split into two heading tags - “Pearson’s Responsible Business” and “Leadership Council (RBLC)”. This will result in two headings announced for screen reader users.
+
+[Heading text split in two tags.]
+
+ 
+
+ü  Ensure Heading text is in one tag.
+
+For example, in the Pearson-Social-Bond-Brochure_Accessible.pdf, the heading text “Taking stock of our 2020 plan” is within a single <H2> tag.
+
+[Heading text tagged appropriately within one <H2> tag. ]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision Users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test for a document’s heading text, perform the following steps:
+
+1.      Open the PDF document that needs to be tested in Adobe Reader.
+
+2.      Turn on either JAWS or NVDA.
+
+3.      Press “H” to jump to the next heading and “Shift + H” to jump back to the previous heading.
+
+4.      Press “Insert + F6” to access the list of headings using JAWS or “Insert + F7” to access the list of headings using NVDA.
+
+5.      Check if any heading tag is split into multiple tags.
+
+6.      Check if heading text sufficiently describes the content of each section.
+
+7.      If the conditions in step 5 and 6 are true, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.6 at Level AA.
+
+ 
+
+LISTS
+
+In a PDF document, there are three main types of lists: ordered list, unordered list and nested list. An ordered list is used to group sequential items, an unordered list to group related but non-sequential items whereas a nested list is a list within a list. A nested list can be used for both ordered and unordered lists.
+
+Lists, when tagged correctly, are identified by screen readers as lists and nested lists. A screen reader informs users about the list's beginning and end, number of items in the list, and their nesting levels. This helps users interpret the related data.
+
+Screen readers do not identify type of a list for their users. Users can identify type of list on the basis of the list item prefix, such as “1, 2, 3 … “and “bullet character, hyphens, asterisk character … “ etc.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text
+
+ Ordered Lists
+
+An ordered list is used to group sequential items. In PDF documents, an ordered list is commonly used to present list of form instructions, steps to perform an exercise, steps that are part of how to guides etc.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------- ------------------------
+  WCAG Success Criteria           WCAG Conformance Level
+  1.3.1 Info and Relationships    A
+  ------------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented to tag ordered lists.
+
+·         Use the standard 4 tags to present ordered lists:
+
+o   <L> that acts as a container for all the list items;
+
+o   <LI> that is used to present individual list items;
+
+o   <Lbl> to wrap the list item prefix;
+
+o   <LBody> to present content of individual list items.
+
+·         include <Lbl> and <LBody> tags under a single <LI> tag and do not use them in separate <LI> tags.
+
+·         Ensure empty <LI> tags are not present in the document.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use tags, such as List (<L>), List Items (<LI>), Label <Lbl> and List item Body <LBody> to structure a list.
+
+For example, in the 2020-Schedule-of-Matters.pdf, list tags are accurately used to present related information such as “1. Responsibility for the overall leadership of the company and setting the company’s purpose, values, and standards…” and “2. Determining the company’s strategy in consultation…” etc.
+
+ 
+
+[Ordered list structured correctly using <L>, <Li>, <Lbl> and <LBody> tags.]
+
+ 
+
+û Do not group related items only by visually placing them together.
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, the ordered list of “1. Identify the functional unit…..”, “2. A patient is prescribed a medication….” And “3. On the basis of the anatomy….” Is tagged in accurately using the <P> tag.
+
+[Ordered list inaccurately tagged using the <P> tag. ]
+
+û Avoid skipping any list tag element to structure a list.
+
+For example, in the 2020-Governance.pdf, the ordered list has a missing Label <Lbl> tag.
+
+ 
+
+[Ordered list with missing <Lbl> tag]
+
+ 
+
+Unordered Lists
+
+Unordered lists are used to group non-sequential related items. Examples of unordered lists in a PDF document include related content below points to remember in a book, list of company’s offices in an Annual Report, services that a company offers in their sales brochure etc.
+
+ 
+
+How to implement?
+
+This section lists the techniques that need to be implemented to tag unordered lists.
+
+·         Use the standard 4 tags to tag unordered lists:
+
+o   <L> that acts as a container for all the list items;
+
+o   <LI> that is used to present individual list items;
+
+o   <Lbl> to wrap the list item prefix;
+
+o   <LBody> to present content of individual list items.
+
+·         include <Lbl> and <LBody> tags under a single <LI> tag and do not use them in separate <LI> tags.
+
+·         Ensure empty <LI> tags are not present in the document.
+
+@Tip:
+
+Specify actual text for <Lbl> tag to inform screen reader users about list item prefix (“bullets”) if the document’s font is not rendered appropriately for the list item prefix character.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use tags, such as List (<L>), List Items (<LI>), Label <Lbl> and List item Body <LBody> to structure an unordered list.
+
+ 
+
+For example, in the 2020-Roles-and-Responsibilites-of-the-Chair.pdf, list tag is accurately used to specify related information such as “Upholding the highest standard of integrity…” and “setting the agenda, style and tone of board….”
+
+[Unordered list structured correctly using <L>, <Li>, <Lbl> and <LBody> tags.]
+
+ 
+
+û Do not group related items only by visually placing them together.
+
+For example, in the 2020-Governance.pdf, related items are placed together but not structured using List (<L>), List Items (<LI>), Label <Lbl> and List Item Body <LBody> tags.
+
+ 
+
+[Unordered list not structured using the appropriate list tags. ]
+
+ 
+
+û Avoid using formatting effects to create lists.
+
+For example, in the 2020-Governance.pdf, the unordered list of “The audio committee……”, “Pearson’s Executive and leadership….” etc. is inaccurately grouped together using the <P> tag.
+
+ 
+
+[Unordered list inaccurately tagged using the <P> tag. ]
+
+û Avoid skipping any list tag required to structure a list
+
+For example, in the 2020-Governance.pdf, the unordered list has a missing Label <Lbl> tag.
+
+ 
+
+[Unordered list with missing Label <lbl> tag.]
+
+ 
+
+Nested Lists
+
+Nested lists are lists within a list. Nested lists are used within ordered as well as unordered lists. For each nested level list, screen reader identifies the nesting level for their users which help them to access the document with ease.
+
+In the case of ordered lists, a nested list can either be an ordered list or an unordered list. Whereas in the case of an unordered list, it is recommended to use only unordered nested list.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------- ------------------------
+  WCAG Success Criteria           WCAG Conformance Level
+  1.3.1 Info and Relationships    A
+  ------------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques for implementing nested lists in a document.
+
+·         Use ordered or unordered lists to present nested list based on the content available in a document.
+
+·         Wrap the nested list inside <LI> tag of the parent list to convey the structure accurately to screen reader users.
+
+·         Use nested lists up to two levels to improve the reading experience for screen reader users.
+
+ 
+
+@Tip:
+
+Screen reader users find nested lists that have more than 2 nesting levels difficult to comprehend.  
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure to tag and structure nested lists appropriately using the List (<L>), List Items (<LI>), Label <Lbl> and List Item Body <LBody> tags.
+
+For example, in the 2020-Roles-and-Responsibilities-of-the-Chair.pdf, the nested list is accurately used to tag an unordered list’s content such as “Chairing board and general meetings”, “Running the board and ensuring…”, “Setting the board agenda…” etc. within a an ordered list’s content “1. Meetings”.
+
+[Nested list structured correctly using <L>, <Li>, <Lbl> and <LBody> tags.]
+
+û Avoid omitting the <Lbl> tag
+
+For example, in the 2020-Roles-and-Responsibilities-of-the-Chair.pdf, in the nested list the label <Lbl> tag is missing.
+
+[Missing <Lbl> tag in the nested list.]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision Users
+
+ 
+
+How to test for Accessibility?
+
+To check for accessibility of lists, perform the following steps:
+
+1.      Open the PDF file using Acrobat Professional.
+
+2.      Open the tags panel.
+
+3.      Using the selection tool, select the list contents.
+
+4.      Find its corresponding tag from the tag section using the “find tag from selection” option that is available below the “Options” menu.
+
+5.      Ensure, the list starts with an <L> tag.
+
+6.      Each list item should be tagged using <LI> tag and is nested within the <L> tag.
+
+7.      List item prefix should be tagged using <Lbl> tag. This tag should contain the label of the list content that is, the bullet points/numbers/ alphabets etc.
+
+8.      Content of each list item should be tagged using <LBody> tag.
+
+9.      If the conditions in step 5 to 8 are not true for any ordered, unordered, or nested list within a document than it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+TABLES
+
+Tables are used in a PDF document to present relational data. PDF tables allows data like text, images, links, other tables, etc. to be arranged into rows and columns of cells. Two types of tables are generally used in a PDF document: data tables and layout tables.
+
+[AS2]  [W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+ 
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text
+
+ 
+
+1.3.2 Meaningful Sequence                                                                                      Level A
+
+When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+ 
+
+Layout Tables
+
+Layout tables do not represent any relationships among content. Layout tables are used to position the content in a PDF document. Authors used layout tables to position page content such as images, textual content, contact information etc.
+
+When layout tables are used, ensure that the content presented is linearized correctly, i.e. the order of the content should be meaningful when it is accessed in a linear order. Screen readers read a table’s content in a linear order, reading one cell at a time from left-to-right and top-to-bottom. For example, a screen reader will read the table information in the following order:
+
+6.      Column 1, row 1
+
+7.      Column 2, row 1
+
+8.      Column 3, row 1 …
+
+9.      Column 1, row 2
+
+10.  Column 2, row 2
+
+11.  Column 3, row 2 …
+
+Structural table tags, such as table headers (<TH>), table caption (<Caption>), table summary (”summary” property), etc., are used for conveying table structure to user agents, and they should not be used in the case of layout tables.
+
+ 
+
+ 
+
+[AS3] [W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ---------------------------- ------------------------
+  WCAG Success Criteria        WCAG Conformance Level
+  1.3.1 Info & Relationships   A
+  1.3.2 Meaningful Sequence    A
+  ---------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for implementing layout tables in a PDF document:
+
+·         Tag the table borders as artifacts.
+
+·         Tag the table content in a logical reading order.
+
+·         Ensure that structural table tags are not used for displaying layout tables.
+
+ 
+
+@Tip:
+
+Layout tables in PDF documents are not identified as tables for screen reader users as they are not tagged using <Table> tag.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure structural table tag is not used for layout tables.
+
+ 
+
+For example, in the 2020-Governance.pdf, the content under operation, opportunity and performance and period is accurately tagged using <H3> and <P> tags.
+
+ 
+
+[Content accurately tagged using the <H3> and <P> tags. ]
+
+û Avoid using table tags for formatting content presented using layout tables.
+
+For example, in the 2020-Governance.pdf, the content under operation, opportunity and performance and period is inaccurately tagged using the <Table> tag.
+
+ 
+
+[Content inaccurately tagged using the <Table> tag. ]
+
+How to test for Accessibility?
+
+To test layout tables, present in a PDF file, perform the following steps:
+
+1.      Open the PDF file using Acrobat Professional.
+
+2.      Open the Tags Panel.
+
+3.      Select the contents of the layout table.
+
+4.      Click on “Find Tag from Selection” available below Options inside the Tags Panel.
+
+5.      Check if table borders are tagged as artifacts.
+
+6.      Check if structural table tags are not used for tagging the table’s contents.
+
+7.      Check if the reading order is meaningful.
+
+8.      If the conditions in step 5, 6 and 7 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 and 1.3.2 at Level A.
+
+ 
+
+Simple data Tables
+
+Data tables are used to present related data. A data table consists of data cells and header cells. Table headers are added to provide context for users and if this contextual relationship is not exposed programmatically, it will pose accessibility barriers for people with visual disabilities.
+
+A simple data table comprises of either single set of column headers or row headers or both column and row headers. A simple data table does not generally include merged cells but at times might include blank cells. Screen readers identify the table headers and announce them for users as they navigate through the data.
+
+ 
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  WCAG Success Criteria        WCAG Conformance level
+  ---------------------------- ------------------------
+  1.3.1 Info & Relationships   A
+
+ 
+
+ 
+
+How to implement?
+
+This section lists the techniques that should be used for accessible implementation of simple Data Tables.
+
+·         Tag table header cells using <TH> tags.
+
+·         Use <TD> tag to structure blank cells. This is applicable for cells present in the first row or column of a simple data table.
+
+Note: An empty cell should never be tagged using <TH> tag.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use appropriate tags to specify table using <Table>, <TH>, <TR> and <TD> tags.
+
+ 
+
+For example, in the cbcc9-guided-reading-ch16.pdf, the <Table> tag is used to tag the entire table. <TR> tag is used to tag the table column headers like- “Photoautotrophs”, “Photoheterotrophs”, “Chemoautotrophs” and “Chemoheterotrophs”. <TD> is also used to tag row headers like- Description and Example. <TD> is used to tag the empty data cells in the table.
+
+[Table tagged appropriately using the <Table>, <TH>, <TR> and <TD> tags.]
+
+û Avoid using only visual formatting to present data in a tabular format.
+
+For example, in the cbcc9-guided-reading-ch16.pdf, the content visually appears as a table, however it is tagged inappropriately using the <P> tag.
+
+ 
+
+[Data table tagged incorrectly using <P> tag.]
+
+û Avoid using <TD> tags for tagging table headers.
+
+For example, in the 2019-ar.pdf, table headers in the table such as- “Strategic Priority”, “Measure, % of total funding” etc. are tagged using the <TD> tag.
+
+[Table headers tagged inappropriately using <td> tag.]
+
+How to test for Accessibility?
+
+To test a simple data table for accessibility, perform the following steps:
+
+1.      Open the PDF document that needs to be tested in Acrobat Professional.
+
+2.      Navigate to the simple data table that needs to be tested.
+
+3.      Open the Tags Panel.
+
+4.      Select the simple data table.
+
+5.      Click on “Find Tag from Selection” available below Options inside the Tags Panel.
+
+6.      Check if table headers and data cells are tagged appropriately, using <TH> and <TD> tags respectively.
+
+7.      If the condition in step 6 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+Complex data Tables
+
+A complex data table comprises of two or more sets of column headers, row headers or column and row headers, as well as data cells.
+
+Tabular data, if not coded keeping accessibility in mind, can pose accessibility issues for users with vision disabilities (who use screen readers). In fact, content presented using simple data tables can yet be understood but in the case of complex data tables, screen reader users often find it difficult to interpret the data.
+
+In the case of complex table along with <TH> tags, “id” needs to be specified for data cells and table header cells. This helps in explicitly defining the relationship between data cells and their headers. This explicit association is helpful for screen readers in rendering the header cells when users navigate through the table data.
+
+In order to make complex tables accessible, it is recommended to define the table caption and summary as well. Table caption is visible for all users whereas summary should be provided to orient users with visual impairments about how the data is organized in the table. Alternatively, complex tables can also be made accessible by breaking them in to multiple simple data tables. Simple tables are easy to comprehend by users with visual disabilities.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  WCAG Success Criteria        WCAG Conformance level
+  ---------------------------- ------------------------
+  1.3.1 Info & Relationships   A
+
+ 
+
+ 
+
+How to implement?
+
+This section lists the techniques for implementing accessible complex data tables in a PDF document.
+
+·         Define table headers using <TH> tags.
+
+·         Use row span and column span fin the case of merge columns and rows.
+
+·         Define scope for table header cells.
+
+·         Define “id” for table header and data cells to explicitly associate data and header relationship between the cells.
+
+·         Define table caption for complex data tables.
+
+·         Define summary for complex data tables. Summary can be defined by clicking on Reading Order Tool and then right-clicking on the table and choose “Edit Table Summary”.
+
+Practices to Apply & Avoid
+
+û Avoid specifying incorrect ColSpan or RowSpan values for complex data tables.
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, 4 columns are merged to present the header “Project Overview” but an inaccurate ColSpan of 1 is specified.
+
+ 
+
+[Incorrect Colspan value is specified for complex data table.]
+
+ 
+
+ü  Specify correct values for RowSpan and ColSpan.
+
+ 
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, 4 columns are merged for header “Allocation information” and an accurate ColSpan of 4 is specified.
+
+ 
+
+[Complex data table with an accurately specified ColSpan value of 4. ]
+
+û Avoid using <TD> tags to tag table headers.
+
+For example, in the 2020-Governance.pdf, table data tag <TD> is used to incorrectly tag the table headers of “Performance measure”, “% of total”, “threshold” etc.
+
+ 
+
+[<TD> used to tag table headers. ]
+
+ü  Specify unique ID values for table headers and data cells of a complex table.
+
+ 
+
+For example, in the 2020-Governance.pdf, a unique ID attribute is used to tag table headers and cells in the complex table.
+
+[Unique ID used to tag complex data tables. ]
+
+ü  Ensure to always tag table headers using the <TH> tag.
+
+ 
+
+For example, in the 2020-Governance.pdf, table header tag <TH> is used to correctly tag “Performance measure”, “% of total”, “threshold” etc. table headers.  
+
+ 
+
+[<th> used to markup table headers. ]
+
+ 
+
+User Groups Affected 
+
+·         Blind users
+
+·         Low vision users
+
+·         Deaf-blind users
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To check a complex data table for accessibility, perform the following steps:
+
+1.      Open the PDF document that needs to be tested using Acrobat Professional.
+
+2.      Open the Tags Panel.
+
+3.      Select the complex table and click on “Find Tag from Selection” available below “Options” inside the Tags Panel.
+
+4.      Check if header cells are tagged using <TH> tags.
+
+5.      Check if columns and rows are merged accurately.
+
+6.      Check if scope and id are defined to convey the relationship.
+
+7.      If any of the conditions in step 4, 5 and 6 fails then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+The below table lists keystrokes for accessing tables using the two leading screen readers on the Windows operating system: 
+
+ 
+
+  ----------------------- ------------------------- -------------------------
+  Function                JAWS command              NVDA command
+  Go to Next Table        T                         T
+  Go to Previous Table    Shift + T                 Shift + T
+  List of Tables          Insert + Control +T       –
+  Move to next cell       Ctrl + Alt +Right Arrow   Ctrl +Alt +Right Arrow
+  Move to previous cell   Ctrl + Alt+ Left Arrow    Ctrl+ Alt+ Left Arrow
+  Move Down cell          Ctrl+ Alt+ Down Arrow     Ctrl + Alt + Down Arrow
+  Move Up cell            Ctrl + Alt + Up Arrow     Ctrl + Alt + Up Arrow
+  ----------------------- ------------------------- -------------------------
+
+ 
+
+ 
+
+TITLE, LANGUAGE AND CONTENT
+
+Title of a PDF document helps users especially screen reader users understand what information will be available in the document. Often authors set the file name as its title which fails to describe the file’s contents to users. Organizations have file naming conventions that authors are required to follow and by specifying descriptive file title they can adhere to the naming conventions and at the same help users understand the file’s contents easily.
+
+Language of the PDF file’s content must be defined programmatically to ensure that user agents can render the information accurately. User agents, such as assistive technologies (screen readers and braille displayers) rely on PDF tags and properties to identify the language of a document.
+
+Content is king and it is equally important to make it accessible to ensure that people with disabilities can access the content. Different factors play a crucial role when it comes to making content accessible. One of such factors is expansion for abbreviations and acronyms that need to be tagged correctly so all users can interpret them correctly. PDF tags provides authors with different tags and properties for displaying abbreviated content.
+
+[AS4] [W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+2.4.2 Page Titled                                                                                                        Level A
+
+Web pages have titles that describe topic or purpose.
+
+3.1.1 Language of Page                                                                                              Level A
+
+The default human language of each Web page can be programmatically determined.
+
+3.1.4 Abbreviations                                                                                                   Level AAA
+
+A mechanism for identifying the expanded form or meaning of abbreviations is available.
+
+ 
+
+Descriptive file title
+
+Document title is the first piece of information that a screen reader reads when a PDF file is opened. Based on the title, users can understand the file’s content, as well as the file’s purpose. An appropriate document title is found very helpful by users with visual impairments who use a screen reader or screen magnifier, as it helps them understand the file’s contents. If a PDF file lacks a title or includes filename as its title, it becomes difficult for screen reader users to interpret the file’s contents.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  2.4.2 Page Titled       A
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for adding descriptive file title for a PDF document.
+
+·         Specify descriptive title for the file by:
+
+o   Click on File>Document Properties>Description Tab>Title:
+
+o   Specify descriptive title that is indicative of the file’s contents.
+
+·          Select “Document Title” from “Windows Option-Show” available below “Initial View”.
+
+@Tip:
+
+Specify <H1> text as title of the file.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using an empty or inaccurate file title.
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the file title is empty.
+
+[PDF with empty file title.]
+
+ü  Ensure that the file title appropriately describe the file’s contents.
+
+For example, in the 2020-Roles-and-responsibilities-of-the-chair.pdf, the file has an accurate title “Role of Chair”.
+
+[PDF with accurate file title "Role of Chair".]
+
+How to test for Accessibility?
+
+To test if descriptive title is specified for a PDF file, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Click on Document Properties > Description Tab > Title.
+
+3.      Check if descriptive title is specified in the “Title” field and “Document Title” is selected from the Initial View > Windows Option – Show.
+
+4.      If any of the condition in step 3 fails than it is an accessibility violation as per WCAG 2.1 success criteria 2.4.2 at Level A.
+
+Primary Language
+
+The document’s language must be set programmatically to ensure that assistive technologies, such as screen readers and Braille displays, can render the information in the language intended by the author. Screen readers include support for different languages and provide an option to either change the language manually or configure it to switch automatically.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------ ------------------------
+  WCAG Success Criteria    WCAG Conformance Level
+  3.1.1 Language of Page   A
+  ------------------------ ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques for defining primary language of a PDF document.
+
+·         Define primary language by:
+
+o   Click on File>Document Properties>Advance Tab>Reading Option>Language.
+
+o   Select required language from the drop-down or type the language code if not available in the list.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Define the primary language of the document.
+
+ 
+
+For example, in the 2020-Roles-and-responsibilities-of-the-chair.pdf, the file has appropriate primary language “EN-GB” defined.
+
+[PDF with correctly defined primary language.]
+
+û Ensure that incorrect primary language is not defined for the file.
+
+For example, in the 2020-Roles-and-responsibilities-of-the-chair.pdf, the file has an incorrect primary language “French” defined.
+
+[PDF with incorrect primary language defined. ]
+
+û Ensure that primary language is defined for every file.
+
+For example, in the 2020-Chief-Executives-strategic-overview.pdf, primary language is missing for the file.
+
+ 
+
+ 
+
+[Primary language not defined for the PDF file. ]
+
+How to test for Accessibility?
+
+To check a file’s primary language, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Click on File > Document Properties > Advance Tab > Reading Option > Language.
+
+3.      Check if primary language is defined accurately.
+
+4.      If the condition in step 3 fails than it is an accessibility violation as per WCAG 2.1 success criteria 3.1.1 at Level A.
+
+ 
+
+Secondary Language
+
+If the PDF document’s primary language is English and there is a paragraph in Spanish on a page, both the primary and secondary language need to be defined. If a language change is not defined, a screen reader might continue to read the Spanish paragraph in English. This will result in misinterpretation of information, so it is essential to define the document’s primary and secondary languages (if any) to ensure that content is rendered accurately.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+ 
+
+  ------------------------- ------------------------
+  WCAG Success Criteria     WCAG Conformance Level
+  3.1.2 Language of Parts   AA
+  ------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for defining the secondary language of a PDF document.
+
+·         Define the secondary language from the respective tag’s properties from the Content or Tags Tab.
+
+·         Authors can either select the language from the drop-down or type in the language code.
+
+@Tip:
+
+If screen reader does not identify change in language define the language in both Content and Tags tab of the Properties dialog.
+
+ 
+
+Practices to Apply & Avoid
+
+ü   Define the secondary language accurately.
+
+ 
+
+For example, in the Chez Nous_5e_IPA3_CHs5-7_SE_FINAL.pdf, secondary language “French” is defined for the content- “ALLO RESTO est Clairmont le pionnier ….”in both the “Content” and “Tag” tab.
+
+ 
+
+ 
+
+[Secondary language French defined accurately in "Content" tab.]
+
+ 
+
+[Secondary language French defined accurately in "Tag" tab.]
+
+ 
+
+û Avoid defining secondary language inaccurately.
+
+For example, in the Chez Nous_5e_IPA3_CHs5-7_SE_FINAL.pdf, secondary language “English US” is defined incorrectly for the content- “1. Selon la narratrice, la discipline du yoga… “in both the “Content” and “Tag” tabs.
+
+[Secondary language French defined inaccurately in "Content" tab.]
+
+[Secondary language French defined inaccurately "Tag" tab.]
+
+û Ensure that secondary language is defined for every page.
+
+For example, in the Chez Nous_5e_IPA3_CHs5-7_SE_FINAL.pdf, secondary language of both “Content” and “Tag” tabs for the content “Deliveroo vous fait la promesse d’être livré en moins de 30…..” is missing.
+
+ 
+
+[Secondary language is missing in “Content” tab.]
+
+ 
+
+[Secondary language is missing in “Tag” tab. ]
+
+How to test for Accessibility?
+
+To check if secondary language is defined correctly, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Select the text in secondary language and open the Tags Panel.
+
+3.      Click on “Find Tag from Selection” available below Options in the Tags Panel.
+
+4.      Right-click on the Tag and click on Properties.
+
+5.      Check if secondary language is specified in the Contents and Tags tab.
+
+6.      If the condition in step 5 fails than it is an accessibility violation as per WCAG 2.1 success criteria 3.1.2 at Level AA.
+
+ 
+
+Abbreviations and Acronyms
+
+Abbreviations are shortened form of words, name, or phrase, such as W3C, WCAG etc. Acronyms on the other hand are abbreviated forms made from initial letters or other parts of a word, name or phrase which may be pronounced as a word, such as WHO, USA etc.
+
+Expanded form of abbreviations and acronyms need to be provided to ensure their meaning is clear for all users correctly. Assistive technologies such as screen readers support reading of abbreviations and acronyms if they are tagged correctly. However, by default screen readers are not configured to read expansion of abbreviated words but provide users with options to do so through screen reader settings.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  3.1.4 Abbreviations     AAA
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented in order to tag abbreviations or acronyms in a PDF document.
+
+·         Add the full form of abbreviations and acronyms by typing it in the Expansion Text field available in the Contents Tab of the tag’s properties.
+
+ 
+
+@Tip:
+
+Add expansion for abbreviations and acronyms only for the first occurrence in the document to avoid excessive listening for screen reader users.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using abbreviations without specifying their expansion in a file.
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the expansion for the term “FTSE” is not specified in the expansion text box at the first occurrence.
+
+[Expansion text for the term "FTSE" not specified. ]
+
+ü  Provide the full form of an abbreviation.
+
+ 
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the expansion for the term “FTSE” is specified as “Financial Times Stock Exchange (FTSE)” in the expansion text box at the first occurrence.
+
+[Expansion text for the term "FTSE" specified as "Financial Times Stock Exchange (FTSE)".]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+ 
+
+How to test for Accessibility?
+
+To check if expansion for abbreviations and acronyms are specified in the first occurrence in the PDF document, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using the Acrobat Professional.
+
+2.      Select the abbreviation or acronym text and open the Tags Panel.
+
+3.      Click on “Find Tag from Selection” available below Options in the Tags Panel.
+
+4.      Right-click on the tag’s properties and click on the Contents Tab.
+
+5.      Check if full form of abbreviation or acronym is specified in the Expansion Text box.
+
+6.      If the condition in step 5 fails than it is an accessibility violation as per WCAG 2.1 success criteria 3.1.4 at Level AAA.
+
+ 
+
+ 
+
+ 
+
+STEM EQUATIONS
+
+Science Technology Engineering Mathematics (STEM) content is one of the most challenging types of content as far as accessibility is concerned. At the same time, it is crucial to make it accessible to ensure learners with different types of disabilities can access the content using their Assistive Technology.
+
+STEM education is important as it teaches logic and critical thinking. STEM education is also important as it is required in different job profiles on offer in the market. However, learners with disabilities are often at a disadvantage since STEM content is not created keeping accessibility in mind. STEM content consists of equations, subscripts, and superscripts as well as mathematic formulas to a large extent. It also includes simulations, experiments, and diagrams.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+4.1.2 Name, Role, Value                                                                                            Level A
+
+For all user interface components (including but not limited to: form elements, links and components generated by script), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+
+ 
+
+Alternate text for formula tags
+
+Formula tags are used to present accessible math content in a PDF document. Alternate text needs to be specified for mathematical equations to enable users with visual disabilities to access the math content. Adding descriptions via the alternate text does not provide an equitable experience for users with visual disabilities while accessing math content but currently it is the only option available to make the math content accessible for them.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------- ------------------------
+  WCAG Success Criteria     WCAG Conformance Level
+  4.1.2 Name, Role, Value   Level A
+  ------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for implementing accessible math content in a PDF document.
+
+·         Use the <Formula> tag to tag the math content.
+
+·         Add description for the math content via the actual text field of the <Formula> tag.
+
+@Tip:
+
+Spell the mathematical symbols, such as “fraction” instead of using symbols within the actual text to make it easier for screen reader users to interpret the content.
+
+Note: As per the accessibility guidance documented in different PDF accessibility standards and guidelines, alternate alternative text needs to be specified for the <Formula> tag. However, at Pearson we require textual description for the math equation using the actual text property of the <Formula> tag. Using the actual text property allows all screen readers to announce the alternative text for <formula> tag elements.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Specify alternate text in the actual text field for all math equations within a PDF document.
+
+For example, in the Berk_sg03.pdf, the actual text for the equation highlighted in the screenshot is specified as “Present value of retiring in one year equals to $3,000,000 plus $100,000 divided by 1.05 equals to $2,952,381”.
+
+[AS5] 
+
+[Actual text specified for the math equation. ]
+
+û Avoid using <Formula> tags that lack textual descriptions.
+
+For example, in the Berk_sg03.pdf, the actual text for the equation is not specified.
+
+[AS6] [Alternate text not specified for math equation.]
+
+û Make use of the <Formula> tag.
+
+For example, in the Berk_sg03.pdf, the formula ($10,000) / (1+r) is incorrectly tagged using the <P> tag.
+
+[Math content displayed using <P> tag.]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+How to test for Accessibility?
+
+To test math content in a PDF document, perform the following steps:
+
+1.      Open the PDF document that needs to be tested in Acrobat Professional.
+
+2.      Open the Tags Panel.
+
+3.      Select the math content and click on “Find tag from selection” available below the “Options” control.
+
+4.      Check if accurate textual description is specified via the actual text field of the <Formula> tag.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 4.1.2 at Level A.
+
+ 
+
+ 
+
+READING AND TAGGING ORDER
+
+A document’s structure helps assistive technologies, such as screen readers, to render the content in a manner that can be interpreted by the users. For example, on the basis of the structure, a screen reader will identify headings of a document, determine the type of list, as well as read out the table headers while rendering tabular information for their users.
+
+Screen reader users rely on this information, as it not only helps them to navigate within the document but also helps in interpreting the content easily. Structure helps them to understand the relationship between two pieces of information. i.e., a section heading and the paragraph of text. 
+
+In a PDF file, document structure determines the order in which content is rendered by assistive technology, as well as defines the tabbing order for the document. On the basis of the document structure, keyboard-only users can navigate between the interactive elements, such as links and form controls, in a meaningful sequence. Thus, it is essential that a PDF document’s structure is set appropriately to ensure that assistive technologies can render the information in a meaningful sequence for their users.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.2 Meaningful Sequence                                                                                      Level A
+
+When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+
+ 
+
+­­Tag order
+
+Tag order is the order in which assistive technologies, such as screen reader reads the document’s content for their users. Tagging order needs to be therefore set in a manner that it can render the content in a meaningful sequence for screen reader users.
+
+When a document is looked at visually, content can make perfect sense but when the same content is rendered with a screen reader running it makes it difficult for users to interpret the content. For example, a PDF document includes information in a columnar format. The document is tagged in such a way that after first paragraph of column 1, first paragraph of column 2 is tagged. Even though the content will yet make perfect sense visually it will break the reading sequence for screen reader users. All the content of column 1 needs to be tagged first followed by all the content of column 2 to make it meaningful for screen reader users.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  --------------------------- ------------------------
+  WCAG Success Criteria       WCAG Conformance Level
+  1.3.2 Meaningful Sequence   A
+  --------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for implementing accurate tagging order in a PDF document.
+
+·         Tag all the content in a meaningful sequence.
+
+·         Tag supplementary content such as sidebars at the end or beginning of the content of the page even though it might be available at the middle of the page.
+
+Practices to Apply & Avoid
+
+ü  Ensure the content’s tag order is accurate.
+
+For example, in the 2019-ar.pdf, the tagging order is the same as the visual order.
+
+Content of the document is tagged in the following order:
+
+1.      <H1> “Pearson is Transforming to Succeed”
+
+2.      <p> “Sidney Taurel Chair”
+
+3.      <Figure> Image of Sidney Taurel
+
+4.      <P> “Dear shareholders”
+
+5.      <p> “In a year of significant change….”
+
+6.      <H2> “Progress and performance”
+
+7.      <P> “We entered 2019 with a determination….”
+
+ 
+
+[Page with correct tagging order. ]
+
+û Avoid tagging the content in an incorrect order.
+
+For example, in the 2019-ar.pdf, the tagging order of the page is incorrect. It does not match with the visual order.
+
+Content of the document is tagged in the following order:
+
+1.      <P> “2020 Remuneration policy”
+
+2.      <P> “The remuneration Committee….”
+
+3.      <P> “In 2019, Pearson reviewed”
+
+4.      <P> “1”
+
+5.      <P> “Aligned to no longer…..”
+
+6.      <P> “4”
+
+7.      <P> “Targeted differentiation”
+
+8.      <P> “3”
+
+9.      <P> “Market competitive”
+
+10.  <P> “3”
+
+11.  <P> “Pay for performance”
+
+[Page with incorrect tagging order. ]
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To test the tag order of a PDF document, perform the following steps:
+
+1.      Open the PDF document that needs to be tested in Acrobat Reader.
+
+2.      Turn on JAWS or NVDA.
+
+3.      Press the Down Arrow to access the document’s content.
+
+4.      Listen if the content is read out in a meaningful sequence.
+
+5.      If the condition in step 4 fails than it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+
+Content Order
+
+Content order is the order which is used by Adobe for displaying content in Reflow mode. Content order is also used for displaying PDF documents on a mobile device. Content order might be accurate, and one would assume that the content of the document will be available in a meaningful sequence for screen reader users. However, tagging order is the order which screen reader relies on for rendering the document’s content for their users.
+
+@Tip:
+
+Ensure that content and tag order of the document is identical to make the document accessible for a wide range of users with impairments.
+
+ 
+
+How to implement?
+
+This section lists the techniques for implementing accurate content order in a PDF document.
+
+·         Check if the content is available in the meaningful sequence in the Order Panel and if any change is required then;
+
+·         Rearrange the content boxes in the Content Panel (available above Reading Order Tool) to make the information available in a meaningful sequence in different display modes.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure the content order is the same as the reading order.
+
+ 
+
+For example, in the 2020-LTIP-target-disclosure-FINAL.pdf, the content order matches with the reading order.
+
+Sequence of the content order is:
+
+1.       <H1> “Long Term Incentive Plan”
+
+2.       <H2> “Performance targets for the 2020 awards to….”
+
+3.       <P> “At the time the annual…”
+
+4.       <P> “The award will vest…”
+
+5.       <LBody> “1/3 of the award….”
+
+6.       <LBody> “1/3 of the award….”
+
+7.       <LBody> “1/3 of the award….”
+
+8.       <P> “Details of the performance…”
+
+[Page with correct content order. ]
+
+û Avoid tagging content in an order that fails to result in screen readers reading the information in an illogical order.
+
+For example, in the 2020-Roles-and-responsibilities-of-the-chair.pdf, the content order does not match with the reading order.
+
+Sequence of the content order is:
+
+1.      Footer: “Approved by the board…”
+
+2.      Image of Pearson’s logo
+
+3.      <P> “Role of chair”
+
+4.      <P> “ A. The chair is responsible….”
+
+5.      <LBody> “1. Meetings”
+
+6.      <LBody> “Chairing boards and general meetings…..”
+
+ 
+
+[Page with incorrect content order. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Users with learning disabilities.
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To test the content order of a PDF document, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Open Order Panel available in the Navigation Pane.
+
+3.      Content of the page will be displayed in boxes with each box having a number besides it.
+
+4.      Check if the content boxes match with the visual order.
+
+5.      Check if the content boxes are available in a meaningful sequence.
+
+6.      If conditions in step 4 and 5 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+
+@Tip:
+
+Content displayed­ in the order Panel is also referred to as the Z order.
+
+LINKS
+
+Links are used in a PDF document to help users navigate from one document section to another, and even to external websites. Screen readers identify a link based on the link’s text. Keyboard-only users can navigate from one link to another by pressing the “Tab” key, and they can activate a link by pressing the “Enter” key. Screen reader users can also navigate and activate links just like keyboard-only users. A screen reader also provides an option to access all the document’s links in the form of a list.
+
+ 
+
+@Tip:
+
+Press “Insert + F7” to pull up Links List and Elements List dialog in JAWS and NVDA respectively.
+
+ 
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+2.1.1 Keyboard                                                                                                           Level A
+
+All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user’s movement and not just the endpoints.
+
+2.4.4 Link Purpose (In Context)                                                                                 Level A
+
+The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+
+ 
+
+OBJR
+
+Links in a PDF document need to be defined programmatically to ensure that they are recognized by assistive technologies, such as screen readers and can be activated using a keyboard. A Link tag consists of two parts, text of the link which is visible for all users and the Link-OBJR tag which points to the destination target of the link.
+
+PDF links can be links to external websites or documents as well as page or section within the document itself. They are referred to as web links and internal links, respectively. The structure of the Link tag remains the same irrespective of the type of link. A link should not only look like a link but also function as a link with different input devices as well. This can be achieved with the Link-OBJR tag. The Link-OBJR tag plays a very essential part for making links accessible for different user groups.
+
+@Tip:
+
+Press “Tab” and “Shift + Tab” key to navigate to the next and previous link using a keyboard. To activate a link, press “Enter”.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  2.1.1 Keyboard                 A
+  1.3.1 Info and Relationships   A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques for implementing links with a valid Link-OBJR tag in the PDF document.
+
+·         Tag the link text using the <Link> tag.
+
+·         Add the destination target of the link via the Link-OBJR tag.
+
+·         Ensure that the link points to a valid target.
+
+·         Set the destination target (applicable when the internal link is meant to target a particular section or sub-section of the PDF document) for an internal link available through “Create link” option.
+
+·         Scroll to the correct page in the PDF document for internal link that is meant to target a particular page.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that links are tagged with appropriate Link-OBJR tag. The <Link> tag should be used to include the link text. The Link-OBJR tag is used to include the destination target.
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, the web link of “https://stats.oecd.org/glossary/detail.asp?ID=6326” has been appropriately tagged using the Link-OBJR tag.
+
+ 
+
+[Link-OBJR tag used to define a weblink.]
+
+û Avoid tagging links without the Link-OBJR tag.
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, the internal link of “Figure 2” is tagged without using the Link-OBJR tag.
+
+ 
+
+[Link tagged without the Link-OBJR tag.]
+
+ 
+
+û Avoid defining a web link without tagging it using a <Link> tag.
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, the web link is tagged incorrectly using the <Span> tag.
+
+ 
+
+[Web link tagged inappropriately using the <Span> tag]
+
+ü  Ensure to tag web links using the <Link> tag.
+
+For example, in the 2020-Governance.pdf, the web link of “www.pearson.com/governance” is tagged correctly using the <Link> tag.
+
+[Web link tagged appropriately using the<Link-OBJR> tag.]
+
+ 
+
+ü  Ensure to use Link-OBJR tag in web links to make them accessible for assistive technology users.
+
+ 
+
+ü  Ensure that internal links are created using <Link> and Link-OBJR tags.
+
+For example, in the M05_NURS6803_03_SE_C05_MM.pdf, the internal link of “see Figure 4” is tagged correctly using the <Link> and Link-OBJR tags.
+
+[Internal link tagged correctly using <Link> and <Link-OBJR> tags.]
+
+ 
+
+û Avoid defining an internal link without tagging it as a link programmatically.
+
+For example, in the 2019-ar.pdf file, the internal link of “Read more on employee engagement on p62” is tagged incorrectly without using the <Link> and Link-OBJR tags.
+
+[Internal link tagged incorrectly without using <Link> and <Link-OBJR> tags]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Users with learning disabilities.
+
+·         Users with mobility disabilities.
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To check if links have valid Link-OBJR, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Select the <Link> tag in the Tags Panel.
+
+3.      Click on “Option” in the Tags Panel.
+
+4.      Click on “Find” and select “Unmarked links” from the drop-down.
+
+5.      Click on “Find”.
+
+6.      If unmarked links are found after performing step 2 – step 5, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 and 2.1.1 at Level A.
+
+ 
+
+Descriptive Link Text
+
+PDF links are often site URLs that fail to clearly describe their destination target for screen reader users. Screen reader users access links often in the form of a list where only the text of the link is available and not the surrounding text. This is referred to as “links out of context”. Thus, it is very important to specify descriptive text for each link in a PDF document.
+
+Acrobat Professional provides authors with an option to add descriptive link text via the alternate text field of the <Link> tag. This will result in descriptive text being read out to screen reader users whereas the link’s text remains unchanged in the document.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  --------------------------------- ------------------------
+  WCAG Success Criteria             WCAG Conformance Level
+  2.4.4 Link Purpose (In Context)   A
+  --------------------------------- ------------------------
+
+ 
+
+How to implement?
+
+This section lists the techniques for adding descriptive text for links in a PDF document.
+
+·         Add descriptive text for links via the alternate text field. The alternate text field option is available from the <Link> tag’s Properties dialog.
+
+·         Use the web page’s title as the description in the case of URL links.
+
+Practices to Apply & Avoid
+
+ü  Specify descriptive alternate text for links.
+
+ 
+
+For example, in the Pearson-Indicative-allocation-and-impact-reporting-template-Final-v3.pdf, alternate text for the web link “https://stats.oecd.org/glossary/detail.asp?ID=6326” describes the location of the link, i.e. “Link to Glossary to Statistical terms”.
+
+­[Web link with an accurate and descriptive alternate text. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+ 
+
+How to test for Accessibility?
+
+To check if link text is descriptive, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Adobe Reader.
+
+2.      Turn on JAWS or NVDA.
+
+3.      Navigate to different links of the file using any of the following keystrokes:
+
+a.      Press “Tab” or “Shift + Tab” to navigate to next and previous link respectively.
+
+b.      Press “Insert + F7” to activate the list of links of the entire file.
+
+4.      Listen if each link’s text is descriptive of their target.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.1 at Level A.
+
+ 
+
+TOC Links
+
+Table of Content (TOC) links are used generally at the start of the document to allow users jump to the different pages or sections in the file. TOC links are similar to other links in the PDF document except for couple of tag structural changes. In the case of TOC links, name of the section and page numbers are tagged using <TOCI> and <Reference> tags along with the standard <Link> and Link-OBJR tags.
+
+TOC links are internal links that point to a particular page and even section in certain cases. TOC links help users to quickly access different sections of the document. Table of Contents depict the content outline of the document and links help users find the required content quickly rather than reading through the entire document.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  2.1.1 Keyboard                 A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques that need to be implemented for tagging TOC links in a PDF document.
+
+·         Define TOC links using accurate tag structure:
+
+o   <TOC>: parent container to the table of content items.
+
+o   <TOCI> used to tag individual table of content items.
+
+o   <Reference> used in the case of linked table of contents.
+
+o   <Link> used to add text and page number of individual tables of content item.
+
+o   Link-OBJR to define the link’s destination.
+
+·         Tag the leaders “… … ” as artifact to make sure that screen reader skips it.
+
+·         Set the destination correctly for each link if it points to a page or if it points to a section within a page.
+
+ 
+
+ 
+
+Note: In JAWS and NVDA on activating the TOC links, focus fails to move to accurate destination despite of setting it up correctly through the Tags Panel.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that TOC content is linked correctly.
+
+For example, in the 2019-ar.pdf file, the TOC content is tagged correctly using the <Link> tag.
+
+ 
+
+[TOC links marked accurately using <link> tag.]
+
+û Avoid defining a TOC link without tagging it as a link programmatically.
+
+For example, in the 2019-ar.pdf file, the TOC content is tagged inaccurately without using the <Link> tag.
+
+[TOC links tagged inaccurately.]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Users with learning disabilities.
+
+·         Users with mobility disabilities.
+
+ 
+
+How to test for Accessibility?
+
+To test TOC links in an accessible PDF document, perform the following steps:
+
+1.      Open the PDF document that needs to be tested using Acrobat Professional.
+
+2.      Navigate to the Table of Contents and select it.
+
+3.      Open the Tags Panel and select “Find Tag from Selection” available below Options.
+
+4.      Check if the TOC links are defined using correct tag structure, such as <TOC>, <TOCI>, <Reference>, <Link> and Link-OBJR tags.
+
+5.      Check if the TOC links point to the correct destination.
+
+6.      If the conditions in step 4 and 5 fail than it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 and 2.1.1 at Level A.
+
+ 
+
+ 
+
+FOOTNOTES AND ENDNOTES
+
+Footnotes and endnotes are used to provide reference for the cited information used within the document. A footnote is displayed at the end of a page whereas an endknot is displayed at the end of the document. A footnote is indicated either with a symbol or numbers. These symbols or numbers are presented as superscript character within the page and the same symbol is used towards the end of the page along with the cited information.
+
+Endnotes are displayed at the end of the document and they contain cited information as well as reference links. Footnotes and endnotes are either provided as static text or linked text characters. Following tags are used to tag footnotes and endnotes:
+
+·         <Reference>
+
+·         <Note>
+
+·         <Label>
+
+·         <Link>
+
+·         Link-OBJR
+
+·         <P>, <Span> etc.
+
+Reference Tag
+
+OBJR <Reference> tag is used to include the citation in the page. To make the information meaningful for screen reader users, actual text “Note 1” is added via the <Reference> tag’s properties. This text is read out by the screen reader when users access the document with Arrow keys.
+
+In the case of linked footnotes or endnotes, the <Link> and Link-OBJR tags are included just after the <Reference> tag. Descriptive text is added via the alternate text field of the <Link> tag in the case of linked footnotes or endnotes. Additionally, actual text is not added for the <Reference> tag.
+
+Footnotes or endnotes do not work as intended for keyboard-only and screen reader users in a PDF document. Keyboard-only users can activate the link and navigate to the information at the end of the page or document, but they cannot navigate back to their original location. This results in users having to find their way back to their original location in the file.
+
+Screen reader users can neither navigate to the associated information at the end of the page or document nor they can move back. In fact, when screen reader users activate linked footnote or endnote, their focus remains on the link itself. To make the footnote or endnote information available for screen reader users one of the following approaches can be adopted:
+
+·         Move the footnote or endnote text immediately after the <Reference> and <Note> tags.
+
+·         If implementing the first approach breaks the reading sequence for screen reader users, then move the footnote or endnote information after the paragraph, table, list or heading besides which it is displayed. Alternatively, add the information at the end of a section or sub-section of the document.
+
+Note: There is no perfect answer about where the footnote or endnote text be moved for the benefit of screen reader users. Thus, it is recommended to move it where it does not disturb the reading flow for users.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  2.1.1 Keyboard                 A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques for using the <Reference> tag for displaying footnotes and endnotes in an accessible PDF document.
+
+·         Use the <Reference> tag to include the <Note> and <Label> tags.
+
+·         Add actual text using the Actual Text option available within the <Reference> tag’s Properties.
+
+·         Use the <Link> and Link-OBJR tags to include the descriptive text and link the footnote/endnote to their respective destination.
+
+·         Add descriptive text (e.g. “Note 1”) via the alternate text field of the <Link> tag.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use <Reference> tag for tagging the footnote/endnote reference.
+
+For example, in the 2019-ar.pdf, the <Reference> tag is used appropriately to tag references of footnotes.
+
+[Footnote marked correctly using the <Reference> tag.]
+
+û Avoid tagging the footnote/endnote without using the <Reference> tag.
+
+For example, in the 2019-ar.pdf, the reference is tagged inappropriately using the <Span> tag.
+
+[Reference marked incorrectly using the <Span> tag.]
+
+ü  Ensure that actual text is specified for <Reference> tag.
+
+For example, in the 2019-ar.pdf, actual text of “Note 4 “is provided for the <Reference> tag.
+
+ 
+
+[Actual Text “Note 4” specified for the <Reference> tag.]
+
+û Avoid using <Reference> tag with no actual text.
+
+For example, in the 2019-ar.pdf, actual text is missing for the <Reference> tag.
+
+ 
+
+[Actual text not specified for the <Reference> tag.]
+
+ 
+
+ü  Use <Link> and Link-OBJR tags for tagging references of linked footnotes/endnotes.
+
+For example, in the 2019-ar.pdf, <Link> and Link-OBJR tags are correctly used to tag the reference for linked footnotes/endnotes.
+
+ 
+
+[<Link> and Link-OBJR tags used correctly to mark reference.]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+·         Keyboard-only users
+
+ 
+
+How to test for Accessibility?
+
+To test the <Reference> tag, perform the following steps:
+
+1.      Open the PDF file that needs to be tested using Acrobat Professional.
+
+2.      Select the footnote/endnote and open the Tags Panel.
+
+3.      Click on “Find Tag from Selection” available below “Options” in the Tags Panel.
+
+4.      Check if <Reference> <Link> and Link-OBJR tags are used in the case of static and linked footnotes/endnotes correctly.
+
+5.      If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 and 2.1.1 at Level A.
+
+Note Tag
+
+<Note> tag contains the <Label> tag and includes the footnote/endnote text. A unique id needs to be specified for the <Note> tag. The <Label> tag is optional and is used to tag the footnote/endnote character within the page. The footnote/endnote text available at the end of the page or document is recommended to be placed immediately after the <Note> tag.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  --------------------------- ------------------------
+  WCAG Success Criteria       WCAG Conformance Level
+  1.3.2 Meaningful Sequence   A
+  --------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques to implement the <Note> tag for tagging footnote/endnote in an accessible PDF document.
+
+·         Use the <Note> tag that contains the <Label> tag.
+
+·         Specify a unique id to the <Note> tag.
+
+·         Use the <Label> tag to include the footnote/endnote character.
+
+·         Specify actual text for the <Label> tag (e.g. Note 1).
+
+·         Move the footnote/endnote text immediately after the <Label> tag.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Use the <Note> tag that contains the <Label> tag.
+
+For example, in the 2019-ar.pdf, the <Note> tag is used appropriately to display footnotes.
+
+[<Note> tag used correctly.]
+
+û Avoid using <Footnotes> tag for references.
+
+For example, in the 2019-ar.pdf, the <Footnotes> tag is used to tag footnotes for references.
+
+ 
+
+[Inappropriate use of <footnote> tag to tag references. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Deaf-blind users
+
+ 
+
+How to test for Accessibility?
+
+To test correct implementation of the <Note> tag, perform the following steps:
+
+1.      Open the PDF document that needs to be tested using Acrobat Professional.
+
+2.      Select the footnote/endnote character and open the Tags Panel.
+
+3.      Click on “Find Tag from Selection” and available below Options in the Tags Panel.
+
+4.      Check if the <Note> and <Label> tags are used correctly. Also check if unique id is specified for the <Note> tag and actual text is specified for the <Label> tag, respectively.
+
+5.      Check if the footnote/endnote text is moved in a correct location for the benefit of screen reader users.
+
+6.      If the conditions in step 4 and 5 fail than it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+
+ 
+
+ 
+
+ 
+
+ 
+
+BOOKMARKS
+
+Bookmarks provide a hierarchical outline of the document which allows users to traverse through the entries and access the required content quickly. Bookmarks provide users with a quick means to navigate through a long document instead of going through all the pages. Bookmarks are found very useful by people with visual and learning disabilities.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+2.4.5 Multiple Ways                                                                                                   Level AA
+
+More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+
+ 
+
+Define bookmarks based on headings
+
+Bookmarks can be defined using different structural elements, such as headings, paragraphs, tables, links, pages, views etc. Bookmarks should be defined after defining tags in a document. Bookmarks defined on document headings provide users with an option to navigate to different sections as well as sub-sections in the document quickly.
+
+@Tip:
+
+Define bookmarks only after tagging the document headings.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  2.4.5 Multiple Ways     Level AA
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for defining bookmarks in a PDF document:
+
+·         Define headings for all sections and sub-sections in a document.
+
+·         Add bookmarks from the Navigation pane > Options > New bookmarks from structure > Document headings.
+
+·         Nest bookmarks based on document’s content structure.
+
+ 
+
+Note: By default, new bookmarks are added at a single level and must be nested based on the section and sub-section headings available in the document.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid skipping heading levels while defining bookmarks
+
+For example, in the 2019-ar.pdf, Bookmarks for Heading Levels <H3>, <H4> and <H5> are missing.
+
+[Missing bookmark for heading level <H3>, <H4> and <H5>.]
+
+ü  Ensure to add bookmarks for all heading levels. If this is not feasible, define bookmarks for heading level 3 (<H3>) at the minimum.
+
+ 
+
+For example, in the 2019-ar.pdf, bookmarks have been added for all heading levels.
+
+[Bookmarks defined for all heading levels.]
+
+ 
+
+User Groups Affected
+
+·         Users with visual disabilities
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test a PDF document’s bookmarks, perform the following steps:
+
+1.      Open the PDF document that needs to be tested.
+
+2.      Open Navigations Pane and click on Bookmarks.
+
+3.      Check if bookmarks are defined and nested accurately based on the document’s structure.
+
+4.      Check if all bookmarks have a meaningful title and there is no “untitled” bookmark present.
+
+5.      If conditions in step 3 and 4 fail than it is an accessibility violation as per WCAG success criteria 2.4.5 at Level AA.
+
+ 
+
+ 
+
+FORMS
+
+PDF forms are used to collect information from users. Each PDF document uploaded on a website that includes form fields should be made accessible to ensure users with different types of disabilities can fill out the form successfully and independently.
+
+PDF forms should be created using appropriate form tags and each form field must have a unique label. Form instructions should be made available to users up front, and error messages should also be identified.
+
+When screen reader users interact with form fields, they need to know a field’s label in order to fill in the details, form instructions should be available up front to help them while filling in the details and error messages should be clear to help them submit the form successfully.
+
+When form fields are not made accessible, screen reader users will find it difficult to access the form fields and complete the form successfully. In addition to the above, a logical tabbing order should be defined for the form fields to help keyboard-only and screen reader users navigate between form fields easily.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+1.3.1 Info and Relationships                                                                                      Level A
+
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+2.4.3 Focus Order                                                                                                       Level A
+
+If a webpage can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
+
+2.5.3 Label in Name                                                                                                   Level A
+
+For user interface components with labels that include text or images of text, the name contains the text that is presented visually.
+
+3.3.1 Error Identification                                                                                           Level A
+
+In an input is automatically detected, the item that is in the error is identified and the error is describe to the user in text.
+
+3.3.2 Labels or instruction                                                                                         Level A
+
+Labels or instructions are provided when content requires user input.
+
+4.1.2 Name, Role, Value                                                                                            Level A
+
+For all user interface components (including but not limited to: form elements, links and components generated by script), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.
+
+2.4.6 Headings and Labels                                                                                         Level AA
+
+Headings and labels describe topic or purpose.
+
+3.3.3 Error Suggestion                                                                                               Level AA
+
+If an input error is automatically detected and suggestions are known, then the suggestions are provided to the user, unless it would jeopardize, the security or the purpose of the content.
+
+3.3.4 Error Prevention                                                                                               Level AA
+
+For web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:
+
+1.      Reversible: Submissions are reversible.
+
+2.      Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+
+3.      Confirmed: A mechanism is available for reviewing, confirming and correcting information before finalizing the submission. 
+
+ 
+
+Acrobat Professional DC is one of the recommended application that may be used for fixing existing PDF forms or authoring new forms. Using Acrobat Professional, different type of form fields can be added or edited, such as input fields, checkboxes, radio buttons, buttons etc.
+
+To create accessible PDF forms using Adobe Acrobat Professional DC perform the following steps:
+
+1.      On the “Tools” tab, select the “Prepare Form” option.
+
+ 
+
+["Prepare Form" highlighted in the "Tools" tab.]
+
+ 
+
+2.       Select the “Start” button to start tagging the form.  
+
+ 
+
+["Start" button highlighted to start tagging the form file. ]
+
+3.       Fields will get added to the document automatically.  
+
+4.       Right-click on the field and select “Properties” option. 
+
+5.       Edit “Name and Tooltip” fields from the “Properties” dialog. “Name” acts as a unique id for a field whereas “Tooltip” is used to assign label for a form field.   
+
+ 
+
+["Name" and "Tooltip" properties of a text field highlighted in the "Text Field" properties box. ]
+
+ 
+
+6.       Right-click and select “New Tag” option. This needs to be done to tag each textual label using separate <P> tag.  
+
+7.       Select “Type: Paragraph”. 
+
+ 
+
+["Paragraph" option selected in the "New Tag" box.]
+
+ 
+
+8.       Right-click on the <P> tag created and select “New Tag” option.  
+
+9.       Select “Type: Form”. 
+
+["Paragraph" option selected in the "New Tag" box.]
+
+ 
+
+10.   Select the text and the Form tag.  
+
+11.   Right-click on the form tag and then select “Create Tag from Selection” option. 
+
+12.   Right-click on the text and Select “Find” option. 
+
+["Find" option highlighted after right clicking on the form tag. ]
+
+ 
+
+ 
+
+13.   Find for “Unmarked Annotations” from find element dialog box. 
+
+ 
+
+["Unmarked Annotations" highlighted in the "Find Element" box. ]
+
+ 
+
+14.   Click on “Find or Find Next” button.  
+
+15.   Select desired element and Click on the “Tag Element” button. 
+
+ 
+
+["Tag Element" highlighted in the "Find Element" box. ]
+
+ 
+
+Note: Remove the unnecessary fields that get automatically added to the form. 
+
+ 
+
+Form field properties
+
+Form field properties help to customize PDF form fields. Authors can customize field’s alignment, size, combing, styles, numbers etc. These customizations help to set up basic form validations such as maximum characters allowed, number format, password, time, date and even custom. Authors can customize the form field properties using Format Tab and Options Tab of the Properties dialog box.
+
+Note: Properties dialog box shows different options in the Options Tab for different types of form fields.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  3.3.1 Error Identification     A
+  3.3.2 Labels or Instructions   A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques for applying different form field properties in an accessible PDF form.
+
+·         Set the properties using the Format and Options Tab of the Properties dialog box. To access the Properties dialog box for a form field either double-click on the field or right-click on the field and select Properties option from the context menu.
+
+Adobe offers detailed guidance on how to set up each type of form fields and they can be found at: https://helpx.adobe.com/in/acrobat/using/pdf-form-field-properties.html#options_tab_for_form_field_properties
+
+Some of the key options available for form fields in the Format and Options Tab are listed in the following tables:
+
+ 
+
+  -------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Format Tab Form Field Property   Description
+  None                             No additional options are available. The input in a text or dropdown box with this property does not require any specific formatting.
+  Number                           Imposes the selected formatting options on numeric data entries of decimal places, separator style, currency symbol, Symbol location and negative number style.
+  Percentage                       Imposes the selected formatting options on numeric data expressed as a percentage.
+  Date                             List includes one-, two-, and four-digit variations where d stands for the day, m stands for month, and y stands for year.
+  Time                             List includes display variations where h stands for the hour on a 12-hour clock, H stands for the hour on a 24-hour clock, MM stands for minutes, ss stands for the seconds, and tt stands for AM or PM.
+  Special                          Includes zip code, zip code +4, phone number, Social Security Number, Arbitrary Mask
+  Custom                           Makes additional options available to form designers who want to write their own JavaScripts for formatting and keystrokes.
+  -------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
+
+ 
+
+ 
+
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option Tab Form Field Property    | Description                                                                                                                                                                                                                                                                |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Scroll Long Text                  | Compensates for text that extends beyond the boundaries of the text field.                                                                                                                                                                                                 |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Multi-line                        | Allows more than a single-line entry in the text field.                                                                                                                                                                                                                    |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Default Value                     | Specifies the text that appears until the user overwrites it by typing in the field. Enter the default value by typing in this option.                                                                                                                                     |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Alignment                         | Aligns the text left, right, or center within the field.                                                                                                                                                                                                                   |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Limit Of Characters               | Allows entries of up to the number of characters you specify.                                                                                                                                                                                                              |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Password                          | Displays the user-entered text as a series of asterisks (*). This option is available only if Check Spelling is deselected.                                                                                                                                                |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field Is Used For File Selection  | Allows the user to enter a file path as the field’s value when a file is submitted along with the form. This option is available only when Scroll Long Text is the only selected option in the Options tab.                                                                |
+|                                   |                                                                                                                                                                                                                                                                            |
+|                                   |                                                                                                                                                                                                                                                                            |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Check Spelling                    | Checks the spelling of user-entered text.                                                                                                                                                                                                                                  |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Allow Rich Text Formatting        | Allows users to apply styling information to the text, such as bold or italic. This might be useful in certain text fields where such styling information is important to the meaning of the text, such as an essay.                                                       |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Comb Of Characters                | Spreads the user-entered text evenly across the width of the text field. If a border color is specified in the Appearance tab, each character entered in the field is separated by lines of that color. This option is available only when no other check box is selected. |
+|                                   |                                                                                                                                                                                                                                                                            |
+|                                   |                                                                                                                                                                                                                                                                            |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid using untagged or unidentified form fields.
+
+ 
+
+For example, in the M07_LIAL2130_13_MyNotes_C07.pdf file, form fields are not identified by the screen reader as they are untagged.
+
+[Form with untagged form fields.]
+
+ 
+
+ü  Ensure that form fields are tagged accurately.
+
+ 
+
+For example, in the M07_LIAL2130_13_MyNotes_C07.pdf file, form fields are tagged accurately using the <form> and OBJR tags.
+
+[Form tagged accurately using the <form> and OBJR tags.]
+
+ 
+
+ü  Select an accurate format for the field property.
+
+ 
+
+For example, in the M07_LIAL2130_13_MyNotes_C07.pdf file, “per acre” field is tagged using accurate format property of “number”.
+
+ 
+
+["Per acre" field marked with an accurate text field property of "Number". ]
+
+û Avoid using incorrect format properties to tag a form field.
+
+For example, in the M01_LIAL_CA13E_IR01_5.pdf file, the form field has been tagged with the appropriate properties.
+
+ 
+
+[Form field marked with an inaccurate text field property. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Keyboard-only users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test a form field’s properties, perform the following steps:
+
+1.      Open the PDF form that needs to be tested using Acrobat Professional.
+
+2.      Double-click on the form field to activate the Properties dialog box.
+
+3.      Click on Format Tab and Options Tab to verify the required option, such as date, time, number, alignment, combing, etc.
+
+4.      If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.3.1 at Level A.
+
+ 
+
+Form Labels
+
+Labels act as a name for the form fields. Based on the label, users understand what information they are required to fill in the respective fields. Labels need to be specified for each form field in an accessible PDF form. Additionally, labels should be unique and descriptive of the field’s purpose.
+
+Labels should include information about form field constraints, such as date format, file format and any other special instructions that users need to be aware of while filling up the form. Labels even though available visually are not identified as form field’s label for screen reader if they are not specified within "Tooltip” of each form field.
+
+@Tip:
+
+Add appropriate punctuations within the label text and at the end of the label text as it helps screen readers to pause while reading out information for their users.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  3.3.2 Labels or Instructions   A
+  2.5.3 Label in Name            A
+  4.1.2 Name, Role, Value        A
+  2.4.6 Headings and Labels      AA
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques for adding labels for form fields in an accessible PDF form.
+
+·         Add unique and descriptive label for each form field.
+
+·         Add labels using “Tooltip” field and specify a unique id in the “Name” field of the General Tab of the Properties dialog box.
+
+ 
+
+Practices to Apply & Avoid
+
+û Avoid specifying incomplete, inaccurate, or non-descriptive labels for form fields.
+
+For example, in the M07_LIAL2130_13_MyNotes_C07.pdf file, form field has an inaccurate and non-descriptive label “undefined_2”.
+
+[Form field with a non-descriptive and inaccurate label. ]
+
+ü  Specify accurate label for form fields.
+
+ 
+
+For example, in the M07_LIAL2130_13_MyNotes_C07.pdf file, form field has an accurate and descriptive label “date” for the “date” text field.
+
+ 
+
+[Date field with a descriptive and accurate label. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Keyboard-only users
+
+·         Users with learning disabilities
+
+ 
+
+ 
+
+How to test for Accessibility?
+
+To test labels for form fields in a PDF form, perform the following steps:
+
+1.      Open the PDF form that needs to be tested using Acrobat Professional.
+
+2.      Double-click on the field to activate the Properties dialog box.
+
+3.      Click on the General Tab and check if label is specified in the “Tooltip” field.
+
+4.      Turn on Jaws or NVDA.
+
+5.      Press Tab to navigate to the form field and listen if the label is announced.
+
+6.      Listen if the label is unique and descriptive of the field’s purpose.
+
+7.      If the conditions in step 3 and 5 fail than it is an Accessibility violation as per WCAG 2.1 success criteria 1.3.1 and 3.3.2 at Level A.
+
+8.      If the condition in step 6 fails than it is an Accessibility violation as per WCAG 2.1 success criteria 2.4.6 at Level AA.
+
+ 
+
+Grouping form fields
+
+Form fields, such as radio buttons are grouped together to communicate to users that they are related, and a group name needs to be specified to help convey the relationship programmatically. In PDF radio buttons can be assigned a group name which results in assistive technologies identifying the name for their users while rendering related form fields. Additionally, different radio buttons are assigned a name which then informs users about their name as well as most importantly how many form fields are grouped together.
+
+For example, a screen reader will read out group of form fields in the following manner:
+
+1.      Gender Male Radio button not checked 1 of 2
+
+2.      Gender Female Radio button checked 2 of 2.
+
+In the above example, Gender is the group name and Male as well as Female are names for radio buttons. Since both Male and Female radio buttons have a common group name, a screen reader renders them as a group of two radio buttons and announces, “1 of 2” and “2 of 2” for their users.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------ ------------------------
+  WCAG Success Criteria          WCAG Conformance Level
+  1.3.1 Info and Relationships   A
+  ------------------------------ ------------------------
+
+How to implement?
+
+This section lists the techniques for specifying group names for related form fields in a PDF form.
+
+·         Specify the group name using the “Name” and “Tooltip” options available in the General Tab of the radio button’s Properties dialog box.
+
+·         Specify names of each radio button using the Choice 1, Choice 2 etc. options available in the Options Tab of the radio button’s Properties dialog box.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure to use the correct group names and group all relevant options together.
+
+ 
+
+For example, in the FormGrouping_sample. pdf file we created for the gender option, the options of “Male, female and other” have all been grouped together in the Gender group.
+
+ 
+
+[Radio button options accurately grouped together in one group. ]
+
+ 
+
+û Avoid using inaccurate option names to group relevant options together.
+
+ 
+
+For example, in FormGrouping_sample. pdf file we created for the gender option, the options of “Male, female and other” have all been grouped together in the Gender group. But, the female radio button has been inaccurately named as “choice2”.
+
+ 
+
+[Inaccurate option name used to group related options.]
+
+ 
+
+û Avoid using different group names to group relevant options together.
+
+ 
+
+For example, in the FormGrouping_sample. pdf file we created for the gender option, the options of “Female and other” have all been grouped together in the Gender group, but the “Male” choice has been inaccurately grouped under the “Gender1” group.
+
+[Radio button options grouped inaccurately using group names.]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+ 
+
+How to test for Accessibility?
+
+To check group names of related form fields, perform the following steps:
+
+1.      Open the PDF form using Acrobat Reader.
+
+2.      Turn on JAWS or NVDA.
+
+3.      Navigate to the radio buttons using the Tab key.
+
+4.      Listen if the group name and number of radio buttons are announced accurately.
+
+5.      If the condition in step 4 fails than it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+
+ 
+
+Form Validation
+
+Form validation messages or error messages help users rectify their mistakes and submit the form successfully. Error messages should be clear, descriptive and easily available for all users to identify their presence. In case of forms including legal, financial or data related actions, provide users with an option to preview and confirm the details before submitting the data.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ------------------------------------------------- ------------------------
+  WCAG Success Criteria                             WCAG Conformance Level
+  3.3.1 Error Validation                            A
+  3.3.4 Error Prevention (Legal, Financial, Data)   AA
+  3.3.3 Error Suggestion                            AAA
+  ------------------------------------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for adding form validations in a PDF form.
+
+·         Set up formatting for different input fields, such as date, phone number, password, name etc. with the required parameters.
+
+·         Add visible form instructions along with the label to ensure that users are aware about the constraints up front.
+
+·         Set up custom messages (if the default parameters do not offer the customization choices that need to be set for a form field) using the Format Tab of the field’s Properties dialog box.
+
+ 
+
+Practices to Apply & Avoid
+
+ü  Ensure that error messages are identified for form fields.  
+
+For example, in the the 200918_GM_Proxy.pdf file, error message is displayed when users input date in an incorrect format.
+
+ 
+
+[]
+
+[Warning message displayed for incorrect date format. ]
+
+ 
+
+ü  Avoid using form fields for which validation are not defined.
+
+ 
+
+For example, in the 200918_GM_Proxy.pdf file, error messages are not displayed when users enter date in an incorrect format.
+
+ 
+
+[No warning message displayed for incorrect date format. ]
+
+ 
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Keyboard-only users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test for form validations in a PDF form, perform the following steps:
+
+1.      Open the PDF form that needs to be tested using Acrobat Reader.
+
+2.      Fill up the form fields and enter invalid data in one of the form fields.
+
+3.      Check if validation message is displayed.
+
+4.      If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.3.1 at Level A.
+
+ 
+
+ 
+
+Tabbing order
+
+Keyboard-only users rely on keystrokes for interacting with PDF forms. They use the “Tab” and “Shift + Tab” keystrokes to navigate to the next and previous form field, respectively. A logical tabbing order needs to be specified for PDF forms to allow keyboard-only and screen reader users access form fields in a meaningful order. In the absence of a logical tabbing order, it becomes difficult for keyboard-only and screen reader users to access the form fields.
+
+[W3C logo Web Content Accessibility Guidelines (WCAG) 2.1 ]
+
+  ----------------------- ------------------------
+  WCAG Success Criteria   WCAG Conformance Level
+  2.4.3 Focus Order       A
+  ----------------------- ------------------------
+
+How to implement?
+
+This section lists the techniques for defining a logical tabbing order for form fields in a PDF form.
+
+·         Arrange the form fields in a meaningful order in the Prepare Form section.
+
+·         Form fields should receive tab focus in left to right and top to bottom order.
+
+@Tip:
+
+Visual order of form fields does not always result in a logical tabbing order.
+
+Practices to Apply & Avoid
+
+û Avoid tagging fields in an incorrect order. This results in inaccurate tabbing order.
+
+For example, in the 200918_GM_Proxy.pdf file, the form has an inaccurate and illogical tabbing order. The tabbing order is as follows:
+
+1.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: For” Radio button
+
+2.      “Date”
+
+3.      “Signature”
+
+4.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: Against” Radio button
+
+5.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: Vote withheld” Radio button
+
+[Form with inaccurate tabbing order.]
+
+ü  Arrange the fields correctly to ensure a logical tabbing order.
+
+ 
+
+For example, in the 200918_GM_Proxy.pdf file, the form has an accurate tabbing order. The tabbing order is as follows:
+
+1.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: For” Radio button
+
+2.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: Against” Radio button
+
+3.      “Amendment to the directors remuneration policy to permit the grant of the Coinvestment Award: Vote Withheld” Radio button
+
+4.      “Date”
+
+5.      “Signature”
+
+ 
+
+[Form with an accurate tabbing order.]
+
+User Groups Affected
+
+·         Blind users
+
+·         Low-vision users
+
+·         Keyboard-only users
+
+·         Users with learning disabilities
+
+ 
+
+How to test for Accessibility?
+
+To test the tabbing order of a PDF form, perform the following steps:
+
+1.      Open the PDF form that needs to be tested using Acrobat Reader.
+
+2.      Navigate the form using the Tab and Shift + Tab keys.
+
+3.      Observe if the form fields receive focus in a logical order.
+
+4.      If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.3 at Level A.
+
+ 
+
+The following table lists JAWS and NVDA commands for reading PDF forms:
+
+  ------------------------------------------------- -------------- -------------------
+  Function                                          JAWS command   NVDA command
+  Open the Forms list dialog                        Insert + F5    –
+  Turn on Forms Mode (JAWS) or Focus Mode (NVDA)    Enter          Insert + Spacebar
+  Turn off Forms Mode (JAWS) or Focus Mode (NVDA)   Numpad Plus    Insert + Spacebar
+  Go to Next Button                                 B              B
+  Go to Previous Button                             Shift + B      Shift + B
+  Go to Next Combo box                              C              C
+  Go to Previous Combo box                          Shift + C      Shift + C
+  Go to Next Edit field                             E              E
+  Go to Previous Edit field                         Shift + E      Shift + E
+  Go to Next Form field                             F              F
+  Go to Previous Form field                         Shift + F      Shift + F
+  Go to Next Radio button                           A              R
+  Go to Previous Radio button                       Shift + A      Shift + R
+  Go to Next Checkbox                               X              X
+  Go to Previous Checkbox                           Shift + X      Shift + X
+  ------------------------------------------------- -------------- -------------------
+
+ 
+
+SCANNED DOCUMENTS
+
+Scanned documents are similar to photographs that have been saved in a PDF format. There are millions of scanned PDF document floating on the web today. When screen reader users open a document, no content is announced for them and they cannot access the file at all. Scanned documents are blockers which restrict users from accessing the content of the file. Often organizations have a mandate to upload their documents digitally and the easiest route that they adopt is to scan the hard copy of a document and save it as a “.pdf” file.
+
+Many OCR software are available that users with visual impairments rely on for accessing the contents of the scanned document. Most of these software’s fail to reliably recognize the content for users with visual impairments. This results in users being deprived of vital information.
+
+Some of the OCR application can access text and they do not render text in tables, columns, images of text reliably. Students often are presented with notes in scanned PDF format which results in they not being able to get access to their notes. What is required is to OCR, proof read and tag the document in order for screen readers and other assistive technologies to render the information accurately for their users.
+
+To make scanned PDF documents accessible basically 3 main steps need to be carried out:
+
+1.      OCR the document to ensure that the content can be selected.
+
+2.      Proof read the document for errors.
+
+3.      Add appropriate tags to make the content accessible.
+
+@Tip:
+
+Proof read should be done using automated tool as well as manually to yield accurate results.
+
+Let us take a file calculator_review_card (54).pdf and perform each of the above steps to make a scanned PDF document accessible.
+
+1.      Open the scanned document in adobe acrobat Professional DC.
+
+2.      In a scanned pdf there are no tags and text, or any content cannot be selected.
+
+[Scanned document with no tags and content that can not be selected. ]
+
+3.      Select the “Recognize text” tool from the tool bar.
+
+4.      Specify the language and the pages and the click on the “Recognize Text” option.
+
+5.      After performing this step, the content will be selectable but there will still be no tags.
+
+[Scanned document with no tags but with content that can be selected. ]
+
+6.       In order to check for spelling mistakes, select the “correct recognized text” option from the “Recognize text” drop down option.
+
+7.       This will proof read the pdf.
+
+ 
+
+ 
+
+[Screen shot of Adobe Acrobat box saying "The document does not contain any suspects".]
+
+8.      In order to create tags, in the tools panel on the right side, select action wizard.
+
+9.      Within the action wizard tool, select the option of “Make Accessible”
+
+["Make accessible" option in the action wizard list. ]
+
+10.  After selecting “Make Accessible”, click on the “Start” button to make the file accessible.
+
+ 
+
+["Start" button in the make accessible panel. ]
+
+ 
+
+11.  After clicking on start, a description box opens to edit the title, Subject, Author and keywords. Click on “OK” to go to the next step.
+
+ 
+
+ 
+
+[Highlighted "OK" button in the "Description" box along with options to edit the "Title", "Subject", "Author" and "Keywords".]
+
+ 
+
+12.  After clicking on “OK” a recognize-text box opens. Check the document language, select the Output and Down sampling size and click on “OK”.
+
+["Recognize Text-General Settings" box with a highlighted "OK" button along with options to specify the "Document Language", "Output" and "Downsample To".]
+
+ 
+
+13.  After clicking on “OK”, another box opens to understand the file format. Click on “Yes, Detect Form Fields” if it’s a file that contains forms or “No, Kkip this Step” if it does not contain forms.
+
+ 
+
+["Yes, Detect Form Fields", "No, Skip this Step" and "Cancel" buttons in the in the "Adobe Acrobat" box.]
+
+ 
+
+14.  After selecting the form or non-form option, set the reading language of the file and click on “OK”
+
+["Set Reading Language" box with a highlighted "OK" button and option to change "Language".]
+
+ 
+
+TEST FOR ACCESSIBILITY
+
+We have thus far learnt different techniques for tagging page elements for making PDF documents accessible. Once the document is made accessible, it needs to be evaluated for accessibility. A PDF document can be evaluated for accessibility with manual and automated testing. To evaluate accessibility of a PDF document there are several automated tools available.
+
+Two of the leading automated tools are Acrobat Full Check – Accessibility Checker by Adobe which can be accessed from Acrobat Professional DC and PAC Checker (PDF Accessibility Checker) by a Swiss not for profit organization Access for All. We will be learning about both these applications in this section.
+
+Tip: Use a combination of automated and manual testing for checking a PDF document!
+
+@Tip: 
+
+Use a combination of automated and manual testing for checking a PDF document!
+
+ 
+
+Adobe Accessibility Checker
+
+To check for accessibility using Adobe Acrobat Professional DC perform the following steps: 
+
+1.       Open the pdf file in Acrobat Professional DC.
+
+2.       Click on the “Tools” tab. 
+
+3.       Click on the “Accessibility” option.  
+
+ 
+
+["Accessibility" option highlighted in the "Tools" tab. ]
+
+ 
+
+4.       Select “Full Check” from the list of options. 
+
+5.        The “Accessibility Checker Options” dialog opens, click on “Start Checking” button.
+
+ 
+
+The Accessibility Checker dialog provides different options to set up the test and manner in which the output is displayed. Following options are available:
+
+·         Accessibility permission flag is set
+
+·         Document is not image-only pdf
+
+·         Document is tagged pdf
+
+·         Document structure provides a logical reading order
+
+·         Text language is specified
+
+·         Document title is showing in title bar
+
+·         Bookmarks are present in large documents.
+
+·         Documents have appropriate color contrast.
+
+ 
+
+["Start Checking" button highlighted in the "Accessibility Checker Options" box. ]
+
+ 
+
+For example, in the 2020-Chief-Executives-Strategic-overview.pdf, there are many accessibility issues which need to be rectified. Accessibility issues identified in the file include:
+
+·         Document (4 issues)
+
+o   Accessibility permission Flag- Passed
+
+o   Image- only PDF- Passed
+
+o   Tagged PDF- Passed
+
+o   Logical Reading order- Needs manual check
+
+o   Primary language- Failed
+
+o   Title- Failed
+
+o   Bookmarks- Passed
+
+o   Color contrast- Needs manual check
+
+·         Page Content (1 issues)
+
+o   Tagged content- Passed
+
+o   Tagged annotation- Passed
+
+o   Tab order- Failed
+
+§  Page 1
+
+§  Page 2
+
+§  Page 3
+
+o   Character encoding- Passed
+
+o   Tagged multimedia- Passed
+
+o   Screen flicker- Passed
+
+o   Scripts- Passed
+
+ 
+
+[Screenshot of Accessibility Checker with multiple errors. ]
+
+All the above issues need to be rectified and then again check the document for accessibility. Once all the errors are rectified, running the evaluation will display the following output:
+
+For example, in the 2020-Chief-Executives-Strategic-overview.pdf, there are many accessibility issues which need to be rectified. Accessibility issues identified in the file include:
+
+·         Document (2 issues)
+
+o   Accessibility permission Flag- Passed
+
+o   Image- only PDF- Passed
+
+o   Tagged PDF- Passed
+
+o   Logical Reading order- Needs manual check
+
+o   Primary language- Passed
+
+o   Title- Passed
+
+o   Bookmarks- Passed
+
+o   Color contrast- Needs manual check
+
+·         Page Content
+
+o   Tagged content- Passed
+
+o   Tagged annotation- Passed
+
+o   Tab order- Passed
+
+o   Character encoding- Passed
+
+o   Tagged multimedia- Passed
+
+o   Screen flicker- Passed
+
+o   Scripts- Passed
+
+ 
+
+ 
+
+[Screenshot of Accessibility Checker with solved issues.]
+
+PAC3 Accessibility Checker
+
+PDF Accessibility Checker (PAC) is a free Desktop based tool to check PDF documents for conformance with PDF/UA standards. PAC3 is a Windows based tool developed by Swiss Not for Profit Organization Access for All that checks the PDF for:
+
+-   PDF/UA conformance
+-   Logical tag Structure
+-   Screen reader Preview
+
+Once you have downloaded and installed PAC, perform the following steps to start testing a PDF document:
+
+ 
+
+1.      Launch PAC3 software.
+
+2.      Select the file to check and upload it on the software.
+
+ 
+
+[PAC3 software with highlighted option to upload file. ]
+
+3.      Check the report. Basic information of the file will be displayed such as:
+
+a.       Title
+
+b.       Filename
+
+c.       Language
+
+d.       Tags
+
+e.       Pages
+
+f.        Size
+
+g.       Summary Report
+
+[PAC3 software with highlighted file information.]
+
+4.      Check the details of errors by clicking on the “Result in Details” option.
+
+ 
+
+[PAC3 software with highlighted "Result in Details" options]
+
+ 
+
+5.      Create summary report by clicking on the “Summary Report as PDF” option. The Summary Report displays PDF/UA conformance output along with the test results based on different checkpoints, such as:
+
+a.       PDF Syntax
+
+b.       Fonts
+
+c.       Contents
+
+d.       Embedded Files
+
+e.       Natural Language
+
+f.        Structure Elements
+
+g.       Structure Tree
+
+h.       Role Mapping
+
+i.         Alternate Description
+
+j.         Metadata
+
+k.       Document Settings
+
+[PAC3 software with highlighted "Summary Report as PDF" option.]
+
+6.  Results for each checkpoint are categorized in:
+
+a.       Passed
+
+b.       Warned
+
+c.       Failed
+
+7.      In case, there are errors, solve the errors and recheck the file using PAC3 software.
+
+8.      The detailed report comprises of type of errors and warnings for each checkpoint along with:
+
+a.       Number of errors and warnings for each type.
+
+b.       Snapshot of page on which the error or warning is found.
+
+For example, in the Pearson-Indicative-allocation-and-impact reporting-template-Final-v3.pdf, there are many accessibility issues which need to be rectified. Accessibility issues identified in the file include:
+
+·         PDF Syntax- Passed
+
+·         Fonts- Passed
+
+·         Content- Failed
+
+·         Natural Language- Passed
+
+·         Structure elements- Failed
+
+·         Structure Tree- Warning
+
+·         Role Mapping- Passed
+
+·         Alternate Descriptions- Failed
+
+·         Metadata- Failed
+
+Document Settings- Passed
+
+ 
+
+[PAC3 software with errors in the file. ]
+
+9.  Logical structure option of PAC checker displays the tag structure of the file in the form of a tree node. The following steps outline how to evaluate the tag structure:
+
+a.       Click on Logical Structure button.
+
+b.       Click on any tag displayed in a tree node on the left to view its Properties on the right.
+
+[PAC3 software with highlighted "Logical Structure" option.]
+
+10. The Screen Reader Preview displays the entire file contents as it would be rendered by a screen reader. The Screen Reader Preview window displays:
+
+a.       Tags used for each element.
+
+b.       Tags are color coded for easy identification.
+
+c.       Element tag is displayed on the left with its contents on the right.
+
+d.       File content is displayed in the order as it will be read out to a screen reader user.
+
+[PAC3 software with highlighted "Screen Reader Preview" option.]
+
+ 
+
+Once the errors are solved and the file is checked again using PAC3 following output is displayed:
+
+·         PDF Syntax- Passed
+
+·         Fonts- Passed
+
+·         Content- Passed
+
+·         Natural Language- Passed
+
+·         Structure elements- Passed
+
+·         Structure Tree- Passed
+
+·         Role Mapping- Passed
+
+·         Alternate Descriptions- Passed
+
+·         Metadata- Passed
+
+·         Document Settings- Passed
+
+[PAC3 software with solved issues. ]
+
+ 
+
+APPENDIX
+
+This section lists down links to different resources that offer useful guidance for authoring accessible PDF documents:
+
+  ------------------------------------------ ----------------------------------------------------------------------------------------------------
+  Accessibility Resource                     Where it can be found?
+  Web Content Accessibility Guidelines 2.1   https://www.w3.org/TR/WCAG21/
+  WCAG PDF Techniques                        https://www.w3.org/TR/WCAG20-TECHS/pdf
+  PDF/UA Standard                            https://www.pdfa.org/resource/the-matterhorn-protocol-1-02/
+  Pearson Accessibility Guidelines           https://www.pearson.com/accessibility-guidelines.html
+  Color Contrast Analyser                    http://www.paciellogroup.com/resources/contrast-analyser.html
+  Acrobat Pro DC Accessibility Checker       https://www.adobe.com/accessibility/products/acrobat/using-acrobat-pro-accessibility-checker.html
+  PAC Checker                                https://www.access-for-all.ch/en/pdf-accessibility-checker.html
+  Alt Decision Tree                          https://www.w3.org/WAI/tutorials/images/decision-tree/
+  ------------------------------------------ ----------------------------------------------------------------------------------------------------
+
+ 
+
+ 
+
+------------------------------------------------------------------------
+
+ [AS1]Make all W3C images this size.
+
+ [AS2]Missing alt text
+
+ [AS3]Missing alt text
+
+ [AS4]Missing alt text
+
+ [AS5]We will need to change this example. Let me know if you need an example with actual text. I have some.
+
+ [AS6]Change example

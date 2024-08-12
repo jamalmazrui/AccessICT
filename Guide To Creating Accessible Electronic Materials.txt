@@ -1,0 +1,3452 @@
+﻿
+
+  -- ----
+     
+     []
+  -- ----
+
+About This Guide   
+
+ 
+
+The Assistive Technology Initiative (ATI) at George Mason University designed this user manual to provide information and guidance for the creation and testing of e-learning materials (i.e., documents, websites, and videos), including step-by-step procedures for access and use.
+
+ 
+
+Some handouts within this manual are provided courtesy of the © 2012 Project GOALS from The National Center on Disability Access to Education (NCDAE). These documents were made possible for public use by a grant from the Fund for the Improvement  of Postsecondary Education (FIPSE), US Department of Education. For further information, please     visit www.ncdae.org.  
+
+ 
+
+The ATI office operates under the Vice President for Compliance, Diversity, & Ethics at George Mason University in Fairfax, Virginia.  For further information, please visit ati.gmu.edu.
+
+ 
+
+Email: ati@gmu.edu  
+
+Phone: 703-993-4329  
+
+Twitter: @AccessibleMason
+
+ 
+
+ 
+
+Who Should Read This Document:
+
+Any Mason faculty and/or staff members, who manage, develop, or distribute e-learning materials for individuals within the Mason community.  
+
+How To Use This Document:
+
+This manual was designed as a “just-in-time” resource to support Mason faculty and/or staff members with the creation of accessible e-learning content.  As such, it consists of a series of one-page “cheat sheets” that provide step-by-step procedures for incorporating accessibility into commonly used software applications.  This document can be reviewed in its entirety or individuals may pick and choose the “cheat sheets” that are most applicable to their current needs.   
+
+ 
+
+For example, a faculty member may only use PowerPoint and Blackboard in their course this semester.  For that reason, they would only need to access the information specific to those tools while developing their course materials.  
+
+ 
+
+Guide to Creating Accessible Electronic
+
+Table of Contents
+
+Requesting Services from the ATI ..................................................................................................................................... 5   
+
+ 
+
+Section I:  Accessibility Laws and Policies ....................................................................................................................... 6   
+
+Accessibility Laws and Policies at George Mason University ..................................................................................................................7    
+
+Section II: Making Accessible Documents ........................................................................................................................ 8   
+
+Part I:  Making Accessible PDFs .............................................................................................................................................................. 9   
+
+                 Adobe Acrobat XI................................ ........................................................................................................................................ 10   
+
+                 Adobe Acrobat X................................ ......................................................................................................................................... 11   
+
+Adobe LiveCycle Designer ................................................................................................................................................... 12-13   
+
+CommonLook Office – Accessible Office to PDF Plug-In ........................................................................................................... 14   
+
+ 
+
+Part II:  Making Accessible Word Documents ........................................................................................................................................ 15   Microsoft Word 2011 (Mac) ........................................................................................................................................................ 16   
+
+Microsoft Word 2007/2010 (PC) ................................................................................................................................................. 17   
+
+PDF Conversion in Microsoft Word 2007/2010 .......................................................................................................................... 18   
+
+MathType – Creating Accessible Math Equations ...................................................................................................................... 19   
+
+ 
+
+Part III:  Making Accessible PowerPoint Documents ............................................................................................................................. 20   Microsoft PowerPoint 2011 (Mac) ............................................................................................................................................... 21   
+
+Microsoft PowerPoint 2007/2010 (PC) ....................................................................................................................................... 22   
+
+Section III: Web Accessibility ............................................................................................................................................ 23   Part I: Identifying Web Accessibility Issues ............................................................................................................................................ 24   
+
+ 
+
+Part II: How to Test Websites for Accessibility   
+
+Free Testing Tools ................................................................................................................................................................ 25-26   Page Title .................................................................................................................................................................................... 27   
+
+Accessible Links ......................................................................................................................................................................... 28   Headings ..................................................................................................................................................................................... 29   Image Description (Alt Text) ....................................................................................................................................................... 30   
+
+Accessible Tables ....................................................................................................................................................................... 31   
+
+Guide to Creating Accessible Electronic
+
+Table of Contents
+
+Forms Fields, Error Messages, and Direct Focus ................................................................................................................ 32-33   
+
+CAPTCHA and Timed Responses .............................................................................................................................................. 34   
+
+Color Contrast ............................................................................................................................................................................. 35   
+
+ 
+
+Part II:  Adding Accessibility to Content Management Systems ............................................................................................................. 36   
+
+CommonSpot – Adding Labels to Form Fields ........................................................................................................................... 37   
+
+CommonSpot – Heading Structure ............................................................................................................................................. 38   
+
+CommonSpot – Keyboard Accessibility ...................................................................................................................................... 39   
+
+CommonSpot – Image Description (Alt Text) ............................................................................................................................. 40   
+
+ 
+
+Section IV:  Bb and Bb Collaborate ................................................................................................................................... 41   
+
+Part I: Blackboard   
+
+Adding Headers in Blackboard ................................................................................................................................................... 42   Adding a Table and Setting Table Headings .............................................................................................................................. 43   
+
+Adding an Image and Tagging/Describing ................................................................................................................................. 44   Adding a Description to a File ..................................................................................................................................................... 45   
+
+Adding a Video ........................................................................................................................................................................... 46   
+
+ 
+
+Part II: Bb Collaborate Web Conferencing   
+
+Built in Accessibility Features ............................................................................................................................................... 47-48   
+
+ 
+
+Section V: Lecture Capture Tools and Accessibility ....................................................................................................... 49   
+
+Camtasia, Captivate, and Presenter Accessibility ...................................................................................................................... 50   
+
+Comparison Chart – Lecture Capture Accessibility .................................................................................................................... 51   
+
+ 
+
+Section VI: Making Your Videos Accessible .................................................................................................................... 52   Kaltura – Manually Add Captions to Your Kaltura Video ............................................................................................................ 53   YouTube – Adding Captions Files or Transcripts ....................................................................................................................... 54   Vimeo – Adding Captions and Subtitles ..................................................................................................................................... 55   
+
+ 
+
+Definitions ...................................................................................................................................................................... 56-57   
+
+ 
+
+Guide to Creating Accessible Electronic
+
+Requesting Services from the ATI 
+
+To aid faculty and/staff with meeting the needs of their students with disabilities and ensuring compliance with providing equivalent access in the classroom, the ATI provides additional in-house options for creating accessible materials.  Procedures for requesting additional services are as follows:
+
+Need Handouts, Pamphlets, or other types of promotional materials converted into an accessible format (i.e., Braille, Large Print, Tactile graphics, electronic)?** 
+
+•       Complete an Accessible Text Agreement form.
+
+•       Complete an Accessible Text Request form for each book/material.
+
+•       Submit all forms/materials to the ATI office 
+
+Need Captioning Services?
+
+•       Complete the online Accessible Media Request Form for each file needed.
+
+•       For bulk requests (e.g., 10 or more videos), feel free to use the BULK Request Form [Excel].  
+
+•       Submit request form to the ATI office at least 7 days prior to the date needed.   
+
+Need Audio/Video Description Services?
+
+•       Audio/Video description requests are reviewed on a case-by-case basis.  Please contact the ATI directly at ati@gmu.edu to discuss this service.
+
+Need a Websites and/or E-Learning Applications Tested for Accessibility?
+
+•       For Mason Websites: Please complete our Website Evaluation Request form.
+
+•       For Non-Mason Websites and e-learning applications: Please complete our Accessibility Evaluation Request form.
+
+ 
+
+ 
+
+** Please Note: This service is only available for promotional materials, such as orientation packets, training materials, etc. that a department or unit would provide during commencement ceremonies, training, orientation, or similar type of event.
+
+Accessibility Laws and Policies   
+
+ 
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, a brief overview is provided of the relevant disability laws and university policies, as well as their impact at George Mason University.   
+
+ 
+
+ 
+
+ 
+
+ 
+
+Accessibility Laws and Policies at George Mason University   
+
+[]
+
+Making Accessible Documents   
+
+ 
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, specific tips and strategies are provided on how to create documents (i.e., Adobe, Word, and PPT) that are accessible to individuals with disabilities.   
+
+ 
+
+Additionally, accessibility tools and simple techniques are discussed to help you identify and remediate common accessibility errors in your documents.   
+
+ 
+
+ 
+
+ 
+
+ 
+
+Making Accessible Adobe Documents   
+
+[]
+
+ 
+
+             
+
+         
+
+ 
+
+ 
+
+[]CREATING ACCESSIBLE PDF DOCUMENTS 
+
+IN ADOBE ACROBAT XI
+
+1. Run “Make Accessible” wizard
+
+[]Select Tools from the upper right corner, then select  Action Wizard > Make Accessible from the sidebar. Select Start button.
+
+1. Add Document Description
+
+– Enter a descriptive page Title. Other fields are optional.
+
+2.  Set Open Options – Runs automatically
+
+3.  Recognize Text using OCR –  If your PDF is not true text, it will be converted into true text during this step. If you are not sure if your PDF is true text, one easy test is to search for a word that you know occurs in the document. If no results are found, it needs to be converted to text.
+
+4.  Detect Form Fields – Only necessary if your page contains fillable forms.
+
+5.  Set Tab Order Property – Runs automatically 6. Set Reading Language
+
+7.  []Add Tags to Document – PDF “tags” provide accessibility information to screen readers. If your document does not have tags they will be added during this step. You will need to check the quality of these  tags later on.
+
+8.  Set Alternate Text –  A window will appear that allows you to add alternative text. Use the arrows to move between images and check
+
+Decorative figure if the image should be ignored by a screen reader.
+
+9.  Run Accessibility Full Check – This checker will show additional issues. Right click errors and warnings and select Fix to address the issues, Skip Rule if the issue has been addressed, and Explain to read online help.
+
+2. Add/Change tags
+
+The TouchUp Reading Order tool allows a user to quickly add and edit PDF tags and view the reading order of elements on the page. To edit tags, do the following.
+
+[]1. From the right-hand menu, select Tools. 2. Then select
+
+Accessibility >
+
+TouchUp Reading Order. If the Accessibility option is not listed, use the Options button to check Accessibility on the menu.
+
+3.  When selected, the view on the screen changes. All of the content is enclosed in numbered boxes. Each of these boxes represents a tag and the number corresponds with the reading order in the Order panel.
+
+4.  Select the Structure Types radio button. The page will now display tag types instead of reading order.
+
+5.  Within the TouchUp Reading Order window you will notice a group of buttons with the names of several common tags. You can use these buttons to assign tags to selected text or objects. Use the Text button for body text and the Heading 1-6 buttons to assign correct heading levels.
+
+You can also add/edit the following tags in the TouchUp Reading Order tool:
+
+Images and alternative text
+
+1.  To tag a part of the page as an image, drag a box around the image and select the Figure button.
+
+2.  To add or change alternative text, Right click on the image, select Edit Alternate Text.
+
+3.  Enter the appropriate alternative text in the dialog box.
+
+[]
+
+Table headers
+
+1.  Select a table and then select Table Inspector. Table header cells will be identified in red.
+
+2.  Select a table or cell by dragging a box through the cells (not around them or you might select additional cells). Right click on a selected cell(s) and choose Table Cell Properties. A dialog box will appear.
+
+3.  If the selected cell(s) needs to be tagged as a header, select the Header Cell option and assign a scope of either Row or Column.
+
+Move items to/from the background
+
+1.  Select an element you wish to move to the background (i.e., it will be ignored by a screen reader) and press the background button. This may include repetitive headers or footers.
+
+2.  If a part of the page is not in a gray box then it is already in the background. If it should be read by a screen reader, select the item and press the appropriate button (e.g., Text, Heading 1-6, Figure).
+
+3. Check/edit reading order
+
+The TouchUp Reading order tool can also allow you to change the reading order of the page content so it matches the visual reading order.
+
+1.  []Select the Page Content Order radio button. Reading order will now be displayed in the page instead of tag type.
+
+2.  Select Show Order Panel. The Order Panel will appear in the left sidebar with numbers that correspond to the numbers in the page.
+
+3.  To change the reading order of an element in this panel, click and drag the tag to the location that reflects the correct reading order.
+
+Note
+
+It is easier/better to make documents accessible as they are created. See our other cheatsheets to make documents accessible in MS Word, PowerPoint, and InDesign.
+
+© 2013 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
+
+[]CREATING ACCESSIBLE PDF DOCUMENTS  
+
+IN ADOBE ACROBAT X
+
+Tags Pane
+
+PDF tags provide accessibility information to screen readers. They should not impact the look of the PDF. To view and edit tags, do the following.
+
+1.  []Select View > Show/Hide > Navigation Panes > Tags.
+
+2.  Select the Options menu  > Highlight Content. This allows you to see what content is associated with a tag.
+
+3.  In the Tags panel, expand
+
+<Tags> and <Sect> to view and navigate your list of tags.
+
+4.  Navigate through the tags using the up/down arrow keys, and expand and collapse tags with the left/right arrow keys.
+
+Find Tag From Selection
+
+1.  []Click the Select Tool icon and select a portion of text, an image, or a table.
+
+2.  []
+Select the Options menu at the top of the Tags panel and then select Find Tag From Selection. The appropriate tag will be highlighted in the tags panel.
+
+Tagging an Untagged Document
+
+1.  To add tags to an untagged document, choose Tools from the right-hand menu.
+
+2.  Select Accessibility > Add Tags to Document.
+
+TouchUp Reading Order
+
+The TouchUp Reading Order tool allows a user to quickly add and edit PDF tags and view the reading order of elements on the page.
+
+TouchUp Reading Order Tool
+
+1.  From the right-hand menu, select Tools.
+
+2.  Then select Accessibility > TouchUp Reading Order. If the Accessibility option is not listed, use the Options button to check Accessibility on the menu.
+
+3.  []When selected, the view on the screen changes. All of the content is enclosed in numbered boxes. Each of these boxes represents a tag and the number corresponds with the reading order in the Order panel.
+
+4.  Within the TouchUp Reading Order window you will notice a group of buttons with the names of several common tags. You can use these buttons to assign tags to selected text or objects.
+
+Adding/Changing Tags
+
+1.  To select content that needs editing, drag a box around an element using the crosshairs cursor [] or select everything within a box by clicking on the number in the top-left corner.
+
+2.  Once you have selected a new element, you can assign some of the most common tags to that element by clicking on one of the buttons (e.g., “Heading 1”). Acrobat will place the selected content in the appropriate tag.
+
+3.  Assign alternate text to images by right-clicking on the image and choosing Edit Alternate Text.
+
+[]
+
+Order Panel
+
+The order panel allows you to change the reading order of the page content so it matches the visual reading order.
+
+1.  []To open the Order panel, select Show Order Panel in the TouchUp Reading Order tool.
+
+2.  To change the reading order of an element, click and drag the tag to the location that reflects the correct reading order.
+
+Alternative Text
+
+When an image is tagged as a figure the alternative text appears over the top of the image.
+
+1.  To add or change text, Right click on the image, select Edit Alternate Text.
+
+2.  Enter the appropriate alternative text in the dialog box.
+
+Table Inspector
+
+The Table Inspector allows you to easily identify and assign scope to table headers.
+
+1.  With the TouchUp Reading Order tool open, select a table and then select Table Inspector.
+
+2.  Right click on a selected cell(s) and choose Table Cell Properties. A dialog box will appear.
+
+3.  If the selected cell(s) needs to be tagged as a header, select the Header Cell option and assign a scope of either Row or Column.
+
+Artifacts
+
+Artifacts are elements that are ignored by a screen reader. Important text should never be labeled as an artifact.
+
+1.  With the TouchUp Reading Order tool open, select an element you wish to change to an artifact and press the background button. Or right click on an item in the Tags panel, and select Change Tag to Artifact.
+
+2.  To search for artifacts, go to the Tags panel and select Options > Find. Artifact is the default search option, so click Find.
+
+© 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals
+
+Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
+
+Adobe LiveCycle Designer – Making Accessible PDF Forms   
+
+About
+
+Adobe® LiveCycle Designer software enables the creation of forms that combine high-fidelity presentation with XML data handling. The easy-to-use graphical interface enables users to quickly design forms, maintain form templates, define a form's business logic, make changes, and preview forms before they are deployed as Adobe PDF or HTML documents.
+
+For example, this product enhances document security with secure template designs for digital signatures and enables compliance with government accessibility requirements for online forms.
+
+Accessibility Features  
+
+•       Easily configure form properties to generate accessibility information
+
+•       Create alternative text for images
+
+•       Easy addition of proper labels
+
+•       Ensures reading and tab order for logical and correct order
+
+•       Allows heading cells for tables
+
+Adding Accessibility
+
+ 
+
+Right click anywhere on a new document and select the Accessibility palette, which will be added on the right side of the page.
+
+ 
+
+ 
+
+[][]In the Accessibility Palette to the right select “Caption” – this automatically sets all form fields to the captioned name, which is to the left of the field.
+
+ 
+
+ 
+
+Add Proper Labels to Forms      Add Alternative Text for Images
+
+After all form fields have been added:  Go
+
+ to Edit > Select All>Select all Fields
+
+[]
+
+Adobe LiveCycle Designer – Making Accessible PDF Forms   
+
+Ensure Reading and Tab Order  
+
+ 
+
+Go to Window > Tab Order
+
+ 
+
+  
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The Tab Order window will open on the left side of the screen. Notice it sets to  “Automatic” to guess the appropriate reading order. As a user, determine if this  is correct. If not, select “Custom” and  move the fields to the appropriate location using the up and down arrows on the Tab Order section.
+
+ 
+
+[]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Additional Resources
+
+ 
+
+For more information on how to use LiveCycle Designer:   
+
+ 
+
+http://wwwimages.adobe.com/www.adobe. com/content/dam/Adobe/en/accessibility/pr oducts/livecycle/pdfs/livecycle-designeraccessibility-guidelines.pdf   
+
+ 
+
+Note: Adobe LiveCycle Designer is free  if purchased or upgraded from Adobe Professional 8-X. LiveCycle Designer is  available for purchase.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CommonLook Office – Accessible Office to PDF Plugin   
+
++----------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+| does not require prior knowledge of accessibility.             |                                                                                                                                             |
+|                                                                |                                                                                                                                             |
+| Add Accessibility                                              | Follow the instructions to complete each checkpoint. Note that some of the checkpoints may require changes to the Word or PowerPoint file.  |
+|                                                                |                                                                                                                                             |
+|                                                                |                                                                                                                                             |
+|                                                                |                                                                                                                                             |
+| •                                  PowerPoint > select Create  |                                                                                                                                             |
++----------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+[]About 
+
+CommonLook Office is an add-in to Microsoft® Word and PowerPoint.  This allows authors to test and correct accessibility issues through a series of checkpoints in the process of making accessible PDF documents.
+
+This software is simple and effective.  It
+
+[]CommonLook  PDF
+
+ 
+
+             
+
+Once all the applicable checkpoints are complete, CommonLook Office will generate an accessible PDF document.
+
+Additional Resources 
+
+ 
+
+For Word: http://www.commonlook.com/user-guidecommonlook-office-word 
+
+ 
+
+For PowerPoint: http://www.commonlook.com/user-guidecommonlook-office-ppt
+
+ Versus Microsoft Office Accessibility Wizard 
+
+ 
+
+•       CommonLook Office is a one step process instead of Microsoft’s three.
+
+ 
+
+•       CommonLook Office’s checks and prompts are based on Section 508 standards.  
+
+ 
+
+•       CommonLook Office reduces the number of iterations, therefore reducing overall development time. Microsoft’s Accessibility Wizard locates errors, but the user must learn how to fix them.
+
+ 
+
+•       CommLook Office, for example, automatically tags the document.  Whereas, the user would need to learn how to do this within Microsoft Office.
+
+ 
+
+Note: Please contact ATI to receive a copy of CommonLook Office for your Department.   
+
+ 
+
+ 
+
+Making Accessible Word Documents   
+
+[]
+
+ 
+
+             
+
+         
+
+ 
+
+ 
+
+  -- ----
+     
+     []
+  -- ----
+
+CREATING ACCESSIBLE MICROSOFT WORD 
+
+2011 DOCUMENTS (MAC)
+
+[]Headings
+
+Create a uniform heading structure through use of styles in Word. This allows screen readers to navigate a document, and improves accessibility for everyone.
+
+Adding and Editing Headings
+
+Headings can be created using the Styles toolbar.
+
+1.  Select the text and click on the appropriate style. 
+
+(E.g. “Heading 1”)
+
+2.  []
+Headings 1, 2, or 3 can also be assigned using command + option + 1, 2, or 3, respectively.
+
+Alternative text for Images Images can be given appropriate alternative text in Word. This text is read by a screen reader in a Word file and should remain intact when exporting to HTML or PDF.
+
+1.  Right-click (or control + click) on the image and select Format Picture.  A dialog box will appear.
+
+2.  []
+Select the Alt Text option in the sidebar. Enter appropriate alternative text to the Description field, not the Title field.
+
+If you do not see the Alt Text option, make sure you have the most up to date version of Word. Alternative text is available in Office 14.1 or newer.
+
+•   There is no way to easily create table headers in Word.
+
+•   The first row can be identified as table headers in PDF (but not in HTML). To do this, Right click on the first row in the table and select Table Properties > Row> Repeat as header row at the top of each page.
+
+[]
+
+Word automatically creates a hyperlink when a user pastes a full URL onto a page. These may not make sense to screen reader users, so more information is needed.
+
+Editing Hyperlinks
+
+1. Select a hyperlink, right click, and select Edit Hyperlink or command + k.
+
+[]
+
+Lists
+
+Use true numbered and bulleted lists to emphasize a point or a sequence of steps. To create a list, select the  Numbered List or Bulleted List option in the main ribbon.
+
+[]
+
+•   Ensure that font size is sufficient, around 12 points.
+
+•   Provide sufficient contrast.
+
+•   Don’t use color as the only way to convey content.
+
+•   Provide a table of contents, especially for  long documents.
+
+•   Use simple language.
+
+•   For a more widely supported file format, consider saving files as “Word 97-2004 Document (.doc)” format instead of the default “.docx” format.
+
+© 2013 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets
+
+CREATING ACCESSIBLE MICROSOFT WORD
+
+2007/ 2010 DOCUMENTS
+
+[]Headings
+
+Create a uniform heading structure through use of styles in Word. This allows screen readers to navigate a document, and improves accessibility for everyone.
+
+Adding and Editing Headings
+
+Headings can be created using the Styles toolbar.
+
+1.  Select the text and click on the appropriate style. 
+
+(E.g. “Heading 1”)
+
+2.  []
+Headings 1, 2, or 3 can also be assigned using CTRL + ALT + 1, 2, or 3, respectively.
+
+[]Alternative text for Images Images can be given appropriate alternative text in Word. This alt text is read by a screen reader in a Word file and should remain intact when exporting to HTML or PDF.
+
+Word 2007
+
+1.  Right-click on the image and select Size. A dialog box will appear.
+
+2.  Select the Alt Text tab, and replace the filename with appropriate alternative text.
+
+Word 2010
+
+1.  Right-click on the image and select Format Picture.  A dialog box  will appear.
+
+2.  Select the Alt Text tab on the sidebar. Enter appropriate alt text to the Description field, not the Title field.
+
+[]Columns
+
+When creating columns, always use true columns, not columns created by hand with the Tab key.
+
+Creating Columns
+
+1.  Select Page Layout on the Ribbon.
+
+2.  Select Columns in the Page Setup group.
+
+Data Tables
+
+•   Use the Insert Table command to create tables, not by hand with spaces or the Tab key.
+
+•   There is no way to easily create table headers in Word.
+
+•   The first row can be identified as table headers in PDF (but not in HTML). To do this, Right click on the first row in the table and select Table Properties > Row> Repeat as header row at the top of each page.
+
+Links
+
+Word automatically creates a hyperlink when a user pastes a full URL onto a page. These may not make sense to screen reader users, so more information is needed.
+
+Editing Hyperlinks
+
+1.  Select a hyperlink, right click, and select Edit Hyperlink or CTRL + k.
+
+2.  Change the URL in the Text to Display field to a more meaningful description.
+
+[]
+
+[]
+
+Numbering.
+
+Other Principles
+
+•   Ensure that font size is sufficient, around 12 points.
+
+•   Provide sufficient contrast.
+
+•   Don’t use color as the only way to convey content.
+
+•   Provide a table of contents, especially for  long documents.
+
+•   Use simple language.
+
+Word 2010 Accessibility Checker
+
+Word 2010 includes an accessibility resource that identifies and repairs accessibility issues.
+
+[]Running the Accessibility Checker
+
+1.  Select File>
+
+Info> Check for Issues> Check Accessibility.
+
+2.  The checker presents accessibility errors, warnings, and tips on how to repair the errors.
+
+Docx format
+
+The “docx” format supports Word 2007 and newer. For a more widely supported file format, consider saving files as Word 97-2003, or “doc” format.
+
+© 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals
+
+  -- ----
+     
+     []
+  -- ----
+
+PDF CONVERSION IN MICROSOFT WORD
+
+2007/2010 DOCUMENTS
+
+[]Converting to PDF
+
+To produce accessible PDF files for the web, the following requirements must be met:
+
+1.  The file must meet accessibility standards by providing alternative text for images, proper headings, appropriate link text, etc.
+
+2.  The file must be exported correctly. If a file is created by printing to PDF, it will not be correctly tagged.
+
+3.  Office 2007 users must have either Acrobat or the Microsoft PDF add-in installed. Office 2010 users can create tagged PDF files natively or with the Adobe add-in.
+
+Note
+
+The following instructions can also be used to convert PowerPoint files to PDF.
+
+Word 2007
+
+Adobe Add-in
+
+[]The Adobe Add-in, also called PDFMaker, is the
+
+Office 2010.
+
+© 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals
+
+[]MathType - Creating Accessible Math Equations 
+
+About MathType 6.9 
+
+ 
+
+MathType is a powerful interactive equation editor for Windows and Macintosh that lets you create mathematical notation for word processing, web pages, desktop publishing, presentations, e-learning, and for TeX, LaTeX, and MathML documents.
+
+ 
+
+MathType with Microsoft Word 
+
+ 
+
+MathType provides close integration with Microsoft Word, letting you insert equations by clicking a button on the toolbar. You can also perform other
+
+tasks such as numbering equations, formatting all the equations in your      document, and much more.   Full ribbon support in Word 2013,
+
+            2010, 2007 and MAC Office 2011. Within Word, you can:     
+
+[] 
+
+•       Add an equation
+
+•       Edit an equation
+
+•       Insert handwritten math
+
+•       Number and reference
+
+equations         •          Change the font and size of    equations       Save expressions in the toolbar:
+
+•       Create accessible math web pages
+
+•       And More…
+
+ 
+
+ 
+
+Guide to Creating Accessible Electronic Materials  Contact us at ati@gmu.edu or 703-993-4329
+
+2-24-2014
+
+ 
+
+Math Player enables Microsoft Internet Explorer (IE 9 and older) to display mathematical notation in web pages. It also makes math accessible by enhancing Internet Explorer such that mathematical expressions can be enlarged and spoken for people with reading-related learning disabilities. Us e MathType to save files in a MathPlayer format. MathPlayer is available as a free download. Find more information by visiting: 
+
+ 
+
+http://www.dessci.com/en/products/mat
+
+hplayer/              
+
+[]
+
+[]Making Accessible PowerPoint Documents   
+
+[]
+
+ 
+
+             
+
+         
+
+ 
+
+ 
+
+Guide to Creating Accessible Electronic Materials  
+
+Contact us at ati@gmu.edu or 703-993-4329 2-24-2014
+
+[]CREATING ACCESSIBLE MICROSOFT POWERPOINT
+
+2011 PRESENTATIONS (MAC)
+
+Slide Layouts
+
+[]Using slide layouts provided within PowerPoint will ensure that files have correctly structured headings and lists, and proper reading order.
+
+Creating Slide
+
+Layouts
+
+1.  Select Home> New
+
+Slide, or select the New Slide button from the default  tool bar.
+
+2.  Choose from the slide options menu the desired layout.
+
+Alternative text for Images
+
+Images can be given appropriate alternative text in PowerPoint. This text is read by a screen reader in a PowerPoint file and should remain intact when exporting to HTML or PDF.
+
+1.  Right-click (or control + click) on the image and select Format Picture. A dialog box will appear.
+
+2.  Select the Alt Text option in the sidebar.
+
+3.  Remove the image filename from the Description field. This is a bug in PowerPoint for Mac.
+
+4. 
+
+  -- ----
+     
+     []
+  -- ----
+
+Enter appropriate alternative text to the Description field, not the Title field.
+
+Data Tables
+
+•   PowerPoint can style rows and columns so they appear as data tables, but there is no way to add content in a way that will be identified by a screen reader.
+
+•   If your presentation contains more than the simplest tables, and if you have Adobe Acrobat, consider creating an accessible PDF and adding the additional accessibility information in Acrobat Pro.
+
+Links
+
+PowerPoint automatically creates a hyperlink when a user pastes a full URL onto a page. These may not make sense to screen reader users, so more information is needed.
+
+Editing Hyperlinks
+
+[]
+
+Outline and Notes Panels
+
+PowerPoint contains two panels that can be used to enhance accessibility: the outline panel and the notes panel.
+
+Outline Panel
+
+•   The outline panel contains a text outline of the content that appears in your slides.
+
+•   Reviewing this panel can help ensure the content on the slides is logically sequenced, that slide titles are unique and meaningful, and that reading order is appropriate for any user.
+
+[]
+
+Notes Panel
+
+•   The notes panel allows the speaker to add notes and information that will not appear on the slides.
+
+•   Placing image or chart descriptions in this area should be avoided. This information may not be accessed by a screen reader, so use with caution.
+
+Other Principles
+
+•   Ensure that font size is sufficient. If your presentation will be viewed on a projector, font size may need to be even larger.
+
+•   Provide sufficient contrast. If your presentation will be viewed on a projector, sometimes the contrast needs to be even more pronounced.
+
+•   Do not use color as the only way to convey content.
+
+•   Avoid automatic slide transitions.
+
+•   Use simple slide transitions when possible.
+
+•   Use simple language.
+
+•   Check reading order of text boxes that are not part of the native slide layout. They are usually the last thing read by a screen reader.
+
+•   If you have embedded video, ensure that the video is captioned, and that the player controls are accessible.
+
+•   If you have embedded audio, include a transcript.
+
+•   If your slides contain animations, ensure that they are brief and do not distract from the most important content on the page.
+
+•   For a more widely supported file format, consider saving files as “PowerPoint 97-2004 Presentation (.ppt)” format instead of the default “.pptx” format.
+
+© 2013 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
+
+[]CREATING ACCESSIBLE MICROSOFT POWERPOINT 
+
+2007/ 2010 PRESENTATIONS
+
+Slide Layouts
+
+[]Using slide layouts provided within Powerpoint will ensure that files have correctly structured headings and lists, and proper reading order.
+
+Creating Slide Layouts
+
+1.  Select Home> New
+
+Slide, or select the New Slide button from the default  tool bar.
+
+2.  Choose from the slide options menu the desired layout.
+
+[]Alternative text for Images Images can be given appropriate alternative text in PowerPoint. This alt text is read by a screen reader in a PowerPoint file and should remain intact when exporting to HTML or PDF.
+
+PowerPoint 2007
+
+1.  Right-click on the image and select Size and Position. A dialog box will appear.
+
+2.  Select the Alt Text tab, and replace the filename with appropriate alternative text.
+
+PowerPoint 2010
+
+1.  Right-click on the image and select Format Picture.  A dialog box  will appear.
+
+2.  Select the Alt Text tab on the sidebar. Enter appropriate alt text to the Description field, not the Title field.
+
+Data Tables
+
+•   PowerPoint can style rows and columns so they appear as data tables, but there is no way to add content in a way that will be identified by a screen reader.
+
+•   If your presentation contains more than the simplest tables, and if you have Adobe Acrobat, consider saving your presentation to PDF and adding the additional accessibility information in Acrobat Pro.
+
+Links
+
+PowerPoint automatically creates a hyperlink when a user pastes a full URL onto a page. These may not make sense to screen reader users, so more information is needed.
+
+Editing Hyperlinks
+
+1.  Select a hyperlink, right click, and select Edit Hyperlink or CTRL + k.
+
+2.  Change the URL in the Text to Display field to a more meaningful description.
+
+[]
+
+Notes Panel
+
+•   The notes panel allows the speaker to add notes and information that will not appear on the slides.
+
+•   Placing image or chart descriptions in this area should be avoided. This information may not be accessed by a screen reader, so use with caution.
+
+Other Principles
+
+•   Ensure that font size is sufficient. If your presentation will be viewed on a projector, font size may need to be even larger.
+
+•   Provide sufficient contrast. If your presentation will be viewed on a projector, sometimes the contrast needs to be even more pronounced.
+
+•   Do not use color as the only way to convey content.
+
+•   Avoid automatic slide transitions.
+
+•   Use simple slide transitions when possible.
+
+•   Use simple language.
+
+•   Check reading order of text boxes that are not part of the native slide layout. They are usually the last thing read by a screen reader.
+
+•   If you have embedded video, ensure that the video is captioned, and that the player controls are accessible.
+
+•   If you have embedded audio, include a transcript.
+
+•   If your slides contain animations, ensure that they are brief and do not distract from the most important content on the page.
+
+PowerPoint 2010 Accessibility Checker
+
+PowerPoint 2010 includes an accessibility resource that identifies and repairs accessibility issues.
+
+Running the Accessibility Checker
+
+1.  Select File> Info> Check for Issues>  Check Accessibility.
+
+2.  The checker presents accessibility errors, warnings, and tips on how to repair the errors.
+
+Pptx format
+
+The “pptx” format supports PowerPoint 2007 and newer. For a more widely supported file format, consider saving files as PowerPoint 97-2003, or “ppt” format.
+
+© 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals
+
+Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
+
+Web Accessibility   
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, information is provided on identifying, testing, and creating accessible websites.  Many accessibility problems can be quickly and easily identified without the need for a technical background. These handouts outline free accessibility tools and simple techniques to help you identify common web accessibility problems.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at ati@gmu.edu or 703-993-4329
+
+2-24-2014
+
+[]IDENTIFYING WEB ACCESSIBILITY ISSUES                                             []
+
+While it takes a fairly technical background to detect all accessibility issues and features, there are many accessibility problems that can be quickly and easily identified without the need for a highly technical background. This handout will suggest a few free accessibility tools and offer 4 simple techniques to help you identify some common web accessibility problems.
+
+1. Use the WAVE tool to detect errors
+
+[]WAVE (wave.webaim.org) is a free online tool that can help you evaluate your page for accessibility. WAVE places color-coded icons over the page you are testing. While it takes some skill to interpret some icons, you can be sure that any red icon is an accessibility error to be addressed.
+
+•   If you are not sure what an icon means, click on it and then select “More information”.
+
+•   If you cannot see the icons correctly, select the No Styles button to view the page without styles. Although the page will look different, all icons should be visible.
+
+•   You can also click on the Contrast button to identify text that may be difficult for some people to read.
+
+2. Navigate without a mouse
+
+Some users with motor disabilities, as well as those who are blind, have difficulty navigating the web using a mouse. Because of this, all web content must be accessible using the keyboard only. To test this, use the Tab key to navigate through links and forms (Shift + Tab to go backward) and the Enter key to perform an action. If you can’t get to what you want, or if your cursor gets trapped and can’t move, the page has an accessibility problem.
+
+Note: If you are using Safari, you will need to enable the following preference first: Safari > Preferences > Advanced > Check “Press Tab to highlight each item on a webpage”.
+
+Check for the following issues:
+
+•   []When you ‘Tab’ to a link with the keyboard it should be highlighted, usually with a dashed outline.  If you don’t see this outline this is a serious issue.
+
+•   Ensure that the keyboard navigation order is logical. It should basically match the visual reading order of the page. (e.g., header, sidebar, main content, footer).
+
+•   []Check for things that only work with a mouse (e.g., a navigation menu that expands when the user hovers over it with a mouse). See what happens if you try to navigate this same area with a keyboard.
+
+•   []Some pages have a link at the beginning of the page that allows users to skip over top navigation to the main content on the page,  navigate to this link with Tab and then press Enter to activate the link. Ensure that the screen visually ‘jumps’ over the navigation to the beginning of the page. Hit Tab again and make sure that focus goes to the next link on the
+
+page. If it jumps back to the top of the page, or if focus never moves from the top of the page in the first place, the skip link might be broken.
+
+•   If any boxes pop open (e.g., slideshows, date pickers, warnings) make sure you can navigate and close these
+
+[]
+
+3. Zoom a page and enlarge text
+
+Some users with visual disabilities enlarge page content for readability, but enlarging content on a page can sometimes cause layout problems. To make content larger, press Ctrl (Cmd on Mac) and + (plus). Ctrl and – (minus) makes content smaller and Ctrl and the number 0 will return to the default. Zoom the page several times and make sure everything is readable, especially images with text. It is fine if a horizontal scroll bar appears at the bottom of your window.
+
+By default, zooming enlarges everything on the page, including images, but some users only enlarge text, so test this as well. To enlarge only text, do one of the following:
+
+•                      Safari: View > Zoom Text Only
+
+•                      Firefox: View > Zoom > Zoom Text Only
+
+•                      Internet Explorer: View > Text size Then, enlarge the page at least 150%, and up to 200% (roughly 4-5 steps) and make sure none of the text becomes hidden or unreadable. It is fine if text wraps to a new line or if the page doesn’t look the same.
+
+[]
+
+100%                      150%                     200%
+
+4. Other Recommendations to help you detect accessibility issues
+
+•   Check videos for captions.
+
+•   Look for links with generic link text such as “click here” or “more info.” These types of links can be confusing to blind screen reader users, and should be replaced with more descriptive link text.
+
+•   []Check the page title (the text that appears in your browser tab) and make sure that it is unique  and descriptive.
+
+•   Contact individuals with disabilities and see if they would be willing to review the site and identify issues they encounter.
+
+© 2013 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
+
+How to Test Websites for Accessibility – Free Testing Tools   
+
+WAVE 
+
+ 
+
+WAVE, by WebAim, is a tool that provides quick feedback on the current state of a webpage. It displays results with green, yellow and red tags to show where violations may occur and where accessibility is already built in. 
+
+ 
+
+[]
+To test an Internet resource for accessibility, enter the URL into the space provided at the WebAim Wave port at http://wave.webaim.org/ 
+
+ 
+
+The results will display on the left side of the page with a summary of issues. Errors are in red, yellow alerts need a human to test, and green checks are where accessibility is included.
+
+ 
+
+[]
+
+WAVE Firefox Extension 
+
+ 
+
+WAVE also provides a toolbar extension for Firefox where you can run WAVE directly in Firefox. 
+
+ 
+
+Visit WAVE Firefox Extension for more information.
+
+ 
+
+Accessibility Management Platform 
+
+ 
+
+The Accessibility Management Platform (AMP) is a web-based system with the capability to spider through an entire website and test for 508/Mobile/WCAG standards and highlight violations. 
+
+ 
+
+It provides accessible code examples and best practices for how to correct violations. A clean, easy to read report is then published. 
+
+ 
+
+Have a website tested for free at GMU using this tool.  Please visit Request a Web Accessibility Evaluation.  
+
+ 
+
+Sample from AMP report below:
+
+ 
+
+        [] 
+
+Color Contrast Analyzer 
+
+The Color Contrast Analyzer is a Google Chrome Extension. This extension allows a user to analyze color contrast on a single webpage according to the WCAG 2.0 color standards.  A user can choose to analyze a portion of the webpage, or the entire page. 
+
+ 
+
+The automated process takes anywhere from 1-3 minutes and the results display a map of the outlined text that meets the standards.  
+
+ 
+
+Any text that is not displayed in the results does not have enough contrast to meet the standards selected. 
+
+ 
+
+Sample of results below:
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at ati@gmu.edu or 703-993-4329 2-24-2014
+
+ 
+
+Open AJAX Alliance 
+
+ 
+
+The Open AJAX Alliance (OAA) is an accessibility add-on within Firefox. This plug in opens a sidebar to evaluate web pages for compliance to WCAG 2.0 success criteria and allows web developers to explore and inspect the accessibility of webpages. 
+
+ 
+
+OAA displays a summary report with the number of violations, warnings, manual checks, and the percentage of accessibility included.   
+
+[]
+
+The sidebar supports both ARIA code and the reports can easily be sent to developers and managers to inform them of accessibility problems or demonstration of conformance.
+
+Free Testing Tools   
+
+             
+
+Web Accessibility Toolbar in IE                        
+
+             
+
+The Web Accessibility Toolbar (WAT) is a             free download provided by the Paciello Group.  
+
+ 
+
+This toolbar is built into Internet Explorer (IE) and provides quick and easy manual checks for web accessibility. 
+
+ 
+
+With the WAT Toolbar, a user can check for headings, alt text for images, color contrast and more. 
+
+ 
+
+Sample below:
+
+ 
+
+[]               
+
+Additional Resources 
+
+WebAim (Web Accessibility in Mind)
+
+ 
+
+AMP (Accessibility Management Platform) by SSB Bart Group
+
+ 
+
+WebAccessibility.com
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Guide to                                                               
+
+Contact us
+
+2-24-2014
+
+How to Test Websites for Accessibility Page Title   
+
+Page Titles 
+
+ 
+
+Good page titles are particularly important for orientation.  They help individuals move between pages that are open in their browser.  
+
+ 
+
+Page titles can be: 
+
+ 
+
+•       Shown in the window title bar in some browsers 
+
+•       Shown in browsers' tabs when there are multiple web pages open 
+
+•       Shown in search engine results
+
+•       Used for browser bookmarks/favorites
+
+•       Read by screen readers
+
+•       In the web page markup is the
+
+<title> within the <head>
+
+ 
+
+What to Check  
+
+ 
+
+•          Check that there is a title that adequately and briefly describes the content of the page and distinguishes the page from other web pages.
+
+ 
+
+The example below shows the page title "Easy Checks - A First Review of Web Accessibility" in the title bar, and the titles of 4 pages in the tabs.  
+
+ 
+
+Note that in the tabs, only the first part of the page title is shown.
+
+ 
+
+[] 
+
+ 
+
+Check Page Title with IE WAT (Beginner)  
+
+ 
+
+Some versions of Internet Explorer (IE) have the title bar.  If so, the following steps are not needed.
+
+ 
+
+•       Open the web page  
+
+•       On toolbar, select "Structure"
+
+•       Select "Heading structure"  o        Or, with keyboard: Ctrl+Alt+6, then down arrow key to "Heading
+
+structure"
+
+•       A new page opens
+
+•       Page title is shown after "Title"
+
+ 
+
+Additional Resources 
+
+ 
+
+While there is flexibility on what makes a good page title, a best practice is for titles to be "front-loaded" with the important and unique identifying information first.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Poor Titles:
+
+ 
+
+•       Welcome to home page of Acme Web Solutions, Inc.
+
+•       Acme Web Solutions, Inc. | About Us
+
+•       Acme Web Solutions, Inc. | Contact Us
+
+•       Acme Web Solutions, Inc. | History
+
+ 
+
+Better Page Titles:
+
+ 
+
+•       Acme Web Solutions home page
+
+•       About Acme Web Solutions
+
+•       Contact Acme Web Solutions
+
+•       History of Acme Web Solutions
+
+ 
+
+ 
+
+ 
+
++-----------------------------------------------------------------------+
+| Guide to Creating Accessible Electronic Materials                     |
+|                                                                       |
+| Contact us at                       or 703-993-4329                   |
++-----------------------------------------------------------------------+
+
+ 
+
+What to Check  
+
+ 
+
+Links, and/or their associated title attributes, must be labeled correctly. 
+
+•       A “Skip to Content” or “Skip Navigation” link should be located on a webpage in the upper right or left hand side of the screen. This link will allow keyboard and screen reader users to quickly access the main content of the page without navigating through all the main menus and navigation bars.
+
+ 
+
+•       ‘Click here’, ‘More Info’, etc.
+
+ 
+
+•       URLS that are spelled out, such as http://section508.gov/docs/exam ples/files/PPT/slide1.html instead of linking to text
+
+Check with IE WAT (Beginner)  
+
+ 
+
+Some versions of Internet Explorer (IE) have the title bar.  If so, the following steps are not needed.
+
+ 
+
+•       Open the web page 
+
+ 
+
+•       On toolbar, select "Doc Info"
+
+ 
+
+•       Select "List Links" o           A new window will open
+
+with a report
+
+Guide to
+
+Contact us
+
+2-24-2014  
+
+•       Review links provided in report o  For example: Link phrases
+
+and words rather than write out URLs such as www.cnn.com/news/story
+
+_PandaCam should be Panda Cam Story title
+
+linked
+
+ 
+
+•       Also, within the report:
+
+o   Check the first few links under link content for a “Skip to Content” or “Skip Navigation” link
+
+ 
+
+o   Use CTRL + F to open a “Find” toolbar at the top of the page and type the work
+
+“skip” then press enter 
+
+ 
+
+o   If “Skip” exists on that page,
+
+the word will be highlighted
+
+ 
+
+o   If that option does not bring up results, then there is no skip to content link present
+
+Check Using Keyboard and/or Screen Reader (Intermediate) 
+
+ 
+
+Screen readers such as NVDA or JAWS can be used to access a list of links on a page.  
+
+ 
+
+•       Ensure the skip link is functioning correctly by: Tab to link > Enter >
+
+Tab again
+
+ 
+
+•       Watch for redundant title attributes
+
+<a…title="Articles">Articles</a>
+
+ 
+
+•       INSERT + F7 opens a dialog box where a list of all of the links on the
+
+page will appear
+
+ 
+
+•       Press the “S” key to search for all links that start with the letter “S” 
+
+ 
+
+o     For example ‘Skip Navigation’, ‘Skip to Main’, ‘Skip to Content’, etc.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+Accessible Links   
+
+Headings
+
+ 
+
+Web pages often have sections of information separated by visual headings.  For example, heading text is bigger and bold.  Headings need to be "marked up" in the web page "code" (e.g., HTML). 
+
+ 
+
+A “Heading” for a web page can be:
+
+ 
+
+•       The title of the page, or
+
+•       Titles of sections of the page
+
+ 
+
+Ensure that all logical headings use the HTML heading tags.  In order for a screen reader to quickly access content, numbering headings is important. 
+
+ 
+
+Heading levels should have a meaningful hierarchy, such as:
+
+ 
+
+Heading Level 1 <h1>
+
+Heading Level 2 <h2>
+
+Heading Level 3 <h3>
+
+Heading Level 3 <h3>
+
+Heading Level 2 <h2>
+
+Heading Level 3 <h3>
+
+Heading Level 4 <h4>
+
+Heading Level 4 <h4>
+
+Heading Level 2 <h2>
+
+ 
+
+ 
+
+Headings 
+
+What to Check
+
+ 
+
+•       The page has a heading
+
+•       All pages should have at least one heading
+
+•       All text that looks like a heading is marked up as a heading
+
+•       All text that is marked up as a heading is really a conceptual section heading
+
+•       The heading hierarchy is meaningful. Ideally the page starts
+
+with an "h1" 
+
+ 
+
+Check with IE WAT (Beginner)
+
+ 
+
+Using the WAT Toolbar in Internet Explorer (IE):
+
+ 
+
+•       Go to Structure and select
+
+Heading Structure
+
+ 
+
+•       Ensure that the heading
+
+structure list is in order (<h1>, <h2>) and that the subheadings are labeled
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Check Using Keyboard and/or Screen Reader (Intermediate)
+
+ 
+
+Use a screen reader such as NVDA or JAWS to access a list of headings. 
+
+ 
+
+•       For JAWS, press Insert+ F6 to open a list of headings. Arrow down through the list to ensure that the headings are in the correct order and that the list
+
+does not skip subheadings
+
+ 
+
+•       For NVDA, press Insert + F7 and select the Headings radio button at the top. This will bring up a list of headings on the page. Ensure that the headings are labeled and that the list
+
+does not skip subheadings
+
+ 
+
+Additional Resources
+
+ 
+
+•       Info and Relationships 
+
+•       Headings and Labels 
+
++-----------------------------------------------------------------------+
+| Guide to Creating Accessible Electronic Materials                     |
+|                                                                       |
+| Contact us at                       or 703-993-4329                   |
++-----------------------------------------------------------------------+
+
+•       Section Headings 
+
+Alt Text 
+
+ 
+
+Alt text should be functional and provide an equivalent user experience.  
+
+ 
+
+Text alternatives ("alt text") convey the purpose of an image, including pictures, illustrations, charts, etc. For example, individuals with visual impairments and use screen readers are able to hear the alt text read aloud.  
+
+ 
+
+•       Appropriate text alternative for a search button ( []) would be "search",
+
+not "magnifying glass"  
+
+ 
+
+•       The ‘alt’ attribute is an attribute of the ‘img’ tag and is meant to be an alternative for non-visual browsers when they come across images. This ensures that a text equivalent is available when the image is not visible
+
+on the page.  For example,
+
+ 
+
+[] 
+
+ 
+
+<img src="graphics/logo.gif"   
+
+alt="George Mason University" / >   
+
+ 
+
+ 
+
+•       If an image is not of importance and is used solely for visual needs, an alt text with open and closed quotes (“”) should be used. Empty ‘alt’ tags hide an image from a screen-reading
+
+Guide to
+
+Contact us
+
+application, so background images and aesthetic elements would be good
+
+uses for this.  For example,  
+
+ 
+
+[]
+
+ 
+
+<image src="graphics/progress.gif" alt="" /
+
+>
+
+ 
+
+•       Background images cannot have an
+
+‘alt’ text
+
+ 
+
+o          Only images without informational content are allowed to be background images, or the information needs to be provided in an
+
+alternative way
+
+ 
+
+Check with IE WAT (Beginner) 
+
+ 
+
+•       Use the WAT in Internet Explorer (IE)
+
+ 
+
+•       Go to Images
+
+ 
+
+•       Select Show Images to outline images 
+
+ 
+
+•       Show alt text on the page o             If an error message appears,
+
+select OK or press enter to
+
+close the message 
+
+ 
+
+•       Notice which images have No Alt attached to them  
+
+Check Using Keyboard and/or Screen Reader (Intermediate) 
+
+ 
+
+With JAWS, check Alt text for images or “Graphics” on a page:
+
+ 
+
+•       Press the JAWS quick navigation key for graphics (G) on a web page  
+
+ 
+
+•       Listen to how JAWS reads the graphics
+
+ 
+
+•       If it reads a short, but descriptive title, then the image is labeled correctly.  
+
+o    If it reads a long, drawn out label, or the name of the file image that does not represent the image, it is not labeled
+
+correctly
+
+ 
+
+•       With JAWS, press Insert + F3 to open the HTML elements dialog box o                      Arrow down to the graphics
+
+list and press enter
+
+ 
+
+o    A separate list of all graphics
+
+will open
+
+ 
+
+o    Check the list for the graphic
+
+labels  
+
+Image Description (Alt Text)   
+
+How to Test Websites for Accessibility    Accessible Tables 
+
++---------------------------------+-----------------------------------+-----------------------+
+| Tables                          | Check Using Keyboard and/or       | For example:          |
+|                                 |                                   |                       |
+|                                 | Screen Reader (Intermediate)      |                       |
+|                                 |                                   |                       |
+| There are two types of tables:  |                                   | Class Schedule        |
+|                                 |                                   |                       |
+|                                 | Use JAWS to find tables on a web  |                       |
++---------------------------------+-----------------------------------+-----------------------+
+
++-----------------------+-----------------------+-----------------------+
+| Class Name            | Course                | Location              |
+|                       |                       |                       |
+| []                    | # []                  | []                    |
++-----------------------+-----------------------+-----------------------+
+| []Biology             | Bio 100               | Building A            |
++-----------------------+-----------------------+-----------------------+
+| Chemistry             | Chem 100              | Building B            |
+|                       |                       |                       |
+| []                    |                       |                       |
++-----------------------+-----------------------+-----------------------+
+
++-------------------------------------------------------------------------------------------+-----------------+------------------------------------------------------------------------------------------------+------------------------------------+
+| •       Select Table Headers                                                              | •               | labeled, JAWS will read the Column heading, Row heading and the contents of the cell           |                                    |
+|                                                                                           |                 |                                                                                                |                                    |
+| •       Any Headers will be highlighted                                                   | •               | If JAWS only reads the contents of the cell, then the table headings are not properly labeled  | Example Code:                      |
+|                                                                                           |                 |                                                                                                |                                    |
+| •       If you see a table that does not show a highlight then it is not set as a header  |                 | Table Headers should read in the order in which a table presents information                   | <table>                            |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <caption>Class Schedule</caption>  |
+|                                                                                           |                 |                                                                                                |                                    |
+| While viewing the table on the website:                                                   |                 |                                                                                                | <tr>                               |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <th scope=”col”>Class Name</th>    |
+|                                                                                           |                 |                                                                                                |                                    |
+| •       Use the WAT toolbar in IE                                                         |                 |                                                                                                | <th scope=”col”>Course #</th>      |
+|                                                                                           |                 |                                                                                                |                                    |
+| •       Go to Table Show Data Tables from the toolbar                                     |                 |                                                                                                | <th scope=”col”>Location</th>      |
+|                                                                                           |                 |                                                                                                |                                    |
+| •       Look for the table header <th> tag at the Header level of the table               |                 |                                                                                                | </tr>                              |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <tr>                               |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <th scope=”row”>Biology</th>       |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <td>Bio 100</td>                   |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <td>Building A</td>                |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | </tr>                              |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                | <tr>.....                          |
+|                                                                                           |                 |                                                                                                |                                    |
+|                                                                                           |                 |                                                                                                |                                    |
++-------------------------------------------------------------------------------------------+-----------------+------------------------------------------------------------------------------------------------+------------------------------------+
+
+                                                                            page
+
+•       Presentation          
+
+•       Data          •           Press the quick navigation key for
+
+                                                                                  tables (T)
+
+If Tables are being used to display     •           JAWS will cycle through the tables anything other than simply on the page and read any presentation, ensure that table    presentation or data tables headings are marked as headings.                If you come across a data table,
+
+•
+
+Check with IE WAT (Beginner)       arrow down through the table to a cell that contains data
+
+ 
+
+•       Use the WAT in Internet Explorer             •           Press check the heading order of the ALT + CTRL + Numpad 5 to
+
+        (IE)                                                                      table
+
+•       Go to Table                       If the table headings are properly
+
+•
+
+Guide to Creating Accessible Electronic Materials 
+
+Contact us at                       or 703-993-4329
+
+How to Test Websites for Accessibility                Form Fields, Error Messages, and Direct
+
+Focus  
+
+Form Fields 
+
+ 
+
+There are 2 things to check:
+
+•       Ensure the tab focus goes directly to each form field in the correct reading order of top to bottom, left to right
+
+•       Ensure form fields are labeled  properly in the code.   
+
+ 
+
+o   The code label should
+
+be same as the form
+
+name
+
+o   If the field label is First Name, then the code label should also be First Name
+
+ 
+
+Error Messages on Form Pages 
+
+ 
+
+The user must be able to quickly identify any form fields that are not filled out correctly.  
+
+ 
+
+For example, if an email address is required but was not filled out on a form, the form is submitted and an error message occurs.  The user needs to be able to quickly identify which fields are not filled out correctly. The error listing must receive focus directly after the user attempts to submit information to advance to the next screen.
+
+ 
+
+Guide to
+
+Contact us
+
+Direct Focus Dialog Box  
+
+ 
+
+When a new dialog box (pop-up box or window) is displayed, does the focus move to this dialog box? For example, if there is an error message from filling out a form and a separate dialog box is displayed with an error message, does this box take focus over the webpage or application? 
+
+ 
+
+Check with IE WAT (Beginner) 
+
+ 
+
+FORM FIELDS
+
+•       Use the WAT in Internet  Explorer (IE)   
+
+•       Select Structure  
+
+•       Go to Fieldset/Labels
+
+•       A dialog box will come up giving you the number of errors out of the number of form controls on the page
+
+•       Any errors on the page will signify an invalid or missing label.
+
+ 
+
+ERROR MESSAGES ON FORM PAGES
+
+The error message can be tested by selecting the button without filling in any of the form fields. A dialog box will take to notify you of the errors. Does it tell you what the error is? Does it take you back to the specific area in which you need to make the change?
+
+ 
+
+•       Each individual error listing must begin with the text “Error” to best convey information to assistive technologies. 
+
+•       The user must be able to navigate directly to fields in order to make corrections. Press the tab key to see if the focus can be navigated to the form field in error.
+
+ 
+
+DIRECT FOCUS DIALOG BOX
+
+•       Select the button and notice the dialog box that appears
+
+•       Does it take focus?
+
+•       Can you press the tab key to access the OK button?
+
+•       Press Ctrl + P to see if the print dialog box appears to just print
+
+that specific dialog box
+
+ 
+
+Check Using Keyboard and/or Screen Reader (Intermediate) 
+
+ 
+
+FORM FIELDS
+
+•       Use JAWS to find form fields
+
+(edit fields)
+
+•       Check the labeling of the edit fields by pressing Insert + F3 to open the HTML features list
+
+How to Test Websites for Accessibility                Form Fields, Error Messages, and Direct
+
+Focus  
+
+•       Arrow down to Edit Boxes List   and press enter   
+
+•       This will open a list of all of the edit box labels on the page
+
+•       Arrow down through the list to   ensure that the labels   correspond with the edit field   
+
+ 
+
+ERROR MESSAGES ON FORM
+
+PAGES
+
+•       Use JAWS to navigate to the   button by pressing the quick   navigation key “B” for button   
+
+•       When JAWS reads the button   name, press enter   
+
+•       The error dialog box will appear
+
+•       Press enter or escape to close the dialog box
+
+ 
+
+DIRECT FOCUS DIALOG BOX
+
+•       Use JAWS to access the button
+
+•       Press enter on the button
+
+•       Does JAWS read the dialog box that appears? 
+
+•       Can you tab to the OK button?
+
+ 
+
+Additional Resources 
+
+ 
+
+FORMS
+
+Click on the text next to a form field. If the field receives focus, the label is correctly-associated.  This makes fields easier to click, especially checkboxes •                      Focus should be set back to the and radio buttons.           correct place in the page when it
+
+•       Buttons should not have labels          closes
+
+•       1:1 form to label relationship •                      JavaScript alerts, etc., are not the
+
+•       Fieldsets         same as dialog boxes. They should
+
+•       Other ways to group large lists:          be natively accessible. tabindex="0" or ARIA            •                        Some non-modal dialogs (e.g.,
+
+•       Support for ARIA labeling (i.e.,           some date pickers) may be hidden aria-labeled by, aria-described        from keyboard users if functionality by) is good, but testing still       is available with the keyboard.
+
+                required                                                                              •    Most non-modal dialogs should
+
+•       Start with HTML labeling        return focus, but some should set and user ARIA if necessary         focus to the next link/form control.
+
+•       Many jQuery dialogs have good ERROR MESSAGES        accessibility.
+
+•       Submit the form empty and look for error messages. Are they accessible?  
+
+•       Errors at the top
+
+•       Alerts receive focus
+
+•       Errors are inline
+
+ 
+
+•       Submit forms empty
+
+ 
+
+•       Direct users directly to errors
+
+ 
+
+•       Provide quick access to the problematic elements
+
+ 
+
+•       Allow resubmission of the form
+
+ 
+
+DIALOG BOXES
+
+•       Focus should be set to the dialog box when it opens
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at                       or 703-993-4329
+
++-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+------------------------------------------------------------------+
+| CAPTCHA                                                               | Additional Information                                                                                                                                                                                               | Check Timed Responses  |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+| CAPTCHA stands for Completely                                         | Although there are workarounds available, the best approach may be to use a CAPTCHA that poses a logic question in plain text. Such questions are easy for humans to answer, but difficult for a machine to parse.   |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+| Automated Public Turing test to tell Computers and Humans Apart       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+| Check CAPTCHA                                                         |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+| •          CAPTCHA image cannot include ALT text for screen readers,  |                                                                                                                                                                                                                      |                        |                                                                  |
++-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+------------------------------------------------------------------+
+|                                                                       |                                                                                                                                                                                                                      |                        | If elements on the page require a timed response, for example:   |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      | •                      |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        | o   Quizzes or automatically refreshing pages or                 |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        |                                                                  |
+|                                                                       |                                                                                                                                                                                                                      |                        | o   Any timed redirects                                          |
++-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+------------------------------------------------------------------+
+
++----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------------------+
+|                | with screen readers unless a pause at the beginning is included                                                                                                |                                                                                                                                                                                                                                               | •             | Provide the user sufficient time to indicate that more time is required before the time limit is reached  |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+| •              | As spammers develop algorithms to break CAPTCHA systems, images and audio become more distorted, to the point where even many sighted users have difficulties  |                                                                                                                                                                                                                                               | •             |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                | identifying the text                                                                                                                                           | Timed Responses                                                                                                                                                                                                                               |               | Page is not accessible if:                                                                                |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                | When using redirects or forms requiring a timed response, it is important to make sure adequate response time is given for mobility impaired users, users with screen readers and readers with cognitive impairments. All of these audiences  |               | o   User has no option to extend the time                                                                 |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               |                                                                                                           |
+|                |                                                                                                                                                                |                                                                                                                                                                                                                                               |               | o   Is not given an alert with enough time to extend the                                                  |
++----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------------------+
+
+[][]How to Test Websites for Accessibility – CAPTCHA  and Timed Responses   because a bot would read it •  Warn the user before the time limit 
+
+ expires  
+
+•                                                                                                                           Audio CAPTCHAs can interfere                                   
+
+                                                                                                     require extra time to process                                                limit  
+
+instructions. Think online banking and            purchasing online tickets, etc.           Additional Resources
+
+             
+
+                                                                                                                                                                  http://textcaptcha.com/
+
+             
+
+                         
+
+             
+
+             
+
+             
+
+How to Test Websites for Accessibility – Color Contrast   
+
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| Color Contrast                                                                                          | While some people need high contrast, for others — including people with some types of reading disabilities such as dyslexia — bright colors (high luminance) are not readable. They need low luminance.  | Web browsers should allow people to change the color of text and background, and web pages need to work when people change colors.  |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+| Some individuals cannot read text if there is not sufficient contrast between the text and background.  | Light Text on Dark Background                                                                                                                                                                             | This accessibility requirement is sometimes called sufficient "color contrast"; however, that is incorrect —                        |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+|                                                                                                         |                                                                                                                                                                                                           |                                                                                                                                     |
+| Gray Text on Light Background                                                                           |                                                                                                                                                                                                           |                                                                                                                                     |
++---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+[]technically it's "luminance contrast."
+
+ 
+
+What to Check
+
+ 
+
+Web pages should have a minimum  contrast, by default.  A contrast ratio of
+
+                                                                                                                           at least 4.5:1 for normal-size text.
+
+[]                                                                                                      Gray Text on Dark Background                      
+
+Using Google Chrome
+
+•       Download the Color Contrast Analyzer Extension
+
+•       Click on the Extension, located in the top right of your page  
+
+                                                                                                                                                                                                                       [] 
+
+ 
+
+Additional Resources
+
+ 
+
+http://www.456bereastreet.com/archive /200709/10_colour_contrast_checking
+
+_tools_to_improve_the_accessibility_of
+
+_your_design/
+
+ 
+
+ 
+
+             
+
+ 
+
+Web Accessibility   
+
+ 
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, the most commonly used Content Management Systems for Mason websites will be discussed. Instructions on how to incorporate accessibility with step-by-step instructions are included for content managers and web developers.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+CommonSpot Web Management Adding Labels to Form Fields   
+
+Including Labels on Forms 
+
+ 
+
+When building a form on your Common Spot page, it is important to include a label with every form field. When form fields do not explicitly include a label, assistive technologies may incorrectly render the label or provide no feedback at all to users. When labels are not present or are incorrect, users of assistive technologies may not be able to complete a form. 
+
+ 
+
+To add labels to form fields, follow the steps below:
+
+ 
+
+[]Step 1: After adding the Form Element to your page, click the yellow ‘+’ sign next to the Simple Form Element and select Edit Fields.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Step 2: Select Add New Field in the Edit Fields dialog box.
+
+[]
+
+Step 3: In the New Form Field dialog box, Select the field type, enter a field name and a label name. When finished, select Add Field. (Please Note: usually the label name is the same as the field name.)
+
+ 
+
+[]
+
+Forms and Usability 
+
+ 
+
+When filling out the Form Field dialog box, if the field is going to be required, an asterisk (*) should be placed in front of the field name and the label to let users know that it is required. For example: ‘*Name’ would be entered in the Field Name and the Label field if it is a required field. 
+
+ 
+
+See the next example for an accessible, usable form. Notice how there is also a note stating that the required fields are marked with an (*) asterisk to let the user know of the required fields. 
+
+For more information about how to create a form, contact your web developer. 
+
+Guide to Creating Accessible Electronic Materials Contact us at ati@gmu.edu or 703-993-4329
+
+CommonSpot Web Management Heading Structure  
+
+Step 3: Once the appropriate heading
+
+Adding Headings                                                  level is  applied, you can change the
+
++----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                                                  | font size and color of the text. Simply highlight the text again and select the appropriate tools:  |
+|                                                                                  |                                                                                                     |
+| Maintaining a structured heading order is important not only for accessibility,  |                                                                                                     |
++----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+| Spot webpage, follow the steps below:                                                       |                                                                                                                           |
+|                                                                                             |                                                                                                                           |
+|                                                                                             | Step 4: Once your styles are applied, you can see that the correct heading level is displayed when the text is selected:  |
+|                                                                                             |                                                                                                                           |
+| Step 1: In the formatted text box, highlight the text that you want to format as a heading  |                                                                                                                           |
++---------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------+-----------------------------------+
+| Format drop down and select the appropriate Heading level (1, 2, 3, etc…)  |                                   |
+|                                                                            |                                   |
+|                                                                            | Heading Styles                    |
+|                                                                            |                                   |
+|                                                                            |                                   |
++----------------------------------------------------------------------------+-----------------------------------+
+
+[][]but for search engine optimization as
+
+well. When someone uses a search
+
+engine to find a specific topic, it pulls in the headings from pages for search results. 
+
+ 
+
+To add headings to your Common
+
+ 
+
+[] 
+
+ 
+
+Step 2: In the text box tools, select the
+
+[]CommonSpot web developers are able to set specific font style, size and color settings for a particular heading format. If you think this would help you in formatting the style of your headings, contact your web developer. 
+
+ 
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at ati@gmu.edu or 703-993-4329
+
+Heading Levels 
+
+ 
+
+It is best practice to ensure that heading levels have a meaningful hierarchy and do not skip levels such as H1 to H3. You should always have an H2 before adding an H3. See example below for a structured heading order:
+
+ 
+
+Main Page Title (Heading 1)
+
+            Sub-Heading (Heading 2)                       Sub-Heading (Heading 3)           Sub-Heading (Heading 2)
+
+                         Sub-Heading (Heading 3)
+
+ 
+
+[]
+Some CommonSpot web pages must have Heading 1 coded by a web developer if the main heading is also the main title of the page. Content managers may not have access to updating this. See example below:
+
+CommonSpot Web Management Keyboard  Accessibility   
+
+                                                                                                                                            Step 4: Add the alternative code in the
+
+Adding Keyboard Accessibility                                                                How To Add the Alternative Code                                    HTML text box. In this case below, the 
+
+ 
+
+One of the top best practices for accessibility is keyboard access. In other words, would someone be able to access your website using just the keyboard and not the mouse? This functionality is important for users with visual impairments and mobility impairments who cannot use a mouse.  
+
+ 
+
+This can be accomplished by ensuring that elements that utilize devicedependent event handlers (mouse only) are not the sole means of providing dynamic functionality.  
+
+ 
+
+Content managers and developers can incorporate this by providing a redundant device-dependent event handler in the code to allow users of assistive technologies a method to access the functionality. If a “Mouse” or “Click” handler is used, an alternative must be added. See below for examples.
+
+ 
+
+Event Handler            Alternative
+
+OnClick                      OnKeyPress
+
+OnMouseDown           OnKeyDown
+
+OnMouseUp            OnKeyUp
+
+OnMouseOverOnFocus  
+
+OnMouseOut            OnBlur
+
+OnDblClick                 OnKeyDown
+
+Contact us at
+
+ 
+
+Step 1: When logged into your website, go to View- Work On This Page (My Changes):
+
+ 
+
+[]
+
+ 
+
+Step 2: Select the gear icon that appears in the upper left corner of the text box, and then select the text button:  
+
+[] 
+
+ 
+
+[]Step 3: In the text box, select the Show/Hide HTML button:
+
+ 
+
+        
+
+ 
+
+“On Focus” was selected since the “On Mouse Over” handle was also used with “On Mouse Out”:
+
+ 
+
+[] 
+
+Step 5: Select the Show/Hide HTML button again to go back to the text box.
+
+       Code Examples  
+
+ 
+
+Non- Accessible Example:
+
+ 
+
+<a href="http://www.yahoo.com"   onmouseover="window.status='Go to  onMouseOver="window.status='Go to  
+
+the   
+
+yahoo homepage':return true"   onFocus="window.status='Go to the  yahoo homepage':return true">   
+
+Yahoo Home Page   
+
+</a>   
+
+CommonSpot Web Management – Image Description (Alt Text)   
+
+What is an “Alt” Text (tag)?
+
+ 
+
+Alt tags are descriptions for images that communicate the meaning of the image to users of assistive technologies and text-only browsers. This is very important for accessibility and is a best practice that should be followed. CommonSpot allows the addition of alternative text for images, but it must be included by the content manager/developer. It is not automatically added.  
+
+ 
+
+To add alt tags to images on your CommonSpot page, follow the steps below:
+
+ 
+
+Step 1: Select the gear icon for your image and select Image
+
+[]
+
+Step 2: In the Image Properties dialog box, type in the text description in the Alternate Image Text field and click Save - See next example:
+
+Contact us at
+
+[]tag of a double quote (“”). This will “hide” the image in the background so that it will not be noticed by assistive technologies, even though it is still visible on the page. Without this null or voided alt tag, assistive technologies may pick up the image as “blank” or “graphic” without any context to the user. The user would not know if this was an image of importance or not.  
+
+Examples of Decorative Images 
+
+ 
+
+Smiley Faces (or Emoticons)
+
+      
+
+[][]                                                                                                   Background images or
+
+Step 3: You can now check that the alt                                    graphic art
+
+text has been added by hovering your mouse over the picture, the alt text will appear next to your mouse cursor like the example below.
+
+ 
+
+Images that should contain an Alt Tag:
+
+ 
+
+                                                                                                            -­‐    Social Media Logos
+
+                                                                                                            -­‐    Mason Logos
+
+-­‐ Other images displaying information that describe the
+
+context of the webpage
+
+                                                                                -­‐    Pictures that contain text  
+
+ 
+
+Decorative Images 
+
+ 
+
+An image that is purely decorative and has no meaning should be given an alt
+
+Blackboard and Bb Collaborate   
+
+ 
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, the most commonly used learning management platforms here at Mason, Blackboard Learn and Bb Collaborate, will be discussed.    
+
+ 
+
+The following pages will cover
+
+Blackboard’s commitment to accessibility, resources for faculty, staff and students on the different built-in features of Blackboard, Bb Collaborate’s built-in accessibility
+
+features, how to enable these features,
+
+            and resources for the latest Bb Collaborate    updates.
+
+ 
+
+ 
+
+Contact us at
+
+[]Adding Headers in Blackboard   
+
+About 
+
+ 
+
+Blackboard® is usable and accessible. The National Federation of the Blind
+
+(NFB) recently awarded Blackboard
+
+Learn™, Release 9.1 and later with a Nonvisual Accessibility Gold Certification, making it the first learning management system to achieve certification. Blackboard measures and evaluates accessibility levels using two sets of standards: the Web Content Accessibility Guidelines (WCAG) issued by the World Wide Web Consortium (W3C) and Section 508 of the Rehabilitation Act issued in the United States federal government.
+
+How it Works 
+
+ 
+
+Blackboard is fairly accessible out of the box.  It is up to the faculty member to continue the accessibility when creating Modules, Items, etc. within the course.  When creating a new Module or other Learning Content you will often see the WYSIWYG (what you see is what you get) edit box where you can add content.  When adding content to courses, there are multiple ways you can include accessibility.  
+
+ 
+
+Let’s begin by looking at adding Headers.  Headers should be used in a logical order starting with Header 1
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at                       or 703-993-4329
+
+ 
+
+This feature should be used throughout all Modules created. Each Module  would follow the same setup from H1 – H3, etc.  
+
+ 
+
+Here is an example of multiple headings used:
+
+ 
+
+ 
+
+ 
+
+Accessibility Features in Blackboard:
+
+ 
+
+http://www.blackboard.com/Platforms/L earn/Resources/Accessibility/Accessibi lity-Resources.aspx
+
+ 
+
+Accessibility for individuals using Assistive Technology:
+
+ 
+
+http://www.blackboard.com/Platforms/L earn/Resources/Accessibility/JAWSDemo.aspx
+
+ 
+
+ 
+
+ 
+
+Adding  a Table and Setting Table Headings in Blackboard   
+
+[]How it Works
+
+ 
+
+Blackboard is fairly accessible out of the box.  It is up to the professor to continue the accessibility when creating Modules, Items, etc. within the course. When creating a new Module  or other Learning Content you will often see the WYSIWYG (what you see is what you get) edit box where you can add content.  When adding content to courses there are multiple ways you can include accessibility.   
+
+ 
+
+Let’s begin by looking at adding Tables.  There are two types of tables (1) data and (2) layout/presentation.  Data tables don’t necessary have to have numbers to be considered “Data”.  Any table presenting information that has a set header that would follow
+
+through the rows and columns would  be considered a Data table. All Data  tables need headers set in the Row and Column headers. These headers  should always be set as Header (H1)
+
+Adding Accessibility
+
+ 
+
+When you add a Table in a Module the Insert/Edit Table box opens. Check  
+
+the “Table Caption” at the bottom of the General Tab.           
+
+                                                                            Once you have created the specifics of
+
+                                                                             your table, hit Insert. The table will
+
+show up in your Module.   
+
+Guide to Creating Accessible Electronic Materials
+
+Contact us at ati@gmu.edu or 703-993-4329 2-24-2014
+
+Adding an Image and Tagging/Describing in Blackboard   
+
+How it Works
+
+ 
+
+Blackboard is fairly accessible out of the box.  It is up to the professor to continue the accessibility when creating Modules, Items, etc. within the course.  When creating a new Module or other Learning Content you will often see the WYSIWYG (what you see is what you get) edit box where you can add content.  When adding content to courses there are multiple ways you can include accessibility.  
+
+ 
+
+Let’s begin by looking at adding Images.  There are two types of images (1) meaningful/important information and (2) presentation/show.  All images need “tagged” or described.  It depends upon what type of image as to the type of tag used.   
+
+Adding Accessibility 
+
+ 
+
+When you add an Image in a Module the Insert/Edit Image box opens.  Under the general tab you select the location of your image.  You MUST enter a description.  Entering a Title is helpful but should not be identical to the description.   
+
+ 
+
+[]Here you have an area that you can either enter in a long description describing the chart or graph.
+
+ 
+
+Additional Resources
+
+ 
+
+Accessibility Features in Blackboard:
+
+ 
+
+http://www.blackboard.com/Platforms/L earn/Resources/Accessibility/Accessibi lity-Resources.aspx
+
+ 
+
+If the image is meaningful/important then enter the description of the image in the box.  If the image is for presentation/show then enter an open and closed quote “”.
+
+ 
+
+If the image is a chart, graph or other complex image that needs a detailed description click on the Advanced tab of the Insert/Edit Image box.
+
+ 
+
+[] 
+
+Guide to Creating Accessible Electronic Materials 
+
+Contact us at                       or 703-993-4329
+
+Adding a Description to a File in Blackboard  
+
+            
+
+How it Works             Additional Resources
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+| Let’s begin by looking at adding Files.                                                                                                                                                                                           | Accessible Documents                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+| Adding Accessibility                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   | By adding a description does not make the document accessible once it is opened.  To make sure a document is accessible it should be OCR’d (made searchable).  This not only helps with accessibility but also helps ESL students, and nontraditional students.  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+| When you add a Document in a Module the Insert Content Link box opens.  Once you browse and find the file you want to attach, the name of the file will automatically appear.  The alt Text should be a description of the file.  |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+[]Blackboard is fairly accessible out 
+
+of the box.  It is up to the professor Accessibility Features in to continue the accessibility when Blackboard:
+
+creating Modules, Items, etc. within 
+
+the course.  When creating a new http://www.blackboard.com/Platfor Module or other Learning Content ms/Learn/Resources/Accessibility/A
+
+you will often see the WYSIWYG ccessibility-Resources.aspx
+
+(what you see is what you get) edit  box where you can add content.  When adding content to courses there are multiple ways you can include accessibility.   
+
+Guide to Creating Accessible Electronic Materials   or 703-993-4329
+
+[]Adding a Video in Blackboard  
+
+How it Works
+
+ 
+
+Blackboard is fairly accessible out of the box.  It is up to the professor to continue the accessibility when creating Modules, Items, etc. within the course.  When creating a new Module or other Learning Content you will often see the WYSIWYG (what you see is what you get) edit box where you can add content.  When adding content to courses there are multiple ways you can include accessibility.  
+
+ 
+
+Let’s begin by looking at adding Videos.  
+
+Adding Accessibility
+
+ 
+
+There are two ways to add a video (1) through an item, module, etc. (2) directly adding it into the Build Content section by selecting Video.  It is best practice to add a video through an item, module, etc. 
+
+ 
+
+When in the Item or Module, select the Embed or Add Video button.  Here, you can choose what type of file you would like to add.  It is best practice to use QuickTime and avoid the use of iframe and flash.  Also, whichever file format you choose, a download link of that application should also be added in the module.  For example, if
+
+ 
+
+ 
+
+Using the Item or Module option allows you to add a description of the video within the WYSIWYG edit box.  You
+
+can also include a file for a transcript and a link where someone can
+
+download the video and/or open it into a new window.  (NOTE: Embedded videos are not always accessible to screen readers so it is best to give the
+
+link in addition to the embedded video.)
+
+ 
+
+The second way you can add a video is by directly adding it into the Build Content Section.  When doing this the video will automatically show up at the bottom of all content in Blackboard and it would need to be moved to the appropriate location.
+
+ 
+
+  
+
+By default, Video Options include Autostart, Loop and Add alignment to content checked as “No”. Maintain these settings. 
+
+ 
+
+You can easily add a Transcript for the video/audio.  Select the Browse Button to Include a Transcript:
+
+[] 
+
+ 
+
+NOTE: Adding a transcript doesn’t make the video fully accessible, but does help add additional support for all students.  
+
+Additional Resources
+
+ 
+
+Don’t have a transcript?  Visit ATI’s Accessible Media website for a free transcript and captioned video: http://ati.gmu.edu/media.cfm 
+
+Guide to Creating Accessible Electronic Materials   or 703-993-4329
+
+Blackboard Collaborate Web Conferencing - Built In Accessibility Features   
+
+Blackboard Collaborate offers built-in features that are an integral part of the program but also aid in accessibility. These are more universal design features that can help anyone in the collaborate experience, but may be especially helpful for someone with a disability.  
+
+Audible/Visual Notifications
+
+These are system messages used to notify users when important events occur within the session. The following audible notifications should always be enabled and the default visual notifications should always be checked:
+
+•  Chat Message Received
+
+•  Microphone On/Off
+
+•  Hand Raised/Lowered
+
+•  Participant Joined/Left
+
+•  Private Chat Message Received
+
+ 
+
+To enable these features, from the Edit menu, select Preferences. This will bring up a Preferences dialog box.
+
+Under General, select Audible Notifications:  
+
+ 
+
+[]
+
+Application Sharing Features
+
+ 
+
+The following sections describe features that improve accessibility for low vision and color blind users:
+
+ 
+
+Hosting Options: The Hosting Options allow you to define how to display the Application Sharing window while you are hosting an Application Sharing session. To access the Hosting Options, open the Preferences dialog box (from Edit Menu) then on the left side of the dialog box, you will see Hosting Options:
+
+[]
+
+ 
+
+It is recommended to keep the Hide content area un-checked, select a region highlight color (bright, bold colors such as yellow, orange or blue), keep Raise shared applications to front checked, select emphasize cursor (will display a colored ring around your cursor so that it’s more visible and easy to follow) and check Show Notification (this will bring up a dialog box to let users know you are about to share an application). Make these changes to your options and click Apply and Close.
+
+Messaging Chat Options
+
+ 
+
+You can set the font size of the text in the conversation (messaging) pane anywhere from 7 points to 109 points, in increments of 2 points. The default value is 13 points. To increase/decrease the font size, do one of the following:
+
+•       From the Tools menu, select Chat and then Increase Font Size.  
+
+•       From the Chat Options menu, select Increase Font Size.
+
+ 
+
+Changing the Notes Text Size 
+
+ 
+
+You can change the size of the font in the Notes text editor:
+
+ 
+
+Blackboard Collaborate Web Conferencing - Built In Accessibility Features   
+
+1)            To open the notes text window, go to Window in the menu bar, click Show Notes.
+
+2)            Or to open the notes window, press Ctrl + E.
+
+Closed Captioning (CC)
+
+ 
+
+The Closed-Captioning feature enables a session attendee to transcribe audio information while a session is in progress.  
+
+ 
+
+Other session attendees can view the transcribed text in the live session and in a recording of the session. It can also be saved to a text file. There are two types of Closed-Captioning windows: one for entering closedcaptioning text (input window) and one for reading the text (view-only window).
+
+Granting CC Permission
+
+ 
+
+The Closed-Captioning permission is not included in the default set of Global permissions – not even for Moderators (including yourself). Before Moderators and Participants can enter text in the Closed-Captioning input window, you must explicitly grant them the ClosedCaptioning permission
+
+ 
+
+ 
+
+1)            To grant permission: Select the Closed Captioning permission icon in their participant menu.
+
+ 
+
+2)            When they are granted permission, they will see the CC icon in their menu bar.    
+
+ 
+
+[] 
+
+Entering CC Text
+
+ 
+
+Once you have been given permission to enter the closed-captioning text, open the Closed-Captioning input window by doing one of the following: • Click on the Closed-Captioning button at the top of the Audio & Video panel.
+
+• From the Window menu, select Show Closed-Captioning. The CC box will come up:
+
+ 
+
+[] 
+
+Viewing CC Text
+
+ 
+
+All Moderators and Participants, upon joining a session have the permission to view the text in the ClosedCaptioning window. To open the Closed-Captioning view-only window, do one of the following:
+
+•              Enter Control+F8 (Command-F8 on Mac) • From the Window menu, select Closed-Captioning.
+
+•              If someone in the session has been granted the permission to enter captions, you will see the ClosedCaptioning button at the top of your Audio & Video panel. Click on it to open the view-only window.
+
+Saving CC Text
+
+ 
+
+• You can save the closed-captioning text by selecting Save from the Options menu in either of the ClosedCaptioning windows (input or view).  • Each time you close the ClosedCaptioning window a new transcript is started, so only the captions that were entered since the last time you opened the window will be saved.
+
+ 
+
+For full details on ‘CC’ in Collaborate and all of the accessibility features, see the online moderator’s accessibility guide:  
+
+ 
+
+http://library.blackboard.com/ref/483c0 5b6-f353-4187-b294ebe11f5e5bca/index.htm
+
+Lecture-Capture Tools and Accessibility   
+
+ 
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this section, general accessibility information is provided concerning three lecture capture solutions that are commonly used by faculty on Mason campuses: Adobe Presenter, Camtasia, and Adobe Captivate.  
+
+ 
+
+Additionally, alternative options are provided to ensure equivalent access to the course content and additional
+
+resources to improve the accessibility of
+
+                                                                                                               your lecture capture videos.  
+
+ 
+
+ 
+
+ 
+
+Lecture-Capture Tools - Camtasia, Captivate, and Presenter Accessibility   
+
+Note: The purpose of this page is to provide more detailed accessibility information regarding these three commonly used lecture capture solutions on Mason campuses: Adobe Presenter, Techsmith Camtasia, and Adobe Captivate. Additionally, alternative options for ensuring equivalent access to the course content and additional resources are provided.
+
+Accessibility Challenges*  
+
+*Note:  The following information relates to the final output (i.e., video) of the application, not  the authoring tools.
+
+Users of assistive technology (i.e., screen-reading, screen magnification, captions) will be impacted by the following:
+
+•                Very limited keyboard access - Only the Play, Pause, and Slider Positioning buttons can be accessed by keyboard.
+
+[Camtasia]  
+
+•                Screen-reading applications are unable to identify any of the Camtasia video player controls.
+
+[Camtasia]  
+
+•      Alternative text descriptions must be provided for interactive video elements (i.e., callouts,
+
+buttons,             questions, etc.)
+
+[Captivate]
+
+•       Some of the video player controls are available in highcontrast settings. [Camtasia]  
+
+•       Interactive elements (i.e., quizzing and surveys) cannot be accessed by users of assistive technology (i.e., screen-reading applications)
+
+[Camtasia]  
+
+•                Captions must be added manually in order for individuals who are deaf or hard of hearing to access the content. [Both]  
+
+Populations Likely Impacted
+
+•       Individuals with visual   impairments   
+
+•       Individuals who are deaf or hard of hearing
+
+Alternative Options for Providing Equivalent Access 
+
+1.    Provide users with an accessible PowerPoint version of the presentation.  
+
+ 
+
+•       Add word-for-word text transcript to notes section for each slide
+
+•       Limit use of animations and transitions
+
+•       Add alternative text descriptions for images/charts/graphs
+
+•       Provide unique titles for each slide
+
+•       Use pre-designed slide layouts, as much as possible
+
+ 
+
+2.    Export Camtasia video as *.mp4 format, enabling students to play the video in whatever video playback application they choose.
+
+ 
+
+3.    Export Camtasia video as *.mp4 format and submit for captioning/transcription, http://ati.gmu.edu/acc-mediaform.cfm. Additional Resources
+
+ 
+
+•       Adding Speech-To-Text   Captions   
+
+•       Sync Captions with Script
+
+•       Add Captions Manually
+
+•       Importing/Exporting Captions
+
+•       Making Videos Searchable
+
+•       Accessibility Best Practices for Adobe Captivate
+
+•       Building an Accessible
+
+PowerPoint Presentation
+
+(Presenter)
+
+Comparison Chart – Lecture Capture Accessibility    
+
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                  | About                                                                                                                                                                                                                                                                                                                                          | Accessible to Individuals with Sensory impairments?   |                                                                                            |
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                  |                                                                                                                                                                                                                                                                                                                                                | Hearing                                               | Vision                                                                                     |
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Adobe Presenter  | Presenter differs from Camtasia and Captivate                                                                                                                                                                                                                                                                                                  | Yes*                                                  |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  | in that it installs as a plug-in to Microsoft                                                                                                                                                                                                                                                                                                  |                                                       | Yes*                                                                                       |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  | PowerPoint. Users can add narration to PowerPoint slides, import audio/video content, and have the option of creating a survey or quiz at the end of a presentation.                                                                                                                                                                           | (Starting with v8, captions can be added manually or  |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                | with built-in speech-to-text                          | (Author must follow best practices for building accessible PPT presentation.)              |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                | functionality.)                                       |                                                                                            |
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Camtasia         |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  | Camtasia is a screen recording and video editing software application. It is used  extensively for computer simulation and                                                                                                                                                                                                                     | Yes*                                                  | No*                                                                                        |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  | training exercises.  It can be installed on both a Mac and a PC. However, there are some  notable differences between the two applications (View comparison chart).                                                                                                                                                                            |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                | (Captions must be added manually.)                    | (Videos shown using Camtasia Player and interactive elements, like quizzes, are            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       | inaccessible to screen-reader users.  Choose alternative strategy for delivering quizzes.  |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       | Videos should be exported and shown using an accessible video-playback application.)       |
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Captivate        | Captivate is a screen recording and video editing software application. While similar to  Camtasia and Presenter in many ways, it is much more robust. Consequently, it is also  more expensive than the two previous applications. It offers a great deal more  accessibility support as well. It can be installed  on both a Mac and a PC.   |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                | Yes*                                                  | Yes*                                                                                       |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                | (Captions must be added manually.)                    | (Captivate projects are accessible to screenreader users. Follow the link above for best   |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       | practices for making accessible Captivate                                                  |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       |                                                                                            |
+|                  |                                                                                                                                                                                                                                                                                                                                                |                                                       | presentations.)                                                                            |
++------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------+
+
+ 
+
+* - Links above will take you to 3^(rd)-party websites with detailed information on incorporating accessibility into your lecture capture videos 
+
+Guide to Creating Accessible Electronic Materials 
+
+Contact us at ati@gmu.edu or 703-993-4329 2-24-2014
+
+Making Your Videos Accessible   
+
+ 
+
+[] 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Kaltura, Vimeo, and YouTube are the most commonly used applications by Mason faculty for hosting web-based videos.   
+
+ 
+
+In this section, general accessibility information is provided concerning how to ensure that your videos are accessible to individuals who are deaf and/or blind.   
+
+ 
+
+ 
+
+ 
+
+ 
+
+Guide to Creating Accessible Electronic Materials  
+
+Contact us at ati@gmu.edu or 703-993-4329
+
+2-24-2014
+
+Kaltura – Manually Add Captions to Your Kaltura Video   
+
+[]3.    Upload your SRT file.  In the
+
+Edit Entry menu, click on the
+
+Captions tab on the left-hand side. Next click Add Another           4.          Finally, select the language Caption. Then under the   and click Save.
+
+Actions column, click Upload
+
+                 File. Select your SRT file.                      Turning Captions/Audio Description
+
+                                                                            On/Off
+
+ 
+
+All Mason videos are played using
+
+Kaltura’s 508-compliant video player.  
+
+Guide to Creating Accessible Electronic Materials 
+
+Contact us at ati@gmu.edu or 703-993-4329
+
+2-24-2014
+
+The player includes:
+
+•       Support for captions file in timed text or SRT formats for the video/audio file  
+
+•       Support for an audio description in a standardized format for the video/audio file
+
+•       Hidden text elements for every non-text element (for screen readers)
+
+•       Tooltips
+
+•       Keyboard tabbing and controls
+
+•       High contrast controls
+
+ 
+
+[]
+Turn captions/audio description on or off by clicking the ‘CC’ and/or ‘AD’ buttons, respectively. They appear  when you hover your mouse on the top right-hand side of your video.
+
+YouTube – Adding Captions Files or Transcripts   
+
+1.     Log into your YouTube Account.
+
+ 
+
+2.     Click the drop-down menu next to the Upload button and then click. Video Manager.    
+
+[]
+
+ 
+
+3.     Visit your Video Manager and click the drop-down menu next to the “Edit” button for the video you’d like to add captions to.  Next, click Captions.  
+
+ 
+
+[]
+
+4.     If you haven’t added captions before, click the Add captions button. Or, if you’ve already added
+
+a caption, click the Add a new track button
+
+Uploading Captions Files to Videos   
+
+1.     After following the previous steps, select Upload a file.
+
+[]
+
+2.     Set your track language. If you'd like you can also add a track name, then click Upload.
+
+[]
+
+3.     Select your caption or transcript file and click Open.
+
+Transcribing and Syncing Text file 
+
+1.     Following the previous steps, but select Transcribe and sync, instead of Upload.
+
+2.     Set your track language. If you'd like you can also add a track name, then click Upload.  Type or copy and paste your transcript into the text box.  Once your finished, click Sync.   
+
+[]
+
+Turning Captions On/Off
+
+ 
+
+1.     Open your YouTube video.
+
+ 
+
+2.     Under the video, click ‘CC’, click ‘On’, and then select ‘English’ from the track list.  
+
+  -- ----
+     
+     []
+  -- ----
+
+ 
+
+ 
+
+3.     To turn off captions, click ‘CC’ again. 
+
+ 
+
+Guide to Creating Accessible Electronic Materials 
+
+Contact us at ati@gmu.edu or 703-993-4329
+
+2-24-2014
+
+Vimeo: Adding Captions and Subtitles   
+
+1.    Log into your Vimeo Account,           4.          Under Add Captions & http://www.vimeo.com             Subtitles, click the Choose a
+
+[]
+                                                                                         Caption file to Upload button.
+
+or subtitle track you’d like to see.
+
+   1.          To turn on captions or subtitles     when viewing a video, click the _(CC button in the player's)     bottom toolbar.  In the menu          that appears, select the caption
+
+Definitions   
+
+1.    Alt Tag - Text used to describe an image. Example, the alt text for the GMU logo would be "George Mason Logo". This is what a screen reader user would hear when navigating to the logo.  
+
+2.    Anchor - The text a link uses to refer to a website. This can make a big difference in a website’s search engine results.  
+
+3.    Attribute - Links, tables and frames all have attributes. The attribute specifies extra information about an element such as a link or table title or a frame description.   
+
+4.    Bookmark - A bookmark (aka "favorite") is a marker placed on web pages and files.  A bookmark would be useful to return to the page or file later or to recommend the page or file to someone else.
+
+5.    Content Management System (CMS) - The Content Management System (or CMS) is a backend tool for managing a site’s content that separates said content from the design and functionality of the site. Using a CMS generally makes it easier to change the design or function of a site independent of the site’s content. It also (usually) makes it easier for content to be added to the site for people who are not designers.
+
+6.    Dialog Box - A box that appears on a display screen to present information or request input i.e. Search Box.
+
+7.    Drag and Drop - Clicking on an icon or selection, holding the mouse button down and moving the mouse to ‘drag’ the   selection to a new location. When the mouse button is released the item is ‘dropped’.   
+
+8.    Element - In XML, an element is the central building block of any document. Individual elements can contain text, other elements, or both.
+
+9.    Form Fields - Term for fields in a fillable form. Examples include First Name, Last Name, Phone Number, Email, etc.
+
+10.  Homepage - The ‘front page’ of a website.  
+
+11.  IE – Stands for “Internet Explorer.” One of the most popular web browsers, designed by Microsoft.
+
+12.  JAWS - Stands for “Job Access With Speech.” Provides users who are visually impaired access to a computer through textto-speech. Reads everything on the computer screen.
+
+ 
+
+Definitions  
+
+13.  NVDA - Stands for “Non-Visual Desktop Access.” Free screen-reading application.         Provides users who are visually   impaired access to a computer through text-to-speech. Reads everything on the computer screen.   
+
+14.  Navigation - Refers to the system that allows visitors to a website to move around that site. Navigation is most often thought of in terms of menus, but links within pages, breadcrumbs, related links, pagination, and any other links that allow a visitor to move from one page to another are included in navigation.
+
+15.  Plugins - A special kind of web browser add-on. Plugins are essentially required add-ons, if viewing very specialized web pages. Examples include: Adobe Flash or Shockwave player, Microsoft Silverlight player, and Adobe Acrobat PDF reader.  
+
+16.  Tabindex - The tabindex attribute specifies the tab order of an element (when the "tab" button is used for navigating).
+
+17.  Template - A file used to create a consistent design across a website. Templates are often used in conjunction with a CMS and contain both structural information about how a site should be set up, but also stylistic information about how the site should look.
+
+18.  URL - Stands for “Uniform Resource Locator.” The technical term for the address of a website or document on the web. For example, www.ati.gmu.edu is a URL.
+
+19.  Usability - Refers to how easy it is for a visitor to use a website in its intended manner.  
+
+20.  WAT - Stands for Web Accessibility Toolbar. It is a free toolbar, developed by the Paciello Group, that can be installed in IE for testing accessibility of webpages.
+
+21.  Web Standards - Specifications recommended by the World Wide Web Consortium for standardizing website design. The main purpose of web standards is to make it easier for both designers and those who create web browsers to make sites that will appear consistent across platforms.
+
+22.  WYSIWYG – Stands for “What You See Is What You Get”.  A WYSIWYG editor is one that enables the user to see on the computer screen exactly what will appear when the document/webpage is finished. It eliminates the user’s need to know how  to manipulate programming code (e.g., HTML).   
+
+[]

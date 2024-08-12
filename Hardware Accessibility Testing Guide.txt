@@ -1,0 +1,1690 @@
+﻿HP Hardware Accessibility Testing Guide
+
+
+HP Hardware
+
+Accessibility
+
+Testing Guide
+
+Version 1.0 
+
+ 
+
+ 
+
+HP Office of Aging & Accessibility
+
+October 2020
+
+[]
+
+             
+
+© Copyright 2020 HP Development Company, L.P. 
+
+The information contained herein is subject to change without notice. HP processes may vary. The only warranties for HP products and services are set forth in the express warranty statements accompanying such products and services. Nothing herein should be construed as constituting an additional warranty. HP shall not be liable for technical or editorial errors or omissions contained herein. 
+
+ 
+
+All trademarks are the property of their respective owners.       
+
+0BHP Hardware Accessibility Testing Guide
+
+Table of contents
+
+Overview ........................................................................................................................... 8
+
+Introduction to hardware testing ...................................................................................... 9
+
+Hardware versus software testing .................................................................................. 10
+
+Visually assessing equipment ......................................................................................... 11
+
+Tools for testing .............................................................................................................. 12
+
+Common hardware testing tools ............................................................................................................................. 12 Common software testing tools .............................................................................................................................. 12
+
+Note on testing tools ................................................................................................................................................. 12
+
+Testing and reporting ...................................................................................................... 13
+
+Revised Section 508 requirements  ................................................................................ 14
+
+400  Hardware ............................................................................................................................................................. 14
+
+401  General ................................................................................................................................................................. 14
+
+401.1  Scope ............................................................................................................................................................ 14
+
+402  Closed Functionality .......................................................................................................................................... 14
+
+402.2 Speech-Output Enabled ............................................................................................................................ 14
+
+402.1.1  Information Displayed On-screen .................................................................................................... 15
+
+402.1.2  Transactional Outputs ........................................................................................................................ 16
+
+402.1.3  Speech Delivery Type and Coordination .......................................................................................... 16
+
+402.1.4  User Control ......................................................................................................................................... 16
+
+402.1.5  Braille Instructions .............................................................................................................................. 17
+
+402.3 Volume ......................................................................................................................................................... 18
+
+402.3.1  Private Listening .................................................................................................................................. 18
+
+402.3.2  Non-private Listening ......................................................................................................................... 18
+
+402.4  Characters on Display Screen ................................................................................................................... 20
+
+402.5  Characters on Variable Message Signs ................................................................................................... 20
+
+403  Biometrics ............................................................................................................................................................ 21
+
+403.1  General ......................................................................................................................................................... 21
+
+404  Preservation of Information Provided for Accessibility ............................................................................... 22
+
+404.1  General ......................................................................................................................................................... 22
+
+405  Privacy .................................................................................................................................................................. 23
+
+406  Standard Connections ....................................................................................................................................... 23
+
+406.1  General ......................................................................................................................................................... 23
+
+407  Operable Parts .................................................................................................................................................... 24
+
+0BHP Hardware Accessibility Testing Guide
+
+407.1  General ......................................................................................................................................................... 24
+
+407.2  Contrast ........................................................................................................................................................ 24
+
+407.3  Input Controls .............................................................................................................................................. 26
+
+407.3.1  Tactilely Discernible ............................................................................................................................ 27
+
+407.3.2  Alphabet Keys ...................................................................................................................................... 29
+
+407.3.3  Numeric Keys ....................................................................................................................................... 29
+
+407.4  Key Repeat ................................................................................................................................................... 31
+
+407.5  Timed Response ......................................................................................................................................... 31
+
+407.6  Operation ..................................................................................................................................................... 32
+
+407.7  Ticket, Fare Cards, Key Cards .................................................................................................................... 32
+
+407.8  Reach Height and Depth ............................................................................................................................ 32
+
+407.8.1  Vertical Reference Plane .................................................................................................................... 32
+
+407.8.2  Side Reach ............................................................................................................................................ 35
+
+407.8.3  Forward Reach ..................................................................................................................................... 38
+
+408  Display Screens .................................................................................................................................................. 41
+
+408.1  General ......................................................................................................................................................... 41
+
+408.2  Visibility ......................................................................................................................................................... 41
+
+408.3  Flashing ........................................................................................................................................................ 42
+
+409  Status Indicators ................................................................................................................................................ 42
+
+409.1  General ......................................................................................................................................................... 43
+
+410  Color Coding ........................................................................................................................................................ 44
+
+410.1  General ......................................................................................................................................................... 44
+
+411  Audible Signals ................................................................................................................................................... 45
+
+411.1  General ......................................................................................................................................................... 45
+
+412  ICT with Two-Way Voice Communication ...................................................................................................... 46
+
+412.2 Volume Gain ................................................................................................................................................ 46
+
+412.1.1  Volume Gain for Wireline Telephones ............................................................................................. 46
+
+412.1.2  Volume Gain for Non-Wireline ICT .................................................................................................... 46
+
+412.3 Interference Reduction and Magnetic Coupling .................................................................................... 47
+
+412.3.1  Wireless Handsets ............................................................................................................................... 47
+
+412.3.2  Wireline Handsets ............................................................................................................................... 48
+
+412.4  Digital Encoding of Speech ........................................................................................................................ 48
+
+412.5  Real-Time Text Functionality ................................................................................................................... 49
+
+412.6  Caller ID ........................................................................................................................................................ 50
+
+412.7  Video Communication ................................................................................................................................ 50
+
+412.8  Legacy TTY Support ................................................................................................................................... 51
+
+412.8.1  TTY Connectability .............................................................................................................................. 51
+
+412.8.2  Voice and Hearing Carry Over ............................................................................................................ 51
+
+0BHP Hardware Accessibility Testing Guide
+
+412.8.3  Signal Compatibility ............................................................................................................................ 51
+
+412.8.4  Voice Mail and Other Messaging Systems ...................................................................................... 51
+
+413  Closed Caption Processing Technologies ...................................................................................................... 52
+
+413.1  General ......................................................................................................................................................... 52
+
+413.1.1  Decoding and Display of Closed Captions ....................................................................................... 52
+
+413.1.2  Pass Through of Closed Caption Data ............................................................................................. 52
+
+414  Audio Description Processing Technologies .................................................................................................. 52
+
+414.1  General ......................................................................................................................................................... 52
+
+414.1.1  Digital Television Tuners .................................................................................................................... 52
+
+414.1.2  Other ICT ............................................................................................................................................... 53
+
+415  User Controls for Captions and Audio Descriptions ..................................................................................... 53
+
+415. 1 General ........................................................................................................................................................ 53
+
+415.1.1 Caption Controls .................................................................................................................................. 53 415.1.2 Audio Description Controls ................................................................................................................ 53
+
+References ...................................................................................................................... 54
+
+Glossary .......................................................................................................................... 55
+
+ 
+
+      
+
+0BHP Hardware Accessibility Testing Guide
+
+List of figures
+
+[] Braille Instructions – ATM ................................................................................................................... 17
+
+[] HP 209A Audio Oscillator ................................................................................................................... 19
+
+[] HP 8903b Audio Analyzer .................................................................................................................. 19
+
+[] Characters on Display Screen – Serif versus San Serif .................................................................. 20
+
+[] Biometrics – fingerprint scanner ....................................................................................................... 22
+
+[] Non-proprietary industry standard connections ............................................................................ 24
+
+[] Contrast – keyboard color contrast analyzed ................................................................................. 25
+
+[] Contrast – Color Contrast Analyzer Example .................................................................................. 25
+
+[] Contrast – failed color contrast ......................................................................................................... 25
+
+[] Contrast – failed color contrast example ...................................................................................... 26
+
+[] Tactilely Discernible – on/off switch .............................................................................................. 28
+
+[] Tactilely Discernible – Failing Example .......................................................................................... 28
+
+[] Alphabet keys – “F” and “J” keys are tactilely discernible .......................................................... 29
+
+[] Numeric keys – tactilely discernible ............................................................................................... 30
+
+[] Numeric Keys - 12 Key ascending versus descending keypad layout ...................................... 30
+
+[] Timed response – Session timeout ................................................................................................ 31
+
+[] Ticket, Fare Cards, Key Cards - Tactilely Discernible ................................................................... 32
+
+[] Vertical reference plane diagram ................................................................................................... 34
+
+[] Unobstructed side reach diagram .................................................................................................. 36
+
+[] Side Reach – Failing Example .......................................................................................................... 37
+
+[] Obstructed side reach diagram ....................................................................................................... 38
+
+[] Unobstructed forward reach diagram ........................................................................................... 39
+
+[] Operable part height for ICT with obstructed forward reach diagram ..................................... 40
+
+[] Knee and toe space under ICT with obstructed forward reach diagram .................................. 40
+
+[] Visibility diagram ............................................................................................................................... 41
+
+[] Flashing – maximum allowable flashing content ........................................................................ 42
+
+[] Color Coding ....................................................................................................................................... 44
+
+[] Color coding – failing example ........................................................................................................ 45
+
+[] Audible Signals .................................................................................................................................. 45
+
+0BHP Hardware Accessibility Testing Guide
+
+[] Volume gain for non-wireline ICT – volume adjustment ............................................................ 47
+
+      
+
+0BHP Hardware Accessibility Testing Guide
+
+Overview
+
+As many businesses shift to a focus on accessibility web standards for their websites, online storefronts, and software applications, hardware testing could continue to become increasingly less common. And yet, the community of people with disabilities relies on hardware standards for much of their critical work, communication, and personal technology needs. Many HP customers rightfully consider accessibility an important factor in making an informed purchasing decision. Integral to our mission to empower everyone, everywhere with the benefits of technology is our commitment to making HP products and services easier to access and simpler to use for people with disabilities and age-related limitations. Therefore, our business and reputation rely on transparent, repeatable, and accurate accessibility testing and reporting.
+
+Performing a quality test necessitates both a command of product-level detail and comprehensive insight into the worldwide regulatory landscape including U.S. Revised Section 508 at minimum and additional world standards such as E.U. EN 301 549, U.S. ADA Accessibility Guidelines [ADAAG], and W3C WCAG 2.x. Our company has a dedicated team of professionals in the HP Office of Aging & Accessibility that closely coordinates with our businesses to ensure we produce consistent, high-quality tests for HP accessibility conformance reports (i.e. ACRs, VPATs).
+
+ 
+
+      
+
+0BHP Hardware Accessibility Testing Guide
+
+Introduction to hardware testing
+
+Hardware ICT (information and communications technology) includes any part of a product that you can physically touch, pick up, hold, and/or move around a room. Hardware is any physical parts that compose the device (i.e. computer, printer, virtual reality headset, display, etc.).  The hardware in scope for accessibility testing may be as simple as a monitor with no physical controls or as complicated as a multifunction printer with an integrated screen and keyboard, multiple paper trays, and additional accessories (e.g. HP LaserJet Enterprise M528). 
+
+Testers must look at their work from the perspective of the end user, keeping in mind that user experiences vary. Disability is diverse and individual, and may be temporary, acquired, or lifelong. Two individuals with the “same type” of disability—whether it be visual, auditory, physical, or cognitive—have different needs and preferences. As you systematically test the hardware, craft your remarks and explanations, and take careful test notes. 
+
+A quality accessibility test does not necessitate a comprehensive understanding of a hardware product’s total functionality. If specific questions arise during the test process, consult a technical reference from the HP Business Unit or other expert sources (e.g. a user guide, technical manual, etc.).
+
+A quality accessibility test does paint a vivid picture of how people with disabilities interact with particular ICT (information and communications technology) in test. At the forefront of your thoughts should be the common, everyday experiences that real people in real situations have with the hardware. Ask yourself: Can the device be positioned and configured such that someone with a mobility limitation has a frictionless customer experience? 
+
+Do tactile indicators on buttons enable an individual with low vision to effortlessly turn on the product? Include any insights that convey useful information about accessibility defects, workarounds, and/or limitations; they prove useful when reading the test results. 
+
+The results should be reported to the HP Business Unit that created the product with two goals in mind: 1) Accessibility remediation, and 2) Documentation of incremental progress through this evaluation process and across product lifecycles in general.
+
+Finally, the significance of clarity in all testing protocols cannot be underemphasized. In your notes, precisely record what is tested, including: Official name, code name, version, date tested, technical lead giving information, firmware, software, documentation, and any video support. Notes and test results need to allow another accessibility tester to have repeatable results. 
+
+      
+
+0BHP Hardware Accessibility Testing Guide
+
+Hardware versus software testing
+
+Articulate the limitations and consistent rules that dictated what you placed in the hardware versus software chapters respectively. Clear communication will facilitate reproducible testing. 
+
+Scrutinize all aspects of the device when determining what HP considers “in scope” for an accessibility hardware test. First, determine which parts of the product are hardware, firmware, software, or added ICT. Then, carefully record this classification in the test protocol such that the results correspond with the correct success criteria. Do not record software results in the hardware chapter of any test record. When followed correctly, this procedure guarantees documentation of precisely “what was tested” so no confusion arises as we keep reinventing our hardware.
+
+Software can be anything from an integrated, installed operating system (e.g. Microsoft Windows) to a mobile device application used to operate the hardware. Each essential piece of software—whether web-based or locally-installed—must be tested. Similar to hardware evaluation pay attention to the software version, as changes occur independently of hardware upgrades. 
+
+Firmware built into the hardware and present in a closed functionality environment (e.g. a printer) should be named with version number and tested with the hardware. Record these results in the hardware chapter; in your remarks, explicitly differentiate when the test was firmware-centric versus hardware-centric. Significant changes can occur between versions so details matter. Mistakenly testing an incorrect firmware version could change the test results, thereby yielding outdated and/or misleading information to our customers. Conscientiousness is key.
+
+      
+
+0BHP Hardware Accessibility Testing Guide
+
+Visually assessing equipment
+
+When assessing a new piece of equipment for a test, the initial and successive visual inspections are critical:
+
+•       Document in writing and photos all technical information about the hardware. Many products belonging to the same “series” or “family” share similar characteristics. Make known exactly what was tested and the results of that test; this clarity will save headaches later when analyzing the results.
+
+•       Know the primary use case of the product (a thin client device can resemble a notebook PC yet have different functionality) 
+
+•       Is there software that needs testing separately?
+
+•       Examine all ports, plugs, and inputs
+
+•       Check color contrast on the hardware itself, including labels
+
+•       Open latches, doors, covers, and bins
+
+•       Does the device have a touch screen or other screen?
+
+•       Examine keyboard, on/off buttons, other buttons, and tactile indicators
+
+•       Assess primary and secondary use of the hardware
+
+•       Is it large or smaller—and do height and reach requirements apply?
+
+•       What functionality is normal, everyday use?
+
+•       Are maintenance items part of a user’s experience?
+
+•       Is color or lights the only method of visual information to user?
+
+•       What is the first-time use / out-of-box-experience?
+
+•       What is the signup, login, and/or registration experience, if such is required to use the hardware?
+
+•       In any printed materials included with the hardware, is equivalent information easily discoverable in an accessible digital / online format also?
+
+•       Is contact information for support easily discoverable in an accessible format?
+
+•       Are there any glaring accessibility concerns?
+
+At the beginning of the test, photograph and write down anything noteworthy. Ask technical questions early and often during the process. Seek feedback from the HP Business Unit as you go, sharing your observations, questions, and/or concerns about accessibility in particular and the user experience in general. 
+
+             
+
+Tools for testing
+
+Common hardware testing tools
+
+Use testing tools to correctly identify the hardware’s conformance to standards, including:
+
+•       Digital Camera
+
+•       Force meter
+
+•       Tape measure
+
+•       User Manual or Technical Specifications Manual
+
+•       Access to system components during testing, when needed 
+
+Common software testing tools
+
+•       JAWS 
+
+o    Screen reader for Microsoft Windows (demo version available)
+
+•       NVDA 
+
+o    Free, open-source, portable screen reader for Microsoft Windows (recommended)
+
+•       VoiceOver  o             Built-in screen reader for Apple products
+
+•       W3C Nu markup HTML conformance checker
+
+•       Microsoft Windows Ease of Access Magnifier                                                        
+
+•       Microsoft Windows Ease of Access Color Contrast
+
+•       Microsoft Inspect Objects
+
+•       Accessibility Insights
+
+•       WAVE Toolbar
+
+•       The Web Accessibility Toolbar  o           Free add-on for Internet Explorer
+
+•       The Color Contrast Analyzer  o             Free desktop application for Windows and Mac
+
+•       ANDI
+
+o    U.S. federal government tool on Github
+
+Note on testing tools
+
+Preferred testing tools can change rapidly. Many are excellent and behave similarly. Any tools used during testing should be documented so the reader understands with what tools the test was performed.
+
+             
+
+Testing and reporting
+
+Testing and reporting have a close relationship and serve many functions for HP, including meeting critical customer requirements for sales opportunities and lending insight into how we can make our products more valuable to everyone, everywhere. For many procurement opportunities, we submit an Accessibility Conformance Report (ACR) following the ITI VPAT template. The accessibility testing completed for this ACR creates a valuable feedback loop with the HP Business Unit and can strengthen the case for more accessibility improvements in future product development. When we address known accessibility defects, it improves the product experience for all our customers.
+
+All test evaluations and ACRs must be: 
+
+•       Objective and unbiased
+
+•       Conducted by following a published and repeatable evaluation process
+
+•       Documented with accurate and detailed remarks
+
+By statute, the scope of U.S. Revised Section 508 encompasses all of the U.S. federal government. A majority of U.S. states and many publicly-funded entities (e.g. state government agencies, public schools, etc.) have adopted the U.S. Revised Section 508 standard as a mandatory procurement requirement.^(^([1])) In addition, some private organizations have voluntary adopted the standard as a customer requirement, though they have no legal obligation to do so. HP continues to experience an increase in requests for ACRs from our customers.  
+
+A quality ACR sets clear expectations about the accessibility of a product, including the defects, by outlining the test results with detailed remarks. As a company, it is vital that we accurately test according to a published test process and report the results in unbiased, technical language. This transparency best positions the customer to make an informed purchasing decision. 
+
+As you follow the HP Accessibility Test Plan, define what accessibility criteria in test “does not support” and illustrate what happens with the product in question. Leave no room for confusion. When testing and reporting the results, all relevant information to a person with a disability must be communicated. This granularity makes for transparent, accurate reports that inspire confidence and trust in the report’s consumer. 
+
+             
+
+ 
+
+Revised Section 508 requirements ^(^([2]))
+
+400 Hardware
+
+401 General
+
+Ensure the tester defines the scope for this test process and documents it so that it can be understood and duplicated by another tester and compared to a user need or use case. Documenting during the testing both in written and picture format is invaluable. 
+
+401.1 Scope
+
+The requirements of Chapter 4 shall apply to ICT that is hardware where required by 508 Chapter 2 (Scoping Requirements), 255 Chapter 2 (Scoping Requirements), and where otherwise referenced in any other chapter of the Revised 508 Standards or Revised 255 Guidelines. Revised Section 508 defines hardware as “a tangible device, equipment, or physical component of ICT.”
+
+Hardware that is assistive technology shall not be required to conform to the requirements of this chapter. Examples of hardware that are not required to conform to the requirements of this chapter include hearing aids, refreshable braille displays, trackball and joystick mouse, sip and puff technology, etc.
+
+402 Closed Functionality
+
+Where ICT has closed functionality, that closed functionality shall be operable without requiring the user to attach, connect or install assistive technology. Personal headsets and induction loops shall not be classed as assistive technology for the purpose of this clause.
+
+Automated teller machines (ATMs) are an example of closed functionality ICT. Any individual using the ATM should be able to fully access the machine without needing to alter the machine in any way. Users who cannot read or have trouble reading text on the machine can have the text read out loud but may need to use a personal headset to trigger the text to speech mechanism of the machine.  
+
+Closed Functionality can be very individualized to each product and use of the product. Some items which may allow for peripherals and other software or accessories to be plugged in can operate both as open and closed. This can be noted in the remarks and test notes as the hardware is tested. There are many reasons and situations and security concerns which can create a closed functionality condition in testing. 
+
+402.2 Speech-Output Enabled
+
+ICT with a display screen shall be speech-output enabled for full and complete use. Operating instructions and orientation, visible transaction prompts, user input verification, error messages, and all displayed information for full use shall be accessible to, and independently usable by, individuals with vision impairments. Speech output shall be delivered through a mechanism that is readily available to all users, including, but not limited to, an industry standard connector or a telephone handset. Speech shall be recorded or digitized human or synthesized. Speech output shall be coordinated with information displayed on the screen.
+
+Speech output is not required for advertisements and other similar information unless they convey information that can be used for the transaction being conducted. Likewise, audible tones shall be permitted instead of speech output where the content of user input is not displayed as entered for security purposes.
+
+Specific ICT can be exempted from meeting 402.2. Variable message signs conforming to 402.5 shall not be required to be speech-output enabled. Likewise, speech output shall not be required where ICT display screens only provide status indicators and those indicators conform to 409.  In another instance, ICT shall be permitted to conform to 409 in lieu of 402.2 where speech output cannot be supported due to constraints in available memory or processor capability. Lastly, speech output shall not be required for: the machine location; date and time of transaction; customer account number; and the machine identifier or label.
+
+This speech enablement must be in the firmware. If this is enabled because of added assistive technology or a software operating system or application. The test results are recorded in the software chapter. This is essential as software can vary from hardware product and needs to be separated for user clarity and understanding of essential functionality. 
+
+Examples of hardware with speech output are kiosks, printers, atm.
+
+402.2.1 Information Displayed On-screen
+
+Speech output shall be provided for all information displayed on-screen.
+
+ICT with a display screen shall be speech-output enabled. Operating instructions and orientation, visible transaction prompts, user input verification, error messages, and all displayed information for full use shall be accessible to, and independently usable by, individuals with vision impairments. Speech output shall be delivered through a mechanism that is readily available to all users, including, but not limited to, an industry standard connector ^(^([3]))or a telephone handset. Speech shall be recorded or digitized human or synthesized. Speech output shall be coordinated with information displayed on the screen. 
+
+Speech output is not limited to just textual elements on the screen but must also provide auditory information about the user interface elements and states. Text fields, dropdown menus, checkboxes, images, buttons, and other user interface elements when applicable. Information about the states of user interface elements such as required fields, values of those fields. 
+
+Speech output is not required for advertisements and other similar information unless they convey information that can be used for the transaction being conducted. Likewise, audible tones shall be permitted instead of speech output where the content of user input is not displayed as entered for security purposes.
+
+Test Procedure: 
+
+1. Cover the screen(s) for the device under test and attempt to perform the same basic user scenarios as outlined in the main test specification(s) for the product.  For example, for self-contained singlepurpose retail point of sale kiosk (i.e. a cash register which is not simply a tablet or desktop computer with point of sale software), cover the main screen and perform all the basic functionality testing for identifying items, applying discounts, totaling final cost, accepting payment, etc.
+
+This speech enablement must be in the firmware. If this is enabled because of added assistive technology or a software operating system or application. The test results are recorded in the software chapter. This is essential as software can vary from hardware product and needs to be separated for user clarity and understanding of essential functionality.
+
+ 
+
+402.2.2 Transactional Outputs
+
+Where transactional outputs are provided, the speech output shall audibly provide all information necessary to verify a transaction.
+
+Where ICT is closed to visual access and provides receipts, tickets, or other outputs as a result of a self-service transaction, speech output shall be provided which shall include all information necessary to complete or verify the transaction. In the case of ticketing machines, printed copies of itineraries and maps shall not be required to be audible.
+
+Transactions can be a purchase with or without a receipt printed (may email or text a ticket), any interaction where there is a business deal. The user experience could be buying a ticket, pumping gasoline, interacting with their banking kiosk, parking in a city, purchasing a lease on a bicycle, riding a ferry, or a self-checkout system of any kind. A sale is considered a transaction. 
+
+Test procedure: 
+
+1. Ensure that speech output provides all information necessary to verify the transaction.
+
+402.2.3 Speech Delivery Type and Coordination
+
+Speech output shall be delivered through a mechanism that is readily available to all users, including, but not limited to, an industry standard connector or a telephone handset. Speech shall be recorded or digitized human or synthesized. Speech output shall be coordinated with information displayed on the screen.
+
+Where speech output is provided as non-visual access to closed functionality, speech output shall be in the same human language as the displayed content provided, except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text; where the content is generated externally and not under the control of the ICT vendor, this requirement shall not be required to apply for languages not supported by the ICT’s speech synthesizer; for displayed languages that cannot be selected using non-visual access; where the user explicitly selects a speech language that is different from the language of the displayed content.
+
+To test for this requirement, ensure that the system provides speech output in a way that is available to all users, such as an industry standard connector or a telephone handset, and ensure that speech output from the system matches all displayed content on any view screens, touchscreens, or other mode of visual output.
+
+All ATMs are required to contain an industry standard audio headphone jack. When a user plugs in headphones to the 3.5 mm headphone jack on the ATM, the speech output will start. The audio produced shall match the information displayed on the screen. 
+
+This speech enablement must be in the firmware. If this is enabled because of added assistive technology or a software operating system or application, the test results are recorded in the software chapter. This is essential as software can vary from hardware product and needs to be separated for user clarity and understanding of essential functionality.
+
+Test procedure:
+
+1.       Ensure that the system provides speech output in a way that is available to all users, such as an industry standard connector or a telephone handset.
+
+2.       Ensure that speech output from the system matches all displayed content on any view screens, touchscreens or other mode of visual output.
+
+402.2.4 User Control
+
+Speech output for any single function shall be automatically interrupted when a transaction is selected. Speech output shall be capable of being repeated, interrupted, and paused. Exception: Where permitted by security requirements under EN301-549.
+
+This requirement can be met in part by ensuring that any presentation of options via audio provides an option to repeat the entire list after the list has been announced to the user. This may look like, “select number 8 to repeat the options.” Interruption of speech output should be available through a standard element such as a “cancel” button. Interruption of speech could also be a natural side effect of selecting an option to continue or cancel. 
+
+To test this requirement, verify that hardware provides a means of pausing or repeating speech output, and verify that speech output is interrupted when a transaction is selected by the user.
+
+Test procedure:
+
+1.       Verify that hardware provides a means of pausing or repeating speech output.
+
+2.       Verify that speech output is interrupted when a transaction is selected by the user.
+
+402.2.5 Braille Instructions
+
+Where speech output is required by 402.2, braille instructions for initiating the speech mode of operation shall be provided. Braille shall be contracted^(^([4])) and shall conform too. However, devices for personal use shall not be required to conform to 402.2.5. When a device can be a personal device and shared use device the personal use exemption does not apply.
+
+Where ICT is designed for shared use and speech output is available, a tactile indication of the means to initiate the speech mode of operation shall be provided. The tactile indication could include Braille instructions.
+
+To test for this requirement, ensure that braille instructions are provided that would allow the user to initiate speech output without any visual information.
+
+ATMs follow this guideline. Near the headphone jack of the machine, there will be a braille label to tell the user where the headphone jack is located as well as a braille description of how to initiate the speech mode. 
+
+[] 
+
+[] Braille Instructions – ATM 
+
+If the Braille Instructions were all in one area as a sign apart from the kiosk, this technically meets the standards but is in no way accessible for a Braille user and does not meet HPs usability standards and should be documented. When accessibility testing, to be technically correct and not meet HP usability standards it is not accessible. It is imperative to document these defects so that that the customer is informed, and the product team can prepare a fix.  
+
+Test procedure:
+
+1. Ensure that braille instructions are provided that would allow the user to initiate speech output without any visual information.
+
+402.3 Volume
+
+Where sound, including speech output is provided, it shall provide volume control and output amplification conforming to relevant 402 rules. ICT conforming to 412.2 shall not be required to conform to 402.3.
+
+402.3.1 Private Listening
+
+Where ICT provides private listening, it shall provide a mode of operation for controlling the volume. Where ICT delivers output by an audio transducer typically held up to the ear, a means for effective magnetic wireless coupling to hearing technologies shall be provided.
+
+A handset that is hearing aid compatible and has a volume control would meet the requirements of this section.
+
+To test for this requirement, ensure that a method is provided for adjusting the volume, and ensure that hardware has a method for wirelessly connecting to listening devices.
+
+A telephone is an example of hardware that is to conform to this requirement. Individuals using hearing aids may find it difficult to use the telephone since the microphone in their hearing aid picking up sound is located behind the ear. By including telecoils in hearing technologies, telephone receivers can magnetically couple with the hearing technology so that the telephone receiver can send sound information to the hearing technology allowing users to effectively hear the telephone conversation. A volume control must be included in the telephone so that the user has the ability to change the volume to a level that suits them.
+
+Test procedure: 
+
+1.       Ensure that a method is provided for adjusting the volume.
+
+2.       Ensure that hardware has a method for wirelessly connecting to listening devices.
+
+402.3.2 Non-private Listening
+
+Where ICT provides non-private listening, incremental volume control shall be provided with output amplification up to a level of at least 65 decibels (dB).  A function shall be provided to automatically reset the volume to the default level after every use.
+
+Where auditory output is provided in closed functionality and is delivered through speakers on ICT, incremental volume control shall be provided with output amplification up to a level of at least 65 dB. A function shall be provided to automatically reset the volume to the default level after every use. For EN 301 549, this requirement does not apply if speech is provided as non-visual access to ICT.
+
+Test procedure: 
+
+1.       To ensure the audio circuits have the required gain, some modification of the ICT may be required to obtain access to testing points. Connect an audio test signal set at 1 KHz reference at 0 dB to the audio input (I.e. HP 209A Audio Oscillator). The audio input connection is generally after the audio has been decoded from the incoming signal or an equivalent signal that is an output of an internal facility, feature or function within the ICT (I.e. output from an answering machine, output from a text to voice decoder, etc.). Typically, the audio architecture of the ICT can rapidly identify this connection point.
+
+[]
+
+2.       Disconnect the speaker from the ICT device and connect an audio analyzer (I.e. HP 8903) to those connection points where the speaker was connected. Record a reference measurement at the lowest volume setting. Follow the instructions for the audio analyzer to set the proper impedance for the connection points. Lower the volume control to its minimum point and subsequently increase the ICT volume control to the maximum and record the change in gain as the control is changed. The gain should increase in a linear manner.
+
+[]
+
+3.       The gain also needs to be measured over frequency. To measure the gain over frequency, sweep the frequency of the Audio tone generator over the operating frequency of the ICT device. Record the gain over the frequency range using the steps above. The gain should not deviate by more than 1% over the entire frequency range (I.e. relatively flat).
+
+The designer should know the relative audio input levels that the audio circuits will be presented. For example, the text to voice converter may have a - 5 dBm level and other features may have +1 dBm as their levels are presented as audio input. The testing should include this factor by adjusting the levels of the audio oscillator. It is important that the gain of at least 65 dB is satisfied at the lowest as well as the highest input levels.
+
+4.       Verify that audio volume gets reset to the default value after each use.
+
+402.4 Characters on Display Screen
+
+At least one mode of characters displayed on the screen shall be in a sans serif font. Where ICT does not provide a screen enlargement feature, characters shall be 3/16 inch (4.8 millimeters (mm)) high minimum based on the uppercase letter “I”. Characters shall contrast with their background with either light characters on a dark background or dark characters on a light background.
+
+An example of a sans serif font is the font used in this document. Sans serif fonts lack the embellishment on the outer edges of the letters that serif fonts display. Refer to the example picture below for a side by side comparison of serif versus sans serif font.  
+
+[] 
+
+[] Characters on Display Screen – Serif versus San Serif
+
+Test procedure:
+
+1.       Verify that display screens all have at least one mode of characters using a sans serif font.
+
+2.       Verify that where ICT does not offer a screen enlargement feature, characters are at least 3/16 inch (4.8 mm) high based on the uppercase letter "I."
+
+3.       Verify that all characters contrast with their backgrounds, light on dark or dark on light.
+
+402.5 Characters on Variable Message Signs
+
+Characters on variable message signs shall conform to section 703.7 Variable Message Signs of ICC A117.1– 2009 ^(^([5])) (incorporated by reference, see 702.6.1 of Revised Section 508).
+
+To achieve accessibility, a high-resolution variable message sign should follow the guidelines set forth in section 703.2 as well as 703.7.12 through 703.7.14 of ICC A117.1-2009. Characters should be uppercase, lowercase, or a combination of both. Characters shall not be italic, oblique, script, highly decorative, or otherwise unusual. Character height shall be based off the uppercase “I” with regards to table 703.2.4 – Visual Character Height. Character width shall be based off of the uppercase “O” with the width being 55 percent minimum and up to 110 percent maximum of the height of the uppercase “I.” Stroke width of characters shall be determined by the uppercase “I” with stoke being 10 percent minimum up to 30 percent maximum of the height of the uppercase “I”. Character spacing shall be 10 percent minimum and up to 35 percent maximum of character height. Spacing between baselines of separate lines of text shall be 135 percent minimum and up to 170 percent maximum. Character baseline shall be 40 inches minimum above the floor of the viewing position. Characters shall contrast with their background and both character and their background shall have a nonglaring finish. Characters shall automatically adjust to the brightness of the area. Full messages on a sign shall remain visible for 3 seconds minimum or one second minimum for every 7 characters on the screen including spaces.
+
+For low-resolution variable message signs, characters must be uppercase. Characters must be conventional in form including san serif font and without it being italic, oblique, script, highly decorative, or unusual in any other way. Character height shall be based off of the uppercase “I” with regards to table 703.7.4 of ICC A117.1-2009. The uppercase “O” is used to determine the width of characters with regards to table 703.7.5. Stroke width of characters is determined by the uppercase “I” with regards to table 703.7.5. Character spacing shall be determined by the closest points of adjacent characters with regards to table 703.7.5. Spacing between baselines of separate lines of text shall be 135 percent minimum and up to 170 percent maximum. Character baseline shall be 40 inches minimum above the floor of the viewing position and must comply with information in table 703.7.4. Characters shall contrast with their background and both characters and background shall have a non-glare finish including protective covers placed over the variable message sign. Variable message signs in exterior locations shall automatically adjust to the proper brightness. Full messages on a sign shall remain visible for 3 seconds minimum or one second minimum for every 7 characters on the screen including spaces.
+
+Test procedure:
+
+1. Look up 2009 ICC A117.1 Accessible and Usable Buildings and Facilities and follow Chapter 7: Communication Elements and Features rule as written. Note that the Character height is determined by the uppercase “I” and width is determined by the uppercase “O”. This standard is to make sure when a variable message sign is mounted on a wall, a low vision reader can indeed read the signage. There are specific formulas listed to use to figure out compliance.
+
+403 Biometrics
+
+Where provided, biometrics shall conform to 403. Biometrics are biological characteristics that can be used to identify individuals. Examples of biometrics commonly used are iris recognition, fingerprint recognition, and face recognition. Any ICT that is capable of biological identification must meet this requirement. 
+
+403.1 General
+
+Where provided, biometrics shall not be the only means for user identification or control except where at least two biometric options that use different biological characteristics are provided. In that case, ICT shall be permitted to use biometrics as the only means for user identification or control.
+
+Biometrics use biological characteristics for user identification or control. If restricted to a single biological characteristic, a significant barrier is posed to individuals that do not possess that biological characteristic.
+
+[] 
+
+[] Biometrics – fingerprint scanner
+
+Test procedure:
+
+1. If a biometric method is used to identify users, verify that at least one of the following is true: 
+
+a.       A non-biometric method is also available
+
+b.       Multiple biometric methods are available that rely on different biological characteristics
+
+404 Preservation of Information Provided for Accessibility
+
+Where applicable, information shall be preserved; conforming to 404.  When a user with a disability sets up their assistive technology adding it to a system, if removed or shut off for a time, it should be returned to the user as they had set it up. The hardware should allow for customization, and the added functionality should not remove it or if it does, it needs to go back and be restored as the user had it. An example of this is if a user comes to a shared terminal laptop and does not need the screen reader in the firmware for the terminal access. They can turn it off, but the firmware should restore it after that user has finished up. The settings and additions of accessibility tools or helps needs to remain as installed.
+
+404.1 General
+
+ICT that transmits or converts information or communication shall not remove non-proprietary information provided for accessibility or shall restore it upon delivery.
+
+This provision applies to conversion techniques, such as encoding, signal compression, and format transformation. Examples of ICT that might encode, compress, or transform information include firewalls, routers, and gateways. This provision does not require the addition or translation of information, simply its preservation. For example, this provision would not require an agency to change voicemail into text.
+
+Test procedure:
+
+1. On a system which utilizes the networking equipment under test, test devices which are already known to send captioning information according to testing outlined in HPAR (HP Accessibility Requirements) 5.01 Captioning Playback^(^([6])) and User Selection and (for VoIP phones) HPAR 4.16 RTT - Interoperability (PSTN, VoIP using SIP). Ensure that no non-proprietary information is lost when this equipment is used.
+
+405 Privacy
+
+Where applicable, privacy shall be provided; conforming to 405.
+
+The same degree of privacy of input and output shall be provided to all individuals. When speech output required by 402.2 is enabled, the screen shall not blank automatically.
+
+To test for this requirement, identify all aspects of the functionality of the product which require the user to provide or confirm passwords, financial information, health information, or personally identifying information.  Then, when interacting with these features, enable speech functionality and then ensure that the screen does not blank while speech functionality is enabled. Some passwords read as “blank” or “star, star, star” or in some other non-informative way which is different in some cases where a sighted user could see what they typed for at least a few seconds before it turned into a covered, private entry. A good work around is to allow the password to be public or private so that if the user with disability using a screen reader is listening in a private way, they get a confirmation of what was typed and don’t just get an unlabeled “blank” response.
+
+Closed functionality machines will typically include a 3.5mm headphone jack for users to plug headphones into to receive information displayed on a screen. 
+
+Test procedure:
+
+1.       Identify all aspects of the functionality of the product which require the user to provide or confirm passwords, financial information, health information, or personally identifying information.  
+
+2.       When interacting with these features, enable speech functionality and then ensure that the screen does not blank while speech functionality is enabled.
+
+406 Standard Connections
+
+Where applicable, standard connections shall be provided; conforming to 406. In most cases, this is the default. Most hardware does have standard connections. 
+
+406.1 General
+
+Where data connections used for input and output are provided, at least one of each type of connection shall conform to industry standard non-proprietary formats.
+
+Where an ICT provides user input or output device connection points, the ICT shall provide at least one input and/or output connection that conforms to an industry standard non-proprietary format, directly or through the use of commercially available adapters.
+
+EN301-549 allows a wireless connection such as Bluetooth as industry connection. Section 508 does not address this.
+
+To test this requirement, locate all connections that are used to transmit data in design review. Then, ensure at least one non-proprietary industry standard connection is available for each type of connection.
+
+Non-proprietary industry standard connections include USB, USB-C, HDMI, 3.5 mm headphone jack, ethernet port, SD Card reader, and VGA ports. Industry standard connections are constantly being updated as connectors and protocols for connection, communication and power supplies are updated and invented. 
+
+[] 
+
+[] Non-proprietary industry standard connections
+
+Test procedure:
+
+1.       In design review, locate all connections that are used to transmit data.
+
+2.       Ensure at least one non-proprietary industry standard connection is available for each type of connection.
+
+407 Operable Parts
+
+Where provided, operable parts used in the normal operation of ICT shall conform to 407. Operable parts consist of hardware that must be manipulated by the user in order for the ICT to operate. 
+
+407.1 General
+
+Where provided, operable parts used in the normal operation of ICT shall conform to 407.
+
+Normal operation, such as using keys to input data or create content or operate ICT such as a multifunction copier, is different from maintenance functions, such as changing toner on a printer. 
+
+A physical part of the hardware that is used in for activating, deactivating, or adjusting the ICT.  Notebook keyboards, power button, latch indention are examples of operable parts. Printer power button, automatic document feeder guide walls, scan glass door handle area are examples of operable parts. 
+
+It is an operational part if the relationship is initiated or controlled or part of the user process to complete a task. Opening a laptop to check email or opening manual page feeder drawer. Assess and put in scope the part that moves at the user’s control.
+
+407.2 Contrast
+
+Where provided, keys and controls shall contrast visually from background surfaces. Characters and symbols shall contrast visually from background surfaces with either light characters or symbols on a dark background or dark characters or symbols on a light background.
+
+To test this requirement, verify that all controls and keys contrast with their background surfaces, light on dark or dark on light. A color contrast analyzer can be used to assess the color ratio between the character or symbol and its background. The contrast should be no lower than 4.5:1 for normal text and 3:1 larger text that is greater than 18 pt (1.5em,150%, 24px) or greater than bolded14 pt (1.2em, 120%, 18.6px). Logos and purely decorative elements do not have to meet color contrast ratios.
+
+[] 
+
+[] Contrast – keyboard color contrast analyzed
+
+[] 
+
+[] Contrast – Color Contrast Analyzer Example
+
+[] 
+
+[] Contrast – failed color contrast 
+
+[] 
+
+[] Contrast – failed color contrast example
+
+Test procedure:
+
+1. Verify that all controls and keys contrast with their background surfaces, light on dark or dark on light.
+
+407.3 Input Controls
+
+At least one input control conforming to 407.3 shall be provided for each function. Except for devices for personal use with input controls that are audibly discernible without activation and operable by touch. These devices shall not be required to conform to 407.3. When a device can be a personal device and shared use device the personal use exemption does not apply.
+
+To ensure that each function has at least one input control that conforms to 407.3.1, 407.3.2 and 407.3.3, as applicable.        
+
+ 
+
+  ------------------------------------------------------------------------ -------------------------------- --------------------------------------------------- ---------------
+  Element Type                                                             Tactile indication is required   Either tactile or auditory indication is required   Example Image
+  Element is an input control                                              Yes                              No                                                  [] 
+  Element shows the status of an operation                                 No                               Yes                                                 [] 
+  Element is an input control that also shows the status of an operation   Yes                              Yes                                                 [] 
+  ------------------------------------------------------------------------ -------------------------------- --------------------------------------------------- ---------------
+
+ 
+
+407.3.1 Tactilely Discernible 
+
+Input controls shall be operable by touch and tactilely discernible without activation.
+
+Where ICT has tactilely operable parts, it shall provide a means to discern each operable part, without requiring vision and without performing the action associated with the operable part. An exception to this requirement is in Revised Section 255/508 for Devices for personal use with input controls that are audibly discernible without activation and operable by touch. Those devices shall not be required to conform to this clause. EN 301-549 does not require tactile discernible as long as the part is detectable without performing the action although it is indicated as one way to meet this. Only one control to perform a given function must meet this requirement.
+
+Input controls are to be tactilely discernible without activation, as well as operable by touch. It also requires key surfaces outside active areas of display screens to be raised above their surrounding surfaces. By requiring raised key surfaces, it does not thereby intend to prohibit contouring of keys. Users with limited manual dexterity may prefer concave keys, for example, by providing keys with raised edges and concave centers, as is often used on computer keyboards and landline telephone keypads.
+
+[] 
+
+[] Tactilely Discernible – on/off switch
+
+Touch screen buttons present a problem for conformance to this standard. This type of button can be challenging to adjust without vision. The status of these buttons cannot be determined by touch, and any touch may make adjustments to the previously set settings.
+
+[] 
+
+[] Tactilely Discernible – Failing Example
+
+Test procedure:
+
+1. Verify that if there is only one control available to perform a given function, that one control must be discernible by touch without activating the control.
+
+             
+
+407.3.2 Alphabet Keys
+
+Where provided, individual alphabetic keys shall be arranged in a QWERTY-based keyboard layout, and the ‘‘F’’ and ‘‘J’’ keys shall be tactilely distinct from the other keys. Where the ICT provides an alphabetic overlay on numeric keys, the relationships between letters and digits shall conform to ITU-T Recommendation E.161.^(^([7])) Devices for personal use with input controls that are audibly discernible without activation and operable by touch shall not be required to conform to this clause. When a device can be a personal device and shared use device the personal use exemption does not apply.
+
+[] 
+
+[] Alphabet keys – “F” and “J” keys are tactilely discernible
+
+Test procedure:
+
+1.       Verify that the keyboard is arranged in a QWERTY based layout.
+
+2.       Ensure that the "F" and "J" keys are tactilely distinguishable from other keys.
+
+3.       Where the ICT provides an alphabetic overlay on numeric keys, the relationships between letters and digits shall conform to ITU-T Recommendation E.161.
+
+407.3.3 Numeric Keys
+
+Where provided, numeric keys shall be arranged in a 12-key ascending or descending keypad layout. The number five key shall be tactilely distinct from the other keys. Where the ICT provides an alphabetic overlay on numeric keys, the relationships between letters and digits shall conform to ITU–T Recommendation E.161 (incorporated by reference, see 702.7.1).
+
+ 
+
+[] 
+
+[] Numeric keys – tactilely discernible
+
+Where provided, numeric keys shall be arranged in a 12-key ascending or descending keypad layout. The number five key shall be tactilely distinct from the other keys. Devices for personal use with input controls that are audibly discernible without activation and operable by touch shall not be required to conform to this clause. A number row on a QWERTY-based keyboard does not fail this requirement. When a device can be a personal device and shared use device the personal use exemption does not apply.
+
+A telephone keypad and a keypad on a computer keyboard differ in one significant feature, ascending versus descending numerical order of the layout. Some keypads will have a double width zero key and decimal key instead of the asterisk and pound signs found on a telephone keypad.
+
+[] 
+
+[] Numeric Keys - 12 Key ascending versus descending keypad layout
+
+Test procedure: 
+
+0BHP Hardware Accessibility Testing Guide
+
+1.       Numeric keys shall be arranged in a 12-key ascending or descending keypad layout. 
+
+2.       The number five key shall be tactilely distinct from the other keys. 
+
+3.       Where the ICT provides an alphabetic overlay on numeric keys, the relationships between letters and digits shall conform to ITU-T Recommendation E.161.
+
+407.4 Key Repeat
+
+Where a keyboard with key repeat is provided, the delay before the key repeat feature is activated shall be fixed at, or adjustable to, 2 seconds minimum.
+
+Where ICT includes a keyboard where key repeat is provided and the key repeat cannot be turned off, the delay before the key repeat shall be adjustable to at least 2 seconds and the key repeat rate shall be adjustable down to one character per 2 seconds. 
+
+Test procedure:
+
+1. Verify that the key repeat feature is configured in one of the following ways: 
+
+a.       Key repeat is available but can be turned on/off and is off by default.
+
+b.       The timing before the key repeat feature activates is fixed and is at least two seconds.
+
+c.        The timing before key repeat activates is adjustable and can be adjusted to be at least two seconds.
+
+407.5 Timed Response
+
+Where a timed response is required, the user shall be alerted visually, as well as by touch or sound, and shall be given the opportunity to indicate that more time is needed. 
+
+To test for this requirement, identify all tasks, workflows and/or user interfaces which have a timeout. Then, ensure that the timeout for each of these tasks. The user is alerted visually and through either sound or touch. Finally, verify that the user is provided with an accessible means to indicate that more time is needed (i.e. via a control which does not require sight or hearing to use). 
+
+[] 
+
+[] Timed response – Session timeout
+
+Test procedure:
+
+1.       Identify all tasks, workflows and/or user interfaces which have a timeout.
+
+2.       Ensure that the timeout for each of these tasks, the user is alerted visually and through either sound, touch or vibration.
+
+3.       Verify that the user is provided with an accessible means to indicate that more time is needed (i.e. via a control which does not require sight or hearing to use).
+
+0BHP Hardware Accessibility Testing Guide
+
+407.6 Operation
+
+At least one mode of operation shall be operable with one hand and shall not require tight grasping, pinching, or twisting of the wrist. The force required to activate operable parts shall be 5 pounds (22.2 N) maximum.
+
+Test procedure:
+
+1.       Identify all operations which potentially require fine motor skills like grasping, pinching, twisting, as well as actions like pushing and pulling which may also engage larger limb and body movements. 
+
+2.       Verify that all operations can be performed with one hand.
+
+3.       Ensure there is no tight grasping, pinching or wrist twisting actions required.
+
+4.       Use a force meter to measure all pushing, pulling or other actions that require more than an extremely light touch.  To pass, operable parts must not exceed 5 pounds (22.2N) maximum.
+
+407.7 Ticket, Fare Cards, Key Cards
+
+Where tickets, fare cards, or key cards are provided, they shall have an orientation that is tactilely discernible if orientation is important to further use of the ticket, fare card, or key card.
+
+Any different number of physical discernments of a ticket, fare card, or key card is acceptable including braille labels, notches, off centered holes, or irregular shapes. This will help the user identify the direction of the ticket or card. If a ticket, fare card, or keycard cannot be tactilely discerned, then this requirement is not met. 
+
+Test procedure:
+
+1. The proper orientation for the ticket, fare card, or keycard should be tactilely discernable.
+
+[] 
+
+[] Ticket, Fare Cards, Key Cards - Tactilely Discernible
+
+407.8 Reach Height and Depth 
+
+At least one of each type of operable part of stationary ICT shall be at a height conforming to 407.8.2 or 407.8.3 according to its position established by the vertical reference plane specified in 407.8.1 for a side reach or a forward reach. Operable parts used with speech output required by 402.2 shall not be the only type of operable part complying with 407.8 unless that part is the only operable part of its type.
+
+407.8.1 Vertical Reference Plane
+
+0BHP Hardware Accessibility Testing Guide
+
+Operable parts shall be positioned for a side reach or a forward reach determined with respect to a vertical reference plane. The vertical reference plane shall be located in conformance to 407.8.2 or 407.8.3.
+
+The vertical reference plane shall be centered on the operable part and placed at the leading edge of the maximum protrusion of the ICT within the length of the vertical reference plane. Where a side reach requires a reach over a portion of the ICT, the height of that portion of the ICT shall be 34 inches (865 mm) maximum.
+
+0BHP Hardware Accessibility Testing Guide
+
+[] 
+
+[] Vertical reference plane diagram
+
+Test procedure:
+
+0BHP Hardware Accessibility Testing Guide
+
+1.       If a side reach is required to reach all hardware controls, the vertical reference plane used to test the side reach should comply with 407.8.1.1.
+
+2.       If a forward reach is required to reach all hardware controls, the vertical reference plane used to test the side reach should comply with 407.8.1.2.
+
+407.8.1.1 Vertical Plane for Side Reach
+
+Where a side reach is provided, the vertical reference plane shall be 48 inches (1220 mm) long minimum.
+
+Where the operable part is located 10 inches (255 mm) or less beyond the vertical reference plane, the operable part shall be 48 inches (1220 mm) high maximum and 15 inches (380 mm) high minimum above the floor.
+
+Test procedure:
+
+1. Ensure that, when a side reach is required, the vertical reference plane should be at least 48 inches long.
+
+407.8.1.2 Vertical Plane for Forward Reach
+
+Where a forward reach is provided, the vertical reference plane shall be 30 inches (760 mm) long minimum.
+
+Operable parts of ICT providing a forward reach shall conform to 407.8.3.1 Unobstructed Forward Reach or 407.8.3.2 Obstructed Forward Reach. The vertical reference plane shall be centered, and intersect with, the operable part. Where a forward reach allows a reach over a portion of the ICT, the height of that portion of the ICT shall be 34 inches (865 mm) maximum.
+
+Test procedure:
+
+1. Ensure that, when a forward reach is required, the vertical reference plane should be at least 30 inches long.
+
+407.8.2 Side Reach
+
+Operable parts of ICT providing a side reach shall conform to 407.8.2.1 or 407.8.2.2. The vertical reference plane shall be centered on the operable part and placed at the leading edge of the maximum protrusion of the ICT within the length of the vertical reference plane. Where a side reach requires a reach over a portion of the ICT, the height of that portion of the ICT shall be 34 inches (865 mm) maximum.
+
+Test procedure:
+
+1. When testing a side reach with 407.8.2.1 or 407.8.2.2, ensure that the vertical reference plane meets the following specifications: 
+
+a.       Vertical reference plane should be at least 48 inches long.
+
+b.       Vertical reference plane should be centered on the user control being tested. 
+
+c.        Vertical reference plane should be placed on the leading edge of the maximum protrusion of the ICT within the length of the reference plane. 
+
+d.       If the user is required to reach over part of the ICT, that part should be no more than 34 inches high.
+
+407.8.2.1 Unobstructed Side Reach
+
+Where the operable part is located 10 inches (255 mm) or less beyond the vertical reference plane, the operable part shall be 48 inches (1220 mm) high maximum and 15 inches (380 mm) high minimum above the floor.
+
+0BHP Hardware Accessibility Testing Guide
+
+[] 
+
+[] Unobstructed side reach diagram
+
+Test procedure:
+
+1.       Establish a vertical reference plane for the ICT that complies with 407.8.2. 
+
+2.       Verify that the control being tested is no more than 10 inches beyond the vertical reference plane. 
+
+a. If the control is more than 10 inches beyond the reference plane, test using 407.8.2.2 instead. 
+
+3.       Ensure that the operable part is no more than 48 inches high, and at least 15 inches above the floor.
+
+In the example image below, the printer requires the user to reach over a portion of the printer to open and close the scanner lid. The scanner lid is located above the 34 inch (865 mm) maximum height requirement causing the printer to fail this requirement. Some users may have difficulties operating the printer’s scan feature because scanner lid cannot be easily accessed. 
+
+0BHP Hardware Accessibility Testing Guide
+
+[] 
+
+[] Side Reach – Failing Example
+
+407.8.2.2 Obstructed Side Reach
+
+Where the operable part is located more than 10 inches (255 mm), but not more than 24 inches (610 mm), beyond the vertical reference plane, the height of the operable part shall be 46 inches (1170 mm) high maximum and 15 inches (380 mm) high minimum above the floor. The operable part shall not be located more than 24 inches (610 mm) beyond the vertical reference plane.
+
+[] 
+
+[] Obstructed side reach diagram
+
+Test procedure:
+
+1.       Establish a vertical reference plane for the ICT that complies with 407.8.2.
+
+2.       Verify that the control being tested is between 10 and 24 inches beyond the vertical reference plane. 
+
+a.       If the control is less than 10 inches beyond the vertical reference plane, test using 407.8.2.2 instead.
+
+b.       If the control is more than 24 inches beyond the vertical reference plane, it fails this criteria. 
+
+3.       Ensure that the operable part is no more than 46 inches high and is at least 15 inches above the floor.
+
+407.8.3 Forward Reach
+
+Operable parts of ICT providing a forward reach shall conform to 407.8.3.1 or 407.8.3.2. The vertical reference plane shall be centered, and intersect with, the operable part. Where a forward reach allows a reach over a portion of the ICT, the height of that portion of the ICT shall be 34 inches (865 mm) maximum.
+
+Test procedure:
+
+1. When testing a side reach with 407.8.3.1 or 407.8.3.2, ensure that the vertical reference plane meets the following specifications: 
+
+a.       Vertical reference plane should be at least 30 inches long
+
+b.       Vertical reference plane should be centered on, and intersect with, the user control being tested 
+
+c.        Vertical reference plane should be placed on the leading edge of the maximum protrusion of the ICT within the length of the reference plane. 
+
+d.       If the user is required to reach over part of the ICT, that part should be no more than 34 inches high.
+
+407.8.3.1 Unobstructed Forward Reach
+
+Where the operable part is located at the leading edge of the maximum protrusion within the length of the vertical reference plane of the ICT, the operable part shall be 48 inches (1220 mm) high maximum and 15 inches (380 mm) high minimum above the floor.
+
+0BHP Hardware Accessibility Testing Guide
+
+[] 
+
+[] Unobstructed forward reach diagram
+
+Test procedure:
+
+1.       Establish a vertical reference plane for the ICT that complies with 407.8.3.
+
+2.       Verify that the control being tested is at the leading edge of the maximum protrusion within the length of the vertical reference plane.
+
+a.       If the control is less than 10 inches beyond the vertical reference plane, test using 407.8.3.2 instead
+
+b.       If the control is more than 24 inches beyond the vertical reference plane, it fails this criteria.
+
+3.       Ensure that the operable part is no more than 48 inches high and is at least 15 inches above the floor.
+
+407.8.3.2 Obstructed Forward Reach
+
+Where the operable part is located beyond the leading edge of the maximum protrusion within the length of the vertical reference plane, the operable part shall conform to 407.8.3.2. The maximum allowable forward reach to an operable part shall be 25 inches (635 mm). 
+
+Test procedure:
+
+1.       Establish a vertical reference plane for the ICT that complies with 407.8.3.
+
+2.       Verify that the control being tested is no more than 25 inches beyond the vertical reference plane.
+
+407.8.3.2.1 Operable Part Height for ICT with Obstructed Forward Reach The height of the operable part shall conform to Table 407.8.3.2.1.
+
+Where the operable part is located beyond the leading edge of the maximum protrusion within the length of the vertical reference plane, the operable part shall conform to 407.8.3.2 Obstructed Forward Reach. The maximum allowable forward reach to an operable part shall be 25 inches (635 mm).
+
+[] 
+
+[] Operable part height for ICT with obstructed forward reach diagram
+
+Test procedure:
+
+1. The height of the operable part should be based its distance beyond the vertical reference plane: 
+
+a.       If the operable part is less than 20 inches beyond the vertical reference plane, it should be no more than 48 inches high.
+
+b.       If the operable part is between 20 and 25 inches beyond the vertical reference plane, it should be no more than 44 inches high.
+
+407.8.3.2.2 Knee and Toe Space under ICT with Obstructed Forward Reach
+
+Knee and toe space under ICT shall be 27 inches (685 mm) high minimum, 25 inches (635 mm) deep maximum, and 30 inches (760 mm) wide minimum and shall be clear of obstructions. Exceptions to this requirement include: toe space shall be permitted to provide a clear height of 9 inches (230 mm) minimum above the floor and a clear depth of 6 inches (150 mm) maximum from the vertical reference plane toward the leading edge of the ICT and at a depth of 6 inches (150 mm) maximum from the vertical reference plane toward the leading edge of the ICT, space between 9 inches (230 mm) and 27 inches (685 mm) minimum above the floor shall be permitted to reduce at a rate of 1 inch (25 mm) in depth for every 6 inches (150 mm) in height.
+
+[] 
+
+[] Knee and toe space under ICT with obstructed forward reach diagram
+
+Test procedure:
+
+1. Knee and Toe Space under the ICT should be: 
+
+a.       At least 27 inches high
+
+b.       25 inches deep maximum
+
+c.        At least 30 inches wide 
+
+d.       Clear from obstructions
+
+408 Display Screens 
+
+Where provided, display screens shall conform to 408.
+
+408.1 General
+
+Where provided, display screens shall conform to 408.
+
+408.2 Visibility
+
+Where stationary ICT provides one or more display screens, at least one of each type of display screen shall be visible from a point located 40 inches (1015 mm) above the floor space where the display screen is viewed.
+
+Where the operating area is integral to the ICT, and a display screen is provided, information on the screen should be legible from a point located 1015 mm (40 inches) above the center of the floor of the operating area.
+
+[] 
+
+[] Visibility diagram
+
+Test procedure:
+
+1.       Identify operating areas integral to the ICT where a display screen is provided.
+
+2.       Ensure the screen is legible from a point 1015 mm (40 inches) above the center of the floor of the operating area.
+
+408.3 Flashing
+
+Where ICT emits lights in flashes, there shall be no more than three flashes in any one-second period.
+
+An exception to this requirement occurs when flashes do not exceed the general flash and red flash thresholds defined in WCAG 2.0 (incorporated by reference). ^(^([8]))
+
+[] 
+
+[] Flashing – maximum allowable flashing content
+
+Test procedure:
+
+1.       Identify any flashing lights or LEDs on the ICT.
+
+2.       Check the flash frequency. Make sure the frequency is set above 3Hz. If not determined programmatically, note this in the test. The result will be not supported if not measurable.
+
+409 Status Indicators 
+
+Where provided, status indicators shall conform to 409.
+
+             
+
+ 
+
+  ------------------------------------------------------------------------ -------------------------------- --------------------------------------------------- ---------------
+  Element Type                                                             Tactile indication is required   Either tactile or auditory indication is required   Example Image
+  Element is an input control                                              Yes                              No                                                  [] 
+  Element shows the status of an operation                                 No                               Yes                                                 [] 
+  Element is an input control that also shows the status of an operation   Yes                              Yes                                                 [] 
+  ------------------------------------------------------------------------ -------------------------------- --------------------------------------------------- ---------------
+
+ 
+
+409.1 General
+
+Where provided, status indicators shall be discernible visually and by touch or sound.
+
+Where ICT has a locking or toggle control and that control is visually presented to the user, the ICT shall provide at least one mode of operation where the status of the control can be determined either through touch or sound without operating the control.
+
+Test procedure:
+
+1. The status of the control should be discernible by a visual status indicator, as well as through either touch or sound.
+
+410 Color Coding 
+
+Where provided, color coding shall conform to 410.
+
+410.1 General
+
+Where provided, color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+
+To test this requirement, identify all user-operable parts and user interfaces. Then, ensure that color is not the sole indication of status or sole means to distinguish the control or hardware from other controls and hardware.
+
+On a printer, buttons may include color. Ensure that the color used for the button has a secondary way to be represented. An example would be a red “X” button to cancel a print job. Since the button contains color as well as a symbol to identify the purpose of the button, the requirement would be met. Color isn’t the sole identification method for the button. 
+
+[] 
+
+[] Color Coding
+
+When hardware uses only color to convey information, indicate an action, prompt a response, or distinguish a visual element, the information may be misinterpreted by a user who is unable to differentiate colors. A barrier of use is created when a user is unable to identify the purpose of conveyed information, indicated actions, prompted responses, or visual elements. If a printer contains a status bar that relays error notifications by displaying a specific color on the status bar and the only change between displayed errors is the color of the bar, then this requirement is failed. 
+
+[] 
+
+[] Color coding – failing example
+
+Test procedure:
+
+1.       Identify all user-operable parts and user interfaces.
+
+2.       Ensure that color is not the sole indication of status or sole means to distinguish the control or hardware from other controls and hardware.
+
+411 Audible Signals 
+
+Where provided, audible signals shall conform to 411.
+
+411.1 General
+
+Where provided, audible signals or cues shall not be used as the only means of conveying information, indicating an action, or prompting a response.
+
+Audio signaling shall not be used as the only means of conveying information, indicating an action, or prompting a response.  For example, when a printer provides a warning tone, a visual message will also appear on the printer to identify the user of the warning. 
+
+[] 
+
+[] Audible Signals
+
+Test procedure:
+
+1.       Disable the audio for the device under test, or otherwise create a soundproof environment (noise cancelling headphones). 
+
+2.       Attempt to perform the same basic user scenarios as outlined in the main test specification(s) for the product. 
+
+a.       Prioritize any testing which focuses on error conditions (e.g. incorrect identification information provided, paper jammed in a printer, invalid key pressed on a phone keypad). 
+
+b.       Also prioritize any testing which expects a confirmation from the user before completing an action (e.g. subtotaling purchases before requesting payment). 
+
+i. For example, for self-contained single-purpose retail point of sale kiosk (i.e. a cash register which is not simply a tablet or desktop computer with point of sale software), ignore any audio prompts and perform all the basic functionality testing for identifying items, applying discounts, totaling final cost, accepting payment, etc.  3. Verify that audible signals or cues are not used as the only means of conveying information, indicating an action, or prompting a response.
+
+412 ICT with Two-Way Voice Communication 
+
+Where provided, two-way voice communications shall conform to 412.
+
+412.2 Volume Gain
+
+Volume gain conforming to 47 CFR 68.317 shall be provided on analog and digital wireline telephones. ^(^([9]))
+
+Analog and digital wireline telephones shall have a volume gain that is adjustable on the handset from 12 dB minimum to 18 dB maximum measured in term of Receive Objective Loudness Rating (ROLR) with the minimum gain being achieved without clipping. The ROLR shall be determined over a frequency range of 300 to 3300 Hertz (Hz) for short, average, and long loop conditions represented by 0, 2.7, and 4.6 km of 26 American Wire Gauge (AWG) nonloaded cable, respectively and tested at the minimum volume setting. The input level to the cable simulator shall be -10 dB with respect to 1 V open circuit from a 900-ohm source.
+
+412.2.1 Volume Gain for Wireline Telephones
+
+Volume gain conforming to 47 CFR 68.317 shall be provided on analog and digital wireline telephones.
+
+Analog and digital wireline telephones shall have a volume gain that is adjustable on the handset from 12 dB minimum to 18 dB maximum measured in term of Receive Objective Loudness Rating (ROLR) with the minimum gain being achieved without clipping. The ROLR shall be determined over a frequency range of 300 to 3300 Hertz (Hz) for short, average, and long loop conditions represented by 0, 2.7, and 4.6 km of 26 American Wire Gauge (AWG) nonloaded cable, respectively and tested at the minimum volume setting. The input level to the cable simulator shall be -10 dB with respect to 1 V open circuit from a 900-ohm source.
+
+Test procedure:
+
+1. Verify that the volume gain of the telephone receiver has a volume control and it goes from 12cB of gain minimum to 18 dB of gain maximum. Check with 47 CFR 68.317 for further technical information.
+
+412.2.2 Volume Gain for Non-Wireline ICT
+
+A method for increasing volume shall be provided for non-wireline ICT.
+
+ 
+
+Buttons on the side of a device would meet this requirement as well as volume controls located in a keyboard. 
+
+[] 
+
+[] Volume gain for non-wireline ICT – volume adjustment
+
+Test procedure:
+
+1. Verify that a method for increasing volume is provided.
+
+412.3 Interference Reduction and Magnetic Coupling
+
+Where ICT hardware is a wireless communication device with speech output which is normally held to the ear, it shall provide a means of magnetic coupling to hearing technologies which meets the requirements of ES 200 381-2. ^(^([10])) ICT fulfilling the requirements of ANSI/IEEE C63.19 [i.1] is deemed to comply with the requirements of this clause.
+
+Exception: Current Section 508 standard does not specify standard that must be met.
+
+Since the ICT held to the ear can be of several varieties, i.e. wired, wireless or fixed, there are standards the ICT needs to comply with. The ICT needs to be measured against the standard depending on the type of ICT product. If the ICT passes the appropriate standard compliance, this requirement has been met. Standards include: ANSI/TIA/EIA-504 Magnetic Field Intensity Criteria for Telephone Compatibility with Hearing Aids (latest amendment), TIA-1083^(^([11])) Telephone Terminal Equipment Handset Magnetic Measurement Procedures and Performance Requirements (latest amendment), ETSI ES 200 381-1, Telephony for hearing impaired people; Inductive coupling of telephone earphones to hearing aids Part 1: Fixed-line speech terminals (latest amendment), and ANSI C63.19 2011 American National Standard for Methods of Measurement of Compatibility Between Wireless Communication Devices and Hearing Aids (latest amendment). 
+
+Test procedure:
+
+1. Review the design specifications for the ICT device and ensure that a transducer with a moving coil is used, or if a custom design is used, that the transducer has been characterized to produce a magnetic field.
+
+412.3.1 Wireless Handsets
+
+ICT in the form of wireless handsets shall conform to ANSI/IEEE C63.19–2011 (incorporated by reference, see 702.5.1).
+
+             
+
+ 
+
+Where ICT hardware is a wireless communication device with speech output which is normally held to the ear, it shall provide a means of magnetic coupling to hearing technologies which meets the requirements of ES 200
+
+381-2 [3]. ICT fulfilling the requirements of ANSI/IEEE C63.19 [i.1]^(^([12])) is deemed to comply with the requirements of this clause.
+
+Refer to ANSI C 63.19-2011 for testing procedure. 
+
+Interreference needs to be measured for the microphone and telecoil. A minimum rating of T3 and M3 is required in order to comply with this requirement.  If the ICT achieves a rating greater than T3 and greater than M3 the product will be relatively better than a product which is T3 and M3. If practical to do so this requirement recommends a better rating than T3 and M3 which reflects on less interference and more clarity of the audio heard by the user of the assistive hearing device.
+
+Current Section 508 standard does not specify standard that must be met.
+
+412.3.2 Wireline Handsets
+
+ICT in the form of wireline handsets, including cordless handsets, shall conform to TIA–1083–B (incorporated by reference, see 702.9.1).
+
+Where ICT hardware is a fixed-line communication device with speech output and which is normally held to the ear and which carries the "T" symbol specified in ETS 300 381 ^(^([13])), it shall provide a means of magnetic coupling which meets the requirements of ES 200 381-2.
+
+ICT fulfilling the requirements of TIA-1083-A [i.24] is deemed to comply with the requirements of this clause.  
+
+Test procedure:
+
+1. Confirm ICT hardware carries the “T” symbol. The ICT device must be characterized against the TIA 1083-A (2010) standard and is compliant if all aspects of the TIA 1083-A (2010) are satisfied.
+
+412.4 Digital Encoding of Speech
+
+ICT in IP-based networks shall transmit and receive speech that is digitally encoded in the manner specified by ITU–T Recommendation G.722.2 ^(^([14])) (incorporated by reference, see 702.7.2) or IETF RFC 6716 ^(^([15])) (incorporated by reference, see 702.8.1).
+
+Where ICT provides two-way voice communication, in order to provide good audio quality, ICT should be able to encode and decode two-way voice communication with a frequency range with an upper limit of at least 7,000 Hz. Specified by ITU-T Recommendation G.722.2. This requirement applies not only to the ICT device itself but also to any accessory that may be used in conjunction with the ICT in order to effectively encode and decode speech information. Scope includes any product which decodes or encodes voice communication for use by the end user.
+
+Test procedure for decoding “receive” ICT:
+
+ 
+
+1.       Using a source ICT or other device send a voice communication message to a receiving ICT consisting of a series of tones ranging from 20 Hz to 20000 Hz that have a consistent amplitude and clean audio signal parametric in the entire frequency range. Typically, a professional audio sweep generator made by HP can be used as the source for this purpose.
+
+2.       At the receiver ICT connect a professional audio analyzer to the audio output circuit at a point after the decoding has taken place, and after any amplification, and before any transducer.
+
+3.       Using an audio sweep generator sweep the source ICT over the frequency range keeping the amplitude constant.
+
+4.       Using the audio analyzer develop a frequency vs amplitude plot for the receive ICT. a. Make three separate plots using the volume control on the receive ICT: low volume, mid volume, maximum volume.
+
+5.       Examine all the plots. The curve should be relatively flat +/- 1.0 dB over the frequency range with no more than 3 dB of degradation at any point up to the 7000 Hz limit. If any plot is non-compliant this requirement has not been met.
+
+Test procedure for encoding “source” ICT:
+
+1.       Modify the source ICT accordingly to be able to inject audio tones from 20 Hz to 20000 Hz that have a consistent amplitude and clean audio signal parametric in the entire frequency range. Typically, a professional audio sweep generator made by HP can be used for this purpose. The modifications should be made before the encoder circuity and as close to the ICT end user audio source (I.e. a jack or plug input on the ICT).
+
+2.       Broadcast or connect directly the source ICT to a receive ICT. Connect a professional audio analyzer to the receive ICT at a point where the received audio from the source ICT can be monitored. Note - ensure that the receive ICT is a device that meets all specifications so as to ensure no false readings. It is recommended the receive ICT be characterized for its audio performance.
+
+3.       Using the audio tone generator sweep the source ICT over the frequency range 20 Hz - 20000 Hz keeping the amplitude constant. 
+
+4.       At the receiver ICT connect an audio analyzer to the audio output circuit at a point after the decoding has taken place and before any amplification. a. It may be possible to directly connect some form of system analyzer directly to the source ICT in place of the above step.
+
+5.       Using the audio analyzer develop a frequency vs amplitude plot on the receive ICT. a. If there is an adjustable gain control on the source ICT take three separate plots: low volume, mid volume, maximum volume on the receive ICT.
+
+6.       Examine all the plots on the receive ICT. The curves should be relatively flat +/- 1.0 dB over the frequency range with no more than 3 dB of degradation at any point up to the 7000 Hz limit. If any plot is non-compliant this requirement has not been met.
+
+ 
+
+NOTE: The above steps can be simplified if an audio analyzer can capture and decode the output of the encoder in the source ICT. Follow the same basic steps in sweeping the audio signals, etc.
+
+412.5 Real-Time Text Functionality
+
+Where ICT supports two-way voice communication in a specified context of use, the ICT shall allow a user to communicate with another user by RTT. The RTT capability can be provided as a factory default or added later. Provision of RTT may require additional service provision, additional hardware, and/or software which may be provided separately or together.
+
+Test procedure:
+
+1.       Connect two separate ICT devices either directly or wireless that are designed for RTT functionality. a. ICT 1: Initiator
+
+b. ICT 2: Receiver
+
+2.       Enable the RTT option on each ICT.
+
+3.       Enter a text message on ICT 1 starting with simple characters alone and gradually increasing to words or phrases.
+
+4.       As ICT 1 is transmitting the RTT information examine the ICT 2 text display. The characters transmitted by ICT 1 should immediately appear in the ICT 2 display with minimal to no delay and no errors or emissions.
+
+5.       Repeat the above using ICT 2 as the initiator and ICT 1 as the receiver.
+
+412.6 Caller ID
+
+Where provided, caller identification and similar telecommunications functions shall be visible and audible.
+
+Where ICT provides caller identification and similar telecommunications functions are provided, the caller identification and similar telecommunications functions shall be available in text form and in at least one other modality. The Caller ID information presented to the user must be available not only in a text form (visual) but also in at least one other modality. A modality is the way or mode in which something exists or is presented. Examples of Caller ID functions addressed by this requirement include messages waiting, duration of call in progress, call waiting, dialing directory, wireless signal strength, and battery power.
+
+Test procedure:
+
+1.       Identify all audio and visual Caller ID functions that are by design included in the ICT device.
+
+2.       Match the items identified in item 1 above to the user manual requirements. All Caller IDs should match.
+
+3.       Initiate each Caller ID and validate:
+
+a.       The Caller ID is seen in a text form.
+
+b.       The Caller ID is also seen in its original form.
+
+c.        The Caller ID also appears in an alternative form.
+
+i.       For example, if the Caller ID is an audio alert ensure there are both a text (visual) form as well as the original audio form.
+
+ii.      For example, if the Caller ID is a visual alert ensure there is both a text (visual) form as well as the original visual form. There should also be an audio form.
+
+412.7 Video Communication
+
+Where ICT provides real-time video functionality, the quality of the video shall be sufficient to support communication using sign language.
+
+Sign language can become unreadable or blurry if the video characteristics of the ICT are inadequate.
+
+Test procedure:
+
+1.       Measure latency and frame rate. The IEEE method uses the concept of embedding a timestamp in the caller’s video. The timestamp, i.e., the current system time at the machine running the caller user agent, is displayed at the monitor (ICT) of the machine running the caller user agent every “t” time units. A webcam is attached to the ICT running the caller user agent and faces the ICT monitor and captures the current image on the monitor which includes the timestamp. The caller user agent then encodes this captured frame including the timestamp and sends it over the network to the callee user agent which decodes the frame and displays it on its ICT monitor. An application running on the same ICT as the callee user agent grabs the timestamp from the received frame and calculates the time difference between the timestamp grabbed from the received frame and local system time. The timestamps are processed to calculate latency and frame-rate.
+
+2.       Determine bit-rate by using a video measurement test instrument capable of detecting and measuring bit-rates using captured video frames. Software applications can also be used to measure the bit-rate of the video signal.
+
+3.       Measure the delta time between a video signal that has an audio component until when the audio component is actually heard by the user. For example, assume the letter “A” is spoken by the caller.
+
+The callee will see the caller’s video and should also hear the audio for the letter “A”. The sound synchronism is the time delay between the visual and the audio for the letter “A”. Compensation for any system embedded delays would need to be subtracted. A simple microphone can be substituted for the webcam. In conjunction with the video monitor test instrument the time can be determined.
+
+412.8 Legacy TTY Support
+
+412.8.1 TTY Connectability
+
+Refer to Legacy Section 508 1194.23 paragraph (a) ^(^([16]))
+
+Telecommunications products or systems which provide a function allowing voice communication and which do not themselves provide a TTY functionality shall provide a standard non-acoustic connection point for TTYs.
+
+Microphones shall be capable of being turned on and off to allow the user to intermix speech with TTY use.
+
+Test procedure:
+
+1. Confirm that at least one industry-standard connector is provided.
+
+412.8.2 Voice and Hearing Carry Over
+
+Refer to Legacy Section 508 1194.23 paragraph (a)
+
+Telecommunications products or systems which provide a function allowing voice communication and which do not themselves provide a TTY functionality shall provide a standard non-acoustic connection point for TTYs.
+
+Microphones shall be capable of being turned on and off to allow the user to intermix speech with TTY use.
+
+Test procedure:
+
+1. Confirm that there is an on/off switch for microphones.
+
+412.8.3 Signal Compatibility
+
+Refer to Legacy Section 508 1194.23 paragraph (b)
+
+Telecommunications products which include voice communication functionality shall support all commonly used cross-manufacturer non-proprietary standard TTY signal protocols.
+
+Test procedure:
+
+1. If the hardware supports voice communications functionality (not in the software), confirm it supports all commonly-used cross-manufacturer non-proprietary standard TTY signal protocols.
+
+412.8.4 Voice Mail and Other Messaging Systems
+
+Please refer to Legacy Section 508 1194.23 paragraph (c ) and paragraph (e )
+
+Voice mail, auto-attendant, and interactive voice response telecommunication systems shall be usable by TTY users with their TTYs. 
+
+Where provided, caller identification and similar telecommunications functions shall also be available for users of TTYs, and for users who cannot see displays.
+
+Test procedure:
+
+ 
+
+1.       Connect a TTY device to the device.
+
+2.       Verify that voice mail, caller ID, and other similar features can be used with the TTY.
+
+413 Closed Caption Processing Technologies
+
+Where used, closed caption processing technologies shall conform to 413.
+
+413.1 General
+
+Where ICT displays or processes video with synchronized audio, ICT shall provide closed caption processing technology that conforms to 413.1.1 or 413.1.2.
+
+413.1.1 Decoding and Display of Closed Captions
+
+Players and displays shall decode closed caption data and support display of captions.
+
+Where ICT displays video with synchronized audio, it shall have a mode of operation to display the available captions. Where closed captions are provided as part of the content, the ICT shall allow the user to choose to display the captions.
+
+Test procedure:
+
+1. Check options to ensure that the ICT supports display of captions.
+
+413.1.2 Pass Through of Closed Caption Data
+
+Cabling and ancillary equipment shall pass through caption data.
+
+Test procedure:
+
+1. Confirm that the cabling and ancillary equipment pass through caption data.
+
+414 Audio Description Processing Technologies
+
+Where used, audio description processing technologies shall conform to 414.
+
+414.1 General
+
+Where ICT displays or processes video with synchronized audio, ICT shall provide audio description processing technology conforming to 414.1.1 or 414.1.2.
+
+414.1.1 Digital Television Tuners
+
+Digital television tuners shall provide audio description processing that conforms to ATSC A/53 Digital Television Standard, Part 5 (2014) ^(^([17])) (incorporated by reference, see 702.2.1). Digital television tuners shall provide processing of audio description when encoded as a Visually Impaired (VI) associated audio service that is provided as a complete program mix containing audio description according to the ATSC A/53 standard.
+
+Test procedure:
+
+1. Verify that audio description processing is provided as a service.
+
+ 
+
+414.1.2 Other ICT
+
+ICT other than digital television tuners shall provide audio description processing.
+
+Where ICT displays video with synchronized audio, it shall provide a mechanism to select and play available audio description to the default audio channel. Where video technologies do not have explicit and separate mechanisms for audio description, an ICT is deemed to satisfy this requirement if the ICT enables the user to select and play several audio tracks.
+
+Test procedure:
+
+1.       Enable the product setting that allows audio descriptions to be played automatically.
+
+2.       Go to the test content that supports multiple versions.
+
+3.       Verify that the audio described version of content plays automatically for the user.
+
+415 User Controls for Captions and Audio Descriptions
+
+Where ICT displays video with synchronized audio, ICT shall provide user controls for closed captions and audio descriptions conforming to 415. Devices for personal use shall not be required to conform to 415.1 provided that captions and audio descriptions can be enabled through system-wide platform settings.
+
+415. 1 General
+
+Where ICT displays video with synchronized audio, ICT shall provide user controls for closed captions and audio descriptions conforming to 415.1.
+
+415.1.1 Caption Controls
+
+Where ICT provides operable parts for volume control, ICT shall also provide operable parts for caption selection.
+
+ICT shall provide user controls for the selection of captions in at least one location that is comparable in prominence to the location of the user controls for volume.
+
+Test procedure:
+
+1. Verify that the controls to select captions are within 3-tab stops (or similar logical navigational unit) preceding or following the controls for volume in the player.
+
+415.1.2 Audio Description Controls
+
+Where ICT provides operable parts for program selection, ICT shall also provide operable parts for the selection of audio description.
+
+ICT shall provide user controls for the selection of audio description in at least one location that is comparable in prominence to the location of the user controls for program selection.
+
+Test procedure:
+
+Verify that for any content where an audio description exists, there is a clearly available method for accessing the audio description of the content. If verifying a system that has a dedicated method for exposing an audio description, verify that when one is supplied it can be accessed successfully.
+
+             
+
+References
+
+¹  Phillips, Kim. 2019. Navigating VPAT 2.0: A Guide for Vendors. Level Access.
+
+https://www.levelaccess.com/navigating-vpat-2-a-guide-for-vendors-whitepaper/  
+
+²  U.S. Access Board. 2018. Section 508 of the Rehabilitation Act. https://www.access-board.gov/guidelinesand-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-andguidelines
+
+⁵ American National Standard. 2009. “703.2.” In Accessible and Usable Building and Facilities: ICC A117.1-2009:
+
+70-72. https://ia800302.us.archive.org/29/items/gov.law.ansi.a117.1.2009/ansi.a117.1.2009.pdf
+
+⁷        International Telecommunication Union. 2001. ITU-T E. 161. https://www.itu.int/rec/T-REC-E.161-200102-
+
+I/en 
+
+⁸        World Wide Web Consortium. 2018. Web Content Accessibility Guidelines 2.1.
+
+https://www.w3.org/TR/WCAG21/ 
+
+⁹        Code of Federal Regulations. 1999. 47 CFR 68.317. https://www.govinfo.gov/content/pkg/CFR-1999-title47vol3/pdf/CFR-1999-title47-vol3-part68.pdf#page=87 
+
+¹⁰   European Telecommunication Standard. 2012. ES 200 381-2.
+
+https://www.etsi.org/deliver/etsi_es/200300_200399/20038102/01.01.01_60/es_20038102v010101 p.pdf
+
+¹¹   Telecommunications Industry Association. 2010. TIA-1083.
+
+https://hp.sharepoint.com/teams/AccessTeamSite/reporting/_layouts/15/download.aspx?SourceUrl=% 2Fteams%2FAccessTeamSite%2Freporting%2FShared%20Documents%2FStandards%2FLibrary%2FNo n%2DPublic%20Documents%28Controlled%29%2FTIA%2D1083%2Epdf  
+
+¹²   American National Standard Methods of Measurement of Compatibility between Wireless Communications Devices and Hearing Aids. 2011. ANSI/IEEE C63.19-2011. https://hp.sharepoint.com/teams/AccessTeamSite/reporting/Shared%20Documents/Standards/Library/ Non-Public%20Documents(Controlled)/IEEEANSI.pdf
+
+¹³   European Telecommunication Standard. 1994. ETS 300 381.
+
+https://www.etsi.org/deliver/etsi_i_ets/300300_300399/300381/01_60/ets_300381e01p.pdf
+
+¹⁴   International Telecommunication Union. 2003. ITU-T G.722.2. https://www.itu.int/rec/T-REC-G.722.2200307-I/en
+
+¹⁵   Internet Engineering Task Force. 2012. IETF RFC 6716. https://tools.ietf.org/pdf/rfc6716.pdf
+
+¹⁶   Federal Register. 2000. Volume 65, Number 246. Rules and Regulations. Legacy Section 508. Pages 80515-
+
+80517. https://www.govinfo.gov/content/pkg/FR-2000-12-21/pdf/00-32017.pdf
+
+¹⁷   Advanced Television Systems Committee. 2014. ATSC Digital Television Standard, Part 5 – AC-3 Audio System Characteristics. Doc. A/53 Part 5. https://www.atsc.org/wp-content/uploads/2015/03/A53Part-5-2014-1.pdf
+
+0BHP Hardware Accessibility Testing Guide
+
+Glossary
+
+Application: Software designed to perform, or to help the user to perform, a specific task or tasks.
+
+Assistive Technology (AT): Any item, piece of equipment, or product system, whether acquired commercially, modified, or customized, that is used to increase, maintain, or improve functional capabilities of individuals with disabilities. Example: Assistive technology helps people who have difficulty speaking, typing, writing, remembering, pointing, seeing, hearing, learning, walking, and many other things. Different disabilities require different assistive technologies. Note: High contrast keyboards, Braille stickers, screen readers, screen magnification, and dictation software are examples of assistive technology.
+
+Audio Description: Narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone. Audio description is a means to inform individuals who are blind or who have low vision about visual content essential for comprehension. Audio description of video provides information about actions, characters, scene changes, on-screen text, and other visual content. Audio description supplements the regular audio track of a program. Audio description is usually added during existing pauses in dialogue. Audio description is also called “video description” and “descriptive narration”.
+
+Biometric: Metrics related to human characteristics used in computer science as a form of identification and access control. Biometric identifiers are distinctive, measurable and include fingerprints, DNA, face, hand, retina, or ear features. Note: An alternative to a biometric means of identification or access must be offered where a biometric means is offered.
+
+Closed Functionality: Characteristics that limit functionality or prevent a user from attaching or installing assistive technology. Examples of ICT with closed functionality are self-service machines, information kiosks, set-top boxes, fax machines, calculators, and computers that are locked down so that users may not adjust settings due to a policy such as Desktop Core Configuration.
+
+Content: Electronic information and data, as well as the encoding that defines its structure, presentation, and interactions.
+
+Document: Logically distinct assembly of content (such as a file, set of files, or streamed media) that: functions as a single entity rather than a collection; is not part of software; and does not include its own software to retrieve and present content for users. Examples of documents include, but are not limited to, letters, email messages, spreadsheets, presentations, podcasts, images, and movies.
+
+Existing Information and Communications Technology (ICT): ICT that has been procured, maintained or used on or before January 18, 2018. 
+
+Hardware: A tangible device, equipment, or physical component of ICT, such as telephones, computers, multifunction copy machines, and keyboards.
+
+Information Technology: Shall have the same meaning as the term “information technology” set forth in 40 U.S.C. 11101(6).
+
+A.       with respect to an executive agency means any equipment or interconnected system or subsystem of equipment, used in the automatic acquisition, storage, analysis, evaluation, manipulation, management, movement, control, display, switching, interchange, transmission, or reception of data or information by the executive agency, if the equipment is used by the executive agency directly or is used by a contractor under a contract with the executive agency that requires the use—
+
+i.         of that equipment; or
+
+ii.        of that equipment to a significant extent in the performance of a service or the furnishing of a product;
+
+B.       includes computers, ancillary equipment (including imaging peripherals, input, output, and storage devices necessary for security and surveillance), peripheral equipment designed to be controlled by the central processing unit of a computer, software, firmware and similar procedures, services (including support services), and related resources; but
+
+C.       does not include any equipment acquired by a federal contractor incidental to a federal contract.
+
+Information and Communication Technology (ICT): Information technology and other equipment, systems, technologies, or processes, for which the principal function is the creation, manipulation, storage, display, receipt, or transmission of electronic data and information, as well as any associated content. Examples of ICT include but are not limited to: computers and peripheral equipment; information kiosks and transaction machines; telecommunications equipment; customer premises equipment; multifunction office machines; software; applications; Web sites; videos; and, electronic documents.
+
+Label: Text, or a component with a text alternative, that is presented to a user to identify content. A label is presented to all users, whereas a name may be hidden and only exposed by assistive technology. In many cases, the name and the label are the same.
+
+Operable Part: Hardware-based user controls for activating, deactivating, or adjusting ICT. Note: Example of operable parts could include: power button, automatic document feeder paper guides, touch screen control panel, manual paper draw, paper draws, and scan glass door handle.
+
+Programmatically Determinable: Ability to be determined by software from author-supplied data that is provided in a way that different user agents, including assistive technologies, can extract and present the information to users in different modalities.
+
+QWERTY: Denoting the standard layout on English-language typewriters and keyboards, having q, w, e, r, t, and y as the first keys from the left on the top row of letters.
+
+Real-Time Text (RTT): Communications using the transmission of text by which characters are transmitted by a terminal as they are typed. Real-time text is used for conversational purposes. Real-time text also may be used in voicemail, interactive voice response systems, and other similar application. Note: Real-time text is text transmitted instantly while it is being typed or created. The recipient can immediately read the sender's text as it is written, without waiting.
+
+Revised 508 Standards: The standards for ICT developed, procured, maintained, or used by agencies subject to Section 508 of the Rehabilitation Act as set forth in 508 Chapters 1 and 2 (36 CFR part 1194, Appendix A), and Chapters 3 through 7 (36 CFR part 1194, Appendix C).
+
+Software: Programs, procedures, rules, and related data and documentation that direct the use and operation of ICT and instruct it to perform a given task or function. Software includes, but is not limited to, applications, non-Web software, and platform software.
+
+Tactilely Discernible: Describes an object that can be perceived using the sense of touch.
+
+Telecommunications: The signal transmission, between or among points specified by the user, of information of the user’s choosing, without change in the form or content of the information as sent and received.
+
+0BHP Hardware Accessibility Testing Guide
+
+Terminal: Device or software with which the end user directly interacts and that provides the user interface. For some systems, the software that provides the user interface may reside on more than one device such as a telephone and a server.
+
+Text: A sequence of characters that can be programmatically determined and that expresses something in human language.
+
+Teletypewriter (TTY): Equipment that enables interactive text-based communications through the transmission of frequency-shift-keying audio tones across the public switched telephone network. TTYs include devices for real-time text communications and voice and text intermixed communications. Examples of intermixed communications are voice carry over and hearing carry over. One example of a TTY is a computer with TTY emulating software and modem.
+
+Variable Message Signs (VMS): Non-interactive electronic signs with scrolling, streaming, or paging-down capability. An example of a VMS is an electronic message board at a transit station that displays the gate and time information associated with the next train arrival.
+
+WCAG 2.0 or Web Content Accessibility Guidelines 2.0: Part of a series of web accessibility guidelines published by the Web Accessibility Initiative (WAI) of the World Wide Web Consortium (W3C), the main international standards organization for the internet. WCAG 2.0 is divided into four principles spelling out the acronym POUR: Perceivable, Operable, Understandable and Robust. From there it is divided into more detail with guidelines and testable success criteria. The Success Criteria are organized by Level A, AA and AAA; with A being the most necessary for use with a broad array of Assistive Technologies and AA and AAA getting more and more narrowed in focus on a specific disability group.
+
+ 
+
+0BHP Hardware Accessibility Testing Guide
+
+------------------------------------------------------------------------
+
+[1] Navigating VPAT 2.0: A Guide for Vendors, Level Access – Available at: https://www.levelaccess.com/navigating-vpat-2-a-guide-forvendors-whitepaper/ 
+
+[2] Revised Section 508 Requirements. Available at: https://www.access-board.gov/guidelines-and-standards/communications-andit/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines
+
+[3] Industry standard connectors include but not limited to 3.5 mm audio jack, USB, RJ-45, and RJ-11.
+
+[4] Braille that is Unified English Braille (UEB) code meets contract braille requirement.
+
+[5] ICC A117.1 – 2009 pages 70-72. Available at https://ia800302.us.archive.org/29/items/gov.law.ansi.a117.1.2009/ansi.a117.1.2009.pdf  
+
+[6] https://atk-production.herokuapp.com/requirements/captioning-playback-and-user-selection  
+
+[7] ITU-T Recommendation E.161 Available at: https://www.itu.int/rec/T-REC-E.161-200102-I/en  
+
+0BHP Hardware Accessibility Testing Guide
+
+[8] WCAG 2.0 – General flash and red flash threshold. Available at: https://www.w3.org/TR/WCAG21/#dfn-general-flash-and-red-flashthresholds
+
+[9] 47 CFR 68.317 – Volume Gain. Available at: https://www.govinfo.gov/content/pkg/CFR-2011-title47-vol3/pdf/CFR-2011-title47-vol3sec68-317.pdf
+
+[10] ES 200 381-2 – Interference reduction and magnetic coupling. Available at: https://www.etsi.org/deliver/etsi_es/200300_200399/20038102/01.01.01_60/es_20038102v010101p.pdf
+
+[11] TIA-1083 Available at:
+
+https://hp.sharepoint.com/teams/AccessTeamSite/reporting/_layouts/15/download.aspx?SourceUrl=%2Fteams%2FAccessTeamSite%2Fr eporting%2FShared%20Documents%2FStandards%2FLibrary%2FNon%2DPublic%20Documents%28Controlled%29%2FTIA%2D1083%2E pdf  
+
+[12]  ANSI/IEEE C63.19-2011 – American National Standard Methods of Measurement of Compatibility between Wireless Communications Devices and Hearing Aids. Available at:
+
+https://hp.sharepoint.com/teams/AccessTeamSite/reporting/Shared%20Documents/Standards/Library/NonPublic%20Documents(Controlled)/IEEEANSI.pdf  
+
+[13] ETS 300 381 – Wireline Handsets. Available at: https://www.etsi.org/deliver/etsi_i_ets/300300_300399/300381/01_60/ets_300381e01p.pdf
+
+[14] ITU-T Recommendation G.722.2 – Digital Encoding of Speech. Available at: https://www.itu.int/rec/T-REC-G.722.2-200307-I/en
+
+[15] IETF RFC 6716 – Digital Encoding of Speech. Available at: https://tools.ietf.org/pdf/rfc6716.pdf
+
+[16] Legacy Section 508. 1194.23 (a). Available at: https://www.access-board.gov/guidelines-and-standards/communications-and-it/aboutthe-section-508-standards/section-508-standards
+
+[17] ATSC A/53 Part 5; 2014 Available at: https://www.atsc.org/wp-content/uploads/2015/03/A53-Part-5-2014-1.pdf

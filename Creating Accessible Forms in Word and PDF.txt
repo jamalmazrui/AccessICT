@@ -1,0 +1,718 @@
+﻿Creating Accessible Forms in Word and PDF
+
+
+ 
+
+Creating Accessible Forms  in Microsoft Word  and Adobe PDF
+
+[]
+
+[]
+
+ 
+
+[]
+
+ 
+
+Disability Access Services
+
+[] 
+
+About Disability Access Services
+
+Centralized Resource and Information on Disability Access
+
+ 
+
+Disability Access Services provides technical assistance and informational guidance to promote the civil rights and equality for persons with disabilities in the following areas:
+
+ 
+
+Employment
+
+Reasonable Accommodation
+
+Physical Access of built environments
+
+Access to private sector goods and services
+
+Digital Access of electronic and information technology
+
+Access to government programs, services, and activities
+
+ 
+
+Disability Access Services Website www.dor.ca.gov/disabilityaccessinfo
+
+ 
+
+Disability Access Services
+
+CA Department of Rehabilitation 721 Capitol Mall, 4th Floor
+
+Sacramento, CA 95814 
+
+ 
+
+DAS Email: DASinfo@dor.ca.gov
+
+ 
+
+ 
+
+Promoting an Accessible Future through
+
+Education and Information
+
+      
+
+Creating Accessible Forms  in Microsoft Word and Adobe PDF
+
+ 
+
+MICROSOFT WORD FORMS.......................................................................... 1
+
+Add the Developer Tab to Word Ribbon...................................................... 1
+
+Add Form Elements........................................................................................ 2
+
+Add Help Text................................................................................................... 3
+
+Adding Option Buttons (Radio Buttons)...................................................... 6
+
+Add Form Title................................................................................................. 8
+
+Restrict Editing................................................................................................ 9
+
+Add Styles and Check Accessibility.......................................................... 10
+
+PDF FORMS.................................................................................................... 11
+
+Activate Tag Annotations............................................................................. 13
+
+Create New Form Elements......................................................................... 14
+
+Ensure the Tooltip is Helpful....................................................................... 16
+
+Control Text Field Appearance.................................................................... 17
+
+Use the Read Only Option........................................................................... 18
+
+Check Reading Order................................................................................... 20
+
+Set the Title of the Form............................................................................... 21
+
+Set the Language.......................................................................................... 22
+
+Reader Extended Version............................................................................ 23
+
+Accessibility Testing..................................................................................... 24
+
+REFERENCES/MORE RESOURCES........................................................... 25
+
+ 
+
+ 
+
+Alternative Formats
+
+In accordance with ADA requirements, this document can be made available in Braille or large print as a reasonable accommodation for an individual with a disability.  To request a copy of alternative formats, please contact Disability Access Services.
+
+ 
+
+Equal Opportunity Employer/Program
+
+A Note about Hyperlinks in This Document
+
+All links in this document have been created with meaningful text. The Uniform Resource Locator (URL) is also published to be available as a resource for those persons who print the document. The URL addresses that are spelled out in the document are not active links to avoid the confusion of presenting duplicate links.
+
+Introduction 
+
+It is estimated that up to 4% of the population relies on some sort of Assistive Technology to access electronic documents, emails, Web pages and forms. Assistive Technology includes; Screen Reading software, Refreshable Braille displays, and Screen Magnifiers. In the United States alone that equals 12.5 million people. If electronic forms are not created with accessibility issues in mind, they become very difficult if not impossible to complete for this large number of people. 
+
+ 
+
+Accessibility to electronic documents is a right that is protected by both Federal and State law. Creating accessible electronic documents, including forms, is important to ensure access to persons with disabilities through effective methods of communication. Additionally, it is just good business, when a very large segment of the population can equally participate and take advantage of the products or services that the company or agency provides.
+
+ 
+
+Disability Access Services of California Department of Rehabilitation developed this document as an introduction to simple steps when creating not just accessible forms in Microsoft Word and Adobe PDF, but also forms that are usable. Take a few moments to get acquainted with these steps to ensure that forms you create are fully accessible to everyone. 
+
+ 
+
+A Note about PDF Form Creation
+
+There are many file formats you can choose to begin building forms. In this document we will cover building simple Word forms, and building PDF forms beginning with a Microsoft Word document. If you create forms from other base file formats (InDesign, QuarkXPress, etc…) many of the principles for the accessibility and usability of the final product that are covered in this document will still apply.
+
+ 
+
+Microsoft Word Forms 
+
+If you work in a company or department in which everyone has Microsoft Office installed, and do not have access to a copy of Adobe Acrobat Pro software, making Word forms can be a workable option in some circumstances. 
+
+Add the Developer Tab to Word Ribbon
+
+In order to create forms in Microsoft Word, the Developer tab needs to be added to the ribbon.
+
+ 
+
+To add the Developer tab to the ribbon, click on:
+
+1.   File
+
+2.   Options
+
+3.   Customize Ribbon
+
+4.   Check the Developer checkbox
+
+ 
+
+Keyboard; Alt, F, T, then Customize Ribbon and check Developer tab
+
+Checkbox
+
+ 
+
+[] 
+
+Figure 1: File and Options menus illustrating how to show the Developer tab
+
+ 
+
+Add Form Elements
+
+Elements for the form are located in the Controls Area of the Developer tab. Click on the Legacy Tools icon, and then place form elements in the proper spots on the document. 
+
+ 
+
+Steps for placing form elements:
+
+1.   Developer tab
+
+2.   Control area
+
+3.   Legacy Tools
+
+4.   Choose form element (such as; Text Form Field, or Check Box. See Page 6 for special instructions for adding Option Buttons)
+
+ 
+
+Via Keyboard: Alt, L, N, then:
+
+1.   E for Text Form Field
+
+2.   H for Checkbox
+
+3.   O for Option Button (Radio Button)
+
+[] 
+
+Figure 2: Screenshot of Legacy Tools dropdown.
+
+           
+
+Add Help Text
+
+Once form elements have been placed into the form, Help Text must be added to each. Once a person that is using a Screen Reader begins filling out the form fields, their assistive technology will automatically switch into forms mode, and at that point the only thing they will hear is what has been added to the Help Text area. This means that if the intention of a form field is to have the person filling the form supply an answer to a question, the question itself should be in the Help Text. 
+
+ 
+
+In the following example question 2 is asking, Please provide three examples of how you successfully handled an angry customer. It then provides three text fields for examples. In the first screenshot shown below, only the words, Example #1 are entered in the Form Field Help Text box. 
+
+[]
+
+Figure 3: Example of a form question with insufficient Help Text
+
+ 
+
+This means that the person using a screen reader in forms mode will hear only Example #1, edit when they reach Question 2. They won’t know how to answer this question as they have not heard what the form creators are asking.
+
+ 
+
+In the screen shot below, the entire question has been added to the Form Field Help Text. When that same person who is using a screen reader comes to this question they will hear, 2. Please provide three examples of how you successfully handled an angry customer. Example 1, edit. 
+
+ 
+
+Obviously hearing the question will make providing an answer much easier.
+
+[]
+
+Figure 4: Example of a form question with sufficient Help Text
+
+           
+
+To add Help Text:
+
+1.   Right Click on the form element (Shift+F10 via keyboard)
+
+2.   Click on Properties
+
+3.   Click on Add Help Text
+
+4.   Enter text in the box under, Type your own:
+
+ 
+
+[] 
+
+Figure 5: Showing steps to create Help Text
+
+ 
+
+NOTE: One significant limitation of creating forms in Microsoft Word is the fact that the Help Text for form fields can only accept 138 characters. This means that if there are instructions and/or questions that require more than 138 characters to accurately convey what is being asked, some very important information will be lost. The only solution at this point may be to switch directions and create the form in PDF rather than Word. 
+
+           
+
+Adding Option Buttons (Radio Buttons)
+
+If the respondents need to be limited to just one possible answer or choice than an Option Button can be the best option. To add Option Buttons to a Word form start with the Developer tab. Activate Design Mode, then choose Option Button from the Legacy tools.
+
+ 
+
+Via Keyboard: Alt, L, DM, N, P
+
+ 
+
+[] 
+
+Figure 6: Steps to insert Option Buttons
+
+Once all the Option Buttons are located on the form, edit them by Right Clicking then choose, OptionButton Object, Edit.
+
+ 
+
+[] 
+
+Figure 7: How to Edit Option Button text
+
+ 
+
+Next, in Option Button Properties provide a name in GroupName that matches with the question. Only one Option Button within the same GroupName will be able to be activated.
+
+ 
+
+[] 
+
+Figure 8: Group Option Buttons by Question
+
+ 
+
+Deactivate Design Mode to make buttons active.
+
+ 
+
+[] 
+
+Figure 9: Deactivate Design Mode and Buttons will be active
+
+ 
+
+Add Form Title
+
+As with all documents, ensure the title of the form makes sense. When a person has many files open at the same time, an appropriate title helps make each form easier to find. This is especially true for a person who is using Assistive Technologies.
+
+ 
+
+In Word 2010, click on: 
+
+1.   File tab of the ribbon  
+
+2.   Properties 
+
+3.   Advanced Properties
+
+4.   Summary tab, add Title
+
+ 
+
+Via Keyboard: Alt, F, I, QS
+
+ 
+
+[] 
+
+Figure 10: Screenshot showing how to add a Title to a Word form
+
+ 
+
+ 
+
+Restrict Editing
+
+In order for a Word Form to work with assistive technology editing restrictions must be set. 
+
+To Restrict Editing:
+
+1.  Click, Restrict Editing
+
+2.  Check checkbox under, Editing restrictions
+
+3.  Choose Filling in Form
+
+4.  Click, Yes, Start Enforcing Protection
+
+5.  Enter a Password. 
+
+ 
+
+Via Keyboard: Alt, L, PE
+
+           
+
+[] 
+
+Figure 11: Screenshot showing how to add editing restrictions
+
+           
+
+Add Styles and Check Accessibility
+
+As with the creation of any document or form built-in styles should be applied. An appropriate heading structure, the correct application of lists, alternative text added to all visual elements, etc. For questions about how to appropriately apply built-in styles to your Word document, check out Seven Steps to Creating an Accessible Microsoft Word document available on the California Department of Rehabilitation website.
+
+ 
+
+Beginning with Microsoft Office 2010, an Accessibility Checker tool is included in Word, PowerPoint and Excel. To activate, click on File, Info,
+
+Check for Issues, and Check Accessibility.  Via Keyboard: Alt, F, I, I
+
+[]
+
+Figure 12: How to find Accessibility Checker in Word
+
+A full accessibility check of the form using automated and manual tools should be performed to ensure that built-in styles have been applied correctly, and also to hear how the form reads with a screen reader. There are several screen readers available on the market, including some that are free to download. Some of the most popular screen readers are; JAWS for Windows, NVDA (open source), Window-Eyes and VoiceOver (for iOS).
+
+           
+
+PDF Forms 
+
+Most PDF forms start in another file format, such as Microsoft Word, QuarkXPress, or InDesign, etc. PDF forms can also be developed from scratch within Adobe Designer. This document will focus on developing a PDF form from an original Microsoft Word document. However, much of what is covered in this section applies to all PDF forms, no matter in what file format they were first created.
+
+ 
+
+If creating a PDF form from an existing Word document, the first step is to open Acrobat Professional and click on Create Form. Then choose, From Existing Document. Find your document and hit Continue.
+
+ 
+
+[] 
+
+Figure 13: Screenshots showing Creating PDF file from an existing document
+
+ 
+
+Adobe Acrobat Pro will then scan the document adding form fields where it thinks they belong, and will assign a name to the form field taken from surrounding text on the document. The name it provides is also added as the Tooltip for the form field. While this is a helpful step, the text that is used as the name and also placed within the form fields is often either incorrect or insufficient to make the form usable, and therefore not-accessible.
+
+ 
+
+Below is a screenshot of part of a Word form that was imported into Adobe Acrobat Professional XI. You can see some of the Text Field names are accurately named, some are insufficiently named, and some are misnamed. 
+
+ 
+
+Examples from the form shown below;
+
+1.   Last Name is accurately named, Last Name.
+
+2.   Birth Date: Month is insufficiently named, Month.
+
+3.   Home Phone Number is misnamed, undefined_3.
+
+ 
+
+[] 
+
+Figure 14: Part of a Word form imported into Adobe Professional
+
+I will explain how to improve the names and corresponding Tooltips of these form fields in the upcoming section on Ensure the Tooltip is Helpful.
+
+           
+
+Activate Tag Annotations
+
+An accessible structure in the Word document prior to creating the PDF form automatically creates tags in Adobe. To ensure that any new tags created are assigned and therefore included in the Tag tree, and in the correct order, choose to activate Tag Annotations from the Options menu. 
+
+From the Tags menu, click on the Options button located at the top of the page under the word Tags, then check Tag Annotations.
+
+[] 
+
+Figure 15: Tags Options menu
+
+Create New Form Elements
+
+Once a Word document has been imported, new form elements can be created and existing ones can be edited.  In the example below, Check Box form fields need to be created for both the Gender and Ethnicity options.
+
+ 
+
+[] 
+
+Figure 16: Showing where Check Box form fields need to be added
+
+In Edit Forms new form fields can be added, such as; Text Fields, Check Boxes, Radio Buttons, List Boxes, Dropdown lists, Buttons, Digital Signatures and Barcodes.
+
+ 
+
+           
+
+Once placed on the form Right Click on the new or existing form element and choose Properties. Within Properties the form element name and Tooltip can be edited. The text entered as a Tooltip is what will be read by assistive technology when the software arrives at the form element. 
+
+ 
+
+[] 
+
+Figure 17: Check Box form field properties box
+
+           
+
+Ensure the Tooltip is Helpful
+
+Once someone who uses a screen reader understands that they are in a form they will switch to Forms Mode by hitting the Tab key. Once in forms mode a screen reader user will easily travel through the form from one form element to another using the Tab key. While in forms mode the screen reader will no longer be reading the text that can be seen on the form, rather it will only read what has been added in the Tooltips. 
+
+ 
+
+This means that if there is a question that offers Check Boxes for either a Yes or No response, either the question should be added to the Check Box Tooltip, or the screen reader user will be required to constantly switch in and out of forms mode to read questions. This is not an efficient way to navigate through the form.
+
+ 
+
+A Helpful Tooltip in this example will include the question, in addition to the Yes or No response. Below are examples of an unhelpful tooltip, and a helpful one. 
+
+ 
+
+[]
+
+Figure 18: A Check Box with an unhelpful Tooltip.
+
+[]
+
+Figure 19: A Check Box with a helpful Tooltip
+
+ 
+
+In the same way, if the form has several instances of asking for phone numbers, instead of simply having each Tooltip say Phone, a more helpful Tooltip might include which phone number it is requiring, such as; Client Phone Number, Employer Phone Number, etc. A visual person can use a visual cue to know which number to enter by seeing where the phone field is in relation to Client or Employer on the form. Adding a more helpful Tooltip will provide a screen reader user an auditory cue. 
+
+Control Text Field Appearance
+
+For Text Fields to be visible to everyone, Borders, Underline, or Fill Color can be added. Otherwise Text Field boxes will only be visible on screen to individuals using Assistive Technologies. 
+
+ 
+
+Right Click on the Text Field, choose Properties. Click on the Appearance tab and choose to add a border, an underline, background color, as well as control the way the border appears.
+
+ 
+
+Also ensure that the font style and size meets department or agency requirements. 
+
+ 
+
+[] 
+
+Figure 20: Text Field Properties box
+
+           
+
+Use the Read Only Option
+
+The Read Only option for Text Fields ensures that important information, long descriptions, or legal explanations are not missed. 
+
+ 
+
+When in Forms Mode it is not uncommon to miss information that is presented in text on the form, but not listed in a Form Field Tooltip. This happens most often when the text appears in between two form field elements. Below is an example of such an occurrence. In forms mode when entering a new section of the form, I did not hear the explanation about why they were collecting information about my ethnicity nor how it would be used in the determination of my eligibility. (Line item number 6 in the example below is not read).
+
+ 
+
+[] 
+
+Figure 21: Showing how a person can miss important text when in forms mode
+
+           
+
+Missing important information on the form when in forms mode is a common problem with both Word and PDF Forms. Luckily in Acrobat Professional X and beyond, Adobe incorporated the option of adding a Read Only option to Text Fields. 
+
+ 
+
+To take advantage of this feature, place a new Text Field where the text begins. In the previous example, it would be where Section 6 begins. Place the text in the Tooltip and check the Read Only box. 
+
+ 
+
+To add a Read Only Text Field:
+
+1.   Right Click
+
+2.   Choose Properties
+
+3.   Under General tab, place text in Tooltip
+
+4.   Check the Read Only box
+
+5.   Close
+
+[] 
+
+Figure 22: Making a Read Only Text Field
+
+NOTE: Modify the text to remove all hard returns when copying and pasting into the Tooltip area. Pasting will cease when the first hard return appears. [Several thousand characters of text can fit in a Tooltip. However, limit the amount as prescribed by your department, agency or company]. The text in the tooltip is not tagged, and therefore would be impossible to navigate by assistive technology users. 
+
+Check Reading Order
+
+The form is to be considered accessible when all on-screen navigation can be accomplished via the keyboard only. The Tab button moves focus, and so the Tabbing Order of the form must make sense. 
+
+ 
+
+Once all form fields have been added, and the names and tooltips entered, check the tabbing order. At the bottom of the Edit Form menu is a view of the order in which your form fields appear. Corrections to the order in which form fields are read can be made simply by dragging items to their proper spot in the Tab Order of the Edit Form menu.
+
+ 
+
+[] 
+
+Figure 23: Showing a correct Tab Reading order
+
+           
+
+Set the Title of the Form
+
+As with all types of documents, a PDF form must be given a title that makes sense.  When a person has many files open at the same time, an appropriate document title helps make each form easier to find. This is especially true for a person using assistive technologies.
+
+ 
+
+By default a screen reader will identify a document by the file name rather than the title. After giving the PDF Form a title, set the document preferences to show assistive technology users the document title rather than the file name.
+
+ 
+
+To give a PDF Form a title, go to:
+
+1.   File
+
+2.   Properties
+
+3.   Description tab, enter Title
+
+4.   Then go to Initial View tab
+
+5.   Under Window Options, set Show to Document Title
+
+ 
+
+[] 
+
+Figure 24: Give the PDF a Title and ensure it is displayed rather than the file name
+
+ 
+
+Set the Language
+
+A default language for the document must be set in order to ensure assistive technologies, visual browsers and captioning software will read the document accurately. 
+
+ 
+
+When a default language is set screen readers can load the correct pronunciation rules. Visual browsers can display characters and scripts correctly. Media players can show captions correctly. This results in a better understanding of the document’s content.
+
+ 
+
+To set the default language in PDF, go to:
+
+1.   File
+
+2.   Properties
+
+3.   Advanced tab
+
+4.   Set the Language from the drop down menu
+
+[] 
+
+Figure 25: Showing how to set the default language
+
+ 
+
+Reader Extended Version
+
+The PDF form must be saved as a Reader Extended PDF to allow people to fill out the form, save and print.
+
+ 
+
+To save as a Reader Extended PDF:
+
+1.   File
+
+2.   Save As Other
+
+3.   Reader Extended PDF
+
+4.   Enable More Tools
+
+[] 
+
+Figure 26: Showing how to save as an Extended Version PDF
+
+NOTE: Once saved as an Extended Reader PDF, changes or edits will no longer be possible. I would recommend keeping a copy of the final PDF form in a separate file. Save the Extended Reader version with a slightly different file name. If small changes or updates to the form are needed at a later date having the original PDF to work from will be a real time saver.
+
+           
+
+Accessibility Testing
+
+An accessibility check of the form must be performed to ensure that the builtin styles have been converted correctly, the tab order makes sense and to hear how the Tooltips sound to assistive technology. Many people believe the best and most effective tool to use in testing a PDF for accessibility is a screen reader. There are several screen readers available on the market, including some that are free to download. Some of the most popular screen readers are; JAWS for Windows, NVDA (open source), Window-Eyes and VoiceOver (for iOS).
+
+ 
+
+In addition to using a screen reader there are some additional tools to test a document’s accessibility, including the Accessibility Checker that is included in Adobe Acrobat Professional X and XI. It is always best to use more than one tool to ensure accessibility.  Do not rely solely on automated tools to check accessibility.
+
+ 
+
+While screen readers and other tools can help you in the testing process, there is no substitute for the human element.  Testing tools can tell you if Tooltips are present, but they cannot determine if they make logical sense, and/or include all the relevant information that is visible on the form. In addition to ensuring that all information is presented to persons using assistive technologies and that the form makes logical sense, most tools are not able to test for the appropriate use of color. Some web based tools can check for contrast levels, but most tools can’t. Additionally there may be some graphics in the form that contain important information for the user.
+
+Graphics need a human eye to evaluate their accessibility.
+
+           
+
+References/More Resources  
+
+How do I create accessible forms? http://dor.ca.gov/DisabilityAccessInfo/How-do-I-Create-AccessibleForms.html
+
+ 
+
+How do I construct accessible documents? http://dor.ca.gov/DisabilityAccessInfo/How-do-I-Construct-AccessibleDocuments.html
+
+ 
+
+Social Security Administration (SSA) Guide: Producing Accessible Word and
+
+PDF Documents
+
+http://www.ssa.gov/accessibility/files/The_Social_Security_Administration_A ccessible_Document_Authoring_Guide_2.1.2.pdf\
+
+ 
+
+Creating Accessible Forms in Microsoft Word
+
+http://doccenter.freedomscientific.com/doccenter/archives/training/accessible -forms-in-word.htm 
+
+ 
+
+Creating Accessible Word Documents  
+
+http://office.microsoft.com/en-us/word-help/creating-accessible-worddocuments-HA101999993.aspx 
+
+ 
+
+Using the Acrobat XI Pro Accessibility Checker
+
+http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/ pdfs/acrobat-xi-accessibility-checker.pdf
+
+ 
+
+Creating Accessible PDF and Word Forms Training
+
+Offered by the Disability Access Services unit of the California Department of
+
+Rehabilitation
+
+For more information and technical assistance contact the Disability Access Services
+
+ 
+
+This document may be reproduced without change and in its entirety for  redistribution purposes without prior permission from 
+
+Disability Access Services. (June 2016)
+
+ 
+
+[] 

@@ -1,0 +1,434 @@
+﻿PESO 2014 Multimedia Accessibility
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Accessibility of Videos and Other Multimedia at Texas State Agencies                                                                                                                                                                                                                                   |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Texas Workforce Commission                                                                                                                                                                                                                                                                             |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| []February 2014                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                        |
+| What does it mean for multimedia content to be accessible to people with disabilities?  When multimedia content is accessible, the same information conveyed for people with normal vision, hearing and mobility is conveyed in a timely manner to people with vision, hearing or mobility impairment. |
+|                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Table of Contents
+
+Purpose. 3
+
+Introduction. 3
+
+Benefits of Multimedia. 3
+
+Who Is Affected by Multimedia Inaccessibility Issues?. 4
+
+Hearing-Impaired People. 4
+
+Blind and Visually-Impaired People. 4
+
+Everyone Else. 4
+
+Accessibility Techniques. 5
+
+Transcripts. 5
+
+Captions. 8
+
+Audio Description. 10
+
+Special Multimedia Issues for Consideration. 12
+
+Multimedia Size & Resolution. 12
+
+Web Conferences and Other Live Video Streams. 12
+
+Archiving Web Conferences 13
+
+Use of Video at Live Events. 14
+
+Screencasts. 14
+
+Recorded Lectures (“Talking Head” Videos) 14
+
+Choosing a Multimedia Player 15
+
+Standards & Legal Requirements. 15
+
+Texas Gov. Code Chapter 2054, TAC 206, TAC 213. 16
+
+Section 508. 16
+
+WCAG 2.0 AA. 17
+
+21st Century Communications and Video Accessibility Act 18
+
+Compliance Checklists 18
+
+Additional Resources 18
+
+Vendors. 18
+
+Tools. 18
+
+Additional Information. 19
+
+ 
+
+Purpose
+
+This document provides information for Texas state agency staff about accessibility issues, requirements and options for multimedia projects.
+
+Introduction
+
+Not too long ago, websites were relatively flat and boring. Slower connection speeds meant that videos, audio files and other forms of multimedia were rare on Web pages. For most of us, however, those days are now long gone. With the pervasiveness of high-speed Internet in homes, workplaces and public access points, the Web is increasingly dynamic and engaging, and content creators have many new and powerful ways of communicating with their audiences.
+
+Multimedia communication has risks as well as advantages, and must be done thoughtfully to be accessible. A person who is deaf or hearing-impaired may miss out on important information if that information is presented only in a video or audio file. If information is presented visually in a video without an audio element, such as the video’s credits, a person who is blind will not have access to that content. Also, multimedia may create technical difficulties for people who don’t have functional speakers or headphones, people with slow Internet connections, or people using mobile devices, among others. Finally, many people prefer text-based forms of communication over multimedia and may not appreciate being forced to watch videos to get information.
+
+Both the benefits to multimedia and the possible issues related to multimedia are discussed in more detail below. Because multimedia is an important and useful method of conveying information, methods for making multimedia accessible and useful to as many people as possible are also described below. TWC is committed to providing accessible multimedia whenever it is appropriate and feasible.
+
+Benefits of Multimedia
+
+Some people mistakenly believe that accessible Web content must be flat and boring, with little color, no images and no video, but there are many benefits to multimedia for accessibility. In fact, while creating content that is beautifully-designed, dynamic and also accessible sometimes creates unique challenges, good design—including appropriate use of video—absolutely has its place. For example, videos can create issues for people who are deaf, but for a person who is dyslexic or has a cognitive impairment, pages and pages full of unstructured text can be overwhelming and difficult to comprehend. For these people, a video version of the content may be the most accessible option!
+
+Who else benefits from videos? Nearly everyone benefits from proper use of video. Some content, such as complex processes, may be difficult to explain in text alone. For example, an article explaining exactly how to create an accessible Microsoft Word document may not get the information across as easily for many people as a video demonstrating the technique. Since more and more training is moving out of the classroom and onto the Web, a video can maintain the personal touch of an actual instructor, which many people find helpful.
+
+Who Is Affected by Multimedia Inaccessibility Issues?
+
+Hearing-Impaired People
+
+Multimedia content, which is any format in which an audio stream and a video element are synchronized, often has the greatest impact on people who cannot hear the audio, particularly people who are deaf or hearing impaired.
+
+Blind and Visually-Impaired People
+
+While we may think of multimedia accessibility as primarily an issue for people who are deaf or hearing impaired, those who are blind or visually impaired also can be affected. For many videos it’s possible to get all the relevant information just by listening to the audio, however some videos include content that is displayed but not spoken. For example, a video of an auditorium lecture may be very understandable to someone who cannot see the visual feed. However, if (to continue the example) the lecturer displays a bulleted list of topics, which the sighted user can see but the unsighted user is unaware of, that unsighted user is missing important communication.
+
+Additionally, even when the multimedia itself is accessible to people who are blind (meaning that all the information is available through the audio track only), the multimedia player—the group of buttons you use to start and stop the video—may be inaccessible to a blind person’s screen reader software. There are many different multimedia player technologies, and while many are accessible, this can still be a major issue for blind people. The multimedia player accessibility issue also affects anyone else whose disability requires that he or she use a keyboard without the mouse.
+
+Everyone Else
+
+Remember that accessibility isn’t an isolated issue; it is not separate from good design. Everyone has a unique set of needs, experiences, and limitations, which may impact how they interact with video. For example, more and more people use tablets like the iPad and other mobile devices to access the Web, and these devices don’t play all types of videos. Mobile users also are more likely to be accessing the Web over cellular data connections, which are slower and less reliable, so they may prefer not to watch a video even if it is available.
+
+Other people may work in a cubicle where playing audio would be disturbing and inappropriate. If they don’t have a pair of headphones, they may choose not to watch a video. Alternatively, your audience may be in a noisy environment like an airport or a coffee shop and would not be able to hear the audio.
+
+While access to multimedia on the Web has come a long way in the last decade, there are still many people who are unable to watch videos because of bandwidth issues. Many of those people work at businesses that block video or audio streaming, including YouTube access, because of bandwidth or other concerns.
+
+Finally, some people learn best by reading text and looking at pictures. They may get annoyed if they have to watch a video to get the content. These people may be looking for an answer to a specific question and don’t want to sit through the video to see if the answer is in the video, or they may prefer to skim quickly through pages of content. A video would not be an ideal format for these people.
+
+Accessibility Techniques
+
+It is important to include accessibility, and any related budget requirements, from the initial planning of a project. When you are aware of the issues involved, it may be easier to see the benefits of making your content available to as many people as possible in an optimal format (described below) as well-worth the financial cost. If you wait to consider accessibility late in the process or after a video is fully developed, the costs of implementing accessibility may be greater.
+
+To make multimedia content accessible, you may be using one or more methods.  Some tools or techniques make the multimedia more usable to people with a variety of disabilities and to people without a disability. Some tools are more specialized and address the needs of a specific audience.  Commonly used approaches to accessible multimedia content include use of transcripts, captions, and/or audio description. 
+
+Transcripts
+
+A transcript is a text- version of the content in the multimedia presentation. Users read the transcript at their own pace. A transcript must contain all of the content spoken in the video, so minutes from a meeting are not an acceptable transcript unless, for example, a court reporter transcribes everything said during the meeting. Ideally, transcripts are placed directly beneath the multimedia player in the browser window or on another linked Web page (in HTML), but may be placed in a separate accessible Microsoft Word or PDF document.
+
+Benefits of Transcripts
+
+Much of the legal discussion later in this paper centers on whether a transcript represents a legitimate accessibility alternative means of access. Leaving that discussion aside, transcripts have several key benefits, and even if you use captions, you should consider also including a transcript. For example:
+
+-   Screen reader users, who often set their program’s speech rate to be much higher than normal speech, may prefer to listen to the transcript than listen to the slower narration in the video.
+-   Users with or without a disability may also not want to take the time to watch video but will skim the transcript.
+-   People with cognitive impairments that prevent them from comprehending audio may prefer to read the transcript at their own pace.
+-   People who are dyslexic and unable to hear the audio may not be able to keep up with quickly-changing caption text and may prefer to read the transcript at their own pace.
+-   People with technical issues that prevent them from accessing the video have the transcript as a fallback option.
+-   Search engines like Google cannot index the content of a video, but can index the transcript, making your information more available to people who are searching the Web.
+-   Similarly, people who want to share a quote from your video or note important information can copy that information directly from the transcript rather than having to retype what was spoken.
+-   A transcript is the only accessible alternative for audio-only content, such as a podcast, or video-only content, such as a self-advancing picture slideshow.
+
+Limitations of Transcripts
+
+Despite their benefits, transcripts have limitations that prevent them from providing truly equivalent experiences for people with disabilities. For example:
+
+-   People cannot get information conveyed visually and audibly at the same time. Even “talking head” videos provide the audience with facial expressions and other cues which you can’t get by reading a transcript, and in complex videos, a great deal of visual information is left out of the transcript.
+-   Videos can be easily distributed without the associated transcript, because the transcript is a separate file. For instance, videos hosted on YouTube or another multimedia hosting site will not include the transcript. Videos that are linked as downloadable files to be played on the viewer’s desktop can be downloaded, played, and forwarded without the transcript document, which is a separate download.
+-   Publishing a transcript requires having a text copy of what was spoken in the video. For scripted videos, getting the transcript will be a relatively simple task, but for “talking head” videos and other unscripted content, creating a transcript requires listening to the content and transcribing the text. For long videos, it may be necessary to contract with a professional transcriptionist.
+-   In their simplest form, transcripts can be very difficult to read. Many people find it difficult to read large blocks of text that are not created using basic document formatting styles such as paragraphs and section headings. See the section below titled Transcripts: Tips for Going “Above and Beyond” for further discussion.
+
+How to Create Transcripts
+
+Scripted Content:  Depending on the type of multimedia you are creating, a transcript may the easiest or the most complicated accessibility resource to develop. For scripted content such as training skits or prepared speeches, you can use the video’s script as the basis of your transcript. Since a transcript should include all the words spoken and other audio content, you may need to revise the script to include information about, for example, any music played or other sound effects. For scripted speeches, the transcript may need to be modified to reflect instances when the speaker went off-script. The script may also need to be modified to fit into an easy-to-read transcript format.
+
+Non-Scripted Content:  For non-scripted multimedia content, you will need to manually transcribe the video. For relatively short or simple videos, you can do this yourself by watching the video and writing down everything spoken in the video and any other sound effects. However, it is often more cost- and time-efficient to hire a professional transcriptionist, who will use tools similar to those of a court reporter to quickly create and then edit a transcript. As a pricing example, Automatic Sync Technologies (linked in the Resources section) will currently provide a transcript to government agencies for $1.60/minute with a three-day turnaround.
+
+A third option is to use an automated-captioning service, which will use speech-to-text recognition algorithms to automatically guess the words spoken in the video. For example, when you upload video to YouTube, the video will be automatically captioned if the sound quality is adequate.  You can upload a video to YouTube, have YouTube automatically create a caption file from the spoken text (or automatically add timing information if you already have a transcript), and then you can download that caption file to edit and revise as needed. In this way, YouTube is not your hosting solution, but is your captioning tool. Because this technology is fairly new and often guesses incorrectly, you will need to download the transcript file that is created and edit it to reflect what was actually spoken in the video. This is an issue you don’t need to worry about when working with a professional transcriptionist, but automatic captioning tools usually make the task of manually creating a transcript much more manageable.
+
+Transcripts: Tips for Going “Above and Beyond”
+
+While not required to meet minimum legal standards, some steps can be taken to make a multimedia transcript especially usable to as many people as possible. For example, because the benefits of a transcript extend beyond meeting the needs of people who are deaf or hearing impaired, you may want to consider adding images, headings, and maybe even a table of contents to the transcript. Images such as charts, graphs, or screenshots can help explain all the content that was seen in the video. Section headings and a table of contents make it easier for people to read the transcript and to find sections of particular interest. If done correctly, the transcript becomes a text version (or static version) of the content and the multimedia is a complementary dynamic version of the content. Ideally, this rich text version would be on the same Web page as the video itself or stored in the same location, because this is the most intuitive solution for the user and the easiest for the developer to implement. However, if needed, the text version could be on another Web page or in a separate downloadable document.
+
+Transcript Examples:
+
+·         Creating Accessible Microsoft Office 2010 Documents
+See the links to “Download Instructional Word Document” and “Download Instructional PDF” below each YouTube video link.  The text versions accompanying those training videos incorporate screenshots and section headings, so they are a stand-alone version of the training, not only a transcript.
+
+·         This American Life
+For an example of a text alternative to audio-only content, check out this podcast transcript, which uses headings and other formatting to make the content more readable.
+
+Captions
+
+For people with hearing loss and for many other people, captions are the best way to make a video accessible and usable, because they can watch the video and read the synchronized text equivalent at the same time. There are two types of captions: open captions and closed captions.
+
+Open captions are embedded into the video file, which means they automatically display and cannot be turned off. The subtitles that appear on a screen in a movie when a foreign language is spoken are an example of open captions.
+
+Closed captions are stored in a separate caption stream, which means that they may or may not automatically appear when the video is played, depending on the settings of the video player, and the user has the option to disable the caption stream if desired or change the appearance and formatting of the captions to be as visible as possible. Additionally, with some multimedia players, the video developer can include multiple caption streams, such as captions in other languages, and the viewer chooses the caption stream that meets their needs.
+
+Benefits of Captions
+
+-   People with hearing loss may be able to view the visual information in a video (facial expressions, text content in the video, etc.) while they read a text-version of the audio content at the same time.
+-   Non-native English speakers and other English language learners often can more easily understand written text in captions.
+-   People in loud environments or without usable speakers or headphones can watch the video with the audio muted and use the captions instead.
+-   Like transcripts, closed captions can be indexed by search engines, making the content available to people searching the Web. (Open captions are part of the video stream, so there is no text to index.)
+-   With minimal extra work, it’s even possible to set up captioned videos such that search results take the user to the exact point in the video when their search term was spoken, so people don’t have to watch an entire video to find the specific phrase that they are looking for.
+-   Captions clarify the content when the video has poor audio quality or the speaker has a strong accent that makes the content difficult to understand.
+
+Limitations of Captions
+
+-   Closed captions require a multimedia player that allows the user to enable or disable captions. When providing a multimedia player with caption controls is not possible (for example, when the multimedia will be downloaded by the user and played in their own desktop multimedia program), open captions embedded in the multimedia file may be necessary.
+-   People who are dyslexic and unable to hear the audio may not be able to keep up with quickly-changing caption text and may prefer to read a transcript at their own pace.
+-   While captions make a video accessible to people who are deaf or hearing impaired, people who are visually impaired may need additional alternative means of access in the form of audio description (explained below).
+-   Open captions will pixelate as the video is enlarged, and depending on the video may become unreadable at full screen resolution.
+
+How to Create Captions
+
+Because captions are just a version of the transcript that is synchronized with the video, the first step in creating captions is to create a transcript file, the process for which is detailed in the transcript section.
+
+With an accurate transcript of everything spoken in the video, plus all sound effects, all that remains is to add timing information to the transcript file, which tells the player exactly when in the video to display the captions. There are numerous tools that help you do this. In some tools, you simply watch the video at regular speed and click a button at the moment you want the captions to change, and the tool will tag the caption file with the timestamp that the video player needs. Other tools take the existing transcript file and use speech-to-text technology to guess when the words are spoken in the video. While the speech-to-text technology is very inconsistent about guessing words to create the transcript (as explained in the transcript section), the technology will usually do a much better job guessing when words from your existing transcript are spoken in the video. Remember, as described in the How to Create Transcripts section, you can use YouTube to automatically create a transcript even if you do not plan to use YouTube to host your video, and YouTube will automatically add caption timing information to that transcript. Similarly, you can upload a transcript that you’ve created to YouTube and YouTube will use speech-to-text technology to automatically add timing information. The caption file can be downloaded and used in elsewhere.
+
+Finally, if you are already using a vendor to create the transcript, it may be cost-effective to have the vendor create the caption file as well. As a pricing example, Automatic Sync Technologies (linked in the Resources section) currently will provide a transcript and captions to government agencies for $3.08/minute with a three-day turnaround.
+
+When possible, try to place captions on the video where they do not obscure important information like text subtitles (such as a person’s name in an interview video); because many video players limit placement of the captions to the bottom of the screen, it’s a good idea to keep this in mind when creating a video and avoid placing text subtitles at the bottom of the screen where captions will appear.
+
+Captions: Tips for Going “Above and Beyond”
+
+While open captions are a suitable option that may be required depending on the multimedia player used, closed captions give the viewer the most flexibility in choosing whether captions are displayed and how they are formatted. Also, some of the benefits to captions described above are only applicable to closed captions; for example, for captions to be indexed by search engines like Google, the captions need to be stored in a separate text caption file (or you need to include a transcript on the page). The actual captions file is not visible to the user, but the multimedia player reads this text file as does the search engine.
+
+Another way to go “above and beyond” is to choose a multimedia player and caption format that allows the searching of captions so the user can jump to the exact point in the video when their search term was spoken. While many people are unfamiliar with the feature, captioned YouTube videos are automatically set up to allow the user to view the transcript and skip forward and backward through the video by clicking on a line in the transcript.
+
+Because closed captions allow the user to select the caption file that meets their needs, it’s a nice benefit to translate the transcript into other languages that your audience may prefer and make those caption files available.
+
+Finally, one more optional way to communicate the auditory content of some videos is to include a “picture-in-picture” video feed of someone interpreting the audio content into American Sign Language. You will need high resolution video so that the video can be made large enough for the interpreter’s hands to be easily “read.”
+
+Caption Examples
+
+·         How To Add Closed Captions To A YouTube Video
+Check out this captioned video for additional information on captioning videos in YouTube.
+
+·         ASL in Video: Emergency Alert System Test
+For an example of American Sign Language used “picture-in-picture,” view this video, which also includes captions.
+
+·         Bonus: ASL Music Video "We're Going To Be Friends" by the White Stripes
+Speaking of including using American Sign Language in your video, watch this ASL music video for another way that audio content is translated for people who are deaf or hearing impaired.
+
+Audio Description
+
+Sometimes in videos there is content that is only available when you can see the video. For example, the video may include a slide of text that is not narrated in any way; for a person who is blind or for anyone who is not looking at the screen during that moment, that text is not available. Per Section 508 and WCAG 2.0 AA, it may be necessary to include an audio equivalent of any non-audible content. Like captions, the audio description can be either a permanent part of the video’s audio track or it can be a separate audio track that the user can enable or disable if needed. In either case, someone describes the important visual action taking place on screen in the gaps between the existing dialogue and sound effects.
+
+Note: Per WCAG 2.0 AA, audio description is necessary only for pre-recorded multimedia, so live streams do not need audio description. However, it’s still a best practice for the live presenter to explain any visual content such as PowerPoint slides. Additionally, if the live stream is later archived, you may need to include audio description.
+
+Benefits of Audio Description
+
+-   People who are visually-impaired can watch a video and have access to all of the important information.
+-   People with cognitive impairments may find this information helps them process visual content more easily. For example, a person with autism may have difficulty reading facial expressions and would benefit from having those expressions explicitly described.
+-   When videos are displayed in auditoriums or brightly-lit rooms, it may be difficult for some people to see everything happening visually in the video, so they may benefit from having all the information available as audio.
+-   The viewer may look away from the video or open another window on their computer, especially in the case of long videos. This is especially true when all of the visual information so far has also been communicated through the audio and the user is expecting that the audio channel will continue to provide all the important information.
+
+Limitations of Audio Description
+
+-   Because audio description has to fit in the gaps in the existing soundtrack, it’s often impossible to sufficiently describe all the visual information with audio description.
+-   Audio description can be very distracting for people who don’t need it if they are not able to turn it off.
+-   While some multimedia players exist that allow the user to enable or disable an audio description channel as needed, this is not common and the most popular multimedia players, such as the YouTube player, do not include audio description options. For these players, the main video will need to include audio description or two versions of the video will need to be maintained: an audio-described version and a regular version.
+-   Audio description can be the most difficult and expensive alternative means of access to implement, depending on the complexity of the video.
+
+How to Create Audio Description
+
+When you’re thinking about audio description, you’ll need to do a bit of planning. You’ll need to take the original multimedia and make a note of all the action that takes place on screen. You’ll then need to work out where the gaps between dialogue and sound effects occur, and how long they last.
+
+With that information, you’ll be able to write an audio description script. This is something of an art form, because you need to balance the right amount of description with the spaces you have in the original soundtrack. With all this in mind, you might want to think about getting a professional company to record the alternate soundtrack for you.
+
+One way to avoid the need for audio description is to make sure all visual information is naturally described audibly. For example, for a video of an instructor’s PowerPoint presentation, if the presenter describes her slides as a part of the presentation, there will be no need to create an audio description track. As another example, if your video includes a quote displayed on the screen, have a narrator read the quote aloud. In effect, the narration is audio description, but rather than seeming like an after-the-fact accessibility solution, the narration will be a natural part of the video. Of course, for some types of video, simple narration is inadequate, and real audio description should be provided.
+
+Audio Description: Tips for Going “Above and Beyond”
+
+In instances where it is impossible to sufficiently describe visual content in the gaps in the existing soundtrack, you may consider an extended audio description. For an extended audio description, the video is paused to allow the describer time to give a more detailed description. When the description is finished, the video resumes playing. To successfully implement this alternative means of access, you will need to publish two versions of the video: the regular version and the audio-described version. However, if you implement the “Above and Beyond” tip for creating a complex text version of the video to replace a simple transcript, your text version meets the need for an extended audio description, as long as all of the visual and auditory information is included in that text version.
+
+Audio Description Examples
+
+·         Life In A Day (Audio Described)
+This YouTube-produced documentary is hosted in two formats, a regular and an audio-described version.
+
+·         DARS DBS Living With Confidence
+The Department of Assistive and Rehabilitative Services hosts only one version of this video, which is audio-described.
+
+Special Multimedia Issues for Consideration
+
+Multimedia Size & Resolution
+
+Flexibility is an overlooked but important aspect of multimedia accessibility. Flexibility includes the consideration of bandwidth, multimedia size, resolution and device size (for example, smart phone, tablet, or desktop) in the creation and delivery of your video. Some streaming services limit the physical size of the multimedia file (for example, 500 MB). Size and bandwidth go together. Who is your audience and how will they be accessing the material – with a high speed urban Internet connection or a slower rural Internet connection? Make sure your multimedia service provides for variable speed streaming.
+
+You also want your users to be able to see a video across a variety of resolutions. If there is text in the video, it must be readable both on small screens and when the video is scaled to a full screen desktop monitor. Therefore, you want to present your multimedia in the highest resolution allowed by your constraints of original resolution, upload size, etc. The same is true for sign language in a video. The video must be of sufficient resolution for the sign to still be readable when the video is viewed full screen on a desktop monitor.
+
+Web Conferences and Other Live Video Streams
+
+In determining accessibility requirements for live video streams, there are two relevant event categories, which this document will refer to as “public” and “private.” Public events do not provide a method for audience members to register in advance of the event. For example, the video feed of a live speech by the Executive Director on the agency’s public website or a live webinar linked from the agency’s internal Intranet site might both qualify as public in that there is no way to know before the event what accessibility needs your audience might have. Private events allow audience members to register for the Web conference or video stream and make requests for accommodation far enough in advance of the event that alternative means of access can be arranged. For these private events, it could still be an option for people to participate without having registered in advance or to register the day of the event, but all potential audience members should receive notice of the event with enough time to register and request an accommodation.
+
+Public live video streams must have captions made available through Communication Access Real Time Translation Services (CART) or “picture-in-picture” video feed of someone translating the dialog into American Sign Language. CART services involve a professional stenographer transcribing in real-time the dialog and other relevant information (such as the speaker’s name) using software that adds the captions to the video stream. Most Web-conferencing and live video-streaming tools allow for a captions module to be included and the CART transcriptionists tool would stream directly to the caption module.
+
+Because CART services and ASL interpreter services represent an additional cost, there is no requirement to provide these services for private events unless requested. This is true even if the webinar is free and publicly-available as long as advance registration is allowed and attendees are informed about the importance of registering. In this case, the registration form should include a way for users to request special accommodation and a reasonable deadline for making the request. You would need to be prepared to offer CART or ASL services only for requests made by the deadline.
+
+As mentioned in the section on audio description, audio description is not required for live video streams, but presenters should still make a point to narrate any presentation slides they have and to ensure that they are communicating all other visual information audibly. Presenters also should be prepared to offer accessible electronic versions of their PowerPoint slides and any other handouts, as the Web conference tools often do not display the presentation in a format that is accessible to screen reader users.
+
+Archiving Web Conferences
+
+While audio description is not required for live video streams, it may be required when those videos are archived for later viewing. Additionally, while no alternative means of access may be required for Web conferences unless accommodation is requested, it is important that the archived version be captioned and accessible electronic versions of any handouts be provided. Also, since CART transcriptions are generated very quickly, there are likely to be errors, and it’s a good idea to edit your transcripts before archiving if you used CART services.
+
+It may be a good idea to consider whether the archived Web conference is the best format to communicate the information from the webinar. If the goal is simply to archive the Web conference exactly as it happened, including audience Q&A (if applicable), then an archival version is appropriate. However, Web conferencing tools are complex interfaces that are often inaccessible or (if accessible) cumbersome to use, especially for people with disabilities. Depending on the content, it may be more useful to create a simple captioned and audio-described (if needed) video, or you may want to create a text-based version of the content in the form of a PDF document or Web page. In rare cases, it may be appropriate to publish the presenter’s PowerPoint instead of the full Web conference, though the presenter probably did not create the PowerPoint intending for it to stand alone, and this approach requires that the end user have PowerPoint installed on their computer.
+
+Use of Video at Live Events
+
+Like live Web conferences, it may not be necessary to provide captions or other alternative means of access for videos shown to a live audience unless requested in advance. However, many of the benefits of captions listed above are particularly applicable to a live audience: the screen may be difficult to see in a large room or the audience may have difficulty hearing the audio, so captioned and audio-described videos are a good idea at all live events whether requested or not.
+
+Screencasts
+
+Screencasts, or screen capture videos, are instructional videos that show the presenter’s screen while a task is performed. For videos like these, the presenter or narrator must be sure to describe exactly what is happening on the screen as the task is performed. This is important for people who are blind, but because it is often easy for the non-blind audience to lose track of what the presenter is doing in the screencast, detailed narration makes the multimedia more useful to everyone. When possible, it’s a good idea to announce keyboard shortcuts even when the task is being performed using the mouse.
+
+For example, in a screencast demonstration on saving documents in Microsoft Office 2007, the narrator might say, “I’m going to click on File and then click the top button, which says ‘Save.’ Another way to save a document is to press Control + S on your keyboard.” In some cases, the way that a JAWS user and other keyboard-only users would navigate a program is so completely different that it may be helpful to create two versions of your training: a regular version and a version for JAWS users, though this is a way to go “above and beyond,” not an accessibility requirement.
+
+Recorded Lectures (“Talking Head” Videos)
+
+Because recorded lectures are probably not scripted and may often be quite long, they can present the greatest challenge for transcribing and captioning; these are the videos that are most likely to need professional transcription services, because listening to the lecture and writing down the content is a very time-consuming task for most people. Of course, the non-accessibility benefits to transcripts and captions as described above (the ability to skim a transcript or read it at your own pace, the option to search a video’s captions and jump directly to the point in the video when the searched phrase is spoken, etc.) are especially useful in long lecture videos. While captioning lectures can be challenging, the potential need for audio description is much lower, because there is less likely to be relevant visual information beyond the spoken content. The best way to make sure that audio description of a recorded lecture is unnecessary is to train lecturers to describe their PowerPoint for the audience.
+
+One type of “talking head” video is the announcement video, such as a monthly update by an agency commissioner. Unlike the recorded lecture, these announcements are probably scripted, so captioning should be as easy as adding timing information to the script. However, announcement videos may have a very short turnaround time and little opportunity to plan accessibility. Including accessibility from the beginning of the planning process should help avoid any unwanted surprises while under a deadline.
+
+Choosing a Multimedia Player
+
+Most modern Web-based multimedia players use either Flash or HTML5 technology to display video. Flash in particular can be problematic for accessibility, but it also creates issues for mobile users since the technology does not work on many mobile devices. Additionally, because of how Flash works, it is possible in some browsers for keyboard focus to get stuck in a Flash video, and keyboard users are unable to navigate the rest of the page. It’s important to use a multimedia player that uses HTML5 with Flash as a fallback, like the YouTube player among others. It’s also important that the multimedia player include controls that are accurately labeled for the screen reader and can be manipulated using just the keyboard.
+
+Another common method for providing videos to an audience is to make the multimedia available for download, rather than streaming the multimedia on the Web page. Downloaded videos will be played in whatever media player the user selects. For Windows users, videos will open by default in Windows Media Player. Because Windows Media Player uses a different method for displaying closed captions than Web-based players or other media players, you should consider posting your videos in the Windows Media format (.wmv) using Microsoft's Synchronized Accessible Media Interchange (SAMI) for displaying captions. A tutorial on this is available through WebAIM, listed in the Resources section below.
+
+Standards & Legal Requirements
+
+While the benefits and challenges discussed in earlier sections may be enough reason to take multimedia accessibility seriously, it also is important to be familiar with the federal and state laws and rules that relate to multimedia accessibility and the standards for accessible content. 
+
+Relevant laws, rules and standards include:
+
+·         Texas Government Code, Chapter 2054, Subchapter M
+
+·         Title 1 Texas Administrative Code Chapter 206 and Chapter 213 (1 TAC §206.50 and 1 TAC, Chapter 213, Subchapter B.)
+
+·         Section 508 of the Rehabilitation Act (29 U.S.C. 794d), as amended by the Workforce Investment Act of 1998 (P.L. 105-220), August 7, 1998
+
+·         Web Content Accessibility Guidelines 2.0, Level AA
+
+·         21st Century Communications and Video Accessibility Act
+
+·         TWC Electronic and Information Resources (EIR) Accessibility Policy
+
+Current Texas rules on accessibility for electronic and information resources including multimedia content mirror the current federal Section 508 standards with one exception regarding video.  A Section 508 refresh is in progress, however, and Texas rules will be revised after Section 508 is updated. 
+
+Based on the outcomes of the refresh process to date, accessibility experts expect that the updated Section 508 will align with the current international standard, Web Content Accessibility Guidelines 2.0 (WCAG).  It makes sense, therefore, to begin complying with WCAG now.  WCAG 2.0 Level AA is the recommended standard for state agencies.
+
+Each Texas state agency and institution of higher education has its own accessibility policy and accessibility compliance or remediation plan.  Be sure to check your organization’s specific requirements detailed in the accessibility policy and plan.
+
+Though much of the conversation about multimedia accessibility refers to multimedia published via the Web since that’s common, multimedia accessibility requirements apply regardless of the delivery medium—whether that’s an Internet or Intranet site, a LAN file, or a DVD/CD, and whether the audience is external or internal.
+
+The sections below highlight the multimedia aspects of the referenced laws and rules (not all elements).  It’s important to note that there may be a difference between achieving minimum legal compliance and providing content that is actually fully accessible and usable for its intended audience.
+
+Texas Gov. Code Chapter 2054, TAC 206, TAC 213
+
+The Texas law and rules that govern accessibility at Texas state agencies and provide specific guidance on how to achieve accessibility are:
+
+·         Texas Government Code, Chapter 2054, Subchapter M
+
+·         Title 1 Texas Administrative Code Chapter 206 (1 TAC §206.50 and Chapter 213 (1 TAC, Chapter 213, Subchapter B)
+
+The Texas accessibility rules require state agencies to comply with the Section 508 standards for all electronic information resources (EIR) developed, procured, or significantly modified after September 1, 2006, with one difference regarding video.
+
+TAC 206, which addresses accessibility of websites, says that state agency websites must comply with “the standards described in Section 508 Subpart B §1194.22, paragraphs (a) through (p), excluding paragraphs (b) and (k).” Related to this discussion of video, the excluded paragraph (b) of Section 508 is the section requiring that equivalent alternatives must be synchronized with the presentation. TAC 206 goes on to explain that, while an alternative means of access must be provided on request to make multimedia information available to people with disabilities, that alternative format does not need to be synchronized.
+
+The take-away is that current Texas rules specifically suggest captions and audio descriptions as accessible options, but text-only transcripts of videos also are permitted. Therefore, state agencies that provide transcripts as an equivalent alternative for multimedia or other multimedia will not be in compliance with the Section 508 standard, but will be in compliance with current Texas law.
+
+Note: TAC 213, which addresses accessibility of electronic and information resources in addition to websites, is scheduled for revision by DIR and will be modified following the in-progress Section 508 refresh to align with WCAG 2.0 (discussed below).  So any decisions about acceptable alternative means of access should be informed by the following information on WCAG 2.0.
+
+Section 508
+
+Note: The 15-year old Section 508 is currently undergoing a refresh to align with WCAG 2.0 AA, which will better reflect modern use of technology. This update is discussed in the WCAG 2.0 AA section below.
+
+Section 508 of the U.S. Rehabilitation Act of 1973, as amended in 1998 (Section 508) is the federal standard that provides, among other things, specific guidelines on how to create accessible Web pages and multimedia.
+
+1194.22 (b) - Multimedia
+
+Section 508 provides clear instructions on how to deal with videos. According to paragraph (b) of Section 1194.22, “Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.”  In simple terms, this means that captions and audio description (explained in earlier sections) are required for videos to be in compliance with Section 508. Transcripts, for example, do not comply with the guideline because they are not an equivalent alternative if not synchronized with the presentation.
+
+1194.22 (m) – Plug-ins
+
+An additional Section 508 standard provides guidance on the multimedia player used to display the video. The most commonly-used players, such as the multimedia player on YouTube Web pages, uses a technology called Flash, which must be installed on the user’s computer. Paragraph (m) of Section 1194.22 says, “When a Web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with §1194.21(a) through (l).”
+
+This means that the multimedia player (Flash, Quicktime, Windows Media Player, or any other technology) must be navigable to a person using screen reading software. Some multimedia players pass this requirement but others do not, so you will need to do some research to find the best option and possibly attempt to interact with the player using just the keyboard and a screen reader.
+
+WCAG 2.0 AA
+
+The Web Content Accessibility Guidelines 2.0 are another important and relevant accessibility standard for consideration.  Developed by the World Wide Web Consortium (W3C), the main international standards organization for the World Wide Web, WCAG 2.0 is the primary accessibility standard used globally and by private industry in the United States, making it a useful standard for reference. 
+
+Although current state law does not require us to comply with WCAG standards, we are moving in that direction so complying now will give us a head start on necessary changes.  In the near future, it is expected (based on a 2011 draft of Section 508 published in the Federal Register and other communication from the Access Board) that Section 508 will be updated to be more in line with WCAG 2.0, specifically compliance level AA of WCAG. State accessibility rules will be revised by DIR once the Section 508 refresh is complete.  Web pages and products that comply with WCAG 2.0 AA will be in compliance with the updated Section 508 when it goes into effect.
+
+WCAG 2.0 AA Guideline 1.2 requires alternatives for time-based media, including captions for pre-recorded and live audio in synchronized media. The guideline also suggests several optional or “nice-to-have” accessibility features, which are listed as the AAA compliance level, such as sign language interpretation and additional formats for the content.
+
+When Section 508 is updated to be in line with WCAG 2.0 AA, DIR will need to update the TAC rules accordingly. Rule revision is a lengthy process; it likely will take six months or longer for the TAC update. However, some discussion has already occurred suggesting that, in light of technological advancements, Texas rules will fall more in line with other accessibility requirements by requiring captions and other synchronized alternatives.
+
+The take-away is that voluntary compliance with WCAG 2.0 compliance level AA, the more-widely accepted standard--including captions for video, is the safest bet for ensuring that videos are both completely accessible and will be compliant with Section 508 and TAC rules once the update process is complete.
+
+21st Century Communications and Video Accessibility Act
+
+Effective September 30, 2012, Federal Communication Commission regulations mandated by the 2010 21st Century Communications and Video Accessibility Act require that all video delivered online must be captioned if it was shown on television with captions.
+
+The take-away is that any content posted anywhere online by the agency or anyone else that previously aired on television with captioning, such as a commercial or public service announcement, must be captioned.
+
+Compliance Checklists
+
+The checklists linked below are quick reference tools for multimedia creators who are familiar with the more detailed information in this document. Accurately completing the checklists requires accessibility knowledge and skill.  People who create multimedia should review the techniques explained in this document and take additional training if needed.
+
+1.    Multimedia Accessibility Checklist: Accessible Videos (recorded)
+
+2.    Multimedia Accessibility Checklist: Webinars & Live Streams (live)
+
+3.    Multimedia Accessibility Checklist: Use of Video in Live Presentations
+
+Additional Resources
+
+Multimedia technologies are changing every day. In particular, automatic speech-to-text recognition engines continue to get better and better so new tools to automatically create captions continue to pop up, and as the HTML5 technology improves, new accessible multimedia players are being developed. The resources listed below should be seen as suggestions to start your research.
+
+Vendors
+
+-   CaptionSync – CaptionSync combines automatic speech-to-text technology with professional transcriptionist review to create professional and affordable captions and transcripts very quickly. CaptionSync offers special government pricing and also provides a variety of packages and options to meet your needs.
+
+Tools
+
+-   MAGpie – MAGpie is the original caption and audio description editor and exports a variety of file formats. MAGpie is also free and open-source, making it a great option for many people.
+-   Camtasia Studio – Camtasia Studio is a screen recording and video editing software package that costs $299. If you are creating screencast video tutorials, Camtasia is great option that happens to include a very user-friendly caption editor. The captions can be stored in the multimedia file as open captions or exported in a variety of formats.
+-   JW Player Controls – While many multimedia players are accessible to keyboard users and allow for closed captions, fewer players include controls that allow the user to enable or disable a secondary audio channel for audio description. The free and open-source JW Player Controls meets this requirement.
+-   YouTube – Videos uploaded to YouTube are sure to be viewable on the greatest number of devices, because many mobile devices include dedicated YouTube apps, and even if they do not, YouTube creates HTML5 video that can be viewed on many devices. The YouTube player is fully keyboard-accessible and allows for multiple closed caption channels, though it doesn’t allow for a separate audio description channel. Hosting videos on YouTube also addresses some potential bandwidth concerns related to locally hosting videos.
+
+Even if you prefer not to host the video on YouTube, you may consider using YouTube’s automatic captioning or automatic timing feature. Use of YouTube as a captioning tool is discussed in the Transcript section of this document.
+
+Additional Information
+
+-   WebAIM: Web Captioning Overview
+-   WebAIM: Audio Description
+-   WebAIM: Introduction to Captioning for Windows Media
+-   Transcripts on the Web
+-   What is Audio Description?
+-   Captioning Resources
+-   Accessible HTML5 Media Players and More
+-   Adobe Connect Accessibility Tips
+-   IBM Presentation: Overcoming Accessibility Challenges of Web Conferencing (PDF)
+
+ 

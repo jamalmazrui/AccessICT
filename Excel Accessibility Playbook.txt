@@ -1,0 +1,952 @@
+﻿       
+ 
+   Pearson Excel Accessibility Playbook
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Contents
+Pearson Excel Accessibility Playbook  1
+Contents. 2
+INTRODUCTION TO ACCESSIBILITY. 4
+Intended Audience. 4
+What is Accessibility?. 4
+Need for Accessibility. 5
+How people with disabilities use Excel?. 5
+Accessibility Guidelines. 7
+WCAG 2.1. 7
+TABLES. 9
+Defining Tables. 10
+Defining Table Headers. 14
+INPUT MESSAGES. 18
+Add Input Messages. 18
+Descriptive Input Messages. 20
+IMAGES AND CHARTS. 23
+Informative Images. 24
+Decorative Images. 26
+Shapes or SmartArt Graphics. 28
+Charts. 31
+FILE CONTENT AND INSTRUCTIONS. 33
+Descriptive File Title. 33
+Language. 35
+Add Instructions. 38
+COLOR. 41
+Use Color Wisely. 43
+Text Contrast. 46
+Non-Text Contrast. 49
+LINKS. 53
+Descriptive Link Text. 54
+SHEET NAMES. 57
+Descriptive Sheet Name. 57
+FORMATTING CELLS. 59
+Merge and Split Cells. 59
+Blank Cells. 61
+EXCEL ACCESSIBILITY CHECKER. 64
+Accessibility Checker Rules. 64
+Errors and Warnings. 65
+APPENDIX. 68
+ 
+
+ 
+INTRODUCTION TO ACCESSIBILITY
+Pearson is committed to accessibility and is taking all possible measures to make the online learning experience accessible for all learners. The Excel Accessibility Playbook was put together to provide content producers with the guidance required for creating accessible Excel documents and offer buyers courses that not only have web content that is accessible but also accessible documents available in Excel format.
+The playbook includes techniques for implementing accessibility across different elements, such as links, color, images, tables etc. It identifies both techniques that must be adopted, and techniques that should be avoided, from an accessibility perspective. Along with the techniques, the playbook lists tips, and tricks for enhancing accessibility of Excel documents. 
+The playbook comprises of examples of different Pearson Excel documents and lists possible solutions to help the team implement accessibility. Not only will the playbook serve as a valuable reference, but it can also equip the team to implement accessibility while designing and authoring all future Pearson Excel documents. 
+Intended Audience 
+The Excel Accessibility Playbook is intended for the entire technical team that works to author, as well as maintain, Pearson's Excel documents. Team members include: 
+*         UI designers
+*         UX professionals
+*         Content Digitizers
+*         Content writers
+*         Courseware Quality Assurance (QA) teams
+ 
+What is Accessibility? 
+Accessibility refers to making a product or service usable for as many people as possible. In the digital space, accessibility ensures that websites, applications, documents, online learning solutions etc. are usable for all users including those with disabilities. Often accessibility is viewed at something that is meant for people with disabilities. However, accessibility benefits each one of us in different situations.
+Today digital accessibility has been adopted in most countries across the globe. To make accessibility happen, there are standards, guidelines and specifications that outline ways to make it a reality. Technologies include support for developing accessible solutions and the demand for accessible products is increasing by the day. 
+In simple terms, accessibility is ensuring that everyone can use a product or service irrespective of their abilities or situation of use. In physical space, we may refer to accessibility as providing ramps to allow people on a wheelchair to come in easily similarly in the case of digital accessibility it refers to making the online solutions available for all users including those using assistive technologies. 
+ 
+Need for Accessibility
+Excel documents are available widely on different online portal and this is no different when it comes to online learning. Most of our daily digital activities from learning, employment, healthcare, and government procedures involve access to Excel documents. Access to Excel content is therefore essential for all users including for those with disabilities. 
+Some of the key benefits of digital accessibility that also apply to Excel documents include:
+*         Ensures access to essential online activities for all users.
+*         Increase in customer base. 
+*         Helps to conform with accessibility standards and guidelines.
+*         Builds brand loyalty.
+*         Drives innovation by making solutions that are accessible for wide range of users.
+*         Adhere to legal requirements. 
+*         Contribute towards building an inclusive society.
+ 
+How people with disabilities use Excel?
+Ever thought how someone who cannot see will access diagrams explaining functions of different body parts? Or how someone who cannot listen will access a recorded video lecture explaining the solar system embedded in an Excel document? How someone with upper limb difficulties will complete their interactive assignments? Technology acts as an enabler for people with disabilities and they can read textbooks, submit their assignments, fill up their tax applications, read their utility bills and many more day-to-day activities available online in Excel format. 
+Digital evolution has made life very easy for all of us and more so for people with disabilities as they can accomplish their tasks independently. People with disabilities use different assistive technologies to access the Excel documents either using a computer, tablet, or mobile device. 
+Let us learn about few of the assistive technologies used by people with disabilities to access Excel documents:
+Visual Disabilities
+*         Screen readers: reads out the information displayed in an Excel document for their users. Users can access the information by listening to the screen reader and using a keyboard to input the data or give commands. Screen readers also provide their users with option to access different Excel elements using different keystrokes. 
+*         Screen magnifiers: enlarges the information displayed in an Excel document for their users. Users can access the information by either using a mouse or a keyboard. Since users access the information in an enlarged form, not all the information is visible on the screen. This requires users to scroll a lot to access the information. 
+*         Refreshable Braille Displayers: is a piece of hardware which can be attached to a computer, tablet, or mobile phone. It works in combination with a screen reader. The information read out by a screen reader is refreshed on the braille displayer and users can touch the braille pins and read the information. Users can read the information using the braille displayer whereas they can input the data using a keyboard. Refreshable braille displayers are used by blind and deaf-blind users.
+Hearing Disabilities:
+*         Synchronized captions help people with hearing disabilities access videos and text transcripts help them to access audio-only content with ease. They do not require any assistive technology as such to access the Excel content. 
+Learning Disabilities:
+*         Text to speech synthesizers (TTS): reads out the text displayed on the screen as well as highlights the text. This helps users in understanding the information when it is read out to them. TTS software also provide users with options to view the information using different contrast themes. 
+*         Excel prediction tools: predicts words while users are typing data. These tools are found very helpful by users with learning disabilities especially while filling up forms as they do not have to memorize spellings. 
+Mobility Disabilities:
+*         Adaptive keyboards: come in different shapes and sizes to meet user's needs. Split keyboards (where the standard keyboard is split in two parts), one handed keyboard (which are adapted for users who do not have one hand), keyboards used in the bank that have multiple keys with combination of the digit 0 etc. are some of the examples of adaptive keyboards. These keyboards are used by people with mobility disabilities to meet their needs. 
+*         Sip-n-puff devices: are used by people with severe mobility disabilities, such as those who have issues with upper and lower limbs. With sip-n-puff devices, people can use their breath to click on a button or a link. While typing, people using sip-n-puff devices use the onscreen keyboards (readily available in different operating systems) with their device to fill up the details. 
+*         Onscreen keyboards: are virtual keyboards that are used by people who find it difficult to press the keys on a hardware keyboard. Onscreen keyboards are often used in combination with other hardware devices, such as eye tracking tools, head mouse etc. 
+*         Voice recognition systems: is a software using which people can control their computer by giving voice commands. Users can click on links or buttons, dictate their details while filling up forms etc. Adding descriptive label for links and buttons allow users to give accurate voice commands while accessing information of an Excel document. 
+ 
+Some of the assistive technologies are today available with different operating systems, such as Windows, Mac OS, iOS, Android, Linux, Chrome OS etc. All in all, people with disabilities have many choices when it comes to assistive technologies and access their digital documents. 
+Microsoft Excel offers a range of accessibility features for the benefit of assistive technology users. From compatibility with different Windows in-built as well as third party screen readers to keyboard shortcuts users have lots of customization options to choose from. Excel also includes a Read Out Loud feature that helps people with learning impairments listen to the content of the Excel document along with onscreen highlight to follow the speech output. Excel is also compatible with Windows in-built and leading screen magnifiers as well as speech recognition systems. 
+ 
+Accessibility techniques outlined by WCAG 2.1 can be applied for authoring accessible Microsoft Excel documents and we will be referring to different success criteria's that are applicable to Excel documents in this playbook. Pearson has their own accessibility standpoint when it comes to accessibility guidelines and standards for different technologies so let us discuss that now.
+ 
+Accessibility Guidelines
+Accessibility guidelines are available for different technologies, such as web, software, PDF, Videos etc. When it comes to web content the universal guidelines all countries and companies follow is the Web Content Accessibility Guidelines (WCAG). This is true to Pearson as well. Pearson Accessibility Guidelines are aligned with the latest version of WCAG 2.1 at Level AA.
+ 
+WCAG 2.1
+WCAG 2.1 was published on 5th June 2018. Web Content Accessibility Guidelines (WCAG) 2.1 are developed by the World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI) group to help individuals, companies, and governments across the globe to implement accessibility in their web content. 
+The Web Content Accessibility Guidelines provide directions for making the web content more accessible for users with different types of disabilities. 
+WCAG 2.1 comprises of 13 guidelines that are organized under 4 principles: 
+1.       Perceivable - Information and user interface components must be presentable to users in ways they can perceive. 
+1.1.  Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language. 
+1.2.  Time-based Media: Provide alternatives for time-based media. 
+1.3.  Adaptable: Create content that can be presented in different ways (For example, simpler layout) without losing information or structure. 
+1.4.  Distinguishable: Make it easier for users to see and hear content including separating foreground from background. 
+2.       Operable - User interface components and navigation must be operable. 
+2.1.  Keyboard Accessible: Make all functionality available from a keyboard. 
+2.2.  Enough Time: Provide users enough time to read and use content. 
+2.3.  Seizures: Do not design content in a way that is known to cause seizures. 
+2.4.  Navigable: Provide ways to help users navigate, find content, and determine where they are. 
+2.5.  Input Modalities
+3.       Understandable - Information and the operation of user interface must be understandable. 
+3.1.  Readable: Make text content readable and understandable. 
+3.2.  Predictable: Make Web pages appear and operate in predictable ways.
+3.3.  Input Assistance: Help users avoid and correct mistakes.
+4.       Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+4.1. Compatible: Maximize compatibility with current and future user agents, including assistive technologies.
+Each guideline has testable success criteria for conformance at Level A, Level AA or Level AAA. In all, there are 78 success criteria that are grouped under the above-mentioned 13 guidelines. Often the questions that come up include: Do we have to comply with all the 78 success criteria for Excel documents as well? What is acceptable? How much is enough? 
+Below is a brief explanation of WCAG conformance levels:
+*         Level A - Must be done.
+*         Level AA - Should be done.
+*         Level AAA - Can be done.
+Across the world, Level AA conformance is what companies, organizations and governments aim to achieve. WCAG 2.0 is approved as an ISO standard: ISO/IEC 40500:2012. WCAG 2.1 is an extension of WCAG 2.0 and it includes all the success criteria's that were part of WCAG 2.0. 
+All Pearson Excel documents should aim to satisfy WCAG 2.1 Level A and Level AA success criteria. Some of the WCAG 2.1 success criteria that are not applicable for Excel documents include: 
+*         Level A: 2.1.4, 2.4.1, 2.5.1, 2.5.2, 2.5.4 and 4.1.1.
+*         Level AA: 1.3.5, 1.4.12, 1.4.13, 2.4.5, 2.4.7, 3.2.3, 3.2.4 and 4.1.3.
+
+ 
+TABLES
+Tables are used in an Excel document to present relational data. Tables allow data like text, images, links, other tables, etc. to be arranged into rows and columns of cells. 
+In Excel, to ensure accessibility use simple table structure. The table and their headers both need to be defined and the table reading sequence needs to be logical in order to make them accessible. 
+Information in a table is read out for screen reader users from left-to-right and top-to-bottom order. A screen reader reads information of one cell at any given time, as users navigate from one cell to another information available in the next cell is then read out. Even though visually the information might make perfect sense when looked at it, it might not be meaningful for screen reader users. 
+For example, a table is used to display details of students as stated below: 
+*                     Names of students are presented as column headers. 
+*                     Age, gender, address and marks obtained in subsequent rows. 
+Screen reader users will first listen to all the student's names, followed by their age, gender, address and lastly marks obtained by each of them. Visually all this information makes perfect sense but for screen reader users they will listen to John's age followed by Michael's age and so on. 
+Name John Michael Sarah Elizabeth Austin Age 12 13 13 12 12 Gender Male Male Female Female Male Address 19th Avenue Fulton Street Lombard Street Grant Avenue Fulton Street Marks Obtained 81/100 59/100 90/100 75/100 95/100  
+In the above example, it would be perfect if all the information about a student is presented in a single cell on row 2 which will make the reading sequence/order logical for screen reader users. Alternatively, Name, Age, Gender, Address, and Marks Obtained can be provided as column headers which will provide information about a student in a single row, one after the other. This will make the information meaningful for screen reader users. 
+Name Age Gender Address Marks Obtained John 12 Male 19th Avenue 81/100 Michael 13 Male Fulton Street 59/100 Sarah 13 Female Lombard Street 90/100 Elizabeth 12 Female Grant Avenue 75/100 Austin 12 Male Fulton Street 95/100  
+ 
+ 
+  
+ 
+1.3.1 Info and Relationships                                                                                      Level A
+Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. 
+         
+         
+ 1.3.2 Meaningful Sequence                                                                                      Level A
+When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.
+ 
+ 
+Defining Tables
+Tables are used to present related data. A table consists of data cells and header cells.
+While defining a table data should be organized in rows and columns. A table does not generally include merged cells but at times might include blank cells.
+ 
+ 
+ 
+ 
+WCAG Success Criteria WCAG Conformance level 1.3.1 Info & Relationships A 1.3.2 Meaningful Sequence A  
+How to implement?
+To make data tables accessible in an Excel document, the following things need to be kept in mind:
+*         Ensure related data should be organized in rows and columns and should be marked as table.
+*         Ensure blank cells, rows or columns are not included.
+*         Avoid merging and splitting of cells as it might be difficult for assistive technology users to navigate. 
+*         Ensure "My table has headers" option is selected.
+*         Ensure "Header Row" option is checked in the Table Style Options.
+*         Add brief "Name" and "Description" for the table to make it easier for users with visual impairments to perceive the tabular information.
+To define tables in an Excel document, perform the following steps:
+1.       Open the Excel document.
+2.       Navigate to the content which needs to be defined as a table.
+3.       Select all the rows and columns. 
+4.       In the Insert tab, select "Table".
+
+5.       In the Create Table dialog box, ensure to check the option "My table has headers" and then click on "OK".
+
+6.       Select the table and in the Table Design tab ensure to provide an appropriate name to the table in the "Table Name" in the properties category and make sure the "Header Row" option is checked in the Table Style Options. 
+
+ 
+
+ 
+Practices to Apply & Avoid
+  Ensure the table is appropriately marked as a table.
+For example, in the btma5e2_27A Excel document, the table containing information of "Balances", "Beginning of Year" and "End of year" has been appropriately marked as a table. 
+
+    Avoid using visual formatting to define tables.
+For example, in the btma5e6_25A Excel document, the table containing information of "Month", "Miles Driven" and "Van Operating Cost" has been inappropriately presented as a table using only visual formatting. 
+ 
+
+ 
+  Ensure to add an appropriate table name.
+For example, in the btma5e6_25A Excel document, the table containing information of "Month", "Miles Driven" and "Van Operating Cost" has been appropriately given a table name of "Broadway Floral".
+ 
+
+    Avoid leaving any blank cells in a table.
+For example, in the bt_ma5eE6_37A _template Excel document, in the "Operating Costs" table, some data cells in the "Amount" column are empty. 
+
+ 
+How to test for Accessibility?
+To test tables for accessibility, perform the following steps:
+1.       Open the Excel document.
+2.       Navigate to the content, select the content of the table.
+3.       Check if "Table Design" tab is available in the ribbon.
+4.       If yes, on the Review tab, in the Accessibility group click on Check Accessibility button.
+5.       Check if errors related to merge cells as well as reading order warnings associated to tables are displayed.
+6.       If the condition in step 3 and 5 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+7.       If the warning related to reading order is true, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+ 
+Defining Table Headers
+Data tables are used to present related data. A data table consists of data cells and header cells. Table headers are added to provide context for users and if this contextual relationship is not exposed programmatically, it will pose accessibility barriers for people with visual disabilities.
+Having clear column headings can help provide context and assist navigation of the table's contents. A simple data table comprises of either single set of column headers or row headers or both column and row headers. A simple data table does not generally include merged cells but at times might include blank cells. Screen readers identify the table headers and announce them for users as they navigate through the data.
+Tip: 
+Column headers are supported as far as Accessibility is concerned and complex data tables cannot be made accessible in Excel documents.
+ 
+WCAG Success Criteria WCAG Conformance level 1.3.1 Info & Relationships A 1.3.2 Meaningful Sequence A 
+    How to implement?
+To make table headers accessible in an Excel document, the following things need to be kept in mind:
+*         Ensure blank cells, rows or columns are not included.
+*         Avoid merging and splitting of cells as it might be difficult for assistive technology users to navigate. 
+*         Ensure "My table has headers" option is selected.
+*         Ensure "Header Row" option is checked in the Table Style Options.
+To define table headers in an Excel document, perform the following steps:
+1.       Open the Excel document.
+2.       Navigate to the data table for which table headers need to be defined.
+3.       Place the cursor on the header row and right-click to select Table > Alternate Text... 
+
+ 
+4.       Add a brief Title and Description about the table in the Alt Text tab.
+
+5.       Click OK to apply the changes.
+6.       In the Table Tools Design Tab, select Header Row checkbox in the Table Style Options group.
+
+ 
+Practices to Apply & Avoid
+  Ensure to define the table headers for data tables.
+For example, in the tt_FA12S9_6_solution Excel document, headers of the table showing the "Amortization table" are appropriately marked as headers.
+ 
+
+    Avoid using visual formatting to define table headers. 
+For example, in the tt_FA12S9_6_solution Excel document, the headers of this table are marked inappropriately. 
+ 
+
+How to test for Accessibility?
+To test tables for accessibility, perform the following steps:
+1.       Open the Excel document.
+2.       On the Review tab, in the Accessibility group click on Check Accessibility button.
+3.       Check if errors related to table headers, merge cells as well as reading order warnings associated to tables are displayed.
+4.       If any errors related to tables are displayed, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+5.       If the warning related to reading order is true, then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.2 at Level A.
+
+ 
+INPUT MESSAGES
+Input Messages in Excel documents are used to show a message when a cell is selected by a user. It is particularly useful if you want to show some instructions to the user when the user selects a cell. Few of the examples where we could use input messages are to display form filling instructions or data entry instructions. In Excel, custom input or error messages can also be used to set rules for each field to prevent data-entry errors.
+Add Input Messages
+Adding input messages helps user understand the content and functionality associated with the cell such that user enters valid data.
+WCAG Success CriteriaWCAG Conformance Level1.3.1 Info & Relationships A3.3.2: Labels or InstructionsAHow to implement?
+1.       Open the Excel document.
+2.       Navigate to the first cell of the excel document or cell where user have to input data.
+3.       In the Data tab, select "Data Validation" in the "Data Tools" group.
+
+4.       In the Data Validation dialog box, navigate to the "Input Message" tab.
+5.       Add input message in the "Input message" field, and then click on "OK".
+
+Practices to Apply & Avoid
+  Ensure to add input messages to give instructions to the excel file.
+For example, in the tt_FA12S9_6_solution Excel document, an input message of "The sheet shows bond information of Pearce Corporation and requirements across cells A3:B8, A11:B11, A13:F18 and A20:D29 respectively." has been specified to inform user of the content of the file.
+
+ 
+    Avoid not specifying input messages for sheets, table headers or data entry cells. 
+For example, in the tt_FA12S9_6_solution Excel document, no input message has been specified for the sheet. 
+
+ 
+ 
+How to test for Accessibility?
+1.       Open the Excel document.
+2.       Navigate to the first cell of the excel document if instruction using input message has been added or not.
+3.       Check cell where user have to input data if input message has been added or not.
+4.       This can be done by selecting that cell, Alternatively,
+5.       In the Data tab, select "Data Validation" in the "Data Tools" group.
+6.       In the Data Validation dialog box, navigate to the "Input Message" tab.
+7.       Check if input message has been added or not.
+8.       If the conditions in step 2, 4 to 7 fail then it is an accessibility violation as per WCAG 2.1 success criteria 1.3.1 at Level A.
+9.       If the conditions in step 3 to 7 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 3.3.2 at Level A.
+ 
+Descriptive Input Messages
+Input messages helps user understand the content and functionality associated with the cell such that user enters valid data. Therefore, it is necessary to add descriptive input messages.
+How to implement?
+1.       Open the Excel document.
+2.       Navigate to the first cell of the excel document or cell where user have to input data.
+3.       In the Data tab, select "Data Validation" in the "Data Tools" group.
+
+4.       In the Data Validation dialog box, navigate to the "Input Message" tab.
+5.       Add a descriptive input message in the "Input message" field, and then click on "OK".
+ 
+
+ 
+Practices to Apply & Avoid
+  Ensure to add descriptive input messages in the form of instructions or additional information for tables headers or data entry cells. 
+For example, in the tt_FA12S9_6_solution Excel document, an input message of "Bond Information of Pearce Corporation table heading Assumptions" has provided for the cell with the table header "Assumptions". 
+ 
+
+ 
+    Avoid adding non-descriptive input messages.
+For example, in the tt_FA12S9_6_solution Excel document, a non-descriptive input message of "Assumptions" has been provided for the table header "Assumptions". 
+ 
+
+ 
+How to test for Accessibility?
+1.       Open the Excel document.
+2.       Navigate to the first cell of the excel document or cell where user have to input data, check if descriptive input message has been added or not by selecting that cell, Alternatively,
+3.       In the Data tab, select "Data Validation" in the "Data Tools" group.
+4.       In the Data Validation dialog box, navigate to the "Input Message" tab.
+5.       Check if descriptive input message has been added or not.
+6.       If the conditions in step 2 to 5 fail, then it is best practice to add descriptive input message.
+
+IMAGES AND CHARTS
+Images are used in an Excel document to convey information as well as enhance the visual presentation of the document. Descriptions need to be provided for images to make the information available for all users, including users with vision disabilities, users with learning disabilities etc. Alternate text must be specified for each informative image in an Excel document whereas decorative images must be marked as decorative to convey to screen reader users that they are non-informative. 
+A screen reader reads out the alternate text specified for the image and skips pass the decorative images. In an Excel document, there are mainly three types of images:
+*         Informative images: used to display logos, pictures, illustrations etc.
+*         Complex images: used to display graphs, diagrams, screenshots etc.
+*         Decorative images: used to display separator lines, background images, watermarks etc.
+Few tips for writing alt text:
+*         Ensure that if an image contains text and the similar information is not conveyed in surrounding text description is provided. 
+*         Ensure that if an image contains text that is only use for visual effects is mark as decorative. 
+*         Ensure if an image contains meaningful information however the similar information is conveyed in surrounding text description is not required. 
+*         Ensure that a simple graphic or photograph contributing meaning is present text description is provided. 
+*         Ensure that the information conveyed in complex images are provided elsewhere in the sheet itself. 
+*         Avoids using words like image, photo, etc. in the alternate text. 
+*         Ensure to provide brief and concise alternate text. 
+*         Priorities the information in alternate text, provide most important part first. 
+*         Avoid using running text together in the alternate text. 
+*         Ensure to use punctuation at regular interval in the alternate text.
+ 
+
+1.1.1 Non-text Content                                                                                             Level A
+All non-text content that is presented to the user has a text alternative that serves the equivalent purpose.
+ 
+ 
+Informative Images
+Informative images are used for conveying information, typically pictures, photos and illustrations. They need to have a text alternative that should be a short description conveying the essential information presented by the image. The description should accurately convey the information displayed in the image. 
+Alternate text for the image must not include its visual presentation but must describe the information. Avoid using words like "photo", "image", "graphic" etc. Screen readers inform their users that it is an image and thus including this information again in the alternate text will add up to the listening for users.
+If an informative image includes text over it, then the alternate text must accurately convey the textual information for the benefit of screen reader users. Information conveyed through the image if available in the surrounding text does not need to be repeated in the form of alternate text.
+ 
+
+WCAG Success CriteriaWCAG Conformance Level1.1.1 Non-text Content A 
+How to implement?
+This section lists the steps for adding alternate text for informative images in an Excel document: 
+1.       Open the Excel document that includes informative images.
+2.       Select the informative image and click on Alt Text button in the Format ribbon tab. 
+3.       Alternatively, right-click on the image and select Edit Alt Text. 
+4.       Add the alternate text in the text field in the Alt Text pane. 
+ 
+Practices to Apply & Avoid
+  Ensure to specify accurate and descriptive alternate text for informative images.
+For example, in the bt_ma5eE2_27A_template Excel document, an accurate alternate text "Pearson Logo" is specified for an informative image. 
+ 
+
+    Avoid marking informative images as decorative.
+For example, in the bt_ma5eE2_27A_template Excel document, the informative image has inaccurately been marked as decorative. 
+
+ 
+How to test for Accessibility?
+To test if alternate text is specified for informative images, perform the following steps:
+1.       Open the Excel document that needs to be tested.
+2.       Right-click on the informative images and select Edit Alternate Text. 
+3.       Check if textual description is specified in the text field of the Alt Text pane.
+4.       Check if the alternate text sufficiently describes the information conveyed by the image. 
+5.       If the conditions in step 3 and 4 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+ 
+Decorative Images
+Decorative images are used to enhance the presentation of an Excel document. Since these images do not convey any information, a descriptive alternate text is not required to be specified. Decorative images when marked as such will convey to screen readers that they can skip these images. 
+
+WCAG Success CriteriaWCAG Conformance Level1.1.1 Non-text Content A 
+How to implement?
+This section lists the steps that need to be followed in order to mark decorative images in an Excel document:
+1.       Open the Excel document that includes decorative images.
+2.       Right-click on the decorative image.
+3.       Click on Edit Alt Text. The Alt Text pane will appear.
+4.       Select the "Mark as decorative" checkbox. This will gray out the text edit field. 
+ 
+
+ 
+
+ 
+Practices to Apply & Avoid
+  Ensure to mark all decorative images as decorative.
+For example, in the bt_ma5eE2_27A_template Excel document, a decorative image is accurately marked as decorative. 
+ 
+
+ 
+    Avoid specifying alt for decorative images.
+For example, in the bt_ma5eE2_27A_template Excel document, alt text is inaccurately specified for the decorative image.
+
+How to test for Accessibility?
+To test if decorative images have been implemented correctly, perform the following steps:
+1.       Open the Excel document that includes decorative images. 
+2.       Right-click on the decorative image and click on Edit Alt Text.
+3.       Check if "Mark as decorative" checkbox is selected in the Alt Text pane. 
+4.       If the condition in step 3 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+ 
+
+ 
+Shapes or SmartArt Graphics
+Shapes or SmartArt graphics are a visual representation of your information and ideas. For shapes and SmartArt that convey important information in order for the content to be accessible for them, the alternate text must be included.
+
+WCAG Success CriteriaWCAG Conformance Level1.1.1 Non-text Content A 
+How to implement?
+This section lists the steps for adding alternate text for shapes or SmartArt graphic in an Excel document: 
+1.       Open the Excel document that includes informative images.
+2.       Select the shape or SmartArt graphic and click on Alt Text button in the Format ribbon tab. 
+3.       Alternatively, right-click on the image and select Edit Alt Text. 
+4.       Add the alternate text in the text field in the Alt Text pane. 
+ 
+Tip:
+Right-click inside the entire frame that surrounds the shape or SmartArt and not on their parts. 
+ 
+Practices to Apply & Avoid
+    Avoid using informative SmartArt graphics that lack textual descriptions. 
+For example, in the bt_ma5eE2_27A_template Excel document, the SmartArt indicating the Balances of different types does not have an alternate text. 
+
+ 
+  Ensure all informative SmartArt graphs and shapes have detailed description specified via either the Alt Text pane or in the surrounding text.
+ 
+For example, in the bt_ma5eE6_26A_template Excel document, the chart for the table indicating the Miles driven and Van operating cost for the months from January to July has an alternate text of "Expense type wise division of the Balances for the year."
+
+ 
+How to test for Accessibility?
+To test if alternate text is specified for Shapes or SmartArt graphics, perform the following steps:
+1.       Open the Excel document that needs to be tested.
+2.       Right-click on the Shape or SmartArt graphic and select Edit Alternate Text. 
+3.       Check if textual description is specified in the text field of the Alt Text pane.
+4.       Check if detailed description is included via the Alt Text pane or in the surrounding text. 
+5.       If the conditions in step 3 and 4 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+Charts
+Complex images, such as graphs, diagrams, and charts, require detail description of the data or information provided in the image as the text alternative, to enable users with vision disabilities to interpret the information. Similarly, users with learning disabilities may find the complex charts, diagrams, graphs difficult to understand. Textual description in the surrounding text or a tabular representation of the graph or chart makes it easier for them to access the information. 
+So, in the case of complex images, it is recommended to add a brief description of the image via the Alt Text pane and include equivalent information in the surrounding text in the form of either a data table or running text. 
+
+WCAG Success CriteriaWCAG Conformance Level1.1.1 Non-text Content A 
+How to implement?
+This section lists the steps for adding alternate text for charts in an Excel document: 
+1.       Open the Excel document that includes complex images.
+2.       Right-click inside the frame that covers the entire complex image and select Edit Alt Text. 
+3.       Add a brief alternate text in the text field in the Alt Text pane. 
+4.       Include detailed description for the complex image in the surrounding content. Alternatively, include detailed description via the Alt Text pane. 
+Tip: 
+Right-click inside the entire frame that surrounds the chart, graph or diagram and not on their parts.
+ 
+Practices to Apply & Avoid
+    Avoid using complex images such as charts and diagrams that lack textual descriptions. 
+For example, in the bt_ma5eE2_27A_template Excel document, the chart for the table indicating the Balances at the beginning and end of the year does not have an alternate text. 
+ 
+
+ 
+  Ensure all graphs and diagrams have detailed description specified via either the Alt Text pane or in the surrounding text.
+For example, in the bt_ma5eE6_26A_template Excel document, the chart for the table indicating the Miles driven and Van operating cost for the months from January to July has an alternate text of "Month wise division of the Van Operating cost for the Miles Driven for the months from January to July."
+ 
+
+
+User Groups Affected
+*         Blind Users
+*         Low-vision users
+*         Deaf-blind users
+*         Users with learning disabilities
+How to test for Accessibility?
+To test if alternate text is specified for complex images, perform the following steps:
+1.       Open the Excel document that needs to be tested.
+2.       Right-click on the complex image and select Edit Alternate Text. 
+3.       Check if textual description is specified in the text field of the Alt Text pane.
+4.       Check if detailed description is included via the Alt Text pane or in the surrounding text. 
+5.       If the conditions in step 3 and 4 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 1.1.1 at Level A.
+
+FILE CONTENT AND INSTRUCTIONS
+Title of an Excel document helps users especially screen reader users understand what information will be available in the document. Often authors set the file name as its title which fails to describe the file's contents to users. Organizations have file naming conventions that authors are required to follow and by specifying descriptive file title they can adhere to the naming conventions and at the same help users understand the file's contents easily.
+Language of the Excel file's content must be defined programmatically to ensure that user agents can render the information accurately. User agents, such as assistive technologies (screen readers and braille displayers) rely on properties to identify the language of a document. 
+Content is king and it is equally important to make it accessible to ensure that people with disabilities can access the content. Different factors play a crucial role when it comes to making content accessible. One of such factors is providing instructions so that all users can better understand the content. 
+
+2.4.2 Page Titled                                                                                                        Level A
+Web pages have titles that describe topic or purpose.
+3.1.1 Language of Page                                                                                             Level A
+The default human language of each Web page can be programmatically determined.
+3.1.2 Language of Parts                                                                                             Level AA
+The human language of each passage or phrase in the content can be programmatically determined except for proper names, words of indeterminate language, and words or phrases that have become a part of the vernacular of the immediately surrounding text. 
+
+Descriptive File Title
+File title is the first piece of information that a screen reader reads when an Excel file is opened. Based on the title, users can understand the file's content, as well as the file's purpose. An appropriate file name is found very helpful by users with visual impairments who use a screen reader or screen magnifier, as it helps them understand the file's contents. If an Excel file lacks a descriptive file title, it becomes difficult for screen reader users to interpret the file's contents.
+ 
+
+WCAG Success CriteriaWCAG Conformance Level2.4.2 Page TitledAHow to implement?
+To add title for Excel document, perform the following steps:
+1.       Open the Excel document for which title needs to be specified.
+2.       Select "Info" from the File tab.
+3.       In the Title field below the Properties group, specify unique and descriptive document title.
+Tip: 
+Press Insert + T to listen to the file title using JAWS and NVDA.
+ 
+Tip: 
+If the file title is left empty, file name will be announced for screen reader users.
+ 
+Practices to Apply & Avoid
+  Ensure that the file title appropriately describe the file's contents. 
+ 
+For example, in the bt_ma5eE7_19A _template excel document, the file has an appropriate and descriptive file title of "Chapter 6 - E6-37A". 
+
+ Avoid using an empty or inaccurate file title.
+For example, in the bt_ma5eE7_37A _template excel document, the file title is empty.
+
+ 
+How to test for Accessibility?
+To check if descriptive title is provided for an Excel document, perform the following steps:
+1.       Open the Excel document that needs to be tested.
+2.       Click on File>Info and check if descriptive title is specified below the Properties group in the Title field.
+3.       If the condition in step 2 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.2 at Level A.
+ 
+Language
+The document's language must be set programmatically to ensure that assistive technologies, such as screen readers and Braille displays, can render the information in the language intended by the author. Screen readers include support for different languages and provide an option to either change the language manually or configure it to switch automatically.
+ 
+
+WCAG Success CriteriaWCAG Conformance Level3.1.1 Language of PageA 
+How to implement?
+To define the language of an Excel document, perform the following steps:
+1.       Open the Excel document.
+2.       In the File tab, click on Options > Language. 
+3.       Document authoring language can be set to match the operating system language or chosen from the list of languages available. Additionally, more languages can be added by clicking on Add a Language... button available in the Office authoring languages and proofing group. 
+
+Practices to Apply & Avoid
+  Define the primary language of the document accurately. 
+For example, in the bt_ma5eE7_19A _template excel document, the file has an accurate primary language of "English (United States)" defined. 
+
+ Ensure that incorrect primary language is not defined for the file.
+For example, in the bt_ma5eE7_19A _template excel document, the file has inaccurate primary language of "English (United Kingdom)" defined instead of "English (United States)". 
+ 
+
+How to test for Accessibility?
+To check an Excel document's language, perform the following steps:
+1.       Open the Excel document.
+2.       In the File tab, click on Options > Language.
+3.       Check if the primary language is specified correctly in the Editing language.
+4.       If the condition in step 4 fails, then it is an accessibility violation as per WCAG 2.1 success criteria 3.1.1 at Level A.
+ 
+
+ 
+Add Instructions
+Instructions are provided in a document for understanding and operating the content and functionality associated. Instructions should be made available to users up front and should also be identified easily. When screen reader users interact with an excel document, they need to know the purpose of the content, therefore instructions should be available up front to help them.
+
+WCAG Success CriteriaWCAG Conformance Level3.3.2AHow to implement?
+*         Place the instruction at the beginning of an excel document. 
+*         Provide clear and descriptive instruction. 
+*         Screen readers start in the first cell (A1) so consider placing instruction about the excel document in A1 cell in the form of input message.
+*         Additional Instruction sheet can be added.
+Practices to Apply & Avoid
+  Ensure to provide descriptive instructions for the file. 
+For example, in the tt_FA12S9_6_solution Excel document, an additional instruction sheet has been added along with providing instruction as input message in the A1 cell of the worksheet. A descriptive instruction message of "The sheet shows bond information of Pearce Corporation and requirements across cells A3:B8, A11:B11, A13:F18 and A20:D29 respectively." has been specified in both instances. 
+
+
+ 
+    Avoid using excel document that lacks instruction.
+For example, in bt_ma5eE2_27A _template excel document, no instructions have been defined for the file. 
+
+User Groups Affected
+*         Blind users
+*         Low-vision users
+*         Learning impairment
+ 
+How to test for Accessibility?
+In order to check if the instructions are available to all users, perform the following steps:
+1.       Open the Excel document.
+2.       Navigate to the sheet with screen reader running and check the following:
+a.       Are the instructions placed at the start of the sheet?
+b.       Are the instructions provided descriptive enough?
+3.       If any of the conditions mentioned in step 2 above are false then, it is an accessibility violation as per WCAG 2.1 success criteria 3.3.2 at Level A.
+
+ 
+COLOR
+Color is a key component of any document. Color should be used wisely to ensure that all users including those with color blindness, low vision and blind users can access the information. While using color, three important aspects should be taken into consideration: 
+*         Color should not be used as the sole means to convey important information. 
+*         Sufficient contrast should be present between foreground text and its background. 
+*         Sufficient contrast should be present for key graphical objects with the adjacent content.
+ 
+Color when used as the sole means to convey important information makes it difficult for users with visual impairments, such as color blindness, low vision, blind and deaf-blind users who find it difficult to understand the information. For example, key values of a table are indicated with change in color or items of a graph are distinguished using color. In such situations it becomes difficult for users with visual impairments to interpret and access the information. 
+Color contrast between foreground text and its background should be sufficient to ensure that users with different types of colorblindness can access the information. Users with colorblindness, such as Protanopia, Tritanopia, Deuteranopia and monochromacy find it difficult to distinguish between certain color combinations. Thus, it is essential that sufficient contrast is present between foreground text and its background. Color contrast should be sufficient for all the important elements of an Excel document, such as text, form controls, tables, informative images etc. If the color contrast is not sufficient, the information will not be legible for low vision users and colorblind users. 
+ 
+Color blindness is the inability to perceive differences between some colors. Users who are color blind have difficulty in differentiating color or between red and green, or blue and yellow. 
+Ensuring an Excel document follows the WCAG guidelines for color contrast ratio, color should not affect a person's ability to perceive important content.
+Types of color blindness:
+o   Tritanopia: makes it hard to tell the difference between blue and green, and between yellow and red.
+o   Protanopia: makes red look greener and less bright.
+o   Deuteranopia: most common type of red-green color blindness. It makes green look more red.
+o   Monochromacy: cannot see color at all (gray scale).
+
+ 
+
+1.4.1 Use of Color                                                                                                      Level A
+Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+ 
+1.4.3 Contrast (Minimum)                                                                                        Level AA
+The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+Large Text: Large scale text and images of large-scale text has a contrast ratio of at least 3:1.
+ 
+Incidental: Text or images of text that are a part of inactive user interface component, that are pure decoration, that are not visible to anyone, or that are a part of a picture that contains significant other visual content, have no contrast requirement.
+ 
+Logotypes: Text that is a part of a logo or brand name has no contrast requirement.
+ 
+ 
+1.4.11 Non-text Contrast                                                                                            Level AA
+The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+ 
+User Interface Components
+Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
+ 
+Graphical Objects
+Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed. 
+ 
+Use Color Wisely
+Colors should be used wisely in documents, as information conveyed with color alone might not be available for people with visual disabilities. Color is a key component of any document and this is true for digital documents as well. However, information when conveyed using color alone can make it difficult for people with visual disabilities to access it. For example, in a line graph is used to display the marks obtained by students in different exams conducted during an academic year. Red color is used to indicate dip in the marks obtained, green color to indicate increase in the marks and blue color is used to indicate marks obtained by students consistently. Ever thought how would a blind person perceive such information conveyed only with color? How would students or parents with colorblindness perceive the information? 
+ 
+
+WCAG Success CriteriaWCAG Conformance Level1.4.1 Use of color A 
+
+ 
+How to implement?
+This section lists the techniques that need to be implemented to ensure that information conveyed using color is available for all users:
+*         Supplement color with visual clues. 
+*         Add text clues along with color to convey important information.
+*         Add patterns, symbols, shapes etc. along with color to convey important information.
+ 
+Practices to Apply & Avoid
+    Avoid using color alone to indicate information. 
+For example, in the bt_ma5eE2_27A_template excel document, color alone is used to indicate the information of Elmhurst Health Center, where "orange" indicates "Total Laboratory Overhead Costs", "blue" indicates "Number of Lab Tests Performed" in the bar graph.
+ 
+
+ 
+  Ensure to supplement color with other visual elements such as patterns, varying line styles or symbols to indicate data in graphs and charts. 
+For example, in the bt_ma5eE6_32A_template_clientfile excel document, a green vertical striped pattern has been used to indicate "Total Laboratory Overhead Costs" and a blue horizontal striped pattern has been used to show "Number of Lab Tests performed" for the column graph.
+ 
+
+ 
+  Provide textual clues along with color. 
+For example, in the bt_ma5eE2_27A_template excel document, Inventory data for Calculation of direct materials used is indicated by color as well as through supporting text.
+ 
+
+ 
+
+ 
+User Groups Affected  
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+*         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+*         Low-vision users 
+*         Blind users
+ 
+How to test for Accessibility?
+To test an Excel document for use of color alone to convey important information, perform the following steps:
+1.       Open the Excel document that needs to be tested.
+2.       Check on different sheets if color is used to convey important information.
+3.       Check if color is supplemented with text or other visual clues to convey the information. 
+4.       If the condition in step 2 is true and step 3 is false, then it is an accessibility violation as per WCAG 2.1 success criteria 1.4.1 at Level A.
+ 
+Text Contrast
+Colors used for displaying text and images of text (text created as an image) should have sufficient contrast with their background to make the information legible for users.
+ 
+WCAG has provided following guidance to ensure that color contrast for text is sufficient: 
+*         For text:
+o   For standard text (font lesser than 14pt) to be readable, it is mandatory for it to have a color contrast of 4.5:1 with its background. 
+o   For large text (14pt bold or 18pt) to be readable, it is mandatory for it to have a color contrast of 3:1 with its background. 
+There are exceptions. Incidental texts which are not required to meet the contrast requirements are: an inactive user interface element, logos, text for pure decoration, text with is not visible to anyone.
+ 
+
+WCAG Success CriteriaWCAG Conformance Level1.4.3 Contrast (Minimum)AA 
+
+ 
+How to implement?
+This section lists the techniques that need to be implemented to ensure that contrast between the foreground text is sufficient with its background in different scenarios.
+*         Two colors are considered to have good visibility if the contrast ratio between the foreground text and background is sufficient. Darken either the foreground or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1. 
+*         Check the contrast ratio between foreground text colors with the background using color contrast testing tools before using them in an Excel file. The minimum contrast requirements outlined by WCAG 2.1 are: 
+Text Size Contrast Ratio Standard size text (anything less than 14pt) 4.5:1 Large-size text (14pt bold or 18pt) 3:1 
+Authors should check for color contrast before authoring Excel documents to ensure that sufficient color contrast is present for textual content including images of text. Once the document is authored, it becomes difficult to retrofit it for color contrast later. 
+ 
+Practices to Apply & Avoid
+  Ensure color contrast for foreground text is sufficient with its background. 
+For example, in the bt_ma5eE2_27A_template excel document, color contrast of the text "Balances", "Beginning of Year" and "End of Year" with its background is 4.7:1.
+ 
+
+ 
+ 
+
+ 
+ Avoid using insufficient color contrast for displaying textual information. 
+For example, in the bt_ma5eE2_27A_template excel document, color contrast of the text "Schedule of cost of goods manufactured" 2.8:1.
+
+
+ 
+User Groups Affected  
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+*         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+*         Low-vision users 
+ 
+How to test for Accessibility?
+To check the color contrast for text, perform the following steps:  
+   1.       Open Color Contrast Analyser (CCA).  
+   2.       Open the Excel document and navigate to the sheet for which color contrast of text needs to be checked.  
+3.       Using the eye dropper tool, pick the hex code of the text's foreground color as well as the hex code of the background color.  
+4.       Add the foreground text and background color hex codes in the respective text fields available in CCA.  
+5.       Color contrast ratio along with its conformance result will be displayed. Conformance will be displayed for:  
+   a.       Standard text size and large text size  
+   b.       Results are displayed for Level AA as well as Level AAA.  
+6.       Text or images of text that are part of an inactive user interface component, that are pure decoration, that is not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.  
+7.       Text that is part of a logo or brand name has no contrast requirement. 
+8.       If the color contrast ratio is less than 4.5:1 for standard text or less than 3:1 for large text, then it is an accessibility violation of WCAG 2.1 success criteria 1.4.3 at Level AA. 
+ 
+Non-Text Contrast
+Color contrast needs to be enough not only for textual content available in Excel documents but also for all the important non-textual content. The contrast between non-textual content with the adjacent color needs to be 3:1. 
+ 
+Non-text contrast requirements were introduced in WCAG 2.1 and is applicable to: 
+*         User interface controls in different states, such as focus, active, hover, etc. This applies to different user interface components, such as links, form controls, buttons, etc. For example, if the background color of a link changes on focus then the contrast between the link's background color with the text font as well as the background color should be at least 3:1. Non-text contrast requirements are not applicable if the user interfaces components in an inactive state. Similarly, non-text contrast requirements do not apply to visual borders that are added by the user agent when a link or any other interactive element receives focus. In the case of Excel documents, states of user interface components are not necessarily present, but components might be displayed using different background colors for easy identification by users. In such scenarios, it is required to ensure that contrast is sufficient. 
+*         Graphical objects that convey important information, such as graphs, diagrams, key icons, etc. Non-text contrast requirements are applicable to images that convey important information and different components need to have minimum contrast of 3:1, such as lines of a line graph, labels of a bar graph, key icons, numerical and textual data of complex diagrams, etc. However, if changing the contrast will result in an incorrect interpretation of information, i.e., changes the meaning of the subject then those graphics do not need to adhere to the above-mentioned contrast requirements. For example, in the case of science experiments, if by changing the contrast will result in changing the meaning of the topic being explained, then such graphics do not need to adhere to the above-mentioned contrast requirements. 
+The above requirements were introduced to ensure that low vision users can access all the important information conveyed using non-text content. 
+ 
+
+WCAG Success CriteriaWCAG Conformance Level1.4.11 Non-text ContrastAA 
+How to implement?
+This section lists the techniques that need to be implemented to ensure sufficient contrast for non-text content in different scenarios.
+*         Check the contrast ratio of the graphical object and its surrounding using color contrast testing tools before using them in an Excel document.
+*         Two colors are considered to have good visibility if the contrast ratio between the graphical object and its surrounding is enough. Darken either the graphical object or the background color to ensure that it passes the contrast requirement outlined by WCAG 2.1. 
+ 
+Practices to Apply & Avoid
+ Avoid using color contrast for non-text content of less than 3:1. 
+For example, in the bt_ma5eE2_27A_template excel document, a segment displaying Elmhurst Health Center bar graph has an insufficient color contrast of 2.8:1. 
+
+ 
+
+  Ensure color contrast of at least 3:1 is present for all non-text content. 
+For example, in the tt_FA12S9_6_solution Excel document, the column chart of Interest Payment has a sufficient color contrast of 4.7:1 with its background. 
+
+
+ 
+ 
+User Groups Affected  
+When insufficient color contrast is used, the user group that gets largely affected is users with visual disabilities such as:  
+*         Color-blind users (with protanopia, deuteranopia, tritanopia etc.) 
+*         Low-vision users 
+ 
+How to test for Accessibility?
+To check the color contrast for non-text content, perform the following steps:  
+1.       Open Color Contrast Analyser (CCA).  
+2.       Open the Excel document and navigate to the sheet for which the color contrast of non-text content needs to be checked.
+3.       Use the picker to select the color of the graphical object and its surrounding.  
+4.       Color contrast ratio along with its conformance result will be displayed. 
+If the color contrast ratio is less than 3.0:1 then it is an accessibility violation of WCAG 2.1 success criteria 1.4.11 at Level AA.
+
+ 
+LINKS
+Links are used in an Excel document to help users navigate from one document section or sheet to another, and even to external websites. Screen readers identify a link based on the link's text. Keyboard-only users can navigate from one link to another by pressing the "Tab" key, and they can activate a link by pressing the "Enter" key. Screen reader users can also navigate and activate links just like keyboard-only users. A screen reader also provides an option to access all the document's links in the form of a list. 
+Link text needs to be descriptive about the link's purpose. Screen reader users with the option to access list of links in an Excel document can only read the link's text and they cannot see the surrounding text at that time. So, links when accessed out of context are not descriptive then it becomes very difficult for screen reader users to understand their purpose. 
+Bookmark links when added in an Excel document help keyboard-only users and screen reader users to navigate to different sections or sheets of the document quickly. Bookmark links should not only be present but also should be linked to an accurate destination. 
+
+2.4.4 Link Purpose (In Context)                                                                                Level A
+The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.
+2.1.1 Keyboard                                                                                                          Level A
+All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. 
+ 
+ 
+ 
+
+ 
+Descriptive Link Text
+Links in an Excel document are often site URLs that fail to clearly describe their destination target for screen reader users. Screen reader users access links often in the form of a list where only the text of the link is available and not the surrounding text. This is referred to as "links out of context". Thus, it is very important to specify descriptive text for each link in an Excel document. 
+Microsoft Excel provides authors with an option to add descriptive link text via the Text to Display field of the Insert Hyperlink dialog box. This will result in descriptive text being read out to screen reader users whereas the URL will be added in the link's address. Moreover, Excel also provides authors with an option to include additional information about the link via the Screen Tip option available in the Insert Hyperlink dialog box.
+Tip: 
+Define the link using the text that acts as a title of a web page or file's title that the link points to. 
+ 
+
+WCAG Success CriteriaWCAG Conformance Level2.4.4 Link Purpose (In context)A 
+How to implement?
+1.       Open the Excel document.
+2.       Select the cell that needs to be defined as a link and press Control + K to activate the "Insert Hyperlink" dialog box.
+3.       Add the destination URL in the Address field.
+4.       Add meaningful text that is indicative of the link's purpose in the Text to Display field. 
+5.       Include additional description about the link by clicking on the Screen Tip button. This information will be visible when users hover over the link with a mouse.
+
+6.       Click on OK to save the changes.
+
+ 
+Practices to Apply & Avoid
+  Ensure that the link text is descriptive.
+For example, in the bt_ma5eE2_27A_template Excel document, an accurate and descriptive link text of "Pearson Website" is used to display the link. 
+
+    Avoid using non-descriptive link text.
+For example, in the bt_ma5eE2_27A_template Excel document, an inaccurate and non-descriptive link text of "Read more" is used to display the Pearson website link. 
+ 
+
+    Avoid linking hyperlinks incorrectly.
+For example, in the bt_ma5eE2_27A_template Excel document, the hyperlink address is incorrect.
+
+How to test for Accessibility?
+To test an Excel document for descriptive link text, perform the following steps:
+1.       Open the Excel document. 
+2.       Navigate to different links and check if they are descriptive. 
+3.       Check if the text of links is meaningful about the link's destination.
+4.       If the conditions in steps 2 and 4 fail, then it is an accessibility violation as per WCAG 2.1 success criteria 2.4.4 at Level A.
+SHEET NAMES
+Sheet Names are displayed at the bottom of the window. Name of the sheet generally includes the content of the data in the sheet. Sheet tabs should have meaningful names.
+Descriptive Sheet Name
+Sheet names in an Excel document should be unique and should provide information about the content in the sheet. Unique and descriptive sheet names make it easier for a user to navigate through the document. 
+How to implement?
+*         Provide unique names to each sheet in your Excel workbook.
+*         Remove blank sheet.
+Practices to Apply & Avoid
+  Make sure the sheet name is unique and descriptive. 
+For example, in the bt_ma5eE7_19A_template Excel document, the sheets have unique and descriptive names of "instructions" and "E7-19A".
+
+    Avoid using incomplete and non-descriptive sheet names. 
+For example, in the bt_ma5eE7_19A_template Excel document, the sheets have non descriptive sheet names of "Sheet 1" and "Sheet 2".
+
+ 
+User Groups Affected 
+*                     Blind Users 
+*                     Low-vision users 
+*                     Deaf-blind users 
+ 
+How to test for Accessibility?
+1.       Open the Excel document.
+2.       Check if sheets names are unique and descriptive or not.
+3.       If the condition in step 2 fails, then a warning is thrown in accessibility checker.
+
+FORMATTING CELLS
+Small formatting adjustments can make a difference to an Excel document. Formatting of cells are used to draw attention to important data or display the contents in persistent manner. Microsoft Excel offers users to change how their data is displayed. Formatting adds the finishing touch such that data is both accurately prepared and presented.
+Merge and Split Cells
+Merging or Splitting of cells can make navigation in excel documents with assistive technologies very difficult. Always avoid merging and splitting cells as this can cause difficulty for screen reader users to know how cells relate to rows and columns.
+How to implement?
+This section lists the steps for unmerging cells in an Excel document: 
+1.       Open the Excel document that includes merge cells.
+2.       Click on the "Home" tab.
+3.       Click on the "Merge & Center > Unmerge Cells" button in the Alignment group.
+Practices to Apply & Avoid
+  Ensure the cells are unmerged.
+For example, in the tt_FA12S9_6_solution Excel document, the data in the cell below the table header "Date" has appropriately unmerged. 
+
+ 
+ 
+    Avoid merging of cells. 
+For example, in the bt_ma5eE3_28A_template Excel document, the table header "Work in Process Inventory" has been merged to act as a header to show the Debit and Credit for the work in Process Inventory. 
+
+ 
+  Ensure to always split data cells only of necessary in excel.
+For example, in the bt_ma5eE3_28A_template Excel document, the content marked as a table has appropriately marked table headers of "Raw materials Inventory- Debit" and "Raw materials Inventory- Credit"
+
+ 
+How to test for Accessibility?
+4.       Open the Excel document.
+5.       On the Review tab, in the Accessibility group click on Check Accessibility button.
+6.       Check if errors related to merge or split cells are displayed.
+7.       If merge or split cells are present, then a warning is thrown in accessibility checker.
+
+ 
+Blank Cells
+While navigating using the keyboard a blank row, column or cell within an Excel document might be confusing for assistive technology users leading to believe that there is no more data beyond. If adding blank rows and columns are not necessary, it is best practice to delete them. If there is a necessity to add blank data try adding fillers such as "-", "N/A", etc.
+How to implement?
+This section lists the techniques that need to be implemented to ensure how to implement blank cells:
+*         Ensure blank cells, rows or columns are not included within the data.
+*         If it is necessary to add blank cells, mark them with a minus sign, a zero or N/A for not applicable or no data.
+ 
+Practices to Apply & Avoid
+    Avoid leaving cells empty in a data table
+For example, in the tt_FA12S9_6_solution Excel document, in the "Req 2: Prepare an Amortization Table" the data for first row under Interest Payment, Interest Expense and Discount Amortization amount headers has been left empty. 
+ 
+
+ 
+  Ensure to mark empty cells as No Data.
+For example, in the tt_FA12S9_6_solution Excel document, the blank cells in table "Journal" have been appropriately marked as "no data". 
+
+ 
+  Ensure to repeat table content instead of leaving cells empty.
+For example, in the tt_FA12S9_6_solution Excel document, the blank cells under the "Date" header have been repeated consecutively instead of being left blank.
+ 
+
+ 
+User Groups Affected
+*         Blind users
+*         Learning impairment 
+ 
+How to test for Accessibility?
+1.       Open the Excel document.
+2.       Check if blank cells are present or not in the document.
+3.       If the condition is true, then a warning is thrown in accessibility checker
+
+EXCEL ACCESSIBILITY CHECKER
+We have thus far learnt different techniques for making Excel documents accessible. Once the document is made accessible, it needs to be evaluated for accessibility. An Excel document can be evaluated for accessibility with manual and automated testing. To evaluate accessibility of an Excel document using an automated tool, there is an in-built Accessibility Checker in Microsoft Excel. 
+ 
+Accessibility Checker Rules
+To check an Excel document for accessibility, perform the following steps:
+1.       Open the Excel document that needs to be tested. 
+2.       From the Files Tab, click on the Info option from the list.
+                
+3.       Click on Check for Issues > Check Accessibility.
+
+Alternatively, 
+1. Open the document that needs to be checked for accessibility.
+2. Click on the "Review" tab.
+3. Click on the "Check Accessibility" button in the Accessibility group.
+
+ 
+Errors and Warnings
+1.       Once the checker finishes the inspection, results are displayed in the task pane on the right side of the document.
+The Checker's Inspection Results contains accessibility issues which can be classified into three categories:
+* Errors: These need to be fixed for sure to make sure that the document is accessible for users with disabilities.
+* Warnings: These needs manual verification in order to understand if they constitute as a potential error or is something that can be left in the document based on the manual verification results.
+* Tips: These are included to provide pointers for authors and thereby help them in creating accessible Excel documents as well as enhance the user experience for people with disabilities.
+For example, in the bt_ma5eE7_19A_template Excel document, there are accessibility warnings such as:
+*         Merged cells (2)
+ 
+
+ 
+2.       Along with the Inspection Results, Additional Information is also displayed. After clicking on any or the errors or warnings, the following information is displayed. 
+It includes information about:
+*         Why Fix: It explains why it is an accessibility issue.
+*         How to Fix: It includes information on how to fix the identified issue.
+For example, in the bt_ma5eE7_19A_template Excel document, once the errors are rectified a message saying "No accessibility issues found. People with disabilities should not have difficulty reading this workbook" is displayed.
+
+Here is the list of errors and warnings one may come across while testing an excel document using accessibility checker.
+ 
+ ElementsRuleWhat does the Checker verify?Error/Warning Image, Shape, Picture, Chart, Smart Art GraphicAll non-text content has alternative text (alt text).Alternate text is specified for all objects used in the document. It also looks if the alternate text includes file extensions or word image.ErrorTablesTables specify column header information.Headers are defined for tables. Basically, it looks for if header row is defined.ErrorSheet namesSheet tabs have meaningful names.Sheets in the workbook should have descriptive information and no blank sheets should be available.WarningLinksHyperlink text is meaningful.Descriptive text is used for displaying hyperlinks. It also verifies if the link text accurately describes the destination it points to.WarningTablesTable has a simple structure.Tables do not include split cells, merge cells or nested tables. Basically, it verifies that the table structure is simple.WarningTablesTables do not use blank cells for formatting.Tables do not include a blank cell that is used solely for formatting purpose. It verifies if any table comprises of blank rows or columns.WarningCharactersAvoid the use of repeated blank characters.Document does not include blank spaces, tabs, or carriage returns used for formatting purpose.WarningColorAvoid the use of text color that does not stand out from the background color.Sufficient contrast exists between foreground text and its background.Warning 
+
+ 
+APPENDIX
+This section lists down links to different resources that offer useful guidance for authoring accessible Microsoft Excel documents:
+ 
+Accessibility ResourceWhere it can be found?Web Content Accessibility Guidelines 2.1https://www.w3.org/TR/WCAG21/Pearson Accessibility Guidelineshttps://www.pearson.com/accessibility-guidelines.htmlColor Contrast Analyserhttp://www.paciellogroup.com/resources/contrast-analyser.htmlMaking Excel documents accessiblehttps://support.microsoft.com/en-us/office/make-your-excel-documents-accessible-to-people-with-disabilities-6cc05fc5-1314-48b5-8eb3-683e49b3e593#bkmk_winaltsmartartAccessibility Checkerhttps://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7fAccessibility Checker Ruleshttps://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1 
