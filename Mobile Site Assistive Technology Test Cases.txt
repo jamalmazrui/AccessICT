@@ -1,0 +1,722 @@
+﻿ 
+ 
+ 
+ 
+ 
+ 
+Mobile Site Accessibility Testing Methodology - Test Cases for Assistive technologies and mobile features
+ 
+
+Table of Contents
+Table of Contents. 2
+Table of Figures. 6
+Introduction. 9
+Why this is important 9
+Errors that need to be tested. 9
+iOS combinations 9
+iPhone. 9
+iPad. 9
+Android combinations 10
+9. iOS Test Cases. 11
+9.1: VoiceOver (iOS) 11
+About this requirement 11
+How to test 11
+Examples 12
+9.2: Keyboard (iOS) 13
+About this requirement 13
+How to test 13
+Examples 13
+9.3: Switch (iOS) 15
+About this requirement 15
+How to test 15
+Examples 16
+9.4: Zoom (iOS) 17
+About this requirement 17
+How to test 18
+Examples 18
+9.5: Reduce motion (iOS) 19
+About this requirement 19
+How to test 19
+Examples 19
+9.6: Invert colors (iOS) 20
+About this requirement 20
+Classic Invert 20
+Smart Invert 20
+How to test 21
+Examples 21
+9.7: Grayscale (iOS) 23
+About this requirement 23
+How to test 23
+Examples 23
+9.8: Reader view and increase text size (iOS Safari) 25
+About this requirement 25
+How to test 26
+Examples 26
+10. Android test cases. 28
+10.1: TalkBack (Android) 29
+About this requirement 29
+How to test 29
+Examples 29
+10.2: Keyboard (Android) 30
+About this requirement 30
+How to test 30
+Examples 30
+10.3: Switch (Android) 31
+About this requirement 31
+How to test 32
+Examples 32
+10.4: Magnification (Android) 34
+About this requirement 34
+How to test 34
+Examples 34
+10.5: Remove animations (Android) 35
+About this requirement 35
+How to test 35
+Examples 35
+10.6: Color inversion (Android) 36
+About this requirement 36
+How to test 36
+Examples 36
+10.7: Grayscale (Android) 36
+About this requirement 37
+How to test 37
+Examples 37
+10.8: Color correction (Android) 38
+About this requirement 38
+How to test 39
+Examples 39
+10.9: Increase display size (Android) 40
+About this requirement 40
+How to test 40
+Examples 40
+10.10: Increase text size (Android Chrome) 42
+About this requirement 42
+How to test 42
+Examples 42
+10.11: Simplified view.. 44
+About this requirement 44
+How to test - Android Chrome. 45
+Examples - Simplified view (Android) 45
+7.       Samsung test cases. 48
+7.1: Voice assistant for Samsung (Samsung) 48
+About this requirement 48
+How to test 48
+Examples 48
+8.       Kindle test cases. 49
+Help for Kindle. 49
+12.1: VoiceView for Kindle (Kindle) 49
+About this requirement 49
+How to test 49
+Examples 49
+Acknowledgements. 51
+Relationship to existing Accessibility testing standards 51
+ICT Accessibility Testing Symposium Mobile Site Sub-Committee. 51
+Contacts. 51
+Gian Wild. 51
+Peter McNally. 51
+
+ 
+Table of Figures
+Figure 1: Turning on VoiceOver on iOS. 10
+Figure 2: Setting Accessibility shortcuts on iOS. 10
+Figure 4: All content is read by VoiceOver 11
+Figure 6: Keyboard accessible. 12
+Figure 7: Keyboard accessible. 13
+Figure 9: Actionable element can be navigated to and activated with Switch. 15
+Figure 10: Activating zoom on iOS. 16
+Figure 15: Zoom enlarges the screen. 17
+Figure 18: Reduce Motion stops moving content (normal view) 18
+Figure 19: Reduce Motion stops moving content (with reduced motion) 18
+Figure 20: Activating Classic Invert on iOS. 19
+Figure 21: Classic Invert on iOS activated. 19
+Figure 22: Activating Smart Invert on iOS. 19
+Figure 23: Smart Invert on iOS activated. 19
+Figure 24: Classic Invert 20
+Figure 25: Grayscale view on iOS. 22
+Figure 26: Grayscale. 23
+Figure 27: Grayscale activated. 23
+Figure 28: Turning on the Reader view on iOS. 24
+Figure 29: The same article displayed in Reader view. 24
+Figure 30: Increase text size (smaller text) 25
+Figure 31: Increase text size (larger text) 25
+Figure 34: Reader view (normal view) 25
+Figure 35: Reader view. 25
+Figure 36: Reader View increase text size (smallest text) 26
+Figure 37: Reader View increase text size (largest text) 26
+Figure 38: Support link in the Font Size page. 27
+Figure 39: Font size support 27
+Figure 40: Selecting Settings in the TalkBack page. 28
+Figure 41: The TalkBack tutorial 28
+Figure 43: Keyboard accessible with highly visible keyboard focus indicator 29
+Figure 44: The Settings link in the Switch Access page. 30
+Figure 45: Switch Access Settings 30
+Figure 47: Actionable element can be navigated to and activated with switch. 31
+Figure 49: Color inversion (normal view) 35
+Figure 50: Color inversion (activated) 35
+Figure 51: Selecting different color blindness options 37
+Figure 52: Color blindness options 37
+Figure 53: Color Correction off 37
+Figure 54: Color Correction on. 37
+Figure 57: Content increases in display size (normal display size) 39
+Figure 58: Content increases in display size (largest display size) 39
+Figure 59: Content increases in display size (normal display size) 40
+Figure 60: Content increases in display size (largest display size) 40
+Figure 61: Android text scaling options 41
+Figure 66: All text increases in size (normal text size) 41
+Figure 67: All text increases in size (200% text size) 41
+Figure 68: Vertical ellipsis menu button in Chrome. 43
+Figure 69: Chrome dropdown menu. 43
+Figure 70: "Show simplified view" option. 43
+Figure 71: Simplified view activated. 43
+Figure 74: Simplified view available (normal view) 44
+Figure 75: Simplified view available (activated) 44
+Figure 76: Simplified view available (normal view) 45
+Figure 77: Simplified view available (activated) 45
+Figure 78: Simplified view can be used. 46
+Figure 79: Content read by VoiceView. 48
+
+ 
+Introduction
+Why this is important
+Mobile devices provide a multitude of accessibility features. As an accessibility tester for mobile devices, it is important that you understand what these features are, how they work, and how they improve an experience for someone with a given disability. As both mobile operating systems and mobile assistive technology are structured in a different manner from their desktop counterparts, it is important that mobile testing is conducted independently from desktop testing of a website. As a rule of thumb, if a website is not compatible with assistive technology designed for the device with which you are testing, it is inaccessible. 
+Essential content should never be hidden from assistive technology but displayed visually.  An example of this would be to use aria-hidden="true", which causes the element to be ignored by assistive technology.  For more information see WCAG2.1 SC 1.1.1: Non-text Content.  In addition, aria-hidden="true", CSS display:none, and CSS visibility can be used to "hide" other content on a page from assistive technology.  If this content is meaningful, it should be available to assistive technology.
+Any control that changes a state visually should indicate the change of state to the assistive technology user.  For example, a hamburger menu that is closed would show an aria-expanded="false", and when opened, it would show aria-expanded="true".  A ratings star that turns yellow when the user selects it should tell the assistive technology user of the change to yellow.  For more information see WCAG2.1 SC 4.1.2: Name, Role, Value.
+Errors that need to be tested
+Access and activation
+All actionable items and content can be accessed and activated by the following assistive technologies (or when the following feature is enabled):
+Please see the following sections on how to test this requirement with assistive technologies and mobile features.
+iOS combinations
+Please note that iOS 13 features, such as Dark Mode and Voice Control are not included in this list. Please note: As of July 2019, "dynamic type" on iOS does not change the appearance of web pages in Safari. 
+iPhone
+*         VoiceOver 
+*         Keyboard 
+*         Keyboard and switch 
+*         Zoom 
+*         Invert colors 
+*         Grayscale 
+*         Reader view
+iPad
+*         VoiceOver 
+*         Keyboard 
+*         Keyboard and switch 
+*         Zoom 
+*         Invert colors 
+*         Grayscale 
+*         Reader view
+Android combinations
+*         TalkBack 
+*         Voice Assistant (Samsung)
+*         VoiceView (Kindle)
+*         Keyboard 
+*         Keyboard and switch 
+*         Magnification 
+*         Invert colors 
+*         Grayscale 
+*         Increase text size with Android Chrome
+*         Color correction
+*         Simplified view
+
+ 
+9. iOS Test Cases
+Please note that the committee is aware that Assistive Touch, as well as other iOS 13 features bring a myriad of advances for people with disabilities. The committee will be reviewing these assistive technologies in the coming year.
+9.1: VoiceOver (iOS)
+All actionable items and content can be accessed and activated by VoiceOver on iOS.
+About this requirement
+VoiceOver users include blind and low-vision users, as well as users with some cognitive or learning difficulties. To enable VoiceOver, navigate to Settings → General → Accessibility → VoiceOver.
+Then, tap and slide the white Off button (beside the word VoiceOver) to the right to enable VoiceOver. Once in the On position, the button changes color to indicate VoiceOver is enabled.
+Figure 1: Turning on VoiceOver on iOS
+Figure 2: Setting Accessibility shortcuts on iOS
+You may find it easier to toggle VoiceOver by setting the "Accessibility Shortcut" to VoiceOver and/or the other accessibility options. Once set up, triple-click the home or side button of the device to enable the menu. (If only one accessibility setting is enabled, the device won't show a menu and will immediately toggle the setting.)
+How to test 
+1.    Open Safari and launch the website.
+2.    Scan the page for content and actionable items. 
+3.    Turn on VoiceOver.
+4.    Utilize standard navigation techniques for VoiceOver to browse the page. Whilst VoiceOver is robust, common controls to get started include:
+a.    Move forward by swiping right with one finger to read the next piece of content on the page. Swiping left moves you backward. Note: This means that you will no longer have traditional swipe functionality.
+b.    To select a link, form field, or other actionable item, double tap the screen with one finger. 
+c.    There are many additional gestures used to control VoiceOver, including a useful rotor tool that allows users to browse by headings, regions, form fields, etc. at the users' pleasure. 
+5.    Verify that all content can be read by VoiceOver and that the text being read by VoiceOver matches what is on screen.
+6.    Verify that all actionable items can be accessed and controlled by VoiceOver. It is imperative that all actionable items are accurately labelled and described. 
+Examples
+Pass 1 - All content is read by VoiceOver
+On this site, all content can be read, and all actionable items have appropriate descriptions and function as expected with VoiceOver controls
+Figure 4: All content is read by VoiceOver
+
+
+ 
+9.2: Keyboard (iOS)
+All actionable items and content can be accessed and activated by the keyboard on iOS.
+About this requirement
+iOS 12.3 and lower only support keyboard use when VoiceOver is activated.  Apple is projecting that iOS 13 will support keyboard use without VoiceOver. 
+Connect a Bluetooth keyboard to your iOS device, activate VoiceOver, and navigate to the page in Safari as you would on desktop. Press the arrow keys or TAB to navigate from one actionable item (buttons, links and form controls) to the next, use SPACEBAR or ENTER to activate the currently selected item.
+How to test 
+1.    Connect the keyboard. Turn on VoiceOver
+2.    Do all actionable items receive focus when using the TAB or arrow keys?
+3.    Can all actionable items be activated?
+4.    Can the keyboard access all fields, radio buttons, checkboxes, dropdowns and submit buttons?
+5.    Is the keyboard focus visible at all times?
+6.    Is the keyboard focus indicator highly visible?
+7.    Do items receive keyboard focus in the order that they visibly appear on the screen?
+Examples
+Pass 1 - Keyboard accessible
+The Washington Post menu is keyboard accessible and has a highly visible keyboard focus indicator (please note that this does not have a keyboard focus indicator in Android).
+Figure 6: Keyboard accessible
+ Pass 2 - Keyboard accessible
+The ABC menu is keyboard accessible and has a highly visible keyboard focus indicator.
+Figure 7: Keyboard accessible
+  
+
+ 
+9.3: Switch (iOS)
+All actionable items and content can be accessed and activated by the switch on iOS.
+About this requirement
+In most cases switch errors will be identified also as keyboard errors. This will be investigated more fully in the coming year.
+People with limited manual dexterity or other mobility disabilities often use Switch Control. Switch Control allows users to navigate their phone with one or more switches. To enable Switch Control, navigate to Settings → General → Accessibility → Switch Control. 
+Switch Control has two modes: item mode and point mode. Item mode will scan through groups of elements on the screen. Each time a user activates the Select Item switch, it will drill down into that group of elements. Once an element is selected, the options to Tap the element or access the switch menu appears. When an element cannot be accessed using item mode, point mode can be used. Point mode allows the user to select a location on screen to simulate a tap through a coordinate grid system. Users select the vertical location and then the horizontal location of where they would like to tap. Point mode is much more tedious to use than item mode. Switch Control also has more advanced features available (for example: simulating gestures).
+Users typically use one or two switches. A variety of hardware options are available to use as a switch: Bluetooth switch, Bluetooth keyboard, sip and puff technology, wheelchair joystick and other switches. The iOS device's screen can also be used as a switch. For testing, it is easiest to use a Bluetooth keyboard. Each key can be programmed as a different switch action. Note that the original actions of the switch (device's screen or hardware button) will be overrode by the switch's action.
+Each switch is mapped to a specific action. The action that is easiest to use for testing is Select Item. The Select Item action will scan through items on screen with either item mode or point mode, access the Tap feature and the switch menu. A second switch action that is popular is Scanner Menu, which provides the user with easier access to the switch's menu.
+To set up the device's screen as a switch: navigate to Settings → General → Accessibility → Switch Control → Switches → Add New Switch... → Screen → Full Screen → Select Item.
+The switch's item mode navigates to both actionable and nonactionable elements. Most of the time, nonactionable elements do not need to be accessed if they are visible in the current screen view. Scrolling is also an important feature to test in order to access content. Scrolling can be accessed on the switch's menu.
+How to test 
+1.    Activate the switch (or the screen)
+2.    Scan to the section you want to navigate to and activate the switch
+3.    Repeat step 2 until you drill down to an element. When an element is activated, a menu will appear.
+4.    Activate the Tap menu item.
+5.    If the element is not accessible via item mode, point mode is a fallback/workaround. Item mode must work for an item to pass. To use point mode:
+a.    Repeat steps 1-4 of item mode above to drill down to an element. When an element is activated, a menu will appear.
+b.    Activate the ".." under Tap to access more menu features.
+c.    Activate the row with Point Mode, then activate Point Mode
+d.    A grid will appear to allow you pick where on the screen to simulate a "tap"
+e.    Select the horizontal area of the screen and then the vertical area of the screen 
+f.     Select the horizontal and vertical point to simulate a "tap"
+g.    Activate the Tap menu item.
+Examples
+Pass 1 - Actionable element can be navigated to and activated with Switch
+The actionable element can be navigated to or activated using item mode. The link below is selected with item mode.
+Figure 9: Actionable element can be navigated to and activated with Switch
+ 
+ 
+9.4: Zoom (iOS)
+All actionable items and content can be accessed and activated with Zoom enabled on iOS.
+About this requirement
+People with low vision often use Zoom. Users with cognitive impairments, such as autism or attention deficit disorder, may also use Zoom to focus in on key content and reduce the amount of visual clutter on the screen. To enable full screen Zoom, first navigate to the Zoom screen and select Settings → General → Accessibility → Zoom. 
+Then, touch and slide the white Off button (beside the word Zoom) to the right to enable Zoom. Once in the On position, the button changes color to indicate Zoom is enabled.
+Triple-tapping the screen with three fingers will display the Zoom menu.  You can adjust the following settings with the Zoom menu:
+*         Choose Region: select Full Screen Zoom or Window Zoom. 
+o   Full Screen Zoom: You can magnify the entire screen 
+o   Window Zoom:  Magnify only part of the screen with a resizable lens. You can move the lens around to zoom in on different sections of the screen.
+*         Choose Filter: select Inverted, Grayscale, Grayscale, or Low Light.
+*         Show/Hide the Controller: show/hide the zoom controller.  The Zoom controls provides a quick way to pan the screen or zoom in or out.
+*         Use the slider to control the zoom level.
+Figure 10: Activating zoom on iOS
+
+Standard iOS gestures-flick, pinch, tap and rotor-still work when the screen is magnified. Invert Colors and Grayscale also work with Zoom. There are some differences in commands when Zoom is run with VoiceOver.
+You can view magnified screens either in either "Full Screen Zoom" or "Window Zoom."
+How to test 
+1.    Triple tap with three fingers to open the zoom menu.
+2.    Select a region (Full Screen or Window).
+3.    Select a zoom magnification.
+4.    Select a Filter
+5.    Determine that you can move around the page and access all content and functionality.  
+Examples
+Pass 1 - Zoom enlarges the screen
+Figure 15: Zoom enlarges the screen
+  
+
+ 
+9.5: Reduce motion (iOS)
+Reduce Motion does not work on iOS, or content is lost when it is enabled.
+About this requirement
+The Reduce Motion feature on iOS reduces swipe-in features and things like parallax scrolling. The Reduce Motion option is available under Settings → General → Accessibility → Reduce User Motion.
+How to test
+1.    Identify all areas of movement in the site.
+2.    Turn on the Reduce Motion feature.
+3.    Is the movement removed or reduced?
+4.    Ensure no information or functionality is lost.
+Examples
+Pass 1 - Reduce Motion stops moving content
+With Reduce Motion enabled the "Window Wonderland" does not have any movement on loading the page. Normally the background shows people walking around.
+Reduce Motion disabledReduce Motion enabledFigure 18: Reduce Motion stops moving content (normal view)
+Figure 19: Reduce Motion stops moving content (with reduced motion)
+ 
+
+ 
+9.6: Invert colors (iOS)
+All actionable items and content can be accessed and activated with Invert Colors enabled on iOS.
+About this requirement
+To enable Invert Colors, first navigate to Settings → General → Accessibility → Display Accommodations and find Invert Colors in the Vision list.
+Then, tap the white Off button (beside the words Invert Colors or Classic Invert) to enable the feature. In the new page choose "Smart Invert" or "Classic Invert" as required. The color inversion is applied to all screens until the feature is disabled by switching the button to the Off position.
+Invert Colors can be used with VoiceOver, Zoom and Grayscale.
+Classic Invert
+Classic Invert inverts everything on the screen. As you can see from the invert screen, some items are difficult to see in Invert Colors - such as the native switch.
+Figure 20: Activating Classic Invert on iOS
+Figure 21: Classic Invert on iOS activated
+Smart Invert
+"Smart Invert," a recent addition to iOS, will invert the colors of text and solid backgrounds while preserving the colors of graphics, media, and some mobile sites that support dark mode. When enabled, images on your site should not be inverted so that they remain clear and consistent.
+As you can see from the invert screen, native switches are much easier to see in Smart Invert than in Classic Invert.
+Figure 22: Activating Smart Invert on iOS
+Figure 23: Smart Invert on iOS activated
+How to test 
+1.    Open the site.
+2.    Activate Classic Invert.
+3.    Is the contrast between the foreground and background sufficient for important content and actionable items?
+4.    Ensure that no important content or actionable items use color as critical to its meaning.
+5.    Turn off Classic Invert.
+6.    Identify images, videos, camera access, dark backgrounds in the site.
+7.    Turn on Smart Invert.
+8.    Does the page show inverted colors, with the exception of images, videos, camera access and dark backgrounds?
+Examples
+Pass 1 - Classic Invert
+All content in the website inverts colors.
+Figure 24: Classic Invert
+  
+
+ 
+9.7: Grayscale (iOS)
+All actionable items and content can be accessed and activated with Grayscale enabled on iOS.
+About this requirement
+To enable Grayscale, first navigate to Settings → General → Accessibility → Display Accommodations. Select Color Filters and toggle Color Filters to the On position. Grayscale is listed as the first color filter in the list and should be checked (on) by default. If not, select Grayscale so it is checked. Once Grayscale is enabled colors across iOS and all mobile sites are in grayscale.
+Figure 25: Grayscale view on iOS
+
+Grayscale is applied to all screens until the feature is disabled by toggling the button to the Off position. Grayscale can be used with VoiceOver, Zoom and Invert Colors.
+How to test 
+1.    Open the site.
+2.    Activate Grayscale.
+3.    Is the contrast between the foreground and background sufficient for important content and actionable items?
+4.    Ensure that no important content or actionable items use color as critical to its meaning.
+Examples
+Pass 1 - Grayscale
+The entire site changes to Grayscale.
+Normal displayGrayscale displayFigure 26: Grayscale
+Figure 27: Grayscale activated
+ 
+
+ 
+9.8: Reader view and increase text size (iOS Safari)
+All actionable items and content can be accessed and activated with Reader View and increase text size enabled on iOS Safari.
+About this requirement
+The Larger Text Accessibility feature found in iPhones does not apply to Safari in iOS 12 and below. For iOS version 13.x, you may increase the text size for Safari in the Safari application settings.
+Safari appears to rely on many structural elements to orient itself to the main content of the page. When clicked, the view should display the heading and content of the "main" part of the page, defined broadly, excluding any navigational elements other than "next" and "previous" at the end of the page or post.
+If you find that the Reader view does not capture the main content of the page, check for the presence of structural tags such as <main>. 
+For iOS version 12.3 and lower, you must do the following on Safari:
+1.    Open the web page in the browser.  
+2.    If text size on that page can be increased Safari will display "Reader View" in the URL area and then an icon appearing as several horizontal lines on the left. Not all pages have "Reader View" available.  
+3.    Tap the lines icon. An "AA" icon appears in the top-right of the URL area.
+4.    Tap on the "AA" to open a menu.   
+5.    Increase or decrease the text size by tapping on the large A or small A.  
+When Safari has enough information to create a reader view, you can see the Reader view icon to the left of the domain name (URL) at the top of the screen.
+Figure 28: Turning on the Reader view on iOS
+Figure 29: The same article displayed in Reader view
+When Reader View is available you can select the "AA" option in the top right to modify text size and color.
+  Figure 30: Increase text size (smaller text)
+Figure 31: Increase text size (larger text)
+How to test 
+For iOS version 13.x, you may increase the text size for Safari in the Safari application settings.
+For iOS version 12.3 and lower, you must do the following on Safari:
+1.    Identify all pages with one main block of text.
+2.    Is the Reader view available?
+3.    If the Reader view is available, tap the lines icon. Does the content change to Reader view?
+4.    Tap on the "AA" to open a menu.   
+5.    Increase or decrease the text size by tapping on the large A or small A.  
+6.    Does the text change size appropriately?
+7.    Ensure that extraneous content is not shown, and the only content visible is the main block of content (with headings)
+8.    Ensure the text does not overlap or obstruct other elements on the page.
+Examples
+Pass 1 - Reader View
+On this site, the Reader view displays just the article text.
+Normal ViewReader ViewFigure 34: Reader view (normal view)
+Figure 35: Reader view
+Pass 2 - Reader View increase text size
+In this page, the text changes size appropriately.
+Smallest textLargest textFigure 36: Reader View increase text size (smallest text)
+Figure 37: Reader View increase text size (largest text)
+ 
+10. Android test cases
+In general, you access assistive technologies and mobile features through the Settings menu, and then select Accessibility. In most cases you can access detailed instructions by selecting the question mark icon in the top right-hand corner.
+Figure 38: Support link in the Font Size pageFigure 39: Font size support 
+
+ 
+10.1: TalkBack (Android)
+All actionable items and content can be accessed and activated by TalkBack on Android.
+About this requirement
+To enable TalkBack, navigate to Settings → Accessibility → TalkBack then switch the button to On. A "Use TalkBack" confirmation screen will appear. When used for the first time a tutorial will be launched. Ensure the device volume is turned up as TalkBack doesn't automatically adjust the volume if muted. See the Android documentation on getting started on Android with TalkBack.
+You can also access additional information and a detailed TalkBack tutorial by selecting Settings.
+Figure 40: Selecting Settings in the TalkBack pageFigure 41: The TalkBack tutorialHow to test 
+1.    With TalkBack on, open the site.  
+2.    Swipe through the site.  
+3.    As you swipe, the content will be read out loud.
+4.    Verify that all content can be read by TalkBack and that the text being read by TalkBack matches what is on screen.
+5.    Verify that all actionable items can be accessed and controlled by TalkBack. It is imperative that al actionable items are accurately labelled and described. 
+Examples
+Pass
+There are currently no example passes documented for this requirement. Similar Pass examples are available in the Mobile Site Assistive Technologies and Mobile Features Test Cases document.
+
+10.2: Keyboard (Android)
+All actionable items and content can be accessed and activated by the keyboard on Android.
+About this requirement
+Connect a Bluetooth keyboard to your Android device and navigate the page in Chrome as you would on desktop. Press TAB to navigate from one actionable item (buttons, links and form controls) to the next, use SPACEBAR to scroll the page, and press ENTER to activate the currently selected item.
+How to test 
+1.    Connect the keyboard. 
+2.    Do all actionable items receive focus when using the TAB or arrow keys?
+3.    Can all actionable items be activated using Enter?
+4.    Can the keyboard access all fields, radio buttons, checkboxes, dropdowns and submit buttons?
+5.    Is the keyboard focus visible at all times?
+6.    Is the keyboard focus indicator highly visible?
+7.    Do items receive keyboard focus in the order that they visibly appear on the screen?
+Examples
+Pass 1 - Keyboard accessible with highly visible keyboard focus indicator
+In The Washington Post website, the menu items are keyboard accessible and have a highly visible keyboard focus indicator.
+Figure 43: Keyboard accessible with highly visible keyboard focus indicator
+ 10.3: Switch (Android)
+All actionable items and content can be accessed and activated by the switch on Android.
+About this requirement
+To enable switch access, navigate to Settings → Accessibility → Switch access and then switch the button to On.
+Switch Access has two modes: item mode and point scan mode. Item mode will scan through the elements on the screen. Once an element is selected, the options to Tap the element or access the switch menu appears. When an element cannot be accessed using item mode, point mode can be used. Point scan mode allows the user to select a location on screen to simulate a tap through a coordinate grid system. Users select the vertical location and then the horizontal location of where they would like to tap. Point mode is much more tedious to use than item mode. The menu for Switch Access is at the top of the screen and can be used to access scrolling, switch modes and access device functions.
+Users typically use one or two switches. A variety of hardware options are available to use as a switch: Bluetooth switch, Bluetooth keyboard, sip and puff technology, wheelchair joystick and other switches. For testing, it is easiest to use a Bluetooth keyboard. Each key can be programmed as a different switch action. 
+To use switch access, you'll need a keyboard paired with the tablet or mobile. Then you'll need to assign keys to actions through Settings → Accessibility → Switch access → Settings. Select Assign switches for scanning under the heading "Assign switches" to map a keystroke to the action. Mapping "Auto-scan" and "Enter" actions is recommended. Note that the keys that you map to actions will no longer have their original action. The on-screen keyboard may not appear by default. To enable the on-screen keyboard: Settings → General Management → Language and input → Physical keyboard → toggle Show on-screen keyboard to On.
+The switch's item mode navigates to both actionable and nonactionable elements. Most of the time, nonactionable elements do not need to be accessed if they are visible in the current screen view. Scrolling is also an important feature to test in order to access content. Scrolling can be accessed on the switch's menu or activating an area of the screen via item mode.
+If the on-screen keyboard is not working properly with Switch Access, check that your on-screen keyboard is enabled and use the GBoard keyboard if the default keyboard doesn't behave correctly. 
+  Figure 44: The Settings link in the Switch Access page
+Figure 45: Switch Access Settings
+How to test 
+1.    Activate the switch (or the screen)
+2.    Scan to the section you want to navigate to and activate the switch
+3.    Activate the Tap menu item.
+4.    If the element is not accessible via item mode, point scan mode is a fallback/workaround. Item mode must work for an item to pass. To use point scan mode:
+a.    Activate the Menu button to access the menu
+b.    Activate the Point Scan Mode
+c.    A grid will appear to allow you pick where on the screen to simulate a "tap"
+d.    Select the horizontal area of the screen and then the vertical area of the screen 
+e.    Select the horizontal and vertical point to simulate a "tap"
+Examples
+Pass 1 - Actionable element can be navigated to and activated with switch
+The actionable element can be navigated to or activated using item mode. The link below is selected with item mode.
+Figure 47: Actionable element can be navigated to and activated with switch
+ 
+ 
+10.4: Magnification (Android)
+All actionable items and content can be accessed and activated with Magnification enabled on Android.
+About this requirement
+To enable Zoom, navigate to Settings → Accessibility → Magnification. There are two settings, one for Magnify with a Triple Tap (Off by default) and Magnify with a Shortcut (Off by default).
+Choose Magnify with a Triple Tap or Magnify with a Shortcut by selecting the item and then turning on the Use service button On. 
+When magnification gestures are enabled, you can zoom, pan across the screen and pan content: 
+*         Zoom: quickly tap the screen 3 times.  
+*         Adjust Zoom: pinch with two or more fingers to adjust zoom. 
+*         Scroll: drag two or more fingers to scroll.  
+*         Zoom temporarily: quickly tap the screen three times and hold your finger down on the third tap. 
+*         Move around the screen: drag.
+Note: you can't zoom in on the keyboard and navigation bar (native UI elements). 
+When magnify with button is on, you can use the Accessibility button at the bottom of the screen to quickly magnify. To zoom, tap the Accessibility button, then tap anywhere on the screen. 
+To zoom temporarily, tap the Accessibility button, then touch and hold on the screen. Drag to move around the screen. Lift finger to zoom out. 
+How to test 
+1.    Open the mobile site and turn on Magnification. 
+2.    While zoomed in, can you: 
+a.    Drag two or more fingers to pan across the screen?
+b.    Pinch two or more fingers together or spread them apart to adjust the zoom level?
+Ensure the zoom is operable and there are no barriers and no element does not zoom accordingly (keyboard and navigation bar excepted).
+Examples
+Pass
+There are currently no example passes documented for this requirement. Similar Pass examples are available in the Native App Assistive Technologies and Mobile Features Test Cases document.
+ 
+
+ 
+10.5: Remove animations (Android)
+All actionable items and content can be accessed and activated with Remove Animations enabled on Android.
+About this requirement
+The Remove Animations feature on Android reduces swipe-in features and things like parallax scrolling. To enable Remove Animations, navigate to Settings → Accessibility and turn on Remove Animations (off by default).
+How to test
+1.    Identify all areas of movement in the site.
+2.    Turn on the Remove Animations feature.
+3.    Is the movement removed or reduced?
+Examples
+Pass
+There are currently no example passes documented for this requirement.
+
+ 
+10.6: Color inversion (Android)
+All actionable items and content can be accessed and activated with Color Inversion enabled on Android.
+About this requirement
+To enable Color Inversion, navigate to Settings → Accessibility → Color Inversion then switch the button to On. Simply tapping on the title "Color Inversion" or tapping the toggle switch will activate color inversion immediately.  The background will invert from white to black, and colors for icons and text, invert accordingly.
+How to test 
+1.    Open the site.
+2.    Activate Color Inversion.
+3.    Is the contrast between the foreground and background sufficient for important content and actionable items?
+4.    Ensure that no important content or actionable items use color as critical to its meaning.
+Examples
+Pass 1 - Color Inversion
+The ABC website the Color Inversion works.
+Figure 49: Color inversion (normal view)
+Figure 50: Color inversion (activated)
+10.7: Grayscale (Android)
+All actionable items and content can be accessed and activated with Grayscale enabled on Android.
+About this requirement
+To enable Android's grayscale view, first enable Developer Mode on your device. (This is a one-time process for each device.) 
+*         Go to Settings → About Tablet (which might also be labelled "About Phone" or "About Device"). 
+*         Locate the Build number section and tap on the phrase "Build number" 7 times. 
+*         Go back to the main Settings page and tap on "Developer Options."
+*         Enable the Developer Options switch. 
+From then on, you can enable Android 's grayscale view (Lollipop 5.0 onwards) by going to Settings → Developer Options → Simulate color space and selecting "Monochromacy." Once you've made that selection, display colors will be replaced by shades of gray. 
+Grayscale is applied to all screens until you turn off the feature, which you can do by going back to Settings → Developer Options → Simulate color space and selecting "Disabled." 
+Android's grayscale view can be used alongside any of Android's other modes or applications, including TalkBack and Shade, among others. 
+How to test 
+1.    Open the site.
+2.    Activate Grayscale.
+3.    Is the contrast between the foreground and background sufficient for important content and actionable items?
+4.    Ensure that no important content or actionable items use color as critical to its meaning.
+Examples
+Pass
+There are currently no example passes documented for this requirement. Similar Pass examples are available in the Native App Assistive Technologies and Mobile Features Test Cases document.
+
+10.8: Color correction (Android)
+All actionable items and content can be accessed and activated with Color Correction enabled on Android.
+About this requirement
+In most cases color correction errors will be identified also as grayscale errors. This will be investigated more fully in the coming year.
+To enable Color Correction, first navigate to Settings → Accessibility → Color Correction and use the slider to turn color correction on. 
+You can mimic the three types of color blindness:
+*         Deuteranopia / Deuteranomaly - malfunctioning or missing green cones (approximately 6% of males)
+*         Protanopia / Protanomaly- malfunctioning or missing red cone (approximately 2% of males)
+*         Tritanopia / tritanomaly - malfunctioning or missing blue cones (approximately 0.5% of males)
+You can select different types of color blindness by selecting Correction mode.
+Figure 51: Selecting different color blindness optionsFigure 52: Color blindness optionsColor Correction on versus off
+Figure 53: Color Correction off
+Figure 54: Color Correction on
+How to test 
+1.    Turn on Color Correction.
+2.    Are all actionable items still visible? Is it clear what action will be undertaken when activated?
+3.    Is all important content and actionable items still visible?
+4.    Ensure that no important content or actionable items use color as critical to its meaning.
+5.    Is color contrast still sufficient?
+Examples
+Pass
+There are currently no example passes documented for this requirement. Similar Pass examples are available in the Mobile Site Assistive Technologies and Mobile Features Test Cases document.
+
+ 
+10.9: Increase display size (Android)
+All actionable items and content can be accessed and activated with Increase Display Size enabled on Android.
+About this requirement
+To enable Increase Display Size, first navigate to Settings → Accessibility → Display Size and use the slider to change the size of content, including text and containers. Please note that this overrides the Android Chrome Increase Text Size feature.
+How to test 
+1.    Increase the display size.
+2.    Open the site.
+3.    Has the text increased in size? 
+4.    Is all content visible and operational?
+Examples
+Pass 1 - Content increases in display size
+In the Google.com search results, all text is increased in size.
+Normal Display SizeLargest display sizeFigure 57: Content increases in display size (normal display size)
+Figure 58: Content increases in display size (largest display size)
+Pass 2 - Content increases in display size
+In the ABC site all text is increased in size. As the navigation items (News, Radio, iview, etc.) no longer fit they can now be scrolled.
+Normal Display SizeLargest display sizeFigure 59: Content increases in display size (normal display size)
+Figure 60: Content increases in display size (largest display size)
+
+ 
+10.10: Increase text size (Android Chrome)
+All actionable items and content can be accessed and activated with Increase text size enabled on Android Chrome.
+About this requirement
+When in Chrome, go to Settings > Accessibility > and using the Text Scaling slider, increase the text from 100% to 200%.  
+Figure 61: Android text scaling options
+
+How to test 
+1.    Open the Chrome browser and review the site
+2.    Change the text size to 200%
+3.    Does all text content increase in size?
+4.    Does all the content in the browser reflow accordingly, without obscuring any other non-text elements?
+Examples
+Pass 1 - All text increases in size
+In the ABC website all the text increases.
+Figure 66: All text increases in size (normal text size)
+Figure 67: All text increases in size (200% text size)
+
+ 
+10.11: Simplified view
+All actionable items and content can be accessed and activated with Simplified View enabled on Android Chrome.
+About this requirement
+To turn on Simplified view on Android Chrome you need to navigate to Chrome and activate the vertical ellipsis in the top right corner. Select Settings and then Accessibility. Select the option "Simplified view for web pages". When a simplified view of a page is available it will appear at the bottom of the screen.
+Figure 68: Vertical ellipsis menu button in Chrome
+
+Drop-down menu once the vertical ellipsis has been selected:
+Figure 69: Chrome dropdown menu
+
+Article on San Francisco Chronicle with simplified view option visible at the bottom of the screen:
+Figure 70: "Show simplified view" option
+The simplified view of the article:
+Figure 71: Simplified view activated
+How to test - Android Chrome 
+1.    Open the Chrome browser on Android 
+2.    Identify all pages with one main block of text.
+3.    Increase the text size to 200%.
+4.    Does the text change size appropriately?
+5.    Ensure that extraneous content is not shown, and the only content visible is the main block of content (with headings)
+6.    Ensure the text does not overlap or obstruct other elements on the page.
+Examples - Simplified view (Android)
+Pass 1 - Simplified view
+The New York Times supports Simplified View. With Simplified View enabled the navigation, header, login and subscribe information is removed from the screen.
+Normal ViewSimplified ViewFigure 74: Simplified view available (normal view)
+Figure 75: Simplified view available (activated)
+Pass 2 - Simplified view
+In the Travel Codex website, the Simplified view removes the header and advertisement.
+Normal viewSimplified viewFigure 76: Simplified view available (normal view)
+Figure 77: Simplified view available (activated)
+Pass 3 - Simplified view can be used
+In the Air and Space website, the ad is underneath the Simplified view so that users can still access the ad and the Simplified view option.
+Figure 78: Simplified view can be used
+  
+
+ 
+7.   Samsung test cases
+7.1: Voice assistant for Samsung (Samsung)          
+All actionable items and content can be accessed and activated by Voice Assistant on Samsung.
+About this requirement
+Samsung devices include a built-in screen reader called "Voice Assistant," however TalkBack can still be installed as part of the Accessibility Suite (found in the Google Play Store). Voice Assistant can be activated by accessing Settings → Accessibility → Screen Reader → Voice Assistant.
+How to test 
+1.    With Voice Assistant on, open a web page.  
+2.    Swipe through the site.  
+3.    As you swipe, the content will be read out loud.
+4.    Verify that all content can be read by Voice Assistant and that the text being read by Voice Assistant matches what is on screen.
+5.    Verify that all actionable items can be accessed and controlled by Voice Assistant. It is imperative that al actionable items are accurately labelled and described. 
+Examples
+Pass
+There are currently no example passes documented for this requirement. 
+ 
+
+ 
+8.   Kindle test cases
+Help for Kindle
+Kindle Fire devices include an Accessibility User's Guide, located by swiping down from the top of the screen to open Quick Settings. Then navigate to Settings → Accessibility → Accessibility User's Guide.  The User's Guide includes information for VoiceView, screen magnification, braille displays, and subtitles.  Accessibility help can also be found on the amazon website at https://www.amazon.com/gp/help/customer/display.html?nodeId=201829310&OpenInBrowser=1
+12.1: VoiceView for Kindle (Kindle)
+All actionable items and content can be accessed and activated by VoiceView on Kindle.
+About this requirement
+Kindle Fire devices include a built-in screen reader called "VoiceView". To enable VoiceView, swipe down from the top of the screen to open Quick Settings. Then navigate to Settings → Accessibility → VoiceView Screen Reader, and check VoiceView. A tutorial will be started at the first launch of the screen reader.
+How to test 
+1.    With VoiceView on, open a web page in the Silk browser.  
+2.    Swipe through the mobile site.  
+3.    As you swipe, the content will be read out loud.
+4.    Verify that all content can be read by VoiceView and that the text being read by VoiceView matches what is on screen.
+5.    Verify that all actionable items can be accessed and controlled by VoiceView. It is imperative that all actionable items are accurately labelled and described. 
+Examples
+Pass 1 - Content read by VoiceView
+In the content of the browser, each finger swipe by the user focuses on an area of the page and reads that area out loud.
+Figure 79: Content read by VoiceView
+  
+
+ 
+Acknowledgements
+Relationship to existing Accessibility testing standards
+This document is based on:
+*         W3C Web Content Accessibility Guidelines, Version 2.0
+*         W3C Web Content Accessibility Guidelines, Version 2.1
+*         BBC Mobile Accessibility Guidelines
+*         AccessibilityOz Mobile Testing Methodology
+*         TPG Mobile Testing Guide
+ICT Accessibility Testing Symposium Mobile Site Sub-Committee
+This document was developed by the ICT Accessibility Testing Symposium Mobile Sub-Committee. Members include: Gian Wild (Co-Chair), Peter McNally (Co-Chair), Brent Davis, Corbb O'Connor, Karen Herr, Kathryn Weber-Hottleman, Kathy Eng, Laura Renfro, Megha Rajopadhye, Mona Rekhi, Morgan Lee Kestner, Rafal Charlampowicz, Ryan Pugh, Steve Sawczyn, Sunish Gupta, Tom Lawton and Chris Law.
+Contacts
+Gian Wild
+Web:           www.accessibilityoz.com
+Phone:                 415 621 9366
+Email:                   gian@accessibilityoz.com
+Peter McNally
+Web:           www.bentley.edu
+Phone:                 781 891 2893
+Email:                    pmcnally@bentley.edu

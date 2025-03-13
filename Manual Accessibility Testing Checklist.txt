@@ -1,0 +1,173 @@
+﻿MANUAL ACCESSIBILITY        TESTING      CHECKLIST  
+CATEGORIES       FOR        TESTING               
+•       Keyboard               Navigation             
+•       Non-Visual             Navigation             with        a              screen     reader     
+•       Alternate                Visual      Access     
+•       Usability 
+•       Non-Audio             Access     
+•       STEM      Content  
+•       Downloadable       Files        
+Testing    Tools       Needed   
+•       Keyboard               
+•       WAVE      Toolbar   http://wave.webaim.org/    or            browser  extension               
+•       Screen     reader     (and        knowledge             of            how        it              works)    
+o    JAWS      
+o    VoiceOver              (Mac),                     o          Narrator (Windows)             
+o    NVDA      (Windows)             
+•       Color      contrast  analyzer                 o          https://chrome.google.com/webstore/detail/color-contrastanalyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en           
+Using       the          Checklist                 
+Automated             testing    such        as            using       the          WAVE      Tool         only        captures about      30-50%  of accessibility            issues.     Use          this          checklist to            follow     up           with        manual   testing.   
+•       Each        section    includes  instructions           on           how        to            use          applicable              testing    tools.                      
+•       The          desirable                answer   for           each        yes/no    question is             "Yes."                      
+•       Any         question answered               with        "No"        is             an            accessibility            issue       that         needs      to                be            addressed.                             
+•       It              is             helpful    to            provide   details     or            screenshots            of            issues      found.    
+                                
+TESTING                                                                                                                                                                                     KEYBOARD                                                                                                                                                                                                   NAVIGATION                                                                                                                                                                                                                   
+The          first         step         to            manual   testing    is             to            throw      away       your        mouse.   See          if              you can          navigate the          page,       including                all            menus    and         interactive              elements,               using       only the          keyboard.                               
+KEYBOARD             FOCUS    
+1. Use             the          TAB,        ENTER,    SPACE,    and         UP           and         DOWN    ARROW  keys         to            navigate.        
+•       You  can          always    see          the          keyboard                focus       when      tabbing   through  the          page.                       ☐        Yes           ☐            No           
+•       Keyboard       focus       does        not          unexpectedly         shift        to            other      elements.               ☐            Yes           ☐        No           
+TAB          ORDER    
+1.       TAB         through  the          page        to            see          if              the          order      is             logical.    
+2.       See          if              you         can          activate   all            interactive              elements                with        the          ENTER     or                SPACE     keys.        
+•       Tab  order      is             logical.                    ☐            Yes           ☐            No           
+•       All   elements                on           the          page        can          be            reached  by            keyboard.               This         includes  links,        dropdown              menu      items,      buttons, and         other      interactive              elements.                               ☐            Yes        ☐            No           
+•       If      dropdown              menus    exist,       the          keyboard                can          be            used        to            select      and         open        items       in             them.                      ☐            Yes           ☐            No           ☐            N/A         
+ELECTRONIC           FORMS   
+•       ☐    N/A         (There     are           no           forms.)   
+•       Tab  order      of            form       fields       is             logical.                    ☐            Yes           ☐            No                           
+•       In     dropdown              menus,   you         can          navigate and         select      items       using       the          keyboard                alone.                        ☐            Yes           ☐            No           
+•       Data                entered   is             retained  if              the          page        is             refreshed                or            too          much      time        is             taken       to            fill            out          form       fields.                      ☐            Yes           ☐            No           
+•       If      a              required field        is             left          blank,     keyboard                focus       shifts       to            that         field        when        user        is             notified. ☐            Yes           ☐            No           
+DIALOG   BOXES     AND        POPUPS 
+•       ☐    N/A         (There     are           no           dialog     boxes.)    
+•       Dialog             boxes      or            pop-up   menus    receive    keyboard                focus.                      ☐            Yes           ☐            No        
+•       Dialog             messages                can          be            dismissed               using       the          keyboard.                               ☐            Yes        ☐            No           
+•       Focus              returns   to            a              logical     location  when      dialog     boxes      are           closed.    ☐            Yes           ☐        No           
+MULTIMEDIA         CONTROLS             
+Includes  features  such        as            videos,    audio      files,        calendars,               Flash       content,  and         photo     carousels. 
+•       ☐    N/A         (There     are           no           multimedia.)          
+•       Manual           controls  exist        (e.g.         start,       pause,     go            back,       go            forward).                                ☐            Yes        ☐            No           
+•       Controls         can          be            tabbed    through. ☐            Yes           ☐            No           
+•       Controls         can          be            activated                using       the          keyboard.                               ☐            Yes           ☐            No        
+                                
+TESTING               NON-VISUAL      NAVIGATION      (SCREEN               READER)              
+When      testing    with        your        screen     reader,    use          the          same       keyboard                navigation              strategies that         you         used        in             the          previous section    (TAB,       ENTER,    SPACE,    and         ARROW  KEYS).     This         time, listen       to            how        the          screen     reader     interprets               the          page        as            you         navigate with        the keyboard.                               
+How        to            use          a              screen     reader:    
+•       VoiceOver      (Mac)      https://help.apple.com/voiceover/info/guide/10.12/   
+•       Narrator         (Windows)             https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started            
+•       NVDA              (Windows)             http://webaim.org/articles/nvda/     
+•       JAWS              http://webaim.org/articles/jaws/      
+                
+LINKS       -              DESCRIPTIVE          TEXT        
+One         of            the          ways       a              screen     reader     user        navigates                a              page        is             by            using the          TAB         key          to            skip         through  the          links        on           the          page,       or            by            bringing up a              list           of            links.       Links       should    be            descriptive             so            that         a              user        can          easily determine              where     they        will          go            even        when      taken       out          of            context.  
+•       Links               are           descriptive,            without  generic   text         such        as            "click       here".                      ☐            Yes        ☐            No           
+•       Distinguishing               information           is             placed     at             the          beginning               of            links.                       ☐        Yes           ☐            No           
+•       The  texts        of            links        are           intuitive  when      listed       alphabetically.       ☐            Yes           ☐            No           
+LOGICAL HEADINGS              
+Screen     reader     users       also         navigate content   using       headings.               Headings                allow       them       to            jump to            a              specific   section    instead   of            having    to            listen       to            the          entire      page.       
+•       Headings        are           used        logically  to            provide   structure                and         indicate  importance            of            the        content.                  ☐            Yes           ☐            No           
+•       Heading          levels      are           not          skipped. ☐            Yes           ☐            No           
+•       Pages              can          be            navigated               using       headings.                               ☐            Yes           ☐            No           
+SKIP         NAVIGATION          LINKS                      
+A              skip         navigation              link          is             helpful    for           users       who        don't       want       to            work       their way         through  all            the          links        on           the          page        before     getting    to            the          main       content.  This link          does        not          have        to            be            visible     on           the          page,       but          it              should    be            listed first         in             the          tab          order.      
+•       Skip navigation              links        are           present.                  ☐            Yes           ☐            No           
+•       Skip links        work       as            intended                using       JAWS,     skipping to            the          main       content   of            the        page.                       ☐            Yes           ☐            No           
+IMAGES   
+Any         non-text element  needs      a              text         description            that         screen     reading   software can          read        aloud to            the          listener.   It              should    describe the          purpose of            the          image      in             context.  
+•       ☐    N/A         (There     are           no           images.)  
+•       Purely             decorative              images    have        null         alternate                text         (ALT="").                                 ☐            Yes        ☐            No           
+•       All   meaningful            images    have        descriptive             alternate                text.        ☐            Yes           ☐            No           
+•       All   navigation              buttons  have        descriptive             alternate                text.        ☐            Yes           ☐            No           
+MULTIMEDIA         
+Includes  features  such        as            videos,    audio      files,        calendars,               Flash       content,  and         photo     carousels. 
+•       ☐    N/A         (There     are           no           multimedia.)          
+•       Multimedia    controls  have        alternate                text.                        ☐            Yes           ☐            No           
+•       Video              or            audio      do           not          start        to            play         automatically,        only        when      triggered        by            the          user.                        ☐            Yes           ☐            No           
+•       You  hear        what       you         expect     when      selecting controls.                 ☐            Yes           ☐            No                           
+•       Using              the          controls  is             intuitive.                 ☐            Yes           ☐            No           
+•       Videos            have        audio      descriptions           available for           any          information           that         is             only        conveyed               visually.  ☐            Yes           ☐            No           
+•       More               video      requirements         in             section    "TESTING                NON-AUDIO           ACCESS".                 
+FORMS                   
+•       ☐    N/A         (There     are           no           forms.)   
+•       Form               fields       have        descriptive             labels.                     ☐            Yes           ☐            No           
+•       Appropriate   descriptive             labels      are           present   and         read        by            screen     reader     when      tabbing        through  form       fields.                      ☐            Yes           ☐            No           
+•       You  can          fill            out          the          forms      and         submit    them       successfully            with        screen     reader.            ☐            Yes           ☐            No           
+•       Buttons          are           labeled   and         read        correctly by            screen     reader.    ☐            Yes           ☐            No           
+•       If      a              required field        is             left          blank,     screen     reader     reads       the          error       text         and        navigates                dialog     buttons. ☐            Yes           ☐            No           
+•       When             an            error       dialog     is             dismissed,              screen     reader     automatically         returns   to            the        empty     field.       ☐            Yes           ☐            No           
+LAYOUT   TABLES    
+Layout     tables      are           not          recommended       for           accessibility.           CSS          should    be            used        rather     than tables      to            layout     information.                          
+•       ☐    N/A         (There     are           no           layout     tables.)   
+•       Tables             are           not          used        purely     for           positioning            content.                  ☐            Yes           ☐            No        
+•       If      tables      are           used        for           layout,    they        do           not          have        designated             header    rows.       ☐        Yes           ☐            No           
+•       If      tables      are           used        for           layout,    the          reading   order      of            the          cells         makes     sense      when        linearized.              ☐            Yes           ☐            No           
+•       If      tables      are           used        for           layout,    they        allow       end         user        customization        and         text        scaling.                   ☐            Yes           ☐            No           •           Tables     are           not          nested    or            filled       with        spanned or            'spacer'   cells.                        ☐            Yes           ☐            No           
+DATA       TABLES    
+•       ☐    N/A         (There     are           no           data        tables.)   
+•       Data                tables      have        designated             header    and/or    column   rows.                       ☐            Yes           ☐            No        
+•       Tables             have        captions (short     text         descriptions).        ☐            Yes           ☐            No           
+•       Tables             are           not          nested    or            filled       with        spanned or            'spacer'   cells.                        ☐            Yes        ☐            No           
+•       Row or            column   headers  are           associated              with        the          appropriate           Scope     attribute.                        ☐            Yes           ☐            No                           
+FRAMES  
+•       ☐    N/A         (There     are           no           frames.)                  
+If              Frames    are           found     (not         recommended       for           accessibility):         
+•       Each                frame      has          a              descriptive             title         attribute value.                      ☐            Yes           ☐            No        
+•       When             you         refresh    a              page,       it              stays       on           the          current   frame.                     ☐            Yes        ☐            No           
+•       While              listening with        screen     reader,    you         can          navigate between frames    ☐            Yes           ☐            No                        
+•       While              listening with        screen     reader,    you         can          tell           what       the          purpose of            each        frame        is                             ☐            Yes           ☐            No           
+CAPTCHA               
+If              CAPTCHA               is             used,       it              must       be            fully        accessible               and         simple     to            use.                
+•       ☐    N/A         (There     is             no           CAPTCHA.)             
+•       CAPTCHA       is             fully        accessible               by            keyboard.                               ☐            Yes           ☐            No           
+•       CAPTCHA       is             fully        accessible               to            screen     reading   software.                                ☐            Yes           ☐        No           
+•       Audio             CAPTCHA               is             fully        accessible               by            screen     readers,  including                a              pause        that         allows     the          screen     reader     to            finish      before     the          audio      begins.                    ☐            Yes        ☐            No           
+•       Audio             CAPTCHA               has          an            alternative             for           users       with        hearing   impairments.                 ☐            Yes           ☐            No           
+TESTING               ALTERNATE         VISUAL ACCESS 
+Many      users       are           colorblind              or            have        low          vision.     Color      choice     matters   for           both groups    of            users.      Contrast impacts   those      with        low          vision,     while       those      who        are           colorblind cannot    distinguish             between certain    colors.     
+CHOICE   OF           COLOR    
+•       Color              is             not          used        as            the          sole         means     of            conveying              information           on        the          page.                       ☐            Yes           ☐            No           
+•       The  WAVE      test          indicates                 sufficient                contrast  (Minimum              AA)         for           text         on           solid        color       backgrounds.                         ☐            Yes           ☐            No           
+•       The  Chrome  WCAG     2.0          Color      Contrast Analyzer indicates                 sufficient                contrast  for           text         on        top          of            images    or            gradient  backgrounds.                         ☐            ☐            Yes           ☐            No           
+•       Hover             state        has          sufficient                contrast  or            underline               ☐            Yes           ☐            No           
+FONT       SIZE         /              ZOOM    
+This         is             important              for           users       with        low          vision      who        change    zoom      settings.  
+•       Text is             actual      text         (e.g.         not          images    of            text).       ☐            Yes           ☐            No           
+•       Font                sizes        increase  when      you         zoom      in             on           the          page.                       ☐            Yes           ☐        No           
+•       Text does        not          become  pixelated                when      zooming in             on           the          page.                       ☐            Yes        ☐            No                           
+•       Items               do           not          become  jumbled  when      zooming in             on           the          page.                       ☐            Yes        ☐            No           
+USABILITY            
+Many      users       have        a              non-apparent        disability,                such        as            a              traumatic                brain       injury or            a              cognitive                or            learning  disability,                that         affects     their        ability     to            process information.          Clear       organization          of            information           is             vital         for           these       users.      
+CLEAR     AND        SIMPLE   CONTENT               
+•       Fonts              are           basic,      legible,    easy        to            read.       ☐            Yes           ☐            No           
+•       The  viewing   area         is             not          crowded or            chaotic.                   ☐            Yes           ☐            No           
+•       There              is             plenty     of            white      space.                     ☐            Yes           ☐            No           
+•       There              is             no           flashing  content,  blinking  or            moving   text.        ☐            Yes           ☐            No           
+CONSISTENCY        AND        LOGIC     IN            VISUAL    NAVIGATION          
+•       Menus            are           consistent              across     the          entire      product.                 ☐            Yes           ☐            No           
+•       Visual              navigation              is             logical.                    ☐            Yes           ☐            No           
+                                
+TESTING               NON-AUDIO       ACCESS 
+This         includes  audio      files         such        as            podcasts as            well         as            videos.    
+•       ☐    N/A         (There     is             no           audio      or            video      content.)                
+•       Users               have        control    over        whether or            not          to            start        playing   the          video      or            audio.                        ☐            Yes           ☐            No           
+•       All   videos     have        captions.                                ☐            Yes           ☐            No           
+•       Existing           captions are           accurate.                                 ☐            Yes           ☐            No           
+•       Captions         have        sufficient                contrast. ☐            Yes           ☐            No           
+•       All   audio      files         have        a              link          to            a              transcript.                              ☐            Yes           ☐            No        
+STEM     (SCIENCE,            TECHNOLOGY,    ENGINEERING    AND       MATHEMATICS) CONTENT            
+This         includes  math       or            other      content   that         uses        special    symbols: 
+•       ☐    N/A         (There     is             no           content   with        math       or            other      symbols.)               
+•       Screen             reader     recognizes              and         reads       the          symbols  (Formatted            using       MathML,        MathJax,                LaTeX).                    ☐            Yes           ☐            No           
+DOWNLOADABLE             FILES      
+Documents             that         are           linked      for           download              from        a              site          also         need       to            be accessible.                              
+•       ☐    N/A         (There     are           no           downloadable       files.)       
+•       PDFs               are           searchable              /              OCR'd     (you        can          highlight or            search     text         in             the        document).                            ☐            Yes           ☐            No           ☐            N/A         
+•       PDFs               have        tags         and         the          reading   order      is             logical.                    ☐            Yes           ☐            No        ☐            N/A         
+•       PDFs               have        alt            text         for           non-text elements.                               ☐            Yes           ☐            No           ☐        N/A         
+•       Word              documents             have        hierarchical            headings.                               ☐            Yes           ☐            No           ☐        N/A         
+•       Word              documents             have        alt            text         on           non-text elements.                               ☐            Yes           ☐        No           ☐            N/A         
+•       PowerPoint    slides      have        logical     reading   order.                      ☐            Yes           ☐            No           ☐            N/A         
+•       PPT slides      have        alt            text         on           non-text elements.                               ☐            Yes           ☐            No           ☐        N/A         
+•       PPT slides      have        sufficient                contrast.☐             Yes           ☐            No           ☐            N/A         

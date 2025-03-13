@@ -1,0 +1,1062 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Digital Accessibility Manual Testing Procedures</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.4pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:11.5pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.6pt;
+	margin-left:8.75pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:74.2pt 71.75pt 72.85pt 72.1pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.75pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+20.5pt;line-height:107%'>Digital Accessibility Manual Testing Procedures </span></b></p>
+
+<h1 style='margin-left:.5in;text-indent:-27.75pt'><span style='line-height:
+107%'>I.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Introduction </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.8pt;
+margin-left:-.25pt'>Dakota State University                                <span
+style='font-family:"Times New Roman",serif'> </span> announced<span
+style='font-family:"Times New Roman",serif'> </span> a Digital Accessibility
+Policy,                          <span style='font-family:"Times New Roman",serif'> </span> that
+sets forth  <span style='font-family:"Times New Roman",serif'> </span> accessibility<span
+style='font-family:"Times New Roman",serif'> </span> expectations, all <span
+style='font-family:"Times New Roman",serif'> </span>new<span style='font-family:
+"Times New Roman",serif'> </span> digital <span style='font-family:"Times New Roman",serif'> </span>content
+created<span style='font-family:"Times New Roman",serif'> </span> and<span
+style='font-family:"Times New Roman",serif'> </span> used<span
+style='font-family:"Times New Roman",serif'> </span> internally<span
+style='font-family:"Times New Roman",serif'> </span> at the <span
+style='font-family:"Times New Roman",serif'> </span>University,<span
+style='font-family:"Times New Roman",serif'> </span> as<span style='font-family:
+"Times New Roman",serif'> </span> well <span style='font-family:"Times New Roman",serif'> </span>as<span
+style='font-family:"Times New Roman",serif'> </span> technology<span
+style='font-family:"Times New Roman",serif'> </span> systems,<span
+style='font-family:"Times New Roman",serif'> </span> platforms,<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> applications<span style='font-family:"Times New Roman",serif'>
+</span> bought or <span style='font-family:"Times New Roman",serif'> </span>built
+by<span style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>University.<span
+style='font-family:"Times New Roman",serif'> </span> The <span
+style='font-family:"Times New Roman",serif'> </span>Policy<span
+style='font-family:"Times New Roman",serif'> </span> calls<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>University<span style='font-family:"Times New Roman",serif'>
+</span> to<span style='font-family:"Times New Roman",serif'> </span> publish<span
+style='font-family:"Times New Roman",serif'> </span> digital <span
+style='font-family:"Times New Roman",serif'> </span>accessibility<span
+style='font-family:"Times New Roman",serif'> </span> manual <span
+style='font-family:"Times New Roman",serif'> </span>testing <span
+style='font-family:"Times New Roman",serif'> </span>procedures<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> provide <span style='font-family:"Times New Roman",serif'> </span>guidance
+<span style='font-family:"Times New Roman",serif'> </span>for <span
+style='font-family:"Times New Roman",serif'> </span>site <span
+style='font-family:"Times New Roman",serif'> </span>owners,<span
+style='font-family:"Times New Roman",serif'> </span> content managers<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> technology<span style='font-family:"Times New Roman",serif'>
+</span> support staff.<span style='font-family:"Times New Roman",serif'> </span> </p>
+
+<h1 style='margin-left:35.25pt;text-indent:-32.25pt'><span style='line-height:
+107%'>II.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Manual Testing Procedures </h1>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Automated<span style='font-family:
+"Times New Roman",serif'> </span> testing <span style='font-family:"Times New Roman",serif'> </span>tools<span
+style='font-family:"Times New Roman",serif'> </span> speed<span
+style='font-family:"Times New Roman",serif'> </span> up<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>process<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> evaluation<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> allow<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>regular <span
+style='font-family:"Times New Roman",serif'> </span>monitoring.<span
+style='font-family:"Times New Roman",serif'> </span> However,<span
+style='font-family:"Times New Roman",serif'> </span> human<span
+style='font-family:"Times New Roman",serif'> </span> evaluation<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>also<span style='font-family:"Times New Roman",serif'>
+</span> essential <span style='font-family:"Times New Roman",serif'> </span>to<span
+style='font-family:"Times New Roman",serif'> </span> assessing  <span
+style='font-family:"Times New Roman",serif'> </span>a<span style='font-family:
+"Times New Roman",serif'> </span>website’s<span style='font-family:"Times New Roman",serif'>
+</span> accessibility<span style='font-family:"Times New Roman",serif'> </span> because
+<span style='font-family:"Times New Roman",serif'> </span>no<span
+style='font-family:"Times New Roman",serif'> </span> single <span
+style='font-family:"Times New Roman",serif'> </span>tool <span
+style='font-family:"Times New Roman",serif'> </span>can<span style='font-family:
+"Times New Roman",serif'> </span> determine <span style='font-family:"Times New Roman",serif'> </span>to<span
+style='font-family:"Times New Roman",serif'> </span> what extent a <span
+style='font-family:"Times New Roman",serif'> </span>site <span
+style='font-family:"Times New Roman",serif'> </span>conforms<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>Standards.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt;line-height:103%'><b>Testing </b><span
+style='font-family:"Times New Roman",serif'> </span><b>Procedure</b><span
+style='font-family:"Times New Roman",serif'> </span><b> and </b><span
+style='font-family:"Times New Roman",serif'> </span><b>Protocols:</b><span
+style='font-family:"Times New Roman",serif'> </span><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:6.1pt;
+margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;line-height:
+98%'>For <span style='font-family:"Times New Roman",serif'> </span>the <span
+style='font-family:"Times New Roman",serif'> </span>purposes<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> this<span style='font-family:"Times New Roman",serif'>
+</span> policy,<span style='font-family:"Times New Roman",serif'> </span> testing
+<span style='font-family:"Times New Roman",serif'> </span>must address<span
+style='font-family:"Times New Roman",serif'> </span> these <span
+style='font-family:"Times New Roman",serif'> </span>protocols<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> questions,<span style='font-family:"Times New Roman",serif'>
+</span> which<span style='font-family:"Times New Roman",serif'> </span> only<span
+style='font-family:"Times New Roman",serif'> </span> represent a <span
+style='font-family:"Times New Roman",serif'> </span>starting <span
+style='font-family:"Times New Roman",serif'> </span>point,<span
+style='font-family:"Times New Roman",serif'> </span> rather <span
+style='font-family:"Times New Roman",serif'> </span>than<span style='font-family:
+"Times New Roman",serif'> </span>  a<span style='font-family:"Times New Roman",serif'>
+</span>comprehensive <span style='font-family:"Times New Roman",serif'> </span>set,<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>assessing <span
+style='font-family:"Times New Roman",serif'> </span>digital <span
+style='font-family:"Times New Roman",serif'> </span>technology<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> ensure <span style='font-family:"Times New Roman",serif'> </span>access<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> people <span style='font-family:"Times New Roman",serif'> </span>with<span
+style='font-family:"Times New Roman",serif'> </span> disabilities.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>For </b><span
+style='font-family:"Times New Roman",serif'> </span><b>web </b><span
+style='font-family:"Times New Roman",serif'> </span><b>pages:</b><span
+style='font-family:"Times New Roman",serif'> </span> Check<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>following <span
+style='font-family:"Times New Roman",serif'> </span>across<span
+style='font-family:"Times New Roman",serif'> </span> different browsers<span
+style='font-family:"Times New Roman",serif'> </span> using <span
+style='font-family:"Times New Roman",serif'> </span>different types<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> hardware <span style='font-family:"Times New Roman",serif'> </span>(for
+<span style='font-family:"Times New Roman",serif'> </span>documentation,<span
+style='font-family:"Times New Roman",serif'> </span> please <span
+style='font-family:"Times New Roman",serif'> </span>specify<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>browsers<span
+style='font-family:"Times New Roman",serif'> </span> by<span style='font-family:
+"Times New Roman",serif'> </span> version<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> different
+desktop/laptop<span style='font-family:"Times New Roman",serif'> </span> configurations):<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Keyboard </b><span
+style='font-family:"Times New Roman",serif'> </span><b>access:</b><span
+style='font-family:"Times New Roman",serif'> </span> Can<span style='font-family:
+"Times New Roman",serif'> </span> users<span style='font-family:"Times New Roman",serif'>
+</span> access<span style='font-family:"Times New Roman",serif'> </span> all <span
+style='font-family:"Times New Roman",serif'> </span>functions<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> content,<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> complete <span
+style='font-family:"Times New Roman",serif'> </span>all <span style='font-family:
+"Times New Roman",serif'> </span>tasks,<span style='font-family:"Times New Roman",serif'>
+</span> independently<span style='font-family:"Times New Roman",serif'> </span> by<span
+style='font-family:"Times New Roman",serif'> </span> using <span
+style='font-family:"Times New Roman",serif'> </span>only<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>keyboard<span
+style='font-family:"Times New Roman",serif'> </span> (&lt;tab&gt;,<span
+style='font-family:"Times New Roman",serif'> </span> &lt;enter&gt;,<span
+style='font-family:"Times New Roman",serif'> </span> &lt;spacebar&gt;,<span
+style='font-family:"Times New Roman",serif'> </span> &lt;esc&gt;,<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> arrow<span style='font-family:"Times New Roman",serif'>
+</span> keys)?<span style='font-family:"Times New Roman",serif'> </span> Verify<span
+style='font-family:"Times New Roman",serif'> </span> in<span style='font-family:
+"Times New Roman",serif'> </span> particular:<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>There <span style='font-family:
+"Times New Roman",serif'> </span>are <span style='font-family:"Times New Roman",serif'> </span>no<span
+style='font-family:"Times New Roman",serif'> </span> keyboard<span
+style='font-family:"Times New Roman",serif'> </span> traps<span
+style='font-family:"Times New Roman",serif'> </span> that would<span
+style='font-family:"Times New Roman",serif'> </span> prevent a <span
+style='font-family:"Times New Roman",serif'> </span>user <span
+style='font-family:"Times New Roman",serif'> </span>from advancing <span
+style='font-family:"Times New Roman",serif'> </span>through<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>entire <span
+style='font-family:"Times New Roman",serif'> </span>page,<span
+style='font-family:"Times New Roman",serif'> </span> such<span
+style='font-family:"Times New Roman",serif'> </span> as<span style='font-family:
+"Times New Roman",serif'> </span> an<span style='font-family:"Times New Roman",serif'>
+</span> automatically-refreshing <span style='font-family:"Times New Roman",serif'> </span>social
+<span style='font-family:"Times New Roman",serif'> </span>media <span
+style='font-family:"Times New Roman",serif'> </span>embedded<span
+style='font-family:"Times New Roman",serif'> </span> feed<span
+style='font-family:"Times New Roman",serif'> </span> (tip: try<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> tab<span style='font-family:"Times New Roman",serif'>
+</span> very,<span style='font-family:"Times New Roman",serif'> </span> very<span
+style='font-family:"Times New Roman",serif'> </span> slowly<span
+style='font-family:"Times New Roman",serif'> </span> through<span
+style='font-family:"Times New Roman",serif'> </span> any<span style='font-family:
+"Times New Roman",serif'> </span> such<span style='font-family:"Times New Roman",serif'>
+</span> feed<span style='font-family:"Times New Roman",serif'> </span> to<span
+style='font-family:"Times New Roman",serif'> </span> observe <span
+style='font-family:"Times New Roman",serif'> </span>whether  <span
+style='font-family:"Times New Roman",serif'> </span>a<span style='font-family:
+"Times New Roman",serif'> </span>user <span style='font-family:"Times New Roman",serif'> </span>can<span
+style='font-family:"Times New Roman",serif'> </span> close <span
+style='font-family:"Times New Roman",serif'> </span>it,<span style='font-family:
+"Times New Roman",serif'> </span> or<span style='font-family:"Times New Roman",serif'>
+</span> move <span style='font-family:"Times New Roman",serif'> </span>past it,<span
+style='font-family:"Times New Roman",serif'> </span> at a <span
+style='font-family:"Times New Roman",serif'> </span>reasonable <span
+style='font-family:"Times New Roman",serif'> </span>point;  <span
+style='font-family:"Times New Roman",serif'> </span>if<span style='font-family:
+"Times New Roman",serif'> </span>the <span style='font-family:"Times New Roman",serif'> </span>feed<span
+style='font-family:"Times New Roman",serif'> </span> keeps<span
+style='font-family:"Times New Roman",serif'> </span> refreshing <span
+style='font-family:"Times New Roman",serif'> </span>by<span style='font-family:
+"Times New Roman",serif'> </span> automatically<span style='font-family:"Times New Roman",serif'>
+</span> adding <span style='font-family:"Times New Roman",serif'> </span>additional
+<span style='font-family:"Times New Roman",serif'> </span>entries<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>shown,<span
+style='font-family:"Times New Roman",serif'> </span> it causes<span
+style='font-family:"Times New Roman",serif'> </span>  a<span style='font-family:
+"Times New Roman",serif'> </span>trap<span style='font-family:"Times New Roman",serif'>
+</span> for <span style='font-family:"Times New Roman",serif'> </span>those <span
+style='font-family:"Times New Roman",serif'> </span>who<span style='font-family:
+"Times New Roman",serif'> </span> are <span style='font-family:"Times New Roman",serif'> </span>unable
+<span style='font-family:"Times New Roman",serif'> </span>to<span
+style='font-family:"Times New Roman",serif'> </span> use <span
+style='font-family:"Times New Roman",serif'> </span>quick<span
+style='font-family:"Times New Roman",serif'> </span> keyboard<span
+style='font-family:"Times New Roman",serif'> </span> strokes<span
+style='font-family:"Times New Roman",serif'> </span> – <span style='font-family:
+"Times New Roman",serif'> </span>or  <span style='font-family:"Times New Roman",serif'> </span>a<span
+style='font-family:"Times New Roman",serif'> </span>mouse <span
+style='font-family:"Times New Roman",serif'> </span>– <span style='font-family:
+"Times New Roman",serif'> </span>to<span style='font-family:"Times New Roman",serif'>
+</span> navigate); Expandable <span style='font-family:"Times New Roman",serif'> </span>elements<span
+style='font-family:"Times New Roman",serif'> </span> can<span style='font-family:
+"Times New Roman",serif'> </span> not only<span style='font-family:"Times New Roman",serif'>
+</span> be <span style='font-family:"Times New Roman",serif'> </span>expanded,<span
+style='font-family:"Times New Roman",serif'> </span> but can<span
+style='font-family:"Times New Roman",serif'> </span> also<span
+style='font-family:"Times New Roman",serif'> </span> be <span style='font-family:
+"Times New Roman",serif'> </span>collapsed<span style='font-family:"Times New Roman",serif'>
+</span> automatically<span style='font-family:"Times New Roman",serif'> </span> or
+<span style='font-family:"Times New Roman",serif'> </span>with<span
+style='font-family:"Times New Roman",serif'> </span>  a<span style='font-family:
+"Times New Roman",serif'> </span>keyboard<span style='font-family:"Times New Roman",serif'>
+</span> command,<span style='font-family:"Times New Roman",serif'> </span> so<span
+style='font-family:"Times New Roman",serif'> </span> they<span
+style='font-family:"Times New Roman",serif'> </span> do<span style='font-family:
+"Times New Roman",serif'> </span> not block<span style='font-family:"Times New Roman",serif'>
+</span> other <span style='font-family:"Times New Roman",serif'> </span>content.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Logical</b><span
+style='font-family:"Times New Roman",serif'> </span><b> reading </b><span
+style='font-family:"Times New Roman",serif'> </span><b>order:</b><span
+style='font-family:"Times New Roman",serif'> </span> Does<span
+style='font-family:"Times New Roman",serif'> </span> keyboard<span
+style='font-family:"Times New Roman",serif'> </span> navigation<span
+style='font-family:"Times New Roman",serif'> </span> follow<span
+style='font-family:"Times New Roman",serif'> </span>  a<span style='font-family:
+"Times New Roman",serif'> </span>logical,<span style='font-family:"Times New Roman",serif'>
+</span> predictable <span style='font-family:"Times New Roman",serif'> </span>order?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Skip </b><span
+style='font-family:"Times New Roman",serif'> </span><b>links:</b> <span
+style='font-family:"Times New Roman",serif'> </span>Can<span style='font-family:
+"Times New Roman",serif'> </span> keyboard-only<span style='font-family:"Times New Roman",serif'>
+</span> users<span style='font-family:"Times New Roman",serif'> </span> bypass<span
+style='font-family:"Times New Roman",serif'> </span> long <span
+style='font-family:"Times New Roman",serif'> </span>navigation<span
+style='font-family:"Times New Roman",serif'> </span> menus,<span
+style='font-family:"Times New Roman",serif'> </span> embedded<span
+style='font-family:"Times New Roman",serif'> </span> social <span
+style='font-family:"Times New Roman",serif'> </span>media <span
+style='font-family:"Times New Roman",serif'> </span>feeds,<span
+style='font-family:"Times New Roman",serif'> </span> etc.,<span
+style='font-family:"Times New Roman",serif'> </span> without having <span
+style='font-family:"Times New Roman",serif'> </span>to<span style='font-family:
+"Times New Roman",serif'> </span> use <span style='font-family:"Times New Roman",serif'> </span>excessive
+<span style='font-family:"Times New Roman",serif'> </span>tabbing?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt;line-height:103%'><b>Visual</b><span
+style='font-family:"Times New Roman",serif'> </span><b> focus indicator: </b><span
+style='font-family:"Times New Roman",serif'> </span><b>Can </b><span
+style='font-family:"Times New Roman",serif'> </span><b>users visually </b><span
+style='font-family:"Times New Roman",serif'> </span><b>track </b><span
+style='font-family:"Times New Roman",serif'> </span><b>where</b><span
+style='font-family:"Times New Roman",serif'> </span><b> they </b><span
+style='font-family:"Times New Roman",serif'> </span><b>are</b><span
+style='font-family:"Times New Roman",serif'> </span><b> on </b><span
+style='font-family:"Times New Roman",serif'> </span><b>the</b><span
+style='font-family:"Times New Roman",serif'> </span><b> page</b><span
+style='font-family:"Times New Roman",serif'> </span><b> while</b><span
+style='font-family:"Times New Roman",serif'> </span><b> navigating </b><span
+style='font-family:"Times New Roman",serif'> </span><b>with  </b><span
+style='font-family:"Times New Roman",serif'> </span><b>a</b><span
+style='font-family:"Times New Roman",serif'> </span><b>keyboard?</b><span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Alternative</b><span
+style='font-family:"Times New Roman",serif'> </span><b> (Alt)</b><span
+style='font-family:"Times New Roman",serif'> </span><b> text:</b><span
+style='font-family:"Times New Roman",serif'> </span> Are <span
+style='font-family:"Times New Roman",serif'> </span>all <span style='font-family:
+"Times New Roman",serif'> </span>important images<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> graphics<span
+style='font-family:"Times New Roman",serif'> </span> labelled<span
+style='font-family:"Times New Roman",serif'> </span> with<span
+style='font-family:"Times New Roman",serif'> </span> meaningful <span
+style='font-family:"Times New Roman",serif'> </span>text,<span
+style='font-family:"Times New Roman",serif'> </span> associated<span
+style='font-family:"Times New Roman",serif'> </span> captions,<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>adjoining <span style='font-family:"Times New Roman",serif'> </span>descriptions<span
+style='font-family:"Times New Roman",serif'> </span> so,<span style='font-family:
+"Times New Roman",serif'> </span> for <span style='font-family:"Times New Roman",serif'> </span>example,<span
+style='font-family:"Times New Roman",serif'> </span> people <span
+style='font-family:"Times New Roman",serif'> </span>who<span style='font-family:
+"Times New Roman",serif'> </span> are <span style='font-family:"Times New Roman",serif'> </span>blind<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> use <span style='font-family:"Times New Roman",serif'> </span>assistive
+<span style='font-family:"Times New Roman",serif'> </span>technology<span
+style='font-family:"Times New Roman",serif'> </span> will <span
+style='font-family:"Times New Roman",serif'> </span>have <span
+style='font-family:"Times New Roman",serif'> </span>access<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>relevant
+information<span style='font-family:"Times New Roman",serif'> </span> contained<span
+style='font-family:"Times New Roman",serif'> </span> in<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>image
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>graphic?<span
+style='font-family:"Times New Roman",serif'> </span> For <span
+style='font-family:"Times New Roman",serif'> </span>linked<span
+style='font-family:"Times New Roman",serif'> </span> images,<span
+style='font-family:"Times New Roman",serif'> </span> does<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>alternative <span
+style='font-family:"Times New Roman",serif'> </span>text tell <span
+style='font-family:"Times New Roman",serif'> </span>users<span
+style='font-family:"Times New Roman",serif'> </span> where <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>link<span style='font-family:"Times New Roman",serif'>
+</span> will <span style='font-family:"Times New Roman",serif'> </span>take <span
+style='font-family:"Times New Roman",serif'> </span>them,<span
+style='font-family:"Times New Roman",serif'> </span> rather <span
+style='font-family:"Times New Roman",serif'> </span>than<span style='font-family:
+"Times New Roman",serif'> </span> describe <span style='font-family:"Times New Roman",serif'> </span>the
+<span style='font-family:"Times New Roman",serif'> </span>image?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Links:</b> <span
+style='font-family:"Times New Roman",serif'> </span>Are <span style='font-family:
+"Times New Roman",serif'> </span>links<span style='font-family:"Times New Roman",serif'>
+</span> well-named<span style='font-family:"Times New Roman",serif'> </span> and<span
+style='font-family:"Times New Roman",serif'> </span> unambiguous<span
+style='font-family:"Times New Roman",serif'> </span> so<span style='font-family:
+"Times New Roman",serif'> </span> users<span style='font-family:"Times New Roman",serif'>
+</span> who<span style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>blind– <span
+style='font-family:"Times New Roman",serif'> </span>without having <span
+style='font-family:"Times New Roman",serif'> </span>to<span style='font-family:
+"Times New Roman",serif'> </span> read<span style='font-family:"Times New Roman",serif'>
+</span> nearby<span style='font-family:"Times New Roman",serif'> </span> content
+– <span style='font-family:"Times New Roman",serif'> </span>will <span
+style='font-family:"Times New Roman",serif'> </span>understand<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>purpose <span
+style='font-family:"Times New Roman",serif'> </span>and<span style='font-family:
+"Times New Roman",serif'> </span> destination<span style='font-family:"Times New Roman",serif'>
+</span> of<span style='font-family:"Times New Roman",serif'> </span> each<span
+style='font-family:"Times New Roman",serif'> </span> link?<span
+style='font-family:"Times New Roman",serif'> </span> Common<span
+style='font-family:"Times New Roman",serif'> </span> examples<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> ambiguous<span style='font-family:"Times New Roman",serif'>
+</span> link<span style='font-family:"Times New Roman",serif'> </span> names<span
+style='font-family:"Times New Roman",serif'> </span> include <span
+style='font-family:"Times New Roman",serif'> </span>“click<span
+style='font-family:"Times New Roman",serif'> </span> here,” <span
+style='font-family:"Times New Roman",serif'> </span>“read<span
+style='font-family:"Times New Roman",serif'> </span> more,” <span
+style='font-family:"Times New Roman",serif'> </span>“see <span
+style='font-family:"Times New Roman",serif'> </span>all,” <span
+style='font-family:"Times New Roman",serif'> </span>“<u><span style='color:
+blue'>http://…”-type</span></u>,<span style='font-family:"Times New Roman",serif'>
+</span> or <span style='font-family:"Times New Roman",serif'> </span>“event
+notice,” <span style='font-family:"Times New Roman",serif'> </span>and<span
+style='font-family:"Times New Roman",serif'> </span> other <span
+style='font-family:"Times New Roman",serif'> </span>ambiguous<span
+style='font-family:"Times New Roman",serif'> </span> phrases.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Color </b><span
+style='font-family:"Times New Roman",serif'> </span><b>alone:</b><span
+style='font-family:"Times New Roman",serif'> </span> Are <span
+style='font-family:"Times New Roman",serif'> </span>there <span
+style='font-family:"Times New Roman",serif'> </span>any<span style='font-family:
+"Times New Roman",serif'> </span> instances<span style='font-family:"Times New Roman",serif'>
+</span> where <span style='font-family:"Times New Roman",serif'> </span>color <span
+style='font-family:"Times New Roman",serif'> </span>alone <span
+style='font-family:"Times New Roman",serif'> </span>distinguishes<span
+style='font-family:"Times New Roman",serif'> </span> an<span style='font-family:
+"Times New Roman",serif'> </span> object or <span style='font-family:"Times New Roman",serif'> </span>state?<span
+style='font-family:"Times New Roman",serif'> </span>  If<span style='font-family:
+"Times New Roman",serif'> </span>so,<span style='font-family:"Times New Roman",serif'>
+</span> add<span style='font-family:"Times New Roman",serif'> </span> another <span
+style='font-family:"Times New Roman",serif'> </span>way<span style='font-family:
+"Times New Roman",serif'> </span> to<span style='font-family:"Times New Roman",serif'>
+</span> distinguish<span style='font-family:"Times New Roman",serif'> </span> the
+<span style='font-family:"Times New Roman",serif'> </span>object or <span
+style='font-family:"Times New Roman",serif'> </span>state.<span
+style='font-family:"Times New Roman",serif'> </span> For <span
+style='font-family:"Times New Roman",serif'> </span>example,<span
+style='font-family:"Times New Roman",serif'> </span> make <span
+style='font-family:"Times New Roman",serif'> </span>sure <span
+style='font-family:"Times New Roman",serif'> </span>color  <span
+style='font-family:"Times New Roman",serif'> </span>is<span style='font-family:
+"Times New Roman",serif'> </span>not the <span style='font-family:"Times New Roman",serif'> </span>only<span
+style='font-family:"Times New Roman",serif'> </span> way<span style='font-family:
+"Times New Roman",serif'> </span> to<span style='font-family:"Times New Roman",serif'>
+</span> distinguish<span style='font-family:"Times New Roman",serif'> </span> link<span
+style='font-family:"Times New Roman",serif'> </span> text from the <span
+style='font-family:"Times New Roman",serif'> </span>surrounding <span
+style='font-family:"Times New Roman",serif'> </span>paragraph<span
+style='font-family:"Times New Roman",serif'> </span> text,<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> ensure <span style='font-family:"Times New Roman",serif'> </span>color-coding 
+<span style='font-family:"Times New Roman",serif'> </span>is<span
+style='font-family:"Times New Roman",serif'> </span>not the <span
+style='font-family:"Times New Roman",serif'> </span>exclusive <span
+style='font-family:"Times New Roman",serif'> </span>way<span style='font-family:
+"Times New Roman",serif'> </span> used<span style='font-family:"Times New Roman",serif'>
+</span> to<span style='font-family:"Times New Roman",serif'> </span> convey<span
+style='font-family:"Times New Roman",serif'> </span> important calendar <span
+style='font-family:"Times New Roman",serif'> </span>dates<span
+style='font-family:"Times New Roman",serif'> </span> (e.g.,<span
+style='font-family:"Times New Roman",serif'> </span> “no<span style='font-family:
+"Times New Roman",serif'> </span> school” <span style='font-family:"Times New Roman",serif'> </span>dates<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>marked<span
+style='font-family:"Times New Roman",serif'> </span> in<span style='font-family:
+"Times New Roman",serif'> </span> purple).<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Color </b><span
+style='font-family:"Times New Roman",serif'> </span><b>contrast:</b><span
+style='font-family:"Times New Roman",serif'> </span> Using <span
+style='font-family:"Times New Roman",serif'> </span>an<span style='font-family:
+"Times New Roman",serif'> </span> eyedropper <span style='font-family:"Times New Roman",serif'> </span>tool
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>other <span
+style='font-family:"Times New Roman",serif'> </span>manual <span
+style='font-family:"Times New Roman",serif'> </span>method<span
+style='font-family:"Times New Roman",serif'> </span> (automated<span
+style='font-family:"Times New Roman",serif'> </span> testing  <span
+style='font-family:"Times New Roman",serif'> </span>is<span style='font-family:
+"Times New Roman",serif'> </span>generally<span style='font-family:"Times New Roman",serif'>
+</span> insufficient unless<span style='font-family:"Times New Roman",serif'> </span> manually<span
+style='font-family:"Times New Roman",serif'> </span> verified),<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>there <span style='font-family:"Times New Roman",serif'> </span>at
+least a <span style='font-family:"Times New Roman",serif'> </span>4.5:1<span
+style='font-family:"Times New Roman",serif'> </span> contrast ratio<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>normal <span
+style='font-family:"Times New Roman",serif'> </span>size <span
+style='font-family:"Times New Roman",serif'> </span>text and<span
+style='font-family:"Times New Roman",serif'> </span>  a<span style='font-family:
+"Times New Roman",serif'> </span>3:1<span style='font-family:"Times New Roman",serif'>
+</span> contrast ratio<span style='font-family:"Times New Roman",serif'> </span> for
+<span style='font-family:"Times New Roman",serif'> </span>large <span
+style='font-family:"Times New Roman",serif'> </span>scale <span
+style='font-family:"Times New Roman",serif'> </span>text,<span
+style='font-family:"Times New Roman",serif'> </span> comparing <span
+style='font-family:"Times New Roman",serif'> </span>foreground<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> background<span style='font-family:"Times New Roman",serif'>
+</span> colors<span style='font-family:"Times New Roman",serif'> </span> of<span
+style='font-family:"Times New Roman",serif'> </span> all <span
+style='font-family:"Times New Roman",serif'> </span>text elements<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> text inside <span style='font-family:"Times New Roman",serif'> </span>graphics?<span
+style='font-family:"Times New Roman",serif'> </span> Text inside <span
+style='font-family:"Times New Roman",serif'> </span>logos<span
+style='font-family:"Times New Roman",serif'> </span> can<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>ignored<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>these <span
+style='font-family:"Times New Roman",serif'> </span>purposes.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Tables:</b> <span
+style='font-family:"Times New Roman",serif'> </span>Does<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>page
+<span style='font-family:"Times New Roman",serif'> </span>avoid<span
+style='font-family:"Times New Roman",serif'> </span> using <span
+style='font-family:"Times New Roman",serif'> </span>layout tables?<span
+style='font-family:"Times New Roman",serif'> </span>  If<span style='font-family:
+"Times New Roman",serif'> </span>data <span style='font-family:"Times New Roman",serif'> </span>tables<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>present,<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>they<span style='font-family:
+"Times New Roman",serif'> </span> necessary<span style='font-family:"Times New Roman",serif'>
+</span> to<span style='font-family:"Times New Roman",serif'> </span> convey<span
+style='font-family:"Times New Roman",serif'> </span> information,<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>could<span style='font-family:"Times New Roman",serif'>
+</span>  a<span style='font-family:"Times New Roman",serif'> </span>more <span
+style='font-family:"Times New Roman",serif'> </span>accessible <span
+style='font-family:"Times New Roman",serif'> </span>means<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> presentation<span style='font-family:"Times New Roman",serif'>
+</span> be <span style='font-family:"Times New Roman",serif'> </span>considered<span
+style='font-family:"Times New Roman",serif'> </span> instead?<span
+style='font-family:"Times New Roman",serif'> </span>   If<span
+style='font-family:"Times New Roman",serif'> </span>a<span style='font-family:
+"Times New Roman",serif'> </span>data <span style='font-family:"Times New Roman",serif'> </span>table 
+<span style='font-family:"Times New Roman",serif'> </span>is<span
+style='font-family:"Times New Roman",serif'> </span>used,<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>it simple,<span style='font-family:"Times New Roman",serif'>
+</span> cells<span style='font-family:"Times New Roman",serif'> </span> span<span
+style='font-family:"Times New Roman",serif'> </span> multiple <span
+style='font-family:"Times New Roman",serif'> </span>columns<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>rows?<span style='font-family:"Times New Roman",serif'>
+</span> Are <span style='font-family:"Times New Roman",serif'> </span>column<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> row<span style='font-family:"Times New Roman",serif'>
+</span> headers<span style='font-family:"Times New Roman",serif'> </span> programmatically<span
+style='font-family:"Times New Roman",serif'> </span> labelled?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:6.1pt;
+margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;line-height:
+98%'><b>Buttons,</b><span style='font-family:"Times New Roman",serif'> </span><b> form
+</b><span style='font-family:"Times New Roman",serif'> </span><b>controls,</b><span
+style='font-family:"Times New Roman",serif'> </span><b> and </b><span
+style='font-family:"Times New Roman",serif'> </span><b>other </b><span
+style='font-family:"Times New Roman",serif'> </span><b>operable</b><span
+style='font-family:"Times New Roman",serif'> </span><b> elements:</b><span
+style='font-family:"Times New Roman",serif'> </span> Are <span
+style='font-family:"Times New Roman",serif'> </span>they<span style='font-family:
+"Times New Roman",serif'> </span> labelled<span style='font-family:"Times New Roman",serif'>
+</span> appropriately,<span style='font-family:"Times New Roman",serif'> </span> both<span
+style='font-family:"Times New Roman",serif'> </span> programmatically<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> visually?<span style='font-family:"Times New Roman",serif'>
+</span> Do<span style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>visual <span
+style='font-family:"Times New Roman",serif'> </span>labels<span
+style='font-family:"Times New Roman",serif'> </span> continue <span
+style='font-family:"Times New Roman",serif'> </span>to<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>properly<span
+style='font-family:"Times New Roman",serif'> </span> associated<span
+style='font-family:"Times New Roman",serif'> </span> with<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>elements<span
+style='font-family:"Times New Roman",serif'> </span> when<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>screen<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>enlarged?<span style='font-family:"Times New Roman",serif'>
+</span>  If<span style='font-family:"Times New Roman",serif'> </span>the <span
+style='font-family:"Times New Roman",serif'> </span>elements<span
+style='font-family:"Times New Roman",serif'> </span> have <span
+style='font-family:"Times New Roman",serif'> </span>different states<span
+style='font-family:"Times New Roman",serif'> </span> (such<span
+style='font-family:"Times New Roman",serif'> </span> as<span style='font-family:
+"Times New Roman",serif'> </span> form fields<span style='font-family:"Times New Roman",serif'>
+</span> that are <span style='font-family:"Times New Roman",serif'> </span>required<span
+style='font-family:"Times New Roman",serif'> </span> for <span
+style='font-family:"Times New Roman",serif'> </span>successful <span
+style='font-family:"Times New Roman",serif'> </span>submission),<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>those <span
+style='font-family:"Times New Roman",serif'> </span>conveyed<span
+style='font-family:"Times New Roman",serif'> </span> by<span style='font-family:
+"Times New Roman",serif'> </span> something <span style='font-family:"Times New Roman",serif'> </span>other
+<span style='font-family:"Times New Roman",serif'> </span>than<span
+style='font-family:"Times New Roman",serif'> </span> color <span
+style='font-family:"Times New Roman",serif'> </span>alone?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Heading </b><span
+style='font-family:"Times New Roman",serif'> </span><b>structure:</b><span
+style='font-family:"Times New Roman",serif'> </span> Are <span
+style='font-family:"Times New Roman",serif'> </span>headings<span
+style='font-family:"Times New Roman",serif'> </span> programmatically<span
+style='font-family:"Times New Roman",serif'> </span> labelled<span
+style='font-family:"Times New Roman",serif'> </span> with<span
+style='font-family:"Times New Roman",serif'> </span>  a<span style='font-family:
+"Times New Roman",serif'> </span>meaningful <span style='font-family:"Times New Roman",serif'> </span>hierarchy,<span
+style='font-family:"Times New Roman",serif'> </span> so<span style='font-family:
+"Times New Roman",serif'> </span> people <span style='font-family:"Times New Roman",serif'> </span>who<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>blind<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> using  <span style='font-family:"Times New Roman",serif'> </span>a<span
+style='font-family:"Times New Roman",serif'> </span>screen<span
+style='font-family:"Times New Roman",serif'> </span> reader <span
+style='font-family:"Times New Roman",serif'> </span>can<span style='font-family:
+"Times New Roman",serif'> </span> navigate  <span style='font-family:"Times New Roman",serif'> </span>a<span
+style='font-family:"Times New Roman",serif'> </span>page <span
+style='font-family:"Times New Roman",serif'> </span>according <span
+style='font-family:"Times New Roman",serif'> </span>to<span style='font-family:
+"Times New Roman",serif'> </span> its<span style='font-family:"Times New Roman",serif'>
+</span> headings,<span style='font-family:"Times New Roman",serif'> </span> listen<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span>  a<span style='font-family:"Times New Roman",serif'>
+</span>list of<span style='font-family:"Times New Roman",serif'> </span> headings,<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> skip<span style='font-family:"Times New Roman",serif'>
+</span> to<span style='font-family:"Times New Roman",serif'> </span> where <span
+style='font-family:"Times New Roman",serif'> </span>they<span style='font-family:
+"Times New Roman",serif'> </span> want to<span style='font-family:"Times New Roman",serif'>
+</span> begin<span style='font-family:"Times New Roman",serif'> </span> reading?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Embedded </b><span
+style='font-family:"Times New Roman",serif'> </span><b>videos and </b><span
+style='font-family:"Times New Roman",serif'> </span><b>slide</b><span
+style='font-family:"Times New Roman",serif'> </span><b> carousels:</b><span
+style='font-family:"Times New Roman",serif'> </span> Where <span
+style='font-family:"Times New Roman",serif'> </span>there <span
+style='font-family:"Times New Roman",serif'> </span>are <span style='font-family:
+"Times New Roman",serif'> </span>embedded<span style='font-family:"Times New Roman",serif'>
+</span> videos<span style='font-family:"Times New Roman",serif'> </span> or <span
+style='font-family:"Times New Roman",serif'> </span>carousels,<span
+style='font-family:"Times New Roman",serif'> </span>  if<span style='font-family:
+"Times New Roman",serif'> </span>they<span style='font-family:"Times New Roman",serif'>
+</span> launch<span style='font-family:"Times New Roman",serif'> </span> or <span
+style='font-family:"Times New Roman",serif'> </span>rotate <span
+style='font-family:"Times New Roman",serif'> </span>automatically,<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>that behavior <span style='font-family:"Times New Roman",serif'> </span>necessary?<span
+style='font-family:"Times New Roman",serif'> </span>  If<span style='font-family:
+"Times New Roman",serif'> </span>so,<span style='font-family:"Times New Roman",serif'>
+</span> can<span style='font-family:"Times New Roman",serif'> </span>  a<span
+style='font-family:"Times New Roman",serif'> </span>user <span
+style='font-family:"Times New Roman",serif'> </span>pause <span
+style='font-family:"Times New Roman",serif'> </span>or <span style='font-family:
+"Times New Roman",serif'> </span>stop<span style='font-family:"Times New Roman",serif'>
+</span> the <span style='font-family:"Times New Roman",serif'> </span>video<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>carousel,<span style='font-family:"Times New Roman",serif'>
+</span> and later              <span style='font-family:"Times New Roman",serif'> </span>replay
+the video                            <span style='font-family:"Times New Roman",serif'> </span> or
+carousel,     <span style='font-family:"Times New Roman",serif'> </span> with
+keyboard                <span style='font-family:"Times New Roman",serif'> </span> commands?
+The ability to                                  <span style='font-family:"Times New Roman",serif'> </span> stop
+th               e video                 <span style='font-family:"Times New Roman",serif'> </span> or
+<span style='font-family:"Times New Roman",serif'> </span>carousel <span
+style='font-family:"Times New Roman",serif'> </span>rotation<span
+style='font-family:"Times New Roman",serif'> </span> can<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>important,<span
+style='font-family:"Times New Roman",serif'> </span> not just while <span
+style='font-family:"Times New Roman",serif'> </span>users<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>on<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>video<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>carousel,<span style='font-family:"Times New Roman",serif'>
+</span> but while <span style='font-family:"Times New Roman",serif'> </span>they<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>in<span style='font-family:
+"Times New Roman",serif'> </span> other <span style='font-family:"Times New Roman",serif'> </span>parts<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>page.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>Magnification:</b> <span
+style='font-family:"Times New Roman",serif'> </span>Have <span
+style='font-family:"Times New Roman",serif'> </span>you<span style='font-family:
+"Times New Roman",serif'> </span> re-tested<span style='font-family:"Times New Roman",serif'>
+</span> everything <span style='font-family:"Times New Roman",serif'> </span>when<span
+style='font-family:"Times New Roman",serif'> </span> content is<span
+style='font-family:"Times New Roman",serif'> </span> magnified<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>“point
+of<span style='font-family:"Times New Roman",serif'> </span> reflow,” <span
+style='font-family:"Times New Roman",serif'> </span>or <span style='font-family:
+"Times New Roman",serif'> </span>in<span style='font-family:"Times New Roman",serif'>
+</span> “responsive <span style='font-family:"Times New Roman",serif'> </span>mode,”
+<span style='font-family:"Times New Roman",serif'> </span>when<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>formatting <span
+style='font-family:"Times New Roman",serif'> </span>changes<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>more
+<span style='font-family:"Times New Roman",serif'> </span>mobile <span
+style='font-family:"Times New Roman",serif'> </span>friendly<span
+style='font-family:"Times New Roman",serif'> </span> (typically<span
+style='font-family:"Times New Roman",serif'> </span> around<span
+style='font-family:"Times New Roman",serif'> </span> 200%<span
+style='font-family:"Times New Roman",serif'> </span> on<span style='font-family:
+"Times New Roman",serif'> </span> standard<span style='font-family:"Times New Roman",serif'>
+</span> laptop<span style='font-family:"Times New Roman",serif'> </span> screens)?<span
+style='font-family:"Times New Roman",serif'> </span> Are <span
+style='font-family:"Times New Roman",serif'> </span>all <span style='font-family:
+"Times New Roman",serif'> </span>contents<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> all <span
+style='font-family:"Times New Roman",serif'> </span>functionality<span
+style='font-family:"Times New Roman",serif'> </span> preserved<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> useful?<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Paying <span style='font-family:
+"Times New Roman",serif'> </span>particular <span style='font-family:"Times New Roman",serif'> </span>attention<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> any<span style='font-family:"Times New Roman",serif'>
+</span> “hamburger <span style='font-family:"Times New Roman",serif'> </span>menus,”
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>expandable <span
+style='font-family:"Times New Roman",serif'> </span>menus,<span
+style='font-family:"Times New Roman",serif'> </span> can<span style='font-family:
+"Times New Roman",serif'> </span> they<span style='font-family:"Times New Roman",serif'>
+</span> be <span style='font-family:"Times New Roman",serif'> </span>opened,<span
+style='font-family:"Times New Roman",serif'> </span> navigated<span
+style='font-family:"Times New Roman",serif'> </span> (including <span
+style='font-family:"Times New Roman",serif'> </span>any<span style='font-family:
+"Times New Roman",serif'> </span> sub-level <span style='font-family:"Times New Roman",serif'> </span>items),<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> closed<span style='font-family:"Times New Roman",serif'>
+</span> automatically<span style='font-family:"Times New Roman",serif'> </span> or
+<span style='font-family:"Times New Roman",serif'> </span>easily<span
+style='font-family:"Times New Roman",serif'> </span> with<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>keyboard?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Is<span style='font-family:"Times New Roman",serif'>
+</span> logical <span style='font-family:"Times New Roman",serif'> </span>reading
+<span style='font-family:"Times New Roman",serif'> </span>order <span
+style='font-family:"Times New Roman",serif'> </span>on<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>page
+<span style='font-family:"Times New Roman",serif'> </span>preserved,<span
+style='font-family:"Times New Roman",serif'> </span> without the <span
+style='font-family:"Times New Roman",serif'> </span>need<span style='font-family:
+"Times New Roman",serif'> </span> to<span style='font-family:"Times New Roman",serif'>
+</span> scroll <span style='font-family:"Times New Roman",serif'> </span>right
+to<span style='font-family:"Times New Roman",serif'> </span> left?<span
+style='font-family:"Times New Roman",serif'> </span>  If<span style='font-family:
+"Times New Roman",serif'> </span>vertical <span style='font-family:"Times New Roman",serif'> </span>scrolling
+<span style='font-family:"Times New Roman",serif'> </span>is<span
+style='font-family:"Times New Roman",serif'> </span> required<span
+style='font-family:"Times New Roman",serif'> </span> inside <span
+style='font-family:"Times New Roman",serif'> </span>windows<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>objects,<span style='font-family:"Times New Roman",serif'>
+</span> can<span style='font-family:"Times New Roman",serif'> </span> it be <span
+style='font-family:"Times New Roman",serif'> </span>done <span
+style='font-family:"Times New Roman",serif'> </span>with<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>keyboard?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Do<span style='font-family:"Times New Roman",serif'>
+</span> elements<span style='font-family:"Times New Roman",serif'> </span> meant
+to<span style='font-family:"Times New Roman",serif'> </span> be <span
+style='font-family:"Times New Roman",serif'> </span>together <span
+style='font-family:"Times New Roman",serif'> </span>(such<span
+style='font-family:"Times New Roman",serif'> </span> as<span style='font-family:
+"Times New Roman",serif'> </span> form labels<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> text
+entry<span style='font-family:"Times New Roman",serif'> </span> boxes)<span
+style='font-family:"Times New Roman",serif'> </span> stay<span
+style='font-family:"Times New Roman",serif'> </span> together <span
+style='font-family:"Times New Roman",serif'> </span>upon<span style='font-family:
+"Times New Roman",serif'> </span> magnification?<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:-.25pt'><b>For </b><span style='font-family:"Times New Roman",serif'> </span><b>electronic
+</b><span style='font-family:"Times New Roman",serif'> </span><b>documents:</b><span
+style='font-family:"Times New Roman",serif'> </span> In<span style='font-family:
+"Times New Roman",serif'> </span> addition<span style='font-family:"Times New Roman",serif'>
+</span> to<span style='font-family:"Times New Roman",serif'> </span> addressing
+<span style='font-family:"Times New Roman",serif'> </span>the <span
+style='font-family:"Times New Roman",serif'> </span>questions<span
+style='font-family:"Times New Roman",serif'> </span> above,<span
+style='font-family:"Times New Roman",serif'> </span> have <span
+style='font-family:"Times New Roman",serif'> </span>you<span style='font-family:
+"Times New Roman",serif'> </span> conducted<span style='font-family:"Times New Roman",serif'>
+</span> an<span style='font-family:"Times New Roman",serif'> </span> accessibility<span
+style='font-family:"Times New Roman",serif'> </span> review<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> your <span style='font-family:"Times New Roman",serif'> </span>documents<span
+style='font-family:"Times New Roman",serif'> </span> using <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>software’s<span style='font-family:"Times New Roman",serif'>
+</span> accessibility<span style='font-family:"Times New Roman",serif'> </span> checker
+<span style='font-family:"Times New Roman",serif'> </span>(e.g.,<span
+style='font-family:"Times New Roman",serif'> </span> “Check<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.75pt;text-indent:0in'>Accessibility” <span
+style='font-family:"Times New Roman",serif'> </span>feature <span
+style='font-family:"Times New Roman",serif'> </span>in<span style='font-family:
+"Times New Roman",serif'> </span> Microsoft Word,  <span style='font-family:
+"Times New Roman",serif'> </span> “Accessibility Check”   <span
+style='font-family:"Times New Roman",serif'> </span>feature in <span
+style='font-family:"Times New Roman",serif'> </span> Adobe Acrobat P            ro<span
+style='font-family:"Times New Roman",serif'> </span> DC,<span style='font-family:
+"Times New Roman",serif'> </span> etc.)?<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>For </b><span
+style='font-family:"Times New Roman",serif'> </span><b>videos:</b> <span
+style='font-family:"Times New Roman",serif'> </span>Is<span style='font-family:
+"Times New Roman",serif'> </span> captioning <span style='font-family:"Times New Roman",serif'> </span>present
+or   <span style='font-family:"Times New Roman",serif'> </span>is<span
+style='font-family:"Times New Roman",serif'> </span>a<span style='font-family:
+"Times New Roman",serif'> </span>transcript available?<span style='font-family:
+"Times New Roman",serif'> </span> Transcripts<span style='font-family:"Times New Roman",serif'>
+</span> should<span style='font-family:"Times New Roman",serif'> </span> only<span
+style='font-family:"Times New Roman",serif'> </span> be <span style='font-family:
+"Times New Roman",serif'> </span>used<span style='font-family:"Times New Roman",serif'>
+</span> when<span style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>audio<span
+style='font-family:"Times New Roman",serif'> </span> can<span style='font-family:
+"Times New Roman",serif'> </span> be <span style='font-family:"Times New Roman",serif'> </span>fully<span
+style='font-family:"Times New Roman",serif'> </span> understood<span
+style='font-family:"Times New Roman",serif'> </span> separately<span
+style='font-family:"Times New Roman",serif'> </span> from viewing <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>video<span style='font-family:"Times New Roman",serif'>
+</span> and<span style='font-family:"Times New Roman",serif'> </span> does<span
+style='font-family:"Times New Roman",serif'> </span> not reference <span
+style='font-family:"Times New Roman",serif'> </span>video<span
+style='font-family:"Times New Roman",serif'> </span> content.<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Does<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>captioning
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>transcript meaningfully<span
+style='font-family:"Times New Roman",serif'> </span> convey<span
+style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>contents<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>audio<span
+style='font-family:"Times New Roman",serif'> </span> track<span
+style='font-family:"Times New Roman",serif'> </span> (not just phonetically)?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Does<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>captioning
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>transcript indicate <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>names<span style='font-family:"Times New Roman",serif'>
+</span> or <span style='font-family:"Times New Roman",serif'> </span>appropriate
+<span style='font-family:"Times New Roman",serif'> </span>descriptions<span
+style='font-family:"Times New Roman",serif'> </span> of<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>speakers,<span
+style='font-family:"Times New Roman",serif'> </span>  if<span style='font-family:
+"Times New Roman",serif'> </span>more <span style='font-family:"Times New Roman",serif'> </span>than<span
+style='font-family:"Times New Roman",serif'> </span> one <span
+style='font-family:"Times New Roman",serif'> </span>person<span
+style='font-family:"Times New Roman",serif'> </span>  is<span style='font-family:
+"Times New Roman",serif'> </span>speaking?<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Does<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>captioning
+<span style='font-family:"Times New Roman",serif'> </span>or <span
+style='font-family:"Times New Roman",serif'> </span>transcript use <span
+style='font-family:"Times New Roman",serif'> </span>capitalization<span
+style='font-family:"Times New Roman",serif'> </span> and<span style='font-family:
+"Times New Roman",serif'> </span> punctuation<span style='font-family:"Times New Roman",serif'>
+</span> appropriately,<span style='font-family:"Times New Roman",serif'> </span>  if<span
+style='font-family:"Times New Roman",serif'> </span>that is<span
+style='font-family:"Times New Roman",serif'> </span> important to<span
+style='font-family:"Times New Roman",serif'> </span> understanding <span
+style='font-family:"Times New Roman",serif'> </span>the <span style='font-family:
+"Times New Roman",serif'> </span>contents?<span style='font-family:"Times New Roman",serif'>
+</span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Is<span style='font-family:"Times New Roman",serif'>
+</span> important on-screen<span style='font-family:"Times New Roman",serif'> </span> information<span
+style='font-family:"Times New Roman",serif'> </span> also<span
+style='font-family:"Times New Roman",serif'> </span> conveyed<span
+style='font-family:"Times New Roman",serif'> </span> audibly,<span
+style='font-family:"Times New Roman",serif'> </span> so<span style='font-family:
+"Times New Roman",serif'> </span> people <span style='font-family:"Times New Roman",serif'> </span>who<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>blind<span
+style='font-family:"Times New Roman",serif'> </span> or <span style='font-family:
+"Times New Roman",serif'> </span>have <span style='font-family:"Times New Roman",serif'> </span>low<span
+style='font-family:"Times New Roman",serif'> </span> vision<span
+style='font-family:"Times New Roman",serif'> </span> have <span
+style='font-family:"Times New Roman",serif'> </span>access<span
+style='font-family:"Times New Roman",serif'> </span> to<span style='font-family:
+"Times New Roman",serif'> </span> the <span style='font-family:"Times New Roman",serif'> </span>contents?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'><b>For </b><span
+style='font-family:"Times New Roman",serif'> </span><b>social</b><span
+style='font-family:"Times New Roman",serif'> </span><b> media </b><span
+style='font-family:"Times New Roman",serif'> </span><b>posts:</b><span
+style='font-family:"Times New Roman",serif'> </span> If<span style='font-family:
+"Times New Roman",serif'> </span> graphic <span style='font-family:"Times New Roman",serif'> </span>images<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>used,<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>they<span style='font-family:
+"Times New Roman",serif'> </span> accompanied<span style='font-family:"Times New Roman",serif'>
+</span> by<span style='font-family:"Times New Roman",serif'> </span> text that
+conveys<span style='font-family:"Times New Roman",serif'> </span> the <span
+style='font-family:"Times New Roman",serif'> </span>same <span
+style='font-family:"Times New Roman",serif'> </span>information?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>If<span style='font-family:"Times New Roman",serif'>
+</span> videos<span style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>used,<span
+style='font-family:"Times New Roman",serif'> </span> are <span
+style='font-family:"Times New Roman",serif'> </span>they<span style='font-family:
+"Times New Roman",serif'> </span> accessible <span style='font-family:"Times New Roman",serif'> </span>as<span
+style='font-family:"Times New Roman",serif'> </span> described<span
+style='font-family:"Times New Roman",serif'> </span> above?<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:25.0pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;margin-left:
+-.25pt;text-indent:0in'><span style='font-size:24.0pt;line-height:107%'>Related
+Documents, Forms and Tools </span><span style='font-size:16.0pt;line-height:
+107%;font-weight:normal'> </span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.5pt;
+margin-left:.25in;text-indent:-.25in;line-height:103%'><span style='line-height:
+103%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>XXX </b><span style='font-family:"Times New Roman",serif'> </span><b>[INSERT
+</b><span style='font-family:"Times New Roman",serif'> </span><b>LINK]</b><span
+style='font-family:"Times New Roman",serif'> </span><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.95pt;
+margin-left:.25in;text-indent:-.25in;line-height:103%'><span style='line-height:
+103%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>XXX </b><span style='font-family:"Times New Roman",serif'> </span><b>[INSERT
+</b><span style='font-family:"Times New Roman",serif'> </span><b>LINK]</b><span
+style='font-family:"Times New Roman",serif'> </span><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:25.05pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:-.25pt;
+text-indent:0in'><span style='font-size:24.0pt;line-height:107%'>Procedure
+History </span><span style='font-size:16.0pt;line-height:107%;font-weight:normal'> </span></h1>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in'><span
+style='font-size:11.0pt;line-height:103%'>                </span>Adopted:            XX/XX/XXXX<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in'><span
+style='font-size:11.0pt;line-height:103%'>                </span>Revised:              XX/XX/XXXX<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in'><span
+style='font-size:11.0pt;line-height:103%'>                </span>Revised:              XX/XX/XXXX<span
+style='font-family:"Times New Roman",serif'> </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.7pt;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+</div>
+
+</body>
+
+</html>

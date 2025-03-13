@@ -1,0 +1,226 @@
+﻿ 
+ 
+ 
+ 
+ 
+ 
+Mobile Site Accessibility Testing Methodology - Critical Test Cases
+ 
+ 
+
+Table of Contents
+List of Figures. 3
+1. Critical issues. 4
+1.1: Exit trap. 4
+About this requirement 4
+How to test - Non-timed features 5
+How to test - Timed features 5
+Examples 6
+1.2: Swipe / scroll traps. 12
+About this requirement 12
+How to test 12
+Examples 12
+1.3: Layer trap. 13
+About this requirement 13
+How to test 13
+Examples 13
+Acknowledgements. 15
+Relationship to existing Accessibility testing standards 15
+ICT Accessibility Testing Symposium Mobile Site Sub-Committee. 15
+Contacts. 15
+Gian Wild. 15
+Peter McNally. 15
+ 
+
+ 
+List of Figures
+Figure 16: Accessible hamburger menu (closed) 6
+Figure 17: Accessible hamburger menu (open) 6
+Figure 18: Accessible hamburger menu (open) 7
+Figure 19: Accessible hamburger menu (closed) 7
+Figure 20: Accessible menu (closed) 8
+Figure 21: Accessible menu (open) 8
+Figure 22: Accessible menu (closed) 8
+Figure 23: Accessible menu (open) 8
+Figure 24: Accessible close feature (link) 9
+Figure 25: Accessible close feature (link) 10
+Figure 26: Close button is accessible to the keyboard. 10
+Figure 27: Close button is accessible to the keyboard. 11
+Figure 36: Two finger scroll on map. 12
+Figure 37: Two finger scroll on map (instructions) 12
+Figure 44: Screen reader and keyboard read visible layer (menu closed) 14
+Figure 45: Screen reader and keyboard read visible layer (menu open) 14
+
+ 
+1. Critical issues
+1.1: Exit trap
+Applies to: All users
+Ensure there is always an accessible actionable item (e.g. a close button that meets color contrast requirements and has an accessible name) that closes any feature or page that overlays the current page (such as a full-page ad) or an important mobile feature.
+About this requirement
+When a feature, such as a pop-up or an advertisement is displayed, it is imperative that all users have a way to dismiss it and that this method complies with all WCAG criteria. Incorrect implementation can present significant barriers to assistive technology users, potentially trapping them within the new feature and blocking them from returning to the underlying site or previous page. Many pop-ups and ads can be closed by tapping somewhere else on the original page, but this is not functionality that is available to all users. For example, screen reader users often cannot use touch gestures as they are captured by the screen reader. In the case of swipe gestures, this is because when the screen reader is on, the swipe right gesture moves you to the next focusable item and doesn't perform as a swipe mechanism. For example, if you require your user to swipe right to complete a purchase, when the screen reader is on, the swipe right gesture moves you to the next focusable item and doesn't complete the purchase. You must be able to perform the same action, by using a link, an up or down swipe, screen reader rotor action, or some other gesture.
+There are two main features that can contain this trap:
+*         Ads that overlay the current page (please note that even ads that do not appear to overlay the full page may present an Exit trap to keyboard or assistive technology users)
+*         Pop-ups that overlay some or most of the page
+There are six main ways that a user can get trapped in a feature:
+*         There is no Close actionable item
+*         The only way to close the feature is to tap outside the feature which can be impossible for assistive technology users, such as screen reader users, keyboard users, switch users and magnifier users.
+*         The user relies on a keyboard and the Close actionable item cannot be closed by a keyboard or does not have a highly visible keyboard focus indicator.
+*         The user relies on a screen reader and the Close actionable item is not accessible to a screen reader (usually due to the lack of an accessible name or a failure of Change of State).
+*         The user has a vision impairment or is colorblind and the Close actionable item does not meet color contrast requirements or relies on color alone.
+*         The Close actionable item does not meet Touch Target, Inactive Space, Native UI requirements and therefore cannot be seen or actioned by some users.
+Please note that this requirement is similar to the Layer Trap and Touch Gestures requirement. A failure of the Exit trap requirement is that a user cannot escape from the feature. A failure of the Layer Trap requirement is that the user is trapped on a non-visible layer. As a result, Layer Traps are also often Exit Traps as some users cannot access the visible layer in order to dismiss it. A failure of the Touch Gestures requirement is that the user cannot choose content or a page (i.e. they are not trapped). 
+About timed ads
+It is the opinion of this committee that timed ads (where the user cannot dismiss an ad until a a pre-set amount of time has passed - i.e. they are forced to watch the ad) are not a violation of the Exit Trap requirement, but only if:
+*         The timing function is accessible to all users
+*         When the Close actionable item is added it is announced to all users and meets accessibility requirements
+This behavior is acceptable as this delay may be integral to the intended functionality of the ad (e.g. the advertisement may be required to remain visible for a certain period of time).
+A note about iOS testing
+As the keyboard only works in iOS when VoiceOver is enabled it is likely that a feature or Close actionable item that is not actionable by the screen reader is not actionable by the keyboard (and vice versa).
+How to test - Non-timed features
+1.    Activate each actionable item that triggers a non-timed feature.
+2.    Is there a Close feature?
+3.    If there is a Close feature is it an actionable item (and not reliant on touch)?
+4.    If there is a Close actionable item is it accessible to the screen reader?
+a.    Close the feature.
+b.    Turn on the screen reader.
+c.    Activate the actionable item that triggers a non-timed feature.
+d.    Can controls within the feature receive screen reader focus?
+e.    Are the name/role/value of each control properly conveyed?
+f.     Can interactive elements be activated via the screen reader?
+g.    Can the feature be dismissed via the Close actionable item using the screen reader?
+5.    If there is a Close actionable item can it be activated by the keyboard?
+a.    Close the feature.
+b.    Connect an external keyboard and (in iOS only) turn on the screen reader.
+c.    Activate the actionable item with the keyboard that triggers a non-timed feature.
+d.    By pressing tab or the up and down arrow keys, does each control receive keyboard focus?
+e.    Is keyboard focus visually indicated and does the focus comply with proper color contrast ratios?
+f.     Can interactive elements be activated via the keyboard?
+g.    Can the feature be dismissed via the Close actionable item using the keyboard?
+6.    If there is a Close actionable item does it have an accessible name and use native UI elements?
+7.    If there is a Close actionable item does it meet color contrast requirements?
+8.    If there is a Close actionable item does it meet Touch Target and Inactive Space requirements?
+How to test - Timed features
+1.    Activate each actionable item that triggers a timed feature.
+2.    Is the timing of the feature visible?
+3.    Once the timing is completed, is there a Close feature?
+4.    If there is a Close feature is it an actionable item (and not reliant on touch)?
+5.    If there is a Close actionable item is it accessible to the screen reader?
+a.    Close the feature 
+b.    Turn on the screen reader.
+c.    Activate the actionable item that triggers a timed feature.
+d.    Is the timing announced by the screen reader?
+e.    As the timing changes, is this announced by the screen reader?
+f.     When the timing ends, is this announced by the screen reader? Alternatively, is the Close actionable item announced by the screen reader once the timing ends?
+g.    Can controls within the feature receive screen reader focus?
+h.    Are the name/role/value of each control properly conveyed?
+i.     Can interactive elements be activated via the screen reader?
+j.     Can the feature be dismissed via the Close actionable item using the screen reader? 
+6.    If there is a Close actionable item can it be activated by the keyboard?
+a.    Close the feature
+b.    Connect an external keyboard and (in iOS only) turn on the screen reader.
+c.    Activate the actionable item with the keyboard that triggers a timed feature.
+d.    By pressing tab or the up and down arrow keys, does each control receive keyboard focus?
+e.    Is keyboard focus visually indicated and does the focus comply with proper color contrast ratios?
+f.     Can interactive elements be activated via the keyboard?
+g.    When the timing ends can the Close actionable item be activated by the keyboard?
+7.    If there is a Close actionable item does it have an accessible name and use native UI elements?
+8.    If there is a Close actionable item does it meet color contrast requirements?
+9.    If there is a Close actionable item does it meet Touch Target and Inactive Space requirements?
+Examples
+Pass 1 - Accessible hamburger menu
+In the SF MOMA website, when the hamburger menu is closed the icon is a hamburger menu (see Figure 1). When the hamburger menu is open, this hamburger menu changes to a close link which can close the menu (see Figure 2)
+Figure 16: Accessible hamburger menu (closed)
+Figure 17: Accessible hamburger menu (open)
+Pass 2 - Accessible hamburger menu
+The Age website hamburger menu has an accessible name and icon which changes whether the menu is open or closed.
+Hamburger menu openHamburger menu closedFigure 18: Accessible hamburger menu (open)
+Figure 19: Accessible hamburger menu (closed)
+Pass 3 - Accessible Menu 
+In the AccessibilityOz website there are two non-standard controls: the navigation menu and the slideshow controls. When the navigation is closed, the menu icon is "Show menu." When the navigation is open, the menu icon is "Close menu."
+Figure 20: Accessible menu (closed)
+Figure 21: Accessible menu (open)
+Pass 4 - Accessible menu
+In the Portland Audubon site, the menu opens over the content of the website. However, it can be closed by activating the menu close button.
+Figure 22: Accessible menu (closed)
+Figure 23: Accessible menu (open)
+Pass 5 - Accessible close feature (link)
+In this website a pop-up appears with additional information about a particular word. There is a close button to the left of the pop-up which meets color contrast requirements.
+Figure 24: Accessible close feature (link)
+ Pass 6 - Accessible close feature (link)
+The sign in pop-up can be closed with a close button that meets color contrast requirements.
+Figure 25: Accessible close feature (link)
+ Pass 7 - Close button is accessible to the keyboard
+With the hamburger menu open, activating the hamburger menu again with the keyboard closes the menu.
+Figure 26: Close button is accessible to the keyboard
+ Pass 8 - Close button is accessible to the keyboard
+The Cookie policy pop-up has a button called "Accept policy" that can be activated by the keyboard.
+Figure 27: Close button is accessible to the keyboard
+  
+
+ 
+1.2: Swipe / scroll traps
+Applies to: Touch users
+Ensure you do not override standard mobile touch functions (swiping, scrolling, etc.) on the majority of the page unless the entire screen is a map.
+About this requirement
+Some users can only access portions of a page at a time. When a large area of the screen is taken over by another feature with different functionality (such as the inability to scroll the page) these users can become trapped in the feature.
+How to test
+1.    Open each page.
+2.    Scroll to the bottom by swiping from the bottom to the top.
+3.    Scroll to the top by swiping from the top to the bottom.
+Examples
+Pass 1 - Two finger scroll on map
+In this website although the map takes up a large portion of the screen, the user can still swipe up and down the page as it requires two fingers to scroll the map.
+Figure 36: Two finger scroll on map
+Figure 37: Two finger scroll on map (instructions)
+ 
+
+ 
+1.3: Layer trap
+Applies to: All users (but mostly encountered by screen reader and keyboard users)
+Ensure the user is not be trapped on a non-visible layer.
+About this requirement
+In some cases, a pop-up or layer does not receive proper focus. In this case some users, such as screen reader users and keyboard users, can be trapped in the underlying, or non-visible layer. This means they often cannot close the pop-up or layer or interact with it in any way.
+Please note that this requirement is similar to the Exit Trap requirement. A failure of the Exit Trap requirement is that a user cannot escape from content or a page. A failure of the Layer Trap requirement is that the user is trapped on a non-visible layer. As a result, Layer Traps are also often Exit Traps as some users cannot access the visible layer in order to dismiss it.
+Please note that if the screen reader reads the visible layer and then reads the non-visible layer this is not defined as a Layer Trap per say but could still cause problems for users. We feel that this case would be a violation of WCAG2 and have not included it in this methodology.
+In some cases, it is an intended use that the content of the visible layer and the underlying layer are both available to the screen reader and keyboard user (for example, a Chat box or Picture in Picture). Where this feature has been used it is essential that it can be operated and closed by all users. In this particular situation, it is expected behavior that the screen reader reads the topmost layer and the underlying layer.
+A note about iOS testing
+As the keyboard only works in iOS when VoiceOver is enabled it is likely that when the screen reader is trapped in a non-visible layer that they keyboard is also trapped (and vice versa).
+How to test
+1.    Activate each actionable item.
+2.    If the actionable item triggers a pop-up or similar, can items on the current layer be actioned?
+3.    If the actionable item triggers a pop-up or similar, can items on the current layer be actioned by a screen reader?
+a.    Turn on the screen reader.
+b.    Are actionable items on the current layer available to the screen reader?
+c.    Are actionable items on the previous layer unavailable to the screen reader?
+4.    If the actionable item triggers a pop-up or similar, can items on the current layer be actioned by a keyboard?
+a.    Connect an external keyboard and (in iOS only) turn on the screen reader.
+b.    Are actionable items on the current layer available to the keyboard?
+c.    Are actionable items on the previous layer unavailable to the keyboard?
+Examples
+Pass 1 - Screen reader and keyboard read visible layer
+In the ABC website, the screen reader and keyboard users read out the visible layer when the menu is opened.
+ABC HomepageMenu openedFigure 44: Screen reader and keyboard read visible layer (menu closed)
+Figure 45: Screen reader and keyboard read visible layer (menu open)
+ 
+
+ 
+Acknowledgements
+Relationship to existing Accessibility testing standards
+This document is based on:
+*         W3C Web Content Accessibility Guidelines, Version 2.0
+*         W3C Web Content Accessibility Guidelines, Version 2.1
+*         BBC Mobile Accessibility Guidelines
+*         AccessibilityOz Mobile Testing Methodology
+*         TPG Mobile Testing Guide
+ICT Accessibility Testing Symposium Mobile Site Sub-Committee
+This document was developed by the ICT Accessibility Testing Symposium Mobile Sub-Committee. Members include: Gian Wild (Co-Chair), Peter McNally (Co-Chair), Brent Davis, Corbb O'Connor, Karen Herr, Kathryn Weber-Hottleman, Kathy Eng, Laura Renfro, Megha Rajopadhye, Mona Rekhi, Morgan Lee Kestner, Rafal Charlampowicz, Ryan Pugh, Steve Sawczyn, Sunish Gupta, Tom Lawton and Chris Law.
+Contacts
+Gian Wild
+Web:           www.accessibilityoz.com
+Phone:                 415 621 9366
+Email:                   gian@accessibilityoz.com
+Peter McNally
+Web:           www.bentley.edu
+Phone:                 781 891 2893
+Email:                    pmcnally@bentley.edu
+ 

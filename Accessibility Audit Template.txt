@@ -1,0 +1,298 @@
+﻿
+Overview
+👋 INTRO
+🏆 EXECUTIVE SUMMARY
+📋 1. TESTPLAN
+🚩 2. OBSERVATIONS
+🧠 3. WCAG Criteria
+CHARTS
+
+Sheet 1: 👋 INTRO
+ACCESSIBILITY AUDIT TEMPLATE (WCAG 2.2 AA)
+This free spreadsheet will help you to plan, run, analyze and present your accessibility audit, 
+from the data collection to the solution prioritization. Feel free to copy, use, modify and share :-)Bugs, comments or any questions? Get in touch:Boyd Emmen - User Researcher info@hike.onehttps://hike.one/How This Spreadsheet is Organized🏆 EXECUTIVE SUMMARYA brief consolidation of the audit data that is used to generate, report and present the main takeaways of the study📋 1. TESTPLANTab where you can adjust values (e.g. pages and severity) and describe the the workflow we advice.🚩 2. ISSUES FOUNDTab for logging all succesfull and failed items you discover during your audit🧠 3. WCAG CriteriaTab with detailed instructions how check every WCAG 2.2. A & AA criteria📊 CHARTSTab which displays the results of the audit per criteria and categoryResourcesTopicWCAG 2.2 CriteriaWebsite - Official WCAG descriptionsWCAG 2.2 ExplainedVideoDigital Accessibility 101ArticleExample of a user using a screenreaderVideoHow to user VoiceOver (screen reader)ArticleUnderstanding HTML tagsWebsiteFive hurdles between you and an accessible digital productArticleAccessibility improves SEOArticleAccessibility guidelines and legislationArticleEU Legislation ArticleDon't rely only on automated testArticleGreat introduction videosVideo'sAccessibility PersonasPersonasToolsWhatTopicAccessibility checker Chrome pluginSimulation, Contrast, Screen Reader, Automated checkCheck readibility of a text Website appText, reading difficultyCheck ARIA labels Chrome pluginCheck 4.1.2 Name, Role, Value How To Perform a Manual AuditStepInstruction1. Determine the scopeInstead of evaluating every page, choose the pages and functionalities that represent the broader experience of the website. For example:
+- Most popular pages
+- Range of template types
+- At least one service end-to-end (where possible)
+- Other pages your stakeholders (or you) thinks really need to be tested
+
+Try to limited the amount of pages (8-10).2. Select the relevant WCAG criteria Go through the list of criteria and determine which criteria don't apply to your product. 
+Remove them from tab 🧠3. WCAG Criteria. Certain WCAG criteria applies to types of content (e.g. audio, video) or types of services.3. List the screens you're reviewingWhen writing down issues you'll need to refer to screens (and sometimes specific states) so it helps to create an overview of all the screens and create a clear structure (e.g. 1.Homepage. 2. About page ect.). List you're screens to the 📋1.Testplan tab. Take screenshots of all the pages and create an overview in FigJam or Miro. 4a. Conduct the auditStart at the top of the list and work your way down. We like the following order:
+
+1. Check the whole site
+2. Check the page using a keyboard
+3. Check the zoom criteria
+4. Check the media & contrast & color & sensory criteria
+5. Check the code criteria (title, language, labels, forms)
+6. Check the gestures & pointer devices criteria
+
+You can find a more detailed workflow on tab '📋1.TESTPLAN'.4b. And write down items you want to flagWrite the issues in a short and consistent way. Here are 2 formats we like but find something that works for you. Some people like to also include a potential solution. It's up to you and your team.
+- <Element><Location on page><Issue>
+- When <action><location on page><result><issue>5. Double check and clean up the list and summarize your findings and (optional) recommendationsOnce your audit is complete summarize key issues and prioritise them based on frequency or severity. Add the insights to tab🏆EXECTUTIVE SUMMARY. Here you can also find states & figures.
+The list of issues can be long so by providing highlevel insights it's easier for stakeholders to understand the main accessibility issues and what to pick up first.6. Create a slidedeckCreate a slidedeck about your study. Take time to explain how the audit is conducted, how the WCAG criteria work and focus on the key issue. The list of issues can be very specific and the WCAG guidelines are very abstract so providing (visual) examples helps to make things a bit more tangible.
+Sheet 2: 🏆 EXECUTIVE SUMMARY
+EXECUTIVE SUMMARYProjectName of your projectDateAuditorNumber of screensAdd a dateAdd your name hereAdd number of screens05555100%🚩 Number of issues🔎 Criteria checked✅ Criteria passed (number)✅ Criteria passed (percentage)
+
+KEY ISSUES & INSIGHTSReview the failed items and summarize 5-7 key findingsNR.TOPICINSIGHTRELATED CRITERIA1234567
+
+Sheet 3: 📋 1. TESTPLAN
+TESTPLANScreens (scope)List all the screens that you're reviewing. For a first manual audit we recommend choose 8 - 10 pages.IDNAMEURL1Everywhere2paginaAdd a link3paginaAdd a link4paginaAdd a link5paginaAdd a link6paginaAdd a link7paginaAdd a link8paginaAdd a link9paginaAdd a link10paginaAdd a link11paginaAdd a linkWorkflowWe think this is the most efficient workflow when you're new to WCAG criteria & auditing. STEP ACTIONWHERECRITERIA1Whole siteCompare similar pages across the whole siteWhole site1.3.4 Orientation
+3.2.3 Consistent navigation
+3.2.4 Consistent identification
+3.2.6 Consistent help 
+2.4.2 Page titled
+2.4.5 Multiple ways2KeyboardNavigate the page by using your keyboardPage level2.1.1 Keyboard
+2.1.2 No keyboard trap
+2.1.4 Character key shortcuts
+2.4.1 Bypass blocks
+2.4.3 Focus order
+2.4.7 Focus visible
+2.4.11 Focus not obscured 
+3.2.1 On focus
+3.2.2 On input3ZoomRepeat the keyboard steps at 200% zoomPage level1.4.4 Resize text
+1.4.10 Reflow
+2.1.1 KeyboardReset the page to 100% zoomPage level1.4.12 Text spacing4SensoryReview any audio, playable or moving media on the page. This can include videos, carousels, audio tracks or animated gifs.a. MediaPage level1.2.1 Audio-only and video-only (prerecorded)
+1.2.2 Captions (prerecorded)
+1.2.3 Audio description or media alternative (prerecorded)
+1.2.4 Captions (live)
+1.2.5 Audio Description (prerecorded)
+1.4.2 Audio control
+2.2.2 Pause, stop, hide
+2.3.1 Three flashes or below thresholdb. Contrast & color & sensoryPage level1.1.1 Non-text content.
+1.4.1 Use of colour
+1.3.3 Sensory characteristics
+1.3.3 Sensory characteristics
+1.4.11 Non-text contrast
+1.4.13 Content on hover or focus
+2.2.1 Timing adjustable6CodeReview the page using a manual check, Dev tools and a screen reader Page levela. Title & languagePage level2.4.2 Page titled
+3.1.1 Language of page
+3.1.2 Language of partsb. Labels and assistive technology supportPage level1.3.1 Info and relationships
+1.3.2 Meaningful sequence
+2.4.4 Link purpose (in context)
+2.4.6 Headings and labels
+2.5.3 Label in name
+3.3.2 Labels or instructions
+4.1.2 Name, role, value.c. FormsReview the forms and form fields on the pagePage level1.3.3 Sensory characteristics
+1.3.5 Identify input purpose
+3.2.1 On focus
+4.1.3 Status messages
+3.3.7 Redundant entry
+3.3.8 Accessible authentication d. Form errorsPage level3.3.1 Error identification
+3.3.3 Error suggestion
+3.3.4 Error prevention (legal, financial, data)7Gestures & pointer devicesPage level2.5.4 Motion actuation
+2.5.1 Pointer gestures
+2.5.7 Dragging movements 
+2.5.2 Pointer cancellation
+2.5.8 Target size Severity levelsScore each observation based on severity. This will help you determine the priorty of what to pick up first. SCOREDESCRIPTIONShowstopperSome people can't successfully accessSeriousSome people will have a harder time accessingMinorPotentially makes accessing less pleasantBest PracticeBest Practice
+Sheet 4: 🚩 2. OBSERVATIONS
+ObservationsIDCriteriaStateObservationsWhereSeverity CommentTheme Number of itemsIssue per screenSeverity ResultsStateCountScreenIssuesSeverityCount✅ Failure 0Everywhere0Showstopper0❌ Success0pagina0Serious0Total0pagina0Minor0pagina0Best Practice0pagina0pagina0pagina0pagina0pagina0pagina0pagina0
+Sheet 5: 🧠 3. WCAG Criteria
+WCAG CriteriaSuccess criterion [+ URL]CategoryLevel🔥 Simplified description (Hike One) * Always read the full WCAG guidelines to ensure completeness📋 How to check🛠️ Tool / Method👀 Where to check:Topic1.1.1 Non-text Content1. PerceivableAAny image, video, audio, or other non-text elements on a webpage must have a text description that conveys the same information. This text can be read by screen readers, helping users who cannot see or hear the content understand what it is.A. Images: Check for Alt Text: Right-click on the image and select "Inspect" (or use the browser's developer tools). Look for the alt attribute within the img tag.
+Alt Text Quality: Ensure the alt text is descriptive and conveys the purpose of the image. For example, <img src="logo.png" alt="Company Logo">.
+
+B. Decorative Images: No Alt Text: Decorative images should have an empty alt attribute (alt=""). This indicates to screen readers that the image can be ignored.
+
+C. Complex Images (charts, infographics): Detailed Descriptions: Provide a more detailed description either in the alt attribute or in adjacent text. If using the alt attribute, it should be concise and a more thorough description should be available elsewhere on the page.
+
+D. Audio and Video: Transcripts: Ensure audio content has a text transcript available. For video content, provide captions and/or a transcript. Descriptive Labels: For video players, make sure buttons and controls have descriptive labels.
+
+E. Icons and Buttons: Text Labels: Icons used as buttons should have aria-labels or other text equivalents to describe their function. For example, a search icon button should have aria-label="Search".- Chrome plugin - Browser dev. tool - Screen reader (optional)- Images
+- Decorative images
+- Complex images
+- Audio and video
+- Icons and buttonsCode & Labels, Sensory1.2.1 Audio-only and Video-only (Prerecorded)1. PerceivableAProvide text transcripts for audio-only content and either transcripts or descriptions for video-only content.A. Transcripts are available for audio-only content.
+B. Transcripts or descriptions are available for video-only content.Manual inspection- Audio only (e.g. podcast)
+- Video only (e.g. instructional animation)Sensory1.2.2 Captions (Prerecorded)1. PerceivableAProvide captions for any prerecorded video content that includes audio1. Check if all prerecorded videos with audio have captions.
+2. Check if captions accurately reflect spoken content and audio cues.Manual inspectionPre-recorded video (if owned by business)Gestures1.2.3 Audio Description or Media Alternative (Prerecorded)1. PerceivableAProvide an audio description or a text alternative for video content to describe visual information for users who cannot see the video (e.g. people are walking)1. Verify that audio descriptions or text alternatives are available for prerecorded video content.
+2. Ensure that the video player supports audio descriptions if they are provided.Manual inspection
+- Doing
+- ListeningPre-recorded video (if owned by business)Gestures1.2.4 Captions (Live)1. PerceivableAAProvide real-time captions for any live video content that includes audio.Check the availability and quality of real-time captions in the video player.Manual inspectionLive stream (if owned by business)Gestures1.2.5 Audio Description (Prerecorded)1. PerceivableAAProvide audio descriptions for prerecorded video content to describe important visual details for users who cannot see the video.1. Play the video and listen without looking at the screen to see if you can fully understand what's happening.
+
+2. Ensure that an audio description track is available (either as a secondary audio track or as a part of the main video).
+
+3. Confirm that the audio description clearly explains important visual elements, like actions or changes in the setting.Manual Inspection
+- Doing
+- ListeningPre-recorded video (if owned by business)Sensory1.3.1 Info and Relationships1. PerceivableAUse HTML elements properly (like headings, lists, tables) to ensure that content structure is understandable by assistive technologies.1. Semantic HTML: Verify that HTML elements are used correctly (e.g., headings are marked with <h1> to <h6>, lists with <ul>, <ol>, and <li>, tables with <table>, <tr>, <th>, and <td>).
+
+2. ARIA Landmarks: Check for ARIA landmarks to define page regions (e.g., role="main", role="banner").
+
+3. Form Labels: Ensure form controls have associated labels (<label> elements or aria-label attributes).Browser dev. tool- Heading
+- Textfield
+- Group
+- Checkbox
+- Button
+- List
+- LinkCode & Labels1.3.2 Meaningful Sequence1. PerceivableAThe order in which content is presented on the screen should match the order in which it is read by screen readers. This helps users who rely on assistive technologies to understand the content in the intended sequence.1. Linear Navigation: Navigate through the webpage using the keyboard (e.g., Tab key) to ensure the focus moves in a logical order.
+
+2. Screen Readers: Use a screen reader to read through the page and verify that the reading order matches the visual order.
+
+3. Code Inspection: Check the HTML source code to ensure elements are arranged in a logical sequence that matches their visual presentation.Automated: - Use this plugin Manual inspection: - Keyboard (e.g. tab key) - Screen reader - Browser dev. tool Full screenCode & Labels1.3.3 Sensory Characteristics1. PerceivableAInstructions for using a webpage should not depend only on visual or auditory cues. For example, don't say "click the red button" without additional context.- Instruction Text: 
+Review instructions to ensure they do not rely solely on sensory information. For example, instead of "Click the red button," use "Click the red button labeled 'Submit'."
+
+- Alternative Descriptions:
+Ensure alternative text or instructions are provided for any elements that rely on sensory characteristics.- Manual InspectionFull screenForms, Sensory1.3.4 Orientation1. PerceivableAAWeb content should work well whether the device is in portrait or landscape mode, unless one mode is necessary for proper function (like a piano app needing landscape mode).Use the browser's developer tools to simulate a mobile device view and switch between portrait and landscape modes and insure that content is correctly displayed and functional.Devtools Device Mode or resizing windowFull screenGestures1.3.5 Identify Input Purpose1. PerceivableAAInput fields (like name, email, address) should have clear labels and purpose identifiers so that browsers and assistive technologies can understand and autofill them correctly.- Input Field Labels: Ensure each input field has a clear and descriptive label.
+- Auto complete: Check if autocomplete suggestion is provided- Manual Inspection (doing)Forms and input fieldsForms1.4.1 Use of Color1. PerceivableADon't rely on color alone to convey important information. There should be other indicators like text labels or patterns.- Color-dependent Elements:
+Review the webpage to ensure that color is not the sole method used to convey information. For example, links should be underlined in addition to being a different color.
+- Textual or Icon Indicators: Check that information conveyed with color is also available through text or icons. For example, errors in a form should be indicated with text like "Error" or an icon, not just a red borderManual Inspection: Visually Inspect the webpage for color-dependent elements.- Links
+- Errors
+- Others
+- Text
+- IconsSensory1.4.10 Reflow1. PerceivableAAUsers should be able to zoom in (up to 400%) on content without needing to scroll sideways (horizontally) or losing content/functionality.Zoom in to 400% on a standard desktop browser and ensure content adapts to the new screen width (no horizontal scrolling or hidden content).Brower: Zoom to 400% Full screenCode & Labels, Zoom & Legibility1.4.11 Non-text Contrast1. PerceivableAAInteractive elements like buttons and form fields must have enough contrast (3:1) against their background to be easily distinguishable.1. Identify Non-text Elements: Find interactive components such as buttons, form controls, and icons.
+2. Check Contrast Ratios:
+Measure the contrast ratio between the element (or its borders) and the background, ensuring it's at least 3:1.Contrast Ratio Checker:Find interactive components such as,
+- Buttons
+- Form controls
+- IconsSensory1.4.12 Text Spacing1. PerceivableAAText should remain legible and functional even when spacing between characters, lines, words, or paragraphs is increased.1. Apply these settings:
+- Line height to at least 1.5 times the font size.
+- Paragraph spacing to at least 2 times the font size.
+- Letter spacing to at least 0.12 times the font size.
+- Word spacing to at least 0.16 times the font size.
+2. Ensure text does not overlap or get cut off and remains readable and functional with the new spacing.Use this pluginAll text on the screenCode & Labels, Keyboard, Zoom & Legibility1.4.13 Content on Hover or Focus1. PerceivableAAIf content (like a tooltip or dropdown) appears when you hover over or focus on an element, it should be easy to close, stay visible long enough to be read, and not disappear unless intentionally dismissed.1. Trigger Hover or Focus Content:
+Interact with elements that display additional content on hover or focus, like tooltips, popups, or dropdown menus.
+2. Check for Dismissibility:
+Verify that users can dismiss the content without moving the pointer or keyboard focus.
+3. Ensure Content Visibility:
+Confirm that the additional content remains visible as long as the user hovers over or focuses on the trigger element or the content itself.
+4. No Unexpected Disappearance:
+Ensure the content does not disappear unexpectedly when the pointer or focus is over it.Manual Testing:
+- Mouse 
+- KeyboardFind interactive components such as,
+- Tooltips
+- Popups
+- Dropdown menu'sGestures, Zoom & Legibility, Keyboard1.4.2 Audio Control1. PerceivableAUsers should be able to stop or control any audio that plays automatically for more than three seconds.- Auto-playing Audio: Identify any audio content that plays automatically.
+- Control Mechanisms:Ensure there are controls to pause, stop, or adjust the volume of the audio. This could be a media player with these controls readily accessible.Manual Testing: Play the webpage and identify any auto-playing audio. Verify the presence and functionality of audio controls.Anything with audio Sensory1.4.3 Contrast (Minimum)1. PerceivableAAText should have enough contrast with its background to be easily readable. Normal text needs a higher contrast ratio than large text.- Normal text contrast ratio is at least 4.5:1.
+- Large text contrast ratio is at least 3:1.
+- All text is readable against its backgroundContrast Ratio Checker:TextSensory, Zoom & Legibility1.4.4 Resize Text1. PerceivableAAUsers should be able to enlarge text up to twice its original size without any issues in readability or functionality.Use browser zoom to increase text size up to 200% and verify that the content remains readable and functional.
+No overlapping or cut-off content at 200% zoom.Browser: Increase the textsize of the browser Full screenZoom & Legibility1.4.5 Images of Text1. PerceivableAAAvoid using images to display text. Use actual text instead, unless the image of text is essential for presentation.Review the webpage for images of text and assess if they can be replaced with actual text.Manual Inspection (Visually Inspect)Images of textZoom & Legibility, Sensory2.1.1 Keyboard2. OperableAUsers can use the interface with a keyboard, unless it depends on a specific path of the user input. This should not require specific timings between keystrokes and can't trap the keyboard focus.1. Check if your able to connect a keyboard device 
+2. Use the Tab key to navigate through the webpage and ensure all interactive elements (links, buttons, form fields, etc.) can be accessed and operated with a keyboard.Manual Testing:
+- KeyboardApplies to whole target website/appKeyboard2.1.2 No Keyboard Trap2. OperableAKeyboard users must be able to freely navigate without getting stuck on any element.1. Test Keyboard Navigation:
+Use the Tab key to navigate through all interactive elements (links, buttons, forms, etc.). Verify that focus moves smoothly between elements.
+
+2. Escape Mechanism:
+If there are components like modals, popups, or dropdowns, make sure you can close or exit them using the keyboard (e.g., pressing Esc or Tab).Manual Testing:
+- KeyboardApplies to whole target website/appKeyboard2.1.4 Character Key Shortcuts2. OperableASingle-key shortcuts can cause problems for some users, so there should be a way to disable, remap or modify (like Ctrl or Alt) them to prevent accidental activation.Identify any single-key keyboard shortcuts and check if they can be turned off or require a modifier.Manual inspection (doing)Check whole target website / app to see if any single key shortcuts are offeredKeyboard2.2.1 Timing Adjustable2. OperableAIf a task has a time limit (like filling out a form or payment flow or automatic log out due to inactivity), users should be able to extend the time or receive a warning before it expires.1. Identify any functionality with time limits (e.g., forms, quizzes).
+2. Verify that users can extend the time, turn it off, or receive a warning before time runs out.Manual inspection (doing)Check whole target website / app to see if any screen applies a time limit mechanism.Code & Labels, Sensory2.2.2 Pause, Stop, Hide2. OperableAInformation that moves, blinks, scrolls or auto-updates can be paused, stopped or hidden if there is other content, too.1. Identify any moving or auto-updating content:
+2. Verify that there are controls to pause, stop, or hide the moving content.Interactive elements such as,
+- carousels, 
+- animations,
+- auto-updating feedsSensory2.3.1 Three Flashes or Below Threshold2. OperableAThere are no flashes happening more often than three times per second, or that the flashing is below a certain threshold that won't trigger seizuresEnsure that flashing occurs fewer than three times per second, or that the flashing is minimal in contrast and brightness.Manual Inspection (Visually Inspect)Content such as,
+- Videos
+- AnimationsSensory2.4.1 Bypass Blocks2. OperableAThere should be a way for users to skip over things like navigation menus and go directly to the main content, especially useful for screen reader and keyboard users.1. Look for a "Skip to main content" link at the top of the page. Test whether it appears when using the Tab key.
+2. Press Tab to see if the skip link is visible and functional. It should move focus to the main content when selected.Manual inspection (doing)Check if there is a skip link at the top of the pageKeyboard2.4.11 Focus Not Obscured (Minimum)2. OperableAAWhen navigating with the keyboard, the focused element should always be fully visible and not blocked by other elements.1. Use the Tab key to navigate through all focusable elements. Ensure that none of the focused elements are partially or fully hidden.
+2. Make sure sticky elements like headers or footers do not block the view of the focused item.- Keyboard
+- Visually Inspect- All elements that have a focus state
+- Sticky elements (e.g. headers, footers)Keyboard2.4.2 Page Titled2. OperableAEvery webpage should have a unique, clear, and descriptive title that helps users understand what the page is about.1. View the title of the page (usually in the browser's title bar or tab) and confirm it's descriptive and relevant to the content.
+2. Check if titles accurately reflect the content of the page.Manual inspection (read)Check the title in the browser tabWhole site, Code & Labels2.4.3 Focus Order2. OperableAWhen using the keyboard [Tab key] to navigate, the focus should move through elements in a logical order, such as left to right and top to bottom, making it easy to use and understand.1. Use the Tab key to move through the page and confirm that the focus moves in a logical sequence, following the visual layout of the page.
+2. Ensure that as focus moves, the currently focused element is visibly highlighted.Keyboard Every interactive element on the screenKeyboard2.4.4 Link Purpose (In Context)2. OperableAEach link's purpose should be clear from either the link text or the context around it, so users know what will happen when they click.1. Review the link text to ensure it's descriptive enough (e.g., "Learn more about accessibility" instead of just "Click here").
+2. If the link text is ambiguous, check if the surrounding content makes the link's purpose clear.- Manually (read)
+- Screen reader Every interactive element on the screenCode & Labels2.4.5 Multiple Ways2. OperableAAUsers should have more than one way to find any given page on your site, like using a search bar, navigation menus, or a site map.1. Ensure the website has at least two ways to find pages (e.g., navigation menus, a search bar, a site map).
+2. Try using different methods to locate the same page (e.g., using the site's search function or navigation menu).Manual inspection Applies to whole target website/app and look for search functionality and navigation menu.Whole site2.4.6 Headings and Labels2. OperableAAHeadings should describe the sections of content, and labels should clearly explain form fields or interactive elements.1. Check for Descriptive Headings:
+Review headings throughout the page to ensure they accurately describe the content that follows.
+
+2. Check Form Labels:
+Inspect form fields and interactive elements to confirm they have descriptive labels that explain their purpose.Manual Inspection (read)- Headings
+- Form labelsCode & Labels2.4.7 Focus Visible2. OperableAAWhile using a keyboard, it's clear where the focus is. And when a component has focus, it can still be (partially) seen, so it's not hidden by a different interface element.1. Use the Tab key to navigate the site
+check that a visible outline or indicator shows where the focus is.
+
+2. Ensure that links, buttons, and form fields all display a visible focus indicator when selected via keyboard.Manual Inspection
+- Keyboard
+- Visually InspectFind interactive components such as,
+- Links
+- Buttons
+- Form fieldsKeyboard, Sensory2.5.1 Pointer Gestures2. OperableAIf a function requires complex gestures (e.g., two-finger swipe), users should be able to perform the same action with simple, single-point actions (e.g., a click).1. Identify any gestures that require more than one point of contact or path-based gestures. Verify that a simpler alternative is available.
+2. Try performing the gesture-based actions with a single mouse click or tap to ensure functionality is preserved.Manual inspection
+- Device with touchscreen (phone / tablet)
+- Hands
+- Mouse (pointer device)Applies to whole target website/appGestures2.5.2 Pointer Cancellation2. OperableAIf a user accidentally touches or clicks something, they should be able to cancel the action before it completes (e.g., by dragging away before releasing a click).1. Ensure that actions do not trigger until the user has released the pointer (e.g., mouse button or finger tap). If the user drags away before releasing, the action should cancel.
+2. Test actions with both a mouse and touchscreen to verify pointer cancellation.Manual Inspection:
+- Device with touchscreen (phone / tablet)
+- Hands
+- Mouse (pointer device)Find every interactive component that has a down state such as:
+- Buttons
+- Links
+- Form Fields
+- Dropdown menus
+- CheckboxesGestures2.5.3 Label in Name2. OperableAThe text a user sees on a button or link should match what assistive technologies (like screen readers) announce.1. Look at buttons, links, and form fields. Ensure that their visible labels match their underlying programmatic names.
+2. Use a screen reader to verify that the text announced matches the visible label.- Manual Inspection (read)
+- Screen readerInteractive elements that include a label such as:
+- Links
+- Buttons
+- Form fields
+- Checkboxes
+- RadiobuttonsCode & Labels2.5.4 Motion Actuation2. OperableAAnything which can be achieved by moving the device, can be:
+a. turned off and 
+b. also be achieved through the interface. (example of playstation controller that has motion trackers or shake phone undo action)1. Identify any features triggered by motion (like shaking a device).
+2. If so, ensure that a button or other input is available to perform the same function without moving the device.Manual Inspection
+- Mobile or tablet devicesApplies to whole target website/appGestures2.5.7 Dragging Movements2. OperableAAIf users need to drag something (like a slider), there must be an alternative method like tapping or clicking to complete the action.1. Identify any functions requiring dragging (like sliders or drag-and-drop interfaces).
+2. If so, ensure users can complete the same function using simple click or tap actions.Manual Inspection:
+- Mouse
+- Device with touchscreen (phone / tablet)Interactive elements that apply drag interactions such as:
+- Sliders
+- Carousels
+- Change list order Gestures2.5.8 Target Size (Minimum)2. OperableAAThe target size of an interactive component is at least 24 by 24px1. Verify that buttons, links, and other interactive elements are at least 24x24 CSS pixels or larger.
+2. Test buttons and links on touch devices to ensure they are easy to tap without accidentally activating adjacent elements.Manual Inspection:
+- Mouse
+- Device with touchscreen (phone / tablet)
+- Browser dev. tool (inspect element) Interactive elements that can be pressed/clicked such as:
+- Buttons
+- Icon buttons
+- Links
+- Tabs
+- List items
+- Checkboxes
+- RadioboxesGestures3.1.1 Language of Page3. UnderstandableAThe main language of the webpage must be defined in the code, so assistive tools can present the content correctly.Inspect the page's HTML for the lang attribute in the <html> tag and verify that it correctly identifies the main language of the page (e.g., lang="en" for English).- Screen reader
+- Browser dev. tool (inspect element) Check the page HTLM. The [lang] attribute is often on the top of the page.Code & Labels3.1.2 Language of Parts3. UnderstandableAAIf a section of the page uses a different language from the main language (e.g., a quote in Spanish on an English page), it must be marked in the code so it's announced with correct pronunciation.1. Review the page for sections of content in different languages.
+2. Inspect the HTML of the language-specific content to ensure the correct lang attribute is applied (e.g., lang="es" for Spanish).- Screen reader
+- Browser dev. tool (inspect element)Check full screen for words or sections that are in a different language than the main language (e.g. an English quote on a page where the rest of the copy is in Dutch)Code & Labels3.2.1 On Focus3. UnderstandableAWhen focussing on an interctive element (like a form field), it shouldn't automatically trigger an action or change the page.Use the Tab key to navigate through the interactive elements (e.g., links, buttons, form fields). Confirm that focusing on these elements doesn't cause unexpected changes in content or behavior.- Keyboard (Tab key)Interactive elements such as:
+- Checkbox
+- Dropdown menuKeyboard3.2.2 On Input3. UnderstandableAWhen interacting with an interctive element (e.g., selecting a dropdown option) shouldn't automatically trigger changes (like submitting the form) without warning.1. Interact with form fields and check that changes to inputs (e.g., typing or selecting an option) do not cause unexpected actions.
+2. Ensure that if a change in input does trigger an action, users are warned about it beforehand.Manual Inspection:
+- Keyboard
+- MouseInteractive elements such as:
+- Checkboxes
+- Radiobuttons
+- Form fieldsKeyboard, Code & Labels, Forms3.2.3 Consistent Navigation3. UnderstandableAANavigation (e.g. a menu), components with the same function, and help options, should remain consistent across pages.Browse different pages and compare the placement and order of navigation elements.Visually InspectAcross the whole website/app (or multiple screens)Whole site3.2.4 Consistent Identification3. UnderstandableAASimilar buttons or functions should look and behave the same on all pages of the site.Compare similar functions (e.g., submit buttons or links) across different pages to ensure they have consistent labels and behaviors.Visually InspectAcross the whole website/app (or multiple screens). Look for interactive elements such as:
+- Buttons
+- Links
+- Icons
+- Custom componentsWhole site3.2.6 Consistent Help3. UnderstandableAIf a website/app provides help (like live chat or FAQ links), those help options should always be easy to find in the same place on every page.1. Identify where help options (e.g., help links, support chat) are placed across the site.
+2. Compare different pages to confirm the help options are consistently located in the same place.Visually InspectLook for help services such as across multiple screens:
+- Live chat
+- FAQ linksWhole site3.3.1 Error Identification3. UnderstandableAIf there's an error (e.g. when filling out a form), users should be told exactly what went wrong and how to fix it.1. Intentionally make an error in a form (e.g., leave a required field empty) and check whether the error is clearly indicated.
+2. Ensure that error messages explain both the problem and how to correct it.Manual Inspection (doing)Look for situations where an error can happen such as:
+- Fill in and submit a form
+- Empty states 
+- Situations (e.g. no internet connection)Forms3.3.2 Labels or Instructions3. UnderstandableAWhen an interface requires input, labels or instructions are shown (in text).1. Ensure all form fields have visible and clear labels explaining what input is required.
+2. Check for Placeholder Text or Instructions:
+3. Verify that instructions are provided if more detail is needed to complete a form field.Manual Inspection (doing)Find interactive components that require user input such as:
+- Text fields
+- Date fields
+- Field for postalcode
+- Field for phone number
+- Search fieldCode & Labels, Forms3.3.3 Error Suggestion3. UnderstandableAAIf users make a mistake (like entering an invalid email), the error message should suggest how to fix it (e.g., "Please enter a valid email address").Intentionally make an error in a form and check if the error message suggests how to fix it.Manual Inspection (doing)Find interactive components that require user input such as:
+- Text fields
+- Date fields
+- Field for postalcode
+- Field for phone number
+- Search fieldForms3.3.4 Error Prevention (Legal, Financial, Data)3. UnderstandableAAFor critical actions (like signing contracts or making purchases), users should have the chance to review their input and confirm it before the action is completed.Verify that users are given a chance to review and confirm their inputs before submitting important information (e.g., legal, financial, or personal data).Manual Inspection (doing)Look for features that involve critical actions such as:
+- Payment flowsForms3.3.7 Redundant Entry3. UnderstandableAUsers shouldn't have to enter the same information multiple times on a website unless needed.Check forms and other input areas to ensure that users aren't required to re-enter information they've already provided.Manual Inspection (doing)Look for situations such as:
+- Entering a billing and a delivery adress
+- Show previously search term in searchForms3.3.8 Accessible Authentication (Minimum)3. UnderstandableAAAuthentication doesn't require cognitive function, such as remembering a password (the user needs the option to autofill/paste it from a password manager). 1. Check if authentication methods do not rely solely on memory or cognitive skills.
+2. Check if alternative authentication options (e.g., password managers) are available.Manual Inspection (doing)Login & authenticationForms4.1.2 Name, Role, Value4. RobustAAll buttons, forms, and other controls should be correctly coded so that assistive technologies can recognize them and announce their purpose to users.Inspect buttons, form fields, and other interactive elements to ensure they have correct labels, roles, and values defined in the HTML.Manual Inspection - Plugin Chrome - Browser dev. tool (check name, role, value) - Screen readerTest every interactive components such as:
+- Buttons
+- Links
+- Lists
+- Groups
+- Radiobuttons
+- Checkboxes
+- Formfields
+- Images
+- Custom components !Code & Labels, Forms, Keyboard4.1.3 Status Messages4. RobustAAUsers should be notified of important status messages (like a form submission confirmation) in a way that is easy to understand and accessible.Trigger status messages (e.g., submit a form or trigger an error) and verify that they are clearly visible and announced by assistive technologies.Manual Inspection (doing)
+- Screen reader Look for situations such as:
+- When entering a form field incorrectly
+- When showning search results
+- When showing a status message (e.g. processing)
+- When showing a confirmationCode & Labels, Forms
+Sheet 6: CHARTS
+CHARTS 
+WCAG criteriaPrincipleNr. of issues 🔒Status 🔒1.1.1 Non-text Content1. Perceivable0Passed1.2.1 Audio-only and Video-only (Prerecorded)1. Perceivable0Passed1.2.2 Captions (Prerecorded)1. Perceivable0Passed1.2.3 Audio Description or Media Alternative (Prerecorded)1. Perceivable0Passed1.2.4 Captions (Live)1. Perceivable0Passed1.2.5 Audio Description (Prerecorded)1. Perceivable0Passed1.3.1 Info and Relationships1. Perceivable0Passed1.3.2 Meaningful Sequence1. Perceivable0Passed1.3.3 Sensory Characteristics1. Perceivable0Passed1.3.4 Orientation1. Perceivable0Passed1.3.5 Identify Input Purpose1. Perceivable0Passed1.4.1 Use of Color1. Perceivable0Passed1.4.2 Audio Control1. Perceivable0Passed1.4.3 Contrast (Minimum)1. Perceivable0Passed1.4.4 Resize Text1. Perceivable0Passed1.4.5 Images of Text1. Perceivable0Passed1.4.10 Reflow1. Perceivable0Passed1.4.11 Non-text Contrast1. Perceivable0Passed1.4.12 Text Spacing1. Perceivable0Passed1.4.13 Content on Hover or Focus1. Perceivable0Passed2.1.1 Keyboard2. Operable0Passed2.1.2 No Keyboard Trap2. Operable0Passed2.1.4 Character Key Shortcuts2. Operable0Passed2.2.1 Timing Adjustable2. Operable0Passed2.2.2 Pause, Stop, Hide2. Operable0Passed2.3.1 Three Flashes or Below Threshold2. Operable0Passed2.4.1 Bypass Blocks2. Operable0Passed2.4.2 Page Titled2. Operable0Passed2.4.3 Focus Order2. Operable0Passed2.4.4 Link Purpose (In Context)2. Operable0Passed2.4.5 Multiple Ways2. Operable0Passed2.4.6 Headings and Labels2. Operable0Passed2.4.7 Focus Visible2. Operable0Passed2.4.11 Focus Not Obscured (Minimum)2. Operable0Passed2.5.1 Pointer Gestures2. Operable0Passed2.5.2 Pointer Cancellation2. Operable0Passed2.5.3 Label in Name2. Operable0Passed2.5.4 Motion Actuation2. Operable0Passed2.5.7 Dragging Movements2. Operable0Passed2.5.8 Target Size (Minimum)2. Operable0Passed3.1.1 Language of Page3. Understandable0Passed3.1.2 Language of Parts3. Understandable0Passed3.2.1 On Focus3. Understandable0Passed3.2.2 On Input3. Understandable0Passed3.2.3 Consistent Navigation3. Understandable0Passed3.2.4 Consistent Identification3. Understandable0Passed3.2.6 Consistent Help3. Understandable0Passed3.3.1 Error Identification3. Understandable0Passed3.3.2 Labels or Instructions3. Understandable0Passed3.3.3 Error Suggestion3. Understandable0Passed3.3.4 Error Prevention (Legal, Financial, Data)3. Understandable0Passed3.3.7 Redundant Entry3. Understandable0Passed3.3.8 Accessible Authentication (Minimum)3. Understandable0Passed4.1.2 Name, Role, Value4. Robust0Passed4.1.3 Status Messages4. Robust0PassedCriteria resultsNr Criteria 🔒✅ Passed55❌ Failed0Issues per principleCount 🔒1. Perceivable02. Operable03. Understandable04. Robust0Total amountCount 🔒Percentage 🔒Total nr. of A & AA criteria55100%✅ Criteria meets WCAG 2.2 A & AA conformance55100%❌ Criteria fails WCAG 2.2 A & AA conformance00%Top 10 criteria with most failsCount 🔒1.1.1 Non-text Content01.2.1 Audio-only and Video-only (Prerecorded)01.2.2 Captions (Prerecorded)01.2.3 Audio Description or Media Alternative (Prerecorded)01.2.4 Captions (Live)01.2.5 Audio Description (Prerecorded)01.3.1 Info and Relationships01.3.2 Meaningful Sequence01.3.3 Sensory Characteristics01.3.4 Orientation01.3.5 Identify Input Purpose01.4.1 Use of Color01.4.2 Audio Control01.4.3 Contrast (Minimum)01.4.4 Resize Text01.4.5 Images of Text01.4.10 Reflow01.4.11 Non-text Contrast01.4.12 Text Spacing01.4.13 Content on Hover or Focus02.1.1 Keyboard02.1.2 No Keyboard Trap02.1.4 Character Key Shortcuts02.2.1 Timing Adjustable02.2.2 Pause, Stop, Hide02.3.1 Three Flashes or Below Threshold02.4.1 Bypass Blocks02.4.2 Page Titled02.4.3 Focus Order02.4.4 Link Purpose (In Context)02.4.5 Multiple Ways02.4.6 Headings and Labels02.4.7 Focus Visible02.4.11 Focus Not Obscured (Minimum)02.5.1 Pointer Gestures02.5.2 Pointer Cancellation02.5.3 Label in Name02.5.4 Motion Actuation02.5.7 Dragging Movements02.5.8 Target Size (Minimum)03.1.1 Language of Page03.1.2 Language of Parts03.2.1 On Focus03.2.2 On Input03.2.3 Consistent Navigation03.2.4 Consistent Identification03.2.6 Consistent Help03.3.1 Error Identification03.3.2 Labels or Instructions03.3.3 Error Suggestion03.3.4 Error Prevention (Legal, Financial, Data)03.3.7 Redundant Entry03.3.8 Accessible Authentication (Minimum)04.1.2 Name, Role, Value04.1.3 Status Messages0

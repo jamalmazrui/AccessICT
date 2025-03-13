@@ -1,0 +1,46 @@
+﻿Digital Accessibility Manual Testing Procedures 
+I.            Introduction 
+Dakota State University                                  announced  a Digital Accessibility Policy,                            that sets forth   accessibility  expectations, all  new  digital  content created  and  used  internally  at the  University,  as  well  as  technology  systems,  platforms,  and  applications  bought or  built by  the  University.  The  Policy  calls  for  the  University  to  publish  digital  accessibility  manual  testing  procedures  to  provide  guidance  for  site  owners,  content managers  and  technology  support staff.  
+II.            Manual Testing Procedures 
+Automated  testing  tools  speed  up  the  process  of  evaluation  and  allow  for  regular  monitoring.  However,  human  evaluation   is also  essential  to  assessing   a website's  accessibility  because  no  single  tool  can  determine  to  what extent a  site  conforms  to  the  Standards.  
+Testing  Procedure  and  Protocols:  
+For  the  purposes  of  this  policy,  testing  must address  these  protocols  and  questions,  which  only  represent a  starting  point,  rather  than   a comprehensive  set,  for  assessing  digital  technology  to  ensure  access  to  people  with  disabilities.  
+For  web  pages:  Check  the  following  across  different browsers  using  different types  of  hardware  (for  documentation,  please  specify  the  browsers  by  version  and  different desktop/laptop  configurations):  
+Keyboard  access:  Can  users  access  all  functions  and  content,  and  complete  all  tasks,  independently  by  using  only  the  keyboard  (<tab>,  <enter>,  <spacebar>,  <esc>,  and  arrow  keys)?  Verify  in  particular:  
+There  are  no  keyboard  traps  that would  prevent a  user  from advancing  through  the  entire  page,  such  as  an  automatically-refreshing  social  media  embedded  feed  (tip: try  to  tab  very,  very  slowly  through  any  such  feed  to  observe  whether   a user  can  close  it,  or  move  past it,  at a  reasonable  point;   if the  feed  keeps  refreshing  by  automatically  adding  additional  entries  to  be  shown,  it causes   a trap  for  those  who  are  unable  to  use  quick  keyboard  strokes  -  or   a mouse  -  to  navigate); Expandable  elements  can  not only  be  expanded,  but can  also  be  collapsed  automatically  or  with   a keyboard  command,  so  they  do  not block  other  content.  
+Logical  reading  order:  Does  keyboard  navigation  follow   a logical,  predictable  order?  
+Skip  links:  Can  keyboard-only  users  bypass  long  navigation  menus,  embedded  social  media  feeds,  etc.,  without having  to  use  excessive  tabbing?  
+Visual  focus indicator:  Can  users visually  track  where  they  are  on  the  page  while  navigating  with   a keyboard?  
+Alternative  (Alt)  text:  Are  all  important images  and  graphics  labelled  with  meaningful  text,  associated  captions,  or  adjoining  descriptions  so,  for  example,  people  who  are  blind  and  use  assistive  technology  will  have  access  to  the  relevant information  contained  in  the  image  or  graphic?  For  linked  images,  does  the  alternative  text tell  users  where  the  link  will  take  them,  rather  than  describe  the  image?  
+Links:  Are  links  well-named  and  unambiguous  so  users  who  are  blind-  without having  to  read  nearby  content -  will  understand  the  purpose  and  destination  of  each  link?  Common  examples  of  ambiguous  link  names  include  "click  here,"  "read  more,"  "see  all,"  "http://..."-type,  or  "event notice,"  and  other  ambiguous  phrases.  
+Color  alone:  Are  there  any  instances  where  color  alone  distinguishes  an  object or  state?   If so,  add  another  way  to  distinguish  the  object or  state.  For  example,  make  sure  color   is not the  only  way  to  distinguish  link  text from the  surrounding  paragraph  text,  and  ensure  color-coding   is not the  exclusive  way  used  to  convey  important calendar  dates  (e.g.,  "no  school"  dates  are  marked  in  purple).  
+Color  contrast:  Using  an  eyedropper  tool  or  other  manual  method  (automated  testing   is generally  insufficient unless  manually  verified),   is there  at least a  4.5:1  contrast ratio  for  normal  size  text and   a 3:1  contrast ratio  for  large  scale  text,  comparing  foreground  and  background  colors  of  all  text elements  and  text inside  graphics?  Text inside  logos  can  be  ignored  for  these  purposes.  
+Tables:  Does  the  page  avoid  using  layout tables?   If data  tables  are  present,  are  they  necessary  to  convey  information,  or  could   a more  accessible  means  of  presentation  be  considered  instead?    If a data  table   is used,   is it simple,  cells  span  multiple  columns  or  rows?  Are  column  and  row  headers  programmatically  labelled?  
+Buttons,  form  controls,  and  other  operable  elements:  Are  they  labelled  appropriately,  both  programmatically  and  visually?  Do  the  visual  labels  continue  to  be  properly  associated  with  the  elements  when  the  screen   is enlarged?   If the  elements  have  different states  (such  as  form fields  that are  required  for  successful  submission),  are  those  conveyed  by  something  other  than  color  alone?  
+Heading  structure:  Are  headings  programmatically  labelled  with   a meaningful  hierarchy,  so  people  who  are  blind  and  using   a screen  reader  can  navigate   a page  according  to  its  headings,  listen  to   a list of  headings,  and  skip  to  where  they  want to  begin  reading?  
+Embedded  videos and  slide  carousels:  Where  there  are  embedded  videos  or  carousels,   if they  launch  or  rotate  automatically,   is that behavior  necessary?   If so,  can   a user  pause  or  stop  the  video  or  carousel,  and later               replay the video                              or carousel,       with keyboard                  commands? The ability to                                   stop th               e video                   or  carousel  rotation  can  be  important,  not just while  users  are  on  the  video  or  carousel,  but while  they  are  in  other  parts  of  the  page.  
+Magnification:  Have  you  re-tested  everything  when  content is  magnified  to  the  "point of  reflow,"  or  in  "responsive  mode,"  when  the  formatting  changes  to  be  more  mobile  friendly  (typically  around  200%  on  standard  laptop  screens)?  Are  all  contents  and  all  functionality  preserved  and  useful?  
+Paying  particular  attention  to  any  "hamburger  menus,"  or  expandable  menus,  can  they  be  opened,  navigated  (including  any  sub-level  items),  and  closed  automatically  or  easily  with  the  keyboard?  
+Is  logical  reading  order  on  the  page  preserved,  without the  need  to  scroll  right to  left?   If vertical  scrolling  is  required  inside  windows  or  objects,  can  it be  done  with  the  keyboard?  
+Do  elements  meant to  be  together  (such  as  form labels  and  text entry  boxes)  stay  together  upon  magnification?  
+For  electronic  documents:  In  addition  to  addressing  the  questions  above,  have  you  conducted  an  accessibility  review  of  your  documents  using  the  software's  accessibility  checker  (e.g.,  "Check  
+Accessibility"  feature  in  Microsoft Word,   "Accessibility Check"   feature in   Adobe Acrobat P            ro  DC,  etc.)?  
+For  videos:  Is  captioning  present or    is a transcript available?  Transcripts  should  only  be  used  when  the  audio  can  be  fully  understood  separately  from viewing  the  video  and  does  not reference  video  content.  
+Does  the  captioning  or  transcript meaningfully  convey  the  contents  of  the  audio  track  (not just phonetically)?  
+Does  the  captioning  or  transcript indicate  the  names  or  appropriate  descriptions  of  the  speakers,   if more  than  one  person   is speaking?  
+Does  the  captioning  or  transcript use  capitalization  and  punctuation  appropriately,   if that is  important to  understanding  the  contents?  
+Is  important on-screen  information  also  conveyed  audibly,  so  people  who  are  blind  or  have  low  vision  have  access  to  the  contents?  
+For  social  media  posts:  If  graphic  images  are  used,  are  they  accompanied  by  text that conveys  the  same  information?  
+If  videos  are  used,  are  they  accessible  as  described  above?  
+ 
+Related Documents, Forms and Tools  
+•       XXX  [INSERT  LINK]  
+•       XXX  [INSERT  LINK]  
+ 
+Procedure History  
+                Adopted:            XX/XX/XXXX  
+                Revised:              XX/XX/XXXX  
+                Revised:              XX/XX/XXXX  
+ 
+ 
+ 

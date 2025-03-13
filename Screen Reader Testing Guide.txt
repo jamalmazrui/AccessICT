@@ -1,0 +1,111 @@
+﻿Screen Reader Testing Guide 
+By the New York City Mayor's Office for People with Disabilities  August 2019 
+ 
+Goals: 
+This guide is meant to provide information on basic website accessibility as well as screen reader testing. Topics covered include website accessibility standards, assistive technology, common screen reader shortcuts used for testing, basic testing techniques and automated testing tools. 
+Contents 
+Screen Reader Testing Guide	1 
+Goals:	1 
+Introduction:	3 
+What is Accessibility?	3 
+Defining Disability:	3 
+What is Assistive Technology?	3 
+Screen Readers	4 
+Accessibility Testing:	5 
+Manual testing:	5 
+Using Keyboard Shortcuts:	5 
+List of Elements:	6 
+WAVE Automated Testing Tool:	7 
+Missing Alt-text:	7 
+Missing form labels:	7 
+Missing Document Language:	7 
+Contrast Errors:	8 
+Contact the Digital Accessibility Coordinator:	8 
+
+ 
+ 
+ 	 
+
+Introduction: 
+What is Accessibility? 
+Accessibility is the practice of designing or enhancing the physical, social, or virtual environment so that people of all abilities are able to perceive and interact with them independently.  
+  
+Defining Disability: 
+For the purposes of web accessibility, we will focus on disabilities that affect the eyes, ears, hands, and brain. Some examples are blindness, deafness, learning disabilities, Cognitive disabilities, motor-function disabilities, neurological disabilities or a combination of disabilities.  
+ 
+What is Assistive Technology? 
+Assistive Technology (AT) is any piece of equipment, product, or system that is used to maintain or improve the functional capacities of people with disabilities. Common examples include wheelchairs, hearing aids, crutches or even glasses and contact lenses. When it comes to the web, assistive technologies are software or hardware that can assist with the following: 
+• Reading content from a computer screen through a synthetic speech engine 
+• Enlarging text, images and other content on the screen 
+• Inverting colors 
+• Navigating using keyboards, switch controls or trackballs 
+• Highlighting specific combinations of letters that visitors might have trouble processing 
+• And more... 
+ 
+ 	 
+Screen Readers 
+For members of the blind and low vision community, there are a few ways to access computers and websites. A screen reader is software that uses synthesized speech to read the screen's contents out loud. The user interacts and navigates through the content by using touch gestures or keyboard commands.  
+• Screen reader users do not use a mouse.  
+• Along with reading text out loud, screen readers can also provide information in braille through a Refreshable Braille Display.  
+• Screen readers are sometimes used by people with learning disabilities and those who have difficulty reading.  
+• On Windows, JAWS is the popular screen reader and NVDA is a free open source screen reader. 
+• On Mac and iOS, Voiceover is built-in and is popular among the blind community. 
+• On Android, Talkback is the built-in screen reader. 
+• Watch a screen reader demonstration  
+ 
+ 
+ 	 
+Accessibility Testing: 
+The best method of testing a website for accessibility would be a mixed method. A tester can manually audit a website by visiting it with a screen reader and checking for common accessibility barriers. They can also paste the URL into an automated checker to receive a quick report with errors. 
+ 
+Manual testing: 
+Using Keyboard Shortcuts: 
+When using NVDA or JAWS, you can try the following commands to test a website.  
+ 
+1. Press Control and Home to go to the top of the page. Note: this should be done before testing for each of the following. 
+2. Arrow keys: Use the up and down arrow keys and make sure that the content is read in a logical order. Control and the Up or Down arrows will move by paragraph. 
+3. Press the Tab key to make sure every link, button and interactable control has keyboard access. 
+4. Press "G" to move to the next image. Listen to the description of the image and decide whether or not it conveys the right meaning for that image. Keep doing this until you've been through every image on the page. Note: if there are images that you see on the page but cannot get to by pressing "G" then they are hidden from screen readers. Any hidden images should be purely decorative. 
+5. Press "H" to move to the next heading. The page should be separated into different headings so that screen reader users can navigate around it more quickly. 
+6. Press "F" to move to the next form control. This includes text fields, buttons, checkboxes, drop down menus etc. When you navigate to any of these, you should hear a label that makes sense. 
+7. Press "T" to navigate to the next table. Once in a table, hold control, alt and use the arrow keys to move through the different columns and rows. Note: In a properly formatted table, when moving from column to column or row to row, screen readers should also announce the column or row header associated with that cell. Tables should not be used for layout purposes. Tables should only be used to present tabular data such as schedules and search results. 
+8. Regions: Press "R" using JAWS and "D" using NVDA to navigate by region. Pages typically have a "Banner," "Navigation," "Main Content," and "Content Info" regions. If there are multiple "Navigation" regions, they should have different labels such as "Primary Navigation" and "Secondary Navigation." 
+ 
+List of Elements: 
+Many screen readers allow users to access a list of different elements. For example, JAWS can generate a list of all links on a page when Insert and "F7" are pressed together. Below is a table with similar commands. 
+ 
+List Type: JAWS 
+Command: NVDA 
+Command: Voiceover Command: Comments Links Insert and F7 Insert and F7 Command, 
+Option and U. Then use left and right arrows to find links All links in this list should have a unique and 
+understandable label Headings Insert F6 Insert and F7. Press shift and tab then use arrow keys to navigate to headings Command, 
+Option and U. Then use left and right arrows to find headings Headings should follow a hierarchical tree structure. Forms Insert and 
+F5 Insert and F7. Press shift and tab then use arrow keys to navigate to forms Command, 
+Option and U. Then use left and right arrows to navigate to forms All form fields should have a descriptive label Regions/Landmarks Insert, 
+Control and 
+R Insert and 
+F7. Press Shift and Tab then use arrow keys to find 
+Landmarks Command, 
+Option and U. Press left and right arrows to find 
+Landmarks All regions should go along with their labels. For example, the Navigation region should have navigation links only  
+ 
+ 
+ 
+WAVE Automated Testing Tool: 
+WAVE is a popular testing tool created by Webaim. While it's a helpful tool, it does report errors inaccurately at times. It's always a good idea to double check the errors to make sure they are true. 
+URL: http://wave.webaim.org 
+ 
+Missing Alt-text: 
+Missing alt-text means that an image does not have a description. Sometimes, it is appropriate to hide an image if it is there to decorate and has no functional purpose. 
+ 
+Missing form labels: 
+Every form field should have a text label. This includes text fields, buttons, checkboxes, radio buttons and dropdown menus. 
+ 
+Missing Document Language: 
+Every webpage should have the language tagged so that it can be interpreted by screen readers and other technologies appropriately. For example, most websites on nyc.gov should have "US English" as their document languages. Any secondary languages on the page should also be properly tagged using the lang attribute. 
+ 
+Contrast Errors: 
+Color contrast is important for visitors with low vision. There should be a contrast ratio of 4.5:1 between the background and text. Links and buttons also need to have good contrast so that they are easily identifiable. 
+ 
+Contact the Digital Accessibility Coordinator: 
+For more assistance or to request a training contact the Digital Accessibility Coordinator at the Mayor's Office for People with Disabilities. 

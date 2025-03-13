@@ -1,0 +1,309 @@
+﻿
+E-ACCESSIBILITY
+
+PLAYBOOK FOR
+DIGITAL INCLUSION
+
+Supported by: 
+Content
+What is accessibility?                                                                                                                                  4 
+                 Defining accessibility                                                                                                                         4
+Why is e-accessibility important?                                                                                                            6 
+                 Benefitting the end-user                                                                                                                   6 
+                        Benefitting your business      8 Expanding your market share          8 Enhancing your brand            9 
+                                         Increasing savings in the long-term                                                                                     9 
+                                     Driving innovation                                                                                                                10
+How to create e-accessible digital products/services?                                                                   11 
+What are some e-accessibility considerations for the different disability types? 11 
+                                     Visual impairment                                                                                                                11 
+                                      Deaf / Hard-of-hearing                                                                                                        12 
+                                     Physical disability                                                                                                                  13 
+                                      Intellectual disability                                                                                                            14 
+                                   Autism                                                                                                                                    14
+What principles should we adhere to while 
+designing e-accessible assets?                                                                                                               15
+                            Web Content Accessibility Guidelines in a nutshell                                                                    15 
+                  What are the 4 principles of WCAG?                                                                                             17 
+               Applying POUR                                                                                                                                  18 
+                                      Principle 1: Perceivable                                                                                                       18 
+                                      Principle 2: Operable                                                                                                           18 
+                                        Principle 3: Understandable                                                                                               19 
+                                      Principle 4: Robust                                                                                                               19
+How to start identifying e-accessibility issues?                                                                                 20 
+                     Automated testing                                                                                                                            20 
+               Manual testing                                                                                                                                  21 
+                                       Why perform manual testing?                                                                                            21 
+                                       Activities for manual testing                                                                                               21 
+                                        Screen reader testing options                                                                                            22 
+                                         How do we conduct manual testing?                                                                                23
+Additional resources                                                                                                                                  25
+
+What is accessibility?
+If this is the first time you are hearing about accessibility, here is an analogy for you: 
+You are trying to find a famous chicken rice stall. You arrive at the hawker centre where this stall is supposed to be located, but every stall looks the same. There are no differentiating signs, logos, or pictures.
+You painstakingly check each stall until you finally find the one selling the chicken rice. You are all ready to dig into your plate of rice, but the only utensil you are given to eat with is an ice-cream stick. No matter how hard you try, you cannot get your food into your mouth.
+
+Though this situation may seem ridiculous, this frustration is what persons with disabilities feel when the environment or services are not accessible to them.
+A lack of accessibility can occur in both physical and digital spaces. In this playbook, we will explore digital accessibility (also known as 
+e-accessibility), how it affects both users with and without disabilities, and what we can do to make our digital experiences more inclusive.
+Defining accessibility
+The term accessibility refers to something being easy to use or access, and is an important design consideration in many aspects of our lives.
+Some design considerations to note:
+
+Physical structures such as    Signages such as large-font     Digital services such as ramps in buildings     price tags in retail stores        captions in videos 
+E-accessibility is concerned with how easily we can use information and communication technologies, including the following:
+
+ELECTRONIC DEVICES
+Smartphones, personal computers, augmented reality/virtual reality (AR/VR) devices, game and entertainment consoles, home appliances, etc.
+SOFTWARE APPS
+Native apps that run on common operating systems including 
+Windows, Mac OS, iOS, Android
+WEBSITES
+Websites like Enabling Guide that can be accessed on different browsers and devices 
+Why is e-accessibility important?
+Benefitting the end-user 
+Did you know that 2.1% of the student population, and 3.4% of 18-49-yearolds in Singapore  have disabilities?1
+This number increases to 13.3% for persons who are 50 years and above, 
+
+proving that a substantial proportion of our population would benefit from having e-accessible digital products and services.
+Beyond permanent disabilities, people can also have temporary or situational disabilities at any time.
+Disability TypePermanentTemporarySituationalVisual ImpairmentVision loss from chronic eye conditionRecovery from cataract surgeryPower outage causing lights to go 
+outDeafness/Hard-ofhearingDeafness from chronic conditionEar infectionNoisy environmentPhysical disabilityParalysis or stroke or missing limbUsing crutches due to an injuryHands occupied carrying a babyWhen we design with accessibility in mind, we are making things easier for everyone, with or without disabilities.
+Furthermore, inaccessible digital products/services have a disproportionate impact on users with disabilities. For example: 
+•         Graphics with insufficient colour contrast may be difficult for people to read, but impossible for a person with low vision or colour blindness.
+•         Web pages with small buttons may be annoying for most users, but impossible for a person with motor difficulties to use.
+•         Videos with no subtitles may be difficult for people to follow along, but impossible for a person who is deaf/hard-of-hearing to understand.
+•         If instructions are overly complex, it may be difficult for many people to understand but could be impossible for persons with intellectual disabilities to follow along.
+Therefore, to ensure that persons with disabilities are not left behind in a rapidly digitalising society, and to empower them to be more meaningfully engaged in the community, it is important that your digital assets are e-accessible.1
+
+2  The State of Mobile in 2022, Data.ai
+Benefitting your business
+Beyond altruism, there is a strong business case for making your products, services, and experiences accessible. 
+Expanding your market share
+•         Accessibility extends the reach of your products or services to more customers: persons with disabilities, the elderly, people with lower levels of literacy, people with "temporary disabilities" (e.g. broken arm), and more.
+•         
+Improved user experience (UX) increases consumer conversion rate: customers are more likely to complete a purchase if the experience is accessible. Customers with disabilities also do not buy the cheapest products, they purchase from the places with the fewest barriers.[1]
+•         Having more accessible and understandable content improves your website's search engine optimisation (SEO), increasing the discoverability of your content online.
+Enhancing your brand
+According to a 2022 Deloitte study, 57% of consumers are more loyal to brands that display commitment to addressing social inequities, whether it is in hiring employees and suppliers, or creating products for persons with different abilities.[2]
+Accenture research also shows that diversity and inclusion (D&I) strategies lead to 28% higher revenue and 30% higher profit than companies without D&I.[3]
+Starbucks Case Study
+ 
+Starbucks has employed innovations in its stores such as speech-to-text technology at counters which customers can reference when placing or picking up an order, as well as order readiness notifications through a customer order status board.
+Starbucks also provides large-print and Braille menus at some of its stores and operates 11 Signing Stores globally for persons who are deaf or hard-of-hearing.[4]Increasing savings in the long-term 
+•         Instituting accessibility can seem costly at the beginning: it could require business analysis of current gaps, training of staff, revamping of products and services, etc.
+•         However, it is an investment that results in long-term savings through lower operational costs.
+•         There will be less need for repeated retrofitting of digital assets to address accessibility issues. 
+•         In addition, with fewer customer support tickets and complaints, less resources will be spent on addressing these issues, and can be deployed more productively.
+Driving innovation
+Solving accessibility-related issues can result in innovative solutions.  For example, some of the technologies we use today were originally developed to lower barriers for persons with disabilities: 
+
+Other innovations that originated from a desire to improve accessibility include: 
+•         Auto-complete which makes it easier for persons with limited limb mobility to input text into the computer.
+•         Auto-captions which make videos viewable by persons who are deaf/hard-of-hearing.
+•         Optical character recognition (OCR) for scanning documents to allow persons with visual impairment to read text on hard copy documents, and more. 
+These universally designed innovations benefit everyone, with or without disabilities.
+How to create e-accessible digital products/services? 
+First, let's understand how persons with disabilities consume content on digital platforms. 
+
+What are some e-accessibility considerations for the different disability profiles?
+A person with visual impairment is someone with any form of vision loss or visual difficulties (e.g. low vision, total blindness, or colour blindness). Some may use screen readers, talking appliances, and electronic Braille devices to access information. 
+Others could do with larger fonts or use 
+
+To make digital content more accessible, you can consider:
+•         Adding an accessibility widget to your website which allows users to change the size of text on the page or activate the page's contrast mode. 
+•         Ensuring sufficient colour contrast in graphics or webpage designs.
+•         Adding alternative text.
+•         Ensuring that your content is compatible with software such as voice control and screen readers.
+Deaf / Hard-of-hearing
+POP QUIZ
+What is an alternative text?
+Alt text is short for 
+"alternative text." These are hidden descriptions that can be encoded into images to describe visual content to users who are visually impaired. Regular users will not see the alt text, but screen readers will detect these descriptions and read them aloud to the user.
+
+There are different levels of hearing loss, ranging from persons who are deaf to those who are hard-of-hearing (i.e. mild to moderate hearing loss). Some people use hearing aids to amplify sounds in the environment, with the latest versions being Bluetooth-compatible and able to connect directly to smartphones and laptops.
+To make digital content more accessible, you can consider:
+•         Adding captions/subtitles to all  visual multimedia.
+•         Providing alternative communication channels such as text message or  email notifications.
+•         Providing sign language interpretation for videos/webinars/virtual meetings.
+What is the difference between subtitles and captions? 
+Physical disability
+Persons with physical disabilities experience  a total or partial loss of bodily functions  (e.g. the ability to walk) or body parts. 
+They tend to face difficulties in performing daily activities independently and may use the following assistive technologies:
+1.      Adaptive switches / Accessible controllers to allow those without fine motor skills to use electronic devices.
+2.      Eye-tracking technology to aid those who are  not able to move their limbs.
+3.      Head-mounted wearable mouse as an alternative to eye-tracking, if they still have good control of their head movements.
+To make digital content more accessible, you can consider:
+•         Ensuring keyboard accessibility (i.e. allowing users who cannot  use a mouse to be able to access the entire website with their  keyboards alone).
+•         Providing larger web buttons/links, which allow users to click or activate the target more easily (sometimes with the aid of adaptive switches, etc.).
+Intellectual disability
+With an IQ level of 70 or below, persons with intellectual disabilities face mild to profound difficulties learning, remembering and processing new information.
+To make digital content more accessible, you can consider:
+•         Structuring your website in a manner that allows for easy and logical navigation across its pages. 
+•         Writing in simple language to facilitate understanding.
+•         Providing sufficient reading time for time-bound tasks such as filling up a form or making payment on a website.
+Autism
+A person with autism has a neurodevelopmental condition that affects the way they perceive the world and relate to others. Some common traits of persons with autism include:
+1.      Difficulties with social communication, which can lead to misunderstandings of indirect language (e.g. sarcasm, figures of speech).
+2.      Experiencing sensory overload (when a person feels overwhelmed processing all the sensory information  they are receiving).
+To make digital content more accessible to persons with autism, you can consider:
+•         Avoiding the use of bright colours and too many animations.
+•         Writing in simple language to facilitate understanding of the content.
+What principles should we adopt when designing e-accessible assets?
+
+Just like building safety codes guide architects in designing physical buildings, there are guidelines for developers, designers, and content creators looking to create e-accessible experiences - the Web Content Accessibility Guidelines (WCAG).
+
+WCAG in a nutshell[5]
+WCAG is: 
+•         The world's most widely accepted framework for e-accessibility standards.
+•         Applicable for all disability profiles. 
+•         A comprehensive guideline that covers accessibility categories for all types of web experiences (i.e. agnostic to disability type, industry, or platform).
+•         Accounts for all types of user interface elements encountered on the web including text, multimedia, forms, gestures, keyboard inputs, and more.
+•         Frequently updated based on community input to account for emerging technologies including mobile, VR (Virtual Reality), and AR (Augmented Reality).
+WCAG is NOT: 
+•         A legally binding document, though it has been used as a technical standard for some accessibility laws.
+•         A tutorial or curriculum for education - it is a piece of technical documentation for reference purposes.
+•         A "cheat sheet" of answers to accessibility issues - WCAG provides guidelines and criteria for categorising issues but does not provide specific solutions.
+•         A set of rules to limit creativity in design or engineering - WCAG provides general guidelines to ensure websites and apps are reasonably accessible to everyone without being restrictive.
+•         
+A guaranteed path to a good user experience - WCAG only pertains to accessibility, not other areas like subjective aesthetic quality, entertainment, usefulness, or satisfaction.
+
+1  Enabling Masterplan 2030 Report, Ministry of Social and Family Development
+
+What are the 4 principles of WCAG?
+Note: To read all the principles, guidelines, and categorisation of accessibility issues of WCAG in full, you can refer to the WCAG Quick Reference documentation.
+Applying POUR
+Start enhancing the e-accessibility of your digital content with these simple actionable steps:
+Principle 1: Perceivable
+a.   Provide text alternatives for any non-text content. 
+E.g. Alternative text descriptions embedded into images 
+b.   Ensure multimedia is accessible. 
+E.g. Captions, sign language, transcripts, audio descriptions
+c.    Ensure content can be perceived in adaptable ways. 
+E.g. Indicate clear relationships using layout / sections, have a logical sequence 
+d.   Ensure content is distinguishable. 
+
+E.g. Sufficient colour contrast, text size
+Principle 2: Operable
+a.   All functionalities must be operable using a keyboard. 
+Ensure accessibility for those who may not be using a mouse, such as those who use screen readers, virtual keyboards, or keyboard switches.
+b.   Provide enough time for users to perform actions. 
+E.g. Timed events should be long enough for users to complete actions, and warnings should be given before session timeouts.
+c.    Do not design content that may cause seizures or physical reactions. 
+E.g. Flashing animations
+d.   Ensure navigability. 
+E.g. Ensure users do not get stuck or confused while on your website, particularly if they use specialised assistive technologies.
+e.   Provide alternative input methods for other users. 
+E.g. Voice control, larger target area sizes for touch / mouse pointers.
+Principle 3: Understandable
+a.   Content must be readable. 
+E.g. Simple and direct language that is free of jargon.
+b.   Make interactions predictable. 
+E.g. Consistent behaviour across different pages (i.e. a reader should know what to expect and how to navigate subsequent pages after going through the website's main landing page.)
+c.    Help users avoid and correct mistakes. 
+E.g. Clear instructions and correction of user errors.
+Principle 4: Robust
+Websites and mobile apps should be designed with current and future tools in mind, including browsers, devices, and assistive technologies.
+This requires robust development procedures and  testing methodologies:
+•         Test content with screen readers/other assistive technologies
+•         Test content on different web browsers (e.g. Firefox, Chrome, etc.)
+•         Test content using different devices (e.g. mobile, computer, etc.)
+How to start identifying e-accessibility issues?
+In product development, problems encountered by the  user are often identified, tracked, and then resolved through  strong testing methodologies.
+There are three ways to identify accessibility issues:
+1.      Automated testing: Using tools like Lighthouse on Google Chrome, or the WAVE accessibility plugin.
+2.      Manual testing: Testing the code, app, or website with the developer team internally.
+3.      
+User testing: Bringing in real-world users to test the app or website and use it as they would normally (also called user acceptance testing or UAT).
+Automated testing
+Automated testing tools like the WAVE accessibility plugin allow software to scan your webpage's content and quickly detect low-level common accessibility issues.
+Commonly detected issues include:
+•         Unlabelled buttons
+•         No alt text in image
+•         Insufficient colour contrast between  text and background
+•         Auto playing media
+For more details on using the WAVE tool, watch this video introduction tutorial by WebAIM:  Introduction to WAVE (YouTube)
+Manual testing
+Why perform manual testing?
+•         Even though tools like WAVE exist, they can detect only 20% to 30% of accessibility issues.
+•         High-context issues, especially those involving complex user behaviour, cannot be identified, or tested through automated tools.
+•         Automated tests do not evaluate subjective experiences, including the clarity of language or the consistency of icon usage.
+•         No computer software will be able to completely emulate  human behaviour.
+Activities for manual testing
+There are three key activities in manual testing:
+•         Keyboard accessibility test: Operating the computer  with only a keyboard.
+•         Screen reader test: Similar to the keyboard accessibility test but includes screen reader functionalities like screen reader shortcuts and text-to-speech.
+•         No-sound test: This simulates the experience of a user who is deaf, hard-of-hearing, or has no working audio solutions.
+Screen Reader Testing Options
+Apple Mac OS
+•         Mac VoiceOver (comes with  all Macs)
+•         Activate by going to Apple menu > System Preferences > Accessibility > VoiceOver, or 
+press the keyboard shortcut 
+Command + F5 Windows
+•         NVDA (free)
+•         JAWS (paid)Apple iOS
+•         iOS VoiceOver (comes with all iPhones and iPads)
+•         Activate by going to Settings > Accessibility > VoiceOver, or using Siri and saying "Turn on 
+VoiceOver" Android
+•         TalkBack (available on most up-to-date Android devices or downloadable free on the Google Play Store)
+•         Activate by holding down both volume buttons, or use 
+Google Assistant by saying 
+"Turn on TalkBack"All the abovementioned platforms have free screen reader options that come installed on the device. Furthermore, all have built-in help tutorials to teach you the basics of using the screen reader.
+If you are interested in developing your skills as a manual tester, activate any of the above screen readers on your device of choice and give it a try!
+A NOTE OF CAUTION
+Familiarise yourself with some of the basic controls first to deactivate the screen readers after the trial.
+How do we conduct manual testing?
+The purpose of manual testing is to learn how real-world users would access an app or website, and what issues might arise from this. Manual testing involves three key stages:
+1.      Pre-testing: Identify what you want to test, prepare testing devices and test accounts. 
+ 
+ 
+2.      Testing: Follow the test scenarios outlined in the pre-testing phase, note down issues encountered along the way, as well as the locations of the issues, and screenshots / screen recordings for proof. 
+ 
+ 
+3.      Post-testing: Document findings for future reference in a report. These records should concisely state the issues and recommend actions to take. 
+Here are some questions that can help you note down issues as you discover them:
+
+The following shows an excerpt from a sample report documenting the findings of an accessibility test.
+No.Page 
+Name 
+and/or 
+URLIssueDescriptionScreenshot File Name(s)RecommendationWCAG 
+Level1HomePromotional banner has no alt textThe promotional 
+banner on the home page 
+has no alt text 
+description. 
+For screen reader users, this means 
+they will not know what 
+the image is 
+for or what its contents are.01. Home - Banner no alt text.jpgIf the image serves a specific function and is 
+not considered 
+purely decorative, provide an alt 
+text description for the image.1.1.1 
+Non-text 
+Content 
+(Level A)Additional resources
+Interested to find out more about e-accessibility? Continue your learning by: 
+1.           Seeking training & consultancy
+•          Attend Enabling Academy's e-accessibility training workshop, which provides a detailed introduction on the principles of web accessibility and how organisations can benefit from having e-accessible digital products, services, and processes.
+•          You can also reach out to SG Enable for e-accessibility consultancy.
+•          Contact SG Enable at contactus@sgenable.sg.
+2.          Exploring online resources
+•          How to Meet WCAG: This quick reference guide dives deeper into POUR and provides resources on how to resolve each type of accessibility issue.
+•          Accessibility Testing Tutorial: A more detailed look into the step-by-step testing of software accessibility (both automated and manual)
+•          Self-paced Courses and Webinars for Accessibility Professionals: Resources for practitioners to build up their e-accessibility skillsets.
+•          Assistive Technology - Enabling Guide: An introduction to different forms of assistive technologies for persons with disabilities. Contact SG Enable at contactus@sgenable.sg.
+3.               Trying out automated accessibility testing tools
+•          WAVE Web Accessibility: A simple tool developed by WebAIM, available as both a web service and browser extension.
+•          IBM Equal Access Toolkit: A more advanced automated accessibility testing toolkit developed by IBM.
+
+
+
+
+
+
+
+[1] The Click-Away Pound Research Survey 2019, Click-Away Pound
+[2] Authentically Inclusive Marketing, Deloitte
+[3] Getting to Equal: The Click-Away Pound Disability Inclusion Advantage, Accenture Research
+[4] Starbucks Brews Up More Inclusive and Accessible Experiences
+[5] WCAG 2 Overview | Web Accessibility Initiative (WAI) | W3C

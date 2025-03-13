@@ -1,0 +1,945 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Accessibility Testing Checklist[3]</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.8pt;
+	margin-left:18.5pt;
+	text-indent:-.5pt;
+	line-height:112%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.85pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	background:black;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:white;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:36.1pt 73.15pt 74.0pt 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:61.9pt;margin-bottom:
+0in;margin-left:0in;text-indent:0in;line-height:114%'><span style='font-size:
+26.0pt;line-height:114%;font-family:"Cambria",serif'>MANUAL ACCESSIBILITY        TESTING      CHECKLIST  </span></p>
+
+<h1 style='margin-left:-.25pt'>CATEGORIES       FOR        TESTING               </h1>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Keyboard               Navigation             </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Non-Visual             Navigation             with        a              screen     reader     </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Alternate                Visual      Access     </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Usability </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Non-Audio             Access     </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>STEM      Content  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.8pt;
+margin-left:.5in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Downloadable       Files        </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>Testing    Tools       Needed   </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Keyboard               </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>WAVE      Toolbar   <u><span
+style='color:blue'>http://wave.webaim.org/</span></u>    or            browser  extension               </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Screen     reader     (and        knowledge             of            how        it              works)    </p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span>JAWS      </p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span>VoiceOver              (Mac),                     <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+         </span>Narrator (Windows)             </p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span>NVDA      (Windows)             </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.15pt;
+margin-left:.5in;text-indent:-.25in;line-height:107%'><span style='line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Color      contrast  analyzer                 <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+         </span><u><span style='color:blue'>https://chrome.google.com/webstore/detail/color-contrastanalyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en</span></u>           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>Using       the          Checklist                 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.6pt;
+margin-left:-.25pt'>Automated             testing    such        as            using       the          <u><span
+style='color:blue'>WAVE      Tool</span></u>         only        captures about      30-50%  of accessibility            issues.     Use          this          checklist to            follow     up           with        manual   testing.   </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Each        section    includes  instructions           on           how        to            use          applicable              testing    tools.                      </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The          desirable                answer   for           each        yes/no    question is             “Yes.”                      </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Any         question answered               with        “No”        is             an            accessibility            issue       that         needs      to                be            addressed.                             </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:.5in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>It              is             helpful    to            provide   details     or            screenshots            of            issues      found.    </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>                <span
+style='font-size:11.0pt;line-height:107%;color:white'>                </span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.7pt;margin-left:
+-.75pt;text-indent:0in;background:transparent'>TESTING                                                                                                                                                                                     KEYBOARD                                                                                                                                                                                                   NAVIGATION                                                                                                                                                                                                                   </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.45pt;
+margin-left:-.25pt'>The          first         step         to            manual   testing    is             to            throw      away       your        mouse.   See          if              you can          navigate the          page,       including                all            menus    and         interactive              elements,               using       only the          keyboard.                               </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>KEYBOARD             FOCUS    </p>
+
+<p class=MsoNormal style='margin-bottom:12.3pt'>1.<span style='font-family:
+"Arial",sans-serif'> </span>Use             the          TAB,        ENTER,    SPACE,    and         UP           and         DOWN    ARROW  keys         to            navigate.        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>You  can          always    see          the          keyboard                focus       when      tabbing   through  the          page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>        Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Keyboard       focus       <i>does        not</i>          unexpectedly         shift        to            other      elements.               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>TAB          ORDER    </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='line-height:112%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>TAB         through  the          page        to            see          if              the          order      is             logical.    </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.15pt;
+margin-left:.5in;text-indent:-.25in'><span style='line-height:112%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>See          if              you         can          activate   all            interactive              elements                with        the          ENTER     or                SPACE     keys.        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tab  order      is             logical.                    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>All   elements                on           the          page        can          be            reached  by            keyboard.               This         includes  links,        dropdown              menu      items,      buttons, and         other      interactive              elements.                               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If      dropdown              menus    exist,       the          keyboard                can          be            used        to            select      and         open        items       in             them.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>ELECTRONIC           FORMS   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           forms.)   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tab  order      of            form       fields       is             logical.                    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No                           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>In     dropdown              menus,   you         can          navigate and         select      items       using       the          keyboard                alone.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Data                entered   is             retained  if              the          page        is             refreshed                or            too          much      time        is             taken       to            fill            out          form       fields.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If      a              required field        is             left          blank,     keyboard                focus       shifts       to            that         field        when        user        is             notified. <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>DIALOG   BOXES     AND        POPUPS </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           dialog     boxes.)    </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Dialog             boxes      or            pop-up   menus    receive    keyboard                focus.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Dialog             messages                can          be            dismissed               using       the          keyboard.                               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.85pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Focus              returns   to            a              logical     location  when      dialog     boxes      are           closed.    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>MULTIMEDIA         CONTROLS             </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Includes  features  such        as            videos,    audio      files,        calendars,               Flash       content,  and         photo     carousels. </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           multimedia.)          </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Manual           controls  exist        (e.g.         start,       pause,     go            back,       go            forward).                                <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Controls         can          be            tabbed    through. <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.35pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Controls         can          be            activated                using       the          keyboard.                               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>                <span
+style='font-size:11.0pt;line-height:107%;color:white'>                </span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.7pt;margin-left:
+-.25pt;background:transparent'>TESTING               NON-VISUAL      NAVIGATION      (SCREEN               READER)              </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.35pt;
+margin-left:-.25pt'>When      testing    with        your        screen     reader,    use          the          same       keyboard                navigation              strategies that         you         used        in             the          previous section    (TAB,       ENTER,    SPACE,    and         ARROW  KEYS).     This         time, listen       to            how        the          screen     reader     interprets               the          page        as            you         navigate with        the keyboard.                               </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.55pt;
+margin-left:-.25pt'>How        to            use          a              screen     reader:    </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.05pt;
+margin-left:.25in;text-indent:-.25in;line-height:107%'><span style='line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>VoiceOver      (Mac)      <u><span style='color:blue'>https://help.apple.com/voiceover/info/guide/10.12/</span></u>   </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.05pt;
+margin-left:.25in;text-indent:-.25in;line-height:107%'><span style='line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Narrator         (Windows)             <u><span style='color:
+blue'>https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started</span></u>            </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>NVDA              (Windows)             http://webaim.org/articles/nvda/     </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;
+margin-left:.25in;text-indent:-.25in;line-height:107%'><span style='line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>JAWS              <u><span style='color:blue'>http://webaim.org/articles/jaws/</span></u>      </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'>                </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>LINKS       –              DESCRIPTIVE          TEXT        </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.9pt;
+margin-left:-.25pt'>One         of            the          ways       a              screen     reader     user        navigates                a              page        is             by            using the          TAB         key          to            skip         through  the          links        on           the          page,       or            by            bringing up a              list           of            links.       Links       should    be            descriptive             so            that         a              user        can          easily determine              where     they        will          go            even        when      taken       out          of            context.  </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Links               are           descriptive,            without  generic   text         such        as            “click       here”.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Distinguishing               information           is             placed     at             the          beginning               of            links.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>        Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The  texts        of            links        are           intuitive  when      listed       alphabetically.       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>LOGICAL HEADINGS              </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.6pt;
+margin-left:-.25pt'>Screen     reader     users       also         navigate content   using       headings.               Headings                allow       them       to            jump to            a              specific   section    instead   of            having    to            listen       to            the          entire      page.       </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Headings        are           used        logically  to            provide   structure                and         indicate  importance            of            the        content.                  <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Heading          levels      are           not          skipped. <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Pages              can          be            navigated               using       headings.                               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>SKIP         NAVIGATION          LINKS                      </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.7pt;
+margin-left:-.25pt'>A              skip         navigation              link          is             helpful    for           users       who        don’t       want       to            work       their way         through  all            the          links        on           the          page        before     getting    to            the          main       content.  This link          does        not          have        to            be            visible     on           the          page,       but          it              should    be            listed first         in             the          tab          order.      </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Skip navigation              links        are           present.                  <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Skip links        work       as            intended                using       JAWS,     skipping to            the          main       content   of            the        page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>IMAGES   </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.65pt;
+margin-left:-.25pt'>Any         non-text element  needs      a              text         description            that         screen     reading   software can          read        aloud to            the          listener.   It              should    describe the          purpose of            the          image      in             context.  </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           images.)  </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Purely             decorative              images    have        null         alternate                text         (ALT=””).                                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>All   meaningful            images    have        descriptive             alternate                text.        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>All   navigation              buttons  have        descriptive             alternate                text.        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.4pt;
+margin-left:-.25pt'>MULTIMEDIA         </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.0pt;
+margin-left:-.25pt'>Includes  features  such        as            videos,    audio      files,        calendars,               Flash       content,  and         photo     carousels. </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           multimedia.)          </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Multimedia    controls  have        alternate                text.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Video              or            audio      do           not          start        to            play         automatically,        only        when      triggered        by            the          user.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>You  hear        what       you         expect     when      selecting controls.                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No                           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Using              the          controls  is             intuitive.                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Videos            have        audio      descriptions           available for           any          information           that         is             only        conveyed               visually.  <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.5pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>More               video      requirements         in             section    “TESTING                NON-AUDIO           ACCESS”.                 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>FORMS                   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           forms.)   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Form               fields       have        descriptive             labels.                     <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Appropriate   descriptive             labels      are           present   and         read        by            screen     reader     when      tabbing        through  form       fields.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>You  can          fill            out          the          forms      and         submit    them       successfully            with        screen     reader.            <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Buttons          are           labeled   and         read        correctly by            screen     reader.    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If      a              required field        is             left          blank,     screen     reader     reads       the          error       text         and        navigates                dialog     buttons. <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>When             an            error       dialog     is             dismissed,              screen     reader     automatically         returns   to            the        empty     field.       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>LAYOUT   TABLES    </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.1pt;
+margin-left:-.25pt'>Layout     tables      are           not          recommended       for           accessibility.           CSS          should    be            used        rather     than tables      to            layout     information.                          </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           layout     tables.)   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tables             are           not          used        purely     for           positioning            content.                  <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If      tables      are           used        for           layout,    they        <i>do           not          </i>have        designated             header    rows.       <span
+style='font-family:"MS Gothic"'>&#9744;</span>        Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If      tables      are           used        for           layout,    the          reading   order      of            the          cells         makes     sense      when        linearized.              <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.8pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If      tables      are           used        for           layout,    they        allow       end         user        customization        and         text        scaling.                   <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           <span
+style='font-family:"Segoe UI Symbol",sans-serif'>•</span><span
+style='font-family:"Arial",sans-serif'>           </span>Tables     are           not          nested    or            filled       with        spanned or            ‘spacer’   cells.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>DATA       TABLES    </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           data        tables.)   </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Data                tables      have        designated             header    and/or    column   rows.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tables             have        captions (short     text         descriptions).        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tables             are           not          nested    or            filled       with        spanned or            ‘spacer’   cells.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Row or            column   headers  are           associated              with        the          appropriate           <b>Scope</b>     attribute.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No                           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>FRAMES  </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           frames.)                  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.0pt;
+margin-left:-.25pt'>If              Frames    are           found     (not         recommended       for           accessibility):         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Each                frame      has          a              descriptive             title         attribute value.                      <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>When             you         refresh    a              page,       it              stays       on           the          current   frame.                     <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>While              listening with        screen     reader,    you         can          navigate between frames    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No                        </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>While              listening with        screen     reader,    you         can          tell           what       the          purpose of            each        frame        is                             <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.15pt;
+margin-left:-.25pt'>CAPTCHA               </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.1pt;
+margin-left:-.25pt'>If              CAPTCHA               is             used,       it              must       be            fully        accessible               and         simple     to            use.                </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     is             no           CAPTCHA.)             </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>CAPTCHA       is             fully        accessible               by            keyboard.                               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>CAPTCHA       is             fully        accessible               to            screen     reading   software.                                <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Audio             CAPTCHA               is             fully        accessible               by            screen     readers,  including                a              pause        that         allows     the          screen     reader     to            finish      before     the          audio      begins.                    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.25pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Audio             CAPTCHA               has          an            alternative             for           users       with        hearing   impairments.                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<h1 style='margin-left:-.25pt'>TESTING               ALTERNATE         VISUAL ACCESS </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;
+margin-left:-.25pt'>Many      users       are           colorblind              or            have        low          vision.     Color      choice     matters   for           both groups    of            users.      Contrast impacts   those      with        low          vision,     while       those      who        are           colorblind cannot    distinguish             between certain    colors.     </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>CHOICE   OF           COLOR    </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Color              is             not          used        as            the          sole         means     of            conveying              information           on        the          page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The  WAVE      test          indicates                 sufficient                contrast  (Minimum              AA)         for           text         on           solid        color       backgrounds.                         <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The  <u><span
+style='color:blue'>Chrome  WCAG     2.0          Color      Contrast Analyzer</span></u> indicates                 sufficient                contrast  for           text         on        top          of            images    or            gradient  backgrounds.                         <span
+style='font-family:"Courier New"'>&#9744;</span>            <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Hover             state        has          sufficient                contrast  or            underline               <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>FONT       SIZE         /              ZOOM    </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.1pt;
+margin-left:-.25pt'>This         is             important              for           users       with        low          vision      who        change    zoom      settings.  </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Text is             actual      text         (e.g.         not          images    of            text).       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Font                sizes        increase  when      you         zoom      in             on           the          page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Text does        not          become  pixelated                when      zooming in             on           the          page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No                           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.05pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Items               do           not          become  jumbled  when      zooming in             on           the          page.                       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<h1 style='margin-left:-.25pt'>USABILITY            </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;
+margin-left:-.25pt'>Many      users       have        a              non-apparent        disability,                such        as            a              traumatic                brain       injury or            a              cognitive                or            learning  disability,                that         affects     their        ability     to            process information.          Clear       organization          of            information           is             vital         for           these       users.      </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>CLEAR     AND        SIMPLE   CONTENT               </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Fonts              are           basic,      legible,    easy        to            read.       <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The  viewing   area         is             not          crowded or            chaotic.                   <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>There              is             plenty     of            white      space.                     <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.1pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>There              is             no           flashing  content,  blinking  or            moving   text.        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.95pt;
+margin-left:-.25pt;line-height:107%;background:#CCCCCC'>CONSISTENCY        AND        LOGIC     IN            VISUAL    NAVIGATION          </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Menus            are           consistent              across     the          entire      product.                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.65pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Visual              navigation              is             logical.                    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>                <span
+style='font-size:11.0pt;line-height:107%;color:white'>                </span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.7pt;margin-left:
+-.25pt;background:transparent'>TESTING               NON-AUDIO       ACCESS </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.05pt;
+margin-left:-.25pt'>This         includes  audio      files         such        as            podcasts as            well         as            videos.    </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     is             no           audio      or            video      content.)                </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Users               have        control    over        whether or            not          to            start        playing   the          video      or            audio.                        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>All   videos     have        captions.                                <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Existing           captions are           accurate.                                 <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Captions         have        sufficient                contrast. <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.3pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All   audio      files         have        a              link          to            a              transcript.                              <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No        </p>
+
+<h1 style='margin-left:-.25pt'>STEM     (SCIENCE,            TECHNOLOGY,    ENGINEERING    AND       MATHEMATICS) CONTENT            </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.05pt;
+margin-left:-.25pt'>This         includes  math       or            other      content   that         uses        special    symbols: </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     is             no           content   with        math       or            other      symbols.)               </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.25pt;
+margin-left:.25in;text-indent:-.25in'><span style='line-height:112%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Screen             reader     recognizes              and         reads       the          symbols  (Formatted            using       MathML,        MathJax,                LaTeX).                    <span
+style='font-family:"MS Gothic"'>&#9744;</span>            Yes           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            No           </p>
+
+<h1 style='margin-left:-.25pt'>DOWNLOADABLE             FILES      </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.05pt;
+margin-left:-.25pt'>Documents             that         are           linked      for           download              from        a              site          also         need       to            be accessible.                              </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"MS Gothic"'>&#9744;</span>    N/A         (There     are           no           downloadable       files.)       </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PDFs               are           searchable              /              OCR’d     (you        can          highlight or            search     text         in             the        document).                            <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PDFs               have        tags         and         the          reading   order      is             logical.                    <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No        <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PDFs               have        alt            text         for           non-text elements.                               <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Word              documents             have        hierarchical            headings.                               <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Word              documents             have        alt            text         on           non-text elements.                               <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>        No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PowerPoint    slides      have        logical     reading   order.                      <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PPT slides      have        alt            text         on           non-text elements.                               <span
+style='font-family:"Courier New"'>&#9744;</span>            Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>        N/A         </p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in'><span
+style='line-height:112%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>PPT slides      have        sufficient                contrast.<span
+style='font-family:"Courier New"'>&#9744;</span>             Yes           <span
+style='font-family:"Courier New"'>&#9744;</span>            No           <span
+style='font-family:"MS Gothic"'>&#9744;</span>            N/A         </p>
+
+</div>
+
+</body>
+
+</html>

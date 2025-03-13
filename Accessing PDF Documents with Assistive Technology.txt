@@ -1,0 +1,1090 @@
+Accessing PDF Documents
+
+with Assistive Technology
+
+A Screen Reader User’s Guide
+
+
+
+
+
+Contents
+
+
+
+
+
+Contents
+
+
+Contents i
+
+Preface 1
+
+Purpose and Intended Audience 1
+
+Contents 1
+
+Acknowledgements 1
+
+Additional Resources 2
+
+PDF Documents and Accessibility 2
+
+Characteristics of an accessible PDF document 2
+
+Adobe Reader Accessibility Features 3
+
+Using the Accessibility Setup Assistant 3
+
+Changing accessibility settings with the Preferences dialog box 7
+
+Saving an Adobe PDF document as text 9
+
+Navigating PDF documents with keyboard alternatives to mouse actions 9
+
+Automatically tagging untagged documents 10
+
+Types of PDF Documents 10
+
+Image only files 10
+
+Untagged documents 11
+
+Tagged documents 12
+
+Electronic forms 13
+
+Using Adobe Reader with JAWS 13
+
+Overview of JAWS support for Adobe Reader 13
+
+JAWS commands for using Adobe Reader 14
+
+Using Adobe Reader with Window-Eyes 15
+
+Overview of Window-Eyes support for Adobe Reader 16
+
+Window Eyes Commands for using Adobe Reader 16
+
+Performing Common Tasks with Adobe Reader 17
+
+Installation and setup 18
+
+The Accessibility Setup Assistant 19
+
+Accessibility Setup Assistant notes for JAWS users 19
+
+Accessibility Setup Assistant notes for Window-Eyes users 19
+
+
+
+
+
+Contents
+
+
+
+
+The Preferences dialog box 19
+
+Opening PDF documents 19
+
+The Window-Eyes Page Navigation Dialog Box 23
+
+Opening forms 23
+
+Using Adobe Reader Help 24
+
+Saving a PDF document as text 25
+
+Using the Adobe Reader Find and Search tools 26
+
+The Go To Page dialog box 27
+
+
+
+
+
+Preface
+
+
+
+
+Preface
+
+Purpose and Intended Audience
+
+This user guide provides guidance on accessing Portable Document Format (PDF) documents for blind and visually impaired users of screen reading technology. The goal is to enable a better understanding of the issues that affect the accessibility of PDF documents by discussing specific examples, highlighting important principles, illustrating common problems, and presenting suggested solutions.
+
+Techniques for opening scanned, untagged, and tagged documents will be presented, along with guidance for working with PDF files that contain tables, headings, images, and basic form controls.
+
+Specific instructions in this document refer to menu and command names in Adobe® Reader® 8.0 software. More generally, however, the procedures and features described also apply to reading PDF documents in Adobe Acrobat® 8.0 Professional and Adobe Acrobat 8.0 Standard – though the specific menu and command names may differ.
+
+While this guide is intended for entry-level end users, it assumes that the users have already learned the basics of using their particular screen reader for accomplishing basic tasks such as using a word processor and browsing the Internet.
+
+
+
+
+
+Contents
+
+
+Following this preface, this guide begins with the three sections that apply to all screen reader users:
+
+• Accessible PDF documents – Introduces the Portable Document Format (PDF) and characteristics
+
+of accessible PDFs
+
+• Adobe Reader accessibility features – Describes features in Adobe Reader relevant to
+
+users of assistive technology
+
+• Types of PDF files – Describes four common types of PDF documents and relevant
+
+accessibility issues for each.
+
+These sections are followed by detailed information on using specific screen readers. Two Windows-based screen reading applications are covered:
+
+• JAWS
+
+• Window-Eyes
+
+The final section describes how to perform common tasks with a screen reader, and provides guidance on installing Adobe Reader, navigating PDF documents, and using the Adobe Reader Help system.
+
+Acknowledgements
+
+This guide was created in collaboration with AFB Consulting (AFBC, www.afbconsulting.org), the consulting division of the American Foundation for the Blind. Adobe and AFB Consulting are working together to enhance the accessibility and usability of Adobe products by people with disabilities.
+
+
+
+
+
+PDF Documents and Accessibility
+
+
+
+
+Additional Resources
+
+For more information on Adobe accessibility resources, visit www.adobe.com/accessibility.
+
+To download the latest version of Adobe Reader, visit www.adobe.com/products/acrobat/readstep2.html
+
+For more information on Adobe Reader keyboard shortcuts, visit www.
+
+adobe.com/enterprise/accessibility/reader/appx_a.html.
+
+For more information on JAWS and Freedom Scientific, visit www.freedomscientific.com
+
+For more information on Window-Eyes and GW Micro, visit www.gwmicro.com . PDF Documents and Accessibility
+
+Portable Document Format (PDF) is an electronic file format developed by Adobe Systems Inc. PDF is one of the most popular file formats used on the Internet. The free Adobe Reader software -- available for Microsoft Windows, Apple Macintosh, and UNIX -- allows a PDF document’s visual integrity to hold true regardless of the computer used to view it.
+
+Because PDF is used for such wide-ranging documents as product manuals, financial and legal documents, government related forms, and educational materials, it is critically important that people using screen readers have proper access to this format. PDF is an electronic format, giving it an advantage over paper documents because PDF documents can be accessed via synthetic speech or refreshable Braille.
+
+Unfortunately, PDF and screen readers do not always interact as users would like. The main barrier to accessibility is that PDF documents are not always designed by their authors to be compatible with screen readers. These issues, caused by lack of planning for accessibility, mirror Internet accessibility issues that occur when a Web designer fails to follow the accessibility guidelines of the World Wide Web Consortium’s Web Accessibility Initiative. Adobe has developed a number of tools and resources to make it easier for
+
+authors to create accessible PDF documents; these are available at http://www.adobe.com/accessibility.
+
+Characteristics of an accessible PDF document
+
+All accessible PDF documents have the following five characteristics:
+
+
+
+A logical structure and reading order
+
+For screen readers to read a PDF document effectively, the document must have an underlying logical structure and reading order. This logical structure and reading order use behind-the-scenes elements called tags, which a PDF author adds to the document. Tags define the intended reading order of the content on each page. Screen readers rely on these tags to present text in a way that makes sense when someone is hearing the text read out loud. The tags allow a screen reader to interpret page elements such as headings, sidebars, tables, and multi-column text.
+
+
+
+
+
+Adobe Reader Accessibility Features
+
+
+
+
+Alternate text descriptions for figures, form fields, and links Authors of accessible PDF documents add descriptive alternate text to page elements that are typically presented not as text but only as visual elements, such as graphics, figures, form fields, and links. When screen readers encounter alternate text, they can interpret the element and read its alternate text description aloud.
+
+
+
+Navigational aids
+
+Similar to accessible Web pages, accessible PDF documents also include navigational aids, such as links, bookmarks, a table of contents, and an optimized tab order for forms and embedded links. These navigational aids enable a user to go directly to a particular point in a document, instead of reading it through page by page.
+
+
+
+Security that doesn’t interfere with assistive technology When creating PDF documents, some authors add restrictions to prevent users from printing, copying, extracting, commenting, or editing text. These restrictions can interfere with a screen reader’s ability to convert the on-screen text to speech. The content of an accessible PDF document is available to screen readers, regardless of the security restrictions in place.
+
+
+
+Fonts that allow characters to be extracted to text
+
+The fonts used in an accessible PDF document contain enough information for Adobe Reader to correctly extract all of the characters to text for purposes other than displaying text on the screen. For example, Adobe Reader extracts characters to text any time you listen to text by using a screen reader; print; copy and paste; or save text to a file. If the font’s underlying information is sufficient, Adobe Reader can extract each character correctly each time you perform one of these tasks. If the information is insufficient, Adobe Reader cannot substitute characters correctly, and the output will be incomplete. For instance, the screen reader may omit words or characters, or you may see question marks, black rectangles, or similar marks when you print, copy and paste, or save a PDF document as text. If a PDF document contains one or more fonts that do not contain enough information for Adobe Reader to correctly extract all characters to text, the document is considered inaccessible. Adobe Reader Accessibility Features
+
+Adobe Reader is compatible with assistive technology, including screen readers, and it offers several tools and features to enhance your reading and viewing experience.
+
+Using the Accessibility Setup Assistant
+
+You can use the Accessibility Setup Assistant to control how Adobe Reader displays documents and interacts with assistive technology, including screen readers and screen magnifiers. The Accessibility Setup Assistant automatically opens the first time that you run Adobe Reader while a screen reader is running. Alternatively, you can start the assistant by choosing Document > Accessibility > Setup Assistant from the Adobe Reader menu, or by pressing Alt+D then T. The assistant is a series of dialog boxes that you navigate as you would any standard Windows dialog box, using the Arrow, Tab, Spacebar, and Enter keys. Screen reader users will likely be familiar with the various controls
+
+Adobe Reader Accessibility Features
+
+
+
+used, including radio buttons, check boxes, combo boxes, and buttons labeled “Previous”, “Next”, and “Cancel”. The assistant also includes static text that describes the controls and explains what they do.
+
+
+
+Accessibility Setup Assistant, Screen 1 of 5
+
+On the assistant’s first screen, you can choose whether you want to set the options for screen readers, screen magnifiers, or both. There is also a button on this screen labeled “Use recommended settings and skip setup.” Select this option to use Adobe’s recommended settings for accessibility.
+
+
+
+
+
+Figure 1: Accessibility Setup Assistant First Screen
+
+Adobe Reader Accessibility Features
+
+
+
+If you choose instead to set your own screen reader preferences, the following guidelines can help you select options tailored to your specific needs.
+
+
+
+Accessibility Setup Assistant, Screen 2 of 5
+
+This screen is used to set preferences for text colors, text smoothing, and other options not central to screen reader technology. Click Next to proceed to screen 3.
+
+
+
+Accessibility Setup Assistant, Screen 3 of 5
+
+Use the third screen to choose the reading order for documents that are not tagged. The following options are supported:
+
+• Infer Reading Order From Document (Recommended). When this option is selected, Adobe
+
+Reader determines the reading order of untagged documents using an advanced method of layout analysis. This option is recommended because it is most likely to provide the most accurate results. It does, however, require more analysis and therefore may be slower than the other two options.
+
+• Left-To-Right, Top-To-Bottom Reading Order. When this option is selected,
+
+Adobe Reader interprets the reading order of untagged documents starting from left to right on the page and moving from top to bottom.
+
+• Use Reading Order In Raw Print Stream. When this option is selected, Adobe Reader
+
+interprets the reading order of untagged documents based on the raw code in the PDF document – essentially, the order text was recorded in the print stream.
+
+When you choose either of the last two options, Adobe Reader does not include form fields in the content, and it does not recognize tables.
+
+Depending on the complexity of the PDF document, on-the-fly tagging may not adequately capture the intended reading order of the document. Many PDF documents have multiple columns or complex page designs that can affect how well Adobe Reader interprets the content. If you are having trouble reading a particular PDF document, you can experiment with the various Reading Order options to see if one works better than the others.
+
+The next control on this screen is a check box labeled “Override the Reading Order in Tagged Documents.” While the Reading Order options above apply to untagged documents by default, this option causes Adobe Reader to use the reading order you selected (instead of using the reading order specified by the tag structure) for tagged documents as well. This option is useful if you receive PDF documents that are poorly tagged. The final control on this screen is a check box labeled “Confirm before Adding Tags to Document.” When you select this option, Adobe Reader asks you to confirm its tagging options before it prepares an untagged document for reading by your assistive technology. Tagging can be a time-consuming procedure, particularly in larger documents, and this option alerts screen reader users when that procedure is about to begin.
+
+
+
+Accessibility Setup Assistant, Screen 4 of 5
+
+On the next screen, there is a set of three radio buttons used to select the delivery method of pages for assistive technology. When Adobe Reader delivers information to a screen reader, it loads
+
+Adobe Reader Accessibility Features
+
+
+
+information into a memory buffer that is directly available to the assistive technology. The amount of information that is delivered to the memory buffer can affect how quickly Adobe Reader performs tasks, such as opening the document, turning pages, changing views, and carrying out commands. The following options control how much information is delivered at one time to your screen reader:
+
+• Only Read the Currently Visible Pages. Select this option to load information about
+
+one page or a few pages at a time into the memory buffer of a screen reader.
+
+• Read The Entire Document At Once. Select this option to load the entire document at one
+
+time into the memory buffer of a screen reader. This is the best option when you are using a screen reader to access short documents, but it may take longer to open large documents.
+
+• For Large Documents, Only Read the Currently Visible Pages. Choose this option to have
+
+Adobe Reader selectively switch between loading an entire document at once into the memory buffer of a screen reader and loading one page at a time into the buffer if the document exceeds a certain number of pages. This is usually the best option if you are using a screen reader and you have very long or complex PDF documents. It is the default setting for Adobe Reader.
+
+When you choose this third option, you can use the next edit field, labeled “Minimum Number of Pages in a Large Document,” to set the page number limit at which you want Adobe Reader to stop loading an entire PDF document into the memory buffer for a screen reader. The default is 50 pages.
+
+The next two controls are used to control how documents are displayed, either one page at a time or able to scroll continuously. Select the check box labeled “Override Page Layout Style” to have Adobe Reader use the style selected in the combo box labeled “Page Layout”. This setting controls how scrolling and Page Up and Page Down keystrokes work. The recommended setting for screen readers is “Single Page.” The final two controls on this screen are used to control the document zoom. When the check box labeled “Override Document Zoom” is checked, Adobe Reader overrides the zoom factor of the original document and uses the one chosen in the combo box labeled Document Zoom. The “Fit Page” option scales the page so that the entire page is visible in the window and usually works best for screen readers.
+
+
+
+Accessibility Setup Assistant, Screen 5 of 5
+
+The first check box on the final Accessibility Setup Assistant screen is labeled “Disable document auto-save.” Select this option to disable the auto-save function. Each time a PDF document is auto-saved, the screen reader or magnifier must reload the document. This box is checked by default for better screen reader performance.
+
+The next check box is labeled “Reopen documents to the last viewed page.” When this box is checked, Adobe Reader will open a document to the last page you were reading when it was last open, instead of the first page of the document.
+
+The final check box is labeled “Display PDF documents in the web browser.” This option controls whether documents from the Internet open in the web browser or in a separate Adobe Reader window. Screen reader users will likely want to deselect this check box, which will cause documents accessed via a web browser to be opened in a separate Adobe Reader window. This provides greater control because not all screen readers support reading PDF documents from within the browser.
+
+
+
+
+
+Adobe Reader Accessibility Features
+
+
+
+
+Note: The Accessibility Setup Assistant defaults are optimized for your assistive
+
+technology. When you run it while using your assistive technology for the first time, and you select Use Recommended Settings and Skip Setup, Adobe Reader is configured with the settings that are most appropriate for use with that assistive technology. If, however, you select Cancel at any time while the assistant runs for the first time alongside your assistive technology, Adobe Reader uses the Adobe Reader defaults. Because these defaults are not as fine-tuned for a specific screen reader as those that the Accessibility Setup Assistant selects, selecting Cancel during the first assistant run is not recommended.
+
+If you start the Accessibility Setup Assistant manually from the Document menu, the assistant uses the current values from the Preferences dialog box as its defaults. These values also may not always be optimal for your specific assistive technology. When running the Accessibility Setup Assistant from manually, you should therefore review the values and descriptions carefully and, if needed, change these values to meet your specific needs.
+
+Changing accessibility settings with the Preferences dialog box The settings found in the Accessibility Setup Assistant can also be found in the Preferences dialog box, although some of these settings have slightly different names. In addition to the assistant’s settings that are most relevant to screen readers and magnifiers, the Preferences dialog box also has accessibility preferences that assist people with other disabilities. When you use the assistant or the Preferences dialog box to adjust a setting, the changes you make override any changes made previously with either assistant or the Preferences dialog box.
+
+There are accessibility settings in the Preferences dialog that are not found in the Accessibility Setup Assistant. Multimedia preference settings, for example control how a media player presents any subtitles, audio dubbing, or other accessibility features that are part of any audio or video files attached to Adobe PDF document. Of particular interest to screen reader users is a check box labeled “Show audio description (or video description, or descriptive video) when available”. When this option is selected, your multimedia player will play any audio or video descriptions that the author may have included in the multimedia presentation.
+
+Adobe Reader Accessibility Features
+
+
+
+You can access the Preferences dialog box by choosing Edit > Preferences. Press Alt+E and then N, or use the shortcut Ctrl+K. The dialog box is divided into two sections. The section on the left is a list of categories of preferences. The section on the right is a panel that contains the options that you can modify for the selected category. The first time that you open the Preferences dialog box, focus is on the Accessibility category. Thereafter, focus is on the category that you most recently selected. To select a category, you can use the Up Arrow and Down Arrow keys, or press the letter key that corresponds to the first letter of the category name.
+
+
+
+
+
+Figure 2: Accessibility Preferences Dialog
+
+Use the following tips for navigating the Preferences dialog with the keyboard:
+
+• To move focus from the category list to the panel of options, press Tab.
+
+• To move focus to the next option in the panel, press Tab.
+
+• To move focus to the previous option in the panel, press Shift+Tab.
+
+
+
+
+
+Adobe Reader Accessibility Features
+
+
+
+
+• To bring focus to items in sublists, use the Up Arrow, Down Arrow, Right Arrow, and Left Arrow keys. • To select or deselect an option that has focus, press the Spacebar.
+
+The following Preferences categories are useful to screen reader users:
+
+• Accessibility — for setting tab order to follow the document’s structure • General — for disabling the auto-save function to speed performance • Internet — for controlling how Adobe Reader opens in a browser • Multimedia — for controlling how multimedia players play back
+
+accessibility information that is embedded in audio and video
+
+• Page Display — for setting default zoom levels and setting default page layout displays • Reading — for choosing the delivery method of pages that are sent to a screen reader • Startup — for reopening documents to the last-viewed page
+
+Note: The Reading category contains three sections labeled “Reading Order
+
+Options”, “Screen Reader Options”, and “Read Out Loud Options.” While the first two sections are relevant to screen readers, the last section is not. The settings in “Read Out Loud Options” control the Read Aloud feature of Adobe Reader. This feature reads aloud the text of a PDF document, but does not provide the same level of reading functionality as an advanced screen reader. Although it is not intended to replace screen reader technology, it can be helpful when no screen reader is available. It is also a valuable tool for people with dyslexia or another print disability.
+
+Saving an Adobe PDF document as text
+
+Adobe Reader provides the ability to extract the text of an Adobe PDF document and save it as a text file. This is useful if you want to read the document on a note-taker or emboss the file with a Braille printer. A text version of a PDF document contains no images or multimedia objects, but it does contain alternate descriptions for images if the author provided them. To access the “Save as text” dialog box, choose File > Save as text or press Alt+F and then press V.
+
+For best results when saving text for use with alternative translation technologies, first choose the Reading Order preference that best reflects the appropriate reading order of the document.
+
+For instructions, see “Using the Accessibility Setup Assistant” earlier in this guide.
+
+Note: If your screen reader does not read the saved text file in the most logical
+
+order, the PDF document may not be adequately tagged and structured.
+
+Navigating PDF documents with keyboard alternatives to mouse actions Nearly all actions that can be performed with a mouse in Adobe Reader can also be performed using keystrokes. The Adobe Reader interface should be familiar to anyone who has experience working with standard Windows applications, such as word processors or web browsers. The menu bar is accessed by pressing the Alt key,
+
+
+
+
+
+Types of PDF Documents
+
+
+
+
+and there are keyboard shortcuts for many actions. Each of the sections on JAWS and Window-Eyes in this guide provides information on keystrokes specific to that screen reader. More information on Adobe Reader
+
+keyboard shortcuts is available at http://www.adobe.com/enterprise/accessibility/reader/appx_a.html.
+
+The following keystrokes are helpful for getting started with PDF documents:
+
+• Ctrl+Page Down or Ctrl+Page Up -- Go to the next or previous page
+
+• Shift+Ctrl+Page Down or Shift+Ctrl+Page Up -- Go to the bottom or top of the document
+
+• Ctrl+K -- Open the Preferences dialog box
+
+• Ctrl+D -- Display document properties, including security
+
+settings and tagged status that affect accessibility
+
+• Shift+Ctrl+6 -- Start Accessibility Quick Check
+
+• ALT + F and then V -- Save to text
+
+• ALT-D and then T -- Start Accessibility Setup Assistant
+
+• F5 -- Place focus on document
+
+Automatically tagging untagged documents
+
+When you open a PDF document that is not tagged, Adobe Reader analyzes the document and automatically adds tags to improve the reading order. These tags are only temporary, and must be added each time the PDF document is opened. When you open an untagged PDF, Adobe Reader asks you to choose one of three reading order options. This dialog box explains that your screen reader will not be able to interact with Adobe Reader during the tagging process, and it provides the number of pages in the document to give you an idea of how long the tagging will take. Types of PDF Documents
+
+Though PDF is a standard, the content and structure of PDF documents vary widely. This section describes how accessibility is affected by four types of PDF documents: image only files, untagged documents, tagged documents, and electronic forms.
+
+Image only files
+
+Image only PDF files present significant accessibility barriers for screen reader users. These files are inaccessible because they contain only graphic images representing each page instead of actual text characters. Although text may appear on the screen, it is only a picture of text without the underlying characters needed by a screen reader Image only PDF files are created when a user scans a paper document, producing an image of the document. The scanning process is similar to how a blind person uses a scanner along with optical character recognition (OCR) software to read print materials. However, because OCR has not been performed on the document, the result is an image only file. Although authors can use Adobe Acrobat to perform OCR when creating PDF documents, many skip the OCR process because it takes more time than simply distributing the document as it appears in the document window. Another reason that authors may skip OCR is that, depending on the quality of the image, the resulting text can contain recognition errors, which require manual proofreading to resolve.
+
+
+
+
+
+Types of PDF Documents
+
+
+
+
+Before your screen reader can access an image only PDF document, you need to convert the image into accessible text. You can use any application with built-in OCR functionality, including Adobe Acrobat. You can also use certain third party OCR software applications, which have built-in tools to recognize PDF files. Even with the best OCR technology available, the result may not be perfect. If none of these tools are available, or if you cannot prevail upon the original author to correct the situation, you may need to obtain sighted assistance to have the document read to you.
+
+Untagged documents
+
+PDF documents often contain page layouts with multiple columns, sidebars, and captions for photos. As a result, even when a PDF contains actual text instead of images only, it may be inaccessible because of problems in determining the most appropriate reading order. A screen reader might not be able to extract words, sentences and paragraphs in a coherent order. Instead, they may be mixed together in disconnected, confusing ways. For example, when the text of a PDF file is arranged in columns like in a newspaper, the structure of the document is apparent visually, because extra spacing or border lines indicates where one column of text ends and another begins. Screen readers, however, cannot always detect these visual cues. In these cases, information about the document structure must be included in the PDF file for a screen reader to present a document in an intelligible manner. Without structural information that groups and separates regions of the page, the document may be inaccessible to screen reader users.
+
+PDF tags are used to address such accessibility problems. PDF tags are similar to tags used in HTML to make Web pages more accessible. The World Wide Web Consortium (W3C) did pioneering work with HTML tags to incorporate the document structure that was needed for accessibility as the HTML standard evolved. For example, a phrase may be tagged as the heading of a section, the caption of an image, or a cell within a table. Some tags are necessary for proper visual display in a web browser, but other tags are recommended specifically to aid accessibility. Accessibility tags may include an indication of the row and column labels of a table, which enables a screen reader to tell the user about the context of each cell. The cell information may be useless or confusing without knowing the associated row and column labels. When authors fail to use tags to indicate the internal structure of the document, the PDF documents they create are untagged.
+
+Unfortunately, you will likely encounter many untagged PDF documents, making it difficult for your screen reader to make sense of the document.
+
+Automatic tagging helps alleviate the problems caused by untagged PDF documents. Adobe Reader can analyze an untagged PDF file and add temporary tags to optimize its reading order for screen readers.
+
+When you open an untagged PDF, Adobe Reader presents a dialog box that allows you to choose the type of tagging you want it to perform on the document. The tagging process can take a few minutes for large files, so your screen reader will alert you that the document is being processed while it is being tagged. When the tagging is complete, your screen reader will begin reading the document. The file is only tagged temporarily -- because the tags are not saved, the process will have to be repeated if you open the document again.
+
+
+
+
+
+Types of PDF Documents
+
+
+
+
+
+Figure 3: Reading Untagged Document Dialog
+
+Assistive technology such as JAWS and Window-Eyes screen readers interpret the PDF tags in files viewed in Adobe Reader (or Acrobat). As a result these screen readers can render more accessible output in speech or Braille.
+
+Tagged documents
+
+Tagged documents provide the best reading experience for screen reader users.
+
+Like tags in HTML that improve accessibility of Web pages, PDF tags convey a suggested reading order, allowing a screen reader to present the document in an intelligible manner. Tags mark portions of PDF content and are organized in sequence. When a PDF document has been properly tagged by
+
+
+
+
+
+Using Adobe Reader with JAWS
+
+
+
+
+its author, screen readers do a better job of interpreting the document’s structure, which also makes it easier to use your screen reader’s keystroke commands to navigate and read the document.
+
+Adobe Acrobat is the most popular software for creating PDF documents; and it includes a feature that analyzes the accessibility of a PDF file. It reports potential problems, including ambiguous structure and unlabeled pictures. Acrobat can also automatically add tags when the document’s content makes it clear which tags are appropriate. Some tagging, however, must be done manually. You can use Acrobat to produce an accessibility report that identifies potential problems, and then correct these problems by selecting a portion of the document and selecting a tag to indicate its purpose. For example, Adobe Acrobat cannot tell what a picture contains, so you need to enter a caption tag for the picture manually. The manual tagging process can take some time, depending on the complexity of the document. For more online resources that make it easier to design accessible
+
+PDF documents, including guidance on how to properly tag a document, visit http://www.adobe.com/accessibility .
+
+Electronic forms
+
+Electronic forms are an increasingly popular use of PDF. Although some PDF forms are simply documents that are to be printed and filled out by hand, many can be filled out electronically using your computer and screen reader. These forms are similar to HTML forms you may encounter on the Internet, and they have many of the same accessibility issues. A simple PDF form may ask for basic information such as your name and address. More complex PDF forms can gather significantly more information. You can use an IRS form, for example, to enter income, tax withholdings, marital status, and the number of children you have.
+
+Like any PDF document, forms must have a logical structure with proper tagging to be accessible for screen readers. In addition to establishing a proper read order, PDF forms must have a logical tab order defined. When filling out these forms, users move from one entry field to another by pressing the Tab key. If the fields are tagged with improper labels, it is nearly impossible for a screen reader user to know what to enter in each field. Using Adobe Reader with JAWS
+
+JAWS for Windows, made by Freedom Scientific, works with Adobe Reader to read PDF documents. JAWS can also read other types of documents in a word processor or on the Internet. Typically, you read PDF documents using the virtual PC cursor, just as you would when using Internet Explorer. This user guide was written for JAWS version 7.0 and above.
+
+Overview of JAWS support for Adobe Reader
+
+The JAWS built-in Help system provides extensive guidance for using Adobe Reader, including a short overview, links to other resources, and the following topics:
+
+• JAWS Commands for using Reader
+
+• Reader Getting Started
+
+• Helpful Hints
+
+You can access this information in two ways.
+
+1. If you are using Adobe Reader, you can simply hold down the Insert key and press F1 twice rapidly. This
+
+will open the tree view of JAWS Help Topics with your cursor positioned on the Adobe Acrobat and Reader topic. Press Enter, and then F6, to open a page with all the JAWS Adobe Help information and links.
+
+
+
+
+
+Using Adobe Reader with JAWS
+
+
+
+
+2. You can also access the JAWS Help system by bringing focus to your JAWS application and pressing
+
+F1. If you do it this way, you will begin on the Contents page of the JAWS Help system. Place the
+
+cursor on the book in the tree view titled “Popular Applications with JAWS” and press the Right
+
+Arrow key to open a list of Help Topics for more than 40 applications. At the top of the list is the
+
+Adobe Acrobat and Reader topic. When you select that topic and press the Enter key, and then the
+
+F6 key, the application will open a page with all the JAWS Adobe Help information and links. The Freedom Scientific web site has additional resources for using JAWS with Adobe Reader.
+
+More information is available from Freedom Scientific at www.freedomscientific.com.
+
+JAWS commands for using Adobe Reader
+
+The two tables in this section present JAWS commands that are useful when using Adobe Reader. The first table includes general JAWS commands, while the second table includes JAWS commands that make it easier to navigate HTML documents on the Internet. The commands in this second table are also useful when reading and navigating PDF documents. You can find a complete list of JAWS commands in the JAWS Help system section on Adobe Reader. For more information on using keyboard shortcuts with Adobe
+
+Reader, see “Navigating PDF documents with keyboard alternatives to mouse action ” earlier in this guide.
+
+Table 1: General JAWS Commands for Using Adobe Reader
+
+Description Command
+
+JAWS Help for Adobe Reader Insert+F1
+
+Enter Forms Mode Enter
+
+Virtual Cursor On NUM PAD PLUS
+
+Virtual Find Ctrl+Insert+F
+
+Next Page Ctrl+Page Down
+
+Previous Page Ctrl+Page Up
+
+Go To Page Shift+Ctrl+N
+
+Go To First Page Shift+Ctrl+Page Up
+
+Go To Last Page Shift+Ctrl+Page Down
+
+Say All Insert+Down Arrow
+
+Create Custom Label For Form Field Ctrl+Insert+Tab
+
+
+
+
+
+Using Adobe Reader with Window-Eyes
+
+
+
+
+Table 2: JAWS Commands for Using HTML and Adobe Reader
+
+Description Command
+
+Links List Insert+F7
+
+Next Link Tab
+
+Prior Link Shift+Tab
+
+Open Link Enter
+
+List Headings Insert+F6
+
+Next Heading H
+
+Prior Heading Shift+H
+
+Move To Next Form Field F
+
+Enter Forms Mode Enter
+
+Move To Next Form Field Tab
+
+Move To Previous Form Field Shift+Tab
+
+Exit Forms Mode NUM PAD PLUS
+
+Move To Next Table T
+
+Move To Previous Table Shift+T
+
+Read Current Table cell Ctrl+Alt+NUM PAD 5
+
+Move To And Read Next Cell Ctrl+Alt+Right Arrow
+
+Move To And Read Previous Cell Ctrl+Alt+Left Arrow
+
+Move To And Read Cell Above Ctrl+Alt+Up Arrow
+
+Move To And Read Cell Below Ctrl+Alt+Down Arrow
+
+Move To And Read First Cell Ctrl+Alt+Home
+
+Move To And Read Last Cell Ctrl+Alt+End
+
+Using Adobe Reader with Window-Eyes
+
+Window-Eyes, made by GW Micro, works with Adobe Reader to read PDF documents. You read PDF documents using the Window-Eyes “Browse Mode”, just as you would read a document in a word processor or in Internet Explorer. Window-Eyes automatically enters Browse Mode when using Adobe Reader. The keystrokes and navigation commands for reading a PDF document are similar to those used for reading a web page with Internet Explorer.
+
+
+
+
+
+Using Adobe Reader with Window-Eyes
+
+
+
+
+Overview of Window-Eyes support for Adobe Reader
+
+The Window-Eyes built-in Help system includes basic information for using Adobe Reader. To access this information, press Shift+Ctrl+Question while Adobe Reader is open. This will place focus in a help document that you can read with standard Window-Eyes reading commands. To exit this document, press the Escape key. You can also turn on the Window-Eyes “Key Describe” mode by pressing Insert+1 (on the number row) at any time while using the screen reader. In this mode, Window-Eyes announces the function assigned to each keystroke, but does not perform any actions. To toggle this mode off, press Insert+1 again.
+
+Window Eyes Commands for using Adobe Reader
+
+The two tables in this section present Window-Eyes commands that are useful when using Adobe Reader. The first table includes general Window-Eyes commands, while the second table includes Window-Eyes commands that make it easier to navigate HTML documents on the Internet. The commands in this second table are also useful when reading and navigating PDF documents. You can find a complete list of Window-Eyes commands in the Window-Eyes Help system section on Adobe Reader. For more information on using keyboard shortcuts
+
+with Adobe Reader, see “Navigating PDF documents with keyboard alternatives to mouse action” earlier in this guide.
+
+
+
+Table 3: General Window-Eyes Commands for Using Adobe Reader
+
+Description Command
+
+Window-Eyes Help for Adobe Reader Shift+Ctrl+Question
+
+Turn Off Browse Mode (for forms) Enter
+
+Turn Browse Mode On Shift+Ctrl+A
+
+Mouse Find Shift+Ctrl+F
+
+Next Page Ctrl+Page Down
+
+Previous Page Ctrl+Page Up
+
+Go To Page Shift+Ctrl+N
+
+Go To First Page Shift+Ctrl+Page Up
+
+Go To Last Page Shift+Ctrl+Page Down
+
+Read To End Shift+Ctrl+R
+
+
+
+
+
+Performing Common Tasks with Adobe Reader
+
+
+
+
+Table 4: Window-Eyes Commands for Using HTML and Adobe Reader
+
+Description Command
+
+Links List Insert+Tab
+
+Next Link Tab
+
+Prior Link Shift+Tab
+
+Activate Link Enter
+
+List Headings Insert+Tab
+
+Next Heading H
+
+Prior Heading Shift+H
+
+Move To Next Form F
+
+Exit Browse Mode (to fill out a form) Enter
+
+Move To Next Form Control Tab
+
+Move to Previous Form Control Shift+Tab
+
+Reenter Browse Mode Shift+Ctrl+A
+
+Move To Next Table T
+
+Move to Previous Table Shift+T
+
+Activate Table Mode Ctrl+NUM PAD PLUS
+
+Move To And Read Cell To The Right Insert+Right Arrow
+
+Move To And Read Cell To The Left Insert+Left Arrow
+
+Move To And Read Cell Above Insert+Up Arrow
+
+Move To and Read Cell Below Insert+Down Arrow
+
+Move To And Read First Cell In Current Row Ctrl+Insert+Left Arrow
+
+Move To And Read Last Cell In Current Row Ctrl+Insert+Right Arrow
+
+Move To And Read First Cell in Current Column Ctrl+Insert+Up Arrow
+
+Move To And Read Last Cell In Current Column Ctrl+Insert+Down Arrow
+
+Exit Table Mode Ctrl+NUM PAD DASH
+
+Performing Common Tasks with Adobe Reader
+
+When using Adobe Reader with a screen reader, you will likely need to perform one or more of the following common tasks:
+
+• Installation and setup
+
+• Using the Accessibility Setup Assistant
+
+
+
+
+
+Performing Common Tasks with Adobe Reader
+
+
+
+
+• Setting accessibility options with the Preferences dialog box
+
+• Opening PDF documents
+
+• Using the Adobe Help System
+
+• Saving a PDF document as text
+
+• Using search and find tools
+
+This section describes each of these tasks, and where applicable, provides information specific to JAWS
+
+and Window-Eyes. For information on navigating PDF documents using these applications, see “JAWS
+
+Commands for Using Adobe Reader” or “Window-Eyes Commands for Using Adobe Reader” earlier in this guide.
+
+Installation and setup
+
+To download the latest version of Adobe Reader, visit http://www.adobe.com/products/acrobat/readstep2.html
+
+After the download, you will need to complete a standard installation process, including license agreement and product registration screens.
+
+On the license agreement there are two buttons labeled “Accept” and “Decline”, with the shortcut keys Alt+A and Alt+D respectively.
+
+The registration screen is next, and it is also accessible.
+
+Following the registration, Adobe Reader opens the Beyond Adobe Reader window, which helps users learn the new tools and features in Adobe Reader. Though this guide is not specifically designed for screen reader users, it can be helpful to anyone new to Adobe Reader. When you are finished with the guide, you can press Alt+F4 to close the window. If you do not want the Window to appear every time you start Adobe Reader, select the check box labeled “Do not show at startup”. To return to the Beyond Adobe Reader page and use the guide at any time, choose Help > Beyond Adobe Reader, or press Alt+H, and then B.
+
+
+
+Adobe Reader installation notes for JAWS users All the controls and instructions used in the installation process can be read with JAWS. The controls can be accessed with the PC cursor, but the JAWS cursor is needed for some of the instructional information.
+
+When installation is complete, you can use the JAWS cursor to read the license agreement, and the PC cursor can access the two buttons labeled “Accept” and “Decline”, with the shortcut keys Alt+A and Alt+D respectively.
+
+
+
+Adobe Reader installation notes for Window-Eyes users The installation process is accessible for Window-Eyes users. All the controls and buttons can be accessed using the Window-Eyes standard reading commands but some of the static text that provides extra instructional information must be accessed using the Mouse reading commands.
+
+Use the Mouse cursor to read the license agreement, and the Window-Eyes Cursor to access the Accept and Decline buttons.
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+The Accessibility Setup Assistant
+
+The first time you run Adobe Reader with screen reader software, the Accessibility Setup Assistant will open. You can use the assistant to adjust how Adobe Reader interacts with assistive technologies such as screen readers and screen magnifiers.
+
+You navigate through the assistant’s dialog boxes as you would any standard Windows dialog box, using tab, arrows, spacebar, and enter.
+
+You can use the default accessibility settings, and then adjust them later when you get more familiar with how Adobe Reader works. To do this, tab to the button on the opening screen labeled “Use Recommended Settings and Skip Setup”, and press Enter. For more information on these settings and how to change them
+
+with the Accessibility Setup Assistant see “Using the Accessibility Setup Assistant” earlier in this guide. You can access the Accessibility Setup Assistant at any time by choosing Document > Accessibility Setup Assistant or by pressing Alt+D and then T.
+
+Accessibility Setup Assistant notes for JAWS users
+
+With JAWS, use the PC cursor to access the various controls used in the Accessibility Setup Assistant, including radio buttons, check boxes, combo boxes and buttons. Each screen also includes static text that describes the controls and explains what they do. JAWS reads that static text as each screen opens, and you can use the JAWS cursor to reread the information.
+
+Accessibility Setup Assistant notes for Window-Eyes users
+
+The Window-Eyes cursor can access the various controls used in the Accessibility Setup Assistant, including radio buttons, check boxes, combo boxes and buttons. Each screen also includes static text that describes the controls and explains what they do. Window-Eyes does not automatically read this static text, but you can use the Mouse cursor to read it.
+
+The Preferences dialog box
+
+The settings found in the Accessibility Setup Assistant can also be found in the Preferences dialog box (although some settings are under slightly different names). To access the Preferences dialog box, choose Edit > Preferences or press Alt+E and then N. You can also use the shortcut Ctrl+K. For more information on setting options using
+
+the Preferences dialog box see “Changing accessibility settings with the Preferences dialog box” earlier in this guide.
+
+Opening PDF documents
+
+Opening a PDF document is no different than opening other types of documents you may encounter using a PC. With Adobe Reader, choose File > Open or press Alt+F and then O. You can use the shortcut Ctrl+O as well. You can also open PDF documents by navigating to them with Windows Explorer and pressing the Enter key when your PC cursor is on the desired document.
+
+The remainder of this section describes how to use your screen reader to read and interact with four common types of PDF documents: image only files, untagged documents, tagged documents, and electronic
+
+forms. For more detailed information on these types see “Types of PDF Documents” earlier in this guide.
+
+The Accessibility Setup Assistant
+
+
+
+Opening image only documents
+
+Most image only documents are created by authors who placed a printed page through a scanner and saved the resulting image as a PDF document. Although text may appear on the screen, it is only a picture of text without the underlying characters needed by JAWS.
+
+When you open an image only file, Adobe Reader treats it as an untagged document, and presents the dialog to start the tagging process. Even after tagging the file will still be inaccessible to screen readers.
+
+
+
+Note for JAWS and Window-Eyes users regarding image only documents: When Adobe Reader completes the tagging process, the image of the file appears, and JAWS and Window-Eyes will report, “Alert, empty document.” Your screen reader will not be able to read anything in the file, and all keystroke navigation attempts will result in the same message, “Alert, empty document.”
+
+If you need access to the information in an image only PDF, you can use the PDF recognition features found in certain brands of Optical Character Recognition (OCR) software. You can also use the OCR features of Adobe Acrobat Standard or Professional to convert an image file to readable text. The quality of the results produced by any OCR tool will vary depending on the complexity of the original document and the clarity of the image. In some cases, you may need sighted assistance to read image only documents.
+
+
+
+Opening untagged documents
+
+When you open an untagged PDF document using a screen reader, a dialog box appears to notify you that the document is untagged and must be prepared for reading. The notification includes a reminder that assistive technology will not be able to interact while the document is being analyzed and tagged. Additionally, the number of pages in the document is provided, so you can estimate the relative duration of the tagging process. After this introductory information, your screen reader will inform you that you are in a combo box for choosing the reading order, and that you are on the first of three choices. The recommended option, labeled “Infer reading order from document,” works best for most documents. For some documents, however, you may find that one of the other choices works better. The other choices are “Left-to-right, top-to-bottom reading order”, and “Use reading order in raw print stream”. You can use the Up Arrow and Down Arrow keys to select one of these options.
+
+The Accessibility Setup Assistant
+
+
+
+The next set of options, labeled “Reading Mode Options”, controls how much information is delivered at once to your screen reader. For large documents, select the radio button labeled “Read the Currently Visible Pages only.” This option loads information from a few pages at a time into the memory buffer of the screen reader. The second option is labeled “Read the Entire Document At Once”. This is usually the best option when you are using a screen reader, but it may affect performance when you read large documents.
+
+
+
+
+
+Figure 4: Specifying Reading the Currently Visible Pages
+
+After choosing your settings, tab to the Start button, and press the Enter key to begin the tagging process. The time required to tag a document depends on the length and complexity of the document, but the process often finishes within a few seconds.
+
+Automatic tagging is designed to enable screen readers to better interpret untagged PDF documents. Depending on the complexity of the PDF document, however, this tagging may not fully capture the intended reading order of the document. Many PDF documents have multiple columns, sidebars, or
+
+The Accessibility Setup Assistant
+
+
+
+complex page designs that can affect how well Adobe Reader interprets the content. If you are having trouble reading particular PDF documents, you can experiment with the other Reading Order options.
+
+
+
+Note for JAWS users regarding untagged documents: During the tagging process, JAWS periodically announces the percentage of the process that has been completed. In addition, Adobe Reader displays a dialog box, readable with the JAWS cursor, which shows the number of pages that have been tagged along with the total number of pages in the document.
+
+
+
+Note for Window-Eyes users regarding untagged documents: During the tagging process, a dialog box appears showing the number of pages that have been tagged along with the total number of pages in the document. This dialog box is readable with the Window-Eyes mouse cursor. To have Window-Eyes read the current status of the process as reported by the progress bar, press Ctrl+Insert+B.
+
+
+
+Opening tagged documents
+
+When you open a tagged document you can begin reading immediately. Because there is no need for Adobe Reader to tag the document itself, it does not present the tagging dialog box. Properly tagged documents offer the best reading experience for screen reader users, providing many ways to access all of the elements in a PDF document.
+
+Tagged documents that have not been tagged correctly might not be read properly by screen readers. With these documents, it may help to change the reading order. To do this, press Ctrl+K to bring up the Preferences dialog box, and then press R to access the Reading controls. Press tab to navigate the combo box labeled “Reading Order.” Use the Up and Down Arrows to select on of the three reading order options, and then press Enter.
+
+Tagged documents enable better control for interacting with various elements within PDF documents, including tables, headings, links, lists, paragraphs, and graphics. You can use the following tips to work with these elements:
+
+Tables: When a properly tagged PDF document includes tables, you can use the same commands for navigating and reading tables that are used with Microsoft Word documents and web pages in a browser. All the row and column headings are accessible, and you can move quickly from table to table by pressing T or Shift+T.
+
+With Window-Eyes, enter “Table Mode” by pressing Ctrl+NUM PAD PLUS and then use your Window-Eyes table navigation keys (Insert+Arrow) to read the information in the table. Press Ctrl+NUM PAD MINUS to exit Table Mode.
+
+Headings: When the headings for various sections of a PDF are properly tagged, you can quickly move among the various sections. Press H or Shift+H to move back or forward from heading to heading.
+
+Links: A PDF file may include links to other sections of the document or to web pages on the Internet. JAWS and Window-Eyes will read the names of links that have been properly tagged. With JAWS, Press Insert+F7 to place all the links into a list that you can navigate using Arrow keys. If you know the first letter of the link you are looking for, you can press the first letter of the link to quickly
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+move to links in the list that begin with that letter. After selecting a link, press Enter to follow it. Press Tab and Shift+Tab to move back and forth between the links in a document when using JAWS.
+
+With Window-Eyes, press L or Shift+L to move back and forth between the links in a document.
+
+Lists: With JAWS, press L or Shift+L to move between tagged lists in a PDF document.
+
+With Window-Eyes, you can move between the various lists by pressing S or Shift+S. You can then use the Up Arrow and Down Arrow keys to read the various list items. Alternatively, you can also press I or Shift+I to move back and forth between the list items.
+
+Paragraphs: To move between tagged paragraphs in a PDF document press P or Shift+P. Graphics: JAWS and Window-Eyes will read descriptions of all properly tagged images in a PDF document.
+
+With JAWS, press G or Shift+G to move between graphics.
+
+The Window-Eyes Page Navigation Dialog Box
+
+With Window-Eyes you can use the Page Navigation Dialog Box to quickly find and move among many of the various elements of a properly tagged PDF document. Press Insert+Tab to open this dialog. The focus is in a list of one of the particular elements found in the document. Press Shift+Tab to move focus to a group box control used to choose the type of element you would like to find. For example, to navigate to a particular link use the Arrow keys to select “Links”, and then press Tab to move to the list of links that are in the PDF document. Then use the Arrow keys to find the link you want. Alternatively, if you know the name of the link, you can press the first letter of the link and move directly to that link in the list. If there is more than one link starting with that letter, you may have to press the letter more than once to find the link you want. When you find your link, press Enter and you will be taken to the target of that link in the body of the PDF document. If you don’t want to activate the link, but simply want to move to its location within the document, you can tab to the button labeled “Move to”, which closes the dialog and places focus on the link. You can also move to other elements, including headings, lists, forms, and tables.
+
+Note: You must use the Adobe Reader option “Read the Entire Document At
+
+Once” for all the elements to appear in this dialog box. If you have set this option to “Read the Currently Visible Pages only,” then only the elements in the currently visible page will appear. You can change this setting with
+
+the Adobe Reader Preferences dialog box (see Changing accessibility settings
+
+with the Preferences dialog box earlier is this guide).
+
+Opening forms
+
+Properly tagged electronic forms are accessible. Your screen reader will speak all the information you need to successfully fill-out the entire form.
+
+For example, when you encounter a tagged edit box for entering your name, your screen reader might say “Enter your first name,” so you know what to type in the field. Other types of fields you may encounter in a form include combo boxes, buttons, radio buttons, and check boxes. Press Tab and Shift+Tab to move
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+back and forth between form fields. The Up and Down Arrow keys move focus between combo box and radio button choices, and Enter activates buttons. Press the Spacebar to select or deselect a check box.
+
+
+
+Notes for JAWS and Window-Eyes users regarding forms: Press F to move to the next form in a document, and press Enter to enter forms mode so you can begin filling out the form.
+
+Using Adobe Reader Help
+
+To access help in Adobe Reader 8 Help, choose Help > Adobe Reader 8 Help, or press Alt+H and then H. You can also simply press F1 to open the Adobe Help Viewer window, which you navigate as you would an HTML document. The Help Viewer has a navigation frame and a contents frame. The information and links in the contents frame changes when you make selections in the navigation frame. As with other help systems you may be familiar with, there are three ways to find information in the Adobe Help Viewer. There is a Contents page, an Index page, and a Search page. Adobe Reader 8 Help opens by default to the Contents page; and there are links at the top to select the Index or Search pages.
+
+Note: the Contents page should not be confused with the contents frame.
+
+You can browse through the Contents page just as you would any HTML page using standard HTML navigation techniques for your screen reader. Use the navigation frame to find links of interest and press Enter when you find one. With JAWS and Window-Eyes, you can then quickly move through the information in the contents frame by pressing H for headings.
+
+The Index page presents individual Help topics that are available. This page presents a list of all the letters of the alphabet in the navigation frame, and you can press Enter on any letter to bring up the topics that begin with that letter. The list of topics is presented in a tree view. Visually, a plus sign indicates an item that is “expandable”, and a minus sign indicates an item that has been expanded with its subtopics below. An item without any sub-topics has no plus or minus sign, indicating visually that it is an actual help topic.
+
+The Search page of Adobe Reader 8 Help enables you to locate help topics related to a word or phrase.
+
+One of the main topics in Adobe Reader 8 Help is “Accessibility, tags, and reflow.” This topics offers assistance on accessibility features in Adobe Reader.
+
+To access Adobe’s online Accessibility Resource Center choose Help > Online Support > Accessibility Resource Center or press Alt+H, followed by O and then R.
+
+
+
+Adobe Reader help notes for JAWS users
+
+For JAWS users, the tree view on the Index page presents a challenge, because there is no easy way to distinguish a tree element with a plus or minus sign (indicating subtopics below) from a tree element that represents an actual help topic.
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+When you press Enter on a topic with a plus sign, the list of subtopics is expanded beneath it. When you press Enter on a topic with a minus sign, the list contracts. When you press enter on a topic with no plus or minus sign, the help topic is displayed in the contents frame.
+
+You can use this workaround: press Enter on an item in the tree view; if its related Help information does not appear in the contents frame, then you will that this item has subtopics, and you should now find its subtopics below it in the tree view.
+
+The Search page is accessible using JAWS. To search for help on a particular topic on the Search page, press F to navigate to the Search edit field. Press Enter to start “forms mode” and then type in a search term. Press Enter again to exit “forms mode”. A list of links will appear in the navigation frame that relate to your search term.
+
+Although most JAWS HTML navigation techniques work in the Adobe Reader Help system, you cannot use the Ctrl+F JAWS Find command to locate specific strings of text. JAWS will report that the string was not found, even when the string does actually appear on the page. To find specific strings of text in the Adobe Help Viewer use the JAWS virtual Find command, Insert+Ctrl+F. Pressing the H key to move to the next heading is a useful technique when using the Adobe Help Viewer. You can press H to jump to the first heading in the contents frame where you can read the currently displayed Help information.
+
+
+
+Adobe Reader help notes for Window-Eyes users
+
+Pressing the H key to move to the next heading is a useful technique when using the Adobe Help Viewer. Press H to jump to the first heading in the contents frame where you can read the currently displayed Help information. The Insert+Tab command to place all the links in a list can also be helpful.
+
+When you select a link on the contents page, the dynamic contents of the Adobe help system can cause a problem as Window-Eyes updates pages. After selecting a link, if you try to read the new page, you may find that the page has not changed, or you may hear “Loading Page.” In either of these situations occurs, you can ask Window-Eyes to redraw the screen by pressing Insert+Backslash. This command will usually correct the problem and allow you to read the information on the new page. It may be necessary to issue this command each time you follow a link.
+
+Window-Eyes does not read the help text when on the index page. When you choose a link after choosing a letter, the help text associated with that topic is ignored by Window-Eyes. The contents frame often appears empty. Because of this issue, you may want to avoid using the index page. On the search page, you may find it necessary to have Window-Eyes redraw the search screen. To do this, press Insert+Backslash.
+
+Saving a PDF document as text
+
+Adobe Reader provides the ability to extract the text of an Adobe PDF document and save it as a text file. This feature is particularly useful when you want to read the document on a note-taker or emboss
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+the file with a Braille printer. A text version of a PDF document contains no images or multimedia objects, but it will contain alternate descriptions for images if the author provided them. To save a file as text, choose File > Save as Text or press Alt+F and then V. This brings up a standard Windows “Save As” dialog, and you can use Tab and Shift+Tab to move back and forth between the various controls. You use this dialog to name the file and specify where you want to save the file on your computer.
+
+For best results when saving text for use with alternative translation technologies, first choose the Reading Order preference that best reflects the appropriate reading order of the document. For instructions on changing
+
+the reading order, see “Changing accessibility settings with the Preferences dialog box” earlier in this guide.
+
+Note: If the text file that has been saved does not read in the most logical order,
+
+the PDF document may not be adequately tagged and structured.
+
+Using the Adobe Reader Find and Search tools
+
+Often, you want to find a specific piece of information in a PDF document rather than reading it straight through from beginning to end. To facilitate this, Adobe Reader provides a Find tool and a Search tool to search for specific strings of text in a PDF document. Ctrl+F is the shortcut to access the Adobe Find tool. Alternatively, you can select Edit > Find or press Alt+E and then F. The cursor is now in an edit field and you are ready to type the string of text you want to find. After you have finished typing your text string press the Enter key, and then press F6 to return focus to the PDF document. The document will be positioned to the page on which the first occurrence of your text string appears. Depending on how the document was tagged, the cursor may not be placed exactly on the actual text string. The Adobe Find tool places the cursor in the tagged element (for example, the page, paragraph, table, or heading) in which the text string was found, so you may need to scroll to find your actual text string. Sometimes, especially with untagged or poorly tagged documents, an element might be an entire page, and it can take some time to find the text you want.
+
+The Adobe Reader Search tool is a more powerful global search tool that you can use to find text not only in the current document, but also in all the PDF documents on your computer. The Search dialog has several controls you can use to refine your search.
+
+To access the search tool, choose Edit > Search or press Alt+E and then S. You can also press Shift+Ctrl+F to bring up the Adobe Search dialog box. To search in the current PDF document only, you simply type in the word or phrase you are searching for and press the Enter key. A tree view will appear listing all hits, or occurrences of the search string in the document. The text surrounding your search string is included in the list. Use the Arrow keys to select the search hit you want. When you press Enter the document will be positioned to the page of that hit. However, as with the Adobe Find tool, you may need to scroll on the page to find your search term. If the hit you chose was not the one you wanted, you can press Alt+Tab to return to your list of hits and try another one. When you are finished, press Alt+F4 to close the Search window. If you want to search through several PDF documents at once, press Tab after typing in your search terms. Select the radio button labeled “All PDF Documents in” using the Arrow keys. Then, tab to the next control to
+
+
+
+
+
+The Accessibility Setup Assistant
+
+
+
+
+choose a drive or folder on your computer in which to search. Then press Shift+Tab three times to move back to the edit field, type your search terms, and press Enter. It may take a while to display your hits, depending on how many documents are located in the search. The tree view that appears shows each document in which your search terms are found, followed by each hit for each document. Although you can scroll through all the various hits just like when searching through a single document, your screen reader might not announce the names of the various documents. As a result, you can choose from the various hits, but you won’t know which document you are choosing until you actually press Enter on the hit and open the document.
+
+
+
+Adobe Reader find and search notes for JAWS users
+
+In addition to the Adobe Reader Find and Search tools, the JAWS Virtual Find feature can also be used to find text in a PDF document.
+
+You can use the JAWS Virtual Find tool after using the Adobe Find tool. This tool finds text that appears on the current page only, and it places your cursor on the exact text string it finds. Insert+Ctrl+F brings up the JAWS Virtual Find tool and places the cursor in an edit field. Type your search string and press Enter. The PC Cursor will be place at the beginning of the next occurrence of that string on the current page.
+
+Adobe Reader find and search notes for Window-Eyes users In addition to the Adobe Reader Find and Search tools, the Window-Eyes Mouse Find tool can also be used to find text in a PDF document.
+
+You can use the Window-Eyes Mouse Find tool after using the Adobe Find tool. This tool finds text that appears on the current page only, and it places your cursor on the exact text string it finds. Shift+Ctrl+F brings up the Window-Eyes Virtual Find tool and places the cursor in an edit field. Type your search string and press Enter. The cursor will be placed on the next occurrence of that string on the current page.
+
+To repeat the same search, press Insert+F. Window-Eyes will automatically find the next occurrence of the text string you previously searched for.
+
+Shift+Ctrl+F is the shortcut to open the Adobe Search dialog box. If, however, you are using the default Window-Eyes keyboard layout, this keystroke is already in use. To access the dialog box you can either issue the Window-Eyes bypass key (Insert+B) or you can choose Edit > Search (press Alt+E and then S).
+
+The Go To Page dialog box
+
+You can use the Adobe Reader Go To Page dialog box to determine the current page and the total number of pages in the document. Choose View > Go To > Page or press Shift+Ctrl+N.
+
+
+
+Adobe, the Adobe logo, Acrobat, the Adobe PDF logo, LiveCycle, and Reader, are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. Microsoft and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. JAWS is a registered trademark of Freedom Scientific. Window-Eyes is a registered trademark of GW Micro. All other trademarks are the property of their respective owners.
+
+
+
+© 2008 Adobe Systems Incorporated. All rights reserved.
+
+
+
+
+
