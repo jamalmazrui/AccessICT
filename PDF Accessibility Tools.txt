@@ -1,0 +1,235 @@
+﻿
+
+Adobe Creative Cloud for Faculty & Staff
+• Adobe Creative Cloud software is now available for use (at no additional charge) on all faculty and staff university-owned computers, labs and classroom devices, and for all students. 
+• Please note that this deployment of Adobe software is not available for use on personally-owned faculty and staff devices at this time.
+• Learn more about Adobe Creative Cloud for Faculty & Staff
+• Adobe Reader is for viewing, printing, signing, sharing, and annotating PDFs. Adobe Reader doesn't have Accessibility 
+Adobe Acrobat	checking tool.
+What are Screen Readers
+Screen readers are a form of assistive technology (AT) software that enables access to a computer, and all the things a computer does, by attempting to identify and interpret what is being displayed on the computer screen using text-to-speech. Screen readers can only access and process live text (fully editable or selectable text).
+• Provides access to someone who is visually impaired, mobility or has a learning disability to access text on the screen.
+• Offers same level of independence and privacy as anyone else.
+Types of screen readers
+
+
+Screen reader program for Microsoft Windows that allows blind and visually impaired users to read the screen either with a text-to-speech output or by a refreshable Braille display. NVDA screen reader can be downloaded free of charge by anyone.
+Provides auditory 	Adds spoken, audible, 	Screen magnifier for descriptions of each 	and vibration feedback 	Microsoft Windows onscreen element 	to your device.	that allows you to see 
+using gestures, a 	and hear everything on keyboard, or a braille 	the computer. display.
+
+How Do Screen Readers Work?
+• Screen readers read line-by-line from left-to-right and top-to-bottom. 
+• Screen readers start at the top of a document or website and read any text including alternative text for images, graphics or charts. 
+• Screen readers navigate a document or website using the keyboard without a mouse. Tab key: jump from link to link, Enter: select a link, arrow keys: navigate a document or website.
+• Reading order is important for users with visual challenges. The users can become confused if the document (content, tables, images or charts) is poorly organized or out of order.
+Live or Real Text
+• To check if the text is "live" or "real," try to select the text with your cursor. If you're unable to highlight/select it then it is not real text, and therefore not accessible for all users. 
+• Live text is searchable; this allows users to use search functions like CTRL + F to look for specific terms and find what they need quickly or to copy/paste text.
+
+Mysterious Dash or Hyphen
+Screen readers do not know what the - symbol represents (minus, hyphen, en dash or em dash) so screen readers will not read it. It is always a good practice to spell the word and any abbreviations or make a reference to your abbreviation when used for the first time.
+For examples:
+• May 8th, 2022 from 3:30 - 5:00pm. The screen reader reads three, thirty five. Recommend May 8th, 2022 from 3:30 to 5:00pm.
+• Final exams May 14 - 20, 2022, screen reader reads May 1420, 2022. Recommend May 14 to 20, 2022.
+• Homework assignment pages 200 - 281 for tonight's reading material. Recommend pages 200 to 281. 
+• The fiscal year 2015-2016. Recommend The fiscal year from 2015 to 2016.
+• Grading scale 95 - 100%, screen reader reads 95100%. Recommend 95 to 100%. 
+❖A + , screen reader reads A+. Recommend A plus.
+❖A - , screen reader reads A. Recommend A minus.
+❖Recommend to spell the word plus or minus for consistency purpose.
+It's okay to use dash between compound words, i.e., well-known author, well-being, in-service, in-person, runner-up, part-time job, co-author, re-elect, long-term project, state-of-the-art technology, etc.
+What are PDF "Tags"?
+
+
+• No tags, or inaccessible scanned version 	• PDF keeps accessibility tags from original document
+• Incorrect reading order	• Logical reading order
+• No descriptive text (alt text) for images and graphics	• Descriptive text (alt text) for images and graphics
+• Testing accessibility and fixing issues	• Use Built-in Accessibility Checker
+Option 1: No Source Document? Try Export Options
+When no source document is available, recommend opening the PDF in Acrobat, and exporting to a Word or PowerPoint file. 
+To convert a PDF to a Word document, select Convert > Export PDF To> Microsoft Word.
+Next step is applying Styles Formatting. See the next slide "Direct vs Styles Formatting."
+Note: Need to verify format, alignment, unrecognized characters, punctuation, spelling, etc.
+Direct vs Styles Formatting
+
+Direct Formatting
+• Not accessible to any assistive technology such as screen readers
+• Can't create a Table of Contents
+• Can't create a navigation to different sections in a document
+• Huge barriers!
+Styles Pane Formatting
+• Provide structure and make document accessible
+• Easier to modify existing formatting
+• Create and update a Table of Contents
+• Quicker navigation to different sections in a document
+• Retain document structure when export to PDF
+• Accessible to any assistive technology like screen readers
+• Save time and save lives!
+
+Example 2: Well-structured documents help readers 
+         Headings and organize and process texts Document Structure 
+
+Headings are styles to give a document structure by category or topic. 
+Without headings, a person using assistive technology like a screen reader cannot navigate by sections, subsections, or scan section titles to understand the document structure. Heading Styles
+• Heading Styles (Heading 1 through Heading 6) in a logical sequence. Do not skip heading levels i.e. Heading 2 to Heading 4, headings should be in order.)
+• Heading 1: Document title or main content heading/title (just one)
+• Heading 2: Major section heading
+• Heading 3: Sub-section of the Heading 2
+• Heading 4: Sub-section of the Heading 3, and so on, ending with Heading 6
+• Normal: Text or paragraph
+• Title in Word Style won't recognize when converting to a PDF. Start with Heading 1 for the document title.
+• How to create an accessible document using Microsoft Word, visit Word Essentials page www.csun.edu/udc/word 
+Windows: Converting Word Document to PDF
+1. Select File from the menu and select Save As. Choose where you want to save the file.
+2. In the Save As dialog box, choose PDF in the Save as type list.
+3. Select Options button in the same dialog box, make sure to select these boxes
+• Document structure tags for accessibility
+• Document Properties
+• Create bookmarks using: Headings 4. Select OK and Save the PDF.
+Mac: Converting Word Document to PDF
+1. Select File from the menu and select Save As. Choose where you want to save the file.
+2. In the Save As dialog box, choose PDF (Export Formats) in the File Format.
+3. Select 1st radio button "Best for electronic distribution and accessibility (Uses Microsoft online service)"
+4. Select Export button
+
+
+How to open PDF files from Adobe Acrobat not Web Browser by default?
+Windows
+• Save PDF files on desktop
+• Right-click on PDF file, select 
+Open with, Choose another app
+
+Option 2: Newer Adobe Acrobat 2024
+
+
+
+Tags Panel, 1 of 2 
+Accessible PDF means every piece of content must be tagged with the correct tag.
+Tags are invisible identifiers that will tell screen readers and other assistive technology (AT) an object is... 
+• Paragraphs of body text: <P>
+• Headings and subheads: <H1> - <H6>
+• Lists: <L>, <LI>
+• Tables: <Table>, <TR>, <TH>, <TD>
+• Graphics have Alt-Text that describe the visual: <Figure>
+• Hyperlinks: <Link>
+• Captions, and other parts of a document: <Caption>
+• Decorative images: <Artifact>
+Ensure the tags are in the correct logical reading order to match the document pane.
+Tags Panel, 2 of 2
+
+Check for Accessibility 
+First run the Check for Accessibility at the beginning and at the end of the documents.
+
+
+
+How to Tag a Document?
+1. Prepare for accessibility, Fix reading order
+2. Draw a rectangle around the content 
+3. Select one of Reading Order buttons to tag it
+4. Proceed step #2 above to tag the rest of the content
+
+Heading Tags Sample
+
+• Heading 1: Document title or main content heading/title (just one)
+• Heading 2: Major section heading
+• Heading 3: Sub-section of the Heading 2
+• Heading 4: Sub-section of the Heading 3, and so on, ending with Heading 6
+
+
+List and Links Tags Sample
+
+
+
+
+Image Alternative or Alt Text• The purpose of Alt Text is to allow low vision or blind users who use text-to-speech assistive technologies (AT), such as screen readers, to understand the purpose of graphic images. Sighted users usually don't see alt text unless they use AT.
+• Screen readers and other AT can't convert images into texts. So, when writing alt text, consider the following for images:o Describe the content and the purpose of the image clearly and concisely, in a phrase or a sentence or two. Keep alt text short 200 characters or less. o Image with text (for example, the CSUN wordmark) should include the words on the image. 
+o "Image of...", "Photo of..." is not needed because screen readers and other AT announce that it's an "image" or "graphic".
+Screen readers and other AT announce that it's an "image" or "graphic",  then read the alt text: "Three plants going through transformation with text quote Accessibility user-friendly document for CSUN student success."oWhen completing the alt text, use proper punctuation such as periods to indicate the end of the alt text. Without proper punctuation, some screen readers will run the alt text into the body text that follows and cause confusion to the user.oDon't insert hyperlinks in alt text because they are not clickable and can't create descriptive link text.  A stair chase leading up to an entryway is painted yellow with bold black text that reads museums are now.A hand reaches out of a computer screen giving the hand gesture for stop. The screen reads 'access denied!'On the left is the book cover for Haben The Deafblind 
+Woman Who Conquered Harvard Law, and on the 
+right is the quote: "In the Tigrinya language of Eritrea 
+and Ethiopia, Haben means 'pride.'"How to Describe Images?
+More examples of How to Describe Images•Document Learning Tools: Describing images•How to Describe Images (Art, Chemistry, 
+Diagrams, Flow Charts, Formatting & Layout, 
+Graphs, Maps, Mathematics, Page Layout, Tables, Text-only images)•Periodic Table of the Elements•UDC Best Practices for Describing ImagesStudent holds a diploma hardcover up in the air 
+Michelle Obama claps and Barack waves.	during CSUN commencement. Caption text "and together, as Matadors, we will move mountains."
+
+
+
+
+
+
+Delete Empty Tags
+Empty tags mean no text underneath the tags. Screen readers will say "Blank". Recommend to delete any empty tags by selecting <P> or <H2>, right-click to select "Delete Tags".
+
+What are PDF Title and Language?
+
+Title
+• A PDF title is a more descriptive and meaningful version of the file name. PDF titles are often visible in the PDF window or tab. This visibility makes it easier to distinguish multiple PDFs before diving in.
+• When multiple PDFs are open, well defined PDF titles allow for easier distinction between them. This distinction is particularly useful when relying on screen readers.
+
+Language
+Screen readers can "speak" various languages-as long the content language is identified. If the screen reader does not support or cannot speak the defined language, the user might be informed of the content language, even if that content cannot be properly read.
+WebAIM: Document and Content Language
+
+Common Issues - Title shown as a failure
+Acrobat did not recognize the Title from Word Document, simply right-click Title item and select "Fix". 
+The document description gives the document a proper title and language to be recognized by assistive technology. • Select File menu > Properties
+• Description tab, enter Title box is document title or main content heading/title (deselect Leave As Is, if necessary).
+• Application box showing the source document created from Word to PDF.
+
+
+
+
+Verify Color Contrast
+• Download Colour Contrast Analyser onto your computer (PC/Mac) to ensure accessible contrast or use an online contrast checker from WebAIM.
+
+
+People who have low vision or 
+colorblind could encounter some 	This example has a great color difficulty distinguishing text color 	contrast ratio of 8.7:1. The from a background color if the 	contrast is sufficient for those contrast is insufficient contrast ratio 	who have color deficiencies 1.5:1. 
+• WCAG Level AA requires a contrast ratio of at least 4.5:1 for regular sized text (12 or 14 pt. font) and 3:1 for large text (18 pt. font).
+• Coblis Color Blindness Simulator
+
+Repairing Reading Order, 1 of 2
+Ensure the Tags Tree are in the correct logical order to match the document pane. This example illustrated that  <P> tag is read first which is incorrect reading order. The <H1> for Universal Design Center should read first. How do we repair the reading order? Proceed next slide
+
+
+
+Verify Tags Logical Reading Order
+Ensure the tags are in the correct logical reading order to match the document pane for the screen readers and other assistive technology users. Navigate starting from the top of the tags tree and move through each tag in sequentially using the down arrow key. In case any tag is not in the correct order, grab that specific tag, then move up or down in the right order. Occasionally,  the Order Panel is out of sync with Tags tree. 
+
+Repair Tags Structure
+In case you found incorrect pre-assigned tag i.e. <P> for heading title "Universal Design Center" when it should be tagging as <H1>. There are three different ways to correct the tag from <P> to <H1> in below examples.
+Option 1: Re-draw a rectangle around the 	Option 2: Double-click the tag i.e. <P> 	Option 3: Select <P> tag, right-click to select content, select one of the Reading Order 	then re-type to <H1>	Properties. Type box: select Heading Level 1
+
+What is the Content Panel? 
+• The Content Panel shows you the elements on a page and hold all the content within your PDF. 
+• You should be familiar with structural elements of PDF documents before editing them in the Content Panel.
+• The Content Panel can be difficult to navigate because it is not properly organized.
+• Editing your Content Panel is most helpful when you have PDFs with lots of graphics or overlapping information. If content is hidden in your PDF, you can go to the Content Panel to find it and reorganize to find the missing info.  
+Launch the Tags Panel or the Content Panel
+• If you have errors in an Acrobat Accessibility Check, you should have the option to show the error in either the Content Panel or the Tags Panel or both.
+• This lets you quickly see what the problem is.
+• In most cases, activating/clicking on the error will let you see what it is in the document, but being able to see it in either or both the Content and Tags Panels takes you right to the problem. 
+Check for Accessibility Again...
+• Go through each section that has one or more issues/failed to fix it until all sections passed.  
+• Two question marks       will always stay in Document (2 issues) section even if you right-click and select Pass. It just there as a reminder to conduct manual check.
+
+Enhance document accessibility with cloud-based auto-tagging
+Learn how to use Acrobat's cloud-based auto-tagging feature to create accurate and detailed tags enhancing accessibility for screen readers. Read more about Enhance document accessibility with cloud-based auto-tagging.
+Use the cloud-based auto-tagging feature from the Accessibility tool
+1. Open a PDF in Acrobat and choose All tools > Prepare for accessibility > Autotag document.
+2. Acrobat prompts if you want to enable cloud-based auto-tagging for accessibility. Select Enable.
+3. Run Check for Accessibility to fix any issues/errors.
+4. Verify each tag element to match the document pane.
+5. Ensure the tags are in the correct logical reading order to match the document pane.
+
+
+   Use screen reader to finalize your document accessibility features
+DO NOT use Adobe Acrobats built-in 'Read Out Lout' tool as a screen reader. This tool is 
+NOT a screen reader and will not capture the same information as screen readers below.
+
+
+Microsoft Windows NVDA screen reader that allows blind and visually impaired users to read the screen either with a text-to-speech output or by a refreshable Braille display. NVDA can be downloaded free of charge by anyone. nvaccess.org
+• Apple VoiceOver built-in provides auditory descriptions of each onscreen element using gestures, a keyboard, or a braille display.
+
+

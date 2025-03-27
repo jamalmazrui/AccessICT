@@ -1,0 +1,1657 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Web Accessibility Principles applied</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Gill Sans MT";
+	panose-1:2 11 5 2 2 1 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:115.8pt;
+	margin-bottom:40.25pt;
+	margin-left:.5pt;
+	text-align:center;
+	text-indent:-.5pt;
+	line-height:130%;
+	page-break-after:avoid;
+	font-size:48.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:22.3pt;
+	margin-left:4.15pt;
+	text-align:center;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#C5E672;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:37.85pt;
+	margin-left:28.05pt;
+	text-align:center;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:14.8pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:40.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:normal;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri",sans-serif;
+	color:white;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#C5E672;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:white;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:960.0pt 7.5in;
+	margin:48.35pt 1.15in 20.4pt 55.2pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:960.0pt 7.5in;
+	margin:20.9pt 1.0in 20.9pt 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection7
+	{page:WordSection7;}
+@page WordSection8
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection8
+	{page:WordSection8;}
+@page WordSection9
+	{size:960.0pt 7.5in;
+	margin:48.35pt 59.4pt 95.35pt 55.2pt;}
+div.WordSection9
+	{page:WordSection9;}
+@page WordSection10
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection10
+	{page:WordSection10;}
+@page WordSection11
+	{size:960.0pt 7.5in;
+	margin:49.7pt 1.3in 10.55pt 93.4pt;}
+div.WordSection11
+	{page:WordSection11;}
+@page WordSection12
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection12
+	{page:WordSection12;}
+@page WordSection13
+	{size:960.0pt 7.5in;
+	margin:48.35pt 74.55pt 41.85pt 74.45pt;}
+div.WordSection13
+	{page:WordSection13;}
+@page WordSection14
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection14
+	{page:WordSection14;}
+@page WordSection15
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection15
+	{page:WordSection15;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image001.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image002.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image003.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image004.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image005.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image006.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image007.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image008.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image009.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image010.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image011.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image012.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image013.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:18.45pt;margin-left:
+28.05pt;line-height:107%'><span style='font-size:44.0pt;line-height:107%;
+color:white'>WCAG Zoom Requirements</span></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:62.25pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>1.4.4
+Resize text (Level AA)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.1pt;
+margin-left:62.25pt;text-indent:-27.0pt;line-height:90%'><span
+style='font-size:32.0pt;line-height:90%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895812096'><span
+style='left:0px;position:absolute;left:-74px;top:-230px;width:1280px;
+height:720px'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image014.gif"></span></span><span
+style='font-size:28.0pt;line-height:90%;color:white'>“Except for captions and
+images of text, text can be resized without assistive technology up to 200%
+without loss of content or functionality.”</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.6pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:28.0pt;line-height:107%;color:white'>Zoom to 200% is
+supported.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:62.25pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>1.4.10
+Reflow (Level AA - WCAG 2.1)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.6pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:28.0pt;line-height:107%;color:white'>“Content can be presented
+without loss of information or functionality…” and without horizontal scrolling
+(except when necessary) at 400% zoom with viewport width at 1280 pixels.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:62.25pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Consider
+text sizing</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.6pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:28.0pt;line-height:107%;color:white'>Perhaps to 130%-150%</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image015.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image016.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image017.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image018.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:877.2pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image019.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:115.8pt;
+margin-bottom:19.4pt;margin-left:0in;text-align:right'><span style='font-size:
+48.0pt;line-height:107%'>WCAG 2.1: Non-text Contrast</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.6pt;
+margin-left:17.75pt;text-indent:-.5pt'><span style='font-size:36.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•</span><span
+style='font-size:36.0pt;line-height:107%'>Level AA</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:17.75pt;text-indent:-.5pt'><span style='font-size:36.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•</span><span
+style='font-size:36.0pt;line-height:107%'>3:1 contrast of:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:32.0pt;line-height:107%'>User Interface Components</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.05pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:28.0pt;line-height:107%'>Including states (focus indicators,
+hover states, etc.) </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:62.25pt;text-indent:-27.0pt'><span style='font-size:32.0pt;
+line-height:107%;font-family:"Arial",sans-serif;color:white'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:32.0pt;line-height:107%'>Graphical Objects</span></p>
+
+<h1 align=left style='margin-top:0in;margin-right:0in;margin-bottom:114.75pt;
+margin-left:269.7pt;text-align:left;text-indent:0in;line-height:107%'>UI
+“Boundaries”</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.45pt;
+margin-left:31.6pt;text-indent:-.5pt'><img width=85 height=85 id="Group 15544"
+src="Web%20Accessibility%20Principles%20Applied_files/image020.gif"><span
+style='font-size:40.0pt;line-height:107%;color:#3B3838'> I have read and agree
+to the </span><u><span style='font-size:40.0pt;line-height:107%;color:#4472C4'>Terms
+of Use</span></u></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:40.25pt;margin-left:
+28.0pt'>UI “Boundaries”</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:97.95pt;
+margin-left:106.8pt'><img width=848 height=129 id="Picture 309"
+src="Web%20Accessibility%20Principles%20Applied_files/image021.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:140.7pt;text-indent:-.5pt'><span style='font-size:32.0pt;
+line-height:107%'>… except when “determined by user agent”</span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:104.05pt;margin-left:
+28.0pt'>UI “States”</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.45pt;
+margin-left:31.6pt;text-indent:-.5pt'><img width=85 height=85 id="Group 15552"
+src="Web%20Accessibility%20Principles%20Applied_files/image022.gif"><span
+style='font-size:40.0pt;line-height:107%;color:#3B3838'> I have read and agree
+to the </span><u><span style='font-size:40.0pt;line-height:107%;color:#4472C4'>Terms
+of Use</span></u></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-52.8pt;margin-bottom:
+0in;margin-left:-19.2pt'><img width=1192 height=182 id="Picture 320"
+src="Web%20Accessibility%20Principles%20Applied_files/image023.jpg"></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:48.0pt'><img width=960 height=664 id="Picture 325"
+src="Web%20Accessibility%20Principles%20Applied_files/image024.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:48.0pt'><img width=960 height=664 id="Picture 330"
+src="Web%20Accessibility%20Principles%20Applied_files/image025.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.9pt;margin-bottom:
+0in;margin-left:-5.9pt'><img width=1104 height=623 id="Picture 335"
+src="Web%20Accessibility%20Principles%20Applied_files/image026.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image027.jpg"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image028.jpg"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image029.jpg"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image030.jpg"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image031.jpg"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image032.jpg"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image033.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image034.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image035.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image036.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image037.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image038.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image039.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image040.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image041.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image042.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=720
+src="Web%20Accessibility%20Principles%20Applied_files/image043.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=294
+src="Web%20Accessibility%20Principles%20Applied_files/image044.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image047.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection8>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image048.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection9>
+
+<h2>WCAG Pause, Stop, Hide (Level A)</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.25pt;
+margin-left:27.0pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895748608'><span
+style='left:0px;position:absolute;left:-74px;top:-29482px;width:1280px;
+height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image049.gif"></span></span><span
+style='font-size:32.0pt;line-height:102%;color:white'>For any moving, blinking
+or scrolling information that (1)  starts automatically, (2) lasts more than
+five seconds, and (3) is presented in parallel with other content, there is a
+mechanism for the user to pause, stop, or hide it...; and</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:27.0pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>For
+any auto-updating information that (1) starts automatically and (2) is
+presented in parallel with other content, there is a mechanism for the user to
+pause, stop, or hide it or to control the frequency of the update.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h3 style='margin-right:23.5pt'>Language of Page</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:22.5pt;text-indent:27.95pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;color:white'>Most people today can
+hardly conceive of life without the internet. Some have argued that no other
+single invention has </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:10.15pt;text-indent:-.5pt;line-height:102%'><span style='font-size:
+32.0pt;line-height:102%;color:white'>been more revolutionary since Gutenberg's
+printing press in the </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:5.9pt;text-indent:17.55pt;line-height:102%'><span style='position:
+relative;z-index:-1895741440'><span style='left:0px;position:absolute;
+left:-74px;top:-35230px;width:1280px;height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image049.gif"></span></span><span
+style='font-size:32.0pt;line-height:102%;color:white'>1400s. Now, at the click
+of a mouse, the world can be “at your fingertips”—that is, if you can use a
+mouse... and see the screen... and hear the audio—in other words, if you don't
+have a disability of any kind.</span></p>
+
+<h3 style='margin-right:23.5pt'>Language of Page</h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:22.5pt;text-indent:27.95pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;color:white'>Most people today can
+hardly conceive of life without the internet. Some have argued that no other
+single invention has </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:10.15pt;text-indent:-.5pt;line-height:102%'><span style='font-size:
+32.0pt;line-height:102%;color:white'>been more revolutionary since Gutenberg's
+printing press in the </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:5.9pt;text-indent:17.55pt;line-height:102%'><span style='position:
+relative;z-index:-1895740416'><span style='left:0px;position:absolute;
+left:-74px;top:-36019px;width:1280px;height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image050.gif"></span></span><span
+style='font-size:32.0pt;line-height:102%;color:white'>1400s. Now, at the click
+of a mouse, the world can be “at your fingertips”—that is, if you can use a
+mouse... and see the screen... and hear the audio—in other words, if you don't
+have a disability of any kind.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:900.6pt;margin-bottom:
+0in;margin-left:-55.2pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection10>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image051.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image052.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image053.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection11>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.95pt;
+margin-left:28.6pt;text-indent:-.5pt'><span style='font-size:44.0pt;line-height:
+107%;font-family:"Gill Sans MT",sans-serif;color:white'>ARIA and HTML </span><span
+style='font-size:44.0pt;line-height:107%;color:white'>labels and descriptions</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.75pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Elements
+must be “labelable”</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Link,
+form control, table, etc. NOT &lt;div&gt;, &lt;span&gt;, &lt;p&gt;, etc.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.75pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Or
+have an appropriate ARIA role</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895698432'><span
+style='left:0px;position:absolute;left:-125px;top:-67150px;width:1280px;
+height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image049.gif"></span></span><span
+style='font-size:32.0pt;line-height:102%;color:white'>Are read as a stream of
+text. Users cannot easily navigate or explore the referenced content.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Semantics
+(lists, links, etc.) are removed from referenced content.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:69.8pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;color:white'>Should
+be succinct.</span></p>
+
+<h4><span style='font-family:"Gill Sans MT",sans-serif'>Hidden ARIA and HTML </span>labels
+and descriptions</h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.75pt;margin-bottom:
+7.9pt;margin-left:51.9pt;text-indent:-27.0pt;line-height:102%'><span
+style='font-size:32.0pt;line-height:102%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:32.0pt;line-height:102%;font-family:"Courier New";
+color:white'>&lt;label&gt; </span><span style='font-size:32.0pt;line-height:
+102%;color:white'>hidden with CSS </span><span style='font-size:32.0pt;
+line-height:102%;font-family:"Courier New";color:white'>display:none </span><b><span
+style='font-size:32.0pt;line-height:102%;color:white'>will not </span></b><span
+style='font-size:32.0pt;line-height:102%;color:white'>be read by screen
+readers.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.75pt;margin-bottom:
+19.9pt;margin-left:51.9pt;text-indent:-27.0pt;line-height:111%'><span
+style='font-size:32.0pt;line-height:111%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895697408'><span
+style='left:0px;position:absolute;left:-125px;top:-67834px;width:1280px;
+height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image049.gif"></span></span><span
+style='font-size:32.0pt;line-height:111%;color:white'>Elements hidden with </span><span
+style='font-size:32.0pt;line-height:111%;font-family:"Courier New";color:white'>display:none</span><span
+style='font-size:32.0pt;line-height:111%;color:white'>, but referenced by </span><span
+style='font-size:32.0pt;line-height:111%;font-family:"Courier New";color:white'>aria-labelledby
+</span><span style='font-size:32.0pt;line-height:111%;color:white'>or </span><span
+style='font-size:32.0pt;line-height:111%;font-family:"Courier New";color:white'>ariadescribedby
+</span><b><span style='font-size:32.0pt;line-height:111%;color:white'>WILL </span></b><span
+style='font-size:32.0pt;line-height:111%;color:white'>be read.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.45pt;
+margin-left:54.55pt;text-indent:-.5pt;line-height:107%'><span style='font-size:
+24.0pt;line-height:107%;font-family:"Courier New";color:white'>&lt;label
+for=&quot;user&quot;&gt;Username:&lt;/label&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.45pt;
+margin-left:54.55pt;text-indent:-.5pt;line-height:107%'><span style='font-size:
+24.0pt;line-height:107%;font-family:"Courier New";color:white'>&lt;input
+type=&quot;text&quot; id=&quot;user&quot;
+aria-describedby=&quot;usernameerror&quot;&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:54.55pt;text-indent:-.5pt;line-height:107%'><span style='font-size:
+24.0pt;line-height:107%;font-family:"Courier New";color:white'>&lt;p
+id=&quot;usernameerror&quot; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.45pt;
+margin-left:54.55pt;text-indent:-.5pt;line-height:107%'><b><span
+style='font-size:24.0pt;line-height:107%;font-family:"Courier New";color:white'>style=&quot;display:none&quot;&gt;</span></b><span
+style='font-size:24.0pt;line-height:107%;font-family:"Courier New";color:white'>This
+username is already taken. Please try again.&lt;/p&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:866.4pt;margin-bottom:
+0in;margin-left:-93.4pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection12>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image054.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection13>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.9pt;
+margin-left:-.25pt;text-indent:-.5pt'><span style='font-size:44.0pt;line-height:
+107%;color:white'>WCAG 2.1 – Identify Input Purpose (Level AA)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.9pt;
+margin-left:7.0pt;line-height:98%'><span style='font-size:29.0pt;line-height:
+98%;color:white'>The purpose of each input field collecting information about
+the user can be programmatically determined when:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.75pt;margin-bottom:
+8.9pt;margin-left:51.9pt;text-indent:-27.0pt;line-height:98%'><span
+style='font-size:32.0pt;line-height:98%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895691264'><span
+style='left:0px;position:absolute;left:-99px;top:-72583px;width:1280px;
+height:1px'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image049.gif"></span></span><span
+style='font-size:29.0pt;line-height:98%;color:white'>The input field serves a
+purpose identified in the Input Purposes for User Interface Components section;
+and</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.75pt;margin-bottom:
+92.3pt;margin-left:51.9pt;text-indent:-27.0pt;line-height:98%'><span
+style='font-size:32.0pt;line-height:98%;font-family:"Arial",sans-serif;
+color:white'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:29.0pt;line-height:98%;color:white'>The
+content is implemented using technologies with support for identifying the
+expected meaning for form input data.</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.15pt;
+margin-bottom:0in;margin-left:6.6pt;text-align:center;line-height:103%'><span
+style='font-size:29.0pt;line-height:103%;color:white'>Currently requires
+appropriate </span><span style='font-size:29.0pt;line-height:103%;font-family:
+"Courier New";color:white'>autocomplete </span><span style='font-size:29.0pt;
+line-height:103%;color:white'>attribute values for inputs that collect user
+information.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:885.45pt;margin-bottom:
+0in;margin-left:-74.45pt'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection14>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image055.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection15>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image045.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Web%20Accessibility%20Principles%20Applied_files/image046.gif"><br
+clear=ALL>
+</p>
+
+</div>
+
+</body>
+
+</html>

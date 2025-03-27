@@ -1,0 +1,2033 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Conducting your own Unified Testing for Accessibility Project, December
+2015 </title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Franklin Gothic Book";
+	panose-1:2 11 5 3 2 1 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15in;
+	margin-left:41.05pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.75pt;
+	margin-left:117.6pt;
+	text-indent:-.5pt;
+	line-height:95%;
+	page-break-after:avoid;
+	font-size:36.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:1.2pt;
+	margin-left:41.05pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Franklin Gothic Book",sans-serif;
+	color:black;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.9pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Franklin Gothic Book",sans-serif;
+	color:black;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:3.9pt;
+	margin-left:36.5pt;
+	text-align:center;
+	text-indent:-.5pt;
+	line-height:110%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:4.65pt;
+	margin-left:55.25pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Franklin Gothic Book",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.footnotedescription, li.footnotedescription, div.footnotedescription
+	{mso-style-name:"footnote description";
+	mso-style-link:"footnote description Char";
+	margin:0in;
+	line-height:106%;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.footnotedescriptionChar
+	{mso-style-name:"footnote description Char";
+	mso-style-link:"footnote description";
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Franklin Gothic Book",sans-serif;
+	color:black;}
+span.footnotemark
+	{mso-style-name:"footnote mark";
+	font-family:"Times New Roman",serif;
+	color:black;
+	vertical-align:super;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:37.8pt 1.0in 67.1pt 31.45pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:8.5in 11.0in;
+	margin:37.55pt 71.95pt 67.1pt 1.0in;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:8.5in 11.0in;
+	margin:37.8pt 71.8pt 103.65pt 1.0in;}
+div.WordSection7
+	{page:WordSection7;}
+@page WordSection8
+	{size:8.5in 11.0in;
+	margin:1.0in 75.2pt 1.0in 1.0in;}
+div.WordSection8
+	{page:WordSection8;}
+@page WordSection9
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection9
+	{page:WordSection9;}
+@page WordSection10
+	{size:8.5in 11.0in;
+	margin:49.2pt 75.2pt 1.0in 1.0in;}
+div.WordSection10
+	{page:WordSection10;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.4pt;
+margin-left:40.55pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:0in;text-indent:0in;line-height:107%'><i><span style='font-size:
+30.0pt;line-height:107%;color:#002E80'>Office of Accessible Systems &amp;
+Technology </span></i></p>
+
+<p class=MsoNormal style='margin:0in;line-height:107%'><span style='font-size:
+58.0pt;line-height:107%;color:#002E80'>Conducting your own </span></p>
+
+<p class=MsoNormal style='margin:0in;line-height:107%'><img width=816
+height=533
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image001.gif"><br
+clear=ALL>
+<span style='font-size:58.0pt;line-height:107%;color:#002E80'>Unified Testing
+for </span></p>
+
+<p class=MsoNormal style='margin:0in;line-height:107%'><span style='font-size:
+58.0pt;line-height:107%;color:#002E80'>Accessibility Project, December 2015 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25pt;text-indent:0in;line-height:107%'><i><span style='font-size:
+22.0pt;line-height:107%;color:#002E80'>December 2015   Release 1.0 </span></i><br
+clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.9pt;
+margin-left:40.55pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-bottom:10.4pt'><span style='font-size:24.0pt;
+line-height:104%;font-family:"Franklin Gothic Book",sans-serif'>Document
+Revision History </span></p>
+
+<p class=MsoNormal style='margin-bottom:596.0pt'><sup><span style='font-size:
+18.5pt;line-height:104%;font-family:"Franklin Gothic Book",sans-serif'>1.</span></sup><span
+style='font-family:"Arial",sans-serif'> </span>Release 1.0 – Conducting your
+own Unified Testing for Accessibility Project, December 2015 <span
+style='font-size:24.0pt;line-height:104%;font-family:"Franklin Gothic Book",sans-serif'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:23.35pt;line-height:107%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>ii </span></p>
+
+<p class=MsoNormal style='margin-bottom:1.2pt'><span style='font-size:24.0pt;
+line-height:104%;font-family:"Franklin Gothic Book",sans-serif'>About DHS-OAST </span></p>
+
+<p class=MsoNormal>The Office of Accessible Systems &amp; Technology (OAST)
+provides strategic direction, governance, technical support, and training to
+ensure Department of Homeland Security (DHS) employees and customers with
+disabilities have equal access to information and data. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:77.05pt'>Office of Accessible Systems &amp; Technology (OAST) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:77.05pt'>Department of Homeland Security </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:77.05pt'>245 Murray Lane, SW </p>
+
+<p class=MsoNormal style='margin-left:77.05pt'>Washington, DC 20528 </p>
+
+<p class=MsoNormal style='margin-bottom:480.0pt'>For electronic copies of this
+report, and for more information on how to contact OAST, see <i>The Interagency
+Trusted Tester Program (ITTP)</i> on page 25. </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.75pt;
+margin-bottom:33.55pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>iii </span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:-.25pt'><span style='font-size:24.0pt;line-height:104%;font-family:
+"Franklin Gothic Book",sans-serif'>Contents </span></p>
+
+<p class=MsoToc1><a href="#_Toc17170"><span style='color:black;text-decoration:
+none'>Introduction and Overview.................................................................................................. </span><span style='color:black;text-decoration:none'>1 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17171"><span style='color:black;text-decoration:
+none'>Introducing the Unified Testing for Accessibility Project............................................. </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17172"><span style='color:black;text-decoration:
+none'>Overview of the UTAP Process and Stages.................................................................. </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17173"><span style='color:black;text-decoration:
+none'>Preparation.................................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17174"><span style='color:black;text-decoration:
+none'>Getting Help.................................................................................................................. </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17175"><span style='color:black;text-decoration:
+none'>Providing Feedback....................................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc17176"><span style='color:black;text-decoration:
+none'>Stage-by-Stage Guidance.................................................................................................... </span><span style='color:black;text-decoration:none'>7 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17177"><span style='color:black;text-decoration:
+none'>Stage 1: Set your goals.................................................................................................. </span><span style='color:black;text-decoration:none'>8 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17178"><span style='color:black;text-decoration:
+none'>Stage 2: Get familiar with your own agency............................................................... </span><span style='color:black;text-decoration:none'>11 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17179"><span style='color:black;text-decoration:
+none'>Stage 3: Familiarize yourself with available options.................................................. </span><span style='color:black;text-decoration:none'>14 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17180"><span style='color:black;text-decoration:
+none'>Stage 4: Design the system.......................................................................................... </span><span style='color:black;text-decoration:none'>15 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17181"><span style='color:black;text-decoration:
+none'>Stage 5: Develop an implementation plan.................................................................. </span><span style='color:black;text-decoration:none'>17 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17182"><span style='color:black;text-decoration:
+none'>Stage 6. Implement and monitor................................................................................. </span><span style='color:black;text-decoration:none'>19 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc17183"><span style='color:black;text-decoration:
+none'>Appendix A – UTAP Stage Checklist.......................................................................... </span><span style='color:black;text-decoration:none'>20 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc17184"><span style='color:black;text-decoration:
+none'>The Interagency Trusted Tester Program (ITTP).............................................................. </span><span style='color:black;text-decoration:none'>25 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc17185"><span style='color:black;text-decoration:
+none'>The UTAP Team................................................................................................................ </span><span style='color:black;text-decoration:none'>27 </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.75pt;
+margin-bottom:33.55pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>v </span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<h1><img width=2 height=351
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image002.gif"
+align=left hspace=12><a name="_Toc17170">Introduction and Overview<br
+clear=all style='page-break-before:always'>
+</a></h1>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+margin-bottom:46.45pt;margin-left:.5pt;text-align:center;line-height:110%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>The UTAP Guide </span></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc17171">Introducing the Unified
+Testing for Accessibility Project </a></h2>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The Unified Testing for
+Accessibility Project (UTAP) Pilot was conducted from the fall of 2013 to the
+summer of 2015. In the UTAP Pilot, Department of Homeland Security (DHS) staff
+from the Office of Accessible Systems &amp; Technology (OAST) assisted four
+outside federal agencies in their adoption of the ‘Trusted Tester’ (TT)
+approach. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The TT approach is used in
+testing conformance with Section 508 software and website accessibility
+standards. The TT approach utilizes code-based inspection, facilitating an
+efficient testing-during-development methodology. Code-based inspection is easy
+to learn, and uses techniques that are familiar to most programmers. A
+comprehensive training course was developed for applying the TT process. After
+passing the exam at the end of the course, students are considered “Trusted
+Testers”.  </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>DHS began mandating that in order
+to pass various gate reviews in the systems development lifecycle (SDLC),
+products had to be examined by Trusted Testers (TTs). As a result, TTs were
+placed in DHS component Section 508 teams and also into product development
+teams. Placing TTs in development teams enabled OAST to ensure that the Section
+508 accessibility requirements were being incorporated throughout development. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Over time, the benefits of the
+DHS Trusted Tester approach was being recognized by outside agencies as a
+concept worthy of further investigation and possibly adopting. OAST began
+fielding requests for training attendance and use of the DHS Test Process. Personnel
+from a few outside agencies received training, but it became clear that a
+strategy was needed to handle future requests. In response to outside agency
+requests, the OAST team began to examine how to insert TT into an organization
+that has its own current method of testing. Rather than simply provide TT
+training and a copy of the test process, OAST decided to approach the challenge
+of assisting outside agencies with implementing the DHS TT process in a pilot
+study entitled the <i>Unified Testing for Accessibility Project (UTAP)</i>. We
+posited that a collaborative design exercise with other agencies, and those
+agencies’ teams taking ownership of their own process around TT would increase
+the likelihood of long-term adoption of (and benefits of) the test process. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:34.3pt;
+margin-left:-.25pt'>In the UTAP Pilot, OAST staff helped people in four
+disparate agencies adopt a common approach to testing. In doing so, we helped
+them address the wider organizational issues around Section 508 testing.
+Besides helping the staff of four federal agencies, the UTAP Pilot had an
+additional goal. This goal was for the DHS staff to learn about the types of
+issues and obstacles that would have to be addressed at different agencies as
+they adopt TT. Throughout the pilot project, staff gained insights into diverse
+organizational cultures and hopefully those lessons can be applied to the
+benefit of other federal agencies, and other organizations. This guide is the
+culmination of that activity, bringing together our current knowledge of how to
+best implement TT in an organization. As more federal agencies adopt TT and
+lessons are learned, this document will be updated accordingly. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.35pt;
+margin-left:-.25pt;line-height:107%'><span style='font-family:"Franklin Gothic Book",sans-serif'>2
+</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:22.45pt;margin-left:.5pt;text-align:center;line-height:110%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>Conducting your own UTAP:
+Introduction and Overview </span></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc17172">Overview of the UTAP Process
+and Stages </a></h2>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Conducting your own Unified
+Testing for Accessibility Project ( UTAP) will likely entail a multimonth
+project involving many staff. UTAP is anchored around the implementation the
+Trusted Tester (TT) process for evaluating Web and software applications for
+Section 508 standards conformance. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The following guidance is a
+modified form of the approach used in the UTAP Pilot. Modifications have been
+made based on the results of the UTAP Pilot and what was learned in the case
+studies. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.25pt;
+margin-left:-.25pt'>The UTAP process involves engagement with end-users during
+six sequential stages. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 1: Set your goals </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 2: Get familiar with your own agency </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 3: Familiarize yourself with available options </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 4: Design the system </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 5: Develop an implementation plan </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Stage 6. Implement, and monitor </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.85pt;
+margin-left:-.25pt;line-height:110%'>Note: <i>The accompanying UTAP Report
+contains more detailed explanation of the rationale for each of the stages. We
+recommend that you read the UTAP Report, this entire guide and the
+prerequisites (referenced below) before embarking on any project work. </i></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:14.5pt;margin-left:
+-.25pt'><a name="_Toc17173">Preparation </a></h2>
+
+<h3 style='margin-left:-.25pt'>The goals of conducting a UTAP </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:-.25pt;line-height:110%'><i>This guide is intended to help you
+successfully implement Trusted Tester (TT) at your agency, by conducting your
+own Unified Testing for Accessibility Project (UTAP). </i></p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The <i>ultimate</i> goal of
+conducting your own UTAP is to improve the accessibility of IT systems at your
+agency, to benefit people with disabilities. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The <i>main</i> goal of
+conducting your own UTAP is to improve the <i>way</i> that IT systems are
+developed and tested for accessibility. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The ultimate goal of benefitting
+end users who have disabilities is achieved <i>indirectly</i>, by achieving the
+main goal of improving development and testing. </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+margin-bottom:26.15pt;margin-left:.5pt;text-align:center;line-height:110%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>The UTAP Guide </span></p>
+
+<h3 style='margin-left:-.25pt'>Know your end users </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:-.25pt'>The end-users of the results of the UTAP process are people
+involved in development and testing of IT: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.5pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Primary end users:</b> those involved in procuring,
+designing, developing, delivering, managing and maintaining IT systems; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.2pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Secondary end users:</b> those at your agency who are
+managing and directly involved with your Section 508 and other
+accessibility-related programs. </p>
+
+<h3 style='margin-left:-.25pt'>Read the prerequisites </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:-.25pt'>Before commencing your own UTAP, you should read and become
+familiar with the following information located on the <a
+href="http://www.dhs.gov/accessibility"><span style='color:#3D3D3E'>http://www.dhs.gov/accessibility</span></a><a
+href="http://www.dhs.gov/accessibility"><span style='color:black;text-decoration:
+none'> </span></a>website (see page 25): </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.05pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>The Unified Testing for Accessibility Project (UTAP): Pilot
+Report </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.35pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>TT training course and certification information<a
+href="#_ftn1" name="_ftnref1" title=""><sup><sup><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif;color:black'>[1]</span></sup></sup></a>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>DHS Section 508 Compliance Test Process for Applications </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.35pt;
+margin-left:-.25pt'>Once you have completed the above reading, the following
+guide will make much more sense, and will be much easier to follow. </p>
+
+<h3 style='margin-left:-.25pt'>Assess your skills </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>For the team selected to conduct
+the UTAP process, if there are known skills gaps then the number of potential
+risks of failure will increase. The risks, in the most basic terms, are of
+wasting time, effort, and resources. A few examples of risks to a UTAP project
+that we can hypothesize include: Possible rejection of the TT process by teams
+who are entrenched in their current methods of Section 508 testing; Possible
+rejection of the concept that the development teams ‘take on the extra work’ of
+Section 508 testing; A radical modification by your team of the TT
+process—perhaps to fit in with existing agency processes—and consequently
+negating the ability to use any interagency test repository; and Potentially
+arriving at the implementation stage (#6) only to find out that your CIO then
+decides that they don’t like the Trusted Tester idea, and quashes it (i.e.,
+something was missing in UTAP Stage 1!). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.9pt;
+margin-left:-.25pt'>We suggest reading through this entire guide with a skills
+inventory in mind. Do you and/or your team members possess the necessary skills
+to complete the tasks? The answers will depend greatly <span style='font-family:
+"Franklin Gothic Book",sans-serif'>Conducting your own UTAP: Introduction and
+Overview </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.55pt;
+margin-left:-.25pt'>on your current organizational make up and culture. The
+following skills list is a suggested starting point, but is not intended to be
+prescriptive: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.6pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Program/project management </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.7pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Organizational behavior </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.7pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Business process reengineering, and change management </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.55pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Sociotechnical aspects of disability and information
+technology </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.65pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Interviewing, and analysis of subjective data </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.65pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Systems analysis and design </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:.25in;text-indent:-.25in'><sup><span style='font-size:18.5pt;
+line-height:104%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup>Iterative design methods </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.9pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc17174">Getting Help </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:-.25pt'>If you are having difficulty with conducting a project
+based on this guide, we recommend using the following sequential steps to get
+the appropriate level of help: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.25in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Make sure you have read the prerequisites (above); </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.25in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Contact the ITTP (see page 25) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:33.2pt;
+margin-left:.25in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Consult peers who have completed their own UTAP; </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc17175">Providing Feedback </a></h2>
+
+<p class=MsoNormal style='margin-left:-.25pt'>We welcome feedback from teams
+who have followed the guide and conducted their own UTAP. We would like to hear
+about successes, challenges, and any changes that have improved the outcomes
+for your agency. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The authors also welcome feedback
+on the design and content of this guide and associated materials. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>To provide feedback, please
+contact the ITTP (page 25).</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:202.55pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h1 align=right style='margin-top:0in;margin-right:122.15pt;margin-bottom:0in;
+margin-left:117.1pt;text-align:right;text-indent:0in;line-height:107%'><img
+width=2 height=351
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image002.gif"
+align=left hspace=12><a name="_Toc17176">Stage-by-Stage Guidance</a></h1>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:11.5pt;margin-left:
+0in;text-indent:0in;line-height:107%'><a name="_Toc17177"><span
+style='color:#221F1F'>Stage 1: Set your goals</span></a><span style='font-family:
+"Times New Roman",serif;color:#221F1F'>  </span> </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:40.8pt;margin-bottom:
+27.2pt;margin-left:54.5pt;line-height:92%'><span style='color:#221F1F'>“Some
+things can not be overcome with determination and a positive attitude” –<i>
+‘Obstacles’ Demotivator</i><a href="#_ftn2" name="_ftnref2" title=""><sup><sup><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:#221F1F'>[2]</span></sup></sup></a><sup> </sup></span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:14.0pt;
+line-height:107%;font-family:"Franklin Gothic Book",sans-serif;color:#221F1F'>Suggested
+Stage 1 tasks </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.2pt;
+margin-left:.25in;text-indent:-.25in;line-height:92%'><span style='font-family:
+"Segoe UI Symbol",sans-serif;color:#221F1F'>x</span><span style='color:#221F1F'>    
+<b>Ask strategy questions:</b> we recommend that you and your team answer some
+important strategy questions at the initial outset: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.85pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:131%'><span
+style='font-family:"Courier New";color:#221F1F'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='color:#221F1F'>What is the role and responsibilities
+of our Section 508 Coordinator / Section 508 Program Manager / Accessibility
+team lead? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:245%'><span
+style='font-family:"Courier New";color:#221F1F'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='color:#221F1F'>Do we have an organization-wide
+commitment to accessibility now? </span><span style='font-family:"Courier New";
+color:#221F1F'>o</span><span style='color:#221F1F'>        What is our
+organizational culture with respect to accessibility? </span><span
+style='font-family:"Courier New";color:#221F1F'>o</span><span style='color:
+#221F1F'>            Where should Section 508 testing at our agency be located?
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:18.85pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:92%'><span style='font-family:
+"Courier New";color:#221F1F'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='color:#221F1F'>How should we test? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.2pt;
+margin-left:.25in;text-indent:-.25in;line-height:92%'><span style='font-family:
+"Segoe UI Symbol",sans-serif;color:#221F1F'>x</span><span style='color:#221F1F'>    
+<b>Ask practical questions:</b> In addition to the strategy questions, we
+recommend that you address the practical issues that may arise at the outset: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:32.65pt;margin-bottom:
+.05pt;margin-left:35.65pt;text-indent:-.25in;line-height:245%'><span
+style='font-family:"Courier New";color:#221F1F'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='color:#221F1F'>Do we have the required skills to
+conduct this project in our team? </span><span style='font-family:"Courier New";
+color:#221F1F'>o</span><span style='color:#221F1F'>           How should we
+manage this project? Use a PM? </span><span style='font-family:"Courier New";
+color:#221F1F'>o</span><span style='color:#221F1F'>      How is Section 508
+testing being funded at our agency and should it change? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:32.65pt;margin-bottom:
+13.55pt;margin-left:35.65pt;text-indent:-.25in;line-height:95%'><span
+style='font-family:"Courier New";color:#221F1F'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='color:#221F1F'>What should our timeline be for the
+entire project? How do we break that out for each stage? When should we finish
+the implementation plan (end of stage 5) and transition to the actual
+implementation (beginning of stage 6)? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.65pt;margin-bottom:
+26.05pt;margin-left:17.75pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.5pt;line-height:95%'><span style='font-family:"Segoe UI Symbol",sans-serif;
+color:#221F1F'>x</span><span style='color:#221F1F'>      <b>Conduct a program
+maturity assessment: </b>The “Section 508 Organizational Maturity Assessment”
+forms have been developed to help document the state of an organization prior
+to, or after integrating Trusted Tester. It is important to assess the level of
+maturity in various program categories in order to identify gaps, and to set
+development targets across the organization. For the forms and related
+information, see the ITTP website (page 25). </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> <span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=144 height=2 id="Group 13780"
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image003.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Educate the stakeholders involved in this stage:</b>
+What is UTAP? What is TT? What are the benefits of adopting a TT testing
+program? Address and answer stakeholder concerns and questions. (Include in
+this task your preliminary analysis / answers to the strategy and practical
+questions that were covered earlier.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:17.55pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Set the goals for your team: </b>What do you want to
+have accomplished at the end of your UTAP and when? What will count as success
+for the project?<a href="#_ftn3" name="_ftnref3" title=""><sup><sup><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'>[3]</span></sup></sup></a> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:.2in;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Set the goals for your primary end-users: </b>What <i>should</i>
+each cohort want out of the adoption of TT?  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:284.8pt;margin-bottom:
+1.35pt;margin-left:.5in;text-indent:-.25in;line-height:240%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Senior IT management <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Procurement personnel <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>Design and development teams <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Project managers <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>IT Help Desk teams <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>etc. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Avoid nominating particular staff to become TTs (at this
+stage): </b>We would strongly urge that the decisions on who must take the TT
+training should be left until later. Deciding on the <i>types</i> of personnel
+that become TTs is best left until Stage 4 (design), and then deciding <i>exactly
+who</i> (named personnel) is left to stage 5 (implementation plan). Making
+early presumptive decisions could be antithetical to the organizational needs
+that are uncovered during the subsequent stages. (During the UTAP Pilot this
+was the most common question that we had to deflect in the early stages of the
+process.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:37.95pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:208%'><sup><span style='font-size:18.5pt;line-height:208%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Set the goals for your secondary end-users:</b> What
+should those working on accessibility at your agency want or need out of TT? <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>Section 508 Coordinator(s) / Program Manager(s) <span style='font-family:
+"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'> </span>Section
+508 team members <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Section 504 (Reasonable
+Accommodations personnel) <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Employment Equity Office
+personnel </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><u>            </u> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:284.8pt;margin-bottom:
+2.1pt;margin-left:.5in;text-indent:-.25in;line-height:234%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Disability affinity groups <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>etc. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:16.5pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Set the goals for executives and management at your
+agency:</b> What performance improvements are sought by bringing in TT? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:2.55pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:226%'><sup><span style='font-size:18.5pt;line-height:226%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Decide on practical matters: </b><span style='font-family:
+"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'> </span>Set
+a budget <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Allocate appropriate personnel
+resources to manage and conduct the project. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:284.8pt;margin-bottom:
+21.35pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Set the target
+timeframe for the UTAP stages. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.2pt;margin-bottom:11.75pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Disseminate the outcome of the goal-setting activities:</b>
+Once the goals are set and the executive level backing has been secured,
+disseminate this information to the wider cohort of stakeholders who will be
+involved in the later UTAP stages. Remember that it is important to <i>prioritize</i>
+UTAP (and any wider goals around accessibility) and put it on the <i>agenda</i>.
+</p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Trusted Testers provide test
+results. The point of conducting your own UTAP is to address the ‘now what?’
+questions that come when you have TT results in hand. Who does what with the
+results? The primary end-users are scattered throughout the agency, and will be
+impacted by the project. For these reasons, we suggest setting the goals with
+the wide range of stakeholders given above. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.35pt;
+margin-left:-.25pt'>The UTAP design will work better as a collaborative
+exercise than a set of declarations. The goals stage can be used to lay the
+foundation for collaboration. </p>
+
+<h3 style='margin-left:-.25pt'>Potential challenges in Stage 1 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>If you don’t already have a good
+handle on the benefits of TT and conducting a UTAP, as well as a good knowledge
+of the TT program, then presenting to groups of stakeholders and executives
+will be a challenge. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Even when you have a good grasp
+of these things, you should expect challenges to your suggestions throughout
+this stage. (After all, meetings are only useful if people raise questions and
+challenge assumptions, otherwise the topic is better covered in a memo.) </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The biggest challenge you might
+expect when talking about the benefits of the TT approach is that if, like in
+many federal agencies, development teams have traditionally <i>not </i>been
+responsible for accessibility testing, then they will challenge you on why they
+should assume this ‘new’ responsibility. We advise referencing the Case Study
+chapters in the UTAP Report when tackling this challenge. There are examples in
+the report of agencies overcoming these types of organizational culture
+barrier, creating more efficient, more distributed testing systems. The
+development teams came to accept that these approaches were much more
+beneficial than their prior, more traditional approaches. </p>
+
+<h3 style='margin-left:-.25pt'>Trade-offs to consider in Stage 1 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>In effect, Stage 1 is all about
+considering trade-offs. In this stage you and your stakeholders will basically
+assess how to balance the risks of wasting time, expending needless effort, and
+allocation of resources. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>There is one particular trade-off
+that we want to point out here. In dealing with the potential challenges cited
+above, you may start to wonder whether your UTAP activities should be
+restricted to only the secondary users, namely those already engaged in
+accessibility at your agency. In other words, you would drop what we consider
+to be the primary end-users (developers etc.) and instead engage with the
+disability friendlier people you may already know. Going back to <i>Know your
+end users</i> (page 4), we caution that taking this trade-off is going to be <i>much
+less likely</i> to positively impact end-users of IT who have disabilities. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.9pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;margin-left:
+-.25pt'><a name="_Toc17178">Stage 2: Get familiar with your own agency </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.5pt;margin-bottom:
+25.15pt;margin-left:54.5pt'>“… as we know, there are known knowns; there are
+things we know we know. We also know there are known unknowns; that is to say
+we know there are some things we do not know. But there are also unknown
+unknowns – the ones we don't know we don't know.” <i>– Donald Rumsfeld</i><a
+href="#_ftn4" name="_ftnref4" title=""><sup><sup><span style='font-size:12.0pt;
+line-height:104%;font-family:"Times New Roman",serif;color:black'>[4]</span></sup></sup></a>
+</p>
+
+<h3 style='margin-left:-.25pt'>Suggested Stage 2 tasks </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.65pt;
+margin-left:-.25pt'><b>Diagram the current system as you understand it:</b>
+Before you talk to anyone in this stage, or gather any artifacts, it is a
+useful exercise to draw a diagram of how you think IT applications testing is
+conducted in your agency. The purpose of this exercise is to put to paper <i>your</i>
+view of the system, because this is what you need to <i>challenge</i> in the
+subsequent tasks. Later, you will ask yourself whether your view and your
+understanding were shared by other stakeholders. For now though, once this task
+is complete, set it aside. <b>Note: </b>Each person on the UTAP team should do
+this task individually and then compare notes at the end. Encouraging people to
+share their own gaps and world view can be a useful learning process, and can
+reveal inadvertent bias. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:.2pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Gather relevant artifacts (policies, procedures, etc.):</b>
+This task happens purposefully <i>after</i> the previous task. Your mental
+model of how things are <i>supposed</i> to happen may be different to what is
+written in the policy you may have read, skimmed, or even wrote a few years
+ago. </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:.3pt;
+margin-bottom:17.7pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:95%'>Gathering all of the related artifacts and analyzing in
+relation to what was in your mental model can be enlightening. Is what is
+written the same as what you thought? The same as what you think actually
+happens? Again, set this information aside until later. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Identify stakeholder groups:</b> This applies to those
+who currently do testing, those who manage and oversee testing, and those who
+are impacted by testing (i.e., all cohorts of primary and secondary users in
+the ‘soup-to-nuts’ of the Systems Development Life Cycle (SDLC)). Some of this
+will have been defined in the previous task, and in Stage 1. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Identify potential interviewees from the stakeholder
+groups:</b> Depending on how big your organization is, you may have only one or
+two people in a given cohort, or a plethora of potential people to interview.
+The aim is to get a fairly representative spread of views from each cohort. Do
+not worry about getting a ‘statistically representative sample’ (this is not an
+academic study); but instead go initially for opportunistic and/or ‘snowball’
+sampling methods. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:8.65pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:147%'><sup><span style='font-size:18.5pt;line-height:147%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Interview stakeholders:</b> Have one-on-one discussions
+with individual stakeholders to ascertain: <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>What do they think the testing
+process is? What are the inputs, testing tasks, and outputs of testing? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:15.25pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:96%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>What artifacts
+do they use? Do they use checklists, or follow formal processes? Do they rely
+on notes pinned to their wall? Particular websites? What policies, procedures,
+forms etc. do they know about? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:6.5pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:162%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>What do they
+think their challenges are? <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>What relevant training have they
+had? What are their skills and experience regarding testing and accessibility
+in general? How would a new team member be trained or mentored in how things
+are done here? <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Who do they think is in charge
+of Section 508 at the agency? Who has the responsibility for testing? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:4.65pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:188%'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>How do they
+think people at the agency approach disability issues in general? <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>Do they know other people who they think would be able to provide you
+with good feedback? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Summarize your findings from interviewees:</b> Write a
+summary report of what you found. Include such things as whether you found
+consistencies or inconsistencies, interesting observations, and your own
+interpretations of their feedback regarding organizational culture. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Compare your findings from interviewees with the first
+tasks in this stage: </b>Does everyone share your mental model? Does everyone
+know about and use the artifacts you gathered? What were the differences
+between what actually happens, and what you assumed to happen? Why do you
+hypothesize those differences exist? </p>
+
+<h3 style='margin-left:-.25pt'>Potential challenges in Stage 2 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>In the interview sub-bullets
+above, you will note that the questions are all about what the interviewee
+thinks; not about what they think about what you think. The interview is not
+meant to be a confirmation or ‘blessing’ of what you think you know. (If you
+ask interviewees questions that lead with what you know, they will have a
+tendency to agree with you.) The only way for you to challenge what you think
+you know is to act as if you do not know anything during the interview process.
+The same holds for artifacts. If the interviewee brings up an artifact during
+the discussion, ask them to find the artifact and show you what they mean. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>You should avoid referring to
+what you are <i>planning</i> to do in the interviews. What you’re planning to
+do should be waiting until you get to stage 4 (design). If you interview people
+at this stage and tell them all about how TT is going to change their work, and
+how this person will be a TT and that person will be a TT, then they are likely
+to assume that the interview you are conducting with them is a waste of their
+time, because you have already decided the design and therefore they are
+specifically <i>not</i> involved in shaping the design. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:25.0pt;
+margin-left:-.25pt'>The final challenge in this process is confidentiality.
+Whenever you are interviewing people they are going to be wondering whether
+what they say is going to come back and haunt them. In the UTAP Pilot, we got
+around this by telling interviewees up front that we were not recording
+anything, that anything that they said was considered in confidence, that when
+we wrote reports we would not attribute quotes to individuals, and so on. The
+more confidentiality you can <i>actually</i> offer the more <i>honest</i>
+opinions you are likely to gather.<a href="#_ftn5" name="_ftnref5" title=""><sup><sup><span
+style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'>[5]</span></sup></sup></a> </p>
+
+<h3 style='margin-left:-.25pt'>Trade-offs to consider in Stage 2 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Like it or not, you operate in a
+bigger system. Sometimes it really is a <i>much</i> bigger system. There are
+inevitable trade-offs in terms of the number of people you can interview and
+the time it takes to complete those interviews. During rounds of interviews
+there is likely to be a tapering off in terms of return on investment. Periodically
+undertaking a review of the quality and ‘newness’ of the data you are obtaining
+from interviewees could save considerable time and resources in this stage. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:17.2pt;
+margin-left:-.25pt'>One temptation will be to group two or more interviewees
+together to save time. The trouble with this approach is that when you get more
+than one person as an interviewee, the one with the most to say and the one who
+has the strongest opinions is usually the same person, and they will tend to
+dominate the interaction. This means you don’t get everyone’s opinions
+represented. <b>Note:</b> If there really is a need to get more than one person
+together, using a focus group approach is a more appropriate method than the
+interview method. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><u>            </u> </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:13.3pt;margin-left:
+-.25pt'><a name="_Toc17179">Stage 3: Familiarize yourself with available
+options </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.25pt;margin-bottom:
+.35in;margin-left:54.5pt'>“In many cases, personnel responsible for a company’s
+accessibility efforts come from human factors, usability, or disability support
+groups. In general, these groups do not have a large amount of input in
+corporate decisions.” — <i>National Council on Disability</i><a href="#_ftn6"
+name="_ftnref6" title=""><sup><sup><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif;color:black'>[6]</span></sup></sup></a>
+</p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:14.6pt;margin-left:
+-.25pt'>Suggested Stage 3 tasks </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Re-review the UTAP Case Studies for options:</b> In the
+case study documents are four examples of options that were chosen for various
+agencies. Now is a good time to re-visit those case studies. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Discuss options:</b> Now you can compare what you found
+in Stage 2 (familiarization), to what you were aiming for in Stage 1 (goals).
+Write down and discuss with key stakeholders what you think the main options
+are. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:24.2pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Rank the practical options:</b> After discarding
+impractical options, take the options that have practical merit and rank them
+in terms of likelihood of success. </p>
+
+<h3 style='margin-left:-.25pt'>Potential challenges in Stage 3 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>The main challenge during this
+stage is come up with options that are not constrained or otherwise rendered
+anemic by what happens now in your agency. As much as possible, try to make an
+objective assessment of the potential benefits of the available options, rather
+than making a subjective assessment of options based on affinity for past ways.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.35pt;
+margin-left:-.25pt'>This can be easier said than done. Often there will be a
+‘stick-in-the-mud’ stakeholder who definitely does not want to make changes to
+what he has become comfortable with. In these cases, we suggest challenging
+him/her to justify their position with respect to the primary and secondary
+end-users, as well as the main purpose of doing your own UTAP. </p>
+
+<h3 style='margin-left:-.25pt'>Trade-offs to consider in Stage 3 </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.55pt;
+margin-left:-.25pt'>The trade-offs to consider with the available options are
+going to come down to your assessment of risks (wasting time, effort,
+resources) and the question of who should really be doing testing at your
+agency. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><u>            </u> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:32.6pt;
+margin-left:-.25pt'>Because the potential impact is high for a number of
+stakeholder groups, the tasks in this stage are very important. Ultimately,
+this trade-off comparison comes down to the issue of just <i>who does</i> have
+input into the ‘corporate decisions’ affecting the accessibility of IT
+products. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;margin-left:
+-.25pt'><a name="_Toc17180">Stage 4: Design the system </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.65pt;margin-bottom:
+0in;margin-left:54.5pt'>“Better products don’t take longer to create, nor do
+they cost more to build. The irony is that they don’t have to be difficult, but
+are so only because our process of making them is old-fashioned and needs
+fixing. Only longstanding traditions rooted in misconceptions keep us from
+having better products today.” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.3pt;
+margin-left:54.5pt;line-height:110%'> – <i>Alan Cooper<a href="#_ftn7"
+name="_ftnref7" title=""><sup><b><sup><span style='font-size:12.0pt;line-height:
+104%;font-family:"Times New Roman",serif;color:black'>[7]</span></sup></b></sup></a>
+</i></p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;margin-left:
+-.25pt'>Suggested Stage 4 tasks </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:21.95pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Gather a design team: </b>In the previous stages,
+various stakeholders may have volunteered, or it might become obvious to you,
+that they should be involved in the design process. A team needs to be gathered
+to collaborate on the design. (If no design team is gathered, then you are just
+making edicts, which are probably not likely to lead to long term success.) </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:64.65pt;
+margin-bottom:6.8pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'><img border=0 width=443 height=253 id="Picture 924"
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image004.gif"> </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.4pt;
+margin-bottom:41.95pt;margin-left:.5pt;text-align:center;line-height:110%'><span
+style='font-family:"Franklin Gothic Book",sans-serif'>Figure 1 – A macro-level
+view of the system </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><u>            </u> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Reiterate the findings of the previous stages for the
+design team:</b> It is useful for everyone on the team to have a reminder of
+what the goals are, what the current system is, what options have been decided
+etc. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:12.3pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:120%'><sup><span style='font-size:18.5pt;line-height:120%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Design the system:</b> Any system can be broken down in
+basic terms to inputs, processes, and outputs. Figure 1 is a macro-level view
+of a system. In step 1, someone needs a test (the input). In step 2 the test
+happens (the processing). In step 3 something is done with the test results
+(the output)… <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Inputs: </b>How do the
+stakeholders know that they need to test? What will be their impetus? Where is
+it identified in the SDLC? Are tests required for in-house developed
+applications only? For verification of purchases involving VPATs? For shared
+services?<b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:96%'><span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Test process: </b>In adopting
+the TT process, a lot of Step 2 of Figure 1 is already defined in terms of the
+mechanics of code inspection to come up with identified failures. What is not
+predefined though is who should do the actual tests (the options should have
+already been assessed in Stage 3), and what artifacts should they be using? The
+specific artifacts (forms, guides, databases etc.) may need to be developed,
+modified from existing artifacts, or adapted from existing ones made available
+by other agencies. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Outputs: </b>If everything
+tested is perfect, there would be nothing to do but hand out gold stars. Such
+results are rare, however. There needs to be mechanisms in place for
+determining when and how remediation will take place in the SDLC. There needs
+to be consideration of when items are placed in the interagency results
+repository, and who will have write-access to it. Outputs become inputs (for
+example, remediation requirements go back to the developers as new tasks).
+Therefore, the cyclical nature of any feedback system should be taken account
+of in the design process.<b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:16.5pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Revisit the program maturity assessment from Stage 1:</b>
+What changes would you like to see in terms of program maturity?  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Try to break the system:</b> Identifying how people
+could circumvent the system that you are proposing is an important part of
+systems analysis and design. You should be looking for holes, and ways to patch
+the holes. (The same sorts of interview questions you used in Stage 2 (familiarization)
+can be used to inform and guide this task.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:24.2pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Iterate:</b> The likelihood is very low that you will
+have just one pass to come up with a design. In practice, iterations of the
+above tasks are needed to settle on a design proposal. </p>
+
+<h3 style='margin-left:-.25pt'>Potential challenges in Stage 4 </h3>
+
+<p class=MsoNormal style='margin-left:-.25pt'>In the UTAP Pilot, we found the
+design team at most of the agencies decided that their ‘design’ activity went
+beyond just testing, and encompassed a rethink of the way that the Section 508
+program as a whole operated at their agency. Even if that is not the case with
+you, you should still consider the wider organizational context at your agency,
+and how your design could impact different stakeholders. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>It may be tempting to address and
+include the need for monitoring of the system during this design stage. We
+suggest that the design of monitoring tasks be tackled once the actual design
+is in place. This should be done as part of Stage 5, Develop an implementation
+plan. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.35pt;
+margin-left:-.25pt'>It may also be tempting to address and include the need for
+training of stakeholders during this design stage. We also suggest that the
+design of training tasks be tackled once the actual design is in place. Again,
+this should be done as part of the next stage. </p>
+
+<h3 style='margin-left:-.25pt'>Trade-offs to consider in Stage 4 </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:32.6pt;
+margin-left:-.25pt'>When using an iterative design process, start by
+summarizing each prior iteration before starting the next iteration. This
+summarization should include trade-offs. What seems to be good? What seems to
+be problematic? What do you likely need to adjust in the design? In this part
+of the process we suggest that the main trade-off question to ask is what
+design choices seem to provide the best chance of long-term adoption by
+stakeholders, given their current situation? </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;margin-left:
+-.25pt'><a name="_Toc17181">Stage 5: Develop an implementation plan </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:49.55pt;margin-bottom:
+24.35pt;margin-left:54.5pt'>“It is relatively easy to design for the perfect
+cases, when everything goes right, or when all the information required is
+available in proper format.” — <i>Donald Norman</i> </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;margin-left:
+-.25pt'>Suggested Stage 5 tasks </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:12.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:154%'><sup><span style='font-size:18.5pt;line-height:154%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Assign roles:</b> During the design stage you will have
+identified the roles of various stakeholders. In the implementation plan, you
+should assign names to those roles, e.g.: <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Who will be the TTs? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:19.45pt;
+margin-left:.5in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Who will be in
+charge of the testing program agency-wide? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.3pt;
+margin-left:.5in;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Who will be
+developing and providing training? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>SDLC changes:</b> Document the needed SDLC changes, and
+plan for how and when the changes will take place. (The owners of the SDLC
+should have been stakeholders consulted in earlier stages.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:.15in;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Make final versions of artifacts: </b>The databases,
+forms and other process documents that will be used by TTs, decision makers,
+and others will need to be finalized for implementation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Make a training plan:</b> How will the various
+stakeholders learn what they need to do in order to implement a TT program? It
+is not just the testers who will need training.<a href="#_ftn8" name="_ftnref8"
+title=""><sup><sup><span style='font-size:12.0pt;line-height:104%;font-family:
+"Times New Roman",serif;color:black'>[8]</span></sup></sup></a> Are there
+existing courses available from the ITTP? What training materials will need to
+be developed specifically for your agency’s design and implementation? Who will
+develop these and by what timeline? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Make a monitoring plan:</b> How will you track the
+number of tests and remediation activities? How will you oversee the quality of
+testing? Will there be spot-checks of TT results? What data will you need for
+OMB reporting? How will you gather that information? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:16.5pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Revisit the program maturity assessment from Stage 1:</b>
+How do changes in terms of program maturity impact your implementation plan?  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:16.5pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in'><sup><span style='font-size:18.5pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Decide on implementation phases: </b>Should there be a
+pilot of your proposed design, Wholesale implementation? Or, some other
+combination of phases across several departments? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:17.4pt;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Decide on implementation timeline:</b> The timeline will
+be dependent on the prior task of setting implementation phases. <b>Note:</b>
+this is for stage 6 (implement and monitor) and is different than the earlier
+timeline that you set for completing the UTAP. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.4pt;margin-bottom:.35in;
+margin-left:.25in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:96%'><sup><span style='font-size:18.5pt;line-height:96%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></sup><b>Monitoring of the UTAP implementation:</b> Even with the
+best design and the best implementation plan things will go awry. How will you
+know if the stakeholders identified in the plan are actually doing what was
+intended in the design? There should be an element of the implementation plan
+that is monitoring and assessing the success of the implementation. </p>
+
+<h3 style='margin-left:-.25pt'>Potential challenges in Stage 5 </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.3pt;margin-bottom:25.25pt;
+margin-left:-.75pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:96%'>The hope is that with stakeholder involvement, a <i>practical</i>
+design was developed. If developing the implementation plan becomes
+challenging, then revisiting the earlier stages (1 through 4) may be necessary.
+For example, objections from one cohort on the implementation timeline (“<i>But…
+we’re too busy!</i>”) may be resolved by reviewing the goals in stage 1 (“<i>We
+understand you are busy, but investing the time to train on this now could save
+you months of re-work at the end of your development project</i>”). </p>
+
+<h3 style='margin-left:-.25pt'>Trade-offs to consider in Stage 5 </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:32.6pt;
+margin-left:-.25pt'>This is another stage where the main activities are
+balancing trade-offs. However, the main one to consider in this stage is the
+timeframe for implementation. On the one hand it needs to be practical, but on
+the other hand it should not be so drawn out that the majority of the
+stakeholders lose interest. For example, a plan is made to do a pilot
+implementation with one agency subdepartment, and this is planned to take a
+year. You have just expended a lot of energy getting the stakeholder enthusiasm
+high during the design stage… and now the vast majority of subdepartments will
+have to wait for a year before they ever see the benefits of TT. That can
+translate into a let-down to the rest of the team. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:13.05pt;margin-left:
+-.25pt'><a name="_Toc17182">Stage 6. Implement and monitor </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:47.75pt;margin-bottom:
+24.5pt;margin-left:54.5pt'>“Get to work. You aren't being paid to believe in
+the power of your dreams.” – <i>‘Get to work’</i> <i>Demotivator</i><sup>2
+(p.8)</sup> </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>This stage we included for
+completeness. In the UTAP Report, there was no ‘Stage 6’ in any of the Case
+Studies. This was because the OAST team conducting the UTAP Pilot worked with
+the agencies only up until the end of Stage 5. There was no formal arrangement
+to go beyond that. Each participating agency must do their equivalent of ‘Stage
+6’, full implementation, in order for this process to be considered a success.
+For anyone conducting their own UTAP, Stage 6 is essential. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>Appendix A – UTAP Stage Checklist
+was included to summarize the inputs, activities, and outputs of the UTAP
+Stages.  Some of the information in the checklist is based on lessons learned
+from the UTAP Pilot Participants while working through the various stages. The
+UTAP Guide is a living document and will be updated as more agencies adopt
+Trusted Tester. </p>
+
+<p class=MsoNormal style='margin-left:-.25pt'>OAST is very interested to hear
+from agencies planning to conduct their own UTAP activities.  Please send us
+feedback on your progress. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:-.25pt;line-height:110%'><i>Now is the time to get started. </i></p>
+
+<h2 align=center style='margin-top:0in;margin-right:.25pt;margin-bottom:.1pt;
+margin-left:0in;text-align:center;text-indent:0in;line-height:107%'><a
+name="_Toc17183">Appendix A – UTAP Stage Checklist  </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:24.35pt;
+margin-left:-.25pt'>Appendix A – UTAP Stage Checklist summarizes the inputs,
+activities, and outputs of the UTAP Stages.  The UTAP Guide is a living
+document and the Checklist will be updated as more agencies continue to adopt
+Trusted Tester. </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:20.6pt;margin-left:
+-.25pt'>Stage 1: Set your goals   </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+1: Entry Criteria (Inputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Read the UTAP Summary and Case Study documentation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Review/Update Memorandum of Agreement (MOA) content </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Assign a UTAP Project Manager. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:.75in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select UTAP Project team members. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>    
+Stage 1: Activities  </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Document answers to strategy and practical questions (see page 8 of UTAP
+Guide). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Identify end-user stakeholders (Primary/Secondary end-users). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Complete Section 508 Program Maturity Assessment. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.55pt;
+margin-left:.75in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop end-user stakeholder UTAP goal matrix (Note: This will include
+UTAP Project team goals). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:.75in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Conduct briefing to leadership on benefits and goals of UTAP and TT to
+obtain buy-in. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:.75in;text-indent:-.25in'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop UTAP budget and schedule. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+1: Exit Criteria and Deliverables (Outputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:57.1pt;text-indent:-21.1pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Section 508 Program Maturity Assessment. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:57.1pt;text-indent:-21.1pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>UTAP Stakeholder Goal Matrix.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.4pt;
+margin-left:57.1pt;text-indent:-21.1pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>UTAP Strategic Plan or Charter document. </p>
+
+<p class=MsoNormal style='margin-left:57.1pt;text-indent:-21.1pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Signed UTAP Memorandum of Agreement (MOA) with DHS, if applicable. </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:20.75pt;margin-left:
+-.25pt'>Stage 2: Get familiar with your own agency </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+2: Entry Criteria (Inputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:36.5pt'>1.<span style='font-family:"Arial",sans-serif'> </span>Completed
+activities and deliverables from previous Stage. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>    
+Stage 2: Activities  </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Diagram current system within your organization from each UTAP team
+member’s perspective.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.2pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Collect relevant artifacts (i.e. policies, procedures, etc.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create interview questions. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Validate stakeholder list from Stage 1 (add/remove groups). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.1pt;
+margin-left:.75in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select list of “interviewees” from stakeholders groups.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Conduct stakeholder interviews. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:.75in;text-indent:-.25in'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Update UTAP Stakeholder Goal Matrix.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+2: Exit Criteria and Deliverables (Outputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Stakeholder interview summary report. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.15pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Documented gaps between member diagram and interview summary report. </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Updated
+UTAP Stakeholder Goal Matrix. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:20.75pt;margin-left:
+-.25pt'>Stage 3: Familiarize yourself with available options </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+3: Entry Criteria (Inputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:36.5pt'>2.<span style='font-family:"Arial",sans-serif'> </span>Completed
+activities and deliverables from previous Stages. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>    
+Stage 3: Activities  </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Attend the OAST orientation to become familiar with DHS process.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.2pt;
+margin-left:1.25in;text-indent:-.25in'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>DHS OAST organization chart. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:1.25in;text-indent:-.25in'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>DHS OAST Section 508 program. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.45pt;
+margin-left:1.25in;text-indent:-.25in'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The OAST Section 508 Management System  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Collaborate with other agencies that have adopted the Trusted Tester and
+become familiar with their process. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Review the Section 508 Organizational Maturity Assessment conducted in
+Stage 1 and for each category identify goals. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:22.55pt;
+margin-left:.75in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop a prioritized list of options that include benefits, trade-offs,
+assumptions, constraints and risks.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+3: Exit Criteria and Deliverables (Outputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>List of options that include benefits, trade-offs, assumptions,
+constraints and risks to be considered during the Design stage.  </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Updated
+UTAP Stakeholder Goal Matrix. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.2pt;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.75in;text-indent:0in;line-height:107%'> </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:20.6pt;margin-left:
+-.25pt'>Stage 4: Design the System </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+4: Entry Criteria (Inputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.3pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Completed activities and deliverables from previous Stages. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:.75in;text-indent:-.25in;line-height:110%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Identify
+Design Team members<i>. (Note: Design Team members may be different
+stakeholders that the </i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.5pt;
+margin-left:54.5pt;line-height:110%'><i>UTAP Project Team.)</i> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>    
+Stage 4: Activities  </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.55pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Conduct briefing with Design Team on the UTAP Stakeholder Goal Matrix,
+As-Is System, and Available Options for Target (To-Be) System. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.3pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Identify the roles of stakeholders in the Target (To-Be) System. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.15pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Design the Target (To-Be) System with documented inputs, processes, and
+outputs. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+4: Exit Criteria and Deliverables (Outputs): </span></i></p>
+
+<p class=MsoNormal style='margin-left:36.5pt'>1.<span style='font-family:"Arial",sans-serif'>
+</span>Design Plan for the Target (To-Be) System. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.75in;text-indent:0in;line-height:107%'> <br clear=all
+style='page-break-before:always'>
+</p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:20.75pt;margin-left:
+-.25pt'>Stage 5: Develop an implementation plan </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+5: Entry Criteria (Inputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.25pt;
+margin-left:36.5pt'>1.<span style='font-family:"Arial",sans-serif'> </span>Completed
+activities and deliverables from previous Stages. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>    
+Stage 5: Activities  </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Assign stakeholders roles identified during Design stage. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.2pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Document the needed Software Development Lifecycle (SDLC)changes. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.2pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Finalize required artifacts. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.2pt;
+margin-left:.75in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop a Training Plan. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.2pt;
+margin-left:.75in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop a Monitoring Plan. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:23.15pt;
+margin-left:.75in;text-indent:-.25in'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Develop an Implementation Plan. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.9pt;
+margin-left:-.25pt;line-height:107%'><i><span style='font-family:"Franklin Gothic Book",sans-serif'>Stage
+5: Exit Criteria and Deliverables (Outputs): </span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.25pt;
+margin-left:.75in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Implementation Plan that contains the method and schedule. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.15pt;
+margin-left:.75in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>New artifacts that will be used in the Target (To-Be) System. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.15pt;
+margin-left:.75in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Training Plan </p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Monitoring
+Plan </p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection8>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:202.55pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h1><img width=2 height=404
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image005.gif"
+align=left hspace=12><a name="_Toc17184">The Interagency Trusted Tester Program
+(ITTP) </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:40.9pt;
+margin-left:144.5pt'>For more information on the Interagency Trusted Tester
+Program, contact: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:144.5pt'>Department of Homeland Security, Office of Accessible
+Systems &amp; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:127.6pt;margin-bottom:
+42.0pt;margin-left:2.0in;text-indent:0in;line-height:95%'>Technology (DHS-OAST)
+202-447-0440 <u><span style='color:#3D3D3E'>accessibility@hq.dhs.gov</span></u>
+<a href="http://www.dhs.gov/accessibility"><span style='color:#3D3D3E'>www.dhs.gov/accessibility</span></a><a
+href="http://www.dhs.gov/accessibility"><span style='color:#3D3D3E;text-decoration:
+none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:144.5pt'>Cynthia Clinton-Brown </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:122.8pt;margin-bottom:
+0in;margin-left:144.5pt'>ITTP Manager, DHS-OAST 202-447-0322 </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:7.25pt;
+margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
+107%'><u><span style='color:#3D3D3E'>cynthia.clinton-brown@hq.dhs.gov</span></u><span
+style='color:#3D3D3E'> </span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection9>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:104%;font-family:"Times New Roman",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection10>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:17.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<h1 align=center style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:17.7pt;text-align:center;line-height:107%'><a name="_Toc17185"><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=2 height=298 id="Group 16265"
+src="Conducting%20your%20own%20Unified%20Testing%20for%20Accessibility%20Project_files/image006.gif"></span> The
+UTAP Team </a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.9pt;
+margin-left:144.5pt'><b>William Peterson &amp; Allen Hoffman:</b> Mr. Peterson
+is Executive Director, and Mr. Hoffman is the Deputy Executive Director of the
+DHS Office of Accessible Systems &amp; Technology (OAST). OAST is the group
+responsible for improving the accessibility of DHS’s electronic and information
+technologies. Mr. Peterson oversaw the planning and execution of the UTAP
+Pilot. Mr. Hoffman managed the Pilot. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:144.5pt'><b>Norman Robinson:</b> Mr. Robinson was the Section 508
+Coordinator for DHS Headquarters, and in January 2015 he moved to the US
+Department of State to become their Section 508 Coordinator. Mr. Robinson
+managed the UTAP Pilot prior to his departure from </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.45pt;
+margin-left:144.5pt'>OAST. Together with Dr. Law, he planned and executed the
+UTAP </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.65pt;
+margin-left:144.5pt'>Pilot. </p>
+
+<p class=MsoNormal style='margin-left:144.5pt'><b>Chris M. Law, Ph.D.:</b> Dr.
+Law is a Senior Analyst at OAST, working for New Editions Consulting, Inc. Dr.
+Law’s background includes work in the fields of Universal Design (UD) of IT,
+analysis of standards and guidelines for accessibility and UD, and
+organizational behavior with respect to accessibility. </p>
+
+</div>
+
+<div><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<div id=ftn1>
+
+<p class=footnotedescription style='margin-bottom:26.4pt;line-height:105%'><a
+href="#_ftnref1" name="_ftn1" title=""><span class=footnotemark><span
+class=footnotemark><span style='font-size:12.0pt;line-height:104%'>[1]</span></span></span></a>
+Trusted Testers also have access to the TT Community of Practice, an online
+resource for raising and answering testing related questions. </p>
+
+<p class=footnotedescription style='line-height:107%'><span style='font-family:
+"Franklin Gothic Book",sans-serif'>4 </span></p>
+
+</div>
+
+<div id=ftn2>
+
+<p class=footnotedescription style='line-height:107%'><a href="#_ftnref2"
+name="_ftn2" title=""><span class=footnotemark><span class=footnotemark><span
+style='font-size:12.0pt;line-height:104%'>[2]</span></span></span></a> <u><span
+style='color:#464646'>despair.com</span></u><span style='color:#464646'> </span></p>
+
+</div>
+
+<div id=ftn3>
+
+<p class=footnotedescription style='line-height:98%'><a href="#_ftnref3"
+name="_ftn3" title=""><span class=footnotemark><span class=footnotemark><span
+style='font-size:12.0pt;line-height:104%'>[3]</span></span></span></a> For an
+example of <i>success factors</i>, see Law (2010). <i>Responding to
+accessibility issues in business</i>. <a
+href="http://researchbank.rmit.edu.au/view/rmit:6156"><span style='color:#3D3D3E'>researchbank.rmit.edu.au/view/rmit:6156</span></a><a
+href="http://researchbank.rmit.edu.au/view/rmit:6156"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+</div>
+
+<div id=ftn4>
+
+<p class=footnotedescription><a href="#_ftnref4" name="_ftn4" title=""><span
+class=footnotemark><span class=footnotemark><span style='font-size:12.0pt;
+line-height:104%'>[4]</span></span></span></a> Department of Defense News
+Briefing, February 12, 2002 <a
+href="http://www.defense.gov/transcripts/transcript.aspx?transcriptid=2636"><span
+style='color:#3D3D3E'>http://www.defense.gov/transcripts/transcript.aspx?transcriptid=2636</span></a><a
+href="http://www.defense.gov/transcripts/transcript.aspx?transcriptid=2636"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+</div>
+
+<div id=ftn5>
+
+<p class=footnotedescription style='line-height:97%'><a href="#_ftnref5"
+name="_ftn5" title=""><span class=footnotemark><span class=footnotemark><span
+style='font-size:12.0pt;line-height:104%'>[5]</span></span></span></a> Some
+organizations have strict controls on what you can and cannot ask in a survey
+or other data collection exercise. In the academic world, institutions are
+required to have a ‘Human Subjects Committee’ that approves any such study.
+Some federal agencies have an equivalent. It is up to you to find out whether
+your UTAP activities are subject to any kind of formal review committee at your
+agency. </p>
+
+</div>
+
+<div id=ftn6>
+
+<p class=footnotedescription style='line-height:107%'><a href="#_ftnref6"
+name="_ftn6" title=""><span class=footnotemark><span class=footnotemark><span
+style='font-size:12.0pt;line-height:104%'>[6]</span></span></span></a> <i>Design
+for Inclusion: Creating a New Marketplace</i>, National Council on Disability
+(NCD, 2004, p.181). </p>
+
+</div>
+
+<div id=ftn7>
+
+<p class=footnotedescription style='text-align:justify;text-justify:inter-ideograph;
+line-height:100%'><a href="#_ftnref7" name="_ftn7" title=""><span
+class=footnotemark><span class=footnotemark><span style='font-size:12.0pt;
+line-height:104%'>[7]</span></span></span></a> <i>The inmates are running the
+asylum: why high tech products drive us crazy and how to restore the sanity</i>,
+Alan Cooper (1999, p.xvi). </p>
+
+</div>
+
+<div id=ftn8>
+
+<p class=footnotedescription style='line-height:107%'><a href="#_ftnref8"
+name="_ftn8" title=""><span class=footnotemark><span class=footnotemark><span
+style='font-size:12.0pt;line-height:104%'>[8]</span></span></span></a> For
+examples of training plans, see the UTAP Case Study reports. </p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

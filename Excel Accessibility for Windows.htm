@@ -1,0 +1,1466 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Excel Accessibility for Windows</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:10.45pt;
+	margin-bottom:.15pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:2.65pt;
+	margin-bottom:5.95pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#C00000;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#C00000;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:960.0pt 7.5in;
+	margin:19.1pt 39.05pt 10.85pt 49.8pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:960.0pt 7.5in;
+	margin:1.0in 26.95pt 1.0in 29.95pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:960.0pt 7.5in;
+	margin:.55in 351.4pt 1.0in 351.6pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:960.0pt 7.5in;
+	margin:1.0in 56.6pt 1.0in 73.2pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:960.0pt 7.5in;
+	margin:3.95pt 13.65pt 5.85pt 33.8pt;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:960.0pt 7.5in;
+	margin:11.3pt 28.9pt 1.0in 16.1pt;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:960.0pt 7.5in;
+	margin:20.5pt 13.6pt 37.9pt 23.0pt;}
+div.WordSection7
+	{page:WordSection7;}
+@page WordSection8
+	{size:960.0pt 7.5in;
+	margin:1.0in 43.3pt 8.4pt 41.1pt;}
+div.WordSection8
+	{page:WordSection8;}
+@page WordSection9
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection9
+	{page:WordSection9;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:920.95pt;margin-bottom:
+0in;margin-left:-49.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image001.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:19.8pt;
+margin-bottom:0in;margin-left:.5pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:40.0pt;line-height:107%'>What is Assistive Technology?</span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:2.05pt;
+margin-bottom:0in;margin-left:8.0pt;text-align:center;line-height:90%'><b><span
+style='font-size:24.0pt;line-height:90%'>Assistive Technology (AT) </span></b><span
+style='font-size:24.0pt;line-height:90%'>are “products, equipment, and systems
+that enhance learning, working, and daily living for persons with
+disabilities.”</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-25.0pt;margin-bottom:
+13.5pt;margin-left:-8.55pt'><img width=1207 height=173 id="Group 13146"
+src="Excel%20Accessibility%20for%20Windows_files/image002.gif"></p>
+
+<p class=MsoNormal style='margin-left:-.75pt;line-height:109%'><span
+style='font-size:20.0pt;line-height:109%'>Screen Readers          </span><sup><span
+style='font-size:31.0pt;line-height:109%'>Magnification </span></sup><span
+style='font-size:20.0pt;line-height:109%'>Software Recognition</span><sup><span
+style='font-size:31.0pt;line-height:109%'>Speech                                             </span></sup><span
+style='font-size:20.0pt;line-height:109%'>Trackball Mouse              Keyboard</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-35.4pt;line-height:109%'><img width=1254 height=239
+src="Excel%20Accessibility%20for%20Windows_files/image003.gif"><span
+style='font-size:20.0pt;line-height:109%'>Braille Computer Keyboard                                       Captions/Subtitles                                                                                                </span><span
+style='font-size:19.0pt;line-height:109%'>Captioned </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>                                                                                                                                                                                                         <span
+style='font-size:19.0pt;line-height:107%'>Telephone                                                                                 </span><span
+style='font-size:20.0pt;line-height:107%'>Video Relay Services</span></p>
+
+<h1 align=center style='margin-bottom:0in;text-align:center'>What are Screen
+Readers</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.45pt;margin-bottom:
+23.4pt;margin-left:5.05pt;line-height:90%'><span style='position:relative;
+z-index:-1895824384'><span style='left:0px;position:absolute;left:-66px;
+top:-101px;width:1280px;height:720px'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image004.gif"></span></span><b><span
+style='font-size:28.0pt;line-height:90%'>Screen readers </span></b><span
+style='font-size:28.0pt;line-height:90%'>are a form of assistive technology
+(AT) software that <b><i>enables access </i></b>to a computer, and all the
+things a computer does, by attempting to identify and interpret what is being
+displayed on the computer screen using <b><i>text-to-speech</i></b>. Screen
+readers can only access and process </span><b><span style='font-size:28.0pt;
+line-height:90%;color:#C00000'>live text </span></b><span style='font-size:
+28.0pt;line-height:90%'>(fully editable or selectable text).</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:329.1pt;margin-bottom:
+11.45pt;margin-left:49.95pt;text-indent:-22.2pt;line-height:90%'><span
+style='font-size:28.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:28.0pt;line-height:90%'>Provides access </span></b><span
+style='font-size:28.0pt;line-height:90%'>to someone who is visually impaired,
+mobility or has a learning disability to access text on the screen.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:329.1pt;margin-bottom:
+11.45pt;margin-left:49.95pt;text-indent:-22.2pt;line-height:90%'><span
+style='font-size:28.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:28.0pt;line-height:90%'>Offers same level of <b>independence </b>and
+privacy as anyone else.</span></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;margin-left:
+242.7pt'>Types of screen readers</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-11.7pt;margin-bottom:
+0in;margin-left:-27.0pt'><img width=1213 height=290 id="Group 13149"
+src="Excel%20Accessibility%20for%20Windows_files/image005.gif"></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:109%'><span style='font-size:
+20.0pt;line-height:109%'>Screen reader program for Microsoft Windows that
+allows blind and visually impaired users to read the screen either with a
+text-to-speech output or by a refreshable Braille display. </span><a
+href="https://www.nvaccess.org/"><b><span style='font-size:20.0pt;line-height:
+109%;color:#0563C1'>NVDA screen reader</span></b></a><b><u><span
+style='font-size:20.0pt;line-height:109%;color:#0563C1'> </span></u></b><span
+style='font-size:20.0pt;line-height:109%'>can be </span><b><span
+style='font-size:20.0pt;line-height:109%;color:#C00000'>downloaded free of
+charge </span></b><span style='font-size:20.0pt;line-height:109%'>by anyone.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:109%'><span style='font-size:
+20.0pt;line-height:109%'>Provides auditory         Adds spoken, audible,         </span><sup><span
+style='font-size:31.0pt;line-height:109%'>Screen magnifier for </span></sup><span
+style='font-size:20.0pt;line-height:109%'>descriptions of each    and vibration
+feedback  </span><sup><span style='font-size:31.0pt;line-height:109%'>Microsoft
+Windows </span></sup><span style='font-size:20.0pt;line-height:109%'>onscreen
+element   to your device.     that allows you to see </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:109%'><span style='font-size:
+20.0pt;line-height:109%'>using gestures, a  and hear everything on keyboard, or
+a braille  the computer. display.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image006.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image007.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image008.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image009.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image010.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image011.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image012.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image013.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image014.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image015.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image016.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:608.6pt;margin-bottom:
+0in;margin-left:-351.6pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image017.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;margin-left:
+-.25pt'>Table Headers</h1>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.15pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:90%'><span style='font-size:
+26.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:26.0pt;line-height:90%'>Screen readers
+keep track of their location in a table by counting table cells. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.3pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:90%'><span style='font-size:
+26.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:26.0pt;line-height:90%'>Screen readers
+also use header information to identify rows and columns.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>If a table is nested within another
+table or if a cell is merged or split, the screen reader loses count and can’t
+provide helpful information about the table after that point. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.3pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>When using tables, remember to keep
+their layout simple, <b>don't merge </b>cells or nest tables inside other
+tables.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:25.1pt;text-indent:-.25in;line-height:91%'><span style='font-size:
+26.0pt;line-height:91%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='position:relative;z-index:-1895811072'><span
+style='left:0px;position:absolute;left:-682px;top:-340px;width:1280px;
+height:720px'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image018.gif"></span></span><span
+style='font-size:26.0pt;line-height:91%'>Be careful with <b><i>empty rows and
+columns (blank cells). </i></b>While they may sometimes be necessary to
+visually separate data, <b><i>they can cause a screen reader user to think the
+sheet has ended, </i></b>even when it has not.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image019.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image020.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image021.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=1183
+ style='width:887.2pt;margin-left:9.6pt;border-collapse:collapse'>
+ <tr style='height:145.5pt'>
+  <td width=463 valign=bottom style='width:347.4pt;padding:0in 0in 0in 0in;
+  height:145.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:
+  0in;margin-left:62.8pt;text-indent:-62.8pt'><b><span style='font-size:40.0pt;
+  line-height:107%'>Image Alternative or Alt Text</span></b></p>
+  </td>
+  <td width=720 valign=top style='width:539.8pt;padding:0in 0in 0in 0in;
+  height:145.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.35pt;
+  margin-left:.25in;text-indent:-.25in;line-height:98%'><span style='font-size:
+  20.0pt;line-height:98%;font-family:"Arial",sans-serif'>•<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-size:20.0pt;line-height:98%'>The purpose of </span><b><span
+  style='font-size:20.0pt;line-height:98%;color:#C00000'>Alt Text </span></b><span
+  style='font-size:20.0pt;line-height:98%'>is to allow low vision or blind
+  users who use text-to-speech assistive technologies (AT), such as screen
+  readers, to understand the purpose of graphic images. Sighted users usually
+  don’t see alt text unless they use AT.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:-.25in'><span style='font-size:20.0pt;
+  line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:20.0pt;line-height:107%'>Screen readers
+  and other AT </span><b><span style='font-size:20.0pt;line-height:107%;
+  color:#C00000'>can’t </span></b><span style='font-size:20.0pt;line-height:
+  107%'>convert images into texts. So, when writing alt text, consider the
+  following for images:</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:6.95pt;margin-bottom:
+8.65pt;margin-left:230.35pt;text-indent:-27.0pt;line-height:90%'><span
+style='font-size:19.0pt;line-height:90%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><img
+width=448 height=247
+src="Excel%20Accessibility%20for%20Windows_files/image022.jpg" align=left
+hspace=12><span style='font-size:19.0pt;line-height:90%'>Describe the content
+and the purpose of the image clearly and concisely, in a phrase or a sentence
+or two. Keep alt text short 200 characters or less. </span><span
+style='font-size:19.0pt;line-height:90%;font-family:"Courier New"'>o </span><span
+style='font-size:19.0pt;line-height:90%'>Image with text (for example, the CSUN
+wordmark) should include the words on the image. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:6.95pt;margin-bottom:
+0in;margin-left:230.35pt;text-indent:-27.0pt'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:19.0pt;line-height:107%'>“Image of…”,
+“Photo of…” is not needed because screen readers and other AT announce that
+it’s an “image” or “graphic”.</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=1206
+ style='width:904.6pt;margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:99.4pt'>
+  <td width=477 valign=bottom style='width:357.4pt;padding:0in 0in 0in 0in;
+  height:99.4pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:41.3pt;margin-bottom:
+  0in;margin-left:0in'><i><span style='font-size:16.0pt;line-height:107%'>Screen
+  readers and other AT announce that it’s an “image” or “graphic”,  then read
+  the alt text: </span></i><span style='font-size:16.0pt;line-height:107%;
+  color:#7030A0'>“Three plants going through transformation with text quote
+  Accessibility user-friendly document for CSUN student success.”</span></p>
+  </td>
+  <td width=102 valign=top style='width:76.7pt;padding:0in 0in 0in 0in;
+  height:99.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:34.05pt;text-align:center'><span
+  style='font-size:19.0pt;line-height:107%;font-family:"Courier New"'>o</span></p>
+  </td>
+  <td width=627 valign=top style='width:470.55pt;padding:0in 0in 0in 0in;
+  height:99.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:19.0pt;
+  line-height:107%'>When completing the alt text, use proper punctuation such
+  as periods to indicate the end of the alt text. Without proper punctuation,
+  some screen readers will run the alt text into the body text that follows and
+  cause confusion to the user.</span></p>
+  </td>
+ </tr>
+ <tr style='height:39.95pt'>
+  <td width=477 valign=top style='width:357.4pt;padding:0in 0in 0in 0in;
+  height:39.95pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=102 valign=top style='width:76.7pt;padding:0in 0in 0in 0in;
+  height:39.95pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:34.05pt;text-align:center'><span
+  style='font-size:19.0pt;line-height:107%;font-family:"Courier New"'>o</span></p>
+  </td>
+  <td width=627 valign=top style='width:470.55pt;padding:0in 0in 0in 0in;
+  height:39.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:19.0pt;
+  line-height:107%'>Don’t insert hyperlinks in alt text because they are not
+  clickable and can’t create descriptive link text.</span></p>
+  </td>
+ </tr>
+</table>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=1224 style='width:918.25pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:68.8pt'>
+  <td width=412 valign=top style='width:309.3pt;padding:0in 0in 0in 0in;
+  height:68.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:15.5pt;margin-bottom:
+  0in;margin-left:0in;text-indent:12.6pt'><span style='font-size:14.0pt;
+  line-height:107%;color:#1D2129'>A stair chase leading up to an entryway is
+  painted yellow with bold black text that reads museums are now.</span></p>
+  </td>
+  <td width=403 valign=top style='width:4.2in;padding:0in 0in 0in 0in;
+  height:68.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:9.9pt;margin-bottom:
+  0in;margin-left:11.75pt;text-indent:-11.75pt'><span style='font-size:14.0pt;
+  line-height:107%'>A hand reaches out of a computer screen giving the hand
+  gesture for stop. The screen reads ‘access denied!’</span></p>
+  </td>
+  <td width=409 valign=bottom style='width:306.55pt;padding:0in 0in 0in 0in;
+  height:68.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><span style='font-size:14.0pt;line-height:107%'>On the left
+  is the book cover for Haben The Deafblind </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.55pt'><span style='font-size:14.0pt;line-height:107%'>Woman
+  Who Conquered Harvard Law, and on the </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.6pt;text-align:justify;text-justify:inter-ideograph'><span
+  style='font-size:14.0pt;line-height:107%'>right is the quote: “In the
+  Tigrinya language of Eritrea </span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:3.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>and Ethiopia, Haben means 'pride.’”</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:8.0pt;
+margin-bottom:17.55pt;margin-left:.5pt;text-align:center;text-indent:-.5pt;
+line-height:110%'><img width=362 height=221
+src="Excel%20Accessibility%20for%20Windows_files/image023.gif" align=left
+hspace=12><img width=354 height=209
+src="Excel%20Accessibility%20for%20Windows_files/image024.gif" align=left
+hspace=12><img width=341 height=207
+src="Excel%20Accessibility%20for%20Windows_files/image025.gif" align=left
+hspace=12><b><span style='font-size:44.0pt;line-height:110%'>How to Describe
+Images?</span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=411 style='width:308.4pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:56.8pt'>
+  <td width=55 valign=top style='width:41.55pt;border-top:solid #7F7F7F 1.0pt;
+  border-left:solid #7F7F7F 1.0pt;border-bottom:none;border-right:none;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:56.8pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=356 valign=bottom style='width:266.85pt;border-top:solid #7F7F7F 1.0pt;
+  border-left:none;border-bottom:none;border-right:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:56.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:38.8pt;margin-bottom:
+  0in;margin-left:45.35pt;text-indent:-15.95pt'><b><span style='font-size:18.0pt;
+  line-height:107%'>More examples of How to Describe Images</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width=55 style='width:41.55pt;border:none;border-left:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:25.15pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:7.05pt;text-align:center'><a
+  href="https://www.csun.edu/universal-design-center/document-learning-tools#DescribingImages"><span
+  style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:black;text-decoration:none'>•</span></a></p>
+  </td>
+  <td width=356 style='width:266.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:25.15pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><a
+  href="https://www.csun.edu/universal-design-center/document-learning-tools#DescribingImages"><span
+  style='font-size:14.0pt;line-height:107%;color:#0563C1'>Document Learning
+  Tools: Describing images</span></a></p>
+  </td>
+ </tr>
+ <tr style='height:63.9pt'>
+  <td width=55 valign=top style='width:41.55pt;border:none;border-left:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:63.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:7.05pt;text-align:center'><a
+  href="https://poet.diagramcenter.org/how.html"><span style='font-size:14.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:black;text-decoration:
+  none'>•</span></a></p>
+  </td>
+  <td width=356 style='width:266.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:63.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><a
+  href="https://poet.diagramcenter.org/how.html"><span style='font-size:14.0pt;
+  line-height:107%;color:#0563C1'>How to Describe Images </span></a><a
+  href="https://poet.diagramcenter.org/how.html"><span style='font-size:12.0pt;
+  line-height:107%;color:black;text-decoration:none'>(</span></a><span
+  style='font-size:12.0pt;line-height:107%'>Art, Chemistry, </span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>Diagrams, Flow Charts, Formatting &amp; Layout, </span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>Graphs, Maps, Mathematics, Page Layout, Tables, Text-only
+  images)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.35in'>
+  <td width=55 style='width:41.55pt;border:none;border-left:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:.35in'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:7.05pt;text-align:center'><a
+  href="https://cdpn.io/aardrian/debug/NmoQdN"><span style='font-size:14.0pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:black;text-decoration:
+  none'>•</span></a></p>
+  </td>
+  <td width=356 style='width:266.85pt;border:none;border-right:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:.35in'>
+  <p class=MsoNormal style='margin-bottom:0in'><a
+  href="https://cdpn.io/aardrian/debug/NmoQdN"><span style='font-size:14.0pt;
+  line-height:107%;color:#0563C1'>Periodic Table of the Elements</span></a></p>
+  </td>
+ </tr>
+ <tr style='height:32.7pt'>
+  <td width=55 valign=top style='width:41.55pt;border-top:none;border-left:
+  solid #7F7F7F 1.0pt;border-bottom:solid #7F7F7F 1.0pt;border-right:none;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:32.7pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:7.05pt;text-align:center'><a
+  href="https://www.csun.edu/universal-design-center/best-practices-accessible-images"><span
+  style='font-size:14.0pt;line-height:107%;font-family:"Arial",sans-serif;
+  color:black;text-decoration:none'>•</span></a></p>
+  </td>
+  <td width=356 valign=top style='width:266.85pt;border-top:none;border-left:
+  none;border-bottom:solid #7F7F7F 1.0pt;border-right:solid #7F7F7F 1.0pt;
+  background:#FFF2CC;padding:5.4pt 5.75pt 5.4pt 0in;height:32.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><a
+  href="https://www.csun.edu/universal-design-center/best-practices-accessible-images"><span
+  style='font-size:14.0pt;line-height:107%;color:#0563C1'>UDC Best Practices
+  for Describing Images</span></a></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=center style='margin-top:9.75pt;margin-right:32.0pt;
+margin-bottom:0in;margin-left:0in;text-align:center'><img width=359 height=207
+src="Excel%20Accessibility%20for%20Windows_files/image026.gif" align=left
+hspace=12><img width=356 height=206
+src="Excel%20Accessibility%20for%20Windows_files/image027.gif" align=left
+hspace=12><span style='font-size:14.0pt;line-height:107%'>Student holds a
+diploma hardcover up in the air </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:280.4pt;margin-bottom:
+0in;margin-left:300.8pt;text-indent:-293.3pt;line-height:132%'><span
+style='font-size:14.0pt;line-height:132%'>Michelle Obama claps and Barack
+waves. during CSUN commencement. Caption text &quot;and together, as Matadors,
+we will move mountains.&quot;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image028.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:209.1pt;
+margin-bottom:0in;margin-left:.5pt;text-align:right;text-indent:-.5pt'><b><span
+style='font-size:44.0pt;line-height:107%'>What are Decorative Images?</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>Conveys no information; does not
+provide meaningful information.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>Purely for visual effect.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>The horizontal line that divided the
+two sections.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>Line border image used as part of
+page design.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.7pt;
+margin-left:25.1pt;text-indent:-.25in;line-height:102%'><span style='font-size:
+26.0pt;line-height:102%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:26.0pt;line-height:102%'>Decorative images do not require a
+text alternative.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:25.1pt;text-indent:-.25in;line-height:90%'><span style='font-size:
+26.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><img width=824 height=182
+src="Excel%20Accessibility%20for%20Windows_files/image029.gif" align=left
+hspace=12><b><span style='font-size:26.0pt;line-height:90%'>Decorative images,
+lines, borders, or shapes ignore by assistive technologies, such as screen
+readers.    </span></b><img border=0 width=241 height=304 id="Group 11265"
+src="Excel%20Accessibility%20for%20Windows_files/image030.gif"></p>
+
+<h1 align=center style='margin-top:0in;margin-right:19.7pt;margin-bottom:0in;
+margin-left:.5pt;text-align:center'>Add Alt Text to images</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:31.95pt;margin-bottom:
+96.45pt;margin-left:39.9pt;text-indent:-.5pt;line-height:102%'><span
+style='font-size:26.0pt;line-height:102%'>Add alt text to images, Smart Art
+graphics, shapes, charts so that screen readers can read the text to describe
+the image to users who can’t see the image.</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:11.8pt;
+margin-bottom:0in;margin-left:63.05pt;text-align:center;line-height:90%'><img
+width=666 height=473
+src="Excel%20Accessibility%20for%20Windows_files/image031.gif" align=left
+hspace=12><span style='font-size:28.0pt;line-height:90%'>Select the image and
+right-click to select “<b>Edit </b></span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:142.4pt;
+margin-bottom:0in;margin-left:63.05pt;text-align:right'><b><span
+style='font-size:28.0pt;line-height:107%'>Alt Text</span></b><span
+style='font-size:28.0pt;line-height:107%'>”</span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:23.1pt;
+margin-bottom:0in;margin-left:.5pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:40.0pt;line-height:107%'>Image Captions</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+22.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>Captions are
+universal and accessible for everyone.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+22.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>Captions are read
+and visible to all users whether they use assistive technologies (AT) or not. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.95pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+22.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>Captions and alt
+text have different purposes. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.85pt;
+margin-left:18.1pt;text-indent:-18.1pt'><span style='font-size:22.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=680 height=367
+src="Excel%20Accessibility%20for%20Windows_files/image032.jpg" align=left
+hspace=12><b><span style='font-size:18.0pt;line-height:107%'>Captions </span></b><span
+style='font-size:18.0pt;line-height:107%'>convey what’s visible in the image. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.9pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:92%'><span style='font-size:
+22.0pt;line-height:92%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:18.0pt;line-height:92%'>Alt text </span></b><span
+style='font-size:18.0pt;line-height:92%'>describes the visual aspect of the
+image and should be brief. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+22.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>If captions and
+alt text are similar in their descriptions, alt text can be “<b>Mark as
+decorative” </b>to be ignored by the screen </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:46.6pt;
+margin-bottom:0in;margin-left:0in;text-align:right'><span style='font-size:
+20.0pt;line-height:107%;color:#0070C0'>A crowd of people are walking and
+shopping </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'>        <sup><span
+style='font-size:34.0pt;line-height:107%'>readers.                                                  </span></sup><span
+style='font-size:20.0pt;line-height:107%;color:#0070C0'>at an outdoor market.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+22.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:22.0pt;line-height:90%'>Don't repeat </span></b><span
+style='font-size:22.0pt;line-height:90%'>the image's caption as the alt text.
+People don't need to hear the same </span></p>
+
+<p class=MsoNormal style='margin-bottom:.25pt;line-height:109%'>        <span
+style='font-size:22.0pt;line-height:109%'>information twice.                        </span><span
+style='font-size:20.0pt;line-height:109%'>Alt text: Mark as decorative</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image033.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image034.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image035.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image036.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image037.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image038.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1280 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image039.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;margin-left:
+122.9pt'><img width=1262 height=545
+src="Excel%20Accessibility%20for%20Windows_files/image040.gif"><br clear=ALL>
+View Presentation in Black &amp; White<br clear=all style='page-break-before:
+always'>
+</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.35pt;margin-bottom:
+0in;margin-left:-33.8pt'><img width=1282 height=720
+src="Excel%20Accessibility%20for%20Windows_files/image041.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:5.5pt;
+margin-bottom:0in;margin-left:-15.9pt;text-align:right;text-indent:-.5pt'><img
+width=266 height=510
+src="Excel%20Accessibility%20for%20Windows_files/image042.gif" align=left
+hspace=12><img border=0 width=805 height=416 id="Group 10298"
+src="Excel%20Accessibility%20for%20Windows_files/image043.gif"><b><span
+style='font-size:44.0pt;line-height:107%'> Add Data Labels</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+6.3pt;margin-left:64.55pt;text-indent:-.25in;line-height:109%'><span
+style='font-size:20.0pt;line-height:109%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:20.0pt;line-height:109%'>Select 1 of 3 bars</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+.25pt;margin-left:64.55pt;text-indent:-.25in;line-height:109%'><span
+style='font-size:20.0pt;line-height:109%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:20.0pt;line-height:109%'>Option 1: Mouse right-click to select
+<b>Add Data Labels, Add Data Labels</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+2.35pt;margin-left:64.55pt;text-indent:-.25in'><span style='font-size:20.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:107%'>Right-click again
+to select <b>Format Data Labels</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+10.85pt;margin-left:64.55pt;text-indent:-.25in'><span style='font-size:20.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:107%'>On right pane,
+select <b>Series Name</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+0in;margin-left:64.55pt;text-indent:-.25in'><span style='font-size:20.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:20.0pt;line-height:107%'>Option 2: <b>Design
+</b>tab, select <b>Add Chart Element, Data Labels</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+2.25pt;margin-left:64.55pt;text-indent:-.25in'><span style='font-size:20.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:107%'>Under <b>Data
+Labels</b>, select <b>More Data Label Options</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+10.85pt;margin-left:64.55pt;text-indent:-.25in'><span style='font-size:20.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:107%'>On right pane,
+select <b>Series Name</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+.25pt;margin-left:64.55pt;text-indent:-.25in;line-height:109%'><span
+style='font-size:20.0pt;line-height:109%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:20.0pt;line-height:109%'>Repeat for each bar</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:132.45pt;
+margin-bottom:0in;margin-left:.5pt;text-align:right;text-indent:-.5pt'><b><span
+style='font-size:44.0pt;line-height:107%'>Pattern Fill, Data Labels, Tabular
+Info</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.05pt;
+margin-left:-12.7pt'><img border=0 width=1231 height=378
+src="Excel%20Accessibility%20for%20Windows_files/image044.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:326.35pt;margin-bottom:
+.25pt;margin-left:17.5pt;text-indent:-.5pt;line-height:109%'><span
+style='font-size:20.0pt;line-height:109%'>Charts, graphs and maps use visuals
+to convey complex images to users. But since they are images, these media
+provide serious accessibility issues to colorblind users and users of screen
+readers. See the examples on this page for details on how to make charts more
+accessible. Visit </span><a href="http://accessibility.psu.edu/images/charts/"><span
+style='font-size:20.0pt;line-height:109%;color:#0563C1'>Charts &amp;
+Accessibility by Penn State</span></a></p>
+
+<h2 style='margin:0in'><span style='font-size:40.0pt;line-height:107%;
+color:black'>Provide descriptions if using </span><span style='font-size:44.0pt;
+line-height:107%;color:#860000'>c</span><span style='font-size:44.0pt;
+line-height:107%;color:#00B050'>o</span><span style='font-size:44.0pt;
+line-height:107%;color:#C55A11'>l</span><span style='font-size:44.0pt;
+line-height:107%;color:#7030A0'>o</span><span style='font-size:44.0pt;
+line-height:107%;color:#2A5699'>r </span><span style='font-size:40.0pt;
+line-height:107%;color:black'>to convey meaning</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:434.0pt;text-indent:-.5pt;line-height:109%'><b><span
+style='font-size:20.0pt;line-height:109%'>Example 3</span></b><span
+style='font-size:20.0pt;line-height:109%'>: Inaccessible color shape</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.9pt;
+margin-left:5.65pt;text-indent:-.5pt;line-height:109%'><b><span
+style='font-size:20.0pt;line-height:109%'>Example 1</span></b><span
+style='font-size:20.0pt;line-height:109%'>: Inaccessible color highlights in
+red</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-597.05pt;margin-bottom:
+5.15pt;margin-left:40.9pt;text-indent:-.5pt'><img width=674 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image045.gif" align=left
+hspace=12><img width=428 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image046.gif" align=left
+hspace=12><img width=420 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image047.gif" align=left
+hspace=12><span style='font-size:20.0pt;line-height:107%;color:#C00000'>May 11
+to 17, 2019</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.9pt;
+margin-left:5.65pt;text-indent:-.5pt;line-height:109%'><b><span
+style='font-size:20.0pt;line-height:109%'>Example 1</span></b><span
+style='font-size:20.0pt;line-height:109%'>: Accessible with a description</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-597.05pt;margin-bottom:
+5.15pt;margin-left:40.9pt;text-indent:-.5pt'><span style='font-size:20.0pt;
+line-height:107%;color:#C00000'>May 11 to 17, 2019* </span><span
+style='font-size:20.0pt;line-height:107%'>(final exams)</span><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:10.85pt;margin-left:
+250.15pt'><img width=282 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image048.jpg" align=left
+hspace=12><img width=495 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image049.jpg" align=left
+hspace=12>Check Color Contrast</h1>
+
+<p class=MsoNormal style='margin-top:20.75pt;margin-right:0in;margin-bottom:
+8.65pt;margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span
+style='font-size:19.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:19.0pt;line-height:90%'>Download </span><a
+href="https://www.tpgi.com/color-contrast-checker/"><span style='font-size:
+19.0pt;line-height:90%;color:#0563C1'>Colour</span></a><u><span
+style='font-size:19.0pt;line-height:90%;color:#0563C1'> </span></u><a
+href="https://www.tpgi.com/color-contrast-checker/"><span style='font-size:
+19.0pt;line-height:90%;color:#0563C1'>Contrast Analyser</span></a><u><span
+style='font-size:19.0pt;line-height:90%;color:#0563C1'> </span></u><span
+style='font-size:19.0pt;line-height:90%'>onto your computer (PC/Mac) to ensure
+accessible contrast or use an online contrast checker from </span><a
+href="https://webaim.org/resources/contrastchecker/"><span style='font-size:
+19.0pt;line-height:90%;color:#0563C1'>WebAIM</span></a><a
+href="https://webaim.org/resources/contrastchecker/"><span style='font-size:
+19.0pt;line-height:90%;color:black;text-decoration:none'>.</span></a></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-14.15pt;margin-bottom:
+3.3pt;margin-left:267.35pt'><img border=0 width=354 height=552 id="Picture 1002"
+src="Excel%20Accessibility%20for%20Windows_files/image050.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.9pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:92%'><span style='font-size:
+18.0pt;line-height:92%'>People who have low vision or </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.9pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:92%'><span style='font-size:
+18.0pt;line-height:92%'>colorblind could encounter some   </span><sup><span
+style='font-size:27.5pt;line-height:92%'>This example has a great color </span></sup><span
+style='font-size:18.0pt;line-height:92%'>difficulty distinguishing text color   contrast
+ratio of 8.7:1. The from a background color if the   contrast is sufficient for
+those contrast is insufficient contrast ratio         who have color
+deficiencies 1.5:1. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.65pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+19.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:19.0pt;line-height:90%'>WCAG Level AA
+requires a contrast ratio of at least <b>4.5:1 </b>for regular sized text (12
+or 14 pt. font) and <b>3:1 </b>for large text (18 pt. font).</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.1pt;text-indent:-18.1pt'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a
+href="http://www.color-blindness.com/coblis-color-blindness-simulator/"><span
+style='font-size:19.0pt;line-height:107%;color:#0563C1'>Coblis</span></a><u><span
+style='font-size:19.0pt;line-height:107%;color:#0563C1'> </span></u><a
+href="http://www.color-blindness.com/coblis-color-blindness-simulator/"><span
+style='font-size:19.0pt;line-height:107%;color:#0563C1'>Color Blindness
+Simulator</span></a></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:499.55pt'><b><span style='font-size:18.0pt;line-height:107%'>To use
+color filters on </span></b><b><span style='font-size:20.0pt;line-height:107%;
+color:#7030A0'>Windows</span></b><b><span style='font-size:18.0pt;line-height:
+107%'>:</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:3.95pt'><b><span style='font-size:32.0pt;line-height:107%'>How to
+View Grayscale Document?</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.25pt;
+margin-left:18.1pt;text-indent:-18.1pt'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:18.0pt;line-height:107%'>Select <b>Start </b>&gt;
+<b>Settings </b>&gt; <b>Ease of Access </b>&gt; <b>Color filters</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-15.1pt'><img width=493 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image051.gif" align=left
+hspace=12><img border=0 width=670 height=284 id="Group 11571"
+src="Excel%20Accessibility%20for%20Windows_files/image052.gif"><span
+style='font-size:18.0pt;line-height:107%;font-family:"Arial",sans-serif'>  • </span><span
+style='font-size:18.0pt;line-height:107%'>On your Mac, choose <b>Apple </b>menu
+&gt; <b>System </b></span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:27.95pt;
+margin-bottom:0in;margin-left:.5pt;text-align:right;text-indent:-.5pt'><b><span
+style='font-size:18.0pt;line-height:107%'>Preferences</span></b><span
+style='font-size:18.0pt;line-height:107%'>, select <b>Accessibility</b>, select
+<b>Display</b>, </span></p>
+
+<p class=MsoNormal style='margin-bottom:.15pt'>                                            <a
+href="https://www.accessiblesyllabus.com/image/"><span style='font-size:18.0pt;
+line-height:107%;color:#0563C1'>Image courtesy of Accessible Syllabus</span></a><u><span
+style='font-size:18.0pt;line-height:107%;color:#0563C1'>                     </span></u><sub><span
+style='font-size:27.5pt;line-height:107%'>select “Use grayscale”</span></sub></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+19.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><img width=367 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image053.gif" align=left
+hspace=12><span style='font-size:22.0pt;line-height:90%'>Information and charts
+should never be conveyed through color alone.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+19.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>Color may not be
+recognized by colorblind users.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.05pt;
+margin-left:18.1pt;text-indent:-18.1pt;line-height:90%'><span style='font-size:
+19.0pt;line-height:90%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:22.0pt;line-height:90%'>Provide text
+descriptions for charts and graphics.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:18.1pt;text-indent:-18.1pt'><span style='font-size:19.0pt;
+line-height:107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a href="http://accessibility.psu.edu/images/charts/"><span
+style='font-size:22.0pt;line-height:107%;color:#0563C1'>Charts &amp;
+Accessibility by Penn State</span></a></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;margin-left:
+206.6pt'>Descriptive Link Text, 1 of 2</h1>
+
+<p class=MsoNormal style='margin-bottom:0in'>              <b><span
+style='font-size:24.0pt;line-height:107%'>Not Accessible </span></b><span
+style='font-size:24.0pt;line-height:107%'>– vague and redundant <b>Accessible </b>–
+descriptive and unique</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=1215
+ style='width:911.5pt;margin-left:.4pt;border-collapse:collapse'>
+ <tr style='height:333.1pt'>
+  <td width=598 valign=top style='width:448.8pt;background:#E2F0D9;padding:
+  1.8pt 5.75pt 0in 7.15pt;height:333.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.55pt;
+  margin-bottom:.55pt;margin-left:0in;text-align:center'><b><span
+  style='font-size:16.0pt;line-height:107%;color:#C00000'>CSUN News</span></b></p>
+  <p class=MsoNormal style='margin-bottom:3.8pt'><b><span style='font-size:
+  13.0pt;line-height:107%'>CSUN Honors Four Exceptional Graduate Students for
+  Thesis and Project Work</span></b></p>
+  <p class=MsoNormal style='margin-bottom:6.65pt;line-height:90%'><span
+  style='font-size:13.0pt;line-height:90%'>CSUN’s Division of Academic Affairs
+  has selected four exceptional CSUN graduate students as the winners of the
+  2020 Distinguished Thesis/Graduate Project Competition, with each receiving a
+  $1,000 award and recognition from the university. </span><b><u><span
+  style='font-size:13.0pt;line-height:90%;color:#0563C1'>Read more.</span></u></b></p>
+  <p class=MsoNormal style='margin-bottom:3.9pt'><b><span style='font-size:
+  13.0pt;line-height:107%'>CSUN Team to Tap into Power of Inouye Telescope to
+  Study Sun’s Atmosphere</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.5pt;margin-bottom:
+  6.65pt;margin-left:0in;line-height:90%'><span style='font-size:13.0pt;
+  line-height:90%'>With the aid of a telescope in Hawaii, a team of professors
+  at California State University, Northridge hope to solve some of the
+  mysteries found in the sun’s atmosphere, information that could help us
+  better understand the impact of solar flares, as well as what is happening
+  with other stars in our solar system. </span><b><u><span style='font-size:
+  13.0pt;line-height:90%;color:#0563C1'>Read more.</span></u></b></p>
+  <p class=MsoNormal style='margin-bottom:3.8pt'><b><span style='font-size:
+  13.0pt;line-height:107%'>Minimizing the COVID Slide During the Summer</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:6.4pt;margin-bottom:
+  28.5pt;margin-left:0in;line-height:90%'><span style='font-size:13.0pt;
+  line-height:90%'>In response to the COVID-19 pandemic, schools across the
+  nation transitioned to meeting online. Given the abruptness of the transition
+  and lack of preparation parents had in becoming in-home teachers’ aides, many
+  parents and educators are worried about a “COVID slide” or “COVID slowdown,”
+  where students fail to retain any new information learned before and during
+  the pandemic — as well as over the summer, when students are not in school. </span><b><u><span
+  style='font-size:13.0pt;line-height:90%;color:#0563C1'>Click here</span></u></b></p>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:13.0pt;
+  line-height:107%;color:#C00000'>Screen readers read: </span></b><span
+  style='font-size:13.0pt;line-height:107%'>&quot;Read more, <b>link</b>&quot;
+  &quot;Read more, <b>link</b>&quot; &quot;Click here, <b>link</b>&quot;</span></p>
+  </td>
+  <td width=27 valign=top style='width:20.05pt;padding:1.8pt 5.75pt 0in 7.15pt;
+  height:333.1pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=590 valign=top style='width:442.7pt;background:#FFF2CC;padding:
+  1.8pt 5.75pt 0in 7.15pt;height:333.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.15pt;
+  margin-bottom:.55pt;margin-left:0in;text-align:center'><b><span
+  style='font-size:16.0pt;line-height:107%;color:#C00000'>CSUN News</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.8pt;
+  margin-left:.1pt'><b><span style='font-size:13.0pt;line-height:107%'>CSUN
+  Honors Four Exceptional Graduate Students for Thesis and Project Work</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.95pt;margin-bottom:
+  6.75pt;margin-left:.1pt;line-height:90%'><span style='font-size:13.0pt;
+  line-height:90%'>CSUN’s Division of Academic Affairs has selected four
+  exceptional CSUN graduate students as the winners of the 2020 Distinguished
+  Thesis/Graduate Project Competition, with each receiving a $1,000 award and
+  recognition from the university. </span><b><u><span style='font-size:13.0pt;
+  line-height:90%;color:#0563C1'>Learn more about CSUN's Four Exceptional
+  Graduate Students. </span></u></b><b><span style='font-size:13.0pt;
+  line-height:90%'>CSUN Team to Tap into Power of Inouye Telescope to Study
+  Sun’s Atmosphere</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.65pt;
+  margin-left:.1pt;line-height:90%'><span style='font-size:13.0pt;line-height:
+  90%'>With the aid of a telescope in Hawaii, a team of professors at
+  California State University, Northridge hope to solve some of the mysteries
+  found in the sun’s atmosphere, information that could help us better
+  understand the impact of solar flares, as well as what is happening with
+  other stars in our solar system. </span><b><u><span style='font-size:13.0pt;
+  line-height:90%;color:#0563C1'>Continue reading about CSUN's Astronomy Team.</span></u></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.8pt;
+  margin-left:.1pt'><b><span style='font-size:13.0pt;line-height:107%'>Minimizing
+  the COVID Slide During the Summer</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.3pt;margin-bottom:
+  26.0pt;margin-left:.1pt;line-height:90%'><span style='font-size:13.0pt;
+  line-height:90%'>In response to the COVID-19 pandemic, schools across the
+  nation transitioned to meeting online. Given the abruptness of the transition
+  and lack of preparation parents had in becoming in-home teachers’ aides, many
+  parents and educators are worried about a “COVID slide” or “COVID slowdown,”
+  where students fail to retain any new information learned before and during
+  the pandemic — as well as over the summer, when students are not in school. </span><b><u><span
+  style='font-size:13.0pt;line-height:90%;color:#0563C1'>Learn more about the
+  &quot;COVID Slide&quot;.</span></u></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.1pt'><b><span style='font-size:13.0pt;line-height:107%;
+  color:#C00000'>Screen readers read: </span></b><span style='font-size:13.0pt;
+  line-height:107%'>The content and link text then announce the word <b>&quot;link&quot;</b></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:-.25pt;text-indent:-.5pt'><span style='font-size:20.0pt;line-height:
+107%'>Full URL text </span><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+18.0pt;line-height:107%;color:#0563C1'>https://www.csun.edu/universal</span></a><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+18.0pt;line-height:107%;color:#0563C1'>-</span></a><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+18.0pt;line-height:107%;color:#0563C1'>design</span></a><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+18.0pt;line-height:107%;color:#0563C1'>-</span></a><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+18.0pt;line-height:107%;color:#0563C1'>center</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.4pt;margin-bottom:
+0in;margin-left:.5pt;text-indent:-.5pt'><span style='font-size:16.0pt;
+line-height:107%'>(raw URL may not make sense to screen reader users or others,
+so make the link text descriptive i.e. </span><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+16.0pt;line-height:107%;color:#0563C1'>Universal Design Center</span></a><a
+href="https://www.csun.edu/universal-design-center"><span style='font-size:
+16.0pt;line-height:107%;color:black;text-decoration:none'>)</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:946.4pt;margin-bottom:
+0in;margin-left:-23.0pt'><img width=1280 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image054.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;margin-left:
+155.45pt'>Best Practices for Accessible Links</h1>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection8>
+
+<h2 align=center style='text-align:center'>DESCRIPTION</h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+11.8pt;margin-left:9.35pt;text-indent:-9.35pt;line-height:94%'><span
+style='font-size:17.0pt;line-height:94%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='position:relative;z-index:-1895778304'><span style='left:0px;position:
+absolute;left:-33px;top:-6147px;width:1236px;height:1px'><img width=1236
+height=1 src="Excel%20Accessibility%20for%20Windows_files/image055.gif"></span></span><span
+style='font-size:17.0pt;line-height:94%'>Link text must always properly <b>describe
+the purpose </b>of the link and tell a user <b>where </b>the link will take
+them. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+0in;margin-left:9.35pt;text-indent:-9.35pt;line-height:98%'><span
+style='font-size:17.0pt;line-height:98%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=0 height=0></td>
+  <td width=49></td>
+  <td width=1103></td>
+  <td width=49></td>
+ </tr>
+ <tr>
+  <td height=1></td>
+  <td align=left valign=top><img width=49 height=1
+  src="Excel%20Accessibility%20for%20Windows_files/image056.gif"></td>
+  <td></td>
+  <td align=left valign=top><img width=49 height=1
+  src="Excel%20Accessibility%20for%20Windows_files/image057.gif"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<span style='font-size:17.0pt;line-height:98%'>Do not use text such as “<b>click
+here</b>” or “<b>read more,</b>” nor web addresses (URLs).</span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:49.45pt;
+text-indent:313.85pt;line-height:90%'>FUNCTIONALITY PRESENTATION</h2>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt'><span
+style='font-size:17.0pt;line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:17.0pt;line-height:107%'>Link functionality is about </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt'><span
+style='font-size:17.0pt;line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:17.0pt;line-height:107%'>Each link on the page should ensuring
+a link functions the way </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:110.6pt;margin-bottom:
+0in;margin-left:321.65pt;text-indent:-313.3pt;line-height:94%'><span
+style='font-size:17.0pt;line-height:94%'>be <b>visually different </b>from the
+user expects.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.4pt;
+margin-left:8.35pt;line-height:94%'><span style='font-size:17.0pt;line-height:
+94%'>regular text on the website.</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt'><span
+style='font-size:17.0pt;line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:17.0pt;line-height:107%'>Links must always enhance the </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt;
+line-height:94%'><span style='font-size:17.0pt;line-height:94%;font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:17.0pt;line-height:94%'>Can be
+differentiated by </span><span style='font-size:17.0pt;line-height:94%;
+color:#0070C0'>color</span><span style='font-size:17.0pt;line-height:94%'>,
+accessibility of a webpage.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:9.1pt'><b><span style='font-size:17.0pt;line-height:107%'>bold, </span></b><u><span
+style='font-size:17.0pt;line-height:107%'>underline</span></u><span
+style='font-size:17.0pt;line-height:107%'>, or <i>italics</i>.</span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt'><span
+style='font-size:17.0pt;line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:17.0pt;line-height:107%'>Users must be able to access </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:23.25pt;
+margin-bottom:0in;margin-left:13.2pt;text-align:right;text-indent:-13.2pt'><span
+style='font-size:17.0pt;line-height:107%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:17.0pt;line-height:107%'>Using color alone <b>does not </b>links
+using a mouse, keyboard, or </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=1095 style='width:821.3pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:46.0pt'>
+  <td width=73 valign=top style='width:54.55pt;border-top:solid #BFBFBF 1.0pt;
+  border-left:solid #BFBFBF 1.0pt;border-bottom:none;border-right:none;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:46.0pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=1022 valign=bottom style='width:766.75pt;border-top:solid #BFBFBF 1.0pt;
+  border-left:none;border-bottom:none;border-right:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:46.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:41.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:20.0pt;line-height:107%;color:#C00000'>LINKED IMAGES</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=73 valign=top style='width:54.55pt;border:none;border-left:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:26.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:21.5pt;text-align:center'><span
+  style='font-size:18.0pt;line-height:107%;font-family:"Arial",sans-serif'>•</span></p>
+  </td>
+  <td width=1022 valign=top style='width:766.75pt;border:none;border-right:
+  solid #BFBFBF 1.0pt;background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;
+  height:26.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:18.0pt;
+  line-height:107%'>A linked image is an image (with or without text) that is
+  linked to another resource or webpage. </span></p>
+  </td>
+ </tr>
+ <tr style='height:26.6pt'>
+  <td width=73 valign=top style='width:54.55pt;border:none;border-left:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:26.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:21.45pt;text-align:center'><span
+  style='font-size:18.0pt;line-height:107%;font-family:"Arial",sans-serif'>•</span></p>
+  </td>
+  <td width=1022 valign=top style='width:766.75pt;border:none;border-right:
+  solid #BFBFBF 1.0pt;background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;
+  height:26.6pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:18.0pt;
+  line-height:107%'>Linked images need link descriptions as well as image
+  descriptions (alt text).</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.6pt'>
+  <td width=73 valign=top style='width:54.55pt;border:none;border-left:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:26.6pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:21.45pt;text-align:center'><span
+  style='font-size:18.0pt;line-height:107%;font-family:"Arial",sans-serif'>•</span></p>
+  </td>
+  <td width=1022 valign=top style='width:766.75pt;border:none;border-right:
+  solid #BFBFBF 1.0pt;background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;
+  height:26.6pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:18.0pt;
+  line-height:107%'>If the link description is different than the alt text,
+  enter the link description in the HTML Title field. </span></p>
+  </td>
+ </tr>
+ <tr style='height:41.25pt'>
+  <td width=73 valign=top style='width:54.55pt;border-top:none;border-left:
+  solid #BFBFBF 1.0pt;border-bottom:solid #BFBFBF 1.0pt;border-right:none;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:41.25pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:21.45pt;text-align:center'><span
+  style='font-size:18.0pt;line-height:107%;font-family:"Arial",sans-serif'>•</span></p>
+  </td>
+  <td width=1022 valign=top style='width:766.75pt;border-top:none;border-left:
+  none;border-bottom:solid #BFBFBF 1.0pt;border-right:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:4.1pt 5.75pt 4.1pt 0in;height:41.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:18.0pt;
+  line-height:107%'>Visit </span><a
+  href="https://www.csun.edu/universal-design-center/best-practices-accessible-images#LinkedImages"><span
+  style='font-size:18.0pt;line-height:107%;color:#0563C1'>Linked Images</span></a><u><span
+  style='font-size:18.0pt;line-height:107%;color:#0563C1'> </span></u><span
+  style='font-size:18.0pt;line-height:107%'>on the Best Practices for
+  Accessible Images page for more information.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:13.3pt;margin-bottom:
+0in;margin-left:321.65pt;text-indent:-313.3pt;line-height:94%'><span
+style='font-size:17.0pt;line-height:94%'>make it accessible. speech recognition
+commands.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection9>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1280 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image054.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image058.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image058.gif"><br clear=ALL>
+<br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:888.0pt;margin-bottom:
+0in;margin-left:-1.0in'><img width=1282 height=1
+src="Excel%20Accessibility%20for%20Windows_files/image058.gif"><br clear=ALL>
+</p>
+
+</div>
+
+</body>
+
+</html>

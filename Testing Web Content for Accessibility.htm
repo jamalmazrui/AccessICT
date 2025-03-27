@@ -1,0 +1,537 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>WebAIM Quick Reference: Testing Web Content for Accessibility</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:4.4pt;
+	margin-right:0in;
+	margin-bottom:.2pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:9.5pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:maroon;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#404040;
+	font-style:italic;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:#404040;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria",serif;
+	color:maroon;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:15.0pt 195.6pt 25.15pt .5in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 36.35pt 1.0in .5in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:36.85pt 223.3pt 25.15pt 3.1in;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-169.9pt;margin-bottom:
+0in;margin-left:0in;text-indent:0in;line-height:107%'><b><span
+style='font-size:13.5pt;line-height:107%;font-family:"Cambria",serif;
+color:#333333'>WebAIM Quick Reference: </span></b><span style='font-size:13.5pt;
+line-height:107%;font-family:"Cambria",serif;color:#333333'>Testing Web Content
+for Accessibility<b>      </b></span><img width=208 height=56 id="Picture 315"
+src="Testing%20Web%20Content%20for%20Accessibility_files/image001.gif"></p>
+
+</div>
+
+<span style='font-size:9.5pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<h1 style='margin-left:-.25pt'><span style='position:relative;z-index:251658240;
+left:-2px;top:0px;width:724px;height:1px'><img width=724 height=1
+src="Testing%20Web%20Content%20for%20Accessibility_files/image002.gif"></span><br
+clear=ALL>
+Test with WAVE  </h1>
+
+<p class=MsoNormal style='margin-left:8.3pt;text-indent:-9.0pt'><span
+style='font-family:Wingdings'>&#159;</span><span style='font-family:"Arial",sans-serif'>
+</span>Run a report a<a href="https://wave.webaim.org/"><span style='color:
+black;text-decoration:none'>t </span></a><a href="https://wave.webaim.org/"><span
+style='font-size:10.0pt;line-height:103%;color:blue'>wave.webaim.org</span></a><a
+href="https://wave.webaim.org/"><span style='color:black;text-decoration:none'>.</span></a>
+For very complex or nonpublic pages, use the WAVE Chrome or Firefox extension <a
+href="https://wave.webaim.org/extension/"><span style='color:black;text-decoration:
+none'>(</span></a><a href="https://wave.webaim.org/extension/"><span
+style='font-size:10.0pt;line-height:103%;color:blue'>wave.webaim.org/extension</span></a><a
+href="https://wave.webaim.org/extension/"><span style='color:black;text-decoration:
+none'>)</span></a>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.5pt'><span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Watch the overview video on the
+WAVE homepage. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Error
+icons flag known issues. Other icons identify potential problems or features.
+Click an icon to highlight the corresponding element and learn more using the <b>Reference</b>
+panel. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Use
+the <b>Details</b> panel to review page issues. Click an icon to find it in the
+page. Uncheck icons to hide them. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Turn
+off <b>Styles</b> to simplify the page view and to check the reading and
+navigation order. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Click
+the <b>Code</b> button at the bottom of the page to see the page code with WAVE
+icons. </p>
+
+<h2 style='margin-left:-.25pt'>Images </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+alternative text (shown in green) conveys the equivalent <b>content</b> and/or <b>function</b>
+of the image. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Look
+for ways to replace images of text with true text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.9pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Content
+conveyed via CSS images must have a text alternative.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:61.1pt;margin-bottom:
+.2pt;margin-left:-.2pt'><b><i><span style='font-size:10.0pt;line-height:103%;
+color:#404040'>Headings and Regions/Landmarks </span></i></b><span
+style='font-family:Wingdings'>&#159;</span><span style='font-family:"Arial",sans-serif'>
+</span>Use the <b>Structure </b>panel in the sidebar to review. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>The
+main heading should usually be an <span style='font-size:9.0pt;line-height:
+103%'>&lt;h1&gt;</span>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+the headings and regions/landmarks reflect the page structure. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.95pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Look
+for skipped heading levels (e.g., <span style='font-size:9.0pt;line-height:
+103%'>&lt;h2&gt;</span> to <span style='font-size:9.0pt;line-height:103%'>&lt;h4&gt;</span>).
+</p>
+
+<h2 style='margin-left:-.25pt'>Contrast </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-9.0pt'><span style='font-size:10.0pt;line-height:103%;font-family:Wingdings'>&#159;<span
+style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+10.0pt;line-height:103%'>Select the <b>Contrast</b> panel.<b> </b></span><span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>WAVE flags WCAG AA contrast issues in text. <span style='font-family:
+"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'> </span>Non-underlined
+links need 3:1 contrast with body text, plus a change, like underlining, on
+hover and focus. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-9.0pt;line-height:104%'><span style='font-size:10.0pt;line-height:104%;
+font-family:Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:10.0pt;line-height:104%'>Check colors in WebAIM's contrast
+checker: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:9.5pt;line-height:110%'><a
+href="http://webaim.org/resources/contrastchecker/"><span style='font-size:
+10.0pt;line-height:110%;color:blue'>webaim.org/resources/contrastchecker/</span></a><a
+href="http://webaim.org/resources/contrastchecker/"><span style='font-size:
+10.0pt;line-height:110%;color:black;text-decoration:none'>.</span></a><span
+style='font-size:10.0pt;line-height:110%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.5pt;
+margin-left:9.0pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-9.0pt;line-height:104%'><span style='font-size:10.0pt;line-height:104%;
+font-family:Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:10.0pt;line-height:104%'>Manually check contrast in icons and
+images. </span></p>
+
+<h2 style='margin-left:-.25pt'>ARIA </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>WAVE
+flags ARIA with purple icons. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Check
+for appropriate use of ARIA roles, states, and properties (presented in green).
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+ARIA labels and descriptions are correct. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;line-height:107%'><b><i><span style='font-size:10.0pt;
+line-height:107%;color:#404040'>Forms </span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+form controls have descriptive labels. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;line-height:107%'><b><i><span style='font-size:10.0pt;
+line-height:107%;color:#404040'>Links and buttons </span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+links and buttons present descriptive text. </p>
+
+<h2 style='margin-left:-.25pt'>Other common WAVE checks </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Page
+language is specified (e.g., <span style='font-size:9.0pt;line-height:103%'>&lt;html
+lang=&quot;en&quot;&gt;</span>). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>If
+there are data tables, ensure table headers are present and have the correct
+scope. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Look
+for links with ambiguous link text like “click here.” <span style='font-family:
+Wingdings'>&#159;</span><span style='font-family:"Arial",sans-serif'> </span>Ensure
+the page title is descriptive and succinct. </p>
+
+<h1 style='margin-left:-.25pt'>Use a checklist </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-4.15pt;margin-bottom:
+4.25pt;margin-left:-1.45pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=352 height=1
+id="Group 2326"
+src="Testing%20Web%20Content%20for%20Accessibility_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:30.6pt;
+margin-left:-.25pt;line-height:110%'><span style='font-family:Wingdings'>&#159;</span><span
+style='font-family:"Arial",sans-serif'> </span>WCAG 2<a
+href="http://webaim.org/standards/wcag/checklist/"><span style='color:black;
+text-decoration:none'>: </span></a><a
+href="http://webaim.org/standards/wcag/checklist/"><span style='font-size:10.0pt;
+line-height:110%;color:blue'>webaim.org/standards/wcag/checklist/</span></a><a
+href="http://webaim.org/standards/wcag/checklist/"><span style='color:black;
+text-decoration:none'>.</span></a> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-size:10.0pt;line-height:107%;font-family:"Georgia",serif'> </span></p>
+
+<h1 style='margin-left:-.25pt'>Check keyboard accessibility </h1>
+
+<p class=MsoNormal style='margin-top:4.05pt;margin-right:0in;margin-bottom:
+.2pt;margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;
+font-family:Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>The
+first time testing with Mac, press <b>Control + F7</b> to enable full keyboard
+accessibility.<b> </b> <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>In Safari, select <b>Preferences
+&gt; Advanced &gt; Accessibility &gt; Press Tab to highlight each item…</b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Navigate
+the page using only the keyboard: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.4pt;margin-bottom:.2pt;
+margin-left:9.5pt'><span style='line-height:103%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Tab</b>:
+Navigate interactive elements (links, form controls, etc.) <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span><b>Shift + Tab</b>: Navigate backwards. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Enter</b>: Activate links or
+buttons, submit most forms. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.4pt;margin-bottom:.2pt;
+margin-left:9.5pt'><span style='line-height:103%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Spacebar</b>:
+Activate checkboxes and buttons, expand a select menu, or scroll the window. <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span><b>Arrow keys</b>: Navigate radio buttons, select/dropdown menus,
+sliders, tab panels, tree menus, etc. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Look
+for mouse-only interaction (e.g., rollover menus). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Confirm
+every focusable element has a keyboard focus indicator/outline with at least
+3:1 contrast. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Ensure
+any “skip” links work correctly and are visible to sighted keyboard users. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Make
+sure the navigation order is logical and intuitive. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Test
+dialog and pop-ups. Can you navigate and close the dialog? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.55pt'>Does focus return to a logical place? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:45.65pt;margin-bottom:
+10.15pt;margin-left:9.55pt'><span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Modal dialogs must maintain
+focus until dismissed. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Non-modal dialogs must close
+when focus is lost. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Esc</b> should also close all
+dialogs and menus. </p>
+
+<h1 style='margin-left:-.25pt'>Test content scaling </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-1.8pt;margin-bottom:
+4.05pt;margin-left:-1.45pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=352 height=1
+id="Group 2327"
+src="Testing%20Web%20Content%20for%20Accessibility_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>In<b>
+Chrome</b>, press<b> Ctrl/cmd</b> and:  <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>+</b> to zoom in (larger) <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span> <b>-</b> to zoom out (smaller) <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span><b>0</b> to reset to 100%  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>For
+WCAG 2.0 – Zoom to 200% </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>For
+WCAG 2.1 – Adjust viewport to 1280 pixels wide and zoom to 400%. Avoid
+horizontal scrolling unless required for the content (e.g., a data table or
+map).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.9pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Text-only
+zoom (Recommended) – In <b>Firefox</b>, choose <b>View &gt; Zoom &gt; Zoom Text
+Only</b>. Zoom to 130-150% </p>
+
+<h1 style='margin-left:-.25pt'>Test with a screen reader </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-1.8pt;margin-bottom:
+4.15pt;margin-left:-1.45pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=352 height=1
+id="Group 2328"
+src="Testing%20Web%20Content%20for%20Accessibility_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;line-height:
+104%'><span style='font-size:10.0pt;line-height:104%;font-family:Wingdings'>&#159;</span><span
+style='font-size:10.0pt;line-height:104%;font-family:"Arial",sans-serif'> </span><span
+style='font-size:10.0pt;line-height:104%'>WebAIM tutorials:<b> </b> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:49.2pt;margin-bottom:
+.2pt;margin-left:-.75pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:9.0pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>o</span><a
+href="http://webaim.org/articles/jaws/"><span style='font-size:10.0pt;
+line-height:104%;font-family:"Arial",sans-serif;color:black;text-decoration:
+none'> </span></a><a href="http://webaim.org/articles/jaws/"><span
+style='font-size:10.0pt;line-height:104%;color:blue'>webaim.org/articles/jaws/</span></a><a
+href="http://webaim.org/articles/jaws/"><span style='font-size:10.0pt;
+line-height:104%;color:black;text-decoration:none'> </span></a><span
+style='font-size:10.0pt;line-height:104%;font-family:"Courier New"'>o</span><a
+href="http://webaim.org/articles/nvda/"><span style='font-size:10.0pt;
+line-height:104%;font-family:"Arial",sans-serif;color:black;text-decoration:
+none'> </span></a><a href="http://webaim.org/articles/nvda/"><span
+style='font-size:10.0pt;line-height:104%;color:blue'>webaim.org/articles/nvda/</span></a><a
+href="http://webaim.org/articles/nvda/"><span style='font-size:10.0pt;
+line-height:104%;color:black;text-decoration:none'> </span></a><span
+style='font-size:10.0pt;line-height:104%;font-family:"Courier New"'>o</span><a
+href="http://webaim.org/articles/voiceover"><span style='font-size:10.0pt;
+line-height:104%;font-family:"Arial",sans-serif;color:black;text-decoration:
+none'> </span></a><a href="http://webaim.org/articles/voiceover"><span
+style='font-size:10.0pt;line-height:104%;color:blue'>webaim.org/articles/voiceover</span></a><a
+href="http://webaim.org/articles/voiceover"><span style='font-size:10.0pt;
+line-height:104%;color:black;text-decoration:none'> </span></a><span
+style='font-size:10.0pt;line-height:104%;font-family:Wingdings'>&#159;</span><span
+style='font-size:10.0pt;line-height:104%;font-family:"Arial",sans-serif'> </span><span
+style='font-size:10.0pt;line-height:104%'>Focus on navigation, forms, and
+dynamic content. </span><span style='font-size:10.0pt;line-height:104%;
+font-family:Wingdings'>&#159;</span><span style='font-size:10.0pt;line-height:
+104%;font-family:"Arial",sans-serif'> </span><span style='font-size:10.0pt;
+line-height:104%'>Is information presented through ARIA accurate?  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-9.0pt;line-height:104%'><span style='font-size:10.0pt;line-height:104%;
+font-family:Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:10.0pt;line-height:104%'>Are forms instructions and error
+feedback read when navigating a form? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.2pt;
+margin-left:9.0pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-9.0pt;line-height:104%'><span style='font-size:10.0pt;line-height:104%;
+font-family:Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:10.0pt;line-height:104%'>Are all dynamic changes and updates
+accessible?<b> </b></span></p>
+
+<h1 style='margin-left:-.25pt'>Scan for other issues </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-1.8pt;margin-bottom:
+3.95pt;margin-left:-1.45pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%'><img border=0 width=352 height=1
+id="Group 2329"
+src="Testing%20Web%20Content%20for%20Accessibility_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Captions
+and transcripts for media. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Information
+does not depend on color, audio, shape, size, or location. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>Animating
+or updating content or media can be paused or stopped.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:9.0pt;text-indent:-9.0pt'><span style='line-height:103%;font-family:
+Wingdings'>&#159;<span style='font:7.0pt "Times New Roman"'> </span></span>No
+strobing content/video that could cause seizures.  </p>
+
+</div>
+
+<span style='font-size:9.5pt;line-height:103%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-size:10.0pt;line-height:107%;font-family:"Georgia",serif'>© 2023
+WebAIM. All rights reserved. </span></p>
+
+</div>
+
+</body>
+
+</html>

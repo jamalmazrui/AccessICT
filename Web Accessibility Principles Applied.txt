@@ -1,0 +1,343 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WCAG Zoom Requirements
+• 1.4.4 Resize text (Level AA)
+• "Except for captions and images of text, text can be resized without assistive technology up to 200% without loss of content or functionality."
+• Zoom to 200% is supported.
+• 1.4.10 Reflow (Level AA - WCAG 2.1)
+• "Content can be presented without loss of information or functionality..." and without horizontal scrolling (except when necessary) at 400% zoom with viewport width at 1280 pixels.
+• Consider text sizing
+• Perhaps to 130%-150%
+
+
+
+
+
+
+
+
+
+
+WCAG 2.1: Non-text Contrast
+•Level AA
+•3:1 contrast of:
+• User Interface Components
+• Including states (focus indicators, hover states, etc.) 
+• Graphical Objects
+UI "Boundaries"
+ I have read and agree to the Terms of Use
+UI "Boundaries"
+
+... except when "determined by user agent"
+UI "States"
+ I have read and agree to the Terms of Use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WCAG Pause, Stop, Hide (Level A)
+• For any moving, blinking or scrolling information that (1)  starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it...; and
+• For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update.
+
+
+
+
+
+
+
+
+
+
+
+
+Language of Page
+  Most people today can hardly conceive of life without the internet. Some have argued that no other single invention has 
+been more revolutionary since Gutenberg's printing press in the 
+   1400s. Now, at the click of a mouse, the world can be "at your fingertips"-that is, if you can use a mouse... and see the screen... and hear the audio-in other words, if you don't have a disability of any kind.
+Language of Page
+  Most people today can hardly conceive of life without the internet. Some have argued that no other single invention has 
+been more revolutionary since Gutenberg's printing press in the 
+   1400s. Now, at the click of a mouse, the world can be "at your fingertips"-that is, if you can use a mouse... and see the screen... and hear the audio-in other words, if you don't have a disability of any kind.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ARIA and HTML labels and descriptions
+• Elements must be "labelable"
+• Link, form control, table, etc. NOT <div>, <span>, <p>, etc.
+• Or have an appropriate ARIA role
+• Are read as a stream of text. Users cannot easily navigate or explore the referenced content.
+• Semantics (lists, links, etc.) are removed from referenced content.
+• Should be succinct.
+Hidden ARIA and HTML labels and descriptions
+• <label> hidden with CSS display:none will not be read by screen readers.
+• Elements hidden with display:none, but referenced by aria-labelledby or ariadescribedby WILL be read.
+<label for="user">Username:</label>
+<input type="text" id="user" aria-describedby="usernameerror">
+<p id="usernameerror" 
+style="display:none">This username is already taken. Please try again.</p>
+
+
+
+
+
+
+
+
+
+
+WCAG 2.1 - Identify Input Purpose (Level AA)
+The purpose of each input field collecting information about the user can be programmatically determined when:
+• The input field serves a purpose identified in the Input Purposes for User Interface Components section; and
+• The content is implemented using technologies with support for identifying the expected meaning for form input data.
+Currently requires appropriate autocomplete attribute values for inputs that collect user information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

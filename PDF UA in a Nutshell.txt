@@ -1,0 +1,347 @@
+﻿
+
+Contents
+PDF/UA: The ISO standard for universal accessibility 3
+PDF/UA: The key facts 	4
+Laws requiring accessible IT services 	4
+Introduction to the Web Content Accessibility Guidelines 2.0 	4
+Important Laws and regulations 	5
+International 	5
+United States of America 	5
+Europe 	5
+The history of PDF/UA 	6
+PDF/UA's requirements 	7
+File format requirements 	7
+Requirements for compliant PDF programs 	8
+Requirements for compliant assistive technology 	8
+Accessible PDF: Users and usage 	9
+PDF/UA: Creation tools 	10
+Table 1: PDF/UA creation tools 	10
+Validating PDF/UA compliance 	12
+Table 2: Validating PDF/UA compliance 	13
+
+ 
+Assistive technology for in-depth testing 	14
+Compliant reader software 	14
+Added value for PDF users 	15
+Visual or motor impairments 	15
+Reading and writing difficulties 	15
+Easier reading and navigation on mobile devices 	15
+The potential benefits of PDF/UA 	16
+Laws paving the way for PDF/UA 	17
+What the experts are saying 	18
+Klaus-Peter Wegge, Siemens AG 	18
+Markus Riesch, "Access for All" 	18
+Learn more about PDF/UA 	19
+PDF/UA Competence Center 	19
+PDF/UA seminars 	19
+PDF Association membership 	19
+AIIM PDF/UA Committee 	19
+
+PDF/UA in a Nutshell 	I
+Introduction
+PDF/UA: The ISO standard for universal accessibility
+
+Information plays a central role in society today, and it is becoming more and more common for that information to be offered in digital form alone. The reliable, user-friendly Portable Document Format (PDF) has become the world's file type of choice for providing information as a digital document. 
+  Tags can be added to a PDF in order to structure the content of a document. These tags are a critical requirement if any form of assistive technology (such as screen readers, specialist mice, and speech recognition and text-to-speech software) is to gain access to this content. To date, PDF documents have rarely been tagged, and not all software can make use of PDF tags. In practical terms, this particularly reduces information's accessibility for people with disabilities who rely on assistive technology.
+
+The ISO (International Organization for Standardization) is the largest organisation in the world for developing and publishing international standards.
+  In order to ensure future access to PDF documents for as many people as possible, the ISO 14289-1 standard (known as PDF/UA) was developed by specialists from around the world. It was published by the ISO in July 2012 with the official title "ISO 14289-1. Document management applications - Electronic document file format enhancement for accessibility - Part 1: Use of ISO 32000-1 (PDF/UA-1)". 
+  PDF/UA-1 is the first part of the PDF/UA standards family; the "UA" suffix stands for "Universal Accessibility" and refers to the standard's central requirement. It is the first complete definition of a set of requirements for universally-accessible PDF documents.
+Tagged PDF: 
+Tags are standardised content markers in a digital document. First available in Adobe Acrobat 5, tags can be used to create a PDF file with a logical document structure . Tags are a critical requirement for accessing the content in PDFs with assistive technology.  PDF/UA is aimed primarily at developers of software for creating, reading, editing and validating PDF, and at suppliers of assistive technology. The standard itself is not intended as a field manual for day-to-day use, but for PDF creators looking to learn more. The PDF Association and its members offer specialist articles, webinars and training, providing detailed information about PDF/UA and explaining how to create accessible PDF content. Implementing the clearly-defined requirements of the PDF/UA standard in software products will allow users to easily create accessible PDF documents without any special training, opening up effortless access to high quality content to as many people as possible.
+  At the time of PDF/UA's publication, of course, there were no programs available which were fully compliant with the standard. Since then, however, a number of software developers including Adobe Systems, axaio software, callas software, NetCentric Technologies, NV Access, PDFlib, xyMedia, the Swiss National Association of and for the Blind (SNAB), and the Swiss foundation "Zugang für alle" (Access For All) have already announced or even released products supporting the PDF/UA format. 
+  More and more developers, government authorities and other organisations are expected to accept PDF/UA as an absolute requirement for universally accessible PDF documents from this point on.
+
+Introduction
+PDF/UA: The key facts
+What does "universal accessibility" actually mean when it comes to PDFs? It is the idea that everyone should be equally able to independently access and use the information contained within a PDF document. This applies in particular to people with disabilities and those with other difficulties; in other words, those who particularly depend on universally accessible information and documents. The PDF/UA standard allows these people the following key options:
+■  Making use of PDF documents without assistance from others
+■  Reaching a specific goal easily, directly, and within a reasonable time frame
+■  Making the same-quality use of PDF documents as people without disabilities.
+  The technical requirements for universally accessible PDF documents are described clearly and in full in the new PDF/UA standard. They define, for example, how to create text, images, form fields, lists and tables that can be used by people with disabilities. 
+Laws requiring accessible IT services
+These requirements are increasingly important for businesses and public institutions, as current legislation requires (and in some cases has regulated for many years) universal accessibility in information technology. Laws in the USA, Canada, Australia and the European Union, for example, require state and federal authorities to allow the public universal access to the digital information they provide. Aside from websites, this applies in particular to PDF documents. Although such laws do not always apply to the private sector (or apply only in limited cases), more and more modern businesses are accepting their responsibility to provide accessible versions of both their websites and the PDF documents they provide.
+Introduction to the Web Content Accessibility Guidelines 2.0
+The requirements for PDF/UA are based on the principles of Version 2.0 of the W3C consortium's Web Content Accessibility Guidelines (WCAG), also published in identical form as an ISO standard in October 2012 (ISO/IEC 40500). WCAG 2.0 guides the creation of accessible web content, focusing on the kinds of content and applications usually provided on websites. 
+  Some WCAG 2.0 tips of a purely informative nature suggest how barriers to access can also be avoided in PDF documents, but a systematic explanation or guide is not provided. PDF/UA, on the other hand, exclusively and fully addresses the PDF format, bringing the ideas behind WCAG 2.0 into the world of PDF and setting PDF-specific rules. 
+  As an ISO standard, PDF/UA does not offer concrete help with implementation, either for specific programs or areas of application. This, however, is covered by the PDF/UA Competence Center founded by the PDF Association. The PDF/UA Competence Center is made up of leading international businesses and individual experts who use the website www.pdfa.org, as well as publications, seminars and conferences, to provide information about implementing PDF/UA in practice.
+                                                                          Laws and regulations Important Laws and regulations
+International
+■ UN Convention on the Rights of People with Disabilities: The UN Convention on the Rights of People with Disabilities defines in concrete terms the general human rights of people with disabilities. It has been in effect since 2008.
+United States of America
+■ Americans With Disabilities Act (ADA): In 1990, the US Congress passed a federal law, ADA, which forbade all forms of discrimination based on disability.
+■ Rehabilitation Act, Section 508: In 1998, the United States expanded the Rehabilitation Act to include Section 508. Since then, the federal government has been required to ensure that all its IT services are accessible for people with disabilities.
+Europe
+■ EU Mandate 376: With Mandate 376, the European Commission tasked the standardisation organisations CEN, CENELEC and ETSI with harmonising European public procurement laws. They are currently working on the EN 301459 standard which specifies requirements for universal accessibility in creating public-sector ICT products and services.
+■ European Accessibility Act: The European Commission is currently preparing a European Accessibility Act.
+■ Equal Treatment of Disabled Persons Act 
+(Behindertengleichstellungsgesetz - BGG): 
+Section 11 of the German federal law BGG has required since 2002 that federal authorities' online presences and services be universally accessible. Some German states also have state-level laws which place similar requirements on local authorities.
+■ Regulation for the creation of universally accessible IT in accordance with the Equal Treatment of Disabled Persons Act (Barrierefreie-Informationstechnik-Verordnung - BITV 2.0): BITV 2.0 specifies the minimum requirements for online information and services provided by federal authorities. They are mostly based on the recommendations of WCAG 2.0. Some German states have comparable state-level regulations regarding universally accessible IT services.
+Important Standards: PDF/UA (ISO 14289-1:2012): ISO standard 14289-1 defines all essential requirements for universally-accessible PDF documents, PDF programs and assistive technologies for using PDF/UA. 
+PDF 1.7 (ISO 32000-1:2008): ISO standard 32000-1 specifies the PDF file format. 
+WCAG 2.0 (ISO/IEC 40500:2012): ISO/IEC 40500 is a standard which is identical in content to the W3C's WCAG 2.0, the guidelines for a universally-accessible web.■ Regulation on equal rights for disabled persons (Behindertengleichstellungsverordnung, BehiV): Article 10 of the Swiss federal regulation BehiV requires federal authorities to make anything they provide online universally accessible so that people with disabilities can make use of it.
+■ Federal Guidelines for Designing Universally Accessible Online Content (P028): The Swiss P028 guidelines require federal websites to conform to WCAG 2.0 and to meet compliance level AA.
+■ Federal Law on the Equal Treatment of Disabled Persons (Bundes-Behindertengleichstellungsgesetz - BGStG): The Austrian federal law BGStG requires the Austrian federal government to make its services available in an accessible form. 
+History
+The history of PDF/UATimeline: From PDF to PDF/UA
+1993: A dobe Systems publishes 
+PDF 1.0
+1999:  W3C releases Web Content Accessibility Guidelines 1.0
+2001:  PDF 1.4 integrates tags to represent the logical structure of content within PDF documents
+2002: E qual Treatment of 
+Disabled Persons Act, 
+Germany 
+2002: A ccessible IT Regulation 1.0, 
+Germany 
+2004:  PDF/UA project begins, coordinated by AIIM
+2008: P DF 1.7 published as an 
+ISO standard (ISO 32000)
+2008: U N Convention on the Rights of People with Disabilities comes into effect
+2008:  W3C releases Web Content 
+Accessibility Guidelines 2.0
+2009: I SO takes over the PDF/UA project as ISO/NWI 14289 
+2011: A ccessible IT Regulation 2.0, 
+Germany
+2012: I SO approves and publishes PDF/UA 
+(ISO 14289-1)The first version of PDF, PDF 1.0, was released in 1993. PDF was created and further developed by Adobe Systems Incorporated. The PDF format makes it easier to exchange and display digital documents; in the two decades since its publication, it has gained worldwide acceptance. It allows all kinds of documents to be reproduced exactly as they were originally designed, regardless of the platform used, thanks to a number of (sometimes free) PDF creation and viewing programs and web browser plug-ins.
+  For a long time, however, this file format remained inaccessible to a large number of people, as PDF originally focused on the visual presentation of a document rather than its content and structure. In order to address this problem, in 2001 Adobe introduced tags with PDF 1.4 and Adobe Acrobat 5. These can be used to turn a conventional PDF into a tagged PDF.
+  In 2004, a working group began to form, coordinated by AIIM (the Association for Information and Image Management, www.aiim.org), aiming to develop a universally accessible PDF standard. This standard would specify a complete set of requirements for tagged PDF documents that could be reliably used to create and check for a sufficient level of accessibility.
+  A further important development came in 2008, when Adobe's PDF 1.7 specification became an ISO standard - published by the ISO as "ISO 32000-1:2008. Document management - Portable document format - Part 1: PDF 1.7". A copy of the standard can be downloaded for free from the Adobe website, while the ISO version (which is identical in content) can be ordered from ISO for a fee. Also in 2008, the World Wide Web Consortium (W3C) published WCAG 2.0. This replaced its predecessor WCAG 1.0, published in 1999, and took into account the technical developments which had taken place since that time.
+  An ISO standardisation project began in 2009. Based on AIIM's project, ISO committee ISO TC 171 SC  2, chaired by Cherie Ekholm of Microsoft, aimed to further develop PDF/UA. A wide range of companies, including Adobe, Microsoft, callas software, Design Science, NetCentric and others were actively involved in the standardisation work. This meant that just one year later, the draft standard ISO/DIS 14289-1 was ready for publication. After an intensive consultation and testing phase, PDF/UA was finally approved as an ISO standard and published as ISO 14289-1 in July 2012.
+  The German standardisation organisation DIN (Deutsches Institut für Normung e.V.) is currently working on translating ISO 14289-1 into German; this version is expected to be published in autumn 2013.
+  On the international stage, meanwhile, the second part of the standard (PDF/UA-2) is now being prepared by the ISO. PDF/UA-2 will be based on the next version of the PDF format, PDF 2.0, and will make use of all that has been learned during the development and introduction of PDF/UA-1. Among other things, it will include more extensive options for sophisticated semantic structuring of content and support for specific tag sets. These will include scientific sets, such as MathML and ChemML, as well as specialised publication tag sets such as DAISY and DocBook.
+Requirements
+PDF/UA's requirementsThe PDF/UA standard defines technical requirements for universally-accessible PDF documents by identifying a set of relevant PDF functions (including text content, images, form fields, comments, bookmarks and metadata) based on ISO 32000-1 (PDF 1.7) and specifies how they should be used in PDF/UA-compliant documents. It does not address elements which have no direct impact on accessibility, such as the compression algorithms used for image data. 
+  Successful access to content within PDFs depends not just on compliant documents, but also on compliant PDF programs and assistive technology. PDF/UA therefore also specifies requirements for these. A brief selection of the main requirements is shown below: File format requirements
+■ Content is categorised in one of two ways: meaningful content, and artefacts such as decorative page elements. All meaningful content must be tagged and integrated into the structure tree of all tags within a document. Artefacts, on the other hand, need only be marked as such.
+■ Meaningful content must be marked with tags and, together with the other tags in the document, create a complete structure tree. 
+■ Meaningful content must be marked with the appropriate semantic tags.
+■ The structure tree created by the document tags must reflect the document's logical reading order.
+■ Only the standard tags defined in PDF 1.7 may be used; if any other tags are used, a role assignment entry must record which standard tag each one represents.
+■ Information may not be conveyed using visual means alone (e.g. contrast, colour or position on the page).
+■ No flickering, blinking or flashing content is permitted, either as effects controlled by JavaScript or as part of any videos embedded within the PDF.
+■ A document title must be given, and the document must be set up so that the title (rather than the file name) appears in the window title.
+■ The language of all content must be noted, and changes of language must be explicitly marked as such. 
+
+Requirements
+■ Any pictorial elements - whether image objects or other non-text objects such as vector objects or object groups - must have corresponding alternative text.
+  Adhering to these technical and semantic requirements will create a universally accessible PDF/UA document which a person with disabilities can make use of just as effectively and in just as high quality as any user without disabilities.
+Requirements for compliant PDF programs
+PDF programs are often the link for people with disabilities between the PDF document to be read and any assistive technology that may be used. In practice, this means that PDF/UA-compliant PDF programs must hand over all content and other information from the PDF document to the assistive software or device, and that the assistive technology itself must make use of all the information it receives, including for navigation, filling out form fields, or reading metadata.
+■ The software must be able to read and pass on all information stored within the document's tags and structure tree, or otherwise make all the document's content accessible.
+■ It must make all content available to the assistive technology, including structural information.
+
+■ It must not limit the functionality of the assistive technology.
+■ It must allow the assistive technology to recognise the language used and any changes in language within the document.
+■ It must allow navigation through the document by page number, through the structure tree, or through bookmarks.
+■ It must not play media content automatically, but rather wait for the user's command to do so.
+Requirements for compliant assistive technology
+The term "assistive technology" describes anything which helps or allows people with disabilities or other difficulties to use any kind of hardware and software. People with serious visual impairments may use screen magnifiers. People with restricted mobility can use joysticks or special keyboards for input and navigation. Highlighting the current portion of a document while also reading it aloud using a text-to-speech function can make it easier for users with dyslexia to read a document. Blind users often use a standard keyboard for input and navigation alongside a screen reader or Braille display for output. For all of these assistive technologies to work properly with PDF/UA, they must meet the following requirements:
+■ They must be able to recognise all structural elements, attributes and key values used in the specification and output them for the user of a PDF document.
+■ They must allow the user to navigate through the document by page number, through the structure tree, or by using bookmarks.
+■ They must allow the user to easily set and change the magnification of a PDF document at any time.
+Usage
+Accessible PDF: 
+Users and usageAs a quality standard for universally accessible PDF documents aimed at both software developers and document creators, PDF/UA serves as a clear basic requirement for everyone involved in PDF creation. It gives software developers a clear set of goals to work towards implementing which users can then take into account when creating PDFs.
+  This benefits all PDF creators. Some of them will find PDF/UA compliance brings significant advantages. This includes people who work with office documents, who often distribute their finished presentations, spreadsheets and text documents to others or store them in a central location for others to retrieve. As the office program each person uses can vary dramatically in 
+
+terms of functionality, compatibility and accessibility, it is often easier for everyone involved to export these documents to PDF format before passing them along to others. PDF documents created in this way are not automatically PDF/UA-compliant, but it is now becoming much easier to make these documents universally accessible and ultimately, for them to meet the standard.
+  A further area of application for PDF/UA is in digital distribution of printed publications in PDF format. The print data is usually prepared in digital format using layout and editing programs, then exported in PDF format for printing. These programs are also often used to generate a PDF for on-screen reading which is then distributed over the web or by email. The most extensive support for universally accessible PDF documents can be found in the layout program Adobe InDesign, from version CS 5.5 onwards. InDesign provides a particularly high level of support for the technical requirements behind the PDF/UA standard , which means it requires little extra work to create universally accessible PDF/UA-compliant documents. Certain aspects may need occasional adjustment, either manually or with the use of specialist software extensions.
+  If a PDF document is created from a database, XML, or some other structured data set, the solutions used can also take advantage of updated PDF programming libraries which encode the content in accordance with PDF/UA specifications. It is also equally possible to adapt solutions which already allow the creation of tagged PDFs, in order to produce PDF/UA-compliant PDF documents.
+Software tools
+PDF/UA: Creation tools
+In principle, universally-accessible PDF documents can either be generated directly during document creation, using a suitable program, or indirectly generated by adapting an existing PDF document. The indirect approach tends to require a great deal of work, as all tags and numerous other settings will need to be provided manually. 
+  This work can also become void as soon as a new version of the PDF document replaces the old one, if any changes to the document's content need to be made. The 
+SoftwareDeveloperApplication	PDF/UA functions supportedAdobe Acrobat XI ProAdobe SystemsPDF document creation, editing and viewing• Create and edit content tags
+• Mark page content as artefacts
+• Add alternative text
+• Specify the language(s) used for a document and specific content within it
+• Feature to add basic accessibility to any PDF
+• Fast, extensive accessibility checkingAdobe Distiller Server 8 Adobe SystemsConverts PostScript files to PDF• Create tagged PDFs
+• Requires specific pdfmark codes within the PostScript filesaxesPDF for WordxyMediaAdd-in for Word 2007 and Word 2010. Helps the user to use Word functions and compensates for weaknesses and errors resulting from exporting a tagged PDF from Word. • Specify the language of a document
+• Set up a series of tabs based on the document structure
+• Specify the document title and include it in the document window
+• Use all standard PDF tags
+• Advanced table tagging
+• Tag all content or mark it as an artefact
+• Integrated validation functionCommonLook 
+Office 1.2NetCentric TechnologiesPlug-in for Word and PowerPoint. It uses checkpoints to take users through the authoring software's accessibility functions• Guided review of document based on checkpoints
+• Adjust alternative text for images
+• Correct mappings between styles and tags
+• Advanced table tagging
+• Enhanced tagged PDF export
+• Generate bookmarks
+• Support for accessible PDF formsTable 1: PDF/UA creation tools
+adaptation process must then be started again from scratch.
+  The direct approach is almost always the better option; post-creation PDF edits should be avoided or at least kept to a minimum. Either way, it is essential that the document creation program can perform the functions required and that the document creator can make use of them. Although only a few programs currently support PDF/UA in its entirety, a wide range of options still exist in the form of the programs listed alphabethical below: 
+
+Software tools
+SoftwareDeveloperApplication	PDF/UA functions supportedFrameMaker 11Adobe SystemsThe authoring software FrameMaker creates publications and technical documentation. • Create tagged PDFs
+• Define alternative text for imagesInDesign CS5.5/ CS6/CCAdobe SystemsProfessional layout program for printed and digital publications; allows exporting to tagged 
+PDF• Assign export tags to paragraph styles
+• Anchor images within the text flow
+• Define alternative text for images
+• Define metadata
+• Define reading order using the "Article" panel
+• Add links (bookmarks, table of contents, hyperlinks and cross-references)
+• Define tab order for form fields based on the document structure
+• Export as tagged PDFiTextiText SoftwareProgramming library for creating PDF documents• Create tagged PDFs
+• Supports all tagged PDF functions
+• Used properly, it can create fully PDF/UA-compliant documentsMadeToTagaxaio softwarePlug-in for Adobe InDesign CS5.5, CS6 and CC. Takes users step-by-step through the process required to prepare the document for export as a universally accessible tagged PDF; compensates for weaknesses and errors in InDesign PDF export• Support and visual feedback for tag assignment, reading order, alternative text, language settings, advanced table tagging, and metadata
+• Directly export to PDF/UA formatMicrosoft Office 2007/2010MicrosoftContains word processor 
+Word, spreadsheet tool Excel and presentation software PowerPoint, among others; supports output in tagged PDF 
+format• Validate accessibility of Office documents
+• Prepare documents for export in tagged format, e.g. 
+ assign tags, specify alternative text, define language • Create tagged PDFsOpenOffice  Writer 3.4Apache Software FoundationWord processing software. Supports PDF output.• Create tagged PDFsPDFlib 9PDFlibProgramming library for creating PDF documents• Create tagged PDFs
+• Supports all tagged PDF functions
+• Used properly, it can create fully PDF/UA-compliant documentsPDFMakerAdobe SystemsWhen installing Adobe Acrobat on Windows, this is added to Microsoft Office, Lotus Notes, AutoCAD and others; it can be used within these programs to create PDFs.• Create tagged PDFs
+• Compensates for weaknesses and errors in PDF export functions found in Microsoft OfficeSoftware tools
+
+Validating PDF/UA compliance
+A PDF document's degree of accessibility is hard to determine at first glance. How, then, can you tell if and to what extent a PDF file meets the requirements of PDF/UA?
+  A reliable compliance test depends on at least two stages of validation: a programmatic test, which can be performed by a piece of software, and an interactive test carried out by a human. Dedicated validation tools will help the user perform the programmatic test. They test and show the extent to which the PDF document meets the standard's purely technical requirements (including tagbased content structuring, alternative text for images, a document title) and uses the correct syntax to implement them. The semantic aspects of PDF/UA, however, cannot be tested in the same way. Is the reading order logical? Does the alternative text adequately represent the same information as the images to which it is attached? Do the header tags reflect their corresponding header levels? These and other questions can only be answered after evaluation and testing by a human user. Tools also exist to help the user perform these tests. Some of the more important validation tools are listed below.
+  One further test (which should be run on at least a random sample of all documents created) is to use the PDF document with a selection of current types of assistive technology. Regular users of the technology can be enlisted to test the documents in this way; in most cases, however, anyone can in principle perform a useful test with assistive technology to confirm the readability of the PDF document. One very simple option here is to use the free Windows screen reader program NVDA. A user can quickly get to grips with the core functions of the software in order to test how well people with disabilities can actually use an existing (ideally fully PDF/UA-compliant) document.
+
+The Access For All foundation's PDF Accessibility Checker 2.0 (PAC 2) software supports all automatically-checkable PDF/UA criteria.
+Software tools
+Table 2: Validating PDF/UA compliance
+ProgramDeveloperValidation function	Validation criteriaAcrobat XIAdobe SystemsQuick test• First impression of document quality
+• Not a comprehensive testComplete accessibility test, input/output report• Numerous functions, some of them heuristic
+• Not a complete PDF/UA compliance test
+• Access restrictions (password protection, copy-protection etc.) do not affect accessibility
+• Document is not just a PDF file made up of images alone
+• Document is a tagged PDF
+• Logical reading order assigned to the document
+• Text language is defined
+• Document title is displayed in the window title bar
+• Bookmarks are present in large documents
+• Sufficient colour contrast within the document
+• Converts tagged PDF to structured HTML view
+• Fast interactive test for sensible reading order, correct tag usage, appropriate alternative text and other semantic elements
+• Useful addition to automatic testscallas pdfGoHTML (free)callas softwareStructured visualisation CommonLook PDFNetCentric TechnologiesDisplay and test a number of tagged PDF properties• Reading order
+• Correct tag usage
+• Heuristic checking for common errors
+• Checks table structurePDF Accessibility Checker 2.0 
+(PAC 2)  
+(free)"Access For All" foundationValidates accessibility, structural view, preview, PAC test report• Currently the only program which fully supports all automatically-testable PDF/UA criteria
+• Numerous heuristic tests to support interactive testing
+Assistive technology
+Michael Curran (left) and co-developer James Teh have spent the past four years building the open source screen reader Non V isual Desktop Access (NVDA).
+Assistive technology for in-depth testing
+■ NVDA 2012.3.1 (Non Visual Desktop Access) is a portable, open-source screen reader available in over 40 languages, developed by NV Access. It supports spoken output and/or Braille displays. access to tagged PDF documents. One particularly important reason for this is that the standard is still very new, meaning that corresponding software development has only just begun. Adobe Systems and the not-for-profit Australi-an organisation NV Access have officially announced their support for PDF/UA and are now working on implementing it in their products.
+The first PDF/UA-compliant as-
+sistive technology is expected to be the screen reader software "Non Visual 
+■ JAWS 14 (Job Access With Speech), developed by Freedom Scientific, is a widely-used commercial screen reader for Windows. It has been specially designed to work with a number of applications and supports spoken output and/or 
+Braille displays.
+■ ZoomText 10 Magnifier is the most widely used text-enlargement software for partially-sighted users. It was developed by the American company AiSquared.
+■ COBRA Professional 10 (from Baum Retec) is a popular software solution for combining screen enlargement with spoken and Braille output.
+■ WYNN is a program from Freedom 
+Scientific aimed in particular at helping users with reading and writing difficulties. By reading text aloud while highlighting each word as it is spoken, young people with dyslexia and other learning difficulties can develop and eventually master their written language skills. 
+Compliant reader software
+So far, there are no PDF programs or assistive technologies which offer full PDF/UA compliance when providing Desktop Access" (NVDA). NVDA was developed by NV Access as a portable, open-source screen reader. It allows blind and partially-sighted users to interact with the Windows operating system and the applications it runs, as well as use PDF documents and the internet, using the synthetic speech function eSpeak, optional Braille output, and other functionality. eSpeak supports more than 40 languages, and other languages and voices can be added using the SAPI interface. The NVDA screen reader can be downloaded for free from the developer's website - nvda-project.org - after which it is easy to install.
+  At present (as of mid-2013), NVDA is already mostly PDF/UA-compliant. NV Access, the PDF Association and the Swiss-based Access For All foundation are currently working together to further develop the software, to ensure future versions will meet all PDF/UA requirements in full.
+  Of the PDF software available today, the free Adobe Reader and the paid Adobe Acrobat currently provide the greatest level of compliance with the standard. The current version, Adobe Reader XI, is mostly PDF/UA compliant - albeit only under Windows.
+Added value for PDF users
+
+Benefits
+
+The PDF/UA framework allows assistive technology, PDF applications and the PDF file format to work together optimally so that as many people as possible have access to PDF documents with sound technical support. Disabled users will see the most significant benefits, as they often use a range of assistive technologies to help them access digital content which their disability would otherwise render inaccessible.
+Visual or motor impairments
+For example, partially-sighted users, depending on the degree of their impairment, may use a larger screen, customised colour and text size settings, or an intelligent screen magnifier. Blind users, or those with particularly severe visual impairments, may use a so-called screen reader (using text-tospeech) and/or a Braille display in order to read PDF documents. A screen reader is a program installed on the user's computer which reads all visible content aloud. A Braille display is a haptic interface for the same content; it outputs text using raised, moving Braille dots.
+  A user with restricted arm or hand mobility may use a range of assistive technology to navigate and make use of a PDF document. Instead of a classical computer mouse, they may use a specialist mouse or keyboard, or an onscreen keyboard. Depending on the degree and nature of their disability and their own aptitude, the user may also have other input options, such as special sensors, switches and/or key combinations, or enlargement options. The user can also give spoken commands to speech recognition software or use eye movements and a gaze-tracking system to control their computer.
+Reading and writing difficulties
+Dyslexic users find it unusually difficult to learn to read. They find it difficult to recognise and process written text. Assistive technologies such as specialised screen readers can help them overcome this. These read content aloud and highlight the same section of text on the screen. This gives the reader a cue, facilitates comprehension and helps them to improve their reading skills and master written language.
+Easier reading and navigation on mobile devices
+PDF/UA specifies the technical requirements for assistive technology to fully interact with PDF documents using PDF/UA-compliant PDF software. As long as the assistive technology and PDF software used is fully compliant with the standard, the result for disabled users is a high-quality reading and navigational experience. The standard will also benefit other users, however; anyone who reads documents on mobile devices, for example, will appreciate PDF content automatically adjusting itself to a reader-friendly size without affecting the semantic structure.
+
+Benefits The potential benefits of PDF/UA
+PDF/UA defines a standardised, universal set of requirements for PDF accessibility. These guidelines serve as a roadmap for everyone involved with the standard, guaranteeing that the relevant software, hardware and digital documents can work together as effectively as possible - provided they comply with the standard. 
+Inclusion: 
+The basic principle of social inclusion is that society accepts each person as an individual; in other words, everyone should be able to participate fully and equally in society.  If a PDF document fails to meet these technical specifications, however, then this intercompatibility is no longer guaranteed. Disabled users will be disproportionately affected and may no longer have equal-opportunity, independent access to information. This contradicts the goals of an inclusive society which more and more countries around the world are working to enshrine in law. US laws, for example, require the information provided by federal authorities to be universally accessible and usable. The growing political interest in universally-accessible information technology is also indicative of a trend not just towards opening up public institutions, but towards requiring the private sector to make the information it provides more accessible as well.
+  PDF/UA helps meet these kinds of legal requirements. PDF/UA-compliant PDF documents are universally accessible from a technical standpoint, which means they allow improved communication for people with disabilities in particular. Many legislative bodies refer to WCAG 2.0, the international guidelines for accessible web content. When it comes to PDF files, these guidelines can be met by complying with PDF/UA's specific, unambiguous requirements. Organisations can also reduce their liability by creating, transmitting and publishing documents and information based on internationally-recognised standards.
+  In making their PDF documents more accessible of their own free will (without being legally required to do so), non-public organisations are accepting a corporate social responsibility. This can be considered a valuable foundation for building a comprehensive corporate social responsibility (CSR) strategy. As accessible PDF documents are currently still the exception rather than the rule, businesses who adopt them can use the opportunity to improve their public image.
+  PDF/UA can bring financial as well as social benefits. Improving your public image can go hand in hand with winning new customers and increasing your market potential. This refers in particular to people with disabilities. Many businesses remain unaware, however, that this group includes an increasing number of older people as the global population ages. These consumers have significant life savings which they are willing to spend. A large number of older people live with one or more disabilities which may have arisen from a number of illnesses over their lifetime or simply from declining faculties. Regardless of age, however, disabilities can sometimes be caused by accidents or arise as a result of a serious illness. Businesses and public authorities can also use accessible PDF documents to better reach people who are unfamiliar with using computers, who struggle with a document's language, or whose written language skills are limited. Depending on how the term is defined, for example, several million adults in Germany can be considered illiterate - 12% of whom nevertheless have some form of higher education. Finally, the usability of PDF documents on mobile devices such as smartphones and tablets can also be increased, as PDF/UA-compliant documents can be rearranged to suit the screen they are displayed on.
+Legislation Laws paving the way for PDF/UA
+In 2006, the General Assembly of the United Nations adopted the UN Convention on the Rights of Persons With Disabilities, which came into force on the 3rd of May 2008. The goal of the resolution is to protect and support the rights of people with disabilities worldwide. It aspires towards building a more inclusive society in which both disabled and non-people with disabilities are equal, self-determining participants in their own communities. A number of UN member states, including Germany and Austria, have already ratified the agreement. In doing so, they have pledged to enshrine the Convention in national law and introduce political measures to implement it in practice. Article 21 of the Convention, "Freedom of expression and opinion, and access to information" refers to equal access to information. This means that information intended for the general public should be made available for people with a range of disabilities as soon as possible, using accessible formats and technology.
+  The European Union introduced concrete measures in the form of "The European Disability Strategy 2010-2020: A Renewed Commitment to a Barrier-Free Europe". As part of this strategy, the European Commission is working towards a modernised European public procurement law, under which ICT products and services provided by European and national authorities must be barrier-free as defined by EU standard EN 301549, which is expected to be published in 2014. The three standardisation organisations CEN, CENELEC and ETSI have developed a draft of this standard and guidelines for implementing it, based on Mandate 376.
+  The European Commission is also preparing a single European accessibility law which will require ICT to play a significant role. Publication of the first draft is expected at some point in Summer 2013. This law should harmonise the current range of national laws among EU member states, some of which differ dramatically from one another. 
+  The UN Convention on the Rights of Disabled Persons came into force for Germany on the 26th of March 2009. Germany responded with a national action plan, where the federal government presented a number of measures aimed at paving the way towards a more inclusive society. In part, this path makes use of existing laws and regulations. For example, Germany has had a Federal Law on the Equal Treatment of Disabled Persons (Behindertengleichstellungsgesetz or BGG) since 2002. Section 11 of the law requires federal authorities to offer all information and documents in a universally-accessible format. The minimum requirements for meeting this regulation are described in the Regulation for Accessible IT (Barrierefreie-Informationstechnik-Verordnung or BITV). It was updated to version 2.0 in 2011 and now mostly reflects the requirements of WCAG 2.0. Individual German states also have state equality laws based on the federal disability equality law.
+  Legal implementation of these laws and regulations has until now left rather a lot to be desired; a number of federal and state authorities have significant room for improvement in terms of the accessibility of their offerings. The aforementioned EU laws and regulations are expected to improve this situation, once adopted in the near future.
+  The United States' Rehabilitation Act goes one step further in that it allows private legal action which can lead to very high compensation claims. This law was expanded in 1998 with Section 508, which for the first time in the world placed a legal requirement on authorities to make their ICT offerings accessible and usable for people with disabilities.
+Expert opinion
+What the experts are sayingAccessibility experts Klaus-Peter Wegge and Markus Riesch report on their first impressions of PDF/UA and assess how it can grow from here.
+Klaus-Peter Wegge, Siemens AG
+Klaus-Peter Wegge is head of the Siemens AG Accessibility Competence Center in Paderborn, Germany. 
+  A trained computer scientist, he has been helping design accessible products and services since 1995. His team offers consulting services as well as developing and testing new technologies and applications in the accessibility sector, both for a wide range of projects for specific customers and for European research projects. As an accessibility expert - and as someone affected by disability himself - he promotes the subject in industry associations such as 
+BITKOM and DIGITALEUROPE. He also works on global, European and domestic standardisation projects and advises government bodies on the technical issues involved in promoting accessibility in Germany and Europe.
+"It's high time we had a standard like this! PDF/UA is a thoroughly rigorous idea and one that just works. One hopes that PDF accessibility will now become universal, error-free and far easier than before. I see some issues with acceptance, though, unless word processing software can make it easy to directly create PDF/UA documents which the author can then immediately check. Screen readers should also start fully supporting PDF/UA as soon as possible. The NVDA screen reader is ahead of the pack here. It would be excellent if free tools existed to convert PDF/UA documents to other formats such as HTML or Daisy. We will first systematically test PDF/UA before we recommend it to our customers or start using it ourselves. It would be a real step forward for disabled users if this format became widely adopted as soon as possible; it would finally end any legitimate debates about 
+PDF accessibility."
+Markus Riesch, "Access for All"
+  Markus 	Riesch 	has been 	the 	managing director of the Swiss-based 	Access For 	All 	foundation since 2004. He works to promote access to ICT for people with disabilities and represents their interests in national and international bodies. Among other duties, he is a member of the Federal Working Group for Creating Guidelines for Accessible Websites (P028) and head of the eCH specialist group for Accessibility.
+"PDF/UA is an important step forward for PDF accessibility. Only an international standard will make it possible for authoring software, validation tools, browsers and assistive technology such as screen readers to accept the required technical specifications. PDF/UA creates a clear set of requirements which both software developers and PDF creators can use. And finally, this international standard gives a reference for legislators around the world. We'd like to be a part of that. That's why we're developing the first validation tool for PDF/UA-compliant PDFs, the PDF Accessibility Checker 2.0 for Windows. It will be released for free by the Access For All foundation in summer 2013."
+Resources
+Learn more about PDF/UAIf you want to learn more about PDF technology, either in general or as it relates to a specific subject, then the PDF Association is the perfect point of contact. The PDF Association was founded in 2006. It aims to promote the development and usage of PDF technology and therefore to support PDF applications for digital documents. The Association focuses on the PDF format itself, as well as the ISO standards PDF/UA, PDF/A, PDF/E, PDF/VT and PDF/X. The PDF Association provides information, expertise and opportunities for interaction for developers, users and decision-makers. The Association's most important centre of activity is its website, www.pdfa.org, which is regularly updated with the latest specialist news and information. It also provides information about PDF/UA and accessible PDF documents.
+PDF/UA Competence Center
+The PDF/UA Competence Center was set up by the PDF Association before the PDF/UA standard was even officially approved. Supported by leading international businesses and individual experts, it provides PDF/UA resources for developers, users and decision-makers and offers advice on how to use the standard in practice.
+PDF/UA seminars
+The PDF Association offers the PDF/UA Practical Seminar Series for employees and decision-makers in public bodies, business and industry; college and university students and teachers; and representatives of all kinds of associations and institutions. Practical examples are used to show participants how accessible PDF documents can be created and checked in line with PDF/UA and any applicable legal requirements. Partici-
+PDF/Xsince 2001ISO 15930"Prepress digital data  exchange using PDF"ISO-Standard for the printing industryPDF/Asince 2005ISO 19005"PDF Archive"Standardised long-term archiving with PDFPDF/Esince 1993/2008ISO 24517"PDF Engineering"Construction diagrams with moving 3D models where requiredpants can learn strategies for their own companies to use when introducing and using accessible PDFs.
+PDFsince 2008ISO 32000"Portable Document 
+Format"The ISO standard corresponds with PDF version 1.7PDF/VTsince 2010ISO 16612"PDF for Variable Data and 
+Transactional Printing"Used for variable data printingPDF Association members have a critical information advantage: they receive advance versions of ISO PDF standards and exclusive access to the Association intranet containing internal information. They can take part in the Association's Technical Working Groups to influence standardisation work. The internal forum on the Association intranet ensures direct contact with other PDF experts. Members also receive a boost to their marketing efforts, including use of the PDF Association logo and a company profile and product listing on the PDF Association's website.
+AIIM PDF/UA Committee
+PDF/UAsince 2012ISO 14289"PDF for Universal Access"ISO standard for universally accessible PDF documentsThe Association for Image and Information Management (AIIM) is a global organisation offering independent research, training and certification programmes for information management experts. To mark the publication of the PDF/UA standard, the AIIM PDF/UA Committee has produced "Achieving WCAG 2.0 with PDF/UA", a document describing how PDF/UA can guarantee compliance with WCAG 2.0 guidelines.
+
+This work, including all its component parts, is copyright protected. All rights based thereupon are reserved, including those of translation, reprinting, presentation, extraction of illustrations or tables, broadcasting, microfilming or reproduction by any other means, or storage in any data-processing device, in whole or in part. Reproduction of this work or any part of this work is only permitted where legally specified in the Copyright Act of the Federal Republic of Germany dated the 9th of September 1965. 
+(c) 2013 Association for Digital Document Standards e. V., Berlin info@pdfa.org Printed in Germany
+The use of any names, trade names, trade descriptions etc. in this work, even those not specially identified as such, does not justify the assumption that these names are free according to trademark protection law and thus usable by anyone.
+Text: Olaf Drümmer, Bettina Chang 
+Layout, cover design, design and composition: Alexandra Oettler
+Cover photo: Jake Davies, ojisanjake.blogspot.de
+Picture/photo credits: Page 7, 8, 9 and 15: Alexandra Oettler; page 14: Andrew Watson. Printed by: Galrev Druck- und Verlagsgesellschaft Hesse & Partner OHG
+
+ISO standard 14289-1, known as PDF/UA, was first published in the summer of 2012. It is the first complete definition of a set of requirements for universally accessible PDF documents. Rather than applying to the PDF file format alone, these clear specifications also define compliant assistive technology and PDF reading software. 
+  In signing the UN Convention on the Rights of Disabled Persons, many countries have chosen to work towards building a more inclusive society. They are now required to turn these inclusive principles into a reality on the national level and to remove existing barriers to social inclusion. One key area of activity here is in access to information and communications in the form of documents - a subject which PDF/UA now stands to greatly simplify.
+  "PDF/UA in a Nutshell" will show you just what PDF/UA is. This brochure provides a clear summary of the key facts, the standard's requirements, the latest developments and the current legal situation regarding PDF accessibility, all in one place. In addition, it suggests potential applications for the standard and lists the tools that can be used to create and validate PDF/UA-compliant documents.
+Contents: 
+■ The ISO standard for universal accessibility
+■ Laws and regulations
+■ The history of PDF/UA
+■ File format requirements
+■ Compliant PDF programs
+■ Assistive technology
+■ PDF/UA creation tools
+■ Validating PDF/UA compliance
+■ What the experts say
+Olaf Drümmer has played a crucial role in the standardization of 
+	PDF/X, 	PDF/A, 	PDF/VT 	and 
+PDF/UA. He is a member of several international institutions and associations: DIN, ECI, Ghent 
+  Workgroup, PDF Association and PDF/X ready. Olaf Drümmer is CEO of callas software and axaio software. The company callas software develops the Preflight functions integrated in Acrobat.
+Bettina Chang is a print and media technology engineer and works as a freelance graphic designer and university lecturer in print and publishing. She is actively involved in the PDF accessibility sector and produces a wide 
+range of publications in accessible PDF format using Adobe InDesign and Adobe Acrobat.
+
+
+PDF/UA in a Nutshell 	3
+
+
+
+4 	PDF/UA in a Nutshell 
+
+PDF/UA in a Nutshell 	3
+
+4 	PDF/UA in a Nutshell 
+
+4 	PDF/UA in a Nutshell 
+
+PDF/UA in a Nutshell 	3
+
+4 	PDF/UA in a Nutshell 
+
+
+
+
+
+
+

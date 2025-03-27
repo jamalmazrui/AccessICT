@@ -1,0 +1,1214 @@
+﻿Office of Accessible Systems & Technology 
+Source: The Unified 
+Testing for Accessibility 
+Project (UTAP): Pilot 
+
+ 
+Document Revision History 
+1. Release 1.0 - Source: The Unified Testing for Accessibility Project (UTAP): Pilot (Approval 
+	Draft v4.2, Dec 2015) 	 
+ii 
+About DHS-OAST 
+The Office of Accessible Systems & Technology (OAST) provides strategic direction, governance, technical support, and training to ensure Department of Homeland Security (DHS) employees and customers with disabilities have equal access to information and data. 
+Office of Accessible Systems & Technology (OAST) 
+Department of Homeland Security 
+245 Murray Lane, SW 
+Washington, DC 20528 
+For electronic copies of this report, and for more information on how to contact OAST, see The Interagency Trusted Tester Program (ITTP) on page 87. 
+
+
+
+ 
+Contents 
+Executive Summary .............................................................................................. vii 
+The UTAP Pilot: Executive Summary .............................................................. viii 
+PART 1: THE UTAP REPORT ................................................................................. 1 
+Chapter 1-1: Background ....................................................................................... 3 
+Section 508 approach variability ........................................................................ 4 
+Assistive Technology-based testing .................................................................... 4 
+Code-inspection based testing............................................................................ 5 
+The Trusted Tester (TT) program ...................................................................... 6 
+The Unified Testing for Accessibility Project (UTAP) ........................................ 7 
+Chapter 1-2: Approach ........................................................................................... 9 
+General approach ............................................................................................. 10 
+Stage 1: Goals ................................................................................................... 10 
+Stages 2 & 3: Familiarization ............................................................................ 11 
+Stage 4: Design ................................................................................................ 12 
+Stage 5: Implementation .................................................................................. 12 
+Program Maturity survey (Post-UTAP Pilot) .................................................... 13 
+Chapter 1-3: Results & Discussion ....................................................................... 15 
+Participating agencies ....................................................................................... 17 
+Participating individuals .................................................................................. 17 
+A brief summary of the four UTAP implementation plans .............................. 18 
+Program Maturity Survey Results ..................................................................... 22 
+Implementation plan elements ......................................................................... 26 
+Lessons from the UTAP approach .................................................................... 31 
+Chapter 1-4: Recommendations .......................................................................... 35 
+The Interagency Trusted Tester Program (ITTP) .............................................. 36 
+Recommendations for agencies looking to adopt Trusted Tester ..................... 36 
+Recommendations for ITTP Stakeholders ......................................................... 38 
+PART 2: UTAP CASE STUDIES ............................................................................. 41 
+Chapter 2-1: Case Study #1-US Mint ................................................................ 43 
+Introduction to the US Mint and the Section 508 team ................................... 45 
+Chapter 2-2: Case Study #2-Department of Education .................................... 46 Introduction to Department of Education and the Section 508 Team .............. 48 
+The Trusted Tester implementation plan at the Department of Education ....... 48 
+What the plan replaces (pre-UTAP testing approach at Department of 
+Education) ....................................................................................................... 50 
+Issues beyond testing at Department of Education: existing versus proposed...52 
+ED: Post-Pilot Maturity Survey Results ............................................................. 54 
+Chapter 2-3: Case Study #3-Federal Deposit Insurance Corporation ............. 55 
+Introduction to the FDIC and the Section 508 team ......................................... 56 
+The Trusted Tester implementation plan at FDIC ............................................. 57 
+What the plan replaces (pre-UTAP testing approach at FDIC) ......................... 61 
+Issues beyond testing at FDIC: existing versus proposed................................. 64 
+FDIC: Post-Pilot Maturity Survey Results .......................................................... 68 
+Chapter 2-4: Case Study #4-Department of Labor ........................................... 69 
+Introduction to DOL and the Section 508 team ............................................... 70 
+The Trusted Tester implementation plan at DOL ............................................. 71 
+What the plan replaces (pre-UTAP testing approach at DOL) .......................... 76 
+Issues beyond testing at DOL: existing versus proposed... .............................. 77 
+DOL: Post-Pilot Maturity Survey Results .......................................................... 80 
+Appendix: Chart data ............................................................................................ 81 
+Acknowledgments ................................................................................................ 85 
+The Interagency Trusted Tester Program (ITTP) ............................................... 87 
+The UTAP Team ................................................................................................... 89 
+ 
+ Executive Summary 
+
+The UTAP Pilot: Executive Summary 
+In the Unified Testing for Accessibility Project (UTAP) Pilot, which was conducted from the fall of 
+2013 to the summer of 2015, Department of Homeland Security (DHS) staff from the Office of Accessible Systems & Technology (OAST) assisted four outside federal agencies to adopt a 'Trusted Tester' (TT) approach to testing for conformance with Section 508 standards. 
+Traditionally, Section 508 testing has been dominated by Assistive Technology (AT)-based testing approaches. The TT approach utilizes code-based inspection of software and websites and facilitates an efficient testing-during-development methodology. Code-based inspection is easy to learn, and more familiar than using AT for most programmers and other development and testing staff. In adopting TT through participation in the UTAP Pilot, participant Section 508 teams have been freed up to take on a quality assurance role in the development lifecycle. This sort of role requires less funding and resources than the traditional approach of maintaining specialist testing staff within the 508 team. It has facilitated getting Section 508 into development lifecycles earlier, and more often. 
+Part 1 of the UTAP Report includes the background of how the TT approach developed, and how requests from outside agencies to receive TT training led to the creation of the UTAP approach. OAST staff provided coaching to participant agency staff, assisting them in the development of their own organizational designs and implementation plans. A five stage approach was employed with each agency: (1) goal setting; (2) familiarization with existing agency practices; 
+(3) familiarizations with TT implementation at DHS; (4) Design; and (5) Implementation Plan.  
+In Part 2, the three of the four participant agency Case Study reports are presented. Each report includes an overview of what their implementation plan entails, (including stakeholder responsibilities, training, and related issues) as well as a description of what the plan replaces. 
+Results of the Pilot 
+In the results and discussion chapter, a before and after comparison is presented for each of the four participant agencies. In general, the test programs and methods went from informal to formal as a result of participation in the UTAP Pilot. The before and after comparisons include: 
+• Transitioning from Section 508 activities being conducted using different methods for separate sub-departments within individual agencies, to Section 508 activities being conducted consistently throughout the organization;  
+• Transitioning from accessibility testing being something that was the responsibility of the Section 508 team, using ad hoc AT-based methods; to testing being something that is the responsibility of product development staff, using the formalized code-based TT method of testing; 
+• Transitioning the 508 team's role in the organization from doing all or most of the accessibility testing, to a role in which they oversaw the testing program from a quality assurance perspective; 
+• Transitioning from Section 508 testing happening close to the end of a Systems Development Life Cycle (SDLC) to Section 508 testing occurring throughout the SDLC; 
+• Transitioning from having vague Section 508 related langue in procurements, to having specific references to the test processes that will be used; 
+• Transitioning from a situation where almost no formal training was offered for Section 508, to one in which extensive formal training would be required (and delivered via existing online courses developed by OAST and others). 
+The benefits that the UTAP process brings were apparent from a pre- and post-UTAP Section 508 program maturity self-assessment survey. Examining the combined average results of all four agencies, across nine program categories, program maturity scores improved between pre- and post-UTAP (see figure). 
+ 
+Report recommendations  
+OAST is looking to support the adoption of the TT approach by additional federal agencies. To this end, OAST has been developing the Interagency Trusted Tester Program (ITTP). Seven recommendations are made in the report. The first four cover agencies wishing to adopt TT as part of the ITTP. The fifth to seventh recommendations cover ITTP stakeholders in general: 
+1. If seeking to implement Trusted Tester in an organization, conduct a Unified Testing for Accessibility Project (UTAP) first. (For those agencies wishing to adopt TT, we are distilling our initial advice into an accompanying guide, entitled Conducting your own UTAP. 
+This guide will include stage-by-stage advice on tasks, potential challenges, and trade-offs to consider.) 
+2. Monitor and utilize information on UTAP related resources on the ITTP website (www.dhs.gov/accessibility). 
+3. Create and use an internal Trusted Tester results repository, and, when available from the ITTP, also use and contribute to the Interagency Trusted Tester Results Repository. 
+4. When available, join the association of those who have adopted or are adopting Trusted Tester in their federal agencies. 
+5. Provide ongoing support to the four UTAP Pilot agencies, and conduct 6 and 12 month follow-ups with those agencies to assess the success of their implementation plans. 
+6. Define trainer criteria that consultants must meet for providing training/coaching to federal agency staff as they conduct their own UTAPs. 
+7. Using a similar approach and resources as those used in UTAP, develop an approach for supporting Section 508 program management development in the federal government. 
+
+ 
+PART 1: THE UTAP REPORT 
+
+
+
+ 
+Chapter 1-1: Background
+Section 508 approach variability 
+There currently exists in the federal government a high degree of variability in the methods for testing conformance with Section 508 electronic and information technology (EIT) standards. There also exists a high degree of variability in the management and organizational Section 508 compliance approach used by teams in federal agencies.1 Without a common way to test against the standards, agencies and vendors are doing their own thing as they try to comply and conform to Section 508.2 
+This report describes the pilot of the Unified Testing for Accessibility Project (UTAP). In the UTAP pilot, the Office of Accessible Systems & Technology (OAST)3 assisted four federal agencies in augmenting their existing Section 508 compliance activities as they adopted a common codebased conformance testing methodology for the Section 508 standards. 
+This chapter describes different testing approaches that have been employed, and how this led to the development of the Trusted Tester (TT) testing approach used by OAST. Also introduced in this chapter are the related improvements to organization-wide resource management that can be gained by successfully implementing TT. OAST developed the UTAP pilot as a means to share and refine an organization-wide approach to help other agencies successfully integrate TT. 
+Assistive Technology-based testing 
+The most widely employed method of testing for Section 508 conformance has traditionally used Assistive Technology.4 In AT-based testing, the person running the test runs the software or website under test, and then sequentially uses some combination of screen reading software, Chapter 1-1: Background 
+screen magnification software, and voice recognition software.5 A new set of skills-of a different nature to those skills commonly employed in software development-need to be learned for testing with these types of AT. For example, for someone who is sighted to become a tester with a screen reader, they need to temporarily drop their reliance on vision and the mouse, and learn how to rely on audio (speech output) and the keyboard. 
+Occasionally, erroneous behavior of the AT, or erroneous interaction with the software under test, will not actually be due to the software under test. The way in which the AT is set up, such as AT's user interface settings, could cause an interaction error. Technical limitations of the AT itself can appear, especially when browser or operating system software is updated. 
+Code-inspection based testing 
+An alternative to testing with AT is to use a code-inspection based approach. The philosophy behind this is that if everyone can agree on what constitutes correct coding, then a way to inspect and test without actually using AT can be produced. (By correct coding we mean coding that works with AT.) 
+Programmers in product development teams already use code inspection tools as a part of their repertoire. Having a code-based test for accessibility frees up developers to be able to test and inspect their own code during development, without having to rely solely on the Section 508 team for test results. 
+At OAST, a code-inspection based testing method was progressively developed over a number of years. The team at OAST put together a list of code-inspection tests for measuring conformance with the Section 508 Standards. Interaction with AT was tested by the specialist team at OAST when errors and issues arose that needed to be diagnosed. This ensured that, as far as was practical, the tests were being conducted (by non-AT testers) in a way that measured "correct" coding. A primary driver for developing code-based testing was to position DHS and its components so that we could all trust one another's test results thus eliminating the need for redundant testing and thereby saving resources.  
+Using this model, the "DHS Section 508 Application Test Process" was developed and refined. In April of 2011 the OAST team had reached version 2.8 of the test process. 
+ 	 
+The Trusted Tester (TT) program 
+In tandem with the ongoing refinement of the DHS test process, a comprehensive training course was developed for applying the process. A pre-requisite "Introduction to the Section 508 Standards" course was developed to provide DHS's interpretation of what the Section 508 standards mean. The introductory one day course was intended to ensure that all students shared a common understanding of the requirements in the Section 508 standards before embarking on learning how to test against those standards. The main three day course taught the test process, and how to use the associated set of freely-available code inspection tools. 
+After passing the exam at the end of the course, students were considered "Trusted Testers". Over time, Trusted Tester became the de facto umbrella term for the Section 508 testing program at DHS. 
+DHS began mandating that in order to pass various gate reviews in the systems development lifecycle (SDLC)6, products had to be examined by Trusted Testers (TTs). As a result, TTs were placed in DHS component Section 508 teams and also into development teams. Placing TTs in development teams enabled them to ensure that the Section 508 accessibility requirements were being incorporated throughout development. 
+The Baseline 
+The TT program brought about a shared understanding, as well as sharable, repeatable, trust-able 
+Section 508 test results across DHS. But what about sharing results between agencies outside of DHS? In 2012, the Section 508 teams at DHS and the Social Security Administration (SSA) embarked on a project to create a harmonized test process. At the time, SSA was using primarily AT-based means of testing and DHS was using their purely code-based means of testing software and websites. The result of the collaboration was a code-inspection set of 'baseline' tests. The Harmonized Processes for Section 508 Testing: Baseline Tests for Software & Web Accessibility document contains 28 separate test requirements which cover the Section 508 standards, and align with WCAG 2.0.7 
+The baseline requirements cover Web and software for Microsoft Windows and Microsoft Internet Explorer. For each numbered requirement there is the requirement text, a rationale for the test, a list of related standards, the exact tools necessary to test, step-by-step instructions for finding applicable components, step-by-step instructions for inspecting and testing those components, and a list of specific failure conditions. 
+The Baseline does not include actual test processes. Instead, the Baseline document can be used to create individual agency-specific test processes.8 
+ 	 
+Chapter 1-1: Background 
+Refinements to the TT course 
+OAST incorporated the new Baseline into the DHS Section 508 Application Test Process version 3.0 in 2013 and the face-to-face TT training was expanded to five days plus a one-day exam. An online version of the course and exam was developed and went live on the Defense Acquisition University's learning management system at the end of March 2015. 
+TT Certification 
+Since the early days of TT, the term "Certified Trusted Tester" was given to those who passed the final exam. After the baseline and online course updates, the certification system was also updated. Certified Trusted Testers now have a unique certification number which can be added to test reports for tracking and to verify TT certification. 
+The Unified Testing for Accessibility Project (UTAP) 
+Outside agency requests for Trusted Tester 
+Through word of mouth, webinars, and conference presentations, the benefits of the DHS Trusted Tester approach was becoming recognized by outside agencies as a concept worthy of further investigation and possibly adopting.  OAST began fielding requests for training attendance and use of the DHS Test Process. 
+Personnel from a few outside agencies received training, but it became clear that a strategy was needed to handle future requests. 
+Consideration of the organizational approach 
+In response to outside agency requests, the OAST team began to examine how to insert TT into an organization that has its own current method of testing. Rather than simply provide TT training and a copy of the test process, OAST decided to approach the challenge of assisting outside agencies with implementing the DHS TT process in a pilot study entitled the Unified Testing for Accessibility Project (UTAP). We posited that a collaborative design exercise with other agencies, and those agencies' teams taking ownership of their own process around TT would increase the likelihood of long-term adoption of (and benefits of) the test process. 
+In the UTAP Pilot, OAST staff helped people in different agencies adopt a common approach to testing. In doing so, we helped them address the wider organizational issues around Section 508 testing. 
+Besides helping the staff of four federal agencies, the UTAP Pilot had an additional goal. This goal was for the DHS staff to learn about the types of issues and obstacles that would have to be addressed at different agencies as they adopt TT. Throughout the pilot project, staff gained insights into diverse organizational cultures and hopefully those lessons can be applied to the benefit of other federal agencies, and other organizations. 
+We have summarized our findings and recommendations in this report. 
+The UTAP Pilot methodology is described in the next chapter. 
+
+ 
+ Chapter 1-2: Approach
+
+General approach 
+OAST invited four outside agencies to join the UTAP Pilot. During FY2014 and the first half of FY2015, OAST staff collaborated with the staff of the four agencies. The general approach was to develop implementation plans that were based on: (a) a shared understanding of what was in place at each agency prior to UTAP; (b) organizational changes that would need to be made to support a TT program; and (c) decisions about who would be responsible for making those changes. 
+Over time, OAST staff gained a good deal of insight into what works and what does not work while trying to implement accessibility related processes. In conducting the UTAP Pilot, OAST also applied academic insights on what makes teams tend to succeed when tackling organization-wide accessibility issues.9 
+A key element of the Pilot was to engage the Section 508 and application development teams at each agency, and to help them develop and implement their own processes around Trusted Tester. With each of the four agencies, a five stage plan was executed.10  
+Stage 1: Goals 
+To kick off the first stage, OAST established common goals at a managerial and executive level, and memorandums of agreement between DHS and the participating agencies were signed. An agency lead point of contact (POC) was established for the duration of the UTAP Pilot. 
+OAST presented the proposed UTAP process to agency stakeholders. This presentation covered topics such as: 
+• The TT test process, training course and exam; 
+• The advantages of adopting TT; 
+• The concept that OAST was there to help each agency design their own processes and determine the best implementation strategy for their agency (i.e., OAST was not telling them what to do); • A detailed explanation of what the remaining four stages of the UTAP Pilot would entail; Chapter 1-2: Approach 
+• The idea that this was a 'pilot' project, with the inherent limitation that it was a learning exercise for both parties; and 
+• The fact that their participation would remain confidential if desired.11 
+Stages 2 & 3: Familiarization 
+In order for OAST to understand the extent and type of issues that would need to be addressed by the participating agencies, it was important for us to understand, as outsiders, how Section 508 work was currently being conducted at each agency. 
+In Stage 2 OAST staff worked with the agency POC to identify stakeholder personnel. This included personnel connected to Section 508 (e.g., the agency's Section 508 team, equity and diversity teams, procurement; development and testing teams, executives (CIOs) and legal). 
+Stakeholder personnel were interviewed and artifacts gathered to build a picture of what the current activities and processes were.12 This exercise took more than one round of interviews for a couple agencies. During these interviews OAST staff were strictly trying to understand the current process, and were purposefully not making any comparison analysis or having any comparison discussion with interviewees about the TT process.13 
+A report was generated at the end of Stage 2 that described our findings as they relate to the current Section 508 program for each agency, and in particular the Section 508 testing activities that were in place and the report was validated with each agency POC. 
+For Stage 3, agency stakeholders were invited to learn about how DHS OAST set up its Section 508 program and incorporated the TT process. The OAST team presented on the way the testing team is organized, how tests are requested and conducted, procurement, governance, the operation of the DHS Accessibility Helpdesk, and the way OAST is managed. As with Stage 2, during Stage 3 OAST team members were purposefully not making any comparison analysis or having any comparison discussion with the agency staff about their own agency's Section 508 program or test processes. 
+Stages 2 and 3 established an understanding for both parties of what was in place, and what was possible. This would be useful for launching into the next stage, design. 
+Stage 4: Design 
+The purpose of this stage was to work collaboratively with each agency to design a system that met their needs. The agency POC served as the leader of the design activity, with assistance from the OAST team. 
+Activities in this stage included: 
+• A presentation from OAST staff on organizational design with respect to accessibility. This was a presentation that included a review of academic and industry results of projects that sought to establish methods for successfully tackling accessibility as an organization-wide effort; 
+• Examining the differences in approaches between agency processes in stages 2 and 3. What did we like about each other's current processes? What did we learn? Could things be done differently to achieve a more successful outcome?; 
+• Addressing how Trusted Testers should be used at the agency? Should they be in the Section 
+508 teams, in the development teams, or a combination of both? Are new positions needed?; 
+• Examining what policy updates would be needed? What education and training resources would be needed? Would new artifacts be needed (test forms, test results, databases, etc.)?; and 
+• Investigating how the proposed redesigned system could be funded, as applicable. 
+Stage 5: Implementation 
+After the overall design was completed, a practical implementation plan was needed. In general, the work involved iterations starting off with what was desirable, and refining as needed to deal with the realities of what was practical, given constraints beyond the control of each team. 
+Development and acceptance of an implementation plan was the culmination of the UTAP Pilot for each agency. To work out the plan, teams tackled issues such as: 
+• Deciding which personnel should be required to become Trusted Testers? 
+Chapter 1-2: Approach 
+• Determining the most efficient way to promote acceptance of the revised processes and who should be trained? 
+• Should the agency start with a pilot, or should there be a wholesale change? 
+• Establishing exactly how test results would be used and stored; 
+• Establishing exactly how testing would be funded. 
+Program Maturity survey (Post-UTAP Pilot) 
+After the five stages of the pilot had been completed with each of the four agencies, OAST staff conducted a survey of the participants on program maturity. We were seeking feedback from participants on whether there had been a change in their assessment of their program between the start and the end of the UTAP process. We also sought their predictions on where they were targeting their program maturity level two years hence. 
+The survey instrument used measures and definitions of maturity level that were combined and adapted from the Office of Management and Budget Section 508 OMB Dashboard/Reporting Template14, OAST's internal DHS Component Section 508 Program Dashboard, and the IT Governance Institute's Maturity Model.15 
+The program categories that were measured were: 
+• Policy: Section 508 and/or 504/508 accessibility development and testing policy in place. 
+• Section 508 Team Staffing: 508 Management; 508 team. 
+• Acquisition: Conduct validation of procurement solicitations to ensure incorporation of Section 
+508 contract language into Statements of Work and Performance Work Statements.16 
+• Agency EIT life cycle activities: Conduct validation of Section 508 requirements to ensure incorporation into Agency EIT life cycle activities, including enterprise architecture, design, development, testing, deployment, and ongoing maintenance activities. 
+• Testing and Validation: Testing and validation of Section 508 conformance claims. 
+ 	 
+• Training: Training for stakeholders on roles and responsibilities related to Section 508 compliance. 
+• Outreach: Awareness raising throughout the organization. 
+• Technical Assistance: 508 integrated with current IT technical assistance and/or 504/508 accessibility-specific technical assistance resource. 
+• Complaints Process: Track and resolve incoming Section 508 complaints. 
+For each category the measures were: 
+0 - None (nonexistent) 
+1 - Ad Hoc: No formal policies, process or procedures defined 
+2 - Planned: Policies, processes and procedures defined and communicated. 
+3 - Resourced: Resources committed and/or staff trained to implement policies, processes and procedures. 
+4 - Measured: Validation is performed; results are measured and tracked 
+5 - Optimized: Developed into a sophisticated approach using effective and efficient techniques.  
+The results of each survey are appended to each case study report and are discussed in the next chapter. 
+
+ 
+Chapter 1-3: Results & Discussion
+
+
+
+Participating agencies 
+There were four participating agencies in the UTAP Pilot. The agencies ranged in size, and for convenience we have described them as small, medium, large and extra-large based on their personnel size (Table 1).17 
+Table 1 - UTAP Participant agencies 
+Name Size Personnel18 1. US Mint Small 1.5K 2. Department of Education (ED) Medium 4.5K 3. Federal Deposit Insurance 
+Corporation (FDIC) Large 10K 4. Department of Labor (DOL) X-Large 20K Participating individuals 
+• The Section 508 teams for each agency ranged from two to seven people (Table 2). These numbers are indicative, rather than full time equivalents (FTEs), since many of these people had additional roles in their agencies. 
+• During the UTAP Pilot, OAST team members sought to interview as many stakeholders as was practical to better understand how Section 508 in general, and how Section 508 testing of applications in particular, was applied in each agency. 
+• The fewest number of interviewees was at the Department of Education, where the interviews were restricted to the Section 508 team. Work at the other three agencies enabled a broad spectrum of personnel to be interviewed. 
+• Some individuals were interviewed more than once. A couple of interviews included two participants. 
+ 	 
+17 Even though we labeled the biggest participating agency as extra large, this size is small compared to DHS, at ~250K employees. 
+18 Approximate number of federal employees (i.e., contractors excluded). 
+• The job roles of the interviewees included executives (e.g., CIOs), project managers, Section 508 Coordinators, Section 508 team members (e.g., application testers, electronic document testers), as well as members of application and website development teams, governance, legal, and procurement groups.17 
+Table 2 - UTAP Participating individuals 
+Name Section 508 team Interviewees 1. US Mint 2 13 2. Department of Education (ED) 7 5 3. Federal Deposit Insurance 
+Corporation (FDIC) 6 17 4. Department of Labor (DOL) 5 17 A brief summary of the four UTAP implementation plans 
+This section summarizes the changes made within each agency due to their participation in the UTAP pilot and documented in their respective Implementation Plans. For more detailed descriptions, see the Case Studies in Part 2 (page 41).  
+The US Mint (Case Study #1) leadership did not approve the publication of their Case Study at the time this final report was being released.  Therefore, the UTAP Summary Report and Case Studies have been edited to remove the UTAP analysis for US Mint. 
+Case Study #2-ED 
+Before UTAP at ED 
+At the Department of Education, accessibility testing for software and websites was conducted by two people in the Section 508 Team. (A third person conducted electronic document testing.) Developers provided their products to the Section 508 Team who in turn invited them to sit and observe the actual testing. This way developers would hopefully learn what was needed in order to pass future 508 tests. For new developers, this would typically be their first exposure to accessibility requirements and testing. 
+The 508 test process primarily used a screen reader (AT), supplemented by some manual tests for keyboard accessibility and inspection of descriptive text on images. Some code inspection tests were also utilized (two members of the Section 508 Team had previously taken TT training, although neither were currently certified TTs). 
+Although there was no official test script or checklist, the testers had over time developed a de facto test process that they could recount from memory. The results of the tests were put into a standard report format which detailed the failures, along with screen shots and pointers to remediation techniques. 
+The UTAP implementation plan at ED 
+In terms of who will be responsible for conducting Section 508 testing, there will be little change at the Department of Education.18 That responsibility will stay within the Section 508 Team, although there will be cross-training given so that more members of the Section 508 Team will be certified TTs. The process will remain essentially the same, in that developers will continue to be invited to sit and observe the 508 tests of their products. However, unlike before, developers will be provided a copy of the test process document. There currently is no plan to require developers to have TTs as part of their development team. 
+ED was unique among the UTAP participant agencies, in that they chose to keep AT testing as a requirement for all 508 tests. The TT process will be utilized, and will be the primary vehicle for relaying results to developers. However, with a large base of screen reader users in the agency, the Section 508 Team felt that it was essential to continue to test with AT to ensure that compatibility and usability with AT is maintained to the same standards as before. 
+The UTAP implementation plan calls for a six month initial stage in which the Section 508 Team will continue to be the sole Section 508 testers for the agency as they incorporate, learn and evaluate the TT process more thoroughly. After the six month evaluation period, the Section 508 Team will decide whether to extend the TT training to developers. If they choose to do so, a three month communication/outreach period will take place, followed by a three month education/training period. 
+ 	 
+Case Study #3-FDIC 
+Before UTAP at FDIC 
+At the Federal Deposit Insurance Corporation, the Section 508 team was spread out across a number of departments. The Section 508 Coordinator was located in the HR/EEO department. There was also a Section 508 PM located in IT development. The Coordinator and the PM essentially shared the Section 508 responsibilities, with the former dealing more with policy and agency compliance issues and the latter dealing more with IT standards conformance issues. The remainder of the six person team came from the same or other IT departments. 
+Prior to participating in the UTAP process, the Section 508 Team had been conducting an extensive review of their program maturity as part of their response to the OMB reporting requirements.14 (p.13) The Section 508 Team also included a TT from a previous job, although they were not certified in the most current TT process. 
+At FDIC there is in the SDLC an approach where the developers test (functionality, integration, security etc.), and then a QA Team reviews, validates and signs-off on those results in order to go to production. The QA Team conducts only a paperwork review rather than conducting any formal testing of their own. 
+The process of change had already begun at FDIC as part of the OMB-related self-assessment conducted by the Section 508 Team. The software development teams had been given a modified earlier version of the TT process in an attempt to get code evaluation and code-based testing into their development process. Having said that, there were also two other accessibility testing methods in use at FDIC. In Enterprise Architecture (EA), a Section 508 SME would review applications for accessibility using a combination of AT-based and code-based inspection. For Internet and Intranet testing there was a template-driven inspection process that employed some code inspection techniques. 
+The FDIC employed no formal sign-off mechanism for passing Section 508 tests, and there was no formal education and training requirement for developers. 
+The UTAP implementation plan at FDIC 
+As a fairly large agency with many departments, the UTAP implementation plan calls for an initial pilot project and later full agency-wide implementation. (The pilot is not considered an 'evaluation phase' of the TT approach; it is merely a means to ensure that the details have been successfully worked out.) The TT approach is seen as a means to educate and certify members of development teams to incorporate accessibility testing as a part of the SDLC. The individual PMs will be responsible for ensuring the TT results will be passed to the QA Team for review and signoff. 
+The UTAP implementation was also seen as a way to improve the QA process from being a paperbased review to having the ability to 'spot-check' products to compare TT results with product performance. As such it was deemed necessary to have QA Team members become TTs. 
+The FDIC implementation plan calls for a smaller Section 508 Team than what currently exists. With TTs in place in the development and QA Teams, and oversight of Section 508 being provided by the Section 508 Coordinator and the Section 508 PM, there was little need for a separate group of Section 508 SMEs. The plan calls for maintaining some expertise in AT diagnosis and provides for the ability to have periodic 'surge' staffing when OMB reporting requirement are due. 
+A new agency 'Section 508 Center of Excellence' will be created as part of the implementation plan. This will introduce a new central resource for developers and testers. Formal training will also be provided across the agency as part of the implementation plan. 
+Case Study #4-DOL 
+Before UTAP at DOL 
+The Department of Labor was the largest of the agencies in the UTAP Pilot. DOL has a large number of sub-agencies (22). Prior to introducing TT, Section 508 testing was done differently (or not at all) at the various sub-agencies. At DOL, we interviewed people in seven different subagencies, and found seven different test processes. These were primarily AT-based and ad hoc. The variability was not just in Section 508 however, and the Department's OCIO was currently involved in projects aimed at normalizing the IT infrastructure DOL-wide. Participation in the UTAP Pilot was seen as a means to achieve the agency-wide standardization objective for Section 508. 
+Against this background, it was perhaps not surprising that the Section 508 Coordinator was experiencing difficulty with implementation of consistent Section 508 practices across the agency. On the sub-agency side there was no perceived authority from the OCIO on Section 508. In fact some of the people interviewed who were Section 508 POCs in their sub-agency were unaware that there was a Section 508 Coordinator for DOL, and some mistakenly thought that a department other than OCIO was responsible for Section 508. 
+The UTAP implementation plan at DOL 
+The key for the team at DOL was consistency. Time and resources were not available in the UTAP Pilot to individually evaluate and address each sub-agency's Section 508 approach. (This was also true of other initiatives, such as creating a common SDLC throughout the agency.) Therefore the Section 508 approach will be policy driven, with mandates to adopt and implement TT within each sub-agency. 
+Within each sub-agency, there will be at least one TT and one designated Section 508 POC. The TT and Section 508 POC would be called upon by development project PMs to conduct Section 508 testing as part of their SDLC. 
+In addition, the agency enterprise service helpdesk will be trained to field technical questions on the TT process from developers and TTs in the sub-agencies (e.g., questions about installing the test tools on their systems). The helpdesk will elevate more complex issues (e.g., those involving AT diagnosis) to a newly created agency-wide Assistive Technology Technician (ATT). The ATT will be a TT as well as an SME on AT and IT accessibility in general. The sub-agency TTs could also directly access the ATT for support as needed.19 
+As part of the implementation plan, DOL adopted the term 'Section 508 PM' in favor of the term 'Section 508 Coordinator' (see also 7. Developing Section 508 Program Management Support, page 39). The ATT will report directly to the Department's Section 508 PM (located in the OCIO). 
+Program Maturity Survey Results 
+In order to gauge the overall success of the UTAP pilot, OAST conducted a Program Maturity 
+Survey of each participating agency after they had completed their UTAP Implementation Plans 
+(defined below as "Post-UTAP"). The survey looked at nine Program Categories: Policy, Section 
+508 Team Staffing, Acquisition, Agency EIT Life Cycle Activities, Testing and Validation, Training, 
+Outreach, Technical Assistance, and Complaints Process. For each category there were five Maturity Measures: 0 (None), 1 (Ad Hoc), 2 (Planned), 3 (Resourced), 4 (Measured), and 5 (Optimized).  
+(The results of each individual survey are provided at the end of each case study, in the next part of this report.) 
+Comparing individual agency results 
+Although it is difficult to compare agencies like-for-like-because they had different starting points, different structures, and different approaches-it is clear that all four agencies showed an improvement in their overall self-assessment scores from pre- to post-UTAP, and also in their projected confidence of continued improvement over the coming two years (Figure 1)20.  
+ 	 
+
+ 
+Figure 1 - Program Maturity average scores for all agencies, pre-UTAP, Post UTAP, and 2 years Projected 
+The agency scores ranged from 1 (Ad Hoc) to 2 (Planned) prior to joining the UTAP Pilot (Figure 
+1). The anticipated improvement from each agency is that their program, on average, will be at 3 (Resourced) level or higher within two years from the creation of their UTAP Implementation Plan. 
+The UTAP Pilot activities centered around four of the nine program areas that were measured, namely Acquisition, EIT Lifecycle Activities, Testing & Validation, and Training. We found that by the point at which the implementation plan was produced (i.e., prior to any TT implementation going on), there had already been improvement in these four areas (the four areas are combined and averaged in Figure 2). DOL rated themselves 2.3 levels higher than when they started the Pilot. 
+When projecting out two years for these same four areas, and comparing that those scores to the pre-UTAP assessments, we found (Figure 2) DOL (+3.8) was the most optimistic with their expectations, followed by FDIC (+2.0) and ED (+1.3). 
+
+ 
+Figure 2 - Improvement in scores for product testing-related measures (Acquisition, EIT Lifecycle activities, Testing & Validation, Training) 
+
+Figure 3 - Improvement in scores for other program measures (Policy, 508 Team Staffing, 
+Outreach, Technical Assistance, Complaints Process) 
+For the other five program areas that were measured (Policy, 508 Team Staffing, Outreach, 
+Technical Assistance, Complaints Process), we also compared the average jumps from pre- to postUTAP, and from pre- to two years projected (Figure 3). Again, we saw improvement in selfassessment scores in these areas for each agency. DOL had the greatest improvement with their projected maturity score (+3.8) followed by FDIC and ED (both +1.4). While these areas were not the main focus of the UTAP Pilot, in the course of conducting the program at each agency these other areas received attention by the participants, were featured in their implementation plans, and possibly became an ancillary benefit of participation in the program. 
+Projected scores in these other program areas, and the program as a whole (Figure 1) demonstrate that overall program maturity improvements can be expected from conducting a UTAP process in an agency.21 
+Combined average results 
+ 
+Figure 4 - Program Maturity Chart averaged across all four participating agencies 
+When we examine the combined average scores from all four agencies in the nine program areas, we again see that there is a progression improvement of self-assessment scores from pre-UTAP through post-UTAP, and then through the projection of two years hence (Figure 4).22 
+As might be expected, the most marked improvements in scores were in the Testing & Validation area, going from level 2 (Planned) to 3 (Resourced) to 5 (Optimized) over the period (Figure 4). There were also marked improvements in the other three areas that are closely related to testing (Acquisition, EIT Lifecycle activities, and Training). 
+ 	 
+These results are similar to those found when comparing the individual agencies in the previous subsection. In summary, when we examine the combined average results of all four agencies, we can ascertain that self-assessment program maturity scores have improved as a result of following the UTAP process. 
+Implementation plan elements 
+In this subsection we discuss a number of elements that are cross-cutting in the case studies. These are issues that were seen in one or more of the four UTAP implementation plans. (In the subsequent subsection we discuss lessons learned by the OAST Team regarding the use of the UTAP approach as a means to implement TT in an agency.) 
+Where the Section 508 Program is located 
+We saw differences in the Section 508 Team make-up and location in the four agencies. Although a federal wide survey of Section 508 Teams has not been conducted to date, we can posit that there will be variability seen throughout the government. For example, we can say based on our experiences that Section 508 Teams can be located in the OCIO, or HR/EEO, or in IT Development, or in a combination of offices (e.g., FDIC's Section 508 Team were in many locations). When Section 508 Teams are in the EEO or similar, the risk is that Section 508 is perceived as an accommodations exercise for people with disabilities that is in addition to, rather than integrated within, the IT SDLC. 
+When Section 508 Teams are in IT Development, the risk is that Section 508 is seen as only one department's responsibility. For example, on the FDIC organizational chart there was a Division of IT (where the Section 508 PM was located) where the majority of applications development happened; but there was also IT development going on in the Office of Communications (Internet and Intranet), and also the in the Corporate Training office. Although there was liaison and information sharing between the departments, the formal authority of what should be done for Section 508 is less clear for the offices that lay outside of the one which houses the Section 508 PM or Section 508 Coordinator. 
+The size and makeup of the Section 508 Program 
+Section 508 Programs can be comprised of just one or two people, or can be an entire team of people. The size of the team does not necessarily correlate to the size of the agency (e.g., Department of Education is a quarter the size of DOL, but has more people in the Section 508 Team). 
+At FDIC and DOL the nature and size of the Section 508 Team was to change as a result of the 
+UTAP implementation plan. As a result of shifting the duty and responsibility for testing from the Section 508 Teams to the development teams, there is less need to use the Section 508 Team to conduct testing. There is still an obvious need for a Section 508 PM / Section 508 Coordinator in the Section 508 Team. There was also an identified need to have an AT SME on the Section 508 Team who could help diagnose tricky AT compatibility issues that were beyond the skills of the developers. 
+By transferring the applications and website accessibility testing tasks to the developers, Section 508 Teams could free up more time and staff resources to, for example: 
+• conduct more tests of COTS products; 
+• conduct more thorough reviews of vendor conformance claims in VPATs; 
+• provide SME support to TTs in their agency; 
+• ensure that policies and procedures are being consistently applied (a QA role); 
+• provide organization-wide education and training on IT accessibility in general; 
+• provide SME support to multimedia developers (closed captioning and audio descriptions of video); 
+• provide usability evaluations of both software and hardware products, using AT; and 
+• directly assess the success of their Section 508 program with end users with disabilities (employees and the general public). 
+Skills and knowledge 
+For agency Section 508 coordinators, learning on the job over the years has meant that they have developed the skills and knowledge to navigate their organizational domains. The luxury of learning about and considering alternative organization-wide approaches may not be perceived as a self-start option for Section 508 personnel. Thus, during the UTAP Pilot it was necessary to provide coaching to the Section 508 team leaders on alternative organization-wide approaches to consider. 
+It is not surprising that, given the primarily AT-based testing ingrained in the four agencies, the SME skill levels in dealing with AT issues was high. The TT code-inspection approach was new to most of the participants, so it was natural to expect some wariness or apprehension among team members. In some cases, this jump in logic was something that needed to be taught directly by the UTAP team. 
+Testing approaches 
+At the outset of the project OAST staff expected to find a wide variety of testing approaches between the different agencies. However, while there was some minor variation, the approach to testing was basically similar. Each agency was conducting some version of the primarily AT-based approach with the Section 508 Team conducting application testing. Only one agency, FDIC, was already in the process of attempting to implement a product development team based Section 508 testing approach using code inspection only. This was attributed to one of FDIC's Section 508 SMEs having taken the TT course as part of their previous employment. 
+What was not expected at the outset of the project was to see so much within-agency variation in Section 508 testing approaches. At FDIC there were three distinct forms of testing in place. At DOL there are 22 sub-agencies. It was clear that for each agency that was interviewed, Section 508 testing was done differently. Testing was not done in a consistent manner across the Department. There was also confusion among client development teams at both FDIC and DOL as to who had authority over Section 508. In some agencies, the general description of the organization provided by participants was that of a 'silo-based culture' (i.e., each individual organizational unit doing its own thing in isolation). 
+Policy, and stakeholder Responsibilities 
+In each of the Case Study chapters we have listed stakeholder responsibilities. These had to be determined as part of the design (stage 4) and refined as part of the implementation plan (stage 5). Participant agencies had Section 508 policies that were in various states: 
+• At ED, the policy was undergoing 'review' by the legal department. (This was the case for the entire duration of the UTAP Pilot.); 
+• At FDIC, the policy was newly revised just prior to starting the UTAP Pilot; and 
+• At DOL, a new policy was released just prior to the end of the UTAP Pilot. 
+How to test, and who is responsible for ensuring testing gets done, and the roles of the Section 508 Program and Team members should be enshrined in policy. This is not always the case, but ideally it should be. The creation and vetting of a policy can take a very long time in the federal government. 
+The approach taken during the Pilot was to establish stakeholder responsibilities in the implementation plans, with the understanding that Section 508 policies would be adjusted accordingly in future revisions. In each case study the message enshrined in their respective policies boiled down to the simple statement: "do Section 508". Implementing Trusted Tester was, therefore, something that the various participating Section 508 Team members thought would be accepted by their agency as commensurate with their existing Section 508 policies. 
+Resource allocation and funding 
+Anyone who regularly attends Section 508 events will hear a common refrain among Section 508 Teams: "We're under-resourced". The term 'unfunded mandate' is regularly applied in conversations about Section 508. The four Section 508 Teams in this Pilot were no different, having struggled for years to increase recognition of their team's importance, to strengthen their policies and procedures, and to increase their funding and resources. There are different types of approach to funding accessibility.23 However, we did not hear from participants about past efforts to explore different types of funding and resourcing options. In general it seems that the status quo prevails, and teams resign themselves to their frustrations in day-to-day Section 508 work. 
+Having said that, the FDIC and DOL Section 508 teams used the TT approach as a 'hook' to improve resource allocations and funding models at their agencies. They transitioned from Section 508 team-centric testing to development team-centric testing. In the new model, the Section 508 team does not have to constantly pursue funding; instead, the development teams are compelled to recognize their responsibility to include end users with disabilities as part of their user base, and develop and test for accessibility as part of their day-to-day business (i.e., they fund Section 508 testing by default). It is still necessary to have additional funding for the agency-wide Section 508 Office/Program, and agency-wide Section 508 SME positions, but this model of operation calls for a more compact (and less costly) agency-wide Section 508 Office/Program. This only works because code-based inspection approaches employ skills that are much easier to share with developers and programmers than AT-based testing approaches. 
+A note on the Systems Development Life Cycle 
+An important part of the process of transitioning to TT is, therefore, to examine the current SDLC for where modifications are needed. This then facilitates the process of governance around Section 508. Each of the four participant agencies had Section 508 in their SDLC (it is after all a legal compliance requirement), but it was in in 'loose' terms only. Having the Section 508 testing happen within the development teams facilitates stronger terms and much clearer gate-review criteria. 
+At FDIC and DOL, TT testing will be inserted into the existing SDLC. They chose to focus on changes to the systems that they already had in place, rather than introduce an entirely new system. For example, at FDIC one specific element of their implementation plan is to ensure that a new category ('Section 508') is created and added to the mainstream defect tracking system for software development. Prior to this, Section 508 defects were documented on an ad hoc basis and subject to sign-off. This change puts the onus of detecting defects on the development team rather than the 508 Team. 
+Training 
+We heard the term 'osmosis' to describe how developers were educated by Section 508 Teams on accessibility features that need to be integrated in their products. Testers use the AT to show developers' first-hand how it fails. It is then the developer's responsibility to find the fix that will pass the AT test. 
+ 	 
+As part of the development of TT over the years, OAST created various training courses that enable developers to become TTs. These courses have been made available to the four UTAP Pilot participating agencies.24 All implementation plans have incorporated these courses in their proposed training programs. While there are minor variations, the general strategy has been to: 
+• Train all stakeholders in the agency's chosen approach that incorporates TT (why, how, when etc.); 
+• Train selected developers to become TTs; 
+• Train development PMs in the importance and the interpretation of the standards; 
+• Train Section 508 Team members to become TTs; and 
+• Train procurement personnel on new requirements language to go into solicitations. 
+Parent / Sub-agency Relationships 
+On the one hand, DOL decided, through the UTAP process, to implement a one-size-fits-all approach for its sub-agencies. Mint, on the other hand, is a sub-agency of Treasury (Mint was Treasury's pilot for TT implementation). 
+With such relationships there is a set of goals for the top-level department and a set of goals for the sub-agencies. The Section 508 approach cannot successfully exist in a vacuum ignoring the wider IT goals of any given agency. For example, if there is a 'silo' culture for IT security or for IT interoperability, then that culture needs to be addressed before or alongside any department-wide Section 508 program. 
+Complaints process 
+Inevitably while assessing a given agency there is a discussion of the Section 508 complaints process. Complaints can come at any time and from any direction. Complaints are rare though.25 
+With a solid and comprehensive 508 program that includes a robust testing program, agencies lessen the likelihood of having complaints filed against them because they are able to catch problems before they become elevated to the level of an accessibility complaint. 
+While implementing your own UTAP could be a valid response to dealing with a Section 508 complaint, it should not be viewed as a primary motivator, because Section 508 complaints are a rarity, even when agencies have poor or nonexistent accessibility-related programs. In general, the presence or absence of complaints is not a factor in the UTAP process. 
+Lessons from the UTAP approach 
+In addition to the above, we learned a lot about conducting the UTAP process while working with the four participant agencies. This was after all a 'Pilot' project and we stated on Day 1 to the participants that this was going to be a learning process on both sides. What has been learned has been incorporated into Chapter 1-4: Recommendations. 
+(A side note: not everything goes to plan) 
+Like any big project, there were a number of things that did not go as planned. In the Pilot we learned the following: 
+• One agency was the first to start and the last to finish. Because our support was free (i.e., there was no financial cost to the agency for the support from OAST), and because there was no fixed timeline, other tasks that did have internal assigned priority levels trumped the UTAP work. In contrast, one agency started last and finished first. They came to the Pilot after this lesson was learned. By setting a timeline, a level of work commitment, and a level of priority, the project came in on time. 
+• For Stage 3 (familiarization with DHS's approach), the first agency to get to this stage was Mint. We invited members of their Section 508 team, test team, and legal department to come to DHS to interview people individually. This mirrored the approach we had used in Stage 2, where we interviewed their people individually. This approach did not work well. The complaint about conducting one on one 'interviews' actually came from the DHS side, in that the time and the repetition of the message was burdensome for the OAST team. Although the planned method's goal was to provide opportunities for one-on-one engagement by individuals in the participating agencies, it was decided that the method for Stage 3 would be adjusted for the remaining agencies. Instead of one-one-one interviews, the entire participating agency team came as one, and the DHS team provided group presentations on their areas (procurement, help desk, testing, governance and leadership). For the accompanying UTAP guide, we have further modified Stage 3 to be about becoming familiar with available options in general. 
+• One of the main lessons was that relying on what the Section 508 Team said about how Section 508 operated was insufficient. However, what also emerged in at least two instances was that other related organizational processes were not working as the agency's management had intended. It is not possible in the UTAP process to find out about each and every process at a given agency, but it is important to recognize that just because a given process is described a certain way, does not necessarily mean that it actually works that way. This is more a reminder than a lesson: for related areas (but areas which you are unable to study) be on guard for discrepancies between the way people think things should work and how they actually work. These are issues for the agency staff to handle, but if found by the person helping to coach the Section 508 Team through the UTAP process, that person needs to inform the team members of the problem(s). 
+Scope: Beyond the Section 508 team 
+Stage 2 of the UTAP Pilot required OAST staff to work with the agency POC to identify stakeholder personnel that in one capacity or another affect/influence the agency's Section 508 Program. For the Department of Education, UTAP activities were restricted to their Section 508 Team only. This became a big impediment to understanding how Section 508 was working across the department and how it was supported. In other case studies, access to personnel outside of the Section 508 office provided important insights about how the Section 508 office is regarded, what works and what does not work, etc. In a project like this it is important that all of the players share a common understanding of the goals, rules and regulations, procedures and so on. It was not possible to assess this at ED due to the limits placed on the project. 
+Consequently, the ED implementation plan differs greatly when compared to those of the other three UTAP participant agencies. Two key differences are: (1) it is the only plan that features a decision to keep AT testing alongside the TT process, making for longer and more involved tests; and (2) it is the only plan that limits initial TT training to the Section 508 team only. These two are, of course, intertwined: if AT is in the test process, then the developers who received formal TT training would only receive the code inspection part of the ED test process for applications. It would be difficult to provide the AT part as informal training to the developers, as: (1) AT testing skills are quite different to code inspection testing skills; and (2) the proposition to the developers is not one of a shorter, more efficient test, but that of a longer, more involved test. 
+Of course in some circumstances only a representative sample is possible. This was the case for us with DOL. One of the key goals of the OAST team during the UTAP Pilot was to engage the Section 508 staff and application development teams at each agency and sub-agency, and then to help create their own design and implementation plans. Due to the structure of this particular agency, it was impractical to engage directly in design activities with 22 different sub-agency teams. Instead, a number of Section 508 SMEs from sub-agencies and department-wide office, together with project managers from the OCIO, formed the team to develop the proposed design. 
+Assigning a project manager 
+Another very helpful aspect to conducting the UTAP Pilot was when some agencies called in a PM (not the Section 508 PM) to coordinate activities on the agency's side. This happened at FDIC throughout the Pilot and at DOL from Stage 4 (design) onward. The PM was someone who did not have a Section 508 background, but they had a strong IT background. As a result, they did not have any vested interest in the current methods of testing at the agency, and were open to alternative methods if the benefits were clear. The PMs acted as facilitators to help the Section 508 Teams more objectively separate out the differences to past activities, and consider the potential opportunities around implementing the new TT approach. 
+Having a PM involved also helps reinforce a notion that the Section 508 community should do away with Section 508 Coordinators and replace them with Section 508 PMs. The term 'Section 508 coordinator' carries less credibility than the position warrants. 'Coordinator' conjures up an image of someone with little authority trying to coerce disparate teams into action. Conversely, 'Section 508 program manager' implies greater credibility and skill set for managing complex Section 508 programs.26 
+You think you know but... 
+At the start of their participation in the Pilot, FDIC's Section 508 Team had spent a lot of time assessing their program maturity level for their OMB reporting requirements. Subsequently there was already a lot of description of the Section 508 work at FDIC on paper at the inception of Stage 2. The Section 508 Team had presentation materials for management on how Section 508 works at FDIC. 
+This information was very helpful for getting a quick picture of what was happening in the agency. However, interviews with staff in various departments revealed a lot more about the organizational culture at FDIC, with respect to disability. There were a number of surprising results that were given to the Section 508 Team, and these had a big impact on how the UTAP implementation plan was framed. 
+The same was essentially true for DOL. No one person, including the Section 508 Coordinator had a complete picture of how Section 508 'worked' at the agency. (Even though there were established policies, the information was simply not flowing between the Department and subagencies.) There were those who thought they had a clear picture of how Section 508 worked at the Department. For instance, people would point to existing policies, to existing groups, and to existing people and suggest that is how things 'work'. Fortunately for them the UTAP Pilot proved otherwise - thus clearing the way for a more comprehensive understanding of how things really are and how things should be in order to have a strong Section 508 program that meets the needs of the Department and those of its constituents. 
+The only way to actually find out how Section 508 actually works at an agency is to talk to both cohorts: The Section 508 Team; and everyone else. 
+ 	 
+
+
+
+ 
+Chapter 1-4: Recommendations
+The Interagency Trusted Tester Program (ITTP) 
+Since the beginning of the UTAP Pilot, there were inquiries from staff in other agencies who wanted to use the TT approach. They requested that their staff get certified as TTs, and requested copies of the test process for applications. For the Pilot, however, we purposefully limited our support to four agencies because of resource limitations on the OAST side. Over time the number of inquiries has steadily risen, so there are a number of agencies looking to adopt the approach. 
+The UTAP Pilot was conducted using a 'hub-and-spoke' model of interaction between agencies, with OAST being the hub. By design, none of the four participating agencies were conversing or sharing notes with each other.11 (p.11) OAST was offering consultation to the agencies on a quid pro quo basis, in that they were receiving the benefit of our past experience and skills, and we were learning what sorts of issues they had to face. 
+With the knowledge and experience gained in both the UTAP Pilot and the development and application of the TT program, OAST is endeavoring to continue interagency development. To this 
+end, OAST has appointed an Interagency Trusted Tester Program (ITTP) Program Manager to oversee continued growth of the TT approach. (For more information on ITTP, see page 87.) 
+Now that the UTAP Pilot is complete, agencies wanting to adopt the TT approach will be able to utilize the ITTP resources as they become available. Recommendations for such agencies, and for the ITTP stakeholders, are presented below. 
+Recommendations for agencies looking to adopt Trusted Tester 
+1. Conduct your own UTAP 
+For any agency looking to reap the benefits of implementing the Trusted Tester approach in their organization (and avoiding the risks inherent in not taking an organization-wide approach to the issue of testing), the first thing to do is to appoint a leader to conduct a UTAP project. A guide to conducting your own UTAP will be provided as a accompanying document. 
+
+Recommendation #1: If seeking to implement Trusted Tester in an organization, conduct a Unified Testing for Accessibility Project (UTAP) first. 
+
+Chapter 1-4: Recommendations 
+2. Use ITTP Resources as they become available 
+The results of the UTAP Pilot will be used to create a separate guide to Conducting your own UTAP. This guide will provide initial guidance, and should be read in conjunction with other materials on the ITTP website (see page 87), especially guidance on the Section 508 Organizational Maturity Assessment. 
+These initial resources can be used in conjunction with existing resources on the subject of tackling accessibility at the organizational level.29 
+In the future, as more knowledge is gained by people working in these areas-on successfully implementing TT, and successfully building Section 508 programs-there will be the opportunity to build on these initial resources. Example artifacts from agencies, as well as modifiable templates, can and should be shared to help speed up the process of implementing TT by others. A bibliography of existing related resources can also be included. A resources website could include: 
+• Policies and procedures; 
+• Forms (e.g., test request, test results, compliance determinations); 
+• Procurement language; 
+• SDLC and governance language; 
+• OMB reporting advice; 
+• Inspection tools; 
+• Association information; and 
+• Training resources. 
+Additionally, more refined and detailed guidance should be produced as a result of more case study experience, and from professionals working in this area to gather, share and apply their combined experiences. 
+
+Recommendation #2: Monitor and utilize information on UTAP related resources on the ITTP website. 
+
+3. Use and contribute to TT results repositories 
+There has been no mechanism for interagency sharing of Section 508 testing results. Each agency has been using its own test processes, resulting in mixed messages from agencies to vendors on the acceptability of a given product's conformance with the Section 508 standards. Adopting a standardized approach to testing (such as TT) opens up the opportunity for an interagency TT results repository, which will save time and resources and provide for more consistent messaging to vendors from TT-adopting agencies. 
+ 	 
+29 For example, Responding to accessibility issues in business, Law, C.M. researchbank.rmit.edu.au/view/rmit:6156 
+One of the key benefits of adopting TT is that results become both sharable and repeatable. Within an agency, results can be shared between developers and Section 508 teams, and those people can replicate results using the standardized test approach. The agency can create its own internal repository, as OAST has done, so others can find and use past TT results instead of needlessly repeating tests. This means that staff in any of the sub-agencies can look up whether a given application has already been tested by a certified TT, and if so, saving time and resources. 
+
+Recommendation #3: Create and use an internal Trusted Tester results repository, and, when available from the ITTP, also use and contribute to the Interagency Trusted Tester Results Repository. 
+
+4. Collaborate with other Federal adopters of the TT approach 
+To be a truly interagency effort, the ITTP program will depend on participation from personnel who work at other agencies that have adopted, or are in the process of adopting, the TT approach. Recognizing the need to initially provide management and support of interagency efforts, OAST is planning to create a steering committee which will comprise representatives of the existing TTadopting agencies. OAST plans to draft a proposed charter for discussion by the committee which will then be refined by the membership to begin the formation of a working association. 
+
+Recommendation #4: When available, join the association of those who have adopted or are adopting Trusted Tester in their federal agency. 
+
+Recommendations for ITTP Stakeholders 
+5. Provide ongoing support to UTAP Pilot Participants 
+The UTAP Pilot wrapped up after the four agencies had completed their implementation plans. The OAST team should continue to support each agency as they tackle the actual implementation of TT. Advice and artifacts should be shared between OAST and the agency teams as part of the ITTP initiative. 
+There should be planned 6-month and 12-month follow-ups with each agency, the results of which will be appended to future versions of this UTAP Report. 
+
+Recommendation #5: Provide ongoing support to the four UTAP Pilot agencies, and conduct 6 and 12 month follow-ups with those agencies to assess the success of their implementation plans. 
+
+6. Support UTAP trainers 
+One of the main tenets of DHS's UTAP Pilot was that the collaborating agency's staff would be trained/coached on how to develop their own design and implementation plans around TT. This Chapter 1-4: Recommendations 
+methodology was chosen to increase the likelihood of adoption of TT in the long run, in that the decisions on what to change in the agency were those of the staff at the agency, and not of an external entity. Experience shows that where teams can learn to apply their own decisions, there is less chance of resistance to change usurping the process in the longer term. 
+One-size-fits-all solutions are not applicable in a federal space that is currently diverse in its approaches to Section 508. It is therefore anticipated that current guidance and resources will be insufficient to enable every federal team to implement TT without further assistance or training. 
+The evident need is for training of agency staff. While there may be some teams that have the experience and skills necessary to apply the guidance successfully in their organization, we predict that there will be a need for additional training to supplement this early guidance. 
+Training/coaching should enable and empower staff to be able to tackle their own Section 508 program issues with respect to TT, and to be able to successfully tackle the cross-organization issues that will arise as a result of their adoption of the TT approach. 
+As part of the ITTP, there is a need to set forth guidelines on training relating to organizational implementation of TT. This training could be offered by third parties. The primary goal of the training should be to support and coach/train the client agency's staff in a similar fashion to that used in the UTAP Pilot. The trainers should design and deliver coaching and training activities to enable the client agency staff to develop and execute the agency staff's own design and implementation plan for incorporating Trusted Tester. 
+By specifying the expectations and parameters for TT implementation training, the ITTP staff (and later, perhaps, association members) could help to broaden the adoption of the TT approach in a way that (a) maintains consistency of application of the process, while (b) taking account of the differences between agencies in their team-makeup and current approaches to Section 508. 
+
+Recommendation #6: Define trainer criteria that consultants must meet for providing training/coaching to federal agency staff as they conduct their own UTAPs. 
+
+7. Developing Section 508 Program Management Support 
+The results of the Pilot have shown that there are benefits to an organization that come from conducting the UTAP process (See Program Maturity Survey Results, page 26). In other words, in addition to benefits from adopting TT, there are benefits that come from carrying out the process of adopting TT. On reflection, the UTAP process involved assessing and rethinking the agency Section 508 program at the agencies. While Section 508 program management support was not one of the goals of UTAP, it was a natural and to some extent expected aspect of the process. Throughout, we relayed to the participant teams (a) that to tackle organization-wide change required thinking outside of the traditional 'swim-lanes' that Section 508 teams might usually operate within; and (b) that there was no 'cook book' on how to do this kind of implementation exercise.27 
+Cook books tell you a list of ingredients to obtain and how to cook them. Chefs look at available ingredients, and come up with a new dish, or they take an existing dish and improve on it. As Seth Godin points out, "It's easy to buy a cookbook (filled with instructions to follow) but really hard to find a chef book".28 What is really needed right now for implementing testing changes throughout an organization is a 'chef book' and willing chef, or cook who aspires to be a chef. Because the 'chef book' does not yet exist, we will have to conduct more projects like UTAP to learn the issues that people in agencies will face and have to address as they tackle TT implementation.29 
+TT implementation served as the catalyst for some radical changes in the way the Section 508 teams operated within participant agencies. And, while some initial concerns about dropping an AT-based approach were voiced, once the more compelling nature of TT was understood there was surprisingly little in the way of nostalgia for the old ways. The benefits of the share-ability of the TT process-between Section 508 teams and development teams-seemed to be the most important selling factor in the implementation plans. The share-ability of the test process breaks down traditional boundaries around Section 508 teams that exist when the process is not sharable (as is generally the case with predominately AT-based testing approaches). 
+An emerging idea is that another boundary, in thinking and approach at least, is that we have in the federal government Section 508 Coordinators rather than Section 508 Program Managers. The term coordinator conjures up the image of someone who tries to keep the juggling balls in the air but who has little in the way of authority to cause change to happen in their agency. Since at least the early 2000s this has been a complaint in the accessibility field.30 By contrast, the term program manager conjures up an image of a person who runs a well-defined program with a commensurate budget and staff: "You're the program manager but we don't have a 'Section 508 Program'? That's an issue!" So, in addition to what we have suggested for agencies to be thinking about as regards TT and UTAP (encapsulated in the accompanying guide), we as a field-the federal government, and wider-should be thinking about the need for tackling and supporting the activities which go along with accessibility program management. 
+
+Recommendation #7: Using a similar approach and resources as those used in UTAP, develop an approach for supporting Section 508 program management development in the federal government. 
+ 	 
+
+ 
+PART 2: UTAP CASE STUDIES
+
+
+
+Chapter 2-1: Case Study #1-US Mint
+
+
+
+Introduction to the US Mint and the Section 508 team 
+The United States Mint is a fairly small agency employing only around 1,600 people in 6 facilities, including the headquarters in Washington, DC. Approximately 1,000 of those employees are directly involved in the manufacturing of circulated and uncirculated coins, collectible coins, and medals.31 Mint is a sub-agency of the US Treasury. 
+The US Mint (Case Study #1) leadership did not approve the publication of their Case Study at the time this final report was being released.  Therefore, the UTAP Summary Report and Case Studies have been edited to remove the US Mint UTAP analysis.   
+ 	 
+Chapter 2-2: Case 
+Study #2- Department of 
+Education
+
+
+
+Introduction to Department of Education and the Section 508 Team 
+Department of Education (ED) is a mid-size agency (under 10,000 staff) and employs a high number of people with disabilities. 
+The Section 508 team comprises seven individuals, and is part of the Office of the Chief Information Officer (OCIO). 
+Interviewees at Department of Education 
+During Stage 2 (Familiarization), people who worked in the following job roles19(p.18) were interviewed: 
+Members of the 'Section 508 Team' are denoted by an asterisk (*). 
+• Unofficial Team Leader [OCIO / Section 508 Team] (*) 
+• Section 508 Coordinator [OCIO / Section 508 Team] (*) 
+• Section 508 SME contractor [OCIO / Section 508 Team] (*) 
+• Applications Tester [OCIO / Section 508 Team] (*) 
+• Documents Tester / Remediator [OCIO / Section 508 Team] (*) 
+The Trusted Tester implementation plan at the Department of Education 
+A two-phase implementation plan was proposed as a result of the UTAP Pilot. The first phase would be to adopt TT within the Section 508 Team. If the first phase is successful, the team will consider a second phase to proliferate the TT approach to product development teams. 
+Phase 1: The Section 508 Team 
+The existing Section 508 testing process (described in the next section) was one in which the Section 508 Team provided testing using a combination of AT and code inspection. In Phase 1, this approach will continue, but using the TT approach for the code-based inspection part of the applications testing (Figure 10). The AT-part is regarded by the team as a necessary supplemental validation activity for the code-based tests. With a higher than average number of employees with disabilities, many of whom are AT users, the Section 508 team decided that it would be diligent to keep the AT validation aspect in their testing. 
+An important concept relayed by the Section 508 Team during the project was that of "learning by osmosis". By having developers sit in on any given test, the developers would get to discuss with the Section 508 tester what the issues were. Many of the developers would make a conscious effort to learn over time what changes they should make in the way they developed their applications so that they would 'sail through' the Section 508 test process on return visits. The difference for the new two-part testing approach would be that the Section 508 failures would be more explicitly identified with the TT process, and that a copy of the code-inspection test process would be provided to the development teams (Figure 10). 
+ 
+Figure 5 - Proposed use of Trusted Testers in the Section 508 Team at ED. 
+In the seven person Section 508 Team there was one Section 508 applications tester, one Section 508 electronic documents tester, and one Section 508 SME who could also test both applications and electronic documents. A decision was made to cross-train all three persons to become TTs who could also test electronic documents. The new approach would utilize new interagency test processes and guides for electronic documents.32 The aim was to incorporate testing of documents in a way that would match that of the applications testing. This would happen alongside the adoption of the TT approach for applications in Phases 1 and 2. 
+Phase 2: Others outside of the Section 508 Team 
+A one year implementation plan was developed by the Section 508 Team: 
+• The first six months would be used for more detailed planning and preparation. (This six month period would overlap with the Phase 1 part of the implementation plan.) In this period the team would identify new processes and procedures that would be used in the agency around TT. Information resources and policy documents would be developed for project managers, procurement staff, and for developers. The intranet Section 508 page would be updated, and the Section 508 Team's SharePoint site would also be expanded with new resources relating to testing. A dashboard would also be created to track Section 508 testing metrics in the agency. 
+• The next three months would be a communication period. The various stakeholders throughout the agency would be informed of the new policies, processes and procedures. 
+• The final three months would be the period in which targeted education would be provided. If the Phase 1 evaluation of the online TT training was positive, then during the education period developers would be provided with the TT training. Training on the agency's new Section 508 approach would be provided to the TTs, and to other affected stakeholders. 
+What the plan replaces (pre-UTAP testing approach at Department of Education) 
+The existing test process at ED was very much like the traditional evolution of AT-based Section 508 testing that DHS had initially employed.33 Two of the Section 508 team's staff had attended TT training in the past, but they were not currently-certified TTs. 
+The code inspection methods learned in TT training had been in use for some time prior to the UTAP Pilot. The approach to testing utilized both code inspection and AT testing (Figure 11). The testers were Section 508 SMEs. The testers described their process as one of switching back and forth as needed when evaluating applications. Their experience would tell them whether something should-in addition to using code inspection-be tested with a screen reader, screen magnification software, voice recognition software, or a combination of these. 
+ 	 
+agencies to create interagency agreed-upon test processes for electronic documents. For outputs of the AED COP see buyaccessible.gov/content/best-practice-library.  
+ 
+Figure 6 - The existing means of applications testing in the Section 508 Team at ED. 
+Developers at ED were encouraged to sit in with the Section 508 Team during Section 508 testing. Testing usually happened toward the end of development. Fixes at the end of a project are usually more difficult than fixes at the beginning, and thus the process of 'osmosis' (described above) was seen as the way to help the development teams incorporate Section 508 sooner in their process. In practical terms Section 508 subject matter expertise resided within the Section 508 Team, as did the authority for conducting Section 508 tests. 
+There was no official testing checklist, although there was a template for reports. There were only two testers in the Section 508 Team, and over time they had developed their own test procedures to cover all of the requirements in the report. They could easily describe from memory their adhoc step-by-step approach to each test. 
+An informal tracking system was kept within the Section 508 Team for test reports. Testers could look up past results and use those when re-testing applications. Each test report included for each failure the location, a screen capture, recommendations and resources for developers for correcting the failures. 
+The testing report included a pass or fail on the cover page. The conformance determination of 
+'pass/fail' would be made by the tester. The Section 508 Coordinator would use this determination in lifecycle governance activities. 
+Training for developers, for applications and electronic documents, was described by the Section 508 Team as 'spotty and inconsistent' at ED. Citing resource issues, the Section 508 Team were too busy-with conducting application tests, providing Section 504 reasonable accommodations services, and dealing with other management issues-to provide or arrange for training for outside personnel. Some training activities did occur, but not on a regular, managed basis. 
+Issues beyond testing at Department of Education: existing versus proposed... 
+The UTAP methodology addressed the wider organizational context and looked at issues that affected testing, and issues that test results would affect. (For more on the methodology, see Chapter 1-2: Approach (page 9). 
+The Section 508 Team's activities within the wider organizational context 
+The Section 508 team had been working for several years on an accessibility improvement process. While executive leadership produced and published a policy directive, the Section 508 Team considered developing and maintaining good relationships as important as the policy directive. 
+Of the four participating agencies, only ED did not have a signed MOA, due to the length of the approval process within the legal department. With assurances of the Section 508 Team that the UTAP program was supported by management without a signed agreement, we proceeded with the UTAP Pilot anyway. 
+Supporting elements to facilitate Section 508 testing 
+Section 508 Personnel 
+The Section 508 Team leadership (Figure 12) comprised: 
+• An 'official' manager who was part of the OCIO management team, but had little to do with the day-to-day running of the Section 508 Team. 
+• The 'unofficial' Team leader who was responsible for keeping the team running smoothly on a day-to-day basis, for dealing with wider management issues around Section 508, and for managing the ED-side of the UTAP Pilot.34 
+• The Section 508 Coordinator was in many ways the 'face' of the Section 508 Team to other departments, and was directly involved in governance activities and supervision of the test team. 
+ 	 
+ 
+Figure 7 - The current personnel of the Section 508 Team 
+Section 508 Testing methods, systems and artifacts 
+The Section 508 Team had in the mid 2000s created an accessibility review process as well as a functional requirements document for a proposed accessibility results tracking system. The former was available to the Section 508 team, but not generally referred to or periodically updated. The latter remained unfunded as a project. 
+In recent years, an initiative had been in effect, aiming to improve accessibility policies and standards, to raise awareness for employees and contractors, and to establish periodic reviews of accessibility at ED. However, for applications testing the situation (as described above in What the plan replaces (pre-UTAP testing approach at Department of Education) starting on page 50) was one in which (a) testing results did not follow a formal approach, but did use a consistent reporting template; and (b) had an informal tracking system to keep test results (which was only available to the Section 508 Team members). 
+ED: Post-Pilot Maturity Survey Results 
+
+ 
+Figure 8 - Program Maturity Chart for ED 
+Table 3 - Program Maturity Table for ED 
+ Pre UTAP Post UTAP 2 yrs Projected Policy 3 Resourced 3 Resourced 4 Measured 508 Team Staffing 2 Planned 2 Planned 3 Resourced Acquisition 1 Ad Hoc 2 Planned 2 Planned EIT Lifecycle activities 1 Ad Hoc 3 Resourced 3 Resourced Testing & Validation 4 Measured 4 Measured 4 Measured Training 1 Ad Hoc 2 Planned 3 Resourced Outreach 1 Ad Hoc 2 Planned 3 Resourced Technical Assistance 1 Ad Hoc 2 Planned 3 Resourced Complaints Process 2 Planned 3 Resourced 3 Resourced 
+ 
+Chapter 2-3: Case Study #3-Federal Deposit Insurance 
+Corporation
+
+Introduction to the FDIC and the Section 508 team 
+The Federal Deposit Insurance Corporation (FDIC) employs around 7000 federal and 3000 contractual staff. There are only a handful of people with disabilities working at FDIC. 
+Roughly half of the agency's staff works from field offices, engaging directly with, reviewing, and vetting financial institutions. The other half of the agency work at the headquarters and executive offices. 
+Being funded by insurance premiums from financial institutions means that the FDIC is not subject to the Federal Acquisition Regulations (FAR) that are used to govern the application of Section 508. However, the agency voluntarily decided to adopt and implement Section 508, in 2001. 
+The Section 508 team is dispersed at FDIC, generally spanning three branches. The Section 508 Coordinator is a part of the Employment Equity Office (EEO)35, the Section 508 Program Manager and Section 508 Subject Matter Experts (SMEs) are located in the IT Delivery Management Branch (DMB). There are also dedicated contractor resources made available by both DMB and the IT Enterprise Architecture (EA) Branch to support the Section 508 program. Some other advisors who make up a Section 508 team of about 8 people are from other branches. None of the Section 508 team members work on Section 508 full time. 
+Interviewees at FDIC 
+During Stage 2 (Familiarization), people who worked in the following job roles19(p.18) were interviewed: 
+Members of the 'Section 508 Team' are denoted by an asterisk (*). 
+• Section 508 Coordinator (*) [Employment Equity Office] 
+• Web & electronic document designer / accessibility remediator [Employment Equity Office] 
+• Supervisory IT Specialist / IT Section chief [Insurance & Supervision Applications] (*) 
+• IT Specialist PM [Insurance & Supervision Applications] (*) 
+• IT contractor [Insurance & Supervision Applications] (*) 
+• IT PM (*) 
+• IT PM 
+ 	 
+• Supervisory IT PM 
+• Supervisory IT Specialist / IT Section Chief [Strategic Resources Management] 
+• Senior IT Specialist [Software Engineering Support & Web Technologies] 
+The Trusted Tester implementation plan at FDIC 
+The systems development life-cycle, training, and resources 
+The Section 508 Team at FDIC has developed an implementation plan that leverages the sharable nature of the Trusted Tester (TT) process, integrating TT directly into their current development process. In their systems development life-cycle (SDLC) they have added the 'missing' TT elements (Figure 14) and provided appropriate training, tools, and support resources (Table 6). 
+The situation prior to conducting the UTAP Pilot was inconsistent and ad-hoc (see next section for a description of the prior situation). The Section 508 Team took a radical 'step back' from their existing approach-where Section 508 expertise was concentrated in the Section 508 Team-and decided that their own team should shrink and that the Section 508 activities within development teams should grow.36 
+The SDLC covers four distinct phases, each with gate reviews: (1) Inception (gathering requirements to meet the business needs, forming the development teams, etc.); (2) Elaboration (early design); (3) Construction (completing the design); and (4) Production Readiness Review (PRR) and Transition (ensuring that the design works as planned, and is ready to be delivered to the customer). Figure 14 illustrates the four phases conducted by designers and programmers along with the proposed integration of the TT resources. 
+ 	 
+ 
+Figure 9 - Proposed integration of Trusted Testers into the development process at FDIC. 
+Stakeholders and teams: responsibilities with respect to development 
+Working from top to bottom of Figure 14, the responsibilities of the various personnel are as follows: 
+• Designers and programmers: The various teams of designers and programmers execute the 
+SDLC tasks of building the product. Team members will be required to take a course explaining FDIC's new Section 508 procedures around Section 508 (see Table 6). In this course-which will also be required attendance for all stakeholders-participants will learn what the TT process is, and that the development team's own test groups will now be responsible for the Section 508 testing of their designs. The TT result failures identified by the test group will go into the same defect tracking system that is used for all programming defects. 
+• Test group: Each development team has within it a test group which assists the designers and programmers, and periodically tests their outputs. The test group covers such elements as data security, meeting functional requirements, and code quality. Now, added to these responsibilities will be Section 508 testing. Each test team at FDIC will be required to have at least one certified TT (see Table 6). The test group will make available to the designers and programmers the test process, the code inspection tools, and themselves for answering basic questions about applying the test process. The bulk of the testing happens in the Elaboration and Construction phases, with full TT results being required from the test group. The full TT results are provided to the Project Manager and the Quality Assurance Team (Figure 14). Also during these phases the test group can conduct spot checks during development. The number of spot checks will depend on the number of failures identified in the full TT results. In the final Transition phase, the test group ensures that any remaining issues from the last full test have been resolved, or that a remediation plan is in place. 
+• Project Manager (PM): The PM ensures that the SDLC is followed by their development team. They verify that the Section 508 testing is being conducted by the test group, and are responsible for alerting the other relevant stakeholders if issues arise with the testing (e.g., a team consistently finding a very large number of defects, or a team consistently asserting that there are zero Section 508 defects). 
+• The Quality Assurance Trusted Tester (QA TT): The QA team ensures that the various quality controls built into the SDLC are being conducted properly. In the existing model, the QA Team had a more 'hands-off' documentation review mode of operation. The management used the introduction of the TT process to transition the QA group to a (more desirable) 'hands-on' mode. To achieve this, a number of members of the QA team would be required to take the TT certification training (Table 6). The QA TT will be responsible for both (a) the review and validation of the test groups' full TT results during Elaboration and Construction; and (b) conducting spot checks on the outputs from the designers and programmers, and the activities of the test group TTs. Thus, in Figure 14 the number of touch-points from the test group and the QA TT during Elaboration and Construction phases is high when compared to the Inception and Transition phases. The QA TT is also responsible for verifying that the Transition is acceptable with the Section Chief and the Section 508 Coordinator. 
+• Section Chiefs: Overseeing multiple development projects are section chiefs who are required to monitor and verify that component parts of the system are working properly. This has always included Section 508, but prior to the UTAP implementation plan the Section 508 testing was ad-hoc and inconsistent. The section chiefs were relying on a combination of feedback from the Section 508 team, from their development teams, and the QA team on a limited basis. Implementing the UTAP plan will now mean that a uniform means of testing and reporting for Section 508 will be in place, which will simplify the job of the section chiefs. 
+• Section 508 Coordinator and Section 508 team: As noted above, the UTAP implementation plan causes the Section 508 team to shrink down. The prior system was unusual in that the Section 508 leadership is shared: there is a Section 508 Coordinator located in the EEO section of the agency, and a Section 508 Program Manager in the IT DMB. This situation will continue under the implementation plan, but the role of the team will take on a different mode of operation. The Section 508 team will work in a support capacity for development test group TTs and PMs, as well as section chiefs (Figure 14, and Table 6). The Section 508 team SMEs will be required to be TTs. 
+Table 4 - Section 508 Training and Resources for personnel at FDIC.  
+Key: R = Required; A = Available; O = Optional 
+ Development Team 
+- Design & Programming O O R A A A - Development Team  - Test Group TT R R R R R - A Development Team - PM O - R - - A A QA Team - QA TT R R R R R A A Section chief 
+/ Business Owner O - R - - A A Section 508 Team 
+- Section 508 Coordinator R R R R R - - Section 508 Team - Section 508 SMEs R R R R R - - Other implementation plan elements 
+From a number of rounds of refinement and expansion of the design and implementation plans, a number of key elements emerged. 
+One of the most important elements was in the 'messaging' that would go to stakeholders on the new process. Key points that the team wanted to convey include: 
+• That this would be a modification to existing processes that always should have incorporated Section 508; 
+• That small changes would be integrated into existing SDLC artifacts; 
+• That personnel impacted by changes would be involved (consulted, trained, supported, etc.) in the new process; 
+• That this would produce measurable results and introduce an agency-standardized testing methodology; and 
+• That informed decisions based on those results would be facilitated by the shared understanding that adopting the TT approach would bring. 
+Previously, when defining business needs during Inception phases of development, the language might be interpreted as "meet the needs of end users... [and] ...comply with Section 508". Under the UTAP implementation plan business needs would be redefined as "meet the needs of end users... who include people with disabilities". This would be embodied in training and policy as a means to relay the importance of doing Section 508 because of the needs of people; not because of the needs of the developers to meet a legal requirement.37 This language change was one part of the plan to help address the organizational culture challenge (see also The Section 508 Team's activities within the wider organizational context, starting on page Error! Bookmark not defined.). 
+A central "center of excellence" resource site for the agency's Section 508 program would be created. This resource site would contain information on the policies and procedures, code inspection and procurement language tools, test processes, test request forms, and personnel resources. 
+The implementation plan provisionally spanned one year. In that first year the plan called for an internal pilot with one sub-component of FDIC, followed by the organization-wide implementation. In the first half of the year the acquisition materials and language would also be updated for the whole agency. Over the course of the one year plan the Section 508 team would review and adjust the overall program as necessary. 
+What the plan replaces (pre-UTAP testing approach at FDIC) 
+The existing organizational development process 
+We could take Figure 14 (on page 58) and strip out Section 508 and the TT elements, and we would have Figure 15 which represents the pre-UTAP development process at FDIC. In a way this made the implementation of the UTAP simple, in that the existing SDLC along with the roles and responsibilities, including testing, were already in place. 
+ 	 
+Section 508 was there, but not consistently applied across the organization (as described in the next subsection). As one participant put it: "Section 508 is supposed to be in the process, but in practice it isn't". 
+ 
+Figure 10 -The pre-UTAP development process at FDIC. 
+Three different approaches to Section 508 testing 
+In 2013 and 2014 the Section 508 team had conducted an analysis of Section 508 at FDIC as part of their response to OMB reporting requirements. The result of the analysis stated that in 2013 and 2014 Section 508 in the EIT Lifecycle, and Section 508 Testing and Validation activities were considered 'ad hoc'. (For early 2015, while the UTAP Pilot was being conducted, they were reported as 'planned'.) 
+As stated earlier, the 'Section 508 team' was dispersed at FDIC (Figure 16). Perhaps as a direct result, three different approaches and test methods were in play: 
+• Test Method A was initially used by the DMB to conduct the application testing for the OMB mandated Section 508 program assessment. Later it was applied in agile development processes on a pilot basis. This method used an earlier version of the TT method that was now considered outdated by DHS.38 The DMB Section 508 staff were advocating for and piloting a microcosm of what turned out to be the overall approach with the UTAP implementation plan, in that they were taking Section 508 testing requests and promoting self-test by development teams. 
+• Test Method B was used in the Enterprise Architecture team. In this method, developers would send their applications to a Section 508 SME who would use assistive technology and some code inspection methods to assess the application. The Section 508 SME described their philosophy as 'education' as opposed to 'strong-arm', which makes sense in the context of the existing absence of Section 508 in the formal SDLC (Figure 15, page 58). A report was generated describing the fixes that would be needed to conform to the Section 508 standards, and this was provided to the developers. 
+• Test Method C was seen in the internet and intranet development environment. In this environment the content was mostly constrained in that it was template driven. However, some content developers would exceed the template constraints (e.g., make headings without using proper styles), or they would omit information (e.g., images with no alternate text), or make other edits that affected accessibility. Testing by the Section 508 tester, in the EEO, employed code inspection tools (not the ones used in the TT method), and without a checklist. The tester was also on occasions the remediator of the content. The tester would send the fixed file back to the developers or on to be posted, but without any attached report as to what fixes were made. 
+• Automated tool testing: For the internet, there was some use of automated tools used by teams to gauge whether content was Section 508 conformant. However, after the UTAP implementation plan, it was clarified that automated testing was informal/indicative only, and would not replace or supersede the TT method of testing. 
+In addition to the above, there were two related types of testing going on at FDIC: 
+• Electronic documents testing: This was conducted by the EEO tester in a similar fashion to Test 
+Method C, in that templates were supposed to be used. The Tester used the automated checkers in Office and Adobe products to identify and fix issues.39 
+No central Section 508 resource 
+One of the elements identified in the UTAP implementation plan was the need for a central resource. With the dispersed nature of the Section 508 team, the place that a developer would go for support would depend on their location or role in the agency. In Figure 16 it can be seen that the arrows of communication go back and forth between three different types of groups. So who was the authority to go to for an answer? For some it was the EA Section 508 SME. For others it was the Section 508 Coordinator. 
+ 
+Figure 11 - Three different approaches to Section 508 testing at FDIC (pre UTAP). Note: the figure is indicative only, and complexities such as multiple departments and teams have been omitted for clarity. 
+Issues beyond testing at FDIC: existing versus proposed... 
+The UTAP methodology addressed the wider organizational context and looked at issues that affected testing, and issues that test results would affect. (For more on the methodology, see Chapter 1-2: Approach (page 9). 
+The Section 508 Team's activities within the wider organizational context 
+Location and size 
+As mentioned earlier, the Section 508 team is dispersed at FDIC, with the Section 508 Coordinator in the EEO team (under the Chief Operations Officer) and the Section 508 Program Manager in the IT DMB (under the Chief Information Officer). This arrangement stems from the unique history of the personnel in the agency, and since it appears to work well for the teams there is no plan to modify it in the future. 
+The team's size will reduce from the current eight people down to around half of that, as the day to day Section 508 testing tasks are taken on by the development teams. 
+One participant described how the "The Section 508 team is the Section 508 team, but not on paper". Although the agency had developed and implemented policies which established roles and responsibilities around Section 508, there was no 'official' team. It is possible that this lack of an official team meant also a lack of an official 'home', and then also the lack of a centralized resource site (as described on page 63). The implementation plan calls for the creation of a centralized resource, and a firmer establishment of the roles of the Section 508 team members, particularly with regards to testing (as described beginning on page Error! Bookmark not defined.). However, it is not clear whether there will be a more formal Section 508 team definition in the future. 
+Funding 
+In conducting the UTAP Pilot, the participating interviewees could easily recall instances where development teams had been informed of their Section 508 obligations, and received responses such as "Sure, if you give us additional funding". The prevailing attitude, if left unchecked, would be that Section 508 was an 'extra' (to be done by someone else), or a 'nice to have' (if only someone else would pay for it). The UTAP staff provided the Section 508 team with tips for overcoming this situation. This included the clarification of the definition of a user (see Stakeholders and teams: responsibilities with respect to development, page 58), and presentation slides describing how Section 508 is not an 'unfunded mandate'.40 
+ 	 
+Funding for Section 508 activities would therefore be included as a part of the funding of any product development. 
+Approach, policies and procedures 
+Not being subject to the FAR, many described the development culture at FDIC as being rules-andregulations-averse. This applied across the board, not just for Section 508. Having said that, development goes on, and the agency, recognizing the importance of following good development practices, implemented an SDLC model. The FDIC also, for example, believes that best practices on data protection and security makes good sense for an agency dealing with financial institution information.41 While the agency had voluntarily (and officially) adopted Section 508 many years earlier, the somewhat silo-natured (e.g., Figure 16, page 64), corporate environment had meant that applying additional Section 508 'rules' had been problematic. 
+The introduction of a sharable code-inspection based Section 508 test process was seen as an ideal way to overcome some of the problems of the past. While it was anticipated that there would be some growing pains in implementing the plan, the plan included proactive mechanisms to learn from and adjust to such pain points as they arose. 
+Accessibility and corporate culture 
+Only a handful of people with disabilities work at FDIC. 
+The half of the agency that works in field offices spend their time visiting financial institutions and reviewing paperwork. When asked about the requirements of this type of job, a number of participants stated that this type of job attracts younger people, and there is a need to be able to see in order to read through the mountains of paperwork. When pressed, however, it became clear that there was no actual requirement to be able to see, only a general 'acceptance' that this was needed. (In fact, the only requirement besides being qualified for the job, was a willingness to travel.) This prevailing misconception may partly explain why no legally blind applicant has ever undergone the current examiner training program, and no one recalls ever working with or seeing a blind Financial Institution Examiner. There are a small number of deaf examiners. The numbers of employees with disabilities for this half of the agency is quite low. 
+The agency receives no taxpayer funding. It is not bound by the FAR. It also works outside of the GSA pay schedule, and salaries are higher than in most of the rest of the federal government. Consequently, length of tenure of employment is much higher than the rest of the federal government. Therefore, the amount of hiring done by the FDIC is very low compared to the rest of the government. This means that equity and diversity initiatives on hiring people with disabilities, while in place, are by definition not going to yield results as quickly as they could in an environment with higher staff turnover. 
+ 	 
+A discernible link-between Section 508 activities to improve EIT for the benefit of employees who have disabilities, and the existence of employees with disabilities-has inherent value in improving corporate culture around accessibility.40 The Section 508 Coordinator at FDIC has stated that they recognize these challenges, and that plans outside of the UTAP Pilot were being implemented to address this.42 
+Supporting elements to facilitate Section 508 testing 
+The conclusion of the design phase of the UTAP Pilot could be summarized as: 
+• We already have good development teams, with established roles and responsibilities (Figure 15, page 62), so... 
+• We should add the TT method of Section 508 testing to those teams (Figure 14, page 58), along with the appropriate training and supports (Table 6). 
+This enabled the formulation of the messaging around implementation of the plan as "small steps" that were, in fact, small steps. For example: 
+• There's a defect reporting system, so let's add to that with the Section 508 test process failure conditions; 
+• There's a QA review and validation phase at the end of Elaboration and Construction, so let's add the TT results into that review. 
+In many respects the implementation plan was beautifully simple. This meant that developing the supporting elements to facilitate testing would also be simple. 
+ 	 
+FDIC: Post-Pilot Maturity Survey Results 
+
+ 
+Figure 12 - Program Maturity Chart for FDIC 
+Table 5 - Program Maturity Table for FDIC 
+ Pre UTAP Post UTAP 2 yrs Projected Policy 2 Planned 3 Resourced 4 Measured 508 Team Staffing 3 Resourced 3 Resourced 4 Measured Acquisition 2 Planned 2 Planned 4 Measured EIT Lifecycle activities 2 Planned 3 Resourced 4 Measured Testing & Validation 2 Planned 2 Planned 4 Measured Training 2 Planned 3 Resourced 4 Measured Outreach 1 Ad Hoc 2 Planned 3 Resourced Technical Assistance 1 Ad Hoc 3 Resourced 3 Resourced Complaints Process 4 Measured 4 Measured 4 Measured  
+
+ 
+Chapter 2-4: Case 
+Study #4-
+Department of Labor
+
+Introduction to DOL and the Section 508 team 
+The Department of Labor (DOL) employs around 17,500 people across 22 sub-agencies and numerous agency-wide offices.43 
+At the outset of the UTAP Pilot, the number of people in the Section 508 Team was approximately five, but this was not strictly defined (for reasons that will be explained later under the heading Agency-wide Section 508 coordination, starting on page 78). The Section 508 Coordinator position was officially part of the Office of the Chief Information Officer (OCIO). 
+Interviewees at DOL 
+During Stage 2 (Familiarization), people who worked in the following job roles19(p.18) were interviewed: 
+Members of the 'Section 508 Team' are denoted by an asterisk (*). 
+• Section 508 Coordinator [OCIO] (*) 
+• CIO 
+• Director of IT Policies & Procedures [OCIO] (*) 
+• Director of IT Governance [OCIO] 
+• Manager [Civil Rights Center] 
+• PM [OCIO] 
+• Director [Procurement] 
+• Analyst [Procurement] 
+• Director of IT [Office of Disability Employment Policy] (*) 
+• IT contractor [Office of Disability Employment Policy] (*) 
+• PM [Public Affairs] 
+• IT contractor [Public Affairs] (*) 
+• Director of IT [Employee Benefits Security Administration] 
+• PM [Employee Benefits Security Administration] 
+• PM [Office of Workers Compensation Programs] 
+• PM [Employment & Training Administration] 
+• PM [Office of Federal Contract Compliance Programs] 
+ 	 
+The Trusted Tester implementation plan at DOL 
+The systems development life-cycle 
+Historically at DOL, sub-agencies have operated in an independent manner. Consequently, there existed a great deal of differences in the IT systems used, and in the design and execution of each sub-agency's46 Systems Development Life Cycle (SDLC). An agency-wide program, spearheaded by the OCIO, had been working to harmonize the SDLC policies and procedures throughout the agency. While the UTAP Pilot was being conducted, the various sub-agencies were in different stages of this harmonization effort. For the purposes of the UTAP Pilot, we understood that there were: 
+• A wide variety of SDLCs in place; 
+• A wide variety in the number and make-up of development teams within each sub-agency; and 
+• A wide variety of management systems in place. 
+The UTAP implementation plan called for the same type of TT system in each of the 22 subagencies. But, because of the wide variety of sub-agencies, and the wide variety of SDLCs in play, the decision was made to assign at least one certified TT per agency, and rely on a TT and Section 508 Point Of Contact (POC) to work with with their development teams to insert TT processes into their SDLCs (Figure 18). While the sub-agency implementation would rely on each subagency's TT and POC, the agency-wide implementation would be overseen and reviewed by an agency-wide Section 508 Program Manager (PM). 
+The proposed design is represented in Figure 18 (for clarity showing only three of the 22 subagencies, and a hypothetical sample of only three development projects in each of those three subagencies). 
+Stakeholder responsibilities 
+The UTAP implementation plan included the following responsibilities of the stakeholders shown in Figure 18: 
+ 
+Figure 13 - Proposed integration of Trusted Testers into the various development projects in Sub-Agencies at DOL. 
+• Section 508 Program Manager: The Agency-wide Section 508 PM is located in the OCIO. The Section 508 PM oversees all aspects of Section 508, and provides guidance to, and gets reports from the Section 508 Points-Of-Contact in each of the 22 sub-agencies. 
+• Assistive Technology Technician: The ATT will be a TT, a Section 508 Subject Matter Expert 
+(SME), an Assistive Technology (AT) SME, and a Section 504 SME. The ATT is seen as the main 'troubleshooter' of technology compatibility issues. The ATT directly helps the TTs in the 22 sub-agencies as needed. The ATT helps the agency-wide Enterprise Service Helpdesk by handling 'Tier 2' and 'Tier 3' requests (i.e., involved and complex help issues). The ATT works in the OCIO, alongside and reporting to the Section 508 PM. 
+• The Agency Enterprise Service Helpdesk: The helpdesk staff handle 'Tier 1' (simple) Section 508 and TT process inquiries from development teams throughout the 22 sub-agencies. The team elevates the more involved and more complex requests to the ATT in the OCIO. (The helpdesk does the same for Section 504 reasonable accommodations and AT compatibility issues.) 
+• The Sub-Agency Section 508 Point-of-Contact: Each of the 22 sub-agencies will have a designated Section 508 POC. The Section 508 POC reviews and validates that each development project is incorporating TT results in their SDLC. The Section 508 POC liaises directly with each project's PM, and coordinates closely with the sub-agency TT. The Section 508 POC is required to provide monthly reports on TT activities to the agency-wide Section 508 PM. 
+• The Sub-Agency Trusted Tester(s): Each of the 22 sub-agencies will have Certified TT(s) on staff. The TT provides testing services for the development teams, and helps development team personnel understand the testing requirements by sharing the test process, and providing additional help as necessary. The sub-agency TTs can also go directly to the ATT for support as needed. 
+• Project Managers: The managers overseeing development projects will "assume total responsibility" for ensuring for Section 508 compliance. It will be the PM's duty to ensure that the sub-agency Section 508 POC and sub-agency TT are adequately involved in the SDLC. They also ensure that the TT results are acceptable in terms of risk, and direct their developers to design and remediate for Section 508 compliance as necessary. 
+• Designers and programmers: The various teams of designers and programmers execute their SDLC tasks of building the product. The TT test process and the support of the sub-agency TT will be made available to them. In order to more easily pass through the TT reviews that will happen as part of their SDLC, developers will be encouraged to utilize the inspection tools and associated test process. 
+Training and Resources 
+The UTAP implementation plan identifies five training courses and three main support resources. Table 8 shows which of the courses are required or optional for each of the stakeholders, as well as the availability of support resources. 
+Training Courses 
+• Introduction to Section 508: This is a one hour introductory / overview online course on Section 508. This course is required for all stakeholders. Note: this course is not shown on Table 8. 
+• Introduction to the Section 508 Standards: This DHS one day online course introduces each of the Section 508 standards, providing a basis for the TT approach, and is required for some of the stakeholders shown in Table 8. 
+• Tools installation: A number of freely available tools are used in the TT process. This course details how to install and check the operation of the code inspection tools. Development team members will be required to install the tools. (They will also be provided with a copy of the test process for their reference during development.) 
+• Trusted Tester Certification: This is the DHS week-long face-to-face or online course, plus a one-day certification exam. TT certification must be achieved by the ATT, and by each subagency's TT. 
+• DOL Section 508 procedures: This course will be developed under the direction of the agencywide Section 508 PM. This course will introduce the policies and procedures around TT. 
+Attendance will be required of all stakeholders. 
+Table 6 - Section 508 Training and Resources for DOL personnel.  Key: R = Required; O = Optional; A = Available.  
+ Agency OCIO  
+508 Program Manager R O O - - - - Agency OCIO Assistive Technology Technician R R R R - - - Agency Enterprise Service Helpdesk O R O R - - A Sub-agency Section 508 POC R R O R - - A Sub-agency Trusted Tester R R R R - - A Sub-agency Development Teams - Project Mgrs. O O O R A A - Sub-agency Development Teams - Programmers O R O R A A - Support resources 
+• The Sub-agency TT and Section 508 POC: As developers begin to get acquainted with the new process, the most important available contact will be their sub-agency TT and Section 508 POC. As the process becomes more established, there should be less reliance on these resources, and more reliance on the enterprise helpdesk (i.e., the helpdesk can deal with the "frequently asked questions").44 
+• The Agency Enterprise Service Helpdesk: As noted earlier, the helpdesk staff will be trained to handle simple FAQ-type requests from developers, and will elevate issues that they cannot handle to the agency-wide ATT. 
+• The agency-wide Section 508 PM and ATT: These OCIO support resources are directly available to the enterprise helpdesk staff, and to the sub-agency TT and Section 508 POC. The ATT helps with resolving technical issues, and the Section 508 PM helps with resolving procedural and policy issues. 
+Other implementation plan elements 
+Policy 
+In keeping with the mission of harmonizing sub-agency IT processes, the OCIO had developed its IT Accessibility Management policy. This policy was updated prior to the UTAP Pilot activities, and was implemented prior to the DOL UTAP implementation plan. Consequently, the policy did not call out the TT program specifically, but it did lay out the roles and responsibilities of stakeholders. The UTAP implementation plan was therefore seen by the OCIO staff as a natural follow-on / extension to the agency-wide policy document. 
+Electronic Documents 
+The DOL UTAP implementation plan called for the integration of the interagency testing and authoring guides that were coming out of the Accessible Electronic Document Community of Practice (AED COP).45 The actual implementation methods, roles and responsibilities et cetera for electronic documents would be worked out in due course, but were not part of the UTAP implementation plan. 
+Forum 
+A new cross-agency forum would be created, and it would meet periodically to review and adjust the Section 508/TT implementation as necessary. The forum would comprise: 
+ 	 
+• The Section 508 PM; 
+• All 22 sub-agency Section 508 POCs; and 
+• Representatives of other agency-wide offices that have a stake in IT accessibility (e.g., the Civil Rights Center, Human Resources, the Office of Public Affairs). 
+Implementation timeline 
+A one and a half year implementation period was envisaged. The new policy would be established in the first months to lay the necessary 'ground-work' for the subsequent UTAP/TT implementation. With the new IT Accessibility Management policy in place, the UTAP implementation plan would be refined with specific details such as the development of training, the development of artifacts (e.g., agency formats of test requests and TT results). It was decided that the TT implementation would be concurrently applied for all stakeholders across the subagencies (i.e., there was no plan for a pilot of the TT program). 
+What the plan replaces (pre-UTAP testing approach at DOL) 
+As described in the previous section, the situation at DOL was one in which each sub-agency had been operating more or less independently. As such, there were multiple ways of doing development and testing. Section 508 was not immune from this. There was no forum or mechanism for collaboration between the Section 508 personnel from the different sub-agencies. We interviewed personnel in seven of the 22 sub-agencies, and found seven different approaches to applications testing. In brief, the testing approaches were: 
+• Following a WCAG 2.0 checklist, and using code-inspection tools; 
+• Following a WCAG 2.0 checklist, and testing with AT; 
+• Using automated scanning tools to find Section 508 issues with websites; 
+• No checklist, but using code inspection tools, checking alternate text on images, and using AT occasionally as needed; 
+• No checklist, and checking with AT. If specific known employees were expected to be impacted, testing the product with those employees directly; 
+• Informal checklist, and checking alt text and using screen reader AT; and 
+• No testing, but trying to urge the development teams to do testing. 
+The backgrounds and levels of training also varied greatly for the Section 508 personnel in the different sub-agencies. Naturally, the Section 508 test results reporting was variable in nature, as was as the levels of responsibility and authority/influence that the various stakeholders thought they had. 
+Issues beyond testing at DOL: existing versus proposed... 
+The UTAP methodology addressed the wider organizational context and looked at issues that affected testing, and issues that test results would affect. (For more on the methodology, see Chapter 1-2: Approach (page 9). 
+Who is the designated 'Section 508 person' at each sub-agency? 
+Prior to the new policy and the UTAP implementation plan, one question-just who was the designated 'Section 508 person' at each sub-agency- provided the best illustration of the inherent problems of the independence of the sub-agencies. Without a good policy and fairly established agency-wide source of authority on Section 508, it was entirely up to the management of each sub-agency to identify the 'Section 508 person'.46 
+As one person described it in their sub-agency, when they showed an interest in Section 508 they then became the de facto Section 508 person. It was described as "raising your hand on an issue" rather than creating a position by design. However, they said that becoming the 'Section 508 person' did not bring any authority. Instead, it meant in practice that people would come to them to request that they resolve Section 508 problems. (The developers did not show any initiative on solving their own problems; they expected the Section 508 person to do anything and everything to do with Section 508.) 
+Some sub-agencies had a clearer demarcation of roles and responsibilities than others. For example, the office of public affairs, which was responsible for the public facing internet, had the most firmly established Section 508 program seen at DOL. They had employed contracting staff to create test processes and educate developers. 
+The new policy that was implemented covered the responsibilities of all stakeholders. The list of stakeholders in this case study report (page 71) is limited to those impacted by the TT process. The list of stakeholders in the policy document was much longer, and included responsibilities for contracting officers, and specific agency-wide office personnel. 
+Key for supporting the UTAP implementation plans, the new policy included two key provisions for stakeholders which could resolve the problems around who the 'Section 508 person' was to be at each sub-agency. Firstly, under the new policy, the sub-agency head must designate a Section 508 POC who will work with the agency-wide Section 508 PM (see Figure 18, on page 72). 
+Secondly, the IT Project Managers would be responsible for ensuring that products meet Section 508 'terms and conditions' prior to acceptance (effectively, under the UTAP implementation plan, this will mean relying on TT results). Other responsibilities such as attending the necessary training (Table 8, page 74) are also spelled out for these two types of stakeholders in the new policy. 
+The creation of the agency-wide Section 508 forum and the review and oversight of the agencywide Section 508 PM are intended to solidify the new arrangement of personnel in the subagencies. No longer will there be the solo and independent 'Section 508 person'; but instead subagency teams are expected to work together to a well-defined set of expectations afforded by the TT process. 
+Agency-wide Section 508 coordination 
+Section 508 Coordinator to Section 508 Program Manager 
+Replacing the 'Section 508 Coordinator' position, the UTAP implementation plan called for the establishment of the Section 508 PM and ATT positions in the OCIO. 
+The prior Section 508 Coordinator was trying to work in the environment described above. There were many different approaches, and many different opinions. Lacking though was a clear line of authority (on Section 508 at least) from the OCIO to the sub-agencies. Consequently, the situation was frustrating for the Section 508 Coordinator. Training would be offered, but it was not compulsory and so attendance was spotty at best. Checklists were produced and disseminated, but sub-agency development teams did not seem to feel obliged to follow what they regarded as 'suggestions'.47 
+The UTAP implementation plan included renaming their agency-wide 'Section 508 Coordinator' position to 'Section 508 Program Manager'.48 This approach, together with the new policy, was part of the aim to resolve the very difficult prior situation. 
+The 'Section 508 team'? 
+One of the problems of the prior setup was that the definition of the 'Section 508 team' at DOL was not clear to all stakeholders. For example, at least one 'Section 508 person' that we interviewed was unaware that there was an agency-wide Section 508 Coordinator. Another interviewee thought that the authority for Section 508 was in a completely different office to the OCIO, because that was where their Section 508 SME contact was located. Indeed there were around five people in the agency who might be considered the 'Section 508 team' in the respect that they were Section 508 SMEs who were regularly consulted on Section 508 issues, including the UTAP implementation. However this team was not formally designated as such. Again, this somewhat confusing situation was something that was hoped to be remedied as a result of the new policy and the UTAP implementation plan. 
+
+DOL: Post-Pilot Maturity Survey Results 
+
+ 
+Figure 14 - Program Maturity Chart for DOL 
+Table 7 - Program Maturity Table for DOL 
+ Pre UTAP Post UTAP 2 yrs Projected Policy 2 Planned 3 Resourced 5 Optimized 508 Team Staffing 1 Ad Hoc 3 Resourced 5 Optimized Acquisition 2 Planned 4 Measured 5 Optimized EIT Lifecycle activities 1 Ad Hoc 3 Resourced 5 Optimized Testing & Validation 1 Ad Hoc 3 Resourced 5 Optimized Training 1 Ad Hoc 4 Measured 5 Optimized Outreach 1 Ad Hoc 4 Measured 5 Optimized Technical Assistance 1 Ad Hoc 3 Resourced 5 Optimized Complaints Process 1 Ad Hoc 3 Resourced 5 Optimized  
+
+ Appendix: Chart data 
+
+
+
+Table 8 - Program Maturity average scores for all agencies, pre-UTAP, Post UTAP, and 2 years Projected (numbers rounded to give rating) 
+ Pre UTAP Post UTAP 2 yrs Projected ED 1.8 Planned 2.6 Resourced 3.1 Resourced FDIC 2.1 Planned 2.8 Resourced 3.8 Measured DOL 1.2 Ad Hoc 3.3 Resourced 5.0 Optimized Table 9 - Improvement in scores for product testing-related measures (Acquisition, EIT Lifecycle activities, Testing & Validation, Training) 
+ Pre-to-Post 
+UTAP Pre-UTAP to 2yr Projected ED +1.0 +1.3 FDIC +0.5 +2.0 DOL +2.3 +3.8 Table 10 - Improvement in scores for other program measures (Policy, 508 Team Staffing, Outreach, Technical Assistance, Complaints Process) 
+ Pre-to-Post 
+UTAP Pre-UTAP to 2yr Projected ED +0.6 +1.4 FDIC +0.8 +1.4 DOL +2.0 +3.8 Table 11 - Program Maturity Table averaged across all four participating agencies (numbers rounded to give rating) 
+ Pre UTAP Post UTAP 2 yrs Projected Policy 2.0 Planned 2.8 Resourced 4.3 Measured 508 Team Staffing 1.8 Planned 2.5 Resourced 4.0 Measured Acquisition 1.3 Ad Hoc 2.5 Resourced 3.5 Measured EIT Lifecycle activities 1.0 Ad Hoc 2.8 Resourced 4.0 Measured Testing & Validation 2.0 Planned 2.8 Resourced 4.5 Optimized Training 1.0 Ad Hoc 2.8 Resourced 3.8 Measured Outreach 0.8 Ad Hoc 2.5 Resourced 3.5 Measured Technical Assistance 1.0 Ad Hoc 2.3 Planned 3.3 Resourced Complaints Process 1.8 Planned 2.5 Resourced 3.5 Measured Average 1.4 Ad Hoc 2.6 Resourced 3.8 Measured  
+ 
+
+
+
+ Acknowledgments 
+The authors would like to express their thanks to all of the staff of the participating agencies whose cooperation and dedicated work made the UTAP Pilot possible. We thank you for your trust, patience and perseverance.
+
+
+
+The Interagency 
+Trusted Tester Program (ITTP) 
+For more information on the Interagency Trusted Tester Program, contact: 
+Department of Homeland Security, Office of Accessible Systems & 
+Technology (DHS-OAST) 202-447-0440 accessibility@hq.dhs.gov www.dhs.gov/accessibility 
+Cynthia Clinton-Brown 
+ITTP Manager, DHS-OAST 202-447-0322 cynthia.clinton-brown@hq.dhs.gov 
+
+
+
+ The UTAP Team 
+Bill Peterson & Allen Hoffman: William Peterson is Executive 
+Director, and Allen Hoffman is the Deputy Executive Director of the DHS Office of Accessible Systems & Technology (OAST). OAST is the group responsible for improving the accessibility of DHS's electronic and information technologies. Mr. Peterson oversaw the planning and execution of the UTAP Pilot. Mr. Hoffman managed the UTAP Pilot. 
+Norman Robinson: Mr. Robinson was the Section 508 Coordinator for DHS Headquarters, and in January 2015 he moved to become the Section 508 Coordinator for the US Department of State. Mr. Robinson was the initial manager of UTAP. Together with Dr. Law, he planned and executed the UTAP Pilot. 
+Chris M. Law, Ph.D.: Dr. Law is a Senior Analyst at OAST, working for New Editions Consulting, Inc. Dr. Law's background includes work in the fields of Universal Design (UD) of IT, analysis of standards and guidelines for accessibility and UD, and organizational behavior with respect to accessibility. 
+1 Federal agencies are required to comply with the Section 508 law regarding the accessibility of EIT. See www.section508.gov. 
+2 A note on terms: there is compliance with the law and conformance with the standards. Compliance means doing the operational tasks necessary as a part of daily business to address the law. 
+Standards conformance means that criteria are successfully addressed in the design of the product.  
+3 OAST is located in the Department of Homeland Security:  
+See http://www.dhs.gov/office-accessible-systems-technology. 
+4 The Section 508 standards cite compatibility with AT as a requirement. AT compatibility is specifically called out throughout the technical section of the Section 508 standards. For example, §1194.21(c) "[..] The focus shall be programmatically exposed so that assistive technology can track focus and focus changes." The functional performance criteria standards (§1194.31) call for "[direct accessibility], or support for assistive technology used by people [with disabilities...]" See: http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-thesection-508-standards/section-508-standards.  
+5 A given test method may be supplemented with non-AT test methods, such as using the keyboard only (no mouse), and even code inspection for certain elements of the test. However, in this method the use of AT dominates the test process. 
+6 Also known as (/related to) "Systems Engineering Life Cycle" (SELC). 
+7 For the Baseline and for the current DHS test process, see: www.dhs.gov/compliance-testprocesses. 
+8 The Baseline document can be found at www.dhs.gov/accessibility. 
+9 For example, Responding to accessibility issues in business, Law, C.M. researchbank.rmit.edu.au/view/rmit:6156 
+10 This chapter provides the general approach. For details of each agency, see Chapter 1-3: Results & Discussion, page 25, and the individual case studies, starting on page 43. 
+11 Our stance was that it would be up to the individual agencies when and how to choose to announce their adoption of the Trusted Tester process. Therefore, each participating agency dealt directly with DHS staff, there was no interaction between the four participating agencies, and the names of the agencies were not revealed to the other participants. Project lead staff from each agency were given the opportunity to review the case study reports to determine whether they wanted anonymity. 
+12 Each interview was treaded as confidential. In some cases more than one person was interviewed at a time. There were no recording devices used.  
+13 It is important to recognize and acknowledge the concept and importance of the OAST team's agency in the process. This is agency in the academic sense: of being a participant or 'agent' in the process, and helping to shape and refine the various plans of the participants. For more on agency see, for example, Sense-making theory and practice: an overview of user interests knowledge seeking and use. Dervin (1998), Journal of Knowledge Management, 2(2), 36-46; or, Social cognitive theory: an agentic perspective. 
+Bandura (2001), Annual Review of Psychology, 52, 1-26. 
+14 The template is available on the Federal CIO Accessibility Committee website: 
+www.section508.gov/sites/default/files/CIOC_Accessibility_Committee_508_Reporting_Templat e.pdf 
+15 See: www.itgi.org. 
+16 Some of the language in the measures is copied verbatim from the OMB template. 
+17 Job titles for all interviewees are provided in the individual case studies. Some job titles have been slightly modified for clarity here, and in the individual case studies. 
+18 At ED the UTAP interviews were kept within the Section 508 Team only, despite the urging of the OAST team to widen the organizational coverage. For more on this, see  Scope: Beyond the Section 508 team, page 48. 
+19 These relationships are illustrated in Figure 18 (page 112). 
+20 Data charts for the chart figures in this section are provided in the appendix. 
+21 For guidance on conducting a UTAP in an agency, see the accompanying guide. 
+22 Combining and averaging the scores across all four agencies is intended to give an indication of the level of improvement seen in each area. This is a simple analysis, and this is not intended to be held up as a statistically representative sample from the federal space. 
+23 For example see Chapter 6 of Strategic It Accessibility: Enabling the Organization by Jeff Kline, 2011. 
+24 Information on TT training courses will be posted on the ITTP website (see page 147). 
+25 For more on why accessibility complaints are rare, see Proactive versus reactive approaches (page 86) in 
+Responding to accessibility issues in business, Law, C.M. researchbank.rmit.edu.au/view/rmit:6156 
+26 This forms the basis of a recommendation from this report (see page 59). 
+27 Some organizational-approach-to-accessibility 'cook books' exist, but these contain very different content to that contained in this report and accompanying guide. Two examples are 
+Strategic It Accessibility (ibid.); and Designing for Accessibility: A Business Guide to Countering Design Exclusion by 
+Simeon Keates, 2006. 
+28 Linchpin (p.18). 
+29 We consider the accompanying guide to conducting your own UTAP to be our first pass at a UTAP 'cook book'; it is certainly by no means a 'chef book'. 
+30 See Design for Inclusion: Creating a New Marketplace, National Council on Disability (NCD, 2004) p.181. 
+31 While there are Section 508 issues involved in some areas of manufacturing, it is a given that Section 508 was not written with manufacturing in mind (there are only two manufacturing agencies in the government, Mint and the Bureau of Engraving and Printing). Therefore, the majority of the Section 508 work at Mint addresses the systems used by the remaining approximately 600 employees. During the UTAP Pilot we engaged in discussions of the Section 508 issues around manufacturing, but, as these will not apply to almost all other government agencies, we have purposefully omitted these issues from this case study report. 
+32 This was helped by a member of the Section 508 Team as a participant in the Accessible 
+Electronic Document Community of Practice (AED COP). The AED COP was working with other 
+ 
+33 See Assistive Technology-based testing (page 5). 
+34 At the time of writing, the agency had not transitioned the status of the 'unofficial' team leader to become the 'official' leader, although this was understood to be an ongoing OCIO aim. 
+35 The term EEO is used to maintain consistency with the other UTAP reports. In FDIC it is actually named the Office of Minority and Women Inclusion (OMWI). 
+36 This approach aligns with two success factors: (1) making accessibility a shared responsibility across an organization; and (2) providing sources of accessibility SME support. See Responding to accessibility issues in business, Law, C.M. researchbank.rmit.edu.au/view/rmit:6156 
+37 During the UTAP pilot it was relayed by a number of participants that they had heard statements such as "... but we don't have handicapped employees!" as an excuse not to be concerned with Section 508 remediation requests. 
+38 They were using The DHS test process version 2.8 which had been learned years earlier by one of the Section 508 SMEs in the DMB. That version had been superseded by versions 3.0 and later, as of Spring 2013. (At the time of writing, version 3.4 was the current version used by DHS.) 
+39 The Accessible Electronic Documents Community Of Practice (AED COP) has asserted that automated checkers are insufficient to check for accessibility, and must be supplemented by manual checks. For AED COP materials see buyaccessible.gov/content/build/create-accessibledocuments. 
+40 A common complaint from people working in or with Section 508 teams is that Section 508 is an 'unfunded mandate'. This holds if, as a developer, one believes that Section 508 is an 'extra' or 'nice to have'. However, Section 508 was always intended to be something that agencies do as a natural part of any development (i.e., users = all users). Development teams get funding to develop applications for all users. The fact that in the past they were managing to omit large numbers of potential end users means that they were getting a 'freebie' or 'bonus' portion of their budget which should have been going to meet the needs of those omitted users. The way to address this is simply to rectify the misconception that people with disabilities are somehow 'extras' or 'nice to haves'. 
+41 As one participant put it... "you need twenty-seven levels of approval just to sneeze here". 
+42 For instance, the Section 508 Coordinator relayed how they have had a Section 508 complaintsprocess in place since the inception of Section 508, and have so far received zero complaints. However, he followed that up with "But the absence of complaints doesn't mean that we're doing a good job!"(For more discussion on this issue, see Complaints process, page 40.) 
+43 In this case study report, we use the terms 'Agency' and 'Sub-Agency' to maintain consistency with the other UTAP case study terminology. At DOL, the actual terms used are, respectively, 'Department' and 'Agency'.  
+44 By design there is no direct support link between sub-agency developers and the agency-wide ATT and Section 508 PM. With 22 sub-agencies and numerous development teams in each, it was thought that such expansive support requirements would be overwhelming for the agency-wide Section 508 team. 
+45 For AED COP materials see buyaccessible.gov/content/build/create-accessible-documents. 
+46 Numerous different terms were used for the actual position name, but we are just using 'Section 508 person' to convey the pre-policy concept. 
+47 At the start of the UTAP Pilot, there was a designated 'Section 508 Coordinator' at DOL. However, during the course of the pilot the coordinator left the position, and it was decided that the position would remain temporarily unfilled until the UTAP implementation plan was in place. 
+48 For more on the use of the term 'Section 508 PM', see 7. Developing Section 508 Program Management Support (page 55).  
+---------------
+
+------------------------------------------------------------
+
+---------------
+
+------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vi 
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Report 
+
+
+
+4 
+
+1 
+
+
+
+1 
+
+The UTAP Report 
+
+
+
+4 
+
+1 
+
+
+
+1 
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Report 
+
+Chapter 1-3: Results & Discussion 
+
+4 
+
+1 
+
+Chapter 1-3: Results & Discussion 
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Report 
+
+
+
+4 
+
+1 
+
+
+
+1 
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Report 
+
+
+
+4 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Report 
+
+Chapter 2-2: Case Study #2-Department of Education 
+
+4 
+
+1 
+
+The UTAP Report 
+
+4 
+
+The UTAP Report 
+
+Chapter 2-3: Case Study #3-Federal Deposit Insurance Corporation 
+
+4 
+
+1 
+
+
+
+1 
+
+The UTAP Report 
+
+Chapter 2-4: Case Study #4-Department of Labor 
+
+4 
+
+1 
+
+
+
+1 
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+

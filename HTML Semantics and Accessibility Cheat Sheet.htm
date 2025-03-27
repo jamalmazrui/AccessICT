@@ -1,0 +1,1162 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>HTML Semantics and Accessibility Cheat Sheet</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:11.0in 8.5in;
+	margin:39.7pt 288.6pt 28.95pt .5in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:16.0pt;
+line-height:107%;color:#2F5496'>HTML Semantics and Accessibility Cheat Sheet </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:100%'><span
+style='color:#333333'>The following table lists the most common and useful HTML
+elements that have an impact on accessibility for users with disabilities. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><img width=318 height=84
+src="HTML%20Semantics%20and%20Accessibility%20Cheat%20Sheet_files/image001.jpg"
+align=left hspace=12><span style='color:#333333'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=959
+ style='width:719.4pt;margin-left:.3pt;border-collapse:collapse'>
+ <tr style='height:22.4pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:double 2.25pt;
+  border-left:solid 1.5pt;border-bottom:double 2.25pt;border-right:solid 1.5pt;
+  border-color:black;padding:5.25pt 3.7pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Element </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Semantics/Functionality </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Accessibility Considerations </span></p>
+  </td>
+ </tr>
+ <tr style='height:.85in'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:.85in'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.85pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;a&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:.85in'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a link if a non-empty </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>href</span><span style='color:#333333'> attribute is present. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:.85in'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  the element functions as a</span><a
+  href="https://webaim.org/techniques/hypertext/"><span style='color:#333333;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/hypertext/"><span style='color:blue'>link</span></a><a
+  href="https://webaim.org/techniques/hypertext/"><span style='color:#333333;
+  text-decoration:none'>—</span></a><span style='color:#333333'>it takes the
+  user to another page/file or another location within the page. Ensure the
+  link can be navigated and activated with a keyboard and has a visible focus
+  indicator. Must contain content that describes the function of the link.
+  Should typically be underlined within body content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.85pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;abbr&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Represents
+  an abbreviation or acronym. The </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;abbr title&gt;</span><span
+  style='color:#333333'> attribute value is presented to assistive technology. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Best
+  practice is to spell out acronyms and abbreviations in text at their first
+  occurrence instead of using </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>&lt;abbr&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.85pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;area&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a hotspot within an image map (defined with </span><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;map&gt;</span><span
+  style='color:#333333'>). </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Must
+  have an </span><a href="https://webaim.org/techniques/alttext/"><span
+  style='color:blue'>alt attribute</span></a><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:#333333;
+  text-decoration:none'> </span></a><span style='color:#333333'>value that
+  describes the content/function of the hotspot. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:20.3pt;text-indent:-6.05pt'><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;article&gt;</span><span style='color:
+  #333333'> and </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'> &lt;section&gt;</span><span style='color:#333333'> </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:.25pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>These have no useful
+  semantics unless given an ARIA label (which is not typically recommended). </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  these primarily for visual styling and content parsing. Use </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;main&gt;</span><span
+  style='color:#333333'> instead for the main content. Should typically begin
+  with a </span><a
+  href="https://webaim.org/techniques/semanticstructure/#headings"><span
+  style='color:blue'>heading</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#headings"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>(</span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;h1&gt;</span><span style='color:#333333'>-</span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;h6&gt;</span><span
+  style='color:#333333'>). </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.8pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.85pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;aside&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Contains
+  sidebar or call-out content indirectly related to </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;main&gt;</span><span
+  style='color:#333333'>. Identified as a</span><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:blue'>region/landmark</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  only for tangential or sidebar information, such as links related to the main
+  content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;button&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an interactive element for submitting a form or performing a function. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  the button remains </span><a href="https://webaim.org/techniques/keyboard/"><span
+  style='color:blue'>keyboard navigable</span></a><a
+  href="https://webaim.org/techniques/keyboard/"><span style='color:#333333;
+  text-decoration:none'> </span></a><span style='color:#333333'>and has a
+  visible focus indicator. Must contain content that describes the function of
+  the button. Use </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;a href&gt;</span><span style='color:#333333'> instead if
+  the element directs the user to another page or another location within the
+  same page. </span></p>
+  </td>
+ </tr>
+ <tr style='height:20.95pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.95pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;caption&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a caption or title for a </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>&lt;table&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>If a
+  </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;table&gt;</span><span
+  style='color:#333333'> has text that describes it, associate that text to the</span><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:#333333;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:blue'>table</span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:#333333;
+  text-decoration:none'> </span></a><span style='color:#333333'>with </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;caption&gt;</span><span
+  style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.95pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;details&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Creates
+  a disclosure widget in which information is visible only when the widget is
+  toggled into an &quot;open&quot; state. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  a </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;summary&gt;</span><span
+  style='color:#333333'> is present that describes or summarizes the disclosure
+  content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:48.0pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:48.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.9pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;dialog&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 3.7pt 0in 3.4pt;height:48.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Contains
+  a dialog box or other interactive component. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 3.7pt 0in 3.4pt;height:48.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  focus is set to the dialog when it appears. If the dialog is dismissible,
+  ensure keyboard users can close the dialog. The ESC key should typically
+  close the dialog. Ensure keyboard focus remains within modal dialogs and that
+  focus is set to a logical location when the dialog is closed. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>                 </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=959
+ style='width:719.4pt;margin-left:.3pt;border-collapse:collapse'>
+ <tr style='height:22.4pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:double 2.25pt;
+  border-left:solid 1.5pt;border-bottom:double 2.25pt;border-right:solid 1.5pt;
+  border-color:black;padding:5.25pt 2.75pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.7pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Element </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Semantics/Functionality </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Accessibility Considerations </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;div&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>A
+  generic container that does not have any semantics. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  another semantic element if the content presents semantics. Use </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;a href&gt;</span><span
+  style='color:#333333'>, </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;button&gt;</span><span style='color:#333333'>, or a form
+  input for interactive elements. Can be given semantics using </span><a
+  href="https://webaim.org/techniques/aria/"><span style='color:blue'>ARIA
+  roles</span></a><a href="https://webaim.org/techniques/aria/"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>when HTML is not sufficient. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;em&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Marks
+  text as emphasized and displays the text as italicized. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  when text needs emphasis (otherwise use </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;i&gt;</span><span style='color:#333333'>
+  or styles). Use sparingly–it can negatively impact the readability of long
+  sections of text. Not typically read differently by screen readers. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;fieldset&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Semantically
+  and visually groups </span><a
+  href="https://webaim.org/techniques/forms/controls#radio"><span
+  style='color:blue'>a set of</span></a><a
+  href="https://webaim.org/techniques/forms/controls#radio"><span
+  style='color:blue;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/forms/controls#radio"><span
+  style='color:blue'>related inputs</span></a><a
+  href="https://webaim.org/techniques/forms/controls#radio"><span
+  style='color:#333333;text-decoration:none'>,</span></a><span
+  style='color:#333333'> such as a group of radio buttons or checkboxes. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Should
+  typically have a </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;legend&gt;</span><span style='color:#333333'> that
+  describes the set of fields. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.8pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;figure&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Contains
+  an image, illustration, code snippet, etc., that is referenced in the main
+  flow of a document. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>An </span><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:blue'>alt
+  attribute</span></a><a href="https://webaim.org/techniques/alttext/"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>should typically be provided for images within a
+  figure, with a </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;figcaption&gt;</span><span style='color:#333333'> that
+  provides a caption or legend for the </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;figure&gt;</span><span style='color:#333333'>
+  content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;footer&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Contains
+  footer content, such as copyright data or related links. Identified as a</span><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:blue'>region/landmark</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  only for footer content. Typically one per page. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;h1&gt;</span><span
+  style='color:#333333'>-</span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;h6&gt;</span><span style='color:#333333'> </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Describes
+  a section of content and define the structural level of that content. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:2.5pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Ensure the</span><a
+  href="https://webaim.org/techniques/semanticstructure/#headings"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#headings"><span
+  style='color:blue'>heading</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#headings"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>accurately describes the content that follows. Headings
+  must never be empty. A page should typically have one </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;h1&gt;</span><span
+  style='color:#333333'> and should not skip heading levels (e.g., </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;h2&gt;</span><span
+  style='color:#333333'> followed by </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;h4&gt;</span><span style='color:#333333'>).
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.8pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;header&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:14.5pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Contains header content,
+  navigational links, logo, search, etc. Identified as a</span><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:blue'>region/landmark</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><span style='color:#333333'>Do not confuse with headings (</span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;h1&gt;</span><span
+  style='color:#333333'>, etc.). Use only for header content. Typically one
+  instance per page. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;iframe&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.15pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Nests other-page content
+  (often external videos or feeds) within the page. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Should
+  typically have a title attribute value that describes the
+  content/functionality of the</span><a
+  href="https://webaim.org/techniques/frames/"><span style='color:#333333;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/frames/"><span style='color:blue'>inline</span></a><a
+  href="https://webaim.org/techniques/frames/"><span style='color:blue;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/frames/"><span style='color:blue'>frame</span></a><a
+  href="https://webaim.org/techniques/frames/"><span style='color:#333333;
+  text-decoration:none'>,</span></a><span style='color:#333333'> unless the
+  iframe's presence is visually transparent to the user (use
+  role=&quot;presentation&quot; in this case). Ensure the content within the
+  iframe is accessible or provide an equivalent alternative. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.8pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;input&gt;</span><span
+  style='color:#333333'>, </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.4pt;margin-bottom:
+  0in;margin-left:10.0pt;text-indent:12.7pt'><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;select&gt;</span><span style='color:#333333'>,
+  and </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;textarea&gt;</span><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an interactive control for accepting user data. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use </span><a
+  href="https://webaim.org/techniques/forms/controls"><span style='color:blue'>&lt;label&gt;</span></a><a
+  href="https://webaim.org/techniques/forms/controls"><span style='color:#333333;
+  text-decoration:none'> </span></a><span style='color:#333333'>to associate
+  descriptive text or, in complex cases, </span><a
+  href="https://webaim.org/techniques/forms/advanced#labelledby"><span
+  style='color:blue'>aria-labelledby</span></a><a
+  href="https://webaim.org/techniques/forms/advanced#labelledby"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>or </span><a
+  href="https://webaim.org/techniques/forms/advanced#arialabel"><span
+  style='color:blue'>aria-label</span></a><a
+  href="https://webaim.org/techniques/forms/advanced#arialabel"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> Ensure the input remains </span><a
+  href="https://webaim.org/techniques/keyboard/"><span style='color:blue'>keyboard
+  navigable</span></a><a href="https://webaim.org/techniques/keyboard/"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>and has a visible focus indicator. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.3pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;img&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Embeds
+  an image. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:23.0pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Must have an</span><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:#333333;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:blue'>alt</span></a><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:blue'> </span></a><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:blue'>attribute</span></a><a
+  href="https://webaim.org/techniques/alttext/"><span style='color:#333333;
+  text-decoration:none'> </span></a><span style='color:#333333'>value that
+  describes the content and/or functionality of the image. </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>alt=&quot;&quot;</span><span
+  style='color:#333333'> is allowed if the image is decorative or the content
+  is presented near the image. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.75pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;label&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Describes
+  the functionality/purpose of an </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;input&gt;</span><span style='color:#333333'>,
+  </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;select&gt;</span><span
+  style='color:#333333'>, or </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>&lt;textarea&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:15.7pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Must contain text that
+  describes the</span><a href="https://webaim.org/techniques/forms/"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/forms/"><span style='color:blue'>form
+  input</span></a><a href="https://webaim.org/techniques/forms/"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> To associate </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&lt;label&gt;</span><span style='color:#333333'>
+  with an input, either wrap </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>&lt;label&gt;</span><span style='color:#333333'> around
+  the input and label text or use matching </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>for</span><span style='color:#333333'>/</span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>id</span><span
+  style='color:#333333'> attribute values. </span></p>
+  </td>
+ </tr>
+ <tr style='height:21.1pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:21.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.8pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;legend&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:21.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Describes
+  the contents of a </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;fieldset&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.75pt 0in 3.4pt;height:21.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  only within </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;fieldset&gt;</span><span
+  style='color:#333333'> to describe the grouping of form inputs. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+inter-ideograph'><span style='color:#333333'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=959
+ style='width:719.4pt;margin-left:.3pt;border-collapse:collapse'>
+ <tr style='height:22.4pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:double 2.25pt;
+  border-left:solid 1.5pt;border-bottom:double 2.25pt;border-right:solid 1.5pt;
+  border-color:black;padding:5.25pt 2.25pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Element </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.7pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Semantics/Functionality </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:22.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:1.65pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#333333'>Accessibility Considerations </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;li&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an item within an </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;ol&gt;</span><span style='color:#333333'> or </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;ul&gt;</span><span
+  style='color:#333333'>. The number of items in a list is announced by screen
+  readers. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  the list item is never empty. Be careful with complex nesting of lists within
+  list items. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;main&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Contains
+  the main content. Identified as a</span><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:blue'>region/landmark</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  only for main content. Typically one instance per page. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;menu&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an unordered list of menu items. Semantically identical to </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;ul&gt;</span><span
+  style='color:#333333'>. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;ul&gt;</span><span
+  style='color:#333333'> instead unless the nested items are menu items. Must
+  contain at least one </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;li&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.3pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;nav&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:6.75pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Contains navigation links.
+  Identified as a</span><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:blue'>region/landmark</span></a><a
+  href="https://webaim.org/techniques/semanticstructure/#regions"><span
+  style='color:#333333;text-decoration:none'>.</span></a><span
+  style='color:#333333'> </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:.45pt;margin-bottom:
+  0in;margin-left:0in'><span style='color:#333333'>Use only for groups/lists of
+  significant site or in-page navigation links. Typically 1 or 2 instances per
+  page. </span></p>
+  </td>
+ </tr>
+ <tr style='height:20.95pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;ol&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an ordered/hierarchical list. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  for lists where the order of items impacts meaning. Must contain at least one
+  </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;li&gt;</span><span
+  style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;p&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Identifies
+  a paragraph. Presents no useful semantics. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  to create blocks/paragraphs of text. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.3pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;span&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>A
+  generic container for inline text. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  another semantic element if the content has semantics or functionality. Can
+  be given semantics using</span><a href="https://webaim.org/techniques/aria/"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/aria/"><span style='color:blue'>ARIA</span></a><a
+  href="https://webaim.org/techniques/aria/"><span style='color:#333333;
+  text-decoration:none'>,</span></a><span style='color:#333333'> but only if
+  HTML is not sufficient. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.75pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;strong&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Marks
+  text as strongly emphasized and displays the text as bold type. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:47.75pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  when text needs strong emphasis (otherwise use </span><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;b&gt;</span><span style='color:
+  #333333'> or styles). Use sparingly–it can negatively impact the readability
+  of long sections of text. Not typically read differently by screen readers. </span></p>
+  </td>
+ </tr>
+ <tr style='height:47.8pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;svg&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a scalable vector graphic. Proper semantics are not well-supported. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:47.8pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>If
+  the SVG conveys content or is clickable, assign </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>role=&quot;img&quot;</span><span
+  style='color:#333333'> and </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>aria-label</span><span style='color:#333333'> or </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>aria-labelledby</span><span
+  style='color:#333333'> (with reference to descriptive content) so the </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;svg&gt;</span><span
+  style='color:#333333'> is identified as an image with alternative text. If
+  the SVG is decorative, assign </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>role=&quot;presentation&quot;</span><span
+  style='color:#333333'> and </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>aria-hidden=&quot;true&quot;</span><span
+  style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.3pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;table&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines</span><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:#333333;
+  text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:blue'>tabular
+  content</span></a><a href="https://webaim.org/techniques/tables/data"><span
+  style='color:#333333;text-decoration:none'> </span></a><span
+  style='color:#333333'>presented in a grid. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  only for a grid of tabular content/data, not for layout. Ensure table header
+  cells are defined with </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;th&gt;</span><span style='color:#333333'>. If appropriate,
+  describe the table with </span><span style='font-size:9.0pt;line-height:107%;
+  color:#333333'>&lt;caption&gt;</span><span style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+ <tr style='height:20.95pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;td&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a data cell in a</span><a href="https://webaim.org/techniques/tables/data"><span
+  style='color:#333333;text-decoration:none'> </span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:blue'>table</span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:#333333;
+  text-decoration:none'>.</span></a><span style='color:#333333'> </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:20.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Try
+  to avoid spanned table cells. For column or row headers, use </span><span
+  style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;th&gt;</span><span
+  style='color:#333333'> instead. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;th&gt; </span></p>
+  </td>
+  <td width=252 style='width:188.7pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  a header cell in a </span><a href="https://webaim.org/techniques/tables/data"><span
+  style='color:blue'>table</span></a><a
+  href="https://webaim.org/techniques/tables/data"><span style='color:#333333;
+  text-decoration:none'>.</span></a><span style='color:#333333'> </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Always
+  assign a </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>scope</span><span
+  style='color:#333333'> attribute value of </span><span style='font-size:9.0pt;
+  line-height:107%;color:#333333'>&quot;row&quot;</span><span style='color:
+  #333333'> or </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&quot;col&quot;</span><span
+  style='color:#333333'>. Try to avoid spanned table headers. If the cell is
+  not a row/column header, use </span><span style='font-size:9.0pt;line-height:
+  107%;color:#333333'>&lt;td&gt;</span><span style='color:#333333'> instead. </span></p>
+  </td>
+ </tr>
+ <tr style='height:34.3pt'>
+  <td width=120 style='width:90.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.3pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;title&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  the document's title. Shown in browser tab. </span></p>
+  </td>
+  <td width=588 style='width:440.65pt;border-top:none;border-left:none;
+  border-bottom:double black 2.25pt;border-right:solid black 1.5pt;padding:
+  5.25pt 2.25pt 0in 3.4pt;height:34.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Ensure
+  the title succinctly describes the page content. </span></p>
+  </td>
+ </tr>
+ <tr style='height:21.2pt'>
+  <td width=120 valign=top style='width:90.05pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:21.2pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:2.25pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  9.0pt;line-height:107%;color:#333333'>&lt;ul&gt; </span></p>
+  </td>
+  <td width=252 valign=top style='width:188.7pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:21.2pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Defines
+  an unordered/bulleted list. </span></p>
+  </td>
+  <td width=588 valign=top style='width:440.65pt;border-top:none;border-left:
+  none;border-bottom:double black 2.25pt;border-right:solid black 1.5pt;
+  padding:5.25pt 2.25pt 0in 3.4pt;height:21.2pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:#333333'>Use
+  for lists where the order of items does not impact meaning. Must contain at
+  least one </span><span style='font-size:9.0pt;line-height:107%;color:#333333'>&lt;li&gt;</span><span
+  style='color:#333333'>. </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+inter-ideograph'><span style='color:#333333'> </span></p>
+
+</div>
+
+</body>
+
+</html>

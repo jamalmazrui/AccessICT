@@ -1,0 +1,70 @@
+﻿WebAIM Quick Reference: Testing Web Content for Accessibility 	
+
+Test with WAVE  
+ Run a report at wave.webaim.org. For very complex or nonpublic pages, use the WAVE Chrome or Firefox extension (wave.webaim.org/extension). 
+o Watch the overview video on the WAVE homepage. 
+* Error icons flag known issues. Other icons identify potential problems or features. Click an icon to highlight the corresponding element and learn more using the Reference panel. 
+* Use the Details panel to review page issues. Click an icon to find it in the page. Uncheck icons to hide them. 
+* Turn off Styles to simplify the page view and to check the reading and navigation order. 
+* Click the Code button at the bottom of the page to see the page code with WAVE icons. 
+Images 
+* Ensure alternative text (shown in green) conveys the equivalent content and/or function of the image. 
+* Look for ways to replace images of text with true text. 
+* Content conveyed via CSS images must have a text alternative.  
+Headings and Regions/Landmarks  Use the Structure panel in the sidebar to review. 
+* The main heading should usually be an <h1>. 
+* Ensure the headings and regions/landmarks reflect the page structure. 
+* Look for skipped heading levels (e.g., <h2> to <h4>). 
+Contrast 
+* Select the Contrast panel. o WAVE flags WCAG AA contrast issues in text. o Non-underlined links need 3:1 contrast with body text, plus a change, like underlining, on hover and focus. 
+* Check colors in WebAIM's contrast checker: 
+webaim.org/resources/contrastchecker/. 
+* Manually check contrast in icons and images. 
+ARIA 
+* WAVE flags ARIA with purple icons. 
+* Check for appropriate use of ARIA roles, states, and properties (presented in green). 
+* Ensure ARIA labels and descriptions are correct. 
+Forms 
+* Ensure form controls have descriptive labels. 
+Links and buttons 
+* Ensure links and buttons present descriptive text. 
+Other common WAVE checks 
+* Page language is specified (e.g., <html lang="en">). 
+* If there are data tables, ensure table headers are present and have the correct scope. 
+* Look for links with ambiguous link text like "click here."  Ensure the page title is descriptive and succinct. 
+Use a checklist 
+
+ WCAG 2: webaim.org/standards/wcag/checklist/. 
+ 
+Check keyboard accessibility 
+* The first time testing with Mac, press Control + F7 to enable full keyboard accessibility.  o In Safari, select Preferences > Advanced > Accessibility > Press Tab to highlight each item... 
+* Navigate the page using only the keyboard: 
+o Tab: Navigate interactive elements (links, form controls, etc.) o Shift + Tab: Navigate backwards. o Enter: Activate links or buttons, submit most forms. 
+o Spacebar: Activate checkboxes and buttons, expand a select menu, or scroll the window. o Arrow keys: Navigate radio buttons, select/dropdown menus, sliders, tab panels, tree menus, etc. 
+* Look for mouse-only interaction (e.g., rollover menus). 
+* Confirm every focusable element has a keyboard focus indicator/outline with at least 3:1 contrast. 
+* Ensure any "skip" links work correctly and are visible to sighted keyboard users. 
+* Make sure the navigation order is logical and intuitive. 
+* Test dialog and pop-ups. Can you navigate and close the dialog? 
+Does focus return to a logical place? 
+o Modal dialogs must maintain focus until dismissed. o Non-modal dialogs must close when focus is lost. o Esc should also close all dialogs and menus. 
+Test content scaling 
+
+* In Chrome, press Ctrl/cmd and:  o + to zoom in (larger) o  - to zoom out (smaller) o 0 to reset to 100%  
+* For WCAG 2.0 - Zoom to 200% 
+* For WCAG 2.1 - Adjust viewport to 1280 pixels wide and zoom to 400%. Avoid horizontal scrolling unless required for the content (e.g., a data table or map).  
+* Text-only zoom (Recommended) - In Firefox, choose View > Zoom > Zoom Text Only. Zoom to 130-150% 
+Test with a screen reader 
+
+ WebAIM tutorials:  
+  o webaim.org/articles/jaws/ o webaim.org/articles/nvda/ o webaim.org/articles/voiceover  Focus on navigation, forms, and dynamic content.  Is information presented through ARIA accurate?  
+* Are forms instructions and error feedback read when navigating a form? 
+* Are all dynamic changes and updates accessible? 
+Scan for other issues 
+
+* Captions and transcripts for media. 
+* Information does not depend on color, audio, shape, size, or location. 
+* Animating or updating content or media can be paused or stopped.  
+* No strobing content/video that could cause seizures.  
+
+(c) 2023 WebAIM. All rights reserved. 

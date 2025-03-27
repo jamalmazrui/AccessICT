@@ -1,832 +1,488 @@
-﻿OntarioTechGuideToAccessibleDocuments FINAL.docx
-
-
-[]
-
+﻿
 Guide to Accessible Documents
-
 Accessible formats or communication supports for this document are available upon request. Please contact aoda@ontariotechu.ca [URL: https://accessibility.ontariotechu.ca/index.php
-
 Acknowledgement
-
 The Accessibility Working Group at Ontario Tech University would like to thank the City of Peterborough for allowing us to reproduce content from their publication entitled Guide to Accessible Documents (2018).
-
 [URL:
-
 https://www.peterborough.ca/en/city-hall/resources/Documents/Guide-to-Accessible-Do
-
 cuments.pdf]
 
- 
+
 
 Table of Contents
-
-Guide to Accessible Documents                                                                                                                                 1
-
-Table of Contents                                                                                                                                                                   3
-
-Background & Relevant Legislation                                                                                                                          4
-
-Accessibility for Ontarians with Disabilities Act (AODA)                                                                                       4
-
-Integrated Accessibility Standards Regulation (IASR)                                                                                           4
-
-Goal of this guide                                                                                                                                                                       4
-
-Accessible Document Compliance                                                                                                                            5
-
-Offline information (information not posted to a University website)                                                              5
-
-Online information (information posted to a University website)                                                                      5
-
-Other accessible document standards                                                                                                                           5
-
-Font Family                                                                                                                                                                                 6
-
-Font Size                                                                                                                                                                                      7
-
-Bold, Italics and Underline                                                                                                                                               8
-
-Links                                                                                                                                                                                                9
-
-Use descriptive words for links                                                                                                                                           9
-
-Add a screen tip for links                                                                                                                                                        9
-
-Provide the full URL for links                                                                                                                                                9
-
-Upper and Lower Case                                                                                                                                                   10
-
-Lower case letters are easier to read                                                                                                                           10
-
-Exceptions                                                                                                                                                                                  10
-
-Do you really want to SHOUT?                                                                                                                                        10
-
-Text and Image Alignment                                                                                                                                             11
-
-Styles Tool                                                                                                                                                                                11
-
-Headings create structure                                                                                                                                                   11
-
-How to create structure in MS Word                                                                                                                             11
-
-Spacing                                                                                                                                                                                      12
-
-Properly add space before or after content                                                                                                               12
-
-Use a single space between punctuations                                                                                                                12
-
-Page Break tool                                                                                                                                                                        12
-
-Columns tool                                                                                                                                                                              12
-
-Colour                                                                                                                                                                                          13
-
-Poor use of colour                                                                                                                                                                   13
-
-Good use of colour                                                                                                                                                                 13
-
-Branding Guidelines                                                                                                                                                          14
-
-Contrast                                                                                                                                                                                      15
-
-Alt Text                                                                                                                                                                                        16
-
-How to add alt text for an image in MS Word 2019                                                                                              16
-
-Tips for writing alt text                                                                                                                                                           16
-
-Tables and Charts                                                                                                                                                               17
-
-How to create accessible tables in MS Word 2019                                                                                               17
-
-Document Navigation                                                                                                                                                       18
-
-How to insert a table of contents (TOC) in MS Word 2019                                                                               18
-
-How to insert page numbers in MS Word 2019                                                                                                      18
-
-Date Format                                                                                                                                                                            19
-
-Reading Level - “Plain Language”                                                                                                                          20
-
-Tips                                                                                                                                                                                                 20
-
-Example                                                                                                                                                                                       20
-
-How to turn on Readability Statistics in MS Word 2019                                                                                     20
-
-Lists                                                                                                                                                                                               20
-
-Forms                                                                                                                                                                                           21
-
-Design Tips                                                                                                                                                                                 22
-
-Function Tips                                                                                                                                                                             22
-
-Document Properties                                                                                                                                                        23
-
-Accessibility Checker                                                                                                                                                       24
-
-Errors                                                                                                                                                                                             24
-
-Warnings                                                                                                                                                                                      24
-
-Tips                                                                                                                                                                                                 24
-
-Common accessible document checker tools                                                                                                         24
-
- 
-
- 
-
- 
-
-Tagged PDF                                                                                                                                 23
-
-        Sample PDF Tags and their role in the document                                                                   23
-
-        Save an MS Word 2019 document as a tagged PDF                                                              23
+Guide to Accessible Documents	1
+Table of Contents	3
+Background & Relevant Legislation	4
+Accessibility for Ontarians with Disabilities Act (AODA)	4
+Integrated Accessibility Standards Regulation (IASR)	4
+Goal of this guide	4
+Accessible Document Compliance	5
+Offline information (information not posted to a University website)	5
+Online information (information posted to a University website)	5
+Other accessible document standards	5
+Font Family	6
+Font Size	7
+Bold, Italics and Underline	8
+Links	9
+Use descriptive words for links	9
+Add a screen tip for links	9
+Provide the full URL for links	9
+Upper and Lower Case	10
+Lower case letters are easier to read	10
+Exceptions	10
+Do you really want to SHOUT?	10
+Text and Image Alignment	11
+Styles Tool	11
+Headings create structure	11
+How to create structure in MS Word	11
+Spacing	12
+Properly add space before or after content	12
+Use a single space between punctuations	12
+Page Break tool	12
+Columns tool	12
+Colour	13
+Poor use of colour	13
+Good use of colour	13
+Branding Guidelines	14
+Contrast	15
+Alt Text	16
+How to add alt text for an image in MS Word 2019	16
+Tips for writing alt text	16
+Tables and Charts	17
+How to create accessible tables in MS Word 2019	17
+Document Navigation	18
+How to insert a table of contents (TOC) in MS Word 2019	18
+How to insert page numbers in MS Word 2019	18
+Date Format	19
+Reading Level - "Plain Language"	20
+Tips	20
+Example	20
+How to turn on Readability Statistics in MS Word 2019	20
+Lists	20
+Forms	21
+Design Tips	22
+Function Tips	22
+Document Properties	23
+Accessibility Checker	24
+Errors	24
+Warnings	24
+Tips	24
+Common accessible document checker tools	24
+
+
+
+Tagged PDF	23
+	Sample PDF Tags and their role in the document	23
+	Save an MS Word 2019 document as a tagged PDF	23
 
 Background & Relevant Legislation
 
-[]
-
 The AODA is the Accessibility for Ontarians with Disabilities Act, enacted in 2005.
-
 Accessibility for Ontarians with Disabilities Act (AODA)
-
 The AODA is no ordinary piece of legislation. It is an ambitious means to ensure the inclusion of people with disabilities. Ontario is the first province in Canada and one of the first jurisdictions in the world to have legislation with a goal and deadline to make a province more accessible. Ontario is also the first jurisdiction to make accessibility reporting the law and has standards so people living with disabilities can enjoy increased participation in their communities.
-
 Integrated Accessibility Standards Regulation (IASR)
-
 The IASR is a broad regulation. The requirements range from limiting the amount of flashing on a website to requiring organizations to consult with people with disabilities on the design and placement of benches along walkways. The IASR has a major impact on making information accessible.
-
 Goal of this guide
-
 This guide serves as an introduction to accessible documents. The content provides a basic understanding of how to make Microsoft (MS) Word documents accessible. Instructions listed in the guide are for MS Word version 2019.
-
 The checkpoints listed in this guide are generally transferable to other document creation and graphic design software. The checkpoints apply to information communicated in emails, reports, advertising, signage, program guides, infographics and websites.
-
 Accessible Document Compliance
 
-[]
-
 There are various standards for Accessible Documents.
-
 Offline information (information not posted to a University website)
-
 The university will provide offline information in an accessible format upon request, in a timely manner. Offline information produced by the university will meet the checkpoints listed in this Guide to Accessible Documents.
-
 Online information (information posted to a University website)
-
 Online information will generally be available on a university website in HTML format. Where online information is more suitable in a document format, the information will be available as a PDF.
-
 Online PDF documents will meet the checkpoints listed in this guide and the Web Content Accessibility Guidelines, also known as WCAG 2.0. They will include features such as tags, correct tab and reading order, bookmarks, advanced table attributes and document metadata such as document title, subject and author.
-
 Other accessible document standards
-
-▪     PDF/Universal Accessibility (PDF/UA): the most robust International Standard for an accessible PDF also referred to as ISO 14289. It offers the highest level of compliance.
-
-▪     The Matterhorn Protocol: 31 checkpoints to test for PDF/UA.
-
+▪	PDF/Universal Accessibility (PDF/UA): the most robust International Standard for an accessible PDF also referred to as ISO 14289. It offers the highest level of compliance.
+▪	The Matterhorn Protocol: 31 checkpoints to test for PDF/UA.
 Font Family
-
 Use sans-serif fonts.
-
-  ------------------ -----------------------------------------
-  Arial              This font is accessible
-  Arial Narrow       This narrow font is not accessible
-  Times New Roman    This serif font is not accessible
-  Courier            This monospace font is not accessible
-  Chiller            This decorative font is not accessible
-  Monotype Corsiva   This handwriting font is not accessible
-  ------------------ -----------------------------------------
-
-A sans-serif font is easier to read than a serif font. Upper case, lowercase and numerical characters of a sans-serif font are easy to recognize. Popular sans serif fonts include Arial, Calibri, Helvetica, Futura and Verdana.
-
-[]
+ArialThis font is accessibleArial NarrowThis narrow font is not accessibleTimes New RomanThis serif font is not accessibleCourierThis monospace font is not accessibleChillerThis decorative font is not accessibleMonotype CorsivaThis handwriting font is not accessibleA sans-serif font is easier to read than a serif font. Upper case, lowercase and numerical characters of a sans-serif font are easy to recognize. Popular sans serif fonts include Arial, Calibri, Helvetica, Futura and Verdana.
 
 Tip: Documents limited to a few fonts are easier to read. Too many fonts can create a confusing visual layout. Avoid narrow, serif, monospace, decorative, or handwriting fonts.
 
-[]
 
 Font Size
-
 Make text large enough.
-
 The size of the font, measured in points (pt), is a fundamental factor in legibility. Font size 12, based on the Arial font sizing, is the university standard font size for main body text in a document. A minimum font size 16 is the university standard for information communicated on large format screens and for presentations. Avoid font size 11 and smaller where possible.
-
-Font Size 11                11 pt or less is not accessible
-
-Font Size 12              12 pt is accessible
-
-Font Size 16    16 pt or more for presentations
-
-[]
+Font Size 11	11 pt or less is not accessible
+Font Size 12	12 pt is accessible
+Font Size 16	16 pt or more for presentations
 
 Tip: Font size varies between font families. When selecting a font size, use Arial as the base for determining appropriate font size.
 
-[]
-
 For example:
-
 12 pt Arial is an accessible font size.
-
-12   pt Calibri is not accessible. It is similar in size to 11 pt Arial.
-
-13   pt Calibri is accessible. It is similar in size to 12 pt Arial.
-
+12 pt Calibri is not accessible. It is similar in size to 11 pt Arial.
+13 pt Calibri is accessible. It is similar in size to 12 pt Arial.
 11 pt Verdana is accessible. It is similar in size to 12 pt Arial.
-
 Bold, Italics and Underline
-
 Use bold for emphasis, avoid italics and use underlining for links only
-
 Use bold fonts for emphasis to make certain words and phrases stand out from surrounding text. Use restraint to ensure only the most important information has emphasis. Whole paragraphs of text set in bold type are hard to read. Use bold formatting for titles, headlines or key words and phrases.
-
 Italic fonts are more difficult to read than regular fonts. There may be exceptions to using italics, such as when required to meet standard formatting (for example, citation in legal documents or Latin versions of tree species). Avoid italics where possible.
-
 Underlining interferes with lower case letters. Do not use underlining to emphasize words and phrases. Underlining is an outdated method to emphasize text. People used underlining when manual typewriters did not have bold or italic styling. Only use underlining as the standard option to emphasize links for email addresses and websites.
 
-[]
-
 Links
-
 Use descriptive words for links, add a screen tip and provide the full URL
-
 Use descriptive words for links
-
-Screen reader users often scan or search for hyperlinks, so it is important to make sure these links make sense without their surrounding content. Links are more accessible when the link text briefly describes the destination. Avoid non-descriptive link phrases such as “here”, “click here”, “read more” or “learn more”.
-
+Screen reader users often scan or search for hyperlinks, so it is important to make sure these links make sense without their surrounding content. Links are more accessible when the link text briefly describes the destination. Avoid non-descriptive link phrases such as "here", "click here", "read more" or "learn more".
 Add a screen tip for links
-
 A screen tip is a small pop-up window that displays when a mouse pointer hovers over a link. In MS Word 2019, select the Insert tab and add a screen tip with the Hyperlink tool in the Links group. A screen reader will read out the screen tip.
-
 Provide the full URL for links
-
 Documents with the potential to be printed should include the full URL in a footnote, appendix or in brackets after the live link. The standard visual representation for a link is:
-
-▪     Underlined text.
-
-▪     Blue for a link not visited (HEX #0000FF, RGB 0-0-255).
-
-▪     Purple for a visited link (HEX #800080, RGB 128-0-128).
-
+▪	Underlined text.
+▪	Blue for a link not visited (HEX #0000FF, RGB 0-0-255).
+▪	Purple for a visited link (HEX #800080, RGB 128-0-128).
 Sample
-
-Refer to the University’s Accessibility Website for more resources on Universal Design and Inclusion [https://accessibility.ontariotechu.ca/index.php]
-
+Refer to the University's Accessibility Website for more resources on Universal Design and Inclusion [https://accessibility.ontariotechu.ca/index.php]
 Do not use: Click here for the Guide to Accessible Documents.
-
-[]
 
 Tip: Custom formatting for visual representation of a link must still meet the font related checkpoints in this guide, such as contrast.
 
-[]
-
 Upper and Lower Case
-
 Use a combination of upper and lower case letters.
-
 Lower case letters are easier to read
-
 Lower case letters provide word shape. The shape of a word provides mental reading clues and speeds up the process of reading. A sentence written with a combination of upper and lower case letters is easier to read.
 
-[]
-
 Exceptions
-
 It may make sense to use all upper case in some instances, such as short headings or titles with a maximum of two words. Upper case letters intended to represent a graphic design element of a document are acceptable, such as random letters on the front cover of this guide. These two examples will not benefit from the mental reading clues provided with lower case letters.
-
 Do you really want to SHOUT?
-
 Upper case can give the impression of shouting. If the intent is to convey a shout, an exclamation point is better. Screen readers do change the voice inflection for sentences with exclamation points.
-
 Text and Image Alignment
-
 Align text to the left margin and avoid floating images.
-
 Text aligned to the left margin makes it easier to find the start of the next line and keeps spacing between the words even.
-
 Centre text alignment is not accessible.
-
-[]A person with low vision may set up their device to zoom in at five times the normal display. They would rely on left alignment to find the starting point of a line and may unintentionally skip content in the middle of a page.
-
-  -- ----
-     
-     []
-  -- ----
-
+A person with low vision may set up their device to zoom in at five times the normal display. They would rely on left alignment to find the starting point of a line and may unintentionally skip content in the middle of a page.
 Justified text alignment is not accessible. It causes uneven spaces between words and is more difficult to read.
-
-[][]Image alignment:
-
+Image alignment:
 Avoid floating images. When inserting images and other non-text content, align to the left of the page. Place images and non-text content above or below text with the MS Word In Line with Text wrap text option.
-
 Tip: When it is desirable to align an image to the right, try using the
-
 MS Word Columns tool. The
-
-screen shot to the right shows the MS Word wrap text options. The image is In Line with Text on column 2 but appears as floating. With this method, a screen reader will read the image’s alt text in the order intended.
+screen shot to the right shows the MS Word wrap text options. The image is In Line with Text on column 2 but appears as floating. With this method, a screen reader will read the image's alt text in the order intended.
 
 Styles Tool
-
-Use ‘Styles’ to create structure and help all users navigate a document.
-
+Use 'Styles' to create structure and help all users navigate a document.
 Headings create structure
-
 People typically skim and scan content on a page to decide what to read. Properly formatted headings visually stand out from the rest of the content and briefly describe what is in each section, so people can skip ahead and find the section they need.
-
 How to create structure in MS Word
-
 Format headings with the Styles tool.
-
 The image below shows the Styles gallery in the Home tab. Use Heading 1 style for the main title and Heading 2 style for main sections. Use Heading 3 to Heading 6 styles for sub-sections. Use a nested structure and do not skip heading levels.
-
-[]
 
 Headings formatted with the Styles tool populate a skip navigation menu for the document. To use the skip navigation menu, select the View tab, toggle on the Navigation Pane and select Headings.
 
-[]
-
 Tip: Headings formatted with the Styles tool can auto generate a table of contents with live links and bookmarks in the PDF version of a document. Headings formatted with the Styles tool will also benefit from consistent formatting throughout the document.
 
-[]
-
 Spacing
-
 Do not use enter, space or tab keys to add white space.
-
 Properly add space before or after content
-
 Customize the amount of space before or after content with the Paragraph Spacing tool or set default spacing with the Styles tool.
 
-[]
-
 Use a single space between punctuations.
-
 Double-spacing after a period, question mark, exclamation point or colon is an old style of typography that is no longer a standard.
-
 Page Break tool
-
 Do not press Enter repeatedly to start a new page. Insert a page break to start a new page.
-
 Columns tool
-
 Do not use blank spaces and tabs to create a column effect. Use the Columns tool in the Layout tab.
-
-[]
 
 Tip: The MS Word Show/Hide paragraph marks tool in the Home tab will help you find any blank spaces in a document.
 
-[]
-
-Repeated blank characters can confuse a screen reader. If you press the Enter key two or more times, a screen reader may interpret the “enter” as a new paragraph with no text. A screen reader may communicate the word “blank” for every blank line.
-
+Repeated blank characters can confuse a screen reader. If you press the Enter key two or more times, a screen reader may interpret the "enter" as a new paragraph with no text. A screen reader may communicate the word "blank" for every blank line.
 Colour
-
 Ensure colour is not the only means of conveying information.
-
 Pay attention to the use of colour in a document to ensure the information makes sense for people who are colour blind and people with low vision. Good use of colour means a document printed in black and white is as meaningful as the colour version.
-
-  ----------------------- ----------------------------------------------------------------------------------------------- --------
-  Tips for using colour                                                                                                   Sample
-  ▪                       Design in greyscale.                                                                            Good
-  ▪                       Add shapes or symbols when colour is used to compare information.                               ✔
-  ▪                       Include text with colour-coded icons.                                                           ✔ Good
-  ▪                       Print in black and white and check if coloured content is legible and meaning is conveyed.      ✔
-  ▪                       Do not use colour alone to make a comparison of information, especially in charts and graphs.    
-  ----------------------- ----------------------------------------------------------------------------------------------- --------
-
-Poor use of colour
-
-[]
+Tips for using colourSample▪Design in greyscale.Good▪Add shapes or symbols when colour is used to compare information.✔▪Include text with colour-coded icons.✔ Good▪Print in black and white and check if coloured content is legible and meaning is conveyed.✔▪Do not use colour alone to make a comparison of information, especially in charts and graphs.Poor use of colour
 
 Good use of colour
 
-[]
-
 Branding Guidelines
-
 Future Blue
-
-[]Accessible text colour Accessible text colour (minimum 24pt)
-
+                          Accessible text colour Accessible text colour (minimum 24pt)
 PMS 541 C
-
 C100 M58 Y9 K46
-
 R0 G60 B113
-
 #003C71
-
-PMS 3005 C[]
-
+PMS 3005 C
 C100 M31 Y0 K0
-
 R0 G119 B202 #0077CA
-
-  -- ----
-     
-     []
-  -- ----
-
 Tech Tangerine
-
-[]Accessible text colour Accessible text colour (minimum 24pt)
-
+                          Accessible text colour Accessible text colour (minimum 24pt)
 PMS 1645 C
-
 C0 M70 Y100 K0
-
 R231 G93 B42 * #E75D2A *
-
-Digital: We’ve developed a custom breakdown for using Tech Tangerine RGB or HEX colour text on a white background. Use these values and maintain a minimum of 24pt font size.
-
+Digital: We've developed a custom breakdown for using Tech Tangerine RGB or HEX colour text on a white background. Use these values and maintain a minimum of 24pt font size.
 Print: Avoid using Tech Tangerine in font smaller than 16pt in print applications.
 
-[]
-
 Tip: For more details on how to ensure branding guidelines are in light with accessibility you can go to the Branding website:
-
 [https://brand.ontariotechu.ca/resources/colours-design-graphics-and-fonts/colo urs.php]
-
 Contrast
-
 Use good contrast between the background and foreground.
-
 Use a minimum 4.5:1 contrast ratio for text smaller than 18pt. Use a minimum 3:1 contrast ratio for text 18pt or larger, bold text 14pt or larger, and non-text information that has meaning.
-
 What does good contrast look like?
-
-  ------------- -------------- ---------------- --------
-  Test Number   Font Size      Contrast Ratio   Result
-  Test 1        12pt regular   21:1             Pass
-  Test 2        12pt regular   21:1             Pass
-  Test 3        12pt regular   19.5:1           Pass
-  Test 4        12pt regular   15.3:1           Pass
-  Test 5        12pt regular   14.9:1           Pass
-  Test 6        12pt regular   10.4:1           Pass
-  Test 7        12pt regular   7:1              Pass
-  Test 8        12pt regular   6.5:1            Pass
-  Test 9        12pt regular   4:1              Fail
-  Test 10       12pt bold      4:1              Fail
-  Test 11       14pt bold      4:1              Pass
-  Test 12       18pt regular   4:1              Pass
-  Test 13       12pt bold      3.04:1           Fail
-  Test 14       12pt bold      2.18:1           Fail
-  Test 15       12pt bold      1.43:1           Fail
-  ------------- -------------- ---------------- --------
-
-Use a contrast test tool such as Snook Contrast Checker to test colour combinations and determine the exact contrast ratio.
-
+Test NumberFont SizeContrast RatioResultTest 112pt regular21:1PassTest 212pt regular21:1PassTest 312pt regular19.5:1PassTest 412pt regular15.3:1PassTest 512pt regular14.9:1PassTest 612pt regular10.4:1PassTest 712pt regular7:1PassTest 812pt regular6.5:1PassTest 912pt regular4:1FailTest 1012pt bold4:1FailTest 1114pt bold4:1PassTest 1218pt regular4:1PassTest 1312pt bold3.04:1FailTest 1412pt bold2.18:1FailTest 1512pt bold1.43:1FailUse a contrast test tool such as Snook Contrast Checker to test colour combinations and determine the exact contrast ratio.
 [www.snook.ca/technical/colour_contrast/colour.html]
-
 Alt Text
-
 Add a short description for images, tables, charts, shapes, embedded objects and audio/video files.
-
-“Alt text”, or alternative text, is a brief description of any object inserted into a document. A person who uses a screen reader will read alt text to understand non-text information. The alt text will display in place of an image when software does not support the display of images. As a bonus, search engines read alt text.
-
-The following Ontario Tech University logo has the alt text Title “Logo” and alt text Description “Ontario Tech University logo”. A screen reader will read “Image of Ontario Tech University logo”.
-
-[]
+"Alt text", or alternative text, is a brief description of any object inserted into a document. A person who uses a screen reader will read alt text to understand non-text information. The alt text will display in place of an image when software does not support the display of images. As a bonus, search engines read alt text.
+The following Ontario Tech University logo has the alt text Title "Logo" and alt text Description "Ontario Tech University logo". A screen reader will read "Image of Ontario Tech University logo".
 
 How to add alt text for an image in MS Word 2019
-
 Right click the image and select Format Picture. Select the Layout & Properties icon. Select Alt Text. Add alt text in Description field.
-
 Tips for writing alt text
-
-▪     Be brief. Use a maximum of 125 characters.
-
-▪     Describe the important content or purpose of the object.
-
-▪     Do not start with “image of”, “table of”, or “link to”. A screen reader will read out what type of content the object is.
-
-▪     Tell the screen reader to skip the object if it has no meaning. Use alt text of two double quotes with no spaces between (“”).
-
+▪	Be brief. Use a maximum of 125 characters.
+▪	Describe the important content or purpose of the object.
+▪	Do not start with "image of", "table of", or "link to". A screen reader will read out what type of content the object is.
+▪	Tell the screen reader to skip the object if it has no meaning. Use alt text of two double quotes with no spaces between ("").
 Tables and Charts
-
 Keep tables and charts simple.
-
 Tables and charts can make a large amount of information clear to readers. Use the checkpoints in this guide to help make tables and charts accessible, such as use minimum font size 12.
-
 How to create accessible tables in MS Word 2019
+▪	Avoid tables as a method to layout content in a document.
+▪	Avoid merged cells, empty cells and nested tables.
+▪	Add a header row at the top of the table to describe columns.
+▪	Set the table style that best describes the table design:
+1. Place the cursor in the table and select the Design tab.
+2. Check the Table Style Options that describe the table. For example, check "header row" for a table with a header row.
 
-▪     Avoid tables as a method to layout content in a document.
+▪	Set the header row to repeat at the top of each page.
+1. Place the cursor in the header row and select the Layout tab.
+2. Select Repeat Header Rows.
 
-▪     Avoid merged cells, empty cells and nested tables.
-
-▪     Add a header row at the top of the table to describe columns.
-
-▪     Set the table style that best describes the table design:
-
-1.    Place the cursor in the table and select the Design tab.
-
-2.    Check the Table Style Options that describe the table. For example, check “header row” for a table with a header row.
-
-[]
-
-▪     Set the header row to repeat at the top of each page.
-
-1.    Place the cursor in the header row and select the Layout tab.
-
-2.    Select Repeat Header Rows.
-
-[]
-
-▪     Add alt text.
-
-1.    Right click the table. Select Table Properties.
-
-2.    Select Alt Text tab. Add alt text in the Description field.
-
+▪	Add alt text.
+1. Right click the table. Select Table Properties.
+2. Select Alt Text tab. Add alt text in the Description field.
 Document Navigation
-
 Use auto generated table of contents and page numbering tools.
-
 Never create a manual table of contents. Tag headings in a nested structure with the Styles tool and MS Word can automatically generate a table of contents with live links.
-
 How to insert a table of contents (TOC) in MS Word 2019
-
-1.  Place cursor where you want the TOC to appear.
-
-2.  Select References tab and select the Table of Contents tool.
-
-3.  Select Custom Table of Contents. A menu displays.
-
-4.  Choose a Tab Leader Style.
-
-5.  Choose a Show Levels option.
-
-6.  Select OK. The table of contents appears in your document.
-
-7.  Customize the appearance of the table of contents with the Styles tool. Modify style TOC1 to control Heading 1 in the table, TOC2 style to control Heading 2 in the table, and so on.
-
-[]
+1. Place cursor where you want the TOC to appear.
+2. Select References tab and select the Table of Contents tool.
+3. Select Custom Table of Contents. A menu displays.
+4. Choose a Tab Leader Style.
+5. Choose a Show Levels option.
+6. Select OK. The table of contents appears in your document.
+7. Customize the appearance of the table of contents with the Styles tool. Modify style TOC1 to control Heading 1 in the table, TOC2 style to control Heading 2 in the table, and so on.
 
 Tip: Do not forget to update the table of contents when making changes in a document. To update the table, select the References tab and select Update Table. Alternatively, place your cursor anywhere in the table, right click, and select Update Field.
 
-[]
-
 How to insert page numbers in MS Word 2019
-
 Microsoft Office products have a variety of automatic page numbering styles. In MS Word, select the Insert tab and use the tools in the Header & Footer group.
-
 Date Format
-
 The international standard for date format is yyyy-mm-dd.
-
 Date formatting varies around the world. Some formats may confuse readers and cause misunderstandings. The simplest way to write a date is to spell out the month portion of the date and use four digits for the year.
-
 By default, use the international date format of yyyy-mm-dd for consistency and ease of reference.
-
 April 2, 2018 is accessible.
-
 2 April 2018 is accessible.
-
 2018-04-02 is accessible and preferred when incorporating the date into a file name.
 
-Reading Level - “Plain Language”
-
-[]
+Reading Level - "Plain Language"
 
 Aim for a Grade 3 to 6 reading level.
-
 Use simple language to make a document easy to read the first time. All readers, especially people with cognitive, neurological and developmental disabilities will benefit from simple language.
-
 Tips
-
-▪     Write for your audience.
-
-▪     Use short sentences and paragraphs.
-
-▪     Use simple sentence structure and grammar.
-
-▪     Use simple everyday words instead of technical words.
-
-▪     Use full words instead of abbreviations.
-
-▪     Use a positive tone.
-
-  -- ----
-     
-     []
-  -- ----
-
-▪     Use an active voice.
-
+▪	Write for your audience.
+▪	Use short sentences and paragraphs.
+▪	Use simple sentence structure and grammar.
+▪	Use simple everyday words instead of technical words.
+▪	Use full words instead of abbreviations.
+▪	Use a positive tone.
+▪	Use an active voice.
 Example
-
-Original – We're a modern, nimble, and tech-focused institution. Our brand name raises awareness of our strong reputation and demonstrates our place amongst global post-secondary technology institutions.
-
-Plain Language – Ontario Tech is a university that is well recognized internationally for technology and teaching.
-
+Original - We're a modern, nimble, and tech-focused institution. Our brand name raises awareness of our strong reputation and demonstrates our place amongst global post-secondary technology institutions.
+Plain Language - Ontario Tech is a university that is well recognized internationally for technology and teaching.
 How to turn on Readability Statistics in MS Word 2019
+1. Select File tab to open the backstage view of the document.
+2. Open the Options section.
+3. Select the Proofing menu.
+4. Toggle on Show readability statistics and select OK.
+5. Run the Spelling & Grammar tool to check the Grade Level.
 
-1.    Select File tab to open the backstage view of the document.
-
-2.    Open the Options section.
-
-3.    Select the Proofing menu.
-
-4.    Toggle on Show readability statistics and select OK.
-
-5.    Run the Spelling & Grammar tool to check the Grade Level.
-
-[]
-
-Tip: Lower Secondary (or “middle”) School level of reading complies with WCAG AAA (SC 3.1.5). Therefore, writing in plain language that can be understood by individuals in Grade 6 (Canada) is best practice.
-
+Tip: Lower Secondary (or "middle") School level of reading complies with WCAG AAA (SC 3.1.5). Therefore, writing in plain language that can be understood by individuals in Grade 6 (Canada) is best practice.
 Lists
-
 Use auto generated bullets or numbering systems.
-
 A list created in MS Word with the Bullets, Numbering or Multilevel List tools will tag the list in the document structure and package it as a list of related items. A screen reader will know how many items are in the list and understand the start and end of the list. If you manually create a list, a screen reader will not understand how the items are related. A screen reader will interpret a manual list as a series of short separate paragraphs.
-
 MS Word 2019 list tools are located in the Paragraph group in the Home tab.
 
-[]
-
 Tips for creating lists in MS Word 2019
-
-▪     Use a numbered list if the information is sequential.
-
-▪     Use a bullet list for unordered items.
-
-▪     Right click a bullet list item to Separate List or Join To Previous List.
-
-▪     Right click a numbered list item to Restart Numbering, Continue Numbering or Set Numbering Value.
-
+▪	Use a numbered list if the information is sequential.
+▪	Use a bullet list for unordered items.
+▪	Right click a bullet list item to Separate List or Join To Previous List.
+▪	Right click a numbered list item to Restart Numbering, Continue Numbering or Set Numbering Value.
 Forms
-
 Make forms electronic.
-
 Some people are not able to print a form and complete it by hand with a pen. An electronic form allows a person with a disability to complete the information electronically with assistive technology such as a screen reader or speech recognition software.
-
 Electronic forms are not automatically accessible. They require enhanced coding when available in HTML and CSS format and require enhanced tagging when available in PDF format.
-
-Forms that require a hard copy signature should be set up with a ‘Print’ feature.
-
+Forms that require a hard copy signature should be set up with a 'Print' feature.
 Design Tips
-
-▪     Start with general information, instructions and contact.
-
-▪     Organize the fields in a logical manner.
-
-▪     Use short and basic questions.
-
-▪     Mark the required fields.
-
-▪     Use standard field formatting for phone numbers and dates.
-
-▪     Provide sufficient space for signatures.
-
+▪	Start with general information, instructions and contact.
+▪	Organize the fields in a logical manner.
+▪	Use short and basic questions.
+▪	Mark the required fields.
+▪	Use standard field formatting for phone numbers and dates.
+▪	Provide sufficient space for signatures.
 Function Tips
-
-▪           Allow users to turn off, adjust or extend forms with time limits. ▪ Make the form keyboard accessible.
-
-▪     Label all fields and include a tooltip (screen tip) for each field.
-
-▪     Test the tab order. Use the Tab key to jump from field to field.
-
-▪     Test radio buttons and check boxes.
-
-▪     Test all fields for font family, size and colour.
-
-▪     Test all fields for text alignment and wrapping.
-
-▪     Review and repair document tags as needed.
-
-▪     Run accessible document checker tools.
-
+▪	Allow users to turn off, adjust or extend forms with time limits. ▪	Make the form keyboard accessible.
+▪	Label all fields and include a tooltip (screen tip) for each field.
+▪	Test the tab order. Use the Tab key to jump from field to field.
+▪	Test radio buttons and check boxes.
+▪	Test all fields for font family, size and colour.
+▪	Test all fields for text alignment and wrapping.
+▪	Review and repair document tags as needed.
+▪	Run accessible document checker tools.
 Document Properties
-
 Set the document title, subject, author, keywords, and language.
-
 Document properties, also known as metadata, are details about a file that describe and identify it before opening the file. Search engines and screen readers use the document properties to find the title, subject, author, keywords and language of a document.
-
 Set document properties in MS Word 2019:
-
-1.    Select File tab to open the backstage view of the document.
-
-2.    Open the Info section.
-
-3.    Select the Properties drop-down menu.
-
-4.    Select the Advanced Properties command.
-
-5.    Select the Summary tab and enter text in the empty fields.
-
+1. Select File tab to open the backstage view of the document.
+2. Open the Info section.
+3. Select the Properties drop-down menu.
+4. Select the Advanced Properties command.
+5. Select the Summary tab and enter text in the empty fields.
 Metadata Tips
-
-Title – use the same text as the title in the document.
-
-Subject – use maximum 25 words to summarize the content.
-
-Author – use “Ontario Tech University” and department name.
-
-Keywords – words that describe document audience and purpose.
-
+Title - use the same text as the title in the document.
+Subject - use maximum 25 words to summarize the content.
+Author - use "Ontario Tech University" and department name.
+Keywords - words that describe document audience and purpose.
 Set document language to English in MS Word 2019:
-
 Set the language so a screen reader correctly enunciates content.
-
-1.    Follow steps 1 to 4 above.
-
-2.    Select the Custom tab.
-
-3.    Enter “English” in the Value field and select Add.
-
-[]
+1. Follow steps 1 to 4 above.
+2. Select the Custom tab.
+3. Enter "English" in the Value field and select Add.
 
 Tip: If you are using a language other than English ensure proofing language is the same as the document language. To set proofing language, select Review tab and Language.
 
-[]
-
 Accessibility Checker
-
 Use the accessibility checker tool to find and repair accessibility issues.
-
-The MS Word Check Accessibility tool inspects a document for accessibility issues. Choose an item listed in the “Inspection Results” panel and MS Word will navigate to that part of the document and highlight the issue. The checker explains why and how to fix the issue. Accessibility issues fall into three categories:
-
+The MS Word Check Accessibility tool inspects a document for accessibility issues. Choose an item listed in the "Inspection Results" panel and MS Word will navigate to that part of the document and highlight the issue. The checker explains why and how to fix the issue. Accessibility issues fall into three categories:
 Errors
-
 The most serious issues are errors. An error means content is unavailable for a person who uses assistive technology, especially if they rely on screen reading programs.
-
 Warnings
-
 These are less serious but still make it difficult for a person with a disability to read a document.
-
 Tips
-
 This will list issues that might cause problems. Fixing these will help optimize your documents readability for everyone.
-
 Check Accessibility in MS Word 2019:
-
-1.    Select File tab to open the backstage view of the document.
-
-2.    Open the Info section.
-
-3.    Select the Check for Issues drop down button in the Inspect Document area.
-
-4.    Select Check Accessibility command to launch the task pane.
-
+1. Select File tab to open the backstage view of the document.
+2. Open the Info section.
+3. Select the Check for Issues drop down button in the Inspect Document area.
+4. Select Check Accessibility command to launch the task pane.
 Common accessible document checker tools
-
-▪     MS Word 2019
-
-▪     PAC PDF 3.0 Checker
-
-▪     CommonLook PDF Validator
+▪	MS Word 2019
+▪	PAC PDF 3.0 Checker
+▪	CommonLook PDF Validator
 
 Tagged PDF
-
 Tag all content in a PDF document.
-
-Tagging is an important part of making an accessible PDF document for people who use screen readers. All content in a PDF requires a tag. Even elements of a page that are decorative or in the background require a tag called an “artifact”.
-
+Tagging is an important part of making an accessible PDF document for people who use screen readers. All content in a PDF requires a tag. Even elements of a page that are decorative or in the background require a tag called an "artifact".
 PDF tags require careful human inspection, testing and repair by a person who is trained and experienced in accessible PDFs. Tags set the order of how a screen reader navigates through information, so even small errors in the tag structure can make a document inaccessible.
-
 Sample PDF Tags and their role in the document
-
-  ---------- --------------------------
-  <H1>       tag used for a heading 1
-  <H2>       tag used for a heading 2
-  <P>        tag used for a paragraph
-  <Figure>   tag used for an image
-  <Link>     tag used for a link
-  ---------- --------------------------
-
-Save an MS Word 2019 document as a tagged PDF 1. Select the File tab and select Save As.
-
-2.    Choose where you want to save the file.
-
-3.    Change the Save as type drop-down to PDF.
-
-4.    Select the Options button to open the Options menu.
-
-5.    Select the Document structure tags for accessibility, the Document properties and the Create bookmarks using Headings check boxes.
-
-6.    Select OK and select Save.
-
-[]
+<H1>tag used for a heading 1<H2>tag used for a heading 2<P>tag used for a paragraph<Figure>tag used for an image<Link>tag used for a linkSave an MS Word 2019 document as a tagged PDF 1. Select the File tab and select Save As.
+2. Choose where you want to save the file.
+3. Change the Save as type drop-down to PDF.
+4. Select the Options button to open the Options menu.
+5. Select the Document structure tags for accessibility, the Document properties and the Create bookmarks using Headings check boxes.
+6. Select OK and select Save.
 
 Tip: If you have Adobe Acrobat installed on your computer, you may be able to go to File, Save as Adobe PDF directly.
 
-[]
-
 23
-
 Accessible formats or communication supports for this document are available upon request. Please contact aoda@ontariotechu.ca [URL: https://accessibility.ontariotechu.ca/index.php
-
 Acknowledgement
-
 The Accessibility Working Group at Ontario Tech University would like to thank the City of Peterborough for allowing us to reproduce content from their publication entitled Guide to Accessible Documents (2018).
-
 [URL:
-
 https://www.peterborough.ca/en/city-hall/resources/Documents/Guide-to-Accessible-Do cuments.pdf]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+2
+
+
+
+
+
+
+
+
+
+2
+
+2
+
+
+
+2
+
+
+
+
+
+2
+
+2
+
+
+
+2
+
+
+
+
+
+11
+
+11
+
+
+
+11
+
+
+
+
+
+11
+
+11
+
+
+
+11
+
+
+
+
+
+
+
+
+
+
+
+
+

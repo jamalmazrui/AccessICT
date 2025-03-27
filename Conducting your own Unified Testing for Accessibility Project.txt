@@ -1,0 +1,464 @@
+﻿ 
+Office of Accessible Systems & Technology 
+Conducting your own 
+Unified Testing for 
+Accessibility Project, December 2015 
+December 2015   Release 1.0 
+
+ 
+Document Revision History 
+1. Release 1.0 - Conducting your own Unified Testing for Accessibility Project, December 2015  
+ii 
+About DHS-OAST 
+The Office of Accessible Systems & Technology (OAST) provides strategic direction, governance, technical support, and training to ensure Department of Homeland Security (DHS) employees and customers with disabilities have equal access to information and data. 
+Office of Accessible Systems & Technology (OAST) 
+Department of Homeland Security 
+245 Murray Lane, SW 
+Washington, DC 20528 
+For electronic copies of this report, and for more information on how to contact OAST, see The Interagency Trusted Tester Program (ITTP) on page 25. 
+iii 
+
+
+
+Contents 
+Introduction and Overview	1 
+Introducing the Unified Testing for Accessibility Project	2 
+Overview of the UTAP Process and Stages	3 
+Preparation	3 
+Getting Help	5 
+Providing Feedback	5 
+Stage-by-Stage Guidance	7 
+Stage 1: Set your goals	8 
+Stage 2: Get familiar with your own agency	11 
+Stage 3: Familiarize yourself with available options	14 
+Stage 4: Design the system	15 
+Stage 5: Develop an implementation plan	17 
+Stage 6. Implement and monitor	19 
+Appendix A - UTAP Stage Checklist	20 
+The Interagency Trusted Tester Program (ITTP)	25 
+The UTAP Team	27 
+
+v 
+
+
+
+Introduction and Overview
+
+The UTAP Guide 
+Introducing the Unified Testing for Accessibility Project 
+The Unified Testing for Accessibility Project (UTAP) Pilot was conducted from the fall of 2013 to the summer of 2015. In the UTAP Pilot, Department of Homeland Security (DHS) staff from the Office of Accessible Systems & Technology (OAST) assisted four outside federal agencies in their adoption of the 'Trusted Tester' (TT) approach. 
+The TT approach is used in testing conformance with Section 508 software and website accessibility standards. The TT approach utilizes code-based inspection, facilitating an efficient testing-during-development methodology. Code-based inspection is easy to learn, and uses techniques that are familiar to most programmers. A comprehensive training course was developed for applying the TT process. After passing the exam at the end of the course, students are considered "Trusted Testers".  
+DHS began mandating that in order to pass various gate reviews in the systems development lifecycle (SDLC), products had to be examined by Trusted Testers (TTs). As a result, TTs were placed in DHS component Section 508 teams and also into product development teams. Placing TTs in development teams enabled OAST to ensure that the Section 508 accessibility requirements were being incorporated throughout development. 
+Over time, the benefits of the DHS Trusted Tester approach was being recognized by outside agencies as a concept worthy of further investigation and possibly adopting. OAST began fielding requests for training attendance and use of the DHS Test Process. Personnel from a few outside agencies received training, but it became clear that a strategy was needed to handle future requests. In response to outside agency requests, the OAST team began to examine how to insert TT into an organization that has its own current method of testing. Rather than simply provide TT training and a copy of the test process, OAST decided to approach the challenge of assisting outside agencies with implementing the DHS TT process in a pilot study entitled the Unified Testing for Accessibility Project (UTAP). We posited that a collaborative design exercise with other agencies, and those agencies' teams taking ownership of their own process around TT would increase the likelihood of long-term adoption of (and benefits of) the test process. 
+In the UTAP Pilot, OAST staff helped people in four disparate agencies adopt a common approach to testing. In doing so, we helped them address the wider organizational issues around Section 508 testing. Besides helping the staff of four federal agencies, the UTAP Pilot had an additional goal. This goal was for the DHS staff to learn about the types of issues and obstacles that would have to be addressed at different agencies as they adopt TT. Throughout the pilot project, staff gained insights into diverse organizational cultures and hopefully those lessons can be applied to the benefit of other federal agencies, and other organizations. This guide is the culmination of that activity, bringing together our current knowledge of how to best implement TT in an organization. As more federal agencies adopt TT and lessons are learned, this document will be updated accordingly. 
+2 
+Conducting your own UTAP: Introduction and Overview 
+Overview of the UTAP Process and Stages 
+Conducting your own Unified Testing for Accessibility Project ( UTAP) will likely entail a multimonth project involving many staff. UTAP is anchored around the implementation the Trusted Tester (TT) process for evaluating Web and software applications for Section 508 standards conformance. 
+The following guidance is a modified form of the approach used in the UTAP Pilot. Modifications have been made based on the results of the UTAP Pilot and what was learned in the case studies. 
+The UTAP process involves engagement with end-users during six sequential stages. 
+• Stage 1: Set your goals 
+• Stage 2: Get familiar with your own agency 
+• Stage 3: Familiarize yourself with available options 
+• Stage 4: Design the system 
+• Stage 5: Develop an implementation plan 
+• Stage 6. Implement, and monitor 
+Note: The accompanying UTAP Report contains more detailed explanation of the rationale for each of the stages. We recommend that you read the UTAP Report, this entire guide and the prerequisites (referenced below) before embarking on any project work. 
+Preparation 
+The goals of conducting a UTAP 
+This guide is intended to help you successfully implement Trusted Tester (TT) at your agency, by conducting your own Unified Testing for Accessibility Project (UTAP). 
+The ultimate goal of conducting your own UTAP is to improve the accessibility of IT systems at your agency, to benefit people with disabilities. 
+The main goal of conducting your own UTAP is to improve the way that IT systems are developed and tested for accessibility. 
+The ultimate goal of benefitting end users who have disabilities is achieved indirectly, by achieving the main goal of improving development and testing. 
+The UTAP Guide 
+Know your end users 
+The end-users of the results of the UTAP process are people involved in development and testing of IT: 
+• Primary end users: those involved in procuring, designing, developing, delivering, managing and maintaining IT systems; 
+• Secondary end users: those at your agency who are managing and directly involved with your Section 508 and other accessibility-related programs. 
+Read the prerequisites 
+Before commencing your own UTAP, you should read and become familiar with the following information located on the http://www.dhs.gov/accessibility website (see page 25): 
+• The Unified Testing for Accessibility Project (UTAP): Pilot Report 
+• TT training course and certification information1 
+• DHS Section 508 Compliance Test Process for Applications 
+Once you have completed the above reading, the following guide will make much more sense, and will be much easier to follow. 
+Assess your skills 
+For the team selected to conduct the UTAP process, if there are known skills gaps then the number of potential risks of failure will increase. The risks, in the most basic terms, are of wasting time, effort, and resources. A few examples of risks to a UTAP project that we can hypothesize include: Possible rejection of the TT process by teams who are entrenched in their current methods of Section 508 testing; Possible rejection of the concept that the development teams 'take on the extra work' of Section 508 testing; A radical modification by your team of the TT process-perhaps to fit in with existing agency processes-and consequently negating the ability to use any interagency test repository; and Potentially arriving at the implementation stage (#6) only to find out that your CIO then decides that they don't like the Trusted Tester idea, and quashes it (i.e., something was missing in UTAP Stage 1!). 
+We suggest reading through this entire guide with a skills inventory in mind. Do you and/or your team members possess the necessary skills to complete the tasks? The answers will depend greatly Conducting your own UTAP: Introduction and Overview 
+on your current organizational make up and culture. The following skills list is a suggested starting point, but is not intended to be prescriptive: 
+• Program/project management 
+• Organizational behavior 
+• Business process reengineering, and change management 
+• Sociotechnical aspects of disability and information technology 
+• Interviewing, and analysis of subjective data 
+• Systems analysis and design 
+• Iterative design methods 
+ 
+ 
+Getting Help 
+If you are having difficulty with conducting a project based on this guide, we recommend using the following sequential steps to get the appropriate level of help: 
+1. Make sure you have read the prerequisites (above); 
+2. Contact the ITTP (see page 25) 
+3. Consult peers who have completed their own UTAP; 
+Providing Feedback 
+We welcome feedback from teams who have followed the guide and conducted their own UTAP. We would like to hear about successes, challenges, and any changes that have improved the outcomes for your agency. 
+The authors also welcome feedback on the design and content of this guide and associated materials. 
+To provide feedback, please contact the ITTP (page 25).
+
+
+
+ 
+Stage-by-Stage Guidance
+Stage 1: Set your goals   
+"Some things can not be overcome with determination and a positive attitude" - 'Obstacles' Demotivator2  
+Suggested Stage 1 tasks 
+x	 Ask strategy questions: we recommend that you and your team answer some important strategy questions at the initial outset: 
+o What is the role and responsibilities of our Section 508 Coordinator / Section 508 Program Manager / Accessibility team lead? 
+o Do we have an organization-wide commitment to accessibility now? o	 What is our organizational culture with respect to accessibility? o	 Where should Section 508 testing at our agency be located? 
+o How should we test? 
+x	 Ask practical questions: In addition to the strategy questions, we recommend that you address the practical issues that may arise at the outset: 
+o Do we have the required skills to conduct this project in our team? o	 How should we manage this project? Use a PM? o	 How is Section 508 testing being funded at our agency and should it change? 
+o What should our timeline be for the entire project? How do we break that out for each stage? When should we finish the implementation plan (end of stage 5) and transition to the actual implementation (beginning of stage 6)? 
+x	 Conduct a program maturity assessment: The "Section 508 Organizational Maturity Assessment" forms have been developed to help document the state of an organization prior to, or after integrating Trusted Tester. It is important to assess the level of maturity in various program categories in order to identify gaps, and to set development targets across the organization. For the forms and related information, see the ITTP website (page 25). 
+  
+• Educate the stakeholders involved in this stage: What is UTAP? What is TT? What are the benefits of adopting a TT testing program? Address and answer stakeholder concerns and questions. (Include in this task your preliminary analysis / answers to the strategy and practical questions that were covered earlier.) 
+• Set the goals for your team: What do you want to have accomplished at the end of your UTAP and when? What will count as success for the project?3 
+• Set the goals for your primary end-users: What should each cohort want out of the adoption of TT?  
+o Senior IT management o Procurement personnel o Design and development teams o Project managers o IT Help Desk teams o etc. 
+• Avoid nominating particular staff to become TTs (at this stage): We would strongly urge that the decisions on who must take the TT training should be left until later. Deciding on the types of personnel that become TTs is best left until Stage 4 (design), and then deciding exactly who (named personnel) is left to stage 5 (implementation plan). Making early presumptive decisions could be antithetical to the organizational needs that are uncovered during the subsequent stages. (During the UTAP Pilot this was the most common question that we had to deflect in the early stages of the process.) 
+• Set the goals for your secondary end-users: What should those working on accessibility at your agency want or need out of TT? o Section 508 Coordinator(s) / Program Manager(s) o Section 508 team members o Section 504 (Reasonable Accommodations personnel) o Employment Equity Office personnel 
+ 	 
+o Disability affinity groups o etc. 
+• Set the goals for executives and management at your agency: What performance improvements are sought by bringing in TT? 
+• Decide on practical matters: o Set a budget o Allocate appropriate personnel resources to manage and conduct the project. 
+o Set the target timeframe for the UTAP stages. 
+• Disseminate the outcome of the goal-setting activities: Once the goals are set and the executive level backing has been secured, disseminate this information to the wider cohort of stakeholders who will be involved in the later UTAP stages. Remember that it is important to prioritize UTAP (and any wider goals around accessibility) and put it on the agenda. 
+Trusted Testers provide test results. The point of conducting your own UTAP is to address the 'now what?' questions that come when you have TT results in hand. Who does what with the results? The primary end-users are scattered throughout the agency, and will be impacted by the project. For these reasons, we suggest setting the goals with the wide range of stakeholders given above. 
+The UTAP design will work better as a collaborative exercise than a set of declarations. The goals stage can be used to lay the foundation for collaboration. 
+Potential challenges in Stage 1 
+If you don't already have a good handle on the benefits of TT and conducting a UTAP, as well as a good knowledge of the TT program, then presenting to groups of stakeholders and executives will be a challenge. 
+Even when you have a good grasp of these things, you should expect challenges to your suggestions throughout this stage. (After all, meetings are only useful if people raise questions and challenge assumptions, otherwise the topic is better covered in a memo.) 
+The biggest challenge you might expect when talking about the benefits of the TT approach is that if, like in many federal agencies, development teams have traditionally not been responsible for accessibility testing, then they will challenge you on why they should assume this 'new' responsibility. We advise referencing the Case Study chapters in the UTAP Report when tackling this challenge. There are examples in the report of agencies overcoming these types of organizational culture barrier, creating more efficient, more distributed testing systems. The development teams came to accept that these approaches were much more beneficial than their prior, more traditional approaches. 
+Trade-offs to consider in Stage 1 
+In effect, Stage 1 is all about considering trade-offs. In this stage you and your stakeholders will basically assess how to balance the risks of wasting time, expending needless effort, and allocation of resources. 
+There is one particular trade-off that we want to point out here. In dealing with the potential challenges cited above, you may start to wonder whether your UTAP activities should be restricted to only the secondary users, namely those already engaged in accessibility at your agency. In other words, you would drop what we consider to be the primary end-users (developers etc.) and instead engage with the disability friendlier people you may already know. Going back to Know your end users (page 4), we caution that taking this trade-off is going to be much less likely to positively impact end-users of IT who have disabilities. 
+ 
+ 
+Stage 2: Get familiar with your own agency 
+"... as we know, there are known knowns; there are things we know we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns - the ones we don't know we don't know." - Donald Rumsfeld4 
+Suggested Stage 2 tasks 
+Diagram the current system as you understand it: Before you talk to anyone in this stage, or gather any artifacts, it is a useful exercise to draw a diagram of how you think IT applications testing is conducted in your agency. The purpose of this exercise is to put to paper your view of the system, because this is what you need to challenge in the subsequent tasks. Later, you will ask yourself whether your view and your understanding were shared by other stakeholders. For now though, once this task is complete, set it aside. Note: Each person on the UTAP team should do this task individually and then compare notes at the end. Encouraging people to share their own gaps and world view can be a useful learning process, and can reveal inadvertent bias. 
+• Gather relevant artifacts (policies, procedures, etc.): This task happens purposefully after the previous task. Your mental model of how things are supposed to happen may be different to what is written in the policy you may have read, skimmed, or even wrote a few years ago. 
+Gathering all of the related artifacts and analyzing in relation to what was in your mental model can be enlightening. Is what is written the same as what you thought? The same as what you think actually happens? Again, set this information aside until later. 
+• Identify stakeholder groups: This applies to those who currently do testing, those who manage and oversee testing, and those who are impacted by testing (i.e., all cohorts of primary and secondary users in the 'soup-to-nuts' of the Systems Development Life Cycle (SDLC)). Some of this will have been defined in the previous task, and in Stage 1. 
+• Identify potential interviewees from the stakeholder groups: Depending on how big your organization is, you may have only one or two people in a given cohort, or a plethora of potential people to interview. The aim is to get a fairly representative spread of views from each cohort. Do not worry about getting a 'statistically representative sample' (this is not an academic study); but instead go initially for opportunistic and/or 'snowball' sampling methods. 
+• Interview stakeholders: Have one-on-one discussions with individual stakeholders to ascertain: o What do they think the testing process is? What are the inputs, testing tasks, and outputs of testing? 
+o What artifacts do they use? Do they use checklists, or follow formal processes? Do they rely on notes pinned to their wall? Particular websites? What policies, procedures, forms etc. do they know about? 
+o What do they think their challenges are? o What relevant training have they had? What are their skills and experience regarding testing and accessibility in general? How would a new team member be trained or mentored in how things are done here? o Who do they think is in charge of Section 508 at the agency? Who has the responsibility for testing? 
+o How do they think people at the agency approach disability issues in general? o Do they know other people who they think would be able to provide you with good feedback? 
+• Summarize your findings from interviewees: Write a summary report of what you found. Include such things as whether you found consistencies or inconsistencies, interesting observations, and your own interpretations of their feedback regarding organizational culture. 
+• Compare your findings from interviewees with the first tasks in this stage: Does everyone share your mental model? Does everyone know about and use the artifacts you gathered? What were the differences between what actually happens, and what you assumed to happen? Why do you hypothesize those differences exist? 
+Potential challenges in Stage 2 
+In the interview sub-bullets above, you will note that the questions are all about what the interviewee thinks; not about what they think about what you think. The interview is not meant to be a confirmation or 'blessing' of what you think you know. (If you ask interviewees questions that lead with what you know, they will have a tendency to agree with you.) The only way for you to challenge what you think you know is to act as if you do not know anything during the interview process. The same holds for artifacts. If the interviewee brings up an artifact during the discussion, ask them to find the artifact and show you what they mean. 
+You should avoid referring to what you are planning to do in the interviews. What you're planning to do should be waiting until you get to stage 4 (design). If you interview people at this stage and tell them all about how TT is going to change their work, and how this person will be a TT and that person will be a TT, then they are likely to assume that the interview you are conducting with them is a waste of their time, because you have already decided the design and therefore they are specifically not involved in shaping the design. 
+The final challenge in this process is confidentiality. Whenever you are interviewing people they are going to be wondering whether what they say is going to come back and haunt them. In the UTAP Pilot, we got around this by telling interviewees up front that we were not recording anything, that anything that they said was considered in confidence, that when we wrote reports we would not attribute quotes to individuals, and so on. The more confidentiality you can actually offer the more honest opinions you are likely to gather.5 
+Trade-offs to consider in Stage 2 
+Like it or not, you operate in a bigger system. Sometimes it really is a much bigger system. There are inevitable trade-offs in terms of the number of people you can interview and the time it takes to complete those interviews. During rounds of interviews there is likely to be a tapering off in terms of return on investment. Periodically undertaking a review of the quality and 'newness' of the data you are obtaining from interviewees could save considerable time and resources in this stage. 
+One temptation will be to group two or more interviewees together to save time. The trouble with this approach is that when you get more than one person as an interviewee, the one with the most to say and the one who has the strongest opinions is usually the same person, and they will tend to dominate the interaction. This means you don't get everyone's opinions represented. Note: If there really is a need to get more than one person together, using a focus group approach is a more appropriate method than the interview method. 
+ 	 
+Stage 3: Familiarize yourself with available options 
+"In many cases, personnel responsible for a company's accessibility efforts come from human factors, usability, or disability support groups. In general, these groups do not have a large amount of input in corporate decisions." - National Council on Disability6 
+Suggested Stage 3 tasks 
+• Re-review the UTAP Case Studies for options: In the case study documents are four examples of options that were chosen for various agencies. Now is a good time to re-visit those case studies. 
+• Discuss options: Now you can compare what you found in Stage 2 (familiarization), to what you were aiming for in Stage 1 (goals). Write down and discuss with key stakeholders what you think the main options are. 
+• Rank the practical options: After discarding impractical options, take the options that have practical merit and rank them in terms of likelihood of success. 
+Potential challenges in Stage 3 
+The main challenge during this stage is come up with options that are not constrained or otherwise rendered anemic by what happens now in your agency. As much as possible, try to make an objective assessment of the potential benefits of the available options, rather than making a subjective assessment of options based on affinity for past ways. 
+This can be easier said than done. Often there will be a 'stick-in-the-mud' stakeholder who definitely does not want to make changes to what he has become comfortable with. In these cases, we suggest challenging him/her to justify their position with respect to the primary and secondary end-users, as well as the main purpose of doing your own UTAP. 
+Trade-offs to consider in Stage 3 
+The trade-offs to consider with the available options are going to come down to your assessment of risks (wasting time, effort, resources) and the question of who should really be doing testing at your agency. 
+ 	 
+Because the potential impact is high for a number of stakeholder groups, the tasks in this stage are very important. Ultimately, this trade-off comparison comes down to the issue of just who does have input into the 'corporate decisions' affecting the accessibility of IT products. 
+Stage 4: Design the system 
+"Better products don't take longer to create, nor do they cost more to build. The irony is that they don't have to be difficult, but are so only because our process of making them is old-fashioned and needs fixing. Only longstanding traditions rooted in misconceptions keep us from having better products today." 
+ - Alan Cooper7 
+Suggested Stage 4 tasks 
+• Gather a design team: In the previous stages, various stakeholders may have volunteered, or it might become obvious to you, that they should be involved in the design process. A team needs to be gathered to collaborate on the design. (If no design team is gathered, then you are just making edicts, which are probably not likely to lead to long term success.) 
+ 
+Figure 1 - A macro-level view of the system 
+ 	 
+• Reiterate the findings of the previous stages for the design team: It is useful for everyone on the team to have a reminder of what the goals are, what the current system is, what options have been decided etc. 
+• Design the system: Any system can be broken down in basic terms to inputs, processes, and outputs. Figure 1 is a macro-level view of a system. In step 1, someone needs a test (the input). In step 2 the test happens (the processing). In step 3 something is done with the test results (the output)... o Inputs: How do the stakeholders know that they need to test? What will be their impetus? Where is it identified in the SDLC? Are tests required for in-house developed applications only? For verification of purchases involving VPATs? For shared services? 
+o Test process: In adopting the TT process, a lot of Step 2 of Figure 1 is already defined in terms of the mechanics of code inspection to come up with identified failures. What is not predefined though is who should do the actual tests (the options should have already been assessed in Stage 3), and what artifacts should they be using? The specific artifacts (forms, guides, databases etc.) may need to be developed, modified from existing artifacts, or adapted from existing ones made available by other agencies. o Outputs: If everything tested is perfect, there would be nothing to do but hand out gold stars. Such results are rare, however. There needs to be mechanisms in place for determining when and how remediation will take place in the SDLC. There needs to be consideration of when items are placed in the interagency results repository, and who will have write-access to it. Outputs become inputs (for example, remediation requirements go back to the developers as new tasks). Therefore, the cyclical nature of any feedback system should be taken account of in the design process. 
+• Revisit the program maturity assessment from Stage 1: What changes would you like to see in terms of program maturity?  
+• Try to break the system: Identifying how people could circumvent the system that you are proposing is an important part of systems analysis and design. You should be looking for holes, and ways to patch the holes. (The same sorts of interview questions you used in Stage 2 (familiarization) can be used to inform and guide this task.) 
+• Iterate: The likelihood is very low that you will have just one pass to come up with a design. In practice, iterations of the above tasks are needed to settle on a design proposal. 
+Potential challenges in Stage 4 
+In the UTAP Pilot, we found the design team at most of the agencies decided that their 'design' activity went beyond just testing, and encompassed a rethink of the way that the Section 508 program as a whole operated at their agency. Even if that is not the case with you, you should still consider the wider organizational context at your agency, and how your design could impact different stakeholders. 
+It may be tempting to address and include the need for monitoring of the system during this design stage. We suggest that the design of monitoring tasks be tackled once the actual design is in place. This should be done as part of Stage 5, Develop an implementation plan. 
+It may also be tempting to address and include the need for training of stakeholders during this design stage. We also suggest that the design of training tasks be tackled once the actual design is in place. Again, this should be done as part of the next stage. 
+Trade-offs to consider in Stage 4 
+When using an iterative design process, start by summarizing each prior iteration before starting the next iteration. This summarization should include trade-offs. What seems to be good? What seems to be problematic? What do you likely need to adjust in the design? In this part of the process we suggest that the main trade-off question to ask is what design choices seem to provide the best chance of long-term adoption by stakeholders, given their current situation? 
+Stage 5: Develop an implementation plan 
+"It is relatively easy to design for the perfect cases, when everything goes right, or when all the information required is available in proper format." - Donald Norman 
+Suggested Stage 5 tasks 
+• Assign roles: During the design stage you will have identified the roles of various stakeholders. In the implementation plan, you should assign names to those roles, e.g.: o Who will be the TTs? 
+o Who will be in charge of the testing program agency-wide? 
+o Who will be developing and providing training? 
+• SDLC changes: Document the needed SDLC changes, and plan for how and when the changes will take place. (The owners of the SDLC should have been stakeholders consulted in earlier stages.) 
+• Make final versions of artifacts: The databases, forms and other process documents that will be used by TTs, decision makers, and others will need to be finalized for implementation. 
+• Make a training plan: How will the various stakeholders learn what they need to do in order to implement a TT program? It is not just the testers who will need training.8 Are there existing courses available from the ITTP? What training materials will need to be developed specifically for your agency's design and implementation? Who will develop these and by what timeline? 
+• Make a monitoring plan: How will you track the number of tests and remediation activities? How will you oversee the quality of testing? Will there be spot-checks of TT results? What data will you need for OMB reporting? How will you gather that information? 
+• Revisit the program maturity assessment from Stage 1: How do changes in terms of program maturity impact your implementation plan?  
+• Decide on implementation phases: Should there be a pilot of your proposed design, Wholesale implementation? Or, some other combination of phases across several departments? 
+• Decide on implementation timeline: The timeline will be dependent on the prior task of setting implementation phases. Note: this is for stage 6 (implement and monitor) and is different than the earlier timeline that you set for completing the UTAP. 
+• Monitoring of the UTAP implementation: Even with the best design and the best implementation plan things will go awry. How will you know if the stakeholders identified in the plan are actually doing what was intended in the design? There should be an element of the implementation plan that is monitoring and assessing the success of the implementation. 
+Potential challenges in Stage 5 
+The hope is that with stakeholder involvement, a practical design was developed. If developing the implementation plan becomes challenging, then revisiting the earlier stages (1 through 4) may be necessary. For example, objections from one cohort on the implementation timeline ("But... we're too busy!") may be resolved by reviewing the goals in stage 1 ("We understand you are busy, but investing the time to train on this now could save you months of re-work at the end of your development project"). 
+Trade-offs to consider in Stage 5 
+This is another stage where the main activities are balancing trade-offs. However, the main one to consider in this stage is the timeframe for implementation. On the one hand it needs to be practical, but on the other hand it should not be so drawn out that the majority of the stakeholders lose interest. For example, a plan is made to do a pilot implementation with one agency subdepartment, and this is planned to take a year. You have just expended a lot of energy getting the stakeholder enthusiasm high during the design stage... and now the vast majority of subdepartments will have to wait for a year before they ever see the benefits of TT. That can translate into a let-down to the rest of the team. 
+Stage 6. Implement and monitor 
+"Get to work. You aren't being paid to believe in the power of your dreams." - 'Get to work' Demotivator2 (p.8) 
+This stage we included for completeness. In the UTAP Report, there was no 'Stage 6' in any of the Case Studies. This was because the OAST team conducting the UTAP Pilot worked with the agencies only up until the end of Stage 5. There was no formal arrangement to go beyond that. Each participating agency must do their equivalent of 'Stage 6', full implementation, in order for this process to be considered a success. For anyone conducting their own UTAP, Stage 6 is essential. 
+Appendix A - UTAP Stage Checklist was included to summarize the inputs, activities, and outputs of the UTAP Stages.  Some of the information in the checklist is based on lessons learned from the UTAP Pilot Participants while working through the various stages. The UTAP Guide is a living document and will be updated as more agencies adopt Trusted Tester. 
+OAST is very interested to hear from agencies planning to conduct their own UTAP activities.  Please send us feedback on your progress. 
+Now is the time to get started. 
+Appendix A - UTAP Stage Checklist  
+Appendix A - UTAP Stage Checklist summarizes the inputs, activities, and outputs of the UTAP Stages.  The UTAP Guide is a living document and the Checklist will be updated as more agencies continue to adopt Trusted Tester. 
+Stage 1: Set your goals   
+Stage 1: Entry Criteria (Inputs): 
+1. Read the UTAP Summary and Case Study documentation. 
+2. Review/Update Memorandum of Agreement (MOA) content 
+3. Assign a UTAP Project Manager. 
+4. Select UTAP Project team members. 
+     Stage 1: Activities  
+1. Document answers to strategy and practical questions (see page 8 of UTAP Guide). 
+2. Identify end-user stakeholders (Primary/Secondary end-users). 
+3. Complete Section 508 Program Maturity Assessment. 
+4. Develop end-user stakeholder UTAP goal matrix (Note: This will include UTAP Project team goals). 
+5. Conduct briefing to leadership on benefits and goals of UTAP and TT to obtain buy-in. 
+6. Develop UTAP budget and schedule. 
+Stage 1: Exit Criteria and Deliverables (Outputs): 
+1. Section 508 Program Maturity Assessment. 
+2. UTAP Stakeholder Goal Matrix.  
+3. UTAP Strategic Plan or Charter document. 
+4. Signed UTAP Memorandum of Agreement (MOA) with DHS, if applicable. 
+Stage 2: Get familiar with your own agency 
+Stage 2: Entry Criteria (Inputs): 
+1. Completed activities and deliverables from previous Stage. 
+     Stage 2: Activities  
+1. Diagram current system within your organization from each UTAP team member's perspective.  
+2. Collect relevant artifacts (i.e. policies, procedures, etc.) 
+3. Create interview questions. 
+4. Validate stakeholder list from Stage 1 (add/remove groups). 
+5. Select list of "interviewees" from stakeholders groups.  
+6. Conduct stakeholder interviews. 
+7. Update UTAP Stakeholder Goal Matrix.  
+Stage 2: Exit Criteria and Deliverables (Outputs): 
+1. Stakeholder interview summary report. 
+2. Documented gaps between member diagram and interview summary report. 
+3. Updated UTAP Stakeholder Goal Matrix. 
+ 
+Stage 3: Familiarize yourself with available options 
+Stage 3: Entry Criteria (Inputs): 
+2. Completed activities and deliverables from previous Stages. 
+     Stage 3: Activities  
+1. Attend the OAST orientation to become familiar with DHS process.  
+a. DHS OAST organization chart. 
+b. DHS OAST Section 508 program. 
+c. The OAST Section 508 Management System  
+2. Collaborate with other agencies that have adopted the Trusted Tester and become familiar with their process. 
+3. Review the Section 508 Organizational Maturity Assessment conducted in Stage 1 and for each category identify goals. 
+4. Develop a prioritized list of options that include benefits, trade-offs, assumptions, constraints and risks.  
+Stage 3: Exit Criteria and Deliverables (Outputs): 
+1. List of options that include benefits, trade-offs, assumptions, constraints and risks to be considered during the Design stage.  
+2. Updated UTAP Stakeholder Goal Matrix. 
+ 
+ 
+ 
+ 
+ 
+ 
+Stage 4: Design the System 
+Stage 4: Entry Criteria (Inputs): 
+1. Completed activities and deliverables from previous Stages. 
+2. Identify Design Team members. (Note: Design Team members may be different stakeholders that the 
+UTAP Project Team.) 
+     Stage 4: Activities  
+1. Conduct briefing with Design Team on the UTAP Stakeholder Goal Matrix, As-Is System, and Available Options for Target (To-Be) System. 
+2. Identify the roles of stakeholders in the Target (To-Be) System. 
+3. Design the Target (To-Be) System with documented inputs, processes, and outputs. 
+Stage 4: Exit Criteria and Deliverables (Outputs): 
+1. Design Plan for the Target (To-Be) System. 
+ 
+
+Stage 5: Develop an implementation plan 
+Stage 5: Entry Criteria (Inputs): 
+1. Completed activities and deliverables from previous Stages. 
+     Stage 5: Activities  
+1. Assign stakeholders roles identified during Design stage. 
+2. Document the needed Software Development Lifecycle (SDLC)changes. 
+3. Finalize required artifacts. 
+4. Develop a Training Plan. 
+5. Develop a Monitoring Plan. 
+6. Develop an Implementation Plan. 
+Stage 5: Exit Criteria and Deliverables (Outputs): 
+1. Implementation Plan that contains the method and schedule. 
+2. New artifacts that will be used in the Target (To-Be) System. 
+3. Training Plan 
+4. Monitoring Plan 
+
+ 
+The Interagency Trusted Tester Program (ITTP) 
+For more information on the Interagency Trusted Tester Program, contact: 
+Department of Homeland Security, Office of Accessible Systems & 
+Technology (DHS-OAST) 202-447-0440 accessibility@hq.dhs.gov www.dhs.gov/accessibility 
+Cynthia Clinton-Brown 
+ITTP Manager, DHS-OAST 202-447-0322 
+cynthia.clinton-brown@hq.dhs.gov 
+
+
+
+ 
+ The UTAP Team 
+William Peterson & Allen Hoffman: Mr. Peterson is Executive Director, and Mr. Hoffman is the Deputy Executive Director of the DHS Office of Accessible Systems & Technology (OAST). OAST is the group responsible for improving the accessibility of DHS's electronic and information technologies. Mr. Peterson oversaw the planning and execution of the UTAP Pilot. Mr. Hoffman managed the Pilot. 
+Norman Robinson: Mr. Robinson was the Section 508 Coordinator for DHS Headquarters, and in January 2015 he moved to the US Department of State to become their Section 508 Coordinator. Mr. Robinson managed the UTAP Pilot prior to his departure from 
+OAST. Together with Dr. Law, he planned and executed the UTAP 
+Pilot. 
+Chris M. Law, Ph.D.: Dr. Law is a Senior Analyst at OAST, working for New Editions Consulting, Inc. Dr. Law's background includes work in the fields of Universal Design (UD) of IT, analysis of standards and guidelines for accessibility and UD, and organizational behavior with respect to accessibility. 
+1 Trusted Testers also have access to the TT Community of Practice, an online resource for raising and answering testing related questions. 
+4 
+2 despair.com 
+3 For an example of success factors, see Law (2010). Responding to accessibility issues in business. researchbank.rmit.edu.au/view/rmit:6156 
+4 Department of Defense News Briefing, February 12, 2002 http://www.defense.gov/transcripts/transcript.aspx?transcriptid=2636 
+5 Some organizations have strict controls on what you can and cannot ask in a survey or other data collection exercise. In the academic world, institutions are required to have a 'Human Subjects Committee' that approves any such study. Some federal agencies have an equivalent. It is up to you to find out whether your UTAP activities are subject to any kind of formal review committee at your agency. 
+6 Design for Inclusion: Creating a New Marketplace, National Council on Disability (NCD, 2004, p.181). 
+7 The inmates are running the asylum: why high tech products drive us crazy and how to restore the sanity, Alan Cooper (1999, p.xvi). 
+8 For examples of training plans, see the UTAP Case Study reports. 
+---------------
+
+------------------------------------------------------------
+
+---------------
+
+------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The UTAP Guide 
+
+Conducting your own UTAP: Stage-by-Stage Guidance 
+
+8 
+
+1 
+
+
+
+1 
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 
+
+1 
+
+
+
+1 
+

@@ -1,0 +1,187 @@
+﻿Creating Accessible Tables Guide 
+Contents 
+Creating Accessible Tables Guide	1 
+Use Word's built-in functionality to create Tables	1 
+Keep your table simple	1 
+Step 1: Create a Table	2 
+Step 2: Select Table Header Row	2 
+Step 3: Repeat Header Rows	3 
+Step 4: Table - Insert Caption	4 
+How do screen readers read tables?	5 
+Example 1: Grading scale with table format	5 
+Example 2: Grading scale without table format	6 
+Five Table Examples	6 
+Table Colors	9 
+
+ 
+Use Word's built-in functionality to create Tables 
+• Create tables by inserting them. Avoid creating tables by drawing boxes and lines or by using tabs and spaces. Screen readers have difficulty understanding tables with odd cell sizes. 
+• Simple Data Tables only.  
+• Tables have a logical reading order from left to right, top to bottom. 
+• Tables are labeled with alternative text. 
+• Provide Title (i.e. Caption) and Summary before the Table. 
+• Use Table Tools editor to identify the different types of rows and columns such as Header Row and First Column. 
+ 
+Keep your table simple 
+• Simple tables are easier to interpret for all students and screen readers. 
+• Use tables to organize data not format information. Never use table for layout. 
+• Avoid merging cells, split cells, no blank cells, as well as tables nested within a cell.  
+• The complex a table (merging cells, nesting multiple headings under one, adding blank lines, etc.) the worse it will be for accessibility.  
+• Sample of Simple Tables vs. Complex Tables by Penn State. 
+ 	 
+ 
+Step 1: Create a Table 
+A. Go to Insert and go to the "table" dropdown.  
+B. Select insert a table 
+
+Step 2: Select Table Header Row 
+A table header row contains column headings that provide context and aid navigation of the table. People who can't see the table can have column headings read aloud. 
+ 
+ 
+Header 1 Header 2 Header 3 Data 1 Data 2 Data 3 Data 4 Data 5 Data 6  
+ 
+
+Example of Header Row and First Column 
+
+Step 3: Repeat Header Rows 
+Proper table headers help readers understand how tables are organized into columns and rows. Avoid solely using text and cell formatting, such as making the text big or bold to mimic the visual appearance of a table header, as this provides no underlying information about the structure of the table.  
+ 
+
+ 
+When inserting a table at the bottom of a page in Word, the table break across two pages show two repeating header rows as example 
+ 
+
+Step 4: Table - Insert Caption 
+Adding a caption or summary of your table is universal and accessible for everyone. 
+ 
+• Select the table, then right-click to select Insert Caption or  
+• Go to References tab, then select Insert Caption 
+• In the popup window, type the title of the table in the Caption textbox 
+• In the Label textbox, select Table 
+• Position textbox, select Above selected item then select OK  
+ 
+
+How do screen readers read tables? 
+Tables have a logical reading order starting from left to right, top to bottom. With Header Rows is enabled in Table Properties, screen readers will announce when the tables are present.  
+ 
+Example 1: Grading scale with table format 
+ 
+Grade Points Percentage A plus 960 to 1000 96 to 100% A 930 to 959 93 to 95% A minus 900 to 929 90 to 92% B plus 860 to 899 86 to 89% B 830 to 859 83 to 85% B minus 800 to 829 80 to 82%  
+Note: Screen readers do not know what the - symbol represents (minus, hyphen, en dash or em dash) so screen readers will not read it. It is always a good practice to spell the word and spell out any abbreviations or make a reference to your abbreviation when used for the first time.  
+ 
+Screen readers announce a table with a number of rows and columns. Screen readers repeat 
+
+header rows associate with data cells.  
+ 
+table  with 7 rows and 3 columns row 1  Grade  column 1 Grade 
+Points  column 2 
+Points 
+Percentage  column 3 Percentage row 2  Grade  column 1 A plus 
+Points  column 2 
+960 to 1000 
+Percentage  column 3 96 to 100% row 3  Grade  column 1 A 
+Points  column 2 
+930 to 959 
+Percentage  column 3 93 to 95% row 4  Grade  column 1 A minus 
+Points  column 2 
+ 
+900 to 929 
+Percentage  column 3 90 to 92% row 5  Grade  column 1 B plus 
+Points  column 2 
+860 to 899 
+Percentage  column 3 86 to 89% row 6  Grade  column 1 B 
+Points  column 2 
+830 to 859 
+Percentage  column 3 83 to 85% row 7  Grade  column 1 B minus 
+Points  column 2 
+800 to 829 
+Percentage  column 3 80 to 82% out of table 
+
+ 
+Example 2: Grading scale without table format 
+A+ = 100 	B+ = 89 	C+ = 79 
+A = 95 	B = 85 	C = 75 
+A- = 90 	B- = 80 	C- = 70 
+ 
+Screen readers read line by line like this: 
+A+ = 100, B+ = 89, C+ = 79 
+A = 95, B = 85, C = 75 
+A = 90, B = 80, C = 70 (Screen readers do not know whether - symbol is minus, hyphen, dash, en 
+dash or em dash so it will not read it.) 
+ 
+Recommend this format A plus = 100 	A = 95 A minus = 90 B plus 89 	B = 85 B minus = 80 C plus 79 	C = 75 C minus = 70  
+Now screen readers read line by line in an appropriate format that makes sense to sighted and non-sighted students. 
+ 
+A plus = 100, A = 95, A minus = 90 
+B plus = 89, B = 85, B minus = 80 
+C plus = 79, C = 75, C minus = 70 
+ 
+Five Table Examples 
+Use tables to organize data not format information. Never use table for layout. Avoid merging cells, split cells, nested within a cell, and blank cells. Simple tables are easier to interpret for all students and screen readers.  
+ 
+An example of a simple table with header row and data. 
+Header 1 Header 2 Header 3 Data 1 Data 2 Data 3 Data 4 Data 5 Data 6  
+ 	 
+ 
+Example 1: Avoid use table for layout like this format without header row 
+Course Information Course: Accessibility 101 Course Number: 12345 Class Days: Tues and Thursday Class Times: 9:00 to 11:45am Semester: Future 3000 Class Location: Library 100  
+Best Practices: use tabs position or columns format 
+Course Information 
+Course: Accessibility 101 	Course Number: 12345 
+Class Days: Tues and Thursday 	Class Times: 9:00 to 11:45am 
+Semester: Future 3000 	Class Location: Library 100 
+ 
+Example 2: Avoid merged cells table heading "Grading Scale" into the table 
+Grading Scale Grade Points Percentage A + 960 - 1000 96 - 100% A 930 - 959 93 - 95% A - 900 - 929 90 - 92%  
+Best Practices: Move the heading Grading Scale out of table instead of merging cells. 
+Grading Scale 
+Grade Points Percentage A plus 960 to 1000 96 to 100% A 930 to 959 93 to 95% A minus 900 to 929 90 to 92% Note: Screen readers do not know what the - symbol represents (minus, hyphen, en dash or em dash) so screen readers will not read it. It is always a good practice to spell the word and spell out any abbreviations or make a reference to your abbreviation when used for the first time.  
+ 
+Example 3: Avoid merged cells like this format 
+Reading Assignments Week Topics & Activities Due Date 1 Reading 1 7/22/2021 2 Reading 2 7/23/2021 Writing Projects 4 Writing 1 8/1/2021 5 Writing 2 9/1/2021  
+Best Practices: Separate two tables with header rows 
+ 
+Reading Assignments 
+Week Topics & Activities Due date 1 Reading 1 7/22/2021 2 Reading 2 7/23/2021  
+Writing Projects 
+Week Topics & Activities Due date 4 Writing 1 8/1/2021 5 Writing 2 9/1/2021  
+ 
+Example 4: Screen readers may have difficulty in correctly reading the following merged cells. 
+ 
+Reading Assignments 
+Week Topics & Activities Due date 1 Reading 1 7/22/2021 Reading 2 2 Reading 3 8/2/2021  
+Un-merged the cells and duplicating information in cells can be read more clearly.  
+ 
+Reading Assignments 
+Week Topics & Activities Due date 1 Reading 1 7/22/2021 1 Reading 2 7/22/2021 2 Reading 3 8/2/2021  
+ 
+Example 5: Incorrect table with merged cells 
+ 
+Date Student 1 Student 2 August 2, 2021 Result 1 Result 2 Result 1 Result 2 September 2, 2021     October 2, 2021      
+ 	 
+Correct table without merged cells 
+ 
+Student 1 
+Date Result 1 Result 2 August 2, 2021   September 2, 2021   October 2, 2021    
+Student 2 
+Date Result 1 Result 2 August 2, 2021   September 2, 2021   October 2, 2021    
+Table Colors 
+Avoid using color as the only means to convey information. For example, in the table below, the complete and incomplete items may appear the same to someone who is color blind: 
+ 
+20/20 vision: 
+Project Due Date Completed Project 1 March 15, 2020 X Project 2 April 15, 2020 X Project 3 May 15, 2020 X  
+Color blind: 
+Project Due Date Completed Project 1 March 15, 2020 X Project 2 April 15, 2020 X Project 3 May 15, 2020 X  
+Best practices: A better option would be to provide another way of conveying information not just color alone and screen readers: 
+ 
+Project Due Date Completed Project 1 March 15, 2020 N or No Project 2 April 15, 2020 Y or Yes Project 3 May 15, 2020 Y or Yes  
+ 
+1 
+ 
+
+1 
+ 
+
+1 
+ 
+

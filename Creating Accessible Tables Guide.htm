@@ -1,0 +1,2535 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Creating Accessible Tables Guide</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.1pt;
+	margin-left:.6pt;
+	text-align:center;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.6pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	background:#FFF2CC;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.3pt;
+	text-align:center;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.6pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	page-break-after:avoid;
+	background:black;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:4.35pt;
+	margin-left:1.25pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:4.35pt;
+	margin-left:13.25pt;
+	text-indent:-.5pt;
+	line-height:104%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:.75pt;
+	margin-bottom:3.8pt;
+	margin-left:24.5pt;
+	text-align:right;
+	text-indent:-.5pt;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri",sans-serif;
+	color:white;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:38.15pt 72.4pt 66.9pt 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:38.8pt 72.7pt 75.15pt 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1><a name="_Toc22047">Creating Accessible Tables Guide </a></h1>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:16.0pt;
+line-height:107%;color:#2E74B5'>Contents </span></p>
+
+<p class=MsoToc1><a href="#_Toc22047"><span style='color:black;text-decoration:
+none'>Creating Accessible Tables Guide.................................................................................................... </span><span style='color:black;text-decoration:none'>1 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22048"><span style='color:black;text-decoration:
+none'>Use Word’s built-in functionality to create Tables...................................................................... </span><span style='color:black;text-decoration:none'>1 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22049"><span style='color:black;text-decoration:
+none'>Keep your table simple................................................................................................................ </span><span style='color:black;text-decoration:none'>1 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22050"><span style='color:black;text-decoration:
+none'>Step 1: Create a Table.................................................................................................................. </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22051"><span style='color:black;text-decoration:
+none'>Step 2: Select Table Header Row................................................................................................. </span><span style='color:black;text-decoration:none'>2 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22052"><span style='color:black;text-decoration:
+none'>Step 3: Repeat Header Rows....................................................................................................... </span><span style='color:black;text-decoration:none'>3 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22053"><span style='color:black;text-decoration:
+none'>Step 4: Table – Insert Caption..................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22054"><span style='color:black;text-decoration:
+none'>How do screen readers read tables?........................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc3><a href="#_Toc22055"><span style='color:black;text-decoration:
+none'>Example 1: Grading scale with table format........................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc3><a href="#_Toc22056"><span style='color:black;text-decoration:
+none'>Example 2: Grading scale without table format...................................................................... </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22057"><span style='color:black;text-decoration:
+none'>Five Table Examples.................................................................................................................... </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc22058"><span style='color:black;text-decoration:
+none'>Table Colors................................................................................................................................. </span><span style='color:black;text-decoration:none'>9 </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:10.7pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:1.9pt;margin-left:
+-.25pt'><a name="_Toc22048">Use Word’s built-in functionality to create Tables </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.85pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Create
+tables by inserting them. <b>Avoid creating tables by drawing boxes</b> and
+lines or by using tabs and spaces. Screen readers have difficulty understanding
+tables with odd cell sizes. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Simple
+Data Tables only.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tables
+have a logical reading order from left to right, top to bottom. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tables
+are labeled with alternative text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Provide
+Title (i.e. Caption) and Summary before the Table. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Use
+Table Tools editor to identify the different types of rows and columns such as <b>Header
+Row and First Column. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.75pt;
+margin-left:.5in'> </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:1.9pt;margin-left:
+-.25pt'><a name="_Toc22049">Keep your table simple </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Simple
+tables are easier to interpret for all students and screen readers. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Use
+tables to organize data not format information. Never use table for layout. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.25pt;text-indent:-.25in'><span style='line-height:107%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Avoid merging cells, split cells, no blank cells, as well as
+tables nested within a cell.  </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.85pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:103%'><span
+style='line-height:103%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The
+complex a table (merging cells, nesting multiple headings under one, adding
+blank lines, etc.) the worse it will be for accessibility.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.25pt;text-indent:-.25in'><span style='line-height:107%;
+font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Sample of <a href="http://accessibility.psu.edu/tables/"><span
+style='color:#0563C1'>Simple Tables vs. Complex Tables</span></a><a
+href="http://accessibility.psu.edu/tables/"><span style='color:black;
+text-decoration:none'> </span></a>by Penn State. </p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'>            </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.75pt;
+margin-left:.5in'> </p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc22050">Step 1: Create a Table </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.55pt;
+margin-left:35.65pt;text-indent:-.25in'><span style='line-height:107%'>A.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Go
+to <b>Insert</b> and go to the “table” dropdown.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.65pt;text-indent:-.25in'><span style='line-height:107%'>B.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Select
+<b>insert a table</b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:21.8pt;
+margin-left:163.1pt'><img border=0 width=243 height=179
+src="Creating%20Accessible%20Tables%20Guide_files/image001.gif"></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc22051">Step 2: Select Table Header
+Row </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>A table header row contains column headings that
+provide context and aid navigation of the table. People who can’t see the table
+can have column headings read aloud. </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:3.15pt;text-align:center'><img border=0
+width=192 height=120 id="Picture 326"
+src="Creating%20Accessible%20Tables%20Guide_files/image002.jpg"><span
+style='font-size:12.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.55pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 1 </span></b></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 2 </span></b></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 3 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 1 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 2 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 3 </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 4 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 5 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 6 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+line-height:107%'> </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+line-height:107%'> </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><img border=0 width=585
+height=290 src="Creating%20Accessible%20Tables%20Guide_files/image003.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;text-indent:-.5pt'><b><span style='font-size:12.0pt;
+line-height:107%'>Example of Header Row and First Column </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:43.65pt;
+margin-left:8.6pt'><img border=0 width=607 height=133
+src="Creating%20Accessible%20Tables%20Guide_files/image004.gif"></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc22052">Step 3: Repeat Header Rows </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>Proper <b>table headers </b>help readers understand
+how tables are organized into columns and rows. Avoid solely using text and
+cell formatting, such as making the text big or bold to mimic the visual
+appearance of a table header, as this provides no underlying information about
+the structure of the table.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;
+margin-left:.25in'><img border=0 width=396 height=183
+src="Creating%20Accessible%20Tables%20Guide_files/image005.gif"></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>When inserting a table at the bottom of a page in
+Word, the table break across two pages show <b>two repeating header rows as
+example</b> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:97.1pt'><img border=0 width=371 height=296
+src="Creating%20Accessible%20Tables%20Guide_files/image006.gif"></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc22053">Step 4: Table – Insert
+Caption </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>Adding a caption or summary of your table is universal
+and accessible for everyone. </span></p>
+
+<p class=MsoNormal style='margin-bottom:.65pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:.5in;text-indent:-.25in;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:104%'>Select the table, then right-click to
+select<b> Insert Caption</b> or  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%'>Go to <b>References</b>
+tab, then select <b>Insert Caption</b> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:.5in;text-indent:-.25in;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:104%'>In the popup window, type the title
+of the table in the <b>Caption</b> textbox </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:.5in;text-indent:-.25in;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:104%'>In the <b>Label </b>textbox, select <b>Table</b>
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;line-height:107%'>Position</span></b><span
+style='font-size:12.0pt;line-height:107%'> textbox, select <b>Above selected
+item</b> then select <b>OK </b> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:33.35pt'><img border=0 width=541 height=487
+src="Creating%20Accessible%20Tables%20Guide_files/image007.gif"></p>
+
+<h2 style='margin-left:-.25pt'><a name="_Toc22054">How do screen readers read
+tables? </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>Tables have a logical reading order starting from left
+to right, top to bottom. With Header Rows is enabled in Table Properties,
+screen readers will announce when the tables are present.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:2.8pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h3 align=left style='margin-left:-.25pt;text-align:left'><a name="_Toc22055"><span
+style='color:#0070C0'>Example 1: Grading scale with table format </span></a></h3>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=469
+ style='width:351.9pt;margin-left:58.1pt;border-collapse:collapse'>
+ <tr style='height:17.2pt'>
+  <td width=157 valign=top style='width:117.85pt;border:solid black 1.0pt;
+  border-bottom:solid white 1.5pt;padding:3.2pt 5.75pt 0in .7pt;height:17.2pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.1pt'><b><span style='font-size:12.0pt;line-height:107%'>Grade </span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:17.2pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Points </span></b></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:17.2pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.1pt'><b><span style='font-size:12.0pt;line-height:107%'>Percentage
+  </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.35pt'>
+  <td width=157 valign=top style='width:117.85pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>A plus </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>960 to 1000
+  </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>96 to 100%
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.5pt'>
+  <td width=157 valign=top style='width:117.85pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>A </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>930 to 959 </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>93 to 95% </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.35pt'>
+  <td width=157 valign=top style='width:117.85pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>A minus </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>900 to 929 </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>90 to 92% </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.35pt'>
+  <td width=157 valign=top style='width:117.85pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>B plus </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>860 to 899 </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>86 to 89% </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.5pt'>
+  <td width=157 valign=top style='width:117.85pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>B </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>830 to 859 </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>83 to 85% </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=157 valign=top style='width:117.85pt;border:solid black 1.0pt;
+  border-top:none;padding:3.2pt 5.75pt 0in .7pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>B minus </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.7pt'><span style='font-size:12.0pt;line-height:107%'>800 to 829 </span></p>
+  </td>
+  <td width=114 valign=top style='width:85.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in .7pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%'>80 to 82% </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:2.25pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.25pt;text-indent:-.5pt;line-height:102%'><span style='font-size:
+12.0pt;line-height:102%;color:#C00000'>Note: Screen readers do not know what
+the </span><b><span style='font-size:14.0pt;line-height:102%'>–</span></b><span
+style='font-size:12.0pt;line-height:102%'> </span><span style='font-size:12.0pt;
+line-height:102%;color:#C00000'>symbol represents (minus, hyphen, en dash or em
+dash) so screen readers will not read it. It is always a good practice to spell
+the word and spell out any abbreviations or make a reference to your
+abbreviation when used for the first time.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>Screen readers announce a table with a number of rows
+and columns. Screen readers repeat </span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%'>header rows associate with data cells.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.6pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>table  with 7
+rows and 3 columns row 1  Grade  column 1 Grade </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 Percentage row 2  Grade  column 1 A plus </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>960 to 1000 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 96 to 100% row 3  Grade  column 1 A </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>930 to 959 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 93 to 95% row 4  Grade  column 1 A minus </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+2.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+line-height:107%'> </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>900 to 929 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:111.7pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 90 to 92% row 5  Grade  column 1 B plus </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>860 to 899 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:111.7pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 86 to 89% row 6  Grade  column 1 B </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>830 to 859 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:111.7pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 83 to 85% row 7  Grade  column 1 B minus </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Points  column
+2 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:85.1pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>800 to 829 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:119.05pt;margin-bottom:
+.25pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.5pt;line-height:103%'><span style='color:#0070C0'>Percentage 
+column 3 80 to 82% out of table </span></p>
+
+</div>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:black'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+line-height:107%;color:#C45911'> </span></b></p>
+
+<h3 align=left style='margin-left:-.25pt;text-align:left'><a name="_Toc22056"><span
+style='color:#0070C0'>Example 2: Grading scale without table format </span></a></h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.75pt;line-height:104%'><span style='font-size:12.0pt;line-height:
+104%'>A+ = 100                                  B+ = 89                        C+
+= 79 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.75pt;line-height:104%'><span style='font-size:12.0pt;line-height:
+104%'>A = 95                                      B = 85                          C
+= 75 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.75pt;line-height:104%'><span style='font-size:12.0pt;line-height:
+104%'>A- = 90                                     B- = 80                         C-
+= 70 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>Screen readers read line by line like
+this: </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>A+ = 100, B+ = 89, C+ = 79 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.05pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>A = 95, B = 85, C = 75 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>A = 90, B = 80, C = 70 (Screen readers
+do not know whether</span><b><span style='font-size:16.0pt;line-height:104%;
+color:#C00000'> -</span></b><span style='font-size:12.0pt;line-height:104%;
+color:#0070C0'> symbol is minus, hyphen, dash, en </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=424
+ style='width:317.65pt;border-collapse:collapse'>
+ <tr style='height:45.2pt'>
+  <td width=336 valign=top style='width:252.05pt;padding:0in 0in 0in 0in;
+  height:45.2pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#0070C0'>dash or em dash so it will not read it.) </span></p>
+  <p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Recommend this format </span></b></p>
+  </td>
+  <td width=87 valign=top style='width:65.6pt;padding:0in 0in 0in 0in;
+  height:45.2pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:14.7pt'>
+  <td width=336 valign=top style='width:252.05pt;padding:0in 0in 0in 0in;
+  height:14.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>A plus = 100                            A = 95 </span></p>
+  </td>
+  <td width=87 valign=top style='width:65.6pt;padding:0in 0in 0in 0in;
+  height:14.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><span style='font-size:12.0pt;line-height:107%'>A minus = 90
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.65pt'>
+  <td width=336 valign=top style='width:252.05pt;padding:0in 0in 0in 0in;
+  height:14.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>B plus 89                                 B = 85 </span></p>
+  </td>
+  <td width=87 valign=top style='width:65.6pt;padding:0in 0in 0in 0in;
+  height:14.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><span style='font-size:12.0pt;line-height:107%'>B minus = 80
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:13.45pt'>
+  <td width=336 valign=top style='width:252.05pt;padding:0in 0in 0in 0in;
+  height:13.45pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>C plus 79                                  C = 75 </span></p>
+  </td>
+  <td width=87 valign=top style='width:65.6pt;padding:0in 0in 0in 0in;
+  height:13.45pt'>
+  <p class=MsoNormal style='margin-bottom:0in;text-align:justify;text-justify:
+  inter-ideograph'><span style='font-size:12.0pt;line-height:107%'>C minus = 70
+  </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>Now screen readers read line by line in
+an appropriate format that makes sense to sighted and non-sighted students. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%;color:#0070C0'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:9.7pt;text-indent:-9.7pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>A<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%;color:#0070C0'>plus
+= 100, A = 95, A minus = 90 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:9.7pt;text-indent:-9.7pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>B<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%;color:#0070C0'>plus
+= 89, B = 85, B minus = 80 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:9.7pt;text-indent:-9.7pt;line-height:104%'><span style='font-size:
+12.0pt;line-height:104%;color:#0070C0'>C<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:104%;color:#0070C0'>plus
+= 79, C = 75, C minus = 70</span><span style='font-size:12.0pt;line-height:
+104%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:26.7pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h2 align=center style='margin-top:0in;margin-right:0in;margin-bottom:2.6pt;
+margin-left:.55pt;text-align:center;text-indent:0in'><a name="_Toc22057">Five
+Table Examples </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%'>Use tables to organize data not format information.
+Never use table for layout. <b>Avoid merging cells, split cells, nested within
+a cell, and blank cells. </b>Simple tables are easier to interpret for all
+students and screen readers.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%'>An example of a simple table with header row and data.
+</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.65pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 1 </span></b></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 2 </span></b></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%;color:#0070C0'>Header 3 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.5pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 1 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 2 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 3 </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=208 valign=top style='width:155.9pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 4 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 5 </span></p>
+  </td>
+  <td width=208 valign=top style='width:155.9pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+  line-height:107%'>Data 6 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%'>             </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%;background:black'><span
+style='font-size:14.0pt;line-height:103%;color:white'>Example 1: Avoid use
+table for layout like this format without header row </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.55pt'>
+  <td width=312 valign=top style='width:233.8pt;border:solid black 1.0pt;
+  border-right:none;padding:2.6pt 1.95pt 0in 0in;height:17.55pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;text-align:right'><b><span
+  style='font-size:14.0pt;line-height:107%'>Course In</span></b></p>
+  </td>
+  <td width=312 valign=top style='width:233.8pt;border:solid black 1.0pt;
+  border-left:none;padding:2.6pt 1.95pt 0in 0in;height:17.55pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:-1.95pt'><b><span style='font-size:14.0pt;line-height:107%'>formation
+  </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=312 valign=top style='width:233.8pt;border:solid black 1.0pt;
+  border-top:none;padding:2.6pt 1.95pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Course:
+  </span></b><span style='font-size:12.0pt;line-height:107%'>Accessibility 101</span><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></p>
+  </td>
+  <td width=312 valign=top style='width:233.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.6pt 1.95pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Course
+  Number: </span></b><span style='font-size:12.0pt;line-height:107%'>12345</span><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=312 valign=top style='width:233.8pt;border:solid black 1.0pt;
+  border-top:none;padding:2.6pt 1.95pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Class
+  Days: </span></b><span style='font-size:12.0pt;line-height:107%'>Tues and
+  Thursday</span><span style='font-size:14.0pt;line-height:107%;color:#C00000'>
+  </span></p>
+  </td>
+  <td width=312 valign=top style='width:233.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.6pt 1.95pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Class
+  Times:</span></b><span style='font-size:12.0pt;line-height:107%'> 9:00 to
+  11:45am</span><span style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=312 valign=top style='width:233.8pt;border:solid black 1.0pt;
+  border-top:none;padding:2.6pt 1.95pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Semester:
+  </span></b><span style='font-size:12.0pt;line-height:107%'>Future 3000</span><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></p>
+  </td>
+  <td width=312 valign=top style='width:233.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.6pt 1.95pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Class
+  Location: </span></b><span style='font-size:12.0pt;line-height:107%'>Library
+  100</span><span style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Best Practices: use tabs position or
+columns format </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%'>Course Information </span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.75pt'><b><span style='font-size:12.0pt;line-height:107%'>Course: </span></b><span
+style='font-size:12.0pt;line-height:107%'>Accessibility 101                                                        <b>Course
+Number: </b>12345 </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:-.75pt;line-height:104%'><b><span style='font-size:12.0pt;
+line-height:104%'>Class Days: </span></b><span style='font-size:12.0pt;
+line-height:104%'>Tues and Thursday                                               <b>Class
+Times:</b> 9:00 to 11:45am<b> </b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-.75pt'><b><span style='font-size:12.0pt;line-height:107%'>Semester:
+</span></b><span style='font-size:12.0pt;line-height:107%'>Future 3000<b>                                                           Class
+Location: </b>Library 100 </span></p>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h4 style='margin-left:-.25pt'>Example 2: Avoid merged cells table heading “Grading
+Scale” into the table </h4>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.5pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-right:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Grading Scale</span></b><b><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></b></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border:solid black 1.0pt;
+  border-left:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Grade </span></b></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Points </span></b></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Percentage </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A + </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>960 - 1000 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>96 - 100% </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>930 - 959 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>93 - 95% </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A - </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>900 - 929 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:15.0pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>90 - 92% </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Best Practices: Move the heading Grading
+Scale out of table instead of merging cells. </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%'>Grading Scale </span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.65pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Grade </span></b></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border:solid black 1.0pt;
+  border-left:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Points </span></b></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border:solid black 1.0pt;
+  border-left:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Percentage </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A plus </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>960 to 1000 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>96 to 100% </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>930 to 959 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>93 to 95% </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.7pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>A minus </span></p>
+  </td>
+  <td width=207 valign=top style='width:154.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>900 to 929 </span></p>
+  </td>
+  <td width=211 valign=top style='width:157.95pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>90 to 92% </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.55pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:102%'><span style='font-size:
+12.0pt;line-height:102%;color:#C00000'>Note: Screen readers do not know what
+the </span><b><span style='font-size:14.0pt;line-height:102%'>–</span></b><span
+style='font-size:12.0pt;line-height:102%;color:#C00000'> symbol represents
+(minus, hyphen, en dash or em dash) so screen readers will not read it. It is
+always a good practice to spell the word and spell out any abbreviations or
+make a reference to your abbreviation when used for the first time.  </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<h4 style='margin-left:-.25pt'>Example 3: Avoid merged cells like this format </h4>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:17.55pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-right:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:3.1pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Reading Assignments</span></b><b><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></b></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border:solid black 1.0pt;
+  border-left:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.55pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.45pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Week </span></b></p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Topics &amp; Activities </span></b></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:14.0pt;
+  line-height:107%'>Due Date </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#2D3B45'>1 </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Reading 1 </span></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>7/22/2021 </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#2D3B45'>2 </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Reading 2 </span></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>7/23/2021 </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=206 valign=top style='width:154.25pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border:none;border-bottom:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:3.1pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Writing Projects</span></b><b><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'> </span></b></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:17.65pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#2D3B45'>4 </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Writing 1 </span></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>8/1/2021 </span></p>
+  </td>
+ </tr>
+ <tr style='height:14.9pt'>
+  <td width=206 valign=top style='width:154.25pt;border:solid black 1.0pt;
+  border-top:none;padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><span style='font-size:
+  12.0pt;line-height:107%;color:#2D3B45'>5 </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Writing 2 </span></p>
+  </td>
+  <td width=209 valign=top style='width:157.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.45pt 5.75pt 0in 5.4pt;height:14.9pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>9/1/2021 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Best Practices: Separate two tables with
+header rows </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#7030A0'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.15pt;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%'>Reading Assignments </span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=654
+ style='width:490.65pt;margin-left:.35pt;border-collapse:collapse'>
+ <tr style='height:16.85pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-bottom:solid white 1.5pt;padding:2.9pt 5.75pt 0in .7pt;height:16.85pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.05pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>Week </span></b></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:16.85pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Topics &amp; Activities </span></b></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:16.85pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.1pt'><b><span style='font-size:12.0pt;line-height:107%;
+  color:#2D3B45'>Due date </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.25pt'>
+  <td width=132 valign=top style='width:98.65pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:18.25pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.05pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>1 </span></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:18.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%;color:#2D3B45'>Reading
+  1 </span></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:18.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%;color:#2D3B45'>7/22/2021
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.45pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-top:none;padding:2.9pt 5.75pt 0in .7pt;height:17.45pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.05pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>2 </span></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:17.45pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%;color:#2D3B45'>Reading
+  2 </span></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.9pt 5.75pt 0in .7pt;height:17.45pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.85pt'><span style='font-size:12.0pt;line-height:107%;color:#2D3B45'>7/23/2021
+  </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:14.0pt;line-height:107%'>Writing Projects </span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=654
+ style='width:490.65pt;margin-left:.35pt;border-collapse:collapse'>
+ <tr style='height:18.1pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-bottom:solid white 1.5pt;padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:4.2pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>Week </span></b></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Topics &amp; Activities </span></b></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Due date </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.1pt'>
+  <td width=132 valign=top style='width:98.65pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:4.2pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>4 </span></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Writing 1 </span></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:18.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>8/1/2021 </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.55pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-top:none;padding:3.35pt 5.75pt 0in 1.55pt;height:17.55pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:4.2pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%;color:#2D3B45'>5 </span></p>
+  </td>
+  <td width=305 valign=top style='width:228.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:17.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>Writing 2 </span></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.35pt 5.75pt 0in 1.55pt;height:17.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%;color:#2D3B45'>9/1/2021 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%;background:black'><span
+style='font-size:14.0pt;line-height:103%;color:white'>Example 4: Screen readers
+may have difficulty in correctly reading the following merged cells.</span><span
+style='font-size:12.0pt;line-height:103%;color:white'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:.3pt;margin-left:3.45pt;text-align:center'><b><span
+style='font-size:12.0pt;line-height:107%;color:#2F5496'> </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:12.0pt;line-height:107%;color:#2F5496'>Reading Assignments</span></b><b><span
+style='font-size:14.0pt;line-height:107%;color:#2F5496'> </span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=654
+ style='width:490.45pt;margin-left:.45pt;border-collapse:collapse'>
+ <tr style='height:17.2pt'>
+  <td width=131 valign=top style='width:98.45pt;border:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:17.2pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Week </span></b></p>
+  </td>
+  <td width=91 valign=top style='width:68.5pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:3.1pt 5.75pt 0in 0in;height:17.2pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=213 valign=top style='width:160.05pt;border:solid black 1.0pt;
+  border-left:none;padding:3.1pt 5.75pt 0in 0in;height:17.2pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Topics &amp; Activities </span></b></p>
+  </td>
+  <td width=218 valign=top style='width:163.4pt;border:solid black 1.0pt;
+  border-left:none;padding:3.1pt 5.75pt 0in 0in;height:17.2pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.8pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Due date </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.35pt'>
+  <td width=131 rowspan=2 style='width:98.45pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  background:#E2EFD9;padding:3.1pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%'>1 </span></p>
+  </td>
+  <td width=91 valign=top style='width:68.5pt;border:none;border-bottom:solid white 1.5pt;
+  padding:3.1pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.65pt'><span style='font-size:12.0pt;line-height:107%'>Reading 1
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.05pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=218 rowspan=2 style='width:163.4pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  background:#E2EFD9;padding:3.1pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.45pt'><span style='font-size:12.0pt;line-height:107%'>7/22/2021
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=91 valign=top style='width:68.5pt;border:none;border-bottom:double white 4.5pt;
+  padding:3.1pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.65pt'><span style='font-size:12.0pt;line-height:107%'>Reading 2
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.05pt;border-top:none;border-left:
+  none;border-bottom:double white 4.5pt;border-right:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='height:18.5pt'>
+  <td width=131 valign=top style='width:98.45pt;border:solid black 1.0pt;
+  border-top:none;padding:3.1pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%'>2 </span></p>
+  </td>
+  <td width=91 valign=top style='width:68.5pt;border:none;border-bottom:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.65pt'><span style='font-size:12.0pt;line-height:107%'>Reading 3
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=218 valign=top style='width:163.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.1pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.45pt'><span style='font-size:12.0pt;line-height:107%'>8/2/2021 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Un-merged the cells and duplicating
+information in cells can be read more clearly. </span><span style='font-size:
+12.0pt;line-height:103%;color:#7030A0'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:.3pt;margin-left:3.45pt;text-align:center'><b><span
+style='font-size:12.0pt;line-height:107%;color:#2F5496'> </span></b></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+margin-bottom:0in;margin-left:1.3pt;text-align:center;text-indent:-.5pt'><b><span
+style='font-size:12.0pt;line-height:107%;color:#2F5496'>Reading Assignments</span></b><b><span
+style='font-size:14.0pt;line-height:107%;color:#2F5496'> </span></b></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=654
+ style='width:490.65pt;margin-left:.35pt;border-collapse:collapse'>
+ <tr style='height:17.15pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:17.15pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Week </span></b></p>
+  </td>
+  <td width=91 valign=top style='width:68.45pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:3.2pt 5.75pt 0in 0in;height:17.15pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=213 valign=top style='width:160.0pt;border:solid black 1.0pt;
+  border-left:none;padding:3.2pt 5.75pt 0in 0in;height:17.15pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Topics &amp; Activities </span></b></p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border:solid black 1.0pt;
+  border-left:none;padding:3.2pt 5.75pt 0in 0in;height:17.15pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.8pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Due date </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.5pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-top:none;padding:3.2pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%'>1 </span></p>
+  </td>
+  <td width=91 valign=top style='width:68.45pt;border:none;border-bottom:solid white 1.5pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>Reading 1
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.5pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>7/22/2021
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:18.35pt'>
+  <td width=132 valign=top style='width:98.65pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid white 1.5pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%'>1 </span></p>
+  </td>
+  <td width=91 valign=top style='width:68.45pt;border:none;border-bottom:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>Reading 2
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:18.35pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>7/22/2021
+  </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=132 valign=top style='width:98.65pt;border:solid black 1.0pt;
+  border-top:none;padding:3.2pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:5.85pt;text-align:center'><span
+  style='font-size:12.0pt;line-height:107%'>2 </span></p>
+  </td>
+  <td width=91 valign=top style='width:68.45pt;border:none;border-bottom:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>Reading 3
+  </span></p>
+  </td>
+  <td width=213 valign=top style='width:160.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=218 valign=top style='width:163.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.2pt 5.75pt 0in 0in;height:17.7pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.55pt'><span style='font-size:12.0pt;line-height:107%'>8/2/2021 </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h4 style='margin-left:-.25pt'>Example 5: Incorrect table with merged cells<span
+style='color:#C00000'> </span></h4>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=623
+ style='width:467.6pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:15.25pt'>
+  <td width=144 valign=top style='width:107.75pt;border:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><b><span style='font-size:12.0pt;line-height:107%'>Date </span></b></p>
+  </td>
+  <td width=106 valign=top style='width:79.25pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0in;text-align:right'><b><span
+  style='font-size:12.0pt;line-height:107%'>Stu</span></b></p>
+  </td>
+  <td width=125 valign=top style='width:1.3in;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:-.6pt'><b><span style='font-size:12.0pt;line-height:107%'>dent 1 </span></b></p>
+  </td>
+  <td width=92 valign=top style='width:69.35pt;border-top:solid black 1.0pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:none;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=157 colspan=2 valign=top style='width:117.65pt;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Student 2 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=144 valign=top style='width:107.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>August 2,
+  2021 </span></p>
+  </td>
+  <td width=106 valign=top style='width:79.25pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>Result 1 </span></p>
+  </td>
+  <td width=125 valign=top style='width:1.3in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>Result 2 </span></p>
+  </td>
+  <td width=92 valign=top style='width:69.35pt;border:none;border-bottom:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>Result 1 </span></p>
+  </td>
+  <td width=32 valign=top style='width:24.1pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.1pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>Result 2 </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=144 valign=top style='width:107.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>September
+  2, 2021 </span></p>
+  </td>
+  <td width=106 valign=top style='width:79.25pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=125 valign=top style='width:1.3in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=92 valign=top style='width:69.35pt;border:none;border-bottom:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=32 valign=top style='width:24.1pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.1pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.1pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=144 valign=top style='width:107.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'>October 2,
+  2021 </span></p>
+  </td>
+  <td width=106 valign=top style='width:79.25pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=125 valign=top style='width:1.3in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=92 valign=top style='width:69.35pt;border:none;border-bottom:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+  <td width=32 valign=top style='width:24.1pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.65pt .65pt 0in 0in;
+  height:15.25pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt .65pt 0in 0in;height:15.25pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:5.4pt'><span style='font-size:12.0pt;line-height:107%'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#7030A0'>             </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Correct table without merged cells</span><span
+style='font-size:14.0pt;line-height:103%;color:#C00000'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.05pt;text-align:center;text-indent:-.5pt'><span
+style='font-size:14.0pt;line-height:107%'>Student 1 </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=510
+ style='width:382.35pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Date </span></b></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.3pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Result 1 </span></b></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Result 2 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>August 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>September 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>October 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#C00000'> </span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.05pt;text-align:center;text-indent:-.5pt'><span
+style='font-size:14.0pt;line-height:107%'>Student 2 </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=510
+ style='width:382.35pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><b><span style='font-size:12.0pt;
+  line-height:107%'>Date </span></b></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.3pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Result 1 </span></b></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border:solid black 1.0pt;
+  border-left:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.2pt;text-align:center'><b><span
+  style='font-size:12.0pt;line-height:107%'>Result 2 </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.25pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>August 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>September 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:15.1pt'>
+  <td width=156 valign=top style='width:116.75pt;border:solid black 1.0pt;
+  border-top:none;padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'>October 2, 2021 </span></p>
+  </td>
+  <td width=168 valign=top style='width:126.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+  <td width=186 valign=top style='width:139.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.65pt 5.75pt 0in 5.4pt;height:15.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+  line-height:107%'> </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:10.7pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:2.6pt;margin-left:
+-.25pt'><a name="_Toc22058">Table Colors </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%'>Avoid using color as the only means to convey
+information. For example, in the table below, the complete and incomplete items
+may appear the same to someone who is color blind: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%'>20/20 vision: </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=540
+ style='width:404.85pt;margin-left:31.55pt;border-collapse:collapse'>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.3pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Project </span></b></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Due Date </span></b></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Completed </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 1 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>March 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'>X</span></b><b><span
+  style='font-size:14.0pt;line-height:107%'> </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 2 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>April 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%;color:#0070C0'>X </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 3 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.2pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>May 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%;color:#0070C0'>X </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%'>Color blind: </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=540
+ style='width:404.85pt;margin-left:31.55pt;border-collapse:collapse'>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.3pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Project </span></b></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Due Date </span></b></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Completed </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 1 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>March 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>X </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 2 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>April 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>X </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 3 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>May 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>X </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:.75pt'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.6pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+14.0pt;line-height:103%;color:#7030A0'>Best practices: A better option would be
+to provide another way of conveying information not just color alone and screen
+readers: </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:14.0pt;
+line-height:107%;color:#7030A0'> </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=540
+ style='width:404.85pt;margin-left:31.55pt;border-collapse:collapse'>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.3pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Project </span></b></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Due Date </span></b></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border:solid black 1.0pt;
+  border-left:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.05pt;text-align:center'><b><span
+  style='font-size:14.0pt;line-height:107%'>Completed </span></b></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 1 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.1pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>March 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%;color:#C00000'>N or No</span><span
+  style='font-size:14.0pt;line-height:107%'> </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.5pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 2 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>April 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.5pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%;color:#0070C0'>Y or Yes </span></p>
+  </td>
+ </tr>
+ <tr style='height:17.65pt'>
+  <td width=144 valign=top style='width:107.8pt;border:solid black 1.0pt;
+  border-top:none;padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:.25pt;text-align:center'><span
+  style='font-size:14.0pt;line-height:107%'>Project 3 </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%'>May 15, 2020 </span></p>
+  </td>
+  <td width=180 valign=top style='width:135.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:3.05pt 5.75pt 0in 5.75pt;height:17.65pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.05pt;
+  margin-bottom:0in;margin-left:0in;text-align:center'><span style='font-size:
+  14.0pt;line-height:107%;color:#0070C0'>Y or Yes </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in'><span style='font-size:12.0pt;
+line-height:107%'> </span></p>
+
+</div>
+
+</body>
+
+</html>
