@@ -1,0 +1,408 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:7.25pt;
+	margin-bottom:5.55pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.4pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.05in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:73.3pt 56.3pt 53.8pt 56.8pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1 style='margin-left:-.25pt'>Helsingin saavutettavuusmalli Helsinki Model for
+Accessible Service Design </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:64.7pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.35pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:18.0pt;
+line-height:107%'>Link Box Pattern: Notes on technical implementation </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:458.55pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:16.0pt;
+line-height:107%'>           </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:7.25pt;
+margin-bottom:4.95pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'>Tero Pesonen </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:362.65pt;text-indent:53.25pt;line-height:141%'>Siteimprove Version:
+6th April 2023 </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:7.9pt;margin-left:
+-.25pt'>Link Box Pattern </h1>
+
+<h2 style='margin-left:-.25pt'>Examples </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'>Examples can be found on the
+demo page:<a href="http://siteimprove-accessibility.net/Demo/Page/"><span
+style='color:black;text-decoration:none'> </span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>http://siteimprove</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>-</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>accessibility.net/Demo/Page/</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:26.85pt;
+margin-left:-.1pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%'><img border=0 width=602 height=235 id="Group 4080"
+src="Linkbox%20Pattern_files/image001.gif"></span></p>
+
+<h2 style='margin-left:-.25pt'>Motivation for the pattern </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>The linkbox is not a specific element, but a design pattern
+that is commonly found on modern web sites. UX designers often find it useful
+to enclose a link with supporting content that is not part of the link text per
+se. These content types can be a heading, text blurb, image, and even tags
+describing the type of content linked (e.g. topics of a news piece, blog post,
+editorial, etc.). Ordinarily, these affiliate content pieces pose no trouble:
+They are simply laid out as a card or box together with the link text.
+Moreover, one of these supporting elements can serve a double duty as the link
+as well (e.g. the heading). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>From accessibility point of view, challenges usually only
+emerge when the design calls for a card or box that is clickable on its entire
+area. That is, the user can place a pointer over any part of the card and click
+to activate the link. The same should happen with a keyboard. There is, hence,
+no specific linked heading or image or text within the box, but all of its area
+is interactive, and all of the area activates the same link. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>A common implementation of this UX pattern is to enclose
+the entire box in an anchor (link) tag, as that logically renders the box
+interactive, and the box will behave as described above. Unfortunately, the
+solution is not always very good for assistive technology users. It can work on
+very small cards that have but a text blurb, or a heading and a couple of
+sentences, but even then it limits the design to such use cases only. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>One would, rather, prefer a more generic pattern that
+adapts to any type and amount of content within the box. Individual
+implementations (small card, large content-rich boxes, etc.) can then be derived
+from this overall “superclass” of a linkbox. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>This document demonstration such a pattern that is also
+easy to implement. </p>
+
+<h2 style='margin-left:-.25pt'>Accessibility challenges </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>When the entire box is wrapped within an anchor tag
+(&lt;a&gt;), the content of the box effectively becomes the accessible name of
+that anchor. This means that a screenreader can flatten the content into a
+single string of text that is presented (and often read out loud as a single
+atomic piece) to the user when they focus the link.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>Depending on the SR, the user may or may not be able to
+parse this content. They may also lose access to the semantical information of
+each content type. This means that such roles as image, heading, paragraph,
+“tag group”, etc., disappear. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:12.7pt;
+margin-left:-.25pt'>Clearly, for a link card that has more than one or two
+pieces of content, this is undesirable. We would like the user to receive all
+the same semantical and structural information as is available visually. </p>
+
+<h2 style='margin-left:-.25pt'>Pattern solutions </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>The most straightforward technique to solve the above
+problem is to dispense with the wrapper  link altogether. Instead, one places
+the anchor element inside the box as its last child. The trick is to place the
+link with absolute positioning at the top left corner of the card and spread it
+out to cover all of the box area. (This could be achieved with a pseudo element
+as well.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>Now, a SR user can parse the box content as normal web page
+elements, and the user will then see the link as the box’s last element. The
+link’s name can be given with an aria-label or it may reuse a visual piece of
+text (a heading, call-to-action button, etc.) from the box. See the examples
+below. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>It is now also straightforward to give keyboard-only users
+a desired focus indicator as well (is the entire card outlined, for instance,
+or a particular element within?). Since there Is but one link in the entire
+box, there is no need to remove any content with tabindexing from the tab
+order. What is more, the box can now accommodate any number and type of content
+and yet retain the same degree of technical accessibility. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:12.7pt;
+margin-left:-.25pt'>As a final note, it may be beneficial to define the box as
+a named region, or even give it a named role. For larger boxes, in particular,
+this may help non-visual users understand that they have entered – and exited –
+a link card that behaves unlike a standard page content segment. This does not,
+of course, replace a good heading structure, which is required regardless, but
+rather complements it. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:5.45pt;margin-left:
+-.25pt'>Pattern implementation </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:0in;
+margin-left:72.05pt;text-indent:-54.05pt;line-height:127%'>1.<span
+style='font-family:"Arial",sans-serif'> </span>Place all the link card/box
+content inside a wrapper (such as a &lt;div&gt; or &lt;section&gt;) Optional:
+Give the box a name like so: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.8pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;div role=”region” aria-label=”Link card”
+…&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.25pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;section aria-label=”Link card” ..&gt;</span>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:.45pt;
+margin-left:72.55pt'>You can even use aria-labelledby to add the heading
+(requires an id attribute) to the box’s name: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.8pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;section id=”linkbox1” aria-label=”Link box”
+aria-labelledby=” linkbox1-heading linkbox1” ..&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:.55pt;
+margin-left:72.55pt'>Alternatively, aria-roledescription can be used to name
+the role of the container. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:72.55pt'>That is, it is not a <i>region</i> named “link box …”, but
+a link box <i>element</i> with some </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:.45pt;
+margin-left:72.55pt'>name. Generally, one should avoid using this attribute, as
+it introduces nonstandard roles which the user is unaccustomed to hearing. But
+in this case, we aim to describe the box by such a “new” role anyway, so
+aria-roledescription can be used, although the above methods are more standard
+and are therefore also acceptable. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.8pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;div id=”linkbox1” role=”region”
+aria-roledescription=”Link box” aria-labelledby=”linkbox1-heading” ..&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:7.1pt;
+margin-left:72.55pt'>Small cards could use a <span style='font-size:10.0pt;
+line-height:103%;font-family:"Courier New"'>group</span> role instead so that
+they are not made landmarks. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:7.35pt;
+margin-left:36.05pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Give each child element inside the box its normal tag or role
+definitions.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:2.45pt;
+margin-left:72.05pt;text-indent:-.25in'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Tags can be placed inside a group or list to distinguish them from the
+other text content: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.6pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;div role=”group” aria-label=”Tags”&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.45pt;
+margin-left:71.8pt;line-height:104%'><span style='font-size:10.0pt;line-height:
+104%;font-family:"Courier New"'>&lt;ul aria-label=”Tags”&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:36.05pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>For image(s)</b>, an empty ALT (alt=”” or just alt) is common. It
+marks the image as invisible to assistive technology since the link (box)
+purpose is usually clear even without it. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:36.05pt;text-indent:-18.05pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Make sure that the <b>DOM order</b> corresponds to a logical <b>reading
+order</b> for non-visual users. If necessary, use CSS if there is need to
+present the content visually in an order that deviates from the tag’s natural
+reading order. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:36.05pt;text-indent:-18.05pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Place the <b>anchor </b>tag as the last child element of the box. Then: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:6.9pt;
+margin-left:72.05pt;text-indent:-.25in'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>give the box wrapper <span style='font-size:10.0pt;line-height:103%;
+font-family:"Courier New"'>position: relative</span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:72.05pt;text-indent:-.25in'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>give the anchor <span style='font-size:10.0pt;line-height:103%;
+font-family:"Courier New"'>position: absolute</span>, and place it e.g. <span
+style='font-size:10.0pt;line-height:103%;font-family:"Courier New"'>top: 0px</span>
+and <span style='font-size:10.0pt;line-height:103%;font-family:"Courier New"'>left:
+0px</span>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:72.05pt;text-indent:-.25in'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>give the anchor width and height of 100%. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:3.5pt;
+margin-left:72.05pt;text-indent:-.25in'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Apply any desired focus, pointer (or even hover) styles. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:72.55pt'>(A CSS pseudo link should also work.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:18.65pt;
+margin-left:36.05pt;text-indent:-18.05pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The link accessible name can be defined in a number of ways. The choice
+depends on the box structure and purpose. </p>
+
+<h2 style='margin-left:-.25pt'>Link accessible name </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>The name can be given with: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:4.4pt;
+margin-left:36.05pt;text-indent:-18.05pt;line-height:103%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>&lt;a aria-label=”Arbitrary name string” ..&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:36.05pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>&lt;a
+aria-labelledby=”id1 id2 …”&gt; <span style='font-family:Wingdings'>&#8594;</span>
+build the name from referenced element names, such as the box heading, which
+may be a natural link name as well. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:3.7pt;
+margin-left:36.05pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Place
+a link text inside the anchor:  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.3pt;margin-bottom:3.5pt;
+margin-left:72.05pt;text-indent:-.25in'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>&lt;a ..&gt;&lt;cta-button&gt;Read more&lt;/cta-button&gt;&lt;/a&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.4pt;
+margin-left:72.55pt;line-height:103%'>Now, “Read more” becomes the anchor’s
+name. As this name may be too vague for WCAG 2.4.4 “Link purpose in context”,
+you can supplement it with e.g. the heading to make it unique to each box: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.3pt;margin-bottom:4.4pt;
+margin-left:72.05pt;text-indent:-.25in;line-height:103%'>2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>&lt;a id=”linkbox1-anchor” aria-labelledby=”linkbox1-heading linkbox1-anchor”&gt;
+</p>
+
+<h2 style='margin-left:-.25pt'>WCAG 2.5.3 Label in name </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.6pt;margin-bottom:5.55pt;
+margin-left:-.25pt'>To make sure you do not violate WCAG 2.5.3, only use link
+accessible names that contain a string that is also visually present in the box
+and that a voice assistant user, for instance, might use to call out when
+wanting to click on the box. Incorporating the heading, if present, in the link
+name can be a good choice. Of course, you can extend the accessible name beyond
+the visible link name as long as the visible (heading or other) text is
+included. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.3pt;margin-bottom:6.0pt;
+margin-left:35.7pt;text-indent:-18.05pt;line-height:103%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Example: The card title is “UX Design Seminar”. The link name
+could be: aria-label=”UX Design Seminar web page”. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.3pt;margin-bottom:5.55pt;
+margin-left:35.7pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Example
+#2 from above should also work, as it combines the generic CTA button name with
+the box heading for an accessible name that is not only unique but also
+visually present. </p>
+
+</div>
+
+</body>
+
+</html>

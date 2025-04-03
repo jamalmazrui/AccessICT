@@ -1,0 +1,520 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Helsinki Accessibility Model - Notes on Single Page Applications</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:5.55pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.55pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:2.7pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.5pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:73.25pt 68.3pt 63.8pt 56.8pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;margin-left:
+-.25pt'>Helsingin saavutettavuusmalli Helsinki Model for Accessible Service
+Design </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:64.45pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.25pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:18.0pt;
+line-height:107%'>Single Page Applications (SPAs): Notes on Accessibility </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.7pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:16.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:423.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'>            <span
+style='font-size:16.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.75pt;
+margin-bottom:4.95pt;margin-left:.5pt;text-align:right;line-height:107%'>Tero
+Pesonen </p>
+
+<p class=MsoNormal style='margin-left:354.9pt;text-indent:-42.25pt;line-height:
+141%'>Contact: tpe at siteimprove.com Version: 31st May 2021 </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:6.65pt;margin-left:
+-.25pt'>Overview </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>A Single Page Application (SPA) denotes a web
+service that updates the existing page DOM instead of loading a new URL even as
+a new “page” is opened. The application may technically only ever work with a
+single web page even though the user may perceive the service as hosting
+multiple pages and vastly different sets of content. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>On a SPA, the browser is unable to cater for some of
+its usual tasks which the user (and developer) normally can rely on while
+navigating across a web site composed of traditional static pages. This is
+because the browser cannot know when a “new page load” event triggers, as most
+SPAs only ever update their DOM in-place, bypassing the traditional web browser
+– web page interface. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>The developer, therefore, must carry out some of
+those interface tasks on behalf of the browser, so that the user can still
+perceive the web site as if it were a traditional service composed of multiple
+web pages. Users, of course, need not understand and adapt to
+implementation-level issues. They simply operate the browser in the web, and
+the web should behave in a normal, expected fashion. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.05pt;margin-left:-.25pt'>To this end, in a single page application the
+developer needs to: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.3pt;margin-left:.25in;text-indent:.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Manage browser focus following each “page” switch </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+.1in;margin-left:.25in;text-indent:.25in;line-height:104%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Manage the browser’s history </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+0in;margin-left:.25in;text-indent:.25in;line-height:155%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Update and announce page titles <span style='font-size:16.0pt;
+line-height:155%'>Page switch </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>For this guide, we define a page switch (or page
+load) as a content update in the SPA that causes a change of such magnitude as
+would warrant loading a new page (URL) on a normal, static web site. That is,
+the page being displayed changes <i>in purpose</i>, not just in content. It
+serves a new service context.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>An example of such a change would be clicking a
+“Purchase” button that replaces the page content with a re-rendered view part
+of a purchase process. One would likely load a new web page in a traditional
+service for this view; hence, one would initiate a “page load” event in a SPA
+as well. On the other hand, showing search results below a search filed, for
+instance, would normally not require a page switch, as one could continue to
+serve the same page on a traditional web site as well, with only the bottom half
+of the page updated. In this case, a page load event would be nonmandatory on a
+corresponding SPA implementation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>A page load event on a SPA requires, in practice,
+that one implements all the usual procedures that a browser would take care of
+when opening a new page. These include placing the focus at the beginning of
+the new page, updating the page title attribute, inserting (or replacing) an
+entry in the browser history, and so forth. </p>
+
+<h1 style='margin-left:-.25pt'>Focus management following a page switch </h1>
+
+<h2 style='margin-left:-.25pt'>Rule of thumb </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+8.0pt;margin-left:-.25pt'>When you switch to a new page context, move the
+browser focus to a pre-designated spot in the new page. Normally, this position
+is at the top of the page, on the first DOM element. On most pages, that
+element is the “skip to content” link. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:36.05pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>You
+can do this in Javascript with the HTMLElement.focus() method. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+15.15pt;margin-left:36.05pt;text-indent:-18.05pt'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If you need to focus an element that is not inherently focusable
+(span, div, etc.), give the element the following attribute: tabindex=”-1”. The
+tag can now be focused programmatically but will remain unfocusable by the
+keyboard. </p>
+
+<h2 style='margin-left:-.25pt'>Rationale </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>If the page is switched but focus is not
+transferred, the browser focus may land at a random location on the new page or
+even detach from it altogether, as the DOM node that hosted the focus is
+removed from DOM. Non-visual users in particular will find the situation
+difficult to comprehend. Moreover, all users are frustrated by having to start
+browsing the new page at a random spot possibly closer to the end than the
+beginning of the page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+15.2pt;margin-left:-.25pt'>WCAG 2.4.3 Focus Order </p>
+
+<h2 style='margin-left:-.25pt'>Exceptions </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>There is no exception to the rule that the focus
+need to be managed following a page switch. However, not all page switches need
+to place the focus at the top of the page. Some common exceptions include
+multi-page forms and similar processes where the user moves along a specific
+set of steps that they well understand. Although each step may result in a page
+switch, the user is often best served by not having to navigate back to the
+form following a form page switch. Instead, they should be able to simply continue
+working with the next step. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>To this end, the focus can be placed at the
+beginning of each form page or set of process widgets instead of the beginning
+of the entire page. Now, it is easier for the user to proceed along the
+process. This method is demonstrated on the demo page form: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>http://siteimprove</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>-</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>accessibility.net/Demo/Page/</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+15.15pt;margin-left:-.25pt'>If you are unsure where to place the focus after a
+page load event, move it to the top of the page. It is always correct. </p>
+
+<h1 style='margin-left:-.25pt'>Title management </h1>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:4.9pt;margin-left:
+-.25pt'>Rule of thumb </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.05pt;margin-left:36.05pt;text-indent:-18.05pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Give each SPA page context a title </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+4.95pt;margin-left:36.05pt;text-indent:-18.05pt;line-height:107%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+you switch to a new page context, update the page &lt;title&gt; tag in
+&lt;head&gt;. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+15.45pt;margin-left:36.05pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Non-mandatory but recommended: Announce the changed title to assistive
+technology users. </p>
+
+<h2 style='margin-left:-.25pt'>Rationale </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>When a web browser opens a new page (URL), screen
+readers observe the new title and announce it to the user as part of the page
+loading process. This helps the user understand that, first, a new page is
+being opened, and secondly, what the new page is. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>WCAG does not specifically require that titles be
+announced, as it is the task of assistive technology to describe title tags
+(WCAG 4.1.3 Status Messages does not cover this area). In practice, however,
+screen readers only describe a title text when a new page is loaded; they do
+not actively monitor title changes, which is a problem on a SPA. For this
+reason, the limitation is imposed by the current assistive technology, but that
+fact does not help users who nonetheless are impacted by the issue. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+14.85pt;margin-left:-.25pt'>Therefore, it is recommended, but not mandatory,
+that developers make sure that title changes are announced on SPAs. WCAG 2.4.2
+Page Titled </p>
+
+<h2 style='margin-left:-.25pt'>Announcing &lt;title&gt; </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+9.45pt;margin-left:-.25pt'>There are two main approaches. </p>
+
+<h3 style='margin-left:-.25pt'>Technique 1: Simple approach </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+1.5pt;margin-left:36.05pt;text-indent:-18.05pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create a fixed live region in the page. A natural location for the
+region is at the beginning of document.body, after the skip-to-content link,
+although other DOM locations can also be used. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+.55pt;margin-left:36.05pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Give this region the following attribute: aria-live=”polite”. Like so: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:26.2pt;margin-bottom:
+.1in;margin-left:35.8pt;line-height:104%'>&lt;div class=”page-title-live-region
+visually-hidden” aria-live=”polite”&gt;&lt;/div&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.05pt;margin-left:36.05pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When a new page loads, insert its title string as textContent of this
+live region. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:36.05pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Whenever you update the title tag, also update the live region
+textContent accordingly. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:36.55pt'>Result: Screen reader users will hear the page
+title being read out to them every time the page changes, denoting a page
+switch. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>Pros: Easy to implement and will work very reliably
+with all modern assistive technology. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+9.7pt;margin-left:-.25pt'>Cons: The page title is permanently part of the
+document body, so it should be hidden visually. One also prefers to place it at
+the beginning (or end) of the page, as it remains permanently part of the page,
+and screen reader users can observe it whenever they navigate to that part of
+the page. Placing it at the beginning of the page therefore makes it appear
+less weird or out of place than if it were found some other part of the page. </p>
+
+<h3 style='margin-left:-.25pt'>Technique 2: A more advanced, non-permanent live
+region </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:36.05pt;text-indent:-18.05pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create a fixed live region like above: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:26.2pt;margin-bottom:
+.1in;margin-left:35.8pt;line-height:104%'>&lt;div aria-live=”polite”
+class=”page-title-live-region visually-hidden”&gt;&lt;/div&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.25pt;margin-left:36.05pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When the page title is updated, insert the new title as the live region
+textContent like above. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+0in;margin-left:36.05pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>But after each title update, now wait 500ms, and then clear the live
+region of any textContent.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:36.55pt'>The delay is necessary for assistive technology to
+register the altered live region DOM. Without a delay, the deleted text content
+will not be read out. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+.55pt;margin-left:-.25pt'>Pros: The region remains empty save for a brief while
+immediately after a page switch. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>This way, the user still hears the new page title
+but will not come across the (awkwardly placed) title text string when browsing
+the page. To further secure this point, the region can be placed at the end of
+the page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+9.45pt;margin-left:-.25pt'>Cons: You have to program in a delay when
+manipulating the live region, which is more complicated and error prone than
+the basic approach above. There is also no guarantee that very old or exotic
+screen readers will work as expected with this technique. </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:4.7pt;margin-left:
+-.25pt'>Extra technique: Keeping title updates inside a common, shared live
+region “host” </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>This is simply a more generalized variation of the
+previous technique. Here, the page employs only a single live region “host”
+that will collect and manage all live regions and pertinent announcements that
+the SPA may need to generate during its lifetime.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:-.25pt'>The technique is used on the demo page for testing
+purposes. Its aim is to avoid cluttering the DOM with multiple live regions,
+the management of which can grow cumbersome in a large SPA, and result in
+unwanted DOM overwrites or litter as regions are placed at random here or there
+in a difficult-to-predict manner. If, instead, all live regions are hosted in a
+single place and managed via a standard interface, development, testing and
+regression (prevention) are easier to tackle.<b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.05pt;margin-left:-.25pt'>Using a general-purpose live region: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.1pt;margin-bottom:
+0in;margin-left:27.05pt;text-indent:-18.05pt'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create a fixed container div that will host any number of live regions
+needed throughout the app. But do not make this region live. Like so: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:26.2pt;margin-bottom:
+.1in;margin-left:35.8pt;line-height:104%'>&lt;div id=”global-live-region”
+class=”live-region visually-hidden”&gt;&lt;/div&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.1pt;margin-bottom:
+6.55pt;margin-left:27.05pt;text-indent:-18.05pt;line-height:107%'>2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When you need to make a live announcement, apply the following
+algorithm: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+.55pt;margin-left:71.8pt;text-indent:-.25in'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create a new container that will provide the live message: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:26.2pt;margin-bottom:
+.1in;margin-left:72.55pt;line-height:104%'>&lt;div aria-live=”polite” id=”my-new-announcement-xyz”&gt;&lt;/div&gt;
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.45pt;margin-left:71.8pt;text-indent:-.25in'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Insert the aria-live container as a child of the global live region
+container created above. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.1pt;margin-left:71.8pt;text-indent:-.25in'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Wait 200ms </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+0in;margin-left:71.8pt;text-indent:-.25in'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Insert the message you want to announce as this new live container’s textContent
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+7.45pt;margin-left:72.55pt'>&lt;div aria-live=”polite” id=”my-new-announcement-xyz”&gt;My
+announcement&lt;/div&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+5.55pt;margin-left:71.8pt;text-indent:-.25in'>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Wait 200ms </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+4.95pt;margin-left:71.8pt;text-indent:-.25in;line-height:107%'>f.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Remove the aria live container. Do not remove the permanent host div. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+15.2pt;margin-left:54.55pt'>Pros: Any number of announcements can be generated
+in an easy to manage fashion without ever cluttering the DOM and without the
+user ever coming across the message texts on the page while navigating it.
+Cons: Complicated; may incur compatibility issues with old screen readers. </p>
+
+<h1 style='margin-left:-.25pt'>Browser history management </h1>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;margin-left:
+-.25pt'>Recommendations </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:35.5pt;margin-bottom:
+.1in;margin-left:36.05pt;text-indent:-18.05pt;line-height:104%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>When
+you switch to a new page context, add the page title to the browser’s session
+history, and update the current state to reflect the new page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:35.5pt;margin-bottom:
+5.55pt;margin-left:36.05pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Support browser back and forward operations by capturing them through
+the browser history API. Respond to these commands by switching to the
+respective page, so that the user can move back and forward in the history as
+if they were navigating a static web site. If possible, save page context
+(input values, scroll position) and restore them on a backward operation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:44.75pt;margin-bottom:
+.55pt;margin-left:36.55pt'>More information about manipulating the browser
+history API is available at </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:51.65pt;
+margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;line-height:
+107%'>MDN: <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"><span
+style='color:#0563C1'>https://developer.mozilla.org/en</span></a><a
+href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"><span
+style='color:#0563C1'>-</span></a><a
+href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"><span
+style='color:#0563C1'>US/docs/Web/API/History_API</span></a><a
+href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+</div>
+
+</body>
+
+</html>

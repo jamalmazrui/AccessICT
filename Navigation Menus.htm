@@ -1,0 +1,551 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:7.3pt;
+	margin-bottom:5.9pt;
+	margin-left:18.5pt;
+	text-indent:-18.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.15pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:70.85pt 56.5pt 57.55pt 56.8pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.3pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:110%'><span style='font-size:
+16.0pt;line-height:110%'>Helsingin saavutettavuusmalli </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:60.0pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:110%'><span style='font-size:
+16.0pt;line-height:110%'>Helsinki Model for Accessible Service Design </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.3pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:18.0pt;
+line-height:107%'>Navigation Menus: Notes on technical implementation </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-size:16.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:456.25pt;
+margin-left:0in;text-indent:0in;line-height:107%'>            <span
+style='font-size:16.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:7.3pt;
+margin-bottom:4.95pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'>Tero Pesonen </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:347.65pt;text-indent:68.05pt;line-height:141%'>Siteimprove Version:
+15th March 2023 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.25pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:110%'><span style='font-size:
+16.0pt;line-height:110%'>Navigation menu pattern </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.9pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:13.0pt;
+line-height:107%'>Notes on implementation: Quick reference </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:0in;text-indent:0in'>If the menu is built from an element that is
+not a native &lt;button&gt; tag, you may have to apply all of the below
+attributes marked as SPAN before you apply the attributes marked as BUTTON; if,
+however, the menu button is a &lt;button&gt; tag, you only need to consider the
+attributes marked as BUTTON, since the built-in button tag already provides the
+aforementioned functionality. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.0pt;
+margin-left:0in;text-indent:0in;line-height:107%'>Example: <a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>http://siteimprove</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>-</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>accessibility.net/Demo/Page/</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:black;
+text-decoration:none'> </span></a><span style='font-family:Wingdings'>&#8594;</span>
+Tab 1 / Buttons <span style='font-family:Wingdings'>&#8594;</span> Menu Button </p>
+
+<h1 style='margin-left:-.25pt'>The menu button is built from a span/div/img </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:3.15pt;
+margin-left:35.3pt;text-indent:-18.05pt;line-height:120%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The menu button (“burger button”, Dropdown button, …) requires
+the following Ariaattributes <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Always: Role=”button”.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:71.3pt;text-indent:-.25in;line-height:104%'><span style='font-family:
+"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Never:
+role=”link” or an anchor &lt;a&gt; tag. A menu is never opened from a link. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The
+menu button requires the following attributes to enable visual keyboard-only
+use without assistive technology: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:71.3pt;text-indent:-.25in;line-height:104%'><span style='font-family:
+"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Always:
+tabindex=”0”: This tells the browser that the tag is interactive and hence
+focusable. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.9pt;
+margin-left:71.3pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Always: Key
+event handler (onkeydown or onkeypress) mapped to Enter and Space keys (keycode
+13 and 32), to mimic a button. In Javascript, event.preventDefault should be
+used to stop e.g. Chrome from scrolling the window on a space key press. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:11.7pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Note
+that the button may require an accessible name (e.g. aria-label) if it has no
+textContent but only a symbol. See the notes following this quick reference for
+more info. </p>
+
+<h1 style='margin-left:-.25pt'>The menu button is built from a &lt;button&gt;
+tag </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:4.45pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>No
+special attributes are required. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:11.7pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Note
+that the button may still require an accessible name (e.g. aria-label) if it
+has no textContent but only a symbol. See the notes following this quick
+reference for more info. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.3pt;
+margin-left:0in;text-indent:0in;line-height:107%'>All menu buttons
+(span/div/img/&lt;button&gt;/…) additionally require: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Aria-expanded=”true”/”false”.
+This attribute must be updated by code to reflect the open/closed state of the
+menu which the button controls. The attribute will not update automatically in
+response to the user’s actions. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:11.65pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Aria-controls=”menu-content-container’s
+id”: The attribute tells assistive technology that the button controls the
+presence and content of a specific menu panel. The can be set permanently on
+the button as it need not reflect whether the menu panel is visible or not. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:-.25pt;text-indent:-.5pt;line-height:107%'>All menu buttons and the
+menu content may additionally require: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Aria-label=”description”:
+Provide the screen reader user with a label in case the menu button has no
+textContent or innerHTML that gives it a name (e.g. &lt;button&gt;&lt;span claas=…&gt;description&lt;/span&gt;&lt;/button&gt;
+has a textContent and so needs no aria-label). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If
+the menu has a navigation role, the menu may be wrapped inside a &lt;nav&gt; or
+given the role=”navigation” attribute. Aria-label can be used to give the
+navigation landmark a name.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:11.7pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Alternatively,
+it is possible to give the menu content (menu panel) a section tag or a tag
+with a role=”region” attribute, and an aria-label=”Menu” (or a more specific
+name for a particular menu amongst many), or aria-labelledby=ID (where ID is
+the menu button). </p>
+
+<h1 style='margin-left:-.25pt'>Submenu of a navigation/dropdown menu </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Submenus
+may be implemented recursively by the same pattern as above, so that a submenu
+entry is a menu button, too. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If
+the submenu can be opened and closed, it follows the accordion pattern and thus
+requires an aria-expanded state. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If
+the submenu will instead replace the parent menu content entirely, and the user
+can only navigate between these levels as if separate pages, then the menu
+button does not have an expanded state, since it only an action button.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:3.7pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>NOTE:
+Focus/navigation order within the menu should be specified before
+implementation, so that the DOM order can be built accordingly. This can be
+taxing to fix afterwards if the DOM order and CSS rely on one another heavily. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>            <span
+style='color:#1F3763'> </span><br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:141.6pt;
+margin-bottom:7.7pt;margin-left:-.1pt;text-align:center;text-indent:0in;
+line-height:107%'><img border=0 width=450 height=352 id="Picture 509"
+src="Navigation%20Menus_files/image001.gif"> </p>
+
+<h1 style='margin-left:-.25pt'>Explanation: Menu pattern Aria attributes </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:3.4pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Role=”button”:</b>
+Native HTML components will automatically announce their role/type to assistive
+technology. That is, a button will proclaim to a screen reader, “I am a button”,
+by which means the SC can describe the element correctly to the user. However,
+when a span or div is tailored as an element that corresponds to a native
+element type, screen readers will not automatically be able to deduce that
+functional relationship. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:36.05pt;text-indent:0in'>It follows that although a span button may
+look and act like a button, assistive technology will not usually recognize its
+button-like status. The tag will therefore have to describe its type
+unambiguously. For example, a &lt;span&gt; or &lt;div&gt; that acts as a button
+needs role=”button” added. Many other Aria roles exist for similar mapping to
+standard HTML element types. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Aria-expanded=”true”/”false”</b>
+designates for assistive technology whether the content which the button
+controls is expanded or open (=“true”) or closed (=“false”). The attribute is
+used with accordions, burger menu buttons, dropdown menu buttons, pop-up dialog
+triggers (when the dialog is NOT a modal but acts like an accordion), and other
+similar cases where a button will a) expose or hide content that instantly
+follows in DOM order but b) where the exposed content will not capture focus
+like a modal would.   </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:54.05pt;text-indent:0in'><span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Notes:  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:108.1pt;text-indent:-18.05pt'><span style='font-family:Wingdings'>&#9642;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span>The attribute is
+assigned to the element which triggers something to expand, that is, the button
+itself; it is NOT assigned to the content which is shown or hidden (e.g. the
+menu panel div).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:108.1pt;text-indent:-18.05pt'><span style='font-family:Wingdings'>&#9642;<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span>Screenreaders will
+announce the aria-expanded status. It is therefore unnecessary to describe the
+element’s status in its label: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:4.0pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>So,
+this suffices:  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:162.05pt;text-indent:-.25in;line-height:104%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>&lt;button aria-expanded=”false”&gt;Menu&lt;/button&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:162.05pt;text-indent:-.25in;line-height:104%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>&lt;span id=”menu_button” aria-label=”Menu”
+ariaexpanded=”false”&gt;&lt;img class=”menu_glyph” …&gt;&lt;/img&gt;&lt;/span&gt;
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:3.75pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>But
+this is redundant: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.6pt;margin-bottom:
+5.3pt;margin-left:144.55pt;text-indent:-.5pt;line-height:104%'><span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>&lt;button aria-expanded=”false”&gt;Menu (closed)&lt;/button&gt; <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>&lt;button aria-label=”Menu, closed.” aria expanded= ”false”&gt; Menu
+&lt;/button&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:1.8pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If
+this accidentally happens, though, it is not a big problem. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:126.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:3.7pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Aria-haspopup=”true”
+or “menu”:</b> With this attribute, assistive technology will describe the
+element as one that provides a menu role. The Aria menu role entails a specific
+kind of a menu whose container has the role=”menu” attribute and children the
+“menuitem”, “menuitemradio”, “menuitemcheckbox”, or “group” roles. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:36.05pt;text-indent:0in'>Implementation details are beyond this
+basic guide, as this menu triggers a forms mode on some screenreaders, in
+consequence of which the developer must manage keyboard focus in response to
+arrow keys. That is, the user cannot navigate the menu in the standard manner
+as a group of DOM elements, but the menu is rather treated as an
+application-like context or like a composite form control. On most web pages,
+this menu pattern is unnecessary. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Aria-label=”description”,</b>
+provides the element with a label which assistive technology will read out to
+the user when the element is focused. It is an alternative to using arialabelledby=”ID”,
+where the description is rather derived from the label of the element whose ID
+is referenced. Note that aria-label will OVERRIDE any other accessible name the
+element may have. So, if the node also has textContent or innerHTML (even with
+childNodes), those are not read out. For instance: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:3.75pt;
+margin-left:71.65pt;text-indent:-.25in;line-height:104%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>&lt;a href=”…” aria-label=”Link to X (opens a
+PDF)”&gt;X&lt;/a&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.3pt;
+margin-left:72.55pt;text-indent:-.5pt;line-height:104%'>Here the SC will
+describe the link as, ”Link to X (opens a PDF)”,  <b>not </b>“X”, <b>nor</b> “Link
+to X (opens a PDF), X”, since the aria-label replaces any other labels.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:11.65pt;
+margin-left:71.65pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>NOTE: if the
+element has an additional aria-describedby=”ID”, that description, derived from
+the reference, WILL also be read, as the purpose of aria-describedby is to
+endow the element with additional information beyond its name or label (e.g.
+instructions, etc.). In a more technical sense, aria-describedby is not the
+element’s accessible NAME, and is hence not negated by aria-label (or
+aria-labelledby). It is, thus, normal to use aria-label together with
+aria-describedby; this can be particularly effective in modals, but that is
+beyond the present discussion. </p>
+
+<h1 style='margin-left:-.25pt'>Explanation: Menu keyboard navigation with
+tabindexes </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:89.7pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Screenreader
+users can focus and interact with any element that can be reached by traversing
+the DOM tree. From accessibility point of view, this is not, however, the only
+use scenario for which one has to account. Users who operate the web site
+without mouse and screenreader are an important group as well. What is more,
+some assistive technologies rely on keyboard I/O, too. <b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:89.7pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>An
+important point: Keyboard navigation will not focus all elements but will only
+focus elements known to be interactive. This list includes by default all
+native buttons and links, for instance.<b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:36.05pt;text-indent:0in'><b>RULE</b>:<b> </b>If the element is one
+that is not by default keyboard focusable, yet it can be interacted with (e.g.
+it is a span, div, web component generated from a random tag, etc.), it needs
+to be given a tabindex attribute value that is zero or greater. The browser
+will then include the element in its list of focusable elements that the user
+can TAB into. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.2pt;
+margin-left:125.65pt;text-indent:-.25in;line-height:107%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>Tabindex=”0” should be normally used. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:125.65pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Tabindex &gt; 0
+will alter navigation order. Avoid this, and adjust focus order with DOM order
+instead, as it is easier to maintain and is compatible with all assistive
+technology. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:125.65pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Tabindex=”-1“
+prevents</b> the element from being keyboard focused (but WILL NOT exclude it
+from screen readers’ DOM! For SC, use aria-hidden=”True” to preclude content
+from being focusable). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:108.55pt'><span style='font-family:Wingdings'>&#9642;</span><span
+style='font-family:"Arial",sans-serif'> </span>Moreover, tabinmdex=”-1” gives
+the DOM element a special property: Focus can be programmatically transferred
+to the element by e.g. using JS DOMElement.focus() method. This is true even
+when the element cannot accept keyboard focus. For instance: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.3pt;
+margin-left:89.7pt;text-indent:-18.05pt;line-height:104%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>&lt;h2 id=”sample-h2” tabindex=”-1”&gt;Section heading&lt;/h2&gt;
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:1.6pt;
+margin-left:89.7pt;text-indent:-18.05pt;line-height:128%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Now, one can e.g. document.getElementById(“sample-h2”).focus();
+(But without tabindex=1, this will fail on most browsers!) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:108.55pt'><span style='font-family:Wingdings'>&#9642;</span><span
+style='font-family:"Arial",sans-serif'> </span>This is useful on a number of
+special occasions where it is expedient to help the user by moving their focus
+on their behalf, even though normally it is discouraged, as a focus that “jumps
+around” “on its own” can be very confusing. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:72.55pt'><span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>If the element needs to be given
+tabindex=0, <b>it will likely also need to be furnished with a keyevent handler</b>
+to ensure that keyboard users can trigger the element with “Enter” / “Space” (or
+other keys pertinent to its operation; this is relevant on radiogroups, certain
+kind of tablists, etc.). Tabindexing alone will not bind Enter or Space to a
+click event.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:.2pt;
+margin-left:108.55pt'><span style='font-family:Wingdings'>&#9642;</span><span
+style='font-family:"Arial",sans-serif'> </span>NOTE: Screenreaders that are
+operated by keyboard do not, actually, require keyevent handlers, as they send
+also a click event. Enter/Space keyevents are needed for visual keyboard users
+who are not running a screenreader. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>             </p>
+
+<h1 style='margin-left:-.25pt'>Menu button anti-patterns: Things to avoid </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+5.9pt;margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Role=”menu”,
+role=”menubar”, and role=”mnuitem” <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Role=menu is nowadays used
+primarily for such menu contexts as correspond to application menu bars and
+implementations that differ from traditional web page navigation (link) menus. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:72.05pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Screenreaders
+may expose role=”menu” in an unusual fashion, confusing users who are
+unaccustomed to them on a tradition web page that does not try to mimic an
+application. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+5.9pt;margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Treegrid
+and related roles <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Like the menu role, this is
+reserved for more specific use cases than a normal link menu hierarchy and will
+add unnecessary complexity to a standard menu.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+4.4pt;margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Menu
+panel will not follow menu button in DOM order, or </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.15pt;margin-bottom:
+5.9pt;margin-left:35.3pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Menu
+panel is a child of the menu button <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>This will usually lead to
+navigation/focus order issues. Strive for a design where (1) the menu button is
+a child to a menu container, (2) the menu panel, when opened, is also a child
+to the menu container but a sibling (not child) of the menu button. <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>This seems to work reliably for assistive technology. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.15pt;margin-bottom:5.9pt;
+margin-left:72.05pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Below, is an
+example of such a DOM structure for a traditional (desktop size) navigation
+menu with side-by-side drop down menus containing links. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:72.05pt;text-indent:0in;line-height:107%'> </p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,794 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:27.2pt;
+	margin-bottom:5.4pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.7pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.85pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:73.25pt 62.6pt 67.8pt 56.8pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.7pt;
+margin-left:-.25pt;line-height:107%'><span style='font-size:16.0pt;line-height:
+107%'>Helsingin saavutettavuusmalli </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:-.25pt;line-height:107%'><span style='font-size:16.0pt;line-height:
+107%'>Helsinki Model for Accessible Service Design </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:64.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:474.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:18.0pt;
+line-height:107%'>Tab List Pattern: Notes on technical implementation</span><span
+style='font-size:14.0pt;line-height:107%'>                                                </span><span
+style='font-size:18.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:26.45pt;
+margin-bottom:4.65pt;margin-left:.5pt;text-align:right;line-height:107%'>Tero
+Pesonen </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+margin-left:327.65pt;text-indent:-36.5pt;line-height:141%'>Contact: tpe at
+siteimprove.com Version: 4th March 2021 </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.65pt;
+margin-left:-.25pt;line-height:107%'><span style='font-size:16.0pt;line-height:
+107%'>Tab List Pattern </span></p>
+
+<h1 style='margin-left:-.25pt'>Tab List component available in HDS </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+13.35pt;margin-left:.5pt'>For users of the Helsinki Accessibility Model, the
+Helsinki Design System (HDS) provides an accessible tab list component that
+should always be used in place of a tailor-made one unless a tab list is
+required for a non-typical use case (some discussed below). </p>
+
+<h1 style='margin-left:-.25pt'>Definitions </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:103.3pt;margin-bottom:
+1.2pt;margin-left:.5pt;line-height:141%'>The term “Tab list” is defined for the
+purposes of this document as follows A set of tabs: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+8.0pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Divides
+content segments that are both visually and semantically parallel but optional
+to one another.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+8.0pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>This
+means that only one of the tab list content segments is open (displayed) at any
+given moment, yet any one of them can be opened. On the other hand, one tab
+content segment is always open. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+8.0pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>To
+this end, the tab list comprises <b>tabs</b> and a <b>tab panel</b>. The tab
+panel displays the content associated with each tab. There is no limit to the
+number of tabs, but from usability point of view tab lists work best when they
+comprehend between two and half a dozen tabs — although this, of course,
+greatly depends on the implementation context as well. In application-oriented
+designs, for instance, tab lists can be long without being cumbersome. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+6.65pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>All
+the tabs part of the list provide content that is categorically similar. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Opening
+a tab will only change content, not web page context. That is, tabs are not
+links, but only means of exposing one of a list of alternative content
+segments. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+13.1pt;margin-left:.5pt'>The final point is important and should not be
+overlooked. Indeed, one must always dictate whether a web page segment
+functions as a tab list based on its semantics, not on its visuals. Content
+that might look quite a good fit for a tab list may, in fact, operate better as
+a list of navigation elements; conversely, content that in no way appears as a
+tab list may, in like manner, function best as a tab list. To be able to make
+this distinction is key in applying the pattern successfully. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.7pt;
+margin-left:-.25pt;line-height:107%'><span style='font-size:14.0pt;line-height:
+107%'>When to use a tab list or a navigation (link) list? </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.6pt;margin-left:.5pt'>The pictures below depict three web page contexts that
+are typical candidates for a tab list pattern. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.85pt;
+margin-left:-.25pt;line-height:107%'>Helsinki Metropolitan Area Service Map.  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>The screen shows information
+about a location the user has found with the search function. The data which
+each location makes available to users are split and grouped into three sub
+categories (Information, accessibility, services and events), all of which </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:30.8pt;
+margin-left:-.1pt;text-indent:0in;line-height:107%'><img width=479 height=418
+id="Picture 168" src="Tablist%20Pattern_files/image001.jpg"></p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>apply to the same super
+category (service map data about this location). These categories have been
+implemented as tabs. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.65pt;margin-left:.5pt'>The tabs help division the display and by this means
+lessen the amount of content in each view, making the view more usable and
+accessible. Note that all the tabs could, in theory, be combined into a single
+display, albeit a very long one, since they are part of the same super
+category; one can always do this for a tab list, but not for, say, a navigation
+link list. </p>
+
+<h2 style='margin-left:-.25pt'>Demo page form </h2>
+
+<p class=MsoNormal style='margin-right:50.65pt'>The form has a set of
+navigation links that let the user move directly to a given form page once it
+has been completed. This is a typical feature in multi-phase web forms and
+process patterns. The design both exposes (as a list, flowchart, etc.) the steps
+that the process will take to complete, documenting it, and packs, in the same
+real estate, also a navigation mechanism. </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>One sometimes sees the
+navigation mechanism implemented as a tab list. Indeed, cursorily it may seem
+to fill the boxes of a tab list: It divisions similarly categorized content,
+and there is a shared tab panel that displays each step/page. Often, though,
+and in the case of the demo form in particular, this pattern does not function
+as a tab list.  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>The reasons is, first, that not
+all the “tabs” are truly optional to one another. As a matter of fact, in the
+case of the demo form, only one page link is initially active. More </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:25.35pt;
+margin-left:-.1pt;text-indent:0in;line-height:107%'><img width=458 height=319
+id="Picture 228" src="Tablist%20Pattern_files/image002.jpg"></p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>links become available as the
+form is filled in and each page accepted as error free. But if only one, or
+some, of the tabs are active, then the idea of a tab list falls short. </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>In other words, the tabs are
+not truly equal. Nor could one, thus, also place the content of all of the tabs
+one after the other. There is more than just content splitting a-going here.
+The content segments also <b>depend</b> <b>on</b> one another – they form a
+process where one step must be in a specific state before another can be
+commenced; what is more, making a change in one step (going, for instance, back
+to step 1 and producing an erroneous input) invalidates the later steps until
+the error is fixed (this is how the demo form works: Errors are checked even in
+completed steps).  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>The set of navigation links may
+look like a set of tabs, yet is, as we have observed above, a set of links
+instead. This is further compounded by the way in which the form manages
+keyboard focus: When a new form page is opened, focus is moved to the beginning
+of the page, even if the user clicked one of the navigation links. A tab when
+activated will never move focus off the tab list. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.35pt;margin-left:.5pt'>Clearly, a tab list is a semantical structure, not a
+visual structure, and must always be plied as such. </p>
+
+<h2 style='margin-left:-.25pt'>Visually untypical tab lists </h2>
+
+<p class=MsoNormal style='margin-right:50.65pt'>It follows from our
+observations above that content which might not appear visually to lend itself
+well for a tab list may, in fact, be a good fit for tab list. Let us imagine a
+web page where a circle, styled like a pie chart, is used to provide information
+or actions related to that single slice. The pie may present ticket options,
+artists, development processes – anything. The pie resides on the left hand’s
+side, and to tis right there is a panel that displays each slice’s data or
+actions.  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>If, then, the slices can be
+perused or operated independently, and all of them are also available as equal
+options, can one proclaim that this is, as a matter of fact, a tab list, not
+simply a circular collection of clickable elements, visually thought it may
+look anything but?  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>The author would argue that
+yes, it may well be. And when one considers the implementation in service
+design, treating it technically (in code) as a tab list would seem the proper
+choice from accessibility point of view. For if a user unable to discern the
+pie visually observes it with a screen reader, it will appear to them no
+different to a “proper” tab list – since it functions in much the same way. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+10.65pt;margin-left:.5pt'>Of course, the visual style of this interactive pie
+would remain unchanged even as we build it into a tab list. The pertinent Aria
+techniques and keyboard navigation are unconcerned with the visuals. Indeed, it
+is always by its semantics that we decide how an element is described to
+assistive technology. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>            <span
+style='font-size:16.0pt;line-height:107%'> </span><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.65pt;
+margin-left:-.25pt;line-height:107%'><span style='font-size:16.0pt;line-height:
+107%'>Tab List: Implementation </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+15.5pt;margin-left:.5pt'>For implementation, please take into account both the
+screenreader and the keyboard navigation sections below. </p>
+
+<h1 style='margin-left:-.25pt'>1.<span style='font-family:"Arial",sans-serif'> </span>Screenreaders
+&amp; Aria definitions </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+0in;margin-left:.5pt'>From implementation point of view, the tab list is
+composed of three separate elements that each require their own WAI-Aria
+definitions. These are a tab list (1), which comprises all of the clickable
+tabs (2), which in turn control what content the tab panel (3) displays at any
+given time. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.95pt;margin-bottom:
+15.05pt;margin-left:5.15pt;text-indent:0in;line-height:107%'><img width=635
+height=290 id="Picture 10372" src="Tablist%20Pattern_files/image003.gif"></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:205.8pt;margin-bottom:
+.25pt;margin-left:18.25pt;text-indent:-18.25pt;line-height:140%'>1. Tablist <img
+width=15 height=18 id="Picture 297" src="Tablist%20Pattern_files/image004.gif"><span
+style='font-family:"Arial",sans-serif'> </span>hosts the clickable, named tabs
+(often in a row).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'><img
+width=11 height=13 src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png"
+alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tablist
+is usually implemented as a container div which has as its child nodes each of
+the individual tab elements.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.35pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'><img
+width=11 height=13 src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png"
+alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The
+tablist-element <b>requires</b> the following attribute. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:25.35pt;margin-bottom:
+5.7pt;margin-left:71.65pt;text-indent:-.25in;line-height:103%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>role=”tablist” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'><img
+width=11 height=13 src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png"
+alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>The
+tablist may additionally contain <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>aria-label=”…” or <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>aria-labelledby=”elementID” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.3pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'><img
+width=11 height=13 src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png"
+alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Accessible
+name? </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:25.35pt;margin-bottom:
+5.4pt;margin-left:71.65pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>It is not
+mandatory to name every tab list. The choice depends on the context in which
+the tab list presides. Sometimes, a preceding heading may suffice to give the
+tab list its context. The user will, after all, always focus not just the tab
+list but a tab as well, and a tab, in turn, is always named. </p>
+
+<h2 style='margin-left:-.25pt'>2. Tab (button) </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.1pt;
+margin-left:35.8pt;text-indent:-18.05pt;line-height:103%'><img width=15
+height=18 id="Picture 968" src="Tablist%20Pattern_files/image004.gif"><span
+style='font-family:"Arial",sans-serif'> </span>These are the clickable
+individual tab “buttons” that control what content the tablist displays in its
+tabpanel at each time. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+7.95pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>One
+Tab is always selected, that is, a tablist cannot be closed but a tab will
+always remain open; only the open tab can be altered. Although not a rule, it
+is good design to have the tab which is open by default placed as the first
+from the left. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+8.05pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Each
+Tab element can be of any tag type. Note, though, that Tabs do not have the
+button role, although &lt;button&gt; tag can be used as the base for a tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+.5pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tab
+<b>requires</b> the following attributes. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>role=”tab” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>aria-selected=”true”/”false” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:106.3pt;margin-bottom:
+1.2pt;margin-left:89.55pt;text-indent:.5in'><span style='font-family:"Arial",sans-serif'><img
+width=11 height=13 src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png"
+alt="*"><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Is
+the tab open? Set accordingly <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>aria-controls=”TabpanelID” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:106.3pt;margin-bottom:
+7.3pt;margin-left:89.55pt;text-indent:.5in;line-height:107%'><span
+style='font-family:"Arial",sans-serif'><img width=11 height=13
+src="file:///C:/Users/Jamal/AppData/Local/Temp/5BD37A.png" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>ID
+of the element that shows the tab content and has the role “tabpanel” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+.5pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>If
+the tab is a &lt;span&gt; or other non-interactive element, it should have: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.8pt;
+margin-left:71.55pt;text-indent:-.25in'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>tabindex=”0”
+added, so that it is keyboard focusable. <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>Keyevent handlers added, so that
+the user can activate the tab with Enter and Space. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+1.45pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='position:absolute;z-index:-1895825408;left:0px;margin-left:123px;
+margin-top:37px;width:93px;height:18px'><img width=93 height=18
+src="Tablist%20Pattern_files/image005.gif"></span>Remember to make sure that
+the tabs are not prevented by e.g. inherited styling from showing the focus
+indicator for keyboard navigation <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>CSS      :focus   outline, or
+other property  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.95pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>tabindex=”0” gives the tab the system default indicator, which,
+if not altered, is always sufficient (see notes on the navigation menu
+instructions). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+2.1pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Example
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+.5pt;margin-left:65.8pt'>&lt;span id=”tab1” role=&quot;tab&quot; aria-selected=&quot;true&quot;
+aria-</p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:9.0pt;
+margin-bottom:4.7pt;margin-left:.5pt;text-align:center;line-height:107%'>controls=&quot;tabpanel1&quot;
+class=&quot;TabButton&quot; tabindex=&quot;0&quot;&gt;Tab 1&lt;/span&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:65.8pt'>Or </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.95pt;margin-left:65.8pt'>&lt;button id=”tab1” role=&quot;tab&quot; aria-selected=&quot;true&quot;
+ariacontrols=&quot;tabpanel1&quot; class=&quot;TabButton&quot;&gt;Tab
+1&lt;/button&gt; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:20.35pt;margin-bottom:
+11.6pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b>Note:</b>
+Use aria-controls, not aria-owns, in a tab element. Aira-owns enforces a DOM
+order that will deviate from the intended tablist order. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:7.05pt;margin-left:
+-.25pt'>3. Tabpanel </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:116.7pt;margin-bottom:
+5.4pt;margin-left:35.3pt;text-indent:-17.8pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>This
+is the container that hosts the HTML which is displayed when a given tab is
+open. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:116.7pt;margin-bottom:
+1.35pt;margin-left:35.3pt;text-indent:-17.8pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tabpanel
+<b>requires</b> the following attributes <span style='font-family:"Courier New"'>o</span><span
+style='font-family:"Arial",sans-serif'> </span>role=”tabpanel” <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>aria-labelledby=”TabID” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.4pt;
+margin-left:108.1pt;text-indent:-18.05pt'><img width=15 height=18
+id="Picture 1122" src="Tablist%20Pattern_files/image004.gif"><span
+style='font-family:"Arial",sans-serif'> </span>ID of the tab which is currently
+selected, that is, which has opened this particular content and thereby gives
+it its name/context. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;margin-left:
+-.25pt'>2.<span style='font-family:"Arial",sans-serif'> </span>DOM order (see
+picture above) </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:25.35pt;margin-bottom:
+.5pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tab
+(buttons) should be child nodes of Tablist </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:25.35pt;margin-bottom:
+15.5pt;margin-left:35.55pt;text-indent:-18.05pt'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Tabpanel
+usually resides as a sibling to Tablist, although technically there is no
+reason why it could not be a child of Tablist. It is not, however, logically
+part of the tablist. </p>
+
+<h1 style='margin-left:-.25pt'>3.<span style='font-family:"Arial",sans-serif'> </span>Keyboard
+Navigation and Focus Management </h1>
+
+<p class=MsoNormal style='margin-right:50.65pt'>Implementing the correct
+pattern for keyboard navigation is important in tab lists. If focus is not
+managed correctly, keyboard users may find the element confusing or even
+impossible to use; this is not uncommon on the implementations one comes across
+on the web even in 2020. </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'><b>There are two
+W3C-recommended kaybaord navigation modes</b> between which the implementors
+can choose safely. Neither one is more accessible than the other. A third
+option, one that presents the tabs as normal web page action buttons to
+keyboard users, can also be used, albeit without official blessing by the W3C.
+Many users, however, will find this last pattern intuitive, especially when a
+tab list can assume shapes and styles quite different to a traditional tab
+list.  </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>With this third option, the
+user need not be able to recognize that the element is a tab list. In the
+author’s opinion, that is good enough reason to at least consider it when thinking
+of how to build a tailored tablist keyboard navigation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.6pt;margin-left:.5pt'>All three patterns can be tested on the demo page: <a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>http://siteimprove</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>-</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>accessibility.net/Demo/Page/</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:6.55pt;margin-left:
+-.25pt'>Pattern 1: Automatic Tab Selection </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+.1in;margin-left:35.55pt;text-indent:-18.05pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The user focuses the tablist with the keyboard TAB key when navigating
+along the web page.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.25pt;margin-left:35.55pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The open tab can be changed by using the keyboard arrow keys (left /
+right). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.5pt;margin-left:35.55pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Each left/right key press at once activates the tab to the left or
+right, displaying its tabpanel content; if the tab is the leftmost or rightmost
+one, the selection hops to the opposing end of the tab list and so can loop
+inside it. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.5pt;margin-left:35.55pt;text-indent:-18.05pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The user cannot not open tabs when navigating the tab list. Therefore,
+Enter/Space have no function. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.55pt;margin-left:35.55pt;text-indent:-18.05pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Pressing the keyboard TAB key again will move focus off the tab list to
+the next interactive element on the page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.65pt;margin-left:35.55pt;text-indent:-18.05pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If tabpanels can be slow to display or bandwith is a cost, this
+navigation mode can incur a performance/bandwith penalty, as reaching a tab not
+active by default requires that all tabs between the active and the desired one
+must be activated one by one till the desired tab is reached. </p>
+
+<h2 style='margin-top:0in;margin-right:0in;margin-bottom:6.55pt;margin-left:
+-.25pt'>Pattern 2: Manual Tab Selection </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:35.3pt;text-indent:-17.8pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The user focuses the tablist with the keyboard TAB key when navigating
+along the web page.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.25pt;margin-left:35.3pt;text-indent:-17.8pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The user can now observe two facts about the tab list: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.05pt;margin-left:72.05pt;text-indent:-17.75pt'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Which of the tabs is active (open) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+.1in;margin-left:72.05pt;text-indent:-17.75pt'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Which of the tabs has the keyboard focus. Initially the focus is on the
+active tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+.1in;margin-left:35.3pt;text-indent:-17.8pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The user can now move the keyboard focus along the tab list, from one
+tab to the next, using the left/right arrow keys. As with Automatic Activation
+above, the focus will loop inside the tab list, from one end to the other.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.5pt;margin-left:35.3pt;text-indent:-17.8pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the user presses Enter or Space, the tab which at that moment has the
+keyboard focus is activated. The user can open additional tabs at will by
+moving the focus and activating a new tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+.1in;margin-left:35.3pt;text-indent:-17.8pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Pressing the keyboard TAB key again will move focus off the tab list to
+the next interactive element on the page. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.65pt;margin-left:35.3pt;text-indent:-17.8pt'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If tabpanels can be slow to display, this navigation mode precludes
+unnecessary tabpanel loads and so gives good performance and minimizes bandwith
+expenditure. </p>
+
+<h2 style='margin-left:-.25pt'>Manual Tab Selection: Algorithm </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.45pt;margin-left:.5pt'>Prerequisites: The tab element can be in one of the
+following four states, each of which must be visually distinguishable. The tab
+can be visually: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.0pt;margin-left:35.55pt;text-indent:-18.05pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>unselected and unfocused by the keyboard </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.3pt;margin-left:35.55pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>unselected but focused </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.2pt;margin-left:35.55pt;text-indent:-18.05pt;line-height:103%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>selected
+(tabpanel displays this tab’s content) but unfocused </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:35.55pt;text-indent:-18.05pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>selected and focused </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b>Procedure: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.3pt;margin-left:35.55pt;text-indent:-18.05pt;line-height:103%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set
+all tabs except the selected one with tabindex=”-1” and style #1. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+7.5pt;margin-left:35.55pt;text-indent:-18.05pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='position:relative;z-index:-1895824384'><span
+style='left:0px;position:absolute;left:389px;top:-2px;width:31px;height:18px'><img
+width=31 height=18 src="Tablist%20Pattern_files/image006.gif"></span></span>Set
+the selected tab with tabindex=”0” and style #3.              NOTE: One tab is
+always open when the tablist is rendered. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.25pt;margin-left:35.55pt;text-indent:-18.05pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the pre-selected tab receives a CSS :focus state, set its style to be
+#4. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.0pt;
+margin-left:71.55pt;text-indent:-.25in'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>is the same as document.activeElement === tab, in JS. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.25pt;margin-left:35.55pt;text-indent:-18.05pt'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Tabs respond to keyevent handlers:  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+“left” or “up” arrow keys are triggered </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.05pt;margin-left:90.55pt;text-indent:2.8pt'>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Set the tab with style #2. ii.<span style='font-family:"Arial",sans-serif'>
+</span>Update the preceding tab’s style as either #1 or #3 depending on whether
+the tab is selected (open) or not. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:52.3pt;margin-bottom:
+1.45pt;margin-left:64.2pt;text-indent:-20.3pt'>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the current tab was the first tab in the tab list, the preceding tab
+is the last tab of the list (that is, loop inside the list).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:52.3pt;margin-bottom:
+6.5pt;margin-left:64.2pt;text-indent:-20.3pt;line-height:107%'>iv.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Move
+focus to the preceding tab (with e.g. JS DOMNode.focus()) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+“right” or “down” arrow keys are triggered </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+6.5pt;margin-left:90.55pt;text-indent:2.8pt;line-height:107%'>i.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>apply
+the step 4, only to the opposite direction. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+“TAB” key is triggered </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+5.4pt;margin-left:90.55pt;text-indent:2.8pt'>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Do nothing. The user will move off the list. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.2pt;
+margin-left:71.55pt;text-indent:-.25in;line-height:103%'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>If
+“Enter” or “Space” is triggered, and the tab is not already selected </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+1.2pt;margin-left:90.55pt;text-indent:2.8pt;line-height:103%'>i.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set
+the tab’s style to #4. ii.<span style='font-family:"Arial",sans-serif'> </span>Give
+the tab tabindex=”0” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:82.0pt;margin-bottom:
+6.9pt;margin-left:88.3pt'>iii.<span style='font-family:"Arial",sans-serif'> </span>Give
+the tab that was previously selected tabindex=”-1” iv.<span style='font-family:
+"Arial",sans-serif'> </span>Give the tab that was previously selected style #1.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.45pt;margin-left:35.55pt;text-indent:-18.05pt'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the tab receives a click event, execute 4.d from above. </p>
+
+<h2 style='margin-left:-.25pt'>Automatic Tab Selection: Algorithm </h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+11.35pt;margin-left:.5pt'>The algorithm is similar to the manual selection
+otherwise save the following: When the user pressed an arrow key, execute step
+4.d immediately. Enter/Space are unheeded. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.85pt;
+margin-left:-.25pt;line-height:107%'>Examples </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.95pt;
+margin-left:0in;text-indent:0in;line-height:107%'><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>http://siteimprove</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>-</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:#0563C1'>accessibility.net/Demo/Page/</span></a><a
+href="http://siteimprove-accessibility.net/Demo/Page/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<h2 style='margin-left:-.25pt'>Purpose of the tabindexes on the W3C pattern
+algorithms </h2>
+
+<p class=MsoNormal style='margin-right:50.65pt'>When the user moves along the
+page using the TAB key, and the focus thus eventually lands on the tab list,
+the correct tab element (aka button) automatically receives focus. Now, when
+the user engages the arrow keys, the correct next or previous tab is focused.
+If a new tab was activated, its tabindex, too, is updated; and so if the user
+now leaves the tab list and then return to it, the correct tab button is again
+focused (the one that is active and was, in turn, given tabindex===”0”). </p>
+
+<p class=MsoNormal style='margin-right:50.65pt'>Since only one tab ever has
+tabindex 0, and the others tabindex -1, the correct tab is perforce focused,
+and the tabs’ key event handlers need not worry wherefrom the focus arrived, or
+whereto it goes. They only need to know what to do if the user presses arrow
+keys or Enter/Space. That is, they know that they will only ever receive these
+key events if they are being focused, as they cannot be ‘illegitimately’
+focused. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:50.65pt;margin-bottom:
+13.4pt;margin-left:.5pt'>Using tabindexes therefore simplifies the
+implementation and makes it work ‘passively’ correctly. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.8pt;
+margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:14.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+</div>
+
+</body>
+
+</html>
