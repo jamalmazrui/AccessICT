@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui (with AI assistance), Consultant, Access Success LLC" />
+  <meta name="dcterms.date" content="2025-04-07" />
+  <title>Microsoft Accessibility Insights for Web</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Microsoft Accessibility Insights for Web</h1>
+<p class="subtitle">A Comprehensive Guide to the Browser Extension for
+Screen Reader Users</p>
+<p class="author">Jamal Mazrui (with AI assistance), Consultant, Access
+Success LLC</p>
+<p class="date">April 7, 2025</p>
+</header>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#document-structure">Document Structure</a></li>
+<li><a href="#extension-structure">Extension Structure</a></li>
+<li><a href="#platform-and-browser-compatibility">Platform and Browser
+Compatibility</a></li>
+<li><a href="#wcag-standards">WCAG Standards</a></li>
+<li><a href="#testing-approaches">Testing Approaches</a></li>
+<li><a href="#test-results-and-instances">Test Results and
+Instances</a></li>
+</ul></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#for-microsoft-edge-page">For Microsoft Edge Page</a></li>
+<li><a href="#for-google-chrome-page">For Google Chrome Page</a></li>
+<li><a href="#extension-updates-page">Extension Updates Page</a></li>
+</ul></li>
+<li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+<li><a href="#main-menu-page">Main Menu Page</a></li>
+<li><a href="#settings-page">Settings Page</a>
+<ul>
+<li><a href="#general-settings-section">General Settings
+Section</a></li>
+<li><a href="#application-scope-settings-section">Application Scope
+Settings Section</a></li>
+<li><a href="#keyboard-shortcuts-section">Keyboard Shortcuts
+Section</a></li>
+<li><a href="#assessment-configuration-section">Assessment Configuration
+Section</a></li>
+<li><a href="#report-export-settings-section">Report Export Settings
+Section</a></li>
+</ul></li>
+<li><a href="#fastpass-page">FastPass Page</a>
+<ul>
+<li><a href="#automated-checks-tab-section">Automated Checks Tab
+Section</a></li>
+<li><a href="#tab-stops-tab-section">Tab Stops Tab Section</a></li>
+</ul></li>
+<li><a href="#assessment-start-page">Assessment Start Page</a></li>
+<li><a href="#assessment-in-progress-page">Assessment In Progress
+Page</a>
+<ul>
+<li><a href="#tracking-assessment-progress-section">Tracking Assessment
+Progress Section</a></li>
+<li><a href="#nonvisual-testing-methods-section">Nonvisual Testing
+Methods Section</a>
+<ul>
+<li><a href="#for-visual-focus-indicators-subsection">For Visual Focus
+Indicators Subsection</a></li>
+<li><a href="#for-visual-spacing-requirements-subsection">For Visual
+Spacing Requirements Subsection</a></li>
+<li><a href="#for-visual-layout-tests-subsection">For Visual Layout
+Tests Subsection</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ad-hoc-tools-page">Ad Hoc Tools Page</a></li>
+<li><a href="#color-tool-page">Color Tool Page</a></li>
+<li><a href="#headings-tool-page">Headings Tool Page</a></li>
+<li><a href="#landmarks-tool-page">Landmarks Tool Page</a></li>
+<li><a href="#tabstops-tool-page">TabStops Tool Page</a></li>
+<li><a href="#images-tool-page">Images Tool Page</a></li>
+<li><a href="#wcag-22-aa-assessment-page">WCAG 2.2 AA Assessment
+Page</a></li>
+<li><a href="#export-results-page">Export Results Page</a></li>
+<li><a href="#html-report-page">HTML Report Page</a>
+<ul>
+<li><a href="#report-structure-section">Report Structure
+Section</a></li>
+<li><a href="#prioritizing-remediation-section">Prioritizing Remediation
+Section</a></li>
+</ul></li>
+<li><a href="#additional-features">Additional Features</a>
+<ul>
+<li><a href="#test-mode-page">Test Mode Page</a></li>
+<li><a href="#save-and-resume-assessment-page">Save and Resume
+Assessment Page</a></li>
+</ul></li>
+<li><a href="#documentation-feedback-and-resources">Documentation,
+Feedback, and Resources</a>
+<ul>
+<li><a href="#official-documentation-page">Official Documentation
+Page</a></li>
+<li><a href="#tutorials-and-learning-resources-section">Tutorials and
+Learning Resources Section</a>
+<ul>
+<li><a href="#official-microsoft-tutorials-subsection">Official
+Microsoft Tutorials Subsection</a></li>
+<li><a href="#curated-third-party-tutorials-subsection">Curated
+Third-Party Tutorials Subsection</a></li>
+</ul></li>
+<li><a href="#providing-feedback-page">Providing Feedback Page</a></li>
+<li><a href="#open-source-repository-page">Open Source Repository
+Page</a></li>
+<li><a href="#community-support-page">Community Support Page</a></li>
+</ul></li>
+<li><a href="#appendix-a-keyboard-navigation-reference">Appendix A:
+Keyboard Navigation Reference</a>
+<ul>
+<li><a href="#general-navigation-section">General Navigation
+Section</a></li>
+<li><a href="#screen-reader-navigation-section">Screen Reader Navigation
+Section</a></li>
+</ul></li>
+<li><a href="#appendix-b-troubleshooting-tips">Appendix B:
+Troubleshooting Tips</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>This guide helps screen reader users effectively navigate and use the
+Microsoft Accessibility Insights for Web browser extension. Microsoft
+Accessibility Insights for Web helps developers, testers, and designers
+find and fix accessibility issues in websites and web applications. It
+offers automated tests, guided manual testing workflows, and specialized
+tools for evaluating specific aspects of accessibility.</p>
+<p>The extension works with JAWS from <a
+href="https://www.freedomscientific.com/products/software/jaws/">Freedom
+Scientific</a>, NVDA from <a href="https://www.nvaccess.org/">NV
+Access</a>, and Narrator built into Windows. This guide focuses on
+Windows usage, though the extension also works on macOS.</p>
+<h3 id="document-structure">Document Structure</h3>
+<p>This document is organized to follow the typical workflow of using
+Microsoft Accessibility Insights for Web:</p>
+<ol type="1">
+<li>Introduction and installation</li>
+<li>Basic navigation and keyboard shortcuts</li>
+<li>Using the main testing tools (FastPass and Assessment)</li>
+<li>Working with individual specialized tools (Ad hoc tools)</li>
+<li>Saving, exporting, and reviewing results</li>
+<li>Finding documentation and providing feedback</li>
+<li>Appendices with navigation commands and troubleshooting</li>
+</ol>
+<p>Each section focuses on a specific page or feature of the extension,
+with clear keyboard instructions for navigating and using that feature.
+The document uses consistent terminology and navigation patterns
+throughout.</p>
+<h3 id="extension-structure">Extension Structure</h3>
+<p>Microsoft Accessibility Insights for Web is organized into four main
+components:</p>
+<ol type="1">
+<li><p><strong>FastPass</strong>: A quick automated scan that checks for
+common accessibility issues including automated rule checks and tab stop
+verification. FastPass is designed to be run frequently during
+development to catch basic issues.</p></li>
+<li><p><strong>Assessment</strong>: A comprehensive testing workflow
+that guides you through evaluating a website against WCAG requirements.
+Assessment combines automated checks with manual verification steps to
+provide thorough coverage of accessibility standards.</p></li>
+<li><p><strong>Ad Hoc Tools</strong>: Individual specialized tools for
+testing specific aspects of accessibility, such as color contrast,
+heading structure, landmarks, tab stops, and images. These tools can be
+used independently as needed.</p></li>
+<li><p><strong>Settings</strong>: Configuration options for customizing
+how the extension works, including keyboard shortcuts, assessment
+configurations, and export options.</p></li>
+</ol>
+<p>Each of these components is accessible from the main menu and has a
+dedicated keyboard shortcut for quick access.</p>
+<h3 id="platform-and-browser-compatibility">Platform and Browser
+Compatibility</h3>
+<ul>
+<li><strong>Operating Systems</strong>: Windows 10 and 11, macOS
+(10.14+)</li>
+<li><strong>Browsers</strong>: All modern versions of Microsoft Edge
+(Chromium-based) and Google Chrome</li>
+<li><strong>Screen Readers</strong>: Works with JAWS, NVDA, and Narrator
+on Windows</li>
+</ul>
+<p>The Chrome and Edge versions of the extension provide identical
+functionality and user experience. There are no significant differences
+between them.</p>
+<h3 id="wcag-standards">WCAG Standards</h3>
+<p>Microsoft Accessibility Insights for Web tests websites against the
+Web Content Accessibility Guidelines (WCAG), which are the
+internationally recognized standards for web accessibility developed by
+the W3C Web Accessibility Initiative.</p>
+<p>The current version is WCAG 2.2, which was released in October 2023.
+WCAG is organized into three conformance levels:</p>
+<ul>
+<li><strong>Level A</strong>: The minimum level of conformance,
+addressing the most basic accessibility requirements.</li>
+<li><strong>Level AA</strong>: The standard level of conformance
+required by most regulations and policies, including Level A
+requirements plus additional criteria.</li>
+<li><strong>Level AAA</strong>: The highest level of conformance,
+addressing advanced accessibility features.</li>
+</ul>
+<p>Microsoft Accessibility Insights for Web typically tests against WCAG
+2.2 Level AA, which includes both Level A and Level AA success criteria.
+This is the commonly accepted standard for most websites and
+applications.</p>
+<p>You can learn more about WCAG at <a
+href="https://www.w3.org/WAI/standards-guidelines/wcag/">https://www.w3.org/WAI/standards-guidelines/wcag/</a>.</p>
+<h3 id="testing-approaches">Testing Approaches</h3>
+<p>Microsoft Accessibility Insights uses three main testing
+approaches:</p>
+<ol type="1">
+<li><strong>Automated Testing</strong>:
+<ul>
+<li>Tests performed by the extension without user intervention</li>
+<li>Provides definitive pass/fail results</li>
+<li>Examples include color contrast detection, missing alt text,
+keyboard traps</li>
+<li>Found in the FastPass automated checks and parts of Assessment</li>
+</ul></li>
+<li><strong>Semi-automated Testing</strong>:
+<ul>
+<li>Extension identifies “candidate instances” that might have
+accessibility issues</li>
+<li>User must manually verify each instance to determine if it’s a true
+issue</li>
+<li>Involves human judgment to evaluate potential issues</li>
+<li>Examples include meaningful link text, keyboard focus traps, logical
+reading order</li>
+<li>Often includes instructions for the tester to follow</li>
+</ul></li>
+<li><strong>Manual Testing</strong>:
+<ul>
+<li>User performs specific actions to test accessibility
+requirements</li>
+<li>Extension provides instructions but doesn’t automate the
+testing</li>
+<li>Based entirely on human verification and judgment</li>
+<li>Examples include logical focus order, meaningful sequence, sensory
+characteristics</li>
+<li>Primary testing method in the Assessment workflow</li>
+</ul></li>
+</ol>
+<h3 id="test-results-and-instances">Test Results and Instances</h3>
+<p>When using the extension, you’ll encounter various terms related to
+test results:</p>
+<ul>
+<li><strong>Failures</strong>: Confirmed accessibility issues that don’t
+meet WCAG requirements</li>
+<li><strong>Failure Instances</strong>: Specific examples of a failure
+found on the page</li>
+<li><strong>Candidate Instances</strong>: Potential issues identified by
+the extension that require human verification</li>
+<li><strong>Pass/Fail/Not Applicable</strong>: Options for marking test
+results in Assessment</li>
+</ul>
+<p>Test Mode is an optional feature that helps with some assessment
+requirements by modifying the page to make testing easier. For example,
+when testing keyboard functionality, Test Mode might add visual
+indicators to show focus states. You can enter Test Mode during
+applicable assessment items using the “Enter Test Mode” button, and exit
+it by pressing Escape.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="for-microsoft-edge-page">For Microsoft Edge Page</h3>
+<ol type="1">
+<li>Navigate directly to the Accessibility Insights extension page: <a
+href="https://microsoftedge.microsoft.com/addons/detail/accessibility-insights-fo/nlgbhdfgdhgbiamfdfmbikpdghaearhj">https://microsoftedge.microsoft.com/addons/detail/accessibility-insights-fo/nlgbhdfgdhgbiamfdfmbikpdghaearhj</a></li>
+<li>Press H to navigate to the main heading</li>
+<li>Press B to navigate to the “Get” button</li>
+<li>Press Enter to initiate installation</li>
+<li>A confirmation dialog will appear; press Enter to confirm</li>
+</ol>
+<h3 id="for-google-chrome-page">For Google Chrome Page</h3>
+<ol type="1">
+<li>Navigate directly to the Accessibility Insights extension page: <a
+href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni">https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni</a></li>
+<li>Press H to navigate to the main heading</li>
+<li>Press B to navigate to the “Add to Chrome” button</li>
+<li>Press Enter to initiate installation</li>
+<li>A confirmation dialog will appear; press Enter to confirm</li>
+</ol>
+<h3 id="extension-updates-page">Extension Updates Page</h3>
+<p>The extension updates automatically in both Chrome and Edge as part
+of the browsers’ regular extension update process. You do not need to
+manually update it.</p>
+<p>To check the current version: 1. Press Alt+F to open the browser menu
+2. Navigate to “Extensions” and press Enter 3. Find “Accessibility
+Insights for Web” 4. The version number will be displayed with the
+extension details</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>The following keyboard shortcuts work globally from anywhere in the
+browser:</p>
+<ul>
+<li><strong>Alt+Shift+1</strong>: Open the extension menu
+<ul>
+<li>Mnemonic: “1” for first action – opening the main menu</li>
+</ul></li>
+<li><strong>Alt+Shift+2</strong>: Launch FastPass scan
+<ul>
+<li>Mnemonic: “2” for two-part FastPass (automated checks and tab
+stops)</li>
+</ul></li>
+<li><strong>Alt+Shift+3</strong>: Launch Assessment scan
+<ul>
+<li>Mnemonic: “3” for three testing types (automated, semi-automated,
+manual)</li>
+</ul></li>
+<li><strong>Alt+Shift+4</strong>: Launch Ad hoc tools menu
+<ul>
+<li>Mnemonic: “4” for four primary ad hoc tools (color, headings,
+landmarks, tabstops)</li>
+</ul></li>
+</ul>
+<p>The following shortcut only works when the extension is already open:
+- <strong>Alt+Shift+C</strong>: Toggle visual helper - Mnemonic: “C” for
+color highlights</p>
+<h2 id="main-menu-page">Main Menu Page</h2>
+<p>The main menu is the starting point for accessing all testing tools
+in the extension. From here, you can launch FastPass, Assessment, or
+individual Ad hoc tools.</p>
+<p>Press H to navigate to the main heading. Press B to navigate through
+the menu buttons: - FastPass - Assessment - Ad hoc tools - Settings</p>
+<p>Press Enter to select the highlighted option.</p>
+<h2 id="settings-page">Settings Page</h2>
+<p>The Settings page allows you to customize how the extension works,
+including assessment configurations, keyboard shortcuts, and export
+options.</p>
+<p>Go to the Main Menu Page by pressing Alt+Shift+1. Press S to jump to
+“Settings” and press Enter.</p>
+<p>Press H to navigate to the “Settings” heading. Use H key to navigate
+through settings section headings.</p>
+<h3 id="general-settings-section">General Settings Section</h3>
+<ul>
+<li><strong>High Contrast Mode</strong>: Toggles high contrast view.
+Default: Off</li>
+<li><strong>Telemetry</strong>: Controls if usage data is sent to
+Microsoft. Default: On</li>
+</ul>
+<h3 id="application-scope-settings-section">Application Scope Settings
+Section</h3>
+<ul>
+<li><strong>Enable scanning of iframes</strong>: When enabled, scans
+content inside iframes. Default: On</li>
+<li><strong>Enable scanning of file URLs</strong>: When enabled, scans
+local HTML files. Default: Off</li>
+<li><strong>Show insights when scanning</strong>: Controls visual
+highlights during scanning. Default: Automatic</li>
+</ul>
+<h3 id="keyboard-shortcuts-section">Keyboard Shortcuts Section</h3>
+<p>To customize shortcuts: 1. Go to the Settings Page 2. Press H until
+you reach “Keyboard shortcuts” heading 3. Press Tab to reach the
+shortcut field you want to change 4. Press your preferred key
+combination 5. Press Tab to move to the next field</p>
+<h3 id="assessment-configuration-section">Assessment Configuration
+Section</h3>
+<p>To set WCAG 2.2 AA as the default standard: 1. Go to the Settings
+Page 2. Press H until you reach “Assessment configuration” heading 3.
+Press Tab to reach the dropdown 4. Press Enter to open the dropdown 5.
+Press Down Arrow until you reach “WCAG 2.2 AA” 6. Press Enter to
+select</p>
+<h3 id="report-export-settings-section">Report Export Settings
+Section</h3>
+<p>To ensure screenshots are included in exported reports: 1. Go to the
+Settings Page 2. Press H until you reach “Report export settings”
+heading 3. Press Tab to reach the “Include screenshots” checkbox 4. If
+not checked, press Space to enable it 5. Other export options: - Include
+page URL. Default: On - Report format. Default: Standard</p>
+<p>When screenshots are included in reports: - Visual snapshots of the
+webpage are embedded in HTML and JSON reports - Each failure instance
+includes a screenshot highlighting the problematic element - The
+screenshots help sighted colleagues identify the exact location of
+issues - For screen reader users, the screenshots include alt text
+descriptions - Screenshots increase file size but provide valuable
+context for collaborative remediation</p>
+<p>To save changes: 1. Press B to find the “Save” button 2. Press Enter
+to save configuration changes</p>
+<h2 id="fastpass-page">FastPass Page</h2>
+<p>FastPass is a quick automated scan that checks for high-impact
+accessibility issues and keyboard accessibility. It includes automated
+checks and tab stop verification.</p>
+<p>Press Alt+Shift+2 to launch FastPass directly.</p>
+<p>When FastPass completes scanning, the results page appears with tabs
+for: - Automated checks - Tab stops</p>
+<p>Press H to navigate to the “FastPass” heading at the top of the page.
+Go to the main landmark to find the main content area. Press H again to
+navigate between rule categories and results.</p>
+<h3 id="automated-checks-tab-section">Automated Checks Tab Section</h3>
+<p>On the FastPass Page: 1. Press Tab to reach the tab options 2. Use
+arrow keys to select the “Automated checks” tab if not already selected
+3. Press H to navigate between rule categories 4. Press H again to
+navigate to specific failure instances 5. Press Enter on a failure to
+expand detailed information</p>
+<h3 id="tab-stops-tab-section">Tab Stops Tab Section</h3>
+<p>On the FastPass Page: 1. Press Tab to reach the tab options 2. Use
+arrow keys to select the “Tab Stops” tab 3. Press Tab to reach the tab
+stops list 4. Press Down Arrow to move through the list of tab stops 5.
+Press Enter on a tab stop to expand its details</p>
+<h2 id="assessment-start-page">Assessment Start Page</h2>
+<p>The Assessment tool provides a comprehensive evaluation framework for
+testing against WCAG criteria. It combines automated tests with guided
+manual verification.</p>
+<p>Press Alt+Shift+3 to launch Assessment directly.</p>
+<p>Press H to navigate to the “Assessment” heading. Find “Start
+assessment” by pressing B to navigate through buttons.</p>
+<p>To select WCAG 2.2 AA: 1. Press Tab until you reach the requirements
+dropdown 2. Press Enter to open the dropdown 3. Press Down Arrow until
+you reach “WCAG 2.2 AA” 4. Press Enter to select 5. Press B to find the
+“Start assessment” button 6. Press Enter to begin the assessment</p>
+<h2 id="assessment-in-progress-page">Assessment In Progress Page</h2>
+<p>The Assessment In Progress page guides you through each WCAG
+requirement with instructions, pass/fail controls, and navigation
+between requirements.</p>
+<p>After starting an assessment: Press H to navigate to the “Assessment”
+heading. Press H again to navigate between requirement categories and
+individual requirements.</p>
+<h3 id="tracking-assessment-progress-section">Tracking Assessment
+Progress Section</h3>
+<p>To determine your progress through the assessment on the Assessment
+In Progress Page: 1. Press Ctrl+F to search for “Progress” text 2.
+Navigate to the status information near the top of the page 3. The
+status information includes: - A progress percentage (e.g., “29%
+complete”) - Current requirement number and total (e.g., “Requirement 7
+of 25”) - Category progress (e.g., “2 of 8 in this category”)</p>
+<p>After each requirement is marked, the progress information
+automatically updates.</p>
+<p>For each requirement: 1. Read the instructions 2. Press Tab to find
+the pass/fail form controls 3. Press Space to select Pass/Fail/Not
+Applicable 4. If marking as Fail, press Tab to reach the comment field
+5. Press B to find “Next requirement” button 6. Press Enter to
+advance</p>
+<h3 id="nonvisual-testing-methods-section">Nonvisual Testing Methods
+Section</h3>
+<p>Several assessment requirements reference visual aspects of the page.
+Here are nonvisual approaches to these tests:</p>
+<h4 id="for-visual-focus-indicators-subsection">For Visual Focus
+Indicators Subsection</h4>
+<ol type="1">
+<li>When testing focus visibility, press Tab to move through interactive
+elements</li>
+<li>For each element, your screen reader should announce when it
+receives focus</li>
+<li>If an element receives focus without your screen reader announcing
+it, mark it as a failure</li>
+<li>Interactive elements should announce their state changes (focused,
+pressed, etc.)</li>
+</ol>
+<h4 id="for-visual-spacing-requirements-subsection">For Visual Spacing
+Requirements Subsection</h4>
+<ol type="1">
+<li>Extract text to a document using Ctrl+A, Ctrl+C</li>
+<li>Review the text for unexpected runs of spaces or line breaks</li>
+<li>Use the screen reader’s text review commands to analyze the
+structure</li>
+</ol>
+<h4 id="for-visual-layout-tests-subsection">For Visual Layout Tests
+Subsection</h4>
+<ol type="1">
+<li>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4</li>
+<li>Select the Headings tool</li>
+<li>Review the heading structure to understand the logical
+organization</li>
+<li>Return to the Ad Hoc Tools Page and select the Landmarks tool</li>
+<li>Review landmark regions to verify proper page structure</li>
+<li>Tab through interactive elements to verify logical order matches
+content flow</li>
+</ol>
+<h2 id="ad-hoc-tools-page">Ad Hoc Tools Page</h2>
+<p>The Ad Hoc Tools menu provides access to individual specialized
+testing tools for evaluating specific aspects of accessibility.</p>
+<p>Press Alt+Shift+4 to open Ad hoc tools directly.</p>
+<p>Press H to navigate to the main heading. Press B to navigate through
+the tool buttons, then press Enter to select.</p>
+<h2 id="color-tool-page">Color Tool Page</h2>
+<p>The Color Tool helps evaluate color contrast between foreground and
+background elements against WCAG contrast requirements.</p>
+<p>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4. Select “Color”
+by pressing B until you find the Color button, then press Enter. Press H
+to navigate to the “Color” heading. Press Tab to navigate to the color
+input forms. Use Up/Down arrows to adjust values.</p>
+<h2 id="headings-tool-page">Headings Tool Page</h2>
+<p>The Headings Tool displays all headings on the page in their
+hierarchical structure, allowing you to verify proper nesting and
+organization.</p>
+<p>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4. Select
+“Headings” by pressing B until you find the Headings button, then press
+Enter. Press H to navigate to the “Headings” heading. Press H again to
+navigate to each heading in the list.</p>
+<p>To analyze heading structure nonvisually: 1. Press 1-6 to navigate
+through different heading levels 2. Listen for heading level
+announcements from your screen reader 3. Verify logical nesting (h1
+followed by h2, etc.) 4. Check for missing or skipped levels 5. Check
+that headings accurately describe their sections</p>
+<h2 id="landmarks-tool-page">Landmarks Tool Page</h2>
+<p>The Landmarks Tool identifies all ARIA landmarks and HTML5 structural
+elements on the page, helping verify proper page structure.</p>
+<p>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4. Select
+“Landmarks” by pressing B until you find the Landmarks button, then
+press Enter. Press H to navigate to the “Landmarks” heading. Press Tab
+until you reach the landmarks list. Press Down Arrow to move through
+landmark entries.</p>
+<h2 id="tabstops-tool-page">TabStops Tool Page</h2>
+<p>The TabStops Tool records and displays the keyboard navigation
+sequence through interactive elements, helping verify logical tab
+order.</p>
+<p>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4. Select
+“TabStops” by pressing B until you find the TabStops button, then press
+Enter. Press H to navigate to the “TabStops” heading. Press B to find
+the “Start” button and press Enter. Tab through the page to record tab
+sequence. Press Escape when finished.</p>
+<h2 id="images-tool-page">Images Tool Page</h2>
+<p>The Images Tool lists all images on the page along with their
+alternative text, helping verify proper text alternatives.</p>
+<p>Go to the Ad Hoc Tools Page by pressing Alt+Shift+4. Select “Images”
+by pressing B until you find the Images button, then press Enter. Press
+H to navigate to the “Images” heading. Press Tab until you reach the
+image list. Press Down Arrow to move through image entries.</p>
+<p>To evaluate alt text nonvisually: 1. Navigate through the images list
+2. For each image, the tool will announce if alt text is present 3.
+Review the announced alt text for: - Appropriate length (not too verbose
+or too brief) - Accurate description of image content - Purpose-serving
+information for functional images - Empty alt attributes for decorative
+images</p>
+<h2 id="wcag-2.2-aa-assessment-page">WCAG 2.2 AA Assessment Page</h2>
+<p>The WCAG 2.2 AA Assessment provides a comprehensive evaluation
+against all Level A and AA success criteria in the WCAG 2.2
+standard.</p>
+<p>To start a WCAG 2.2 AA assessment:</p>
+<ol type="1">
+<li>Press Alt+Shift+3 to open the Assessment Page</li>
+<li>Press H to navigate to the main heading</li>
+<li>Press Tab to reach the requirements dropdown</li>
+<li>Press Enter to open it</li>
+<li>Press Down Arrow until you reach “WCAG 2.2 AA”</li>
+<li>Press Enter to select</li>
+<li>Press B to find the “Start assessment” button</li>
+<li>Press Enter to begin</li>
+</ol>
+<p>During the assessment: Press H to navigate between requirement
+categories. Press H again to navigate to specific requirements. Press
+Tab to reach Pass/Fail/Not Applicable options. Press Space to
+select.</p>
+<p>To check your progress: Press Ctrl+F to search for “Progress” text,
+or navigate to the top of the page to find the status information.</p>
+<h2 id="export-results-page">Export Results Page</h2>
+<p>The Export Results dialog allows you to save test results in
+different formats for documentation and remediation planning.</p>
+<p>After completing any test:</p>
+<p>Press B to find the “Export” button and press Enter. Press Down Arrow
+to select your preferred format: - HTML (default, most accessible for
+screen readers) - JSON - CSV (for FastPass tabstop results only) Press
+Enter on your chosen format.</p>
+<h2 id="html-report-page">HTML Report Page</h2>
+<p>The HTML Report provides a comprehensive summary of all accessibility
+issues found during testing, organized by category and severity.</p>
+<p>When you open an exported HTML report:</p>
+<p>Press H to jump to the report title. Press H again to navigate
+between main sections. Press H a third time to navigate directly to
+failure categories. Press Enter to expand/collapse specific
+failures.</p>
+<h3 id="report-structure-section">Report Structure Section</h3>
+<ul>
+<li><strong>Summary section</strong>: Contains overall pass/fail
+counts</li>
+<li><strong>Results section</strong>: Organized by test category with
+failures listed first</li>
+</ul>
+<p>For each failure: - Rule name (heading) - Impact level (Critical,
+Serious, Moderate, Minor) - WCAG reference number - How to fix guidance
+- Element information - Screenshot (if enabled in export settings) with
+alt text description</p>
+<h3 id="prioritizing-remediation-section">Prioritizing Remediation
+Section</h3>
+<p>To find Critical and Serious issues: 1. Press H to navigate to each
+failure heading 2. Read the impact level 3. Address Critical and Serious
+issues first 4. Press B to find “How to fix” buttons and press Enter for
+guidance</p>
+<h2 id="additional-features">Additional Features</h2>
+<h3 id="test-mode-page">Test Mode Page</h3>
+<p>Test Mode modifies page elements to make certain accessibility tests
+easier to perform. It’s available for some semi-automated tests.</p>
+<p>For tests with a “Test Mode” option:</p>
+<p>Press H to navigate to the main heading. Press B to find “Enter test
+mode” button and press Enter. Follow the on-screen instructions. Press
+Escape to exit test mode.</p>
+<h3 id="save-and-resume-assessment-page">Save and Resume Assessment
+Page</h3>
+<p>The Save and Resume feature allows you to save progress during a
+lengthy assessment and continue it later.</p>
+<p>To save progress during an assessment:</p>
+<p>Go to the Assessment In Progress Page. Press B to find “Save
+assessment” button and press Enter. Type a filename in the Save dialog.
+Press Enter to save.</p>
+<p>To resume: Go to the Assessment Start Page by pressing Alt+Shift+3.
+Press B to find “Load assessment” button. Navigate to your saved file
+and press Enter.</p>
+<h2 id="documentation-feedback-and-resources">Documentation, Feedback,
+and Resources</h2>
+<h3 id="official-documentation-page">Official Documentation Page</h3>
+<p>To access official documentation: 1. Navigate to <a
+href="https://accessibilityinsights.io/docs/web/overview/">https://accessibilityinsights.io/docs/web/overview/</a>
+2. The documentation is organized in a screen reader-friendly format
+with proper headings</p>
+<h3 id="tutorials-and-learning-resources-section">Tutorials and Learning
+Resources Section</h3>
+<h4 id="official-microsoft-tutorials-subsection">Official Microsoft
+Tutorials Subsection</h4>
+<ol type="1">
+<li><strong>Getting Started Videos</strong>: <a
+href="https://accessibilityinsights.io/docs/web/reference/videos/">https://accessibilityinsights.io/docs/web/reference/videos/</a></li>
+<li><strong>Official User Guide</strong>: <a
+href="https://accessibilityinsights.io/docs/web/getstarted/">https://accessibilityinsights.io/docs/web/getstarted/</a></li>
+<li><strong>Microsoft Learn Module</strong>: <a
+href="https://learn.microsoft.com/en-us/training/paths/accessibility-insights-web/">https://learn.microsoft.com/en-us/training/paths/accessibility-insights-web/</a></li>
+</ol>
+<h4 id="curated-third-party-tutorials-subsection">Curated Third-Party
+Tutorials Subsection</h4>
+<ol type="1">
+<li><strong>WebAIM Tutorial</strong>: “Using Accessibility Insights for
+Web” - <a
+href="https://webaim.org/articles/insights/">https://webaim.org/articles/insights/</a></li>
+<li><strong>Deque University</strong>: “Accessibility Testing with
+Accessibility Insights” - <a
+href="https://dequeuniversity.com/resources/">https://dequeuniversity.com/resources/</a></li>
+<li><strong>A11y Project</strong>: “Getting Started with Accessibility
+Insights” - <a
+href="https://www.a11yproject.com/resources/">https://www.a11yproject.com/resources/</a></li>
+<li><strong>TPGi Blog</strong>: “Automated and Manual Testing with
+Accessibility Insights” - <a
+href="https://www.tpgi.com/resources/blog/">https://www.tpgi.com/resources/blog/</a></li>
+<li><strong>Inclusive Design 24 Conference</strong>: “Accessibility
+Insights Demo” - Search YouTube for “ID24 Accessibility Insights”</li>
+</ol>
+<h3 id="providing-feedback-page">Providing Feedback Page</h3>
+<p>To report issues or provide feedback to Microsoft through the
+extension:</p>
+<ol type="1">
+<li>Open the extension by pressing Alt+Shift+1</li>
+<li>Press B repeatedly until you locate the “Feedback” button (usually
+in the top-right corner)</li>
+<li>Press Enter to open the feedback form</li>
+<li>Tab to the feedback type dropdown and press Enter</li>
+<li>Use arrow keys to select the type of feedback (Bug, Feature request,
+or Other)</li>
+<li>Press Tab to move to the description field</li>
+<li>Type your feedback</li>
+<li>Press Tab to move to email field (optional)</li>
+<li>Press Tab to move to the “Send feedback” button</li>
+<li>Press Enter to submit</li>
+</ol>
+<p>To file issues directly on GitHub:</p>
+<ol type="1">
+<li>Navigate to <a
+href="https://github.com/microsoft/accessibility-insights-web/issues">https://github.com/microsoft/accessibility-insights-web/issues</a></li>
+<li>Press B repeatedly until you find the “New issue” button</li>
+<li>Press Enter to open the issue creation page</li>
+<li>Press Tab to navigate to the “Get started” button next to “Bug
+Report” or “Feature request”</li>
+<li>Press Enter to select</li>
+<li>Fill in the template fields using Tab to navigate between them</li>
+<li>Press Tab until you reach the “Submit new issue” button</li>
+<li>Press Enter to submit your issue</li>
+</ol>
+<h3 id="open-source-repository-page">Open Source Repository Page</h3>
+<p>The extension is open source and available on GitHub under the MIT
+License, which is a permissive free software license.</p>
+<ol type="1">
+<li>Repository URL: <a
+href="https://github.com/microsoft/accessibility-insights-web">https://github.com/microsoft/accessibility-insights-web</a></li>
+<li>You can:
+<ul>
+<li>Examine the source code</li>
+<li>Contribute to development</li>
+<li>Report issues</li>
+<li>Suggest enhancements</li>
+<li>Fork the repository to create your own version</li>
+</ul></li>
+</ol>
+<h3 id="community-support-page">Community Support Page</h3>
+<p>For community support: 1. Join the Microsoft Accessibility Insights
+GitHub Discussions: <a
+href="https://github.com/microsoft/accessibility-insights-web/discussions">https://github.com/microsoft/accessibility-insights-web/discussions</a>
+2. Post questions to the community forum 3. Share your testing
+experiences and solutions</p>
+<h2 id="appendix-a-keyboard-navigation-reference">Appendix A: Keyboard
+Navigation Reference</h2>
+<h3 id="general-navigation-section">General Navigation Section</h3>
+<ul>
+<li>Tab: Move to next interactive element</li>
+<li>Shift+Tab: Move to previous interactive element</li>
+<li>Enter: Activate buttons or expand sections</li>
+<li>Space: Select options (checkboxes, radio buttons)</li>
+<li>Escape: Close current view or dialog</li>
+</ul>
+<h3 id="screen-reader-navigation-section">Screen Reader Navigation
+Section</h3>
+<ul>
+<li>H: Navigate by headings</li>
+<li>B: Navigate to buttons</li>
+<li>Ctrl+F: Search for specific text</li>
+<li>Down/Up Arrow: Navigate through lists</li>
+</ul>
+<h2 id="appendix-b-troubleshooting-tips">Appendix B: Troubleshooting
+Tips</h2>
+<ul>
+<li>If keyboard focus seems lost, press H to navigate to the main
+heading and start navigation again</li>
+<li>If the extension doesn’t respond to keyboard shortcuts, check if
+it’s enabled in the Extensions menu</li>
+<li>For iframes that aren’t being scanned, verify “Enable scanning of
+iframes” is enabled in Settings</li>
+<li>If an export fails, check if you have permission to write to the
+selected location</li>
+<li>If the extension seems to be missing features, check if it’s updated
+to the latest version</li>
+</ul>
+</body>
+</html>
