@@ -1,0 +1,983 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Creating Accessible Documents in Word and Using the Accessibility
+Checker</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Wingdings 2";
+	panose-1:5 2 1 2 1 5 7 7 7 7;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:11.6pt;
+	margin-left:80.55pt;
+	text-indent:-14.9pt;
+	line-height:90%;
+	font-size:20.0pt;
+	font-family:"Verdana",sans-serif;
+	color:#6E664B;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:67.85pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	text-align:right;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:44.0pt;
+	font-family:"Verdana",sans-serif;
+	color:#8E795E;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:.15pt;
+	margin-left:271.3pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:28.0pt;
+	font-family:"Verdana",sans-serif;
+	color:#6E664B;
+	font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Verdana",sans-serif;
+	color:#6E664B;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Verdana",sans-serif;
+	color:#8E795E;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:960.0pt 7.5in;
+	margin:36.6pt 88.9pt 45.85pt 246.25pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:960.0pt 7.5in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:960.0pt 7.5in;
+	margin:59.75pt 87.15pt 60.5pt 311.85pt;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:960.0pt 7.5in;
+	margin:59.75pt 87.6pt 60.0pt 311.85pt;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:960.0pt 7.5in;
+	margin:59.75pt 88.55pt 60.5pt 311.75pt;}
+div.WordSection5
+	{page:WordSection5;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=960 style='width:719.75pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:420.0pt'>
+  <td width=960 valign=top style='width:719.75pt;background:#A9A47B;padding:
+  107.0pt 146.9pt 0in 86.0pt;height:420.0pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><i><span
+  style='font-size:40.0pt;line-height:107%;color:white'>Strategies for Creating
+  </span></i></p>
+  <p class=MsoNormal style='margin:0in;text-align:justify;text-justify:inter-ideograph;
+  text-indent:0in'><i><span style='font-size:40.0pt;line-height:90%;color:white'>Accessible
+  Documents in Word and Using the </span></i></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><i><span
+  style='font-size:40.0pt;line-height:107%;color:white'>Accessibility Checker…</span></i></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:871.1pt;margin-bottom:
+0in;margin-left:-246.25pt;text-indent:0in;line-height:107%'><img width=307
+height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image001.gif"
+align=left hspace=12><br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:81.2pt;margin-bottom:
+0in;margin-left:15.75pt;text-indent:-15.75pt;line-height:98%'><span
+style='font-size:36.0pt;line-height:98%;color:#2E2B1F'>Consider the idea of <i>Universal
+Design</i>…</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:-128.75pt;text-indent:0in;line-height:107%'><img width=949
+height=466 id="Picture 15"
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image002.jpg"></p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Many people think Universal
+Design is geared towards making a physical space available to everyone. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>In reality, Universal
+Design is about making all things accessible to all people. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:11.9pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><span style='font-size:
+  36.0pt;line-height:107%;color:white'>Universal Design is not just about
+  access for the disabled.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12>Many individuals who are not considered disabled use
+programs, such as text-to-speech readers, to more easily access information.
+They may find these programs useful for their personal learning style. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Introducing the mindful
+habit of “accessible thinking” when generating your documents benefits
+everyone. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>The following information
+is geared towards those using Microsoft Word to create accessible documents,
+but many of these strategies can be used in other Microsoft Office programs. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>What is the
+  Accessibility Checker? </span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:80.05pt;text-indent:-.2in'><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:40.0pt;line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;</span><i><span style='font-size:40.0pt;
+line-height:90%;color:#8E795E'>A feature of the Office Suite that helps to
+locate elements within documents which may present a problem for people with
+disabilities. </span></i></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:12.9pt;
+margin-bottom:124.1pt;margin-left:-376.1pt;text-align:right;text-indent:-.5pt;
+line-height:107%'><span style='font-size:32.0pt;line-height:107%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;</span><span style='font-size:32.0pt;
+line-height:107%'>Does a “clean </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Two important
+  questions:</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:137.6pt;
+margin-left:0in;text-indent:0in;line-height:107%'><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:11.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;color:black'>                            </span><span
+style='font-size:32.0pt;line-height:107%;font-family:"Wingdings 2";color:#A9A47B'>&#150;</span><span
+style='font-size:32.0pt;line-height:107%'>for people with disabilities? Is this
+tool <i><u>ONLY </u></i>useful            bill of health” from this tool mean
+your document is 100% </span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:54.85pt;
+margin-bottom:124.1pt;margin-left:-376.1pt;text-align:right;text-indent:-.5pt;
+line-height:107%'><span style='font-size:32.0pt;line-height:107%'>accessible? </span></p>
+
+</div>
+
+<span style='font-size:20.0pt;line-height:90%;font-family:"Verdana",sans-serif;
+color:#6E664B'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:132.5pt;text-indent:0in;line-height:107%'><img width=751
+height=444 id="Picture 90"
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image004.jpg"></p>
+
+</div>
+
+<span style='font-size:20.0pt;line-height:90%;font-family:"Verdana",sans-serif;
+color:#6E664B'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in'><span style='font-size:
+  36.0pt;line-height:90%;color:white'>How to read the </span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Accessibility Checker…</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:15.9pt;text-indent:12.95pt;line-height:122%'><img width=39
+height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:32.0pt;line-height:122%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;</span><i><span style='font-size:32.0pt;
+line-height:122%;color:#8E795E'>There are 3 ways it   </span></i><span
+style='font-size:44.0pt;line-height:122%;font-family:"Wingdings 2";color:#A9A47B'>&#150;</span><span
+style='font-size:44.0pt;line-height:122%;color:#8E795E'>Errors </span><i><span
+style='font-size:32.0pt;line-height:122%;color:#8E795E'>classifies areas    </span></i><span
+style='font-size:44.0pt;line-height:122%;font-family:"Wingdings 2";color:#A9A47B'>&#150;</span><span
+style='font-size:44.0pt;line-height:122%;color:#8E795E'>Warnings </span><i><span
+style='font-size:32.0pt;line-height:122%;color:#8E795E'>of concern:</span></i></p>
+
+<h1><span style='font-family:"Wingdings 2";color:#A9A47B'>&#150;</span>Tips</h1>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 valign=top style='width:271.2pt;background:#A9A47B;padding:
+  25.95pt 5.75pt 0in 29.4pt;height:419.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:22.2pt;
+  margin-bottom:30.45pt;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><u><span style='font-size:36.0pt;line-height:107%;
+  color:white'>Errors</span></u></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:12.3pt;
+  margin-bottom:0in;margin-left:2.0pt;text-align:center;text-indent:0in'><span
+  style='font-size:36.0pt;line-height:90%;color:white'>Content that makes the </span></p>
+  <p class=MsoNormal align=center style='margin:0in;text-align:center;
+  text-indent:0in'><span style='font-size:36.0pt;line-height:90%;color:white'>document
+  difficult or </span></p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>impossible…</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.85pt;margin-bottom:
+14.45pt;margin-left:-311.85pt;text-indent:0in;line-height:107%'><img width=39
+height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=750
+ style='width:562.7pt;margin-left:4.25pt;border-collapse:collapse'>
+ <tr style='height:288.75pt'>
+  <td width=430 valign=top style='width:322.4pt;padding:0in 0in 0in 0in;
+  height:288.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.55pt;
+  margin-left:50.85pt;text-indent:0in;line-height:107%'><u><span
+  style='font-size:36.0pt;line-height:107%'>Warning</span></u></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:38.15pt;margin-bottom:
+  0in;margin-left:52.35pt;text-indent:-40.95pt'><span style='font-size:36.0pt;
+  line-height:90%'>Content that in <b><i>most </i></b></span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:4.3pt;text-indent:0in;line-height:107%'><b><i><span
+  style='font-size:36.0pt;line-height:107%'>cases </span></i></b><span
+  style='font-size:36.0pt;line-height:107%'>makes </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:44.05pt;text-indent:-44.05pt;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%'>the document difficult…</span></p>
+  </td>
+  <td width=320 valign=top style='width:240.3pt;padding:0in 0in 0in 0in;
+  height:288.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:12.75pt;
+  margin-bottom:37.15pt;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><u><span style='font-size:36.0pt;line-height:107%'>Tips</span></u></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:37.7pt;text-indent:-37.7pt'><span style='font-size:36.0pt;
+  line-height:90%'>Content that could be </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:1.1pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+  0in;line-height:107%'><span style='font-size:36.0pt;line-height:107%'>presented
+  in </span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:64.65pt;text-indent:-44.4pt;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%'>a different way…</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>To access the Microsoft
+Accessibility Checker, select the File tab in your toolbar. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>How to access the
+  Checker</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12>This should immediately prompt you to the Info tab. If you
+are automatically prompted to a different tab on the next screen, simply select
+the Info tab—it should be available. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>When viewing the Info tab,
+select the second box, which should be called “Check for Issues.” </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Then, select the second
+option: Check Accessibility. This should automatically take you back to your
+document with the Accessibility Checker pop-up window visible on the right or
+left of your screen. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Navigation is important for
+those that use screen readers, such as JAWS (Job Access With Speech).</p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Using Heading Levels to
+structure your document is key to screen reader access. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05in;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span>Why?</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Document Structure</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.5pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><img
+width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:18.0pt;line-height:90%'>Those that
+use screen readers need a higher level of navigation access to skim documents.
+Otherwise, they would have to read the entire document, every single time they
+require access key information. </span></p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Use the built-in style
+tools to create your heading levels. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Styles are located in the
+home tab on the Microsoft Word toolbar. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Be sure your heading levels
+are organized logically. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>Whenever you use charts, graphs, or
+pictures in your document, you must always remember to also use “alt text” to
+further describe what the reader should be viewing. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>It’s important to remember, those with
+little or no sight will not be able to access the same information visually. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>To add alt text simply right-click on
+your figure (you may need to click the borders or corner). </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Figures</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><img
+width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:19.0pt;line-height:90%'>In the
+pop-up window look for the keywords “format object” or “format chart area.” </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>Once selected, a pop-up window should
+appear in your document. Navigate through the options available. Generally, the
+third option available will have prompts for text boxes or alt text. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>For tables, you would select “table
+properties” and then the Alt Text tab.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>Be as descriptive as you can when
+generating your alt text. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>Hyperlinks can be an important feature
+of any document you create. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>However, people often make mistakes in
+creating their hyperlinks that render this feature inaccessible to some users. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>Avoid using phrases like “CLICK HERE”
+to reference your hyperlink. </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Hyperlinks</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><img
+width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:19.0pt;line-height:90%'>Avoid using
+the actual web address for your embedded hyperlink, as they can often be
+confusing. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>When creating your hyperlink, use
+meaningful text or phrases that allow the reader to understand where the
+hyperlink will lead. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.55pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>It’s suggested to simply incorporate
+the hyperlink into an existing sentence. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:19.0pt;line-height:90%'>For example: To find more information
+on hyperlinks, </span><a
+href="https://www.sitepoint.com/15-rules-making-accessible-links/"><span
+style='font-size:19.0pt;line-height:90%;color:#6E664B;text-decoration:none'>you
+should visit </span></a><a
+href="https://www.sitepoint.com/15-rules-making-accessible-links/"><span
+style='font-size:19.0pt;line-height:90%;color:#D25713'>Making Accessible Links:
+15 Golden</span></a><a
+href="https://www.sitepoint.com/15-rules-making-accessible-links/"><span
+style='font-size:19.0pt;line-height:90%;color:#D25713;text-decoration:none'> </span></a><a
+href="https://www.sitepoint.com/15-rules-making-accessible-links/"><span
+style='font-size:19.0pt;line-height:90%;color:#D25713'>Rules for Developers</span></a><a
+href="https://www.sitepoint.com/15-rules-making-accessible-links/"><span
+style='font-size:19.0pt;line-height:90%;color:#6E664B;text-decoration:none'>.</span></a></p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Many people use columns in
+reports, articles, and journals. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>It’s important to remember
+that Microsoft Word has built-in tools to help you easily create columns within
+a document. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Columns</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12>Never try to replicate the appearance of columns by
+manually tabbing out structural space. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Screen readers will read
+information from left to right, but can recognize properly formatted columns. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Find these built-in tools
+in the layout tab of your Word document. </p>
+
+</div>
+
+<span style='font-size:20.0pt;line-height:90%;font-family:"Verdana",sans-serif;
+color:#6E664B'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.35pt;
+margin-left:.2in;text-indent:0in'>Consider for a moment what it must be like
+for a person with no vision, relying strictly on a screen reader program, to
+interpret information in a table. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.35pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span>Tables
+are generally reliant on the reader putting different pieces of data together
+to interpret the overall information conveyed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span>There
+are things we must consider when creating accessible tables:</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Tables</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.65pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><img
+width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12><span style='font-size:18.0pt;line-height:90%'>First, it’s
+important to establish the Header Row of your table. In this way, your header
+row will repeat should the table spill onto a new page. The reader can always
+refer back to this important data to interpret the table. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.65pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:18.0pt;line-height:90%'>Next, you must avoid merging cells.
+Screen readers will use both the header rows, and the subsequent cells to help
+with interpreting the table. Merging cells throws off the structure of the
+table for screen readers. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.65pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:18.0pt;line-height:90%'>Lastly, as with images, charts, and
+graphs, you should use alt text to describe the table. </span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=960 style='width:719.75pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:420.0pt'>
+  <td width=960 valign=top style='width:719.75pt;background:#A9A47B;padding:
+  38.75pt 5.75pt 0in 5.75pt;height:420.0pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:31.95pt;
+  margin-bottom:0in;margin-left:70.65pt;text-align:center;text-indent:0in'><span
+  style='font-size:40.0pt;line-height:90%;color:white'>The following items may
+  not be flagged by the </span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:16.45pt;
+  margin-bottom:0in;margin-left:55.2pt;text-align:center;text-indent:0in;
+  line-height:107%'><span style='font-size:40.0pt;line-height:107%;color:white'>Accessibility
+  Checker, but are still risks of inaccessibility:</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:872.4pt;margin-bottom:
+0in;margin-left:-311.85pt;text-indent:0in;line-height:107%'><img width=307
+height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image001.gif"
+align=left hspace=12><br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:0in'>Avoid using
+watermarks in your document. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Screen Readers and
+Text-to-Speech programs can confuse the watermark as a floating image and will
+skip over this information entirely.</p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>A good alternative here
+would be to add a copyright page to the beginning of your document. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Watermarks and
+  Textboxes</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12>Avoid using textboxes to display information. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>As with watermarks, screen
+reader programs often interpret textboxes as floating images, and will likely
+skip over this information with reading aloud. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>You can create borders
+around text, instead of using textboxes, and screen reader programs should
+access this information normally. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.05pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span>Just
+as with columns, if you’re creating a list of items, or using bullet points for
+information, you should always use the tools built into Word to create these
+items.</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Creating Lists</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;text-indent:-.2in;line-height:116%'><span style='line-height:
+116%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'>
+</span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image003.gif"
+align=left hspace=12><span style='font-size:18.0pt;line-height:116%'>Use bullet
+points for items listed in no particular order. </span><span style='font-size:
+18.0pt;line-height:116%;font-family:"Wingdings 2";color:#A9A47B'>&#150; </span><span
+style='font-size:18.0pt;line-height:116%'>Numbering allows you to create lists
+in a set order. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:31.25pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:18.0pt;line-height:90%'>Multi-level lists can allow you to
+organize information or create an outline. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.65pt;
+margin-left:.2in;text-indent:-.2in'><span style='line-height:90%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-size:18.0pt;line-height:90%'>Lists and bullets can be found in the
+Home Tab. </span></p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:0in'>There are online
+tools you can use to check the accessibility of the colors you may consider for
+your document. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Colors and Contrast</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12>However, the safest choice is to have black text on a
+white background. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>If using anything other
+than black text on a white background, avoid using complimentary hues. Use
+colors that are distinct from each other, and avoid colors that are too bright
+(i.e., bright yellow, bright green, and so on.)</p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Those with limited vision,
+or other print-based disabilities might struggle reading lines that are close
+together. The minimum line spacing for a document should be 1.15, but optimal
+spacing is 1.5. Spacing options are found on the Home Tab. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Spacing and Font</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12>Everyone has their preferred font, but the two fonts
+generally agreed upon as the most accessible are Arial, and Verdana. The New
+York State Disability Services Council has also recognized Tahoma as an
+accessible font. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Font size should have a
+minimum of 12.</p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in'><span
+style='line-height:90%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Larger font sizes are
+acceptable, but the user should be able to zoom at 200% and still read a single
+line of information without having to scroll down. </p>
+
+</div>
+
+<span style='font-size:20.0pt;line-height:90%;font-family:"Verdana",sans-serif;
+color:#6E664B'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in;line-height:147%'><span
+style='line-height:147%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>Never use color alone to
+convey information. If visibility is key to accessing information, it will be
+lost to someone without sight, or an individual that is color blind. </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Color Coded Items</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in;line-height:147%'><span
+style='line-height:147%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12>If you would like to use color stylistically, first,
+generate your document in black and white. </p>
+
+<p class=MsoNormal style='margin-left:.2in;text-indent:-.2in;line-height:147%'><span
+style='line-height:147%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span
+style='font:7.0pt "Times New Roman"'> </span></span>If all the information can
+be appropriately accessed without color, feel free to use colors within
+contrast accessibility. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:72.45pt;
+margin-left:284.45pt;text-indent:-.2in;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;font-family:"Wingdings 2";color:#A9A47B'>&#150;</span><b><span
+style='font-size:28.0pt;line-height:107%'>April 17<sup>th</sup></span></b><span
+style='font-size:28.0pt;line-height:107%'>: Alt Text and Heading Levels</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 valign=top style='width:271.2pt;background:#A9A47B;padding:
+  162.45pt 5.75pt 0in 41.65pt;height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:66.0pt;line-height:107%;color:white'>Q &amp; A</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='margin-left:.5pt'><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12><span style='font-size:40.0pt;line-height:107%;font-family:
+"Wingdings 2";color:#A9A47B'>&#150;</span><span style='font-size:40.0pt;
+line-height:107%'>Upcoming   </span><span style='font-family:"Wingdings 2";
+color:#A9A47B'>&#150;</span>Importance of <b>April 24</b><b><span
+style='font-size:18.5pt;line-height:107%'>th</span></b>: The <span
+style='font-size:40.0pt;line-height:107%'>Tech  </span>Proper Scanning <span
+style='font-size:40.0pt;line-height:107%'>Talks…</span></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:270.55pt;text-indent:-.5pt;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;font-family:"Wingdings 2";color:#A9A47B'>&#150;</span><b><span
+style='font-size:28.0pt;line-height:107%'>May 8<sup>th</sup></span></b><span
+style='font-size:28.0pt;line-height:107%'>: Video </span></p>
+
+<h2 align=right style='margin-top:0in;margin-right:36.8pt;margin-bottom:0in;
+margin-left:0in;text-align:right;text-indent:0in;line-height:107%'>Captioning
+Using </h2>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:126.95pt;text-align:center;text-indent:0in;
+line-height:107%'><span style='font-size:28.0pt;line-height:107%'>YouTube  </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:45.25pt;
+margin-left:.2in;text-indent:-.2in;line-height:110%'><span style='line-height:
+110%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'>
+</span></span><a
+href="https://developer.paciellogroup.com/resources/contrastanalyser/"><span
+style='color:#D25713'>Downloadable Color Contrast Accessibility Checker</span></a></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 align=left
+ width=362 style='width:271.2pt;border-collapse:collapse;margin-left:-2.25pt;
+ margin-right:-2.25pt'>
+ <tr style='height:419.75pt'>
+  <td width=362 style='width:271.2pt;background:#A9A47B;padding:0in 5.75pt 0in 27.1pt;
+  height:419.75pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+  style='font-size:36.0pt;line-height:107%;color:white'>Resources</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:45.25pt;
+margin-left:.2in;text-indent:-.2in;line-height:110%'><span style='line-height:
+110%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'>
+</span></span><img width=39 height=560
+src="Creating%20Accessible%20Documents%20in%20Word%20and%20Using%20the%20Accessibility%20Checker_files/image005.gif"
+align=left hspace=12><a
+href="https://support.office.com/en-us/article/make-your-word-documents-accessible-d9bf3683-87ac-47ea-b91a-78dcacb3c66d"><span
+style='color:#D25713'>Microsoft Support for creating accessible documents</span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:45.25pt;
+margin-left:.2in;text-indent:-.2in;line-height:110%'><span style='line-height:
+110%;font-family:"Wingdings 2";color:#A9A47B'>&#150;<span style='font:7.0pt "Times New Roman"'>
+</span></span><a href="http://www.nysdsc.org/Word-Processing-Documents"><span
+style='color:#D25713'>New York State Disability Services Council</span></a></p>
+
+</div>
+
+</body>
+
+</html>

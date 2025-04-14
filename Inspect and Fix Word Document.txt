@@ -1,0 +1,391 @@
+﻿
+Inspect and FIx word document
+IntroductIon
+Finding and fixing issues in a word document by using both the accessibility checklist and the instructions in this guide will help resolve most Accessibility issues causing the document to be non-compliant. Creating an accessible document benefits all users.
+table of contents
+Click a title below to go to the destination page.
+Introduction	1
+Newer Versions of Microsoft Word	3
+Creating a Document Title	3
+Using Check Accessibility Tool and Fixing Issues in Microsoft Word	5
+How to find and use the "Check Accessibility" tool	5
+Finding the Accessibility Checker	5
+Another Way to get to the Accessibility Checker	8
+Fixing Common Accessibility Issues in Microsoft Word	9
+Fixing Accessibility Issue: Missing Object Description	9
+Giving Alternative Text to Images, Pictures, and Clip Art	9
+Fixing Accessibility Issue: Use of Merge or Spilt Cells	14
+Removing Merged or Spilt Cells from Tables	14
+Fixing Accessibility Issues of Hard-to-Read Contrast	19
+WCAG Color Contrast Requirements	19
+Setting a Compliant Color Contrast Ratio	19
+Foreground (Text) Color	19
+Older Newer Versions of Microsoft Word	22
+Creating a Document Title	22
+Using Check Accessibility Tool and Fixing Issues in Microsoft Word	24
+How to find and use the "Check Accessibility" tool	24
+Finding the Accessibility Checker	24
+Another Way to get to the Accessibility Checker	27
+Fixing Common Accessibility Issues in Microsoft Word	28
+Fixing Accessibility Issue: Missing Object Description	28
+Giving Alternative Text to Images, Pictures, and Clip Art	28
+First Way to Give an Image Alternative Text	28
+Second Way to Give Alternative Text to an Image	31
+Fixing Accessibility Issue: Use of Merge or Spilt Cells	34
+Removing Merged or Spilt Cells from Tables	34
+First Option to Fix the Table: Manually	34
+Second Option to Fix the Table: Using the Accessibility Inspection Results	36
+Fixing Accessibility Issues of Hard-to-Read Contrast	38
+WCAG Color Contrast Requirements	38
+Setting a Compliant Color Contrast Ratio	38
+Foreground (Text) Color	38
+WebAIM Contrast Checker	41
+What does WebAIM check for?	41
+Using the WebAIM Contrast Checker	41
+Foreground (Text) Color	41
+Background (Page) Color	45
+Document No Longer has Accessibility Issues	51
+Document is Now ADA Compliant	51
+
+newer VersIons of MIcrosoft word
+creatIng a docuMent tItle
+Documents should have titles that describe their function or purpose of the document. It is usually the first content that is announced by screen readers instead of the file name. To give a title to a document complete the following steps:
+1. Go to the top left of the document. Click on "File" tab.
+
+2. After clicking on the File tab, Microsoft Office Backstage view will appear. Find the "Info" button to open the Document Properties window.
+
+3. To the right of the Info button is where the Info section is. Further right of the Info section, locate the "Properties" section. 
+
+4. Below where it says Properties find the Title.
+
+5. To the right of Title click on, "Add a title" and an input box will appear.
+
+6. Enter the document's title. It can be the same or different from the filename. This document title's is "Creating a Fillable Form in PDF."
+
+Now the document has a title for the screen reader to read.
+usIng check accessIbIlIty tool and fIxIng Issues In MIcrosoft word
+It crucial to ensure that documents are accessible to people with disabilities. Checking and fixing accessibility issues in documents promotes inclusivity compliance with accessibility standards and grants equal access of information to users. It improves readability, usability, and navigation, benefiting all users. It will enhance user experience and facilitates understanding of content, fostering inclusivity, diversity, and equal opportunities for all to obtain information.
+How to find and use the "Check Accessibility" tool
+The "Check Accessibility" is a tool that performs a full and thorough check for whether the document conforms to accessibility standards. It finds any issues such as the missing use of alternative text on images, presence of complex tables, missing document language, and hardto read fonts' colors to be corrected. By following these steps, it'll enable the checker to identify and address the accessibility issues in the document:
+Finding the Accessibility Checker
+1. Go to the top left of the document. Click on "File" tab.  
+
+2. After clicking on the File tab, you can see Microsoft Office Backstage view. Find the "Info" button to open the Document Properties window.
+
+3. To the right of the Info button is where the Info section is. Where the document's properties are to specify or modify the document's information
+
+4. In the Info section find then select the "Check for Issues" dropdown button.  
+
+5. In the Check for Issues drop-down select the "Check Accessibility" option.  This will open "Accessibility Inspection Results."
+
+6. The "Accessibility Assistant" box will now appear on the right of the document. It will show the issues making the document non-compliant. 
+
+7. To the Keep accessibility checker running while working on the document, scroll down to the bottom of the Accessibility Assistant window and choose Settings.
+
+8. Click the Accessibility tab if it is not displayed by default. Then make sure the checkbox in front of "Keep accessibility checker running while I work" is checked.
+
+Another Way to get to the Accessibility Checker
+1. Click on the Review Tab on the top of the menu bar.
+
+2. In the Review tab find the Check Accessibility button then click on it. 
+
+3. A drop-down with options on what to check for in the document will appear. Select the Check Accessibility option.
+
+Now you will see the "Accessibility Assistant" box to the right of the document.
+Fixing Common Accessibility Issues in Microsoft Word
+Some of the issues that we will be covering are:
+• Missing Object Description: Missing alternative text on an image.
+• Use of Merged or Spilt Cells: Creation of a complex table.
+• Hard-to-Read Text Contrast: Light or faint contrast between text and document background.
+These are the most common issues to be found in a Word document. Going over these common issues in this guide by inspecting and fixing the errors so that the document can become compliant. 
+Fixing Accessibility Issue: Missing Object Description
+Missing Object Description is crucial for individuals who are blind or visually impaired, as screen readers rely on alternative text, also known as alt text, to convey the meaning of images. Alt text allows these users to understand the context and purpose of the images making the document more accessible and inclusive. Additionally, alt text is useful in situations where the image cannot be displayed due to technical issues or when the document is being accessed by devices with limited visual capabilities. By providing accurate and descriptive alt text, it ensures that the document can be understood by a wider range of users.
+Giving Alternative Text to Images, Pictures, and Clip Art.
+It helps screen and document reading tools describe images to visually impaired readers. Giving alternative text when an image, picture or clip art does not have one or has a generated crated one can be done in a few steps:  There are two ways to give an images alternative text.
+First Way to Give an Image Alternative Text
+1. Right click on the image.
+
+2. Select "View Alt Text" Option.
+
+3. The "Alt Text" box will appear to the right of the document.
+
+4. In the input text box give a description of the image unless the image is decorative and does not need to be read out - in that case proceed to step 5. In this case the image does need alternative text. Write "Great Seal of Nevada" in the Alt Text input box to describe the image.
+
+Now the image has meaningful alternative text.
+5. *If an image is of no importance such as it a decorative image or line(s) to divide page or repeating logos/images that does not need to be read, then it can be marked as decorative instead. This will cause the screen reader to overlook the image. *Below the input text box where the description of the image is given. Select the check box called "Mark as decorative" to checkmark it. The rest of Alt Text box will be greyed out/ inaccessible to use after check marking the Mark as decorative check box.
+
+                          Now the image will no longer be read out. Second Way to Give Alternative Text to an Image
+By using the Accessibility Inspection Results / Accessibility Assistant box to the right of the document.
+1. Go to the Accessibility Assistant on the right side of the screen.
+
+2. Click on the error Missing alt text. It'll open the specific cause(s) of the error.
+
+3. The Accessibility Assistant, Missing Alt Text dialog box will appear. Enter the description into the input field. In this case write "Great Seal of Nevada" to describe the image. "Then click the approve button to return to the main Accessibility Assistant dialog box.
+
+4. Repeat steps 1 through 3 for each image missing alt text.
+Now that all the images have been given alternative text or marked as decorative the Missing alt text error in the Accessibility Assistant box will disappear, as there are no more erros  of this kind that needs to be fixed. 
+ Fixing Accessibility Issue: Use of Merge or Spilt Cells
+ Removing Merged or Spilt Cells from Tables
+Merged and Spilt cells should not be used in a table. This is because that can cause confusion to the reading order making the information in the table difficult for screen and document readers to follow. People using screen readers will read one cell at a time and expect one row or column header for each cell in the table so that it doesn't lose content. Follow these steps to create a simple table structure for data only. There are two ways to correct this problem:
+First Option to Fix the Table: Manually
+1. Go to the table that has the merged or spilt cells 
+Merged Cells
+a. Select the cell(s) that have been merged cell in the table.
+
+b. Then when it is highlighted grey, right-click inside the selected cell and select the Split Cells option from the drop-down menu.
+
+Split Cells
+a. Select the cell(s) that have been spilt cell in the table.
+
+b. Then when it is highlighted grey, right-click inside the selected cell and select the Merged Cells option from the drop-down menu.
+
+Now the Merged or Spilt Cell errors have been resolved and a simple table structure has been created.
+
+Second Option to Fix the Table: Using the Accessibility Inspection Results/
+Accessibility Assistant
+1. Go to the Accessibility Assistant Results to the right of the document.
+
+2. Select the error "Use of merged or spilt cells." It'll open the specific cause of the error.
+
+3. Click on the issue called "Merge Cells" and Word will automatically merge the split cells.
+
+4. Or click the issue called "Split Cells".
+
+5. And the Split Cell dialog box will appear. Enter the appropriate number columns or rows the selection should be split into.
+
+6. Click ok.
+
+Now that the Merged or Splits Cells error(s) from the table has been fixed, this'll cause the error to disappear from the Accessibility Assistant Results box. Screen readers will now easily be able to follow and read the information from the table.
+Fixing Accessibility Issues of Hard-to-Read Contrast
+WCAG Color Contrast Requirements
+The Web Content Accessibility Guidelines (WCAG) 1.4.3 establishes the color contrast standards for the visual display of text and text-based images. It's essential to ensure that all text elements have adequate contrast between the foreground text and the background color, even if the text is part of an image.
+Large text is defined as 18 points (24 CSS pixels) or 14 points bold (19 CSS pixels). Small text is defined as as any text that is smaller than 18 points (24 CSS pixels) or 14 points bold (19 CSS pixels). This distinction is important for determining the necessary contrast ratios to ensure readability and visual clarity for users, particularly those with visual impairments. For WCAG AA compliance, a contrast ratio of at least 4.5:1 is required for normal (small) text and 3:1 for large text. 
+For WCAG AAA compliance, the required contrast ratio is at least 7:1 for normal (small) text and 4.5:1 for large text.
+Setting a Compliant Color Contrast Ratio
+Text is more readable when there is adequate contrast between the text and the document background. Good contrast is essential for effective design, benefiting all users, particularly those with low vision. Text that is difficult to read typically has poor contrast or an elaborate font style, which makes the document challenging for both high- and low-vision readers. By following these steps, you can achieve good contrast in your document:
+Foreground (Text) Color
+1. In Microsoft Word, go to the Accessibility Assistant Results box to the right of the document and under Color and Contrast, click on "Hard-to-read text contrast".
+
+2. The Hard-to-read text contrast box will open. Click on one of the colors under "Try one of these colors to resolve". Word will highlight the problem words or sentence in the document and will change the font color to what you selected.
+
+a. Note: If you don't like any of the recommended colors, click on "More Font Colors" and choose another color. 
+  
+b. If that doesn't provide the results you are looking for, you can click on Page Background and change the color of the background to correct the color contrast issue. However, this is not recommended as this will change the background color of all pages in the document, not just the area you are trying to fix the color contrast on.
+
+3. Once you've chosen a color with enough contrast to meet ADA requirements, the Accessibility Assistant will show the issue in a lighter gray text with a check mark to the right indicating the issue has been resolved.
+
+older newer VersIons of MIcrosoft word
+creatIng a docuMent tItle
+Documents should have titles that describe their function or purpose of the document. It is usually the first content that is announced by screen readers instead of the file name. To give a title to a document complete the following steps:
+1. Go to the top left of the document. Click on "File" tab.
+
+2. After clicking on the File tab, Microsoft Office Backstage view will appear. Find the "Info" button to open the Document Properties window.
+
+3. To the right of the Info button is where the Info section is. Further right of the Info section locate "Properties." 
+
+4. Below where it says Properties find where it says Title.
+
+5. To the right of Title click on, "Add a title" and an input box will appear.
+
+6. Write the document's title it can be the same or different from the filename. This document title's is "Creating a Fillable Form in PDF."
+
+Now the document has a title for the screen reader to read.
+usIng check accessIbIlIty tool and fIxIng Issues In MIcrosoft word
+It crucial to ensure that documents are accessible to people with disabilities. Checking and fixing accessibility issues in documents promotes inclusivity compliance with accessibility standards and grants equal access of information to users. It improves readability, usability, and navigation, benefiting all users. It will enhance user experience and facilitates understanding of content, fostering inclusivity, diversity, and equal opportunities for all to obtain information.
+How to find and use the "Check Accessibility" tool.
+The "Check Accessibility" is a tool that performs a full and thorough check for whether the document conforms to accessibility standards. It finds any issues such as the missing use of alternative text on images, presence of complex tables, missing document language, and hardto read fonts' colors to be corrected. By following these steps, it'll enable the checker to identify and address the accessibility issues in the document:
+Finding the Accessibility Checker
+1. Go to the top left of the document. Click on "File" tab.  
+
+2. After clicking on the File tab, you can see Microsoft Office Backstage view. Find the "Info" button to open the Document Properties window.
+
+3. To the right of the Info button is where the Info section is. Where the document's properties are to specify or modify the document's information
+
+4. In the Info section find then select the "Check for Issues" dropdown button.  
+
+5. In the Check for Issues drop-down select the "Check Accessibility" option.  This will open "Accessibility Inspection Results."
+
+6. The "Accessibility Inspection Results" box will now appear on the right of the document. In the "Inspection Results" it'll show the issues making the document non-compliant. Select an issue to work on. 
+
+7. * Keep accessibility checker running while working on document. To see if there are any issues that could be created by fixing document or making mistakes while fixing it. *
+Another Way to get to the Accessibility Checker
+1. Click on the Review Tab on the top of the menu bar.
+
+2. In the Review tab find the Check Accessibility button then click on it. 
+
+3. A drop-down with options on what to check for in the document will appear. Select the Check Accessibility option.
+
+4. Now you will see the "Accessibility Inspection Results" box to the right of the document.
+fIxIng coMMon accessIbIlIty Issues In MIcrosoft word
+Some of the issues that we will be covering are:
+• Missing Object Description: Missing alternative text on an image.
+• Use of Merged or Spilt Cells: Creation of a complex table.
+• Hard-to-Read Text Contrast: Light or faint contrast between text and document background.
+These are the most common issues to be found in a Word document. Going over these common issues in this guide by inspecting and fixing the errors so that the document can become compliant. 
+Fixing Accessibility Issue: Missing Object Description
+Missing Object Description is crucial for individuals who are blind or visually impaired, as screen readers rely on alternative text, also known as alt text, to convey the meaning of images. Alt text allows these users to understand the context and purpose of the images making the document more accessible and inclusive. Additionally, alt text is useful in situations where the image cannot be displayed due to technical issues or when the document is being accessed by devices with limited visual capabilities. By providing accurate and descriptive alt text, it ensures that the document can be understood by a wider range of users.
+Giving Alternative Text to Images, Pictures, and Clip Art.
+It helps screen and document reading tools describe images to visually impaired readers. Giving alternative text when an image, picture or clip art does not have one or has a generated crated one can be done in a few steps:  There are two ways to give an images alternative text.
+First Way to Give an Image Alternative Text
+1. Right click on the image.
+
+2. Select "View Alt Text" Option.
+
+3. The "Alt Text" box will appear to the right of the document.
+
+4. In the input text box give a description of the image unless the image is decorative and does not need to be read out - in that case proceed to step 5. In this case the image does need alternative text. Write "Great Seal of Nevada" in the Alt Text input box to describe the image.
+
+Now the image has alternative text.
+5. *If an image is of no importance such as it a decorative image or line(s) to divide page or repeating logos/images that does not need to be read, then it can be marked as decorative instead. This will cause the screen reader to overlook the image. *Below the input text box where the description of the image is given. Select the check box called "Mark as decorative" to checkmark it. The rest of Alt Text box will be greyed out/ inaccessible to use after check marking the Mark as decorative check box.
+
+Now the image will no longer be read out.
+Second Way to Give Alternative Text to an Image
+By using the Accessibility Inspection Results / Accessibility Assistant box to the right of the document.
+1. Go to the Accessibility Inspection Results.
+
+2. Select the error Missing Object Description. It'll open the specific cause(s) of the error.
+
+3. Select the issue called "Picture1". It'll make the "Recommended Actions" appear and provides different options to correct the error.
+
+4. The correct one for an image to be read is to select the "Add a description" option.
+
+5. "Alt Text" box will appear to the right of the document.
+
+6. Skip this step if the image is of no importance and does not add meaning to the document as it can be marked as decorative. If the image does add meaning, enter an appropriate description in the input text box. In this case write "Great Seal of Nevada" to describe the image.
+
+7. If image is of no importance to the document, then mark it as decorative. Follow the previous steps 1-3, then select the "Mark as decorative" option this time. 
+
+8. Repeat steps 1 through 7 for each image missing alt text.
+Now that all the images have been given alternative text or marked as decorative the Missing Object Description error in the Accessibility Inspection Results box will disappear. As there are no more of this kind of error that needs to be fixed.
+Fixing Accessibility Issue: Use of Merge or Spilt Cells
+Removing Merged or Spilt Cells from Tables
+Merged and Spilt cells should not be used in a table. This is because that can cause confusion to the reading order making the information in the table difficult for screen and document readers to follow. People using screen readers will read one cell at a time and expect one row or column header for each cell in the table so that it doesn't lose content. Follow these steps to create a simple table structure for data only. There are two ways to correct this problem:
+First Option to Fix the Table: Manually
+1. Go to the table that has the merged or spilt cells 
+Merged Cells
+a. Select the cell(s) that have been merged cell in the table.
+
+b. Then when it is highlighted grey, right-click inside the selected cell and select the Split Cells option from the drop-down menu.
+
+Split Cells
+a. Select the cell(s) that have been spilt cell in the table.
+
+b. Then when it is highlighted grey, right-click inside the selected cell and select the Merged Cells option from the drop-down menu.
+
+Now the Merged or Spilt Cell errors have been resolved and a simple table structure has been created.
+Second Option to Fix the Table: Using the Accessibility Inspection Results
+1. Using the Accessibility Inspection Results/Accessibility Assistant.
+a. Go to the Accessibility Inspection Results to the right of the document.
+
+b. Select the error Use of "Merged or Spilt Cells." It'll open the specific cause of the error.
+
+c. Select the issue called "Table Cell." It'll make the "Recommended Actions" to appear and give options to correct the error.
+
+d. The only option to select for the "Merged or Split Cells" error is the "Merge Cells" option.
+
+e. Selecting the "Merge Cells" has caused either the merged or spilt cell to become one cell. Now the issue has been resolved with a simple table structure.
+Now that the Merged or Splits Cells error(s) from the table has been fixed, this'll cause the error to disappear from the Accessibility Inspection Results box. Screen readers will now easily be able to follow and read the information from the table.
+Fixing Accessibility Issues of Hard-to-Read Contrast
+WCAG Color Contrast Requirements
+The Web Content Accessibility Guidelines (WCAG) 1.4.3 establishes the color contrast standards for the visual display of text and text-based images. It's essential to ensure that all text elements have adequate contrast between the foreground text and the background color, even if the text is part of an image.
+Large text is defined as 18 points (24 CSS pixels) or 14 points bold (19 CSS pixels). Small text is defined as as any text that is smaller than 18 points (24 CSS pixels) or 14 points bold (19 CSS pixels). This distinction is important for determining the necessary contrast ratios to ensure readability and visual clarity for users, particularly those with visual impairments. For WCAG AA compliance, a contrast ratio of at least 4.5:1 is required for normal (small) text and 3:1 for large text. 
+For WCAG AAA compliance, the required contrast ratio is at least 7:1 for normal (small) text and 4.5:1 for large text.
+Setting a Compliant Color Contrast Ratio
+Text is more readable when there is adequate contrast between the text and the document background. Good contrast is essential for effective design, benefiting all users, particularly those with low vision. Text that is difficult to read typically has poor contrast or an elaborate font style, which makes the document challenging for both high- and low-vision readers. By following these steps, you can achieve good contrast in your document:
+Foreground (Text) Color
+1. In Microsoft Word, go to the Accessibility Inspection Results box to the right of the document.
+
+2. Select the error Hard-to-Read Text Contrast. It'll open the specific cause/location of the error.
+
+3. Select the issue/problem that is causing the error.
+
+What happens after selecting issue/problem that is causing the error: The problem words or sentence will be highlighted in the document when it is selected from the Hard-to-Read Text Contrast error.
+4. After selecting an issue, it'll make the "Recommended Actions" appear and give different options to correct the error. By either changing the Font Color or Page Color. Most of the time the change will be the font color rarely is it changing the page color. 
+
+5. Select the Font Color option and menu with different color options will appear. 
+
+6. Theme color or More Colors can be selected to change the fonts color.
+
+
+webaIM contrast checker 
+what does webaIM check for?
+WCAG AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text.  
+WCAG AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
+Web AIM Contrast Checker can check the color contrast of a document. Using it to check the text color and the background against different sizes of text will show if the contrast passes the required WCAG of both A and AA. It is recommended to pass AAA, when possible. If the contrast does not meet the above requirements, changes can be made by changing and/or adjusting the color contrast of the document's content and background to make it easier to read the information and comply with ADA color contrast requirements.
+usIng the webaIM contrast checker
+Text is easier to read when there is a sufficient contrast between the page background and the text or other elements on the page. If unsure what would be an acceptable color for a good color contrast ratio, then changing to a darker version of the font color may help. For a more accurate contrast choice you can use a color contrast checker.
+A good resource is to use Web AIM Contrast Checker Website Resource, an online checker to verify WCAG AA and WCAG AAA compliancy from normal to large size text.
+Foreground (Text) Color
+1. Once the website has opened the Contrast Checker can be used.
+
+2. Go to the document and click on the Home Tab.
+
+3. Select the words/sentences with the contrast error. 
+
+4. Find the "Font Color" tool and select the arrow next to the tool. A drop-down menu will appear with color options. 
+
+5. Select the "More Colors." 
+
+6. The "Colors" box will appear.
+
+7. Select the "Custom Tab."
+
+8. Find where it says "Hex," in its input box that is the hexadecimal number of the font color that is causing the error to the document.
+
+9. Copy the hexadecimal number of the font color.
+
+10. Once the hexadecimal number is copied go back to the Web AIM Contrast Checker website.
+11. In the Contrast Checker website find the "Foreground Color input box and copy the hexadecimal number copied in Step 9 into the input box."
+
+12. Then press the "tab" key on the keyboard. Now the text color from the document will appear.
+
+Background (Page) Color
+If the background color of the document you are checking for color contrast is white, you can skip checking the background color (skip to Step 18 below) as WebAIM Color Contrast Checker defaults to white. If a background color has been applied, follow the steps below:
+1. Enter page color in the search bar at the top of the word document
+
+2. Then choose Page color from the drop-down menu
+
+3. Then choose More Colors at the bottom of the Theme Colors drop-down menu.
+
+4. Locate the Hex field input box, and copy the Hexadecimal code in the input box.
+5. Open the WebAIM Color Contrast Checker and paste the hexadecimal code you copied into the background Hex Value input field. The color picker under the hex value will show the background color.
+
+6. Check to see if the Contrast Checker passed the color of the document. Scroll down the website to see if it passes WCAG standards in "Normal," "Large" and "Graphical Objects and User Interface Components with a minimum of AA." If it does not go the top of the webpage, back to Foreground Color.
+
+7. Under the hexadecimal number input box there is a tool called "Lightness."
+
+8. In the Lightness tool there is a sliding bar tool. It is used to change the color that is in the hexadecimal input box. It makes the color darker or lighter depending on where the slide tool is positioned. The hexadecimal number will change depending on the position of the slide tool.
+
+9. Once you've found a contrast ratio color that has passed the WCAG's standards, the Checker will provide you with a pass for all WCAG AA normal text, large text and  graphical objects and user interface components. It is recommended to pass AAA, whenever possible.
+
+10. Select the new hexadecimal color from the Contrast Checker and right-click and choose Copy from the drop-down menu.
+
+11. Go back to the Microsoft Word document. Then go to the Colors box to the Custom tab. If the Colors box has been previously closed, follow the steps below to open the Colors box.
+12. Select the text that is hard to read
+13. Click the font icon drop-down button
+
+14. When the Theme Color dialog box opens, choose the "More Colors" option.
+
+15. Be in the Custom tab of the Colors box.
+
+16. Find where it says "Hex" and paste the new hexadecimal number from the Contrast Checker. Then press the "Tab" button on the keyboard.
+
+17. To the right of the Hex input box there is a box with two colors. The top that says New is the color from the contrast checker pasted in, the other is the color that is currently being used and is causing the problem for the document.
+
+18. Click on the OK button.
+
+19. Now the selected words/sentence with the contrast error has changed color to the one from the contrast checker and meets ADA Color Contrast requirements. 
+
+20. Now there are no more Hard-to-Read Text Contrast errors. The error has now disappeared from the Accessibility Inspection Results.
+docuMent no longer has accessIbIlIty Issues
+docuMent Is now ada coMplIant
+In the Accessibility Inspection/Asccessibility Assistant Results there is now a green checkmark saying "No accessibility issues found. People with disabilities should not have difficulty reading this document.
+Now this Word document is compliant with all the accessibilty issues fixed meeting ADA standards. 
+This document will now be accessible to everyone.
+
+Page 1 
+
+Page 1 
+
+Page 1 
+

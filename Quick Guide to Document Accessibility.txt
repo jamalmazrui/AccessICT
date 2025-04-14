@@ -1,0 +1,136 @@
+﻿
+ 
+Quick Guide to Document Accessibility 
+T. Matthew Weissenberger, University of Iowa 
+Summer 2023 	 
+SUMMARY 
+
+Documents that are shared digitally need to be accessible for everyone. Accessible documents enable all people, including people with disabilities, to take part effectively and independently in academic, professional, and community activities. Accessible documents combine best practices in document design with best practices in accessibility.  
+The techniques described in this document are intended for use alongside style guides for print, electronic, or web authoring, and the recommendations apply to a wide range of document formats and tools. Whether you create Word or Google docs, web pages, PDF documents, emails, or documents in other formats, you can adopt a few simple practices to make your documents more accessible for all users.  
+• Do not distribute flat-file or image-only documents 
+• Use headings, document title, and structural elements to organize your documents 
+• Provide alternative text (ALT text) for images that present content 
+• Check your colors to ensure sufficient contrast 
+• Do not use color as the sole means of distinguishing an element 
+• Provide descriptive text for any hyperlinks, buttons, or other interactive elements 
+• Use authoring tools to create tables, lists, and other semantic document elements 
+• Use styles, stylesheets, and themes to manage fonts, colors, and other visual formatting 
+• Make sure that your content is presented in the right order 
+Not all techniques will apply in all situations, and some situations may call for an approach not described here. Always check the accessibility of your digital documents and other products at regular stages throughout the design and development process. 
+ 	 
+ONE ABSOLUTE RULE: DO NOT SHARE IMAGE-ONLY OR "FLAT" FILES 
+Scanned PDF documents often render as flat files
+ACCESSIBILITY TESTING 
+
+Accessibility testing is an important part of your IT Accessibility efforts. Testing can measure outcomes and effectiveness in multiple areas, including: 
+• Conformance with applicable accessibility standards (e.g., WCAG, ATAG, WCAG2ICT) 
+• Completion of accessibility testing protocols 
+• Compatibility with assistive technologies 
+In broad terms, there are two modes of accessibility testing: automated testing and manual testing. Accessibility checkers are automated tools that help you to identify accessibility issues. Accessibility checkers exist for most document formats. They may be fully integrated into an authoring tool like Microsoft Word, or they may be stand-alone tools like Siteimprove or Color Contrast Analyzer. 
+Automated checkers are useful, but they can only detect certain kinds of accessibility issues. A complete accessibility strategy needs to include other modes of testing. Manual testing by authors and other users, heuristic testing, and testing with assistive technology all help you better understand the accessibility of your documents. 
+Selected accessibility testing tools 
+Tool Intended for Testing Features Microsoft Office 
+Accessibility Checkers Tools in the Microsoft Office suite.  Built into selected Microsoft Office products. Specific checks vary by product. Adobe Acrobat Pro 
+Accessibility Checker PDF in Adobe Acrobat Pro. Acrobat Pro includes tools to remediate some accessibility issues. Built into Adobe Acrobat Pro. Checks 32 accessibility issues and generates a report.  PDF Accessibility 
+Checker 3 (PAC 3) PDF documents.  Checks for all automated guidelines of PDF/UA. No tools for remediation. Siteimprove Websites, PDF, some quality assurance not directly related to accessibility Scans websites and code; generates a report on selected accessibility issues. WAVE, ANDI Individual web pages Scans individual web pages and generates a report on selected accessibility issues. Color Contrast 
+Analyzer Color pairings in any digital format Compares two colors; compares values based on luminosity, reports WCAG conformance  	 
+USE HEADINGS AND STRUCTURE TO ORGANIZE YOUR CONTENT 
+
+Headings (e.g., H1, heading 1) let you organize your content into an outline of topics and regions. This nested document structure makes it easier to quickly scan and navigate your document. Some formats use headings to create bookmarks, tables of contents, and other navigational aids. Page title and language, appropriate sectioning, semantic elements, and metainformation are other elements that can improve the readability of your document. 
+Tips for providing good structure 
+• Use a first-level heading to provide a meaningful document title for each document 
+• Use level 2 headings to introduce new topics or sections in your document 
+• Separate your document into sections, regions, or landmarks where appropriate 
+• Do not skip heading levels 
+• Use headings to provide a table of contents, bookmarks, sitemap, or other navigational supports for your end user 
+• Do not use headings for blocks of body text or for stylistic purposes 
+• Do not use tabs to simulate columns, tables, lists, or other structures 
+
+Examples 
+Webpage headings applied in the Drupal web editor 
+
+Webpage heading structure in Web 
+Developer Toolbar 
+
+Document heading styles applied in 
+Microsoft Word 
+
+Microsoft Word heading structure, in 
+Navigation Pane 
+
+
+PROVIDE APPROPRIATE ALTERNATIVE TEXT (ALT TEXT) 
+
+Most document and web editors let you add text descriptions ("ALT text") of images in your documents. Make sure your ALT text adequately conveys the content and purpose of any images you include in your documents. 
+Tips for providing good ALT text 
+• For simple images, keep the description concise: not more than 140 characters 
+• For images that require longer descriptions (e.g., charts or graphs), provide ALT text and a link to a detailed description 
+• For images of text (e.g., logos, wordmarks), use the image text as the ALT text 
+• Avoid using terms like "Picture of..." or "Image of..."; assistive technologies will provide that information to the end user 
+• Be sure to provide ALT text with images that are used as buttons or links 
+"Students working in the ICATER computer lab""A cup of coffee, spilled onto a laptop keyboard""Chart of 
+Yellowstone Park visitors; see Appendix B for complete data" "Seal, State of Iowa Board of Regents" 
+ • Decorative images, spacer images, images combined with text links, and images described by adjacent text may not need ALT text 
+ 	 
+PROVIDE DESCRIPTIVE LINK TEXT 
+
+Hyperlinks are now a fundamental part of almost any document type. By providing links that are clearly labeled and easy to find and use, you make your document more navigable for everyone.  
+Hyperlink text should clearly indicate the purpose and destination of the link. Links presented by image should include good ALT text. 
+Tips for providing good hyperlinks 
+• Underline links so that they are easy to distinguish from the surrounding content 
+• Avoid generic link text such as "Learn More", "Click Here", or "Go"; instead, use descriptive text like "Spring Orientation Schedule" or "View Nondiscrimination Statement" 
+• Do not use the URL as link text in digital or print documents; place it AFTER the link text 
+• If you an image as a link, the ALT text becomes the link text 
+• If you combine image and text to make a link, place both in the same link container 
+• Links to the same resource should use the same or similar text 
+• Use links only for navigation; do not use links as buttons or buttons as links 
+Examples 
+Inactive links for demonstration purposes only 
+Uninformative or generic link text Informative, contextual link text Click Here Register for the May 21 Workshop Get in touch Contact the ITS Help Desk http://www.amazon.com/exec/obidos
+/ASIN/159058/qid=1116951/sr=2-
+1/ref=pd_2_1/103-5755258-8233 Zhi, Chapter 8 (PDF, 388KB)  
+Buy the book at A11yReads.com View website Visit the IT Accessibility website 
+[https://itaccessibility.uiowa.edu] Submit Submit application and return to main site   	 
+MAKE GOOD USE OF COLOR 
+
+• identify an object 
+Check your color contrast using an tool The Color Contrast Analyzer indicates failures of WCAG contrast guidelineslike the WebAIM Color Contrast Checker (https://webaim.org/resources/contrastch ecker/) 
+USE SEMANTIC LISTS CORRECTLY 
+
+Most authoring tools include ways to make bulleted, numbered, or multi-level lists. Lists can provide assistive technology with information about the number and position of items in a sequence or relationship. Depending on your document format and authoring tool, you may be able to create nested or outline lists 
+Tips for providing accessible lists 
+• Use the list tools in your authoring application to create lists 
+• Use bulleted, numbered, and outline lists for their respective purposes 
+• Do not use lists for stylistic purposes like indentation 
+ 	 
+USE WELL-STRUCTURED TABLES TO PRESENT DATA 
+
+Tables should be used to present data in rows and columns. Simple tables are reasonably accessible when they include standard semantic markup for header and data cells, and some basic identifying information. 
+Tips for providing accessible tables 
+• Keep tables simple; avoid merging or splitting cells 
+• Create a separate table for each set of data; do not nest or combine tables 
+• Use <th> for header cells, and apply the appropriate SCOPE attribute 
+• Provide a meaningful name for the table (CAPTION, ARIA-LABEL, ARIA-LABELLEDBY) 
+• Include ID and HEADERS attributes in data cells for complex tables 
+ENSURE THE ACCESSIBILITY OF ONLINE MEDIA 
+
+Tips for providing accessible online media 
+• Provide captions for all online video 
+• Provide a text transcript for all online audio 
+• Use audio descriptions to describe onscreen activity 
+• Make sure media players are keyboard-and screen reader accessible 
+ 	 
+ENSURE THAT CONTENT IS PRESENTED IN THE RIGHT ORDER 
+Read the content with a screen reader 
+Use a built-in tool to review the 
+                                       Adobe Acrobat reading order 
+CONCLUSION 
+
+Digital accessibility is a key aspect of an inclusive and equitable learning environment. Faculty and instructors have a unique opportunity to advance academic inclusion through intentional applications of accessibility. 
+Accessibility is a journey, not a destination. This document serves as an introduction to accessible digital documents. For additional information and support, contact your institution's disability services office, accessibility team, or ADA coordinator. 
+ 	 
+ 
+
+This document is regularly reviewed for accessibility. This version fulfills all issues tracked by the Microsoft Word Accessibility Checker and PDF/UA requirements checked by PDF Accessibility Checker 3. 
+If you experience or identify an accessibility issue associated with this document, please contact T.M. Weissenberger. 
+ 

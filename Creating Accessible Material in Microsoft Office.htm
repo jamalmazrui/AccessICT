@@ -1,0 +1,2619 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Creating Accessible Material in Microsoft Office</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:11.35pt;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.55pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.55pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.55pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.55pt;
+	text-indent:-.5pt;
+	line-height:110%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:5.8pt;
+	margin-left:1.8pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:1.15pt;
+	margin-bottom:4.8pt;
+	margin-left:13.25pt;
+	text-indent:-.5pt;
+	line-height:103%;
+	font-size:12.0pt;
+	font-family:"Garamond",serif;
+	color:black;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Garamond",serif;
+	color:black;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Garamond",serif;
+	color:black;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Garamond",serif;
+	color:black;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Garamond",serif;
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:5.5in 8.5in;
+	margin:27.85pt 36.4pt 27.9pt .6in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:5.5in 8.5in;
+	margin:51.05pt 35.8pt 43.8pt 42.15pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:5.5in 8.5in;
+	margin:51.05pt 36.2pt 45.4pt .6in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:5.5in 8.5in;
+	margin:51.15pt 38.2pt 131.85pt .6in;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:5.5in 8.5in;
+	margin:51.05pt 36.2pt 48.7pt .6in;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:5.5in 8.5in;
+	margin:51.2pt 36.6pt 1.05in .6in;}
+div.WordSection6
+	{page:WordSection6;}
+@page WordSection7
+	{size:5.5in 8.5in;
+	margin:51.2pt 36.75pt 49.3pt 42.15pt;}
+div.WordSection7
+	{page:WordSection7;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-12.8pt;margin-bottom:
+0in;margin-left:-19.85pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+width=466 height=742
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image001.gif"></span></p>
+
+<p class=MsoNormal style='margin:0in;text-align:justify;text-justify:inter-ideograph;
+text-indent:0in;line-height:107%'><span style='font-family:"Times New Roman",serif'>            </span> <br
+clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:10.25pt;margin-left:.4pt;text-align:center;text-indent:0in;
+line-height:107%'><b><span style='font-size:14.0pt;line-height:107%;font-family:
+"Cambria",serif;color:#365F91'>Table of Contents </span></b></p>
+
+<p class=MsoToc1><a href="#_Toc34892"><span style='color:black;text-decoration:
+none'>Important Notes............................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34893"><span style='color:black;text-decoration:
+none'>Federal Mandates......................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34894"><span style='color:black;text-decoration:
+none'>JMU Policy..................................................................................................... </span><span style='color:black;text-decoration:none'>4 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34895"><span style='color:black;text-decoration:
+none'>Accessibility: A Growing Concern for Higher Education.............. </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34896"><span style='color:black;text-decoration:
+none'>What are Accessible Materials?............................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34897"><span style='color:black;text-decoration:
+none'>Microsoft Office.......................................................................................... </span><span style='color:black;text-decoration:none'>5 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34898"><span style='color:black;text-decoration:
+none'>What is a Disability?........................................................................................ </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34899"><span style='color:black;text-decoration:
+none'>Disability Categories........................................................................................ </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34900"><span style='color:black;text-decoration:
+none'>What is Universal Design?............................................................................. </span><span style='color:black;text-decoration:none'>6 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34901"><span style='color:black;text-decoration:
+none'>What is a Screen Reader?............................................................................... </span><span style='color:black;text-decoration:none'>7 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34902"><span style='color:black;text-decoration:
+none'>What is Alt Text?.............................................................................................. </span><span style='color:black;text-decoration:none'>7 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34903"><span style='color:black;text-decoration:
+none'>Important Notes............................................................................................... </span><span style='color:black;text-decoration:none'>8 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34904"><span style='color:black;text-decoration:
+none'>Microsoft’s Built-In Text-to-Speech.......................................................... </span><span style='color:black;text-decoration:none'>9 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34905"><span style='color:black;text-decoration:
+none'>Use of Color.................................................................................................... </span><span style='color:black;text-decoration:none'>12 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34906"><span style='color:black;text-decoration:
+none'>Creating Accessible Files in Microsoft Word........................................ </span><span style='color:black;text-decoration:none'>17 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34907"><span style='color:black;text-decoration:
+none'>Creating Accessible PDFs........................................................................... </span><span style='color:black;text-decoration:none'>27 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34908"><span style='color:black;text-decoration:
+none'>Creating Accessible Files in Microsoft Excel........................................ </span><span style='color:black;text-decoration:none'>33 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34909"><span style='color:black;text-decoration:
+none'>Creating Accessible PowerPoint Presentations.................................... </span><span style='color:black;text-decoration:none'>41 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34910"><span style='color:black;text-decoration:
+none'>Creating Accessible Emails in Outlook................................................... </span><span style='color:black;text-decoration:none'>49 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34911"><span style='color:black;text-decoration:
+none'>Audio Captioning........................................................................................... </span><span style='color:black;text-decoration:none'>51 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34912"><span style='color:black;text-decoration:
+none'>Microsoft Teams Live Captioning....................................................... </span><span style='color:black;text-decoration:none'>51 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34913"><span style='color:black;text-decoration:
+none'>Zoom Captioning &amp; Transcribing....................................................... </span><span style='color:black;text-decoration:none'>52 </span></a></p>
+
+<p class=MsoToc2><a href="#_Toc34914"><span style='color:black;text-decoration:
+none'>YouTube Automatic Captions.............................................................. </span><span style='color:black;text-decoration:none'>52 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34915"><span style='color:black;text-decoration:
+none'>Online Resources........................................................................................... </span><span style='color:black;text-decoration:none'>53 </span></a></p>
+
+<p class=MsoToc1><a href="#_Toc34916"><span style='color:black;text-decoration:
+none'>References used in the material................................................................. </span><span style='color:black;text-decoration:none'>54 </span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt;line-height:143%'> </p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>Important Links </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.75pt;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Office of Disability Services Website: <a
+href="https://www.jmu.edu/ods"><span style='color:blue'>https://www.jmu.edu/ods</span></a><a
+href="https://www.jmu.edu/ods"><span style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.25pt;
+margin-left:.8pt;line-height:103%'>JMU Accessibility Website: <a
+href="https://www.jmu.edu/accessibility"><span style='color:blue'>https://www.jmu.edu/accessibility</span></a><a
+href="https://www.jmu.edu/accessibility"><span style='color:blue;text-decoration:
+none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>Important Contacts </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.4pt;
+margin-left:.8pt'>Office of Disability Services (ODS) </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.3pt;
+margin-bottom:0in;margin-left:.5pt;text-align:right;line-height:107%'>540-56<b>8-6705
+</b></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:-.3pt;
+margin-bottom:0in;margin-left:.5pt;text-align:right;line-height:107%'>disability-svcs@jmu.edu
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-1.35pt;margin-bottom:
+12.55pt;margin-left:-.4pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=426 height=1 id="Group 29342"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image002.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.35pt;
+margin-left:.8pt'>IT Training<i> </i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:3.85pt;
+margin-left:227.8pt;text-indent:26.2pt'>540-56<b>8-8046 </b>ittraining@jmu.edu </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span><b><span style='font-size:14.0pt;
+line-height:107%'> </span></b><br clear=all style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34892"><span style='font-size:14.0pt;
+line-height:107%'>Important Notes </span></a></h1>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34893">Federal Mandates </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:9.55pt;
+margin-left:.8pt'>The Americans with Disabilities Act (42 U.S.C. § 12,101 et
+seq.) and Section 504 of the Rehabilitation Act (29 U.S.C. §791, et seq.)
+prohibit discrimination against a person with a disability in the offer or
+conditions of employment, and in the participation or furnishing of services. <b>James
+Madison University is obliged to provide reasonable accommodations to enable
+qualified individuals with documented disabilities to perform a job,
+participate in a class, or participate in other university functions. </b></p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34894">JMU Policy </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.8pt'>Policy<i> </i>1331 Disabilities &amp; Reasonable
+Accommodations </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.55pt;
+margin-left:36.8pt'><i>…establishes the university's intent that qualified
+persons with disabilities be provided with reasonable accommodation to ensure
+equal access and equal opportunities with regard to the university's programs
+and services. </i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.8pt'>Policy<i> </i>1324 Discrimination and Harassment </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.8pt'><i>This policy prohibits discrimination against an
+individual on the basis of age, color, disability, national origin, genetic
+information, parental status, political affiliation, race, religion, sex,
+sexual orientation or veteran status.</i> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.8pt'>Policy 1211 Information Technology Accessibility </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.8pt'><i>The procurement, development, and/or maintenance of
+information technology and user support services for persons with disabilities
+will be aligned with accessibility standards specified Section 508 of the
+Rehabilitation Act and the most current &quot;Web Content Accessibility
+Guidelines&quot; from the World Wide Web Consortium (W3C), </i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.8pt'><i>appropriately tailored to the specific circumstances of
+the university.</i> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.3pt;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span><b> </b></p>
+
+<h2 style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;margin-left:.8pt;
+margin-bottom:.0001pt;line-height:103%'><a name="_Toc34895">Accessibility: A
+Growing Concern for Higher Education </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>According to the CDC, approximately 1 in 4 American adults
+(61 million) live with some type of disability. Furthermore, <b>19% of
+post-secondary students report having a disability.</b> Institutions of higher
+education have a legal and ethical responsibility to ensure accessibility for
+our students, faculty, staff, and guests. In recent history, the proliferation
+of multimedia has outpaced accessibility initiatives, leaving many people with
+disabilities at a disadvantage and many universities open to complaints and
+lawsuits.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:9.4pt;
+margin-left:.8pt'>Perhaps one positive of the COVID lockdowns in 2020 has been
+a result in more awareness and momentum in making digital content more
+accessible. </p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34896">What are Accessible Materials?
+</a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:9.55pt;
+margin-left:.8pt'>Accessible materials are content such as documents,
+spreadsheets, slides, emails, and PDFs that are designed or converted in a way
+that makes them as usable as possible by people with and without disabilities. </p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34897">Microsoft Office </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>This training manual will focus primarily on creating
+accessible content in Microsoft Office 2016 and newer. However, much of the
+information pertains to creating content with a Universal Design (discussed in
+the next section) mindset that allows content to be viewed by a multitude of
+audiences. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.25pt;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span><b><span style='font-size:14.0pt;
+line-height:107%'> </span></b></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34898"><span style='font-size:14.0pt;
+line-height:107%'>What is a Disability? </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A person having a disability is defined as<b> </b>any
+individual who has <b>a physical or mental impairment that substantially limits
+one or more major life activity</b>, such as walking, hearing, seeing,
+speaking, learning or caring for oneself. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>This training will focus primarily on those who have a
+visual, auditory, or motor skill (keystroke users) disability and/or a learning
+disorder. However, much of what is covered will assist those with other needs
+as well. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:13.25pt;
+margin-left:.8pt'><b>Invisible Disabilities:</b> also known as <i>hidden
+disabilities, </i>they are types of disabilities that are not immediately
+apparent to others. They can include chronic pain, fatigue, dizziness,
+weakness, cognitive dysfunctions, mental illness, as well as hearing and vision
+impairments. These disabilities can sometimes or always limit daily activities,
+range from mild challenges to severe limitations and vary from person to
+person. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34899"><span style='font-size:14.0pt;
+line-height:107%'>Disability Categories </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.15pt;
+margin-left:.8pt'>There are 5 main disability categories. Understanding these
+categories will be helpful when developing your content: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.4pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Cognitive Learning </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.65pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Auditory </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.35pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Visual (including blind, low vision, and color blind) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.4pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Motor/Physical </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Speech </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.55pt;
+margin-left:55.05pt;text-indent:0in;line-height:107%'> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34900"><span style='font-size:14.0pt;
+line-height:107%'>What is Universal Design? </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>The primary goal of Universal Design (UD) is inclusion.
+Creating content with a goal to make it accessible to a multitude of audiences
+is at the heart of UD. It is the creation of content and environments that are
+usable by all, to the greatest extent possible, without the </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>need for modification at a later time. UD is proactive and
+sustainable.<span style='font-family:"Times New Roman",serif'>            </span> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34901"><span style='font-size:14.0pt;
+line-height:107%'>What is a Screen Reader? </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'><b>Screen reader:</b> software that interprets what is
+displayed on a computer screen audibly using a speech synthesizer. Screen
+readers are audio interfaces that allow a user to listen to the content.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:13.15pt;
+margin-left:.8pt'>Screen readers allow a visually impaired person the
+independence that they would not have if they relied on someone to read them
+material off of the screen. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34902"><span style='font-size:14.0pt;
+line-height:107%'>What is Alt Text? </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Alternative text, also known as alt text, often appears when
+you move your pointer over a picture or object on a website. Screen readers can
+read alt text to users to educate them on what the image, object, or table
+contains.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.0pt;
+margin-left:.8pt'>Any image that has text in it should have that text as the
+alternative text. You can place other words in the alternative text, but at
+minimum it should say the same thing as the image. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:13.35pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34903"><span style='font-size:14.0pt;
+line-height:107%'>Important Notes </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Write clearly </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.05pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Use images/color to supplement/enhance text <span
+style='font-family:"Courier New"'>o</span><span style='font-family:"Arial",sans-serif'>
+</span>They should never be used as the primary way to convey meaning </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.55pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Keep it Simple (Titles, file names, headings, etc.) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Use tables for data not for layout </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.45pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Contrast your colors </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:55.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Design with the edges in mind </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><b><span style='font-family:
+"Times New Roman",serif'>            </span> </b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34904"><span style='font-size:14.0pt;
+line-height:107%'>Microsoft’s Built-In Text-to-Speech </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>In addition to using screen readers, many programs, such as
+Microsoft Office, now offer built-in text-to-speech (TTS), or “readaloud”
+functionality. TTS allows the program to read back written text as spoken word.
+TTS can be enabled in Microsoft Word, PowerPoint, Outlook, Excel and OneNote. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Not only is TTS useful for the visually impaired, it is also
+helpful to English Language Learners, beginning readers and those who prefer
+auditory learning. Students with dyslexia can also benefit from seeing and
+hearing text at the same time. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Office 2019 and 365 now include a <b>Read Aloud</b> option
+under the <b>Review</b> tab, as shown below. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.55pt;margin-bottom:
+2.45pt;margin-left:1.05pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=430 height=117
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image003.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.0pt;
+margin-left:.8pt'>When you want to use Read Aloud, simply highlight the word,
+sentence or paragraph you wish to hear and click Read Aloud. If no words,
+sentences, or paragraphs are highlighted, then text beginning after the current
+placement of your cursor will be read aloud. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> </p>
+
+<h3 style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;margin-left:
+.8pt'>Enable TTS and add it to the Quick Access Toolbar </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:14.45pt;
+margin-left:37.05pt;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Open Microsoft Office program (Word, Excel, PowerPoint, OneNote) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:37.05pt;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Next to the Quick Access Toolbar, click <b>Customize Quick Access
+Toolbar.</b>  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:73.95pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=258 height=98
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image004.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:51.35pt;margin-bottom:
+15.7pt;margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:37.05pt;text-indent:-.25in;line-height:110%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Click
+<b>More Commands</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.2pt;
+margin-left:109.95pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=138 height=230
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image005.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:37.05pt;text-indent:-.25in;line-height:110%'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>In
+the <b>Choose commands from</b> list, select <b>All Commands</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.1pt;
+margin-left:6.3pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=372 height=81 id="Group 29799"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image006.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:37.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.45pt;
+margin-left:37.05pt;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Scroll down to the <b>Speak</b> command, select it, and then click <b>Add</b>.
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.15pt;
+margin-left:37.05pt;text-indent:-.25in'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>OK</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:37.05pt;text-indent:-.25in'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>When you want to use the text-to-speech command, highlight the word,
+sentence or paragraph you wish to hear, click the icon on the Quick Access
+Toolbar.  </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:40.65pt;text-align:center;text-indent:0in;
+line-height:107%'><span style='font-size:11.0pt;line-height:107%;font-family:
+"Calibri",sans-serif'><img border=0 width=111 height=48 id="Group 31498"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image007.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:37.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> <br clear=all style='page-break-before:
+always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34905"><span style='font-size:14.0pt;
+line-height:107%'>Use of Color </span></a></h1>
+
+<h3 style='margin-left:.8pt'>Don't rely on color to convey your message </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Color should be used as an enhancement, not as the primary
+means of communicating. To make sure everyone can read and understand your
+documents, <b>never rely on color alone to transmit information.</b> This does
+not mean that you cannot use color, but rather that if you choose to use color,
+the content’s meaning would not change in the absence of the color. For
+example, if you are requiring that a field be filled in on a form, include the
+word <b><span style='font-size:12.5pt;line-height:103%'>Required </span></b>rather
+than just making the required field red. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.15pt;
+margin-left:.8pt;line-height:110%'><b>Facts on Color Blindness: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.1pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Most color blind people are not really color “blind” but are
+instead color deficient. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.25pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Color blindness is more prevalent among males because the most
+common form is caused by a deficiency in the X chromosome. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.55pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>8% of men suffer from a form of color blindness. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Deuteranopia is by far the most common form of colorblindness,
+and it affects the vision of red and green colors. </p>
+
+<h3 style='margin-left:.8pt'>Pale Blue </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:13.05pt;
+margin-left:.8pt'>As eyes age, the first color that people notice a degradation
+in is pale blue. This happens because the cones in your retinas that detect
+color start to lose some of their sensitivity with age, and there is not a lot
+that can be done about it. A large segment of the population may find it
+difficult to read documents with pale blue text color.<span style='font-size:
+10.0pt;line-height:103%'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>Why does color contrast matter? </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>If text does not have sufficient contrast with its
+background, it can be difficult to read, and this certainly does not apply only
+to those who have a vision impairment. <u>Anyone</u> viewing content in
+lessthan-ideal conditions, such as with a poor monitor, reflections, or glare,
+may not be able to view the text or may have difficulty viewing it. </p>
+
+<h3 style='margin-left:.8pt'>Using a Contrast Checker </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>WebAIM’s free contrast checker on their website verifies that
+the colors in a document provide enough contrast to be viewable by a larger
+audience. If you have questions regarding color contrast, you can reference<a
+href="https://webaim.org/resources/contrastchecker/"><span style='color:black;
+text-decoration:none'> </span></a><a
+href="https://webaim.org/resources/contrastchecker/"><span style='color:blue'>https://webaim.org/resources/contrastchecker/</span></a><a
+href="https://webaim.org/resources/contrastchecker/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<h3 style='margin-left:.8pt'>Laser Pens and Color Blindness </h3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Laser pens are often used in presentations to highlight a
+particular area of the slide. The most common colors of laser pens are red and
+green, which happen to be the two colors that affect people the most with color
+blindness. A color-blind person may find a red/green dot difficult to track on
+the screen. Instead, they may see a dull grey dot that can easily blend in with
+the rest of your presentation. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.8pt;line-height:110%'><b>Tips for using laser pens: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Hold the pen still on the screen </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:37.05pt;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Move it slowly  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:13.35pt;
+margin-left:37.05pt;text-indent:-.25in;line-height:99%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Speak what you are showing. Do not simply say “here” or “over
+there.” Instead, say, “on the left side of the screen towards the top.” </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:159.5pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+0in;line-height:107%'> </p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:74.2pt;
+margin-bottom:.15pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;color:#404040'>Microsoft Word </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.35pt;
+margin-left:158.45pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:158.45pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:0in;line-height:107%'><span style='font-family:"Times New Roman",serif'>       </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34906"><span style='font-size:14.0pt;
+line-height:107%'>Creating Accessible Files in Microsoft Word </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Microsoft Word is the most common word processing program on
+the market. It only takes a few simple steps to ensure that a Word document is
+accessible to everyone. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:3.8pt;
+margin-left:.8pt'>Some things to consider when creating documents: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Styles </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Alt text/Captions </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Outline format </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Describe hyperlinks with alt text </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:8.95pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Table of Contents </p>
+
+<h4 style='margin-left:.8pt'>Design your material with an Outline mindset </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A screen reader will provide for a user to scan or read
+material quickly by tabbing through the headings and hyperlinks if they are
+setup correctly. To improve accessibility, design material using an outline
+basis and provide meaningful, distinct names for links that make sense when
+read out of context. Without page structure, it is difficult for users with
+disabilities to quickly navigate documents. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:35.2pt;
+margin-left:.8pt'>Whereas a sighted user can “scan” through a screen of text instantly,
+a screen reader will read through the text line by line. </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:31.15pt;
+margin-bottom:13.7pt;margin-left:34.9pt;text-align:center;line-height:107%'><span
+style='position:absolute;z-index:-1895825408;left:0px;margin-left:44px;
+margin-top:1799px;width:456px;height:109px'><img width=365 height=87
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image008.gif"></span>A
+properly formatted page with <b>styles</b> can allow a screen reader to scan
+through topics or sections much quicker. </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:18.3pt;
+margin-bottom:9.05pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Styles </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Styles create a page structure that screen readers can easily
+interpret allowing a user to navigate through a document quickly. The default
+heading styles must be used for this to function. Do not simply enlarge a font
+and/or make it bold to make it appear like a heading style: a screen reader
+will not recognize it as a heading without one of the Heading styles applied to
+it. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Heading and paragraph styles help make your document easier
+to read and provide navigation points for users on a screen reader or those who
+need a visual cue. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.0pt;
+margin-left:.8pt;line-height:110%'><b>Tips for using styles: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.25pt;margin-bottom:
+1.05pt;margin-left:.5in;text-indent:-.25in;line-height:107%'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Use headings in the correct order (H1, H2, H3) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.25pt;margin-bottom:
+13.0pt;margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid long headings, whenever possible, headings should be short,
+descriptive titles. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b><br
+clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.4pt;
+margin-left:.8pt;line-height:110%'><b>Add Styles to your document:  </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.45pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Place your cursor in the text that you wish to add a header style to. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>From the <b>Home</b> tab<b> </b>on the ribbon, select the style you wish
+to use. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.3pt;
+margin-left:77.4pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=246 height=268
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image009.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>A screen reader looks for heading styles in a document and allows a user
+to easily navigate through the headings.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:12.9pt;
+margin-left:.8pt'><b>Custom Headings: </b>It is best to use one of the built-in
+heading styles and not create your own. If you would like to change a style, do
+so by modifying the built-in styles. A screen reader may have issues
+understanding a new style but can easily interpret built-in styles.<b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span> </p>
+
+<h4 style='margin-left:.8pt'>Table of Contents </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A table of contents assists all users in navigating a longer
+document. If you have used style headings when creating your document, adding a
+table of contents requires only a simple click of a button. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.35pt;
+margin-left:.8pt;line-height:110%'><b>Add a Table of Contents to your document:
+</b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.2pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Create your headings using the built in style headings. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Under the references tab select <b>Table of Contents.</b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.05pt;
+margin-left:54.75pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=239 height=323 id="Group 28152"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image010.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.8pt;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.1pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select a Table of Contents style. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Word will automatically create a table of contents based on your Heading
+Styles. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:12.9pt;
+margin-left:18.5pt'><b>Note</b>: you can navigate to a specific section in the
+document from the Table of Contents by Ctrl+click on the section you wish to
+jump to </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Outline View </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Using styles to create your content will also assist the
+creator with managing large documents and may assist all learners with
+cognitive organization of your material. If you have used styles while creating
+your document you can easily navigate and arrange the content in outline view. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>To see your document in Outline View, navigate to the <b>View</b>
+tab and click <b>Outline</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.95pt;margin-bottom:
+2.45pt;margin-left:0in;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=430 height=125
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image011.gif"></span></p>
+
+<h4 style='margin-left:.8pt'>Paragraph Styles and Page Breaks </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Avoid using blank lines to separate paragraphs or pages in a
+document. A screen reader will read these as “blank” and the user may think
+that they have reached the end of the document. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>To begin a new page, use <b>page/section breaks</b> rather
+than entering multiple blank lines. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:12.75pt;
+margin-left:.8pt'><b>Tip: </b>Ctrl+Enter will add a page break for you. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Providing Alt Text </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Alternative text, also known as alt text, often appears when
+you move your pointer over a picture or object on a website. Screen readers
+also read alt text to users to educate them on what an image, object, or table
+contains. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Alt text should be accurate and descriptive, but it does not
+need to include what type of object was created (image, chart, table, etc.), as
+the screen reader will automatically convey this. All images in Cascade (CMS at
+JMU) are required to include alt text. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'><b>Writing Alt Text: </b>Use clear, but concise,
+descriptions. For example, “a red Ferrari” tells the reader more about the
+image than “a car.” However, “a 2009 cherry red <a
+href="http://www.autotrader.com/2009-ferrari-599+GTB+Fiorano.jsp?modelId=19131"><span
+style='color:black;text-decoration:none'>Ferrari 599 GTB Fiorano</span></a><a
+href="http://www.autotrader.com/2009-ferrari-599+GTB+Fiorano.jsp?modelId=19131"><span
+style='color:black;text-decoration:none'> </span></a>displayed in a darkened
+showroom floor with spot lighting from directly above casting a light shadow on
+the lower 17% of the car” may be excessive depending on the circumstances. The
+description should provide the information a person needs to know about the
+object to make it relevant to the content. A table or chart may have much more
+description than an image. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>What is a decorative image? </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.0pt;
+margin-left:.8pt'>An image that does not convey important content or is for
+aesthetic purposes only. Decorative images do not require alt text. A general practice
+is to put “” on an image that does not require alt text so that a screen reader
+knows alt text was left out intentionally. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+style='font-family:"Times New Roman",serif'>            </span> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.5pt;
+margin-left:.8pt;line-height:110%'><b>Adding Alt Text</b>: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Right-click the image and select <b>View Alt Text…</b> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.5pt;
+margin-left:123.15pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=148 height=158
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image012.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.45pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>An Alt Text textbook will appear, which may be auto-filled by
+Microsoft’s built-in AI service. Edit or enter a description of the image into
+the box or check that the image is a decorative image, in which case no
+description is needed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in'>a.<span style='font-family:"Arial",sans-serif'>
+</span>Clicking <b>Generate alt text for me</b> will create alt text from the
+AI tool </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.75pt;
+margin-left:98.4pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=166 height=240
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image013.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.5pt;
+margin-left:.5in;text-indent:0in;line-height:107%'>  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.3pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Captions vs. Alt Text </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>In addition to alt text, captions can be added to tables,
+charts, and images. A caption will typically appear directly below a table,
+image, chart, or picture. Captions can be indexed by creating a table of
+captioned items at the end of the document. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>If I have a caption, do I need alt text? </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'><i>Alt text</i> is valuable to a person who is hearing the
+object described via a screen reader. <i>Captions </i>are beneficial for
+everyone, but <b>captions do not replace alt text.</b> Captions are not
+required for accessibility, but alt text should always be used with an object
+that provides value outside of being decorative. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>For example, if there was a table in your content showing
+growth of electronics in households from 2010 to 2012, your <i>alt text</i> may
+say “Electronic use grew 142% between 2010 and 2012.” Whereas a <i>caption</i>
+might say “Chart 1.1 Growth of Electronics” above or below the table<i>. </i>A
+caption can be viewed more as a title where alt text is a description. </p>
+
+<h4 style='margin-left:.8pt'>Hyperlink text </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Hyperlink text should provide enough meaningful information
+that a user will understand where the link is taking them prior to clicking on
+it. Most screen readers will read aloud “link to” followed by the </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>text you have provided. Meaningful hyperlink text can be
+added to <i>text to display </i>or as a <i>screen tip.</i><span
+style='font-family:"Times New Roman",serif'>           </span><i> </i></p>
+
+<h4 style='margin-left:.8pt'>Accessibility Checker </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Microsoft Office products have a built-in accessibility
+checker. Accessibility Checker highlights possible accessibility issues in an
+Office file and tells how to make these issues more accessible. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.3pt;
+margin-left:.8pt;line-height:110%'><b>To check for accessibility in Word: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:18.5pt'>1.<span style='font-family:"Arial",sans-serif'> </span>Click<b>
+File</b> &gt; <b>Info</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.3pt;
+margin-left:44.4pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=334 height=86
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image014.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:14.45pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>If the Accessibility Checker sees any potential issues, you will see a
+message next to the <b>Check for Issues</b> button. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:14.45pt;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>To view and repair the issues in your file, click <b>Check for Issues</b>
+&gt; <b>Check Accessibility.</b> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click a specific issue to see <b>Additional Information</b> and steps
+you can take to change the content. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-1.1pt;margin-bottom:
+3.7pt;margin-left:-.6pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=426 height=270 id="Group 31061"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image015.gif"></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:39.3pt;text-align:center;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>In Word, you can also find the Accessibility Checker by
+clicking <b>Review &gt; Check Accessibility</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-5.95pt;margin-bottom:
+11.3pt;margin-left:.75pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=430 height=94
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image016.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:27.75pt;
+margin-left:.8pt'>The Accessibility Checker checks a file against a set of
+possible issues that people who have disabilities might experience in the file.
+Each issue is classified as an Error, Warning, or Tip. </p>
+
+<div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#F2F2F2;
+margin-left:7.65pt;margin-right:9.35pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Error</b>:
+An error is for content that makes a file very difficult or impossible for
+people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Warning</b>:
+A warning is for content that in most, but not all, cases makes a file
+difficult for people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Tip</b>: A
+tip is for content that people with disabilities can understand, but that might
+be better organized or presented in a way that would improve their experience. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.35pt;
+margin-left:0in;text-indent:0in;line-height:107%;background:#F2F2F2;border:
+none;padding:0in'> </p>
+
+</div>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:13.35pt;margin-left:39.3pt;text-align:center;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b></p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34907"><span style='font-size:14.0pt;
+line-height:107%'>Creating Accessible PDFs </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:120.35pt;margin-bottom:
+3.2pt;margin-left:.8pt;line-height:110%'><b>Text Based PDF vs Scanned PDF </b>Two
+types of PDFs: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Scanned Image </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Scanned Text </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A PDF created as a scanned image may not have readable text.
+It is similar to taking a digital photograph of a document. In order for a
+screen reader to recognize the text it needs to be created as a Text Based PDF
+or have been scanned using optical character recognition. Printing to a PDF is
+similar to creating a PDF off a scanned image and often times will not be
+accessible. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A text based PDF can be read by a screen reader as well as
+picked up by a search engine. When you save a file as a PDF in Microsoft it is
+saved as scanned text, this is the easiest way to ensure that your PDF is
+accessible. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A PDF that is text based does not only assist someone using a
+screen reader it is also helpful to search engines as they are able to pick up
+the text in the PDF. If your PDF is a scanned image the content cannot be
+picked up by a search engine.  </p>
+
+<h4 style='margin-left:.8pt'>Optical Character Recognition (OCR) </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.05pt;
+margin-left:.8pt'>OCR is a method of digitalizing printed text so that it is
+readable by a screen reader. A text document, such as a book, is scanned by an
+OCR scanner into a digital format. The OCR scanner will then convert the
+scanned “image” into text that can be read by a screen reader. Many newer
+scanners have OCR built in. Check your owner’s manual to be sure. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>PDF Tags </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.05pt;
+margin-left:.8pt'>Tagging adds a layer of information called “semantics” to a
+PDF document. A tagged PDF will indicate what types of objects are included. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.5pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Headings </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.4pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Paragraphs </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.3pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Images </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:9.05pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tables </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>When you save your file as a PDF, these semantics are
+identified and labeled by the Office application you are using and added to the
+file. Assistive technologies, such as screen readers and magnifiers, are then
+able to access the tagging and use it to present the information to disabled
+users. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<h4 style='margin-left:.8pt'>SensusAccess Document Converter </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.05pt;
+margin-left:.8pt'>JMU Libraries offers a document converter service through
+SensusAccess. Texts that are primarily text, including multilingual documents
+and those with complicated elements, as long as they use headers and formatting
+fit for accessibility, can be converted into: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.55pt;
+margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>MP3 files </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>DAISY audiobooks </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:107%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Mobile-friendly ebooks (Mobi, EPUB, and EPUB3 formats) </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Digital Braille for embossed printing or reading on a Braille
+display </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>SensusAccess can also convert image-only PDFs, PowerPoint
+presentations, and JMP statistical graphs into less challenging formats. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.0pt;
+margin-left:.8pt'>SensusAccess can be used at the following link:
+https://www.lib.jmu.edu/accessibility/sensusaccess-documentconverter/ </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span> </p>
+
+<h4 style='margin-left:.8pt'>Creating PDFs in Word </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.4pt;
+margin-left:.8pt'>The easiest way to ensure that your PDF is accessible is to
+create the PDF within Office using the following instructions.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.2pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click the <b>File</b> tab, and then click <b>Export</b>.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.05pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select the <b>Create PDF/XPS </b>icon.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.25pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Options</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Make sure that the <b>Document structure tags for accessibility</b>
+check box is selected, and then click <b>OK</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.4pt;
+margin-left:29.55pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=348 height=281
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image017.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Save</b>. </p>
+
+<h4 style='margin-left:.8pt'>Creating PDFs from a scanner/copier </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>It is always best to create a PDF electronically; however, if
+you only have a hard copy of a document, a PDF can be created using a scanner
+with OCR software. Both Copy Centers at JMU have OCR scanners available. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Many images, text that has a shaded background, and text that
+is in table format is generally difficult for OCR scanners to read. Using an
+OCR scanner may not produce 100% accessible text.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.2pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'>          </span></b><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:153.15pt;
+margin-bottom:14.2pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b><span
+style='font-size:14.0pt;line-height:107%;font-family:"Times New Roman",serif'>          </span></b><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.5pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:72.5pt;
+margin-bottom:.15pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;color:#404040'>Microsoft Excel</span><span
+style='font-size:28.0pt;line-height:107%;font-family:"Times New Roman",serif;
+color:#404040'> </span><br clear=all style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:153.15pt;
+margin-bottom:13.35pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34908"><span style='font-size:14.0pt;
+line-height:107%'>Creating Accessible Files in Microsoft Excel </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Excel is a spreadsheet program that can be used for storing,
+organizing, and manipulating data. If Excel is not used properly, then it may
+be inaccessible to someone with a disability. </p>
+
+<h4 style='margin-top:0in;margin-right:0in;margin-bottom:1.5pt;margin-left:
+.8pt'>Provide Alt Text </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.45pt;margin-bottom:
+11.35pt;margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The first step will vary depending on the type of object selected: </p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=422
+ style='width:316.4pt;margin-left:.25pt;border-collapse:collapse'>
+ <tr style='height:51.75pt'>
+  <td width=235 valign=top style='width:176.45pt;border:solid black 1.0pt;
+  padding:2.85pt 2.45pt 0in 5.4pt;height:51.75pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:2.15pt;text-indent:0in;line-height:107%'><b>Chart/Picture/Shape/SmartArt
+  </b></p>
+  </td>
+  <td width=96 valign=top style='width:72.05pt;border:solid black 1.0pt;
+  border-left:none;padding:2.85pt 2.45pt 0in 5.4pt;height:51.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:3.15pt;
+  margin-bottom:0in;margin-left:0in;text-align:center;text-indent:0in;
+  line-height:107%'><b>Table </b></p>
+  </td>
+  <td width=91 valign=top style='width:67.9pt;border:solid black 1.0pt;
+  border-left:none;padding:2.85pt 2.45pt 0in 5.4pt;height:51.75pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:.75pt;
+  margin-bottom:0in;margin-left:.65pt;text-align:center;text-indent:0in;
+  line-height:107%'><b>Pivot Table </b></p>
+  </td>
+ </tr>
+ <tr style='height:121.7pt'>
+  <td width=235 valign=top style='width:176.45pt;border:solid black 1.0pt;
+  border-top:none;padding:2.85pt 2.45pt 0in 5.4pt;height:121.7pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Right-click
+  the object and select <b>View Alt Text</b>. </p>
+  </td>
+  <td width=96 valign=top style='width:72.05pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:2.85pt 2.45pt 0in 5.4pt;height:121.7pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'>Click
+  the </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:1.6pt;margin-bottom:
+  0in;margin-left:0in;text-indent:0in;line-height:107%'><b>Table, </b>select<b>
+  Format,</b> and then click the <b>Alt Text</b> command. </p>
+  </td>
+  <td width=91 valign=top style='width:67.9pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:2.85pt 2.45pt 0in 5.4pt;
+  height:121.7pt'>
+  <p class=MsoNormal style='margin:0in;text-indent:0in'>Right-click, select </p>
+  <p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b>PivotTable
+  Options</b>, and then click <b>Alt Text.</b> </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.7pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.45pt;margin-bottom:
+.4pt;margin-left:.5in;text-indent:-.25in;line-height:105%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Type
+a description of the image or object into the <b>Description</b> text boxes. <u>Any
+alt text in the Title box will</u> <u>not be recorded as alt text.</u> 3.<span
+style='font-family:"Arial",sans-serif'> </span>Click <b>Close</b>. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Specify Column Header Information in Excel Tables </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>In addition to adding alt text that describes the table,
+having clear column headings can help provide context and assist navigation of the
+table’s contents. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.2in;
+margin-left:.8pt'>To specify a header row in a block of cells marked as a
+table, do the following: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.1pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click anywhere in the table. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>On the <b>Table Tools Design</b> tab, in the <b>Table Style Options</b>
+group, select the <b>Header Row</b> check box. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-left:78.9pt;text-indent:0in;line-height:107%'><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=242 height=114
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image018.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Add your header information. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:14.45pt;
+margin-left:.8pt'>To specify a header row in a new block of cells marked as a
+table, do the following: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:30.85pt;margin-bottom:
+1.9pt;margin-left:18.5pt'>1.<span style='font-family:"Arial",sans-serif'> </span>Highlight
+the cells you want to include in the table. 2.<span style='font-family:"Arial",sans-serif'>
+</span>On the <b>Insert</b> tab, in the <b>Tables</b> group, click <b>Table</b>.
+</p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:35.25pt;margin-bottom:
+0in;margin-left:27.0pt;text-indent:-.25in;line-height:107%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Select
+the <b>My table has headers</b> check box.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.4pt;
+margin-left:75.15pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=252 height=180
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image019.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:35.25pt;margin-bottom:
+.7pt;margin-left:27.0pt;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>OK</b>. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span> <br clear=all
+style='page-break-before:always'>
+</p>
+
+<h4 style='margin-left:.8pt'>Naming Worksheets </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Providing sheet names make it easier to navigate through a
+workbook. All worksheets should be named, and any blank sheets in a workbook
+should be removed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;
+margin-left:.8pt;line-height:110%'><b>To rename a sheet: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Right-click the sheet tab, and then click <b>Rename</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;
+margin-left:59.25pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=231 height=168
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image020.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:12.9pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Type a brief, unique name that is descriptive of the sheet contents. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.75in;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>      </span> </p>
+
+<h4 style='margin-left:.8pt'>Accessibility Checker </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>The Accessibility Checker helps find and fix issues that can
+make it difficult for people with disabilities to read or interact with a
+workbook. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.3pt;
+margin-left:.8pt;line-height:110%'><b>To use the accessibility checker: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:2.2pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click the <b>File</b> tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:110%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Check for Issues</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:1.3pt;
+margin-left:.5in;text-indent:-.25in;line-height:110%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Check Accessibility</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Errors and warnings will appear in a task pane. You can then review the
+issues and see which ones need to be fixed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Note: In Excel 2019, you can also find the accessibility
+checker by going to <b>Review &gt; Check Accessibility</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:44.95pt;
+margin-left:.8pt'>The Accessibility Checker checks a file against a set of
+possible issues that people who have disabilities might experience in the file.
+Each issue is classified as an Error, Warning, or Tip. </p>
+
+<div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#F2F2F2;
+margin-left:18.95pt;margin-right:9.35pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Error</b>:
+An error is for content that makes a file very difficult or impossible for
+people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Warning</b>:
+A warning is for content that in most, but not all, cases makes a file
+difficult for people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Tip</b>: A
+tip is for content that people with disabilities can understand, but that might
+be better organized or presented in a way that would improve their experience. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%;
+background:#F2F2F2;border:none;padding:0in'> </p>
+
+</div>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:155.15pt;
+margin-bottom:13.35pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:42.2pt;
+margin-bottom:.15pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;color:#404040'>Microsoft PowerPoint </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:155.15pt;
+margin-bottom:13.35pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34909"><span style='font-size:14.0pt;
+line-height:107%'>Creating Accessible PowerPoint Presentations </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>PowerPoint is a professional presentation tool. Many
+PowerPoint presentations use a graphical approach that present content in the
+form of slideshows, which are often accompanied by the oral delivery of the
+topic. PowerPoint presentations are often made available for students to go
+through on their own outside of the classroom.  </p>
+
+<h4 style='margin-left:.8pt'>Ensure that all slides have unique titles </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Slide titles are used for navigation and selection by people
+who are not able to view the slide. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;
+margin-left:.8pt;line-height:110%'><b>To add visible titles to your slides, do
+the following</b>: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.2in;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>On the <b>Home</b> tab, in the <b>Slides</b> group, click <b>Reset</b>
+to restore slide placeholders for the selected slide. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Type a unique name in the <b>Title</b> text box. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;
+margin-left:.8pt;line-height:110%'><b>If you do not want the title to be
+visible on your slide, do the following: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.4pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>On the <b>Home</b> tab, in the <b>Drawing</b> group, click the <b>Arrange</b>
+menu. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.0pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Selection Pane</b>. 3.<span style='font-family:"Arial",sans-serif'>
+</span>Click the eye icon next to the text box to toggle its visibility. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<h4 style='margin-left:.8pt'>Logical order of material within slides </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>People who cannot view the slide will hear slide text,
+shapes, and content read back in a specific order. If objects are not part of
+the slide template, it is important that they will be read by a screen reader
+in the order intended. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.5pt;
+margin-left:.8pt;line-height:110%'><b>To check the order that your slide
+content will be read back, do the following: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:14.45pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>On the <b>Home</b> tab, in the <b>Drawing</b> group, click <b>Arrange,</b>
+and then choose <b>Selection Pane</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>The <b>Selection Pane</b> lists the objects on the slide. Objects will
+be read back beginning with the bottom list item and ending with the top list
+item. Correct any out-of-order items by dragging and dropping each item into
+the desired place. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:45.65pt;
+margin-bottom:0in;margin-left:0in;text-align:right;text-indent:0in;line-height:
+107%'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=267 height=227 id="Group 32854"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image021.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.3pt;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span> </p>
+
+<h4 style='margin-left:.8pt'>Providing Alt Text </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Alternative text, also known as alt text, appears when the
+pointer is moved over a picture or object. Alt text is also read to a user who
+is using a screen reader to educate them on what the image, object, or table
+contains. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.8pt'>Alt text should be included for the following in your
+document:</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=372
+ style='width:279.1pt;margin-left:.5in;border-collapse:collapse'>
+ <tr style='height:90.15pt'>
+  <td width=235 valign=top style='width:176.45pt;padding:2.75pt 0in 0in 0in;
+  height:90.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.85pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Pictures </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.8pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Clip Art </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.75pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Charts </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.85pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Tables </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.9pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Shapes </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>SmartArt </p>
+  </td>
+  <td width=137 valign=top style='width:102.65pt;padding:2.75pt 0in 0in 0in;
+  height:90.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.9pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Groups </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Embedded </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:3.45pt;
+  margin-left:.25in;text-indent:0in;line-height:107%'>Objects </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.95pt;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Ink (handwriting) </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:-.25in;line-height:107%'><span
+  style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Video and audio </p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:.25in;text-indent:0in;line-height:107%'>files </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Alt text should be accurate and descriptive, but it does not
+need to include the type of object that was created (image, chart, table,
+etc.).  The screen reader will convey this automatically. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.45pt;
+margin-left:-.75pt;text-indent:0in;line-height:99%'><b>Tip: </b>Use clear, but
+concise, descriptions. For example, “a red Ferrari” tells the reader more about
+the image than “a car” does. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.5pt;
+margin-left:.8pt;line-height:110%'><b>Add alt text</b>: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Right-click the image and select <b>View Alt Text</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.85pt;
+margin-left:.25in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.45pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>An Alt Text textbook will appear, which may be auto-filled by
+Microsoft’s built-in AI service. Edit or enter a description of the image into
+the box or check that the image is a decorative image, in which case no
+description is needed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in'>a.<span style='font-family:"Arial",sans-serif'>
+</span>Clicking <b>Generate alt text for me</b> will create alt text from the
+AI tool </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:116.4pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=166 height=255
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image022.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:76.4pt;margin-bottom:
+0in;margin-left:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><b> </b></p>
+
+<h4 style='margin-top:0in;margin-right:0in;margin-bottom:3.05pt;margin-left:
+.8pt'>Additional Information </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.2pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Audio can be recorded on a PowerPoint presentation, which may be
+helpful if the PowerPoint will be accessible online. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.25pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>When presenting a PowerPoint, it is important to verbally
+highlight the important content of the slides. Do not rely solely on the slides
+to convey the message. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.05pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid putting information in the slide notes field as it is not
+viewable to a screen reader in many formats including a PDF. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b> </b><br
+clear=all style='page-break-before:always'>
+</p>
+
+<h4 style='margin-left:.8pt'>Accessibility Checker </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>The Accessibility Checker helps find and fix issues that can
+make it difficult for people with disabilities to read or interact with a
+workbook. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:13.3pt;
+margin-left:.8pt;line-height:110%'><b>To use the accessibility checker: </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:2.2pt;
+margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click the <b>File</b> tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:110%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Check for Issues</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:1.3pt;
+margin-left:.5in;text-indent:-.25in;line-height:110%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Check Accessibility</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.05pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Errors and warnings will appear in a task pane. You can then review the
+issues and see which ones need to be fixed. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Note: In PowerPoint 2019, you can also find the accessibility
+checker by going to <b>Review &gt; Check Accessibility</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:28.35pt;
+margin-left:.8pt'>The Accessibility Checker checks a file against a set of
+possible issues that people who have disabilities might experience in the file.
+Each issue is classified as an Error, Warning, or Tip. </p>
+
+<div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#F2F2F2;
+margin-left:7.65pt;margin-right:9.35pt'>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Error</b>:
+An error is for content that makes a file very difficult or impossible for
+people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.65pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Warning</b>:
+A warning is for content that in most, but not all, cases makes a file
+difficult for people with disabilities to understand. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.05pt;
+margin-left:9.0pt;text-indent:-9.0pt;line-height:99%;background:#F2F2F2;
+border:none;padding:0in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>Tip</b>: A
+tip is for content that people with disabilities can understand, but that might
+be better organized or presented in a way that would improve their experience. </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%;
+background:#F2F2F2;border:none;padding:0in'> </p>
+
+</div>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:10.15pt;
+margin-left:0in;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:58.7pt;
+margin-bottom:.15pt;margin-left:.5pt;text-align:right;line-height:107%'><span
+style='font-size:28.0pt;line-height:107%;color:#404040'>Microsoft Outlook </span></p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:154.75pt;
+margin-bottom:13.35pt;margin-left:0in;text-align:right;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin:0in;text-indent:0in;line-height:107%'><span
+style='font-family:"Times New Roman",serif'>            </span><b><span
+style='font-size:14.0pt;line-height:107%'> </span></b><br clear=all
+style='page-break-before:always'>
+</p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34910"><span style='font-size:14.0pt;
+line-height:107%'>Creating Accessible Emails in Outlook </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>One of the unknowns about email is that we never know where
+they may eventually end up. Therefore, we want to be sure that our emails can
+be read by anyone, including people with disabilities. Here are some
+suggestions for making emails readable by the largest possible audience: </p>
+
+<h4 style='margin-top:0in;margin-right:0in;margin-bottom:3.15pt;margin-left:
+.8pt'>Fonts and Colors </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Always choose a font that is easy to read. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.6pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Use a minimum font size of 12-point.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:4.25pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Simple black and white emails are sufficient for most email
+conversations, though some people prefer to send replies in a different color
+text. Choose a font color that will provide a good contrast, such as dark blue
+or dark green.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.75in;text-indent:-.25in'><span style='font-family:"Arial",sans-serif'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid using shaded boxes as a background. If you use shaded
+boxes, be sure that they provide enough contrast to the font color. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>Plain text vs. HTML? </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>Emails can be written in plain text, rich text, or HTML. This
+selection is made in the <b>Format Text </b>tab. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'><b>Plain text </b>email will suffice for most small, routine
+correspondence. The advantages of plain text are that it can be read by any
+email program, is compatible with all email systems, uses the least amount of
+processing power and storage space, and is compatible with all assistive
+technologies. Limitations of plain text are that they do not apply document
+structure, and the links are limited to full URLs (which are not
+user-friendly).  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'><b>HTML</b> email is a good choice when you wish to add more
+formatting and structure to a message. HTML supports semantic headings, images
+with alternative text, links, and lists. When your emails contain any of these
+features, HTML is the format to use. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.8pt;line-height:110%'><b>Which should you use? </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>There are valid arguments for using both plain text and HTML
+when sending email. If the email is simple and does not contain images and
+links, plain text will work fine. However, if an HTML email is created with
+accessibility in mind, it can be just as good, if not a better, alternative. </p>
+
+<h4 style='margin-top:0in;margin-right:0in;margin-bottom:1.35pt;margin-left:
+.8pt'>Alt text for images/links </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:1.05pt;
+margin-left:.5in;text-indent:-.25in;line-height:107%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Right click the image or object, and then click <b>Format</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.15pt;
+margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Alt Text</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:2.35pt;
+margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Type a description of the image or object into the <b>Title</b> and <b>Description</b>
+text boxes. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Click <b>Close</b>. </p>
+
+<h4 style='margin-left:.8pt'>Signatures </h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:11.35pt;
+margin-left:.8pt'>A regular, text-based signature is recommended in Outlook. Be
+cautious of the use of colors and difficult-to-read texts such as a hand
+writing font.</p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:103%;font-family:"Garamond",serif;
+color:black'><br clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34911"><span style='font-size:14.0pt;
+line-height:107%'>Audio Captioning </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:9.55pt;
+margin-left:.8pt'>Any time video is used as part of a class, it is recommended
+that captioning be included. If you require assistance with captioning, please
+contact the Office of Disability Services. </p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34912">Microsoft Teams Live
+Captioning </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Microsoft offers live captioning for any type of meeting in
+Teams, whether scheduled or on-the-fly. Though not perfect, a program deciphers
+the spoken words and transcribes them into text, also crediting the spoken
+words to the correct speaker. In order for this to work well, participants
+ought to speak slowly, clearly, and one at a time. At this time, it is not
+possible to download a copy of the transcription of the meeting once it is
+complete. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>To turn on live captioning during a meeting, click the “More”
+ellipsis and then <b>Record and transcribe</b> and then <b>Start transcription</b>.
+Note: by starting a recording, transcription begins automatically as well. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><b> </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:46.95pt;text-indent:0in;line-height:107%'><span style='font-size:
+11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img border=0
+width=306 height=240
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image023.gif"></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> </p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34913">Zoom Captioning &amp;
+Transcribing </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:.6pt;
+margin-left:.8pt'>Zoom also captions audio into text similar to Microsoft
+Teams. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>To turn on live captioning as the host, simply click <b>Show
+captions</b> at the bottom of the screen in a meeting.  </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:24.1pt;
+margin-bottom:0in;margin-left:0in;text-align:right;text-indent:0in;line-height:
+107%'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=348 height=68 id="Group 33122"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image024.gif"></span> </p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:4.9pt;text-align:center;text-indent:0in;
+line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>Once enabled, participants will see an option appear to view
+the Transcript at the bottom as well. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:11.4pt;
+margin-bottom:0in;margin-left:0in;text-align:right;text-indent:0in;line-height:
+107%'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><img
+border=0 width=381 height=63 id="Group 33124"
+src="Creating%20Accessible%20Material%20in%20Microsoft%20Office_files/image025.gif"></span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>With a recorded Zoom meeting, you can also download a
+transcription of the captioning from the meeting as a text file. This feature
+must be turned on in your account page at jmu-edu.zoom.us prior to the meeting.
+This site is also where you’ll find the log of previous recordings and
+transcriptions. Audio transcripts provide time stamps and credits the words to
+the corresponding speaker. <b><span style='font-size:12.5pt;line-height:103%'>It
+</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:9.85pt;
+margin-left:0in;text-indent:0in;line-height:94%'><b><span style='font-size:
+12.5pt;line-height:94%'>is highly recommended you proofread this document
+before posting it in association with a recorded meeting</span></b>. </p>
+
+<h2 style='margin-left:.8pt'><a name="_Toc34914">YouTube Automatic Captions </a></h2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>YouTube offers an automatic captioning services for their
+videos. A computer program attempts to decipher what is being said on the video
+and convert it to text. You can upload a script to YouTube if you have one, or
+you can use the automatic captions as a starting point and modify them to make
+them correct. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.1pt;margin-bottom:0in;
+margin-left:.8pt'>It is important to note that you <b>SHOULD NOT</b> rely on
+automatic captioning services to produce accurate text of any audio. These
+services are for convenience, though they can prove to be helpful in many
+circumstances to make videos more accessible. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:13.5pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34915"><span style='font-size:14.0pt;
+line-height:107%'>Online Resources </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:103%'><span style='font-family:
+"Segoe UI Symbol",sans-serif'>•</span><span style='font-family:"Arial",sans-serif'>
+</span><b>Adobe Accessibility Resources</b> <a
+href="https://www.adobe.com/accessibility.html"><span style='color:blue'>https://www.adobe.com/accessibility.html</span></a><a
+href="https://www.adobe.com/accessibility.html"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<h4 style='margin-top:0in;margin-right:0in;margin-bottom:5.05pt;margin-left:
+18.3pt;text-indent:-.25in'><span style='font-family:"Segoe UI Symbol",sans-serif;
+font-weight:normal'>•</span><span style='font-family:"Arial",sans-serif;
+font-weight:normal'> </span>Americans with Disabilities Act website <a
+href="https://www.ada.gov/"><span style='color:blue;font-weight:normal'>https://www.ada.gov/</span></a><a
+href="https://www.ada.gov/"><span style='color:black;font-weight:normal;
+text-decoration:none'> </span></a></h4>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:103%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Apple Accessibility Resources</b> <a
+href="https://www.apple.com/accessibility/"><span style='color:blue'>https://www.apple.com/accessibility/</span></a><a
+href="https://www.apple.com/accessibility/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:103%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>IT Training </b><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>https://www.jmu.edu/computing/teaching</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>-</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>and</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>-</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>learning/it</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue'>workshops.shtml</span></a><a
+href="https://www.jmu.edu/computing/teaching-and-learning/it-workshops.shtml"><span
+style='color:blue;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:103%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>JMU Web Accessibility Portal </b><a
+href="https://www.jmu.edu/accessibility"><span style='color:blue'>https://www.jmu.edu/accessibility</span></a><a
+href="https://www.jmu.edu/accessibility"><span style='color:black;text-decoration:
+none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:103%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Microsoft Accessibility Resources</b> <a
+href="https://www.microsoft.com/en-us/accessibility/"><span style='color:blue'>https://www.microsoft.com/en</span></a><a
+href="https://www.microsoft.com/en-us/accessibility/"><span style='color:blue'>-</span></a><a
+href="https://www.microsoft.com/en-us/accessibility/"><span style='color:blue'>us/accessibility/</span></a><a
+href="https://www.microsoft.com/en-us/accessibility/"><span style='color:black;
+text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:2.0pt;
+margin-left:18.3pt;text-indent:-.25in;line-height:110%'><span style='font-family:
+"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>JMU Office of Disability Services </b><a
+href="https://www.jmu.edu/ods/"><span style='color:blue'>https://www.jmu.edu/ods/</span></a><a
+href="https://www.jmu.edu/ods/"><span style='color:black;text-decoration:none'>
+</span></a><span style='font-family:"Segoe UI Symbol",sans-serif'>•</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Virginia</b> <b>Department
+for the Blind and Vision Impaired </b><a href="https://www.vdbvi.org/"><span
+style='color:blue'>https://www.vdbvi.org/</span></a><a
+href="https://www.vdbvi.org/"><span style='color:black;text-decoration:none'> </span></a><span
+style='font-family:"Segoe UI Symbol",sans-serif'>•</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Web Accessibility in Mind
+Resources</b> <a href="https://webaim.org/resources/"><span style='color:blue'>https://webaim.org/resources/</span></a><a
+href="https://webaim.org/resources/"><span style='color:black;text-decoration:
+none'> </span></a><span style='font-family:"Segoe UI Symbol",sans-serif'>•</span><span
+style='font-family:"Arial",sans-serif'> </span><b>Web Accessibility Initiative </b><a
+href="https://www.w3.org/WAI/"><span style='color:blue'>https://www.w3.org/WAI/</span></a><a
+href="https://www.w3.org/WAI/"><span style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'><span style='font-family:
+"Times New Roman",serif'>            </span> </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:8.85pt;margin-left:
+.8pt;line-height:107%'><a name="_Toc34916"><span style='font-size:14.0pt;
+line-height:107%'>References used in the material </span></a></h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:5.95pt;
+margin-left:.8pt;line-height:143%'><a
+href="http://whqlibdoc.who.int/publications/2011/9789240685215_eng.pdf"><span
+style='color:blue'>http://whqlibdoc.who.int/publications/2011/9789240685215_eng.
+</span></a><a
+href="http://whqlibdoc.who.int/publications/2011/9789240685215_eng.pdf"><span
+style='color:blue'>pdf</span></a><a
+href="http://whqlibdoc.who.int/publications/2011/9789240685215_eng.pdf"><span
+style='color:blue;text-decoration:none'> </span></a><a
+href="http://invisabledisabilities.org/"><span style='color:blue'>http://invisabledisabilities.org</span></a><a
+href="http://invisabledisabilities.org/"><span style='color:black;text-decoration:
+none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;
+margin-left:.8pt;line-height:103%'><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>http://www.color</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>-</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>blindness.com/2009/01/06/50</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>-</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>facts</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>-</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>about</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>color</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>-</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:blue'>blindness/</span></a><a
+href="http://www.color-blindness.com/2009/01/06/50-facts-about-color-blindness/"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-left:.8pt;line-height:103%'><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>http://office.microsoft.com/en</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>us/word</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>help/create</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>accessible</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>pdfs</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:blue'>HA102478227.aspx</span></a><a
+href="http://office.microsoft.com/en-us/word-help/create-accessible-pdfs-HA102478227.aspx"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;
+margin-left:.8pt;line-height:103%'><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>http://office.microsoft.com/en</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>us/excel</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>help/creating</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>accessible</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>excel</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>workbooks</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:blue'>HA102013545.aspx</span></a><a
+href="http://office.microsoft.com/en-us/excel-help/creating-accessible-excel-workbooks-HA102013545.aspx"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;
+margin-left:.8pt;line-height:103%'><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>http://office.microsoft.com/en</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>us/powerpoint</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>help/creating</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>accessible</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>powerpoint</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>presentations</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>-</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:blue'>HA102013555.aspx</span></a><a
+href="http://office.microsoft.com/en-us/powerpoint-help/creating-accessible-powerpoint-presentations-HA102013555.aspx"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:11.4pt;
+margin-left:.8pt;line-height:103%'><a
+href="http://governor.state.tx.us/files/disabilities/accessdocs/20-Email.pdf"><span
+style='color:blue'>http://governor.state.tx.us/files/disabilities/accessdocs/20</span></a><a
+href="http://governor.state.tx.us/files/disabilities/accessdocs/20-Email.pdf"></a><a
+href="http://governor.state.tx.us/files/disabilities/accessdocs/20-Email.pdf"><span
+style='color:blue'>Email.pdf</span></a><a
+href="http://governor.state.tx.us/files/disabilities/accessdocs/20-Email.pdf"><span
+style='color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.05pt;text-indent:0in;line-height:107%'> </p>
+
+</div>
+
+</body>
+
+</html>
