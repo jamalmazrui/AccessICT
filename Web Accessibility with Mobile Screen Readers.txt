@@ -1,0 +1,118 @@
+﻿
+Field Guide
+Web accessibility with mobile screen readers
+Jessica Chambers  
+
+Contents
+Introduction  	04
+All about screen readers  	06 
+Getting started with mobile screen readers  	08 
+Screen readers and images  	12
+Skip links 	16
+Navigating headings  	18
+Writing better links  	20
+Using forms  	22
+Meaningful sequence  	24
+Wrapping up 	26
+Let's work together 	27
+Digital versions of the field guide  	28
+Mobile screen reader shortcuts list  	29
+
+
+
+
+ALL ABOUT SCREEN READERS/
+How does your website sound?
+If you normally use a screen and a mouse, you probably haven't given a second thought to how you fill out a form, browse a website, or doom scroll through social media. If you take them away, the web still needs to be available and equitable. Introducing screen readers.
+So what is a screen reader?
+A screen reader is an application that runs on your device. They're actually more sophisticated than you might think. Unlike "text-to-speech," screen readers have the ability to do more than just read the text out loud from top to bottom.
+They allow a user to have complete control of their devices, just in a different way.  You could consider it an alternative to more traditional web navigation tools like using a mouse and monitor.
+
+
+GETTING STARTED WITH MOBILE SCREEN READERS/
+Let's get screen reading with iOS
+The first step is setting up your smartphone's screen reader. It's pretty simple to do, but there are different steps to follow depending on whether you're using an Apple device or an AndroidTM device. 
+I'm using iOS!
+Hold down the side button for 3 seconds, and say aloud to Siri,  "turn VoiceOver on." You can also use Siri to "turn VoiceOver off." If that doesn't work, here's how to find it in Settings: 
+1. Go to Settings, Accessibility, and VoiceOver will be at the top.
+2. Use the toggle to enable it.
+3. There are additional settings available here, like the speaking rate,   	which controls how fast the voice reads out content.
+We recommend that you enable VoiceOver only after you scan each QR code and open the linked webpage. This will save you from navigating your device while the screen reader is active, which can be overwhelming.
+
+
+GETTING STARTED WITH MOBILE SCREEN READERS/
+Let's get screen  reading with Android
+The first step is setting up your smartphone's screen reader. It's pretty simple to do, but there are different steps to follow depending on whether you're using an Apple device or an AndroidTM device. 
+I'm using Android!
+To turn on TalkBack, simply hold both volume buttons on your phone at the same time for 3 seconds. A window should pop up allowing you to turn it on.
+If that doesn't work, here's how to find it in Settings: 
+1. Navigate to Settings, System Settings, and then Accessibility.
+2. Select the Vision tab.
+3. Select TalkBack.
+4. Select the TalkBack option to toggle it on/off. Make sure to tap Allow.
+If holding both volume buttons to turn TalkBack on and off doesn't work for you, make sure you try to find this option in the settings and enable it. 
+We recommend that you enable TalkBack only after you scan each QR code and open the linked webpage. This will save you from navigating your device while the screen reader is active, which can be overwhelming.
+
+
+
+
+
+
+SCREEN READERS AND IMAGES/
+Do all images need alt text?
+No. If an image isn't interactive or doesn't contain important information and is just there as "eye candy" then you shouldn't add alt text. Users don't want to be told that there's a stock image of a businesswoman smiling - they don't care.
+But as we've learned, if we don't add the alt attribute to our images then our screen reader still tries to make sense of it - and that sounds bad. 
+To get around this, you should still add the alt attribute but just leave the alt text blank. For the HTML-savvy folks out there, here's how that looks:
+
+Note that alt text isn't added automatically. It should be added by content editors or developers as the images are added to your website. To learn more about the 
+
+
+
+
+
+
+
+
+
+Quick tip! 
+Android: Swipe with three fingers to change the reading mode until you get to headings, now if you swipe up or down you'll skip between headings!
+iOS: You can open the Rotor by rotating two fingers on the screen (clockwise or anti-clockwise) as if you were turning a physical dial. When you have selected Headings, use a 'flick' gesture down to move to the next heading, flick up for the previous heading.
+Now you've found your heading you can do the "Read from next item" gesture to read the content from that point.
+Quick tip! 
+ 	Android: tap the screen with three fingers, ensure Read from next item is   	selected, and then double-tap the screen to select.  
+ 	iOS: the shortcut is a two-finger swipe down to Read All. This will read   	the content from where you are, this is different from Read from top.
+ 
+It's important to make sure that your headings are correctly nested because desktop screen readers can be configured to jump between specific heading types.
+
+
+
+
+
+
+
+
+MEANINGFUL SEQUENCE/
+Everything seems  in order
+It's easy to think that screen readers read out content just like we do. They'll start at the top, read from left to right, and then move to the next line. Cool.
+But what happens if we have a different format?
+Here's an example. Let's look at this one without our screen reader for the moment.
+
+It's a pretty powerful example of how design changes where we focus our attention. Now let's take a look at the page again, this time with our screen reader, and listen to how it sounds.
+Notice how your screen reader reads from top to bottom? It completely removes the impact of the content and for nonvisual users, it's going to be very confusing.
+
+
+
+
+
+
+
+
+
+
+
+2
+
+2
+
+
+

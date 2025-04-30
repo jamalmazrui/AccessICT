@@ -1,0 +1,408 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>IT Accessibility Guidelines for Web Developers</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:14.3pt;
+	margin-left:.45pt;
+	text-indent:-.45pt;
+	line-height:111%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5pt;
+	text-indent:-.5pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-style:italic;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Arial",sans-serif;
+	color:black;
+	font-weight:bold;
+	font-style:italic;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:63.45pt 74.0pt 77.2pt 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:4.9pt;
+margin-left:0in;text-indent:0in;line-height:107%'><b><span style='font-size:
+15.0pt;line-height:107%;color:#365F91'>IT Accessibility Guidelines for Web
+Developers </span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.8pt'>Anyone who codes static Web
+sites or dynamic Web applications must ensure that the content is accessible to
+individuals with disabilities. </p>
+
+<p class=MsoNormal>The Web has become such a sensory-rich medium that it's easy
+to forget about making the content accessible to people with visual, hearing,
+and/or motion impairments. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.1pt;text-indent:-.25in'><span style='line-height:111%'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Blind
+individuals often use screen readers, which is software that uses audio output
+to interpret and &quot;read&quot; the content out loud to the user. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:36.1pt;text-indent:-.25in'><span style='line-height:111%'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Hearing
+impaired individuals may depend on captions and transcripts to access audio. </p>
+
+<p class=MsoNormal style='margin-left:36.1pt;text-indent:-.25in'><span
+style='line-height:111%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Individuals with motor impairments may prefer to use a keyboard
+rather than a mouse to navigate a Web page. </p>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:6.95pt;margin-left:
+-.25pt'>Guidelines </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Provide alt attributes for meaningful images. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.25pt;
+margin-left:35.8pt'>An alt attribute is a short description of an image that a
+screen reader can &quot;read&quot; to the user. Alt attributes are always
+required, but images that don't add any meaning to the Web page, such as
+divider lines, should have empty alt attributes: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.0pt;
+margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+10.0pt;line-height:104%;font-family:"Courier New"'>&lt;img
+src=&quot;images/divider.gif&quot; width=&quot;800&quot; height=&quot;10&quot;
+alt=&quot;&quot; /&gt;</span> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Use headings appropriately to convey hierarchy. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.2pt;
+margin-left:35.8pt'>Use &lt;h1&gt; through &lt;h6&gt; tags for page headings,
+and be sure to use them in the proper order (e.g., &lt;h1&gt; precedes
+&lt;h2&gt;). Use CSS to style heading tags: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.85pt;
+margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+10.0pt;line-height:104%;font-family:"Courier New"'>&lt;h1&gt;The Future of UC
+Retirement Benefits&lt;/h1&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in'><b><span style='line-height:111%'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></b><b>Style
+text with CSS rather than use images. </b>Do not create graphics that look like
+text. Use text and style it with CSS instead: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.0pt;
+margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+10.0pt;line-height:104%;font-family:"Courier New"'>&lt;h2
+class=&quot;introBlurb&quot;&gt;The 10 campuses of the University of California
+open their doors to all who work hard and dream big.&lt;/h2&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Make sure the site is readable with stylesheets disabled. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>If you disable CSS, the site must
+be readable and logical. It may be less visually appealing, but the site should
+not be confusing or lose information. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Use skip navigation links. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;
+margin-left:35.8pt'>&quot;Skip nav&quot; links allow users to jump to the
+content and skip the repetitive navigation  links. You can display the skip nav
+link at the top of a page or use CSS to hide it until the link is active. <b>DO
+NOT </b>use <span style='font-size:10.0pt;line-height:111%;font-family:"Courier New"'>display:
+none; </span>to hide the skip nav link, or else it will also be hidden from
+screen reader users! Instead, use a negative value for margin-left to
+&quot;hide&quot; the link until it has focus. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.85pt;
+margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+10.0pt;line-height:104%;font-family:"Courier New"'>&lt;p
+id=&quot;skipNav&quot;&gt;&lt;a href=&quot;#mainContent&quot;&gt;Skip to Main
+Content&lt;/a&gt;&lt;/p&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Use device-independent code. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>Do not assume that a visitor is
+using a particular input device. The onchange, onhover, onmouseover, and
+onmouseout JavaScript event handlers require use of a mouse. Instead, use the
+onselect, onfocus, and onblur handlers, which work with either a keyboard or
+mouse. The onclick handler must be used in conjunction with other link and form
+elements. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>JavaScript should have an alternate presentation. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.65pt;
+margin-left:35.8pt'>If you use JavaScript on a Web page, it's important to
+provide the equivalent value for users who do not have JavaScript on their
+browsers. A common method is to add &lt;noscript&gt; tags immediately after the
+closing &lt;/script&gt; tag. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Label form elements. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.8pt'>Visually impaired people may need a screen reader to
+associate a form's input elements and labels. If the input elements aren't
+labeled appropriately, the user may complete the wrong field or be unable to
+access the form. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:73.0pt;margin-bottom:
+13.1pt;margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span
+style='font-size:10.0pt;line-height:104%;font-family:"Courier New"'>&lt;label
+id=&quot;name&quot;&gt; Name (first and last name):&lt;/label&gt; &lt;input
+type=&quot;text&quot; id=&quot;name&quot; value=&quot;name&quot;
+size=&quot;20&quot; /&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b>Caption all video and audio. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.55pt;
+margin-left:35.8pt'>Video and audio files should have synchronized captions.
+Videos without audio should have an accompanying audio track to describe the
+video for the blind or vision impaired. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Don't
+rely on color to convey meaning. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>Color-blind users may have
+trouble with a Web site if color is used to convey important information. Avoid
+instances of &quot;Click the green button to proceed.&quot; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Ensure
+appropriate color contrast. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>Use tools, such as <a
+href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php"><span
+style='color:blue'>JuicyStudio </span></a><a
+href="http://juicystudio.com/article/colour-contrast-analyser-firefox-extension.php"><span
+style='color:black;text-decoration:none'>o</span></a>r <a
+href="http://www.paciellogroup.com/resources/contrast-analyser.html%23download"><span
+style='color:blue'>Paciello Contrast Analyzer</span></a><a
+href="http://www.paciellogroup.com/resources/contrast-analyser.html%23download"><span
+style='color:black;text-decoration:none'>,</span></a><a
+href="http://www.paciellogroup.com/resources/contrast-analyser.html%23download"><span
+style='color:black;text-decoration:none'> </span></a>to measure the contrast
+among graphics, fonts, and backgrounds on your page. Users can change the
+site's contrast to suit their needs if you used plain text instead of images of
+text <b>(see tip #3)</b>. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Mark
+up data tables correctly. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>Tables are reserved for tabular
+data, not page layouts. Designate row and column headers with &lt;th&gt;. Use
+the &lt;thead&gt;, &lt;tbody&gt; and &lt;tfooter&gt; tags. Use the scope or
+id/header attribute to associate data with the appropriate header(s). </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>13.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Use
+descriptive text for links. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.25pt;margin-bottom:
+14.3pt;margin-left:35.8pt'>Screen reading software scans a page for links and
+provides the list to the user. Numerous &quot;click here&quot; links are
+useless when separated from their context. It's better to use descriptive text
+such as &quot;Explore our academic programs.&quot; </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>14.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Identify
+links to PDFs, Word documents, Excel spreadsheets, etc. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.3pt;
+margin-left:35.8pt'>This is important for screen reader users, but it's also
+useful for sighted viewers who may not want to open another software program.
+Include the document designation in the link so that it will be read by screen
+readers: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:15.0pt;
+margin-left:35.75pt;text-indent:-.5pt;line-height:104%'><span style='font-size:
+10.0pt;line-height:104%;font-family:"Courier New"'>&lt;a
+href=&quot;documents/uc_mission.pdf&quot;&gt;UC Mission Statement
+(pdf)&lt;/a&gt; </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>15.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Open
+off-site links in the same browser window. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>Modern browsers offer tabbed
+browsing, so a user has control over whether to open a link in a new tab or new
+window. By forcing an off-site link to open in a new browser window, you are
+taking away that control from the user. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.45pt;margin-bottom:
+14.3pt;margin-left:35.8pt'>Additionally, some older versions of screen reading
+software do not notify users when they open a new browser window. Users won't
+know what has happened until they try to use the &quot;Back&quot; button and
+find they can't go back. Because screen reading software can be quite expensive
+(up to $1,100 for a single JAWS license!), an upgrade to a new version may not
+be feasible. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.55pt;
+margin-left:35.45pt;text-indent:-.25in'><b><span style='line-height:111%'>16.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Don't use
+frames. If you must use them, correctly mark up frames and iframes.  </b>Frames
+are not inaccessible to modern screen readers, but they do introduce
+accessibility issues. Add title attributes to all &lt;frame&gt; and
+&lt;iframe&gt; tags. If you must use frames, provide equivalent content (or a
+link to it) within the &lt;noframes&gt; tags. Similarly, when you're using
+iframes, provide equivalent content (or a link to it) within the &lt;iframe&gt;
+tags. This allows a user to access the content directly if his/her browser
+doesn't support frames or iframes. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>17.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Give
+a user sufficient time to respond to timed content. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>When a timed response is
+required, alert users and give them sufficient time to respond. People with
+mobility issues may have difficulty with limited time constraints. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>18.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Don't
+create flickering pages or multimedia. </b></p>
+
+<p class=MsoNormal style='margin-left:35.8pt'>To prevent seizures among
+optically sensitive users, don't create any pages or multimedia that flicker
+between 2 to 55 times per second. </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>19.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Validate
+HTML and CSS. </b></p>
+
+<p class=MsoNormal style='margin-left:41.7pt'>IT accessibility begins with
+clean, valid code, so be sure to check your code with the <span
+style='color:blue'> </span><a href="http://validator.w3.org/"><span
+style='color:blue'>W3C X/HTML Validator </span></a><a
+href="http://validator.w3.org/"><span style='color:black;text-decoration:none'>a</span></a>nd
+<a href="http://jigsaw.w3.org/css-validator/"><span style='color:blue'>W3C CSS
+Validator</span></a><a href="http://jigsaw.w3.org/css-validator/"><span
+style='color:black;text-decoration:none'>.</span></a> </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:35.45pt;text-indent:-.25in;line-height:107%'><b><span
+style='line-height:107%'>20.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b>Check
+for IT accessibility compliance. </b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.15pt;
+margin-left:35.8pt'>Use tools such as <a
+href="http://www.totalvalidator.com/%23download"><span style='color:blue'>Total
+Validator </span></a><a href="http://www.totalvalidator.com/%23download"><span
+style='color:black;text-decoration:none'>a</span></a>nd the <a
+href="http://wave.webaim.org/toolbar"><span style='color:blue'>WAVE Toolbar for
+Firefox </span></a><a href="http://wave.webaim.org/toolbar"><span
+style='color:black;text-decoration:none'>t</span></a>o verify that your Web
+page is accessible. </p>
+
+<h1 style='margin-left:-.25pt'>Sources </h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%'>WebAIM – </span><a
+href="http://webaim.org/techniques/javascript/eventhandlers"><span
+style='font-size:12.0pt;line-height:107%;color:blue'>Creating Accessible
+JavaScript</span></a><a
+href="http://webaim.org/techniques/javascript/eventhandlers"><span
+style='font-size:12.0pt;line-height:107%;color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%'>WebAIM – </span><a
+href="http://webaim.org/standards/wcag/checklist"><span style='font-size:12.0pt;
+line-height:107%;color:blue'>WebAIM WCAG 2.0 Checklist</span></a><a
+href="http://webaim.org/standards/wcag/checklist"><span style='font-size:12.0pt;
+line-height:107%;color:black;text-decoration:none'> </span></a></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:.15pt;
+margin-left:35.25pt;text-indent:-.25in;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:107%'>University of
+California – </span><a
+href="http://www.ucop.edu/irc/itaccessibility/resources/designtips/"><span
+style='font-size:12.0pt;line-height:107%;color:blue'>Resources for Developing
+Accessible Web Sites</span></a><a
+href="http://www.ucop.edu/irc/itaccessibility/resources/designtips/"><span
+style='font-size:12.0pt;line-height:107%;color:black;text-decoration:none'> </span></a></p>
+
+</div>
+
+</body>
+
+</html>
