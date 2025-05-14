@@ -1,0 +1,36 @@
+﻿IDENTIFYING WEB ACCESSIBILITY ISSUES	
+
+While it takes a fairly technical background to detect all accessibility issues and features, there are many accessibility problems that can be quickly and easily identified without the need for a highly technical background. This handout will suggest a few free accessibility tools and offer 4 simple techniques to help you identify some common web accessibility problems. 
+1. Use the WAVE tool to detect errors
+WAVE (wave.webaim.org) is a free online tool that can help you evaluate your page for accessibility. WAVE places color-coded icons over the page you are testing. While it takes some skill to interpret some icons, you can be sure that any red icon is an accessibility error to be addressed. 
+• If you are not sure what an icon means, click on it and then select "More information". 
+• If you cannot see the icons correctly, select the No Styles button to view the page without styles. Although the page will look different, all icons should be visible.
+• You can also click on the Contrast button to identify text that may be difficult for some people to read. 
+2. Navigate without a mouse 
+Some users with motor disabilities, as well as those who are blind, have difficulty navigating the web using a mouse. Because of this, all web content must be accessible using the keyboard only. To test this, use the Tab key to navigate through links and forms (Shift + Tab to go backward) and the Enter key to perform an action. If you can't get to what you want, or if your cursor gets trapped and can't move, the page has an accessibility problem.
+Note: If you are using Safari, you will need to enable the following preference first: Safari > Preferences > Advanced > Check "Press Tab to highlight each item on a webpage".
+Check for the following issues:
+• When you 'Tab' to a link with the keyboard it should be highlighted, usually with a dashed outline.  If you don't see this outline this is a serious issue.
+• Ensure that the keyboard navigation order is logical. It should basically match the visual reading order of the page. (e.g., header, sidebar, main content, footer). 
+• Check for things that only work with a mouse (e.g., a navigation menu that expands when the user hovers over it with a mouse). See what happens if you try to navigate this same area with a 
+keyboard.
+• Some pages have a link at the beginning of the page that allows users to skip over top navigation to the main content on the page,  navigate to this link with Tab and then press Enter to activate the link. Ensure that the 
+screen visually 'jumps' over the navigation to the beginning of the page. Hit Tab again and make sure that focus goes to the next link on the page. If 
+it jumps back to the top of the page, or if focus never moves from the top of the page in the first place, the skip link might be broken.
+• If any boxes pop open (e.g., slideshows, date pickers, warnings) make sure you can navigate and close these 
+
+3. Zoom a page and enlarge text 
+Some users with visual disabilities enlarge page content for readability, but enlarging content on a page can sometimes cause layout problems. To make content larger, press Ctrl (Cmd on Mac) and + (plus). Ctrl and - (minus) makes content smaller and Ctrl and the number 0 will return to the default. Zoom the page several times and make sure everything is readable, especially images with text. It is fine if a horizontal scroll bar appears at the bottom of your window.
+By default, zooming enlarges everything on the page, including images, but some users only enlarge text, so test this as well. To enlarge only text, do one of the following:
+• Safari: View > Zoom Text Only
+• Firefox: View > Zoom > Zoom Text Only
+• Internet Explorer: View > Text size Then, enlarge the page at least 150%, and up to 200% (roughly 4-5 steps) and make sure none of the text becomes hidden or unreadable. It is fine if text wraps to a new line or if the page doesn't look the same.
+
+100%      	150%      	200%
+4. Other Recommendations to help you detect accessibility issues
+• Check videos for captions. 
+• Look for links with generic link text such as "click here" or "more info." These types of links can be confusing to screen reader users, and should be replaced with more descriptive link text.
+• Check the page title (the text that appears in your browser tab) and make sure that it is unique  and descriptive. 
+• Contact individuals with disabilities and see if they would be willing to review the site and identify issues they encounter.
+
+(c) 2013 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.

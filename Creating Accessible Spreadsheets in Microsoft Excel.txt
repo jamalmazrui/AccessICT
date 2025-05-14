@@ -1,0 +1,38 @@
+﻿CREATING ACCESSIBLE SPREADSHEETS IN MICROSOFT 
+EXCEL 2010/13 (WINDOWS) & 2011 (MAC)
+Screen readers and Excel	Table 'Headers'
+Users who are blind rely on software called a screen reader If your spreadsheet includes tables, there is a special way to interact with spreadsheets. to add table 'header' information that will be read by the •	Screen readers will read the cell number as users screen reader. Tables can be identified with formula names navigate from cell to cell (e.g., "Grand Total A 23"). of Title, TitleRegion, and others.
+• Spanned cells will be identified by a screen reader (e.g., 	•	These formulas do not update when the table changes, "Budget A1 through G1"). If content spans multiple 	so be sure your table is complete first. cells visually, these cells should be merged. To merge 	•	This only works for a single level of headers. Complex cells, select Home and the Merge menu.  	tables will need to be simplified or restructured.
+One table per sheet:
+    For sheets with one table only, select the cell Merged cells should not be used in tables. They can be in the upperconfusing for screen reader users who expect one row left corner of and/or column header for each cell. the table (not 
+• A screen reader user will usually start with the first 	the table title). 
+cell (A1), so this is a good place to put important In Windows, select Formulas> Define Name and the New information about the sheet. Name dialog opens. In Mac, select Insert> Name> Define 
+• Be careful with empty rows and columns. While they 	and the Define Name dialog opens.
+may sometimes be necessary to visually separate data, In the Name field, replace the existing text with one of the they can cause a screen reader user to think the sheet following 3 values, depending on your table layout:
+has ended, even when it has not.If the table has column and 
+Images and Chartsrow headers, enter Title
+• While images can be given alternative text in the same If the table has row headers way as other Office tools (see other cheatsheets), they only, enter RowTitle can sometimes introduce reading order issues and 
+should typically not be added to spreadsheets.If the table has column headers 
+• Charts cannot be given alternative text. Ensure the only, enter ColumnTitle data used to create the chart is available and clearly 
+structured, and preferably precedes the chart. Don't Confuse "Column" and "Row" headers. Remember that ColumnTitle is for vertical headers and RowTitle is 
+Other principles	for horizontal headers. Also be sure to type RowTitle or 
+• Spell check is not automatic as it is in Word/	ColumnTitle as one word, without a space.
+	PowerPoint. Make sure to spell check each sheet.	After entering the correct value in the Name field, select 
+• Do not use color alone to convey information. Ok. Although the initial text is still visible, accessibility information has been added for a screen reader user.
+Only add a Name to the first cell in the table. Do not repeat this step for other header cells within the same table.
+Inaccessible	Accessible
+Multiple tables per sheet:
+If a single sheet has multiple tables, if the table has sortable columns, or if you want to specify an explicit beginning and end of a table, you need to use TitleRegion.
+Select the cell in the upper-left corner of  the table (not the table title). In Windows, select Formulas> Define Name and the New Name dialog opens. In Mac, select Insert> Name> Define and the Define Name dialog opens. 
+In the Name field, enter TitleRegion followed by the following 4 values (no spaces, separated by periods):
+
+Note: RowTitleRegion or ColumnTitleRegion can be used for tables that only have row or column headers.
+After entering the correct value in the Name field, select Ok. This table is now accessible. Repeat this process for every table on the sheet, remembering to select the upperleft corner cell of each new table.
+Deleting formula names
+You may occasionally create a formula name for the wrong field or give a single cell more than one name. These unnecessary formula names should be removed.
+1. To remove formula names in 
+Windows, select Formulas> 
+Name Manager. In Mac select Insert> Name> Define. 
+2. Then choose the desired name and select Delete.
+
+(c) 2014 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For a digital version go to ncdae.org/resources/cheatsheets Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.

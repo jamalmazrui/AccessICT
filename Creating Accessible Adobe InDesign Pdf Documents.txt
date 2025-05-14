@@ -1,0 +1,39 @@
+﻿CREATING ACCESSIBLE ADOBE INDESIGN  
+
+CS5.5 PDF DOCUMENTS
+Reading Order
+The Articles panel allows you to organize the content reading order of your document within InDesign.
+1. From the control panel, select Window> Articles.
+2. Select the Create New Article icon at the bottom of the Articles panel. Name the article and select the Include When Exporting option.
+3. Assign the correct reading order by clicking objects within your document and dragging them into the Articles panel, under the corresponding Article section. Multiple objects can also be selected by shift clicking the items in the order you want them to appear. 
+4. Rearrange the reading order by dragging objects within the Articles panel to their correct location. 
+5. In the Articles panel menu, check the Use for Reading Order in Tagged PDF option.
+Adding Alternative Text
+Alternative text must be applied to images so that the information displayed can be described by a screen reader.
+1. From the control panel, select Object> Object Export Options. Select the Alt Text tab.
+2. With an image selected, choose Custom from the Alt Text Source menu.
+3. Enter the appropriate alternative text. 
+Tagging PDF
+Apply a tag to selected images in InDesign to define what their role will be in Acrobat.
+1. Within the Object Export Options, select the Tagged PDF tab.
+2. Under the Apply Tag menu, choose Based on Object and InDesign will automatically assign the tag that best corresponds with that object. 
+3. Only choose Artifact if the object should be ignored by a screen reader.
+Anchoring Objects within Text
+Anchoring images as objects at the appropriate point in the text helps establish an accessible flow of content.
+1. Click and hold the small blue box located at the top of the image. 
+2. Drag to the point in the text that  makes sense in the reading order.
+Page Title
+Once the file is exported to Acrobat, it is important for the PDF to have certain information attached to the file.
+
+Export Tagging with Styles
+InDesign can use your paragraph styles to map InDesign styles to PDF tags. Tables, bulleted and numbered lists, footnotes, and hyperlinks are tagged accurately and automatically, so all that is necessary to assign is your heading styles. (E.g. H1, H2, etc.)
+1. In the Paragraph Styles menu, select the Edit All Export Tags option.
+2. Make sure that PDF is selected in the Show options at the top of the dialogue box.
+3. Click on the text that reads [Automatic] and use the dropdown to select the heading level that corresponds to each style. 
+Exporting to PDF
+1. From the File menu, select Export. 
+2. Under Save as Type, select Adobe PDF (Interactive).
+3. In the Settings page, check the Create Tagged PDF 
+
+(c) 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals 
+Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.

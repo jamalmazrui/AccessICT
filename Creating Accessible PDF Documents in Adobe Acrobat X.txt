@@ -1,0 +1,48 @@
+﻿CREATING ACCESSIBLE PDF DOCUMENTS  
+
+IN ADOBE ACROBAT X
+Tags Pane
+PDF tags provide accessibility information to screen readers. They should not impact the look of the PDF. To view and edit tags, do the following. 
+1. Select View > Show/Hide > Navigation Panes > Tags. 
+2. Select the Options menu  > Highlight Content. This allows you to see what content is associated with a tag.
+3. In the Tags panel, expand 
+<Tags> and <Sect> to view and navigate your list of tags. 
+4. Navigate through the tags using the up/down arrow keys, and expand and collapse tags with the left/right arrow keys.
+Find Tag From Selection
+1. Click the Select Tool icon and select a portion of text, an image, or a table. 
+2. Select the Options menu at the top of the Tags panel and then select Find Tag From Selection. The appropriate tag will be highlighted in the tags panel.
+Tagging an Untagged Document
+1. To add tags to an untagged document, choose Tools from the right-hand menu. 
+2. Select Accessibility > Add Tags to Document.
+TouchUp Reading Order
+The TouchUp Reading Order tool allows a user to quickly add and edit PDF tags and view the reading order of elements on the page. 
+TouchUp Reading Order Tool
+1. From the right-hand menu, select Tools.
+2. Then select Accessibility > TouchUp Reading Order. If the Accessibility option is not listed, use the Options button to check Accessibility on the menu.
+3. When selected, the view on the screen changes. All of the content is enclosed in numbered boxes. Each of these boxes represents a tag and the number corresponds with the reading order in the Order panel. 
+4. Within the TouchUp Reading Order window you will notice a group of buttons with the names of several common tags. You can use these buttons to assign tags to selected text or objects.
+Adding/Changing Tags
+1. To select content that needs editing, drag a box around an element using the crosshairs cursor  or select everything within a box by clicking on the number in the top-left corner. 
+2. Once you have selected a new element, you can assign some of the most common tags to that element by clicking on one of the buttons (e.g., "Heading 1"). Acrobat will place the selected content in the appropriate tag. 
+3. Assign alternate text to images by right-clicking on the image and choosing Edit Alternate Text.
+
+Order Panel
+The order panel allows you to change the reading order of the page content so it matches the visual reading order. 
+1. To open the Order panel, select Show Order Panel in the TouchUp Reading Order tool.
+2. To change the reading order of an element, click and drag the tag to the location that reflects the correct reading order. 
+Alternative Text
+When an image is tagged as a figure the alternative text appears over the top of the image. 
+1. To add or change text, Right click on the image, select Edit Alternate Text. 
+2. Enter the appropriate alternative text in the dialog box.
+Table Inspector
+The Table Inspector allows you to easily identify and assign scope to table headers.
+1. With the TouchUp Reading Order tool open, select a table and then select Table Inspector. 
+2. Right click on a selected cell(s) and choose Table Cell Properties. A dialog box will appear.
+3. If the selected cell(s) needs to be tagged as a header, select the Header Cell option and assign a scope of either Row or Column. 
+Artifacts
+Artifacts are elements that are ignored by a screen reader. Important text should never be labeled as an artifact.
+1. With the TouchUp Reading Order tool open, select an element you wish to change to an artifact and press the background button. Or right click on an item in the Tags panel, and select Change Tag to Artifact.
+2. To search for artifacts, go to the Tags panel and select Options > Find. Artifact is the default search option, so click Find.
+
+(c) 2012 Project GOALS  All rights reserved.        Contact us at goals@ncdae.org or #435.797.3381         For more information go to www.ncdae.org/goals 
+Made possible by a grant from the Fund for the Improvement of Postsecondary Education (FIPSE), US Department of Education. No official endorsement implied.
