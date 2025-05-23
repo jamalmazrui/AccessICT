@@ -1,0 +1,1457 @@
+﻿for iOS and iPadOS 18.5
+
+Intro
+
+VoiceOver is Apple’s screen reader, which can be found across all Apple platforms, from iPhones, iPads, Macs, iPods, etc. This guide will document how each setting in VoiceOver’s settings on iOS and iPadOS affects the way VoiceOver behaves, as well as what the options do.
+
+At the time of writing, May 2025, the release of iOS 19 and associated operating systems is really closed to being released in beta. Once they release to the public, this guide will be updated to reflect new changes, features, and settings.
+
+Main VoiceOver settings screen
+
+The main VoiceOver settings screen gives you quick access to learn about VoiceOver gestures, try a VoiceOver tutorial, and launch VoiceOver practice, as well as customization options to further customize VoiceOver to your liking.
+
+1.  VoiceOver toggle switch
+
+-   Use this toggle to turn VoiceOver on or off. When turning off VoiceOver, you may get an alert asking if you are sure you want to disable VoiceOver.
+
+2.  Information on basic gestures, as well as a link to learn more.
+
+-   Basic gestures listed include selecting an item under your finger and activating the selected item. Other VoiceOver gestures can be found by clicking the learn more link.
+
+3.  A “What’s new in VoiceOver” link which will show you everything that is new in VoiceOver for the current major release, such as iOS 18.
+
+-   iOS 18 is currently the only release to have this link, but as new versions of iOS come out, they should hopefully have this link as well.
+
+4.  VoiceOver practice:
+
+-   Brings up a screen to practice VoiceOver gestures and allows you to perform any gesture on the screen to have VoiceOver read it back to you, and what it does, such as notifying you that the swipe right gesture moves to the next item.
+
+5.  VoiceOver Tutorial
+
+-   Brings up an interactive tutorial to teach you how to use VoiceOver from the very beginning.
+
+6.  SPEAKING RATE
+
+-   Allows you to adjust the speaking rate of the current voice (how fast or slow VoiceOver talks).
+
+The remainder of the VoiceOver settings screen is devoted to customizing VoiceOver, such as the voice, braille options, verbosity options, etc.
+
+Speech
+
+The speech options allow you to change the primary voice, add voices to the voice rotor, adjust pronunciations, and more.
+
+1.  Primary Voice
+
+-   Here is where you can control the primary voice to be used with VoiceOver. If you have not added any other voices to your voice rotor, this will be the voice that VoiceOver uses by default when speaking text in your native language. If you have not customized this before, this will be set to Samantha if your language is English US. The default voice is different based on the language of your device.
+
+2.  ADDITIONAL VOICES
+
+-   Add voices to the voice rotor, and they will show up in this section. You can tap on the voice to customize it.
+-   At the bottom of this section will be an option to add a voice.
+
+3.  Pitch Change
+
+-   This controls if VoiceOver should change pitch. This is a global setting. This will not affect the pitch you have selected per voice.
+
+4.  Detect Languages
+
+-   Toggles whether VoiceOver should read text in other languages in that language, or try to process it in your native language.
+
+5.  Pronunciations
+
+-   Allows you to adjust how VoiceOver speaks certain words. For example, you could change the way VoiceOver says VO from “Voe” to “V O”. #### Adding a voice When you press the add voice button, you will be presented with a list of languages. After selecting a language, you will be shown a list of voices in that language. This list can range from just 1 or 2 voices to hundreds depending on your language. I will list the supported languages and voices at the end of this guide.
+
+Voice customization options
+
+Depending on the voice you have selected, the customization options may vary. ##### General customizations For all voices, the following options will be available to you: (The options in this screen only affect the voice you are currently editing and do not affect other voices.)
+
+1.  Voice – Option to change the voice (only appears for the primary voice. Delete and re-add a voice from the rotor if you added the wrong voice).
+2.  RATE
+
+-   allows you to adjust the rate for the current voice.
+-   This adjusts the rate per voice. Adjusting the speaking rate slider in the main VoiceOver settings controls the speaking rate of the primary voice.
+
+3.  PITCH
+
+-   Allows you to adjust how high or low the voice talks for normal speech.
+
+4.  SPEECH VOLUME
+
+-   adjusts how loud or quiet the voice is (does not adjust system volume).
+
+5.  Voice specific customization options
+
+-   shows customization options per voice (see below).
+
+6.  audio effects
+
+-   As of iOS 18, the only audio effect is the equalizer, which will allow you to adjust particular frequencies to make them louder or quieter. Each band of the EQ can be adjusted plus or negative 20 DB, with 0 being the default.
+
+7.  Reset Voice Settings
+
+-   resets all of your settings for the particular voice to the default.
+-   This option does not warn you before resetting your options to default.
+
+Voice specific customization options
+
+Each TTS (Text To Speech) engine has its own customization option, and will be listed below. These options can be found when editing a voice as described above.
+
+MacinTalk (Alex, Fred, etc).
+
+1.  Pitch Range
+
+-   Adjusts the inflection of the voice.
+-   0 is no inflection, where the voice sounds almost like a robot, with 200 being the max. The default is 100.
+
+2.  WPM Minimum
+
+-   adjusts how slow the voice speaks when the rate is at 0%. This can go from 50 to 175 words per minute.
+
+3.  WPM Maximum
+
+-   Adjusts the fastest the voice can speak. 500 is the default, but this can be adjusted up to 900 words per minute.
+
+Vocalizer (includes Nicky, English U.S.).
+
+1.  Timbre
+
+-   Adjusts the formants and slightly adjusts the pitch of the voice. The lower the number, the more the voice sounds deeper and bigger. When the number is above 100, the voice will sound more like a small child or chipmunk. 100 is the default.
+
+2.  Sentence Pause
+
+-   adjusts how long VoiceOver should wait after speaking a sentence before going on to the next one.
+-   This does not apply to reading back controls, such as “Search, button”, or “VoiceOver, heading”. This applies to reading full sentences, such as “Hello. The weather is nice today.”
+
+Eloquence
+
+1.  Rate Multiplier
+
+-   Adjusts the speed that Eloquence speaks at a current rate. The default is 100, but this control can be adjusted from 50 to 200.
+
+2.  Head Size
+
+-   similar to tamber for vocalizer voices, but does not adjust pitch.
+-   Drag the slider down to make the head size smaller, and adjust it upwards to make the head size bigger.
+
+3.  Pitch Base
+
+-   This is like the pitch slider. You can adjust the pitch base in hertz. The default is 65Hz, but the slider can go from 40 to 422Hz. Note: if you adjust the pitch base to the lowest or highest setting, it may be slightly harder to set it back to 65Hz. You can double tap and hold, and then drag left and right to find 65Hz. Alternatively, reset the voice back to its defaults.
+
+4.  Pitch Range
+
+-   Just like MacinTalk voices, it adjusts the inflection of the voice. The default is 30, but this value can go from 0 to 100.
+
+5.  Breathiness
+
+-   It adds a breathiness to the voice. At 100, the voice is a whisper. The default is 0.
+
+6.  Roughness
+
+-   It adds a roughness to the voice which makes it sound deeper without changing the pitch. The effect is hard to explain, so I would recommend you try it out yourself.
+
+7.  Higher Sample Rate
+
+-   This adjusts the sample rate of Eloquence. This changes the way the voice sounds. Experiment with this to see which option you like better.
+
+8.  Phrase Prediction
+
+-   Phrase Prediction attempts to add a pause, such as for a comma if none exists in the content that is being read.
+
+9.  Abbreviation Dictionary
+
+-   It attempts to change the way the speech synthesizer pronounces abbreviations.
+
+10. Community Dictionary
+
+-   It attempts to fix the pronunciations of some words that the speech synthesizer gets wrong.
+
+Siri (English US only)
+
+For the English US Siri voices, you can change the speaking style of the voice. This is available for all 5 Siri voices.
+
+1.  Default
+
+-   This is the default speaking style of the voice.
+
+2.  Even Inflection
+
+-   This evens out the inflection of the voice, almost like reducing the pitch range with other voices.
+
+3.  Faster Pace
+
+-   Uses basically the default inflection but makes the voice speak faster.
+
+4.  Even Inflection & Faster Pace
+
+-   Allows you to use even inflection while making the voice speak faster.
+
+5.  Narration
+
+-   This allows you to make the voice sound more like it is narrating something. This changes the speaking style more than the other presets.
+
+For all other Siri voices, there are no customization options beyond the default ones available for all voices.
+
+Pronunciations
+
+This screen allows you to manually adjust the pronunciations of words and phrases you add.
+
+1.  Add
+
+-   Allows you to add a pronunciation (see below)
+
+2.  List of pronunciations
+
+-   This is a list of any pronunciations you have added. You can tap on one to edit it.
+
+3.  Edit
+
+-   Allows you to remove pronunciations quickly in the list.
+
+Braille
+
+The Braille settings allow you to customize how VoiceOver behaves with a Braille display, as well as adjust settings for BSI (Braille Screen Input).
+
+1.  Match Input and Output Tables
+
+-   Turn this on for both input and output Braille tables to be the same. If turned off, you can select a different output/input table.
+
+2.  Input and Output
+
+-   Allows you to adjust the input/output Braille tables.
+-   These might be separated into different screens if you have turned off matching of the input/output tables (see above).
+
+3.  Braille Screen Input
+
+-   Allows you to customize BSI (see below)
+
+4.  Braille Tables
+
+-   Allows you to add Braille tables, as well as shows you the Braille tables you have added.
+
+5.  Automatic Translation
+
+-   I am not familiar with what this does.
+
+6.  Status Cells
+
+-   Allows you to have formatting information, recent announcements, etc., show up at the left or right of the Braille display. Click a cursor routing button above a status cell to see what it does. This screen allows you to adjust what status cells show up, as well as the placement of the status cells.
+
+7.  Equations use Nemeth Code
+
+-   Determines if math equations will use Nemeth code.
+
+8.  Show Onscreen Keyboard
+
+-   Determines if the onscreen keyboard is shown when connected to a Braille display.
+
+9.  Turn Pages when Panning
+
+-   Determines if pages, such as in the Books app, will advance to the next page when panning.
+
+10. Word Wrap
+
+-   Determines if words at the end of a line will end with a dash and then continue on the next line.
+
+1.  Text Formatting
+
+-   I am not sure what this affects, but I would guess that this determines if text formatting is displayed on the Braille display.
+
+12. Braille Alert Messages
+
+-   This allows you to control the duration that alerts and announcements appear on the Braille display.
+
+13. Ignore Chord Duration
+
+-   Determines how long holding down a key registers as a keypress or a Braille chord.
+
+14. Auto Advance Duration
+
+-   Determines how long Braille will auto-advance. This will auto-pan the Braille display every time the interval here passes.
+
+15. Sound Curtain
+
+-   This disables all sounds on your device, including VoiceOver speech and sounds, music, games, apps, etc., when a Braille display is connected. This will not stop emergency alerts from playing.
+
+16. Enable Bluetooth on Start
+
+-   Determines whether when VoiceOver starts, Bluetooth is turned on.
+
+17. CHOOSE A BRAILLE DISPLAY (Heading)
+
+-   This is where your Braille display will appear if one is connected. Otherwise, you will see options to connect a new Braille display.
+-   If your Braille display does not appear, open Settings>Bluetooth>Other devices, and connect your Braille display.
+
+Braille Screen input
+
+The Braille screen input settings include a description of BSI, as well as a link to learn more.
+
+  Type in Braille, launch apps, and control your device using Braille Screen Input. Place one finger from each hand at the top and bottom edges of the screen and double-tap with both fingers at the same time to start Braille Screen Input. To exit Braille Screen Input, slide two fingers in opposite directions.
+
+Settings to control BSI include the following:
+
+1.  Use Activation Gestures
+
+-   Allows you to double/triple tap the edges of the screen to launch BSI as described above.
+
+2.  Start Automatically when Editing Text
+
+-   Allows you to have BSI activate whenever editing text.
+
+3.  Keep Active until Dismissed
+
+-   Keeps BSI active, even after editing text. BSI will be put into command mode.
+
+4.  Reverse Dot Positions
+
+-   Allows you to reverse the dot positions in six-dot Braille. The positions of dots 1 and 3, as well as dots 4 and 6, will be swapped.
+
+5.  Visual Text Feedback
+
+-   Visually shows the translation of entered text on screen.
+
+6.  TYPING FEEDBACK (Heading)
+
+-   Allows you to adjust options for typing feedback.
+    -   Sound: plays a sound whenever Braille is typed.
+    -   Haptic: plays a haptic whenever Braille is entered.
+
+7.  MODE ANNOUNCEMENTS
+
+-   Allows you to control how BSI announces the state of mode changes.
+    -   Speak and Play Sounds: Speaks the mode changes and plays its appropriate sound.
+    -   Speak: Speaks the announcement without playing sounds.
+    -   Play Sounds: Plays sounds according to the mode changes.
+
+8.  CHOOSE A BRAILLE TABLE (Heading)
+
+-   Allows you to choose a Braille table when entering text.
+-   This list is updated with Braille tables selected in the main Braille settings as described above.
+
+VoiceOver Recognition
+
+VoiceOver recognition allows you to get image descriptions from controls, as well as screen recognition, which makes apps more accessible.
+
+Live Recognition
+
+This option is used to determine which live recognition options appear in the live recognition rotor or when you invoke live recognition with a four-finger triple tap or a custom gesture. The ordering may vary, but the available options are as follows: (Options requiring the LightR sensor will not display on iPhones or iPads without this sensor.) 1. People: Detects people that enter the view of your camera. 2. Doors: Detects doors and lets you know any information on the door and how to open it. 3. Scenes: Gives you image descriptions like in apps or websites but from your camera. 4. Point and Speak: Allows you to point your camera at text and have text under your finger read back to you, such as a microwave or stove control panel. 5. Text: Reads text in the view of your camera, similar to Seeing AI’s Short Text Channel. 6. Furniture: Speaks any furniture shown in your camera such as a bed or couch.
+
+Image Descriptions
+
+Allows VoiceOver to read back image descriptions from apps and websites. 1. Image Descriptions: Toggle this switch to turn the feature on/off. 2. Download information: Displays the amount of storage used for offline use, or shows that a download is required. 3. SENSITIVE CONTENT OUTPUT: Determines how VoiceOver outputs potentially sensitive content in images. - Speak: Speaks that sensitive content exists. - Play Sound: Plays a sound whenever sensitive content is detected. - Do Nothing: Does not announce or play a sound when sensitive content is displayed in an image. 3. Additional Languages: Allows you to add languages for images to be described in. 4. Apply to Apps: Gives you a list to automatically describe images in. Select an app to have VoiceOver describe images automatically in that app. Deselect it to not have image descriptions read back to you automatically. You can always use a custom gesture to describe an image. #### Screen Recognition Screen Recognition allows for apps to be more accessible when enabled in the rotor. 1. Screen Recognition: Use this switch to disable or enable screen recognition. 2. Download information: Shows if a download is required or how much space is used. 3. Apply to Apps: Allows you to select apps for screen recognition to work in. - Note: If screen recognition is enabled in an app and you can’t disable it, you can focus on the app in the app switcher and turn screen recognition off from the rotor. #### Text Recognition Automatically describe text in apps and websites. This can work even if image descriptions are turned off. #### Feedback Style Determines how image descriptions are output. 1. Speak: Speaks the image and possible text. 2. Play Sound: Plays a sound whenever a description is read. VoiceOver will read text in an image without first saying “possible text”. 3. Do Nothing: Behaves the same as playing a sound where VoiceOver will not announce “possible text”. Images and text will still be read. ### Verbosity The verbosity options control how VoiceOver outputs certain types of controls/events.
+
+Punctuation
+
+Allows you to select a punctuation group to be used or create your own.
+
+1.  Edit: Allows you to edit punctuation groups you have created.
+2.  Active Punctuation Group: Shows you the active punctuation group being used by the system. Activate this option to change the group used.
+3.  SYSTEM GROUPS (Heading): Shows the groups created by the system.
+
+-   All: speaks all punctuation, such as “Hello comma this is a test period”
+-   Some: This is the default punctuation group. Only certain punctuation marks such as slash (/) Greater than (>), etc. are spoken.
+-   None: No punctuation is spoken. VoiceOver will still pause where a punctuation is displayed, but no punctuation including special punctuation marks will not be spoken.
+
+4.  CUSTOM GROUPS (heading): Shows you any punctuation groups you have created.
+5.  Add Punctuation Group: Allows you to add a custom punctuation group.
+
+-   Import: allows you to import an “.accessibilityPunctuationGroup” file with custom entries.
+
+Speak Hints
+
+Controls if usage hints are spoken, such as “Double tap to toggle setting”, “Swipe up or down with one finger to adjust the value”, etc. #### Controls (only in iOS 18.4 or later) allows you to adjust how controls such as buttons, links, headings, etc. are spoken.
+
+1.  Speak Before: Speaks the control type before the content/name of the control, such as “Button, share”.
+2.  Speak After: Speaks the control type after the name/content, such as “Home, Link”. This has always been the VoiceOver default ever since VoiceOver was introduced.
+3.  Don’t Speak: does not speak if the control is a link, button, etc.
+
+System Notifications
+
+This screen allows you to control how notifications are spoken.
+
+1.  NOTIFICATIONS WHEN LOCKED (Heading)
+
+-   Speak: Speaks the notification text.
+-   Speak Count: Speaks the number of notifications, such as “12 notifications.”
+-   Braille: Displays the notification text in Braille.
+-   Do Nothing: Does not speak when notifications appear.
+
+2.  BANNER NOTIFICATIONS (heading)
+
+-   Speak: Speaks the text of the notification when it appears.
+-   Play Haptic: Plays an additional short haptic to let you know when a notification appears. If a notification vibrates your device, this setting will not affect if notifications vibrate your device.
+-   Braille: Displays the notification on a Braille display.
+-   Do Nothing: Does not speak when a notification appears.
+
+3.  Use Silent Mode: Determines if notifications speak as described above when in silent mode.
+
+QuickNav Announcements
+
+This screen determines how VoiceOver announces when QuickNav is on or off with external keyboards.
+
+1.  Speak: Speaks the state of QuickNav when it is enabled or disabled.
+2.  Play Sound: Plays a sound when QuickNav is enabled or disabled.
+3.  Change Pitch: Same as Speak, but the voice announces the status in a low-pitched voice.
+4.  Braille: Displays the status of QuickNav on a Braille display.
+5.  Do Nothing: Does nothing when QuickNav is turned on or off.
+
+Flashlight Notifications
+
+This screen controls VoiceOver’s ability to send a notification if the flashlight is left on.
+
+Capital Letters
+
+Adjusts how capital letters are announced.
+
+1.  Speak Cap: Speaks “cap” before the letter, such as “cap a”.
+2.  Play Sound: Plays a sound when capital letters are spoken.
+3.  Change Pitch: Speaks capital letters in a higher pitch.
+4.  Do Nothing: does not indicate if a letter is capital or not.
+
+Deleting Text
+
+Controls how VoiceOver outputs the deletion of text.
+
+1.  Speak: speaks the text that is deleted, such as “Delete a”.
+2.  Play Sound: plays a sound when text is deleted.
+3.  Change Pitch: speaks the deleted text with a lower-pitched voice.
+4.  Do Nothing: speaks the deleted text in a normal voice, like Windows screen readers.
+
+Links
+
+Controls how VoiceOver announces links in apps and websites.
+
+1.  Speak: speaks “link” to indicate a link. This will come either before or after the name of the link as configured in the controls section (see above section).
+2.  Play Sound: plays a sound whenever the name of a link is read.
+3.  Change Pitch: says the name of the link with a lower-pitched voice.
+4.  Braille: indicates links on a Braille display.
+5.  Do Nothing: does not indicate links any differently than regular text.
+
+Actions
+
+Controls how VoiceOver indicates that actions are available. This is used in places where you can swipe up and down with one finger and then double tap to perform a different action than the default “activate” action. Examples of actions can be found on the home screen.
+
+1.  Speak: speaks that actions are available.
+2.  Play Sound: plays a sound when actions are available.
+3.  Change Pitch: when actions are set to speak, speaks the announcement with a lower-pitched voice.
+4.  Braille: shows that actions are available on a Braille display.
+5.  Do Nothing: does not indicate that actions are available.
+6.  First Item Only: Only speaks that actions are available in an app with lots of controls that have actions available to them. An example is reading a message in the Mail app. In the message, you can swipe up or down to reply, trash the email, etc. VoiceOver will not announce that actions are available when navigating through the email with this turned on. 1
+
+More Content
+
+Controls how additional content is displayed. Examples of more content can be found in the Podcasts when viewing episodes, or in the Photos app when viewing pictures or videos. Third-party apps such as Ferrite may display additional details about the currently focused item, such as the recording name, date, etc.
+
+1.  Speak: Speaks that more content is available.
+2.  Play Sound: Plays a sound when more content is recognized.
+3.  Change Pitch: When set to speak, changes the pitch of the announcement.
+4.  Do Nothing: Does not indicate if more content is available.
+
+Container Descriptions
+
+Controls how VoiceOver outputs containers.
+
+1.  Speak: Speaks the description of the container, which is usually the name.
+2.  Play Sound: Plays a sound when navigating from container to container.
+3.  Change Pitch: Says the name of the container at a lower pitch.
+4.  Braille: Displays the name of the container in Braille.
+5.  Do Nothing: Does not output additional info about a container.
+
+-   It should be noted that I have not been able to determine what this exactly controls. When set to sound, and in audio settings the touched container sound is on, this will trigger the sound to be played when touching or navigating to containers.
+
+Numbers
+
+Controls how VoiceOver reads numbers.
+
+1.  Words: Reads numbers normally, such as “one hundred and twenty-three”.
+2.  Digits: Reads numbers as digits, such as one, two, three.
+
+Predictive Text Feedback
+
+Controls how predictive feedback is spoken when entering text.
+
+1.  When Predictive Text Appears
+
+-   Speak: Speaks that an auto-correction appears.
+
+2.  When predictive text is entered
+
+-   Speak: Speaks that an auto-correction has been entered.
+-   Play Sound: Plays a sound when the auto correction is entered.
+-   Change Pitch: speaks the predictive text with a higher-pitched voice when it is entered.
+-   Braille: shows the entered predictive text on a braille display.
+-   Do Nothing: does not indicate when an auto-correction appears.
+
+TABLE OUTPUT (Heading)
+
+1.  Table Headers: Controls if table headers are announced when navigating across tables.
+2.  Row & Column Numbers: Controls whether row and column numbers are read when navigating across a table.
+
+ROTOR ACTIONS (Heading)
+
+1.  Speak Confirmation: determines if VoiceOver will speak a confirmation when performing actions through the rotor.
+2.  Web Rotor Summary: Controls how web rotor summaries are output.
+
+-   Speak: speaks the amount of the selected rotor item when navigating by that element using the rotor.
+-   Braille: outputs this information onto a braille display.
+-   Do Nothing: does not output this information.
+
+Emoji
+
+controls how Emojis are output.
+
+1.  Speak: speaks the name of the emoji, such as red heart, grinning face, etc.
+2.  Braille: outputs the name of the emoji to a braille display.
+3.  Do Nothing: does not announce emojis.
+
+Emoji Suffix
+
+controls whether the word “emoji” is output when reading emojis, such as “red heart emoji”.
+
+Media Descriptions
+
+controls how closed captions+subtitles are outputted.
+
+1.  Off: does not announce closed captions/subtitles.
+2.  Speech: says whatever closed captions/subtitles are displayed on screen.
+3.  Braille: displays this information over a braille display.
+4.  Speech and Braille: reads back subtitles and closed captions via speech and outputs it to a braille display.
+
+Audio
+
+This screen allows you to configure audio options in VoiceOver.
+
+VoiceOver Sounds & Haptics
+
+1.  SOUNDS (Heading)
+
+-   Sounds: Controls the state of all sounds.
+-   Match Speech Volume: causes the volume of sounds to match the percentage of speech volume.
+-   Sound Volume: allows you to adjust the volume of VoiceOver’s sounds. This does not affect any other sounds on your device.
+
+2.  HAPTICS (Heading)
+
+-   Haptics: globally toggle haptics on or off.
+-   Haptic Intensity: adjust how strong or light haptics are.
+
+The remainder of this screen lists sounds used by VoiceOver. I will list what each sound does at the end of this guide. Clicking on a sound gives you the following options:
+
+1.  Sound: control whether the sound for the specified action plays.
+2.  Haptic: allows you to turn on/off the haptic for the specific action.
+3.  Preview: Allows you to preview the sound and haptic. This does not preview based on your settings. For example, if you have the sound turned off and haptics on, you will still hear the sound when previewing.
+
+Audio Ducking
+
+Allows you to control how audio ducking behaves. This can also be controlled in the rotor and with a custom shortcut as well as quick settings.
+
+1.  Off: applies no audio ducking
+2.  When Speaking: only ducks audio when VoiceOver is speaking.
+3.  Always: always has audio ducked.
+
+Auto-select Speaker in Call
+
+Determines if audio will switch to your iPhone speaker when not holding the device to your ear.
+
+Send to HDMI
+
+Determines if VoiceOver speech is sent to connected HDMI devices.
+
+SPEECH CHANNELS (Heading)
+
+Allows you to control what channels VoiceOver speaks through.
+
+SOUND CHANNELS (Heading)
+
+Shows a list of channels for VoiceOver sounds to come out of.
+
+Commands
+
+This section allows you to modify commands and voiceover gestures. The options in this screen are self-explanatory, but I will give a brief description.
+
+In the commands section, you can browse by all commands, touch gestures, or keyboard shortcuts. - If you select all commands, you will see a list of categories. In each one of these are the commands. Double tap the command to see touch gestures and keyboard shortcuts. - If touch gestures is tapped, you will see a list of all possible gestures that can be assigned. Tapping on one of these will allow you to change the command it is assigned to. - If keyboard shortcuts are tapped, you will see a list of all commands that have keyboard shortcuts. - You can also assign commands to hand righting and BSI the same way from this screen.
+
+Rotor
+
+This screen allows you to configure options for the rotor.
+
+To use the rotor, put two fingers on the screen and rotate them as if turning a dial. If you are having trouble, try using your thumb and index finger or your thumb and third finger.
+
+Another way people use to activate the rotor is to put two fingers on the screen and move one up while moving the other one down. Alternatively, you can put 2 fingers on the screen and move one left and the other one right. If you are doing this, make sure that your fingers are on top of each other but not touching if moving horizontally, or right next to each other if using the vertical method described. You can move your fingers in both directions as long as they are moving opposite each other to change the rotor to the next/previous item.
+
+To adjust the rotor item, use a one-finger swipe up/down.
+
+Rotor Items
+
+Allows you to show/hide rotor items. They can be rearranged by finding the reorder button and swiping up or down to rearrange the item, or double-tap and hold to drag the item. You can select or deselect an item by tapping its name.
+
+You can find a list of rotor items at the end of this guide and what they do.
+
+Change Rotor with Item
+
+Adjusts whether the rotor can change to another item based on what you are focused on. For example, if focused on an item with no actions, you will most likely be on the characters item. Focus on an item with actions, and the rotor will switch to actions automatically. Once you move to another item with no actions, the rotor will return to the last item that was used. If this setting is turned off, the rotor will remain on whatever item you set it to unless you change it.
+
+Edit Apps on Home Screen
+
+-   Determines if actions to edit apps on the home screen appear. If turned off, no actions will be available.
+
+Direct Touch Apps
+
+Shows a list of apps installed on your device. Select any apps you wish for direct touch to be on when opening that app. If you can’t disable direct touch in an app, you can turn off direct touch for an app by going to the app switcher, focusing on the app in question, and turning off direct touch from the rotor.
+
+Activities
+
+This screen allows you to create activities which modify voiceover settings based on apps or context, or when you activate them using the activities rotor.
+
+Edit
+
+Allows you to quickly remove or delete activities.
+
+Activities list
+
+Shows a list of all created activities.
+
+When editing an activity, you have the following options:
+
+1.  Name: Allows you to rename an activity.
+2.  SPEECH & AUDIO SETTINGS (Heading)
+
+-   Voice: Allows you to choose a voice for the activity.
+-   Speaking Rate: allows you to adjust the speaking rate of the voice when the activity is active.
+-   Speech Volume: allows you to control the speech volume for the voice when the activity is active.
+-   Mute Speech: determines whether speech is on or off.
+-   Mute Sound: determines if sounds are muted or unmuted.
+-   Audio Ducking: determines the state of audio ducking for VoiceOver.
+
+3.  VERBOSITY SETTINGS (Heading)
+
+-   Punctuation: allows you to select a custom punctuation group.
+-   Emoji: allows you to control how emojis are output.
+-   Container Descriptions: allows you to modify how container descriptions are output.
+-   Table Headers: allows you to adjust how table headers are output.
+-   Row & Column Numbers: Determines how row and column headers are output.
+-   Image Descriptions: Determines whether image descriptions are active in the activity.
+-   Speak Hints: Determines whether hints are on/off.
+-   Numbers: Determines how numbers are outputted.
+
+4.  TYPING SETTINGS (Heading)
+
+-   Typing Style: Determines the typing style for this activity.
+
+5.  NAVIGATION SETTINGS (Heading)
+
+-   Navigation Style: Determines the navigation style to be used when in the activity.
+
+6.  BRAILLE SETTINGS (Heading)
+
+-   General Status Cell: Determines the state of the general status cell.
+-   Text Status Cell: Determines the state of the text status cell.
+-   Braille Output: Determines the braille output table used in the activity.
+-   Braille Input: Determines the braille input table to be used.
+-   Auto Advance Duration: Set the duration for audio-advancing when reading text.
+-   Braille Alert Messages: Determines the duration for braille alert messages.
+-   Braille Text Formatting: Determines the state of braille text formatting information.
+
+7.  AUTOMATIC SWITCHING (Heading)
+
+-   Apps: Choose what apps to apply the activity to.
+-   Context: Control the context for the activity to activate.
+
+8.  INTERACTION (Heading)
+
+-   Modifier Keys: Choose a VO modifier to use for this activity.
+
+Typing
+
+This section allows you to control the way VoiceOver responds when typing.
+
+Typing Style
+
+Allows you to control how VoiceOver speaks when typing.
+
+1.  Standard Typing: Touch a key to hear what it is, and then double tap to activate the key, just like any other UI element.
+2.  Touch Typing: Move your finger over the keyboard. When you hear a key you want to activate, lift your finger and it will be inserted.
+3.  Direct Touch Typing: Behaves as if VoiceOver is off. Touching a key enters it into the text field, effectively making the keyboard behave the same as sighted users are used to.
+
+Phonetic Feedback:
+
+Determines if phonetics are spoken.
+
+1.  Off: no phonetics are spoken.
+2.  Character and Phonetics: Speaks the phonetics after reading the character, such as “H, hotel”.
+3.  Phonetics Only: Only reads phonetics, such as “India”.
+
+Typing Feedback
+
+Controls how VoiceOver speaks when you are typing. The options are the same for Software keyboards, hardware keyboards, and braille screen input.
+
+1.  Nothing: no output is spoken.
+2.  Characters: speaks the characters you enter.
+3.  Words: Speaks words when you enter punctuation or the space bar.
+4.  Characters and Words: Speaks characters as you type, and then speaks the typed word when you press space or enter a punctuation mark.
+
+Modifier Keys
+
+Allows you to select between control+option, caps lock, and control+option and caps lock. Note, when caps lock is selected, double-press caps lock to turn on or off caps lock.
+
+Keyboard Interaction Time
+
+Determines the time needed to hold on the keyboard to begin slide to type.
+
+Quick Settings
+
+The Quick Settings option in Settings has options that you can select or deselect to add them to the quick settings screen. Tap 4 times with 2 fingers to open Quick Settings.
+
+Navigation Style
+
+You can change the navigation style to behave more like macOS, where things are grouped, and you can interact and stop interacting with them. You can select between flat and grouped. ### Navigate Images determines if VoiceOver focus moves to images on the web.
+
+It has been noted that adjusting this also affects apps. For example, setting this to never will not allow you to navigate to images in the photos app by the swipe right/left gesture.
+
+1.  Always: always moves to images
+2.  With descriptions: moves to images with descriptions or alt text).
+3.  never: never navigates to images.
+
+Large Cursor (Switch Button)
+
+The large cursor makes the visual voiceover curser bigger and easier to see.
+
+Caption Panel
+
+The caption panel shows the text that VoiceOver is speaking on the screen.
+
+Delay before Selection
+
+This controls when VoiceOver activates after you touch the screen. Increase this value for accidental taps to not be recognized.
+
+Double-tap Timeout
+
+The double tap time out allows you to increase or decrease how fast or slow you need to double tap the screen. Increase the value to make it easier to tap the screen twice more slowly, or decrease it if you wish for VoiceOver to respond quicker after double tapping the screen.
+
+Conclusion
+
+This guide contains every option listed in VoiceOver’s settings. I hope you have found this guide helpful to you. If you have any questions, please feel free to ask.
+
+------------------------------------------------------------------------
+
+Additional Information
+
+The following section will list voices and their languages, VoiceOver sounds and what they do, as well as all of the rotor items. Note: enhanced and premium versions of any voices will not be listed.
+
+Voices
+
+Note: all eloquence voices have the same name in every language except for a few. I will only list eloquence voices when the names aren’t the default ones listed below:
+
+-   Eddy
+-   Flo
+-   Grandma
+-   Grandpa
+-   Reed
+-   Rocko
+-   Sandy
+-   Shelley
+
+------------------------------------------------------------------------
+
+English
+
+ENGLISH (UNITED STATES)
+
+Personal voices are listed at the top of the voices list.
+
+1.  Agnes
+2.  Alex
+3.  Allison
+4.  Ava
+5.  Bruce
+6.  Eloquence
+7.  Evan
+8.  Fred
+9.  Joelle
+10. Junior
+11. Kathy
+12. Nathan
+13. Nicky
+14. Noelle
+15. Ralph
+16. Samantha
+17. Siri (Voices 1-5)
+18. Susan
+19. Tom
+20. Vicki
+21. Victoria
+22. Zoe
+
+ENGLISH (AUSTRALIA)
+
+1.  Karen
+2.  Lee
+3.  Matilda
+4.  Siri (4 voices)
+
+ENGLISH (INDIA)
+
+1.  Isha
+2.  Rishi
+3.  Sangeeta
+4.  Siri (2 voices)
+5.  Veena
+
+ENGLISH (IRELAND)
+
+1.  Moira
+2.  Siri (2 voices)
+
+ENGLISH (SCOTLAND, UNITED KINGDOM)
+
+1.  Fiona
+
+ENGLISH (SOUTH AFRICA)
+
+1.  Siri (2 voices)
+2.  Tessa
+
+ENGLISH (UNITED KINGDOM)
+
+1.  Daniel
+2.  Eloquence
+3.  Jamie
+4.  Kate
+5.  Oliver
+6.  Serena
+7.  Siri (4 voices)
+8.  Stephanie
+
+NOVELTY (English United States accent)
+
+1.  Albert
+2.  Bad News
+3.  Bahh
+4.  Bells
+5.  Boing
+6.  Bubbles
+7.  Cellos
+8.  Good News
+9.  Jester
+10. Organ
+11. Superstar
+12. Trinoids
+13. Whisper
+14. Wobble
+15. Zarvox
+
+Arabic
+
+ARABIC (SAUDI ARABIA)
+
+1.  Siri (1 voice)
+
+ARABIC (WORLD)
+
+1.  Laila
+2.  Majed
+3.  Mariam
+4.  Siri (one voice)
+5.  Tarik
+
+Bangla
+
+1.  Piya
+
+Basque
+
+1.  Miren
+
+Bhojpuri
+
+1.  Jaya
+
+Bulgarian
+
+1.  Daria
+
+Cantonese
+
+1.  Aasing
+2.  Sinji
+3.  Siri (2 voices)
+
+Catalan
+
+CATALAN (SPAIN)
+
+1.  Jordi
+2.  Montse
+
+CATALAN (VALENCIAN, SPAIN)
+
+1.  Pau
+
+Croatian
+
+1.  Lana
+
+Czech
+
+1.  Iveta
+2.  Zuzana
+
+Danish
+
+1.  Magnus
+2.  Sara
+3.  Siri (2 voices)
+
+Dutch
+
+DUTCH (BELGIUM)
+
+1.  Ellen
+
+DUTCH (NETHERLANDS)
+
+1.  Claire
+2.  Siri (2 voices)
+3.  Xander
+
+Finnish
+
+1.  Eloquence
+2.  Onni
+3.  Satu
+4.  Siri (2 voices)
+
+French
+
+FRENCH (BELGIUM)
+
+1.  Aude
+
+FRENCH (CANADA)
+
+1.  Amélie
+2.  Chantal
+3.  Eloquence
+4.  Nicolas
+5.  Siri (2 voices)
+
+FRENCH (FRANCE)
+
+1.  Audrey
+2.  Aurélie
+3.  Eloquence
+
+-   Jacques (same as Reed)
+
+4.  Siri (4 voices)
+5.  Thomas
+
+Galician
+
+1.  Carmela
+
+German
+
+1.  Anna
+2.  Eloquence
+3.  Markus
+4.  Petra
+5.  Siri (4 voices)
+6.  Viktor
+7.  Yannick
+
+Greek
+
+1.  Melina
+2.  Nikos
+
+Hebrew
+
+1.  Carmit
+2.  Siri (2 voices)
+
+Hindi
+
+1.  Kiyara
+2.  Lekha
+3.  Neel
+4.  Siri (1 voice)
+
+Hungarian
+
+1.  Tünde
+
+Indonesian
+
+1.  Damayanti
+
+Italian
+
+1.  Alice
+2.  Eloquence
+3.  Emma
+4.  Federica
+5.  Luca
+6.  Paola
+7.  Siri (4 voices)
+
+Japanese
+
+1.  Eloquence
+2.  Hattori
+3.  Kyoko
+4.  O-ren
+5.  Otoya
+6.  Siri (2 voices)
+
+Kannada (India)
+
+1.  Soumya
+
+Kazakh
+
+1.  Aru
+
+Korean
+
+1.  Eloquence
+2.  Jian
+3.  Minsu
+4.  Siri (2 voices)
+5.  Sora
+6.  Suhyun
+7.  Yuna
+
+Lithuanian
+
+1.  Ona
+
+Malay
+
+1.  Amira
+2.  Siri (2 voices)
+
+Mandarin
+
+MANDARIN (CHINA MAINLAND)
+
+1.  Binbin
+2.  Bobo
+3.  Eloquence
+4.  Han
+5.  Lanlan
+6.  Li-mu
+7.  Lili
+8.  Lilian
+9.  Lisheng
+10. Lisheng
+11. Shasha
+12. Siri (4 voices)
+13. Taotao
+14. Tiantian
+15. Tingting
+16. Yu-shu
+
+MANDARIN (LIAONING, CHINA MAINLAND)
+
+1.  Dongmei
+
+MANDARIN (SHAANXI, CHINA MAINLAND)
+
+1.  Haohao
+
+MANDARIN (SICHUAN, CHINA MAINLAND)
+
+1.  Panpan
+
+MANDARIN (TAIWAN)
+
+1.  Eloquence
+2.  Meijia
+3.  Siri (2 voices)
+
+Marathi
+
+1.  Ananya
+2.  
+
+Norwegian Bokmål
+
+1.  Henrik
+2.  Nora
+3.  Siri (2 voices)
+
+Persian
+
+1.  Dariush
+
+Polish
+
+1.  Ewa
+
+2.  Krzysztof
+
+3.  Zosia
+
+4.  
+
+    PORTUGUESE (BRAZIL)
+
+5.  Eloquence
+
+6.  Felipe
+
+7.  Fernanda
+
+8.  Luciana
+
+9.  Siri (2 voices)
+
+PORTUGUESE (PORTUGAL)
+
+1.  Catarina
+2.  Joana
+3.  Joaquim
+
+Romanian
+
+1.  Ioana
+
+Russian
+
+1.  Katya
+2.  Milena
+3.  Siri (2 voices)
+4.  Yuri
+
+Shanghainese
+
+1.  Nannan
+
+Slovak
+
+1.  Laura
+
+Slovenian
+
+1.  Tina
+
+Spanish
+
+SPANISH (ARGENTINA)
+
+1.  Diego
+2.  Isabela
+
+SPANISH (CHILE)
+
+1.  Francisca
+
+SPANISH (COLOMBIA)
+
+1.  Carlos
+2.  Jimena
+3.  Soledad
+
+SPANISH (MEXICO)
+
+1.  Angélica
+2.  Eloquence
+3.  Juan
+4.  Paulina
+5.  Siri (2 voices)
+
+SPANISH (SPAIN)
+
+1.  Eloquence
+2.  Jorge
+3.  Marisol
+4.  Mónica
+5.  Siri (2 voices)
+
+Swedish
+
+1.  Alva
+2.  Klara
+3.  Oskar
+4.  Siri (2 voices)
+
+Tamil
+
+1.  Vani
+
+Telugu
+
+1.  Geeta
+
+Thai
+
+1.  Kanya
+2.  Narisa
+3.  Siri (2 voices)
+
+Turkish
+
+1.  Cem
+2.  Siri (2 voices)
+3.  Yelda
+
+Ukrainian
+
+1.  Lesya
+
+Vietnamese
+
+1.  Linh
+
+------------------------------------------------------------------------
+
+Sounds List
+
+This section will document the different sounds used by VoiceOver and what they do.
+
+------------------------------------------------------------------------
+
+INTERACTION
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                             Description
+  --------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Item Focused                      Used when you focus on an item.
+
+  Screen Recognition Item Focused   Used when focusing on items using screen recognition.
+
+  Item Activated                    Used when double tapping an item.
+
+  Navigation Wrapped Backwards      Plays when navigating to a previous item (only seems to activate on certain items).
+
+  Navigation Wrapped Forwards       Plays when navigating to the next item.
+
+  Scrolled Page                     Used when scrolling pages with the 3-finger swipe gestures.
+
+  Boundary Reached                  Plays when trying to navigate past the first or last item in a window. Also plays when using grouped navigation and trying to navigate past the first/last item in a group.
+
+  No Item Discovered                Plays when touching empty space on the screen. Also plays when trying to navigate to the status bar when it is not visible using a keyboard shortcut or Braille display/BSI command mode.
+
+  Interactable Group                Plays when focusing on a group of items that you can interact with when using grouped navigation.
+
+  Start Interacting                 Plays when using the move in command to navigate into a group of items.
+
+  Stop Interacting                  Plays when moving out of a group of items in grouped navigation.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VOICEOVER FEEDBACK
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                                    Description
+  ---------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Screen Changed                           Plays when entering/exiting an app, entering/exiting a window, or any time when the screen changes to a new page.
+
+  Synchronized Focus                       (Untested, making an educated guess) Plays when using a trackpad to focus the item on the trackpad with the item on screen in the VoiceOver cursor.
+
+  Entered Target Area                      Unsure what this actually does, but it is used in the measure app when using the level feature. This plays when your device is level.
+
+  Exited Target Area                       Also unsure what this does, but can be heard in the measure app when your device is no longer level.
+
+  Navigated Inside Touch Container         Plays when navigating to a container.
+
+  Previous Rotor                           Plays when rotating the rotor to the previous setting.
+
+  Next Rotor                               Plays when rotating the rotor to the next setting.
+
+  Previous Rotor Progress                  Haptic used while rotating the rotor to the left. (This will not appear on devices that do not support VoiceOver haptics.)
+
+  Next Rotor Progress                      Plays when rotating the rotor to the right.
+
+  Pass-Through Gesture                     Used when performing a long press on an item.
+
+  No Results                               Plays when navigating by a rotor item such as headings, links, etc., and there is no more of that item in the current direction. Also plays when using VO+f to search and the search string cannot be found.
+
+  Detected Text & Images                   Plays when VoiceOver describes images.
+
+  Quick Nav Enabled                        Plays when quick nav is enabled when set to sound (see verbosity section above).
+
+  Quick Nav Disabled                       Plays when disabling quick nav.
+
+  Sensitive Content                        Plays when VoiceOver recognition recognizes sensitive content in the description of an image (see VoiceOver recognition section above).
+
+  VoiceOver Startup                        Haptic used when VoiceOver launches.
+
+  Braille Screen Input, Braille Entry      Plays when starting BSI in text entry mode.
+
+  Braille Screen Input, Command Mode       Plays when switching to command mode.
+
+  Braille Screen Input Stopped             Plays when exiting BSI.
+
+  Braille Screen Input Calibrated          Plays when calibrating dot positions using BSI.
+
+  Braille Screen Input Carriage Return     Plays when entering a new line using BSI.
+
+  Braille Screen Input Typed Braille       Plays when typing a character in Braille.
+
+  Braille Screen Input Deleted Braille     Plays when deleting a character.
+
+  Braille Screen Input Entered Space       Plays when swiping right with one finger to enter a space.
+
+  Braille Screen Input Chord Entered       Haptic for when a chord is entered in command mode.
+
+  Tutorial Step Completed                  Plays when completing a step correctly in the VoiceOver tutorial.
+
+  Tutorial Magic Tap Start                 Plays in the lesson about the magic tap (2-finger double tap).
+
+  Tutorial Magic Tap Stop                  Plays when in the lesson relating to the magic tap.
+
+  Braille Display Reconnection Triggered   Haptic when you attempt to reconnect a braille display using the VoiceOver command.
+
+  Unknown Command                          Plays when entering an unknown command on a keyboard. Also plays when trying to start or stop interacting with something in a situation where that action wouldn’t work.
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+APP FEEDBACK
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                   Description
+  ----------------------- ---------------------------------------------------------------------------------------------------------------------------------------
+  Item Loading            Used in web browsers while a web page loads.
+
+  Item Loaded             Used for when a web page loads.
+
+  Popover Appeared        Plays when a popup appears, such as options for apps on the home screen, or context menus in apps.
+
+  Alert Appeared          Plays when a full-screen alert appears, such as when an app requests permissions like location or camera.
+
+  Notification Appeared   Haptic for when a notification appears.
+
+  Item Reordered          Plays when long-pressing an item and dragging it up and down in a list to rearrange it, such as reordering voices in the voice rotor.
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BRAILLE
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                          Description
+  ------------------------------ ---------------------------------------------------------------------------------------------------------------
+  Braille Display Connected      Plays when a braille display connects.
+
+  Braille Display Disconnected   Plays when a braille display disconnects.
+
+  Item Saved                     Plays when labeling an element and you two-finger double tap and hold for long enough to bring up the dialog.
+
+  Item Save Failed               Plays when releasing your fingers from the double tap and hold too early to bring up the label item dialog.
+
+  Item Saving                    Plays while two-finger double tapping and holding before the dialog appears to label an item.
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+
+TEXT EDITING
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                              Description
+  ---------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------
+  Collaboration Occurred             Plays when in a document such as Pages and someone else edits something.
+
+  Insertion Point Moved              Plays when moving the insertion point.
+
+  AutoFill Suggestion Appeared       Plays when an autocorrect appears.
+
+  AutoFill Suggestion Dismissed      Supposed to play when an autocorrect disappears, but never plays.
+
+  Text Selection Direction Changed   Plays when changing the direction of text selection, such as using the pinch gestures or the text selection rotor.
+
+  AutoFill Suggestion Selected       Plays when selecting an autocorrect. Also seems to play when performing an action using the actions rotor (same as the item activated sound).
+
+  Secure Text Entered                Plays when entering characters into a password field.
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SYSTEM
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Sound                      Description
+  -------------------------- --------------------------------------------------------------------------------------------------------------------------------------------
+  Authentication Succeeded   Plays when the device unlocks but stays on the lock screen. (You can only toggle the authentication sounds on devices with a home button).
+
+  Authentication Failed      Plays when your finger or face fails to authenticate.
+
+  Reachability Started       Plays when activating Reachability.
+
+  Reachability Ended         Plays when the screen returns to normal after using Reachability.
+
+  Dock Appeared              Appears when the dock appears (only on iPads).
+
+  Dock Disappeared           Plays when entering an app and the dock disappears on iPads.
+
+  Folder Opening             Plays when dragging an app onto another when creating a folder.
+
+  Folder Opened              Plays when opening a folder on the home screen.
+
+  Folder Closed              Plays when closing a folder by performing the home gesture/pressing the home button or a two-finger scrub.
+
+  Keyboard Appeared          Plays when a text field appears.
+
+  Keyboard Disappeared       Plays when a text field closes.
+
+  Volume Changed             Plays when pressing the volume buttons to change the volume.
+
+  Screen Locked              Plays when the device goes to sleep, or when you press the side/top button to lock the device.
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Rotor Items
+
+Note: because you can reorder rotor items, items in this list might not be the same on your device, because I have reordered rotor items to my liking, but all items will be listed.
+
+------------------------------------------------------------------------
+
+1.  Characters: allows you to navigate by character of a word or phrase.
+2.  Words: navigates by words in a phrase.
+3.  Lines: allows you to navigate by line (only appears in multi-line content such as multi-line text fields or in HTML/PDFs.
+4.  Text Selection: allows you to select text easier.
+
+-   Swipe up and down to change the selection type.
+-   Swipe right or left to select text in that direction.
+-   Note: normal swipe right and left gestures are disabled while this rotor item is active. Touching the screen will change the rotor item.
+
+5.  Voices: allows you to add additional voices to be used by VoiceOver. (see speech section above)
+6.  Speaking Rate: allows you to adjust the speaking rate of the current voice.
+7.  Speech Volume: allows you to adjust how loud or quiet the current voice is.
+8.  Audio Ducking Amount: allows you to control the amount of audio ducking that is used. (see Audio ducking section)
+9.  Audio Ducking: allows you to control the state of audio ducking.
+10. Punctuation: allows you to control the punctuation group currently being used.
+11. Sounds: allows you to control the state of all VoiceOver sounds.
+12. Hints: allows you to toggle on/off hints (see Verbosity section for more details).
+13. Braille Table: allows you to adjust the braille table used. (see Braille section).
+14. Braille Auto Advance Speed: allows you to adjust in seconds how fast or slow braille audio advances.
+15. Activities: allows you to adjust the activity used (see activities section above).
+16. Screen Recognition: allows you to turn on/off screen recognition for the current app.
+17. Braille Screen Input: allows you to start braille screen input from the orotor (see braille screen input section above).
+18. Handwriting: allows you to start handwriting mode to enter characters in print using your finger.
+19. Toggle Live Regions and Announcements: allows you to toggle updates of live regions and announcements for the current app/website.
+20. Containers: allows you to navigate by containers.
+21. Headings: allows you to navigate by headings.
+22. Links: allows you to navigate by links in a website or app.
+23. Form Controls: allows you to move to form controls, such as text fields, buttons, etc.
+24. Tables: allows you to move by tables on a website.
+25. Lists: allows you to move to the next or previous list, such as this list of rotor items.
+26. Landmarks: allows you to move to the next/previous landmark.
+27. Articles: allows you to move to the next/previous article.
+28. Visited Links: allows you to navigate by visited links, links you previously have clicked on.
+29. Non-Visited Links: allows you to navigate to links you have not visited.
+30. Buttons: allows you to navigate to the next/previous button.
+31. Text Fields: allows you to navigate to the next/previous text field/edit box.
+32. Search Fields: allows you to adjust to the next/previous search field.
+33. Checkboxes: allows you to navigate by checkboxes.
+34. Radio Buttons: allows you to navigate by radio buttons.
+35. Images: allows you to navigate by images.
+36. Static Text: allows you to navigate to portions of static text (text that is not a link/button/form field, etc.).
+37. Zoom: Adjusts zoom (I don’t know what this does, except for that it only appears in some apps).
+38. Same Item: allows you to move to the same type of item that you are focused on, i.e., focus on a heading and this will move you to a heading.
+39. Vertical Navigation: allows you to move up and down vertically in an app. (Depending on what is on screen, focus may jump to the status bar or tab bar. Try scrolling the screen to see the rest of the content when navigating this way.)
+40. Typing Mode: allows you to adjust the typeing mode used when typing into text fields.
+41. Slide to Type: allows you to turn on/off slide to type.
+42. Audio Destination: allows you to adjust where VoiceOver speaks. (It has been noted by several people that this rotor item does not work the way it is supposed to work.)
+43. Describe Images: allows you to turn on/off the audimatic describing ofimages. (Images can always be described with a manual gesture even if this is on or off.)
+44. Direct Touch: allows you to turn on/off direct touch for an app.
+45. Misspelled Words: allows you to navigate by misspelled words.
+
+-   Swipe up and down to find the next/previous misspelled word.
+-   Swipe right and left to choose a replacement.
+-   As with the text selection rotor, normal navigation gestures don’t work until you change rotor items.
+
+46. Navigation Style: allows you to adjust between flat and grouped navigation.
+47. Live Recognition: allows you to quickly start/stop live recognition.
