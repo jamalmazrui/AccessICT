@@ -1,0 +1,353 @@
+﻿The Higher Education IT Service Catalog 
+A Working Model for Comparison and 
+Collaboration  
+Second Edition 
+EDUCAUSE WORKING GROUP PAPER 
+NOVEMBER 2019
+Table of Contents 
+Introduction	3
+An IT Service Catalog Model for Higher Education	3
+What This Paper Does	4
+What This Paper Does Not Do	5
+What Has Changed in This Revision	5
+Higher Education Challenges	6
+Understanding the Service Catalog	7
+Portfolio, Catalog, and Requests	7
+IT Service Requests	8
+Service Catalog Views and Audiences	10
+Defining IT Services	12
+The Higher Education IT Service Catalog Model	14
+How to Use this Model	15
+Service Categories	17
+Conclusion	23
+Appendix: Service Categories and Service Area Revision Overview	26
+
+This paper provides specific guidance regarding the necessary components of an effective IT service catalog, such as the taxonomy, terminology, attributes, and descriptions for common IT services. It is a revision of the 2015 document and uses feedback from earlier implementations and the people who created them to address gaps and changes in the landscape of information technology. 
+Introduction 
+EDUCAUSE published the working group paper "The Higher Education IT 
+Service Catalog: A Working Model for Comparison and Collaboration" in April 2015.1 More than four years later, many institutions are using the IT service catalog it describes. However, due to the rapidly changing landscape of information technology and the natural gaps that occur in a first edition, some institutions found that they needed to modify and adapt the model to suit their needs. This updated version uses feedback from those implementations and the people who created them to address as many of these gaps as possible. 
+An IT Service Catalog Model for Higher Education 
+Although every institution of higher education is unique, our technology service organizations share many goals, challenges, and opportunities. One common challenge is how to best represent the IT services we provide in a format that is intelligible to and resonates with our community while also serving as an effective structure for service operations and improvement. The IT service catalog is in many ways the front door of IT and provides the foundation for IT service management capabilities.  
+It is important to note that the term "service catalog" is widely used as a useful framework for publishing all manner of service information, including human resources, benefits, finance, facilities, and other service areas. This paper provides a model of a service catalog, and where this paper mentions a service catalog, it should be understood to mean specifically an IT service catalog. In instances where it has a wider meaning, this will be made explicit. 
+The implementation of a service catalog is an important step in transforming from a technology-oriented organization into a service-oriented organization  
+
+and enables the organizational focus to shift from technology components to services that facilitate institutional outcomes. It is a vehicle used to communicate and provide clarity to constituents about the IT services available to them; to help improve customer relations by sharing information and setting expectations; and to improve service portfolio planning so IT investments and activities better align with institutional needs. The number of colleges and universities offering a service catalog has grown, but for those just starting work in this area, developing a catalog can be a lengthy and difficult process. 
+The model service catalog presented in this paper identifies IT services and associated taxonomies common across many higher education institutions and incorporates components successfully used in existing service catalogs. Using this model might help jumpstart a service catalog initiative and enable its rapid adoption. 
+A consistent and standardized approach also serves to create a shared language and platform to facilitate service comparison and benchmarking across IT organizations within institutions of higher education. Standardized terms, categories, attributes, and approaches to organizing services will educate community members new to IT service management and introduce concepts such as the difference between a "service" and a "service request." 
+The goal of this paper is to leverage existing standards, frameworks, and best practices-as well as our collective experience-to articulate issues and challenges related to the service catalog process within higher education, thereby creating a guide to enable more efficient and effective navigation of service catalog maturity within the higher education community. This paper highlights the nexus of the service catalog and higher education-where the two overlap and how one might approach points of complexity. 
+What This Paper Does 
+• Introduces the concept of an IT service catalog. This paper offers a generalpurpose framework for an IT service catalog. The terminology used in this document is presented independently of any ITSM frameworks (e.g., ITIL, COBIT, TQM). Terms such as "service offering" are used to illustrate the concepts, relationships, and recommendations provided. 
+• Provides a model IT service catalog for those beginning their service catalog journey. It is intended to cover the majority of any institution's requisite content. Adopters should compare and contrast this model to their unique institutional goals and service environment and adapt the model as necessary. 
+• Highlights and provides specific guidance regarding the necessary components of an effective service catalog, such as the taxonomy, terminology, attributes, and descriptions for common IT services. 
+• Focuses on the unique needs of the higher education community. It provides a framework that organizes the most common services in higher education IT into an initial catalog. It also includes a discussion regarding service catalog views that considers various internal and external audiences. 
+• Provides a means for benchmarking and comparing across standardized service catalogs at peer institutions.  
+What This Paper Does Not Do  
+• Instruct how to implement the entire service catalog management process. This document provides some basic "getting started" direction and considerations, but complete service catalog management is a complex topic beyond the scope of this document.  
+• Attempt to go beyond IT services to cover all the business or external customer-facing services a higher education institution provides (e.g., housing, registration, facilities, police).  
+• Provide example catalogs or use cases. Although they are interesting, example catalogs and use cases from institutions that implemented versions of the catalog described in this paper are beyond the scope of this document.  
+What Has Changed in This Revision 
+This revision benefits from feedback from many institutions that either used or referenced the 2015 model in their service catalog implementation. The core changes are focused on the service catalog categories themselves, while only minor edits and adjustments were made throughout the rest of the paper.2 The table below provides an overview of the differences between the two versions of the paper: 
+2015 Document Sections 2019 Revision Changes Introduction Updated to include the impetus for this revision and what changes have been made. Higher Education Challenges Minor copyedits only. Related Concepts: Portfolio, Catalog, and Requests Moved into a new section, "Understanding the Service Catalog." 
+Minor copyedits as well as new guidance on how to use this model. The Structure of This Model Renamed "The Higher Education IT Service Catalog." Substantial changes made to the service categories (see the appendix). Service Catalog: Views and Audiences Moved from the end of the paper to the new section "Understanding the Service Catalog" for better understanding. Now That We've Built It, How Do We Maintain It? Deleted. The original section did not provide enough guidance to be useful. Conclusion Edited to reflect current revision. The changes incorporated into this edition reflect many of the major changes to the IT landscape since the first edition and attempt to anticipate upcoming changes so that future technologies and services will fit seamlessly into this framework. The catalog provides support for services housed on-premises, in the cloud, or a hybrid of the two. It has better accommodation for security and privacy in higher education. It has been expanded to account for changes in how IT staffs support services in a changing landscape where more and more services (particularly cloud services) can technically be procured and implemented without traditional IT enterprise infrastructure. People generally expect more self-service tools, and IT personnel often provide consulting in conjunction with, or instead of, the actual technology. 
+Higher Education Challenges  
+This model was developed in response to the unique challenges that exist in higher education and the effect they have on implementing an IT service catalog. One of the most obvious challenges is the diversity of the population served by higher education IT. Service catalogs in higher education must address the needs of a broad spectrum of users-including students, faculty, staff, parents, alumni, and donors-as well governance committees, administrative departments, academic departments, legislatures, and others. This broad, heterogeneous population is constantly changing. Indeed, it is the nature of higher education to have a regular influx of new students (and, to a lesser extent, faculty, researchers, staff, etc.) and to see a significant portion of the population leave annually at graduation. This provides unique and continuing challenges for the promotion of IT services and for making the IT service catalog known to new students and faculty; essentially, a continual communications campaign is required, with a major relaunch annually.  
+Another considerable challenge is that many higher education institutions have a mix of central and distributed IT services. How do you provide a single service catalog to a wide variety of users across multiple schools, campuses, and departments, each with access to a distinct set of services delivered by a variety of service providers?  
+Finally, higher education is a collaborative enterprise built on consensus. But determining how this plays out when developing a unified and authoritative IT service catalog can be a significant challenge. How do we define a service? How do we handle conflicting or competing services? What governance is in place, and who makes the final decisions? What works in a research university might not work at a regional university or a community college. Ultimately, each institution will need to consider the needs of its own specific environment.  
+Understanding the Service Catalog 
+This model catalog was developed so that the special nature of working in higher education could be addressed while allowing sufficient flexibility to be adapted to a wide variety of institutions and to better align with challenges specific to higher education. 
+Portfolio, Catalog, and Requests 
+Although the terms "service portfolio" and "service catalog" might seem similar, the service catalog is "a database or structured document with information about all live IT services, including those available for deployment. The service catalog is part of the service portfolio."3 In contrast, the service portfolio is broader, encompassing the "complete set of services that is managed by a service provider. The service portfolio is used to manage the entire lifecycle of all services and includes three categories: service pipeline (proposed or in development), service catalog (live or available for deployment), and retired services."4 Figure 1 shows the relationship between the catalog, the portfolio, and IT service management (ITSM) overall. This paper focuses on the IT service catalog. 
+Service Pipeline
+Service Catalog
+Retired Services
+Figure 1. The relationship between the IT service catalog, the service portfolio, and ITSM 
+IT Service Requests 
+A mature service catalog is actionable. That is, it includes a request portal that enables users to submit simple forms to request aspects of services. The act of a user requesting access to a service, information, or advice is considered a "service request." Thus, services are a means of delivering value to customers, and service requests are the vehicles by which users request the value to be delivered. Service requests are basically actionable transactions by which consumers interact with and consume services. 
+Using the email service as an example, service requests can be specifically defined, such as a new email inbox, a new shared folder, or a new distribution list. When a service catalog is actionable, the user is able to search for the service (email) or specific features within the service (inbox, shared folder, etc.) and is presented with a method to request some aspect of the service (see figure 2). 
+	Service Requests	Services
+E-mail and Collaboration Services
+Conferencing and Telephones
+Desktop and Mobile Device 
+Support
+Figure 2. How service requests relate to services Figure 2 shows three important points: 
+1. A service request can be a request for a single activity or task, or it can be a request for a bundle of activities or tasks.
+2. A single service might have multiple service requests associated with it.
+3. A service request that is a bundle of several service requests can contain requests that span more than one service.
+For example, a hiring manager can place a single service request, "new hire," which triggers all of the requisite activities that a company needs to execute when a new hire comes on board. The manager need not know or remember each of the specific items in the request. This increases consistency and minimizes the room for errors, resulting in better service delivery. Sometimes, however, someone might need just one of the items in the bundle. When this is the case, that person can simply place a service request for that particular item (e.g., someone needs a new email account). 
+When devising a catalog, it is important to have a clear distinction between a service and its (possibly multiple) associated requests. In the example above we see that the email service has at least three associated service requests: a new email account, a public folder, and a mail group.  
+This document does not directly address service requests; the catalog only provides guidance down to the service offering level.  
+Service Catalog Views and Audiences 
+The IT service catalog is published information about all the IT services available at a given point in time. Think of the catalog as a menu at a restaurant and the portfolio as the restaurant's overall collection of recipes, which could include recipes under consideration or being developed (pipeline), those presently on the menu (catalog), and those that have been removed from the menu (retired). A necessary part of maintaining a single IT service catalog is defining specific audiences that will see certain service catalog information based on their particular roles and interests. It is unlikely that all the services in your catalog will be available to everyone at your institution, and people will appreciate seeing a list of only the services that are available to them.  
+Therefore, a single catalog will typically have many views based on the audience in the same way, for instance, that a dine-in menu might differ from a take-out menu. More important, a customer might be an end consumer (i.e., a diner) or another service-provider (e.g., the family cook who simply wants to buy a jar of the restaurant's famous marinara sauce to incorporate into a dish at home). The former is IT-to-consumer (or provider-to-consumer), the services around which are typically called business- or customer-facing services. The latter is IT-to-IT (or provider-to-provider), the services around which are typically called technical or supporting services. Again, views can determine which types of services particular customers (or customers playing particular roles) should see.5 Views are one way of managing communication about what services are available to a specific group or constituency. This can be implemented in a low-tech manner, such as allowing visitors to your website to sort services based on their constituency. A more robust solution could leverage your institution's single signon technology to automatically filter and display relevant services based on the person's role (see figure 3). 
+Service Pipeline
+Service Catalog
+Faculty
+Students
+Staff
+IT Professionals
+Governance
+Retired Services
+
+Figure 3. Service views 
+Even within individual services, you might not want to display all the attributes of a service; for instance, the cost of providing the service might be displayed only to IT service providers and governance committee members. Some common views useful within higher education include: 
+• Faculty (depending on your needs, you might include or break out researchers, instructors, and visiting faculty separately)
+• Students (depending on your needs, you might include or break out undergraduates, graduate and professional students, online students, prospective students, and applicants)
+• Staff
+• Alumni
+• Parents 
+• Visitors and guests 
+• IT service management/operations/support (might need to see internal attributes and additional information not available to the wider community) 
+• Governance committee members (might need to see information on costs and other factors related to service delivery) 
+You might find that a single platform cannot easily accommodate storing and displaying all the information you want to keep in your service catalog. For example, you might want to store the structure of your service catalog within the configuration management database (CMDB) of your IT service management tool so that you can easily see how particular resource outages could affect certain services. On the other hand, you might find that the ability to view the catalog is better facilitated through a document-sharing system. In that case, your authoritative catalog might span more than one platform. Alternatively, you might not be ready to develop a full-fledged service and might find it easier to implement a public display of your catalog on a traditional website. Try to minimize the number of platforms you use for your service catalog and the amount of information overlap between those platforms. Establish and document a process for managing changes in the service catalog so that information is kept in sync.  
+Defining IT Services 
+A service is a "means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer's having to manage specific costs and risks."6 The service is about the outcomes the IT service enables the user to achieve, not the activities performed by the IT service provider. When defining services, an IT organization needs to understand the business process the service will enable. 
+But what does that actually mean? Imagine the outcome you want is an elegant meal. You could do the work yourself, which means you would take on the specific costs (food, table linens, flowers, candles) and the risks (potentially burning the meal). An alternative is to go to a restaurant. In this case, the restaurant assumes the direct costs and risks and delivers something to your specifications, but the outcome is the same-you enjoy an elegant dinner. And even though the delivery mechanism was completely different, both options provide a dining service. 
+As you define services in the IT environment, it is important to keep the customer and user perspectives in mind. Services need to be recognizable by those who might use them. One of the activities the restaurant performs is to create the menu, and it is important that the items listed resonate with the menu's audience. As a customer, you would not recognize "season poultry" as a service, because the outcome you want to achieve is a completely prepared meal. Translated to the IT environment, "patch server operating system" is probably not recognized by most IT customers as an IT service. Instead, users probably expect this activity to be part of an IT service such as "manage server." The managed server service includes activities such as provisioning, installing, configuring, and maintaining servers in a data center, just as meal preparation includes washing vegetables, seasoning poultry, and cooking ingredients.  
+This means that services, including what they are called, should be defined based on outcomes desired by the service consumer. Doing so will ensure that an IT service provider will manage all the aspects of service management with these outcomes in mind, thereby providing value to the consumer. In this way, a service might be defined as a discrete element providing functionality and/or value to customers and which includes at least two participants: 
+• a service provider who offers to perform one or more tasks or activities to a certain specification; and 
+• a customer who is willing either to accept the offered specification of the work or to request and specify the work. 
+What qualifies as a service and what does not is sometimes subjective, and each organization will need to come to its own agreement regarding a definition. Depending on the maturity level of the service and the organization's service management approach, additional criteria might be applied to each service. For instance, services might be required to: 
+• Deliver something of value to the customer (i.e., not be a portion of a larger supply chain) 
+• Be orderable 
+• Have measurable metrics (e.g., capacity, performance, relevancy, satisfaction, and cost) 
+Of equal importance is defining what a service is not. Typically, applications and computer systems provide activities required by an IT service and are not considered services unto themselves. 
+The Higher Education IT Service Catalog Model 
+The model provided here is a three-tiered approach, with a fourth section defining key attributes for services and service offerings (see figure 4). The intent is to foster understanding of the catalog contents by presenting them in a way that makes sense in the higher education environment, starting most broadly and moving to more detailed information as one traverses the structure.  
+• Service Category: A logical grouping of services that benefit from being managed together. These high-level groupings should be meaningful to the IT service provider to facilitate budgeting and governance of services. Some institutions might choose to make these groupings visible to end users, whereas some might not and might even have different groupings (see the discussion of "views" earlier in this document). These categories should reflect the strategic goals of the institution and align with the overall governance model. Governance of IT services, including deciding on major projects, developing strategy, and managing funding, is generally conducted by groups aligned with the service categories. Most service catalogs will consist of six to ten service categories. Examples of service categories might include communication and collaboration, infrastructure, and teaching and learning. 
+• Service: An end-to-end IT service that delivers value to customers, typically not identified by specific product or application names. The service combines people, processes, and technology to provide outputs or results that enable business capabilities or an end user's work activities and desired outcomes. Multiple related services are grouped in a service category. Examples of services appearing in the Infrastructure service category, for example, might include database management and network and connectivity management. 
+• Service Offering: The specific technology-focused activity or product used to deliver a service. These can be software bundles, custom application solutions, or other technology that enables a service offering. Multiple service offerings might exist for a single service. Examples of service offerings for an email and collaboration service might include Microsoft Exchange, Gmail, email distribution lists, and university and college event calendars. 
+• Service Attributes: Key information about individual services or service offerings. Different views of a catalog might contain different attributes focused on the catalog's audience. Some examples include service name, service description, audience, benefits, service charges, and requirements. 
+
+Figure 4. The IT service catalog model 
+Services live in a single category; however, some services might be crossreferenced in other categories via the related services attribute. 
+How to Use This Model  
+Start building your service catalog by reviewing and using the model categories and taxonomy provided below. The model is expected to generally align to any institution's service catalog needs. We recommend you start with this template and, working with the stakeholders at your institution, tailor it and adjust any categories or services to meet your local requirements. 
+In building your service catalog, it is essential that you involve and work with your constituents to discover what services they want, the language they would use to denote those services, and what requirements they have regarding the delivery of those services. This collaboration will help align expectations with service provisioning, improve communication, and result in a collection of services that bring value to your intended audiences. It will further aid in defining service-level agreements that address availability, reliability, and recoverability in a business continuity model. Using this constituent-led operational model, your level of success in providing services can be evaluated objectively. In addition, monitoring and reporting agreed-upon service metrics provides a basis for discussion between service provider and customer and enhances mutual satisfaction in the delivered services. Continuing to involve the customer in the ongoing development and maintenance of the service catalog helps ensure its success. 
+Some aspects you might want to consider when building your service catalog include the following: 
+• You might have different views of your catalog. Typically, you will have a single catalog but might have multiple views for different audiences. See the above section, Service Catalog Views and Audiences, for more on this. 
+• The model is not intended to be prescriptive. You might find that some services at your institution are better aligned in a way that differs from this model. For instance, your institution might prefer to situate "Polling and Surveys" (currently in the "Teaching and Learning" category) in the "Communication and Collaboration" category, or you might discover that it makes sense to shift "Media and A/V" systems (now under "Communication and Collaboration") to the "Teaching and Learning" category.  
+• The model groups services together by function and does not attempt to align them to user groupings. For instance, a personal computer user might consume services from the Communication and Collaboration, Desktop and Mobile Computing, and Infrastructure categories. A different view can be used to group these together for the user, if desired. 
+• It is a best practice to avoid structuring your catalog to match your IT organizational structure. The model does not align services by how or where they operate or how the IT organization supports them. For example, an IT organization might manage cloud-based collaborative storage and onpremises disc-based storage in different departments, but both services would appear in the catalog as service offerings under "Server and Storage Management."  
+• Some platforms might provide multiple services and be listed in multiple locations. For example, PeopleSoft, Workday, G Suite, Amazon Web Services, Azure, and others might be listed in more than one category or service area as appropriate. 
+• If a service has a consulting component, it should be included with the service it supports. Some common examples include educational technology consulting, user experience design, and data integration.  
+• IT services that are consumed only by central IT are not within the scope of this model. Services consumed by central IT as well as other audiences are included, however. If you want to include internal-only services, they might not align seamlessly to this model. 
+Service Categories 
+Listed below are suggested service categories that we believe cover the strategic areas for most institutions. With appropriate local modification, these categories should assist in facilitating activities such as budgeting and governance. Most institutions will have 6-10 service categories:  
+Service Category Category Description Administrative and Business Services that support the administrative and business functions of an institution. Includes business capability and process automation, financial and procurement systems, human resource systems, library systems, and student information systems. Communication and Collaboration Services that facilitate institutional communication and collaboration needs. Includes conferencing and telephones, email and collaboration services, media and audio/visual, and web services. Desktop and Mobile Computing  Services that support access and use of community members' devices and related peripherals. Includes desktop and mobile device support, printing and related services, and software and applications distribution. Infrastructure Foundational services that support the operation and management of the enterprise IT environment. Includes data center services, database management, network and connectivity management, and server and storage management. IT Professional Services People-based services that support the management of IT for the institution. Comprises consulting services not related to specific services identified in other categories. Includes enterprise architecture, continuous improvement and innovation, digital accessibility, IT communication and documentation, IT service delivery and support, portfolio and project management, and training and outreach.   Research Services supporting the institution's research activities, including advanced or specialized storage and applications, research data services and software, and lab management systems.  Information Security Services that provide security, data integrity, and compliance for institutional activities. Includes identity and access management, security consulting and educations, incident response and investigation, and security policy and compliance. Teaching and Learning Services providing instructional technology and resources directly supporting teaching and learning. Includes learning management systems, instructional technology and design, assessment and learning analytics, lecture capture, and polling and surveys.  Services 
+Under each service category, we have listed common IT services (end-to-end IT services delivering outcomes to customers) offered in higher education. This list should be broadly representative but might not be comprehensive for all institutions. Your institution might not offer all of these or might have additional services. For each of these services, there might be a number of individual service offerings representing specific technology-focused activities or products that are used to deliver the service. 
+An analysis of the 2017 EDUCAUSE Core Data Survey found that, on average, 37 of the 52 services in this catalog are supported by an institution's central IT department.7 The analysis also showed that the specific services supported varies substantially-only a small number of services, mostly related to infrastructure, are centrally supported at more than 90% of universities.  
+SERVICE CATEGORY: ADMINISTRATIVE AND BUSINESS Service Service Description Alumni and Advancement Alumni portals and offerings that support university and college advancement and development. Athletics Athletics administration, recruiting, procurement, and ticketing systems. Auxiliary Systems Support for auxiliary or ancillary campus systems, activities, and operation. Might include legal management, childcare, mail services, recreation services, art collections, etc. Business Capability and Process Automation Practices, frameworks, and technologies that automate, improve efficiencies, and measure the effectiveness of business processes. Includes IT service management; ticket management; operations, business, sales, and marketing management platforms; document and signature management services; customer relationship management; job scheduling; and workflow management.  Facilities Management Support of room and facility systems, including event management 
+(room management, hotel, concierge, seating, conference registration, etc.), mapping, building security, safety and risk management, dining systems, point of sale, transportation, laundry, and parking systems. Faculty Information Systems Administration and maintenance of faculty administration, review, and promotion and tenure systems. Financial and Procurement Systems Administration and management of financial services, procurement, travel, budget, vendor relations, and equipment purchasing systems. Human Resource Systems  Administration and management of core human resource systems, including recruiting, position management, performance review, workforce development, and time and attendance. Might also include payroll and benefits administration systems.   Library Systems Administration and management of systems that provide access to local and remote information in support of teaching, learning, and research. Includes acquisitions, catalog, circulation, serials, a public user interface, interlibrary loan, discovery tools, and infrastructure services specific to library systems. Medical and Health Systems Systems and technologies in support of clinical processes, including 
+health record management, pharmaceutical data, medical appointment scheduling, and residency placements. Data, Reporting, and Analytics Business intelligence platforms, data warehouses, dashboards, analytics tools, transactional reporting, operational data stores, and data governance when offered as a service. Student Information Systems Admissions, enrollment, registration, orientation, financial aid, student accounts and collections, advising, and career services systems. 
+SERVICE CATEGORY: COMMUNICATION AND COLLABORATION Service Service Description Conferencing and Telephones Telephony, including voice/VoIP, teleconferencing, and web conferencing hosted either in cloud or on-premises. Email and Collaboration Services Electronic message, information sharing, productivity, and integrated collaboration suites used to facilitate interactions between individuals and work groups as they create, share, and exchange information. Includes services such as email, calendaring, productivity suites, file sharing, instant messaging tools, and webbased collaborative platforms used strictly for collaboration. Mass Communications and Emergency Notifications One-way communications and emergency communications to the entire campus or other defined groups. Includes campus alert systems, broadcast email and text messaging, electronic newsletter distribution, enterprise mailing list management, and digital signage. Media and A/V  Broadcasting, live streaming, video recording and media production. This area includes audiovisual-related event support. Web Services Content management systems, portals, web hosting, web analytics, user experience design, and URL management. Also includes website and mobile application development. SERVICE CATEGORY: DESKTOP AND MOBILE COMPUTING Service Service Description Desktop and Mobile Device Support Support for all types of end-point devices, including laptops, desktops, mobile devices, and related peripherals that are not in the printing service. These devices might be personally or institutionally owned (including loaner equipment) and might be part of a shared pool or a computer lab. Includes support for the associated operating system, hardware, and systems that provide enterprise management of computing devices.  Hardware Lifecycle Services  Purchasing consultation, hardware procurement, device refresh, leasing, and technology recycling.  Printing and Related Services Technology associated with printers and copiers, such as copy, scan, fax, and print. Includes supporting technologies such as copy centers, print quota systems, 3D printing, and other replicating technologies. Software and Applications Distribution Distribution, installation, and troubleshooting of software and licenses via media, online methods, and license servers. Includes both cloud-based and desktop software. 
+SERVICE CATEGORY: INFRASTRUCTURE Service Service Description Business Continuity and Disaster Recovery Business continuity consulting and planning, as well as disaster recovery planning, including disaster recovery exercises and execution. Data Center Services  Strategy, planning, architecture, and operation of physical and virtual data centers, including on-premises, remote, and cloud-based data centers.  Database Management Hosting and administration of databases, physical and virtual. Integration Services Consultation and integration services, when offered as a consolidated service. Monitoring and Alert Management Monitoring of IT services, including the underpinning technologies.  Network and Connectivity Management The architecture, installation, and operation of infrastructure items required to offer network connectivity, such as network cabling, routers, and firewalls. Includes connecting devices (including Internet of Things devices) to the network, network access management, securing access to networks, and appropriate authentication (e.g., network registration systems, VPN, and NAC). Server and Storage Management Provisioning, hosting, and administration of physical and virtual servers and related storage. Includes the maintenance and provisioning of core storage capabilities such as server storage and database backups. SERVICE CATEGORY: IT PROFESSIONAL SERVICES Service Service Description Continuous Improvement and Innovation Consulting unrelated to a specific technology service, such as business process streamlining, business relationship management, and business analysis. Digital Accessibility Assessing or enabling accessibility of academic software, enterprise applications, or electronic/digital resources. Might include accessibility reviews, defining standards, analysis, or end-user training/awareness. IT Communications and Documentation Development and delivery of IT communications related to delivery of IT services. Might include communications related to system changes, service offerings, or service outages (planned or unplanned). Functionally, might include maintenance of support documentation and/or the service catalog.   IT Service Delivery and Support Includes design and maintenance of the capabilities, tools, and service points needed to deliver IT services or provide end-user support. Includes service desks, call centers, and online support delivery. Might include concierge support or special event service delivery.  IT Strategy, Governance, and Enterprise Architecture Enterprise-level strategy and planning. Portfolio and Project Management Project portfolio management and related project management services.  Training and Outreach Developing, delivering, or coordinating end-user technology training for applications and systems. Functionally, might include organizational change management and/or development and delivery of digital literacy campaigns. 
+SERVICE CATEGORY: RESEARCH Service Service Description Lab Management Systems Recording and tracking lab experiments, equipment, and specimens. Research Administration Systems Systems used to secure and facilitate research funding and compliance. Research-Specific Computing and Applications Computing and storage resources that support research that uses specialized or highly intensive computation, storage, bandwidth, or graphics. Includes advanced or specialized applications, such as plotting, visualization, modeling, rendering, animation, graphics programming, and image manipulation. Research Data Services Support of the data life cycle, including data creation; discovery and collection; analysis and visualization; storage, backup, and transfer; and research data policy compliance. Research Software Software package management, research software development, research software optimization or troubleshooting, workflow engineering, containers and cloud computing, securing access to software, and software associated with physical specimens.8SERVICE CATEGORY: INFORMATION SECURITY Service Service Description Identity and Access Management  Identity and access management, including accounts, authentication, access, and role-based provisioning at the enterprise level. Secure Computing Offerings that provide a secure computing environment for end users. Includes network security, system security, application security, and threat monitoring and management. Security Consulting and Education Security assessment, education, and awareness of campus security requirements, policies, and guidelines. Includes contract reviews and risk assessments. Security Incident Response and Investigation  Offerings that respond to, remediate, and seek to prevent security incidents and vulnerabilities. Security Policy and Compliance Offerings relating to institutional policy or compliance guidelines and requirements. Includes support for audit processes. SERVICE CATEGORY: TEACHING AND LEARNING Service Service Description Assessment Systems and Learning Analytics Support for assessing learning outcomes and learning analytics. Academic Technology and Support Ensuring that physical classrooms, specialized learning environments, and virtual learning environments (e.g., immersive learning, augmented reality) are suitably equipped and functional to meet the needs of the education experience.  E-Portfolio Management Creating and managing e-portfolios, including the consumption or use of e-textbooks and other online self-curation. Instructional Technology and Design Ensuring that faculty and other course creators have the knowledge and assistance they need to optimize their effectiveness in using teaching and learning technologies, including e-text development and online course development Learning Management  Offerings that relate to the management of academic course materials (e.g., videos, documents, spreadsheets) and that facilitate teaching and learning using online portals. Includes learning management systems and other learning platforms, as well as services that provide on-demand, usually modular skills-based learning to employees and/or students. Lecture Capture Recording, storing, editing, and publishing lectures. Polling and Surveys Polling and survey offerings used to solicit feedback from a group of individuals for academic or business purposes. Includes applicationbased, online, and device-specific polling or survey systems. Service Attributes 
+Service attributes help define and describe both services and service offerings. They provide information related to managing, providing, and accessing each service or service offering. One can think of attributes as a set of characteristics of each service or service offering. 
+The particular attributes that are presented to the person reading the service catalog might change depending on that person's role within the institution. For example, the "service cost" attribute, in contrast to the "service charges" attribute, might be hidden from faculty, staff, and students but visible to IT staff and governance members.  
+Depending on the maturity of the institution's service catalog and service management program, some attributes might be required and others just suggestions. For instance, the service owner role might be mandatory in institutions where the role has been formally established for all services, whereas it could be optional in institutions where the role has not been fully established. 
+Attribute Description Service Category The category to which the service belongs. Service Name The name by which the catalog users know the service. See also Aliases. Aliases (Meta Tag for Search)  Aliases might exist for the service name so that it can be found by other names (e.g., the institution's branded name, product name, or other commonly used names). Service Description A full description of the service, including its purpose, benefits, features, and options. The description should be written for the end user to understand. Audience The constituents for whom the service is available (e.g., students, faculty, staff). Service Levels Basic information about service availability, maintenance windows, levels of support available, what users can expect from this service, etc. Requirements Any prerequisites for using the service (e.g., approvals, training, compliance requirements, and other services). Service Charges The cost to the end user or department to use the service. This can be expressed on a per-user basis, by department, volume of consumption, or however charges are assessed. Requesting the Service Instructions for requesting the service (e.g., a link to a request form or contact information).  Support Contact Instructions for requesting support (e.g., help with using the service or reporting a service issue). Support Availability Support hours. Feedback Mechanism Instructions or mechanism for reporting feedback on a service. Documentation Pointers to service documentation, service policies, FAQs, training materials, etc. Status/Phase Current status or phase of the service (e.g., planning, production, or retired). Note: when a service is retired, it is removed from the catalog but remains in the portfolio. Service Cost The actual costs to deliver a service-including, hardware, software, licensing, maintenance, and staff resources-which are necessary for an organization to understand financial management on a service level. Service Owner The person who is accountable for the delivery of the end-to-end service. This accountability crosses functional areas. Related Services Links to other services in the service catalog that users might be interested in, based on their interest with this service.  Conclusion 
+This second edition of a model IT service catalog provides higher education institutions with a framework on which to base their own service catalogs. It also provides a language to enhance understanding between service providers and their constituencies and facilitate collaboration between higher education institutions. For some institutions, the model presented here might serve as a starting place for the first-time implementation of a new catalog, while for others it might be a useful guide when updating or improving an existing catalog. Institutions will need to carefully review their own services and audiences to determine whether any adjustments of this model need to be made to meet local needs.  
+Beyond this, however, the catalog also can be useful in establishing a framework for exploration and identification of shared service opportunities. By establishing a common language for institutions to use in their service catalogs, this model will hopefully lead to greater collaboration and cooperation and enable benchmarking and comparisons across institutions. 
+Finally, as an important tool in making IT services visible and useful for the higher education community, the IT service catalog might bring with it organizational change as institutions become more customer and user focused. Developing a complete and useful catalog is an iterative process that requires continuous process improvement; future updates to this model will likely be necessary and will rely on input from the community regarding what works, what needs work, and new directions that should be taken. The EDUCAUSE ITSM Community Group is a great place to share your experiences with the catalog and provide support to others who might have questions.  
+
+Authors 
+The IT Service Catalog Revision Working Group that wrote this report includes 
+
+the following members: 
+Tamara Adižes Jacobs (Working Group Co-Chair) 
+Senior Business Analyst University of Toronto 
+Angela Chauncey 
+Associate Director 
+Kansas State University 
+Marie DiRuzza 
+Director, Campus Technology and Media Services 
+Mount Holyoke College Christopher Eagle (Working Group Co-Chair) 
+IT Strategist and Enterprise Architect 
+University of Michigan-Ann Arbor 
+Megan Hartz 
+Associate Director 
+University of Missouri Melissa Kramer Cresswell 
+Director of Client Engagement and Planning 
+Bryn Mawr College 
+Corey Liss Service Delivery Manager University of Chicago Anita Nichols 
+Director of Client Success 
+University of California, Davis 
+Mitchell Pautz IT Service Management Analyst 
+University of Southern California 
+Patricia A. Riether 
+Assistant Director, Service Management and Communications 
+Carnegie Mellon University 
+Kathryn Rose 
+Senior Director IT Strategy, Planning & Architecture 
+University of Notre Dame 
+Elizabeth Rugg 
+Assistant Vice Chancellor, Client Engagement 
+University of North Carolina, Charlotte 
+Sarah Topham Process & Business Analyst 
+Rochester Institute of Technology 
+Karen Warren Deputy CIO 
+Wesleyan University 
+
+Appendix: Service Categories and Service Area Revision Overview 
+The catalog categories and service areas were reviewed and updated. A detailed description of the updates is shown in this table. 
+2015 Service Categories and Service Areas Revision Changes Administrative and Business 
+• Alumni and Advancement 
+• Athletics 
+• Auxiliary Systems 
+• Document Imaging and Management 
+• Faculty Information Systems 
+• Finance, Human Resources, and Procurement Systems 
+• Library Systems 
+• Medical and Health Systems 
+• Reporting and Analytics 
+• Research Administration Systems 
+• Student Information Systems Administrative and Business 
+• Alumni and Advancement: Minor edits for clarity. 
+• Athletics: Minor edits for clarity. 
+• Auxiliary Systems: Description completely revised to provide more guidance and direction about what should be in this service area. 
+• Business Capability and Process Automation: New service area. 
+• Document Imaging and Management: Removed; merged into new service area "Business Capability and Process Automation." 
+• Facilities Management: New service area. 
+• Finance, Human Resources, and Procurement Systems: 
+Divided into two service areas, "Financial and 
+Procurement Systems" and "Human Resource Systems." 
+• Library Systems: Minor edits for clarity. 
+• Reporting and Analytics: Renamed "Data, Reporting, and Analytics," and description updated accordingly. 
+• Research Administration Systems: Moved to the 
+"Research" category and description updated with minor edits for clarity. 
+• Student Information Systems: Minor edits for clarity. Communication and Collaboration 
+• Collaboration 
+• Conferencing 
+• E-Mail and Calendaring 
+• Emergency Notification 
+• Telephony 
+• Television 
+• Websites Communication and Collaboration 
+• Collaboration: Moved into new service area, "Email and Collaboration Services." 
+• Conferencing and Telephones: New service area; replaces 
+"Conferencing" and "Telephony." 
+• E-mail and Calendaring: Renamed "Email and Collaboration Services" and description updated accordingly. 
+• Emergency Notification: Renamed "Mass Communications and Emergency Notifications" and description updated accordingly.  
+• Telephony: Merged into the new "Conferencing and Telephones" service area.  
+• Television: Renamed "Media and A/V" and description updated accordingly. 
+• Websites: Renamed "Web Services" and description updated accordingly. 
+End-Point Computing 
+• Network Access 
+• End-Point Support (Desktops, Mobile Devices, 
+etc.) 
+• Printing  
+• Software Distribution Desktop and Mobile Computing (new category name) 
+• Network Access: Moved under "Network and Connectivity Management" in the Infrastructure category. 
+• End-Point Support: Renamed "Desktop and Mobile Device Support" and description updated accordingly. 
+• Hardware Lifecycle Services: New service area. 
+• Printing: Renamed "Printing and Related Services" and description updated accordingly. 
+• Software Distribution: Renamed "Software and Applications Distribution" and description updated accordingly. Infrastructure 
+• Data Center  
+• Database  
+• Middleware  
+• Monitoring  
+• Network  
+• Server Infrastructure  
+• Storage Infrastructure 
+• Business Continuity and Disaster Recovery: Service area was originally under the "IT Professional Services" category; moved here. Minor edits for clarity.  
+• Data Center: Renamed "Data Center Services" and description updated accordingly.  
+• Database: Renamed "Database Management"; minor edits for clarity. 
+• Integration Services: New service area. 
+• Middleware: Service area removed.   
+• Monitoring: Renamed "Monitoring and Alert Management"; minor edits for clarity.  
+• Network: Renamed "Network and Connectivity Management" and description updated accordingly.  
+• Server Infrastructure: Renamed "Server and Storage Management"; incorporates the original "Storage" service area. Description updated accordingly. 
+• Storage: Removed; merged into the new "Server and Storage Management" service area. Description updated accordingly. IT Professional Services 
+• Application Development 
+• Consulting and Advising  
+• Business Continuity and Disaster Recovery 
+• Enterprise Licensing 
+• IT Service Management 
+• Portfolio and Project Management 
+• Training IT Professional Services 
+• Continuous Improvement and Innovation: New service area. 
+• Application Development: Service area removed and shifted to the corresponding technical service instead, consistent with the overall approach of combining consulting with base service. 
+• Consulting and Advising: Service area removed (see "How to Use This Model" for more information about consulting services). 
+• Business Continuity and Disaster Recovery: Service area moved to "Infrastructure" category. 
+• Digital Accessibility: New service area. 
+• Enterprise Licensing: Service area removed and shifted to the corresponding technical service instead, consistent with the overall approach of combining consulting with base service. 
+• IT Communications and Documentation: New service area. 
+• IT Service Delivery and Support: New service area. 
+• IT Service Management: Removed; merged into "Business Capability and Process Automation" service area in the "Administrative and Business" category. 
+• IT Strategy, Governance, and Enterprise Architecture: 
+New service area.  
+• Portfolio and Project Management: Minor edits for clarity. 
+• Training: Renamed "Training and Outreach" and description updated accordingly. Research 
+• Advanced Applications 
+• Lab-Management Systems 
+• Research Computing 
+• Visualization Research 
+• Advanced Applications: Removed and merged into "Research Computing and Advanced Support" service area. 
+• Lab-Management Systems: Minor edits for clarity. 
+• Research Administration Systems: New category (previously located under the "Administrative and Business" category. 
+• Research Computing: Renamed "Research Computing and Advanced Support" and comprises the original "Advanced Applications," "Research Computing," and "Visualization" service areas. 
+• Research Data Services: New service area. 
+• Research Software: New service area. 
+• Visualization: Removed and merged into "Research Computing and Advanced Support" service area. Security 
+• Identity and Access Management 
+• Secure Computing 
+• Security Consulting  
+• Security Incident Response and Investigation 
+• Security Policy and Compliance Information Security (new category name) 
+• Identity and Access Management: Minor edits for clarity. 
+• Secure Computing: Minor edits for clarity. 
+• Security Consulting: Renamed "Security Consulting and Education" and description updated accordingly.  
+• Security Incident Response and Investigation: Minor edits for clarity. 
+• Security Policy and Compliance: Minor edits for clarity. Teaching and Learning 
+• Assessment Systems 
+• Classroom Technology and Support 
+• Educational Technology Consulting and Training 
+• E-Portfolio Sites 
+• Learning Management Systems  
+• Lecture Capture 
+• Technology-Enhanced Spaces Teaching and Learning 
+• Assessment Systems: Renamed "Assessment Systems and Learning Analytics" and description updated accordingly. 
+• Classroom Technology and Support: Renamed "Academic Technology and Support" and description updated accordingly. 
+• Educational Technology Consulting and Training: Service area removed (see "How to Use This Model" for more information about consulting services).  
+• E-Portfolio Sites: Renamed "E-Portfolio Management" and description updated accordingly. 
+• Learning Management Systems: Renamed "Learning Management" and description updated accordingly. 
+• Lecture Capture: Minor edits for clarity. 
+• Polling and Surveys: New service area. 
+• Technology-Enhanced Spaces: Removed; merged under "Academic Technology and Support." Notes 
+1. See the PDF for the first edition, "The Higher Education IT Service Catalog: A Working Model for Comparison and Collaboration," available from the research hub.  
+2. A detailed list of changes can be found in Appendix I. 
+3. See "ITIL glossary and abbreviations," 52. 
+4. See "ITIL glossary and abbreviations," 56. 
+5. For additional information on the service catalog, see Tamara Adižes, Mark Katsouros, Reginald Lo, Simon Pride, and Karalee Woody, "The Unified IT Service Catalog: Your One-Stop Shop," EDUCAUSE Review, August 11, 2014. 
+6. Paul Wilkinson, "Best Practice in IT, ITSM, and the ITIL update: ITIL 4 - The Evolution of ITSM Part 1," The AXELOS Blog, February 11, 2019. 
+7. See the EDUCAUSE Core Data Service. 
+8. This description pulls from draft work from CaRCC, Internet2, and EDUCAUSE on a research computing and data maturity model. For more information, see "Research Computing and Data Capabilities Model." 
+About EDUCAUSE 
+EDUCAUSE is a higher education technology association and the largest community of IT leaders and professionals committed to advancing higher education. Technology, IT roles and responsibilities, and higher education are dynamically changing. Formed in 1998, EDUCAUSE supports those who lead, manage, and use information technology to anticipate and adapt to these changes, advancing strategic IT decision-making at every level within higher education. EDUCAUSE is a global nonprofit organization whose members include US and international higher education institutions, corporations, not-for-profit organizations, and K-12 institutions. With a community of more than 99,000 individuals at member organizations located around the world, EDUCAUSE encourages diversity in perspective, opinion, and representation. For more information, please visit educause.edu. 
+Citation for This Work 
+Adižes Jacobs, Tamara, et al. The Higher Education IT Service Catalog: A Working Model for Comparison and Collaboration. EDUCAUSE working group paper. Louisville, CO: EDUCAUSE, November 2019. 
+(c) 2019 EDUCAUSE. Creative Commons BY-NC-SA 4.0. 
+
+
+The Higher Education IT Service Catalog, Second Edition 
+
+
+
+EDUCAUSE 	3 
+
+
+
+
+
+The Higher Education IT Service Catalog, Second Edition 
+
+The Higher Education IT Service Catalog, Second Edition 
+
+	EDUCAUSE 	3 
+
+	EDUCAUSE 	3 
+
+The Higher Education IT Service Catalog, Second Edition 
+
+	EDUCAUSE 	3 
+
